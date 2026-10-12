@@ -1,0 +1,456 @@
+{
+ "id": "a1-08",
+ "cefr": "A1",
+ "title": "kein or nicht",
+ "situation": "At the supermarket",
+ "canDo": "You can say what a shop doesn't have and what you don't need, choosing correctly between kein and nicht.",
+ "explanation": "At the supermarket you often say what isn't there: *Wir haben keine Milch.* German has two words for 'not': **kein** and **nicht**.\n\n**kein** means 'no, not a, not any'. Use it for nouns with **ein** or with **no article**:\n- *Das ist ein Apfel.* → *Das ist **kein** Apfel.*\n- *Ich habe Zeit.* → *Ich habe **keine** Zeit.*\n\nkein has the same endings as ein, plus a plural:\n\n| | subject | object (after haben, brauchen…) |\n|---|---|---|\n| masculine | kein Käse | **keinen** Käse |\n| feminine | keine Tüte | keine Tüte |\n| neuter | kein Brot | kein Brot |\n| plural | keine Eier | keine Eier |\n\n**nicht** negates everything else:\n- verbs: *Ich komme nicht.*\n- adjectives: *Die Bananen sind nicht teuer.*\n- nouns with **der/die/das**: *Ich finde den Käse nicht.*\n- places: *Die Milch ist nicht hier.*\n\nQuick test: does the positive sentence have *ein* or no article? → **kein**. Does it have *der/die/das*? → **nicht**.\n\nThe most common mistake is *nicht* before a noun without an article: not *Ich habe nicht Zeit*, but *Ich habe **keine** Zeit*; not *Ich esse nicht Fleisch*, but *Ich esse **kein** Fleisch*.\n\nAfter a negative question, *doch* means yes: *Haben Sie keine Sojamilch? – Doch!*",
+ "french": "kein works like « pas de » (je n'ai pas de pain = ich habe kein Brot), and nicht covers the other « ne… pas » cases (je ne trouve pas le fromage = ich finde den Käse nicht).",
+ "examples": [
+  {
+   "de": "Wir haben heute kein Brot.",
+   "en": "We have no bread today."
+  },
+  {
+   "de": "Brauchen Sie eine Tüte? – Nein, danke, ich brauche keine Tüte.",
+   "en": "Do you need a bag? – No, thanks, I don't need a bag."
+  },
+  {
+   "de": "Ich finde den Käse nicht.",
+   "en": "I can't find the cheese."
+  },
+  {
+   "de": "Die Tomaten sind nicht frisch.",
+   "en": "The tomatoes aren't fresh."
+  },
+  {
+   "de": "Ich esse kein Fleisch.",
+   "en": "I don't eat meat."
+  },
+  {
+   "de": "Hast du einen Euro? – Nein, ich habe keinen Euro.",
+   "en": "Do you have a euro? – No, I don't have a euro."
+  },
+  {
+   "de": "Die Kasse ist nicht offen.",
+   "en": "The checkout isn't open."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-08-01",
+   "type": "cloze",
+   "de": "Ich habe ___ Zeit.",
+   "base": "kein/nicht",
+   "answers": [
+    "keine"
+   ],
+   "en": "I have no time."
+  },
+  {
+   "id": "a1-08-02",
+   "type": "choice",
+   "de": "Wir haben heute ___ Brot.",
+   "options": [
+    "nicht",
+    "kein",
+    "keine"
+   ],
+   "answer": 1,
+   "why": "Brot has no article here and is neuter (das Brot), so you use kein.",
+   "en": "We have no bread today."
+  },
+  {
+   "id": "a1-08-03",
+   "type": "cloze",
+   "de": "Ich esse ___ Fleisch.",
+   "base": "kein/nicht",
+   "answers": [
+    "kein"
+   ],
+   "en": "I don't eat meat."
+  },
+  {
+   "id": "a1-08-04",
+   "type": "choice",
+   "de": "Die Tomaten sind ___ frisch.",
+   "options": [
+    "kein",
+    "keine",
+    "nicht"
+   ],
+   "answer": 2,
+   "why": "frisch is an adjective, and adjectives are negated with nicht.",
+   "en": "The tomatoes aren't fresh."
+  },
+  {
+   "id": "a1-08-05",
+   "type": "cloze",
+   "de": "Brauchen Sie eine Tüte? – Nein, danke, ich brauche ___ Tüte.",
+   "base": "kein/nicht",
+   "answers": [
+    "keine"
+   ],
+   "en": "Do you need a bag? – No, thanks, I don't need a bag."
+  },
+  {
+   "id": "a1-08-06",
+   "type": "choice",
+   "de": "Ich finde den Käse ___.",
+   "options": [
+    "nicht",
+    "kein",
+    "keinen"
+   ],
+   "answer": 0,
+   "why": "den Käse has a definite article, so you use nicht.",
+   "en": "I can't find the cheese."
+  },
+  {
+   "id": "a1-08-07",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "keinen Euro"
+   ],
+   "answers": [
+    "Ich habe keinen Euro."
+   ],
+   "en": "I don't have a euro."
+  },
+  {
+   "id": "a1-08-08",
+   "type": "cloze",
+   "de": "Hast du einen Euro? – Nein, ich habe ___ Euro.",
+   "base": "kein/nicht",
+   "answers": [
+    "keinen"
+   ],
+   "en": "Do you have a euro? – No, I don't have a euro."
+  },
+  {
+   "id": "a1-08-09",
+   "type": "choice",
+   "de": "Wir haben ___ Eier mehr.",
+   "options": [
+    "keine",
+    "kein",
+    "nicht"
+   ],
+   "answer": 0,
+   "why": "Eier is plural with no article, so you use keine.",
+   "en": "We have no more eggs."
+  },
+  {
+   "id": "a1-08-10",
+   "type": "cloze",
+   "de": "Das ist ___ Butter, das ist Margarine.",
+   "base": "kein/nicht",
+   "answers": [
+    "keine"
+   ],
+   "en": "That isn't butter, that's margarine."
+  },
+  {
+   "id": "a1-08-11",
+   "type": "choice",
+   "de": "Der Supermarkt ist heute ___ offen.",
+   "options": [
+    "nicht",
+    "kein",
+    "keine"
+   ],
+   "answer": 0,
+   "why": "offen is an adjective, so you use nicht.",
+   "en": "The supermarket isn't open today."
+  },
+  {
+   "id": "a1-08-12",
+   "type": "order",
+   "tiles": [
+    "Die Bananen",
+    "sind",
+    "nicht",
+    "teuer"
+   ],
+   "answers": [
+    "Die Bananen sind nicht teuer."
+   ],
+   "en": "The bananas aren't expensive."
+  },
+  {
+   "id": "a1-08-13",
+   "type": "cloze",
+   "de": "Haben Sie Reis? – Nein, wir haben ___ Reis.",
+   "base": "kein/nicht",
+   "answers": [
+    "keinen"
+   ],
+   "en": "Do you have rice? – No, we have no rice."
+  },
+  {
+   "id": "a1-08-14",
+   "type": "choice",
+   "de": "Ich habe ___ Hunger.",
+   "options": [
+    "nicht",
+    "keinen",
+    "kein"
+   ],
+   "answer": 1,
+   "why": "der Hunger is masculine with no article; as the object of haben it becomes keinen.",
+   "en": "I'm not hungry."
+  },
+  {
+   "id": "a1-08-15",
+   "type": "cloze",
+   "de": "Die Milch ist ___ hier, sie ist dort.",
+   "base": "kein/nicht",
+   "answers": [
+    "nicht"
+   ],
+   "en": "The milk isn't here, it's over there."
+  },
+  {
+   "id": "a1-08-16",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "brauchen",
+    "heute",
+    "keine Tüte"
+   ],
+   "answers": [
+    "Wir brauchen heute keine Tüte.",
+    "Heute brauchen wir keine Tüte."
+   ],
+   "en": "We don't need a bag today."
+  },
+  {
+   "id": "a1-08-17",
+   "type": "choice",
+   "de": "Ich kaufe die Äpfel ___. Sie sind zu teuer.",
+   "options": [
+    "keine",
+    "kein",
+    "nicht"
+   ],
+   "answer": 2,
+   "why": "die Äpfel has a definite article, so you use nicht.",
+   "en": "I'm not buying the apples. They're too expensive."
+  },
+  {
+   "id": "a1-08-18",
+   "type": "cloze",
+   "de": "Das ist ___ Apfel, das ist eine Birne.",
+   "base": "kein/nicht",
+   "answers": [
+    "kein"
+   ],
+   "en": "That isn't an apple, that's a pear."
+  },
+  {
+   "id": "a1-08-19",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "finde",
+    "die Milch",
+    "nicht"
+   ],
+   "answers": [
+    "Ich finde die Milch nicht.",
+    "Die Milch finde ich nicht."
+   ],
+   "en": "I can't find the milk."
+  },
+  {
+   "id": "a1-08-20",
+   "type": "choice",
+   "de": "Oh nein, ich habe ___ Geld dabei!",
+   "options": [
+    "kein",
+    "nicht",
+    "keinen"
+   ],
+   "answer": 0,
+   "why": "das Geld is neuter with no article, so you use kein.",
+   "en": "Oh no, I don't have any money on me!"
+  },
+  {
+   "id": "a1-08-21",
+   "type": "cloze",
+   "de": "Wir essen ___ Fisch.",
+   "base": "kein/nicht",
+   "answers": [
+    "keinen"
+   ],
+   "en": "We don't eat fish."
+  },
+  {
+   "id": "a1-08-22",
+   "type": "order",
+   "tiles": [
+    "Haben",
+    "Sie",
+    "keine Brötchen",
+    "mehr"
+   ],
+   "answers": [
+    "Haben Sie keine Brötchen mehr?"
+   ],
+   "en": "Don't you have any bread rolls left?"
+  },
+  {
+   "id": "a1-08-23",
+   "type": "cloze",
+   "de": "Wir brauchen ___ Wasser, wir haben noch sechs Flaschen.",
+   "base": "kein/nicht",
+   "answers": [
+    "kein"
+   ],
+   "en": "We don't need water, we still have six bottles."
+  },
+  {
+   "id": "a1-08-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "kaufe",
+    "heute",
+    "keinen Käse"
+   ],
+   "answers": [
+    "Ich kaufe heute keinen Käse.",
+    "Heute kaufe ich keinen Käse."
+   ],
+   "en": "I'm not buying any cheese today."
+  }
+ ],
+ "listening": {
+  "title": "Im Supermarkt",
+  "intro": "Jan is shopping in a supermarket and asks Elif, who works there, for help.",
+  "lines": [
+   {
+    "speaker": "Jan",
+    "de": "Entschuldigung, ich finde die Eier nicht.",
+    "en": "Excuse me, I can't find the eggs."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Die Eier sind dort hinten, rechts.",
+    "en": "The eggs are back there, on the right."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Danke! Haben Sie auch Brötchen?",
+    "en": "Thanks! Do you have bread rolls too?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Nein, leider haben wir keine Brötchen mehr. Aber wir haben Brot.",
+    "en": "No, sorry, we have no bread rolls left. But we have bread."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Ist das Brot frisch?",
+    "en": "Is the bread fresh?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ja, es ist von heute Morgen.",
+    "en": "Yes, it's from this morning."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Gut. Und wo ist der Käse? Ich sehe hier keinen Käse.",
+    "en": "Good. And where is the cheese? I don't see any cheese here."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Der Käse ist nicht hier. Er ist vorne an der Theke.",
+    "en": "The cheese isn't here. It's at the counter at the front."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Ach so. Und Sojamilch? Haben Sie keine Sojamilch?",
+    "en": "I see. And soy milk? Don't you have soy milk?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Doch! Sie ist da hinten, bei den Eiern.",
+    "en": "Yes, we do! It's back there, by the eggs."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What can't Jan find at first?",
+    "options": [
+     "the bread",
+     "the eggs",
+     "the milk"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Jan get bread rolls?",
+    "options": [
+     "They aren't fresh.",
+     "They're too expensive.",
+     "There are none left."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where is the cheese?",
+    "options": [
+     "at the counter at the front",
+     "next to the eggs",
+     "at the back on the right"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Does the shop have soy milk?",
+    "options": [
+     "No, not today.",
+     "Yes, by the eggs.",
+     "Only at the counter."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wir haben heute kein Brot.",
+  "Ich finde den Käse nicht.",
+  "Nein, danke, ich brauche keine Tüte."
+ ],
+ "speaking": [
+  {
+   "de": "Entschuldigung, ich finde die Eier nicht.",
+   "en": "Excuse me, I can't find the eggs."
+  },
+  {
+   "de": "Haben Sie auch Brötchen?",
+   "en": "Do you have bread rolls too?"
+  },
+  {
+   "de": "Ist das Brot frisch?",
+   "en": "Is the bread fresh?"
+  },
+  {
+   "de": "Ich sehe hier keinen Käse.",
+   "en": "I don't see any cheese here."
+  },
+  {
+   "de": "Nein, danke, ich brauche keine Tüte.",
+   "en": "No, thanks, I don't need a bag."
+  }
+ ],
+ "writing": {
+  "task": "Your flatmate asked you to buy bread rolls, eggs and cheese, but the supermarket doesn't have everything. Write a short message (3–4 sentences) using kein and nicht.",
+  "model": "Hallo Mia, der Supermarkt hat heute keine Brötchen. Ich kaufe Brot, es ist frisch. Eier haben sie, aber ich finde den Käse nicht. Brauchst du noch etwas?"
+ }
+}

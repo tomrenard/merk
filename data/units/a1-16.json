@@ -1,0 +1,464 @@
+{
+ "id": "a1-16",
+ "cefr": "A1",
+ "title": "Places: zu, nach, in, bei",
+ "situation": "Where you go and where you are",
+ "canDo": "You can say where you are going (zum Arzt, nach Hause) and where you are (im Park, beim Arzt, zu Hause).",
+ "explanation": "Every day you say where you go and where you are: *Ich gehe zum Arzt. Ich bin beim Arzt.* These prepositions take the **dative**: der → **dem**, die → **der**, das → **dem**. With dem and der they often merge: **zum** (zu dem), **zur** (zu der), **im** (in dem), **beim** (bei dem).\n\n| Wohin? (where to?) | Wo? (where?) |\n|---|---|\n| **zum** Arzt, **zu** Anna | **beim** Arzt, **bei** Anna |\n| **zum** Supermarkt, **zur** Bank | **im** Supermarkt, **in der** Bank |\n| **nach** Berlin, **nach** Spanien | **in** Berlin, **in** Spanien |\n| **nach** Hause | **zu** Hause |\n\n- **zu** = going to a person, a shop, a building or an event: *zum Bahnhof, zur Arbeit, zu Anna.*\n- **nach** = going to a town or a country without an article, and *nach Hause*.\n- **bei** = at someone's place, at the doctor's, at a company: *bei Anna, beim Arzt, bei Siemens.*\n- **in** = inside a place: *im Park, im Büro, in der Küche.*\n- Home: **nach Hause** (going home), **zu Hause** (at home).\n\nMost common mistake: *nach* for places in town. Say *Ich gehe zum Bahnhof*, not *nach Bahnhof*. And don't use zu with towns: *nach Hamburg*.\n\nYou will also hear *ins Kino* and *in die Stadt* (in + accusative); that comes in A2.",
+ "french": "French uses à for both where and where to (à la gare, à Paris) and chez for people (chez le médecin); German splits them: zu/nach for where to (zum Arzt), bei/in for where (beim Arzt).",
+ "examples": [
+  {
+   "de": "Ich gehe heute zum Arzt.",
+   "en": "I'm going to the doctor today."
+  },
+  {
+   "de": "Morgen fahren wir nach Hamburg.",
+   "en": "Tomorrow we're going to Hamburg."
+  },
+  {
+   "de": "Anna ist beim Arzt.",
+   "en": "Anna is at the doctor's."
+  },
+  {
+   "de": "Die Kinder spielen im Park.",
+   "en": "The children are playing in the park."
+  },
+  {
+   "de": "Ich muss noch zur Bank.",
+   "en": "I still have to go to the bank."
+  },
+  {
+   "de": "Ich gehe jetzt nach Hause.",
+   "en": "I'm going home now."
+  },
+  {
+   "de": "Am Sonntag bin ich zu Hause.",
+   "en": "On Sunday I'm at home."
+  },
+  {
+   "de": "Heute Abend bin ich bei Lisa.",
+   "en": "Tonight I'm at Lisa's."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-16-01",
+   "type": "cloze",
+   "de": "Ich gehe ___ Arzt.",
+   "base": "zu",
+   "answers": [
+    "zum"
+   ],
+   "en": "I'm going to the doctor."
+  },
+  {
+   "id": "a1-16-02",
+   "type": "cloze",
+   "de": "Die Kinder spielen ___ Park.",
+   "base": "in",
+   "answers": [
+    "im"
+   ],
+   "en": "The children are playing in the park."
+  },
+  {
+   "id": "a1-16-03",
+   "type": "choice",
+   "de": "Ich fahre am Samstag ___ Hamburg.",
+   "options": [
+    "nach",
+    "zu",
+    "in"
+   ],
+   "answer": 0,
+   "why": "Use nach with towns and countries.",
+   "en": "I'm going to Hamburg on Saturday."
+  },
+  {
+   "id": "a1-16-04",
+   "type": "order",
+   "tiles": [
+    "gehe",
+    "Ich",
+    "jetzt",
+    "nach Hause"
+   ],
+   "answers": [
+    "Ich gehe jetzt nach Hause.",
+    "Jetzt gehe ich nach Hause."
+   ],
+   "en": "I'm going home now."
+  },
+  {
+   "id": "a1-16-05",
+   "type": "cloze",
+   "de": "Ich muss noch ___ Post.",
+   "base": "zu",
+   "answers": [
+    "zur"
+   ],
+   "en": "I still have to go to the post office."
+  },
+  {
+   "id": "a1-16-06",
+   "type": "choice",
+   "de": "Am Sonntag bin ich ___.",
+   "options": [
+    "zu Hause",
+    "nach Hause",
+    "bei Hause"
+   ],
+   "answer": 0,
+   "why": "zu Hause means at home; nach Hause means going home.",
+   "en": "On Sunday I'm at home."
+  },
+  {
+   "id": "a1-16-07",
+   "type": "cloze",
+   "de": "Lisa ist heute ___ Arzt.",
+   "base": "bei",
+   "answers": [
+    "beim"
+   ],
+   "en": "Lisa is at the doctor's today."
+  },
+  {
+   "id": "a1-16-08",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "im Park",
+    "spielen",
+    "Fußball"
+   ],
+   "answers": [
+    "Wir spielen im Park Fußball.",
+    "Im Park spielen wir Fußball.",
+    "Wir spielen Fußball im Park.",
+    "Fußball spielen wir im Park."
+   ],
+   "en": "We play football in the park."
+  },
+  {
+   "id": "a1-16-09",
+   "type": "choice",
+   "de": "Ich gehe ___ Bahnhof.",
+   "options": [
+    "nach",
+    "zum",
+    "zur"
+   ],
+   "answer": 1,
+   "why": "Places in town take zu, and der Bahnhof gives zu dem → zum.",
+   "en": "I'm going to the station."
+  },
+  {
+   "id": "a1-16-10",
+   "type": "cloze",
+   "de": "Wir wohnen ___ Stadt.",
+   "base": "in",
+   "answers": [
+    "in der"
+   ],
+   "en": "We live in the city."
+  },
+  {
+   "id": "a1-16-11",
+   "type": "choice",
+   "de": "Heute Abend bin ich ___ Paul.",
+   "options": [
+    "bei",
+    "zu",
+    "beim"
+   ],
+   "answer": 0,
+   "why": "bei + a name means at that person's place; names take no article.",
+   "en": "Tonight I'm at Paul's."
+  },
+  {
+   "id": "a1-16-12",
+   "type": "order",
+   "tiles": [
+    "fahre",
+    "nach Frankreich",
+    "Ich",
+    "im Sommer"
+   ],
+   "answers": [
+    "Ich fahre im Sommer nach Frankreich.",
+    "Im Sommer fahre ich nach Frankreich.",
+    "Nach Frankreich fahre ich im Sommer."
+   ],
+   "en": "I'm going to France in the summer."
+  },
+  {
+   "id": "a1-16-13",
+   "type": "cloze",
+   "de": "Ich arbeite ___ Supermarkt.",
+   "base": "in",
+   "answers": [
+    "im"
+   ],
+   "en": "I work in the supermarket."
+  },
+  {
+   "id": "a1-16-14",
+   "type": "choice",
+   "de": "Wir gehen ___ Arbeit.",
+   "options": [
+    "zur",
+    "zum",
+    "nach"
+   ],
+   "answer": 0,
+   "why": "die Arbeit is feminine: zu der → zur.",
+   "en": "We're going to work."
+  },
+  {
+   "id": "a1-16-15",
+   "type": "cloze",
+   "de": "Ich kaufe Brötchen ___ Bäcker.",
+   "base": "bei",
+   "answers": [
+    "beim"
+   ],
+   "en": "I buy rolls at the baker's."
+  },
+  {
+   "id": "a1-16-16",
+   "type": "order",
+   "tiles": [
+    "muss",
+    "zum Arzt",
+    "Ich",
+    "morgen",
+    "gehen"
+   ],
+   "answers": [
+    "Ich muss morgen zum Arzt gehen.",
+    "Morgen muss ich zum Arzt gehen."
+   ],
+   "en": "I have to go to the doctor tomorrow."
+  },
+  {
+   "id": "a1-16-17",
+   "type": "choice",
+   "de": "Wir sind am Wochenende ___ Österreich.",
+   "options": [
+    "in",
+    "nach",
+    "zu"
+   ],
+   "answer": 0,
+   "why": "Wo? with a country is in; nach is only for going there.",
+   "en": "We're in Austria at the weekend."
+  },
+  {
+   "id": "a1-16-18",
+   "type": "cloze",
+   "de": "Die Kinder sind ___ Schule.",
+   "base": "in",
+   "answers": [
+    "in der"
+   ],
+   "en": "The children are at school."
+  },
+  {
+   "id": "a1-16-19",
+   "type": "cloze",
+   "de": "Wie komme ich ___ Hotel?",
+   "base": "zu",
+   "answers": [
+    "zum"
+   ],
+   "en": "How do I get to the hotel?"
+  },
+  {
+   "id": "a1-16-20",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Mein Mann",
+    "beim Arzt",
+    "heute"
+   ],
+   "answers": [
+    "Mein Mann ist heute beim Arzt.",
+    "Heute ist mein Mann beim Arzt."
+   ],
+   "en": "My husband is at the doctor's today."
+  },
+  {
+   "id": "a1-16-21",
+   "type": "choice",
+   "de": "Ich gehe heute ___ Lisa.",
+   "options": [
+    "bei",
+    "nach",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "Going to a person is zu; bei is for being at their place.",
+   "en": "I'm going to Lisa's today."
+  },
+  {
+   "id": "a1-16-22",
+   "type": "cloze",
+   "de": "Wir sind heute Nachmittag ___ Schwimmbad.",
+   "base": "in",
+   "answers": [
+    "im"
+   ],
+   "en": "We're at the swimming pool this afternoon."
+  },
+  {
+   "id": "a1-16-23",
+   "type": "choice",
+   "de": "Das Handy ist ___ Bad.",
+   "options": [
+    "in",
+    "im",
+    "zum"
+   ],
+   "answer": 1,
+   "why": "Wo? + das Bad: in dem → im.",
+   "en": "The phone is in the bathroom."
+  },
+  {
+   "id": "a1-16-24",
+   "type": "order",
+   "tiles": [
+    "Am Abend",
+    "nach Hause",
+    "fahren",
+    "wir",
+    "zusammen"
+   ],
+   "answers": [
+    "Am Abend fahren wir zusammen nach Hause.",
+    "Wir fahren am Abend zusammen nach Hause."
+   ],
+   "en": "In the evening we drive home together."
+  }
+ ],
+ "listening": {
+  "title": "Wo bist du gerade?",
+  "intro": "Lukas calls his wife Sarah on a Saturday morning.",
+  "lines": [
+   {
+    "speaker": "Lukas",
+    "de": "Hallo Sarah, wo bist du gerade?",
+    "en": "Hi Sarah, where are you right now?"
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Ich bin in der Stadt, beim Bäcker.",
+    "en": "I'm in town, at the baker's."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Super! Kaufst du noch einen Kuchen für Oma?",
+    "en": "Great! Can you buy a cake for Grandma?"
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Ja, klar. Und wo bist du?",
+    "en": "Yes, sure. And where are you?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ich bin mit Mia im Park.",
+    "en": "I'm in the park with Mia."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Schön. Ich muss noch zur Post und zur Bank.",
+    "en": "Nice. I still have to go to the post office and the bank."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Okay. Wann bist du zu Hause?",
+    "en": "Okay. When will you be home?"
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Um eins. Und um drei fahren wir zu Oma nach Potsdam, oder?",
+    "en": "At one. And at three we're driving to Grandma's in Potsdam, right?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Genau. Mia und ich gehen jetzt auch nach Hause. Bis gleich!",
+    "en": "Exactly. Mia and I are going home now too. See you soon!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is Sarah when Lukas calls?",
+    "options": [
+     "at the post office",
+     "at the baker's",
+     "at home"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where are Lukas and Mia?",
+    "options": [
+     "in the park",
+     "at Grandma's",
+     "at the bank"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Sarah still have to go?",
+    "options": [
+     "to the doctor and the supermarket",
+     "to Potsdam on her own",
+     "to the post office and the bank"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "When will Sarah be home?",
+    "options": [
+     "at three",
+     "at one",
+     "at eleven"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich gehe morgen zum Arzt.",
+  "Wir sind am Sonntag zu Hause.",
+  "Fährst du im Sommer nach Spanien?"
+ ],
+ "speaking": [
+  {
+   "de": "Wo bist du gerade?",
+   "en": "Where are you right now?"
+  },
+  {
+   "de": "Ich bin in der Stadt, beim Bäcker.",
+   "en": "I'm in town, at the baker's."
+  },
+  {
+   "de": "Ich muss noch zur Post und zur Bank.",
+   "en": "I still have to go to the post office and the bank."
+  },
+  {
+   "de": "Ich bin mit Mia im Park.",
+   "en": "I'm in the park with Mia."
+  },
+  {
+   "de": "Wir gehen jetzt nach Hause.",
+   "en": "We're going home now."
+  }
+ ],
+ "writing": {
+  "task": "A friend wants to meet you on Saturday. Write a short message (3–4 sentences): where you are in the morning, where you go in the afternoon, and when you are at home.",
+  "model": "Hallo Tim, am Samstagvormittag bin ich beim Arzt. Dann muss ich noch zum Supermarkt. Am Nachmittag gehe ich mit Lisa zum Sport. Ab sechs bin ich zu Hause. Komm doch vorbei!"
+ }
+}

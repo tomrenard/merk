@@ -1,0 +1,493 @@
+{
+ "id": "b1-19",
+ "cefr": "B1",
+ "title": "Formal emails",
+ "situation": "Complaints and requests in writing",
+ "canDo": "You can write a clear, polite formal email with a subject line, the right greeting, a request and the right closing.",
+ "explanation": "When you complain to your landlord, ask a shop for your money back or write to an office, you write a formal email. Its parts are fixed:\n\n| part | example |\n|---|---|\n| subject | Betreff: Heizung seit Montag kaputt |\n| greeting | Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, / Sehr geehrte Damen und Herren, |\n| reason | ich schreibe Ihnen, weil … / leider muss ich Ihnen mitteilen, dass … |\n| request | Könnten Sie bitte …? / Ich bitte Sie, … zu … / Ich wäre Ihnen dankbar, wenn … |\n| end | Ich freue mich auf Ihre Antwort. / Vielen Dank im Voraus. |\n| closing | Mit freundlichen Grüßen + your full name |\n\n- **Sehr geehrte** Frau … (or Damen und Herren, when you don't know the name), but **Sehr geehrter** Herr …\n- After the greeting comes a **comma**, and the text starts with a **small letter**: *Sehr geehrter Herr Klein, **i**ch schreibe Ihnen …* (nouns keep their capital, of course).\n- Always capitalise the polite **Sie, Ihnen, Ihr**: *Ihre Rechnung* = your bill, *ihre Rechnung* = her bill.\n- No comma after *Mit freundlichen Grüßen*.\n- Be polite but clear: use Konjunktiv II for requests (*Könnten Sie …? Ich würde gern wissen, ob …*) and give a date (*bis zum 15. Mai*).\n- Attachments: *Im Anhang finden Sie …*\n- For people you write to often, *Liebe Frau Weber, … Viele Grüße* is fine.\n\nThe most common mistakes: *Sehr geehrte Herr* (it must be *geehrter*), a capital letter after the comma, and *Liebe Grüße* in a formal email.",
+ "french": "Sehr geehrte Damen und Herren is Madame, Monsieur, but the German closing is short: Mit freundlichen Grüßen replaces the long « Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées ».",
+ "examples": [
+  {
+   "de": "Betreff: Ihre Rechnung vom 3. April",
+   "en": "Subject: Your invoice of 3 April"
+  },
+  {
+   "de": "Sehr geehrte Damen und Herren, ich schreibe Ihnen wegen meiner Rechnung.",
+   "en": "Dear Sir or Madam, I'm writing to you about my bill."
+  },
+  {
+   "de": "Sehr geehrter Herr Klein, leider funktioniert die Heizung in meiner Wohnung seit Montag nicht.",
+   "en": "Dear Mr Klein, unfortunately the heating in my flat hasn't worked since Monday."
+  },
+  {
+   "de": "Könnten Sie mir bitte bis Freitag einen neuen Termin geben?",
+   "en": "Could you please give me a new appointment by Friday?"
+  },
+  {
+   "de": "Ich wäre Ihnen sehr dankbar, wenn Sie das Problem schnell lösen könnten.",
+   "en": "I would be very grateful if you could solve the problem quickly."
+  },
+  {
+   "de": "Im Anhang finden Sie eine Kopie der Rechnung.",
+   "en": "Please find a copy of the bill attached."
+  },
+  {
+   "de": "Ich freue mich auf Ihre Antwort.",
+   "en": "I look forward to your reply."
+  },
+  {
+   "de": "Vielen Dank im Voraus.",
+   "en": "Thank you in advance."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-19-01",
+   "type": "choice",
+   "de": "Sehr ___ Herr Klein,",
+   "options": [
+    "geehrte",
+    "geehrter",
+    "geehrten"
+   ],
+   "answer": 1,
+   "why": "For a man, the greeting is Sehr geehrter Herr …",
+   "en": "Dear Mr Klein,"
+  },
+  {
+   "id": "b1-19-02",
+   "type": "cloze",
+   "de": "Sehr geehrte ___ und Herren,",
+   "base": "Dame",
+   "answers": [
+    "Damen"
+   ],
+   "en": "Dear Sir or Madam,"
+  },
+  {
+   "id": "b1-19-03",
+   "type": "cloze",
+   "de": "Ich schreibe ___, weil die Heizung kaputt ist.",
+   "base": "Sie",
+   "answers": [
+    "Ihnen"
+   ],
+   "en": "I'm writing to you because the heating is broken."
+  },
+  {
+   "id": "b1-19-04",
+   "type": "order",
+   "tiles": [
+    "Könnten",
+    "Sie",
+    "mir",
+    "bitte",
+    "einen neuen Termin",
+    "geben"
+   ],
+   "answers": [
+    "Könnten Sie mir bitte einen neuen Termin geben?"
+   ],
+   "en": "Could you please give me a new appointment?"
+  },
+  {
+   "id": "b1-19-05",
+   "type": "choice",
+   "de": "Mit freundlichen ___",
+   "options": [
+    "Grüße",
+    "Grüßen",
+    "Gruß"
+   ],
+   "answer": 1,
+   "why": "mit takes the dative, and the dative plural adds -n: Grüßen.",
+   "en": "Kind regards"
+  },
+  {
+   "id": "b1-19-06",
+   "type": "cloze",
+   "de": "Ich ___ Ihnen sehr dankbar, wenn Sie mir helfen könnten.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "I would be very grateful if you could help me."
+  },
+  {
+   "id": "b1-19-07",
+   "type": "choice",
+   "de": "Vielen Dank im ___.",
+   "options": [
+    "Vorher",
+    "Voraus",
+    "Vorne"
+   ],
+   "answer": 1,
+   "why": "The fixed phrase is Vielen Dank im Voraus (thank you in advance).",
+   "en": "Thank you in advance."
+  },
+  {
+   "id": "b1-19-08",
+   "type": "cloze",
+   "de": "Könnten Sie mir bitte ___ Telefonnummer schicken?",
+   "base": "Ihr",
+   "answers": [
+    "Ihre"
+   ],
+   "en": "Could you please send me your phone number?"
+  },
+  {
+   "id": "b1-19-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "freue",
+    "mich",
+    "auf",
+    "Ihre Antwort"
+   ],
+   "answers": [
+    "Ich freue mich auf Ihre Antwort.",
+    "Auf Ihre Antwort freue ich mich."
+   ],
+   "en": "I look forward to your reply."
+  },
+  {
+   "id": "b1-19-10",
+   "type": "cloze",
+   "de": "Ich ___ gern wissen, wann der Techniker kommt.",
+   "base": "werden",
+   "answers": [
+    "würde"
+   ],
+   "en": "I'd like to know when the technician is coming."
+  },
+  {
+   "id": "b1-19-11",
+   "type": "choice",
+   "de": "Ich bitte Sie, das Problem bis zum 15. Mai ___.",
+   "options": [
+    "zu lösen",
+    "lösen",
+    "lösen zu"
+   ],
+   "answer": 0,
+   "why": "jemanden bitten, … zu … takes zu + infinitive at the end.",
+   "en": "I ask you to solve the problem by 15 May."
+  },
+  {
+   "id": "b1-19-12",
+   "type": "cloze",
+   "de": "Ich wende ___ an Sie, weil ich eine Frage zu meinem Vertrag habe.",
+   "base": "ich",
+   "answers": [
+    "mich"
+   ],
+   "en": "I'm contacting you because I have a question about my contract."
+  },
+  {
+   "id": "b1-19-13",
+   "type": "order",
+   "tiles": [
+    "Im Anhang",
+    "finden",
+    "Sie",
+    "eine Kopie",
+    "der Rechnung"
+   ],
+   "answers": [
+    "Im Anhang finden Sie eine Kopie der Rechnung.",
+    "Eine Kopie der Rechnung finden Sie im Anhang."
+   ],
+   "en": "Please find a copy of the bill attached."
+  },
+  {
+   "id": "b1-19-14",
+   "type": "choice",
+   "de": "Sehr geehrte Frau Becker, ___",
+   "options": [
+    "Ich habe eine Frage zu Ihrem Angebot.",
+    "ich habe eine Frage zu Ihrem Angebot.",
+    "ich habe eine Frage zu ihrem Angebot."
+   ],
+   "answer": 1,
+   "why": "After the comma the text starts with a small letter, but the polite Ihr keeps its capital.",
+   "en": "Dear Ms Becker, I have a question about your offer."
+  },
+  {
+   "id": "b1-19-15",
+   "type": "cloze",
+   "de": "___ Sie mir bitte sagen, ob die Wohnung noch frei ist?",
+   "base": "können",
+   "answers": [
+    "Könnten",
+    "Können"
+   ],
+   "en": "Could you please tell me whether the flat is still available?"
+  },
+  {
+   "id": "b1-19-16",
+   "type": "choice",
+   "de": "Ich habe am 2. Mai einen Drucker bei Ihnen bestellt. ___ ist er bis heute nicht angekommen.",
+   "options": [
+    "Gern",
+    "Hoffentlich",
+    "Leider"
+   ],
+   "answer": 2,
+   "why": "leider (unfortunately) is the polite way to introduce a problem.",
+   "en": "I ordered a printer from you on 2 May. Unfortunately, it still hasn't arrived."
+  },
+  {
+   "id": "b1-19-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "wäre",
+    "Ihnen",
+    "dankbar",
+    "für",
+    "eine schnelle Antwort"
+   ],
+   "answers": [
+    "Ich wäre Ihnen für eine schnelle Antwort dankbar.",
+    "Für eine schnelle Antwort wäre ich Ihnen dankbar.",
+    "Ich wäre Ihnen dankbar für eine schnelle Antwort."
+   ],
+   "en": "I would be grateful for a quick reply."
+  },
+  {
+   "id": "b1-19-18",
+   "type": "cloze",
+   "de": "Hiermit ___ ich meinen Vertrag zum 31. März.",
+   "base": "kündigen",
+   "answers": [
+    "kündige"
+   ],
+   "en": "I hereby cancel my contract with effect from 31 March."
+  },
+  {
+   "id": "b1-19-19",
+   "type": "choice",
+   "de": "Ich würde mich freuen, wenn Sie mich ___ könnten.",
+   "options": [
+    "zurückzurufen",
+    "rufen zurück",
+    "zurückrufen"
+   ],
+   "answer": 2,
+   "why": "After a modal verb like können you use the plain infinitive, without zu.",
+   "en": "I'd be glad if you could call me back."
+  },
+  {
+   "id": "b1-19-20",
+   "type": "cloze",
+   "de": "Ich bitte Sie ___ Ihr Verständnis.",
+   "base": "für/um",
+   "answers": [
+    "um"
+   ],
+   "en": "I ask for your understanding."
+  },
+  {
+   "id": "b1-19-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schreibe",
+    "Ihnen",
+    "wegen",
+    "meiner Rechnung"
+   ],
+   "answers": [
+    "Ich schreibe Ihnen wegen meiner Rechnung.",
+    "Wegen meiner Rechnung schreibe ich Ihnen."
+   ],
+   "en": "I'm writing to you about my bill."
+  },
+  {
+   "id": "b1-19-22",
+   "type": "choice",
+   "de": "Sehr geehrter Herr Klein, ich habe eine Frage zu ___ Angebot.",
+   "options": [
+    "Ihrem",
+    "ihrem",
+    "deinem"
+   ],
+   "answer": 0,
+   "why": "The polite Ihr is always capitalised; ihrem would mean her, and dein is too informal.",
+   "en": "Dear Mr Klein, I have a question about your offer."
+  },
+  {
+   "id": "b1-19-23",
+   "type": "cloze",
+   "de": "Wir ___ uns freuen, wenn Sie uns bald einen neuen Termin nennen könnten.",
+   "base": "werden",
+   "answers": [
+    "würden"
+   ],
+   "en": "We would be pleased if you could give us a new appointment soon."
+  },
+  {
+   "id": "b1-19-24",
+   "type": "order",
+   "tiles": [
+    "Leider",
+    "ist",
+    "die Lieferung",
+    "noch nicht",
+    "angekommen"
+   ],
+   "answers": [
+    "Leider ist die Lieferung noch nicht angekommen.",
+    "Die Lieferung ist leider noch nicht angekommen."
+   ],
+   "en": "Unfortunately the delivery hasn't arrived yet."
+  }
+ ],
+ "listening": {
+  "title": "Eine E-Mail an den Vermieter",
+  "intro": "Tom has to write to his landlord about the broken heating, and his colleague Elif helps him.",
+  "lines": [
+   {
+    "speaker": "Tom",
+    "de": "Elif, kannst du mir kurz helfen? Ich muss meinem Vermieter eine E-Mail schreiben.",
+    "en": "Elif, can you help me for a minute? I have to write an email to my landlord."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Klar. Worum geht es denn?",
+    "en": "Sure. What's it about?"
+   },
+   {
+    "speaker": "Tom",
+    "de": "Die Heizung ist seit einer Woche kaputt, und er geht nicht ans Telefon.",
+    "en": "The heating has been broken for a week, and he doesn't answer the phone."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Oh nein. Was hast du schon geschrieben?",
+    "en": "Oh no. What have you written so far?"
+   },
+   {
+    "speaker": "Tom",
+    "de": "„Hallo Herr Krause, die Heizung geht nicht. Machen Sie das bitte schnell.“",
+    "en": "\"Hello Mr Krause, the heating doesn't work. Please do it quickly.\""
+   },
+   {
+    "speaker": "Elif",
+    "de": "Hm, das ist ein bisschen zu direkt. Schreib lieber: „Sehr geehrter Herr Krause“.",
+    "en": "Hmm, that's a bit too direct. Better write: \"Dear Mr Krause\"."
+   },
+   {
+    "speaker": "Tom",
+    "de": "Okay. Und danach groß oder klein?",
+    "en": "OK. And after that, a capital or a small letter?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Klein, nach dem Komma. Zum Beispiel: „leider funktioniert die Heizung seit dem 3. November nicht.“",
+    "en": "Small, after the comma. For example: \"unfortunately the heating hasn't worked since 3 November.\""
+   },
+   {
+    "speaker": "Tom",
+    "de": "Gut. Und wie bitte ich ihn höflich um eine Reparatur?",
+    "en": "Good. And how do I politely ask him for a repair?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "„Könnten Sie bitte so schnell wie möglich einen Handwerker schicken?“",
+    "en": "\"Could you please send a tradesman as soon as possible?\""
+   },
+   {
+    "speaker": "Tom",
+    "de": "Soll ich auch ein Datum nennen?",
+    "en": "Should I give a date too?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ja, das ist wichtig: „Ich wäre Ihnen dankbar, wenn Sie das Problem bis Freitag lösen könnten.“",
+    "en": "Yes, that's important: \"I would be grateful if you could solve the problem by Friday.\""
+   },
+   {
+    "speaker": "Tom",
+    "de": "Und am Ende schreibe ich „Liebe Grüße“?",
+    "en": "And at the end I write \"Love\"?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Nein, in einer formellen E-Mail schreibst du „Mit freundlichen Grüßen“. Und vergiss den Betreff nicht!",
+    "en": "No, in a formal email you write \"Kind regards\". And don't forget the subject line!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Tom's problem?",
+    "options": [
+     "His heating has been broken for a week.",
+     "His landlord wants more rent.",
+     "His internet doesn't work."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Elif think of Tom's first version?",
+    "options": [
+     "It's too long.",
+     "It's a bit too direct.",
+     "It has too many spelling mistakes."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Elif say about the first word after the greeting?",
+    "options": [
+     "It must be the landlord's name.",
+     "It always starts with a capital letter.",
+     "It starts with a small letter after the comma."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How should Tom end his email?",
+    "options": [
+     "With \"Mit freundlichen Grüßen\".",
+     "With \"Liebe Grüße\".",
+     "With \"Bis bald\"."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Sehr geehrte Damen und Herren, ich schreibe Ihnen wegen meiner Rechnung.",
+  "Könnten Sie mir bitte bis Freitag einen neuen Termin geben?",
+  "Ich freue mich auf Ihre Antwort und danke Ihnen im Voraus."
+ ],
+ "speaking": [
+  {
+   "de": "Sehr geehrter Herr Krause, leider funktioniert die Heizung nicht.",
+   "en": "Dear Mr Krause, unfortunately the heating isn't working."
+  },
+  {
+   "de": "Könnten Sie bitte so schnell wie möglich einen Handwerker schicken?",
+   "en": "Could you please send a tradesman as soon as possible?"
+  },
+  {
+   "de": "Ich wäre Ihnen dankbar, wenn Sie das Problem bis Freitag lösen könnten.",
+   "en": "I would be grateful if you could solve the problem by Friday."
+  },
+  {
+   "de": "Ich freue mich auf Ihre Antwort.",
+   "en": "I look forward to your reply."
+  },
+  {
+   "de": "Vielen Dank im Voraus.",
+   "en": "Thank you in advance."
+  }
+ ],
+ "writing": {
+  "task": "Three weeks ago you ordered a washing machine online and paid for it. It hasn't arrived, and nobody answers the phone. Write a formal email of 80–100 words to the shop: a subject line, greeting, what happened, what you want and by when, and a closing.",
+  "model": "Betreff: Bestellung Nr. 45821 – Waschmaschine nicht geliefert\n\nSehr geehrte Damen und Herren,\n\nam 2. Mai habe ich bei Ihnen online eine Waschmaschine bestellt und sofort bezahlt. Laut Ihrer E-Mail sollte sie nach fünf Tagen kommen. Leider ist die Waschmaschine bis heute nicht angekommen, und am Telefon erreiche ich niemanden. Könnten Sie mir bitte mitteilen, wann sie geliefert wird? Falls das nicht bis zum 31. Mai möglich ist, bitte ich Sie, mir das Geld zurückzuzahlen. Im Anhang finden Sie die Rechnung.\n\nVielen Dank im Voraus.\n\nMit freundlichen Grüßen\nClaire Martin"
+ }
+}

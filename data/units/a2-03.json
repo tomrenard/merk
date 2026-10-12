@@ -1,0 +1,468 @@
+{
+ "id": "a2-03",
+ "cefr": "A2",
+ "title": "The dative",
+ "situation": "Giving presents",
+ "canDo": "You can say who you give, send or show things to, and use verbs like helfen and gefallen, with the dative.",
+ "explanation": "When you give a present, someone receives it. The receiver is in the **dative**: *Ich schenke **meiner Mutter** Blumen.* (Blumen is the accusative object.)\n\n| | masculine | feminine | neuter | plural |\n|---|---|---|---|---|\n| definite | dem | der | dem | den …**n** |\n| indefinite | einem | einer | einem | – |\n| possessive | meinem | meiner | meinem | meinen …**n** |\n\n- In the **plural**, the noun also gets **-n**: *den Kindern, meinen Freunden*, but not if it already ends in -n or -s: *den Eltern, den Autos*.\n- Pronouns: mir, dir, **ihm** (him), **ihr** (her), uns, euch, **ihnen** (them), **Ihnen** (you, formal).\n- dein, sein, ihr, unser, euer take the same endings as mein: *deinem Vater, unserer Tochter*.\n\nVerbs with a receiver: **geben, schenken, schicken, bringen, zeigen**. If both objects are nouns, the person usually comes first: *Wir geben dem Kind ein Eis.*\n\nSome verbs take **only** a dative object: **helfen, danken, gratulieren, gefallen, gehören**: *Kann ich dir helfen? Die Tasche gehört der Frau.*\n\nCommon mistake: *Ich helfe dich.* → **Ich helfe dir.**",
+ "french": "Like « donner à quelqu'un », the receiver is the indirect object (lui → ihm/ihr), but careful: helfen takes the dative while « aider quelqu'un » takes a direct object.",
+ "examples": [
+  {
+   "de": "Ich schenke meiner Mutter Blumen.",
+   "en": "I'm giving my mother flowers."
+  },
+  {
+   "de": "Was schenkst du deinem Bruder zum Geburtstag?",
+   "en": "What are you giving your brother for his birthday?"
+  },
+  {
+   "de": "Wir geben den Kindern Schokolade.",
+   "en": "We're giving the children chocolate."
+  },
+  {
+   "de": "Das Buch gefällt mir sehr.",
+   "en": "I like the book a lot."
+  },
+  {
+   "de": "Kann ich dir helfen?",
+   "en": "Can I help you?"
+  },
+  {
+   "de": "Ich gratuliere dir zum Geburtstag!",
+   "en": "Happy birthday!"
+  },
+  {
+   "de": "Gehört die Tasche Ihnen?",
+   "en": "Is this bag yours?"
+  },
+  {
+   "de": "Ich schicke meinen Eltern ein Paket.",
+   "en": "I'm sending my parents a parcel."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-03-01",
+   "type": "cloze",
+   "de": "Ich schenke ___ Mutter Blumen.",
+   "base": "mein",
+   "answers": [
+    "meiner"
+   ],
+   "en": "I'm giving my mother flowers."
+  },
+  {
+   "id": "a2-03-02",
+   "type": "cloze",
+   "de": "Was schenkst du ___ Vater?",
+   "base": "dein",
+   "answers": [
+    "deinem"
+   ],
+   "en": "What are you giving your father?"
+  },
+  {
+   "id": "a2-03-03",
+   "type": "choice",
+   "de": "Kann ich ___ helfen?",
+   "options": [
+    "dich",
+    "dir",
+    "du"
+   ],
+   "answer": 1,
+   "why": "helfen takes the dative: dir.",
+   "en": "Can I help you?"
+  },
+  {
+   "id": "a2-03-04",
+   "type": "cloze",
+   "de": "Wir geben ___ Kindern Schokolade.",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "We're giving the children chocolate."
+  },
+  {
+   "id": "a2-03-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schenke",
+    "meinem Bruder",
+    "ein Buch"
+   ],
+   "answers": [
+    "Ich schenke meinem Bruder ein Buch.",
+    "Meinem Bruder schenke ich ein Buch.",
+    "Ein Buch schenke ich meinem Bruder."
+   ],
+   "en": "I'm giving my brother a book."
+  },
+  {
+   "id": "a2-03-06",
+   "type": "choice",
+   "de": "Ich schicke meinen ___ ein Paket.",
+   "options": [
+    "Freunde",
+    "Freunden",
+    "Freund"
+   ],
+   "answer": 1,
+   "why": "Dative plural: meinen Freunden, with -n on the noun.",
+   "en": "I'm sending my friends a parcel."
+  },
+  {
+   "id": "a2-03-07",
+   "type": "cloze",
+   "de": "Das Geschenk gefällt ___ sehr.",
+   "base": "er",
+   "answers": [
+    "ihm"
+   ],
+   "en": "He likes the present a lot."
+  },
+  {
+   "id": "a2-03-08",
+   "type": "choice",
+   "de": "Die Tasche gehört ___ Frau dort.",
+   "options": [
+    "der",
+    "die",
+    "den"
+   ],
+   "answer": 0,
+   "why": "gehören takes the dative, and the feminine dative article is der.",
+   "en": "The bag belongs to the woman over there."
+  },
+  {
+   "id": "a2-03-09",
+   "type": "cloze",
+   "de": "Ich danke ___ für die Blumen.",
+   "base": "Sie",
+   "answers": [
+    "Ihnen"
+   ],
+   "en": "Thank you for the flowers."
+  },
+  {
+   "id": "a2-03-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "gratulieren",
+    "zum Geburtstag",
+    "dir"
+   ],
+   "answers": [
+    "Wir gratulieren dir zum Geburtstag.",
+    "Zum Geburtstag gratulieren wir dir."
+   ],
+   "en": "We wish you a happy birthday."
+  },
+  {
+   "id": "a2-03-11",
+   "type": "choice",
+   "de": "Gibst du ___ Hund Wasser?",
+   "options": [
+    "den",
+    "dem",
+    "der"
+   ],
+   "answer": 1,
+   "why": "The receiver is in the dative, and the masculine dative is dem.",
+   "en": "Are you giving the dog water?"
+  },
+  {
+   "id": "a2-03-12",
+   "type": "cloze",
+   "de": "Was schenken wir ___ Lehrerin?",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "What shall we give the teacher?"
+  },
+  {
+   "id": "a2-03-13",
+   "type": "choice",
+   "de": "Kommst du morgen? Ich zeige ___ dann die Fotos.",
+   "options": [
+    "dir",
+    "dich",
+    "du"
+   ],
+   "answer": 0,
+   "why": "The person you show something to is in the dative: dir.",
+   "en": "Are you coming tomorrow? I'll show you the photos then."
+  },
+  {
+   "id": "a2-03-14",
+   "type": "cloze",
+   "de": "Ich backe ___ Eltern einen Kuchen.",
+   "base": "mein",
+   "answers": [
+    "meinen"
+   ],
+   "en": "I'm baking my parents a cake."
+  },
+  {
+   "id": "a2-03-15",
+   "type": "order",
+   "tiles": [
+    "Gefällt",
+    "dir",
+    "das Kleid"
+   ],
+   "answers": [
+    "Gefällt dir das Kleid?"
+   ],
+   "en": "Do you like the dress?"
+  },
+  {
+   "id": "a2-03-16",
+   "type": "choice",
+   "de": "Ich habe ___ Kindern Bücher geschenkt.",
+   "options": [
+    "die",
+    "den",
+    "dem"
+   ],
+   "answer": 1,
+   "why": "Dative plural: den, and the noun gets -n: den Kindern.",
+   "en": "I gave the children books."
+  },
+  {
+   "id": "a2-03-17",
+   "type": "cloze",
+   "de": "Das Fahrrad gehört ___ Tochter.",
+   "base": "unser",
+   "answers": [
+    "unserer"
+   ],
+   "en": "The bike belongs to our daughter."
+  },
+  {
+   "id": "a2-03-18",
+   "type": "choice",
+   "de": "Kannst du ___ bitte helfen? Die Tasche ist so schwer.",
+   "options": [
+    "mich",
+    "mir",
+    "mein"
+   ],
+   "answer": 1,
+   "why": "helfen takes the dative: mir.",
+   "en": "Can you help me, please? The bag is so heavy."
+  },
+  {
+   "id": "a2-03-19",
+   "type": "cloze",
+   "de": "Wir schenken ___ einen Gutschein.",
+   "base": "sie (they)",
+   "answers": [
+    "ihnen"
+   ],
+   "en": "We're giving them a voucher."
+  },
+  {
+   "id": "a2-03-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schicke",
+    "eine Karte",
+    "meiner Oma"
+   ],
+   "answers": [
+    "Ich schicke meiner Oma eine Karte.",
+    "Meiner Oma schicke ich eine Karte.",
+    "Eine Karte schicke ich meiner Oma."
+   ],
+   "en": "I'm sending my grandma a card."
+  },
+  {
+   "id": "a2-03-21",
+   "type": "choice",
+   "de": "Wie geht es ___ Eltern?",
+   "options": [
+    "deinen",
+    "deine",
+    "deinem"
+   ],
+   "answer": 0,
+   "why": "es geht takes the dative, and the dative plural of dein is deinen.",
+   "en": "How are your parents?"
+  },
+  {
+   "id": "a2-03-22",
+   "type": "cloze",
+   "de": "Hast du ___ Freundin schon gratuliert?",
+   "base": "dein",
+   "answers": [
+    "deiner"
+   ],
+   "en": "Have you congratulated your girlfriend yet?"
+  },
+  {
+   "id": "a2-03-23",
+   "type": "order",
+   "tiles": [
+    "schenkt",
+    "Was",
+    "ihr",
+    "eurem Vater"
+   ],
+   "answers": [
+    "Was schenkt ihr eurem Vater?"
+   ],
+   "en": "What are you (all) giving your father?"
+  },
+  {
+   "id": "a2-03-24",
+   "type": "order",
+   "tiles": [
+    "Die Blumen",
+    "sehr",
+    "gefallen",
+    "meiner Mutter"
+   ],
+   "answers": [
+    "Die Blumen gefallen meiner Mutter sehr.",
+    "Meiner Mutter gefallen die Blumen sehr."
+   ],
+   "en": "My mother likes the flowers a lot."
+  }
+ ],
+ "listening": {
+  "title": "Ein Geschenk für die Schwester",
+  "intro": "Clara asks Ben for ideas for her sister's birthday present.",
+  "lines": [
+   {
+    "speaker": "Clara",
+    "de": "Am Samstag hat meine Schwester Geburtstag. Was schenke ich ihr nur?",
+    "en": "My sister's birthday is on Saturday. What on earth shall I give her?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Was mag sie denn? Liest sie gern?",
+    "en": "What does she like? Does she like reading?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Ja, aber ich habe ihr letztes Jahr schon ein Buch geschenkt.",
+    "en": "Yes, but I already gave her a book last year."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und Blumen? Die gefallen ihr bestimmt.",
+    "en": "And flowers? She'd surely like those."
+   },
+   {
+    "speaker": "Clara",
+    "de": "Nein, das ist mir zu langweilig.",
+    "en": "No, that's too boring for me."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Vielleicht einen Gutschein für ein Konzert? Sie hört doch gern Musik.",
+    "en": "Maybe a voucher for a concert? She likes listening to music, doesn't she?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Gute Idee! Und den Kindern bringe ich Schokolade mit.",
+    "en": "Good idea! And I'll bring the children chocolate."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ihren Kindern? Wie alt sind sie denn?",
+    "en": "Her children? How old are they?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Vier und sieben. Die Schokolade gehört dann natürlich den Kindern, nicht meiner Schwester!",
+    "en": "Four and seven. The chocolate is for the children, of course, not my sister!"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Haha. Zeigst du mir dann den Gutschein? Ich schreibe ihr auch eine Karte.",
+    "en": "Haha. Will you show me the voucher then? I'll write her a card too."
+   },
+   {
+    "speaker": "Clara",
+    "de": "Klar, ich schicke dir morgen ein Foto.",
+    "en": "Sure, I'll send you a photo tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Whose birthday is it on Saturday?",
+    "options": [
+     "Clara's mother's.",
+     "Clara's sister's.",
+     "Ben's sister's."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Clara want to give a book?",
+    "options": [
+     "She gave her one last year.",
+     "Her sister doesn't read.",
+     "Books are too expensive."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Clara decide to give her sister?",
+    "options": [
+     "Flowers.",
+     "A book.",
+     "A voucher for a concert."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will the children get?",
+    "options": [
+     "Cake.",
+     "Chocolate.",
+     "Toys."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich schenke meiner Schwester einen Gutschein.",
+  "Die Schokolade gehört natürlich den Kindern.",
+  "Kannst du mir bitte die Karte zeigen?"
+ ],
+ "speaking": [
+  {
+   "de": "Was schenke ich ihr nur?",
+   "en": "What on earth shall I give her?"
+  },
+  {
+   "de": "Ich habe ihr letztes Jahr ein Buch geschenkt.",
+   "en": "I gave her a book last year."
+  },
+  {
+   "de": "Die gefallen ihr bestimmt.",
+   "en": "She'd surely like those."
+  },
+  {
+   "de": "Den Kindern bringe ich Schokolade mit.",
+   "en": "I'll bring the children chocolate."
+  },
+  {
+   "de": "Ich schicke dir morgen ein Foto.",
+   "en": "I'll send you a photo tomorrow."
+  }
+ ],
+ "writing": {
+  "task": "A friend's birthday is coming up. Write 5–6 sentences to another friend: say what you are giving to whom and ask for help.",
+  "model": "Hallo Nina, am Freitag hat Paul Geburtstag. Ich schenke ihm ein Buch, er liest doch so gern. Seinen Kindern bringe ich Schokolade mit. Kannst du mir helfen? Ich brauche noch eine Karte. Zeigst du mir morgen den Laden am Markt? Liebe Grüße, Tom"
+ }
+}

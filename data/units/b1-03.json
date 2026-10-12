@@ -1,0 +1,469 @@
+{
+ "id": "b1-03",
+ "cefr": "B1",
+ "title": "Relative clauses",
+ "situation": "Describing people and things",
+ "canDo": "You can describe people and things with relative clauses, including ones with a preposition (die Firma, bei der ich arbeite).",
+ "explanation": "To describe people and things, you often add a **relative clause**: *der Kollege, **der** neben mir sitzt* (the colleague who sits next to me). It works like English *who / which / that*, with three rules:\n\n1. The relative pronoun takes its **gender and number from the noun** (der Kollege → der).\n2. It takes its **case from its job inside the relative clause**.\n3. The **verb goes to the end**, and commas close off the clause.\n\nThe pronouns are almost the same as der/die/das:\n\n| | masc. | fem. | neuter | plural |\n|---|---|---|---|---|\n| nominative | der | die | das | die |\n| accusative | den | die | das | die |\n| dative | dem | der | dem | **denen** |\n\n- subject: *der Mann, **der** dort steht*\n- accusative object: *der Mann, **den** ich kenne*\n- dative (helfen, gehören, danken…): *der Mann, **dem** ich helfe*\n\nWith a **preposition**, it comes first and decides the case: *die Firma, **bei der** ich arbeite; die Freunde, **mit denen** ich wohne; der Kurs, **für den** ich lerne.*\n\nAfter **alles, etwas, nichts** use **was**: *Das ist alles, was ich weiß.*\n\nUse **wo** only for places (*die Stadt, wo ich wohne*), never for people or things.\n\nMost common mistake: taking the case from the main clause. In *Ich kenne den Mann, **der** dort steht* the pronoun is **der**, because inside its own clause it is the subject.",
+ "french": "Like qui / que / avec qui, but German has one set of words that changes with gender and case: der Mann, der… (qui), der Mann, den… (que), der Mann, mit dem… (avec qui), and the verb goes to the end.",
+ "examples": [
+  {
+   "de": "Das ist der Kollege, der neben mir sitzt.",
+   "en": "That's the colleague who sits next to me."
+  },
+  {
+   "de": "Die Frau, die du gestern gesehen hast, ist meine Nachbarin.",
+   "en": "The woman you saw yesterday is my neighbour."
+  },
+  {
+   "de": "Ich suche einen Laptop, der nicht so schwer ist.",
+   "en": "I'm looking for a laptop that isn't so heavy."
+  },
+  {
+   "de": "Das ist das Café, in dem wir uns kennengelernt haben.",
+   "en": "That's the café where we met."
+  },
+  {
+   "de": "Die Leute, mit denen ich arbeite, sind sehr nett.",
+   "en": "The people I work with are very nice."
+  },
+  {
+   "de": "Hier ist der Schlüssel, den du gesucht hast.",
+   "en": "Here's the key you were looking for."
+  },
+  {
+   "de": "Das ist alles, was ich weiß.",
+   "en": "That's all I know."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-03-01",
+   "type": "cloze",
+   "de": "Das ist der Mann, ___ neben mir wohnt.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "That's the man who lives next to me."
+  },
+  {
+   "id": "b1-03-02",
+   "type": "cloze",
+   "de": "Das ist die Frau, ___ ich gestern getroffen habe.",
+   "base": "der/die/das",
+   "answers": [
+    "die"
+   ],
+   "en": "That's the woman I met yesterday."
+  },
+  {
+   "id": "b1-03-03",
+   "type": "choice",
+   "de": "Wo ist das Buch, ___ du mir gegeben hast?",
+   "options": [
+    "den",
+    "das",
+    "der"
+   ],
+   "answer": 1,
+   "why": "Buch is neuter and the object of geben, so: das.",
+   "en": "Where is the book you gave me?"
+  },
+  {
+   "id": "b1-03-04",
+   "type": "cloze",
+   "de": "Der Kollege, ___ ich heute angerufen habe, ist krank.",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "The colleague I called today is ill."
+  },
+  {
+   "id": "b1-03-05",
+   "type": "choice",
+   "de": "Die Kinder, ___ im Garten spielen, sind laut.",
+   "options": [
+    "denen",
+    "die",
+    "der"
+   ],
+   "answer": 1,
+   "why": "Kinder is plural and the subject of spielen, so: die.",
+   "en": "The children who are playing in the garden are loud."
+  },
+  {
+   "id": "b1-03-06",
+   "type": "order",
+   "tiles": [
+    "Das ist",
+    "die Wohnung,",
+    "die",
+    "mir",
+    "gefällt"
+   ],
+   "answers": [
+    "Das ist die Wohnung, die mir gefällt."
+   ],
+   "en": "That's the flat I like."
+  },
+  {
+   "id": "b1-03-07",
+   "type": "cloze",
+   "de": "Die Nachbarin, ___ ich oft helfe, ist schon 85.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "The neighbour I often help is already 85."
+  },
+  {
+   "id": "b1-03-08",
+   "type": "choice",
+   "de": "Das sind die Freunde, mit ___ ich in Urlaub fahre.",
+   "options": [
+    "den",
+    "denen",
+    "die"
+   ],
+   "answer": 1,
+   "why": "mit takes the dative, and the dative plural relative pronoun is denen.",
+   "en": "Those are the friends I'm going on holiday with."
+  },
+  {
+   "id": "b1-03-09",
+   "type": "cloze",
+   "de": "Wie heißt der Film, ___ du gesehen hast?",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "What's the name of the film you saw?"
+  },
+  {
+   "id": "b1-03-10",
+   "type": "choice",
+   "de": "Ich suche eine Wohnung, ___ einen Balkon hat.",
+   "options": [
+    "wo",
+    "der",
+    "die"
+   ],
+   "answer": 2,
+   "why": "The pronoun is the subject of hat and Wohnung is feminine, so: die; wo can't be a subject.",
+   "en": "I'm looking for a flat that has a balcony."
+  },
+  {
+   "id": "b1-03-11",
+   "type": "order",
+   "tiles": [
+    "Der Mann,",
+    "der",
+    "dort",
+    "steht,",
+    "ist",
+    "mein Chef"
+   ],
+   "answers": [
+    "Der Mann, der dort steht, ist mein Chef.",
+    "Mein Chef ist der Mann, der dort steht."
+   ],
+   "en": "The man standing over there is my boss."
+  },
+  {
+   "id": "b1-03-12",
+   "type": "cloze",
+   "de": "Das ist der Stuhl, auf ___ ich immer sitze.",
+   "base": "der/die/das",
+   "answers": [
+    "dem"
+   ],
+   "en": "That's the chair I always sit on."
+  },
+  {
+   "id": "b1-03-13",
+   "type": "choice",
+   "de": "Die Stadt, in ___ ich wohne, ist sehr schön.",
+   "options": [
+    "der",
+    "die",
+    "dem"
+   ],
+   "answer": 0,
+   "why": "in (where?) takes the dative, and Stadt is feminine: in der.",
+   "en": "The town I live in is very beautiful."
+  },
+  {
+   "id": "b1-03-14",
+   "type": "cloze",
+   "de": "Das ist das Kind, ___ ich ein Buch geschenkt habe.",
+   "base": "der/die/das",
+   "answers": [
+    "dem"
+   ],
+   "en": "That's the child I gave a book to."
+  },
+  {
+   "id": "b1-03-15",
+   "type": "choice",
+   "de": "Kennst du die Leute, ___ das Haus gehört?",
+   "options": [
+    "die",
+    "den",
+    "denen"
+   ],
+   "answer": 2,
+   "why": "gehören takes the dative, and the dative plural is denen.",
+   "en": "Do you know the people the house belongs to?"
+  },
+  {
+   "id": "b1-03-16",
+   "type": "order",
+   "tiles": [
+    "Das ist",
+    "die Firma,",
+    "bei der",
+    "ich",
+    "arbeite"
+   ],
+   "answers": [
+    "Das ist die Firma, bei der ich arbeite."
+   ],
+   "en": "That's the company I work for."
+  },
+  {
+   "id": "b1-03-17",
+   "type": "cloze",
+   "de": "Der Arzt, zu ___ ich gehe, hat heute keine Sprechstunde.",
+   "base": "der/die/das",
+   "answers": [
+    "dem"
+   ],
+   "en": "The doctor I go to has no office hours today."
+  },
+  {
+   "id": "b1-03-18",
+   "type": "choice",
+   "de": "Ist das alles, ___ du weißt?",
+   "options": [
+    "das",
+    "was",
+    "die"
+   ],
+   "answer": 1,
+   "why": "After alles, etwas and nichts the relative pronoun is was.",
+   "en": "Is that all you know?"
+  },
+  {
+   "id": "b1-03-19",
+   "type": "cloze",
+   "de": "Ich habe eine Kollegin, mit ___ ich jeden Tag Mittag esse.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "I have a colleague I have lunch with every day."
+  },
+  {
+   "id": "b1-03-20",
+   "type": "order",
+   "tiles": [
+    "Die Frau,",
+    "mit der",
+    "ich",
+    "gesprochen habe,",
+    "kommt",
+    "aus Spanien"
+   ],
+   "answers": [
+    "Die Frau, mit der ich gesprochen habe, kommt aus Spanien."
+   ],
+   "en": "The woman I spoke to comes from Spain."
+  },
+  {
+   "id": "b1-03-21",
+   "type": "choice",
+   "de": "Das ist der Kurs, für ___ ich mich angemeldet habe.",
+   "options": [
+    "dem",
+    "der",
+    "den"
+   ],
+   "answer": 2,
+   "why": "für takes the accusative, and Kurs is masculine: für den.",
+   "en": "That's the course I signed up for."
+  },
+  {
+   "id": "b1-03-22",
+   "type": "cloze",
+   "de": "Die Schuhe, ___ ich gestern gekauft habe, sind zu klein.",
+   "base": "der/die/das",
+   "answers": [
+    "die"
+   ],
+   "en": "The shoes I bought yesterday are too small."
+  },
+  {
+   "id": "b1-03-23",
+   "type": "order",
+   "tiles": [
+    "Wie heißt",
+    "das Restaurant,",
+    "von dem",
+    "du",
+    "erzählt hast"
+   ],
+   "answers": [
+    "Wie heißt das Restaurant, von dem du erzählt hast?"
+   ],
+   "en": "What's the name of the restaurant you told me about?"
+  },
+  {
+   "id": "b1-03-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "einen Freund,",
+    "der",
+    "in Paris",
+    "wohnt"
+   ],
+   "answers": [
+    "Ich habe einen Freund, der in Paris wohnt."
+   ],
+   "en": "I have a friend who lives in Paris."
+  }
+ ],
+ "listening": {
+  "title": "Wer ist das?",
+  "intro": "At a work party, Felix asks his colleague Anna about the other guests.",
+  "lines": [
+   {
+    "speaker": "Felix",
+    "de": "Sag mal, Anna, wer ist der Mann, der dort am Fenster steht?",
+    "en": "Tell me, Anna, who's the man standing over there by the window?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Das ist Herr Brandt, der neue Chef, von dem ich dir erzählt habe.",
+    "en": "That's Mr Brandt, the new boss I told you about."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Ach, der! Und die Frau, mit der er spricht?",
+    "en": "Oh, him! And the woman he's talking to?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Das ist seine Frau. Sie ist Ärztin in dem Krankenhaus, in dem auch meine Schwester arbeitet.",
+    "en": "That's his wife. She's a doctor at the hospital where my sister works too."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Und kennst du die Leute, die neben der Tür sitzen?",
+    "en": "And do you know the people sitting by the door?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Nur den jungen Mann mit der Brille. Das ist Max, der Praktikant, den wir im Mai eingestellt haben.",
+    "en": "Only the young man with the glasses. That's Max, the intern we took on in May."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Ah, der Max, dem du am Anfang alles erklären musstest?",
+    "en": "Ah, the Max you had to explain everything to at the start?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Genau. Er ist inzwischen sehr gut. Er hat das Programm geschrieben, mit dem wir jetzt arbeiten.",
+    "en": "Exactly. He's very good now. He wrote the program we work with now."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Nicht schlecht! Und wer hat eigentlich den Kuchen mitgebracht, der da auf dem Tisch steht?",
+    "en": "Not bad! And who actually brought the cake that's on the table there?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich! Das ist ein Rezept, das ich von meiner Oma habe.",
+    "en": "I did! It's a recipe I got from my grandma."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Dann probiere ich gleich ein Stück.",
+    "en": "Then I'll try a piece right away."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who is the man by the window?",
+    "options": [
+     "A new colleague",
+     "The new boss",
+     "Anna's neighbour"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where does the boss's wife work?",
+    "options": [
+     "At the hospital where Anna's sister works",
+     "In Anna's office",
+     "At a school"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What did Max do?",
+    "options": [
+     "He brought the cake",
+     "He organised the party",
+     "He wrote the program the team uses"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where does the cake recipe come from?",
+    "options": [
+     "From a cookbook",
+     "From Anna's grandmother",
+     "From Max"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Mann, der am Fenster steht, ist mein neuer Chef.",
+  "Das ist die Kollegin, mit der ich jeden Tag arbeite.",
+  "Wo ist das Buch, das ich dir gegeben habe?"
+ ],
+ "speaking": [
+  {
+   "de": "Wer ist der Mann, der dort am Fenster steht?",
+   "en": "Who's the man standing over there by the window?"
+  },
+  {
+   "de": "Das ist der neue Chef, von dem ich dir erzählt habe.",
+   "en": "That's the new boss I told you about."
+  },
+  {
+   "de": "Kennst du die Leute, die neben der Tür sitzen?",
+   "en": "Do you know the people sitting by the door?"
+  },
+  {
+   "de": "Er hat das Programm geschrieben, mit dem wir jetzt arbeiten.",
+   "en": "He wrote the program we work with now."
+  },
+  {
+   "de": "Das ist ein Rezept, das ich von meiner Oma habe.",
+   "en": "It's a recipe I got from my grandma."
+  }
+ ],
+ "writing": {
+  "task": "A friend is coming to your party on Saturday and doesn't know anyone. Write an 80–100-word message describing three people she will meet there.",
+  "model": "Hallo Sophie,\n\nich freue mich, dass du am Samstag zu meiner Party kommst! Hier ein paar Infos über die Gäste. Paula ist die Kollegin, mit der ich jeden Tag Mittag esse. Sie ist sehr lustig und spricht auch Französisch. Dann kommt Jonas, der Nachbar, der mir beim Umzug geholfen hat. Er kocht gern und bringt sicher etwas Leckeres mit. Und du lernst endlich Marie kennen, von der ich dir schon so viel erzählt habe. Sie ist die Frau, die das schöne Café in unserer Straße hat. Ich bin sicher, ihr versteht euch gut!\n\nBis Samstag\nLéa"
+ }
+}

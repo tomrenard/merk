@@ -1,0 +1,486 @@
+{
+ "id": "b1-20",
+ "cefr": "B1",
+ "title": "Giving opinions and disagreeing politely",
+ "situation": "Discussing and disagreeing politely",
+ "canDo": "You can give your opinion, weigh pros and cons with einerseits … andererseits, and agree or disagree politely in a discussion.",
+ "explanation": "In a discussion – in a team meeting, with your neighbours or about the news – you give your opinion, weigh pros and cons, and disagree without sounding rude.\n\n**Giving your opinion**\n- **Meiner Meinung nach** + verb: *Meiner Meinung nach **ist** das zu teuer.* It fills the first position, so the verb comes straight after it.\n- *Ich finde / glaube / denke, dass* … (verb at the end), or without *dass* and normal word order: *Ich finde, das **ist** eine gute Idee.*\n- *Ich bin der Meinung, dass …*\n\n**Weighing pros and cons**\n- **einerseits … andererseits** (on the one hand … on the other): *Einerseits **ist** die Wohnung schön, andererseits **ist** sie zu teuer.* Both fill the first position, so the verb follows.\n- *Ein Vorteil / Nachteil ist, dass …*\n\n**Agreeing and disagreeing**\n\n| agree | disagree politely |\n|---|---|\n| Da hast du recht. | Das sehe ich ein bisschen anders. |\n| Ich bin ganz deiner Meinung. | Da bin ich anderer Meinung. |\n| Das sehe ich auch so. | Ja, schon, aber … |\n\n- Soften with Konjunktiv II: *Ich würde sagen, … Wäre es nicht besser, wenn …?*\n- **einverstanden** means you accept a plan or proposal: *Um acht? – Einverstanden!* For opinions, say *Ich bin deiner Meinung* or *Da hast du recht*.\n\nThe most common mistakes: mixing two openers and the wrong word order (not ~~Meiner Meinung nach ich finde, das ist teuer~~, but *Meiner Meinung nach ist das teuer*), and using *einverstanden* for opinions.",
+ "french": "à mon avis is meiner Meinung nach and d'un côté … de l'autre is einerseits … andererseits, but je suis d'accord avec toi is usually Da hast du recht or Ich bin deiner Meinung: einverstanden is only for accepting a proposal.",
+ "examples": [
+  {
+   "de": "Meiner Meinung nach ist die Miete zu hoch.",
+   "en": "In my opinion the rent is too high."
+  },
+  {
+   "de": "Einerseits ist das Auto praktisch, andererseits kostet es viel Geld.",
+   "en": "On the one hand the car is practical, on the other it costs a lot of money."
+  },
+  {
+   "de": "Ich finde, dass die Stadt mehr Fahrradwege braucht.",
+   "en": "I think the city needs more cycle paths."
+  },
+  {
+   "de": "Da hast du recht.",
+   "en": "You're right there."
+  },
+  {
+   "de": "Das sehe ich ein bisschen anders.",
+   "en": "I see that a little differently."
+  },
+  {
+   "de": "Ich bin der Meinung, dass Kinder weniger Zeit am Handy verbringen sollten.",
+   "en": "I'm of the opinion that children should spend less time on their phones."
+  },
+  {
+   "de": "Ja, schon, aber wäre es nicht besser, wenn wir noch warten?",
+   "en": "Yes, sure, but wouldn't it be better if we waited a bit?"
+  },
+  {
+   "de": "Ein Vorteil ist, dass man im Homeoffice keine Zeit im Zug verliert.",
+   "en": "One advantage is that you don't lose time on the train when you work from home."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-20-01",
+   "type": "choice",
+   "de": "Meiner Meinung nach ___ zu hoch.",
+   "options": [
+    "die Miete ist",
+    "ist die Miete",
+    "die Miete sei"
+   ],
+   "answer": 1,
+   "why": "Meiner Meinung nach fills the first position, so the verb comes straight after it.",
+   "en": "In my opinion the rent is too high."
+  },
+  {
+   "id": "b1-20-02",
+   "type": "cloze",
+   "de": "___ Meinung nach ist das zu teuer.",
+   "base": "mein",
+   "answers": [
+    "Meiner"
+   ],
+   "en": "In my opinion that's too expensive."
+  },
+  {
+   "id": "b1-20-03",
+   "type": "cloze",
+   "de": "Ich finde, dass die Stadt mehr Fahrradwege ___.",
+   "base": "brauchen",
+   "answers": [
+    "braucht"
+   ],
+   "en": "I think the city needs more cycle paths."
+  },
+  {
+   "id": "b1-20-04",
+   "type": "order",
+   "tiles": [
+    "Meiner Meinung nach",
+    "ist",
+    "das",
+    "eine gute Idee"
+   ],
+   "answers": [
+    "Meiner Meinung nach ist das eine gute Idee.",
+    "Das ist meiner Meinung nach eine gute Idee."
+   ],
+   "en": "In my opinion that's a good idea."
+  },
+  {
+   "id": "b1-20-05",
+   "type": "choice",
+   "de": "Einerseits ist die Wohnung schön, andererseits ___ sehr teuer.",
+   "options": [
+    "sie ist",
+    "ist sie",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "andererseits fills the first position, so the verb comes next and then the subject.",
+   "en": "On the one hand the flat is nice, on the other it's very expensive."
+  },
+  {
+   "id": "b1-20-06",
+   "type": "cloze",
+   "de": "Ich bin ganz ___ Meinung.",
+   "base": "du",
+   "answers": [
+    "deiner"
+   ],
+   "en": "I completely agree with you."
+  },
+  {
+   "id": "b1-20-07",
+   "type": "choice",
+   "de": "Das sehe ich ein bisschen ___.",
+   "options": [
+    "anders",
+    "andere",
+    "anderer"
+   ],
+   "answer": 0,
+   "why": "The fixed phrase is etwas anders sehen: anders is an adverb with no ending.",
+   "en": "I see that a little differently."
+  },
+  {
+   "id": "b1-20-08",
+   "type": "cloze",
+   "de": "Da bin ich ___ Meinung.",
+   "base": "ander-",
+   "answers": [
+    "anderer"
+   ],
+   "en": "I disagree there."
+  },
+  {
+   "id": "b1-20-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "der Meinung",
+    "dass",
+    "das",
+    "zu teuer",
+    "ist"
+   ],
+   "answers": [
+    "Ich bin der Meinung, dass das zu teuer ist."
+   ],
+   "en": "I'm of the opinion that it's too expensive."
+  },
+  {
+   "id": "b1-20-10",
+   "type": "cloze",
+   "de": "Ich glaube, dass du recht ___.",
+   "base": "haben",
+   "answers": [
+    "hast"
+   ],
+   "en": "I think you're right."
+  },
+  {
+   "id": "b1-20-11",
+   "type": "choice",
+   "de": "___ ist das Homeoffice bequem, andererseits fehlen mir die Kollegen.",
+   "options": [
+    "Erstens",
+    "Einmal",
+    "Einerseits"
+   ],
+   "answer": 2,
+   "why": "andererseits always pairs with einerseits.",
+   "en": "On the one hand working from home is comfortable, on the other I miss my colleagues."
+  },
+  {
+   "id": "b1-20-12",
+   "type": "cloze",
+   "de": "Ein Nachteil ist, dass man im Homeoffice wenig Kontakt zu Kollegen ___.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "One disadvantage is that you have little contact with colleagues when you work from home."
+  },
+  {
+   "id": "b1-20-13",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "sehe",
+    "ich",
+    "ein bisschen",
+    "anders"
+   ],
+   "answers": [
+    "Das sehe ich ein bisschen anders.",
+    "Ich sehe das ein bisschen anders."
+   ],
+   "en": "I see that a little differently."
+  },
+  {
+   "id": "b1-20-14",
+   "type": "choice",
+   "de": "Ja, schon, ___ ich sehe das anders.",
+   "options": [
+    "aber",
+    "denn",
+    "deshalb"
+   ],
+   "answer": 0,
+   "why": "Ja, schon, aber … accepts part of the point and then disagrees politely.",
+   "en": "Yes, sure, but I see it differently."
+  },
+  {
+   "id": "b1-20-15",
+   "type": "cloze",
+   "de": "Meiner Meinung nach ___ wir das Fest lieber am Samstag machen.",
+   "base": "sollen",
+   "answers": [
+    "sollten",
+    "sollen"
+   ],
+   "en": "In my opinion we'd better have the party on Saturday."
+  },
+  {
+   "id": "b1-20-16",
+   "type": "choice",
+   "de": "___ es nicht besser, wenn wir zuerst die Preise vergleichen?",
+   "options": [
+    "Würde",
+    "Wäre",
+    "Hätte"
+   ],
+   "answer": 1,
+   "why": "The polite question is Wäre es nicht besser, wenn …? – the Konjunktiv II of sein.",
+   "en": "Wouldn't it be better if we compared the prices first?"
+  },
+  {
+   "id": "b1-20-17",
+   "type": "order",
+   "tiles": [
+    "Einerseits ist die Wohnung schön",
+    "andererseits",
+    "ist",
+    "sie",
+    "zu klein"
+   ],
+   "answers": [
+    "Einerseits ist die Wohnung schön, andererseits ist sie zu klein."
+   ],
+   "en": "On the one hand the flat is nice, on the other it's too small."
+  },
+  {
+   "id": "b1-20-18",
+   "type": "cloze",
+   "de": "Ich bin nicht sicher, ___ das die beste Lösung ist.",
+   "base": "dass/ob",
+   "answers": [
+    "ob"
+   ],
+   "en": "I'm not sure whether that's the best solution."
+  },
+  {
+   "id": "b1-20-19",
+   "type": "choice",
+   "de": "Ich finde, ___.",
+   "options": [
+    "ist das eine gute Idee",
+    "das eine gute Idee ist",
+    "das ist eine gute Idee"
+   ],
+   "answer": 2,
+   "why": "Without dass, the clause after ich finde keeps normal word order with the verb second.",
+   "en": "I think that's a good idea."
+  },
+  {
+   "id": "b1-20-20",
+   "type": "cloze",
+   "de": "Ich ___ sagen, wir warten noch eine Woche.",
+   "base": "werden",
+   "answers": [
+    "würde"
+   ],
+   "en": "I'd say we wait another week."
+  },
+  {
+   "id": "b1-20-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "finde",
+    "dass",
+    "du",
+    "recht",
+    "hast"
+   ],
+   "answers": [
+    "Ich finde, dass du recht hast."
+   ],
+   "en": "I think you're right."
+  },
+  {
+   "id": "b1-20-22",
+   "type": "choice",
+   "de": "Wir treffen uns also um acht? – ___!",
+   "options": [
+    "Einverstanden",
+    "Ich bin deiner Meinung",
+    "Meiner Meinung nach"
+   ],
+   "answer": 0,
+   "why": "To accept a plan or proposal you say Einverstanden; Meinung is for opinions.",
+   "en": "So we're meeting at eight? – Agreed!"
+  },
+  {
+   "id": "b1-20-23",
+   "type": "cloze",
+   "de": "Das sehe ich genauso, Frau Weber. Ich bin ganz ___ Meinung.",
+   "base": "Sie",
+   "answers": [
+    "Ihrer"
+   ],
+   "en": "I see it the same way, Ms Weber. I completely agree with you."
+  },
+  {
+   "id": "b1-20-24",
+   "type": "order",
+   "tiles": [
+    "Meiner Meinung nach",
+    "sollten",
+    "wir",
+    "mehr",
+    "Pausen",
+    "machen"
+   ],
+   "answers": [
+    "Meiner Meinung nach sollten wir mehr Pausen machen.",
+    "Wir sollten meiner Meinung nach mehr Pausen machen."
+   ],
+   "en": "In my opinion we should take more breaks."
+  }
+ ],
+ "listening": {
+  "title": "Wie viel Homeoffice?",
+  "intro": "Katrin and Stefan discuss how many days a week their team should work from home, because their boss has asked for their opinion.",
+  "lines": [
+   {
+    "speaker": "Katrin",
+    "de": "Also, der Chef will wissen, was wir vom Homeoffice halten. Was meinst du?",
+    "en": "So, the boss wants to know what we think about working from home. What do you think?"
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Meiner Meinung nach sollten wir drei Tage pro Woche zu Hause arbeiten.",
+    "en": "In my opinion we should work from home three days a week."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Drei Tage? Das sehe ich ein bisschen anders.",
+    "en": "Three days? I see that a little differently."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Warum? Wir sparen jeden Tag eine Stunde im Zug, und zu Hause ist es ruhiger.",
+    "en": "Why? We save an hour on the train every day, and it's quieter at home."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Da hast du recht. Aber ich finde, dass wir uns dann kaum noch sehen.",
+    "en": "You're right there. But I think we'd hardly see each other any more."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Das stimmt. Die Kaffeepausen mit dem Team fehlen mir manchmal auch.",
+    "en": "That's true. I sometimes miss the coffee breaks with the team too."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Eben. Und neue Kollegen lernen im Büro viel schneller.",
+    "en": "Exactly. And new colleagues learn much faster in the office."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Okay, das ist ein guter Punkt. Was schlägst du vor?",
+    "en": "OK, that's a good point. What do you suggest?"
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Ich würde sagen: zwei Tage zu Hause und drei im Büro.",
+    "en": "I'd say: two days at home and three in the office."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Hm. Wäre es nicht besser, wenn jeder selbst entscheidet?",
+    "en": "Hmm. Wouldn't it be better if everyone decided for themselves?"
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Einerseits ist das flexibel, andererseits ist dann vielleicht am Montag niemand da.",
+    "en": "On the one hand that's flexible, on the other maybe nobody would be there on Mondays."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Ich verstehe. Dann bin ich deiner Meinung: zwei Tage Homeoffice, aber feste Bürotage für alle.",
+    "en": "I see. Then I agree with you: two days at home, but fixed office days for everyone."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Einverstanden! Das schreiben wir dem Chef.",
+    "en": "Agreed! We'll write that to the boss."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Stefan suggest at first?",
+    "options": [
+     "Three days a week at home.",
+     "Two days a week at home.",
+     "Working only in the office."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is Katrin's main worry?",
+    "options": [
+     "The internet at home is slow.",
+     "They would hardly see each other.",
+     "The boss won't agree."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Katrin like the idea that everyone decides for themselves?",
+    "options": [
+     "It's too complicated to plan.",
+     "The boss wants to decide.",
+     "Maybe nobody would be in the office on Mondays."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What do they agree on in the end?",
+    "options": [
+     "Three days at home.",
+     "Two days at home and fixed office days for everyone.",
+     "Everyone decides for themselves."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Meiner Meinung nach sollten wir zwei Tage pro Woche zu Hause arbeiten.",
+  "Einerseits ist die Wohnung schön, andererseits ist sie zu teuer.",
+  "Da hast du recht, aber ich sehe das ein bisschen anders."
+ ],
+ "speaking": [
+  {
+   "de": "Meiner Meinung nach sollten wir drei Tage pro Woche zu Hause arbeiten.",
+   "en": "In my opinion we should work from home three days a week."
+  },
+  {
+   "de": "Das sehe ich ein bisschen anders.",
+   "en": "I see that a little differently."
+  },
+  {
+   "de": "Da hast du recht. Aber ich finde, dass wir uns dann kaum noch sehen.",
+   "en": "You're right there. But I think we'd hardly see each other any more."
+  },
+  {
+   "de": "Wäre es nicht besser, wenn jeder selbst entscheidet?",
+   "en": "Wouldn't it be better if everyone decided for themselves?"
+  },
+  {
+   "de": "Dann bin ich deiner Meinung.",
+   "en": "Then I agree with you."
+  }
+ ],
+ "writing": {
+  "task": "In an online forum for your town, someone writes: \"Cars should be banned from the city centre.\" Write a reply of 80–100 words: give your opinion, name one advantage and one disadvantage, and politely disagree with one point.",
+  "model": "Hallo zusammen,\n\nich finde die Idee interessant, aber ich sehe das ein bisschen anders. Einerseits wäre die Innenstadt ohne Autos ruhiger, und die Luft wäre besser. Andererseits brauchen viele Menschen das Auto, zum Beispiel ältere Leute oder Familien mit kleinen Kindern. Meiner Meinung nach sollte man die Autos nicht ganz verbieten. Es wäre besser, wenn es mehr Busse und sichere Fahrradwege geben würde. Martin schreibt, dass die Geschäfte ohne Autos mehr Kunden haben. Da bin ich nicht so sicher, denn viele Leute kaufen mit dem Auto ein.\n\nViele Grüße\nClaire"
+ }
+}

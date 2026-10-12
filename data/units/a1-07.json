@@ -1,0 +1,462 @@
+{
+ "id": "a1-07",
+ "cefr": "A1",
+ "title": "haben and the accusative: den, einen",
+ "situation": "Saying what you have and need",
+ "canDo": "You can say what you have and what you need, with the right form of haben and den/einen for masculine nouns.",
+ "explanation": "To say what you have and need, you use **haben** (to have). It is irregular with du and er/sie/es:\n\n| | haben | | haben |\n|---|---|---|---|\n| ich | habe | wir | haben |\n| du | **hast** | ihr | habt |\n| er/sie/es | **hat** | sie/Sie | haben |\n\nAfter haben, brauchen, kaufen, suchen and möchten, the thing you have or need is the **object** of the sentence. German marks the object with the **accusative** case. The good news: only the **masculine** article changes.\n\n| | subject | object (accusative) |\n|---|---|---|\n| masculine | der / ein Tisch | **den / einen** Tisch |\n| feminine | die / eine Lampe | die / eine Lampe |\n| neuter | das / ein Bett | das / ein Bett |\n| plural | die Stühle | die Stühle |\n\n- *Der Tisch ist alt.* (subject) → *Ich brauche **einen** Tisch.* (object)\n- *Ich habe **einen** Bruder und **eine** Schwester.*\n- *Wir suchen **den** Bahnhof.*\n\nThe subject stays **der**, even after the verb: *Wo ist der Bahnhof?*\n\nWith haben, many everyday phrases need no article: *Ich habe Zeit / Hunger / Durst / Fragen.*\n\nThe most common mistake: *Ich habe ein Hund.* Hund is masculine, so it's *Ich habe **einen** Hund.*",
+ "french": "Like avoir, haben means 'to have', and some phrases match (j'ai faim = ich habe Hunger), but French never changes le or un for the object, while German turns der/ein into den/einen.",
+ "examples": [
+  {
+   "de": "Ich habe einen Bruder und eine Schwester.",
+   "en": "I have a brother and a sister."
+  },
+  {
+   "de": "Hast du einen Stift? – Ja, hier.",
+   "en": "Do you have a pen? – Yes, here."
+  },
+  {
+   "de": "Wir haben ein Auto und zwei Fahrräder.",
+   "en": "We have a car and two bikes."
+  },
+  {
+   "de": "Ich brauche einen Tisch für die Küche.",
+   "en": "I need a table for the kitchen."
+  },
+  {
+   "de": "Mein Nachbar hat einen Hund.",
+   "en": "My neighbour has a dog."
+  },
+  {
+   "de": "Habt ihr heute Zeit?",
+   "en": "Do you have time today?"
+  },
+  {
+   "de": "Wir suchen den Bahnhof.",
+   "en": "We're looking for the station."
+  },
+  {
+   "de": "Ich habe Hunger.",
+   "en": "I'm hungry."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-07-01",
+   "type": "cloze",
+   "de": "Ich ___ eine Schwester.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "I have a sister."
+  },
+  {
+   "id": "a1-07-02",
+   "type": "cloze",
+   "de": "___ du einen Stift?",
+   "base": "haben",
+   "answers": [
+    "Hast"
+   ],
+   "en": "Do you have a pen?"
+  },
+  {
+   "id": "a1-07-03",
+   "type": "choice",
+   "de": "Ich habe ___ Bruder.",
+   "options": [
+    "ein",
+    "einen",
+    "eine"
+   ],
+   "answer": 1,
+   "why": "Bruder is masculine and the object of haben, so ein becomes einen.",
+   "en": "I have a brother."
+  },
+  {
+   "id": "a1-07-04",
+   "type": "cloze",
+   "de": "Er ___ einen Hund.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "He has a dog."
+  },
+  {
+   "id": "a1-07-05",
+   "type": "choice",
+   "de": "Wir brauchen ___ Tisch.",
+   "options": [
+    "einen",
+    "ein",
+    "eine"
+   ],
+   "answer": 0,
+   "why": "der Tisch is masculine; as the object it takes einen.",
+   "en": "We need a table."
+  },
+  {
+   "id": "a1-07-06",
+   "type": "cloze",
+   "de": "Ich brauche ___ Lampe.",
+   "base": "ein/eine",
+   "answers": [
+    "eine"
+   ],
+   "en": "I need a lamp."
+  },
+  {
+   "id": "a1-07-07",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "einen Bruder"
+   ],
+   "answers": [
+    "Ich habe einen Bruder.",
+    "Einen Bruder habe ich."
+   ],
+   "en": "I have a brother."
+  },
+  {
+   "id": "a1-07-08",
+   "type": "choice",
+   "de": "___ ihr Zeit?",
+   "options": [
+    "Habt",
+    "Hast",
+    "Haben"
+   ],
+   "answer": 0,
+   "why": "With ihr, haben becomes habt.",
+   "en": "Do you (all) have time?"
+  },
+  {
+   "id": "a1-07-09",
+   "type": "cloze",
+   "de": "Wir suchen ___ Wohnung in Köln.",
+   "base": "ein/eine",
+   "answers": [
+    "eine"
+   ],
+   "en": "We're looking for a flat in Cologne."
+  },
+  {
+   "id": "a1-07-10",
+   "type": "choice",
+   "de": "Ich kaufe ___ Computer.",
+   "options": [
+    "den",
+    "der",
+    "das"
+   ],
+   "answer": 0,
+   "why": "Computer is masculine (der Computer); as the object der becomes den.",
+   "en": "I'm buying the computer."
+  },
+  {
+   "id": "a1-07-11",
+   "type": "cloze",
+   "de": "Frau Schmidt ___ zwei Kinder.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "Ms Schmidt has two children."
+  },
+  {
+   "id": "a1-07-12",
+   "type": "order",
+   "tiles": [
+    "Hast",
+    "du",
+    "einen Stift"
+   ],
+   "answers": [
+    "Hast du einen Stift?"
+   ],
+   "en": "Do you have a pen?"
+  },
+  {
+   "id": "a1-07-13",
+   "type": "choice",
+   "de": "Wir haben ___ Auto.",
+   "options": [
+    "einen",
+    "eine",
+    "ein"
+   ],
+   "answer": 2,
+   "why": "das Auto is neuter, and neuter doesn't change in the accusative: ein Auto.",
+   "en": "We have a car."
+  },
+  {
+   "id": "a1-07-14",
+   "type": "cloze",
+   "de": "Ich brauche ___ Schlüssel. Wo ist er?",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "I need the key. Where is it?"
+  },
+  {
+   "id": "a1-07-15",
+   "type": "order",
+   "tiles": [
+    "Habt",
+    "ihr",
+    "ein Auto"
+   ],
+   "answers": [
+    "Habt ihr ein Auto?"
+   ],
+   "en": "Do you (all) have a car?"
+  },
+  {
+   "id": "a1-07-16",
+   "type": "choice",
+   "de": "___ Hund ist sehr groß.",
+   "options": [
+    "Den",
+    "Das",
+    "Der"
+   ],
+   "answer": 2,
+   "why": "Hund is the subject here, so it stays der; only the object takes den.",
+   "en": "The dog is very big."
+  },
+  {
+   "id": "a1-07-17",
+   "type": "cloze",
+   "de": "Paul hat heute ___ Termin.",
+   "base": "ein/einen/eine",
+   "answers": [
+    "einen"
+   ],
+   "en": "Paul has an appointment today."
+  },
+  {
+   "id": "a1-07-18",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "brauchen",
+    "einen Tisch",
+    "für die Küche"
+   ],
+   "answers": [
+    "Wir brauchen einen Tisch für die Küche.",
+    "Für die Küche brauchen wir einen Tisch.",
+    "Einen Tisch brauchen wir für die Küche.",
+    "Wir brauchen für die Küche einen Tisch."
+   ],
+   "en": "We need a table for the kitchen."
+  },
+  {
+   "id": "a1-07-19",
+   "type": "choice",
+   "de": "Ich habe Hunger. ___ du auch Hunger?",
+   "options": [
+    "Hat",
+    "Habst",
+    "Hast"
+   ],
+   "answer": 2,
+   "why": "With du, haben becomes hast.",
+   "en": "I'm hungry. Are you hungry too?"
+  },
+  {
+   "id": "a1-07-20",
+   "type": "cloze",
+   "de": "Ich suche ___ Bahnhof.",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "I'm looking for the station."
+  },
+  {
+   "id": "a1-07-21",
+   "type": "choice",
+   "de": "Meine Eltern ___ einen Garten.",
+   "options": [
+    "hat",
+    "haben",
+    "habt"
+   ],
+   "answer": 1,
+   "why": "Meine Eltern = sie (they), so the verb is haben.",
+   "en": "My parents have a garden."
+  },
+  {
+   "id": "a1-07-22",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "Mein Nachbar",
+    "einen Hund"
+   ],
+   "answers": [
+    "Mein Nachbar hat einen Hund.",
+    "Einen Hund hat mein Nachbar."
+   ],
+   "en": "My neighbour has a dog."
+  },
+  {
+   "id": "a1-07-23",
+   "type": "cloze",
+   "de": "Die Küche ist leer. Wir brauchen ___ Kühlschrank.",
+   "base": "ein/einen/eine",
+   "answers": [
+    "einen"
+   ],
+   "en": "The kitchen is empty. We need a fridge."
+  },
+  {
+   "id": "a1-07-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "brauche",
+    "morgen",
+    "den Schlüssel"
+   ],
+   "answers": [
+    "Ich brauche morgen den Schlüssel.",
+    "Ich brauche den Schlüssel morgen.",
+    "Morgen brauche ich den Schlüssel.",
+    "Den Schlüssel brauche ich morgen."
+   ],
+   "en": "I need the key tomorrow."
+  }
+ ],
+ "listening": {
+  "title": "Was brauchst du noch?",
+  "intro": "Sara has just moved into a new flat and talks to her friend Ben on the phone.",
+  "lines": [
+   {
+    "speaker": "Ben",
+    "de": "Hallo Sara! Na, wie ist die Wohnung?",
+    "en": "Hi Sara! So, how's the flat?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "Super! Aber ich habe noch nicht viel.",
+    "en": "Great! But I don't have much yet."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Was hast du denn schon?",
+    "en": "So what do you already have?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "Ich habe ein Bett, einen Schrank und einen Tisch.",
+    "en": "I have a bed, a wardrobe and a table."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und was brauchst du noch?",
+    "en": "And what do you still need?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "Ich brauche Stühle, eine Lampe und einen Kühlschrank.",
+    "en": "I need chairs, a lamp and a fridge."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Einen Kühlschrank? Mein Bruder hat einen Kühlschrank für dich. Er ist alt, aber gut.",
+    "en": "A fridge? My brother has a fridge for you. It's old, but good."
+   },
+   {
+    "speaker": "Sara",
+    "de": "Wirklich? Toll! Aber hast du ein Auto?",
+    "en": "Really? Great! But do you have a car?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Nein, aber mein Bruder hat einen Transporter. Wir kommen am Samstag.",
+    "en": "No, but my brother has a van. We'll come on Saturday."
+   },
+   {
+    "speaker": "Sara",
+    "de": "Super, danke! Dann habe ich am Samstag einen Kühlschrank!",
+    "en": "Great, thanks! Then I'll have a fridge on Saturday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Sara already have?",
+    "options": [
+     "a bed, a wardrobe and a table",
+     "chairs and a lamp",
+     "a fridge and a table"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Sara still need, among other things?",
+    "options": [
+     "a bed",
+     "a car",
+     "a fridge"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Who has a fridge for Sara?",
+    "options": [
+     "Ben",
+     "Ben's brother",
+     "Sara's neighbour"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When are they coming with the fridge?",
+    "options": [
+     "on Saturday",
+     "on Sunday",
+     "today"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe einen Bruder und eine Schwester.",
+  "Hast du einen Stift für mich?",
+  "Wir brauchen einen Tisch."
+ ],
+ "speaking": [
+  {
+   "de": "Was hast du denn schon?",
+   "en": "So what do you already have?"
+  },
+  {
+   "de": "Ich habe ein Bett und einen Schrank.",
+   "en": "I have a bed and a wardrobe."
+  },
+  {
+   "de": "Was brauchst du noch?",
+   "en": "What do you still need?"
+  },
+  {
+   "de": "Ich brauche eine Lampe und einen Kühlschrank.",
+   "en": "I need a lamp and a fridge."
+  },
+  {
+   "de": "Hast du ein Auto?",
+   "en": "Do you have a car?"
+  }
+ ],
+ "writing": {
+  "task": "You have just moved. Write a message to a friend (3–4 sentences): what you already have in the flat and what you still need.",
+  "model": "Hallo Ben, die Wohnung ist schön! Ich habe schon ein Bett und einen Tisch. Aber ich brauche noch einen Stuhl und eine Lampe. Hast du am Samstag Zeit?"
+ }
+}

@@ -1,0 +1,478 @@
+{
+ "id": "b1-01",
+ "cefr": "B1",
+ "title": "The simple past (Präteritum)",
+ "situation": "Telling a story",
+ "canDo": "You can tell a story in the past using the Präteritum of regular, irregular and mixed verbs.",
+ "explanation": "When you tell a story in writing (a book, a fairy tale, a news report, an email about your day), German uses the **Präteritum** (simple past). In speech people mostly use the Perfekt, but **war, hatte, es gab** and the modal verbs are Präteritum everywhere, and many people tell longer stories in the Präteritum too.\n\n| | regular: machen | irregular: gehen | mixed: denken |\n|---|---|---|---|\n| ich | machte | ging | dachte |\n| du | machtest | gingst | dachtest |\n| er / sie / es | machte | ging | dachte |\n| wir | machten | gingen | dachten |\n| ihr | machtet | gingt | dachtet |\n| sie / Sie | machten | gingen | dachten |\n\n- **Regular** verbs: stem + **-te** + ending: *kaufen → kaufte, warten → wartete*. If the stem ends in -t or -d, add an **e**: *arbeitete, wartete*.\n- **Irregular** verbs change their vowel and take **no -te**: *kommen → kam, sehen → sah, fahren → fuhr, finden → fand, schreiben → schrieb, nehmen → nahm, sprechen → sprach, stehen → stand, trinken → trank*. Learn them with the Perfekt: *gehen – ging – ist gegangen*.\n- **Mixed** verbs change the vowel **and** take -te: *denken → dachte, bringen → brachte, kennen → kannte, wissen → wusste*.\n\n**ich** and **er/sie/es** always have the same form, and with irregular verbs it has no ending: *ich kam, er kam*.\n\nSeparable verbs split as in the present: *Der Zug **fuhr** pünktlich **ab**. Sie **rief** mich **an**.*\n\nMost common mistake: putting -te on an irregular verb. It's **ging**, not *gehte*, and **schrieb**, not *schreibte*.",
+ "french": "The Präteritum is like the passé simple of a written story (il alla = er ging, elle prit = sie nahm), while spoken German mostly uses the Perfekt, just as French speakers use the passé composé.",
+ "examples": [
+  {
+   "de": "Es war einmal ein kleines Mädchen.",
+   "en": "Once upon a time there was a little girl."
+  },
+  {
+   "de": "Gestern Abend klingelte plötzlich das Telefon.",
+   "en": "Yesterday evening the phone suddenly rang."
+  },
+  {
+   "de": "Wir warteten eine Stunde auf den Bus.",
+   "en": "We waited an hour for the bus."
+  },
+  {
+   "de": "Er kam spät nach Hause und sah noch fern.",
+   "en": "He came home late and watched some TV."
+  },
+  {
+   "de": "Ich wusste nicht, was ich sagen sollte.",
+   "en": "I didn't know what to say."
+  },
+  {
+   "de": "Der Zug fuhr pünktlich ab.",
+   "en": "The train left on time."
+  },
+  {
+   "de": "Sie dachte lange an ihre Familie in Frankreich.",
+   "en": "She thought about her family in France for a long time."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-01-01",
+   "type": "cloze",
+   "de": "Gestern ___ ich lange im Büro.",
+   "base": "arbeiten",
+   "answers": [
+    "arbeitete"
+   ],
+   "en": "Yesterday I worked late at the office."
+  },
+  {
+   "id": "b1-01-02",
+   "type": "cloze",
+   "de": "Gestern ___ wir eine Stunde auf den Bus.",
+   "base": "warten",
+   "answers": [
+    "warteten"
+   ],
+   "en": "Yesterday we waited an hour for the bus."
+  },
+  {
+   "id": "b1-01-03",
+   "type": "choice",
+   "de": "Letztes Jahr ___ wir nach Italien.",
+   "options": [
+    "fuhren",
+    "fahrten",
+    "fuhrten"
+   ],
+   "answer": 0,
+   "why": "fahren is irregular: the vowel changes (fuhr) and there is no -te.",
+   "en": "Last year we went to Italy."
+  },
+  {
+   "id": "b1-01-04",
+   "type": "cloze",
+   "de": "Gestern Abend ___ plötzlich das Telefon.",
+   "base": "klingeln",
+   "answers": [
+    "klingelte"
+   ],
+   "en": "Yesterday evening the phone suddenly rang."
+  },
+  {
+   "id": "b1-01-05",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "kam",
+    "um acht Uhr",
+    "nach Hause"
+   ],
+   "answers": [
+    "Er kam um acht Uhr nach Hause.",
+    "Um acht Uhr kam er nach Hause."
+   ],
+   "en": "He came home at eight o'clock."
+  },
+  {
+   "id": "b1-01-06",
+   "type": "choice",
+   "de": "Sie ___ einen langen Brief an ihre Oma.",
+   "options": [
+    "schreibte",
+    "schrieb",
+    "schriebte"
+   ],
+   "answer": 1,
+   "why": "schreiben is irregular: schrieb, with no -te.",
+   "en": "She wrote a long letter to her grandma."
+  },
+  {
+   "id": "b1-01-07",
+   "type": "cloze",
+   "de": "Letzten Sommer ___ ich drei Wochen bei meinen Großeltern.",
+   "base": "bleiben",
+   "answers": [
+    "blieb"
+   ],
+   "en": "Last summer I stayed with my grandparents for three weeks."
+  },
+  {
+   "id": "b1-01-08",
+   "type": "cloze",
+   "de": "Gestern ___ wir uns im Park.",
+   "base": "treffen",
+   "answers": [
+    "trafen"
+   ],
+   "en": "Yesterday we met in the park."
+  },
+  {
+   "id": "b1-01-09",
+   "type": "choice",
+   "de": "Er ___ oft an seine Familie.",
+   "options": [
+    "denkte",
+    "dachte",
+    "dacht"
+   ],
+   "answer": 1,
+   "why": "denken is a mixed verb: the vowel changes and it takes -te (dachte).",
+   "en": "He often thought about his family."
+  },
+  {
+   "id": "b1-01-10",
+   "type": "order",
+   "tiles": [
+    "Am Abend",
+    "wir",
+    "eine Pizza",
+    "bestellten"
+   ],
+   "answers": [
+    "Am Abend bestellten wir eine Pizza.",
+    "Wir bestellten am Abend eine Pizza.",
+    "Eine Pizza bestellten wir am Abend."
+   ],
+   "en": "In the evening we ordered a pizza."
+  },
+  {
+   "id": "b1-01-11",
+   "type": "cloze",
+   "de": "Der Zug ___ gestern pünktlich ab.",
+   "base": "abfahren",
+   "answers": [
+    "fuhr"
+   ],
+   "en": "The train left on time yesterday."
+  },
+  {
+   "id": "b1-01-12",
+   "type": "choice",
+   "de": "Ich ___ nicht, wo er wohnte.",
+   "options": [
+    "wusste",
+    "weißte",
+    "wisste"
+   ],
+   "answer": 0,
+   "why": "wissen is a mixed verb: ich wusste.",
+   "en": "I didn't know where he lived."
+  },
+  {
+   "id": "b1-01-13",
+   "type": "cloze",
+   "de": "Was ___ du gestern Abend?",
+   "base": "machen",
+   "answers": [
+    "machtest"
+   ],
+   "en": "What did you do yesterday evening?"
+  },
+  {
+   "id": "b1-01-14",
+   "type": "choice",
+   "de": "Ihr ___ sehr lange im Café.",
+   "options": [
+    "sitztet",
+    "saßtet",
+    "saßt"
+   ],
+   "answer": 2,
+   "why": "sitzen is irregular (saß), and ihr only adds -t: ihr saßt.",
+   "en": "You sat in the café for a very long time."
+  },
+  {
+   "id": "b1-01-15",
+   "type": "order",
+   "tiles": [
+    "Plötzlich",
+    "eine Frau",
+    "stand",
+    "vor der Tür"
+   ],
+   "answers": [
+    "Plötzlich stand eine Frau vor der Tür.",
+    "Eine Frau stand plötzlich vor der Tür.",
+    "Vor der Tür stand plötzlich eine Frau."
+   ],
+   "en": "Suddenly a woman was standing at the door."
+  },
+  {
+   "id": "b1-01-16",
+   "type": "cloze",
+   "de": "Sie ___ mich gestern Abend an.",
+   "base": "anrufen",
+   "answers": [
+    "rief"
+   ],
+   "en": "She called me yesterday evening."
+  },
+  {
+   "id": "b1-01-17",
+   "type": "choice",
+   "de": "Als ich nach Hause kam, ___ die Kinder schon im Bett.",
+   "options": [
+    "liegten",
+    "lagen",
+    "lägen"
+   ],
+   "answer": 1,
+   "why": "liegen is irregular: sie lagen (lägen is a different form).",
+   "en": "When I came home, the children were already in bed."
+  },
+  {
+   "id": "b1-01-18",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "den ganzen Tag",
+    "Deutsch",
+    "sprachen"
+   ],
+   "answers": [
+    "Wir sprachen den ganzen Tag Deutsch.",
+    "Den ganzen Tag sprachen wir Deutsch."
+   ],
+   "en": "We spoke German all day."
+  },
+  {
+   "id": "b1-01-19",
+   "type": "order",
+   "tiles": [
+    "Gestern",
+    "ich",
+    "meinen Schlüssel",
+    "nicht",
+    "fand"
+   ],
+   "answers": [
+    "Gestern fand ich meinen Schlüssel nicht.",
+    "Ich fand gestern meinen Schlüssel nicht.",
+    "Ich fand meinen Schlüssel gestern nicht.",
+    "Meinen Schlüssel fand ich gestern nicht."
+   ],
+   "en": "Yesterday I couldn't find my key."
+  },
+  {
+   "id": "b1-01-20",
+   "type": "choice",
+   "de": "Gestern ___ er mir die Geschichte von seiner Reise.",
+   "options": [
+    "erzählt",
+    "erzählten",
+    "erzählte"
+   ],
+   "answer": 2,
+   "why": "erzählen is regular: er erzählte (erzählten is the plural form).",
+   "en": "Yesterday he told me the story of his trip."
+  },
+  {
+   "id": "b1-01-21",
+   "type": "cloze",
+   "de": "Damals ___ niemand die Antwort.",
+   "base": "kennen",
+   "answers": [
+    "kannte"
+   ],
+   "en": "Back then nobody knew the answer."
+  },
+  {
+   "id": "b1-01-22",
+   "type": "choice",
+   "de": "Nach dem Essen ___ wir noch einen Spaziergang.",
+   "options": [
+    "machtet",
+    "machten",
+    "mochten"
+   ],
+   "answer": 1,
+   "why": "wir takes -ten: wir machten (machtet is ihr; mochten is from mögen).",
+   "en": "After the meal we went for a walk."
+  },
+  {
+   "id": "b1-01-23",
+   "type": "cloze",
+   "de": "Als das Kind nach Hause kam, ___ es ein Glas Milch.",
+   "base": "trinken",
+   "answers": [
+    "trank"
+   ],
+   "en": "When the child came home, it drank a glass of milk."
+  },
+  {
+   "id": "b1-01-24",
+   "type": "order",
+   "tiles": [
+    "Als",
+    "ich",
+    "ankam,",
+    "der Zug",
+    "schon",
+    "weg",
+    "war"
+   ],
+   "answers": [
+    "Als ich ankam, war der Zug schon weg.",
+    "Der Zug war schon weg, als ich ankam."
+   ],
+   "en": "When I arrived, the train had already gone."
+  }
+ ],
+ "listening": {
+  "title": "Mein erster Tag in Deutschland",
+  "intro": "Sophie asks her friend Paul how his first day in Germany went.",
+  "lines": [
+   {
+    "speaker": "Sophie",
+    "de": "Erzähl mal, wie war dein erster Tag in Deutschland?",
+    "en": "Tell me, how was your first day in Germany?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Oh, das ist eine lustige Geschichte. Ich kam im Januar mit dem Zug in Hamburg an.",
+    "en": "Oh, that's a funny story. I arrived in Hamburg by train in January."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Im Januar? War es nicht sehr kalt?",
+    "en": "In January? Wasn't it very cold?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Doch! Es schneite, und ich hatte keine warme Jacke.",
+    "en": "It was! It was snowing, and I had no warm jacket."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Oh nein! Und dann?",
+    "en": "Oh no! And then?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ich suchte ein Taxi, aber ich fand keins. Also nahm ich den Bus.",
+    "en": "I looked for a taxi, but I couldn't find one. So I took the bus."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Wusstest du denn, wo du aussteigen musstest?",
+    "en": "Did you know where you had to get off?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Nein, gar nicht. Ich fragte eine ältere Frau, und sie half mir sofort.",
+    "en": "No, not at all. I asked an older woman, and she helped me straight away."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Wie nett!",
+    "en": "How nice!"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, sie stieg sogar mit mir aus und brachte mich bis zu meiner Wohnung.",
+    "en": "Yes, she even got off with me and took me all the way to my flat."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Das gibt's doch nicht! Hast du sie wiedergesehen?",
+    "en": "No way! Did you see her again?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, sie wohnte im selben Haus! Heute trinken wir jeden Sonntag zusammen Kaffee.",
+    "en": "Yes, she lived in the same building! Today we have coffee together every Sunday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How did Paul arrive in Hamburg?",
+    "options": [
+     "By plane",
+     "By car",
+     "By train"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why didn't Paul take a taxi?",
+    "options": [
+     "He had no money",
+     "He couldn't find one",
+     "The bus was faster"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What did the older woman do?",
+    "options": [
+     "She took him to his flat",
+     "She gave him a jacket",
+     "She called a taxi for him"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is the surprise at the end?",
+    "options": [
+     "The woman was his teacher",
+     "The woman lived in the same building",
+     "The woman came from France"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Gestern wartete ich eine Stunde auf den Bus.",
+  "Plötzlich klingelte das Telefon, aber niemand sagte etwas.",
+  "Sie stieg mit mir aus und brachte mich nach Hause."
+ ],
+ "speaking": [
+  {
+   "de": "Ich kam im Januar mit dem Zug in Hamburg an.",
+   "en": "I arrived in Hamburg by train in January."
+  },
+  {
+   "de": "Es schneite, und ich hatte keine warme Jacke.",
+   "en": "It was snowing, and I had no warm jacket."
+  },
+  {
+   "de": "Ich suchte ein Taxi, aber ich fand keins.",
+   "en": "I looked for a taxi, but I couldn't find one."
+  },
+  {
+   "de": "Ich fragte eine ältere Frau, und sie half mir sofort.",
+   "en": "I asked an older woman, and she helped me straight away."
+  },
+  {
+   "de": "Sie brachte mich bis zu meiner Wohnung.",
+   "en": "She took me all the way to my flat."
+  }
+ ],
+ "writing": {
+  "task": "Write an 80–100-word email to a friend telling the story of a day when something went wrong, for example a trip or a visit. Use the Präteritum.",
+  "model": "Liebe Clara,\n\nich muss dir unbedingt von letztem Samstag erzählen! Ich wollte mit dem Zug zu meinen Eltern nach Köln fahren. Ich stand früh auf, aber der Bus kam nicht. Also lief ich zum Bahnhof. Dort wartete ich eine halbe Stunde, und dann hörte ich: Der Zug fällt aus! Ich rief meine Mutter an und erzählte ihr alles. Am Ende nahm ich einen anderen Zug und kam erst um neun Uhr abends an. Aber meine Mutter kochte noch eine Suppe für mich, und wir saßen lange zusammen in der Küche.\n\nViele Grüße\nJulien"
+ }
+}

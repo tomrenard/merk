@@ -1,0 +1,463 @@
+{
+ "id": "a1-13",
+ "cefr": "A1",
+ "title": "Separable verbs",
+ "situation": "Your daily routine",
+ "canDo": "You can describe your daily routine with separable verbs like aufstehen, einkaufen and anrufen.",
+ "explanation": "Many everyday routine verbs have a small prefix: **auf**stehen, **ein**kaufen, **an**rufen, **fern**sehen, **mit**kommen. In a normal sentence, the verb splits: the main part is in **position 2** with its ending, and the prefix goes to the **very end**.\n\n| infinitive | in a sentence |\n|---|---|\n| aufstehen | Ich **stehe** früh **auf**. |\n| einkaufen | **Kaufst** du heute **ein**? |\n| anrufen | Er **ruft** seine Mutter **an**. |\n| fernsehen | Wir **sehen** abends **fern**. |\n| with a modal | Ich muss heute **einkaufen**. |\n\n- In questions it works the same way: *Wann **stehst** du **auf**?*\n- With a modal verb (können, müssen, wollen, möchten) the verb stays in **one piece** at the end: *Ich will heute **fernsehen**.*\n- The main part still changes as usual: fern**sehen** → *er sieht fern*, an**fangen** → *der Kurs fängt an*.\n- You stress the prefix: **AUF**stehen, **EIN**kaufen.\n\nCommon prefixes: **an, auf, aus, ein, mit, fern**.\n\nThe most common mistake is keeping the verb in one piece: ~~Ich aufstehe früh.~~ → *Ich stehe früh auf.* The second is forgetting the prefix at the end: *Ich stehe früh* means \"I stand early\".",
+ "french": "French has no separable verbs, so learn the pair as one word (se lever = aufstehen), then send the prefix to the end of the sentence: Je me lève tôt. = Ich stehe früh auf.",
+ "examples": [
+  {
+   "de": "Ich stehe jeden Morgen früh auf.",
+   "en": "I get up early every morning."
+  },
+  {
+   "de": "Wann stehst du auf?",
+   "en": "When do you get up?"
+  },
+  {
+   "de": "Abends kaufe ich ein.",
+   "en": "In the evening I do the shopping."
+  },
+  {
+   "de": "Er ruft seine Mutter an.",
+   "en": "He calls his mother."
+  },
+  {
+   "de": "Wir sehen abends fern.",
+   "en": "We watch TV in the evening."
+  },
+  {
+   "de": "Ich muss heute noch einkaufen.",
+   "en": "I still have to do the shopping today."
+  },
+  {
+   "de": "Der Deutschkurs fängt heute an.",
+   "en": "The German course starts today."
+  },
+  {
+   "de": "Kommst du mit? – Ja, gern!",
+   "en": "Are you coming along? – Yes, I'd love to!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-13-01",
+   "type": "cloze",
+   "de": "Ich stehe früh ___.",
+   "base": "aufstehen",
+   "answers": [
+    "auf"
+   ],
+   "en": "I get up early."
+  },
+  {
+   "id": "a1-13-02",
+   "type": "cloze",
+   "de": "Wir ___ heute ein.",
+   "base": "einkaufen",
+   "answers": [
+    "kaufen"
+   ],
+   "en": "We're doing the shopping today."
+  },
+  {
+   "id": "a1-13-03",
+   "type": "choice",
+   "de": "Ich ___ jeden Morgen früh auf.",
+   "options": [
+    "stehe",
+    "aufstehe",
+    "steht"
+   ],
+   "answer": 0,
+   "why": "The prefix auf goes to the end, so only stehe stays in position 2.",
+   "en": "I get up early every morning."
+  },
+  {
+   "id": "a1-13-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "auf",
+    "stehe",
+    "früh"
+   ],
+   "answers": [
+    "Ich stehe früh auf.",
+    "Früh stehe ich auf."
+   ],
+   "en": "I get up early."
+  },
+  {
+   "id": "a1-13-05",
+   "type": "cloze",
+   "de": "Er ___ seine Mutter an.",
+   "base": "anrufen",
+   "answers": [
+    "ruft"
+   ],
+   "en": "He calls his mother."
+  },
+  {
+   "id": "a1-13-06",
+   "type": "choice",
+   "de": "Wir sehen abends ___.",
+   "options": [
+    "fern",
+    "fernsehen",
+    "an"
+   ],
+   "answer": 0,
+   "why": "fernsehen splits: sehen is in position 2 and fern goes to the end.",
+   "en": "We watch TV in the evening."
+  },
+  {
+   "id": "a1-13-07",
+   "type": "cloze",
+   "de": "___ du heute ein?",
+   "base": "einkaufen",
+   "answers": [
+    "Kaufst"
+   ],
+   "en": "Are you doing the shopping today?"
+  },
+  {
+   "id": "a1-13-08",
+   "type": "order",
+   "tiles": [
+    "ruft",
+    "Anna",
+    "an",
+    "ihre Schwester"
+   ],
+   "answers": [
+    "Anna ruft ihre Schwester an."
+   ],
+   "en": "Anna calls her sister."
+  },
+  {
+   "id": "a1-13-09",
+   "type": "choice",
+   "de": "Ich muss heute noch ___.",
+   "options": [
+    "einkaufen",
+    "kaufe ein",
+    "ein kaufen"
+   ],
+   "answer": 0,
+   "why": "With a modal verb the separable verb stays in one piece at the end.",
+   "en": "I still have to do the shopping today."
+  },
+  {
+   "id": "a1-13-10",
+   "type": "cloze",
+   "de": "Er ___ abends fern.",
+   "base": "fernsehen",
+   "answers": [
+    "sieht"
+   ],
+   "en": "He watches TV in the evening."
+  },
+  {
+   "id": "a1-13-11",
+   "type": "choice",
+   "de": "Der Kurs ___ heute an.",
+   "options": [
+    "fängt",
+    "fangt",
+    "anfängt"
+   ],
+   "answer": 0,
+   "why": "anfangen splits, and fangen changes a → ä with er/sie/es: fängt … an.",
+   "en": "The course starts today."
+  },
+  {
+   "id": "a1-13-12",
+   "type": "cloze",
+   "de": "Kommst du ___? – Ja, gern!",
+   "base": "mitkommen",
+   "answers": [
+    "mit"
+   ],
+   "en": "Are you coming along? – Yes, I'd love to!"
+  },
+  {
+   "id": "a1-13-13",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "du",
+    "stehst",
+    "auf"
+   ],
+   "answers": [
+    "Wann stehst du auf?"
+   ],
+   "en": "When do you get up?"
+  },
+  {
+   "id": "a1-13-14",
+   "type": "cloze",
+   "de": "Ich ___ heute mein Zimmer auf.",
+   "base": "aufräumen",
+   "answers": [
+    "räume"
+   ],
+   "en": "I'm tidying my room today."
+  },
+  {
+   "id": "a1-13-15",
+   "type": "choice",
+   "de": "___ ihr heute Abend fern?",
+   "options": [
+    "Seht",
+    "Sieht",
+    "Fernseht"
+   ],
+   "answer": 0,
+   "why": "ihr seht has no vowel change, and fern goes to the end.",
+   "en": "Are you watching TV this evening?"
+  },
+  {
+   "id": "a1-13-16",
+   "type": "cloze",
+   "de": "Wir müssen morgen früh ___.",
+   "base": "aufstehen",
+   "answers": [
+    "aufstehen"
+   ],
+   "en": "We have to get up early tomorrow."
+  },
+  {
+   "id": "a1-13-17",
+   "type": "order",
+   "tiles": [
+    "kaufe",
+    "Ich",
+    "ein",
+    "heute"
+   ],
+   "answers": [
+    "Ich kaufe heute ein.",
+    "Heute kaufe ich ein."
+   ],
+   "en": "I'm doing the shopping today."
+  },
+  {
+   "id": "a1-13-18",
+   "type": "choice",
+   "de": "Kannst du heute deine Oma ___?",
+   "options": [
+    "rufen an",
+    "anrufen",
+    "an rufen"
+   ],
+   "answer": 1,
+   "why": "After können the separable verb stays in one piece at the end.",
+   "en": "Can you call your grandma today?"
+  },
+  {
+   "id": "a1-13-19",
+   "type": "cloze",
+   "de": "Mein Mann ___ abends das Licht aus.",
+   "base": "ausmachen",
+   "answers": [
+    "macht"
+   ],
+   "en": "My husband turns the light off in the evening."
+  },
+  {
+   "id": "a1-13-20",
+   "type": "choice",
+   "de": "Morgens ___ ich das Radio an.",
+   "options": [
+    "anmache",
+    "mache",
+    "macht"
+   ],
+   "answer": 1,
+   "why": "The prefix an goes to the end; the verb stays in position 2 with the ich ending.",
+   "en": "In the morning I turn the radio on."
+  },
+  {
+   "id": "a1-13-21",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "fern",
+    "abends",
+    "sehen"
+   ],
+   "answers": [
+    "Wir sehen abends fern.",
+    "Abends sehen wir fern."
+   ],
+   "en": "We watch TV in the evening."
+  },
+  {
+   "id": "a1-13-22",
+   "type": "choice",
+   "de": "Wer ___ heute ein?",
+   "options": [
+    "einkauft",
+    "kaufen",
+    "kauft"
+   ],
+   "answer": 2,
+   "why": "wer takes the er/sie/es form, and ein goes to the end.",
+   "en": "Who's doing the shopping today?"
+  },
+  {
+   "id": "a1-13-23",
+   "type": "cloze",
+   "de": "Wann ___ der Deutschkurs an?",
+   "base": "anfangen",
+   "answers": [
+    "fängt"
+   ],
+   "en": "When does the German course start?"
+  },
+  {
+   "id": "a1-13-24",
+   "type": "order",
+   "tiles": [
+    "muss",
+    "Ich",
+    "heute",
+    "einkaufen",
+    "noch"
+   ],
+   "answers": [
+    "Ich muss heute noch einkaufen.",
+    "Heute muss ich noch einkaufen."
+   ],
+   "en": "I still have to do the shopping today."
+  }
+ ],
+ "listening": {
+  "title": "Wer macht was?",
+  "intro": "Nora and Felix share a flat and talk about their day over breakfast.",
+  "lines": [
+   {
+    "speaker": "Felix",
+    "de": "Nora, wann stehst du morgens auf?",
+    "en": "Nora, when do you get up in the morning?"
+   },
+   {
+    "speaker": "Nora",
+    "de": "Sehr früh! Meine Arbeit fängt früh an.",
+    "en": "Very early! My work starts early."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Oh je. Ich stehe immer spät auf.",
+    "en": "Oh dear. I always get up late."
+   },
+   {
+    "speaker": "Nora",
+    "de": "Ja, ich weiß. Du siehst abends lange fern.",
+    "en": "Yes, I know. You watch TV for a long time in the evening."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Stimmt. Was machst du heute Abend?",
+    "en": "True. What are you doing this evening?"
+   },
+   {
+    "speaker": "Nora",
+    "de": "Ich kaufe nach der Arbeit ein. Dann rufe ich meine Mutter an.",
+    "en": "I'm doing the shopping after work. Then I'm calling my mother."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Kaufst du auch Milch? Wir haben keine Milch mehr.",
+    "en": "Are you buying milk too? We have no milk left."
+   },
+   {
+    "speaker": "Nora",
+    "de": "Ja, klar. Und du? Räumst du heute die Küche auf?",
+    "en": "Yes, sure. And you? Are you tidying the kitchen today?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Okay, okay. Ich räume heute die Küche auf.",
+    "en": "OK, OK. I'll tidy the kitchen today."
+   },
+   {
+    "speaker": "Nora",
+    "de": "Super! Und dann sehen wir zusammen fern.",
+    "en": "Great! And then we'll watch TV together."
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does Nora get up?",
+    "options": [
+     "Very early",
+     "Very late",
+     "At noon"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Felix do in the evening?",
+    "options": [
+     "He goes shopping.",
+     "He watches TV for a long time.",
+     "He calls his mother."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Nora have to buy?",
+    "options": [
+     "Bread",
+     "Coffee",
+     "Milk"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Felix agree to do?",
+    "options": [
+     "Get up early",
+     "Tidy the kitchen",
+     "Call his mother"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich stehe jeden Tag früh auf.",
+  "Wann kaufst du heute ein?",
+  "Er ruft seine Mutter an."
+ ],
+ "speaking": [
+  {
+   "de": "Wann stehst du morgens auf?",
+   "en": "When do you get up in the morning?"
+  },
+  {
+   "de": "Ich stehe immer spät auf.",
+   "en": "I always get up late."
+  },
+  {
+   "de": "Ich kaufe nach der Arbeit ein.",
+   "en": "I'm doing the shopping after work."
+  },
+  {
+   "de": "Dann rufe ich meine Mutter an.",
+   "en": "Then I'm calling my mother."
+  },
+  {
+   "de": "Ich räume heute die Küche auf.",
+   "en": "I'll tidy the kitchen today."
+  }
+ ],
+ "writing": {
+  "task": "Write 3–4 short sentences to your language partner about your daily routine.",
+  "model": "Ich stehe jeden Tag früh auf. Morgens trinke ich einen Kaffee und lese die Zeitung. Abends kaufe ich ein und rufe meine Mutter an. Dann sehe ich ein bisschen fern."
+ }
+}

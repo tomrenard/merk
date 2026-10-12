@@ -1,0 +1,467 @@
+{
+ "id": "a2-10",
+ "cefr": "A2",
+ "title": "Adjective endings after der/die/das",
+ "situation": "Clothes and things in a shop",
+ "canDo": "You can describe and choose clothes in a shop with adjective endings after der, die and das.",
+ "explanation": "In a shop you point at things: *der blaue Pullover, die schwarze Jacke.* An adjective **before** a noun needs an ending. After **der, die, das** (and **dieser, welcher, jeder**) there are only two endings: **-e** and **-en**.\n\n| | masculine | feminine | neuter | plural |\n|---|---|---|---|---|\n| nominative | der blau**e** Rock | die blau**e** Jacke | das blau**e** Hemd | die blau**en** Schuhe |\n| accusative | den blau**en** Rock | die blau**e** Jacke | das blau**e** Hemd | die blau**en** Schuhe |\n| dative | dem blau**en** Rock | der blau**en** Jacke | dem blau**en** Hemd | den blau**en** Schuhen |\n\nThe easy way to remember:\n- **-e** in five places: the three nominative singulars, and the accusative of **die** and **das** (they look the same as the nominative).\n- **-en** everywhere else: after **den** and **dem**, after **der** in the dative, and in the **plural**.\n\nSo in the accusative singular, only the masculine changes: *Ich nehme **den** blau**en** Rock.*\n\nAfter **sein**, the adjective has **no ending**: *Der Rock ist blau.*\n\nIf it's clear which thing you mean, leave out the noun: *Welche Jacke? – Die schwarze.*\n\nCommon mistake: *Ich nehme den blaue Rock.* → **den blauen Rock**.",
+ "french": "In French the adjective agrees with gender and number (la robe bleue); in German the ending also depends on the case, but after der/die/das you only choose between -e and -en.",
+ "examples": [
+  {
+   "de": "Wie viel kostet der blaue Pullover?",
+   "en": "How much is the blue pullover?"
+  },
+  {
+   "de": "Ich nehme die schwarze Jacke.",
+   "en": "I'll take the black jacket."
+  },
+  {
+   "de": "Haben Sie den grauen Mantel auch in M?",
+   "en": "Do you have the grey coat in M too?"
+  },
+  {
+   "de": "Das rote Kleid gefällt mir.",
+   "en": "I like the red dress."
+  },
+  {
+   "de": "Die neuen Schuhe sind sehr bequem.",
+   "en": "The new shoes are very comfortable."
+  },
+  {
+   "de": "Kann ich das weiße Hemd anprobieren?",
+   "en": "Can I try on the white shirt?"
+  },
+  {
+   "de": "Mit dem grünen Schal siehst du toll aus.",
+   "en": "You look great with the green scarf."
+  },
+  {
+   "de": "Welche Hose? – Die braune.",
+   "en": "Which trousers? – The brown ones."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-10-01",
+   "type": "cloze",
+   "de": "Wie viel kostet der ___ Pullover?",
+   "base": "blau",
+   "answers": [
+    "blaue"
+   ],
+   "en": "How much is the blue pullover?"
+  },
+  {
+   "id": "a2-10-02",
+   "type": "cloze",
+   "de": "Ich nehme die ___ Jacke.",
+   "base": "schwarz",
+   "answers": [
+    "schwarze"
+   ],
+   "en": "I'll take the black jacket."
+  },
+  {
+   "id": "a2-10-03",
+   "type": "choice",
+   "de": "Haben Sie den ___ Mantel auch in M?",
+   "options": [
+    "graue",
+    "grauen",
+    "grauer"
+   ],
+   "answer": 1,
+   "why": "Masculine accusative after den → -en.",
+   "en": "Do you have the grey coat in M too?"
+  },
+  {
+   "id": "a2-10-04",
+   "type": "cloze",
+   "de": "Das ___ Kleid gefällt mir.",
+   "base": "rot",
+   "answers": [
+    "rote"
+   ],
+   "en": "I like the red dress."
+  },
+  {
+   "id": "a2-10-05",
+   "type": "order",
+   "tiles": [
+    "Die neuen Schuhe",
+    "sind",
+    "bequem",
+    "sehr"
+   ],
+   "answers": [
+    "Die neuen Schuhe sind sehr bequem."
+   ],
+   "en": "The new shoes are very comfortable."
+  },
+  {
+   "id": "a2-10-06",
+   "type": "choice",
+   "de": "Kann ich das ___ Hemd anprobieren?",
+   "options": [
+    "weißen",
+    "weiße",
+    "weißes"
+   ],
+   "answer": 1,
+   "why": "Neuter accusative after das → -e.",
+   "en": "Can I try on the white shirt?"
+  },
+  {
+   "id": "a2-10-07",
+   "type": "cloze",
+   "de": "Mit dem ___ Schal siehst du toll aus.",
+   "base": "grün",
+   "answers": [
+    "grünen"
+   ],
+   "en": "You look great with the green scarf."
+  },
+  {
+   "id": "a2-10-08",
+   "type": "choice",
+   "de": "Die ___ Socken sind im Angebot.",
+   "options": [
+    "bunte",
+    "bunten",
+    "bunter"
+   ],
+   "answer": 1,
+   "why": "Plural after die → -en.",
+   "en": "The colourful socks are on offer."
+  },
+  {
+   "id": "a2-10-09",
+   "type": "cloze",
+   "de": "Ich suche die ___ Hose aus dem Schaufenster.",
+   "base": "braun",
+   "answers": [
+    "braune"
+   ],
+   "en": "I'm looking for the brown trousers from the shop window."
+  },
+  {
+   "id": "a2-10-10",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "den grünen Pullover",
+    "nehme"
+   ],
+   "answers": [
+    "Ich nehme den grünen Pullover.",
+    "Den grünen Pullover nehme ich."
+   ],
+   "en": "I'll take the green pullover."
+  },
+  {
+   "id": "a2-10-11",
+   "type": "choice",
+   "de": "Der Pullover ist ___.",
+   "options": [
+    "blau",
+    "blaue",
+    "blauen"
+   ],
+   "answer": 0,
+   "why": "After sein the adjective has no ending.",
+   "en": "The pullover is blue."
+  },
+  {
+   "id": "a2-10-12",
+   "type": "cloze",
+   "de": "Gefällt dir die ___ Mütze?",
+   "base": "warm",
+   "answers": [
+    "warme"
+   ],
+   "en": "Do you like the warm hat?"
+  },
+  {
+   "id": "a2-10-13",
+   "type": "choice",
+   "de": "Die Hose passt gut zum ___ Hemd.",
+   "options": [
+    "weißen",
+    "weiße",
+    "weißem"
+   ],
+   "answer": 0,
+   "why": "zum = zu dem, dative → -en.",
+   "en": "The trousers go well with the white shirt."
+  },
+  {
+   "id": "a2-10-14",
+   "type": "cloze",
+   "de": "Ich probiere die ___ Stiefel an.",
+   "base": "braun",
+   "answers": [
+    "braunen"
+   ],
+   "en": "I'm trying on the brown boots."
+  },
+  {
+   "id": "a2-10-15",
+   "type": "order",
+   "tiles": [
+    "steht",
+    "Das rote Kleid",
+    "dir",
+    "gut"
+   ],
+   "answers": [
+    "Das rote Kleid steht dir gut.",
+    "Dir steht das rote Kleid gut."
+   ],
+   "en": "The red dress suits you."
+  },
+  {
+   "id": "a2-10-16",
+   "type": "choice",
+   "de": "Ich bringe den ___ Pullover zurück.",
+   "options": [
+    "warme",
+    "warmer",
+    "warmen"
+   ],
+   "answer": 2,
+   "why": "Masculine accusative after den → -en.",
+   "en": "I'm taking the warm pullover back."
+  },
+  {
+   "id": "a2-10-17",
+   "type": "cloze",
+   "de": "Welche Schuhe nimmst du? – Die ___.",
+   "base": "schwarz",
+   "answers": [
+    "schwarzen"
+   ],
+   "en": "Which shoes are you taking? – The black ones."
+  },
+  {
+   "id": "a2-10-18",
+   "type": "choice",
+   "de": "Das ___ T-Shirt ist zu klein.",
+   "options": [
+    "neue",
+    "neuen",
+    "neues"
+   ],
+   "answer": 0,
+   "why": "Neuter nominative after das → -e.",
+   "en": "The new T-shirt is too small."
+  },
+  {
+   "id": "a2-10-19",
+   "type": "cloze",
+   "de": "Wie findest du diesen ___ Mantel?",
+   "base": "lang",
+   "answers": [
+    "langen"
+   ],
+   "en": "What do you think of this long coat?"
+  },
+  {
+   "id": "a2-10-20",
+   "type": "order",
+   "tiles": [
+    "Die blaue Bluse",
+    "ich",
+    "finde",
+    "schöner"
+   ],
+   "answers": [
+    "Ich finde die blaue Bluse schöner.",
+    "Die blaue Bluse finde ich schöner."
+   ],
+   "en": "I think the blue blouse is nicer."
+  },
+  {
+   "id": "a2-10-21",
+   "type": "choice",
+   "de": "Mit den ___ Schuhen kann ich nicht laufen.",
+   "options": [
+    "neue",
+    "neuen",
+    "neuer"
+   ],
+   "answer": 1,
+   "why": "Dative plural after den → -en.",
+   "en": "I can't walk in the new shoes."
+  },
+  {
+   "id": "a2-10-22",
+   "type": "cloze",
+   "de": "Der ___ Rock ist mir zu lang.",
+   "base": "grau",
+   "answers": [
+    "graue"
+   ],
+   "en": "The grey skirt is too long for me."
+  },
+  {
+   "id": "a2-10-23",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "kostet",
+    "die rote Mütze",
+    "da"
+   ],
+   "answers": [
+    "Was kostet die rote Mütze da?",
+    "Was kostet da die rote Mütze?"
+   ],
+   "en": "How much is the red hat there?"
+  },
+  {
+   "id": "a2-10-24",
+   "type": "order",
+   "tiles": [
+    "Die Jacke",
+    "passt",
+    "gut",
+    "zur grauen Hose"
+   ],
+   "answers": [
+    "Die Jacke passt gut zur grauen Hose.",
+    "Zur grauen Hose passt die Jacke gut."
+   ],
+   "en": "The jacket goes well with the grey trousers."
+  }
+ ],
+ "listening": {
+  "title": "Im Kleidergeschäft",
+  "intro": "Jan is looking for a winter jacket, and the shop assistant Sandra helps him.",
+  "lines": [
+   {
+    "speaker": "Sandra",
+    "de": "Hallo! Kann ich Ihnen helfen?",
+    "en": "Hello! Can I help you?"
+   },
+   {
+    "speaker": "Jan",
+    "de": "Ja, gern. Ich suche eine Jacke für den Winter.",
+    "en": "Yes, please. I'm looking for a jacket for the winter."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Wie gefällt Ihnen die graue Jacke hier? Sie ist sehr warm.",
+    "en": "How do you like the grey jacket here? It's very warm."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Die graue ist schön, aber ich finde die blaue da hinten schöner.",
+    "en": "The grey one is nice, but I think the blue one at the back is nicer."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Die blaue Jacke haben wir in M und in L.",
+    "en": "We have the blue jacket in M and in L."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Kann ich die blaue Jacke in L anprobieren?",
+    "en": "Can I try on the blue jacket in L?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Natürlich, die Kabine ist gleich hier links.",
+    "en": "Of course, the changing room is just here on the left."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Die Jacke passt gut. Passt sie auch zum schwarzen Pullover?",
+    "en": "The jacket fits well. Does it go with the black pullover too?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Ja, sehr gut. Und der schwarze Pullover ist heute zwanzig Prozent billiger.",
+    "en": "Yes, very well. And the black pullover is twenty percent cheaper today."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Wirklich? Dann nehme ich die blaue Jacke und den schwarzen Pullover.",
+    "en": "Really? Then I'll take the blue jacket and the black pullover."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Sehr gern. Die Kasse ist neben der großen Treppe.",
+    "en": "With pleasure. The till is next to the big staircase."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Jan looking for?",
+    "options": [
+     "A winter jacket.",
+     "A black pullover.",
+     "A raincoat."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Which jacket does Jan try on?",
+    "options": [
+     "The grey one in M.",
+     "The blue one in L.",
+     "The black one in L."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is special about the black pullover today?",
+    "options": [
+     "It's the last one.",
+     "It comes free with the jacket.",
+     "It's twenty percent cheaper."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where is the till?",
+    "options": [
+     "At the entrance.",
+     "Next to the big staircase.",
+     "Behind the changing rooms."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich nehme die blaue Jacke in L.",
+  "Der schwarze Pullover ist heute billiger.",
+  "Passt die Jacke zum grauen Pullover?"
+ ],
+ "speaking": [
+  {
+   "de": "Ich suche eine Jacke für den Winter.",
+   "en": "I'm looking for a jacket for the winter."
+  },
+  {
+   "de": "Ich finde die blaue da hinten schöner.",
+   "en": "I think the blue one at the back is nicer."
+  },
+  {
+   "de": "Kann ich die blaue Jacke in L anprobieren?",
+   "en": "Can I try on the blue jacket in L?"
+  },
+  {
+   "de": "Passt sie auch zum schwarzen Pullover?",
+   "en": "Does it go with the black pullover too?"
+  },
+  {
+   "de": "Dann nehme ich die blaue Jacke und den schwarzen Pullover.",
+   "en": "Then I'll take the blue jacket and the black pullover."
+  }
+ ],
+ "writing": {
+  "task": "You went clothes shopping today. Write 5–6 sentences to a friend: what you bought, what you tried on and what you didn't like.",
+  "model": "Hallo Mara, heute war ich in der Stadt einkaufen. Ich habe die schwarzen Stiefel aus dem Schaufenster gekauft. Die rote Jacke hat mir auch gefallen, aber sie war zu teuer. Dann habe ich das grüne Kleid anprobiert. Leider war das grüne Kleid zu klein. Am Ende habe ich noch den grauen Schal genommen, er passt gut zu den Stiefeln. Bis bald!"
+ }
+}

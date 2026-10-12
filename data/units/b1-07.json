@@ -1,0 +1,478 @@
+{
+ "id": "b1-07",
+ "cefr": "B1",
+ "title": "Regrets: the past subjunctive",
+ "situation": "Regrets and missed chances",
+ "canDo": "You can talk about regrets and missed chances with hätte … gemacht, wäre … gegangen and hätte … sollen.",
+ "explanation": "To talk about regrets and things that **didn't** happen, use the Konjunktiv II of the past. Take the Perfekt and change *habe/bin* to **hätte/wäre**:\n\n| Perfekt (real) | Konjunktiv II past (not real) |\n|---|---|\n| Ich habe angerufen. | Ich **hätte** angerufen. |\n| Ich bin gekommen. | Ich **wäre** gekommen. |\n\nVerbs that take sein in the Perfekt take **wäre**; all others take **hätte**.\n\n**If-sentences about the past** use it in both parts:\n- *Wenn ich früher angerufen **hätte**, **hätte** ich die Wohnung bekommen.*\n- *Wenn ich nicht krank gewesen **wäre**, **wäre** ich gekommen.*\n\n**Regrets and wishes**:\n- *Ich hätte gern Medizin studiert.* (I would have liked to…)\n- *Wenn ich das nur gewusst hätte!* (If only I had known!)\n- *Fast hätte ich den Zug verpasst.* (I almost missed the train.)\n\n**With modal verbs** (should have, could have): **hätte** + infinitive + modal in the infinitive, both at the end:\n- *Ich hätte früher anrufen **sollen**.* (I should have called earlier.)\n- *Du hättest mir das sagen **können**.* (You could have told me.)\n- *Das hätte nicht passieren **dürfen**.* (That shouldn't have happened.)\n\nHere it is always **hätte**, even with verbs of movement: *Ich hätte früher gehen sollen.*\n\nMost common mistake: the wrong helper verb. Check the Perfekt: *ich **bin** geblieben* → *ich **wäre** geblieben*, never *hätte geblieben*. And don't use würde here: say *ich hätte das gemacht*, not *ich würde das gemacht haben*.",
+ "french": "It matches French closely: si j'étais parti plus tôt, j'aurais eu le train = wenn ich früher losgefahren wäre, hätte ich den Zug bekommen, and j'aurais dû appeler = ich hätte anrufen sollen; the être/avoir choice works like wäre/hätte.",
+ "examples": [
+  {
+   "de": "Wenn ich früher losgegangen wäre, hätte ich den Zug bekommen.",
+   "en": "If I had left earlier, I would have caught the train."
+  },
+  {
+   "de": "Ich hätte gern Medizin studiert.",
+   "en": "I would have liked to study medicine."
+  },
+  {
+   "de": "Wir wären gern länger geblieben.",
+   "en": "We would have liked to stay longer."
+  },
+  {
+   "de": "Wenn ich das gewusst hätte, hätte ich dich angerufen.",
+   "en": "If I had known that, I would have called you."
+  },
+  {
+   "de": "Du hättest mir das früher sagen sollen.",
+   "en": "You should have told me that earlier."
+  },
+  {
+   "de": "Fast hätte ich meinen Pass vergessen.",
+   "en": "I almost forgot my passport."
+  },
+  {
+   "de": "Wenn ich nur mehr Deutsch gelernt hätte!",
+   "en": "If only I had learned more German!"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-07-01",
+   "type": "cloze",
+   "de": "Wenn ich früher aufgestanden ___, hätte ich den Bus bekommen.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "If I had got up earlier, I would have caught the bus."
+  },
+  {
+   "id": "b1-07-02",
+   "type": "cloze",
+   "de": "Wir ___ gern gekommen, aber wir waren krank.",
+   "base": "sein",
+   "answers": [
+    "wären"
+   ],
+   "en": "We would have liked to come, but we were ill."
+  },
+  {
+   "id": "b1-07-03",
+   "type": "choice",
+   "de": "Wenn du gefragt hättest, ___ ich dir geholfen.",
+   "options": [
+    "wäre",
+    "hätte",
+    "würde"
+   ],
+   "answer": 1,
+   "why": "helfen takes haben in the Perfekt, so: hätte geholfen.",
+   "en": "If you had asked, I would have helped you."
+  },
+  {
+   "id": "b1-07-04",
+   "type": "cloze",
+   "de": "Ohne dich ___ wir den Zug verpasst.",
+   "base": "haben",
+   "answers": [
+    "hätten"
+   ],
+   "en": "Without you we would have missed the train."
+  },
+  {
+   "id": "b1-07-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hätte",
+    "das",
+    "nicht",
+    "sagen sollen"
+   ],
+   "answers": [
+    "Ich hätte das nicht sagen sollen.",
+    "Das hätte ich nicht sagen sollen."
+   ],
+   "en": "I shouldn't have said that."
+  },
+  {
+   "id": "b1-07-06",
+   "type": "choice",
+   "de": "Wenn wir mit dem Auto gefahren ___, wären wir schneller da gewesen.",
+   "options": [
+    "hätten",
+    "würden",
+    "wären"
+   ],
+   "answer": 2,
+   "why": "fahren takes sein in the Perfekt, so: wären gefahren.",
+   "en": "If we had gone by car, we would have been there sooner."
+  },
+  {
+   "id": "b1-07-07",
+   "type": "cloze",
+   "de": "Wenn ich das gewusst ___, wäre ich gekommen.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "If I had known that, I would have come."
+  },
+  {
+   "id": "b1-07-08",
+   "type": "choice",
+   "de": "Schade! Du ___ gestern mitkommen sollen.",
+   "options": [
+    "wärst",
+    "hättest",
+    "würdest"
+   ],
+   "answer": 1,
+   "why": "With a modal verb it's always hätte + infinitive + modal: hättest mitkommen sollen.",
+   "en": "Too bad! You should have come along yesterday."
+  },
+  {
+   "id": "b1-07-09",
+   "type": "cloze",
+   "de": "Sie ___ gern Medizin studiert, aber ihre Noten waren nicht gut genug.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "She would have liked to study medicine, but her grades weren't good enough."
+  },
+  {
+   "id": "b1-07-10",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "ich",
+    "das",
+    "gewusst hätte,",
+    "wäre",
+    "ich",
+    "gekommen"
+   ],
+   "answers": [
+    "Wenn ich das gewusst hätte, wäre ich gekommen.",
+    "Ich wäre gekommen, wenn ich das gewusst hätte."
+   ],
+   "en": "If I had known that, I would have come."
+  },
+  {
+   "id": "b1-07-11",
+   "type": "choice",
+   "de": "Ich ___ gern länger geschlafen, aber der Wecker hat geklingelt.",
+   "options": [
+    "hätte",
+    "wäre",
+    "würde"
+   ],
+   "answer": 0,
+   "why": "schlafen takes haben in the Perfekt, so: hätte geschlafen.",
+   "en": "I would have liked to sleep longer, but the alarm went off."
+  },
+  {
+   "id": "b1-07-12",
+   "type": "cloze",
+   "de": "Wenn er pünktlich gekommen ___, hätten wir den ganzen Film gesehen.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "If he had come on time, we would have seen the whole film."
+  },
+  {
+   "id": "b1-07-13",
+   "type": "choice",
+   "de": "Wenn ich nur mehr ___ hätte!",
+   "options": [
+    "lernen",
+    "gelernt",
+    "lernte"
+   ],
+   "answer": 1,
+   "why": "hätte needs the Partizip II: gelernt.",
+   "en": "If only I had studied more!"
+  },
+  {
+   "id": "b1-07-14",
+   "type": "cloze",
+   "de": "Bei dem Wetter ___ ihr besser zu Hause geblieben.",
+   "base": "sein",
+   "answers": [
+    "wärt"
+   ],
+   "en": "In that weather you would have been better off staying at home."
+  },
+  {
+   "id": "b1-07-15",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "wären",
+    "gern",
+    "länger",
+    "geblieben"
+   ],
+   "answers": [
+    "Wir wären gern länger geblieben.",
+    "Gern wären wir länger geblieben."
+   ],
+   "en": "We would have liked to stay longer."
+  },
+  {
+   "id": "b1-07-16",
+   "type": "choice",
+   "de": "Wenn es nicht geregnet ___, wären wir an den See gefahren.",
+   "options": [
+    "wäre",
+    "hat",
+    "hätte"
+   ],
+   "answer": 2,
+   "why": "regnen takes haben in the Perfekt, so: hätte geregnet.",
+   "en": "If it hadn't rained, we would have gone to the lake."
+  },
+  {
+   "id": "b1-07-17",
+   "type": "cloze",
+   "de": "Wenn du früher ___ hättest, hätte ich dich abgeholt.",
+   "base": "anrufen",
+   "answers": [
+    "angerufen"
+   ],
+   "en": "If you had called earlier, I would have picked you up."
+  },
+  {
+   "id": "b1-07-18",
+   "type": "choice",
+   "de": "Das ___ nicht passieren dürfen.",
+   "options": [
+    "wäre",
+    "hätte",
+    "würde"
+   ],
+   "answer": 1,
+   "why": "With a modal verb it's always hätte + infinitive + modal.",
+   "en": "That shouldn't have happened."
+  },
+  {
+   "id": "b1-07-19",
+   "type": "cloze",
+   "de": "Wenn der Zug keine Verspätung gehabt ___, wäre ich pünktlich gewesen.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "If the train hadn't been late, I would have been on time."
+  },
+  {
+   "id": "b1-07-20",
+   "type": "order",
+   "tiles": [
+    "Du",
+    "hättest",
+    "mir",
+    "das",
+    "früher",
+    "sagen müssen"
+   ],
+   "answers": [
+    "Du hättest mir das früher sagen müssen.",
+    "Das hättest du mir früher sagen müssen."
+   ],
+   "en": "You should have told me that earlier."
+  },
+  {
+   "id": "b1-07-21",
+   "type": "choice",
+   "de": "Wenn ich mehr gespart hätte, ___ ich mir die Reise leisten können.",
+   "options": [
+    "wäre",
+    "würde",
+    "hätte"
+   ],
+   "answer": 2,
+   "why": "With a modal verb it's hätte + infinitive + modal: hätte … leisten können.",
+   "en": "If I had saved more, I could have afforded the trip."
+  },
+  {
+   "id": "b1-07-22",
+   "type": "cloze",
+   "de": "Wenn wir den Termin nicht vergessen ___, wäre das nicht passiert.",
+   "base": "haben",
+   "answers": [
+    "hätten"
+   ],
+   "en": "If we hadn't forgotten the appointment, that wouldn't have happened."
+  },
+  {
+   "id": "b1-07-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "wäre",
+    "fast",
+    "zu spät",
+    "gekommen"
+   ],
+   "answers": [
+    "Ich wäre fast zu spät gekommen.",
+    "Fast wäre ich zu spät gekommen."
+   ],
+   "en": "I was almost late."
+  },
+  {
+   "id": "b1-07-24",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "du",
+    "mich",
+    "doch",
+    "gefragt hättest"
+   ],
+   "answers": [
+    "Wenn du mich doch gefragt hättest!"
+   ],
+   "en": "If only you had asked me!"
+  }
+ ],
+ "listening": {
+  "title": "Die verpasste Wohnung",
+  "intro": "Sarah asks her friend Tim whether he got the flat he wanted.",
+  "lines": [
+   {
+    "speaker": "Sarah",
+    "de": "Und, hast du die Wohnung in der Gartenstraße bekommen?",
+    "en": "So, did you get the flat on Gartenstraße?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Nein, leider nicht. Ich hätte mich früher melden sollen.",
+    "en": "No, unfortunately not. I should have got in touch earlier."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Oh nein! Was ist passiert?",
+    "en": "Oh no! What happened?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ich habe die Anzeige am Montag gesehen, aber erst am Donnerstag angerufen. Da war die Wohnung schon weg.",
+    "en": "I saw the ad on Monday, but I didn't call until Thursday. By then the flat was gone."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Schade! Wenn du gleich angerufen hättest, hättest du sie vielleicht bekommen.",
+    "en": "What a shame! If you had called right away, you might have got it."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ich weiß. Und sie war perfekt: hell, mit Balkon und gar nicht teuer.",
+    "en": "I know. And it was perfect: bright, with a balcony and not expensive at all."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Warum hast du denn so lange gewartet?",
+    "en": "Why did you wait so long?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ich war die ganze Woche krank. Wenn ich nicht krank gewesen wäre, wäre ich sofort hingegangen.",
+    "en": "I was ill all week. If I hadn't been ill, I would have gone straight away."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Du hättest mir doch was sagen können! Ich wäre für dich zur Besichtigung gegangen.",
+    "en": "You could have told me! I would have gone to the viewing for you."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Stimmt, daran habe ich gar nicht gedacht.",
+    "en": "True, I didn't think of that at all."
+   },
+   {
+    "speaker": "Sarah",
+    "de": "Na ja, beim nächsten Mal. Soll ich dir bei der Suche helfen?",
+    "en": "Oh well, next time. Shall I help you look?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Gern! Diesmal rufe ich sofort an.",
+    "en": "I'd love that! This time I'll call straight away."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why didn't Tim get the flat?",
+    "options": [
+     "It was too expensive",
+     "He called too late",
+     "The landlord didn't like him"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What was the flat like?",
+    "options": [
+     "Bright, with a balcony and cheap",
+     "Big but dark",
+     "Small and near the station"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why did Tim wait so long?",
+    "options": [
+     "He was on holiday",
+     "He forgot about it",
+     "He was ill all week"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What would Sarah have done?",
+    "options": [
+     "Called the landlord",
+     "Gone to the viewing for him",
+     "Lent him money"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wenn ich früher angerufen hätte, hätte ich die Wohnung bekommen.",
+  "Ich wäre gern mitgekommen, aber ich war krank.",
+  "Du hättest mir das wirklich früher sagen sollen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich hätte mich früher melden sollen.",
+   "en": "I should have got in touch earlier."
+  },
+  {
+   "de": "Wenn du gleich angerufen hättest, hättest du sie bekommen.",
+   "en": "If you had called right away, you would have got it."
+  },
+  {
+   "de": "Wenn ich nicht krank gewesen wäre, wäre ich sofort hingegangen.",
+   "en": "If I hadn't been ill, I would have gone straight away."
+  },
+  {
+   "de": "Du hättest mir doch was sagen können!",
+   "en": "You could have told me!"
+  },
+  {
+   "de": "Ich wäre für dich zur Besichtigung gegangen.",
+   "en": "I would have gone to the viewing for you."
+  }
+ ],
+ "writing": {
+  "task": "Write an 80–100-word message to a friend about a chance you missed (a job, a flat, a trip or a concert). Say what happened and what you would have done differently.",
+  "model": "Hallo Jonas,\n\nstell dir vor, ich habe das Konzert im Stadtpark verpasst! Die Tickets gab es am Montag um zehn Uhr online. Ich hätte sie gleich morgens kaufen sollen, aber ich hatte eine Besprechung. Als ich mittags auf die Seite ging, war alles ausverkauft. Wenn ich mir einen Wecker gestellt hätte, hätte ich bestimmt noch Tickets bekommen. Und wenn ich dich gefragt hätte, hättest du sie für mich gekauft, oder? Wir wären bestimmt zusammen hingegangen. Das wäre so schön gewesen! Beim nächsten Mal bin ich schneller.\n\nLiebe Grüße\nHugo"
+ }
+}

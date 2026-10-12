@@ -1,0 +1,493 @@
+{
+ "id": "b1-18",
+ "cefr": "B1",
+ "title": "Reflexive verbs with prepositions",
+ "situation": "Memories and responsibilities",
+ "canDo": "You can talk about what you remember, what you're used to and who takes care of what, with verbs like sich erinnern an and sich kümmern um.",
+ "explanation": "When you share memories or split up jobs, you need reflexive verbs with a fixed preposition: *Ich erinnere mich gern **an** meine Kindheit. Wer kümmert sich **um** die Katze?* Learn each one as a block: verb + reflexive pronoun + preposition.\n\n| verb | meaning |\n|---|---|\n| sich erinnern **an** + acc. | to remember |\n| sich kümmern **um** + acc. | to take care of |\n| sich gewöhnen **an** + acc. | to get used to |\n| sich verlassen **auf** + acc. | to rely on |\n| sich freuen **auf** / **über** + acc. | to look forward to / be happy about |\n| sich interessieren **für** + acc. | to be interested in |\n| sich beschweren **über** + acc. | to complain about |\n| sich beschäftigen **mit** + dat. | to be busy with, to deal with |\n\n- The reflexive pronoun follows the subject: ich **mich**, du **dich**, er/sie/es **sich**, wir **uns**, ihr **euch**, sie/Sie **sich**.\n- The Perfekt uses **haben**: *Ich habe **mich** an das Wetter **gewöhnt**.*\n- For a thing already mentioned, use a da-word: *Ich kümmere mich **darum**. Daran erinnere ich mich nicht.* For people and animals, use the preposition + pronoun: *Ich kümmere mich **um ihn**.*\n- Ask with wo(r)- for things and preposition + wen for people: *Woran erinnerst du dich? An wen?*\n- Without the reflexive pronoun, *erinnern an* means \"remind\": *Erinnere **mich** bitte an den Termin!*\n\nThe most common mistakes: dropping the reflexive pronoun (not ~~Ich erinnere an den Urlaub~~) and taking the preposition from French or English (not ~~sich erinnern von~~, but *sich erinnern **an***).",
+ "french": "Many of these are pronominal verbs in French too, but the prepositions differ: se souvenir de = sich erinnern an, s'occuper de = sich kümmern um, s'intéresser à = sich interessieren für, so learn the German preposition with each verb.",
+ "examples": [
+  {
+   "de": "Ich erinnere mich gern an meine Kindheit in Lyon.",
+   "en": "I like remembering my childhood in Lyon."
+  },
+  {
+   "de": "Wer kümmert sich um die Katze, wenn wir im Urlaub sind?",
+   "en": "Who'll take care of the cat when we're on holiday?"
+  },
+  {
+   "de": "Erinnerst du dich an unseren ersten Abend in Berlin?",
+   "en": "Do you remember our first evening in Berlin?"
+  },
+  {
+   "de": "Ich habe mich schon an das Wetter gewöhnt.",
+   "en": "I've already got used to the weather."
+  },
+  {
+   "de": "Keine Sorge, ich kümmere mich darum.",
+   "en": "Don't worry, I'll take care of it."
+  },
+  {
+   "de": "Mein Vater interessiert sich sehr für alte Fotos.",
+   "en": "My father is very interested in old photos."
+  },
+  {
+   "de": "Kann ich mich auf dich verlassen?",
+   "en": "Can I rely on you?"
+  },
+  {
+   "de": "Erinnere mich bitte an den Termin beim Arzt!",
+   "en": "Please remind me about the doctor's appointment!"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-18-01",
+   "type": "cloze",
+   "de": "Ich erinnere ___ gern an meine Kindheit.",
+   "base": "ich",
+   "answers": [
+    "mich"
+   ],
+   "en": "I like remembering my childhood."
+  },
+  {
+   "id": "b1-18-02",
+   "type": "choice",
+   "de": "Wer kümmert sich ___ die Katze?",
+   "options": [
+    "für",
+    "um",
+    "an"
+   ],
+   "answer": 1,
+   "why": "The fixed preposition is sich kümmern um.",
+   "en": "Who's taking care of the cat?"
+  },
+  {
+   "id": "b1-18-03",
+   "type": "cloze",
+   "de": "Erinnerst du ___ an unseren ersten Urlaub?",
+   "base": "du",
+   "answers": [
+    "dich"
+   ],
+   "en": "Do you remember our first holiday?"
+  },
+  {
+   "id": "b1-18-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "kümmere",
+    "mich",
+    "um",
+    "die Kinder"
+   ],
+   "answers": [
+    "Ich kümmere mich um die Kinder.",
+    "Um die Kinder kümmere ich mich."
+   ],
+   "en": "I take care of the children."
+  },
+  {
+   "id": "b1-18-05",
+   "type": "choice",
+   "de": "Ich erinnere mich gut ___ meinen ersten Schultag.",
+   "options": [
+    "von",
+    "über",
+    "an"
+   ],
+   "answer": 2,
+   "why": "The fixed preposition is sich erinnern an, not von like the French se souvenir de.",
+   "en": "I remember my first day at school well."
+  },
+  {
+   "id": "b1-18-06",
+   "type": "cloze",
+   "de": "Wir haben ___ schon an das Wetter in Hamburg gewöhnt.",
+   "base": "wir",
+   "answers": [
+    "uns"
+   ],
+   "en": "We've already got used to the weather in Hamburg."
+  },
+  {
+   "id": "b1-18-07",
+   "type": "cloze",
+   "de": "Ist die Rechnung schon bezahlt? – Nein, aber ich kümmere mich ___.",
+   "base": "da(r)- + um",
+   "answers": [
+    "darum"
+   ],
+   "en": "Has the bill been paid yet? – No, but I'll take care of it."
+  },
+  {
+   "id": "b1-18-08",
+   "type": "choice",
+   "de": "Interessierst du dich ___ Fußball?",
+   "options": [
+    "für",
+    "an",
+    "über"
+   ],
+   "answer": 0,
+   "why": "The fixed preposition is sich interessieren für.",
+   "en": "Are you interested in football?"
+  },
+  {
+   "id": "b1-18-09",
+   "type": "order",
+   "tiles": [
+    "Erinnerst",
+    "du",
+    "dich",
+    "an",
+    "den Namen"
+   ],
+   "answers": [
+    "Erinnerst du dich an den Namen?"
+   ],
+   "en": "Do you remember the name?"
+  },
+  {
+   "id": "b1-18-10",
+   "type": "cloze",
+   "de": "Kinder, freut ihr ___ auf die Ferien?",
+   "base": "ihr",
+   "answers": [
+    "euch"
+   ],
+   "en": "Kids, are you looking forward to the holidays?"
+  },
+  {
+   "id": "b1-18-11",
+   "type": "choice",
+   "de": "Ich kann ___ auf meine Kollegen verlassen.",
+   "options": [
+    "mich",
+    "mir",
+    "sich"
+   ],
+   "answer": 0,
+   "why": "With ich the reflexive pronoun is mich.",
+   "en": "I can rely on my colleagues."
+  },
+  {
+   "id": "b1-18-12",
+   "type": "cloze",
+   "de": "___ erinnerst du dich am liebsten?",
+   "base": "wo(r)- + an",
+   "answers": [
+    "Woran"
+   ],
+   "en": "What do you most like to remember?"
+  },
+  {
+   "id": "b1-18-13",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "mich",
+    "an",
+    "die Arbeit",
+    "gewöhnt"
+   ],
+   "answers": [
+    "Ich habe mich an die Arbeit gewöhnt.",
+    "An die Arbeit habe ich mich gewöhnt."
+   ],
+   "en": "I've got used to the job."
+  },
+  {
+   "id": "b1-18-14",
+   "type": "choice",
+   "de": "Die Nachbarn beschweren sich ___ den Lärm.",
+   "options": [
+    "über",
+    "um",
+    "für"
+   ],
+   "answer": 0,
+   "why": "The fixed preposition is sich beschweren über.",
+   "en": "The neighbours are complaining about the noise."
+  },
+  {
+   "id": "b1-18-15",
+   "type": "cloze",
+   "de": "Mein Bruder beschäftigt sich gerade mit ___ Umzug.",
+   "base": "der",
+   "answers": [
+    "dem"
+   ],
+   "en": "My brother is busy with the move at the moment."
+  },
+  {
+   "id": "b1-18-16",
+   "type": "choice",
+   "de": "Wer kümmert sich um den Hund? – Ich kümmere mich ___.",
+   "options": [
+    "darum",
+    "um ihn",
+    "um es"
+   ],
+   "answer": 1,
+   "why": "For people and animals you use preposition + pronoun; der Hund becomes um ihn.",
+   "en": "Who's taking care of the dog? – I'm taking care of him."
+  },
+  {
+   "id": "b1-18-17",
+   "type": "order",
+   "tiles": [
+    "Kannst",
+    "du",
+    "dich",
+    "um",
+    "die Pflanzen",
+    "kümmern"
+   ],
+   "answers": [
+    "Kannst du dich um die Pflanzen kümmern?"
+   ],
+   "en": "Can you take care of the plants?"
+  },
+  {
+   "id": "b1-18-18",
+   "type": "cloze",
+   "de": "Erinnere ___ bitte an den Termin beim Arzt!",
+   "base": "ich",
+   "answers": [
+    "mich"
+   ],
+   "en": "Please remind me about the doctor's appointment!"
+  },
+  {
+   "id": "b1-18-19",
+   "type": "choice",
+   "de": "Ich freue mich schon ___ deinen Besuch nächste Woche.",
+   "options": [
+    "über",
+    "auf",
+    "an"
+   ],
+   "answer": 1,
+   "why": "The visit is still in the future, so it is sich freuen auf (look forward to).",
+   "en": "I'm already looking forward to your visit next week."
+  },
+  {
+   "id": "b1-18-20",
+   "type": "cloze",
+   "de": "Hast du dich schon um die Versicherung ___?",
+   "base": "kümmern",
+   "answers": [
+    "gekümmert"
+   ],
+   "en": "Have you taken care of the insurance yet?"
+  },
+  {
+   "id": "b1-18-21",
+   "type": "order",
+   "tiles": [
+    "Daran",
+    "kann",
+    "ich",
+    "mich",
+    "nicht",
+    "erinnern"
+   ],
+   "answers": [
+    "Daran kann ich mich nicht erinnern.",
+    "Ich kann mich nicht daran erinnern.",
+    "Ich kann mich daran nicht erinnern."
+   ],
+   "en": "I can't remember that."
+  },
+  {
+   "id": "b1-18-22",
+   "type": "choice",
+   "de": "Erinnert ihr ___ noch an unsere Reise nach Rom?",
+   "options": [
+    "sich",
+    "ihr",
+    "euch"
+   ],
+   "answer": 2,
+   "why": "With ihr the reflexive pronoun is euch.",
+   "en": "Do you (all) still remember our trip to Rome?"
+  },
+  {
+   "id": "b1-18-23",
+   "type": "cloze",
+   "de": "Ich habe mich sehr ___ dein Geschenk gefreut.",
+   "base": "auf/über",
+   "answers": [
+    "über"
+   ],
+   "en": "I was very happy about your present."
+  },
+  {
+   "id": "b1-18-24",
+   "type": "order",
+   "tiles": [
+    "Wer",
+    "kümmert",
+    "sich",
+    "um",
+    "eure Wohnung",
+    "im Urlaub"
+   ],
+   "answers": [
+    "Wer kümmert sich im Urlaub um eure Wohnung?",
+    "Wer kümmert sich um eure Wohnung im Urlaub?"
+   ],
+   "en": "Who's taking care of your flat while you're on holiday?"
+  }
+ ],
+ "listening": {
+  "title": "Omas Geburtstag",
+  "intro": "Lena and her brother Max plan their grandmother's 80th birthday party.",
+  "lines": [
+   {
+    "speaker": "Lena",
+    "de": "Max, Omas Geburtstag ist in drei Wochen. Wer kümmert sich um das Fest?",
+    "en": "Max, Grandma's birthday is in three weeks. Who's taking care of the party?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Ich kümmere mich um das Restaurant. Ich rufe morgen an.",
+    "en": "I'll take care of the restaurant. I'll call tomorrow."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Super. Dann kümmere ich mich um die Einladungen.",
+    "en": "Great. Then I'll take care of the invitations."
+   },
+   {
+    "speaker": "Max",
+    "de": "Gut. Und ich habe eine Idee: Wir machen ein Album mit alten Fotos.",
+    "en": "Good. And I have an idea: we'll make an album with old photos."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Schöne Idee! Erinnerst du dich an das Foto vom Urlaub in Italien?",
+    "en": "Lovely idea! Do you remember the photo from the holiday in Italy?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Klar! Da war ich sechs und hatte Angst vor dem Meer.",
+    "en": "Of course! I was six and I was scared of the sea."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Und Oma ist mit dir ins Wasser gegangen. Daran erinnert sie sich bestimmt noch.",
+    "en": "And Grandma went into the water with you. I'm sure she still remembers that."
+   },
+   {
+    "speaker": "Max",
+    "de": "Sie erinnert sich an alles. Sie weiß sogar noch den Namen von unserem Hotel.",
+    "en": "She remembers everything. She even still knows the name of our hotel."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Wer hat eigentlich die alten Fotos? Mama?",
+    "en": "Who actually has the old photos? Mum?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Ja, aber Mama beschäftigt sich gerade mit ihrem Umzug. Ich frage sie am Wochenende.",
+    "en": "Yes, but Mum is busy with her move right now. I'll ask her at the weekend."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Okay. Kann ich mich darauf verlassen? Du vergisst so etwas manchmal.",
+    "en": "OK. Can I rely on that? You sometimes forget things like that."
+   },
+   {
+    "speaker": "Max",
+    "de": "Ja, ja. Erinnere mich einfach am Freitag noch mal daran.",
+    "en": "Yes, yes. Just remind me again on Friday."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Mache ich. Oma wird sich so über das Album freuen!",
+    "en": "I will. Grandma will be so happy about the album!"
+   },
+   {
+    "speaker": "Max",
+    "de": "Und ich freue mich schon auf das Fest.",
+    "en": "And I'm already looking forward to the party."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Max taking care of?",
+    "options": [
+     "The invitations.",
+     "The restaurant.",
+     "The cake."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happened on the holiday in Italy?",
+    "options": [
+     "Max got lost in the town.",
+     "Lena found the hotel.",
+     "Grandma went into the sea with Max."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why can't they get the photos from their mother right away?",
+    "options": [
+     "She's busy with her move.",
+     "She's on holiday.",
+     "She has lost them."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Max ask Lena to do?",
+    "options": [
+     "Call the restaurant.",
+     "Remind him on Friday.",
+     "Find the photos herself."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich erinnere mich noch gut an meinen ersten Tag in Berlin.",
+  "Wer kümmert sich um die Katze, wenn wir im Urlaub sind?",
+  "Wir haben uns schnell an die neue Wohnung gewöhnt."
+ ],
+ "speaking": [
+  {
+   "de": "Wer kümmert sich um das Fest?",
+   "en": "Who's taking care of the party?"
+  },
+  {
+   "de": "Ich kümmere mich um das Restaurant.",
+   "en": "I'll take care of the restaurant."
+  },
+  {
+   "de": "Erinnerst du dich an das Foto vom Urlaub in Italien?",
+   "en": "Do you remember the photo from the holiday in Italy?"
+  },
+  {
+   "de": "Kann ich mich darauf verlassen?",
+   "en": "Can I rely on that?"
+  },
+  {
+   "de": "Erinnere mich am Freitag noch mal daran.",
+   "en": "Remind me again on Friday."
+  }
+ ],
+ "writing": {
+  "task": "You're going away for two weeks. Write a message of 80–100 words to your neighbour, who has agreed to look after your flat: say what they need to take care of, remind them of one important thing, and say why you know you can rely on them.",
+  "model": "Liebe Frau Becker,\n\nmorgen fahre ich für zwei Wochen nach Frankreich. Vielen Dank, dass Sie sich um meine Wohnung kümmern! Die Katze bekommt morgens und abends Futter. Könnten Sie sich bitte auch um die Pflanzen auf dem Balkon kümmern? Sie brauchen jeden zweiten Tag Wasser. Und denken Sie bitte an die Post. Ich erinnere mich noch gut, wie toll Sie sich letzten Sommer um alles gekümmert haben. Deshalb weiß ich, dass ich mich auf Sie verlassen kann. Ich bringe Ihnen Käse aus Frankreich mit!\n\nHerzliche Grüße\nClaire"
+ }
+}

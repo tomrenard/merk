@@ -1,0 +1,475 @@
+{
+ "id": "b1-05",
+ "cefr": "B1",
+ "title": "The passive in the past and with modals",
+ "situation": "Reporting repairs and incidents",
+ "canDo": "You can report what was done, what has been done and what must be done, using the passive in the past and with modal verbs.",
+ "explanation": "When you report a repair or an incident, you often say what **was done**, not who did it. You know the present passive (*wird repariert*). Now the past and the modal verbs:\n\n| | passive |\n|---|---|\n| present | Die Heizung **wird** repariert. |\n| Präteritum | Die Heizung **wurde** repariert. |\n| Perfekt | Die Heizung **ist** repariert **worden**. |\n| with a modal | Die Heizung **muss** repariert **werden**. |\n\n- **Präteritum**: *wurde* + Partizip II. It's the usual form in reports, letters and the news: *Mein Fahrrad wurde gestohlen.* Forms: *ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden*.\n- **Perfekt**: *sein* + Partizip II + **worden**. Common in speech: *Bei uns ist eingebrochen worden.*\n- **With a modal verb**: the modal is the conjugated verb, and **Partizip II + werden** go to the end: *Das Fenster kann nicht geöffnet werden. Die Rechnung soll bis Freitag bezahlt werden.* In the past: *Die Tür **konnte** nicht geöffnet **werden**.*\n\nIn a subordinate clause the conjugated verb goes last: *…, dass die Heizung repariert **wurde**. …, dass die Heizung repariert werden **muss**.*\n\nMost common mistake: in the passive Perfekt it's **worden**, not *geworden*. *geworden* is only for \"become\": *Es ist kalt geworden.* (It has got cold.) But: *Die Tür ist repariert **worden**.* (The door has been repaired.)",
+ "french": "Like the French passive in the past (la porte a été réparée = die Tür ist repariert worden / wurde repariert) and with modals (doit être réparé = muss repariert werden), but German uses werden, not sein.",
+ "examples": [
+  {
+   "de": "Die Heizung wurde gestern repariert.",
+   "en": "The heating was repaired yesterday."
+  },
+  {
+   "de": "Mein Fahrrad ist gestohlen worden.",
+   "en": "My bike has been stolen."
+  },
+  {
+   "de": "Die Waschmaschine muss repariert werden.",
+   "en": "The washing machine must be repaired."
+  },
+  {
+   "de": "Die Tür konnte nicht geöffnet werden.",
+   "en": "The door couldn't be opened."
+  },
+  {
+   "de": "Der Schaden wurde sofort gemeldet.",
+   "en": "The damage was reported straight away."
+  },
+  {
+   "de": "Die Fenster sollen nächste Woche ausgetauscht werden.",
+   "en": "The windows are to be replaced next week."
+  },
+  {
+   "de": "Der Hausmeister sagt, dass das Licht schon repariert worden ist.",
+   "en": "The caretaker says the light has already been repaired."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-05-01",
+   "type": "cloze",
+   "de": "Gestern ___ die Heizung repariert.",
+   "base": "werden",
+   "answers": [
+    "wurde"
+   ],
+   "en": "The heating was repaired yesterday."
+  },
+  {
+   "id": "b1-05-02",
+   "type": "cloze",
+   "de": "Die Fenster ___ letzte Woche geputzt.",
+   "base": "werden",
+   "answers": [
+    "wurden"
+   ],
+   "en": "The windows were cleaned last week."
+  },
+  {
+   "id": "b1-05-03",
+   "type": "choice",
+   "de": "Die Tür ist schon repariert ___.",
+   "options": [
+    "geworden",
+    "worden",
+    "werden"
+   ],
+   "answer": 1,
+   "why": "In the passive Perfekt the last word is worden, not geworden.",
+   "en": "The door has already been repaired."
+  },
+  {
+   "id": "b1-05-04",
+   "type": "cloze",
+   "de": "Die Waschmaschine muss ___ werden.",
+   "base": "reparieren",
+   "answers": [
+    "repariert"
+   ],
+   "en": "The washing machine must be repaired."
+  },
+  {
+   "id": "b1-05-05",
+   "type": "order",
+   "tiles": [
+    "Mein Fahrrad",
+    "wurde",
+    "gestohlen",
+    "gestern"
+   ],
+   "answers": [
+    "Mein Fahrrad wurde gestern gestohlen.",
+    "Gestern wurde mein Fahrrad gestohlen."
+   ],
+   "en": "My bike was stolen yesterday."
+  },
+  {
+   "id": "b1-05-06",
+   "type": "choice",
+   "de": "Das Licht im Treppenhaus ___ endlich repariert werden.",
+   "options": [
+    "müssen",
+    "muss",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "Licht is singular, so the modal is muss, with Partizip II + werden at the end.",
+   "en": "The light in the stairwell finally has to be repaired."
+  },
+  {
+   "id": "b1-05-07",
+   "type": "cloze",
+   "de": "Der Wasserschaden ___ gestern sofort gemeldet.",
+   "base": "werden",
+   "answers": [
+    "wurde"
+   ],
+   "en": "The water damage was reported straight away yesterday."
+  },
+  {
+   "id": "b1-05-08",
+   "type": "choice",
+   "de": "Bei uns ist letzte Nacht eingebrochen ___.",
+   "options": [
+    "worden",
+    "geworden",
+    "wurde"
+   ],
+   "answer": 0,
+   "why": "Passive Perfekt: ist + Partizip II + worden.",
+   "en": "Our place was broken into last night."
+  },
+  {
+   "id": "b1-05-09",
+   "type": "cloze",
+   "de": "Die Polizei wurde sofort ___.",
+   "base": "rufen",
+   "answers": [
+    "gerufen"
+   ],
+   "en": "The police were called straight away."
+  },
+  {
+   "id": "b1-05-10",
+   "type": "order",
+   "tiles": [
+    "Die Heizung",
+    "kann",
+    "heute",
+    "nicht",
+    "repariert werden"
+   ],
+   "answers": [
+    "Die Heizung kann heute nicht repariert werden.",
+    "Heute kann die Heizung nicht repariert werden."
+   ],
+   "en": "The heating can't be repaired today."
+  },
+  {
+   "id": "b1-05-11",
+   "type": "choice",
+   "de": "Die Wohnung ___ letzten Monat renoviert.",
+   "options": [
+    "wurden",
+    "würde",
+    "wurde"
+   ],
+   "answer": 2,
+   "why": "Wohnung is singular and it's in the past: wurde (würde means would).",
+   "en": "The flat was renovated last month."
+  },
+  {
+   "id": "b1-05-12",
+   "type": "cloze",
+   "de": "Der Vermieter sagt, dass das Dach repariert werden ___.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "The landlord says the roof has to be repaired."
+  },
+  {
+   "id": "b1-05-13",
+   "type": "choice",
+   "de": "Die kaputten Lampen ___ ausgetauscht werden.",
+   "options": [
+    "muss",
+    "müssen",
+    "werden"
+   ],
+   "answer": 1,
+   "why": "Lampen is plural, so the modal is müssen.",
+   "en": "The broken lamps have to be replaced."
+  },
+  {
+   "id": "b1-05-14",
+   "type": "cloze",
+   "de": "Ist der Techniker schon informiert ___?",
+   "base": "werden",
+   "answers": [
+    "worden"
+   ],
+   "en": "Has the technician already been informed?"
+  },
+  {
+   "id": "b1-05-15",
+   "type": "order",
+   "tiles": [
+    "Der Schaden",
+    "ist",
+    "schon",
+    "gemeldet",
+    "worden"
+   ],
+   "answers": [
+    "Der Schaden ist schon gemeldet worden."
+   ],
+   "en": "The damage has already been reported."
+  },
+  {
+   "id": "b1-05-16",
+   "type": "choice",
+   "de": "Gestern ___ die Tür nicht geöffnet werden.",
+   "options": [
+    "konnten",
+    "wurde",
+    "konnte"
+   ],
+   "answer": 2,
+   "why": "Tür is singular and it's in the past: konnte … geöffnet werden.",
+   "en": "Yesterday the door couldn't be opened."
+  },
+  {
+   "id": "b1-05-17",
+   "type": "cloze",
+   "de": "Die Pakete ___ gestern nicht geliefert.",
+   "base": "werden",
+   "answers": [
+    "wurden"
+   ],
+   "en": "The parcels weren't delivered yesterday."
+  },
+  {
+   "id": "b1-05-18",
+   "type": "choice",
+   "de": "Ich habe gehört, dass der Aufzug ___.",
+   "options": [
+    "wurde repariert",
+    "repariert wurde",
+    "repariert worden"
+   ],
+   "answer": 1,
+   "why": "In a dass clause the conjugated verb (wurde) goes to the very end.",
+   "en": "I heard that the lift was repaired."
+  },
+  {
+   "id": "b1-05-19",
+   "type": "cloze",
+   "de": "Das Formular muss bis Freitag ___ werden.",
+   "base": "ausfüllen",
+   "answers": [
+    "ausgefüllt"
+   ],
+   "en": "The form has to be filled in by Friday."
+  },
+  {
+   "id": "b1-05-20",
+   "type": "order",
+   "tiles": [
+    "Im Bad",
+    "muss",
+    "ein neues Waschbecken",
+    "eingebaut",
+    "werden"
+   ],
+   "answers": [
+    "Im Bad muss ein neues Waschbecken eingebaut werden.",
+    "Ein neues Waschbecken muss im Bad eingebaut werden."
+   ],
+   "en": "A new washbasin has to be put in the bathroom."
+  },
+  {
+   "id": "b1-05-21",
+   "type": "choice",
+   "de": "Letzte Woche ___ die Mieter nicht informiert.",
+   "options": [
+    "wurde",
+    "wurden",
+    "worden"
+   ],
+   "answer": 1,
+   "why": "Mieter is plural here, so: wurden.",
+   "en": "Last week the tenants weren't informed."
+  },
+  {
+   "id": "b1-05-22",
+   "type": "cloze",
+   "de": "Unser Keller ___ letzte Nacht aufgebrochen worden.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "Our cellar was broken into last night."
+  },
+  {
+   "id": "b1-05-23",
+   "type": "order",
+   "tiles": [
+    "Die Polizei",
+    "sagt,",
+    "dass",
+    "der Dieb",
+    "gefunden",
+    "wurde"
+   ],
+   "answers": [
+    "Die Polizei sagt, dass der Dieb gefunden wurde."
+   ],
+   "en": "The police say the thief was found."
+  },
+  {
+   "id": "b1-05-24",
+   "type": "order",
+   "tiles": [
+    "Der Termin",
+    "konnte",
+    "leider",
+    "nicht",
+    "verschoben",
+    "werden"
+   ],
+   "answers": [
+    "Der Termin konnte leider nicht verschoben werden.",
+    "Leider konnte der Termin nicht verschoben werden."
+   ],
+   "en": "Unfortunately the appointment couldn't be moved."
+  }
+ ],
+ "listening": {
+  "title": "Wasser im Bad",
+  "intro": "Jana calls the property management to report water damage in her flat.",
+  "lines": [
+   {
+    "speaker": "Uwe",
+    "de": "Hausverwaltung Becker, Uwe Schmidt am Apparat.",
+    "en": "Becker property management, Uwe Schmidt speaking."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Guten Tag, hier ist Jana Weber aus der Lindenstraße 12. Ich möchte einen Schaden melden.",
+    "en": "Hello, this is Jana Weber from Lindenstraße 12. I'd like to report some damage."
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Was ist denn passiert?",
+    "en": "What happened?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Gestern Abend ist im Bad ein Rohr kaputtgegangen. Das ganze Bad stand unter Wasser.",
+    "en": "Yesterday evening a pipe broke in the bathroom. The whole bathroom was under water."
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Oh je! Wurde das Wasser abgestellt?",
+    "en": "Oh dear! Was the water turned off?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ja, mein Nachbar hat es sofort abgestellt. Aber jetzt haben wir kein warmes Wasser.",
+    "en": "Yes, my neighbour turned it off straight away. But now we have no hot water."
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Verstehe. Das Rohr muss natürlich so schnell wie möglich repariert werden. Wurde bei den Nachbarn unten auch etwas beschädigt?",
+    "en": "I see. Of course the pipe must be repaired as soon as possible. Was anything damaged at the neighbours' downstairs too?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ja, leider. Bei Familie Yilmaz ist die Decke in der Küche nass geworden.",
+    "en": "Yes, unfortunately. The ceiling in the Yilmaz family's kitchen got wet."
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Gut, dass Sie anrufen. Ich schicke morgen früh einen Installateur. Er kann um acht Uhr bei Ihnen sein.",
+    "en": "Good that you called. I'll send a plumber tomorrow morning. He can be at your place at eight."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Und muss die Decke bei den Nachbarn auch gestrichen werden?",
+    "en": "And does the neighbours' ceiling have to be painted too?"
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Das wird geprüft, wenn alles trocken ist. Machen Sie bitte Fotos vom Schaden, die müssen an die Versicherung geschickt werden.",
+    "en": "That will be checked when everything is dry. Please take photos of the damage; they have to be sent to the insurance."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Mache ich. Vielen Dank!",
+    "en": "I will. Thank you very much!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What happened in Jana's bathroom?",
+    "options": [
+     "A pipe broke",
+     "The window was broken",
+     "The light stopped working"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who turned off the water?",
+    "options": [
+     "Jana",
+     "The caretaker",
+     "Her neighbour"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "When will the plumber come?",
+    "options": [
+     "Today at 8 pm",
+     "Tomorrow at 8 am",
+     "Next week"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why should Jana take photos?",
+    "options": [
+     "For the neighbours",
+     "For the landlord's website",
+     "For the insurance"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Gestern Abend wurde mein Fahrrad vor dem Haus gestohlen.",
+  "Das Rohr muss so schnell wie möglich repariert werden.",
+  "Der Schaden ist schon an die Versicherung gemeldet worden."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte einen Schaden melden.",
+   "en": "I'd like to report some damage."
+  },
+  {
+   "de": "Wurde das Wasser abgestellt?",
+   "en": "Was the water turned off?"
+  },
+  {
+   "de": "Das Rohr muss so schnell wie möglich repariert werden.",
+   "en": "The pipe must be repaired as soon as possible."
+  },
+  {
+   "de": "Muss die Decke auch gestrichen werden?",
+   "en": "Does the ceiling have to be painted too?"
+  },
+  {
+   "de": "Die Fotos müssen an die Versicherung geschickt werden.",
+   "en": "The photos have to be sent to the insurance."
+  }
+ ],
+ "writing": {
+  "task": "Write an 80–100-word email to your property management reporting a problem in your flat: say what happened, what has already been done and what must be repaired.",
+  "model": "Sehr geehrte Damen und Herren,\n\nich möchte einen Schaden in meiner Wohnung melden (Lindenstraße 12, 2. Stock). Am Sonntag wurde das Küchenfenster bei einem Sturm beschädigt. Das Glas ist kaputt, und es kommt kalter Wind herein. Ich habe das Loch erst mal mit Folie zugeklebt, aber das Fenster muss so schnell wie möglich repariert werden. Außerdem ist die Heizung in der Küche seit Tagen kalt. Sie muss auch geprüft werden. Fotos vom Schaden habe ich angehängt. Können Sie mir bitte sagen, wann ein Handwerker kommen kann?\n\nMit freundlichen Grüßen\nJulien Martin"
+ }
+}

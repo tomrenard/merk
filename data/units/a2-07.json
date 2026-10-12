@@ -1,0 +1,460 @@
+{
+ "id": "a2-07",
+ "cefr": "A2",
+ "title": "weil and dass",
+ "situation": "Giving reasons at work",
+ "canDo": "You can give reasons with weil and say what you think, hope or heard with dass.",
+ "explanation": "At work you often explain why: *Ich komme später, **weil** der Zug Verspätung **hat**.* And you say what someone thinks or says: *Ich glaube, **dass** das Meeting um zehn **anfängt**.*\n\n**weil** (because) and **dass** (that) start a side clause. In it, the **conjugated verb goes to the end**:\n\n| main clause | after weil / dass |\n|---|---|\n| Ich **bin** krank. | …, weil ich krank **bin**. |\n| Ich **muss** arbeiten. | …, weil ich arbeiten **muss**. |\n| Das Meeting **fängt** um zehn **an**. | …, dass das Meeting um zehn **anfängt**. |\n| Ich **habe** den Bus verpasst. | …, weil ich den Bus verpasst **habe**. |\n\n- Separable verbs join up again: *anfängt, ankommt*.\n- Modal verbs and the haben/sein of the Perfekt come last of all.\n- Always put a **comma** before weil and dass.\n- **dass** often follows **sagen, glauben, denken, finden, hoffen, wissen**.\n- To answer *Warum?*, a weil clause can stand alone: *Weil ich krank bin.*\n- If the weil clause comes first, the main clause starts with its verb: *Weil ich krank bin, **komme** ich nicht.*\n\nCompare **denn** (A1): it also means because, but keeps normal order: *…, denn ich **bin** krank.*\n\nCommon mistake: *weil ich bin krank* → **weil ich krank bin**. You'll hear the first in fast speech, but don't write it.",
+ "french": "weil is « parce que » and dass is « que », but German sends the conjugated verb to the end: parce que je suis malade → weil ich krank bin.",
+ "examples": [
+  {
+   "de": "Ich komme später, weil der Zug Verspätung hat.",
+   "en": "I'll be late because the train is delayed."
+  },
+  {
+   "de": "Ich kann nicht kommen, weil ich krank bin.",
+   "en": "I can't come because I'm ill."
+  },
+  {
+   "de": "Ich glaube, dass das Meeting um zehn anfängt.",
+   "en": "I think the meeting starts at ten."
+  },
+  {
+   "de": "Frau Berg sagt, dass der Drucker kaputt ist.",
+   "en": "Ms Berg says that the printer is broken."
+  },
+  {
+   "de": "Warum arbeitest du heute zu Hause? – Weil mein Kind krank ist.",
+   "en": "Why are you working from home today? – Because my child is ill."
+  },
+  {
+   "de": "Ich hoffe, dass Sie morgen Zeit haben.",
+   "en": "I hope you have time tomorrow."
+  },
+  {
+   "de": "Ich bin müde, weil ich zu lange gearbeitet habe.",
+   "en": "I'm tired because I worked too long."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-07-01",
+   "type": "cloze",
+   "de": "Ich komme später, ___ der Zug Verspätung hat.",
+   "base": "weil/dass",
+   "answers": [
+    "weil"
+   ],
+   "en": "I'll be late because the train is delayed."
+  },
+  {
+   "id": "a2-07-02",
+   "type": "cloze",
+   "de": "Ich glaube, ___ das Meeting um zehn anfängt.",
+   "base": "weil/dass",
+   "answers": [
+    "dass"
+   ],
+   "en": "I think the meeting starts at ten."
+  },
+  {
+   "id": "a2-07-03",
+   "type": "choice",
+   "de": "Ich kann nicht kommen, weil ___.",
+   "options": [
+    "ich krank bin",
+    "ich bin krank",
+    "bin ich krank"
+   ],
+   "answer": 0,
+   "why": "After weil the conjugated verb goes to the end.",
+   "en": "I can't come because I'm ill."
+  },
+  {
+   "id": "a2-07-04",
+   "type": "cloze",
+   "de": "Ich bleibe zu Hause, weil mein Kind krank ___.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "I'm staying at home because my child is ill."
+  },
+  {
+   "id": "a2-07-05",
+   "type": "order",
+   "tiles": [
+    "Ich komme nicht,",
+    "weil",
+    "ich",
+    "arbeiten",
+    "muss"
+   ],
+   "answers": [
+    "Ich komme nicht, weil ich arbeiten muss."
+   ],
+   "en": "I'm not coming because I have to work."
+  },
+  {
+   "id": "a2-07-06",
+   "type": "choice",
+   "de": "Frau Berg sagt, ___ der Drucker kaputt ist.",
+   "options": [
+    "weil",
+    "dass",
+    "denn"
+   ],
+   "answer": 1,
+   "why": "After sagen you report what was said with dass.",
+   "en": "Ms Berg says that the printer is broken."
+  },
+  {
+   "id": "a2-07-07",
+   "type": "cloze",
+   "de": "Ich hoffe, dass Sie morgen Zeit ___.",
+   "base": "haben",
+   "answers": [
+    "haben"
+   ],
+   "en": "I hope you have time tomorrow."
+  },
+  {
+   "id": "a2-07-08",
+   "type": "choice",
+   "de": "Ich bin müde, weil ich zu lange ___.",
+   "options": [
+    "gearbeitet habe",
+    "habe gearbeitet",
+    "arbeiten habe"
+   ],
+   "answer": 0,
+   "why": "In a weil clause the helping verb habe goes to the very end.",
+   "en": "I'm tired because I worked too long."
+  },
+  {
+   "id": "a2-07-09",
+   "type": "cloze",
+   "de": "Er sagt, dass er heute um drei ___.",
+   "base": "gehen",
+   "answers": [
+    "geht"
+   ],
+   "en": "He says he's leaving at three today."
+  },
+  {
+   "id": "a2-07-10",
+   "type": "order",
+   "tiles": [
+    "dass",
+    "Ich",
+    "Sie",
+    "hoffe,",
+    "Zeit haben"
+   ],
+   "answers": [
+    "Ich hoffe, dass Sie Zeit haben."
+   ],
+   "en": "I hope you have time."
+  },
+  {
+   "id": "a2-07-11",
+   "type": "choice",
+   "de": "Ich arbeite heute zu Hause, ___ mein Auto ist kaputt.",
+   "options": [
+    "weil",
+    "denn",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "The verb ist comes right after the subject here, so you need denn; weil would send it to the end.",
+   "en": "I'm working from home today because my car is broken."
+  },
+  {
+   "id": "a2-07-12",
+   "type": "cloze",
+   "de": "Wir wissen, ___ das Projekt schwierig ist.",
+   "base": "weil/dass",
+   "answers": [
+    "dass"
+   ],
+   "en": "We know that the project is difficult."
+  },
+  {
+   "id": "a2-07-13",
+   "type": "choice",
+   "de": "Ich glaube, dass der Bus um acht ___.",
+   "options": [
+    "abfährt",
+    "fährt ab",
+    "abfahren"
+   ],
+   "answer": 0,
+   "why": "At the end of a dass clause, separable verbs join up again: abfährt.",
+   "en": "I think the bus leaves at eight."
+  },
+  {
+   "id": "a2-07-14",
+   "type": "cloze",
+   "de": "Ich rufe an, weil ich den Termin ___ muss.",
+   "base": "absagen",
+   "answers": [
+    "absagen"
+   ],
+   "en": "I'm calling because I have to cancel the appointment."
+  },
+  {
+   "id": "a2-07-15",
+   "type": "order",
+   "tiles": [
+    "Ich komme zu spät,",
+    "weil",
+    "der Bus",
+    "Verspätung",
+    "hat"
+   ],
+   "answers": [
+    "Ich komme zu spät, weil der Bus Verspätung hat."
+   ],
+   "en": "I'll be late because the bus is delayed."
+  },
+  {
+   "id": "a2-07-16",
+   "type": "choice",
+   "de": "Warum bist du nicht gekommen? – Weil ich keine Zeit ___.",
+   "options": [
+    "hatte",
+    "hattest",
+    "hatten"
+   ],
+   "answer": 0,
+   "why": "With ich the past of haben is hatte, at the end of the weil clause.",
+   "en": "Why didn't you come? – Because I didn't have time."
+  },
+  {
+   "id": "a2-07-17",
+   "type": "cloze",
+   "de": "Der Chef findet, dass wir gut ___ haben.",
+   "base": "arbeiten",
+   "answers": [
+    "gearbeitet"
+   ],
+   "en": "The boss thinks we've worked well."
+  },
+  {
+   "id": "a2-07-18",
+   "type": "choice",
+   "de": "Ich weiß, dass du viel zu tun ___.",
+   "options": [
+    "hat",
+    "habe",
+    "hast"
+   ],
+   "answer": 2,
+   "why": "With du the verb is hast, and it goes to the end.",
+   "en": "I know you have a lot to do."
+  },
+  {
+   "id": "a2-07-19",
+   "type": "cloze",
+   "de": "Kommst du heute? – Nein, ___ ich zum Arzt muss.",
+   "base": "weil/dass",
+   "answers": [
+    "weil"
+   ],
+   "en": "Are you coming today? – No, because I have to go to the doctor."
+  },
+  {
+   "id": "a2-07-20",
+   "type": "order",
+   "tiles": [
+    "Ich denke,",
+    "dass",
+    "das Meeting",
+    "um zwei",
+    "anfängt"
+   ],
+   "answers": [
+    "Ich denke, dass das Meeting um zwei anfängt."
+   ],
+   "en": "I think the meeting starts at two."
+  },
+  {
+   "id": "a2-07-21",
+   "type": "choice",
+   "de": "Er kann nicht kommen, weil er ___.",
+   "options": [
+    "muss arbeiten",
+    "arbeiten muss",
+    "arbeiten müssen"
+   ],
+   "answer": 1,
+   "why": "The modal verb muss goes to the end, after the infinitive.",
+   "en": "He can't come because he has to work."
+  },
+  {
+   "id": "a2-07-22",
+   "type": "cloze",
+   "de": "Es tut mir leid, dass ich zu spät ___ bin.",
+   "base": "kommen",
+   "answers": [
+    "gekommen"
+   ],
+   "en": "I'm sorry that I was late."
+  },
+  {
+   "id": "a2-07-23",
+   "type": "order",
+   "tiles": [
+    "Weil",
+    "ich",
+    "krank",
+    "bin,",
+    "komme ich nicht"
+   ],
+   "answers": [
+    "Weil ich krank bin, komme ich nicht."
+   ],
+   "en": "Because I'm ill, I'm not coming."
+  },
+  {
+   "id": "a2-07-24",
+   "type": "order",
+   "tiles": [
+    "Ich finde,",
+    "dass",
+    "zu viel",
+    "arbeitest",
+    "du"
+   ],
+   "answers": [
+    "Ich finde, dass du zu viel arbeitest."
+   ],
+   "en": "I think you work too much."
+  }
+ ],
+ "listening": {
+  "title": "Anruf im Büro",
+  "intro": "Daniel calls his team leader Kerstin on his way to work.",
+  "lines": [
+   {
+    "speaker": "Daniel",
+    "de": "Guten Morgen, Kerstin, hier ist Daniel. Ich rufe an, weil ich heute später komme.",
+    "en": "Good morning, Kerstin, it's Daniel. I'm calling because I'll be late today."
+   },
+   {
+    "speaker": "Kerstin",
+    "de": "Oh, was ist denn los?",
+    "en": "Oh, what's the matter?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Mein Zug fährt nicht, weil die Bahn streikt.",
+    "en": "My train isn't running because there's a rail strike."
+   },
+   {
+    "speaker": "Kerstin",
+    "de": "Schon wieder! Wann bist du denn da?",
+    "en": "Again! So when will you be here?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Ich glaube, dass ich um zehn im Büro bin. Ich nehme den Bus.",
+    "en": "I think I'll be at the office at ten. I'm taking the bus."
+   },
+   {
+    "speaker": "Kerstin",
+    "de": "Du weißt aber, dass wir um neun das Meeting mit den Kunden haben?",
+    "en": "But you know we've got the meeting with the customers at nine?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Ja, ich weiß. Kannst du anfangen? Die Präsentation liegt auf meinem Schreibtisch.",
+    "en": "Yes, I know. Can you start? The presentation is on my desk."
+   },
+   {
+    "speaker": "Kerstin",
+    "de": "Klar. Ich sage den Kunden, dass du später kommst.",
+    "en": "Sure. I'll tell the customers that you're coming later."
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Danke! Ich finde es wirklich blöd, dass ich das Meeting verpasse.",
+    "en": "Thanks! It's really annoying that I'm missing the meeting."
+   },
+   {
+    "speaker": "Kerstin",
+    "de": "Kein Problem. Hauptsache, du bist um zehn da.",
+    "en": "No problem. The main thing is that you're here at ten."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why will Daniel be late?",
+    "options": [
+     "He's ill.",
+     "There's a rail strike.",
+     "His car broke down."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When does Daniel think he'll be at the office?",
+    "options": [
+     "At nine.",
+     "At half past nine.",
+     "At ten."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will Kerstin tell the customers?",
+    "options": [
+     "That Daniel is coming later.",
+     "That the meeting is cancelled.",
+     "That Daniel is ill."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is the presentation?",
+    "options": [
+     "In an e-mail.",
+     "On Daniel's desk.",
+     "At Daniel's home."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich komme später, weil mein Zug Verspätung hat.",
+  "Ich glaube, dass das Meeting um neun anfängt.",
+  "Er sagt, dass der Drucker kaputt ist."
+ ],
+ "speaking": [
+  {
+   "de": "Ich rufe an, weil ich heute später komme.",
+   "en": "I'm calling because I'll be late today."
+  },
+  {
+   "de": "Mein Zug fährt nicht, weil die Bahn streikt.",
+   "en": "My train isn't running because there's a rail strike."
+  },
+  {
+   "de": "Ich glaube, dass ich um zehn im Büro bin.",
+   "en": "I think I'll be at the office at ten."
+  },
+  {
+   "de": "Ich sage den Kunden, dass du später kommst.",
+   "en": "I'll tell the customers that you're coming later."
+  },
+  {
+   "de": "Hauptsache, du bist um zehn da.",
+   "en": "The main thing is that you're here at ten."
+  }
+ ],
+ "writing": {
+  "task": "You can't go to work today. Write 5–6 sentences to your boss: give reasons with weil and say what you think or hope with dass.",
+  "model": "Liebe Frau Schmidt, leider kann ich heute nicht ins Büro kommen, weil ich krank bin. Ich habe seit gestern Fieber. Ich glaube, dass ich morgen wieder arbeiten kann. Die Dokumente für Herrn Klein liegen auf meinem Schreibtisch. Ich hoffe, dass das kein Problem ist. Viele Grüße, Anna Martin"
+ }
+}

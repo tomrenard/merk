@@ -1,0 +1,476 @@
+{
+ "id": "a2-12",
+ "cefr": "A2",
+ "title": "Verbs with prepositions",
+ "situation": "Plans and feelings",
+ "canDo": "You can talk about what you are waiting for, looking forward to, thinking about and happy or annoyed about, using verbs with fixed prepositions.",
+ "explanation": "When you talk about plans and feelings, many verbs come with a fixed preposition. Learn the verb and its preposition together:\n\n| verb | case | example |\n|---|---|---|\n| warten **auf** | acc | Ich warte auf den Bus. |\n| sich freuen **auf** | acc | Ich freue mich auf den Urlaub. |\n| sich freuen **über** | acc | Ich freue mich über das Geschenk. |\n| denken **an** | acc | Ich denke oft an dich. |\n| sich interessieren **für** | acc | Sie interessiert sich für Musik. |\n| sich ärgern **über** | acc | Er ärgert sich über den Lärm. |\n| sprechen **mit** / **über** | dat / acc | Ich spreche mit dem Chef über den Plan. |\n| Angst haben **vor** | dat | Er hat Angst vor dem Hund. |\n\n- With these verbs, **auf, an, über** take the **accusative**, even though nothing moves.\n- **sich freuen auf** = looking forward to something in the future. **sich freuen über** = being happy about something you have now or that has already happened: *Ich freue mich auf die Party* (next week). *Ich freue mich über die Blumen* (I have them now).\n- Reflexive verbs keep their pronoun: ich freue **mich**, du freust **dich**, wir freuen **uns**.\n- The preposition is often not the one English uses: *to wait for* is **warten auf**, not *für*.\n\nThe most common mistake is *Ich warte für dich.* Say **Ich warte auf dich.**",
+ "french": "Some match French (denken an ≈ penser à), but many don't: attendre quelqu'un has no preposition, yet German says warten auf jemanden, and s'intéresser à becomes sich interessieren für.",
+ "examples": [
+  {
+   "de": "Ich warte auf den Bus.",
+   "en": "I'm waiting for the bus."
+  },
+  {
+   "de": "Wir freuen uns auf den Urlaub.",
+   "en": "We're looking forward to the holiday."
+  },
+  {
+   "de": "Sie freut sich über die Blumen.",
+   "en": "She's happy about the flowers."
+  },
+  {
+   "de": "Ich denke oft an meine Familie.",
+   "en": "I often think about my family."
+  },
+  {
+   "de": "Er ärgert sich über den Lärm.",
+   "en": "He's annoyed about the noise."
+  },
+  {
+   "de": "Interessierst du dich für Fußball?",
+   "en": "Are you interested in football?"
+  },
+  {
+   "de": "Mein Sohn hat Angst vor dem Hund.",
+   "en": "My son is afraid of the dog."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-12-01",
+   "type": "cloze",
+   "de": "Ich warte auf ___ Bus.",
+   "base": "der",
+   "answers": [
+    "den"
+   ],
+   "en": "I'm waiting for the bus."
+  },
+  {
+   "id": "a2-12-02",
+   "type": "choice",
+   "de": "Wir freuen uns schon ___ den Urlaub.",
+   "options": [
+    "auf",
+    "über",
+    "an"
+   ],
+   "answer": 0,
+   "why": "sich freuen auf is for something in the future that you look forward to.",
+   "en": "We're already looking forward to the holiday."
+  },
+  {
+   "id": "a2-12-03",
+   "type": "cloze",
+   "de": "Ich freue ___ auf das Wochenende.",
+   "base": "sich",
+   "answers": [
+    "mich"
+   ],
+   "en": "I'm looking forward to the weekend."
+  },
+  {
+   "id": "a2-12-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "warte",
+    "auf",
+    "dich"
+   ],
+   "answers": [
+    "Ich warte auf dich.",
+    "Auf dich warte ich."
+   ],
+   "en": "I'm waiting for you."
+  },
+  {
+   "id": "a2-12-05",
+   "type": "choice",
+   "de": "Ich denke oft ___ meine Familie in Frankreich.",
+   "options": [
+    "auf",
+    "an",
+    "über"
+   ],
+   "answer": 1,
+   "why": "The verb is denken an + accusative.",
+   "en": "I often think about my family in France."
+  },
+  {
+   "id": "a2-12-06",
+   "type": "cloze",
+   "de": "Sie freut sich über ___ Brief von ihrer Oma.",
+   "base": "ein",
+   "answers": [
+    "einen"
+   ],
+   "en": "She's happy about a letter from her grandma."
+  },
+  {
+   "id": "a2-12-07",
+   "type": "choice",
+   "de": "Er freut sich ___ das Geschenk von gestern.",
+   "options": [
+    "auf",
+    "für",
+    "über"
+   ],
+   "answer": 2,
+   "why": "He already has the present, so it is sich freuen über.",
+   "en": "He's happy about yesterday's present."
+  },
+  {
+   "id": "a2-12-08",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "freuen",
+    "uns",
+    "auf",
+    "die Party"
+   ],
+   "answers": [
+    "Wir freuen uns auf die Party.",
+    "Auf die Party freuen wir uns."
+   ],
+   "en": "We're looking forward to the party."
+  },
+  {
+   "id": "a2-12-09",
+   "type": "cloze",
+   "de": "Interessierst du ___ für Fußball?",
+   "base": "sich",
+   "answers": [
+    "dich"
+   ],
+   "en": "Are you interested in football?"
+  },
+  {
+   "id": "a2-12-10",
+   "type": "choice",
+   "de": "Mein Sohn hat Angst ___ dem Hund.",
+   "options": [
+    "über",
+    "vor",
+    "an"
+   ],
+   "answer": 1,
+   "why": "It is Angst haben vor + dative.",
+   "en": "My son is afraid of the dog."
+  },
+  {
+   "id": "a2-12-11",
+   "type": "cloze",
+   "de": "Ich spreche mit ___ Chefin über den Urlaub.",
+   "base": "mein",
+   "answers": [
+    "meiner"
+   ],
+   "en": "I'm talking to my boss about the holiday."
+  },
+  {
+   "id": "a2-12-12",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "ärgert",
+    "sich",
+    "über",
+    "das Wetter"
+   ],
+   "answers": [
+    "Er ärgert sich über das Wetter.",
+    "Über das Wetter ärgert er sich."
+   ],
+   "en": "He's annoyed about the weather."
+  },
+  {
+   "id": "a2-12-13",
+   "type": "choice",
+   "de": "Wartest du schon lange ___ mich?",
+   "options": [
+    "für",
+    "auf",
+    "an"
+   ],
+   "answer": 1,
+   "why": "English says wait for, but German says warten auf.",
+   "en": "Have you been waiting for me for long?"
+  },
+  {
+   "id": "a2-12-14",
+   "type": "cloze",
+   "de": "Denkst du an ___ Termin morgen?",
+   "base": "der",
+   "answers": [
+    "den"
+   ],
+   "en": "Are you thinking of the appointment tomorrow?"
+  },
+  {
+   "id": "a2-12-15",
+   "type": "choice",
+   "de": "Sie interessiert sich sehr ___ Kunst.",
+   "options": [
+    "für",
+    "an",
+    "über"
+   ],
+   "answer": 0,
+   "why": "The verb is sich interessieren für + accusative.",
+   "en": "She's very interested in art."
+  },
+  {
+   "id": "a2-12-16",
+   "type": "cloze",
+   "de": "Wir freuen ___ sehr über euren Besuch.",
+   "base": "sich",
+   "answers": [
+    "uns"
+   ],
+   "en": "We're very happy about your visit."
+  },
+  {
+   "id": "a2-12-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "denke",
+    "oft",
+    "an",
+    "meine Großeltern"
+   ],
+   "answers": [
+    "Ich denke oft an meine Großeltern.",
+    "Oft denke ich an meine Großeltern.",
+    "An meine Großeltern denke ich oft."
+   ],
+   "en": "I often think about my grandparents."
+  },
+  {
+   "id": "a2-12-18",
+   "type": "choice",
+   "de": "Ich habe mich sehr ___ deine Nachricht gefreut.",
+   "options": [
+    "auf",
+    "über",
+    "an"
+   ],
+   "answer": 1,
+   "why": "The message has already arrived, so it is sich freuen über.",
+   "en": "I was very happy about your message."
+  },
+  {
+   "id": "a2-12-19",
+   "type": "cloze",
+   "de": "Wir sprechen morgen über ___ Plan.",
+   "base": "unser",
+   "answers": [
+    "unseren"
+   ],
+   "en": "We'll talk about our plan tomorrow."
+  },
+  {
+   "id": "a2-12-20",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "wartet",
+    "seit einer Stunde",
+    "auf",
+    "ihren Freund"
+   ],
+   "answers": [
+    "Sie wartet seit einer Stunde auf ihren Freund.",
+    "Seit einer Stunde wartet sie auf ihren Freund.",
+    "Auf ihren Freund wartet sie seit einer Stunde."
+   ],
+   "en": "She has been waiting for her boyfriend for an hour."
+  },
+  {
+   "id": "a2-12-21",
+   "type": "choice",
+   "de": "Die Kinder freuen sich schon ___ Weihnachten.",
+   "options": [
+    "über",
+    "an",
+    "auf"
+   ],
+   "answer": 2,
+   "why": "Christmas is still in the future, so it is sich freuen auf.",
+   "en": "The children are already looking forward to Christmas."
+  },
+  {
+   "id": "a2-12-22",
+   "type": "cloze",
+   "de": "Ärgerst du ___ immer noch über den Streit?",
+   "base": "sich",
+   "answers": [
+    "dich"
+   ],
+   "en": "Are you still annoyed about the argument?"
+  },
+  {
+   "id": "a2-12-23",
+   "type": "choice",
+   "de": "Ich muss mit ___ Vermieter sprechen.",
+   "options": [
+    "meinen",
+    "meinem",
+    "mein"
+   ],
+   "answer": 1,
+   "why": "mit always takes the dative: mit meinem Vermieter.",
+   "en": "I have to talk to my landlord."
+  },
+  {
+   "id": "a2-12-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "freue",
+    "mich",
+    "schon",
+    "auf",
+    "den Sommer"
+   ],
+   "answers": [
+    "Ich freue mich schon auf den Sommer.",
+    "Auf den Sommer freue ich mich schon."
+   ],
+   "en": "I'm already looking forward to the summer."
+  }
+ ],
+ "listening": {
+  "title": "Gute Laune am Telefon",
+  "intro": "Paul calls his friend Mia, who sounds very happy.",
+  "lines": [
+   {
+    "speaker": "Paul",
+    "de": "Hallo Mia! Du klingst so fröhlich.",
+    "en": "Hi Mia! You sound so cheerful."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Ja, ich freue mich total auf das Wochenende. Meine Schwester kommt aus Lyon.",
+    "en": "Yes, I'm really looking forward to the weekend. My sister is coming from Lyon."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Schön! Wie lange hast du sie nicht gesehen?",
+    "en": "Nice! How long haven't you seen her?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Seit Weihnachten. Ich denke oft an sie. Und du? Was gibt's Neues?",
+    "en": "Since Christmas. I often think about her. And you? What's new?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ich warte auf eine Antwort von der Firma in Hamburg. Das Gespräch war letzte Woche.",
+    "en": "I'm waiting for an answer from the company in Hamburg. The interview was last week."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Und? Hast du ein gutes Gefühl?",
+    "en": "And? Do you have a good feeling?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Eigentlich schon. Aber ich ärgere mich über eine Frage. Meine Antwort war nicht so gut.",
+    "en": "Actually, yes. But I'm annoyed about one question. My answer wasn't so good."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Ach, das ist bestimmt kein Problem.",
+    "en": "Oh, I'm sure that's not a problem."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Hoffentlich. Übrigens: Ich habe mich sehr über deine Blumen gefreut!",
+    "en": "I hope so. By the way: I was very happy about your flowers!"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Gern! Wollen wir am Sonntag zusammen essen? Dann lernst du meine Schwester kennen.",
+    "en": "You're welcome! Shall we eat together on Sunday? Then you'll meet my sister."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Gute Idee! Bis Sonntag!",
+    "en": "Good idea! See you on Sunday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Mia so happy?",
+    "options": [
+     "Her sister is visiting at the weekend.",
+     "She got a new job.",
+     "She is travelling to Lyon."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is Paul waiting for?",
+    "options": [
+     "A letter from his sister",
+     "An answer from a company in Hamburg",
+     "A train to Hamburg"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is Paul annoyed about?",
+    "options": [
+     "The weather",
+     "Mia's flowers",
+     "One of his answers in the interview"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What do they plan for Sunday?",
+    "options": [
+     "Calling the company",
+     "Going to Lyon",
+     "Eating together with Mia's sister"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Ich warte seit zehn Minuten auf den Bus.",
+  "Wir freuen uns schon auf die Ferien.",
+  "Sie denkt oft an ihre Familie."
+ ],
+ "speaking": [
+  {
+   "de": "Ich freue mich total auf das Wochenende.",
+   "en": "I'm really looking forward to the weekend."
+  },
+  {
+   "de": "Ich denke oft an sie.",
+   "en": "I often think about her."
+  },
+  {
+   "de": "Ich warte auf eine Antwort.",
+   "en": "I'm waiting for an answer."
+  },
+  {
+   "de": "Ich ärgere mich über eine Frage.",
+   "en": "I'm annoyed about one question."
+  },
+  {
+   "de": "Ich habe mich sehr über deine Blumen gefreut!",
+   "en": "I was very happy about your flowers!"
+  }
+ ],
+ "writing": {
+  "task": "Write a message to a friend (5–6 sentences): what you are looking forward to, what you are waiting for, and something you were happy or annoyed about this week.",
+  "model": "Hallo Tim, ich freue mich schon sehr auf unseren Urlaub in Italien! Im Moment warte ich noch auf eine Antwort vom Hotel. Gestern habe ich mich über meinen Nachbarn geärgert, er war wieder so laut. Aber heute habe ich mich über dein Paket gefreut, vielen Dank! Ich denke oft an unsere Zeit in Berlin. Bis bald, Claire"
+ }
+}

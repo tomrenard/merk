@@ -1,0 +1,462 @@
+{
+ "id": "a2-11",
+ "cefr": "A2",
+ "title": "Adjective endings after ein/kein/mein",
+ "situation": "Describing people",
+ "canDo": "You can describe what people look like and what they are like, with the right adjective endings after ein, kein and mein.",
+ "explanation": "When you describe people, adjectives often come after **ein, kein** or a possessive (**mein, dein, sein, ihr, unser…**): *Mein Bruder ist ein großer Mann.* In three places these words have no ending, so the adjective must show the gender itself:\n\n| | masculine | feminine | neuter | plural |\n|---|---|---|---|---|\n| nominative | ein groß**er** Mann | eine klein**e** Frau | ein klein**es** Kind | meine alt**en** Freunde |\n| accusative | einen groß**en** Mann | eine klein**e** Frau | ein klein**es** Kind | meine alt**en** Freunde |\n| dative | einem groß**en** Mann | einer klein**en** Frau | einem klein**en** Kind | meinen alt**en** Freunden |\n\nHow to remember it:\n- Where *ein* has no ending, the adjective takes the ending of der/das: **-er** for masculine (*der* → ein groß**er**), **-es** for neuter (*das* → ein klein**es**).\n- Everywhere else it is the same as after der/die/das: **-e** for feminine nominative and accusative, **-en** for all the rest.\n- The dative and the plural always take **-en**.\n- Two adjectives get the same ending: *ein großer, schlanker Mann*.\n- After the noun, with *sein*, there is no ending: *Der Mann ist groß.*\n\nThe most common mistake is *ein groß Mann* or *ein große Mann*. Ask yourself: does *ein* show the gender here? If not, the adjective must: **ein großer Mann, ein kleines Kind**.",
+ "french": "French adjectives agree with gender too (un grand homme, une grande femme), but in German the ending also depends on the article and the case, and the gender is often different (la voiture → das Auto).",
+ "examples": [
+  {
+   "de": "Mein Bruder ist ein großer, schlanker Mann.",
+   "en": "My brother is a tall, slim man."
+  },
+  {
+   "de": "Sie ist eine sehr nette Frau.",
+   "en": "She is a very nice woman."
+  },
+  {
+   "de": "Das ist ein ruhiges Kind.",
+   "en": "That's a quiet child."
+  },
+  {
+   "de": "Er hat einen kurzen Bart.",
+   "en": "He has a short beard."
+  },
+  {
+   "de": "Kennst du meine neuen Kollegen?",
+   "en": "Do you know my new colleagues?"
+  },
+  {
+   "de": "Ich wohne mit einer alten Freundin zusammen.",
+   "en": "I live with an old friend."
+  },
+  {
+   "de": "Unser neuer Chef ist sehr sympathisch.",
+   "en": "Our new boss is very likeable."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-11-01",
+   "type": "cloze",
+   "de": "Er ist ein ___ Mann.",
+   "base": "groß",
+   "answers": [
+    "großer"
+   ],
+   "en": "He is a tall man."
+  },
+  {
+   "id": "a2-11-02",
+   "type": "cloze",
+   "de": "Sie ist eine ___ Frau.",
+   "base": "nett",
+   "answers": [
+    "nette"
+   ],
+   "en": "She is a nice woman."
+  },
+  {
+   "id": "a2-11-03",
+   "type": "choice",
+   "de": "Das ist ein ___ Kind.",
+   "options": [
+    "ruhige",
+    "ruhiges",
+    "ruhiger"
+   ],
+   "answer": 1,
+   "why": "das Kind is neuter and ein has no ending, so the adjective takes -es.",
+   "en": "That's a quiet child."
+  },
+  {
+   "id": "a2-11-04",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "ist",
+    "ein",
+    "großer",
+    "Mann"
+   ],
+   "answers": [
+    "Er ist ein großer Mann."
+   ],
+   "en": "He is a tall man."
+  },
+  {
+   "id": "a2-11-05",
+   "type": "cloze",
+   "de": "Ich habe einen ___ Freund in Berlin.",
+   "base": "gut",
+   "answers": [
+    "guten"
+   ],
+   "en": "I have a good friend in Berlin."
+  },
+  {
+   "id": "a2-11-06",
+   "type": "choice",
+   "de": "Er trägt eine ___ Brille.",
+   "options": [
+    "schwarzen",
+    "schwarzer",
+    "schwarze"
+   ],
+   "answer": 2,
+   "why": "die Brille is feminine; in the accusative after eine the ending is -e, as in the nominative.",
+   "en": "He wears black glasses."
+  },
+  {
+   "id": "a2-11-07",
+   "type": "cloze",
+   "de": "Das ist mein ___ Kollege.",
+   "base": "neu",
+   "answers": [
+    "neuer"
+   ],
+   "en": "That's my new colleague."
+  },
+  {
+   "id": "a2-11-08",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "ist",
+    "eine",
+    "sehr nette",
+    "Frau"
+   ],
+   "answers": [
+    "Sie ist eine sehr nette Frau."
+   ],
+   "en": "She is a very nice woman."
+  },
+  {
+   "id": "a2-11-09",
+   "type": "choice",
+   "de": "Wir haben keinen ___ Hund.",
+   "options": [
+    "großen",
+    "großer",
+    "große"
+   ],
+   "answer": 0,
+   "why": "der Hund in the accusative: keinen shows the case, and the adjective takes -en.",
+   "en": "We don't have a big dog."
+  },
+  {
+   "id": "a2-11-10",
+   "type": "choice",
+   "de": "Herr Braun ist ein ___ Lehrer.",
+   "options": [
+    "gute",
+    "guter",
+    "guten"
+   ],
+   "answer": 1,
+   "why": "der Lehrer in the nominative: ein has no ending, so the adjective takes -er.",
+   "en": "Mr Braun is a good teacher."
+  },
+  {
+   "id": "a2-11-11",
+   "type": "cloze",
+   "de": "Er hat ein ___ Gesicht.",
+   "base": "freundlich",
+   "answers": [
+    "freundliches"
+   ],
+   "en": "He has a friendly face."
+  },
+  {
+   "id": "a2-11-12",
+   "type": "order",
+   "tiles": [
+    "Mein Vater",
+    "ist",
+    "ein",
+    "freundlicher",
+    "Mensch"
+   ],
+   "answers": [
+    "Mein Vater ist ein freundlicher Mensch."
+   ],
+   "en": "My father is a friendly person."
+  },
+  {
+   "id": "a2-11-13",
+   "type": "choice",
+   "de": "Das ist kein ___ Problem.",
+   "options": [
+    "große",
+    "großer",
+    "großes"
+   ],
+   "answer": 2,
+   "why": "das Problem is neuter and kein has no ending here, so the adjective takes -es.",
+   "en": "That's not a big problem."
+  },
+  {
+   "id": "a2-11-14",
+   "type": "cloze",
+   "de": "Kennst du meine ___ Freunde?",
+   "base": "neu",
+   "answers": [
+    "neuen"
+   ],
+   "en": "Do you know my new friends?"
+  },
+  {
+   "id": "a2-11-15",
+   "type": "choice",
+   "de": "Sie wohnt mit einer ___ Freundin zusammen.",
+   "options": [
+    "alte",
+    "alten",
+    "alter"
+   ],
+   "answer": 1,
+   "why": "After mit comes the dative, and in the dative the adjective always ends in -en.",
+   "en": "She lives with an old friend."
+  },
+  {
+   "id": "a2-11-16",
+   "type": "cloze",
+   "de": "Mit meinem ___ Bruder spiele ich Fußball.",
+   "base": "klein",
+   "answers": [
+    "kleinen"
+   ],
+   "en": "I play football with my little brother."
+  },
+  {
+   "id": "a2-11-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "suche",
+    "einen",
+    "netten",
+    "Mitbewohner"
+   ],
+   "answers": [
+    "Ich suche einen netten Mitbewohner.",
+    "Einen netten Mitbewohner suche ich."
+   ],
+   "en": "I'm looking for a nice flatmate."
+  },
+  {
+   "id": "a2-11-18",
+   "type": "choice",
+   "de": "Meine Tochter trägt heute ihr ___ Kleid.",
+   "options": [
+    "rote",
+    "rotes",
+    "roten"
+   ],
+   "answer": 1,
+   "why": "das Kleid in the accusative: ihr has no ending, so the adjective takes -es.",
+   "en": "My daughter is wearing her red dress today."
+  },
+  {
+   "id": "a2-11-19",
+   "type": "cloze",
+   "de": "Wir sprechen oft mit unserem ___ Nachbarn.",
+   "base": "neu",
+   "answers": [
+    "neuen"
+   ],
+   "en": "We often talk to our new neighbour."
+  },
+  {
+   "id": "a2-11-20",
+   "type": "cloze",
+   "de": "Sie ist eine ___ Studentin aus Spanien.",
+   "base": "jung",
+   "answers": [
+    "junge"
+   ],
+   "en": "She is a young student from Spain."
+  },
+  {
+   "id": "a2-11-21",
+   "type": "order",
+   "tiles": [
+    "Kennst",
+    "du",
+    "meinen",
+    "jüngeren",
+    "Bruder"
+   ],
+   "answers": [
+    "Kennst du meinen jüngeren Bruder?"
+   ],
+   "en": "Do you know my younger brother?"
+  },
+  {
+   "id": "a2-11-22",
+   "type": "choice",
+   "de": "Ich wohne bei einer ___ Familie.",
+   "options": [
+    "deutsche",
+    "deutscher",
+    "deutschen"
+   ],
+   "answer": 2,
+   "why": "After bei comes the dative, so the adjective ends in -en.",
+   "en": "I live with a German family."
+  },
+  {
+   "id": "a2-11-23",
+   "type": "cloze",
+   "de": "Heute trägt er sein ___ Hemd.",
+   "base": "weiß",
+   "answers": [
+    "weißes"
+   ],
+   "en": "Today he's wearing his white shirt."
+  },
+  {
+   "id": "a2-11-24",
+   "type": "order",
+   "tiles": [
+    "Unser",
+    "neuer",
+    "Chef",
+    "ist",
+    "sehr",
+    "sympathisch"
+   ],
+   "answers": [
+    "Unser neuer Chef ist sehr sympathisch."
+   ],
+   "en": "Our new boss is very likeable."
+  }
+ ],
+ "listening": {
+  "title": "Am Bahnhof abholen",
+  "intro": "Jonas will pick up Lena's cousin at the station tomorrow and asks what he looks like.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Ich hole morgen deinen Cousin vom Bahnhof ab. Wie sieht er denn aus?",
+    "en": "I'm picking up your cousin from the station tomorrow. So what does he look like?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Er ist ein großer, schlanker Mann und hat einen kurzen Bart.",
+    "en": "He's a tall, slim man and has a short beard."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Okay. Und was trägt er?",
+    "en": "Okay. And what does he wear?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Wahrscheinlich seine blaue Jacke und eine schwarze Mütze.",
+    "en": "Probably his blue jacket and a black hat."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Hat er viel Gepäck?",
+    "en": "Does he have a lot of luggage?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Nein, nur einen kleinen roten Koffer.",
+    "en": "No, just a small red suitcase."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Und wie ist er so? Ist er nett?",
+    "en": "And what's he like? Is he nice?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Ja, er ist ein sehr lustiger Typ. Er kommt mit seiner Freundin, einer kleinen Frau mit langen Haaren.",
+    "en": "Yes, he's a really funny guy. He's coming with his girlfriend, a short woman with long hair."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gut, dann finde ich die beiden bestimmt. Wann kommt der Zug?",
+    "en": "Good, then I'll find the two of them for sure. When does the train arrive?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Um 18:20 Uhr, auf Gleis 7. Vielen Dank!",
+    "en": "At 6:20 pm, on platform 7. Thanks a lot!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the cousin look like?",
+    "options": [
+     "Short with long hair",
+     "Tall and slim with a short beard",
+     "Tall with glasses"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What colour is his suitcase?",
+    "options": [
+     "Black",
+     "Blue",
+     "Red"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Who is travelling with him?",
+    "options": [
+     "His girlfriend",
+     "His sister",
+     "Nobody"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When does the train arrive?",
+    "options": [
+     "At 8:20 pm",
+     "At 7:20 pm",
+     "At 6:20 pm"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Mein Bruder ist ein großer, schlanker Mann.",
+  "Sie trägt heute eine schwarze Jacke.",
+  "Wir haben einen sehr netten neuen Nachbarn."
+ ],
+ "speaking": [
+  {
+   "de": "Wie sieht er denn aus?",
+   "en": "So what does he look like?"
+  },
+  {
+   "de": "Er ist ein großer, schlanker Mann.",
+   "en": "He's a tall, slim man."
+  },
+  {
+   "de": "Er hat einen kurzen Bart.",
+   "en": "He has a short beard."
+  },
+  {
+   "de": "Er ist ein sehr lustiger Typ.",
+   "en": "He's a really funny guy."
+  },
+  {
+   "de": "Sie ist eine sehr nette Frau.",
+   "en": "She's a very nice woman."
+  }
+ ],
+ "writing": {
+  "task": "A friend will meet your brother or sister for the first time. Write a message (5–6 sentences): what they look like, what they wear, and what kind of person they are.",
+  "model": "Hallo Sara, morgen triffst du meine Schwester Julia. Sie ist eine kleine, schlanke Frau und hat ein rundes Gesicht. Sie trägt bestimmt ihre grüne Jacke und eine große Tasche. Julia ist ein sehr offener Mensch und redet gern. Sie hat auch einen kleinen Hund, er kommt bestimmt mit. Viel Spaß zusammen!"
+ }
+}

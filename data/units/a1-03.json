@@ -336,5 +336,130 @@
    ],
    "en": "What do you like doing at the weekend?"
   }
- ]
+ ],
+ "listening": {
+  "title": "Auf einer Party",
+  "intro": "At a party in Munich, Anna starts talking to Lukas.",
+  "lines": [
+   {
+    "speaker": "Anna",
+    "de": "Hallo! Wie heißt du?",
+    "en": "Hi! What's your name?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ich heiße Lukas. Und du?",
+    "en": "My name is Lukas. And you?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich bin Anna. Woher kommst du, Lukas?",
+    "en": "I'm Anna. Where are you from, Lukas?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Aus Hamburg. Aber jetzt wohne ich hier in München.",
+    "en": "From Hamburg. But now I live here in Munich."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Und was machst du hier?",
+    "en": "And what do you do here?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ich bin Koch. Ich arbeite im Hotel. Und was bist du von Beruf?",
+    "en": "I'm a cook. I work at a hotel. And what do you do for a living?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich bin Studentin. Ich studiere Informatik.",
+    "en": "I'm a student. I study computer science."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Interessant! Wie lange wohnst du schon hier?",
+    "en": "Interesting! How long have you lived here?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Seit zwei Jahren. Was machst du am Wochenende?",
+    "en": "For two years. What do you do at the weekend?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Am Samstag spiele ich Fußball. Am Sonntag habe ich Zeit.",
+    "en": "On Saturday I play football. On Sunday I have time."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does Lukas come from?",
+    "options": [
+     "Hamburg",
+     "Munich",
+     "Cologne"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is Lukas's job?",
+    "options": [
+     "He's a student.",
+     "He's a cook.",
+     "He's a teacher."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How long has Anna lived in Munich?",
+    "options": [
+     "for two months",
+     "since Saturday",
+     "for two years"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Lukas do on Saturday?",
+    "options": [
+     "He works at the hotel.",
+     "He plays football.",
+     "He has time."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Woher kommen Sie, Frau Weber?",
+  "Was machst du am Wochenende?",
+  "Wie lange wohnst du schon hier?"
+ ],
+ "speaking": [
+  {
+   "de": "Wie heißt du?",
+   "en": "What's your name?"
+  },
+  {
+   "de": "Woher kommst du?",
+   "en": "Where are you from?"
+  },
+  {
+   "de": "Was bist du von Beruf?",
+   "en": "What do you do for a living?"
+  },
+  {
+   "de": "Wie lange wohnst du schon hier?",
+   "en": "How long have you lived here?"
+  },
+  {
+   "de": "Was machst du am Wochenende?",
+   "en": "What do you do at the weekend?"
+  }
+ ],
+ "writing": {
+  "task": "You are meeting a new language-exchange partner. Write 3–4 questions to ask about their name, where they come from, their job and their free time.",
+  "model": "Hallo! Wie heißt du? Woher kommst du und wo wohnst du jetzt? Was bist du von Beruf? Was machst du gern am Wochenende?"
+ }
 }

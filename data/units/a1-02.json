@@ -340,5 +340,130 @@
    ],
    "en": "Where are you from and where do you live?"
   }
- ]
+ ],
+ "listening": {
+  "title": "Neu im Haus",
+  "intro": "Marie has just moved to Cologne and meets her neighbour Stefan in the stairwell.",
+  "lines": [
+   {
+    "speaker": "Stefan",
+    "de": "Hallo! Ich heiße Stefan. Ich wohne auch hier im Haus.",
+    "en": "Hello! My name is Stefan. I live in this building too."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Hallo, Stefan. Ich heiße Marie. Ich wohne seit Mai hier.",
+    "en": "Hello, Stefan. My name is Marie. I've lived here since May."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Woher kommst du, Marie?",
+    "en": "Where are you from, Marie?"
+   },
+   {
+    "speaker": "Marie",
+    "de": "Ich komme aus Frankreich, aus Bordeaux.",
+    "en": "I come from France, from Bordeaux."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Und was machst du hier in Köln?",
+    "en": "And what do you do here in Cologne?"
+   },
+   {
+    "speaker": "Marie",
+    "de": "Ich arbeite bei einer Firma in Bonn. Und du?",
+    "en": "I work for a company in Bonn. And you?"
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Ich bin Lehrer. Ich arbeite hier in Köln. Meine Frau arbeitet auch in Bonn.",
+    "en": "I'm a teacher. I work here in Cologne. My wife works in Bonn too."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Ah, schön! Und ich lerne jetzt Deutsch, jeden Abend.",
+    "en": "Oh, nice! And I'm learning German now, every evening."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Du lernst schnell! Dein Deutsch ist schon gut.",
+    "en": "You learn fast! Your German is already good."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Danke, das ist nett!",
+    "en": "Thanks, that's kind!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Since when has Marie lived in the building?",
+    "options": [
+     "since May",
+     "since March",
+     "for a year"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Marie work?",
+    "options": [
+     "in Cologne",
+     "in Bonn",
+     "in Bordeaux"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is Stefan's job?",
+    "options": [
+     "He's an engineer.",
+     "He works for a company in Bonn.",
+     "He's a teacher."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Marie do every evening?",
+    "options": [
+     "She works.",
+     "She learns German.",
+     "She visits Stefan's wife."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich wohne seit Mai in Köln.",
+  "Meine Frau arbeitet in Bonn.",
+  "Wie heißt du und woher kommst du?"
+ ],
+ "speaking": [
+  {
+   "de": "Ich heiße Marie.",
+   "en": "My name is Marie."
+  },
+  {
+   "de": "Ich wohne seit Mai hier.",
+   "en": "I've lived here since May."
+  },
+  {
+   "de": "Ich komme aus Frankreich.",
+   "en": "I come from France."
+  },
+  {
+   "de": "Ich arbeite bei einer Firma in Bonn.",
+   "en": "I work for a company in Bonn."
+  },
+  {
+   "de": "Ich lerne jetzt Deutsch.",
+   "en": "I'm learning German now."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message to a new neighbour (3–4 sentences): your name, where you come from, where you work and what you are learning.",
+  "model": "Hallo! Ich heiße Paul und ich wohne jetzt hier im Haus. Ich komme aus Frankreich. Ich arbeite in Köln und ich lerne Deutsch. Bis bald!"
+ }
 }

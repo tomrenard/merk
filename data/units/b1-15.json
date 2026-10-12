@@ -1,0 +1,483 @@
+{
+ "id": "b1-15",
+ "cefr": "B1",
+ "title": "Nouns from verbs and noun-verb pairs",
+ "situation": "Behörden language",
+ "canDo": "You can understand and use the noun style of offices and letters: nouns like die Anmeldung or das Ausfüllen, and fixed pairs like einen Antrag stellen or Bescheid geben.",
+ "explanation": "Letters and websites from the Bürgeramt, the Jobcenter or the Familienkasse are full of nouns: *Für die Anmeldung brauchen Sie einen Termin. Bitte stellen Sie den Antrag online.* Two things help you read and write this style.\n\n**1. Nouns made from verbs**\n\n| verb | noun | rule |\n|---|---|---|\n| anmelden, prüfen | die Anmeld**ung**, die Prüf**ung** | -ung: always **die** |\n| ausfüllen, warten | **das** Ausfüllen, **das** Warten | infinitive: always **das** |\n| umziehen, antworten | der Umzug, die Antwort | learn them as words |\n\n- The noun often takes a genitive: *die Bearbeitung **Ihres Antrags**, das Ausfüllen **des Formulars***.\n- *beim* + infinitive noun means \"while doing\": *beim Warten, beim Einkaufen*.\n\n**2. Fixed noun-verb pairs.** The noun carries the meaning; the verb is fixed and you can't swap it. Learn them as one block:\n- **einen Antrag stellen** – to apply (= beantragen)\n- **eine Frage stellen** – to ask a question\n- **eine Entscheidung treffen** – to make a decision\n- **einen Termin vereinbaren** – to make an appointment\n- **Bescheid geben / sagen** – to let someone know\n- **Kontakt aufnehmen** – to get in touch\n- **eine Rolle spielen** – to play a role, to matter\n- **zur Verfügung stellen** – to provide\n\nThe most common mistake is picking the verb from English or French: not ~~einen Antrag machen~~ or ~~eine Entscheidung nehmen~~, but *einen Antrag **stellen***, *eine Entscheidung **treffen***.",
+ "french": "Some pairs match French (eine Frage stellen = poser une question, eine Rolle spielen = jouer un rôle), but others don't: prendre une décision is eine Entscheidung treffen, and faire une demande is einen Antrag stellen.",
+ "examples": [
+  {
+   "de": "Ich möchte einen Antrag auf Kindergeld stellen.",
+   "en": "I'd like to apply for child benefit."
+  },
+  {
+   "de": "Darf ich Ihnen eine Frage stellen?",
+   "en": "May I ask you a question?"
+  },
+  {
+   "de": "Für die Anmeldung brauchen Sie Ihren Pass.",
+   "en": "You need your passport to register."
+  },
+  {
+   "de": "Bitte vereinbaren Sie online einen Termin.",
+   "en": "Please make an appointment online."
+  },
+  {
+   "de": "Wir geben Ihnen Bescheid, wenn Ihr Ausweis fertig ist.",
+   "en": "We'll let you know when your ID card is ready."
+  },
+  {
+   "de": "Nach der Prüfung Ihrer Unterlagen treffen wir eine Entscheidung.",
+   "en": "After checking your documents, we'll make a decision."
+  },
+  {
+   "de": "Das Ausfüllen des Formulars dauert zehn Minuten.",
+   "en": "Filling in the form takes ten minutes."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-15-01",
+   "type": "cloze",
+   "de": "Für die ___ in Berlin brauchen Sie Ihren Pass.",
+   "base": "anmelden",
+   "answers": [
+    "Anmeldung"
+   ],
+   "en": "To register in Berlin you need your passport."
+  },
+  {
+   "id": "b1-15-02",
+   "type": "choice",
+   "de": "Ich möchte einen Antrag ___.",
+   "options": [
+    "machen",
+    "stellen",
+    "geben"
+   ],
+   "answer": 1,
+   "why": "The fixed pair is einen Antrag stellen.",
+   "en": "I'd like to submit an application."
+  },
+  {
+   "id": "b1-15-03",
+   "type": "cloze",
+   "de": "Die ___ der Rechnung ist bis Freitag möglich.",
+   "base": "bezahlen",
+   "answers": [
+    "Bezahlung"
+   ],
+   "en": "Payment of the bill is possible until Friday."
+  },
+  {
+   "id": "b1-15-04",
+   "type": "order",
+   "tiles": [
+    "Darf",
+    "ich",
+    "Ihnen",
+    "eine Frage",
+    "stellen"
+   ],
+   "answers": [
+    "Darf ich Ihnen eine Frage stellen?"
+   ],
+   "en": "May I ask you a question?"
+  },
+  {
+   "id": "b1-15-05",
+   "type": "choice",
+   "de": "Wir müssen bis Montag eine Entscheidung ___.",
+   "options": [
+    "nehmen",
+    "machen",
+    "treffen"
+   ],
+   "answer": 2,
+   "why": "The fixed pair is eine Entscheidung treffen, not nehmen like the French prendre.",
+   "en": "We have to make a decision by Monday."
+  },
+  {
+   "id": "b1-15-06",
+   "type": "cloze",
+   "de": "Vielen Dank für Ihre schnelle ___.",
+   "base": "antworten",
+   "answers": [
+    "Antwort"
+   ],
+   "en": "Thank you for your quick reply."
+  },
+  {
+   "id": "b1-15-07",
+   "type": "cloze",
+   "de": "Wir brauchen noch eine ___ von Ihrem Arbeitgeber.",
+   "base": "bestätigen",
+   "answers": [
+    "Bestätigung"
+   ],
+   "en": "We still need a confirmation from your employer."
+  },
+  {
+   "id": "b1-15-08",
+   "type": "choice",
+   "de": "Bitte ___ Sie uns Bescheid, wenn Sie umziehen.",
+   "options": [
+    "geben",
+    "machen",
+    "stellen"
+   ],
+   "answer": 0,
+   "why": "Bescheid geben (or Bescheid sagen) means to let someone know.",
+   "en": "Please let us know if you move."
+  },
+  {
+   "id": "b1-15-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "einen Termin",
+    "vereinbaren"
+   ],
+   "answers": [
+    "Ich möchte einen Termin vereinbaren.",
+    "Einen Termin möchte ich vereinbaren."
+   ],
+   "en": "I'd like to make an appointment."
+  },
+  {
+   "id": "b1-15-10",
+   "type": "cloze",
+   "de": "Das ___ des Formulars dauert nur fünf Minuten.",
+   "base": "ausfüllen",
+   "answers": [
+    "Ausfüllen"
+   ],
+   "en": "Filling in the form only takes five minutes."
+  },
+  {
+   "id": "b1-15-11",
+   "type": "choice",
+   "de": "Die Mitarbeiterin hat mir eine wichtige Frage ___.",
+   "options": [
+    "gefragt",
+    "gestellt",
+    "gemacht"
+   ],
+   "answer": 1,
+   "why": "You stellen a question; fragen never takes Frage as its object.",
+   "en": "The official asked me an important question."
+  },
+  {
+   "id": "b1-15-12",
+   "type": "cloze",
+   "de": "Eine ___ Ihres Vertrags ist leider nicht möglich.",
+   "base": "verlängern",
+   "answers": [
+    "Verlängerung"
+   ],
+   "en": "Unfortunately it isn't possible to extend your contract."
+  },
+  {
+   "id": "b1-15-13",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "geben",
+    "Ihnen",
+    "so schnell wie möglich",
+    "Bescheid"
+   ],
+   "answers": [
+    "Wir geben Ihnen so schnell wie möglich Bescheid.",
+    "So schnell wie möglich geben wir Ihnen Bescheid."
+   ],
+   "en": "We'll let you know as soon as possible."
+  },
+  {
+   "id": "b1-15-14",
+   "type": "choice",
+   "de": "Wo ist ___ Anmeldung, bitte?",
+   "options": [
+    "der",
+    "das",
+    "die"
+   ],
+   "answer": 2,
+   "why": "Nouns ending in -ung are always feminine: die Anmeldung.",
+   "en": "Where is the registration office, please?"
+  },
+  {
+   "id": "b1-15-15",
+   "type": "cloze",
+   "de": "Beim ___ habe ich meine Nachbarin getroffen.",
+   "base": "einkaufen",
+   "answers": [
+    "Einkaufen"
+   ],
+   "en": "I met my neighbour while I was shopping."
+  },
+  {
+   "id": "b1-15-16",
+   "type": "choice",
+   "de": "Ihr Einkommen ___ bei der Entscheidung eine große Rolle.",
+   "options": [
+    "hat",
+    "macht",
+    "spielt"
+   ],
+   "answer": 2,
+   "why": "The fixed pair is eine Rolle spielen.",
+   "en": "Your income plays a big role in the decision."
+  },
+  {
+   "id": "b1-15-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "einen Antrag",
+    "auf Kindergeld",
+    "stellen"
+   ],
+   "answers": [
+    "Ich möchte einen Antrag auf Kindergeld stellen."
+   ],
+   "en": "I'd like to apply for child benefit."
+  },
+  {
+   "id": "b1-15-18",
+   "type": "cloze",
+   "de": "Nach der ___ Ihrer Unterlagen bekommen Sie einen Bescheid.",
+   "base": "prüfen",
+   "answers": [
+    "Prüfung"
+   ],
+   "en": "After your documents have been checked, you'll get a decision letter."
+  },
+  {
+   "id": "b1-15-19",
+   "type": "choice",
+   "de": "Bei Fragen nehmen Sie bitte ___ mit uns auf.",
+   "options": [
+    "Kontakt",
+    "Termin",
+    "Bescheid"
+   ],
+   "answer": 0,
+   "why": "Kontakt aufnehmen means to get in touch; the other nouns don't go with aufnehmen.",
+   "en": "If you have any questions, please get in touch with us."
+  },
+  {
+   "id": "b1-15-20",
+   "type": "cloze",
+   "de": "Die ___ im Bürgeramt ist kostenlos.",
+   "base": "beraten",
+   "answers": [
+    "Beratung"
+   ],
+   "en": "Advice at the Bürgeramt is free of charge."
+  },
+  {
+   "id": "b1-15-21",
+   "type": "order",
+   "tiles": [
+    "Haben",
+    "Sie",
+    "schon",
+    "eine Entscheidung",
+    "getroffen"
+   ],
+   "answers": [
+    "Haben Sie schon eine Entscheidung getroffen?"
+   ],
+   "en": "Have you made a decision yet?"
+  },
+  {
+   "id": "b1-15-22",
+   "type": "choice",
+   "de": "Wir ___ Ihnen die Formulare gern zur Verfügung.",
+   "options": [
+    "stellen",
+    "geben",
+    "machen"
+   ],
+   "answer": 0,
+   "why": "zur Verfügung stellen means to provide; the verb in this pair is always stellen.",
+   "en": "We're happy to provide you with the forms."
+  },
+  {
+   "id": "b1-15-23",
+   "type": "cloze",
+   "de": "Nach dem ___ müssen Sie sich innerhalb von zwei Wochen anmelden.",
+   "base": "umziehen",
+   "answers": [
+    "Umzug",
+    "Umziehen"
+   ],
+   "en": "After moving, you have to register within two weeks."
+  },
+  {
+   "id": "b1-15-24",
+   "type": "order",
+   "tiles": [
+    "Die Bearbeitung",
+    "Ihres Antrags",
+    "dauert",
+    "etwa",
+    "vier Wochen"
+   ],
+   "answers": [
+    "Die Bearbeitung Ihres Antrags dauert etwa vier Wochen.",
+    "Etwa vier Wochen dauert die Bearbeitung Ihres Antrags."
+   ],
+   "en": "Processing your application takes about four weeks."
+  }
+ ],
+ "listening": {
+  "title": "Beim Bürgeramt",
+  "intro": "Marc Dubois, who has just moved to Cologne, is at the Bürgeramt to register his address with Petra, an official there.",
+  "lines": [
+   {
+    "speaker": "Petra",
+    "de": "Guten Tag. Was kann ich für Sie tun?",
+    "en": "Good morning. What can I do for you?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Guten Tag. Ich bin letzten Monat nach Köln gezogen und möchte mich anmelden.",
+    "en": "Good morning. I moved to Cologne last month and I'd like to register."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Gut. Haben Sie einen Termin vereinbart?",
+    "en": "Fine. Have you made an appointment?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, um zehn Uhr. Hier ist die Bestätigung.",
+    "en": "Yes, at ten o'clock. Here's the confirmation."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Danke. Dann brauche ich Ihren Pass und die Bestätigung von Ihrem Vermieter.",
+    "en": "Thank you. Then I need your passport and the confirmation from your landlord."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Hier, bitte. Darf ich Ihnen noch eine Frage stellen?",
+    "en": "Here you are. May I ask you another question?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Natürlich.",
+    "en": "Of course."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ich möchte auch einen Antrag auf Kindergeld stellen. Geht das auch hier?",
+    "en": "I'd also like to apply for child benefit. Can I do that here too?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Nein, dafür ist die Familienkasse zuständig. Den Antrag können Sie online stellen.",
+    "en": "No, the Familienkasse is responsible for that. You can apply online."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Und wie lange dauert die Bearbeitung?",
+    "en": "And how long does processing take?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Meistens sechs bis acht Wochen. Die Familienkasse gibt Ihnen dann Bescheid.",
+    "en": "Usually six to eight weeks. The Familienkasse will then let you know."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Gut. Und meine Anmeldung hier?",
+    "en": "Good. And my registration here?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Die ist gleich fertig. Hier ist Ihre Meldebescheinigung. Gut aufheben!",
+    "en": "It's nearly done. Here's your registration certificate. Keep it safe!"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Vielen Dank für Ihre Hilfe!",
+    "en": "Thank you very much for your help!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Marc at the Bürgeramt?",
+    "options": [
+     "To apply for a new passport.",
+     "To register his new address.",
+     "To pay a bill."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Marc show first?",
+    "options": [
+     "His landlord's confirmation.",
+     "His child's birth certificate.",
+     "The confirmation of his appointment."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where can Marc apply for child benefit?",
+    "options": [
+     "Online, at the Familienkasse.",
+     "At the Bürgeramt.",
+     "At his employer's office."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How long does processing usually take?",
+    "options": [
+     "Two weeks.",
+     "Six to eight weeks.",
+     "Three months."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Sie können den Antrag auch online bei der Familienkasse stellen.",
+  "Für die Anmeldung brauchen Sie einen Termin beim Bürgeramt.",
+  "Wir geben Ihnen Bescheid, sobald die Bearbeitung fertig ist."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte einen Termin vereinbaren.",
+   "en": "I'd like to make an appointment."
+  },
+  {
+   "de": "Darf ich Ihnen noch eine Frage stellen?",
+   "en": "May I ask you another question?"
+  },
+  {
+   "de": "Ich möchte einen Antrag auf Kindergeld stellen.",
+   "en": "I'd like to apply for child benefit."
+  },
+  {
+   "de": "Wie lange dauert die Bearbeitung?",
+   "en": "How long does processing take?"
+  },
+  {
+   "de": "Die Familienkasse gibt Ihnen dann Bescheid.",
+   "en": "The Familienkasse will then let you know."
+  }
+ ],
+ "writing": {
+  "task": "Eight weeks ago you applied online for child benefit and you have heard nothing. Write an email of 80–100 words to the Familienkasse: say when you applied, ask how long processing will take, and ask them to let you know if they need more documents.",
+  "model": "Sehr geehrte Damen und Herren,\n\nam 3. März habe ich online einen Antrag auf Kindergeld für meine Tochter Léa gestellt. Leider habe ich bis heute keine Antwort bekommen. Können Sie mir bitte sagen, wie lange die Bearbeitung noch dauert? Falls Sie noch Unterlagen brauchen, geben Sie mir bitte Bescheid. Die Geburtsurkunde und meine Meldebescheinigung kann ich Ihnen sofort schicken. Sie können auch gern telefonisch Kontakt mit mir aufnehmen: 0176 1234567. Ich freue mich auf Ihre Antwort.\n\nMit freundlichen Grüßen\nClaire Martin"
+ }
+}

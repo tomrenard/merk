@@ -1,0 +1,477 @@
+{
+ "id": "b1-06",
+ "cefr": "B1",
+ "title": "Wishes and if-sentences",
+ "situation": "Dreams and advice",
+ "canDo": "You can talk about dreams and unreal situations and give advice, using wenn ich … hätte/wäre/würde and du solltest.",
+ "explanation": "To talk about dreams (things that aren't real) and to give advice, German uses the **Konjunktiv II**. You know the polite forms (*hätte gern, könnten Sie*). Now more:\n\n| | sein | haben | können | werden |\n|---|---|---|---|---|\n| ich | wäre | hätte | könnte | würde |\n| du | wärst | hättest | könntest | würdest |\n| er / sie / es | wäre | hätte | könnte | würde |\n| wir | wären | hätten | könnten | würden |\n| ihr | wärt | hättet | könntet | würdet |\n| sie / Sie | wären | hätten | könnten | würden |\n\n- **sein, haben** and the modal verbs have their own forms: *wäre, hätte, könnte, müsste, sollte*. Also **es gäbe** (there would be) and **ich wüsste** (I would know).\n- Almost all other verbs use **würde + infinitive** at the end: *Ich würde gern reisen.*\n\n**If-sentences**: both parts use the Konjunktiv II. The **wenn** part has its verb at the end; if it comes first, the main clause starts with the verb:\n*Wenn ich Zeit **hätte**, **würde** ich dich **besuchen**.* = *Ich würde dich besuchen, wenn ich Zeit hätte.*\n\n**Wishes**: *Ich wäre jetzt gern am Meer. Wenn ich nur mehr Zeit hätte!*\n\n**Advice**:\n- *An deiner Stelle würde ich …* (If I were you, I would …)\n- *Wenn ich du wäre, …*\n- *Du **solltest** mehr schlafen.* (You should …)\n\nMost common mistake: using würde with sein and haben. Say *wenn ich reich **wäre***, not *wenn ich reich sein würde*. And watch the dots: *hatte* is the past (I had), **hätte** means I would have.",
+ "french": "Like French si + imparfait … conditionnel (si j'avais le temps, je voyagerais), but German uses the Konjunktiv II in both parts: Wenn ich Zeit hätte, würde ich reisen; never würde after wenn with sein or haben.",
+ "examples": [
+  {
+   "de": "Wenn ich mehr Zeit hätte, würde ich Gitarre lernen.",
+   "en": "If I had more time, I would learn the guitar."
+  },
+  {
+   "de": "Wenn das Wetter schön wäre, könnten wir grillen.",
+   "en": "If the weather were nice, we could have a barbecue."
+  },
+  {
+   "de": "An deiner Stelle würde ich mit dem Chef sprechen.",
+   "en": "If I were you, I would talk to the boss."
+  },
+  {
+   "de": "Du solltest mehr Wasser trinken.",
+   "en": "You should drink more water."
+  },
+  {
+   "de": "Wenn es hier nur einen Park gäbe!",
+   "en": "If only there were a park here!"
+  },
+  {
+   "de": "Ich wäre jetzt gern am Meer.",
+   "en": "I'd love to be at the sea right now."
+  },
+  {
+   "de": "Was würdest du machen, wenn du im Lotto gewinnen würdest?",
+   "en": "What would you do if you won the lottery?"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-06-01",
+   "type": "cloze",
+   "de": "Wenn ich mehr Zeit ___, würde ich mehr lesen.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "If I had more time, I would read more."
+  },
+  {
+   "id": "b1-06-02",
+   "type": "cloze",
+   "de": "Wenn das Wetter schön ___, würden wir an den See fahren.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "If the weather were nice, we would go to the lake."
+  },
+  {
+   "id": "b1-06-03",
+   "type": "choice",
+   "de": "Wenn ich reich wäre, ___ ich ein Haus am Meer kaufen.",
+   "options": [
+    "werde",
+    "würde",
+    "wäre"
+   ],
+   "answer": 1,
+   "why": "The main clause uses würde + infinitive for an unreal situation.",
+   "en": "If I were rich, I would buy a house by the sea."
+  },
+  {
+   "id": "b1-06-04",
+   "type": "cloze",
+   "de": "An deiner Stelle ___ ich zum Arzt gehen.",
+   "base": "werden",
+   "answers": [
+    "würde"
+   ],
+   "en": "If I were you, I would go to the doctor."
+  },
+  {
+   "id": "b1-06-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "würde",
+    "gern",
+    "mehr",
+    "reisen"
+   ],
+   "answers": [
+    "Ich würde gern mehr reisen.",
+    "Gern würde ich mehr reisen."
+   ],
+   "en": "I would like to travel more."
+  },
+  {
+   "id": "b1-06-06",
+   "type": "choice",
+   "de": "Du siehst müde aus. Du ___ mehr schlafen.",
+   "options": [
+    "würdest",
+    "solltest",
+    "sollst"
+   ],
+   "answer": 1,
+   "why": "Advice uses sollte: du solltest (sollst sounds like an order from someone else).",
+   "en": "You look tired. You should sleep more."
+  },
+  {
+   "id": "b1-06-07",
+   "type": "cloze",
+   "de": "Wenn wir ein Auto ___, könnten wir am Wochenende in die Berge fahren.",
+   "base": "haben",
+   "answers": [
+    "hätten"
+   ],
+   "en": "If we had a car, we could go to the mountains at the weekend."
+  },
+  {
+   "id": "b1-06-08",
+   "type": "choice",
+   "de": "Was ___ du an meiner Stelle machen?",
+   "options": [
+    "würdest",
+    "wirst",
+    "wärst"
+   ],
+   "answer": 0,
+   "why": "For an unreal situation use würde + infinitive: würdest du machen.",
+   "en": "What would you do in my place?"
+  },
+  {
+   "id": "b1-06-09",
+   "type": "cloze",
+   "de": "Wenn ich besser Deutsch ___, hätte ich mehr Chancen.",
+   "base": "können",
+   "answers": [
+    "könnte"
+   ],
+   "en": "If I knew German better, I would have more chances."
+  },
+  {
+   "id": "b1-06-10",
+   "type": "order",
+   "tiles": [
+    "Wenn ich Zeit hätte,",
+    "würde",
+    "ich",
+    "dich",
+    "besuchen"
+   ],
+   "answers": [
+    "Wenn ich Zeit hätte, würde ich dich besuchen.",
+    "Ich würde dich besuchen, wenn ich Zeit hätte."
+   ],
+   "en": "If I had time, I would visit you."
+  },
+  {
+   "id": "b1-06-11",
+   "type": "choice",
+   "de": "Es ___ schön, wenn du am Samstag kommen könntest.",
+   "options": [
+    "wäre",
+    "ist",
+    "würde"
+   ],
+   "answer": 0,
+   "why": "An unreal or polite wish uses the Konjunktiv II of sein: es wäre.",
+   "en": "It would be nice if you could come on Saturday."
+  },
+  {
+   "id": "b1-06-12",
+   "type": "cloze",
+   "de": "Wenn ihr mehr Zeit hättet, ___ ihr dann öfter Sport machen?",
+   "base": "werden",
+   "answers": [
+    "würdet"
+   ],
+   "en": "If you had more time, would you do sport more often?"
+  },
+  {
+   "id": "b1-06-13",
+   "type": "choice",
+   "de": "Wenn es hier einen Park ___, würde ich jeden Tag joggen.",
+   "options": [
+    "gibt",
+    "gab",
+    "gäbe"
+   ],
+   "answer": 2,
+   "why": "In an unreal wenn clause, es gibt becomes es gäbe.",
+   "en": "If there were a park here, I would go jogging every day."
+  },
+  {
+   "id": "b1-06-14",
+   "type": "cloze",
+   "de": "Wenn ich du ___, würde ich weniger arbeiten.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "If I were you, I would work less."
+  },
+  {
+   "id": "b1-06-15",
+   "type": "order",
+   "tiles": [
+    "An deiner Stelle",
+    "würde",
+    "ich",
+    "weniger",
+    "arbeiten"
+   ],
+   "answers": [
+    "An deiner Stelle würde ich weniger arbeiten.",
+    "Ich würde an deiner Stelle weniger arbeiten."
+   ],
+   "en": "If I were you, I would work less."
+  },
+  {
+   "id": "b1-06-16",
+   "type": "choice",
+   "de": "Wenn sie nicht so müde ___, würde sie mitkommen.",
+   "options": [
+    "würde",
+    "wäre",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "With sein, use wäre in the wenn clause, not würde.",
+   "en": "If she weren't so tired, she would come along."
+  },
+  {
+   "id": "b1-06-17",
+   "type": "cloze",
+   "de": "Wenn ich im Lotto gewinnen ___, würde ich nicht mehr arbeiten.",
+   "base": "werden",
+   "answers": [
+    "würde"
+   ],
+   "en": "If I won the lottery, I wouldn't work any more."
+  },
+  {
+   "id": "b1-06-18",
+   "type": "choice",
+   "de": "Ich hätte so gern einen Hund! Wenn meine Wohnung nur größer ___!",
+   "options": [
+    "ist",
+    "wäre",
+    "hätte"
+   ],
+   "answer": 1,
+   "why": "A wish about something unreal: wenn … nur + wäre.",
+   "en": "I'd love to have a dog! If only my flat were bigger!"
+  },
+  {
+   "id": "b1-06-19",
+   "type": "cloze",
+   "de": "Ich ___ gern mehr Urlaub, aber ich habe nur 25 Tage.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "I'd like to have more holiday, but I only have 25 days."
+  },
+  {
+   "id": "b1-06-20",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "würdest",
+    "du",
+    "machen,",
+    "wenn du",
+    "im Lotto gewinnen würdest"
+   ],
+   "answers": [
+    "Was würdest du machen, wenn du im Lotto gewinnen würdest?"
+   ],
+   "en": "What would you do if you won the lottery?"
+  },
+  {
+   "id": "b1-06-21",
+   "type": "choice",
+   "de": "Es wäre besser, wenn du heute zu Hause ___.",
+   "options": [
+    "bleiben wirst",
+    "bleiben würdest",
+    "geblieben bist"
+   ],
+   "answer": 1,
+   "why": "An unreal wenn clause needs the Konjunktiv II: bleiben würdest.",
+   "en": "It would be better if you stayed at home today."
+  },
+  {
+   "id": "b1-06-22",
+   "type": "cloze",
+   "de": "Wenn ihr Lust ___, könnten wir zusammen kochen.",
+   "base": "haben",
+   "answers": [
+    "hättet"
+   ],
+   "en": "If you felt like it, we could cook together."
+  },
+  {
+   "id": "b1-06-23",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "ich",
+    "nicht",
+    "arbeiten müsste,",
+    "würde",
+    "ich",
+    "mitkommen"
+   ],
+   "answers": [
+    "Wenn ich nicht arbeiten müsste, würde ich mitkommen.",
+    "Ich würde mitkommen, wenn ich nicht arbeiten müsste."
+   ],
+   "en": "If I didn't have to work, I would come along."
+  },
+  {
+   "id": "b1-06-24",
+   "type": "order",
+   "tiles": [
+    "Du",
+    "solltest",
+    "mal",
+    "Urlaub",
+    "machen"
+   ],
+   "answers": [
+    "Du solltest mal Urlaub machen."
+   ],
+   "en": "You should take a holiday sometime."
+  }
+ ],
+ "listening": {
+  "title": "Ein Traum vom eigenen Café",
+  "intro": "Mia notices that her friend Leon looks tired and asks him what's wrong.",
+  "lines": [
+   {
+    "speaker": "Mia",
+    "de": "Du siehst müde aus, Leon. Alles okay?",
+    "en": "You look tired, Leon. Everything okay?"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Ach, die Arbeit. Wenn ich nicht so viele Überstunden machen müsste, wäre alles gut.",
+    "en": "Oh, work. If I didn't have to do so much overtime, everything would be fine."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Hast du schon mal mit deiner Chefin gesprochen?",
+    "en": "Have you talked to your boss about it?"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Nein. Ehrlich gesagt hätte ich am liebsten einen ganz anderen Job.",
+    "en": "No. To be honest, what I'd really like is a completely different job."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Echt? Was würdest du denn gern machen?",
+    "en": "Really? What would you like to do?"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Wenn ich könnte, würde ich ein kleines Café aufmachen. Mit Kuchen und guter Musik.",
+    "en": "If I could, I would open a little café. With cake and good music."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Das wäre toll! Warum machst du es nicht?",
+    "en": "That would be great! Why don't you do it?"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Na ja, wenn ich genug Geld hätte, würde ich es sofort machen. Aber ich habe keins.",
+    "en": "Well, if I had enough money, I would do it right away. But I don't have any."
+   },
+   {
+    "speaker": "Mia",
+    "de": "An deiner Stelle würde ich erst mal am Wochenende in einem Café arbeiten. Dann wüsstest du, ob dir das wirklich gefällt.",
+    "en": "If I were you, I'd work in a café at weekends first. Then you'd know whether you really like it."
+   },
+   {
+    "speaker": "Leon",
+    "de": "Hm, keine schlechte Idee.",
+    "en": "Hm, not a bad idea."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Und du solltest trotzdem mit deiner Chefin über die Überstunden sprechen.",
+    "en": "And you should still talk to your boss about the overtime."
+   },
+   {
+    "speaker": "Leon",
+    "de": "Du hast recht. Ich frage sie morgen nach einem Termin.",
+    "en": "You're right. I'll ask her for a meeting tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Leon's problem at work?",
+    "options": [
+     "Too much overtime",
+     "A difficult colleague",
+     "A low salary"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What would Leon like to do?",
+    "options": [
+     "Become a musician",
+     "Open a small café",
+     "Work part-time"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't he do it?",
+    "options": [
+     "His boss won't let him",
+     "He's afraid of the risk",
+     "He doesn't have enough money"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Mia advise him to do first?",
+    "options": [
+     "Work in a café at weekends",
+     "Quit his job",
+     "Take a holiday"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+  "An deiner Stelle würde ich mit der Chefin sprechen.",
+  "Es wäre schön, wenn du am Wochenende kommen könntest."
+ ],
+ "speaking": [
+  {
+   "de": "Was würdest du denn gern machen?",
+   "en": "What would you like to do?"
+  },
+  {
+   "de": "Wenn ich könnte, würde ich ein kleines Café aufmachen.",
+   "en": "If I could, I would open a little café."
+  },
+  {
+   "de": "Wenn ich genug Geld hätte, würde ich es sofort machen.",
+   "en": "If I had enough money, I would do it right away."
+  },
+  {
+   "de": "An deiner Stelle würde ich erst mal am Wochenende in einem Café arbeiten.",
+   "en": "If I were you, I would work in a café at weekends first."
+  },
+  {
+   "de": "Du solltest mit deiner Chefin sprechen.",
+   "en": "You should talk to your boss."
+  }
+ ],
+ "writing": {
+  "task": "A friend writes that she is stressed and has no time for herself. Write an 80–100-word reply with your advice and say what you would do in her place.",
+  "model": "Liebe Nina,\n\nes tut mir leid, dass du so gestresst bist. Ich verstehe dich gut! An deiner Stelle würde ich zuerst mit deinem Chef sprechen. Vielleicht könntest du einen Tag pro Woche im Homeoffice arbeiten? Dann hättest du weniger Stress im Zug. Du solltest auch wieder mehr Sport machen, das hilft mir immer. Wenn ich in deiner Situation wäre, würde ich außerdem am Wochenende das Handy ausschalten. Und wenn du Lust hättest, könnten wir nächsten Samstag zusammen wandern gehen. Das wäre doch schön, oder?\n\nLiebe Grüße\nCamille"
+ }
+}

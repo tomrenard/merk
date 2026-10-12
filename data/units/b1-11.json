@@ -1,0 +1,497 @@
+{
+ "id": "b1-11",
+ "cefr": "B1",
+ "title": "obwohl, während, bevor, seitdem, bis",
+ "situation": "Contrasts and timelines",
+ "canDo": "You can link two events with obwohl, während, bevor, seitdem and bis, putting the verb at the end of the clause.",
+ "explanation": "When you tell someone how things went, you often contrast two facts or put events on a timeline: *Obwohl ich müde war, bin ich mitgekommen.* These five words start a subordinate clause, so the **conjugated verb goes to the end**, just like after *weil* and *dass*.\n\n| word | meaning | example |\n|---|---|---|\n| **obwohl** | although | *Obwohl es regnet, gehe ich joggen.* |\n| **während** | while (at the same time) | *Während ich koche, hört sie Musik.* |\n| **bevor** | before | *Bevor ich gehe, rufe ich dich an.* |\n| **seitdem** | since (then until now) | *Seitdem ich hier wohne, fahre ich Rad.* |\n| **bis** | until | *Warte hier, bis ich komme.* |\n\n- If the clause comes first, the main clause starts with its verb: *Obwohl es regnet, **gehe** ich joggen.* (verb – comma – verb)\n- A separable verb joins up at the end: *bevor der Zug **abfährt***.\n- **obwohl** vs **trotzdem**: *obwohl* starts a clause with the verb at the end; *trotzdem* is an adverb with the verb right after it: *Es regnet, trotzdem gehe ich joggen.*\n- **bevor** vs **vor**: *vor* + noun (*vor dem Essen*), *bevor* + clause (*bevor wir essen*). In the same way: *seit drei Jahren* but *seitdem ich hier wohne*.\n- **seitdem** usually takes the present tense, where English uses the perfect: *Seitdem ich Sport mache, schlafe ich besser* (since I've been doing sport).\n- **während** can also be a preposition with the genitive (*während der Arbeit*).\n\nThe most common mistake: leaving the verb in second place. Not ~~obwohl ich bin müde~~, but *obwohl ich müde **bin***.",
+ "french": "obwohl is bien que, bevor is avant que and bis is jusqu'à ce que, but German never needs a subjunctive after them: just put the verb at the end; seitdem (depuis que) also takes the present tense, as in French.",
+ "examples": [
+  {
+   "de": "Obwohl ich müde war, bin ich zur Party gegangen.",
+   "en": "Although I was tired, I went to the party."
+  },
+  {
+   "de": "Während du einkaufst, putze ich das Bad.",
+   "en": "While you do the shopping, I'll clean the bathroom."
+  },
+  {
+   "de": "Bevor ich zur Arbeit fahre, trinke ich einen Kaffee.",
+   "en": "Before I drive to work, I have a coffee."
+  },
+  {
+   "de": "Seitdem ich in Hamburg wohne, fahre ich jeden Tag Rad.",
+   "en": "Since I've lived in Hamburg, I've cycled every day."
+  },
+  {
+   "de": "Ich warte hier, bis du zurückkommst.",
+   "en": "I'll wait here until you come back."
+  },
+  {
+   "de": "Er hat den Job bekommen, obwohl er wenig Erfahrung hat.",
+   "en": "He got the job although he has little experience."
+  },
+  {
+   "de": "Bitte machen Sie das Licht aus, bevor Sie gehen.",
+   "en": "Please turn off the light before you leave."
+  },
+  {
+   "de": "Wir bleiben im Café, bis der Regen aufhört.",
+   "en": "We'll stay in the café until the rain stops."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-11-01",
+   "type": "cloze",
+   "de": "Obwohl ich müde ___, komme ich mit.",
+   "base": "sein",
+   "answers": [
+    "bin"
+   ],
+   "en": "Although I'm tired, I'm coming along."
+  },
+  {
+   "id": "b1-11-02",
+   "type": "choice",
+   "de": "Ich gehe joggen, ___.",
+   "options": [
+    "obwohl regnet es",
+    "obwohl es regnet",
+    "obwohl es regnen"
+   ],
+   "answer": 1,
+   "why": "After obwohl the conjugated verb goes to the end of the clause.",
+   "en": "I'm going jogging although it's raining."
+  },
+  {
+   "id": "b1-11-03",
+   "type": "cloze",
+   "de": "Ich rufe dich an, bevor ich ___.",
+   "base": "kommen",
+   "answers": [
+    "komme"
+   ],
+   "en": "I'll call you before I come."
+  },
+  {
+   "id": "b1-11-04",
+   "type": "order",
+   "tiles": [
+    "Ich warte",
+    "bis",
+    "du",
+    "kommst"
+   ],
+   "answers": [
+    "Ich warte, bis du kommst."
+   ],
+   "en": "I'll wait until you come."
+  },
+  {
+   "id": "b1-11-05",
+   "type": "choice",
+   "de": "___ ich koche, höre ich immer Radio.",
+   "options": [
+    "Bis",
+    "Obwohl",
+    "Während"
+   ],
+   "answer": 2,
+   "why": "während means while: two things happen at the same time.",
+   "en": "While I'm cooking, I always listen to the radio."
+  },
+  {
+   "id": "b1-11-06",
+   "type": "cloze",
+   "de": "Seitdem ich in Berlin ___, fahre ich Rad.",
+   "base": "wohnen",
+   "answers": [
+    "wohne"
+   ],
+   "en": "Since I've lived in Berlin, I've been cycling."
+  },
+  {
+   "id": "b1-11-07",
+   "type": "choice",
+   "de": "Es regnet, ___ gehe ich joggen.",
+   "options": [
+    "trotzdem",
+    "obwohl",
+    "aber"
+   ],
+   "answer": 0,
+   "why": "The verb comes right after the gap, so you need the adverb trotzdem; obwohl would send the verb to the end.",
+   "en": "It's raining, but I'm going jogging anyway."
+  },
+  {
+   "id": "b1-11-08",
+   "type": "order",
+   "tiles": [
+    "Bevor",
+    "ich",
+    "gehe",
+    "trinke",
+    "ich",
+    "einen Kaffee"
+   ],
+   "answers": [
+    "Bevor ich gehe, trinke ich einen Kaffee.",
+    "Ich trinke einen Kaffee, bevor ich gehe.",
+    "Einen Kaffee trinke ich, bevor ich gehe."
+   ],
+   "en": "Before I leave, I'll have a coffee."
+  },
+  {
+   "id": "b1-11-09",
+   "type": "cloze",
+   "de": "Wasch dir bitte die Hände ___ dem Essen.",
+   "base": "vor/bevor",
+   "answers": [
+    "vor"
+   ],
+   "en": "Please wash your hands before the meal."
+  },
+  {
+   "id": "b1-11-10",
+   "type": "cloze",
+   "de": "Wasch dir bitte die Hände, ___ wir essen.",
+   "base": "vor/bevor",
+   "answers": [
+    "bevor"
+   ],
+   "en": "Please wash your hands before we eat."
+  },
+  {
+   "id": "b1-11-11",
+   "type": "choice",
+   "de": "Obwohl er krank ist, ___ zur Arbeit.",
+   "options": [
+    "er geht",
+    "er gehen",
+    "geht er"
+   ],
+   "answer": 2,
+   "why": "When the obwohl clause comes first, the main clause starts with its verb.",
+   "en": "Although he's ill, he's going to work."
+  },
+  {
+   "id": "b1-11-12",
+   "type": "cloze",
+   "de": "Bevor der Zug ___, kaufe ich noch Wasser.",
+   "base": "abfahren",
+   "answers": [
+    "abfährt"
+   ],
+   "en": "Before the train leaves, I'll buy some water."
+  },
+  {
+   "id": "b1-11-13",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "kommt",
+    "obwohl",
+    "er",
+    "krank",
+    "ist"
+   ],
+   "answers": [
+    "Er kommt, obwohl er krank ist.",
+    "Obwohl er krank ist, kommt er."
+   ],
+   "en": "He's coming although he's ill."
+  },
+  {
+   "id": "b1-11-14",
+   "type": "choice",
+   "de": "___ drei Jahren wohne ich in Berlin.",
+   "options": [
+    "Seitdem",
+    "Seit",
+    "Bis"
+   ],
+   "answer": 1,
+   "why": "Before a noun you need the preposition seit; seitdem starts a clause with a verb.",
+   "en": "I've lived in Berlin for three years."
+  },
+  {
+   "id": "b1-11-15",
+   "type": "cloze",
+   "de": "Wir warten, bis der Bus ___.",
+   "base": "kommen",
+   "answers": [
+    "kommt"
+   ],
+   "en": "We're waiting until the bus comes."
+  },
+  {
+   "id": "b1-11-16",
+   "type": "choice",
+   "de": "Ich bleibe im Büro, ___ die Arbeit fertig ist.",
+   "options": [
+    "bis",
+    "bevor",
+    "seitdem"
+   ],
+   "answer": 0,
+   "why": "bis means until: you stay up to the moment the work is done.",
+   "en": "I'm staying in the office until the work is done."
+  },
+  {
+   "id": "b1-11-17",
+   "type": "order",
+   "tiles": [
+    "Während",
+    "ich",
+    "koche",
+    "deckst",
+    "du",
+    "den Tisch"
+   ],
+   "answers": [
+    "Während ich koche, deckst du den Tisch.",
+    "Du deckst den Tisch, während ich koche."
+   ],
+   "en": "While I cook, you set the table."
+  },
+  {
+   "id": "b1-11-18",
+   "type": "cloze",
+   "de": "Obwohl wir früh losgefahren ___, sind wir zu spät gekommen.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "Although we set off early, we arrived late."
+  },
+  {
+   "id": "b1-11-19",
+   "type": "choice",
+   "de": "___ es kalt war, sind die Kinder im See geschwommen.",
+   "options": [
+    "Trotzdem",
+    "Obwohl",
+    "Aber"
+   ],
+   "answer": 1,
+   "why": "The verb war is at the end of the clause, so it must start with the conjunction obwohl.",
+   "en": "Although it was cold, the children swam in the lake."
+  },
+  {
+   "id": "b1-11-20",
+   "type": "cloze",
+   "de": "Seitdem sie den neuen Job ___, ist sie viel zufriedener.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "Since she's had the new job, she's much happier."
+  },
+  {
+   "id": "b1-11-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "mache",
+    "das Licht",
+    "aus",
+    "bevor",
+    "ich",
+    "gehe"
+   ],
+   "answers": [
+    "Ich mache das Licht aus, bevor ich gehe.",
+    "Bevor ich gehe, mache ich das Licht aus.",
+    "Das Licht mache ich aus, bevor ich gehe."
+   ],
+   "en": "I turn off the light before I leave."
+  },
+  {
+   "id": "b1-11-22",
+   "type": "choice",
+   "de": "Während ___, kann ich nicht telefonieren.",
+   "options": [
+    "ich fahre Auto",
+    "ich Auto fahre",
+    "fahre ich Auto"
+   ],
+   "answer": 1,
+   "why": "während starts a clause, so the verb fahre goes to the end.",
+   "en": "While I'm driving, I can't make phone calls."
+  },
+  {
+   "id": "b1-11-23",
+   "type": "cloze",
+   "de": "Er arbeitet weiter, obwohl er seit Stunden Kopfschmerzen ___.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "He keeps working although he's had a headache for hours."
+  },
+  {
+   "id": "b1-11-24",
+   "type": "order",
+   "tiles": [
+    "Seitdem",
+    "ich",
+    "Sport",
+    "mache",
+    "schlafe",
+    "ich",
+    "besser"
+   ],
+   "answers": [
+    "Seitdem ich Sport mache, schlafe ich besser.",
+    "Ich schlafe besser, seitdem ich Sport mache."
+   ],
+   "en": "Since I've been doing sport, I've been sleeping better."
+  }
+ ],
+ "listening": {
+  "title": "Ein müder Kollege",
+  "intro": "Miriam meets her colleague Jonas in the office kitchen on a Monday morning.",
+  "lines": [
+   {
+    "speaker": "Miriam",
+    "de": "Hallo Jonas, du siehst müde aus. Alles okay?",
+    "en": "Hi Jonas, you look tired. Everything OK?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, eigentlich schon. Aber seitdem wir das Baby haben, schlafe ich kaum noch.",
+    "en": "Yes, basically. But since we've had the baby, I hardly sleep any more."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Das glaube ich. Und trotzdem kommst du jeden Tag ins Büro?",
+    "en": "I can imagine. And you still come to the office every day?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja. Obwohl es anstrengend ist, arbeite ich noch bis Ende des Monats.",
+    "en": "Yes. Although it's tiring, I'm working until the end of the month."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Und dann?",
+    "en": "And then?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Dann bleibe ich zwei Monate zu Hause, bis meine Frau wieder arbeitet.",
+    "en": "Then I'm staying at home for two months, until my wife goes back to work."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Schön! Und wer macht deine Arbeit, während du weg bist?",
+    "en": "Nice! And who does your work while you're away?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Tim. Bevor ich gehe, erkläre ich ihm alle Projekte.",
+    "en": "Tim. Before I go, I'll explain all the projects to him."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Tim? Obwohl er erst seit drei Wochen hier ist?",
+    "en": "Tim? Even though he's only been here for three weeks?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, er lernt schnell. Und du kannst ihm helfen, wenn er Fragen hat.",
+    "en": "Yes, he learns fast. And you can help him if he has questions."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Klar, mache ich. Sag mal, schläft das Baby nachts gar nicht?",
+    "en": "Sure, I will. Tell me, doesn't the baby sleep at night at all?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Doch, aber nur, bis es Hunger hat. Also alle drei Stunden.",
+    "en": "Yes, but only until it gets hungry. So every three hours."
+   },
+   {
+    "speaker": "Miriam",
+    "de": "Oje. Dann trink lieber noch einen Kaffee, bevor das Meeting anfängt!",
+    "en": "Oh dear. Then you'd better have another coffee before the meeting starts!"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gute Idee. Bis gleich!",
+    "en": "Good idea. See you in a bit!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Jonas tired?",
+    "options": [
+     "He worked late on a project.",
+     "The baby wakes him up at night.",
+     "He was at a party at the weekend."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What will Jonas do after the end of the month?",
+    "options": [
+     "Start a new job.",
+     "Work from home for two weeks.",
+     "Stay at home for two months."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why is Miriam surprised about Tim?",
+    "options": [
+     "He has only worked there for three weeks.",
+     "He doesn't like the projects.",
+     "He is often late."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Miriam suggest?",
+    "options": [
+     "Going home early.",
+     "Having another coffee before the meeting.",
+     "Asking Tim to lead the meeting."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Obwohl ich wenig Zeit habe, lerne ich jeden Tag Deutsch.",
+  "Bevor du gehst, mach bitte das Fenster zu.",
+  "Seitdem wir umgezogen sind, fahre ich mit dem Rad zur Arbeit."
+ ],
+ "speaking": [
+  {
+   "de": "Seitdem wir das Baby haben, schlafe ich kaum noch.",
+   "en": "Since we've had the baby, I hardly sleep any more."
+  },
+  {
+   "de": "Wer macht deine Arbeit, während du weg bist?",
+   "en": "Who does your work while you're away?"
+  },
+  {
+   "de": "Bevor ich gehe, erkläre ich ihm alle Projekte.",
+   "en": "Before I go, I'll explain all the projects to him."
+  },
+  {
+   "de": "Ich bleibe zu Hause, bis meine Frau wieder arbeitet.",
+   "en": "I'm staying at home until my wife goes back to work."
+  },
+  {
+   "de": "Obwohl es anstrengend ist, komme ich jeden Tag ins Büro.",
+   "en": "Although it's tiring, I come to the office every day."
+  }
+ ],
+ "writing": {
+  "task": "A friend asks how your first months in your new city have been. Write a message of 80–100 words: say what has changed since you moved, something you do although it's hard, and what you want to do before the summer. Use at least three of obwohl, während, bevor, seitdem and bis.",
+  "model": "Hallo Lea,\n\ndanke für deine Nachricht! Seitdem ich in Leipzig wohne, ist mein Leben ganz anders. Ich fahre jeden Tag mit dem Rad zur Arbeit, obwohl es oft regnet. Meine Kollegen sind sehr nett, und während wir Mittag essen, sprechen wir nur Deutsch. Das ist anstrengend, aber ich lerne viel. Abends lese ich noch ein bisschen, bevor ich schlafen gehe. Bis zum Sommer möchte ich die B1-Prüfung schaffen. Und bevor es zu heiß wird, kommst du mich besuchen, oder?\n\nLiebe Grüße\nClaire"
+ }
+}

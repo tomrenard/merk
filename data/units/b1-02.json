@@ -1,0 +1,486 @@
+{
+ "id": "b1-02",
+ "cefr": "B1",
+ "title": "The past perfect and nachdem",
+ "situation": "What happened before what",
+ "canDo": "You can say what had already happened before something else in the past, using the Plusquamperfekt and nachdem.",
+ "explanation": "To say what happened **before** something else in the past, German uses the **Plusquamperfekt** (past perfect): *Als ich zum Bahnhof kam, **war** der Zug schon **abgefahren**.* First the train left, then I arrived.\n\nIt's easy: take the Perfekt and put **haben** or **sein** in the Präteritum.\n\n| | Perfekt | Plusquamperfekt |\n|---|---|---|\n| with haben | ich habe gegessen | ich **hatte** gegessen |\n| with sein | ich bin gegangen | ich **war** gegangen |\n\nThe same verbs as in the Perfekt take sein (movement and change: *gehen, fahren, kommen, umziehen, aufstehen*); all others take haben. Forms: *hatte, hattest, hatte, hatten, hattet, hatten* / *war, warst, war, waren, wart, waren*.\n\n**nachdem** (after) starts a clause with the verb at the end. The nachdem part happened first, so it goes one tense back:\n- nachdem + **Plusquamperfekt**, main clause in the **Präteritum** (or Perfekt): *Nachdem wir gegessen hatten, gingen wir spazieren.*\n- When the nachdem clause comes first, the main clause starts with its verb: *Nachdem er angekommen war, **rief** er mich **an**.*\n\nUseful words: **schon** (already), **vorher** (before that), **noch nie** (never before).\n\nDon't mix up:\n- **nach** + noun: *nach dem Essen*\n- **nachdem** + clause: *nachdem ich gegessen hatte*\n- **danach** (afterwards) + main clause: *Danach gingen wir spazieren.*\n\nMost common mistake: using the same tense in both parts, as in *Nachdem ich aß, ging ich*. The nachdem part always goes one step back: ***Nachdem ich gegessen hatte**, ging ich.*",
+ "french": "The Plusquamperfekt is the plus-que-parfait (j'avais mangé = ich hatte gegessen, j'étais parti = ich war gegangen), with the same haben/sein split as avoir/être; nachdem is like après que.",
+ "examples": [
+  {
+   "de": "Als ich zum Bahnhof kam, war der Zug schon abgefahren.",
+   "en": "When I got to the station, the train had already left."
+  },
+  {
+   "de": "Nachdem wir gegessen hatten, gingen wir spazieren.",
+   "en": "After we had eaten, we went for a walk."
+  },
+  {
+   "de": "Ich hatte meine Brille zu Hause vergessen.",
+   "en": "I had forgotten my glasses at home."
+  },
+  {
+   "de": "Sie war sehr müde, weil sie schlecht geschlafen hatte.",
+   "en": "She was very tired because she had slept badly."
+  },
+  {
+   "de": "Nachdem er umgezogen war, fand er schnell neue Freunde.",
+   "en": "After he had moved, he quickly found new friends."
+  },
+  {
+   "de": "Nach dem Frühstück fuhr ich zur Arbeit.",
+   "en": "After breakfast I went to work."
+  },
+  {
+   "de": "Er hatte vorher nie in Deutschland gewohnt.",
+   "en": "He had never lived in Germany before."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-02-01",
+   "type": "cloze",
+   "de": "Ich ___ schon gegessen, als du anriefst.",
+   "base": "haben",
+   "answers": [
+    "hatte"
+   ],
+   "en": "I had already eaten when you called."
+  },
+  {
+   "id": "b1-02-02",
+   "type": "cloze",
+   "de": "Als ich zum Bahnhof kam, ___ der Zug schon abgefahren.",
+   "base": "sein",
+   "answers": [
+    "war"
+   ],
+   "en": "When I got to the station, the train had already left."
+  },
+  {
+   "id": "b1-02-03",
+   "type": "choice",
+   "de": "Als wir ankamen, ___ der Film schon angefangen.",
+   "options": [
+    "war",
+    "hatte",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "anfangen takes haben, and the Plusquamperfekt uses its Präteritum: hatte.",
+   "en": "When we arrived, the film had already started."
+  },
+  {
+   "id": "b1-02-04",
+   "type": "cloze",
+   "de": "Nachdem sie gefrühstückt ___, ging sie zur Arbeit.",
+   "base": "haben",
+   "answers": [
+    "hatte"
+   ],
+   "en": "After she had had breakfast, she went to work."
+  },
+  {
+   "id": "b1-02-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "meinen Schlüssel",
+    "hatte",
+    "vergessen"
+   ],
+   "answers": [
+    "Ich hatte meinen Schlüssel vergessen.",
+    "Meinen Schlüssel hatte ich vergessen."
+   ],
+   "en": "I had forgotten my key."
+  },
+  {
+   "id": "b1-02-06",
+   "type": "choice",
+   "de": "___ dem Essen tranken wir einen Kaffee.",
+   "options": [
+    "Nachdem",
+    "Nach",
+    "Danach"
+   ],
+   "answer": 1,
+   "why": "nach goes with a noun; nachdem starts a clause with a verb.",
+   "en": "After the meal we had a coffee."
+  },
+  {
+   "id": "b1-02-07",
+   "type": "cloze",
+   "de": "Als du anriefst, ___ wir schon nach Hause gegangen.",
+   "base": "sein",
+   "answers": [
+    "waren"
+   ],
+   "en": "When you called, we had already gone home."
+  },
+  {
+   "id": "b1-02-08",
+   "type": "choice",
+   "de": "Nachdem ich die E-Mail ___ hatte, rief ich den Chef an.",
+   "options": [
+    "las",
+    "lesen",
+    "gelesen"
+   ],
+   "answer": 2,
+   "why": "The Plusquamperfekt needs the Partizip II: gelesen.",
+   "en": "After I had read the email, I called the boss."
+  },
+  {
+   "id": "b1-02-09",
+   "type": "cloze",
+   "de": "Nachdem er den ganzen Tag gearbeitet ___, schlief er sofort ein.",
+   "base": "haben",
+   "answers": [
+    "hatte"
+   ],
+   "en": "After he had worked all day, he fell asleep straight away."
+  },
+  {
+   "id": "b1-02-10",
+   "type": "order",
+   "tiles": [
+    "Nachdem",
+    "er",
+    "angekommen",
+    "war,",
+    "rief",
+    "er",
+    "mich an"
+   ],
+   "answers": [
+    "Nachdem er angekommen war, rief er mich an.",
+    "Er rief mich an, nachdem er angekommen war."
+   ],
+   "en": "After he had arrived, he called me."
+  },
+  {
+   "id": "b1-02-11",
+   "type": "choice",
+   "de": "Nachdem wir den Film gesehen hatten, ___ wir ins Bett.",
+   "options": [
+    "gehen",
+    "waren gegangen",
+    "gingen"
+   ],
+   "answer": 2,
+   "why": "After a nachdem clause in the Plusquamperfekt, the main clause is in the Präteritum.",
+   "en": "After we had watched the film, we went to bed."
+  },
+  {
+   "id": "b1-02-12",
+   "type": "cloze",
+   "de": "Nachdem sie umgezogen ___, suchte sie eine neue Arbeit.",
+   "base": "sein",
+   "answers": [
+    "war"
+   ],
+   "en": "After she had moved, she looked for a new job."
+  },
+  {
+   "id": "b1-02-13",
+   "type": "choice",
+   "de": "Ich konnte nicht ins Haus, weil ich meinen Schlüssel ___ hatte.",
+   "options": [
+    "verloren",
+    "geverloren",
+    "verlieren"
+   ],
+   "answer": 0,
+   "why": "verlieren starts with ver-, so its Partizip II has no ge-: verloren.",
+   "en": "I couldn't get into the house because I had lost my key."
+  },
+  {
+   "id": "b1-02-14",
+   "type": "order",
+   "tiles": [
+    "Als",
+    "wir",
+    "ankamen,",
+    "das Konzert",
+    "schon",
+    "hatte",
+    "begonnen"
+   ],
+   "answers": [
+    "Als wir ankamen, hatte das Konzert schon begonnen.",
+    "Das Konzert hatte schon begonnen, als wir ankamen."
+   ],
+   "en": "When we arrived, the concert had already begun."
+  },
+  {
+   "id": "b1-02-15",
+   "type": "cloze",
+   "de": "Sie war müde, weil sie schlecht geschlafen ___.",
+   "base": "haben",
+   "answers": [
+    "hatte"
+   ],
+   "en": "She was tired because she had slept badly."
+  },
+  {
+   "id": "b1-02-16",
+   "type": "choice",
+   "de": "Nachdem er ___, fuhr er zum Bahnhof.",
+   "options": [
+    "gepackt hatte",
+    "gepackt hat",
+    "packte"
+   ],
+   "answer": 0,
+   "why": "The main clause is in the Präteritum, so the nachdem clause needs the Plusquamperfekt.",
+   "en": "After he had packed, he drove to the station."
+  },
+  {
+   "id": "b1-02-17",
+   "type": "cloze",
+   "de": "Nachdem ihr aufgestanden ___, frühstückten wir zusammen.",
+   "base": "sein",
+   "answers": [
+    "wart"
+   ],
+   "en": "After you had got up, we had breakfast together."
+  },
+  {
+   "id": "b1-02-18",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "hatte",
+    "vorher",
+    "nie",
+    "in Deutschland",
+    "gewohnt"
+   ],
+   "answers": [
+    "Er hatte vorher nie in Deutschland gewohnt.",
+    "Vorher hatte er nie in Deutschland gewohnt.",
+    "Er hatte nie vorher in Deutschland gewohnt.",
+    "In Deutschland hatte er vorher nie gewohnt.",
+    "Er hatte in Deutschland vorher nie gewohnt."
+   ],
+   "en": "He had never lived in Germany before."
+  },
+  {
+   "id": "b1-02-19",
+   "type": "choice",
+   "de": "Die Party war schon vorbei. Alle Gäste ___ schon gegangen.",
+   "options": [
+    "hatten",
+    "waren",
+    "sind"
+   ],
+   "answer": 1,
+   "why": "gehen takes sein, and the story is in the past, so: waren gegangen.",
+   "en": "The party was already over. All the guests had already left."
+  },
+  {
+   "id": "b1-02-20",
+   "type": "cloze",
+   "de": "Nachdem wir lange ___ hatten, kam endlich der Bus.",
+   "base": "warten",
+   "answers": [
+    "gewartet"
+   ],
+   "en": "After we had waited for a long time, the bus finally came."
+  },
+  {
+   "id": "b1-02-21",
+   "type": "choice",
+   "de": "Ich rief ihn an, ___ ich seine Nachricht gelesen hatte.",
+   "options": [
+    "nach",
+    "nachdem",
+    "danach"
+   ],
+   "answer": 1,
+   "why": "A clause with the verb at the end needs the conjunction nachdem.",
+   "en": "I called him after I had read his message."
+  },
+  {
+   "id": "b1-02-22",
+   "type": "cloze",
+   "de": "Nachdem er das Formular ___ hatte, gab er es ab.",
+   "base": "ausfüllen",
+   "answers": [
+    "ausgefüllt"
+   ],
+   "en": "After he had filled in the form, he handed it in."
+  },
+  {
+   "id": "b1-02-23",
+   "type": "order",
+   "tiles": [
+    "Nachdem",
+    "sie",
+    "eingekauft",
+    "hatte,",
+    "kochte",
+    "sie",
+    "das Essen"
+   ],
+   "answers": [
+    "Nachdem sie eingekauft hatte, kochte sie das Essen.",
+    "Sie kochte das Essen, nachdem sie eingekauft hatte."
+   ],
+   "en": "After she had done the shopping, she cooked the meal."
+  },
+  {
+   "id": "b1-02-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "war",
+    "noch nie",
+    "in Hamburg",
+    "gewesen"
+   ],
+   "answers": [
+    "Ich war noch nie in Hamburg gewesen.",
+    "In Hamburg war ich noch nie gewesen.",
+    "Ich war in Hamburg noch nie gewesen."
+   ],
+   "en": "I had never been to Hamburg."
+  }
+ ],
+ "listening": {
+  "title": "Ein Tag zum Vergessen",
+  "intro": "Daniel arrives late at the office, and his colleague Lisa asks what happened.",
+  "lines": [
+   {
+    "speaker": "Lisa",
+    "de": "Daniel, da bist du ja endlich! Die Besprechung hat schon vor einer halben Stunde angefangen.",
+    "en": "Daniel, there you are at last! The meeting started half an hour ago."
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Ich weiß, tut mir leid. Heute ging einfach alles schief.",
+    "en": "I know, sorry. Everything just went wrong today."
+   },
+   {
+    "speaker": "Lisa",
+    "de": "Was ist denn passiert?",
+    "en": "What happened?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Also, als ich aufwachte, hatte mein Wecker nicht geklingelt.",
+    "en": "Well, when I woke up, my alarm hadn't gone off."
+   },
+   {
+    "speaker": "Lisa",
+    "de": "Oh nein. Hattest du ihn nicht gestellt?",
+    "en": "Oh no. Hadn't you set it?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Doch, aber der Akku war leer. Ich hatte das Handy am Abend nicht aufgeladen.",
+    "en": "I had, but the battery was dead. I hadn't charged my phone in the evening."
+   },
+   {
+    "speaker": "Lisa",
+    "de": "Und dann?",
+    "en": "And then?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Nachdem ich schnell geduscht hatte, lief ich zur Haltestelle. Aber der Bus war gerade abgefahren.",
+    "en": "After I had had a quick shower, I ran to the bus stop. But the bus had just left."
+   },
+   {
+    "speaker": "Lisa",
+    "de": "Typisch! Und dann hast du ein Taxi genommen?",
+    "en": "Typical! And then you took a taxi?"
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Nein, ich habe auf den nächsten Bus gewartet. Und als ich im Büro ankam, merkte ich, dass ich meine Tasche zu Hause vergessen hatte.",
+    "en": "No, I waited for the next bus. And when I got to the office, I noticed that I had left my bag at home."
+   },
+   {
+    "speaker": "Lisa",
+    "de": "Was für ein Tag! Komm, trink erst mal einen Kaffee.",
+    "en": "What a day! Come on, have a coffee first."
+   },
+   {
+    "speaker": "Daniel",
+    "de": "Danke, den brauche ich jetzt wirklich.",
+    "en": "Thanks, I really need one now."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why didn't Daniel's alarm go off?",
+    "options": [
+     "He hadn't set it",
+     "His phone battery was dead",
+     "He had switched it off"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happened at the bus stop?",
+    "options": [
+     "The bus had just left",
+     "The bus was late",
+     "The bus was full"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How did Daniel get to the office?",
+    "options": [
+     "By taxi",
+     "On foot",
+     "On the next bus"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What had he left at home?",
+    "options": [
+     "His keys",
+     "His bag",
+     "His laptop"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Als ich ankam, war der Zug schon abgefahren.",
+  "Nachdem wir gegessen hatten, gingen wir noch spazieren.",
+  "Leider hatte ich am Abend vergessen, mein Handy aufzuladen."
+ ],
+ "speaking": [
+  {
+   "de": "Als ich aufwachte, hatte mein Wecker nicht geklingelt.",
+   "en": "When I woke up, my alarm hadn't gone off."
+  },
+  {
+   "de": "Ich hatte das Handy am Abend nicht aufgeladen.",
+   "en": "I hadn't charged my phone in the evening."
+  },
+  {
+   "de": "Nachdem ich schnell geduscht hatte, lief ich zur Haltestelle.",
+   "en": "After I had had a quick shower, I ran to the bus stop."
+  },
+  {
+   "de": "Der Bus war gerade abgefahren.",
+   "en": "The bus had just left."
+  },
+  {
+   "de": "Ich hatte meine Tasche zu Hause vergessen.",
+   "en": "I had left my bag at home."
+  }
+ ],
+ "writing": {
+  "task": "You missed a meeting yesterday. Write an 80–100-word email to your manager, Frau Krüger, explaining what had happened before and asking for the notes.",
+  "model": "Liebe Frau Krüger,\n\nes tut mir leid, dass ich gestern nicht zur Besprechung gekommen bin. Leider ging am Morgen alles schief. Als ich aufwachte, war es schon acht Uhr, denn ich hatte meinen Wecker nicht gestellt. Nachdem ich schnell geduscht hatte, lief ich zum Bahnhof, aber der Zug war gerade abgefahren. Der nächste Zug hatte Verspätung, und als ich endlich ankam, hatte die Besprechung schon angefangen. Könnten Sie mir bitte die Notizen schicken? Das nächste Mal bin ich pünktlich.\n\nViele Grüße\nJulien Martin"
+ }
+}

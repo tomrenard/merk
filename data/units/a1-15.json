@@ -1,0 +1,465 @@
+{
+ "id": "a1-15",
+ "cefr": "A1",
+ "title": "The imperative",
+ "situation": "Instructions and directions",
+ "canDo": "You can give and understand simple instructions and directions, politely with Sie and informally with du.",
+ "explanation": "When you ask the way or get instructions, you hear the imperative: *Gehen Sie geradeaus! Nimm den Bus!*\n\n| infinitive | Sie | du |\n|---|---|---|\n| kommen | **Kommen Sie!** | **Komm!** |\n| warten | **Warten Sie!** | **Warte!** |\n| nehmen | **Nehmen Sie!** | **Nimm!** |\n| fahren | **Fahren Sie!** | **Fahr!** |\n| sein | **Seien Sie!** | **Sei!** |\n\n**Sie form**: the verb first, then **Sie**. It looks like a question, but your voice goes down at the end.\n\n**du form**: take the du form of the present, drop **du** and the ending **-st**: *du kommst → Komm!*\n- Verbs that change e → i/ie keep the change: *nimm, iss, lies, sieh, sprich.*\n- Verbs that change a → ä lose the umlaut: *du fährst → Fahr! du schläfst → Schlaf!*\n- Stems ending in -t or -d add **-e**: *Warte! Arbeite!*\n- sein is irregular: **Sei** pünktlich! **Seien Sie** bitte leise!\n\nSeparable verbs send the prefix to the end: *Steigen Sie hier aus! Ruf mich an!*\n\nMake it friendly with **bitte**, **mal** or **doch**: *Komm doch mit! Hör mal!*\n\nMost common mistake: keeping the pronoun in the du form. Say *Komm!*, not *Du komm!*, and *Nimm!*, not *Nehm!*",
+ "french": "As in French (viens ! / venez !), the du form drops the pronoun, but the polite form keeps Sie after the verb: venez ! = Kommen Sie!",
+ "examples": [
+  {
+   "de": "Gehen Sie hier geradeaus und dann links.",
+   "en": "Go straight on here and then left."
+  },
+  {
+   "de": "Nehmen Sie den Bus Nummer 5.",
+   "en": "Take the number 5 bus."
+  },
+  {
+   "de": "Steigen Sie hier aus.",
+   "en": "Get off here."
+  },
+  {
+   "de": "Warte bitte einen Moment!",
+   "en": "Wait a moment, please!"
+  },
+  {
+   "de": "Nimm doch ein Taxi!",
+   "en": "Why don't you take a taxi?"
+  },
+  {
+   "de": "Ruf mich bitte heute Abend an!",
+   "en": "Please call me tonight!"
+  },
+  {
+   "de": "Sei bitte pünktlich!",
+   "en": "Please be on time!"
+  },
+  {
+   "de": "Sprechen Sie bitte langsam.",
+   "en": "Please speak slowly."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-15-01",
+   "type": "cloze",
+   "de": "___ mal!",
+   "base": "hören",
+   "answers": [
+    "Hör",
+    "Höre"
+   ],
+   "en": "Listen!"
+  },
+  {
+   "id": "a1-15-02",
+   "type": "cloze",
+   "de": "___ Sie bitte hier aus!",
+   "base": "aussteigen",
+   "answers": [
+    "Steigen"
+   ],
+   "en": "Please get off here!"
+  },
+  {
+   "id": "a1-15-03",
+   "type": "choice",
+   "de": "___ doch einen Tee!",
+   "options": [
+    "Trink",
+    "Trinkst",
+    "Du trink"
+   ],
+   "answer": 0,
+   "why": "The du imperative drops du and the ending -st: du trinkst → Trink!",
+   "en": "Have a tea!"
+  },
+  {
+   "id": "a1-15-04",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "Nehmen",
+    "den Bus"
+   ],
+   "answers": [
+    "Nehmen Sie den Bus!"
+   ],
+   "en": "Take the bus!"
+  },
+  {
+   "id": "a1-15-05",
+   "type": "cloze",
+   "de": "___ doch mit!",
+   "base": "mitkommen",
+   "answers": [
+    "Komm",
+    "Komme"
+   ],
+   "en": "Come along!"
+  },
+  {
+   "id": "a1-15-06",
+   "type": "choice",
+   "de": "___ Sie bitte langsam!",
+   "options": [
+    "Sprechen",
+    "Sprich",
+    "Sprecht"
+   ],
+   "answer": 0,
+   "why": "With Sie, use the infinitive form followed by Sie.",
+   "en": "Please speak slowly!"
+  },
+  {
+   "id": "a1-15-07",
+   "type": "cloze",
+   "de": "___ bitte einen Moment!",
+   "base": "warten",
+   "answers": [
+    "Warte"
+   ],
+   "en": "Wait a moment, please!"
+  },
+  {
+   "id": "a1-15-08",
+   "type": "order",
+   "tiles": [
+    "Mach",
+    "das Fenster",
+    "auf",
+    "bitte"
+   ],
+   "answers": [
+    "Mach bitte das Fenster auf!",
+    "Bitte mach das Fenster auf!",
+    "Mach das Fenster bitte auf!",
+    "Mach das Fenster auf, bitte!"
+   ],
+   "en": "Open the window, please!"
+  },
+  {
+   "id": "a1-15-09",
+   "type": "cloze",
+   "de": "___ Sie bitte das Formular aus!",
+   "base": "ausfüllen",
+   "answers": [
+    "Füllen"
+   ],
+   "en": "Please fill in the form!"
+  },
+  {
+   "id": "a1-15-10",
+   "type": "choice",
+   "de": "___ doch etwas!",
+   "options": [
+    "Iss",
+    "Ess",
+    "Isst"
+   ],
+   "answer": 0,
+   "why": "essen changes e → i, and the imperative keeps it: Iss!",
+   "en": "Eat something!"
+  },
+  {
+   "id": "a1-15-11",
+   "type": "cloze",
+   "de": "___ doch ein Taxi!",
+   "base": "nehmen",
+   "answers": [
+    "Nimm"
+   ],
+   "en": "Why don't you take a taxi?"
+  },
+  {
+   "id": "a1-15-12",
+   "type": "order",
+   "tiles": [
+    "Fahr",
+    "nicht",
+    "so",
+    "schnell"
+   ],
+   "answers": [
+    "Fahr nicht so schnell!"
+   ],
+   "en": "Don't drive so fast!"
+  },
+  {
+   "id": "a1-15-13",
+   "type": "choice",
+   "de": "___ gut!",
+   "options": [
+    "Schläf",
+    "Schlaf",
+    "Schläfst"
+   ],
+   "answer": 1,
+   "why": "Verbs with a → ä lose the umlaut in the imperative: Schlaf!",
+   "en": "Sleep well!"
+  },
+  {
+   "id": "a1-15-14",
+   "type": "cloze",
+   "de": "___ bitte langsam!",
+   "base": "sprechen",
+   "answers": [
+    "Sprich"
+   ],
+   "en": "Speak slowly, please!"
+  },
+  {
+   "id": "a1-15-15",
+   "type": "choice",
+   "de": "Paul, ___ bitte pünktlich!",
+   "options": [
+    "bist",
+    "sei",
+    "sein"
+   ],
+   "answer": 1,
+   "why": "The du imperative of sein is irregular: Sei!",
+   "en": "Paul, please be on time!"
+  },
+  {
+   "id": "a1-15-16",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "Gehen",
+    "geradeaus",
+    "hier"
+   ],
+   "answers": [
+    "Gehen Sie hier geradeaus!"
+   ],
+   "en": "Go straight on here!"
+  },
+  {
+   "id": "a1-15-17",
+   "type": "cloze",
+   "de": "___ mal, da ist Paul!",
+   "base": "sehen",
+   "answers": [
+    "Sieh"
+   ],
+   "en": "Look, there's Paul!"
+  },
+  {
+   "id": "a1-15-18",
+   "type": "choice",
+   "de": "Herr Weber, ___ Sie bitte!",
+   "options": [
+    "kommen",
+    "komm",
+    "kommst"
+   ],
+   "answer": 0,
+   "why": "Herr Weber gets the polite form: the infinitive form plus Sie.",
+   "en": "Mr Weber, please come in!"
+  },
+  {
+   "id": "a1-15-19",
+   "type": "cloze",
+   "de": "___ Sie bitte leise!",
+   "base": "sein",
+   "answers": [
+    "Seien"
+   ],
+   "en": "Please be quiet!"
+  },
+  {
+   "id": "a1-15-20",
+   "type": "order",
+   "tiles": [
+    "Lies",
+    "den Text",
+    "noch einmal"
+   ],
+   "answers": [
+    "Lies den Text noch einmal!",
+    "Lies noch einmal den Text!"
+   ],
+   "en": "Read the text again!"
+  },
+  {
+   "id": "a1-15-21",
+   "type": "choice",
+   "de": "Anna, ___ mich bitte morgen an!",
+   "options": [
+    "ruf",
+    "rufst",
+    "anruf"
+   ],
+   "answer": 0,
+   "why": "With a separable verb, the verb comes first and the prefix an goes to the end.",
+   "en": "Anna, please call me tomorrow!"
+  },
+  {
+   "id": "a1-15-22",
+   "type": "choice",
+   "de": "___ nicht so viel!",
+   "options": [
+    "Arbeit",
+    "Arbeite",
+    "Arbeitest"
+   ],
+   "answer": 1,
+   "why": "Stems ending in -t add -e in the du imperative: Arbeite!",
+   "en": "Don't work so much!"
+  },
+  {
+   "id": "a1-15-23",
+   "type": "cloze",
+   "de": "___ bitte hier, Anna!",
+   "base": "unterschreiben",
+   "answers": [
+    "Unterschreib",
+    "Unterschreibe"
+   ],
+   "en": "Sign here, please, Anna!"
+  },
+  {
+   "id": "a1-15-24",
+   "type": "order",
+   "tiles": [
+    "Kauf",
+    "Brot",
+    "bitte",
+    "ein"
+   ],
+   "answers": [
+    "Kauf bitte Brot ein!",
+    "Bitte kauf Brot ein!",
+    "Kauf Brot ein, bitte!"
+   ],
+   "en": "Buy some bread, please!"
+  }
+ ],
+ "listening": {
+  "title": "Wo ist die Post?",
+  "intro": "Marie is new in town and asks a man in the street the way to the post office.",
+  "lines": [
+   {
+    "speaker": "Marie",
+    "de": "Entschuldigung, wo ist hier die Post?",
+    "en": "Excuse me, where is the post office here?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Die Post? Das ist nicht weit. Gehen Sie hier geradeaus.",
+    "en": "The post office? It isn't far. Go straight on here."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Geradeaus, okay. Und dann?",
+    "en": "Straight on, okay. And then?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Dann nehmen Sie die zweite Straße links.",
+    "en": "Then take the second street on the left."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Ist die Post dann gleich da?",
+    "en": "Is the post office right there then?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nein, gehen Sie noch fünf Minuten. Die Post ist dann rechts.",
+    "en": "No, walk another five minutes. Then the post office is on the right."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Kann ich auch den Bus nehmen?",
+    "en": "Can I take the bus too?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, nehmen Sie den Bus Nummer 12. Fahren Sie zwei Stationen und steigen Sie dann aus.",
+    "en": "Yes, take the number 12 bus. Go two stops and then get off."
+   },
+   {
+    "speaker": "Marie",
+    "de": "Vielen Dank!",
+    "en": "Thank you very much!"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gern! Und passen Sie auf, hier fahren viele Autos.",
+    "en": "You're welcome! And be careful, there are a lot of cars here."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does Marie want to go?",
+    "options": [
+     "to the station",
+     "to the post office",
+     "to the bank"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Which street should she take?",
+    "options": [
+     "the second street on the left",
+     "the first street on the right",
+     "the second street on the right"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Which bus can she take?",
+    "options": [
+     "number 2",
+     "number 5",
+     "number 12"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "When should she get off the bus?",
+    "options": [
+     "after five minutes",
+     "after two stops",
+     "at the last stop"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Gehen Sie hier bitte geradeaus.",
+  "Nimm doch den Bus!",
+  "Ruf mich heute Abend an!"
+ ],
+ "speaking": [
+  {
+   "de": "Entschuldigung, wo ist hier die Post?",
+   "en": "Excuse me, where is the post office here?"
+  },
+  {
+   "de": "Gehen Sie hier geradeaus.",
+   "en": "Go straight on here."
+  },
+  {
+   "de": "Dann nehmen Sie die zweite Straße links.",
+   "en": "Then take the second street on the left."
+  },
+  {
+   "de": "Fahren Sie zwei Stationen und steigen Sie dann aus.",
+   "en": "Go two stops and then get off."
+  },
+  {
+   "de": "Sprechen Sie bitte langsam.",
+   "en": "Please speak slowly."
+  }
+ ],
+ "writing": {
+  "task": "Your friend Max is visiting you for the first time. Write him a short message (3–4 sentences) with directions from the bus stop to your home, using du.",
+  "model": "Hallo Max, nimm den Bus Nummer 7 und fahr vier Stationen. Steig dann aus und geh geradeaus. Nimm die erste Straße rechts. Mein Haus ist die Nummer 12. Bis später!"
+ }
+}

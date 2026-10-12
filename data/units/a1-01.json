@@ -332,5 +332,130 @@
    ],
    "en": "My name is Claire and I'm French."
   }
- ]
+ ],
+ "listening": {
+  "title": "Neu im Deutschkurs",
+  "intro": "On the first day of a German course, Claire talks to Jonas, another student.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Hallo! Bist du auch neu hier?",
+    "en": "Hi! Are you new here too?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Ja. Ich bin Claire. Und du?",
+    "en": "Yes. I'm Claire. And you?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ich bin Jonas. Woher bist du, Claire?",
+    "en": "I'm Jonas. Where are you from, Claire?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Ich bin aus Frankreich, aus Lyon. Und du?",
+    "en": "I'm from France, from Lyon. And you?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ich bin aus Österreich, aus Wien. Ich bin Ingenieur.",
+    "en": "I'm from Austria, from Vienna. I'm an engineer."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Ich bin Lehrerin. Wer ist das da?",
+    "en": "I'm a teacher. Who is that over there?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Das sind Paul und Léa. Sie sind aus Kanada.",
+    "en": "That's Paul and Léa. They're from Canada."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Und die Frau da? Ist sie auch neu?",
+    "en": "And the woman there? Is she new too?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nein, das ist Frau Becker. Sie ist die Deutschlehrerin.",
+    "en": "No, that's Ms Becker. She's the German teacher."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Ah, gut! Ich bin ein bisschen nervös.",
+    "en": "Ah, good! I'm a bit nervous."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is Claire from?",
+    "options": [
+     "Lyon, in France",
+     "Vienna, in Austria",
+     "Canada"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is Jonas's job?",
+    "options": [
+     "He's a teacher.",
+     "He's an engineer.",
+     "He's a student."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who are Paul and Léa?",
+    "options": [
+     "Jonas's children",
+     "two teachers",
+     "two people from Canada"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Who is Frau Becker?",
+    "options": [
+     "the German teacher",
+     "a new student",
+     "Claire's colleague"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich bin neu hier im Kurs.",
+  "Das sind Paul und Léa.",
+  "Woher sind Sie, Frau Becker?"
+ ],
+ "speaking": [
+  {
+   "de": "Hallo! Bist du auch neu hier?",
+   "en": "Hi! Are you new here too?"
+  },
+  {
+   "de": "Ich bin aus Frankreich, aus Lyon.",
+   "en": "I'm from France, from Lyon."
+  },
+  {
+   "de": "Wer ist das da?",
+   "en": "Who is that over there?"
+  },
+  {
+   "de": "Das sind Paul und Léa.",
+   "en": "That's Paul and Léa."
+  },
+  {
+   "de": "Ich bin ein bisschen nervös.",
+   "en": "I'm a bit nervous."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message to introduce yourself to your new German course group (3–4 sentences): your name, where you are from and what you do.",
+  "model": "Hallo, ich bin Marc. Ich bin aus Frankreich, aus Lyon. Ich bin Ingenieur und ich bin neu in Berlin. Ich bin ein bisschen nervös!"
+ }
 }

@@ -1,0 +1,467 @@
+{
+ "id": "b1-08",
+ "cefr": "B1",
+ "title": "Adjectives without an article",
+ "situation": "Ads and descriptions",
+ "canDo": "You can write and understand ads and short descriptions with adjectives that have no article, and choose the right adjective ending in any sentence.",
+ "explanation": "Ads and short descriptions often drop the article: *Schöne Wohnung mit großem Balkon. Netter Kollege gesucht. Frisches Brot.* With **no article**, the adjective itself must show the case, so it takes the ending of the missing der/die/das:\n\n| | masc. | fem. | neuter | plural |\n|---|---|---|---|---|\n| nominative | gut**er** Kaffee | frisch**e** Milch | kalt**es** Wasser | neu**e** Möbel |\n| accusative | gut**en** Kaffee | frisch**e** Milch | kalt**es** Wasser | neu**e** Möbel |\n| dative | mit gut**em** Kaffee | mit frisch**er** Milch | mit kalt**em** Wasser | mit neu**en** Möbeln |\n\nSo *der* → **-er**, *den* → **-en**, *dem* → **-em**, *das* → **-es**, *die* → **-e**, and dative *der* → **-er**. The same endings come after numbers and after **viele, einige, ein paar**: *zwei große Zimmer, viele liebe Grüße*.\n\nThe full picture, all three types:\n- After **der/die/das** (and dieser, jeder): the article already shows the case, so the adjective only has **-e** or **-en**: *der neue Tisch, mit dem neuen Tisch.*\n- After **ein/kein/mein**: the same, except where ein has no ending (masculine nominative, neuter nominative and accusative). There the adjective shows the case: *ein neu**er** Tisch, ein schön**es** Zimmer.*\n- **No article**: the adjective shows the case itself: *neu**er** Tisch, schön**es** Zimmer, mit groß**em** Balkon.*\n\nA simple rule: **someone has to show the case**, the article or the adjective.\n\nMost common mistake: *mit großen Balkon*. After *mit* you need the dative, and with no article that's ***mit großem Balkon***. Fixed phrases help: *Mit freundlichen Grüßen, Herzlichen Glückwunsch!*",
+ "french": "French adjectives only change for gender and number (une grande chambre, de grands appartements); German ones also change for case and for the article in front, so with no article they need the strongest endings.",
+ "examples": [
+  {
+   "de": "Schöne 2-Zimmer-Wohnung mit großem Balkon zu vermieten.",
+   "en": "Lovely two-room flat with a large balcony to rent."
+  },
+  {
+   "de": "Netter Kollege für kleines Team gesucht.",
+   "en": "Friendly colleague wanted for a small team."
+  },
+  {
+   "de": "Verkaufe gebrauchtes Fahrrad in sehr gutem Zustand.",
+   "en": "Selling a used bike in very good condition."
+  },
+  {
+   "de": "Frisches Brot gibt es ab sieben Uhr.",
+   "en": "Fresh bread is available from seven o'clock."
+  },
+  {
+   "de": "Gesucht: Verkäufer mit guten Deutschkenntnissen.",
+   "en": "Wanted: shop assistant with good German."
+  },
+  {
+   "de": "Ich trinke gern schwarzen Kaffee.",
+   "en": "I like drinking black coffee."
+  },
+  {
+   "de": "Mit freundlichen Grüßen",
+   "en": "Kind regards"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-08-01",
+   "type": "cloze",
+   "de": "Hier gibt es ___ Brot.",
+   "base": "frisch",
+   "answers": [
+    "frisches"
+   ],
+   "en": "There's fresh bread here."
+  },
+  {
+   "id": "b1-08-02",
+   "type": "cloze",
+   "de": "Ich trinke gern ___ Kaffee.",
+   "base": "schwarz",
+   "answers": [
+    "schwarzen"
+   ],
+   "en": "I like drinking black coffee."
+  },
+  {
+   "id": "b1-08-03",
+   "type": "choice",
+   "de": "Schöne Wohnung mit ___ Balkon zu vermieten.",
+   "options": [
+    "großen",
+    "großem",
+    "großer"
+   ],
+   "answer": 1,
+   "why": "mit takes the dative, and with no article a masculine adjective ends in -em.",
+   "en": "Lovely flat with a large balcony to rent."
+  },
+  {
+   "id": "b1-08-04",
+   "type": "cloze",
+   "de": "___ Wetter heute!",
+   "base": "schön",
+   "answers": [
+    "Schönes"
+   ],
+   "en": "Lovely weather today!"
+  },
+  {
+   "id": "b1-08-05",
+   "type": "order",
+   "tiles": [
+    "Suche",
+    "gebrauchtes",
+    "Fahrrad"
+   ],
+   "answers": [
+    "Suche gebrauchtes Fahrrad."
+   ],
+   "en": "Looking for a used bike."
+  },
+  {
+   "id": "b1-08-06",
+   "type": "choice",
+   "de": "___ Kollege für unser Team gesucht!",
+   "options": [
+    "Nette",
+    "Netten",
+    "Netter"
+   ],
+   "answer": 2,
+   "why": "Kollege is masculine nominative, and with no article the adjective ends in -er.",
+   "en": "Friendly colleague wanted for our team!"
+  },
+  {
+   "id": "b1-08-07",
+   "type": "cloze",
+   "de": "Wir haben ___ Leute kennengelernt.",
+   "base": "nett",
+   "answers": [
+    "nette"
+   ],
+   "en": "We got to know some nice people."
+  },
+  {
+   "id": "b1-08-08",
+   "type": "choice",
+   "de": "Das Zimmer ist ideal für Studenten mit ___ Budget.",
+   "options": [
+    "kleinem",
+    "kleinen",
+    "kleines"
+   ],
+   "answer": 0,
+   "why": "mit takes the dative; Budget is neuter, so with no article: kleinem.",
+   "en": "The room is ideal for students on a small budget."
+  },
+  {
+   "id": "b1-08-09",
+   "type": "cloze",
+   "de": "Die Wohnung hat einen ___ Garten.",
+   "base": "klein",
+   "answers": [
+    "kleinen"
+   ],
+   "en": "The flat has a small garden."
+  },
+  {
+   "id": "b1-08-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "bieten",
+    "ein gutes Gehalt",
+    "und",
+    "flexible Arbeitszeiten"
+   ],
+   "answers": [
+    "Wir bieten ein gutes Gehalt und flexible Arbeitszeiten.",
+    "Wir bieten flexible Arbeitszeiten und ein gutes Gehalt."
+   ],
+   "en": "We offer a good salary and flexible working hours."
+  },
+  {
+   "id": "b1-08-11",
+   "type": "choice",
+   "de": "Gesucht: Verkäuferin mit ___ Deutschkenntnissen.",
+   "options": [
+    "gute",
+    "guten",
+    "gutem"
+   ],
+   "answer": 1,
+   "why": "Dative plural with no article: the adjective ends in -en.",
+   "en": "Wanted: shop assistant with good German."
+  },
+  {
+   "id": "b1-08-12",
+   "type": "cloze",
+   "de": "Ich wohne in einem ___ Haus.",
+   "base": "alt",
+   "answers": [
+    "alten"
+   ],
+   "en": "I live in an old house."
+  },
+  {
+   "id": "b1-08-13",
+   "type": "choice",
+   "de": "Das ist der ___ Laptop von meinem Bruder.",
+   "options": [
+    "alter",
+    "alten",
+    "alte"
+   ],
+   "answer": 2,
+   "why": "After der, the article shows the case, so the adjective just takes -e.",
+   "en": "That's my brother's old laptop."
+  },
+  {
+   "id": "b1-08-14",
+   "type": "cloze",
+   "de": "Zu verkaufen: ___ Sofa, nur zwei Jahre alt.",
+   "base": "bequem",
+   "answers": [
+    "bequemes"
+   ],
+   "en": "For sale: comfortable sofa, only two years old."
+  },
+  {
+   "id": "b1-08-15",
+   "type": "order",
+   "tiles": [
+    "Ruhige",
+    "Wohnung",
+    "mit",
+    "großer Küche"
+   ],
+   "answers": [
+    "Ruhige Wohnung mit großer Küche."
+   ],
+   "en": "Quiet flat with a large kitchen."
+  },
+  {
+   "id": "b1-08-16",
+   "type": "choice",
+   "de": "Bei ___ Wetter bleiben wir zu Hause.",
+   "options": [
+    "schlechtem",
+    "schlechten",
+    "schlechtes"
+   ],
+   "answer": 0,
+   "why": "bei takes the dative; Wetter is neuter, so with no article: schlechtem.",
+   "en": "In bad weather we stay at home."
+  },
+  {
+   "id": "b1-08-17",
+   "type": "cloze",
+   "de": "Wir suchen eine ___ Wohnung in der Nähe vom Park.",
+   "base": "hell",
+   "answers": [
+    "helle"
+   ],
+   "en": "We're looking for a bright flat near the park."
+  },
+  {
+   "id": "b1-08-18",
+   "type": "choice",
+   "de": "Das Hotel liegt in ___ Lage, direkt am See.",
+   "options": [
+    "ruhige",
+    "ruhiger",
+    "ruhigen"
+   ],
+   "answer": 1,
+   "why": "in (where?) takes the dative; Lage is feminine, so with no article: ruhiger.",
+   "en": "The hotel is in a quiet location, right by the lake."
+  },
+  {
+   "id": "b1-08-19",
+   "type": "cloze",
+   "de": "Mit ___ Grüßen",
+   "base": "freundlich",
+   "answers": [
+    "freundlichen"
+   ],
+   "en": "Kind regards"
+  },
+  {
+   "id": "b1-08-20",
+   "type": "order",
+   "tiles": [
+    "Heute",
+    "gibt",
+    "es",
+    "frischen Fisch",
+    "vom Markt"
+   ],
+   "answers": [
+    "Heute gibt es frischen Fisch vom Markt.",
+    "Es gibt heute frischen Fisch vom Markt.",
+    "Frischen Fisch vom Markt gibt es heute."
+   ],
+   "en": "Today there's fresh fish from the market."
+  },
+  {
+   "id": "b1-08-21",
+   "type": "choice",
+   "de": "Ich habe gestern ein ___ Kleid gekauft.",
+   "options": [
+    "rote",
+    "roten",
+    "rotes"
+   ],
+   "answer": 2,
+   "why": "ein has no ending here (neuter accusative), so the adjective shows it: rotes.",
+   "en": "I bought a red dress yesterday."
+  },
+  {
+   "id": "b1-08-22",
+   "type": "cloze",
+   "de": "Viele ___ Grüße aus Hamburg!",
+   "base": "lieb",
+   "answers": [
+    "liebe"
+   ],
+   "en": "Lots of love from Hamburg!"
+  },
+  {
+   "id": "b1-08-23",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "suchen",
+    "einen",
+    "erfahrenen",
+    "Koch"
+   ],
+   "answers": [
+    "Wir suchen einen erfahrenen Koch.",
+    "Einen erfahrenen Koch suchen wir."
+   ],
+   "en": "We're looking for an experienced cook."
+  },
+  {
+   "id": "b1-08-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "trinke",
+    "gern",
+    "kaltes",
+    "Wasser"
+   ],
+   "answers": [
+    "Ich trinke gern kaltes Wasser.",
+    "Kaltes Wasser trinke ich gern."
+   ],
+   "en": "I like drinking cold water."
+  }
+ ],
+ "listening": {
+  "title": "Wohnungsanzeigen",
+  "intro": "Emma and Lukas are looking for a flat together and read ads online.",
+  "lines": [
+   {
+    "speaker": "Emma",
+    "de": "Schau mal, Lukas, hier ist eine Anzeige: „Helle 3-Zimmer-Wohnung mit großem Balkon, ruhige Lage.“",
+    "en": "Look, Lukas, here's an ad: \"Bright three-room flat with a large balcony, quiet location.\""
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Klingt gut. Wie hoch ist die Miete?",
+    "en": "Sounds good. How much is the rent?"
+   },
+   {
+    "speaker": "Emma",
+    "de": "950 Euro warm. Und hier steht: „Moderne Küche, neues Bad, kleine Haustiere erlaubt.“",
+    "en": "950 euros including heating. And it says here: \"Modern kitchen, new bathroom, small pets allowed.\""
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Kleine Haustiere? Dann können wir die Katze mitnehmen. Gibt es auch einen Keller?",
+    "en": "Small pets? Then we can bring the cat. Is there a cellar too?"
+   },
+   {
+    "speaker": "Emma",
+    "de": "Ja, und Platz für Fahrräder. Aber die Wohnung liegt im vierten Stock, ohne Aufzug.",
+    "en": "Yes, and space for bikes. But the flat is on the fourth floor, with no lift."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Hm, mit schweren Möbeln ist das nicht so lustig.",
+    "en": "Hm, that's not much fun with heavy furniture."
+   },
+   {
+    "speaker": "Emma",
+    "de": "Stimmt. Hier ist noch eine: „Gemütliche Altbauwohnung in zentraler Lage, mit hohen Decken und kleinem Garten.“",
+    "en": "True. Here's another one: \"Cosy flat in an old building, central location, with high ceilings and a small garden.\""
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ein Garten! Das wäre schön. Was kostet die?",
+    "en": "A garden! That would be nice. How much is it?"
+   },
+   {
+    "speaker": "Emma",
+    "de": "1.100 Euro. Ein bisschen teurer, aber im Erdgeschoss.",
+    "en": "1,100 euros. A bit more expensive, but on the ground floor."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Dann ruf doch da zuerst an. Mit kleinem Garten und ohne Treppen, das klingt perfekt.",
+    "en": "Then call them first. A small garden and no stairs, that sounds perfect."
+   },
+   {
+    "speaker": "Emma",
+    "de": "Okay, ich schreibe gleich eine Nachricht.",
+    "en": "Okay, I'll write them a message right away."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is allowed in the first flat?",
+    "options": [
+     "Small pets",
+     "Smoking",
+     "Parties"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is the problem with the first flat?",
+    "options": [
+     "It is too expensive",
+     "It is on the fourth floor with no lift",
+     "It has no kitchen"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does the second flat have?",
+    "options": [
+     "A large balcony",
+     "A garage",
+     "A small garden"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much is the second flat?",
+    "options": [
+     "1,100 euros",
+     "950 euros",
+     "1,500 euros"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Schöne Wohnung mit großem Balkon in ruhiger Lage zu vermieten.",
+  "Wir suchen einen netten Kollegen mit guten Deutschkenntnissen.",
+  "Bei schönem Wetter frühstücken wir gern auf dem Balkon."
+ ],
+ "speaking": [
+  {
+   "de": "Helle Wohnung mit großem Balkon, ruhige Lage.",
+   "en": "Bright flat with a large balcony, quiet location."
+  },
+  {
+   "de": "Moderne Küche, neues Bad, kleine Haustiere erlaubt.",
+   "en": "Modern kitchen, new bathroom, small pets allowed."
+  },
+  {
+   "de": "Mit schweren Möbeln ist das nicht so lustig.",
+   "en": "That's not much fun with heavy furniture."
+  },
+  {
+   "de": "Gemütliche Altbauwohnung in zentraler Lage.",
+   "en": "Cosy flat in an old building, central location."
+  },
+  {
+   "de": "Mit kleinem Garten und ohne Treppen, das klingt perfekt.",
+   "en": "A small garden and no stairs, that sounds perfect."
+  }
+ ],
+ "writing": {
+  "task": "You want to rent out a room in your shared flat. Write an 80–100-word ad for a website: describe the room, the flat and the people living there.",
+  "model": "Schönes Zimmer in heller WG zu vermieten!\n\nWir sind zwei nette Leute (28 und 31 Jahre alt) und suchen ab dem 1. März eine freundliche Mitbewohnerin oder einen freundlichen Mitbewohner. Das Zimmer ist 16 Quadratmeter groß und hat einen kleinen Balkon. Die Wohnung liegt in ruhiger Lage, nur zehn Minuten vom Zentrum. Es gibt eine große Küche mit neuem Herd und ein modernes Bad. Das Zimmer kostet 480 Euro warm. Wir kochen gern zusammen und trinken am Wochenende guten Kaffee auf dem Balkon. Interesse? Dann schreib uns eine kurze Nachricht mit ein paar Infos über dich!"
+ }
+}

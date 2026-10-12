@@ -1,0 +1,470 @@
+{
+ "id": "a2-20",
+ "cefr": "A2",
+ "title": "Spoken German with friends",
+ "situation": "Chatting with friends",
+ "canDo": "You can chat casually with friends using du and ihr, the particles mal, doch, ja and halt, and common short forms.",
+ "explanation": "With friends, Germans speak more casually. You say **du** (one friend) and **ihr** (several), and you use small words that make sentences sound friendly and natural. These **particles** have no exact translation; they add a tone:\n\n| particle | tone | example |\n|---|---|---|\n| **mal** | casual, softer request | Kannst du **mal** helfen? Guck **mal**! |\n| **doch** | friendly push: go on! | Komm **doch** mit! |\n| **ja** | surprise, or \"as we both know\" | Das ist **ja** super! |\n| **halt** | that's just how it is | Dann nehmen wir **halt** den Bus. |\n\n- Particles never stand in position 1. They come after the verb and the pronouns: *Ruf mich doch an!* Together it is **doch mal**: *Komm doch mal vorbei!*\n- **ja** is not used in questions; **mal** often is.\n\nShort forms you hear and write in chats:\n- **hab** = habe, **mach** = mache: *Ich hab keine Zeit. Mach ich!*\n- **geht's, gibt's** = geht es, gibt es: *Wie geht's?*\n- **was** = etwas, **nix** = nichts: *Hast du was gegessen? – Nein, nix.*\n- **'n / 'ne** = ein / eine: *Ich hab 'ne Idee.*\n\nUse all this with friends and in chats, not in emails to an office or with Sie.\n\nThe most common mistake is putting the particle first: *Doch komm mit!* Say **Komm doch mit!**",
+ "french": "Particles do the job of French tone and small words: « Viens donc ! » ≈ Komm doch!, « C'est comme ça » ≈ Das ist halt so, and the short forms are like spoken « t'as » or « j'sais pas ».",
+ "examples": [
+  {
+   "de": "Na, wie geht's?",
+   "en": "Hey, how's it going?"
+  },
+  {
+   "de": "Komm doch mit!",
+   "en": "Come along!"
+  },
+  {
+   "de": "Kannst du mir mal helfen?",
+   "en": "Can you give me a hand?"
+  },
+  {
+   "de": "Das ist ja super!",
+   "en": "That's great!"
+  },
+  {
+   "de": "Der Bus ist weg. Dann gehen wir halt zu Fuß.",
+   "en": "The bus has gone. Then we'll just walk."
+  },
+  {
+   "de": "Ich hab heute keine Zeit.",
+   "en": "I don't have time today."
+  },
+  {
+   "de": "Hast du was gegessen? – Nein, noch nix.",
+   "en": "Have you eaten anything? – No, nothing yet."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-20-01",
+   "type": "cloze",
+   "de": "___ mal her!",
+   "base": "kommen",
+   "answers": [
+    "Komm"
+   ],
+   "en": "Come here!"
+  },
+  {
+   "id": "a2-20-02",
+   "type": "choice",
+   "de": "Kannst du ___ kurz kommen?",
+   "options": [
+    "mal",
+    "ja",
+    "halt"
+   ],
+   "answer": 0,
+   "why": "mal makes a request casual; ja and halt are not used in questions like this.",
+   "en": "Can you come here for a moment?"
+  },
+  {
+   "id": "a2-20-03",
+   "type": "cloze",
+   "de": "Was ___ du am Wochenende?",
+   "base": "machen",
+   "answers": [
+    "machst"
+   ],
+   "en": "What are you doing at the weekend?"
+  },
+  {
+   "id": "a2-20-04",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "ist",
+    "ja",
+    "super"
+   ],
+   "answers": [
+    "Das ist ja super!"
+   ],
+   "en": "That's great!"
+  },
+  {
+   "id": "a2-20-05",
+   "type": "choice",
+   "de": "Hast du ___ gegessen? – Nein, noch nichts.",
+   "options": [
+    "wer",
+    "was",
+    "wo"
+   ],
+   "answer": 1,
+   "why": "In spoken German, was is short for etwas (something).",
+   "en": "Have you eaten anything? – No, nothing yet."
+  },
+  {
+   "id": "a2-20-06",
+   "type": "cloze",
+   "de": "___ mir mal das Salz!",
+   "base": "geben",
+   "answers": [
+    "Gib"
+   ],
+   "en": "Pass me the salt!"
+  },
+  {
+   "id": "a2-20-07",
+   "type": "choice",
+   "de": "___ mit!",
+   "options": [
+    "Kommst doch",
+    "Doch komm",
+    "Komm doch"
+   ],
+   "answer": 2,
+   "why": "The imperative comes first and the particle doch after it.",
+   "en": "Come along!"
+  },
+  {
+   "id": "a2-20-08",
+   "type": "cloze",
+   "de": "___ ihr heute Abend Lust auf Pizza?",
+   "base": "haben",
+   "answers": [
+    "Habt"
+   ],
+   "en": "Do you guys fancy pizza tonight?"
+  },
+  {
+   "id": "a2-20-09",
+   "type": "order",
+   "tiles": [
+    "Kannst",
+    "du",
+    "mir",
+    "mal",
+    "helfen"
+   ],
+   "answers": [
+    "Kannst du mir mal helfen?"
+   ],
+   "en": "Can you give me a hand?"
+  },
+  {
+   "id": "a2-20-10",
+   "type": "choice",
+   "de": "Du bist ___ schon da! Super!",
+   "options": [
+    "mal",
+    "ja",
+    "halt"
+   ],
+   "answer": 1,
+   "why": "ja shows surprise about something you can see.",
+   "en": "You're already here! Great!"
+  },
+  {
+   "id": "a2-20-11",
+   "type": "cloze",
+   "de": "Sorry, ich ___ heute keine Zeit.",
+   "base": "haben",
+   "answers": [
+    "hab",
+    "habe"
+   ],
+   "en": "Sorry, I don't have time today."
+  },
+  {
+   "id": "a2-20-12",
+   "type": "choice",
+   "de": "Du kommst nicht mit, oder? – ___, ich komme mit!",
+   "options": [
+    "Ja",
+    "Doch",
+    "Nein"
+   ],
+   "answer": 1,
+   "why": "To say yes to a negative question, use doch.",
+   "en": "You're not coming, are you? – Yes, I am!"
+  },
+  {
+   "id": "a2-20-13",
+   "type": "order",
+   "tiles": [
+    "Komm",
+    "doch",
+    "mal",
+    "vorbei"
+   ],
+   "answers": [
+    "Komm doch mal vorbei!"
+   ],
+   "en": "Come round some time!"
+  },
+  {
+   "id": "a2-20-14",
+   "type": "cloze",
+   "de": "___ mal, da ist Paul!",
+   "base": "gucken",
+   "answers": [
+    "Guck"
+   ],
+   "en": "Look, there's Paul!"
+  },
+  {
+   "id": "a2-20-15",
+   "type": "choice",
+   "de": "Hey Lena, ___ du heute Abend Zeit?",
+   "options": [
+    "Hast",
+    "Haben Sie",
+    "Habt"
+   ],
+   "answer": 0,
+   "why": "With one friend you use du: hast du.",
+   "en": "Hey Lena, do you have time tonight?"
+  },
+  {
+   "id": "a2-20-16",
+   "type": "cloze",
+   "de": "___ doch nicht so laut!",
+   "base": "sein",
+   "answers": [
+    "Sei"
+   ],
+   "en": "Don't be so loud!"
+  },
+  {
+   "id": "a2-20-17",
+   "type": "order",
+   "tiles": [
+    "Dann",
+    "nehmen",
+    "wir",
+    "halt",
+    "den Bus"
+   ],
+   "answers": [
+    "Dann nehmen wir halt den Bus.",
+    "Wir nehmen dann halt den Bus."
+   ],
+   "en": "Then we'll just take the bus."
+  },
+  {
+   "id": "a2-20-18",
+   "type": "choice",
+   "de": "Im Kühlschrank ist ___ mehr. Wir müssen einkaufen.",
+   "options": [
+    "nie",
+    "nicht",
+    "nix"
+   ],
+   "answer": 2,
+   "why": "nix is spoken for nichts (nothing).",
+   "en": "There's nothing left in the fridge. We have to go shopping."
+  },
+  {
+   "id": "a2-20-19",
+   "type": "cloze",
+   "de": "Ihr ___ ja schon da!",
+   "base": "sein",
+   "answers": [
+    "seid"
+   ],
+   "en": "You're already here!"
+  },
+  {
+   "id": "a2-20-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hab",
+    "heute",
+    "keine Zeit"
+   ],
+   "answers": [
+    "Ich hab heute keine Zeit.",
+    "Heute hab ich keine Zeit."
+   ],
+   "en": "I don't have time today."
+  },
+  {
+   "id": "a2-20-21",
+   "type": "choice",
+   "de": "Warum kommst du nicht? – Ich hab ___ keine Lust.",
+   "options": [
+    "mal",
+    "halt",
+    "nix"
+   ],
+   "answer": 1,
+   "why": "halt means that's just how it is: I just don't feel like it.",
+   "en": "Why aren't you coming? – I just don't feel like it."
+  },
+  {
+   "id": "a2-20-22",
+   "type": "cloze",
+   "de": "Hast du Hunger? ___ dir doch ein Brot!",
+   "base": "machen",
+   "answers": [
+    "Mach"
+   ],
+   "en": "Are you hungry? Go on, make yourself a sandwich!"
+  },
+  {
+   "id": "a2-20-23",
+   "type": "cloze",
+   "de": "___ mir mal die Adresse!",
+   "base": "schicken",
+   "answers": [
+    "Schick"
+   ],
+   "en": "Send me the address!"
+  },
+  {
+   "id": "a2-20-24",
+   "type": "order",
+   "tiles": [
+    "Ruf",
+    "mich",
+    "doch",
+    "morgen",
+    "an"
+   ],
+   "answers": [
+    "Ruf mich doch morgen an!"
+   ],
+   "en": "Give me a call tomorrow!"
+  }
+ ],
+ "listening": {
+  "title": "Grillen am Samstag",
+  "intro": "Jana calls her friend Leon because she is planning something for Saturday.",
+  "lines": [
+   {
+    "speaker": "Leon",
+    "de": "Hey Jana, na, wie geht's?",
+    "en": "Hey Jana, how's it going?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Gut, danke! Und dir? Was machst du am Samstag?",
+    "en": "Good, thanks! And you? What are you doing on Saturday?"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Noch nix. Warum?",
+    "en": "Nothing yet. Why?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Wir grillen im Park. Komm doch mit!",
+    "en": "We're having a barbecue in the park. Come along!"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Klar, gern! Soll ich was mitbringen?",
+    "en": "Sure, I'd love to! Shall I bring something?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Bring doch mal deinen Kartoffelsalat mit. Der ist ja super!",
+    "en": "Why don't you bring your potato salad? It's great!"
+   },
+   {
+    "speaker": "Leon",
+    "de": "Okay, mach ich. Wann geht's los?",
+    "en": "Okay, will do. When does it start?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "So um drei. Aber Tim kann nicht, der muss halt arbeiten.",
+    "en": "Around three. But Tim can't come, he just has to work."
+   },
+   {
+    "speaker": "Leon",
+    "de": "Schade. Und wenn es regnet?",
+    "en": "Too bad. And if it rains?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Dann gehen wir halt zu mir. Kein Problem.",
+    "en": "Then we'll just go to my place. No problem."
+   },
+   {
+    "speaker": "Leon",
+    "de": "Super. Schick mir mal die Adresse vom Park, ja?",
+    "en": "Great. Send me the address of the park, okay?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Mach ich. Bis Samstag!",
+    "en": "Will do. See you on Saturday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Jana planning for Saturday?",
+    "options": [
+     "A party at her flat",
+     "A barbecue in the park",
+     "A trip to the lake"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What should Leon bring?",
+    "options": [
+     "His potato salad",
+     "Drinks",
+     "Sausages"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why can't Tim come?",
+    "options": [
+     "He's ill.",
+     "He's away.",
+     "He has to work."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will they do if it rains?",
+    "options": [
+     "Go to Jana's place",
+     "Go to Leon's place",
+     "Cancel it"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Komm doch am Samstag mit in den Park!",
+  "Ich hab heute leider keine Zeit.",
+  "Kannst du mir mal kurz helfen?"
+ ],
+ "speaking": [
+  {
+   "de": "Na, wie geht's?",
+   "en": "Hey, how's it going?"
+  },
+  {
+   "de": "Komm doch mit!",
+   "en": "Come along!"
+  },
+  {
+   "de": "Soll ich was mitbringen?",
+   "en": "Shall I bring something?"
+  },
+  {
+   "de": "Okay, mach ich.",
+   "en": "Okay, will do."
+  },
+  {
+   "de": "Dann gehen wir halt zu mir.",
+   "en": "Then we'll just go to my place."
+  }
+ ],
+ "writing": {
+  "task": "Write a chat message to a friend (5–6 sentences): invite them to a small party, say what they could bring, and ask them to reply. Use du and a few particles.",
+  "model": "Hey Max, na, wie geht's? Ich mach am Freitag 'ne kleine Party bei mir. Komm doch auch! Bring einfach was zu trinken mit, Essen gibt's genug. Lisa kommt auch, die kennst du ja schon. Schreib mir mal, ob du Zeit hast! LG, Inès"
+ }
+}

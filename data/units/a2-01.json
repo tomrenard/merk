@@ -1,0 +1,467 @@
+{
+ "id": "a2-01",
+ "cefr": "A2",
+ "title": "Perfekt of prefix verbs",
+ "situation": "Telling what happened at work",
+ "canDo": "You can tell what happened at work using separable and inseparable verbs in the Perfekt.",
+ "explanation": "At work you tell what happened: *Der Chef hat angerufen. Ich habe die E-Mail vergessen.* Many everyday verbs have a prefix, and the prefix decides what happens to **ge-**.\n\n- **Separable verbs** (an-, auf-, ein-, ab-, mit-, zu-…): **ge-** goes between the prefix and the verb: *an**ge**rufen, ein**ge**kauft*.\n- **Inseparable verbs** (be-, ver-, er-, ent-, emp-, ge-, zer-): **no ge-** at all: *bekommen, vergessen, erklärt*.\n- Verbs ending in **-ieren** have no ge- either: *telefoniert, repariert*.\n\n| infinitive | Perfekt |\n|---|---|\n| anrufen | hat **an**ge**rufen** |\n| einkaufen | hat **ein**ge**kauft** |\n| aufstehen | ist **auf**ge**standen** |\n| bekommen | hat bekommen |\n| vergessen | hat vergessen |\n| erklären | hat erklärt |\n\nThe rest works as you know: regular verbs end in **-t** (eingekauft, erklärt), irregular ones often in **-en** (angerufen, vergessen). Verbs of movement and change take **sein**: *Der Zug ist angekommen. Ich bin früh aufgestanden.*\n\nHow to hear the difference: separable prefixes are stressed (**AN**rufen), inseparable ones never are (be**KOM**men).\n\nThe participle goes to the end: *Ich habe heute meine Kollegin angerufen.*\n\nCommon mistakes: *gevergessen* (ver- verbs take no ge-) and *angeruft* (rufen is irregular: **angerufen**).",
+ "french": "Inseparable verbs are the easy ones for you: like French participles (compris, reçu), they have no extra ge-: verstanden, bekommen.",
+ "examples": [
+  {
+   "de": "Ich habe heute um acht angefangen.",
+   "en": "I started at eight today."
+  },
+  {
+   "de": "Der Chef hat mich zweimal angerufen.",
+   "en": "The boss called me twice."
+  },
+  {
+   "de": "Ich habe die E-Mail vergessen.",
+   "en": "I forgot the e-mail."
+  },
+  {
+   "de": "Wir haben das Problem besprochen.",
+   "en": "We discussed the problem."
+  },
+  {
+   "de": "Der Kollege aus München ist um zehn angekommen.",
+   "en": "The colleague from Munich arrived at ten."
+  },
+  {
+   "de": "Hast du die Rechnung bekommen?",
+   "en": "Did you get the invoice?"
+  },
+  {
+   "de": "Frau Weber hat mir das Programm erklärt.",
+   "en": "Ms Weber explained the program to me."
+  },
+  {
+   "de": "Ich habe nach der Arbeit eingekauft.",
+   "en": "I went shopping after work."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-01-01",
+   "type": "cloze",
+   "de": "Ich habe heute um acht ___.",
+   "base": "anfangen",
+   "answers": [
+    "angefangen"
+   ],
+   "en": "I started at eight today."
+  },
+  {
+   "id": "a2-01-02",
+   "type": "cloze",
+   "de": "Der Chef hat mich zweimal ___.",
+   "base": "anrufen",
+   "answers": [
+    "angerufen"
+   ],
+   "en": "The boss called me twice."
+  },
+  {
+   "id": "a2-01-03",
+   "type": "choice",
+   "de": "Ich habe das Passwort ___.",
+   "options": [
+    "vergessen",
+    "gevergessen",
+    "vergesst"
+   ],
+   "answer": 0,
+   "why": "Verbs with ver- take no ge-: vergessen.",
+   "en": "I forgot the password."
+  },
+  {
+   "id": "a2-01-04",
+   "type": "cloze",
+   "de": "Hast du das Paket ___?",
+   "base": "bekommen",
+   "answers": [
+    "bekommen"
+   ],
+   "en": "Did you get the parcel?"
+  },
+  {
+   "id": "a2-01-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "eingekauft",
+    "nach der Arbeit"
+   ],
+   "answers": [
+    "Ich habe nach der Arbeit eingekauft.",
+    "Nach der Arbeit habe ich eingekauft."
+   ],
+   "en": "I went shopping after work."
+  },
+  {
+   "id": "a2-01-06",
+   "type": "choice",
+   "de": "Frau Klein hat mir alles ___.",
+   "options": [
+    "geerklärt",
+    "erklärt",
+    "erklären"
+   ],
+   "answer": 1,
+   "why": "Verbs with er- take no ge-: erklärt.",
+   "en": "Ms Klein explained everything to me."
+  },
+  {
+   "id": "a2-01-07",
+   "type": "cloze",
+   "de": "Wir haben das Problem lange ___.",
+   "base": "besprechen",
+   "answers": [
+    "besprochen"
+   ],
+   "en": "We discussed the problem for a long time."
+  },
+  {
+   "id": "a2-01-08",
+   "type": "choice",
+   "de": "Der Zug ist um neun ___.",
+   "options": [
+    "angekommt",
+    "angekommen",
+    "geankommen"
+   ],
+   "answer": 1,
+   "why": "ankommen is separable, so ge- goes in the middle, and kommen ends in -en: angekommen.",
+   "en": "The train arrived at nine."
+  },
+  {
+   "id": "a2-01-09",
+   "type": "cloze",
+   "de": "Ich bin heute zu spät ___.",
+   "base": "aufstehen",
+   "answers": [
+    "aufgestanden"
+   ],
+   "en": "I got up too late today."
+  },
+  {
+   "id": "a2-01-10",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "Der Kunde",
+    "angerufen",
+    "heute"
+   ],
+   "answers": [
+    "Der Kunde hat heute angerufen.",
+    "Heute hat der Kunde angerufen."
+   ],
+   "en": "The customer called today."
+  },
+  {
+   "id": "a2-01-11",
+   "type": "choice",
+   "de": "Ich ___ um sieben aufgestanden.",
+   "options": [
+    "habe",
+    "bin",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "aufstehen is a change of position, so it takes sein: ich bin aufgestanden.",
+   "en": "I got up at seven."
+  },
+  {
+   "id": "a2-01-12",
+   "type": "cloze",
+   "de": "Hast du die Rechnung schon ___?",
+   "base": "bezahlen",
+   "answers": [
+    "bezahlt"
+   ],
+   "en": "Have you paid the invoice yet?"
+  },
+  {
+   "id": "a2-01-13",
+   "type": "choice",
+   "de": "Wir haben die Kollegen in Hamburg ___.",
+   "options": [
+    "gebesucht",
+    "besuchen",
+    "besucht"
+   ],
+   "answer": 2,
+   "why": "Verbs with be- take no ge-: besucht.",
+   "en": "We visited the colleagues in Hamburg."
+  },
+  {
+   "id": "a2-01-14",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "nicht",
+    "verstanden",
+    "das"
+   ],
+   "answers": [
+    "Ich habe das nicht verstanden.",
+    "Das habe ich nicht verstanden."
+   ],
+   "en": "I didn't understand that."
+  },
+  {
+   "id": "a2-01-15",
+   "type": "cloze",
+   "de": "Wann hat das Meeting ___?",
+   "base": "anfangen",
+   "answers": [
+    "angefangen"
+   ],
+   "en": "When did the meeting start?"
+  },
+  {
+   "id": "a2-01-16",
+   "type": "choice",
+   "de": "Der Computer ist kaputt. Ich habe den Techniker ___.",
+   "options": [
+    "angeruft",
+    "anrufen",
+    "angerufen"
+   ],
+   "answer": 2,
+   "why": "rufen is irregular, so the participle is angerufen, not angeruft.",
+   "en": "The computer is broken. I called the technician."
+  },
+  {
+   "id": "a2-01-17",
+   "type": "cloze",
+   "de": "Herr Bauer hat den Termin ___.",
+   "base": "absagen",
+   "answers": [
+    "abgesagt"
+   ],
+   "en": "Mr Bauer cancelled the appointment."
+  },
+  {
+   "id": "a2-01-18",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "haben",
+    "um zwölf",
+    "aufgehört"
+   ],
+   "answers": [
+    "Wir haben um zwölf aufgehört.",
+    "Um zwölf haben wir aufgehört."
+   ],
+   "en": "We stopped at twelve."
+  },
+  {
+   "id": "a2-01-19",
+   "type": "choice",
+   "de": "Wir haben heute zwanzig Computer ___.",
+   "options": [
+    "verkauft",
+    "geverkauft",
+    "verkaufen"
+   ],
+   "answer": 0,
+   "why": "Verbs with ver- take no ge-: verkauft.",
+   "en": "We sold twenty computers today."
+  },
+  {
+   "id": "a2-01-20",
+   "type": "cloze",
+   "de": "Der Bus ist schon ___.",
+   "base": "abfahren",
+   "answers": [
+    "abgefahren"
+   ],
+   "en": "The bus has already left."
+  },
+  {
+   "id": "a2-01-21",
+   "type": "order",
+   "tiles": [
+    "Bist",
+    "gut",
+    "angekommen",
+    "du"
+   ],
+   "answers": [
+    "Bist du gut angekommen?"
+   ],
+   "en": "Did you arrive safely?"
+  },
+  {
+   "id": "a2-01-22",
+   "type": "choice",
+   "de": "Es ist so warm. Ich habe das Fenster ___.",
+   "options": [
+    "geaufmacht",
+    "aufgemachen",
+    "aufgemacht"
+   ],
+   "answer": 2,
+   "why": "aufmachen is separable and regular: auf + ge + macht.",
+   "en": "It's so warm. I opened the window."
+  },
+  {
+   "id": "a2-01-23",
+   "type": "cloze",
+   "de": "Ich habe meine Kollegin im Auto ___.",
+   "base": "mitnehmen",
+   "answers": [
+    "mitgenommen"
+   ],
+   "en": "I gave my colleague a lift in the car."
+  },
+  {
+   "id": "a2-01-24",
+   "type": "order",
+   "tiles": [
+    "habe",
+    "Ich",
+    "heute",
+    "die Kunden",
+    "besucht"
+   ],
+   "answers": [
+    "Ich habe heute die Kunden besucht.",
+    "Heute habe ich die Kunden besucht.",
+    "Ich habe die Kunden heute besucht.",
+    "Die Kunden habe ich heute besucht."
+   ],
+   "en": "I visited the customers today."
+  }
+ ],
+ "listening": {
+  "title": "Ein langer Tag im Büro",
+  "intro": "Lena comes home late and tells Jonas about her day at work.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Hallo Lena! Du kommst aber spät. Was ist passiert?",
+    "en": "Hi Lena! You're late. What happened?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Ach, heute ist alles schlecht gelaufen. Zuerst habe ich den Bus verpasst.",
+    "en": "Oh, everything went wrong today. First I missed the bus."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Oh nein! Wann bist du dann im Büro angekommen?",
+    "en": "Oh no! So when did you get to the office?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Erst um halb zehn. Und der Chef hat schon zweimal angerufen.",
+    "en": "Not until half past nine. And the boss had already called twice."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Hat er etwas gesagt?",
+    "en": "Did he say anything?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Nein, aber dann hat das Meeting angefangen, und ich habe meine Notizen zu Hause vergessen!",
+    "en": "No, but then the meeting started, and I had left my notes at home!"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Und dann?",
+    "en": "And then?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Ich habe alles ohne Notizen erklärt. Die Kunden haben alles verstanden und den Vertrag unterschrieben!",
+    "en": "I explained everything without notes. The customers understood everything and signed the contract!"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Super! Glückwunsch!",
+    "en": "Great! Congratulations!"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Danke! Danach habe ich noch eingekauft. Ich habe Pizza mitgebracht.",
+    "en": "Thanks! After that I did some shopping. I brought pizza."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why was Lena late for work?",
+    "options": [
+     "She missed the bus.",
+     "She got up late.",
+     "Her car broke down."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When did she get to the office?",
+    "options": [
+     "At nine.",
+     "At half past nine.",
+     "At ten."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What did she forget at home?",
+    "options": [
+     "Her phone.",
+     "Her laptop.",
+     "Her notes."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What did Lena bring home?",
+    "options": [
+     "Pizza.",
+     "Salad.",
+     "Bread."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe heute den Bus verpasst.",
+  "Der Chef hat mich zweimal angerufen.",
+  "Wann hat das Meeting heute angefangen?"
+ ],
+ "speaking": [
+  {
+   "de": "Was ist passiert?",
+   "en": "What happened?"
+  },
+  {
+   "de": "Ich habe den Bus verpasst.",
+   "en": "I missed the bus."
+  },
+  {
+   "de": "Der Chef hat schon zweimal angerufen.",
+   "en": "The boss has already called twice."
+  },
+  {
+   "de": "Ich habe meine Notizen zu Hause vergessen.",
+   "en": "I left my notes at home."
+  },
+  {
+   "de": "Danach habe ich noch eingekauft.",
+   "en": "After that I did some shopping."
+  }
+ ],
+ "writing": {
+  "task": "A colleague was off sick today. Write a message of 5–6 sentences telling them what happened at work.",
+  "model": "Hallo Tim, hier ist alles okay. Heute Morgen hat Frau Schulz angerufen und den Termin am Freitag abgesagt. Um zehn hat das Meeting angefangen. Wir haben das Projekt für Berlin besprochen. Herr Bauer hat alles gut erklärt, und ich habe dir die Notizen geschickt. Gute Besserung! Anna"
+ }
+}

@@ -1,0 +1,494 @@
+{
+ "id": "b1-12",
+ "cefr": "B1",
+ "title": "Purpose: um … zu and damit",
+ "situation": "Purposes at work",
+ "canDo": "You can say what you do something for, with um … zu when the subject stays the same and damit when it changes.",
+ "explanation": "At work you often explain the goal of what you do: *Ich schreibe eine Mail, um den Termin zu bestätigen.* German has two ways to say \"(in order) to\" or \"so that\":\n\n| | same subject | different subjects |\n|---|---|---|\n| form | **um … zu** + infinitive | **damit** + subject … verb |\n| example | *Ich lerne, um besser zu sprechen.* | *Ich spreche langsam, damit alle mich verstehen.* |\n\n- **um … zu**: *um* starts the clause, *zu* + infinitive comes at the very end. There is no subject in this part: *Ich bleibe länger, **um** den Bericht fertig **zu machen**.* (I stay – I finish.)\n- **damit**: a full clause with its own subject and the conjugated verb at the end: *Ich schicke dir die Datei, **damit** du sie prüfen **kannst**.* (I send – you check.)\n- With a separable verb, **zu** goes in the middle: *um den Raum vor**zu**bereiten*, *um früh an**zu**fangen*.\n- The purpose can come first; then the main clause starts with its verb: *Um Zeit zu sparen, **nehme** ich den Zug.*\n- With the same subject, *damit* is possible too (*Ich lerne viel, damit ich die Prüfung schaffe*), but *um … zu* is shorter and more usual.\n- Ask about a purpose with **Wozu?**: *Wozu brauchst du den Laptop? – Um von zu Hause zu arbeiten.*\n- **weil** gives a reason (why?), *um … zu* and *damit* give a goal (what for?).\n\nThe most common mistake: putting a subject or a conjugated verb into the um-clause. Not ~~um ich besser spreche~~, but *um besser zu sprechen*.",
+ "french": "um … zu works like pour + infinitive (same subject) and damit like pour que (different subjects), but after damit you use a normal verb at the end, no subjunctive.",
+ "examples": [
+  {
+   "de": "Ich komme heute früher, um die Präsentation vorzubereiten.",
+   "en": "I'm coming in earlier today to prepare the presentation."
+  },
+  {
+   "de": "Ich schreibe dir die Adresse auf, damit du sie nicht vergisst.",
+   "en": "I'll write the address down for you so that you don't forget it."
+  },
+  {
+   "de": "Wir treffen uns am Montag, um das Projekt zu besprechen.",
+   "en": "We're meeting on Monday to discuss the project."
+  },
+  {
+   "de": "Kannst du lauter sprechen, damit alle dich hören?",
+   "en": "Can you speak louder so that everyone can hear you?"
+  },
+  {
+   "de": "Um Zeit zu sparen, nehme ich den Zug.",
+   "en": "To save time, I take the train."
+  },
+  {
+   "de": "Sie macht einen Kurs, um besser mit Excel zu arbeiten.",
+   "en": "She's taking a course to work better with Excel."
+  },
+  {
+   "de": "Ich schicke Ihnen die Unterlagen, damit Sie alles prüfen können.",
+   "en": "I'm sending you the documents so that you can check everything."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-12-01",
+   "type": "cloze",
+   "de": "Ich lerne Deutsch, ___ in Deutschland zu arbeiten.",
+   "base": "um/damit",
+   "answers": [
+    "um"
+   ],
+   "en": "I'm learning German to work in Germany."
+  },
+  {
+   "id": "b1-12-02",
+   "type": "cloze",
+   "de": "Ich spreche langsam, ___ alle mich verstehen.",
+   "base": "um/damit",
+   "answers": [
+    "damit"
+   ],
+   "en": "I speak slowly so that everyone understands me."
+  },
+  {
+   "id": "b1-12-03",
+   "type": "choice",
+   "de": "Ich gehe in die Kantine, um etwas ___.",
+   "options": [
+    "essen zu",
+    "zu essen",
+    "esse"
+   ],
+   "answer": 1,
+   "why": "In an um-clause, zu comes right before the infinitive at the end.",
+   "en": "I'm going to the canteen to eat something."
+  },
+  {
+   "id": "b1-12-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "rufe",
+    "an",
+    "um",
+    "einen Termin",
+    "zu machen"
+   ],
+   "answers": [
+    "Ich rufe an, um einen Termin zu machen.",
+    "Um einen Termin zu machen, rufe ich an."
+   ],
+   "en": "I'm calling to make an appointment."
+  },
+  {
+   "id": "b1-12-05",
+   "type": "cloze",
+   "de": "Ich komme morgen früher, um die Präsentation ___.",
+   "base": "vorbereiten",
+   "answers": [
+    "vorzubereiten"
+   ],
+   "en": "I'm coming in earlier tomorrow to prepare the presentation."
+  },
+  {
+   "id": "b1-12-06",
+   "type": "choice",
+   "de": "Ich schicke dir die Datei, damit du sie ___.",
+   "options": [
+    "prüfen kannst",
+    "kannst prüfen",
+    "zu prüfen"
+   ],
+   "answer": 0,
+   "why": "damit starts a clause with its own subject, and the conjugated verb kannst goes to the very end.",
+   "en": "I'm sending you the file so that you can check it."
+  },
+  {
+   "id": "b1-12-07",
+   "type": "cloze",
+   "de": "Schreib dir die Nummer auf, damit du sie nicht ___.",
+   "base": "vergessen",
+   "answers": [
+    "vergisst"
+   ],
+   "en": "Write the number down so that you don't forget it."
+  },
+  {
+   "id": "b1-12-08",
+   "type": "choice",
+   "de": "Der Chef erklärt alles genau, ___ wir keine Fehler machen.",
+   "options": [
+    "um",
+    "denn",
+    "damit"
+   ],
+   "answer": 2,
+   "why": "The subjects are different (der Chef, wir) and the verb is at the end, so you need damit.",
+   "en": "The boss explains everything carefully so that we don't make mistakes."
+  },
+  {
+   "id": "b1-12-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "spreche",
+    "laut",
+    "damit",
+    "alle",
+    "mich",
+    "hören"
+   ],
+   "answers": [
+    "Ich spreche laut, damit alle mich hören.",
+    "Ich spreche laut, damit mich alle hören.",
+    "Damit alle mich hören, spreche ich laut.",
+    "Damit mich alle hören, spreche ich laut."
+   ],
+   "en": "I speak loudly so that everyone hears me."
+  },
+  {
+   "id": "b1-12-10",
+   "type": "cloze",
+   "de": "Sie macht einen Kurs, damit sie bessere Chancen im Job ___.",
+   "base": "haben",
+   "answers": [
+    "hat"
+   ],
+   "en": "She's taking a course so that she has better chances at work."
+  },
+  {
+   "id": "b1-12-11",
+   "type": "choice",
+   "de": "___ pünktlich zu sein, nehme ich den früheren Zug.",
+   "options": [
+    "Damit",
+    "Um",
+    "Für"
+   ],
+   "answer": 1,
+   "why": "A clause with zu + infinitive and no subject starts with um; für is only a preposition before a noun.",
+   "en": "To be on time, I take the earlier train."
+  },
+  {
+   "id": "b1-12-12",
+   "type": "cloze",
+   "de": "Ich stehe um sechs auf, um früh im Büro ___.",
+   "base": "ankommen",
+   "answers": [
+    "anzukommen"
+   ],
+   "en": "I get up at six to arrive at the office early."
+  },
+  {
+   "id": "b1-12-13",
+   "type": "order",
+   "tiles": [
+    "Um",
+    "Zeit",
+    "zu sparen",
+    "nehme",
+    "ich",
+    "den Zug"
+   ],
+   "answers": [
+    "Um Zeit zu sparen, nehme ich den Zug.",
+    "Ich nehme den Zug, um Zeit zu sparen."
+   ],
+   "en": "To save time, I take the train."
+  },
+  {
+   "id": "b1-12-14",
+   "type": "choice",
+   "de": "Ich mache das Fenster auf, damit ___.",
+   "options": [
+    "ist es nicht so warm",
+    "es nicht so warm zu sein",
+    "es nicht so warm ist"
+   ],
+   "answer": 2,
+   "why": "After damit comes a normal clause with a subject (es) and the verb at the end.",
+   "en": "I'm opening the window so that it isn't so warm."
+  },
+  {
+   "id": "b1-12-15",
+   "type": "cloze",
+   "de": "Ich gebe dir meine Nummer, damit du mich morgen ___.",
+   "base": "anrufen",
+   "answers": [
+    "anrufst"
+   ],
+   "en": "I'll give you my number so that you call me tomorrow."
+  },
+  {
+   "id": "b1-12-16",
+   "type": "choice",
+   "de": "Wozu brauchst du den Laptop? – ___ von zu Hause zu arbeiten.",
+   "options": [
+    "Damit",
+    "Um",
+    "Weil"
+   ],
+   "answer": 1,
+   "why": "The answer has zu + infinitive and no subject, so it starts with um.",
+   "en": "What do you need the laptop for? – To work from home."
+  },
+  {
+   "id": "b1-12-17",
+   "type": "order",
+   "tiles": [
+    "Ich schicke Ihnen",
+    "die Unterlagen",
+    "damit",
+    "Sie",
+    "alles",
+    "prüfen können"
+   ],
+   "answers": [
+    "Ich schicke Ihnen die Unterlagen, damit Sie alles prüfen können."
+   ],
+   "en": "I'm sending you the documents so that you can check everything."
+  },
+  {
+   "id": "b1-12-18",
+   "type": "cloze",
+   "de": "Wir brauchen mehr Leute, ___ das Projekt pünktlich fertig wird.",
+   "base": "um/damit",
+   "answers": [
+    "damit"
+   ],
+   "en": "We need more people so that the project gets finished on time."
+  },
+  {
+   "id": "b1-12-19",
+   "type": "choice",
+   "de": "Er arbeitet auch am Wochenende, ___.",
+   "options": [
+    "um mehr Geld verdienen",
+    "um mehr Geld zu verdienen",
+    "damit mehr Geld zu verdienen"
+   ],
+   "answer": 1,
+   "why": "um needs zu before the infinitive, and damit is never followed by zu + infinitive.",
+   "en": "He works at weekends too, to earn more money."
+  },
+  {
+   "id": "b1-12-20",
+   "type": "cloze",
+   "de": "Ich rufe die Kundin heute noch an, um ihr die Preise ___.",
+   "base": "erklären",
+   "answers": [
+    "zu erklären"
+   ],
+   "en": "I'll call the customer today to explain the prices to her."
+  },
+  {
+   "id": "b1-12-21",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "treffen uns",
+    "um",
+    "das Projekt",
+    "zu besprechen"
+   ],
+   "answers": [
+    "Wir treffen uns, um das Projekt zu besprechen."
+   ],
+   "en": "We're meeting to discuss the project."
+  },
+  {
+   "id": "b1-12-22",
+   "type": "choice",
+   "de": "Ich erkläre es noch einmal, damit ___.",
+   "options": [
+    "verstehst du es",
+    "du es zu verstehen",
+    "du es verstehst"
+   ],
+   "answer": 2,
+   "why": "damit needs a subject (du) and the conjugated verb at the end.",
+   "en": "I'll explain it again so that you understand it."
+  },
+  {
+   "id": "b1-12-23",
+   "type": "cloze",
+   "de": "Die Firma bezahlt mir den Kurs, damit ich besser Englisch ___.",
+   "base": "sprechen",
+   "answers": [
+    "spreche"
+   ],
+   "en": "The company is paying for my course so that I speak better English."
+  },
+  {
+   "id": "b1-12-24",
+   "type": "order",
+   "tiles": [
+    "Um",
+    "früh",
+    "anzufangen",
+    "stehe",
+    "ich",
+    "um sechs",
+    "auf"
+   ],
+   "answers": [
+    "Um früh anzufangen, stehe ich um sechs auf.",
+    "Ich stehe um sechs auf, um früh anzufangen.",
+    "Um sechs stehe ich auf, um früh anzufangen."
+   ],
+   "en": "To start early, I get up at six."
+  }
+ ],
+ "listening": {
+  "title": "Besuch aus Lyon",
+  "intro": "Nina, a team leader, asks her colleague Paul to help prepare a visit from customers.",
+  "lines": [
+   {
+    "speaker": "Nina",
+    "de": "Paul, hast du kurz Zeit? Morgen kommen die Kunden aus Lyon.",
+    "en": "Paul, have you got a minute? The customers from Lyon are coming tomorrow."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, klar. Was muss ich vorbereiten?",
+    "en": "Yes, sure. What do I need to prepare?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Kannst du die Präsentation noch einmal prüfen, damit keine Fehler drin sind?",
+    "en": "Can you check the presentation again so that there are no mistakes in it?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Mache ich. Soll ich sie auch auf Englisch schreiben?",
+    "en": "Will do. Should I write it in English too?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Ja, bitte, damit alle sie verstehen. Herr Martin spricht nicht so gut Deutsch.",
+    "en": "Yes, please, so that everyone understands it. Mr Martin doesn't speak German that well."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Okay. Ich komme morgen eine Stunde früher, um den Raum vorzubereiten.",
+    "en": "OK. I'll come in an hour earlier tomorrow to get the room ready."
+   },
+   {
+    "speaker": "Nina",
+    "de": "Super. Und bestell bitte Kaffee und Brötchen, damit niemand Hunger hat.",
+    "en": "Great. And please order coffee and rolls so that nobody is hungry."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Wann kommen die Gäste genau?",
+    "en": "When exactly are the guests arriving?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Um zehn. Ich hole sie mit dem Auto vom Bahnhof ab, um Zeit zu sparen.",
+    "en": "At ten. I'll pick them up from the station by car to save time."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Gut. Und nach dem Meeting?",
+    "en": "Good. And after the meeting?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Dann gehen wir zusammen essen, um uns besser kennenzulernen.",
+    "en": "Then we'll go out to eat together, to get to know each other better."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Soll ich einen Tisch reservieren?",
+    "en": "Should I book a table?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Ja, gern. Ich schicke dir die Adresse, damit du das Restaurant findest.",
+    "en": "Yes, please. I'll send you the address so that you can find the restaurant."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Perfekt, dann fange ich gleich an.",
+    "en": "Perfect, then I'll start right away."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why should the presentation also be in English?",
+    "options": [
+     "Because the boss wants it.",
+     "Because Mr Martin doesn't speak German well.",
+     "Because the meeting is in London."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why will Paul come in an hour early?",
+    "options": [
+     "To get the room ready.",
+     "To pick up the guests.",
+     "To finish another project."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who will pick up the guests at the station?",
+    "options": [
+     "Paul.",
+     "A taxi.",
+     "Nina."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will they do after the meeting?",
+    "options": [
+     "Visit the city.",
+     "Take the guests back to the station.",
+     "Go out to eat together."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Ich komme morgen früher, um den Raum vorzubereiten.",
+  "Ich schicke dir die Adresse, damit du das Restaurant findest.",
+  "Um Zeit zu sparen, fahren wir mit dem Taxi zum Bahnhof."
+ ],
+ "speaking": [
+  {
+   "de": "Kannst du die Präsentation prüfen, damit keine Fehler drin sind?",
+   "en": "Can you check the presentation so that there are no mistakes in it?"
+  },
+  {
+   "de": "Ich komme eine Stunde früher, um den Raum vorzubereiten.",
+   "en": "I'll come in an hour earlier to get the room ready."
+  },
+  {
+   "de": "Ich hole sie vom Bahnhof ab, um Zeit zu sparen.",
+   "en": "I'll pick them up from the station to save time."
+  },
+  {
+   "de": "Ich schicke dir die Adresse, damit du das Restaurant findest.",
+   "en": "I'll send you the address so that you can find the restaurant."
+  },
+  {
+   "de": "Wir gehen zusammen essen, um uns besser kennenzulernen.",
+   "en": "We're going out to eat together to get to know each other better."
+  }
+ ],
+ "writing": {
+  "task": "You won't be in the office on Friday. Write an email of 80–100 words to a colleague: say why you're away, what they should do for you on Friday, and why. Use um … zu and damit at least once each.",
+  "model": "Hallo Stefan,\n\nam Freitag bin ich nicht im Büro, weil ich einen Kurs in Frankfurt mache. Ich fahre schon am Donnerstagabend los, um pünktlich da zu sein. Kannst du bitte am Freitag meine Mails lesen, damit kein Kunde zu lange auf eine Antwort wartet? Die Rechnung für die Firma Keller ist schon fertig. Bitte schick sie bis zwölf Uhr ab, damit sie noch diesen Monat bezahlt wird. Ich lege dir alle Unterlagen auf den Tisch, um dir Zeit zu sparen. Vielen Dank und bis Montag!\n\nViele Grüße\nClaire"
+ }
+}

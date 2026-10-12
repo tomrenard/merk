@@ -1,0 +1,478 @@
+{
+ "id": "a2-16",
+ "cefr": "A2",
+ "title": "deshalb, trotzdem, denn",
+ "situation": "Consequences and contrasts",
+ "canDo": "You can explain reasons, consequences and surprising contrasts with denn, deshalb and trotzdem, with the right word order.",
+ "explanation": "To talk about consequences and contrasts, you join two sentences with **deshalb** (so, that's why) or **trotzdem** (anyway, still). You already know **denn** (because):\n\n| word | meaning | example |\n|---|---|---|\n| denn | because | Ich bleibe zu Hause, **denn ich bin** krank. |\n| deshalb | so, that's why | Ich bin krank, **deshalb bleibe ich** zu Hause. |\n| trotzdem | anyway, still | Ich bin krank, **trotzdem gehe ich** zur Arbeit. |\n\nWord order is the key:\n- **denn** doesn't count as a position: the normal order follows (subject, then verb).\n- **deshalb** and **trotzdem** take position 1, so the **verb comes right after them**, then the subject, just like after a time word (*Heute gehe ich…*).\n- They can also come after the verb: *Ich bleibe deshalb zu Hause. Ich gehe trotzdem zur Arbeit.*\n- **deswegen** and **darum** mean the same as deshalb; you hear them a lot.\n\nCompare with **weil**, which sends the verb to the end: *Ich bleibe zu Hause, weil ich krank bin.*\n\nReason or result? After **denn** and **weil** comes the reason, after **deshalb** the result: *Es regnet, deshalb nehme ich den Bus.* **trotzdem** means it happens even though you wouldn't expect it: *Es regnet, trotzdem gehe ich zu Fuß.*\n\nThe most common mistake is the English order *deshalb ich bleibe*. Say **deshalb bleibe ich**.",
+ "french": "denn ≈ « car », deshalb ≈ « c'est pourquoi » or « donc », trotzdem ≈ « quand même » or « pourtant », but after deshalb and trotzdem German puts the verb before the subject.",
+ "examples": [
+  {
+   "de": "Ich bin krank, deshalb bleibe ich zu Hause.",
+   "en": "I'm ill, so I'm staying at home."
+  },
+  {
+   "de": "Es regnet, trotzdem gehen wir spazieren.",
+   "en": "It's raining, but we're going for a walk anyway."
+  },
+  {
+   "de": "Ich lerne Deutsch, denn ich wohne in Berlin.",
+   "en": "I'm learning German because I live in Berlin."
+  },
+  {
+   "de": "Der Zug hat Verspätung, deshalb komme ich zu spät.",
+   "en": "The train is delayed, so I'll be late."
+  },
+  {
+   "de": "Die Wohnung ist teuer, trotzdem nehmen wir sie.",
+   "en": "The flat is expensive, but we're taking it anyway."
+  },
+  {
+   "de": "Ich habe schlecht geschlafen. Ich bin deshalb sehr müde.",
+   "en": "I slept badly. That's why I'm very tired."
+  },
+  {
+   "de": "Das Wetter war schlecht. Trotzdem hatten wir viel Spaß.",
+   "en": "The weather was bad. We still had a lot of fun."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-16-01",
+   "type": "choice",
+   "de": "Ich bin müde, deshalb ___ früh ins Bett.",
+   "options": [
+    "gehe ich",
+    "ich gehe",
+    "gehen ich"
+   ],
+   "answer": 0,
+   "why": "After deshalb the verb comes first, then the subject.",
+   "en": "I'm tired, so I'm going to bed early."
+  },
+  {
+   "id": "a2-16-02",
+   "type": "cloze",
+   "de": "Ich habe Hunger, ___ mache ich mir ein Brot.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "deshalb"
+   ],
+   "en": "I'm hungry, so I'm making myself a sandwich."
+  },
+  {
+   "id": "a2-16-03",
+   "type": "cloze",
+   "de": "Es regnet, ___ gehen wir spazieren.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "trotzdem"
+   ],
+   "en": "It's raining, but we're going for a walk anyway."
+  },
+  {
+   "id": "a2-16-04",
+   "type": "order",
+   "tiles": [
+    "Ich bin krank,",
+    "deshalb",
+    "bleibe",
+    "ich",
+    "zu Hause"
+   ],
+   "answers": [
+    "Ich bin krank, deshalb bleibe ich zu Hause.",
+    "Ich bin krank, ich bleibe deshalb zu Hause."
+   ],
+   "en": "I'm ill, so I'm staying at home."
+  },
+  {
+   "id": "a2-16-05",
+   "type": "choice",
+   "de": "Ich lerne Deutsch, ___ ich wohne in Deutschland.",
+   "options": [
+    "denn",
+    "deshalb",
+    "weil"
+   ],
+   "answer": 0,
+   "why": "The verb comes right after the subject, so it must be denn; weil would send the verb to the end.",
+   "en": "I'm learning German because I live in Germany."
+  },
+  {
+   "id": "a2-16-06",
+   "type": "cloze",
+   "de": "Die Wohnung ist teuer, ___ nehmen wir sie.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "trotzdem"
+   ],
+   "en": "The flat is expensive, but we're taking it anyway."
+  },
+  {
+   "id": "a2-16-07",
+   "type": "choice",
+   "de": "Der Zug hat Verspätung, deshalb ___ zu spät.",
+   "options": [
+    "ich komme",
+    "komme ich",
+    "kommen ich"
+   ],
+   "answer": 1,
+   "why": "deshalb is in position 1, so the verb comes next: komme ich.",
+   "en": "The train is delayed, so I'll be late."
+  },
+  {
+   "id": "a2-16-08",
+   "type": "order",
+   "tiles": [
+    "Es ist kalt,",
+    "trotzdem",
+    "trägt",
+    "er",
+    "keine Jacke"
+   ],
+   "answers": [
+    "Es ist kalt, trotzdem trägt er keine Jacke.",
+    "Es ist kalt, er trägt trotzdem keine Jacke."
+   ],
+   "en": "It's cold, but he still isn't wearing a jacket."
+  },
+  {
+   "id": "a2-16-09",
+   "type": "cloze",
+   "de": "Ich habe keine Zeit, ___ kann ich nicht kommen.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "deshalb"
+   ],
+   "en": "I don't have time, so I can't come."
+  },
+  {
+   "id": "a2-16-10",
+   "type": "choice",
+   "de": "Ich gehe heute nicht zur Arbeit, ___ ich bin krank.",
+   "options": [
+    "deshalb",
+    "denn",
+    "trotzdem"
+   ],
+   "answer": 1,
+   "why": "The second part gives the reason with normal word order, so it is denn.",
+   "en": "I'm not going to work today because I'm ill."
+  },
+  {
+   "id": "a2-16-11",
+   "type": "cloze",
+   "de": "Mein Kollege war krank, deshalb ___ ich länger gearbeitet.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "My colleague was ill, so I worked longer."
+  },
+  {
+   "id": "a2-16-12",
+   "type": "order",
+   "tiles": [
+    "Ich habe wenig Geld,",
+    "trotzdem",
+    "fahre",
+    "ich",
+    "in Urlaub"
+   ],
+   "answers": [
+    "Ich habe wenig Geld, trotzdem fahre ich in Urlaub.",
+    "Ich habe wenig Geld, ich fahre trotzdem in Urlaub."
+   ],
+   "en": "I have little money, but I'm going on holiday anyway."
+  },
+  {
+   "id": "a2-16-13",
+   "type": "choice",
+   "de": "Das Wetter war schlecht. ___ hatten wir viel Spaß.",
+   "options": [
+    "Trotzdem",
+    "Deshalb",
+    "Denn"
+   ],
+   "answer": 0,
+   "why": "Bad weather and fun don't go together, so it is trotzdem.",
+   "en": "The weather was bad. We still had a lot of fun."
+  },
+  {
+   "id": "a2-16-14",
+   "type": "cloze",
+   "de": "Ich habe den Bus verpasst, ___ bin ich zu spät gekommen.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "deshalb"
+   ],
+   "en": "I missed the bus, so I was late."
+  },
+  {
+   "id": "a2-16-15",
+   "type": "choice",
+   "de": "Sie hat viel gelernt, trotzdem ___ die Prüfung nicht bestanden.",
+   "options": [
+    "sie hat",
+    "hat sie",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "After trotzdem the verb comes first, then the subject: hat sie.",
+   "en": "She studied a lot, but she still didn't pass the exam."
+  },
+  {
+   "id": "a2-16-16",
+   "type": "cloze",
+   "de": "Wir haben wenig Zeit, deshalb ___ ich ein Taxi.",
+   "base": "nehmen",
+   "answers": [
+    "nehme"
+   ],
+   "en": "We don't have much time, so I'm taking a taxi."
+  },
+  {
+   "id": "a2-16-17",
+   "type": "order",
+   "tiles": [
+    "Er ist Vegetarier,",
+    "deshalb",
+    "isst",
+    "er",
+    "kein Fleisch"
+   ],
+   "answers": [
+    "Er ist Vegetarier, deshalb isst er kein Fleisch.",
+    "Er ist Vegetarier, er isst deshalb kein Fleisch."
+   ],
+   "en": "He's a vegetarian, so he doesn't eat meat."
+  },
+  {
+   "id": "a2-16-18",
+   "type": "choice",
+   "de": "Ich komme nicht mit, ___ ich habe keine Lust.",
+   "options": [
+    "weil",
+    "denn",
+    "deshalb"
+   ],
+   "answer": 1,
+   "why": "The reason follows with normal word order, so it is denn; weil would need the verb at the end.",
+   "en": "I'm not coming because I don't feel like it."
+  },
+  {
+   "id": "a2-16-19",
+   "type": "cloze",
+   "de": "Die Musik ist laut, ___ kann das Baby schlafen.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "trotzdem"
+   ],
+   "en": "The music is loud, but the baby can sleep anyway."
+  },
+  {
+   "id": "a2-16-20",
+   "type": "choice",
+   "de": "Ich bleibe heute zu Hause, ___ ich krank bin.",
+   "options": [
+    "weil",
+    "denn",
+    "deshalb"
+   ],
+   "answer": 0,
+   "why": "The verb bin is at the end, so it must be weil.",
+   "en": "I'm staying at home today because I'm ill."
+  },
+  {
+   "id": "a2-16-21",
+   "type": "order",
+   "tiles": [
+    "Es regnet stark,",
+    "trotzdem",
+    "fahren",
+    "wir",
+    "mit dem Fahrrad"
+   ],
+   "answers": [
+    "Es regnet stark, trotzdem fahren wir mit dem Fahrrad.",
+    "Es regnet stark, wir fahren trotzdem mit dem Fahrrad."
+   ],
+   "en": "It's raining hard, but we're going by bike anyway."
+  },
+  {
+   "id": "a2-16-22",
+   "type": "cloze",
+   "de": "Meine Freundin hat morgen Geburtstag, ___ kaufe ich heute ein Geschenk.",
+   "base": "deshalb / trotzdem",
+   "answers": [
+    "deshalb"
+   ],
+   "en": "My girlfriend's birthday is tomorrow, so I'm buying a present today."
+  },
+  {
+   "id": "a2-16-23",
+   "type": "choice",
+   "de": "Ich habe schlecht geschlafen, ___ bin ich heute sehr müde.",
+   "options": [
+    "trotzdem",
+    "deshalb",
+    "denn"
+   ],
+   "answer": 1,
+   "why": "Being tired is the result of sleeping badly, so it is deshalb.",
+   "en": "I slept badly, so I'm very tired today."
+  },
+  {
+   "id": "a2-16-24",
+   "type": "order",
+   "tiles": [
+    "Ich gehe ins Bett,",
+    "denn",
+    "ich",
+    "bin",
+    "müde"
+   ],
+   "answers": [
+    "Ich gehe ins Bett, denn ich bin müde."
+   ],
+   "en": "I'm going to bed because I'm tired."
+  }
+ ],
+ "listening": {
+  "title": "Montagmorgen im Büro",
+  "intro": "Laura meets her colleague Tobias in the office on Monday morning.",
+  "lines": [
+   {
+    "speaker": "Laura",
+    "de": "Morgen, Tobias! Du siehst müde aus.",
+    "en": "Morning, Tobias! You look tired."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ja, unsere Nachbarn hatten gestern eine Party. Deshalb habe ich kaum geschlafen.",
+    "en": "Yes, our neighbours had a party yesterday. That's why I hardly slept."
+   },
+   {
+    "speaker": "Laura",
+    "de": "Oh nein! Und trotzdem bist du pünktlich?",
+    "en": "Oh no! And you're on time anyway?"
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ja, denn um neun haben wir das Meeting mit dem Kunden.",
+    "en": "Yes, because at nine we have the meeting with the client."
+   },
+   {
+    "speaker": "Laura",
+    "de": "Frau Berger ist aber krank, deshalb machen wir das Meeting erst morgen.",
+    "en": "But Frau Berger is ill, so we're having the meeting tomorrow instead."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Was? Das hat mir niemand gesagt!",
+    "en": "What? Nobody told me that!"
+   },
+   {
+    "speaker": "Laura",
+    "de": "Die E-Mail ist erst seit zehn Minuten da.",
+    "en": "The email only came ten minutes ago."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Na gut. Dann trinke ich jetzt erst mal einen Kaffee.",
+    "en": "Oh well. Then I'll have a coffee first."
+   },
+   {
+    "speaker": "Laura",
+    "de": "Der Kaffeeautomat ist kaputt, deshalb habe ich Kaffee von zu Hause mitgebracht. Möchtest du auch einen?",
+    "en": "The coffee machine is broken, so I brought coffee from home. Would you like one too?"
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Gern! Du bist die Beste.",
+    "en": "I'd love one! You're the best."
+   },
+   {
+    "speaker": "Laura",
+    "de": "Ich weiß. Trotzdem musst du heute den Bericht fertig machen!",
+    "en": "I know. But you still have to finish the report today!"
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ja, ja. Mache ich.",
+    "en": "Yes, yes. I will."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Tobias tired?",
+    "options": [
+     "He worked late.",
+     "His neighbours had a party.",
+     "His child was ill."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why is the meeting moved to tomorrow?",
+    "options": [
+     "The client cancelled.",
+     "The room isn't free.",
+     "Frau Berger is ill."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why did Laura bring coffee from home?",
+    "options": [
+     "The coffee machine is broken.",
+     "She doesn't like the office coffee.",
+     "It's cheaper."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Tobias still have to do today?",
+    "options": [
+     "Call the client",
+     "Finish the report",
+     "Prepare the meeting"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich bin krank, deshalb bleibe ich heute zu Hause.",
+  "Es regnet, trotzdem gehen wir spazieren.",
+  "Ich lerne Deutsch, denn ich wohne in Berlin."
+ ],
+ "speaking": [
+  {
+   "de": "Deshalb habe ich kaum geschlafen.",
+   "en": "That's why I hardly slept."
+  },
+  {
+   "de": "Und trotzdem bist du pünktlich?",
+   "en": "And you're on time anyway?"
+  },
+  {
+   "de": "Frau Berger ist krank, deshalb machen wir das Meeting erst morgen.",
+   "en": "Frau Berger is ill, so we're having the meeting tomorrow instead."
+  },
+  {
+   "de": "Der Kaffeeautomat ist kaputt, deshalb habe ich Kaffee mitgebracht.",
+   "en": "The coffee machine is broken, so I brought coffee."
+  },
+  {
+   "de": "Trotzdem musst du heute den Bericht fertig machen!",
+   "en": "But you still have to finish the report today!"
+  }
+ ],
+ "writing": {
+  "task": "Your train is late. Write a message to a colleague (5–6 sentences): what happened, what the consequences are, and what you will do anyway.",
+  "model": "Hallo Jan, mein Zug hat heute eine Stunde Verspätung. Deshalb komme ich erst um zehn ins Büro. Das Meeting um neun schaffe ich leider nicht, denn ich sitze dann noch im Zug. Meine Präsentation ist aber fertig, deshalb kannst du schon ohne mich anfangen. Ich bin sehr müde, trotzdem mache ich heute den Bericht fertig. Bis später, Elise"
+ }
+}

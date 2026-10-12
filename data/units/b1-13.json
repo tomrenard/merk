@@ -1,0 +1,489 @@
+{
+ "id": "b1-13",
+ "cefr": "B1",
+ "title": "The n-declension: der Kunde, den Kunden",
+ "situation": "Dealing with customers and colleagues",
+ "canDo": "You can talk about customers, colleagues and other people with the right -n ending: den Kunden, dem Kollegen, an Herrn Weber.",
+ "explanation": "At work you talk about customers and colleagues all day: *Ich rufe den Kunden an. Ich spreche mit dem Kollegen.* A group of masculine nouns, mostly people and animals, add **-(e)n** in every form except the nominative singular. This is the **n-declension**.\n\n| | singular | plural |\n|---|---|---|\n| nominative | der Kunde | die Kunde**n** |\n| accusative | den Kunde**n** | die Kunde**n** |\n| dative | dem Kunde**n** | den Kunde**n** |\n| genitive | des Kunde**n** | der Kunde**n** |\n\nWhich nouns? Almost all are masculine:\n- people and animals ending in **-e**: *der Kunde, der Kollege, der Junge, der Franzose, der Löwe*\n- foreign words in **-ent, -ant, -ist, -at**: *der Student, der Praktikant, der Polizist, der Kandidat*\n- a few short words: *der Mensch, der Nachbar, der Herr* (singular *Herrn*, plural *Herren*)\n\nNotice:\n- The genitive has **-n**, not -s: *der Name **des Kunden***.\n- In letters and on envelopes: *Sehr geehrter Herr Weber*, but *an **Herrn** Weber*, *für **Herrn** Weber*.\n- The female forms are normal nouns: *die Kundin, die Kollegin*.\n- In casual speech you sometimes hear *dem Student*, but write *dem Studenten*.\n\nThe most common mistake is forgetting the -n after an article: not ~~Ich frage den Kollege~~, but *Ich frage den Kolleg**en***. And no -n when the noun is the subject: *Der Kunde wartet.*",
+ "french": "Many n-nouns look French – Student, Praktikant, Journalist, Polizist, Kollege, Franzose – so a masculine word for a person that looks French is a good candidate for the -n ending.",
+ "examples": [
+  {
+   "de": "Der Kunde wartet schon seit zehn Minuten.",
+   "en": "The customer has been waiting for ten minutes."
+  },
+  {
+   "de": "Kannst du bitte den Kunden zurückrufen?",
+   "en": "Can you call the customer back, please?"
+  },
+  {
+   "de": "Ich habe mit dem neuen Kollegen gesprochen.",
+   "en": "I've spoken to the new colleague."
+  },
+  {
+   "de": "Wir suchen einen Praktikanten für den Sommer.",
+   "en": "We're looking for an intern for the summer."
+  },
+  {
+   "de": "Der Brief ist für Herrn Becker.",
+   "en": "The letter is for Mr Becker."
+  },
+  {
+   "de": "Frag doch mal unseren Nachbarn.",
+   "en": "Why don't you ask our neighbour?"
+  },
+  {
+   "de": "Wie ist der Name des Kunden?",
+   "en": "What's the customer's name?"
+  },
+  {
+   "de": "Unsere Kunden sind sehr zufrieden.",
+   "en": "Our customers are very satisfied."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-13-01",
+   "type": "cloze",
+   "de": "Ich rufe den ___ an.",
+   "base": "Kunde",
+   "answers": [
+    "Kunden"
+   ],
+   "en": "I'm calling the customer."
+  },
+  {
+   "id": "b1-13-02",
+   "type": "choice",
+   "de": "Der ___ wartet im Büro.",
+   "options": [
+    "Kunden",
+    "Kunde",
+    "Kundes"
+   ],
+   "answer": 1,
+   "why": "The customer is the subject (nominative singular), so there is no -n.",
+   "en": "The customer is waiting in the office."
+  },
+  {
+   "id": "b1-13-03",
+   "type": "cloze",
+   "de": "Hast du schon mit dem neuen ___ gesprochen?",
+   "base": "Kollege",
+   "answers": [
+    "Kollegen"
+   ],
+   "en": "Have you spoken to the new colleague yet?"
+  },
+  {
+   "id": "b1-13-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "frage",
+    "den Kollegen"
+   ],
+   "answers": [
+    "Ich frage den Kollegen.",
+    "Den Kollegen frage ich."
+   ],
+   "en": "I'll ask the colleague."
+  },
+  {
+   "id": "b1-13-05",
+   "type": "choice",
+   "de": "Der Brief ist für ___ Becker.",
+   "options": [
+    "Herrn",
+    "Herr",
+    "Herren"
+   ],
+   "answer": 0,
+   "why": "für takes the accusative, and Herr becomes Herrn; Herren is the plural.",
+   "en": "The letter is for Mr Becker."
+  },
+  {
+   "id": "b1-13-06",
+   "type": "cloze",
+   "de": "Wir suchen einen ___ für den Sommer.",
+   "base": "Praktikant",
+   "answers": [
+    "Praktikanten"
+   ],
+   "en": "We're looking for an intern for the summer."
+  },
+  {
+   "id": "b1-13-07",
+   "type": "choice",
+   "de": "Der ___ hat heute seinen ersten Tag.",
+   "options": [
+    "Student",
+    "Studenten",
+    "Studentin"
+   ],
+   "answer": 0,
+   "why": "He is the subject, so the nominative der Student has no -en.",
+   "en": "The student is having his first day today."
+  },
+  {
+   "id": "b1-13-08",
+   "type": "cloze",
+   "de": "Ich habe den Schlüssel unserem ___ gegeben.",
+   "base": "Nachbar",
+   "answers": [
+    "Nachbarn"
+   ],
+   "en": "I gave the key to our neighbour."
+  },
+  {
+   "id": "b1-13-09",
+   "type": "order",
+   "tiles": [
+    "Der Chef",
+    "spricht",
+    "gerade",
+    "mit",
+    "dem Kunden"
+   ],
+   "answers": [
+    "Der Chef spricht gerade mit dem Kunden.",
+    "Gerade spricht der Chef mit dem Kunden.",
+    "Mit dem Kunden spricht der Chef gerade."
+   ],
+   "en": "The boss is talking to the customer right now."
+  },
+  {
+   "id": "b1-13-10",
+   "type": "cloze",
+   "de": "Wir haben einen ___ gefragt, wo der Bahnhof ist.",
+   "base": "Polizist",
+   "answers": [
+    "Polizisten"
+   ],
+   "en": "We asked a police officer where the station is."
+  },
+  {
+   "id": "b1-13-11",
+   "type": "choice",
+   "de": "Ich kenne den Namen ___ nicht.",
+   "options": [
+    "des Kunden",
+    "der Kunde",
+    "des Kundes"
+   ],
+   "answer": 0,
+   "why": "n-nouns take -n in the genitive, not -s: des Kunden.",
+   "en": "I don't know the customer's name."
+  },
+  {
+   "id": "b1-13-12",
+   "type": "cloze",
+   "de": "Bitte geben Sie die Unterlagen ___ Meier.",
+   "base": "Herr",
+   "answers": [
+    "Herrn"
+   ],
+   "en": "Please give the documents to Mr Meier."
+  },
+  {
+   "id": "b1-13-13",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "haben",
+    "einen neuen",
+    "Kollegen"
+   ],
+   "answers": [
+    "Wir haben einen neuen Kollegen.",
+    "Einen neuen Kollegen haben wir."
+   ],
+   "en": "We have a new colleague."
+  },
+  {
+   "id": "b1-13-14",
+   "type": "choice",
+   "de": "Die ___ sind mit unserem Service zufrieden.",
+   "options": [
+    "Kunde",
+    "Kundens",
+    "Kunden"
+   ],
+   "answer": 2,
+   "why": "The plural of der Kunde is die Kunden.",
+   "en": "The customers are satisfied with our service."
+  },
+  {
+   "id": "b1-13-15",
+   "type": "cloze",
+   "de": "Ich habe heute einen sehr netten ___ kennengelernt.",
+   "base": "Mensch",
+   "answers": [
+    "Menschen"
+   ],
+   "en": "I met a very nice person today."
+  },
+  {
+   "id": "b1-13-16",
+   "type": "choice",
+   "de": "Ich habe dem ___ den Weg erklärt.",
+   "options": [
+    "Tourist",
+    "Touristen",
+    "Touristin"
+   ],
+   "answer": 1,
+   "why": "Tourist is an n-noun, so the dative after dem is Touristen; Touristin would need der.",
+   "en": "I explained the way to the tourist."
+  },
+  {
+   "id": "b1-13-17",
+   "type": "order",
+   "tiles": [
+    "Kannst",
+    "du",
+    "den Kunden",
+    "bitte",
+    "zurückrufen"
+   ],
+   "answers": [
+    "Kannst du bitte den Kunden zurückrufen?",
+    "Kannst du den Kunden bitte zurückrufen?"
+   ],
+   "en": "Can you call the customer back, please?"
+  },
+  {
+   "id": "b1-13-18",
+   "type": "cloze",
+   "de": "Wir haben jetzt einen ___ im Team.",
+   "base": "Franzose",
+   "answers": [
+    "Franzosen"
+   ],
+   "en": "We now have a Frenchman on the team."
+  },
+  {
+   "id": "b1-13-19",
+   "type": "choice",
+   "de": "Wie ist der Name des neuen ___?",
+   "options": [
+    "Kollegen",
+    "Kollege",
+    "Kolleges"
+   ],
+   "answer": 0,
+   "why": "In the genitive an n-noun ends in -n: des Kollegen.",
+   "en": "What's the new colleague's name?"
+  },
+  {
+   "id": "b1-13-20",
+   "type": "cloze",
+   "de": "Die E-Mail kommt vom ___ der Chefin.",
+   "base": "Assistent",
+   "answers": [
+    "Assistenten"
+   ],
+   "en": "The email is from the boss's assistant."
+  },
+  {
+   "id": "b1-13-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "dem Praktikanten",
+    "alles",
+    "erklärt"
+   ],
+   "answers": [
+    "Ich habe dem Praktikanten alles erklärt.",
+    "Dem Praktikanten habe ich alles erklärt.",
+    "Alles habe ich dem Praktikanten erklärt."
+   ],
+   "en": "I've explained everything to the intern."
+  },
+  {
+   "id": "b1-13-22",
+   "type": "choice",
+   "de": "Ein ___ hat für Sie angerufen.",
+   "options": [
+    "Herrn",
+    "Herren",
+    "Herr"
+   ],
+   "answer": 2,
+   "why": "The man is the subject, so you use the nominative ein Herr without -n.",
+   "en": "A gentleman called for you."
+  },
+  {
+   "id": "b1-13-23",
+   "type": "cloze",
+   "de": "Ich arbeite gern mit diesem ___ zusammen.",
+   "base": "Kollege",
+   "answers": [
+    "Kollegen"
+   ],
+   "en": "I like working with this colleague."
+  },
+  {
+   "id": "b1-13-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "den Namen",
+    "des Kunden",
+    "vergessen"
+   ],
+   "answers": [
+    "Ich habe den Namen des Kunden vergessen.",
+    "Den Namen des Kunden habe ich vergessen."
+   ],
+   "en": "I've forgotten the customer's name."
+  }
+ ],
+ "listening": {
+  "title": "Ein Kunde wartet",
+  "intro": "Sabine explains to Felix, the new intern, what to do about a customer who called.",
+  "lines": [
+   {
+    "speaker": "Sabine",
+    "de": "Felix, ein Kunde hat angerufen. Er wartet seit Tagen auf seine Bestellung.",
+    "en": "Felix, a customer called. He's been waiting for his order for days."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Welcher Kunde denn?",
+    "en": "Which customer?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Herr Yilmaz. Kannst du den Kunden bitte zurückrufen?",
+    "en": "Mr Yilmaz. Can you call the customer back, please?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Klar. Aber was soll ich Herrn Yilmaz sagen?",
+    "en": "Sure. But what should I tell Mr Yilmaz?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Frag zuerst unseren Kollegen im Lager. Der weiß, wo das Paket ist.",
+    "en": "First ask our colleague in the warehouse. He knows where the parcel is."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Den Kollegen mit dem roten Fahrrad? Wie heißt er noch mal?",
+    "en": "The colleague with the red bike? What's his name again?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Das ist Martin. Er hilft jedem Praktikanten gern.",
+    "en": "That's Martin. He's happy to help any intern."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Gut. Und wenn das Paket schon weg ist?",
+    "en": "Good. And if the parcel has already gone?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Dann schreib dem Kunden eine kurze E-Mail mit der Nummer vom Paket.",
+    "en": "Then write the customer a short email with the parcel number."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Okay. Soll ich ihm auch einen Gutschein anbieten?",
+    "en": "OK. Should I offer him a voucher too?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Nein, das entscheidet der Chef. Frag lieber Herrn Krüger.",
+    "en": "No, the boss decides that. Better ask Mr Krüger."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Herr Krüger ist heute aber bei einem Kunden in Bremen.",
+    "en": "But Mr Krüger is with a customer in Bremen today."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Stimmt. Dann fragen wir ihn morgen. Jetzt ruf erst mal Herrn Yilmaz an.",
+    "en": "That's right. Then we'll ask him tomorrow. Now call Mr Yilmaz first."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Mache ich sofort.",
+    "en": "I'll do it right away."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the customer's problem?",
+    "options": [
+     "He got the wrong product.",
+     "He has been waiting for his order for days.",
+     "His bill is too high."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who knows where the parcel is?",
+    "options": [
+     "Martin in the warehouse.",
+     "Mr Krüger.",
+     "Sabine."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should Felix do if the parcel has already been sent?",
+    "options": [
+     "Send a new parcel.",
+     "Call the boss.",
+     "Email the customer the parcel number."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why can't they ask Mr Krüger today?",
+    "options": [
+     "He's visiting a customer in Bremen.",
+     "He's ill.",
+     "He's on holiday."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Kannst du bitte den Kunden von heute Morgen zurückrufen?",
+  "Wir haben seit Montag einen neuen Kollegen aus Frankreich.",
+  "Der Brief ist für Herrn Weber aus dem dritten Stock."
+ ],
+ "speaking": [
+  {
+   "de": "Kannst du den Kunden bitte zurückrufen?",
+   "en": "Can you call the customer back, please?"
+  },
+  {
+   "de": "Frag zuerst unseren Kollegen im Lager.",
+   "en": "First ask our colleague in the warehouse."
+  },
+  {
+   "de": "Er hilft jedem Praktikanten gern.",
+   "en": "He's happy to help any intern."
+  },
+  {
+   "de": "Schreib dem Kunden eine kurze E-Mail.",
+   "en": "Write the customer a short email."
+  },
+  {
+   "de": "Herr Krüger ist heute bei einem Kunden in Bremen.",
+   "en": "Mr Krüger is with a customer in Bremen today."
+  }
+ ],
+ "writing": {
+  "task": "A new colleague, Mr Lang, starts tomorrow, but you won't be there. Write a message of 80–100 words to your team: introduce him, ask someone to show him around, and pass on something urgent about a customer.",
+  "model": "Liebes Team,\n\nmorgen fängt unser neuer Kollege an, Herr Lang. Er kommt aus Köln und war vorher Praktikant bei einer Bank. Leider bin ich morgen nicht im Büro. Kann jemand bitte den neuen Kollegen um neun Uhr am Empfang abholen und ihm alles zeigen? Lisa, kannst du Herrn Lang bitte auch unser Programm für die Kundendaten erklären? Noch etwas: Ein Kunde aus Hamburg wartet auf ein Angebot. Bitte schickt dem Kunden das Angebot bis Mittwoch, sonst ist er bestimmt nicht zufrieden. Am Donnerstag bin ich wieder da.\n\nViele Grüße\nClaire"
+ }
+}

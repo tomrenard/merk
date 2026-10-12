@@ -1,0 +1,483 @@
+{
+ "id": "b1-10",
+ "cefr": "B1",
+ "title": "Either/or, both/and, neither/nor, the more",
+ "situation": "Weighing options",
+ "canDo": "You can weigh options with entweder … oder, sowohl … als auch, weder … noch and je … desto.",
+ "explanation": "When you weigh options, you need pairs of words that link two things:\n\n| pair | meaning | example |\n|---|---|---|\n| **entweder … oder** | either … or | Wir fahren *entweder* ans Meer *oder* in die Berge. |\n| **sowohl … als auch** | both … and | Die Wohnung ist *sowohl* hell *als auch* ruhig. |\n| **weder … noch** | neither … nor | Ich habe *weder* Zeit *noch* Geld. |\n| **je … desto** | the more … the more | *Je* früher du buchst, *desto* billiger ist es. |\n\n- The first three usually link two words or phrases, and the verb stays in its normal place.\n- With two whole sentences, **entweder** can stand before the first one and **oder** starts the second: *Entweder du kommst mit, oder du bleibst hier.* (*Entweder kommst du mit, …* is also correct.)\n- **sowohl … als auch** with two subjects takes a plural verb: *Sowohl Paul als auch Léa **sprechen** Französisch.*\n- **weder … noch** already means \"not\", so never add *nicht* or *kein*: *Ich habe weder ein Auto noch ein Fahrrad.*\n\n**je … desto** always takes comparatives (*früher, mehr, besser*) and has a fixed word order:\n- **je** + comparative … verb at the **end**\n- **desto** + comparative + **verb** + subject\n\n*Je mehr ich übe, desto besser **spreche ich**.* You'll also hear **umso** instead of desto. Short form: *Je früher, desto besser!*\n\nMost common mistake: *desto besser ich spreche*. After desto + comparative the verb comes right away: ***desto besser spreche ich***.",
+ "french": "They match French pairs closely: soit … soit = entweder … oder, à la fois … et = sowohl … als auch, ni … ni = weder … noch (but with no ne), plus … plus = je … desto.",
+ "examples": [
+  {
+   "de": "Wir können entweder mit dem Zug oder mit dem Bus fahren.",
+   "en": "We can go either by train or by bus."
+  },
+  {
+   "de": "Die Wohnung ist sowohl hell als auch ruhig.",
+   "en": "The flat is both bright and quiet."
+  },
+  {
+   "de": "Ich habe weder Zeit noch Lust.",
+   "en": "I have neither the time nor the desire."
+  },
+  {
+   "de": "Je früher du buchst, desto billiger ist der Flug.",
+   "en": "The earlier you book, the cheaper the flight."
+  },
+  {
+   "de": "Entweder du kommst mit, oder du bleibst hier.",
+   "en": "Either you come along or you stay here."
+  },
+  {
+   "de": "Sowohl Paul als auch Léa sprechen Französisch.",
+   "en": "Both Paul and Léa speak French."
+  },
+  {
+   "de": "Je mehr ich übe, desto besser wird mein Deutsch.",
+   "en": "The more I practise, the better my German gets."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-10-01",
+   "type": "cloze",
+   "de": "Ich trinke weder Kaffee ___ Tee.",
+   "base": "neither … nor",
+   "answers": [
+    "noch"
+   ],
+   "en": "I drink neither coffee nor tea."
+  },
+  {
+   "id": "b1-10-02",
+   "type": "cloze",
+   "de": "Sie spricht sowohl Englisch ___ Französisch.",
+   "base": "both … and",
+   "answers": [
+    "als auch"
+   ],
+   "en": "She speaks both English and French."
+  },
+  {
+   "id": "b1-10-03",
+   "type": "choice",
+   "de": "Wir können ___ heute oder morgen kommen.",
+   "options": [
+    "weder",
+    "entweder",
+    "sowohl"
+   ],
+   "answer": 1,
+   "why": "oder goes with entweder: either … or.",
+   "en": "We can come either today or tomorrow."
+  },
+  {
+   "id": "b1-10-04",
+   "type": "cloze",
+   "de": "Je ___ das Wetter ist, desto lieber gehe ich raus.",
+   "base": "schön",
+   "answers": [
+    "schöner"
+   ],
+   "en": "The nicer the weather, the more I like going out."
+  },
+  {
+   "id": "b1-10-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "weder",
+    "Zeit",
+    "noch",
+    "Geld"
+   ],
+   "answers": [
+    "Ich habe weder Zeit noch Geld."
+   ],
+   "en": "I have neither time nor money."
+  },
+  {
+   "id": "b1-10-06",
+   "type": "choice",
+   "de": "Ich habe weder Hunger ___ Durst.",
+   "options": [
+    "oder",
+    "noch",
+    "nicht"
+   ],
+   "answer": 1,
+   "why": "weder always goes with noch: neither … nor.",
+   "en": "I'm neither hungry nor thirsty."
+  },
+  {
+   "id": "b1-10-07",
+   "type": "cloze",
+   "de": "Je länger ich in Deutschland wohne, desto ___ verstehe ich die Leute.",
+   "base": "gut",
+   "answers": [
+    "besser"
+   ],
+   "en": "The longer I live in Germany, the better I understand people."
+  },
+  {
+   "id": "b1-10-08",
+   "type": "choice",
+   "de": "Das Zimmer ist ___ hell als auch ruhig.",
+   "options": [
+    "sowohl",
+    "entweder",
+    "weder"
+   ],
+   "answer": 0,
+   "why": "als auch goes with sowohl: both … and.",
+   "en": "The room is both bright and quiet."
+  },
+  {
+   "id": "b1-10-09",
+   "type": "cloze",
+   "de": "Je mehr du übst, ___ schneller lernst du.",
+   "base": "the … the",
+   "answers": [
+    "desto",
+    "umso"
+   ],
+   "en": "The more you practise, the faster you learn."
+  },
+  {
+   "id": "b1-10-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "können",
+    "entweder",
+    "ins Kino",
+    "oder",
+    "ins Theater",
+    "gehen"
+   ],
+   "answers": [
+    "Wir können entweder ins Kino oder ins Theater gehen."
+   ],
+   "en": "We can go either to the cinema or to the theatre."
+  },
+  {
+   "id": "b1-10-11",
+   "type": "choice",
+   "de": "Je früher wir losfahren, desto ___.",
+   "options": [
+    "wir haben weniger Stau",
+    "weniger Stau haben wir",
+    "weniger Stau wir haben"
+   ],
+   "answer": 1,
+   "why": "After desto + comparative, the verb comes next, then the subject.",
+   "en": "The earlier we leave, the less traffic we'll have."
+  },
+  {
+   "id": "b1-10-12",
+   "type": "cloze",
+   "de": "Je ___ die Wohnung ist, desto teurer ist sie.",
+   "base": "groß",
+   "answers": [
+    "größer"
+   ],
+   "en": "The bigger the flat, the more expensive it is."
+  },
+  {
+   "id": "b1-10-13",
+   "type": "choice",
+   "de": "Er kann ___ heute noch morgen kommen.",
+   "options": [
+    "entweder",
+    "nicht",
+    "weder"
+   ],
+   "answer": 2,
+   "why": "noch goes with weder: neither … nor.",
+   "en": "He can come neither today nor tomorrow."
+  },
+  {
+   "id": "b1-10-14",
+   "type": "cloze",
+   "de": "Je ___ der Flug ist, desto mehr Leute buchen ihn.",
+   "base": "billig",
+   "answers": [
+    "billiger"
+   ],
+   "en": "The cheaper the flight, the more people book it."
+  },
+  {
+   "id": "b1-10-15",
+   "type": "order",
+   "tiles": [
+    "Je",
+    "älter",
+    "ich",
+    "werde,",
+    "desto",
+    "ruhiger",
+    "bin ich"
+   ],
+   "answers": [
+    "Je älter ich werde, desto ruhiger bin ich."
+   ],
+   "en": "The older I get, the calmer I am."
+  },
+  {
+   "id": "b1-10-16",
+   "type": "choice",
+   "de": "Meine Wohnung hat weder einen Balkon noch ___ Garten.",
+   "options": [
+    "keinen",
+    "einen",
+    "kein"
+   ],
+   "answer": 1,
+   "why": "weder … noch already means no, so don't add kein: noch einen Garten.",
+   "en": "My flat has neither a balcony nor a garden."
+  },
+  {
+   "id": "b1-10-17",
+   "type": "cloze",
+   "de": "Entweder du rufst sie an, ___ ich schreibe ihr.",
+   "base": "either … or",
+   "answers": [
+    "oder"
+   ],
+   "en": "Either you call her or I'll write to her."
+  },
+  {
+   "id": "b1-10-18",
+   "type": "choice",
+   "de": "Entweder wir nehmen die kleine Wohnung, ___ wir suchen weiter.",
+   "options": [
+    "noch",
+    "oder",
+    "als auch"
+   ],
+   "answer": 1,
+   "why": "entweder goes with oder: either … or.",
+   "en": "Either we take the small flat or we keep looking."
+  },
+  {
+   "id": "b1-10-19",
+   "type": "cloze",
+   "de": "Je ___ ich darüber nachdenke, desto besser finde ich die Idee.",
+   "base": "viel",
+   "answers": [
+    "mehr"
+   ],
+   "en": "The more I think about it, the better I like the idea."
+  },
+  {
+   "id": "b1-10-20",
+   "type": "order",
+   "tiles": [
+    "Sowohl",
+    "meine Frau",
+    "als auch",
+    "ich",
+    "arbeiten",
+    "in Teilzeit"
+   ],
+   "answers": [
+    "Sowohl meine Frau als auch ich arbeiten in Teilzeit.",
+    "In Teilzeit arbeiten sowohl meine Frau als auch ich."
+   ],
+   "en": "Both my wife and I work part-time."
+  },
+  {
+   "id": "b1-10-21",
+   "type": "choice",
+   "de": "Sowohl mein Bruder als auch meine Schwester ___ in Berlin.",
+   "options": [
+    "wohnt",
+    "wohnen",
+    "wohnst"
+   ],
+   "answer": 1,
+   "why": "With sowohl … als auch linking two subjects, the verb is plural.",
+   "en": "Both my brother and my sister live in Berlin."
+  },
+  {
+   "id": "b1-10-22",
+   "type": "cloze",
+   "de": "Je ___ es wird, desto müder werde ich.",
+   "base": "spät",
+   "answers": [
+    "später"
+   ],
+   "en": "The later it gets, the more tired I get."
+  },
+  {
+   "id": "b1-10-23",
+   "type": "order",
+   "tiles": [
+    "Je",
+    "mehr",
+    "ich",
+    "verdiene,",
+    "desto",
+    "mehr",
+    "gebe ich aus"
+   ],
+   "answers": [
+    "Je mehr ich verdiene, desto mehr gebe ich aus."
+   ],
+   "en": "The more I earn, the more I spend."
+  },
+  {
+   "id": "b1-10-24",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "bleiben",
+    "entweder",
+    "zu Hause",
+    "oder",
+    "fahren",
+    "ans Meer"
+   ],
+   "answers": [
+    "Wir bleiben entweder zu Hause oder fahren ans Meer.",
+    "Entweder bleiben wir zu Hause oder fahren ans Meer."
+   ],
+   "en": "We'll either stay at home or go to the seaside."
+  }
+ ],
+ "listening": {
+  "title": "Meer oder Berge?",
+  "intro": "Julia and David are trying to decide where to go on holiday.",
+  "lines": [
+   {
+    "speaker": "Julia",
+    "de": "Wir müssen endlich den Urlaub buchen. Je länger wir warten, desto teurer wird es.",
+    "en": "We really need to book our holiday. The longer we wait, the more expensive it gets."
+   },
+   {
+    "speaker": "David",
+    "de": "Ich weiß. Also: Entweder wir fahren ans Meer, oder wir gehen in die Berge.",
+    "en": "I know. So: either we go to the seaside or we go to the mountains."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Am Meer war es letztes Jahr sowohl zu heiß als auch zu voll.",
+    "en": "At the seaside last year it was both too hot and too crowded."
+   },
+   {
+    "speaker": "David",
+    "de": "Stimmt. Und in den Bergen kann man sowohl wandern als auch Rad fahren.",
+    "en": "True. And in the mountains you can both hike and cycle."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Aber ich habe weder Wanderschuhe noch ein gutes Fahrrad.",
+    "en": "But I have neither hiking boots nor a good bike."
+   },
+   {
+    "speaker": "David",
+    "de": "Die kann man leihen. Und das Hotel hier hat sowohl einen Pool als auch eine Sauna.",
+    "en": "You can rent those. And this hotel has both a pool and a sauna."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Klingt gut. Wie kommen wir hin?",
+    "en": "Sounds good. How do we get there?"
+   },
+   {
+    "speaker": "David",
+    "de": "Entweder mit dem Auto oder mit dem Zug. Mit dem Zug dauert es sechs Stunden, und wir müssen dreimal umsteigen.",
+    "en": "Either by car or by train. By train it takes six hours, and we have to change three times."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Dann lieber mit dem Auto. Je weniger wir umsteigen müssen, desto besser.",
+    "en": "Then the car, I'd say. The fewer changes we have to make, the better."
+   },
+   {
+    "speaker": "David",
+    "de": "Und wie lange bleiben wir? Eine Woche oder zwei?",
+    "en": "And how long are we staying? One week or two?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Je länger, desto besser! Aber wir haben weder viel Geld noch viele Urlaubstage.",
+    "en": "The longer the better! But we have neither much money nor many days off."
+   },
+   {
+    "speaker": "David",
+    "de": "Na gut, dann eine Woche. Ich buche heute Abend.",
+    "en": "All right, one week then. I'll book this evening."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why do they need to book soon?",
+    "options": [
+     "The hotel is almost full",
+     "Prices go up the longer they wait",
+     "David's holiday starts next week"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Julia want to go to the seaside?",
+    "options": [
+     "It was too hot and too crowded last year",
+     "She can't swim",
+     "It's too far"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How will they travel?",
+    "options": [
+     "By train",
+     "By plane",
+     "By car"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How long will they stay?",
+    "options": [
+     "One week",
+     "Two weeks",
+     "A weekend"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Wir fahren entweder ans Meer oder in die Berge.",
+  "Ich habe leider weder Zeit noch Geld für einen Urlaub.",
+  "Je früher wir buchen, desto billiger wird das Hotel."
+ ],
+ "speaking": [
+  {
+   "de": "Je länger wir warten, desto teurer wird es.",
+   "en": "The longer we wait, the more expensive it gets."
+  },
+  {
+   "de": "Entweder wir fahren ans Meer, oder wir gehen in die Berge.",
+   "en": "Either we go to the seaside or we go to the mountains."
+  },
+  {
+   "de": "Ich habe weder Wanderschuhe noch ein gutes Fahrrad.",
+   "en": "I have neither hiking boots nor a good bike."
+  },
+  {
+   "de": "Das Hotel hat sowohl einen Pool als auch eine Sauna.",
+   "en": "The hotel has both a pool and a sauna."
+  },
+  {
+   "de": "Je länger, desto besser!",
+   "en": "The longer the better!"
+  }
+ ],
+ "writing": {
+  "task": "A friend can't decide whether to take a new job in Munich or stay in her job in Leipzig. Write an 80–100-word reply weighing the options.",
+  "model": "Liebe Marie,\n\ndas ist wirklich keine leichte Entscheidung! Die neue Stelle in München ist sowohl interessanter als auch besser bezahlt. Aber je größer die Stadt ist, desto teurer sind die Wohnungen. In München zahlst du sicher doppelt so viel Miete. In Leipzig hast du weder Stress mit der Wohnungssuche noch Probleme im Team, und deine Freunde sind alle hier. Ich glaube, du hast zwei Möglichkeiten: Entweder du nimmst die Stelle und probierst es ein Jahr, oder du sprichst mit deinem Chef über mehr Geld. Je länger du wartest, desto schwieriger wird es. Ruf mich an, dann reden wir!\n\nLiebe Grüße\nInès"
+ }
+}

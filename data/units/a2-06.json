@@ -1,0 +1,466 @@
+{
+ "id": "a2-06",
+ "cefr": "A2",
+ "title": "Reflexive verbs",
+ "situation": "Daily routine and feelings",
+ "canDo": "You can talk about your daily routine and your feelings with reflexive verbs like sich waschen, sich freuen and sich treffen.",
+ "explanation": "Many verbs about your routine and your feelings need a **reflexive pronoun**: the action comes back to the subject. *Ich wasche **mich**. Wir treffen **uns** um acht. Freust du **dich**?*\n\n| subject | sich waschen |\n|---|---|\n| ich | wasche **mich** |\n| du | wäschst **dich** |\n| er/sie/es | wäscht **sich** |\n| wir | waschen **uns** |\n| ihr | wascht **euch** |\n| sie/Sie | waschen **sich** |\n\nOnly **sich** is new: it goes with er, sie, es, sie (they) and Sie.\n\nCommon reflexive verbs: **sich waschen, sich duschen, sich anziehen, sich beeilen, sich ausruhen, sich setzen, sich fühlen, sich freuen, sich ärgern, sich treffen**.\n\nWhere does the pronoun go?\n- right after the conjugated verb: *Ich **ziehe mich** an.*\n- if the subject comes after the verb, right after the subject: *Heute ziehe **ich mich** warm an. Freust **du dich**?*\n- in the imperative: *Beeil **dich**! Setzen Sie **sich**!*\n\nIn the Perfekt these verbs take **haben**: *Ich habe mich schon geduscht.*\n\nWith a body part, the pronoun is dative (**mir, dir**): *Ich putze **mir** die Zähne.*\n\nCommon mistake: forgetting the pronoun: *Ich freue.* → **Ich freue mich.**",
+ "french": "They work like French pronominal verbs (je me lave → ich wasche mich, je me dépêche → ich beeile mich), but in the Perfekt German keeps haben: je me suis lavé = ich habe mich gewaschen.",
+ "examples": [
+  {
+   "de": "Ich dusche mich morgens ganz schnell.",
+   "en": "I have a very quick shower in the morning."
+  },
+  {
+   "de": "Wir treffen uns um acht vor dem Kino.",
+   "en": "We're meeting at eight in front of the cinema."
+  },
+  {
+   "de": "Beeil dich, der Bus kommt!",
+   "en": "Hurry up, the bus is coming!"
+  },
+  {
+   "de": "Wie fühlst du dich heute?",
+   "en": "How are you feeling today?"
+  },
+  {
+   "de": "Die Kinder ziehen sich an.",
+   "en": "The children are getting dressed."
+  },
+  {
+   "de": "Ich freue mich sehr!",
+   "en": "I'm really pleased!"
+  },
+  {
+   "de": "Ärger dich nicht!",
+   "en": "Don't get annoyed!"
+  },
+  {
+   "de": "Ich habe mich schon gewaschen.",
+   "en": "I've already washed."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-06-01",
+   "type": "cloze",
+   "de": "Ich wasche ___ jeden Morgen.",
+   "base": "sich",
+   "answers": [
+    "mich"
+   ],
+   "en": "I wash every morning."
+  },
+  {
+   "id": "a2-06-02",
+   "type": "cloze",
+   "de": "Wie fühlst du ___ heute?",
+   "base": "sich",
+   "answers": [
+    "dich"
+   ],
+   "en": "How are you feeling today?"
+  },
+  {
+   "id": "a2-06-03",
+   "type": "choice",
+   "de": "Wir treffen ___ um acht.",
+   "options": [
+    "uns",
+    "sich",
+    "euch"
+   ],
+   "answer": 0,
+   "why": "With wir the reflexive pronoun is uns.",
+   "en": "We're meeting at eight."
+  },
+  {
+   "id": "a2-06-04",
+   "type": "cloze",
+   "de": "Die Kinder ziehen ___ an.",
+   "base": "sich",
+   "answers": [
+    "sich"
+   ],
+   "en": "The children are getting dressed."
+  },
+  {
+   "id": "a2-06-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "mich",
+    "dusche",
+    "morgens"
+   ],
+   "answers": [
+    "Ich dusche mich morgens.",
+    "Morgens dusche ich mich."
+   ],
+   "en": "I shower in the morning."
+  },
+  {
+   "id": "a2-06-06",
+   "type": "choice",
+   "de": "Beeil ___, der Bus kommt!",
+   "options": [
+    "sich",
+    "dich",
+    "dir"
+   ],
+   "answer": 1,
+   "why": "The du imperative takes dich.",
+   "en": "Hurry up, the bus is coming!"
+  },
+  {
+   "id": "a2-06-07",
+   "type": "cloze",
+   "de": "Freut ihr ___?",
+   "base": "sich",
+   "answers": [
+    "euch"
+   ],
+   "en": "Are you (all) pleased?"
+  },
+  {
+   "id": "a2-06-08",
+   "type": "choice",
+   "de": "Er ___ sehr.",
+   "options": [
+    "freut",
+    "freut ihn",
+    "freut sich"
+   ],
+   "answer": 2,
+   "why": "freuen needs the reflexive pronoun, and with er it's sich.",
+   "en": "He's very pleased."
+  },
+  {
+   "id": "a2-06-09",
+   "type": "cloze",
+   "de": "Setzen Sie ___ bitte!",
+   "base": "sich",
+   "answers": [
+    "sich"
+   ],
+   "en": "Please sit down!"
+  },
+  {
+   "id": "a2-06-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "uns",
+    "am Bahnhof",
+    "treffen"
+   ],
+   "answers": [
+    "Wir treffen uns am Bahnhof.",
+    "Am Bahnhof treffen wir uns."
+   ],
+   "en": "We're meeting at the station."
+  },
+  {
+   "id": "a2-06-11",
+   "type": "choice",
+   "de": "Heute ziehe ich ___ warm an.",
+   "options": [
+    "mich",
+    "sich",
+    "mir"
+   ],
+   "answer": 0,
+   "why": "With ich the reflexive pronoun is mich.",
+   "en": "Today I'm dressing warmly."
+  },
+  {
+   "id": "a2-06-12",
+   "type": "cloze",
+   "de": "Ärger ___ nicht!",
+   "base": "sich",
+   "answers": [
+    "dich"
+   ],
+   "en": "Don't get annoyed!"
+  },
+  {
+   "id": "a2-06-13",
+   "type": "choice",
+   "de": "Ich ___ mich schon geduscht.",
+   "options": [
+    "bin",
+    "habe",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "Reflexive verbs take haben in the Perfekt.",
+   "en": "I've already had a shower."
+  },
+  {
+   "id": "a2-06-14",
+   "type": "cloze",
+   "de": "Wann trefft ihr ___?",
+   "base": "sich",
+   "answers": [
+    "euch"
+   ],
+   "en": "When are you (all) meeting?"
+  },
+  {
+   "id": "a2-06-15",
+   "type": "order",
+   "tiles": [
+    "Heute",
+    "fühle",
+    "ich",
+    "nicht gut",
+    "mich"
+   ],
+   "answers": [
+    "Heute fühle ich mich nicht gut.",
+    "Ich fühle mich heute nicht gut."
+   ],
+   "en": "I don't feel well today."
+  },
+  {
+   "id": "a2-06-16",
+   "type": "choice",
+   "de": "Morgens wasche ich ___ das Gesicht.",
+   "options": [
+    "mich",
+    "mir",
+    "mein"
+   ],
+   "answer": 1,
+   "why": "With a body part as the object, the reflexive pronoun is dative: mir.",
+   "en": "In the morning I wash my face."
+  },
+  {
+   "id": "a2-06-17",
+   "type": "cloze",
+   "de": "___ Sie sich bitte, Herr Klein!",
+   "base": "sich beeilen",
+   "answers": [
+    "Beeilen"
+   ],
+   "en": "Please hurry, Mr Klein!"
+  },
+  {
+   "id": "a2-06-18",
+   "type": "choice",
+   "de": "Freust du ___?",
+   "options": [
+    "sich",
+    "dir",
+    "dich"
+   ],
+   "answer": 2,
+   "why": "With du the reflexive pronoun is dich.",
+   "en": "Are you pleased?"
+  },
+  {
+   "id": "a2-06-19",
+   "type": "cloze",
+   "de": "Ich ___ mich heute sehr müde.",
+   "base": "sich fühlen",
+   "answers": [
+    "fühle"
+   ],
+   "en": "I feel very tired today."
+  },
+  {
+   "id": "a2-06-20",
+   "type": "order",
+   "tiles": [
+    "Die Kinder",
+    "sich",
+    "schnell",
+    "an",
+    "ziehen"
+   ],
+   "answers": [
+    "Die Kinder ziehen sich schnell an."
+   ],
+   "en": "The children get dressed quickly."
+  },
+  {
+   "id": "a2-06-21",
+   "type": "choice",
+   "de": "Wir haben ___ gestern im Park getroffen.",
+   "options": [
+    "uns",
+    "sich",
+    "unser"
+   ],
+   "answer": 0,
+   "why": "With wir the reflexive pronoun is uns.",
+   "en": "We met in the park yesterday."
+  },
+  {
+   "id": "a2-06-22",
+   "type": "cloze",
+   "de": "Hast du ___ schon angezogen?",
+   "base": "sich",
+   "answers": [
+    "dich"
+   ],
+   "en": "Have you got dressed yet?"
+  },
+  {
+   "id": "a2-06-23",
+   "type": "order",
+   "tiles": [
+    "Hast",
+    "die Zähne",
+    "du",
+    "dir",
+    "geputzt"
+   ],
+   "answers": [
+    "Hast du dir die Zähne geputzt?"
+   ],
+   "en": "Have you brushed your teeth?"
+  },
+  {
+   "id": "a2-06-24",
+   "type": "order",
+   "tiles": [
+    "Am Abend",
+    "mich",
+    "ich",
+    "ruhe",
+    "aus"
+   ],
+   "answers": [
+    "Am Abend ruhe ich mich aus.",
+    "Ich ruhe mich am Abend aus."
+   ],
+   "en": "In the evening I relax."
+  }
+ ],
+ "listening": {
+  "title": "Ein stressiger Morgen",
+  "intro": "Julia and her flatmate Tim are getting ready in the morning.",
+  "lines": [
+   {
+    "speaker": "Julia",
+    "de": "Tim, beeil dich! Wir müssen um acht los.",
+    "en": "Tim, hurry up! We have to leave at eight."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ja, ja. Ich dusche mich nur noch schnell.",
+    "en": "Yes, yes. I'm just having a quick shower."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Du hast dich doch gestern Abend schon geduscht!",
+    "en": "But you already showered last night!"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ja, aber heute treffe ich mich mit dem Chef.",
+    "en": "Yes, but today I'm meeting the boss."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ach so! Und wie fühlst du dich?",
+    "en": "I see! And how are you feeling?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ich bin ein bisschen nervös. Und du? Du ziehst dich heute aber schick an!",
+    "en": "I'm a bit nervous. And you? You're dressing up smartly today!"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ich treffe mich nach der Arbeit mit Sara. Wir haben uns seit Monaten nicht gesehen.",
+    "en": "I'm meeting Sara after work. We haven't seen each other for months."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Schön! Da freust du dich bestimmt.",
+    "en": "Nice! You must be looking forward to it."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ja, sehr. So, jetzt komm, es ist schon Viertel vor acht!",
+    "en": "Yes, very much. Right, come on now, it's already quarter to eight!"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ich bin gleich fertig. Ich muss mir nur noch die Zähne putzen.",
+    "en": "I'm almost ready. I just have to brush my teeth."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Tim want to shower this morning?",
+    "options": [
+     "He went jogging.",
+     "He's meeting his boss.",
+     "He got up late."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does Tim feel?",
+    "options": [
+     "A bit nervous.",
+     "Very relaxed.",
+     "Ill."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who is Julia meeting after work?",
+    "options": [
+     "Her boss.",
+     "Her mother.",
+     "Sara."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Tim still have to do at the end?",
+    "options": [
+     "Get dressed.",
+     "Brush his teeth.",
+     "Make coffee."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich treffe mich heute mit dem Chef.",
+  "Wir haben uns lange nicht gesehen.",
+  "Beeil dich, es ist schon spät!"
+ ],
+ "speaking": [
+  {
+   "de": "Beeil dich!",
+   "en": "Hurry up!"
+  },
+  {
+   "de": "Ich dusche mich nur noch schnell.",
+   "en": "I'm just having a quick shower."
+  },
+  {
+   "de": "Wie fühlst du dich?",
+   "en": "How are you feeling?"
+  },
+  {
+   "de": "Wir haben uns seit Monaten nicht gesehen.",
+   "en": "We haven't seen each other for months."
+  },
+  {
+   "de": "Ich muss mir nur noch die Zähne putzen.",
+   "en": "I just have to brush my teeth."
+  }
+ ],
+ "writing": {
+  "task": "Write 5–6 sentences about your morning routine and how you feel today.",
+  "model": "Ich stehe um halb sieben auf. Zuerst dusche ich mich, dann ziehe ich mich an. Ich putze mir die Zähne und frühstücke schnell. Heute fühle ich mich ein bisschen müde. Aber am Abend treffe ich mich mit Freunden. Ich freue mich schon sehr!"
+ }
+}

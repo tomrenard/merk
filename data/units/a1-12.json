@@ -1,0 +1,458 @@
+{
+ "id": "a1-12",
+ "cefr": "A1",
+ "title": "möchten and wollen",
+ "situation": "Ordering and saying what you want",
+ "canDo": "You can order politely with möchten and say what you and others want with wollen.",
+ "explanation": "In a café or restaurant you order with **möchten** (would like): *Ich möchte einen Kaffee, bitte.* With friends and family you often say what you want with **wollen**: *Was willst du heute machen?*\n\n| | möchten | wollen |\n|---|---|---|\n| ich | **möchte** | **will** |\n| du | möchtest | willst |\n| er/sie/es | **möchte** | **will** |\n| wir | möchten | wollen |\n| ihr | möchtet | wollt |\n| sie/Sie | möchten | wollen |\n\nLike können and müssen, **ich** and **er/sie/es** have no ending: *er möchte, sie will.*\n\nYou can use them in two ways:\n- with a noun (accusative): *Ich möchte **einen** Tee. Die Kinder wollen Pizza.*\n- with a second verb at the **end**: *Wir möchten **bezahlen**. Er will nicht **warten**.*\n\n**möchten** is polite: use it when you order or ask for something. **wollen** is more direct. *Ich will einen Kaffee!* to a waiter sounds rude.\n\nThe most common mistake: *ich will* does **not** mean \"I will\". It means \"I want\": *Ich will nach Hause gehen.* = I want to go home.\n\nUseful: ***Wollen wir** Pizza essen?* = Shall we have pizza?",
+ "french": "möchten is like « je voudrais » and wollen like « je veux », and just as in French, « je veux » sounds too direct when you order.",
+ "examples": [
+  {
+   "de": "Ich möchte einen Kaffee, bitte.",
+   "en": "I'd like a coffee, please."
+  },
+  {
+   "de": "Möchten Sie noch etwas? – Nein, danke.",
+   "en": "Would you like anything else? – No, thank you."
+  },
+  {
+   "de": "Wir möchten bitte bezahlen.",
+   "en": "We'd like to pay, please."
+  },
+  {
+   "de": "Was willst du heute machen? – Ich will schwimmen gehen.",
+   "en": "What do you want to do today? – I want to go swimming."
+  },
+  {
+   "de": "Möchtest du ein Stück Kuchen?",
+   "en": "Would you like a piece of cake?"
+  },
+  {
+   "de": "Die Kinder wollen Pizza essen.",
+   "en": "The children want to eat pizza."
+  },
+  {
+   "de": "Er will nicht warten.",
+   "en": "He doesn't want to wait."
+  },
+  {
+   "de": "Wollen wir heute Abend kochen?",
+   "en": "Shall we cook this evening?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-12-01",
+   "type": "cloze",
+   "de": "Ich ___ einen Kaffee, bitte.",
+   "base": "möchten",
+   "answers": [
+    "möchte"
+   ],
+   "en": "I'd like a coffee, please."
+  },
+  {
+   "id": "a1-12-02",
+   "type": "cloze",
+   "de": "Was ___ du trinken?",
+   "base": "möchten",
+   "answers": [
+    "möchtest"
+   ],
+   "en": "What would you like to drink?"
+  },
+  {
+   "id": "a1-12-03",
+   "type": "choice",
+   "de": "Er ___ ein Bier.",
+   "options": [
+    "möchte",
+    "möchtet",
+    "möchtest"
+   ],
+   "answer": 0,
+   "why": "er/sie/es takes the same form as ich, with no ending: er möchte.",
+   "en": "He'd like a beer."
+  },
+  {
+   "id": "a1-12-04",
+   "type": "order",
+   "tiles": [
+    "möchte",
+    "Ich",
+    "bezahlen"
+   ],
+   "answers": [
+    "Ich möchte bezahlen."
+   ],
+   "en": "I'd like to pay."
+  },
+  {
+   "id": "a1-12-05",
+   "type": "cloze",
+   "de": "Wir ___ bestellen.",
+   "base": "möchten",
+   "answers": [
+    "möchten"
+   ],
+   "en": "We'd like to order."
+  },
+  {
+   "id": "a1-12-06",
+   "type": "choice",
+   "de": "Was ___ du heute machen?",
+   "options": [
+    "willst",
+    "will",
+    "wollst"
+   ],
+   "answer": 0,
+   "why": "wollen changes its vowel in the singular: du willst.",
+   "en": "What do you want to do today?"
+  },
+  {
+   "id": "a1-12-07",
+   "type": "cloze",
+   "de": "Die Kinder ___ Pizza essen.",
+   "base": "wollen",
+   "answers": [
+    "wollen"
+   ],
+   "en": "The children want to eat pizza."
+  },
+  {
+   "id": "a1-12-08",
+   "type": "choice",
+   "de": "___ Sie noch etwas?",
+   "options": [
+    "Möchte",
+    "Möchtest",
+    "Möchten"
+   ],
+   "answer": 2,
+   "why": "Formal Sie takes the same form as wir: Möchten Sie …?",
+   "en": "Would you like anything else?"
+  },
+  {
+   "id": "a1-12-09",
+   "type": "cloze",
+   "de": "Er ___ nicht warten.",
+   "base": "wollen",
+   "answers": [
+    "will"
+   ],
+   "en": "He doesn't want to wait."
+  },
+  {
+   "id": "a1-12-10",
+   "type": "order",
+   "tiles": [
+    "Möchtest",
+    "ein Stück Kuchen",
+    "du"
+   ],
+   "answers": [
+    "Möchtest du ein Stück Kuchen?"
+   ],
+   "en": "Would you like a piece of cake?"
+  },
+  {
+   "id": "a1-12-11",
+   "type": "choice",
+   "de": "Was ___ ihr essen?",
+   "options": [
+    "wollen",
+    "wollt",
+    "will"
+   ],
+   "answer": 1,
+   "why": "ihr takes wollt.",
+   "en": "What do you want to eat?"
+  },
+  {
+   "id": "a1-12-12",
+   "type": "cloze",
+   "de": "Was ___ Sie bestellen?",
+   "base": "möchten",
+   "answers": [
+    "möchten"
+   ],
+   "en": "What would you like to order?"
+  },
+  {
+   "id": "a1-12-13",
+   "type": "choice",
+   "de": "Ich will heute nicht ___.",
+   "options": [
+    "koche",
+    "kochen",
+    "kocht"
+   ],
+   "answer": 1,
+   "why": "The second verb goes to the end in the infinitive.",
+   "en": "I don't want to cook today."
+  },
+  {
+   "id": "a1-12-14",
+   "type": "order",
+   "tiles": [
+    "möchten",
+    "Wir",
+    "zwei Wasser",
+    "bitte"
+   ],
+   "answers": [
+    "Wir möchten zwei Wasser, bitte.",
+    "Wir möchten bitte zwei Wasser."
+   ],
+   "en": "We'd like two waters, please."
+  },
+  {
+   "id": "a1-12-15",
+   "type": "cloze",
+   "de": "Anna ___ in Berlin wohnen.",
+   "base": "wollen",
+   "answers": [
+    "will"
+   ],
+   "en": "Anna wants to live in Berlin."
+  },
+  {
+   "id": "a1-12-16",
+   "type": "choice",
+   "de": "___ du noch einen Kaffee?",
+   "options": [
+    "Möchtest",
+    "Möchte",
+    "Möchten"
+   ],
+   "answer": 0,
+   "why": "du takes the ending -st: möchtest.",
+   "en": "Would you like another coffee?"
+  },
+  {
+   "id": "a1-12-17",
+   "type": "cloze",
+   "de": "Wir ___ heute Abend Pizza essen.",
+   "base": "wollen",
+   "answers": [
+    "wollen"
+   ],
+   "en": "We want to eat pizza this evening."
+  },
+  {
+   "id": "a1-12-18",
+   "type": "order",
+   "tiles": [
+    "will",
+    "Mein Sohn",
+    "Fußball",
+    "spielen"
+   ],
+   "answers": [
+    "Mein Sohn will Fußball spielen."
+   ],
+   "en": "My son wants to play football."
+  },
+  {
+   "id": "a1-12-19",
+   "type": "choice",
+   "de": "Lisa ___ einen Salat.",
+   "options": [
+    "möchtet",
+    "möchte",
+    "möchtest"
+   ],
+   "answer": 1,
+   "why": "sie (she) takes the same form as ich: sie möchte.",
+   "en": "Lisa would like a salad."
+  },
+  {
+   "id": "a1-12-20",
+   "type": "cloze",
+   "de": "___ ihr noch etwas trinken?",
+   "base": "möchten",
+   "answers": [
+    "Möchtet"
+   ],
+   "en": "Would you like something else to drink?"
+  },
+  {
+   "id": "a1-12-21",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "ihr",
+    "wollt",
+    "machen",
+    "heute"
+   ],
+   "answers": [
+    "Was wollt ihr heute machen?"
+   ],
+   "en": "What do you want to do today?"
+  },
+  {
+   "id": "a1-12-22",
+   "type": "choice",
+   "de": "Er ___ ein Auto kaufen.",
+   "options": [
+    "willt",
+    "will",
+    "wollt"
+   ],
+   "answer": 1,
+   "why": "er has no ending, like ich: er will.",
+   "en": "He wants to buy a car."
+  },
+  {
+   "id": "a1-12-23",
+   "type": "cloze",
+   "de": "Mein Mann ___ noch ein Bier.",
+   "base": "möchten",
+   "answers": [
+    "möchte"
+   ],
+   "en": "My husband would like another beer."
+  },
+  {
+   "id": "a1-12-24",
+   "type": "order",
+   "tiles": [
+    "möchte",
+    "Ich",
+    "ohne Zucker",
+    "einen Tee"
+   ],
+   "answers": [
+    "Ich möchte einen Tee ohne Zucker."
+   ],
+   "en": "I'd like a tea without sugar."
+  }
+ ],
+ "listening": {
+  "title": "Im Restaurant",
+  "intro": "Julia is in a restaurant with her young son, and the waiter Stefan takes their order.",
+  "lines": [
+   {
+    "speaker": "Stefan",
+    "de": "Guten Abend! Was möchten Sie trinken?",
+    "en": "Good evening! What would you like to drink?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ich möchte ein Glas Wein, bitte. Und mein Sohn möchte einen Apfelsaft.",
+    "en": "I'd like a glass of wine, please. And my son would like an apple juice."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Gern. Möchten Sie auch schon bestellen?",
+    "en": "Certainly. Would you like to order now, too?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ja. Ich möchte die Gemüsesuppe.",
+    "en": "Yes. I'd like the vegetable soup."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Und Ihr Sohn?",
+    "en": "And your son?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Er will nur Pommes. Er will kein Gemüse essen!",
+    "en": "He only wants chips. He doesn't want to eat any vegetables!"
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Das wollen viele Kinder. Möchte er auch ein Schnitzel?",
+    "en": "Lots of children want that. Would he like a schnitzel too?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ja, gute Idee. Ein Kinderschnitzel mit Pommes, bitte.",
+    "en": "Yes, good idea. A children's schnitzel with chips, please."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Gern. Sonst noch etwas?",
+    "en": "Certainly. Anything else?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Nein, danke. Geht es schnell? Wir haben nicht viel Zeit.",
+    "en": "No, thank you. Will it be quick? We don't have much time."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Julia drink?",
+    "options": [
+     "Apple juice",
+     "Wine",
+     "Water"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Julia order to eat?",
+    "options": [
+     "Vegetable soup",
+     "A salad",
+     "A schnitzel"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What doesn't her son want to eat?",
+    "options": [
+     "Chips",
+     "Schnitzel",
+     "Vegetables"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why does Julia ask if it will be quick?",
+    "options": [
+     "Her son is tired.",
+     "They don't have much time.",
+     "The restaurant closes soon."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte einen Kaffee, bitte.",
+  "Was willst du heute machen?",
+  "Wir möchten bitte bezahlen."
+ ],
+ "speaking": [
+  {
+   "de": "Was möchten Sie trinken?",
+   "en": "What would you like to drink?"
+  },
+  {
+   "de": "Ich möchte ein Glas Wein, bitte.",
+   "en": "I'd like a glass of wine, please."
+  },
+  {
+   "de": "Möchten Sie auch schon bestellen?",
+   "en": "Would you like to order now, too?"
+  },
+  {
+   "de": "Ich möchte die Gemüsesuppe.",
+   "en": "I'd like the vegetable soup."
+  },
+  {
+   "de": "Er will kein Gemüse essen.",
+   "en": "He doesn't want to eat any vegetables."
+  }
+ ],
+ "writing": {
+  "task": "You and a friend want to go out this evening. Write 3–4 short sentences: what do you want to do, eat and drink?",
+  "model": "Hallo Lisa! Ich will heute Abend nicht kochen. Wollen wir Pizza essen? Ich möchte auch ein Bier trinken. Was möchtest du machen?"
+ }
+}

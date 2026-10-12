@@ -1,0 +1,468 @@
+{
+ "id": "a2-04",
+ "cefr": "A2",
+ "title": "Two-way prepositions",
+ "situation": "Furnishing your flat",
+ "canDo": "You can say where things are and where they go in your flat, using two-way prepositions with the dative or accusative.",
+ "explanation": "When you furnish a flat, you say where things are and where they go. Nine prepositions can take two cases: **in, an, auf, über, unter, vor, hinter, neben, zwischen**.\n\n- **Wo?** (where is it?) → no movement to a new place → **dative**: *Das Sofa ist **im** Wohnzimmer.*\n- **Wohin?** (where to?) → movement to a new place → **accusative**: *Wir tragen das Sofa **ins** Wohnzimmer.*\n\n| | Wo? + dative | Wohin? + accusative |\n|---|---|---|\n| der Tisch | auf **dem** Tisch | auf **den** Tisch |\n| die Wand | an **der** Wand | an **die** Wand |\n| das Zimmer | **im** Zimmer (in dem) | **ins** Zimmer (in das) |\n| die Kisten | in **den** Kisten | in **die** Kisten |\n\n- Short forms: **im, am** (dative), **ins, ans** (accusative).\n- Ask yourself the question: *Wo ist die Lampe? – Über dem Tisch.* *Wohin kommt die Lampe? – Über den Tisch.*\n- When moving in, *kommen* often means \"goes\": *Das Bild kommt an die Wand.*\n- Moving around inside one place is still wo?: *Die Kinder spielen im Garten.*\n\nCommon mistake: *Ich gehe in der Küche.* → **Ich gehe in die Küche.**",
+ "french": "French uses « dans » for both « je suis dans la cuisine » and « je vais dans la cuisine »; German shows the difference with the case: in der Küche (wo?) vs in die Küche (wohin?).",
+ "examples": [
+  {
+   "de": "Das Sofa ist im Wohnzimmer.",
+   "en": "The sofa is in the living room."
+  },
+  {
+   "de": "Wir tragen das Sofa ins Wohnzimmer.",
+   "en": "We're carrying the sofa into the living room."
+  },
+  {
+   "de": "Die Lampe ist über dem Tisch.",
+   "en": "The lamp is above the table."
+  },
+  {
+   "de": "Das Bild kommt an die Wand.",
+   "en": "The picture goes on the wall."
+  },
+  {
+   "de": "Die Katze schläft unter dem Bett.",
+   "en": "The cat is sleeping under the bed."
+  },
+  {
+   "de": "Die Bücher sind noch in den Kisten.",
+   "en": "The books are still in the boxes."
+  },
+  {
+   "de": "Bringst du den Stuhl in die Küche?",
+   "en": "Will you take the chair into the kitchen?"
+  },
+  {
+   "de": "Der Schrank ist zwischen dem Fenster und der Tür.",
+   "en": "The wardrobe is between the window and the door."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-04-01",
+   "type": "cloze",
+   "de": "Das Sofa ist ___ Wohnzimmer.",
+   "base": "in + der/die/das",
+   "answers": [
+    "im"
+   ],
+   "en": "The sofa is in the living room."
+  },
+  {
+   "id": "a2-04-02",
+   "type": "cloze",
+   "de": "Wir tragen das Sofa ___ Wohnzimmer.",
+   "base": "in + der/die/das",
+   "answers": [
+    "ins"
+   ],
+   "en": "We're carrying the sofa into the living room."
+  },
+  {
+   "id": "a2-04-03",
+   "type": "choice",
+   "de": "Die Katze schläft unter ___ Bett.",
+   "options": [
+    "das",
+    "dem",
+    "den"
+   ],
+   "answer": 1,
+   "why": "Wo? → dative: unter dem Bett.",
+   "en": "The cat is sleeping under the bed."
+  },
+  {
+   "id": "a2-04-04",
+   "type": "cloze",
+   "de": "Das Bild kommt an ___ Wand.",
+   "base": "der/die/das",
+   "answers": [
+    "die"
+   ],
+   "en": "The picture goes on the wall."
+  },
+  {
+   "id": "a2-04-05",
+   "type": "order",
+   "tiles": [
+    "Die Bücher",
+    "sind",
+    "noch",
+    "in den Kisten"
+   ],
+   "answers": [
+    "Die Bücher sind noch in den Kisten."
+   ],
+   "en": "The books are still in the boxes."
+  },
+  {
+   "id": "a2-04-06",
+   "type": "choice",
+   "de": "Bring den Stuhl bitte in ___ Küche.",
+   "options": [
+    "der",
+    "die",
+    "dem"
+   ],
+   "answer": 1,
+   "why": "Wohin? → accusative: in die Küche.",
+   "en": "Please take the chair into the kitchen."
+  },
+  {
+   "id": "a2-04-07",
+   "type": "cloze",
+   "de": "Der Spiegel ist neben ___ Tür.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "The mirror is next to the door."
+  },
+  {
+   "id": "a2-04-08",
+   "type": "choice",
+   "de": "Ich gehe jetzt ___ Bad.",
+   "options": [
+    "im",
+    "ins",
+    "in"
+   ],
+   "answer": 1,
+   "why": "Movement to a place (wohin?) → accusative: ins Bad.",
+   "en": "I'm going to the bathroom now."
+  },
+  {
+   "id": "a2-04-09",
+   "type": "cloze",
+   "de": "Die Schuhe sind unter ___ Schrank.",
+   "base": "der/die/das",
+   "answers": [
+    "dem"
+   ],
+   "en": "The shoes are under the wardrobe."
+  },
+  {
+   "id": "a2-04-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "tragen",
+    "den Tisch",
+    "in die Küche"
+   ],
+   "answers": [
+    "Wir tragen den Tisch in die Küche.",
+    "Den Tisch tragen wir in die Küche.",
+    "In die Küche tragen wir den Tisch."
+   ],
+   "en": "We're carrying the table into the kitchen."
+  },
+  {
+   "id": "a2-04-11",
+   "type": "choice",
+   "de": "Die Pflanze ist auf ___ Balkon.",
+   "options": [
+    "den",
+    "dem",
+    "der"
+   ],
+   "answer": 1,
+   "why": "Wo? → dative, and Balkon is masculine: auf dem Balkon.",
+   "en": "The plant is on the balcony."
+  },
+  {
+   "id": "a2-04-12",
+   "type": "cloze",
+   "de": "Kannst du die Kiste auf ___ Balkon bringen?",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "Can you take the box onto the balcony?"
+  },
+  {
+   "id": "a2-04-13",
+   "type": "choice",
+   "de": "Die Kinder spielen ___ Garten.",
+   "options": [
+    "in den",
+    "im",
+    "ins"
+   ],
+   "answer": 1,
+   "why": "They are already there (wo?), so dative: im Garten.",
+   "en": "The children are playing in the garden."
+  },
+  {
+   "id": "a2-04-14",
+   "type": "cloze",
+   "de": "Der Schrank ist zwischen dem Fenster und ___ Tür.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "The wardrobe is between the window and the door."
+  },
+  {
+   "id": "a2-04-15",
+   "type": "order",
+   "tiles": [
+    "Die Lampe",
+    "ist",
+    "über",
+    "dem Tisch"
+   ],
+   "answers": [
+    "Die Lampe ist über dem Tisch.",
+    "Über dem Tisch ist die Lampe."
+   ],
+   "en": "The lamp is above the table."
+  },
+  {
+   "id": "a2-04-16",
+   "type": "choice",
+   "de": "Das Auto ist vor ___ Haus.",
+   "options": [
+    "den",
+    "das",
+    "dem"
+   ],
+   "answer": 2,
+   "why": "Wo? → dative, and Haus is neuter: vor dem Haus.",
+   "en": "The car is in front of the house."
+  },
+  {
+   "id": "a2-04-17",
+   "type": "cloze",
+   "de": "Ich bringe die Pflanzen ___ Fenster.",
+   "base": "an + der/die/das",
+   "answers": [
+    "ans"
+   ],
+   "en": "I'm taking the plants to the window."
+  },
+  {
+   "id": "a2-04-18",
+   "type": "choice",
+   "de": "Wohin kommt der Fernseher? – ___ die Ecke.",
+   "options": [
+    "In",
+    "Im",
+    "Ins"
+   ],
+   "answer": 0,
+   "why": "Wohin? → accusative, and Ecke is feminine: in die Ecke.",
+   "en": "Where does the TV go? – In the corner."
+  },
+  {
+   "id": "a2-04-19",
+   "type": "cloze",
+   "de": "Die Gläser sind schon ___ Schrank.",
+   "base": "in + der/die/das",
+   "answers": [
+    "im"
+   ],
+   "en": "The glasses are already in the cupboard."
+  },
+  {
+   "id": "a2-04-20",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "bringen",
+    "die Kisten",
+    "hinter das Sofa"
+   ],
+   "answers": [
+    "Wir bringen die Kisten hinter das Sofa.",
+    "Die Kisten bringen wir hinter das Sofa.",
+    "Hinter das Sofa bringen wir die Kisten."
+   ],
+   "en": "We're taking the boxes behind the sofa."
+  },
+  {
+   "id": "a2-04-21",
+   "type": "choice",
+   "de": "Mein Schreibtisch ist ___ Schlafzimmer.",
+   "options": [
+    "im",
+    "ins",
+    "in die"
+   ],
+   "answer": 0,
+   "why": "Wo? → dative: im Schlafzimmer.",
+   "en": "My desk is in the bedroom."
+  },
+  {
+   "id": "a2-04-22",
+   "type": "cloze",
+   "de": "Die Katze springt auf ___ Sofa.",
+   "base": "der/die/das",
+   "answers": [
+    "das"
+   ],
+   "en": "The cat jumps onto the sofa."
+  },
+  {
+   "id": "a2-04-23",
+   "type": "order",
+   "tiles": [
+    "Ist",
+    "der Schlüssel",
+    "auf dem Tisch"
+   ],
+   "answers": [
+    "Ist der Schlüssel auf dem Tisch?"
+   ],
+   "en": "Is the key on the table?"
+  },
+  {
+   "id": "a2-04-24",
+   "type": "order",
+   "tiles": [
+    "Der Teppich",
+    "kommt",
+    "vor",
+    "das Sofa"
+   ],
+   "answers": [
+    "Der Teppich kommt vor das Sofa.",
+    "Vor das Sofa kommt der Teppich."
+   ],
+   "en": "The rug goes in front of the sofa."
+  }
+ ],
+ "listening": {
+  "title": "Wohin kommt das Sofa?",
+  "intro": "Paul and Mia are moving into their new flat and decide where things go.",
+  "lines": [
+   {
+    "speaker": "Paul",
+    "de": "So, das Sofa ist da. Wohin kommt es?",
+    "en": "Right, the sofa's here. Where does it go?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Ins Wohnzimmer, an die Wand gegenüber vom Fenster.",
+    "en": "Into the living room, against the wall opposite the window."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Okay. Und der Fernseher?",
+    "en": "OK. And the TV?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Der kommt in die Ecke, neben das Regal.",
+    "en": "That goes in the corner, next to the shelf."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Gut. Wo sind eigentlich die Gläser?",
+    "en": "Good. Where are the glasses, actually?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Die sind noch in der Kiste auf dem Balkon.",
+    "en": "They're still in the box on the balcony."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ich bringe die Kiste gleich in die Küche.",
+    "en": "I'll take the box into the kitchen right away."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Danke! Und das Bild von deiner Oma? Das kommt über das Sofa, oder?",
+    "en": "Thanks! And the picture of your grandma? That goes above the sofa, right?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Hm, ich finde, es passt gut ins Schlafzimmer.",
+    "en": "Hm, I think it fits well in the bedroom."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Na gut. Sag mal, wo ist die Katze?",
+    "en": "All right. Say, where's the cat?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Die schläft schon unter dem Bett!",
+    "en": "She's already asleep under the bed!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does the sofa go?",
+    "options": [
+     "Into the bedroom.",
+     "Into the living room, against the wall.",
+     "Onto the balcony."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where are the glasses right now?",
+    "options": [
+     "In a box on the balcony.",
+     "In the kitchen cupboard.",
+     "In the car."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Paul want to put the picture of his grandma?",
+    "options": [
+     "Above the sofa.",
+     "In the kitchen.",
+     "In the bedroom."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where is the cat?",
+    "options": [
+     "On the sofa.",
+     "Under the bed.",
+     "In a box."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wir tragen das Sofa ins Wohnzimmer.",
+  "Die Gläser sind noch in der Kiste.",
+  "Das Bild kommt über das Sofa."
+ ],
+ "speaking": [
+  {
+   "de": "Wohin kommt das Sofa?",
+   "en": "Where does the sofa go?"
+  },
+  {
+   "de": "Der Fernseher kommt in die Ecke.",
+   "en": "The TV goes in the corner."
+  },
+  {
+   "de": "Die Gläser sind noch in der Kiste.",
+   "en": "The glasses are still in the box."
+  },
+  {
+   "de": "Ich bringe die Kiste in die Küche.",
+   "en": "I'll take the box into the kitchen."
+  },
+  {
+   "de": "Die Katze schläft unter dem Bett.",
+   "en": "The cat is sleeping under the bed."
+  }
+ ],
+ "writing": {
+  "task": "You've just moved. Write 5–6 sentences to a friend: say where things already are and where they still have to go.",
+  "model": "Hallo Jana, wir wohnen jetzt in der Gartenstraße! Das Sofa ist schon im Wohnzimmer, aber die Bücher sind noch in den Kisten. Der Tisch kommt morgen in die Küche. Die Pflanzen bringe ich auf den Balkon. Mein Schreibtisch ist im Schlafzimmer, neben dem Fenster. Kommst du am Samstag und hilfst mir? Liebe Grüße, Tom"
+ }
+}

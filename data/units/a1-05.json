@@ -323,5 +323,130 @@
    ],
    "en": "Where is the toilet?"
   }
- ]
+ ],
+ "listening": {
+  "title": "Die neue Wohnung",
+  "intro": "Julia is looking at a flat, and Frank, the owner, shows her around.",
+  "lines": [
+   {
+    "speaker": "Frank",
+    "de": "So, das ist die Wohnung. Hier links ist die Küche.",
+    "en": "So, this is the flat. Here on the left is the kitchen."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Oh, die Küche ist schön! Ist der Kühlschrank neu?",
+    "en": "Oh, the kitchen is nice! Is the fridge new?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Ja, er ist neu. Und hier ist das Bad.",
+    "en": "Yes, it's new. And here is the bathroom."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Das Bad ist klein. Hat es ein Fenster?",
+    "en": "The bathroom is small. Does it have a window?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Ja, da ist ein Fenster. Und das ist das Wohnzimmer.",
+    "en": "Yes, there's a window. And this is the living room."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Das Zimmer ist groß! Und das Sofa?",
+    "en": "The room is big! And the sofa?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Das Sofa und der Tisch bleiben hier.",
+    "en": "The sofa and the table stay here."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Super. Und wo ist das Schlafzimmer?",
+    "en": "Great. And where is the bedroom?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Hier rechts. Es ist klein, aber da ist ein Balkon.",
+    "en": "Here on the right. It's small, but there's a balcony."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Ein Balkon? Toll! Die Wohnung ist wirklich schön.",
+    "en": "A balcony? Great! The flat is really nice."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is new in the kitchen?",
+    "options": [
+     "the table",
+     "the fridge",
+     "the lamp"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is the bathroom like?",
+    "options": [
+     "small, with a window",
+     "big, with a window",
+     "small, without a window"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What stays in the living room?",
+    "options": [
+     "only the lamp",
+     "a bed and a wardrobe",
+     "the sofa and the table"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does the bedroom have?",
+    "options": [
+     "two windows",
+     "a balcony",
+     "a big bed"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Die Küche ist klein, aber schön.",
+  "Im Zimmer ist ein Tisch.",
+  "Das Sofa ist neu."
+ ],
+ "speaking": [
+  {
+   "de": "Das ist die Küche.",
+   "en": "This is the kitchen."
+  },
+  {
+   "de": "Ist der Kühlschrank neu?",
+   "en": "Is the fridge new?"
+  },
+  {
+   "de": "Hat das Bad ein Fenster?",
+   "en": "Does the bathroom have a window?"
+  },
+  {
+   "de": "Wo ist das Schlafzimmer?",
+   "en": "Where is the bedroom?"
+  },
+  {
+   "de": "Die Wohnung ist wirklich schön.",
+   "en": "The flat is really nice."
+  }
+ ],
+ "writing": {
+  "task": "Write to a friend about your new flat (3–4 sentences): name a few rooms or things and say what they are like.",
+  "model": "Hallo Nina, ich habe eine Wohnung! Die Küche ist klein, aber sie ist neu. Das Wohnzimmer ist hell und da ist ein Balkon. Das Bett ist leider alt."
+ }
 }

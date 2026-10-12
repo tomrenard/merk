@@ -1,0 +1,475 @@
+{
+ "id": "a2-18",
+ "cefr": "A2",
+ "title": "Polite requests: hätte, könnte, würde",
+ "situation": "Polite requests",
+ "canDo": "You can order, ask for things and ask people to do something politely with hätte gern, könnten Sie and würden Sie.",
+ "explanation": "In shops, hotels and offices, Germans make requests more polite with special forms (the Konjunktiv II). For now, learn just three verbs:\n\n| | haben | können | werden |\n|---|---|---|---|\n| ich / er / sie / es | hätte | könnte | würde |\n| du | hättest | könntest | würdest |\n| wir / sie / Sie | hätten | könnten | würden |\n| ihr | hättet | könntet | würdet |\n\n- **hätte gern** = would like (to have), for ordering and asking for things: *Ich hätte gern einen Kaffee. Hätten Sie einen Stift?*\n- **Könnten Sie / Könntest du …?** = Could you…? The second verb goes to the end: *Könnten Sie mir bitte helfen?*\n- **Würden Sie / Würdest du …?** = Would you…?: *Würden Sie bitte langsamer sprechen?*\n- **würde gern** + infinitive = would like to: *Ich würde gern einen Termin machen.*\n- **könnten** also makes suggestions: *Wir könnten ins Kino gehen.*\n- A useful phrase: **Das wäre nett!** = That would be kind!\n\nAdd **bitte** and the request sounds even friendlier.\n\nThe most common mistake is forgetting the umlaut. **hatte, konnten, wurden** are past forms (had, were able to, became). Only **hätte, könnten, würden** are polite: *Konnten Sie mir helfen?* means \"Were you able to help me?\"",
+ "french": "These forms work like the French conditionnel: j'aimerais avoir → ich hätte gern, vous pourriez → Sie könnten, je voudrais faire → ich würde gern machen.",
+ "examples": [
+  {
+   "de": "Ich hätte gern einen Kaffee, bitte.",
+   "en": "I'd like a coffee, please."
+  },
+  {
+   "de": "Könnten Sie mir bitte helfen?",
+   "en": "Could you help me, please?"
+  },
+  {
+   "de": "Würden Sie bitte langsamer sprechen?",
+   "en": "Would you speak more slowly, please?"
+  },
+  {
+   "de": "Ich würde gern einen Termin machen.",
+   "en": "I'd like to make an appointment."
+  },
+  {
+   "de": "Könntest du mir das Rezept schicken?",
+   "en": "Could you send me the recipe?"
+  },
+  {
+   "de": "Hätten Sie vielleicht einen Stift für mich?",
+   "en": "Would you have a pen for me?"
+  },
+  {
+   "de": "Wir könnten am Samstag ins Kino gehen.",
+   "en": "We could go to the cinema on Saturday."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-18-01",
+   "type": "cloze",
+   "de": "Ich ___ gern einen Kaffee.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "I'd like a coffee."
+  },
+  {
+   "id": "a2-18-02",
+   "type": "choice",
+   "de": "___ Sie mir bitte helfen?",
+   "options": [
+    "Könnten",
+    "Konnten",
+    "Kannst"
+   ],
+   "answer": 0,
+   "why": "The polite form has an umlaut: könnten; konnten is the past.",
+   "en": "Could you help me, please?"
+  },
+  {
+   "id": "a2-18-03",
+   "type": "cloze",
+   "de": "___ Sie bitte das Fenster zumachen?",
+   "base": "werden",
+   "answers": [
+    "Würden"
+   ],
+   "en": "Would you close the window, please?"
+  },
+  {
+   "id": "a2-18-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hätte",
+    "gern",
+    "ein Wasser"
+   ],
+   "answers": [
+    "Ich hätte gern ein Wasser.",
+    "Ein Wasser hätte ich gern."
+   ],
+   "en": "I'd like a water."
+  },
+  {
+   "id": "a2-18-05",
+   "type": "choice",
+   "de": "Wir ___ gern zwei Brötchen.",
+   "options": [
+    "hatten",
+    "hätten",
+    "hätte"
+   ],
+   "answer": 1,
+   "why": "The polite form for wir is hätten, with an umlaut; hatten is the past.",
+   "en": "We'd like two bread rolls."
+  },
+  {
+   "id": "a2-18-06",
+   "type": "cloze",
+   "de": "___ du mir kurz helfen?",
+   "base": "können",
+   "answers": [
+    "Könntest"
+   ],
+   "en": "Could you help me for a moment?"
+  },
+  {
+   "id": "a2-18-07",
+   "type": "choice",
+   "de": "___ Sie bitte langsamer sprechen?",
+   "options": [
+    "Wurden",
+    "Werden",
+    "Würden"
+   ],
+   "answer": 2,
+   "why": "For a polite request you use würden + infinitive; wurden is the past.",
+   "en": "Would you speak more slowly, please?"
+  },
+  {
+   "id": "a2-18-08",
+   "type": "order",
+   "tiles": [
+    "Könnten",
+    "Sie",
+    "mir",
+    "bitte",
+    "helfen"
+   ],
+   "answers": [
+    "Könnten Sie mir bitte helfen?"
+   ],
+   "en": "Could you help me, please?"
+  },
+  {
+   "id": "a2-18-09",
+   "type": "cloze",
+   "de": "Ich ___ gern einen Termin machen.",
+   "base": "werden",
+   "answers": [
+    "würde"
+   ],
+   "en": "I'd like to make an appointment."
+  },
+  {
+   "id": "a2-18-10",
+   "type": "choice",
+   "de": "Was ___ Sie gern? – Einen Tee, bitte.",
+   "options": [
+    "hätten",
+    "hättet",
+    "hätte"
+   ],
+   "answer": 0,
+   "why": "With Sie the form is hätten.",
+   "en": "What would you like? – A tea, please."
+  },
+  {
+   "id": "a2-18-11",
+   "type": "cloze",
+   "de": "___ ihr bitte etwas leiser sein?",
+   "base": "können",
+   "answers": [
+    "Könntet"
+   ],
+   "en": "Could you be a bit quieter, please?"
+  },
+  {
+   "id": "a2-18-12",
+   "type": "order",
+   "tiles": [
+    "Würden",
+    "Sie",
+    "bitte",
+    "die Tür",
+    "zumachen"
+   ],
+   "answers": [
+    "Würden Sie bitte die Tür zumachen?",
+    "Würden Sie die Tür bitte zumachen?"
+   ],
+   "en": "Would you close the door, please?"
+  },
+  {
+   "id": "a2-18-13",
+   "type": "choice",
+   "de": "Könnten Sie mir bitte das Salz ___?",
+   "options": [
+    "geben",
+    "gegeben",
+    "gibst"
+   ],
+   "answer": 0,
+   "why": "After könnten the second verb goes to the end as an infinitive.",
+   "en": "Could you pass me the salt, please?"
+  },
+  {
+   "id": "a2-18-14",
+   "type": "cloze",
+   "de": "___ Sie mir bitte Ihre Telefonnummer geben?",
+   "base": "können",
+   "answers": [
+    "Könnten"
+   ],
+   "en": "Could you give me your phone number, please?"
+  },
+  {
+   "id": "a2-18-15",
+   "type": "choice",
+   "de": "Ich ___ gern ein Zimmer für zwei Nächte.",
+   "options": [
+    "hätte",
+    "hatte",
+    "hättest"
+   ],
+   "answer": 0,
+   "why": "For ordering, use ich hätte gern, with an umlaut.",
+   "en": "I'd like a room for two nights."
+  },
+  {
+   "id": "a2-18-16",
+   "type": "cloze",
+   "de": "Wir ___ am Samstag ins Kino gehen.",
+   "base": "können",
+   "answers": [
+    "könnten"
+   ],
+   "en": "We could go to the cinema on Saturday."
+  },
+  {
+   "id": "a2-18-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "würde",
+    "gern",
+    "einen Tisch",
+    "reservieren"
+   ],
+   "answers": [
+    "Ich würde gern einen Tisch reservieren.",
+    "Einen Tisch würde ich gern reservieren."
+   ],
+   "en": "I'd like to book a table."
+  },
+  {
+   "id": "a2-18-18",
+   "type": "choice",
+   "de": "Könntest du mich morgen ___?",
+   "options": [
+    "anzurufen",
+    "anrufen",
+    "rufst an"
+   ],
+   "answer": 1,
+   "why": "könnten works like a modal verb: the infinitive goes to the end without zu.",
+   "en": "Could you call me tomorrow?"
+  },
+  {
+   "id": "a2-18-19",
+   "type": "cloze",
+   "de": "___ Sie vielleicht einen Stift für mich?",
+   "base": "haben",
+   "answers": [
+    "Hätten"
+   ],
+   "en": "Would you have a pen for me?"
+  },
+  {
+   "id": "a2-18-20",
+   "type": "choice",
+   "de": "Ich ___ gern bezahlen.",
+   "options": [
+    "wurde",
+    "würde",
+    "würdest"
+   ],
+   "answer": 1,
+   "why": "würde gern + infinitive means \"would like to\"; wurde is the past.",
+   "en": "I'd like to pay."
+  },
+  {
+   "id": "a2-18-21",
+   "type": "order",
+   "tiles": [
+    "Hätten",
+    "Sie",
+    "morgen",
+    "Zeit",
+    "für einen Termin"
+   ],
+   "answers": [
+    "Hätten Sie morgen Zeit für einen Termin?"
+   ],
+   "en": "Would you have time for an appointment tomorrow?"
+  },
+  {
+   "id": "a2-18-22",
+   "type": "cloze",
+   "de": "Ich habe heute keine Zeit. ___ du für mich einkaufen gehen?",
+   "base": "werden",
+   "answers": [
+    "Würdest"
+   ],
+   "en": "I don't have time today. Would you go shopping for me?"
+  },
+  {
+   "id": "a2-18-23",
+   "type": "choice",
+   "de": "Das ist sehr nett, aber ich ___ lieber am Fenster sitzen.",
+   "options": [
+    "würde",
+    "wäre",
+    "hätte"
+   ],
+   "answer": 0,
+   "why": "\"Would rather do\" is würde lieber + infinitive.",
+   "en": "That's very kind, but I'd rather sit by the window."
+  },
+  {
+   "id": "a2-18-24",
+   "type": "order",
+   "tiles": [
+    "Könntest",
+    "du",
+    "mir",
+    "das Rezept",
+    "schicken"
+   ],
+   "answers": [
+    "Könntest du mir das Rezept schicken?"
+   ],
+   "en": "Could you send me the recipe?"
+  }
+ ],
+ "listening": {
+  "title": "An der Hotelrezeption",
+  "intro": "Clara arrives at a hotel in the evening and talks to Stefan at the reception desk.",
+  "lines": [
+   {
+    "speaker": "Stefan",
+    "de": "Guten Abend! Was kann ich für Sie tun?",
+    "en": "Good evening! What can I do for you?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Guten Abend. Ich hätte gern ein Zimmer für zwei Nächte.",
+    "en": "Good evening. I'd like a room for two nights."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Gern. Ein Einzelzimmer oder ein Doppelzimmer?",
+    "en": "Certainly. A single room or a double room?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Ein Einzelzimmer, bitte. Könnten Sie mir ein ruhiges Zimmer geben? Ich schlafe sehr schlecht.",
+    "en": "A single room, please. Could you give me a quiet room? I sleep very badly."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Natürlich. Zimmer 305 liegt zum Hof, da ist es ganz ruhig.",
+    "en": "Of course. Room 305 faces the courtyard, it's very quiet there."
+   },
+   {
+    "speaker": "Clara",
+    "de": "Wunderbar. Würden Sie mich morgen um sechs wecken? Mein Zug fährt um sieben.",
+    "en": "Wonderful. Would you wake me at six tomorrow? My train leaves at seven."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Kein Problem. Hätten Sie gern ein Frühstückspaket für den Zug?",
+    "en": "No problem. Would you like a breakfast pack for the train?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Oh ja, das wäre toll! Und könnten Sie mir noch ein Taxi für halb sieben bestellen?",
+    "en": "Oh yes, that would be great! And could you also order me a taxi for half past six?"
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Gern. Würden Sie hier bitte noch unterschreiben?",
+    "en": "Certainly. Would you sign here, please?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Natürlich. Ach, ich hätte noch eine Frage: Gibt es hier WLAN?",
+    "en": "Of course. Oh, I have one more question: is there Wi-Fi here?"
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Ja, das Passwort steht auf Ihrer Zimmerkarte. Gute Nacht!",
+    "en": "Yes, the password is on your room card. Good night!"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Vielen Dank, gute Nacht!",
+    "en": "Thanks a lot, good night!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What kind of room does Clara ask for?",
+    "options": [
+     "A double room with a view",
+     "A quiet single room",
+     "A room near the breakfast room"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why does she want to be woken at six?",
+    "options": [
+     "She has a meeting.",
+     "She wants to go jogging.",
+     "Her train leaves at seven."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Stefan offer her?",
+    "options": [
+     "A breakfast pack for the train",
+     "A free taxi",
+     "A bigger room"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where can she find the Wi-Fi password?",
+    "options": [
+     "At reception",
+     "On her room card",
+     "In the breakfast room"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich hätte gern ein Zimmer für zwei Nächte.",
+  "Könnten Sie mir bitte ein Taxi bestellen?",
+  "Würdest du bitte das Fenster zumachen?"
+ ],
+ "speaking": [
+  {
+   "de": "Ich hätte gern ein Zimmer für zwei Nächte.",
+   "en": "I'd like a room for two nights."
+  },
+  {
+   "de": "Könnten Sie mir ein ruhiges Zimmer geben?",
+   "en": "Could you give me a quiet room?"
+  },
+  {
+   "de": "Würden Sie mich morgen um sechs wecken?",
+   "en": "Would you wake me at six tomorrow?"
+  },
+  {
+   "de": "Oh ja, das wäre toll!",
+   "en": "Oh yes, that would be great!"
+  },
+  {
+   "de": "Ich hätte noch eine Frage.",
+   "en": "I have one more question."
+  }
+ ],
+ "writing": {
+  "task": "You are going away for a week. Write a polite note to your neighbour (5–6 sentences) and ask for two or three favours.",
+  "model": "Liebe Frau Klein, ich bin nächste Woche in Frankreich. Hätten Sie vielleicht Zeit, meine Blumen zu gießen? Könnten Sie auch die Post aus meinem Briefkasten nehmen? Den Schlüssel würde ich Ihnen am Sonntag bringen. Das wäre wirklich sehr nett! Viele Grüße, Thomas"
+ }
+}

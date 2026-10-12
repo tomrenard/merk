@@ -1,0 +1,494 @@
+{
+ "id": "b1-17",
+ "cefr": "B1",
+ "title": "Instead of, without: statt … zu, ohne … zu",
+ "situation": "Doing things differently",
+ "canDo": "You can say what you do instead of something else and what happens without something else, with statt … zu, ohne … zu and ohne dass.",
+ "explanation": "When you change your habits, you say what you do instead: *Statt den Bus zu nehmen, gehe ich zu Fuß.* And sometimes things happen without something else: *Er ist gegangen, ohne Tschüss zu sagen.*\n\n| | same subject | different subjects |\n|---|---|---|\n| instead of | **statt … zu** + infinitive | **statt dass** + clause |\n| without | **ohne … zu** + infinitive | **ohne dass** + clause |\n\n- It works like *um … zu*: no subject, and *zu* + infinitive at the very end: *ohne ein Wort **zu sagen***.\n- With separable verbs, *zu* goes in the middle: *ohne vorher **anzurufen***, *statt **einzukaufen***.\n- **anstatt** means the same as **statt**; *statt* is more common in speech.\n- When the subjects are different, use **ohne dass** with the verb at the end: *Er hat das Auto genommen, **ohne dass ich** es **wusste**.* (he took it – I didn't know)\n- The clause can come first; then the main clause starts with its verb: *Statt zu kochen, **bestellen** wir Pizza.*\n- Before a noun, *ohne* and *statt* are simple prepositions: *Kaffee ohne Zucker*, *Tee statt Kaffee*.\n\nThe most common mistakes: putting a subject or a conjugated verb after *ohne* (not ~~ohne er fragt~~, but *ohne zu fragen*), and putting *zu* + infinitive too early (not ~~ohne zu sagen ein Wort~~, but *ohne ein Wort zu sagen*).",
+ "french": "ohne … zu is sans + infinitive and statt … zu is au lieu de + infinitive, but German puts zu + infinitive at the very end (sans rien dire = ohne etwas zu sagen); ohne dass is sans que, but with a normal verb, no subjunctive.",
+ "examples": [
+  {
+   "de": "Statt den Bus zu nehmen, gehe ich heute zu Fuß.",
+   "en": "Instead of taking the bus, I'm walking today."
+  },
+  {
+   "de": "Er ist gegangen, ohne Tschüss zu sagen.",
+   "en": "He left without saying goodbye."
+  },
+  {
+   "de": "Statt fernzusehen, lese ich abends ein Buch.",
+   "en": "Instead of watching TV, I read a book in the evening."
+  },
+  {
+   "de": "Sie hat den Vertrag unterschrieben, ohne ihn zu lesen.",
+   "en": "She signed the contract without reading it."
+  },
+  {
+   "de": "Komm bitte nicht, ohne vorher anzurufen!",
+   "en": "Please don't come without calling first!"
+  },
+  {
+   "de": "Wir bestellen Pizza, statt zu kochen.",
+   "en": "We're ordering pizza instead of cooking."
+  },
+  {
+   "de": "Mein Sohn hat das Auto genommen, ohne dass ich es wusste.",
+   "en": "My son took the car without me knowing."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-17-01",
+   "type": "cloze",
+   "de": "Ich gehe zu Fuß, ___ den Bus zu nehmen.",
+   "base": "ohne/statt",
+   "answers": [
+    "statt",
+    "anstatt"
+   ],
+   "en": "I'm walking instead of taking the bus."
+  },
+  {
+   "id": "b1-17-02",
+   "type": "choice",
+   "de": "Sie hat das Formular unterschrieben, ohne es ___.",
+   "options": [
+    "lesen",
+    "zu lesen",
+    "liest"
+   ],
+   "answer": 1,
+   "why": "ohne needs zu + infinitive at the end.",
+   "en": "She signed the form without reading it."
+  },
+  {
+   "id": "b1-17-03",
+   "type": "cloze",
+   "de": "Er ist über die Straße gegangen, ___ auf die Autos zu achten.",
+   "base": "ohne/statt",
+   "answers": [
+    "ohne"
+   ],
+   "en": "He crossed the street without paying attention to the cars."
+  },
+  {
+   "id": "b1-17-04",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "bestellen",
+    "Pizza",
+    "statt",
+    "zu kochen"
+   ],
+   "answers": [
+    "Wir bestellen Pizza, statt zu kochen.",
+    "Statt zu kochen, bestellen wir Pizza."
+   ],
+   "en": "We're ordering pizza instead of cooking."
+  },
+  {
+   "id": "b1-17-05",
+   "type": "cloze",
+   "de": "Komm bitte nicht, ohne vorher ___!",
+   "base": "anrufen",
+   "answers": [
+    "anzurufen"
+   ],
+   "en": "Please don't come without calling first!"
+  },
+  {
+   "id": "b1-17-06",
+   "type": "choice",
+   "de": "___ fernzusehen, lese ich abends ein Buch.",
+   "options": [
+    "Statt",
+    "Damit",
+    "Für"
+   ],
+   "answer": 0,
+   "why": "statt … zu means instead of doing something; damit and für can't start a zu + infinitive clause.",
+   "en": "Instead of watching TV, I read a book in the evening."
+  },
+  {
+   "id": "b1-17-07",
+   "type": "cloze",
+   "de": "Statt im Büro ___, arbeite ich heute von zu Hause.",
+   "base": "sitzen",
+   "answers": [
+    "zu sitzen"
+   ],
+   "en": "Instead of sitting in the office, I'm working from home today."
+  },
+  {
+   "id": "b1-17-08",
+   "type": "choice",
+   "de": "Mein Sohn hat das Auto genommen, ohne ___ ich es wusste.",
+   "options": [
+    "zu",
+    "ob",
+    "dass"
+   ],
+   "answer": 2,
+   "why": "The subjects are different (mein Sohn, ich), so you need ohne dass and a full clause.",
+   "en": "My son took the car without me knowing."
+  },
+  {
+   "id": "b1-17-09",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "ist",
+    "gegangen",
+    "ohne",
+    "Tschüss",
+    "zu sagen"
+   ],
+   "answers": [
+    "Er ist gegangen, ohne Tschüss zu sagen.",
+    "Ohne Tschüss zu sagen, ist er gegangen."
+   ],
+   "en": "He left without saying goodbye."
+  },
+  {
+   "id": "b1-17-10",
+   "type": "cloze",
+   "de": "Ich habe die Mail geschickt, ohne sie noch einmal ___.",
+   "base": "lesen",
+   "answers": [
+    "zu lesen"
+   ],
+   "en": "I sent the email without reading it again."
+  },
+  {
+   "id": "b1-17-11",
+   "type": "choice",
+   "de": "Er hat den Job gewechselt, ___.",
+   "options": [
+    "ohne zu sprechen mit uns",
+    "ohne mit uns zu sprechen",
+    "ohne er spricht mit uns"
+   ],
+   "answer": 1,
+   "why": "Everything else comes before zu + infinitive, which goes at the very end.",
+   "en": "He changed jobs without talking to us."
+  },
+  {
+   "id": "b1-17-12",
+   "type": "cloze",
+   "de": "Statt den Müll ___, hat er den ganzen Abend ferngesehen.",
+   "base": "rausbringen",
+   "answers": [
+    "rauszubringen"
+   ],
+   "en": "Instead of taking the rubbish out, he watched TV all evening."
+  },
+  {
+   "id": "b1-17-13",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "hat",
+    "bezahlt",
+    "ohne",
+    "auf",
+    "die Rechnung",
+    "zu schauen"
+   ],
+   "answers": [
+    "Sie hat bezahlt, ohne auf die Rechnung zu schauen.",
+    "Ohne auf die Rechnung zu schauen, hat sie bezahlt."
+   ],
+   "en": "She paid without looking at the bill."
+  },
+  {
+   "id": "b1-17-14",
+   "type": "choice",
+   "de": "Ich trinke den Kaffee ___ Zucker.",
+   "options": [
+    "ohne",
+    "ohne zu",
+    "ohne dass"
+   ],
+   "answer": 0,
+   "why": "Before a noun, ohne is a simple preposition.",
+   "en": "I drink my coffee without sugar."
+  },
+  {
+   "id": "b1-17-15",
+   "type": "cloze",
+   "de": "Wir sind ins Kino gegangen, ___ zu Hause zu bleiben.",
+   "base": "ohne/statt",
+   "answers": [
+    "statt",
+    "anstatt"
+   ],
+   "en": "We went to the cinema instead of staying at home."
+  },
+  {
+   "id": "b1-17-16",
+   "type": "choice",
+   "de": "Statt ___, gehe ich heute zu Fuß zur Arbeit.",
+   "options": [
+    "zu fahren mit dem Auto",
+    "mit dem Auto fahren",
+    "mit dem Auto zu fahren"
+   ],
+   "answer": 2,
+   "why": "statt needs zu, and zu + infinitive comes at the very end.",
+   "en": "Instead of driving, I'm walking to work today."
+  },
+  {
+   "id": "b1-17-17",
+   "type": "order",
+   "tiles": [
+    "Statt",
+    "einzukaufen",
+    "haben",
+    "wir",
+    "im Restaurant",
+    "gegessen"
+   ],
+   "answers": [
+    "Statt einzukaufen, haben wir im Restaurant gegessen.",
+    "Wir haben im Restaurant gegessen, statt einzukaufen.",
+    "Im Restaurant haben wir gegessen, statt einzukaufen."
+   ],
+   "en": "Instead of going shopping, we ate at a restaurant."
+  },
+  {
+   "id": "b1-17-18",
+   "type": "cloze",
+   "de": "Er hat die Wohnung gemietet, ohne sie vorher ___.",
+   "base": "ansehen",
+   "answers": [
+    "anzusehen"
+   ],
+   "en": "He rented the flat without looking at it first."
+  },
+  {
+   "id": "b1-17-19",
+   "type": "choice",
+   "de": "Die Kinder sind rausgegangen, ohne dass ich es ___.",
+   "options": [
+    "habe gemerkt",
+    "gemerkt habe",
+    "zu merken"
+   ],
+   "answer": 1,
+   "why": "After ohne dass the conjugated verb habe goes to the end.",
+   "en": "The children went out without me noticing."
+  },
+  {
+   "id": "b1-17-20",
+   "type": "cloze",
+   "de": "Sie ist nach Hause gefahren, ohne sich ___.",
+   "base": "verabschieden",
+   "answers": [
+    "zu verabschieden"
+   ],
+   "en": "She went home without saying goodbye."
+  },
+  {
+   "id": "b1-17-21",
+   "type": "order",
+   "tiles": [
+    "Bitte",
+    "nehmen",
+    "Sie",
+    "nichts",
+    "ohne",
+    "zu fragen"
+   ],
+   "answers": [
+    "Bitte nehmen Sie nichts, ohne zu fragen.",
+    "Nehmen Sie bitte nichts, ohne zu fragen."
+   ],
+   "en": "Please don't take anything without asking."
+  },
+  {
+   "id": "b1-17-22",
+   "type": "choice",
+   "de": "Ich habe den ganzen Abend gelernt, ___ mit Freunden auszugehen.",
+   "options": [
+    "damit",
+    "ohne dass",
+    "statt"
+   ],
+   "answer": 2,
+   "why": "zu + infinitive with the same subject needs statt; ohne dass and damit need a full clause.",
+   "en": "I studied all evening instead of going out with friends."
+  },
+  {
+   "id": "b1-17-23",
+   "type": "cloze",
+   "de": "Statt sich ___, hat er nur gelacht.",
+   "base": "entschuldigen",
+   "answers": [
+    "zu entschuldigen"
+   ],
+   "en": "Instead of apologising, he just laughed."
+  },
+  {
+   "id": "b1-17-24",
+   "type": "order",
+   "tiles": [
+    "Er hat mir geholfen",
+    "ohne",
+    "dass",
+    "ich",
+    "ihn",
+    "gefragt habe"
+   ],
+   "answers": [
+    "Er hat mir geholfen, ohne dass ich ihn gefragt habe."
+   ],
+   "en": "He helped me without me asking him."
+  }
+ ],
+ "listening": {
+  "title": "Ein neuer David",
+  "intro": "Sophie meets her friend David and notices that he has changed a few habits.",
+  "lines": [
+   {
+    "speaker": "Sophie",
+    "de": "David! Du bist ja mit dem Fahrrad da. Wo ist dein Auto?",
+    "en": "David! You've come by bike. Where's your car?"
+   },
+   {
+    "speaker": "David",
+    "de": "Das steht zu Hause. Seit einem Monat fahre ich Rad, statt das Auto zu nehmen.",
+    "en": "It's at home. For a month I've been cycling instead of taking the car."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Wirklich? Auch wenn es regnet?",
+    "en": "Really? Even when it rains?"
+   },
+   {
+    "speaker": "David",
+    "de": "Ja, auch dann. Ich bin fitter und spare viel Geld.",
+    "en": "Yes, even then. I'm fitter and I save a lot of money."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Toll. Und du hast doch jeden Abend Pizza bestellt, oder?",
+    "en": "Great. And you used to order pizza every evening, didn't you?"
+   },
+   {
+    "speaker": "David",
+    "de": "Das mache ich auch nicht mehr. Statt Essen zu bestellen, koche ich jetzt selbst.",
+    "en": "I don't do that any more either. Instead of ordering food, I cook myself now."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Du kochst? Ohne dass die Küche brennt?",
+    "en": "You cook? Without the kitchen catching fire?"
+   },
+   {
+    "speaker": "David",
+    "de": "Sehr witzig. Ich mache ganz einfache Sachen: Nudeln, Salat, Suppe.",
+    "en": "Very funny. I make really simple things: pasta, salad, soup."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Nicht schlecht! Und abends? Du warst doch immer am Handy.",
+    "en": "Not bad! And in the evening? You were always on your phone."
+   },
+   {
+    "speaker": "David",
+    "de": "Um neun lege ich das Handy weg. Statt Videos zu schauen, lese ich ein Buch.",
+    "en": "At nine I put my phone away. Instead of watching videos, I read a book."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Und das klappt?",
+    "en": "And does that work?"
+   },
+   {
+    "speaker": "David",
+    "de": "Meistens. Manchmal nehme ich das Handy doch in die Hand, ohne es zu merken.",
+    "en": "Mostly. Sometimes I pick up the phone after all without noticing."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Das kenne ich! Vielleicht probiere ich das auch mal.",
+    "en": "I know that feeling! Maybe I'll try that too."
+   },
+   {
+    "speaker": "David",
+    "de": "Mach das! Aber probier es zwei Wochen, statt nach drei Tagen aufzuhören.",
+    "en": "Do it! But try it for two weeks instead of stopping after three days."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How does David get around now?",
+    "options": [
+     "By bike.",
+     "By bus.",
+     "By car."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does David do now instead of ordering food?",
+    "options": [
+     "He eats at his mother's.",
+     "He cooks for himself.",
+     "He eats at work."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does David do in the evening instead of watching videos?",
+    "options": [
+     "He goes jogging.",
+     "He calls friends.",
+     "He reads a book."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is David's advice to Sophie?",
+    "options": [
+     "To buy a bike.",
+     "To try it for two weeks.",
+     "To start cooking."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Statt den Bus zu nehmen, gehe ich heute zu Fuß.",
+  "Er hat die Wohnung verlassen, ohne die Tür abzuschließen.",
+  "Wir kochen heute zusammen, statt eine Pizza zu bestellen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich fahre Rad, statt das Auto zu nehmen.",
+   "en": "I cycle instead of taking the car."
+  },
+  {
+   "de": "Statt Essen zu bestellen, koche ich jetzt selbst.",
+   "en": "Instead of ordering food, I cook myself now."
+  },
+  {
+   "de": "Statt Videos zu schauen, lese ich ein Buch.",
+   "en": "Instead of watching videos, I read a book."
+  },
+  {
+   "de": "Manchmal nehme ich das Handy in die Hand, ohne es zu merken.",
+   "en": "Sometimes I pick up my phone without noticing."
+  },
+  {
+   "de": "Probier es zwei Wochen, statt nach drei Tagen aufzuhören!",
+   "en": "Try it for two weeks instead of stopping after three days!"
+  }
+ ],
+ "writing": {
+  "task": "Write a message of 80–100 words to a friend about habits you have changed recently. Say what you do now instead of what you did before, and tell about one thing you did without thinking.",
+  "model": "Hallo Marie,\n\nich habe in den letzten Wochen einiges geändert! Statt jeden Morgen mit der U-Bahn zu fahren, gehe ich jetzt zu Fuß ins Büro. Das dauert zwanzig Minuten, aber es tut mir gut. Mittags esse ich in der Kantine, statt nur ein Brötchen am Schreibtisch zu essen. Und abends lerne ich Deutsch, statt stundenlang fernzusehen. Gestern ist mir aber etwas Lustiges passiert: Ich bin aus dem Haus gegangen, ohne die Schuhe zu wechseln, und war in Hausschuhen im Supermarkt!\n\nLiebe Grüße\nClaire"
+ }
+}

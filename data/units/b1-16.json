@@ -1,0 +1,492 @@
+{
+ "id": "b1-16",
+ "cefr": "B1",
+ "title": "Reporting speech: dass, ob, Konjunktiv I",
+ "situation": "Passing on messages",
+ "canDo": "You can pass on what someone said, asked or wanted with dass, ob, question words and sollen, and you recognise the Konjunktiv I in the news.",
+ "explanation": "When you pass on a message, you report what someone said or asked:\n\n| they said | you report |\n|---|---|\n| \"Ich komme später.\" | Er sagt, **dass** er später **kommt**. |\n| \"Kommst du mit?\" | Sie fragt, **ob** du **mitkommst**. |\n| \"Wann beginnt das Meeting?\" | Er fragt, **wann** das Meeting **beginnt**. |\n| \"Ruf mich an!\" | Sie sagt, du **sollst** sie anrufen. |\n\n- Statements take **dass**, yes/no questions **ob**, W-questions keep their **question word**. In all three, the verb goes to the end.\n- Requests and orders are reported with **sollen**: *Der Chef sagt, du sollst ihn zurückrufen.*\n- Change pronouns and possessives to fit the new speaker: *\"Ich habe meinen Schlüssel vergessen.\"* → *Lisa sagt, dass **sie ihren** Schlüssel vergessen hat.*\n- In everyday speech you can drop *dass* and keep normal word order: *Er sagt, er kommt später.*\n\n**Konjunktiv I – just recognise it.** News, reports and official texts use a special verb form for reported speech, mostly with er/sie/es:\n- sein → **er sei**, haben → **er habe**, können → **er könne**, kommen → **er komme**\n\n*Die Polizei sagt, der Fahrer **sei** zu schnell gefahren.* It only signals \"this is what someone said\". You don't need it yourself: in conversation say *dass er zu schnell gefahren ist*.\n\nThe most common mistakes: question word order after *ob* (not ~~ob kommst du~~, but *ob du kommst*), using *wenn* for \"if/whether\" (that is always *ob*), and forgetting to change the pronouns.",
+ "french": "il dit que and il demande si work like sagen, dass and fragen, ob, but si is ob here, never wenn; Konjunktiv I does the job of the French conditional used for hearsay (il aurait eu un accident ≈ er habe einen Unfall gehabt).",
+ "examples": [
+  {
+   "de": "Tom sagt, dass er heute später kommt.",
+   "en": "Tom says he's coming later today."
+  },
+  {
+   "de": "Frau Weber hat gefragt, ob du morgen Zeit hast.",
+   "en": "Ms Weber asked whether you have time tomorrow."
+  },
+  {
+   "de": "Deine Mutter will wissen, wann du nach Hause kommst.",
+   "en": "Your mother wants to know when you're coming home."
+  },
+  {
+   "de": "Der Chef sagt, du sollst ihn zurückrufen.",
+   "en": "The boss says you should call him back."
+  },
+  {
+   "de": "Lisa hat geschrieben, dass sie ihren Schlüssel vergessen hat.",
+   "en": "Lisa wrote that she forgot her key."
+  },
+  {
+   "de": "Er fragt, ob wir zusammen essen gehen.",
+   "en": "He's asking whether we're going out to eat together."
+  },
+  {
+   "de": "Die Polizei sagt, der Fahrer sei zu schnell gefahren.",
+   "en": "The police say the driver was going too fast."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-16-01",
+   "type": "cloze",
+   "de": "Tom sagt, dass er heute später ___.",
+   "base": "kommen",
+   "answers": [
+    "kommt"
+   ],
+   "en": "Tom says he's coming later today."
+  },
+  {
+   "id": "b1-16-02",
+   "type": "choice",
+   "de": "Sie fragt, ___ du morgen Zeit hast.",
+   "options": [
+    "dass",
+    "ob",
+    "wenn"
+   ],
+   "answer": 1,
+   "why": "A reported yes/no question starts with ob; wenn never means whether.",
+   "en": "She's asking whether you have time tomorrow."
+  },
+  {
+   "id": "b1-16-03",
+   "type": "cloze",
+   "de": "Der Chef fragt, wann das Meeting ___.",
+   "base": "beginnen",
+   "answers": [
+    "beginnt"
+   ],
+   "en": "The boss is asking when the meeting starts."
+  },
+  {
+   "id": "b1-16-04",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "sagt",
+    "dass",
+    "er",
+    "krank",
+    "ist"
+   ],
+   "answers": [
+    "Er sagt, dass er krank ist."
+   ],
+   "en": "He says that he's ill."
+  },
+  {
+   "id": "b1-16-05",
+   "type": "choice",
+   "de": "Anna fragt, ___.",
+   "options": [
+    "ob du kommst mit",
+    "ob kommst du mit",
+    "ob du mitkommst"
+   ],
+   "answer": 2,
+   "why": "After ob the verb goes to the end, and a separable verb joins up again: mitkommst.",
+   "en": "Anna is asking whether you're coming along."
+  },
+  {
+   "id": "b1-16-06",
+   "type": "cloze",
+   "de": "„Ich habe meinen Schlüssel vergessen.“ – Lisa sagt, dass sie ___ Schlüssel vergessen hat.",
+   "base": "mein",
+   "answers": [
+    "ihren"
+   ],
+   "en": "\"I forgot my key.\" – Lisa says she forgot her key."
+  },
+  {
+   "id": "b1-16-07",
+   "type": "choice",
+   "de": "„Ruf mich bitte zurück!“ – Der Chef sagt, du ___ ihn zurückrufen.",
+   "options": [
+    "kannst",
+    "sollst",
+    "willst"
+   ],
+   "answer": 1,
+   "why": "A reported request or order uses sollen.",
+   "en": "\"Please call me back!\" – The boss says you should call him back."
+  },
+  {
+   "id": "b1-16-08",
+   "type": "cloze",
+   "de": "Meine Mutter will wissen, wann ich nach Hause ___.",
+   "base": "kommen",
+   "answers": [
+    "komme"
+   ],
+   "en": "My mother wants to know when I'm coming home."
+  },
+  {
+   "id": "b1-16-09",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "fragt",
+    "ob",
+    "wir",
+    "morgen",
+    "kommen"
+   ],
+   "answers": [
+    "Sie fragt, ob wir morgen kommen."
+   ],
+   "en": "She's asking whether we're coming tomorrow."
+  },
+  {
+   "id": "b1-16-10",
+   "type": "cloze",
+   "de": "Er hat gefragt, ob du ihm helfen ___.",
+   "base": "können",
+   "answers": [
+    "kannst",
+    "könntest"
+   ],
+   "en": "He asked whether you can help him."
+  },
+  {
+   "id": "b1-16-11",
+   "type": "choice",
+   "de": "Er fragt, wo ___.",
+   "options": [
+    "ist der Bahnhof",
+    "der Bahnhof ist",
+    "ob der Bahnhof ist"
+   ],
+   "answer": 1,
+   "why": "In a reported W-question the verb goes to the end, and you don't add ob.",
+   "en": "He's asking where the station is."
+  },
+  {
+   "id": "b1-16-12",
+   "type": "cloze",
+   "de": "„Wir kommen um acht.“ – Meine Nachbarn sagen, dass ___ um acht kommen.",
+   "base": "wir",
+   "answers": [
+    "sie"
+   ],
+   "en": "\"We're coming at eight.\" – My neighbours say they're coming at eight."
+  },
+  {
+   "id": "b1-16-13",
+   "type": "order",
+   "tiles": [
+    "Kannst",
+    "du",
+    "mir",
+    "sagen",
+    "wo",
+    "der Chef",
+    "ist"
+   ],
+   "answers": [
+    "Kannst du mir sagen, wo der Chef ist?"
+   ],
+   "en": "Can you tell me where the boss is?"
+  },
+  {
+   "id": "b1-16-14",
+   "type": "choice",
+   "de": "Die Polizei sagt, der Fahrer ___ zu schnell gefahren.",
+   "options": [
+    "sei",
+    "seid",
+    "sie"
+   ],
+   "answer": 0,
+   "why": "sei is the Konjunktiv I of sein; the news uses it to show this is what the police said.",
+   "en": "The police say the driver was going too fast."
+  },
+  {
+   "id": "b1-16-15",
+   "type": "cloze",
+   "de": "Der Arzt hat gesagt, dass ich zwei Tage im Bett bleiben ___.",
+   "base": "sollen",
+   "answers": [
+    "soll",
+    "sollte"
+   ],
+   "en": "The doctor said I should stay in bed for two days."
+  },
+  {
+   "id": "b1-16-16",
+   "type": "choice",
+   "de": "Paul hat geschrieben, ___ er den Zug verpasst hat.",
+   "options": [
+    "dass",
+    "ob",
+    "was"
+   ],
+   "answer": 0,
+   "why": "He is reporting a statement, so you use dass.",
+   "en": "Paul wrote that he missed the train."
+  },
+  {
+   "id": "b1-16-17",
+   "type": "order",
+   "tiles": [
+    "Lisa",
+    "will",
+    "wissen",
+    "ob",
+    "du",
+    "heute Abend",
+    "Zeit hast"
+   ],
+   "answers": [
+    "Lisa will wissen, ob du heute Abend Zeit hast."
+   ],
+   "en": "Lisa wants to know whether you have time this evening."
+  },
+  {
+   "id": "b1-16-18",
+   "type": "cloze",
+   "de": "„Hast du Hunger?“ – Mama fragt, ob ich Hunger ___.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "\"Are you hungry?\" – Mum is asking whether I'm hungry."
+  },
+  {
+   "id": "b1-16-19",
+   "type": "choice",
+   "de": "„Wo wohnst du?“ – Er fragt mich, wo ___.",
+   "options": [
+    "ich wohne",
+    "wohne ich",
+    "du wohnst"
+   ],
+   "answer": 0,
+   "why": "He is asking me, so du becomes ich, and the verb goes to the end.",
+   "en": "\"Where do you live?\" – He's asking me where I live."
+  },
+  {
+   "id": "b1-16-20",
+   "type": "cloze",
+   "de": "„Bring bitte Brot mit!“ – Jana sagt, ich ___ Brot mitbringen.",
+   "base": "sollen",
+   "answers": [
+    "soll"
+   ],
+   "en": "\"Please bring some bread!\" – Jana says I should bring bread."
+  },
+  {
+   "id": "b1-16-21",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "hat",
+    "gesagt",
+    "dass",
+    "er",
+    "später",
+    "kommt"
+   ],
+   "answers": [
+    "Er hat gesagt, dass er später kommt."
+   ],
+   "en": "He said that he's coming later."
+  },
+  {
+   "id": "b1-16-22",
+   "type": "choice",
+   "de": "Der Nachbar sagt, er ___ nichts gehört.",
+   "options": [
+    "haben",
+    "habt",
+    "habe"
+   ],
+   "answer": 2,
+   "why": "habe is the Konjunktiv I of haben for er; it shows this is what the neighbour said.",
+   "en": "The neighbour says he didn't hear anything."
+  },
+  {
+   "id": "b1-16-23",
+   "type": "cloze",
+   "de": "Weißt du, warum Paul heute nicht ___?",
+   "base": "kommen",
+   "answers": [
+    "kommt"
+   ],
+   "en": "Do you know why Paul isn't coming today?"
+  },
+  {
+   "id": "b1-16-24",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "fragt",
+    "ob",
+    "ihr",
+    "den Termin",
+    "vergessen",
+    "habt"
+   ],
+   "answers": [
+    "Sie fragt, ob ihr den Termin vergessen habt."
+   ],
+   "en": "She's asking whether you forgot the appointment."
+  }
+ ],
+ "listening": {
+  "title": "Nachrichten für Jana",
+  "intro": "Jana comes home, and her flatmate Ben passes on the messages people left for her.",
+  "lines": [
+   {
+    "speaker": "Jana",
+    "de": "Hallo Ben, ich bin wieder da! Hat jemand für mich angerufen?",
+    "en": "Hi Ben, I'm back! Did anyone call for me?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ja, zweimal. Zuerst deine Mutter. Sie fragt, ob du am Sonntag zum Essen kommst.",
+    "en": "Yes, twice. First your mother. She's asking whether you're coming for lunch on Sunday."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Am Sonntag? Hat sie gesagt, wann?",
+    "en": "On Sunday? Did she say when?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Um eins. Und sie sagt, du sollst den Kuchen nicht vergessen.",
+    "en": "At one. And she says you shouldn't forget the cake."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ach ja, der Kuchen! Und wer hat noch angerufen?",
+    "en": "Oh yes, the cake! And who else called?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Dein Kollege Tobias. Er hat gesagt, dass das Meeting morgen erst um zehn beginnt.",
+    "en": "Your colleague Tobias. He said that the meeting tomorrow doesn't start until ten."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Super, dann kann ich länger schlafen. Sonst noch etwas?",
+    "en": "Great, then I can sleep longer. Anything else?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ja, er will wissen, ob du die Präsentation schon fertig hast.",
+    "en": "Yes, he wants to know whether you've finished the presentation."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Fast. Hat er gesagt, warum er fragt?",
+    "en": "Almost. Did he say why he's asking?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Er meint, dass der Chef sie heute Abend noch sehen will.",
+    "en": "He says the boss wants to see it this evening."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Oh nein. Dann muss ich gleich weiterarbeiten.",
+    "en": "Oh no. Then I have to get back to work straight away."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Er sagt, du sollst ihn zurückrufen, wenn du Fragen hast.",
+    "en": "He says you should call him back if you have any questions."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Danke, Ben! Du bist der beste Mitbewohner.",
+    "en": "Thanks, Ben! You're the best flatmate."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ich weiß. Ach ja, und ich soll dir sagen, dass wir keine Milch mehr haben.",
+    "en": "I know. Oh yes, and I'm supposed to tell you that we're out of milk."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Jana's mother want to know?",
+    "options": [
+     "Whether Jana is coming for lunch on Sunday.",
+     "When Jana is moving.",
+     "Whether Jana has bought a cake."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When does the meeting start tomorrow?",
+    "options": [
+     "At nine.",
+     "At ten.",
+     "At one."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why is Tobias asking about the presentation?",
+    "options": [
+     "He wants to help Jana with it.",
+     "The meeting has been cancelled.",
+     "The boss wants to see it this evening."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Ben tell Jana at the end?",
+    "options": [
+     "Her mother will call again.",
+     "They have no milk left.",
+     "He is going out tonight."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Meine Mutter fragt, ob wir am Sonntag zum Essen kommen.",
+  "Tobias hat gesagt, dass das Meeting erst um zehn beginnt.",
+  "Der Chef will wissen, wann die Präsentation fertig ist."
+ ],
+ "speaking": [
+  {
+   "de": "Hat jemand für mich angerufen?",
+   "en": "Did anyone call for me?"
+  },
+  {
+   "de": "Sie fragt, ob du am Sonntag zum Essen kommst.",
+   "en": "She's asking whether you're coming for lunch on Sunday."
+  },
+  {
+   "de": "Er hat gesagt, dass das Meeting erst um zehn beginnt.",
+   "en": "He said that the meeting doesn't start until ten."
+  },
+  {
+   "de": "Er will wissen, ob du die Präsentation schon fertig hast.",
+   "en": "He wants to know whether you've finished the presentation."
+  },
+  {
+   "de": "Er sagt, du sollst ihn zurückrufen.",
+   "en": "He says you should call him back."
+  }
+ ],
+ "writing": {
+  "task": "Your colleague Sarah was out of the office today, and several people called for her. Write her a note of 80–100 words passing on the messages: what they said, what they asked, and what she should do.",
+  "model": "Hallo Sarah,\n\nheute haben ein paar Leute für dich angerufen. Herr Braun von der Firma Keller hat gesagt, dass die Lieferung erst am Freitag kommt. Er möchte wissen, ob das ein Problem für dich ist. Dann hat deine Kollegin aus Hamburg angerufen. Sie fragt, wann du nächste Woche in Hamburg bist und ob ihr zusammen Mittag essen könnt. Außerdem hat der Chef gesagt, du sollst ihm den Bericht bis morgen schicken. Und Paul lässt fragen, warum du nicht auf seine Mail geantwortet hast.\n\nViele Grüße\nClaire"
+ }
+}

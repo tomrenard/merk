@@ -1,0 +1,471 @@
+{
+ "id": "a2-09",
+ "cefr": "A2",
+ "title": "Comparative and superlative",
+ "situation": "Comparing offers when shopping",
+ "canDo": "You can compare prices and products with -er als, so … wie and am -sten.",
+ "explanation": "When you compare offers, you add endings to the adjective:\n- **comparative**: adjective + **-er**, then **als**: *Das Handy ist billig**er als** das da.*\n- **superlative**: **am** + adjective + **-sten**: *Im Supermarkt ist das Obst **am** billig**sten**.*\n- **the same**: **(genau)so** + adjective + **wie**: *Die Hose ist so teuer wie der Pullover.*\n\n| | comparative | superlative |\n|---|---|---|\n| billig | billiger | am billigsten |\n| teuer | teurer | am teuersten |\n| alt | älter | am ältesten |\n| groß | größer | am größten |\n| gut | **besser** | **am besten** |\n| viel | **mehr** | **am meisten** |\n| gern | **lieber** | **am liebsten** |\n\n- Many short adjectives add an **umlaut**: alt → älter, groß → größer, lang → länger, warm → wärmer, jung → jünger.\n- After **-t, -d, -s, -z** the superlative adds **-e-**: am ältesten, am leichtesten, am kürzesten.\n- **teuer** loses an e: teurer.\n- **gern** compares what you like doing: *Ich trinke lieber Tee. Am liebsten trinke ich Wasser.*\n\nCommon mistakes: *mehr billig* (from French « plus ») → **billiger**, and *billiger wie* → **billiger als**.",
+ "french": "French builds comparisons with words (plus cher, le plus cher); German adds endings (teurer, am teuersten), so never say « mehr teuer ».",
+ "examples": [
+  {
+   "de": "Das Handy hier ist billiger als das da.",
+   "en": "This phone is cheaper than that one."
+  },
+  {
+   "de": "Der Laptop ist teurer, aber besser.",
+   "en": "The laptop is more expensive, but better."
+  },
+  {
+   "de": "Im Supermarkt ist das Obst am günstigsten.",
+   "en": "Fruit is cheapest at the supermarket."
+  },
+  {
+   "de": "Die Hose kostet genauso viel wie der Pullover.",
+   "en": "The trousers cost just as much as the pullover."
+  },
+  {
+   "de": "Ich trinke lieber Tee als Kaffee.",
+   "en": "I prefer tea to coffee."
+  },
+  {
+   "de": "Welches Angebot ist am besten?",
+   "en": "Which offer is the best?"
+  },
+  {
+   "de": "Online ist es oft günstiger.",
+   "en": "It's often cheaper online."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-09-01",
+   "type": "cloze",
+   "de": "Das Handy hier ist ___ als das da.",
+   "base": "billig",
+   "answers": [
+    "billiger"
+   ],
+   "en": "This phone is cheaper than that one."
+  },
+  {
+   "id": "a2-09-02",
+   "type": "cloze",
+   "de": "Der Laptop ist teuer, aber er ist auch ___ als der da.",
+   "base": "gut",
+   "answers": [
+    "besser"
+   ],
+   "en": "The laptop is expensive, but it's also better than that one."
+  },
+  {
+   "id": "a2-09-03",
+   "type": "choice",
+   "de": "Das Fahrrad ist ___ als das Auto.",
+   "options": [
+    "billiger",
+    "mehr billig",
+    "billig"
+   ],
+   "answer": 0,
+   "why": "German adds -er to the adjective; it never uses mehr with an adjective.",
+   "en": "The bike is cheaper than the car."
+  },
+  {
+   "id": "a2-09-04",
+   "type": "cloze",
+   "de": "Ich trinke ___ Tee als Kaffee.",
+   "base": "gern",
+   "answers": [
+    "lieber"
+   ],
+   "en": "I prefer tea to coffee."
+  },
+  {
+   "id": "a2-09-05",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Der Markt",
+    "als der Supermarkt",
+    "günstiger"
+   ],
+   "answers": [
+    "Der Markt ist günstiger als der Supermarkt."
+   ],
+   "en": "The market is cheaper than the supermarket."
+  },
+  {
+   "id": "a2-09-06",
+   "type": "choice",
+   "de": "Mein Bruder ist zwei Jahre ___ als ich.",
+   "options": [
+    "alter",
+    "älter",
+    "ältest"
+   ],
+   "answer": 1,
+   "why": "Many short adjectives add an umlaut: alt → älter.",
+   "en": "My brother is two years older than me."
+  },
+  {
+   "id": "a2-09-07",
+   "type": "cloze",
+   "de": "Welches Angebot ist am ___?",
+   "base": "gut",
+   "answers": [
+    "besten"
+   ],
+   "en": "Which offer is the best?"
+  },
+  {
+   "id": "a2-09-08",
+   "type": "choice",
+   "de": "Die Hose kostet genauso viel ___ der Pullover.",
+   "options": [
+    "als",
+    "wie",
+    "wenn"
+   ],
+   "answer": 1,
+   "why": "For 'the same' use (genau)so … wie; als comes only after a comparative.",
+   "en": "The trousers cost just as much as the pullover."
+  },
+  {
+   "id": "a2-09-09",
+   "type": "cloze",
+   "de": "Die Hose hier ist ___ als die da.",
+   "base": "lang",
+   "answers": [
+    "länger"
+   ],
+   "en": "These trousers are longer than those."
+  },
+  {
+   "id": "a2-09-10",
+   "type": "order",
+   "tiles": [
+    "Online",
+    "ist",
+    "oft",
+    "es",
+    "günstiger"
+   ],
+   "answers": [
+    "Online ist es oft günstiger.",
+    "Es ist online oft günstiger.",
+    "Oft ist es online günstiger.",
+    "Es ist oft online günstiger."
+   ],
+   "en": "It's often cheaper online."
+  },
+  {
+   "id": "a2-09-11",
+   "type": "choice",
+   "de": "Im Supermarkt ist das Obst ___.",
+   "options": [
+    "billigsten",
+    "am billigsten",
+    "am billigste"
+   ],
+   "answer": 1,
+   "why": "After sein the superlative is am …sten.",
+   "en": "Fruit is cheapest at the supermarket."
+  },
+  {
+   "id": "a2-09-12",
+   "type": "cloze",
+   "de": "Was kostet hier am ___?",
+   "base": "viel",
+   "answers": [
+    "meisten"
+   ],
+   "en": "What costs the most here?"
+  },
+  {
+   "id": "a2-09-13",
+   "type": "choice",
+   "de": "Die Wohnung in der Stadt ist ___ als die auf dem Land.",
+   "options": [
+    "teuer",
+    "teurer",
+    "mehr teuer"
+   ],
+   "answer": 1,
+   "why": "teuer drops an e in the comparative: teurer.",
+   "en": "The flat in town is more expensive than the one in the country."
+  },
+  {
+   "id": "a2-09-14",
+   "type": "cloze",
+   "de": "Der Zug ist ___ als der Bus.",
+   "base": "schnell",
+   "answers": [
+    "schneller"
+   ],
+   "en": "The train is faster than the bus."
+  },
+  {
+   "id": "a2-09-15",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "esse",
+    "Pizza",
+    "lieber",
+    "als Pasta"
+   ],
+   "answers": [
+    "Ich esse lieber Pizza als Pasta.",
+    "Pizza esse ich lieber als Pasta."
+   ],
+   "en": "I prefer pizza to pasta."
+  },
+  {
+   "id": "a2-09-16",
+   "type": "choice",
+   "de": "Welchen Laptop soll ich nehmen? – Der hier ist ___.",
+   "options": [
+    "am leichtsten",
+    "am leichtesten",
+    "leichtester"
+   ],
+   "answer": 1,
+   "why": "Adjectives ending in -t add -esten: am leichtesten.",
+   "en": "Which laptop should I take? – This one is the lightest."
+  },
+  {
+   "id": "a2-09-17",
+   "type": "cloze",
+   "de": "Die Schuhe sind zu klein. Haben Sie sie eine Nummer ___?",
+   "base": "groß",
+   "answers": [
+    "größer"
+   ],
+   "en": "The shoes are too small. Do you have them a size bigger?"
+  },
+  {
+   "id": "a2-09-18",
+   "type": "choice",
+   "de": "Der Kaffee hier schmeckt ___ als im Büro.",
+   "options": [
+    "gutter",
+    "besser",
+    "mehr gut"
+   ],
+   "answer": 1,
+   "why": "gut is irregular: besser.",
+   "en": "The coffee here tastes better than at the office."
+  },
+  {
+   "id": "a2-09-19",
+   "type": "cloze",
+   "de": "Im Sommer sind die Erdbeeren am ___.",
+   "base": "billig",
+   "answers": [
+    "billigsten"
+   ],
+   "en": "Strawberries are cheapest in summer."
+  },
+  {
+   "id": "a2-09-20",
+   "type": "order",
+   "tiles": [
+    "Welches Handy",
+    "ist",
+    "am besten",
+    "für mich"
+   ],
+   "answers": [
+    "Welches Handy ist für mich am besten?",
+    "Welches Handy ist am besten für mich?"
+   ],
+   "en": "Which phone is best for me?"
+  },
+  {
+   "id": "a2-09-21",
+   "type": "choice",
+   "de": "Ich arbeite ___ als du.",
+   "options": [
+    "mehr",
+    "mehrer",
+    "am meisten"
+   ],
+   "answer": 0,
+   "why": "viel is irregular: mehr.",
+   "en": "I work more than you."
+  },
+  {
+   "id": "a2-09-22",
+   "type": "cloze",
+   "de": "Die Äpfel aus der Region sind ___ als die aus Spanien.",
+   "base": "frisch",
+   "answers": [
+    "frischer"
+   ],
+   "en": "The local apples are fresher than the ones from Spain."
+  },
+  {
+   "id": "a2-09-23",
+   "type": "order",
+   "tiles": [
+    "Die Jacke",
+    "so teuer",
+    "ist",
+    "wie",
+    "der Mantel"
+   ],
+   "answers": [
+    "Die Jacke ist so teuer wie der Mantel.",
+    "Der Mantel ist so teuer wie die Jacke."
+   ],
+   "en": "The jacket is as expensive as the coat."
+  },
+  {
+   "id": "a2-09-24",
+   "type": "order",
+   "tiles": [
+    "Am liebsten",
+    "ich",
+    "kaufe",
+    "auf dem Markt",
+    "ein"
+   ],
+   "answers": [
+    "Am liebsten kaufe ich auf dem Markt ein.",
+    "Ich kaufe am liebsten auf dem Markt ein.",
+    "Auf dem Markt kaufe ich am liebsten ein."
+   ],
+   "en": "I like shopping at the market best."
+  }
+ ],
+ "listening": {
+  "title": "Welches Handy?",
+  "intro": "Nadia is in an electronics shop and compares two phones with the salesman, Frank.",
+  "lines": [
+   {
+    "speaker": "Nadia",
+    "de": "Guten Tag, ich suche ein Handy. Was ist der Unterschied zwischen den zwei Handys hier?",
+    "en": "Hello, I'm looking for a phone. What's the difference between these two phones?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Das hier kostet 299 Euro, das da 399. Das da ist teurer, aber die Kamera ist besser.",
+    "en": "This one costs 299 euros, that one 399. That one is more expensive, but the camera is better."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Und der Akku? Ich telefoniere sehr viel.",
+    "en": "And the battery? I make a lot of calls."
+   },
+   {
+    "speaker": "Frank",
+    "de": "Der Akku ist bei beiden gleich. Aber das Handy für 299 ist leichter und kleiner.",
+    "en": "The battery is the same in both. But the phone for 299 is lighter and smaller."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Kleiner ist gut. Welches finden Sie am besten?",
+    "en": "Smaller is good. Which one do you think is best?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Ehrlich gesagt: Wenn Sie nicht so viel fotografieren, ist das hier am besten.",
+    "en": "To be honest: if you don't take many photos, this one is the best."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Ist es online vielleicht günstiger?",
+    "en": "Is it maybe cheaper online?"
+   },
+   {
+    "speaker": "Frank",
+    "de": "Manchmal, ja. Aber bei uns bekommen Sie zwei Jahre Garantie.",
+    "en": "Sometimes, yes. But with us you get a two-year guarantee."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Im Internet habe ich es für 279 Euro gesehen. Das ist zwanzig Euro billiger.",
+    "en": "I saw it online for 279 euros. That's twenty euros cheaper."
+   },
+   {
+    "speaker": "Frank",
+    "de": "Na gut, dann bekommen Sie es bei uns auch für 279.",
+    "en": "All right, then you can have it here for 279 too."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Super, dann nehme ich es!",
+    "en": "Great, then I'll take it!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the more expensive phone better?",
+    "options": [
+     "Its battery lasts longer.",
+     "Its camera is better.",
+     "It's lighter."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Nadia like about the cheaper phone?",
+    "options": [
+     "It's smaller.",
+     "It has a better camera.",
+     "It comes in more colours."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where did Nadia see a lower price?",
+    "options": [
+     "In another shop.",
+     "In a newspaper.",
+     "On the internet."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much does Nadia pay in the end?",
+    "options": [
+     "299 euros.",
+     "279 euros.",
+     "399 euros."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Das Handy hier ist billiger als das da.",
+  "Online ist es oft zwanzig Euro günstiger.",
+  "Welches Angebot finden Sie am besten?"
+ ],
+ "speaking": [
+  {
+   "de": "Was ist der Unterschied?",
+   "en": "What's the difference?"
+  },
+  {
+   "de": "Das da ist teurer, aber die Kamera ist besser.",
+   "en": "That one is more expensive, but the camera is better."
+  },
+  {
+   "de": "Welches finden Sie am besten?",
+   "en": "Which one do you think is best?"
+  },
+  {
+   "de": "Ist es online vielleicht günstiger?",
+   "en": "Is it maybe cheaper online?"
+  },
+  {
+   "de": "Das ist zwanzig Euro billiger.",
+   "en": "That's twenty euros cheaper."
+  }
+ ],
+ "writing": {
+  "task": "You're choosing between two phone contracts. Write 5–6 sentences to a friend: compare them and say which one you like best.",
+  "model": "Hallo Lisa, ich habe zwei Angebote für einen Handyvertrag. Das Angebot von Telenet kostet 15 Euro im Monat, das von Mobix nur 12 Euro. Mobix ist billiger. Aber bei Telenet bekomme ich mehr Daten, und das Netz ist besser. Am wichtigsten ist mir das Netz, weil ich viel unterwegs bin. Ich nehme also Telenet. Was meinst du?"
+ }
+}

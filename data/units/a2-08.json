@@ -1,0 +1,472 @@
+{
+ "id": "a2-08",
+ "cefr": "A2",
+ "title": "wenn and als",
+ "situation": "Habits now and memories",
+ "canDo": "You can talk about habits and conditions with wenn and about memories with als.",
+ "explanation": "To talk about habits and memories, German has two words for \"when\": **wenn** and **als**. Both start a side clause with the **verb at the end**, like weil.\n\n| | present / future | past |\n|---|---|---|\n| one time | **wenn** | **als** |\n| again and again | **wenn** | (immer) **wenn** |\n\n- **als**: one event or one period in the past: *Als ich nach Deutschland gekommen bin, konnte ich kein Deutsch. Als ich ein Kind war, hatte ich einen Hund.*\n- **wenn**: everything else: habits now (*Wenn ich Zeit habe, gehe ich schwimmen.*), the future (*Ruf mich an, wenn du da bist.*) and repeated things in the past (*Immer wenn wir bei Oma waren, durften wir lange aufbleiben.*)\n- **wenn** also means **if**: *Wenn es regnet, fahre ich mit dem Bus.*\n- **wann** is only a question word: *Wann kommst du?*\n\nIf the wenn/als clause comes first, the main clause starts with its verb: *Wenn ich müde **bin**, **trinke** ich Kaffee.*\n\nCommon mistake: *Wenn ich ein Kind war…* → **Als ich ein Kind war…**",
+ "french": "French uses « quand » for all of this; German splits it: one event or period in the past → als, everything else → wenn, and wann only for questions.",
+ "examples": [
+  {
+   "de": "Wenn ich Zeit habe, gehe ich schwimmen.",
+   "en": "When I have time, I go swimming."
+  },
+  {
+   "de": "Wenn es regnet, fahre ich mit dem Bus.",
+   "en": "When it rains, I take the bus."
+  },
+  {
+   "de": "Als ich ein Kind war, hatte ich einen Hund.",
+   "en": "When I was a child, I had a dog."
+  },
+  {
+   "de": "Als ich nach Deutschland gekommen bin, konnte ich kein Deutsch.",
+   "en": "When I came to Germany, I couldn't speak any German."
+  },
+  {
+   "de": "Immer wenn wir bei Oma waren, durften wir lange aufbleiben.",
+   "en": "Whenever we were at Grandma's, we were allowed to stay up late."
+  },
+  {
+   "de": "Ruf mich an, wenn du da bist.",
+   "en": "Call me when you're there."
+  },
+  {
+   "de": "Als ich 18 war, bin ich nach Paris gezogen.",
+   "en": "When I was 18, I moved to Paris."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-08-01",
+   "type": "cloze",
+   "de": "___ ich Zeit habe, gehe ich schwimmen.",
+   "base": "wenn/als",
+   "answers": [
+    "Wenn"
+   ],
+   "en": "When I have time, I go swimming."
+  },
+  {
+   "id": "a2-08-02",
+   "type": "cloze",
+   "de": "___ ich ein Kind war, hatte ich einen Hund.",
+   "base": "wenn/als",
+   "answers": [
+    "Als"
+   ],
+   "en": "When I was a child, I had a dog."
+  },
+  {
+   "id": "a2-08-03",
+   "type": "choice",
+   "de": "___ ich nach Deutschland gekommen bin, konnte ich kein Deutsch.",
+   "options": [
+    "Wenn",
+    "Als",
+    "Wann"
+   ],
+   "answer": 1,
+   "why": "One event in the past → als.",
+   "en": "When I came to Germany, I couldn't speak any German."
+  },
+  {
+   "id": "a2-08-04",
+   "type": "cloze",
+   "de": "Wenn es regnet, ___ ich mit dem Bus.",
+   "base": "fahren",
+   "answers": [
+    "fahre"
+   ],
+   "en": "When it rains, I take the bus."
+  },
+  {
+   "id": "a2-08-05",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "ich",
+    "müde",
+    "bin,",
+    "trinke ich Kaffee"
+   ],
+   "answers": [
+    "Wenn ich müde bin, trinke ich Kaffee."
+   ],
+   "en": "When I'm tired, I drink coffee."
+  },
+  {
+   "id": "a2-08-06",
+   "type": "choice",
+   "de": "Ruf mich an, ___ du in Berlin bist.",
+   "options": [
+    "als",
+    "wann",
+    "wenn"
+   ],
+   "answer": 2,
+   "why": "For the present or future, use wenn.",
+   "en": "Call me when you're in Berlin."
+  },
+  {
+   "id": "a2-08-07",
+   "type": "cloze",
+   "de": "Als ich 18 ___, bin ich nach Paris gezogen.",
+   "base": "sein",
+   "answers": [
+    "war"
+   ],
+   "en": "When I was 18, I moved to Paris."
+  },
+  {
+   "id": "a2-08-08",
+   "type": "choice",
+   "de": "Immer ___ wir bei Oma waren, durften wir lange aufbleiben.",
+   "options": [
+    "als",
+    "wenn",
+    "wann"
+   ],
+   "answer": 1,
+   "why": "Something repeated in the past (immer) → wenn.",
+   "en": "Whenever we were at Grandma's, we were allowed to stay up late."
+  },
+  {
+   "id": "a2-08-09",
+   "type": "cloze",
+   "de": "Wenn ich nach Hause ___, koche ich.",
+   "base": "kommen",
+   "answers": [
+    "komme"
+   ],
+   "en": "When I get home, I cook."
+  },
+  {
+   "id": "a2-08-10",
+   "type": "order",
+   "tiles": [
+    "Als",
+    "wir",
+    "in Rom",
+    "waren,",
+    "hat es geregnet"
+   ],
+   "answers": [
+    "Als wir in Rom waren, hat es geregnet."
+   ],
+   "en": "When we were in Rome, it rained."
+  },
+  {
+   "id": "a2-08-11",
+   "type": "choice",
+   "de": "Wenn ich Geld habe, ___.",
+   "options": [
+    "ich kaufe ein Auto",
+    "kaufe ich ein Auto",
+    "ich ein Auto kaufe"
+   ],
+   "answer": 1,
+   "why": "After a wenn clause, the main clause starts with its verb.",
+   "en": "When I have money, I'll buy a car."
+  },
+  {
+   "id": "a2-08-12",
+   "type": "cloze",
+   "de": "___ hast du Zeit? – Wenn ich fertig bin.",
+   "base": "wann/wenn/als",
+   "answers": [
+    "Wann"
+   ],
+   "en": "When do you have time? – When I'm finished."
+  },
+  {
+   "id": "a2-08-13",
+   "type": "choice",
+   "de": "___ ich gestern nach Hause gekommen bin, war die Tür offen.",
+   "options": [
+    "Als",
+    "Wenn",
+    "Wann"
+   ],
+   "answer": 0,
+   "why": "One event in the past → als.",
+   "en": "When I got home yesterday, the door was open."
+  },
+  {
+   "id": "a2-08-14",
+   "type": "cloze",
+   "de": "Was machst du, wenn du frei ___?",
+   "base": "haben",
+   "answers": [
+    "hast"
+   ],
+   "en": "What do you do when you're off?"
+  },
+  {
+   "id": "a2-08-15",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lese",
+    "immer,",
+    "wenn",
+    "ich",
+    "Bus fahre"
+   ],
+   "answers": [
+    "Ich lese immer, wenn ich Bus fahre.",
+    "Wenn ich Bus fahre, lese ich immer.",
+    "Immer wenn ich Bus fahre, lese ich."
+   ],
+   "en": "I always read when I'm on the bus."
+  },
+  {
+   "id": "a2-08-16",
+   "type": "choice",
+   "de": "Als ___, habe ich in Lyon gewohnt.",
+   "options": [
+    "ich klein war",
+    "ich war klein",
+    "war ich klein"
+   ],
+   "answer": 0,
+   "why": "In an als clause the verb goes to the end.",
+   "en": "When I was little, I lived in Lyon."
+  },
+  {
+   "id": "a2-08-17",
+   "type": "cloze",
+   "de": "Wenn du Hilfe ___, ruf mich an.",
+   "base": "brauchen",
+   "answers": [
+    "brauchst"
+   ],
+   "en": "If you need help, call me."
+  },
+  {
+   "id": "a2-08-18",
+   "type": "choice",
+   "de": "Jedes Mal, ___ ich ihn sehe, lacht er.",
+   "options": [
+    "als",
+    "wenn",
+    "wann"
+   ],
+   "answer": 1,
+   "why": "Something that happens again and again → wenn.",
+   "en": "Every time I see him, he laughs."
+  },
+  {
+   "id": "a2-08-19",
+   "type": "cloze",
+   "de": "Als wir in Spanien waren, ___ wir jeden Tag am Strand.",
+   "base": "sein",
+   "answers": [
+    "waren"
+   ],
+   "en": "When we were in Spain, we were on the beach every day."
+  },
+  {
+   "id": "a2-08-20",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "das Wetter",
+    "schön ist,",
+    "wir",
+    "grillen"
+   ],
+   "answers": [
+    "Wenn das Wetter schön ist, grillen wir."
+   ],
+   "en": "When the weather is nice, we have a barbecue."
+  },
+  {
+   "id": "a2-08-21",
+   "type": "choice",
+   "de": "___ fängt der Film an?",
+   "options": [
+    "Wenn",
+    "Als",
+    "Wann"
+   ],
+   "answer": 2,
+   "why": "Wann asks a question; wenn and als are not question words.",
+   "en": "When does the film start?"
+  },
+  {
+   "id": "a2-08-22",
+   "type": "cloze",
+   "de": "Als ich in Deutschland angekommen ___, konnte ich nur „Hallo“ sagen.",
+   "base": "sein",
+   "answers": [
+    "bin",
+    "war"
+   ],
+   "en": "When I arrived in Germany, I could only say 'Hallo'."
+  },
+  {
+   "id": "a2-08-23",
+   "type": "order",
+   "tiles": [
+    "Als",
+    "mein Sohn",
+    "drei",
+    "war,",
+    "konnte er",
+    "schon schwimmen"
+   ],
+   "answers": [
+    "Als mein Sohn drei war, konnte er schon schwimmen."
+   ],
+   "en": "When my son was three, he could already swim."
+  },
+  {
+   "id": "a2-08-24",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "ich",
+    "Feierabend habe,",
+    "ich",
+    "rufe",
+    "meine Mutter an"
+   ],
+   "answers": [
+    "Wenn ich Feierabend habe, rufe ich meine Mutter an.",
+    "Ich rufe meine Mutter an, wenn ich Feierabend habe."
+   ],
+   "en": "When I finish work, I call my mother."
+  }
+ ],
+ "listening": {
+  "title": "Früher und heute",
+  "intro": "Two colleagues, Elif and Markus, chat over lunch about weekends and their childhood.",
+  "lines": [
+   {
+    "speaker": "Markus",
+    "de": "Was machst du am Wochenende, Elif?",
+    "en": "What do you do at the weekend, Elif?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Wenn das Wetter schön ist, fahre ich mit dem Rad an den See.",
+    "en": "When the weather is nice, I cycle to the lake."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Schön. Und wenn es regnet?",
+    "en": "Nice. And when it rains?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Dann bleibe ich zu Hause und backe. Das habe ich schon als Kind gemacht.",
+    "en": "Then I stay at home and bake. I already did that as a child."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Wirklich?",
+    "en": "Really?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ja. Immer wenn ich bei meiner Oma in Izmir war, haben wir zusammen gebacken.",
+    "en": "Yes. Whenever I was at my grandma's in Izmir, we baked together."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Und wann bist du nach Deutschland gekommen?",
+    "en": "And when did you come to Germany?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Als ich zwölf war. Am Anfang war es schwer, weil ich kein Deutsch konnte.",
+    "en": "When I was twelve. At first it was hard because I couldn't speak any German."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Das kenne ich. Als ich nach München gezogen bin, habe ich den Dialekt nicht verstanden!",
+    "en": "I know that feeling. When I moved to Munich, I didn't understand the dialect!"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Haha, und jetzt?",
+    "en": "Haha, and now?"
+   },
+   {
+    "speaker": "Markus",
+    "de": "Jetzt verstehe ich alles, wenn die Leute langsam sprechen.",
+    "en": "Now I understand everything when people speak slowly."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Elif do at the weekend when the weather is nice?",
+    "options": [
+     "She bakes.",
+     "She cycles to the lake.",
+     "She visits her grandma."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where did Elif bake as a child?",
+    "options": [
+     "At her grandma's in Izmir.",
+     "At school.",
+     "At home in Munich."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How old was Elif when she came to Germany?",
+    "options": [
+     "Eighteen.",
+     "Ten.",
+     "Twelve."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What was difficult for Markus in Munich?",
+    "options": [
+     "Finding a flat.",
+     "Understanding the dialect.",
+     "The weather."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wenn das Wetter schön ist, fahre ich Rad.",
+  "Als ich zwölf war, hatte ich einen Hund.",
+  "Ruf mich an, wenn du Zeit hast."
+ ],
+ "speaking": [
+  {
+   "de": "Wenn das Wetter schön ist, fahre ich an den See.",
+   "en": "When the weather is nice, I go to the lake."
+  },
+  {
+   "de": "Und wenn es regnet?",
+   "en": "And when it rains?"
+  },
+  {
+   "de": "Immer wenn ich bei meiner Oma war, haben wir gebacken.",
+   "en": "Whenever I was at my grandma's, we baked."
+  },
+  {
+   "de": "Als ich zwölf war, bin ich nach Deutschland gekommen.",
+   "en": "When I was twelve, I came to Germany."
+  },
+  {
+   "de": "Jetzt verstehe ich alles, wenn die Leute langsam sprechen.",
+   "en": "Now I understand everything when people speak slowly."
+  }
+ ],
+ "writing": {
+  "task": "Write 5–6 sentences: what do you usually do when you have free time, and what did you do when you were a child?",
+  "model": "Wenn ich Zeit habe, gehe ich gern ins Kino. Wenn es warm ist, fahre ich mit dem Rad an den See. Als ich ein Kind war, habe ich in Lyon gewohnt. Immer wenn wir Ferien hatten, waren wir bei meinen Großeltern am Meer. Als ich 25 war, bin ich nach Deutschland gezogen. Am Anfang konnte ich nur wenig Deutsch."
+ }
+}

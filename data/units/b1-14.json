@@ -1,0 +1,486 @@
+{
+ "id": "b1-14",
+ "cefr": "B1",
+ "title": "Having things done: lassen",
+ "situation": "Services and appointments",
+ "canDo": "You can say what you have done for you by others – at the hairdresser, the garage or the office – with lassen in the present, with modal verbs and in the Perfekt.",
+ "explanation": "Many things you don't do yourself: you go to the hairdresser, the garage or the photo studio and have them done. German uses **lassen** + infinitive: *Ich lasse das Auto reparieren.*\n\n*lassen* changes its vowel: ich lasse, du **lässt**, er/sie **lässt**, wir lassen, ihr lasst, sie lassen.\n\n| | example |\n|---|---|\n| present | Ich **lasse** das Auto reparieren. |\n| with a modal verb | Ich **muss** das Auto reparieren **lassen**. |\n| Perfekt | Ich **habe** das Auto reparieren **lassen**. |\n| for yourself | Ich lasse **mir** die Haare schneiden. |\n\n- The action (*reparieren, schneiden*) goes to the end. If *lassen* is not conjugated, it comes last: *reparieren lassen*.\n- In the Perfekt you use two infinitives: *Ich habe die Heizung reparieren **lassen**.* Not ~~reparieren gelassen~~.\n- For something on your body or for yourself, add a dative pronoun (*mir, dir, sich…*): *Ich lasse **mir** die Haare schneiden. Er lässt **sich** eine Pizza bringen.*\n- When there is no other object, the pronoun is accusative: *Ich lasse **mich** bei der Bank beraten.*\n- *lassen* also means \"let\": *Lass **mich** das machen!*\n- In a subordinate clause the conjugated verb goes last: *weil ich das Auto reparieren lassen **muss***.\n\nThe most common mistake, especially for French speakers, is using *machen*: not ~~Ich mache mir die Haare schneiden~~, but *Ich **lasse** mir die Haare schneiden*.",
+ "french": "lassen + infinitive is the French faire + infinitive: je me fais couper les cheveux = ich lasse mir die Haare schneiden, je fais réparer la voiture = ich lasse das Auto reparieren; German never uses machen here.",
+ "examples": [
+  {
+   "de": "Ich lasse mir morgen die Haare schneiden.",
+   "en": "I'm getting my hair cut tomorrow."
+  },
+  {
+   "de": "Wir lassen das Auto in der Werkstatt reparieren.",
+   "en": "We're having the car repaired at the garage."
+  },
+  {
+   "de": "Du musst die Jacke reinigen lassen.",
+   "en": "You need to get the jacket cleaned."
+  },
+  {
+   "de": "Ich habe die Waschmaschine reparieren lassen.",
+   "en": "I had the washing machine repaired."
+  },
+  {
+   "de": "Lassen Sie sich bei der Bank beraten.",
+   "en": "Get advice at the bank."
+  },
+  {
+   "de": "Er lässt sich die Pizza nach Hause bringen.",
+   "en": "He has the pizza delivered to his home."
+  },
+  {
+   "de": "Lass mich das machen!",
+   "en": "Let me do that!"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-14-01",
+   "type": "cloze",
+   "de": "Ich ___ mir die Haare schneiden.",
+   "base": "lassen",
+   "answers": [
+    "lasse"
+   ],
+   "en": "I'm getting my hair cut."
+  },
+  {
+   "id": "b1-14-02",
+   "type": "choice",
+   "de": "Er ___ sein Fahrrad reparieren.",
+   "options": [
+    "lasst",
+    "lässt",
+    "lässe"
+   ],
+   "answer": 1,
+   "why": "lassen changes a to ä with du and er/sie/es: er lässt.",
+   "en": "He's having his bike repaired."
+  },
+  {
+   "id": "b1-14-03",
+   "type": "cloze",
+   "de": "Wo ___ du dir die Haare schneiden?",
+   "base": "lassen",
+   "answers": [
+    "lässt"
+   ],
+   "en": "Where do you get your hair cut?"
+  },
+  {
+   "id": "b1-14-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lasse",
+    "das Auto",
+    "reparieren"
+   ],
+   "answers": [
+    "Ich lasse das Auto reparieren.",
+    "Das Auto lasse ich reparieren."
+   ],
+   "en": "I'm having the car repaired."
+  },
+  {
+   "id": "b1-14-05",
+   "type": "choice",
+   "de": "Ich muss mein Auto reparieren ___.",
+   "options": [
+    "lassen",
+    "lasse",
+    "zu lassen"
+   ],
+   "answer": 0,
+   "why": "After a modal verb, lassen is an infinitive at the end, without zu.",
+   "en": "I have to get my car repaired."
+  },
+  {
+   "id": "b1-14-06",
+   "type": "cloze",
+   "de": "___ ihr euch das Essen liefern oder kocht ihr?",
+   "base": "lassen",
+   "answers": [
+    "Lasst"
+   ],
+   "en": "Are you having the food delivered or are you cooking?"
+  },
+  {
+   "id": "b1-14-07",
+   "type": "choice",
+   "de": "Ich mache das nicht selbst, ich ___ die Heizung reparieren.",
+   "options": [
+    "mache",
+    "lasse",
+    "habe"
+   ],
+   "answer": 1,
+   "why": "To have something done by someone else, German uses lassen, never machen.",
+   "en": "I'm not doing it myself, I'm having the heating repaired."
+  },
+  {
+   "id": "b1-14-08",
+   "type": "cloze",
+   "de": "Gestern ___ ich mir die Haare schneiden lassen.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "Yesterday I got my hair cut."
+  },
+  {
+   "id": "b1-14-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lasse",
+    "mir",
+    "die Haare",
+    "schneiden"
+   ],
+   "answers": [
+    "Ich lasse mir die Haare schneiden.",
+    "Die Haare lasse ich mir schneiden."
+   ],
+   "en": "I'm getting my hair cut."
+  },
+  {
+   "id": "b1-14-10",
+   "type": "cloze",
+   "de": "Lässt du ___ die Pizza bringen?",
+   "base": "du",
+   "answers": [
+    "dir"
+   ],
+   "en": "Are you having the pizza delivered?"
+  },
+  {
+   "id": "b1-14-11",
+   "type": "choice",
+   "de": "Lassen Sie ___ von unserem Team beraten!",
+   "options": [
+    "Ihnen",
+    "sich",
+    "Sie"
+   ],
+   "answer": 1,
+   "why": "With the polite Sie the reflexive pronoun is sich, also in the imperative.",
+   "en": "Get advice from our team!"
+  },
+  {
+   "id": "b1-14-12",
+   "type": "cloze",
+   "de": "Frau Klein ___ jede Woche ihre Fenster putzen.",
+   "base": "lassen",
+   "answers": [
+    "lässt"
+   ],
+   "en": "Ms Klein has her windows cleaned every week."
+  },
+  {
+   "id": "b1-14-13",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "die Jacke",
+    "reinigen",
+    "lassen"
+   ],
+   "answers": [
+    "Ich habe die Jacke reinigen lassen.",
+    "Die Jacke habe ich reinigen lassen."
+   ],
+   "en": "I've had the jacket cleaned."
+  },
+  {
+   "id": "b1-14-14",
+   "type": "choice",
+   "de": "Ich habe mein Fahrrad reparieren ___.",
+   "options": [
+    "gelassen",
+    "lassen",
+    "lasse"
+   ],
+   "answer": 1,
+   "why": "In the Perfekt with another infinitive, lassen stays an infinitive: reparieren lassen.",
+   "en": "I had my bike repaired."
+  },
+  {
+   "id": "b1-14-15",
+   "type": "cloze",
+   "de": "Wenn du keine Zeit hast, ___ doch dein Fahrrad in der Werkstatt reparieren!",
+   "base": "lassen",
+   "answers": [
+    "lass"
+   ],
+   "en": "If you don't have time, why not have your bike repaired at the workshop?"
+  },
+  {
+   "id": "b1-14-16",
+   "type": "choice",
+   "de": "Ich lasse ___ die Haare schneiden.",
+   "options": [
+    "mich",
+    "ich",
+    "mir"
+   ],
+   "answer": 2,
+   "why": "There is already an object (die Haare), so the pronoun is dative: mir.",
+   "en": "I'm getting my hair cut."
+  },
+  {
+   "id": "b1-14-17",
+   "type": "order",
+   "tiles": [
+    "Lassen",
+    "Sie",
+    "sich",
+    "bei der Bank",
+    "beraten"
+   ],
+   "answers": [
+    "Lassen Sie sich bei der Bank beraten!"
+   ],
+   "en": "Get advice at the bank!"
+  },
+  {
+   "id": "b1-14-18",
+   "type": "cloze",
+   "de": "Ich lasse ___ von meinem Kollegen nach Hause fahren.",
+   "base": "ich",
+   "answers": [
+    "mich"
+   ],
+   "en": "I'm getting my colleague to drive me home."
+  },
+  {
+   "id": "b1-14-19",
+   "type": "choice",
+   "de": "Ich komme später, weil ich ___.",
+   "options": [
+    "mein Auto reparieren lassen muss",
+    "muss mein Auto reparieren lassen",
+    "mein Auto lassen reparieren muss"
+   ],
+   "answer": 0,
+   "why": "In a weil-clause the conjugated verb muss goes last, after reparieren lassen.",
+   "en": "I'll be late because I have to get my car repaired."
+  },
+  {
+   "id": "b1-14-20",
+   "type": "cloze",
+   "de": "Die Heizung ist kaputt, der Vermieter ___ sie morgen reparieren.",
+   "base": "lassen",
+   "answers": [
+    "lässt"
+   ],
+   "en": "The heating is broken; the landlord is having it repaired tomorrow."
+  },
+  {
+   "id": "b1-14-21",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "lässt",
+    "sich",
+    "die Pizza",
+    "nach Hause",
+    "bringen"
+   ],
+   "answers": [
+    "Er lässt sich die Pizza nach Hause bringen.",
+    "Die Pizza lässt er sich nach Hause bringen."
+   ],
+   "en": "He has the pizza delivered to his home."
+  },
+  {
+   "id": "b1-14-22",
+   "type": "choice",
+   "de": "Lass ___ das machen, ich kann das!",
+   "options": [
+    "mich",
+    "mir",
+    "ich"
+   ],
+   "answer": 0,
+   "why": "Here lassen means let, and the person you let is in the accusative: mich.",
+   "en": "Let me do that, I can do it!"
+  },
+  {
+   "id": "b1-14-23",
+   "type": "cloze",
+   "de": "In welcher Werkstatt ___ ihr euer Auto reparieren?",
+   "base": "lassen",
+   "answers": [
+    "lasst"
+   ],
+   "en": "Which garage do you have your car repaired at?"
+  },
+  {
+   "id": "b1-14-24",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "haben",
+    "die Wohnung",
+    "von einer Firma",
+    "putzen",
+    "lassen"
+   ],
+   "answers": [
+    "Wir haben die Wohnung von einer Firma putzen lassen.",
+    "Die Wohnung haben wir von einer Firma putzen lassen."
+   ],
+   "en": "We had the flat cleaned by a company."
+  }
+ ],
+ "listening": {
+  "title": "Ein voller Samstag",
+  "intro": "Anna tells her partner Lukas everything she has to get done on Saturday.",
+  "lines": [
+   {
+    "speaker": "Anna",
+    "de": "Lukas, hast du am Samstag Zeit? Ich muss so viel erledigen.",
+    "en": "Lukas, are you free on Saturday? I have so much to get done."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ein bisschen. Was musst du denn machen?",
+    "en": "A bit. So what do you have to do?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Zuerst gehe ich zum Friseur. Ich lasse mir endlich die Haare schneiden.",
+    "en": "First I'm going to the hairdresser. I'm finally getting my hair cut."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Gute Idee. Und danach?",
+    "en": "Good idea. And after that?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Dann bringe ich das Auto in die Werkstatt. Ich lasse das Licht vorne reparieren.",
+    "en": "Then I'm taking the car to the garage. I'm having the front light repaired."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Das kann ich machen. Ich habe am Nachmittag frei.",
+    "en": "I can do that. I'm free in the afternoon."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Super, danke! Und mein Pass ist bald nicht mehr gültig. Ich muss einen neuen beantragen.",
+    "en": "Great, thanks! And my passport will soon expire. I have to apply for a new one."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Dafür brauchst du aber einen Termin beim Bürgeramt.",
+    "en": "But you need an appointment at the Bürgeramt for that."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Den habe ich schon: am Donnerstag um acht.",
+    "en": "I've already got one: on Thursday at eight."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Und hast du schon neue Fotos machen lassen?",
+    "en": "And have you had new photos taken yet?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Nein, noch nicht. Die lasse ich nach dem Friseur machen.",
+    "en": "No, not yet. I'll have them taken after the hairdresser."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Sehr klug! Und was ist mit dem Abendessen?",
+    "en": "Very clever! And what about dinner?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ganz einfach: Wir lassen uns eine Pizza bringen.",
+    "en": "Very simple: we'll have a pizza delivered."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Perfekt. Das ist der beste Teil von deinem Plan.",
+    "en": "Perfect. That's the best part of your plan."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What will Anna do first on Saturday?",
+    "options": [
+     "Go to the hairdresser.",
+     "Go to the Bürgeramt.",
+     "Take the car to the garage."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does Lukas help?",
+    "options": [
+     "He makes the appointment at the Bürgeramt.",
+     "He takes the car to the garage.",
+     "He cooks dinner."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When is Anna's appointment at the Bürgeramt?",
+    "options": [
+     "On Saturday afternoon.",
+     "On Friday at eight.",
+     "On Thursday at eight."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Lukas like best about Anna's plan?",
+    "options": [
+     "The new haircut.",
+     "The pizza for dinner.",
+     "His free afternoon."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich lasse mir morgen beim Friseur die Haare schneiden.",
+  "Wir haben die Heizung gestern endlich reparieren lassen.",
+  "Wir müssen die Fahrräder vor der Reise reparieren lassen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich lasse mir endlich die Haare schneiden.",
+   "en": "I'm finally getting my hair cut."
+  },
+  {
+   "de": "Ich lasse das Licht am Auto reparieren.",
+   "en": "I'm having the light on the car repaired."
+  },
+  {
+   "de": "Die Fotos lasse ich nach dem Friseur machen.",
+   "en": "I'll have the photos taken after the hairdresser."
+  },
+  {
+   "de": "Hast du schon neue Fotos machen lassen?",
+   "en": "Have you had new photos taken yet?"
+  },
+  {
+   "de": "Wir lassen uns eine Pizza bringen.",
+   "en": "We'll have a pizza delivered."
+  }
+ ],
+ "writing": {
+  "task": "Write a message of 80–100 words to a friend about your busy Saturday: what you had done (for example at the hairdresser, the garage, a photo studio) and what you still need to do next week.",
+  "model": "Hallo Jana,\n\nwas für ein Samstag! Am Morgen habe ich mir endlich die Haare schneiden lassen – sie sind jetzt ganz kurz. Danach bin ich mit dem Auto in die Werkstatt gefahren, weil das Licht vorne kaputt war. Ich habe es gleich reparieren lassen, das hat nur eine Stunde gedauert. Am Nachmittag habe ich neue Passfotos machen lassen, denn nächste Woche muss ich einen neuen Pass beantragen. Am Abend war ich total müde. Deshalb habe ich mir eine Pizza bringen lassen.\n\nBis bald!\nClaire"
+ }
+}

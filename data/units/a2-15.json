@@ -1,0 +1,468 @@
+{
+ "id": "a2-15",
+ "cefr": "A2",
+ "title": "Infinitive with zu",
+ "situation": "Hobbies and plans",
+ "canDo": "You can say what you feel like doing, what you try and what you have started, with zu + infinitive.",
+ "explanation": "When you talk about hobbies and plans, you often say what you feel like doing, what you try or what you start: *Ich habe Lust, ins Kino zu gehen.* After these words the second verb goes to the **end**, with **zu** in front:\n\n- **Lust haben**: *Hast du Lust, mit mir zu kochen?*\n- **Zeit haben**: *Ich habe keine Zeit, Sport zu machen.*\n- **versuchen**: *Ich versuche, jeden Tag zu laufen.*\n- **anfangen / aufhören**: *Ich fange an, Gitarre zu spielen.*\n- **vergessen, vorhaben**: *Wir haben vor, nach Italien zu fahren.*\n- **Es macht Spaß / Es ist schwer, leicht, wichtig**: *Es ist schwer, früh aufzustehen.*\n\nSeparable verbs put **zu between the two parts**, written as one word: auf**zu**stehen, ein**zu**kaufen, an**zu**rufen, mit**zu**kommen.\n\nYou usually write a comma before the zu-group: *Ich habe Lust, schwimmen zu gehen.* With only zu + verb, you can leave it out: *Hast du Lust zu tanzen?*\n\n**No zu after modal verbs** (können, müssen, wollen, möchten) or after werden: *Ich kann schwimmen.* The most common mistake is *Ich muss zu arbeiten.* Say **Ich muss arbeiten**.",
+ "french": "zu works like « de » or « à » before an infinitive (essayer de faire, commencer à faire, avoir envie de faire), but in German it stands right before the verb at the end of the sentence.",
+ "examples": [
+  {
+   "de": "Hast du Lust, ins Kino zu gehen?",
+   "en": "Do you feel like going to the cinema?"
+  },
+  {
+   "de": "Ich versuche, jeden Tag zu laufen.",
+   "en": "I try to run every day."
+  },
+  {
+   "de": "Ich habe angefangen, Klavier zu spielen.",
+   "en": "I've started playing the piano."
+  },
+  {
+   "de": "Wir haben vor, im Sommer nach Italien zu fahren.",
+   "en": "We're planning to go to Italy in the summer."
+  },
+  {
+   "de": "Es ist schwer, früh aufzustehen.",
+   "en": "It's hard to get up early."
+  },
+  {
+   "de": "Vergiss nicht, deine Mutter anzurufen!",
+   "en": "Don't forget to call your mother!"
+  },
+  {
+   "de": "Ich kann gut schwimmen.",
+   "en": "I can swim well."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-15-01",
+   "type": "cloze",
+   "de": "Ich habe Lust, ins Kino ___.",
+   "base": "gehen",
+   "answers": [
+    "zu gehen"
+   ],
+   "en": "I feel like going to the cinema."
+  },
+  {
+   "id": "a2-15-02",
+   "type": "choice",
+   "de": "Ich kann gut ___.",
+   "options": [
+    "schwimmen",
+    "zu schwimmen",
+    "schwimme"
+   ],
+   "answer": 0,
+   "why": "After a modal verb like können, the infinitive comes without zu.",
+   "en": "I can swim well."
+  },
+  {
+   "id": "a2-15-03",
+   "type": "cloze",
+   "de": "Hast du Zeit, mir ___?",
+   "base": "helfen",
+   "answers": [
+    "zu helfen"
+   ],
+   "en": "Do you have time to help me?"
+  },
+  {
+   "id": "a2-15-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "versuche",
+    "jeden Tag",
+    "zu laufen"
+   ],
+   "answers": [
+    "Ich versuche, jeden Tag zu laufen.",
+    "Jeden Tag versuche ich zu laufen."
+   ],
+   "en": "I try to run every day."
+  },
+  {
+   "id": "a2-15-05",
+   "type": "choice",
+   "de": "Es macht Spaß, mit Freunden Fußball ___.",
+   "options": [
+    "spielen",
+    "zu spielen",
+    "zu spielt"
+   ],
+   "answer": 1,
+   "why": "After Es macht Spaß, the verb goes to the end as zu + infinitive.",
+   "en": "It's fun to play football with friends."
+  },
+  {
+   "id": "a2-15-06",
+   "type": "cloze",
+   "de": "Ich fange morgen an, Spanisch ___.",
+   "base": "lernen",
+   "answers": [
+    "zu lernen"
+   ],
+   "en": "I'm starting to learn Spanish tomorrow."
+  },
+  {
+   "id": "a2-15-07",
+   "type": "cloze",
+   "de": "Vergiss nicht, morgen früh ___!",
+   "base": "aufstehen",
+   "answers": [
+    "aufzustehen"
+   ],
+   "en": "Don't forget to get up early tomorrow!"
+  },
+  {
+   "id": "a2-15-08",
+   "type": "order",
+   "tiles": [
+    "Hast",
+    "du",
+    "Lust",
+    "zu tanzen"
+   ],
+   "answers": [
+    "Hast du Lust zu tanzen?"
+   ],
+   "en": "Do you feel like dancing?"
+  },
+  {
+   "id": "a2-15-09",
+   "type": "choice",
+   "de": "Ich muss heute lange ___.",
+   "options": [
+    "arbeiten",
+    "zu arbeiten",
+    "arbeite"
+   ],
+   "answer": 0,
+   "why": "müssen is a modal verb, so the infinitive comes without zu.",
+   "en": "I have to work late today."
+  },
+  {
+   "id": "a2-15-10",
+   "type": "cloze",
+   "de": "Ich habe keine Zeit, am Samstag ___.",
+   "base": "einkaufen",
+   "answers": [
+    "einzukaufen"
+   ],
+   "en": "I don't have time to do the shopping on Saturday."
+  },
+  {
+   "id": "a2-15-11",
+   "type": "choice",
+   "de": "Er versucht, mit dem Rauchen ___.",
+   "options": [
+    "aufzuhören",
+    "zu aufhören",
+    "aufhören"
+   ],
+   "answer": 0,
+   "why": "With a separable verb, zu goes between the prefix and the verb: aufzuhören.",
+   "en": "He's trying to stop smoking."
+  },
+  {
+   "id": "a2-15-12",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "ist",
+    "schwer",
+    "früh",
+    "aufzustehen"
+   ],
+   "answers": [
+    "Es ist schwer, früh aufzustehen."
+   ],
+   "en": "It's hard to get up early."
+  },
+  {
+   "id": "a2-15-13",
+   "type": "cloze",
+   "de": "Wann fängst du an, für die Prüfung ___?",
+   "base": "lernen",
+   "answers": [
+    "zu lernen"
+   ],
+   "en": "When are you going to start studying for the exam?"
+  },
+  {
+   "id": "a2-15-14",
+   "type": "choice",
+   "de": "Wir haben vor, im Sommer nach Italien ___.",
+   "options": [
+    "fahren",
+    "zu fahren",
+    "gefahren"
+   ],
+   "answer": 1,
+   "why": "After vorhaben, the verb goes to the end as zu + infinitive.",
+   "en": "We're planning to go to Italy in the summer."
+  },
+  {
+   "id": "a2-15-15",
+   "type": "cloze",
+   "de": "Hast du vergessen, deine Mutter ___?",
+   "base": "anrufen",
+   "answers": [
+    "anzurufen"
+   ],
+   "en": "Did you forget to call your mother?"
+  },
+  {
+   "id": "a2-15-16",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "keine Lust",
+    "heute",
+    "zu kochen"
+   ],
+   "answers": [
+    "Ich habe heute keine Lust zu kochen.",
+    "Heute habe ich keine Lust zu kochen.",
+    "Ich habe keine Lust, heute zu kochen."
+   ],
+   "en": "I don't feel like cooking today."
+  },
+  {
+   "id": "a2-15-17",
+   "type": "choice",
+   "de": "Es ist wichtig, genug Wasser ___.",
+   "options": [
+    "trinken",
+    "zu trinken",
+    "zu trinkt"
+   ],
+   "answer": 1,
+   "why": "After Es ist wichtig, the verb goes to the end as zu + infinitive.",
+   "en": "It's important to drink enough water."
+  },
+  {
+   "id": "a2-15-18",
+   "type": "cloze",
+   "de": "Es ist nicht leicht, in Berlin eine Wohnung ___.",
+   "base": "finden",
+   "answers": [
+    "zu finden"
+   ],
+   "en": "It's not easy to find a flat in Berlin."
+  },
+  {
+   "id": "a2-15-19",
+   "type": "choice",
+   "de": "Hast du Lust, ___?",
+   "options": [
+    "mitkommen",
+    "zu mitkommen",
+    "mitzukommen"
+   ],
+   "answer": 2,
+   "why": "mitkommen is separable, so zu goes between the two parts: mitzukommen.",
+   "en": "Do you feel like coming along?"
+  },
+  {
+   "id": "a2-15-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "angefangen",
+    "Klavier",
+    "zu spielen"
+   ],
+   "answers": [
+    "Ich habe angefangen, Klavier zu spielen."
+   ],
+   "en": "I've started playing the piano."
+  },
+  {
+   "id": "a2-15-21",
+   "type": "cloze",
+   "de": "Hör auf, so laut Musik ___!",
+   "base": "hören",
+   "answers": [
+    "zu hören"
+   ],
+   "en": "Stop listening to music so loudly!"
+  },
+  {
+   "id": "a2-15-22",
+   "type": "choice",
+   "de": "Wir können morgen zusammen ___.",
+   "options": [
+    "zu kochen",
+    "kochen",
+    "gekocht"
+   ],
+   "answer": 1,
+   "why": "können is a modal verb, so the infinitive comes without zu.",
+   "en": "We can cook together tomorrow."
+  },
+  {
+   "id": "a2-15-23",
+   "type": "order",
+   "tiles": [
+    "Hast",
+    "du",
+    "am Wochenende",
+    "Zeit",
+    "mich",
+    "zu besuchen"
+   ],
+   "answers": [
+    "Hast du am Wochenende Zeit, mich zu besuchen?",
+    "Hast du Zeit, mich am Wochenende zu besuchen?"
+   ],
+   "en": "Do you have time to visit me at the weekend?"
+  },
+  {
+   "id": "a2-15-24",
+   "type": "cloze",
+   "de": "Es macht mir Spaß, am Sonntag lange ___.",
+   "base": "schlafen",
+   "answers": [
+    "zu schlafen"
+   ],
+   "en": "I enjoy sleeping in on Sundays."
+  }
+ ],
+ "listening": {
+  "title": "Lust auf Klettern?",
+  "intro": "Julia calls her friend Max and wants him to try her new hobby.",
+  "lines": [
+   {
+    "speaker": "Julia",
+    "de": "Max, hast du am Samstag Lust, mit mir klettern zu gehen?",
+    "en": "Max, do you feel like going climbing with me on Saturday?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Klettern? Das habe ich noch nie gemacht.",
+    "en": "Climbing? I've never done that."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Kein Problem. Ich habe letztes Jahr angefangen zu klettern. Es macht total Spaß!",
+    "en": "No problem. I started climbing last year. It's really fun!"
+   },
+   {
+    "speaker": "Max",
+    "de": "Ich weiß nicht. Ich habe ein bisschen Angst.",
+    "en": "I don't know. I'm a bit scared."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Versuch es einfach! Der Trainer hilft dir.",
+    "en": "Just try it! The trainer will help you."
+   },
+   {
+    "speaker": "Max",
+    "de": "Okay. Aber am Samstag habe ich keine Zeit. Ich habe versprochen, meinem Bruder beim Umzug zu helfen.",
+    "en": "Okay. But I don't have time on Saturday. I promised to help my brother move."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Und am Sonntag?",
+    "en": "And on Sunday?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Am Sonntag passt es. Wann fangen wir an?",
+    "en": "Sunday works. When do we start?"
+   },
+   {
+    "speaker": "Julia",
+    "de": "Um zehn. Vergiss nicht, Sportschuhe mitzubringen!",
+    "en": "At ten. Don't forget to bring sports shoes!"
+   },
+   {
+    "speaker": "Max",
+    "de": "Gut. Und danach habe ich Lust, zusammen Pizza essen zu gehen.",
+    "en": "Good. And afterwards I feel like going out for pizza together."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Super Idee!",
+    "en": "Great idea!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Julia invite Max to do?",
+    "options": [
+     "Go swimming",
+     "Go climbing",
+     "Help her move"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why can't Max go on Saturday?",
+    "options": [
+     "He promised to help his brother move.",
+     "He has to work.",
+     "He has an exam."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should Max bring?",
+    "options": [
+     "Something to eat",
+     "Money",
+     "Sports shoes"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Max want to do afterwards?",
+    "options": [
+     "Go out for pizza together",
+     "Go home early",
+     "Go climbing again"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe heute keine Lust zu kochen.",
+  "Wir haben vor, im Sommer ans Meer zu fahren.",
+  "Vergiss nicht, deine Mutter morgen anzurufen!"
+ ],
+ "speaking": [
+  {
+   "de": "Hast du am Samstag Lust, klettern zu gehen?",
+   "en": "Do you feel like going climbing on Saturday?"
+  },
+  {
+   "de": "Ich habe letztes Jahr angefangen zu klettern.",
+   "en": "I started climbing last year."
+  },
+  {
+   "de": "Versuch es einfach!",
+   "en": "Just try it!"
+  },
+  {
+   "de": "Vergiss nicht, Sportschuhe mitzubringen!",
+   "en": "Don't forget to bring sports shoes!"
+  },
+  {
+   "de": "Danach habe ich Lust, Pizza essen zu gehen.",
+   "en": "Afterwards I feel like going out for pizza."
+  }
+ ],
+ "writing": {
+  "task": "Write to a friend about your hobby (5–6 sentences): what you have started, what you try to do, what is fun or hard, and invite your friend to join you.",
+  "model": "Hallo Nina, seit März spiele ich Volleyball in einem Verein. Es macht mir viel Spaß, mit dem Team zu trainieren. Letzte Woche habe ich auch angefangen, Gitarre zu lernen. Ich versuche, jeden Abend zwanzig Minuten zu üben, aber das ist nicht leicht. Hast du am Freitag Lust, mit mir zum Training zu kommen? Liebe Grüße, Lucas"
+ }
+}

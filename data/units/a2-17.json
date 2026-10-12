@@ -1,0 +1,478 @@
+{
+ "id": "a2-17",
+ "cefr": "A2",
+ "title": "Indirect questions with ob and question words",
+ "situation": "Asking politely at an office",
+ "canDo": "You can ask politely at an office with Können Sie mir sagen, … and Wissen Sie, …, using ob or a question word with the verb at the end.",
+ "explanation": "At an office you often ask politely: *Können Sie mir sagen, wann das Büro öffnet?* This is an **indirect question**: a question inside another sentence. Start with a polite phrase, then:\n- for a W-question, keep the **question word** (wo, wann, wie lange, was, wer…);\n- for a yes/no question, use **ob** (whether, if).\n\nIn both cases the **verb goes to the end**, as after weil and dass.\n\n| direct question | indirect question |\n|---|---|\n| Wann öffnet das Büro? | Können Sie mir sagen, wann das Büro **öffnet**? |\n| Wo ist Zimmer 12? | Wissen Sie, wo Zimmer 12 **ist**? |\n| Brauche ich einen Termin? | Ich weiß nicht, **ob** ich einen Termin **brauche**. |\n\nUseful starters: **Können Sie mir sagen, …? Wissen Sie, …? Ich möchte wissen, … Ich weiß nicht, …**\n\n- Separable verbs join up at the end: *wann der Kurs anfängt*.\n- A modal verb comes last: *ob ich hier warten muss*.\n- Use a question mark only if the whole sentence is a question: *Wissen Sie, wo …?* but *Ich weiß nicht, wo …* ends with a full stop.\n- \"If\" meaning \"whether\" is always **ob**, not *wenn*.\n\nThe most common mistake is keeping the order of the direct question: *Können Sie mir sagen, wann öffnet das Büro?* Send the verb to the end: **wann das Büro öffnet**.",
+ "french": "ob is like « si » in « Je ne sais pas si… » (but « si » for a condition is wenn), and unlike in French the verb goes to the end of the indirect question.",
+ "examples": [
+  {
+   "de": "Können Sie mir sagen, wann das Büro öffnet?",
+   "en": "Can you tell me when the office opens?"
+  },
+  {
+   "de": "Wissen Sie, wo Zimmer 12 ist?",
+   "en": "Do you know where room 12 is?"
+  },
+  {
+   "de": "Ich weiß nicht, ob ich einen Termin brauche.",
+   "en": "I don't know if I need an appointment."
+  },
+  {
+   "de": "Können Sie mir sagen, wie lange das dauert?",
+   "en": "Can you tell me how long that takes?"
+  },
+  {
+   "de": "Wissen Sie, wann der Deutschkurs anfängt?",
+   "en": "Do you know when the German course starts?"
+  },
+  {
+   "de": "Ich möchte wissen, ob ich hier warten muss.",
+   "en": "I'd like to know whether I have to wait here."
+  },
+  {
+   "de": "Ich verstehe nicht, was dieses Wort bedeutet.",
+   "en": "I don't understand what this word means."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-17-01",
+   "type": "cloze",
+   "de": "Wissen Sie, wo das Bürgeramt ___?",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "Do you know where the citizens' office is?"
+  },
+  {
+   "id": "a2-17-02",
+   "type": "choice",
+   "de": "Ich weiß nicht, ___ ich einen Termin brauche.",
+   "options": [
+    "ob",
+    "wenn",
+    "dass"
+   ],
+   "answer": 0,
+   "why": "It is a hidden yes/no question (Brauche ich einen Termin?), so you use ob.",
+   "en": "I don't know if I need an appointment."
+  },
+  {
+   "id": "a2-17-03",
+   "type": "cloze",
+   "de": "Können Sie mir sagen, wann das Büro ___?",
+   "base": "öffnen",
+   "answers": [
+    "öffnet"
+   ],
+   "en": "Can you tell me when the office opens?"
+  },
+  {
+   "id": "a2-17-04",
+   "type": "order",
+   "tiles": [
+    "Wissen",
+    "Sie",
+    "wo",
+    "Zimmer 12",
+    "ist"
+   ],
+   "answers": [
+    "Wissen Sie, wo Zimmer 12 ist?"
+   ],
+   "en": "Do you know where room 12 is?"
+  },
+  {
+   "id": "a2-17-05",
+   "type": "choice",
+   "de": "Können Sie mir sagen, wie lange ___?",
+   "options": [
+    "das dauert",
+    "dauert das",
+    "das dauern"
+   ],
+   "answer": 0,
+   "why": "In an indirect question the verb goes to the end.",
+   "en": "Can you tell me how long that takes?"
+  },
+  {
+   "id": "a2-17-06",
+   "type": "cloze",
+   "de": "Ich weiß nicht, ob der Antrag schon fertig ___.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "I don't know if the application is ready yet."
+  },
+  {
+   "id": "a2-17-07",
+   "type": "choice",
+   "de": "Wissen Sie, ___ der nächste Bus kommt? – Um 10:15 Uhr.",
+   "options": [
+    "wann",
+    "ob",
+    "wo"
+   ],
+   "answer": 0,
+   "why": "The answer is a time, so the question word is wann.",
+   "en": "Do you know when the next bus comes? – At 10:15."
+  },
+  {
+   "id": "a2-17-08",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "weiß",
+    "nicht",
+    "ob",
+    "er",
+    "heute",
+    "kommt"
+   ],
+   "answers": [
+    "Ich weiß nicht, ob er heute kommt.",
+    "Ob er heute kommt, weiß ich nicht."
+   ],
+   "en": "I don't know if he's coming today."
+  },
+  {
+   "id": "a2-17-09",
+   "type": "cloze",
+   "de": "Können Sie mir sagen, wie viel der Pass ___?",
+   "base": "kosten",
+   "answers": [
+    "kostet"
+   ],
+   "en": "Can you tell me how much the passport costs?"
+  },
+  {
+   "id": "a2-17-10",
+   "type": "choice",
+   "de": "Ich möchte wissen, ___ ich die Formulare abgeben kann. – Am Schalter 3.",
+   "options": [
+    "ob",
+    "wo",
+    "wer"
+   ],
+   "answer": 1,
+   "why": "The answer is a place, so the question word is wo.",
+   "en": "I'd like to know where I can hand in the forms. – At counter 3."
+  },
+  {
+   "id": "a2-17-11",
+   "type": "cloze",
+   "de": "Wissen Sie, wann der Deutschkurs ___?",
+   "base": "anfangen",
+   "answers": [
+    "anfängt"
+   ],
+   "en": "Do you know when the German course starts?"
+  },
+  {
+   "id": "a2-17-12",
+   "type": "order",
+   "tiles": [
+    "Können",
+    "Sie",
+    "mir",
+    "sagen",
+    "wann",
+    "Sie",
+    "geöffnet haben"
+   ],
+   "answers": [
+    "Können Sie mir sagen, wann Sie geöffnet haben?"
+   ],
+   "en": "Can you tell me when you're open?"
+  },
+  {
+   "id": "a2-17-13",
+   "type": "choice",
+   "de": "Können Sie mir sagen, ob ich hier warten ___?",
+   "options": [
+    "musst",
+    "muss",
+    "müssen"
+   ],
+   "answer": 1,
+   "why": "The modal verb goes to the very end, with the ich form muss.",
+   "en": "Can you tell me if I have to wait here?"
+  },
+  {
+   "id": "a2-17-14",
+   "type": "cloze",
+   "de": "Ich verstehe nicht, was dieses Wort ___.",
+   "base": "bedeuten",
+   "answers": [
+    "bedeutet"
+   ],
+   "en": "I don't understand what this word means."
+  },
+  {
+   "id": "a2-17-15",
+   "type": "choice",
+   "de": "Darf ich fragen, ___ Sie auch Englisch sprechen?",
+   "options": [
+    "wenn",
+    "ob",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "\"If\" meaning \"whether\" is ob; wenn is for conditions.",
+   "en": "May I ask if you speak English too?"
+  },
+  {
+   "id": "a2-17-16",
+   "type": "order",
+   "tiles": [
+    "Wissen",
+    "Sie",
+    "wie",
+    "lange",
+    "das",
+    "dauert"
+   ],
+   "answers": [
+    "Wissen Sie, wie lange das dauert?"
+   ],
+   "en": "Do you know how long that takes?"
+  },
+  {
+   "id": "a2-17-17",
+   "type": "cloze",
+   "de": "Können Sie mir sagen, mit wem ich sprechen ___?",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "Can you tell me who I have to speak to?"
+  },
+  {
+   "id": "a2-17-18",
+   "type": "choice",
+   "de": "Können Sie mir sagen, wann ___?",
+   "options": [
+    "ist die Post offen",
+    "die Post offen ist",
+    "die Post ist offen"
+   ],
+   "answer": 1,
+   "why": "After wann in an indirect question the verb goes to the end.",
+   "en": "Can you tell me when the post office is open?"
+  },
+  {
+   "id": "a2-17-19",
+   "type": "cloze",
+   "de": "Wissen Sie, ob ich hier mit Karte bezahlen ___?",
+   "base": "können",
+   "answers": [
+    "kann"
+   ],
+   "en": "Do you know if I can pay by card here?"
+  },
+  {
+   "id": "a2-17-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "weiß",
+    "nicht",
+    "wo",
+    "meine Unterlagen",
+    "sind"
+   ],
+   "answers": [
+    "Ich weiß nicht, wo meine Unterlagen sind.",
+    "Wo meine Unterlagen sind, weiß ich nicht."
+   ],
+   "en": "I don't know where my documents are."
+  },
+  {
+   "id": "a2-17-21",
+   "type": "choice",
+   "de": "Entschuldigung, eine Frage: ___?",
+   "options": [
+    "Wo der Ausgang ist",
+    "Wo ist der Ausgang",
+    "Wo ist der Ausgang ist"
+   ],
+   "answer": 1,
+   "why": "Without a starter like Wissen Sie, it is a direct question, so the verb stays in second place.",
+   "en": "Excuse me, a question: where is the exit?"
+  },
+  {
+   "id": "a2-17-22",
+   "type": "cloze",
+   "de": "Ich habe vergessen, wann mein Termin ___.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "I've forgotten when my appointment is."
+  },
+  {
+   "id": "a2-17-23",
+   "type": "choice",
+   "de": "Können Sie mir sagen, ___ ich das Formular unterschreiben muss? – Unten rechts, bitte.",
+   "options": [
+    "wann",
+    "ob",
+    "wo"
+   ],
+   "answer": 2,
+   "why": "The answer is a place, so the question word is wo.",
+   "en": "Can you tell me where I have to sign the form? – Bottom right, please."
+  },
+  {
+   "id": "a2-17-24",
+   "type": "order",
+   "tiles": [
+    "Können",
+    "Sie",
+    "mir",
+    "sagen",
+    "ob",
+    "der Brief",
+    "angekommen ist"
+   ],
+   "answers": [
+    "Können Sie mir sagen, ob der Brief angekommen ist?"
+   ],
+   "en": "Can you tell me if the letter has arrived?"
+  }
+ ],
+ "listening": {
+  "title": "Am Infoschalter im Bürgeramt",
+  "intro": "Marc has just moved and asks at the information desk of the citizens' office.",
+  "lines": [
+   {
+    "speaker": "Marc",
+    "de": "Guten Tag. Können Sie mir sagen, wo ich mich hier anmelden kann?",
+    "en": "Hello. Can you tell me where I can register here?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Für die Anmeldung brauchen Sie einen Termin. Haben Sie einen?",
+    "en": "You need an appointment to register. Do you have one?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Nein, das habe ich nicht gewusst.",
+    "en": "No, I didn't know that."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Kein Problem. Moment, ich schaue nach, ob heute noch etwas frei ist … Ja, um 11:30 Uhr in Zimmer 214.",
+    "en": "No problem. One moment, I'll check whether anything is still free today … Yes, at 11:30 in room 214."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Super, danke. Wissen Sie, welche Unterlagen ich mitbringen muss?",
+    "en": "Great, thanks. Do you know which documents I have to bring?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ihren Pass und das Formular von Ihrem Vermieter.",
+    "en": "Your passport and the form from your landlord."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Das Formular habe ich dabei. Können Sie mir sagen, wie lange die Anmeldung dauert?",
+    "en": "I have the form with me. Can you tell me how long the registration takes?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ungefähr zehn Minuten.",
+    "en": "About ten minutes."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Gut. Noch eine Frage: Ich weiß nicht, ob ich hier auch mein Auto anmelden kann.",
+    "en": "Good. One more question: I don't know if I can also register my car here."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Nein, das geht hier leider nicht. Dafür müssen Sie zur Zulassungsstelle.",
+    "en": "No, unfortunately that's not possible here. For that you have to go to the vehicle registration office."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Alles klar. Vielen Dank für Ihre Hilfe!",
+    "en": "All right. Thank you very much for your help!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Marc want to do at the office?",
+    "options": [
+     "Get a new passport",
+     "Register his address",
+     "Pay a bill"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When and where is his appointment?",
+    "options": [
+     "At 12:30 in room 214",
+     "At 11:30 in room 241",
+     "At 11:30 in room 214"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does he have to bring?",
+    "options": [
+     "His passport and a form from his landlord",
+     "His passport and a photo",
+     "His rental contract and his car papers"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What can't he do at this office?",
+    "options": [
+     "Register his address",
+     "Register his car",
+     "Make an appointment"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Können Sie mir sagen, wo Zimmer 214 ist?",
+  "Ich weiß nicht, ob ich einen Termin brauche.",
+  "Wissen Sie, wann das Büro heute öffnet?"
+ ],
+ "speaking": [
+  {
+   "de": "Können Sie mir sagen, wo ich mich anmelden kann?",
+   "en": "Can you tell me where I can register?"
+  },
+  {
+   "de": "Wissen Sie, welche Unterlagen ich mitbringen muss?",
+   "en": "Do you know which documents I have to bring?"
+  },
+  {
+   "de": "Können Sie mir sagen, wie lange das dauert?",
+   "en": "Can you tell me how long that takes?"
+  },
+  {
+   "de": "Ich weiß nicht, ob ich hier mein Auto anmelden kann.",
+   "en": "I don't know if I can register my car here."
+  },
+  {
+   "de": "Vielen Dank für Ihre Hilfe!",
+   "en": "Thank you very much for your help!"
+  }
+ ],
+ "writing": {
+  "task": "Write a short email to a language school (5–6 sentences). Ask politely about a German course: when it starts, how much it costs, whether you need a test, and where it takes place.",
+  "model": "Sehr geehrte Damen und Herren, ich möchte im Herbst einen Deutschkurs B1 machen. Können Sie mir sagen, wann der nächste Kurs anfängt? Ich möchte auch wissen, wie viel der Kurs kostet. Ich weiß nicht, ob ich vorher einen Test machen muss. Können Sie mir bitte sagen, wo der Kurs stattfindet? Mit freundlichen Grüßen, Léa Martin"
+ }
+}

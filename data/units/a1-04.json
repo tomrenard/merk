@@ -346,5 +346,130 @@
    ],
    "en": "I don't like eating fish."
   }
- ]
+ ],
+ "listening": {
+  "title": "Im Café",
+  "intro": "Thomas comes into a café and talks to Sophie, the waitress.",
+  "lines": [
+   {
+    "speaker": "Thomas",
+    "de": "Entschuldigung, ist der Platz hier frei?",
+    "en": "Excuse me, is this seat free?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, bitte. Möchten Sie bestellen?",
+    "en": "Yes, please. Would you like to order?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Ja. Haben Sie Apfelkuchen?",
+    "en": "Yes. Do you have apple cake?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Nein, leider nicht. Aber wir haben Käsekuchen.",
+    "en": "No, I'm afraid not. But we have cheesecake."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Ist der Käsekuchen frisch?",
+    "en": "Is the cheesecake fresh?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, er ist von heute.",
+    "en": "Yes, it's from today."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Gut, dann einen Käsekuchen und einen Kaffee, bitte.",
+    "en": "Good, then a cheesecake and a coffee, please."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Mit Milch?",
+    "en": "With milk?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Nein, ohne Milch, bitte. Kann ich mit Karte bezahlen?",
+    "en": "No, without milk, please. Can I pay by card?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Nein, das geht leider nicht. Nur bar.",
+    "en": "No, I'm afraid that's not possible. Cash only."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Thomas ask first?",
+    "options": [
+     "if they have tea",
+     "if the seat is free",
+     "where the toilet is"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Thomas get apple cake?",
+    "options": [
+     "It isn't fresh.",
+     "They don't have any.",
+     "It's too expensive."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does Thomas want his coffee?",
+    "options": [
+     "with milk",
+     "with sugar",
+     "without milk"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How can Thomas pay?",
+    "options": [
+     "only in cash",
+     "only by card",
+     "by card or in cash"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ist der Platz hier frei?",
+  "Der Kaffee ist nicht heiß.",
+  "Kann ich mit Karte bezahlen?"
+ ],
+ "speaking": [
+  {
+   "de": "Entschuldigung, ist der Platz hier frei?",
+   "en": "Excuse me, is this seat free?"
+  },
+  {
+   "de": "Haben Sie Apfelkuchen?",
+   "en": "Do you have apple cake?"
+  },
+  {
+   "de": "Nein, leider nicht.",
+   "en": "No, I'm afraid not."
+  },
+  {
+   "de": "Ohne Milch, bitte.",
+   "en": "Without milk, please."
+  },
+  {
+   "de": "Kann ich mit Karte bezahlen?",
+   "en": "Can I pay by card?"
+  }
+ ],
+ "writing": {
+  "task": "A friend invites you to a café on Saturday. Write a short reply (3–4 sentences): ask one or two yes/no questions and say what you don't like, using nicht.",
+  "model": "Hallo Lisa, danke! Ist das Café neu? Ich trinke nicht gern Kaffee. Gibt es dort auch Tee?"
+ }
 }

@@ -1,0 +1,461 @@
+{
+ "id": "a1-18",
+ "cefr": "A1",
+ "title": "Perfekt with haben",
+ "situation": "Talking about your weekend",
+ "canDo": "You can say what you did at the weekend, using haben and a past participle.",
+ "explanation": "On Monday everyone asks: *Was hast du am Wochenende gemacht?* To talk about the past, Germans mostly use the **Perfekt**: **haben** in position 2 + the **past participle** at the very end.\n\n| | haben | … | participle |\n|---|---|---|---|\n| Ich | habe | einen Film | **gesehen**. |\n| Du | hast | lange | **geschlafen**. |\n| Paul | hat | Pizza | **gegessen**. |\n| Wir | haben | Freunde | **getroffen**. |\n\n**Regular verbs**: **ge-** + stem + **-t**: machen → *gemacht*, kaufen → *gekauft*, spielen → *gespielt*, haben → *gehabt*. Stems ending in -t or -d add **-et**: arbeiten → *gearbeitet*.\n\n**Irregular verbs**: **ge-** + stem (often with a new vowel) + **-en**. Learn them with the verb:\n- essen → *gegessen*, trinken → *getrunken*, sehen → *gesehen*, lesen → *gelesen*\n- schlafen → *geschlafen*, treffen → *getroffen*, schreiben → *geschrieben*, finden → *gefunden*\n\nMost verbs take haben. Verbs of movement like gehen and fahren take sein: that's the next unit.\n\nQuestions work the same way: *Hast du gut geschlafen? Was habt ihr gekocht?*\n\nMost common mistake: putting the participle in the middle. Not *Ich habe gekauft Brot*, but *Ich habe Brot **gekauft**.*",
+ "french": "The Perfekt works like the passé composé with avoir (j'ai mangé = ich habe gegessen) and is the normal spoken past, but the participle goes to the very end of the sentence.",
+ "examples": [
+  {
+   "de": "Was hast du am Wochenende gemacht?",
+   "en": "What did you do at the weekend?"
+  },
+  {
+   "de": "Ich habe lange geschlafen.",
+   "en": "I slept in."
+  },
+  {
+   "de": "Am Samstag habe ich Freunde getroffen.",
+   "en": "On Saturday I met friends."
+  },
+  {
+   "de": "Wir haben zusammen gekocht.",
+   "en": "We cooked together."
+  },
+  {
+   "de": "Hast du den Film gesehen?",
+   "en": "Have you seen the film?"
+  },
+  {
+   "de": "Paul hat am Sonntag gearbeitet.",
+   "en": "Paul worked on Sunday."
+  },
+  {
+   "de": "Wir haben Pizza gegessen und Wein getrunken.",
+   "en": "We ate pizza and drank wine."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-18-01",
+   "type": "cloze",
+   "de": "Ich ___ Fußball gespielt.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "I played football."
+  },
+  {
+   "id": "a1-18-02",
+   "type": "cloze",
+   "de": "Wir haben Pizza ___.",
+   "base": "essen",
+   "answers": [
+    "gegessen"
+   ],
+   "en": "We ate pizza."
+  },
+  {
+   "id": "a1-18-03",
+   "type": "choice",
+   "de": "Was hast du am Samstag ___?",
+   "options": [
+    "machen",
+    "gemacht",
+    "gemachen"
+   ],
+   "answer": 1,
+   "why": "Regular verbs: ge- + stem + -t, so gemacht.",
+   "en": "What did you do on Saturday?"
+  },
+  {
+   "id": "a1-18-04",
+   "type": "order",
+   "tiles": [
+    "habe",
+    "Ich",
+    "geschlafen",
+    "lange"
+   ],
+   "answers": [
+    "Ich habe lange geschlafen."
+   ],
+   "en": "I slept in."
+  },
+  {
+   "id": "a1-18-05",
+   "type": "cloze",
+   "de": "___ du den Film gesehen?",
+   "base": "haben",
+   "answers": [
+    "Hast"
+   ],
+   "en": "Have you seen the film?"
+  },
+  {
+   "id": "a1-18-06",
+   "type": "choice",
+   "de": "Am Sonntag ___ ich lange geschlafen.",
+   "options": [
+    "bin",
+    "habe",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "schlafen takes haben, and ich goes with habe.",
+   "en": "On Sunday I slept in."
+  },
+  {
+   "id": "a1-18-07",
+   "type": "cloze",
+   "de": "Ich habe ein Buch ___.",
+   "base": "lesen",
+   "answers": [
+    "gelesen"
+   ],
+   "en": "I read a book."
+  },
+  {
+   "id": "a1-18-08",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "Paul",
+    "gearbeitet",
+    "am Samstag"
+   ],
+   "answers": [
+    "Paul hat am Samstag gearbeitet.",
+    "Am Samstag hat Paul gearbeitet."
+   ],
+   "en": "Paul worked on Saturday."
+  },
+  {
+   "id": "a1-18-09",
+   "type": "cloze",
+   "de": "Wir haben Brot und Käse ___.",
+   "base": "kaufen",
+   "answers": [
+    "gekauft"
+   ],
+   "en": "We bought bread and cheese."
+  },
+  {
+   "id": "a1-18-10",
+   "type": "choice",
+   "de": "Wir haben Kaffee ___.",
+   "options": [
+    "getrinkt",
+    "getrunken",
+    "trinken"
+   ],
+   "answer": 1,
+   "why": "trinken is irregular: getrunken.",
+   "en": "We drank coffee."
+  },
+  {
+   "id": "a1-18-11",
+   "type": "cloze",
+   "de": "Hast du gut ___?",
+   "base": "schlafen",
+   "answers": [
+    "geschlafen"
+   ],
+   "en": "Did you sleep well?"
+  },
+  {
+   "id": "a1-18-12",
+   "type": "order",
+   "tiles": [
+    "Freunde",
+    "habe",
+    "Ich",
+    "getroffen",
+    "am Abend"
+   ],
+   "answers": [
+    "Ich habe am Abend Freunde getroffen.",
+    "Am Abend habe ich Freunde getroffen."
+   ],
+   "en": "In the evening I met friends."
+  },
+  {
+   "id": "a1-18-13",
+   "type": "choice",
+   "de": "Sie hat bis 18 Uhr ___.",
+   "options": [
+    "gearbeitet",
+    "gearbeit",
+    "arbeitet"
+   ],
+   "answer": 0,
+   "why": "Stems ending in -t add -et: gearbeitet.",
+   "en": "She worked until 6 pm."
+  },
+  {
+   "id": "a1-18-14",
+   "type": "choice",
+   "de": "Lisa ___ am Samstag gekocht.",
+   "options": [
+    "ist",
+    "habe",
+    "hat"
+   ],
+   "answer": 2,
+   "why": "kochen takes haben, and Lisa (sie) goes with hat.",
+   "en": "Lisa cooked on Saturday."
+  },
+  {
+   "id": "a1-18-15",
+   "type": "cloze",
+   "de": "Ich habe eine E-Mail ___.",
+   "base": "schreiben",
+   "answers": [
+    "geschrieben"
+   ],
+   "en": "I wrote an email."
+  },
+  {
+   "id": "a1-18-16",
+   "type": "order",
+   "tiles": [
+    "gesehen",
+    "Hast",
+    "den Film",
+    "du"
+   ],
+   "answers": [
+    "Hast du den Film gesehen?"
+   ],
+   "en": "Have you seen the film?"
+  },
+  {
+   "id": "a1-18-17",
+   "type": "choice",
+   "de": "Ich habe ___.",
+   "options": [
+    "gekauft Brot",
+    "Brot gekauft",
+    "Brot kaufen"
+   ],
+   "answer": 1,
+   "why": "The participle goes to the very end of the sentence.",
+   "en": "I bought bread."
+  },
+  {
+   "id": "a1-18-18",
+   "type": "cloze",
+   "de": "Am Sonntag haben wir Tennis ___.",
+   "base": "spielen",
+   "answers": [
+    "gespielt"
+   ],
+   "en": "On Sunday we played tennis."
+  },
+  {
+   "id": "a1-18-19",
+   "type": "choice",
+   "de": "Wo hast du das Handy ___?",
+   "options": [
+    "gefindet",
+    "gefunden",
+    "finden"
+   ],
+   "answer": 1,
+   "why": "finden is irregular: gefunden.",
+   "en": "Where did you find the phone?"
+  },
+  {
+   "id": "a1-18-20",
+   "type": "order",
+   "tiles": [
+    "haben",
+    "Wir",
+    "zusammen",
+    "gekocht",
+    "am Sonntag"
+   ],
+   "answers": [
+    "Wir haben am Sonntag zusammen gekocht.",
+    "Am Sonntag haben wir zusammen gekocht."
+   ],
+   "en": "We cooked together on Sunday."
+  },
+  {
+   "id": "a1-18-21",
+   "type": "cloze",
+   "de": "Ich habe am Wochenende keine Zeit ___.",
+   "base": "haben",
+   "answers": [
+    "gehabt"
+   ],
+   "en": "I didn't have any time at the weekend."
+  },
+  {
+   "id": "a1-18-22",
+   "type": "choice",
+   "de": "Was ___ ihr am Samstag gemacht?",
+   "options": [
+    "hat",
+    "habt",
+    "haben"
+   ],
+   "answer": 1,
+   "why": "ihr goes with habt.",
+   "en": "What did you do on Saturday?"
+  },
+  {
+   "id": "a1-18-23",
+   "type": "cloze",
+   "de": "Wir haben im Park Musik ___.",
+   "base": "hören",
+   "answers": [
+    "gehört"
+   ],
+   "en": "We listened to music in the park."
+  },
+  {
+   "id": "a1-18-24",
+   "type": "order",
+   "tiles": [
+    "habe",
+    "gegessen",
+    "heute",
+    "Ich",
+    "noch nichts"
+   ],
+   "answers": [
+    "Ich habe heute noch nichts gegessen.",
+    "Heute habe ich noch nichts gegessen."
+   ],
+   "en": "I haven't eaten anything yet today."
+  }
+ ],
+ "listening": {
+  "title": "Am Montag im Büro",
+  "intro": "On Monday morning, Felix and Jana talk about their weekend at work.",
+  "lines": [
+   {
+    "speaker": "Jana",
+    "de": "Guten Morgen, Felix! Was hast du am Wochenende gemacht?",
+    "en": "Good morning, Felix! What did you do at the weekend?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Am Samstag habe ich lange geschlafen. Dann habe ich Fußball gespielt.",
+    "en": "On Saturday I slept in. Then I played football."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Und am Sonntag?",
+    "en": "And on Sunday?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Da haben meine Freundin und ich für Freunde gekocht.",
+    "en": "My girlfriend and I cooked for friends."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Toll! Was habt ihr gekocht?",
+    "en": "Great! What did you cook?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Lasagne. Und du? Was hast du gemacht?",
+    "en": "Lasagne. And you? What did you do?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ich habe am Samstag bis vier gearbeitet. Am Sonntag habe ich meine Schwester getroffen.",
+    "en": "On Saturday I worked until four. On Sunday I met my sister."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Und was habt ihr gemacht?",
+    "en": "And what did you do?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Wir haben Kaffee getrunken und viel gelacht. Am Abend habe ich ein Buch gelesen.",
+    "en": "We had coffee and laughed a lot. In the evening I read a book."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Das klingt gut!",
+    "en": "That sounds nice!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did Felix do on Saturday?",
+    "options": [
+     "He worked.",
+     "He slept in and played football.",
+     "He cooked lasagne."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What did Felix cook on Sunday?",
+    "options": [
+     "pizza",
+     "soup",
+     "lasagne"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Until when did Jana work on Saturday?",
+    "options": [
+     "until four",
+     "until two",
+     "until six"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What did Jana do on Sunday evening?",
+    "options": [
+     "She watched a film.",
+     "She read a book.",
+     "She played football."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe lange geschlafen.",
+  "Was hast du am Wochenende gemacht?",
+  "Wir haben zusammen Pizza gegessen."
+ ],
+ "speaking": [
+  {
+   "de": "Was hast du am Wochenende gemacht?",
+   "en": "What did you do at the weekend?"
+  },
+  {
+   "de": "Am Samstag habe ich lange geschlafen.",
+   "en": "On Saturday I slept in."
+  },
+  {
+   "de": "Was habt ihr gekocht?",
+   "en": "What did you cook?"
+  },
+  {
+   "de": "Ich habe am Samstag bis vier gearbeitet.",
+   "en": "On Saturday I worked until four."
+  },
+  {
+   "de": "Wir haben Kaffee getrunken und viel gelacht.",
+   "en": "We had coffee and laughed a lot."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message to a friend (3–4 sentences) about what you did last weekend.",
+  "model": "Hallo Sophie, am Samstag habe ich lange geschlafen. Dann habe ich Obst und Brot gekauft. Am Abend habe ich mit Paul einen Film gesehen. Und was hast du gemacht?"
+ }
+}

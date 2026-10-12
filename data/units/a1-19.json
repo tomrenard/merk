@@ -1,0 +1,457 @@
+{
+ "id": "a1-19",
+ "cefr": "A1",
+ "title": "Perfekt with sein",
+ "situation": "Telling about a trip",
+ "canDo": "You can tell someone about a trip, using sein in the Perfekt with verbs of movement and change.",
+ "explanation": "When you tell about a trip, you use verbs of movement: *Wir **sind** nach Wien **gefahren**.* These verbs build the Perfekt with **sein**, not haben. The word order is the same: sein in position 2, the participle at the end.\n\nUse **sein** with:\n- movement from A to B: gehen → *gegangen*, fahren → *gefahren*, fliegen → *geflogen*, kommen → *gekommen*, laufen → *gelaufen*, reisen → *gereist*, wandern → *gewandert*, schwimmen → *geschwommen*\n- a change of state: werden → *geworden*\n- and two verbs to learn by heart: sein → *gewesen*, bleiben → *geblieben*\n\n| haben | sein |\n|---|---|\n| Ich **habe** Pizza gegessen. | Ich **bin** nach Rom geflogen. |\n| Wir **haben** viel gesehen. | Wir **sind** viel gelaufen. |\n| Er **hat** lange geschlafen. | Er **ist** zu Hause geblieben. |\n\nRemember the forms of sein: ich **bin**, du **bist**, er/sie **ist**, wir **sind**, ihr **seid**, sie/Sie **sind**.\n\nAll other verbs keep haben, so one story often mixes both: *Wir **sind** nach Spanien gefahren und **haben** viel Fisch gegessen.*\n\nMost common mistake: *Ich habe nach Berlin gefahren.* Say ***Ich bin** nach Berlin gefahren.*",
+ "french": "Most sein-verbs match the French être-verbs (je suis allé = ich bin gegangen, je suis resté = ich bin geblieben), but German also uses sein where French uses avoir: j'ai couru = ich bin gelaufen, j'ai voyagé = ich bin gereist, j'ai été = ich bin gewesen.",
+ "examples": [
+  {
+   "de": "Wir sind nach Wien gefahren.",
+   "en": "We went to Vienna."
+  },
+  {
+   "de": "Ich bin nach Lissabon geflogen.",
+   "en": "I flew to Lisbon."
+  },
+  {
+   "de": "Am Sonntag sind wir viel gelaufen.",
+   "en": "On Sunday we walked a lot."
+  },
+  {
+   "de": "Bist du schon einmal in Hamburg gewesen?",
+   "en": "Have you ever been to Hamburg?"
+  },
+  {
+   "de": "Paul ist zu Hause geblieben.",
+   "en": "Paul stayed at home."
+  },
+  {
+   "de": "Wann seid ihr nach Hause gekommen?",
+   "en": "When did you get home?"
+  },
+  {
+   "de": "Wir sind im Meer geschwommen und haben Fisch gegessen.",
+   "en": "We swam in the sea and ate fish."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-19-01",
+   "type": "cloze",
+   "de": "Ich ___ nach Berlin gefahren.",
+   "base": "sein",
+   "answers": [
+    "bin"
+   ],
+   "en": "I went to Berlin."
+  },
+  {
+   "id": "a1-19-02",
+   "type": "cloze",
+   "de": "Wir sind nach Spanien ___.",
+   "base": "fliegen",
+   "answers": [
+    "geflogen"
+   ],
+   "en": "We flew to Spain."
+  },
+  {
+   "id": "a1-19-03",
+   "type": "choice",
+   "de": "Am Samstag ___ wir nach Hamburg gefahren.",
+   "options": [
+    "haben",
+    "sind",
+    "seid"
+   ],
+   "answer": 1,
+   "why": "fahren is movement, so it takes sein, and wir goes with sind.",
+   "en": "On Saturday we went to Hamburg."
+  },
+  {
+   "id": "a1-19-04",
+   "type": "order",
+   "tiles": [
+    "bin",
+    "Ich",
+    "geblieben",
+    "zu Hause"
+   ],
+   "answers": [
+    "Ich bin zu Hause geblieben."
+   ],
+   "en": "I stayed at home."
+  },
+  {
+   "id": "a1-19-05",
+   "type": "cloze",
+   "de": "___ du schon einmal in Wien gewesen?",
+   "base": "sein",
+   "answers": [
+    "Bist"
+   ],
+   "en": "Have you ever been to Vienna?"
+  },
+  {
+   "id": "a1-19-06",
+   "type": "choice",
+   "de": "Wir ___ im Hotel gut geschlafen.",
+   "options": [
+    "sind",
+    "haben",
+    "seid"
+   ],
+   "answer": 1,
+   "why": "schlafen is neither movement nor change, so it takes haben.",
+   "en": "We slept well at the hotel."
+  },
+  {
+   "id": "a1-19-07",
+   "type": "cloze",
+   "de": "Er ist um acht Uhr nach Hause ___.",
+   "base": "kommen",
+   "answers": [
+    "gekommen"
+   ],
+   "en": "He came home at eight."
+  },
+  {
+   "id": "a1-19-08",
+   "type": "order",
+   "tiles": [
+    "sind",
+    "Wir",
+    "nach Italien",
+    "im Sommer",
+    "gefahren"
+   ],
+   "answers": [
+    "Wir sind im Sommer nach Italien gefahren.",
+    "Im Sommer sind wir nach Italien gefahren."
+   ],
+   "en": "In the summer we went to Italy."
+  },
+  {
+   "id": "a1-19-09",
+   "type": "cloze",
+   "de": "Ich bin am Sonntag im See ___.",
+   "base": "schwimmen",
+   "answers": [
+    "geschwommen"
+   ],
+   "en": "On Sunday I swam in the lake."
+  },
+  {
+   "id": "a1-19-10",
+   "type": "choice",
+   "de": "Wie lange ___ ihr in Paris geblieben?",
+   "options": [
+    "habt",
+    "seid",
+    "sind"
+   ],
+   "answer": 1,
+   "why": "bleiben takes sein, and ihr goes with seid.",
+   "en": "How long did you stay in Paris?"
+  },
+  {
+   "id": "a1-19-11",
+   "type": "cloze",
+   "de": "Anna ___ nach Köln gereist.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "Anna travelled to Cologne."
+  },
+  {
+   "id": "a1-19-12",
+   "type": "order",
+   "tiles": [
+    "gelaufen",
+    "Wir",
+    "viel",
+    "sind"
+   ],
+   "answers": [
+    "Wir sind viel gelaufen."
+   ],
+   "en": "We walked a lot."
+  },
+  {
+   "id": "a1-19-13",
+   "type": "choice",
+   "de": "Ich ___ im Urlaub viele Fotos gemacht.",
+   "options": [
+    "bin",
+    "habe",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "machen is not movement, so it takes haben.",
+   "en": "I took a lot of photos on holiday."
+  },
+  {
+   "id": "a1-19-14",
+   "type": "cloze",
+   "de": "Wir sind drei Stunden ___.",
+   "base": "wandern",
+   "answers": [
+    "gewandert"
+   ],
+   "en": "We hiked for three hours."
+  },
+  {
+   "id": "a1-19-15",
+   "type": "choice",
+   "de": "Bist du schon einmal in Rom ___?",
+   "options": [
+    "gewesen",
+    "gesein",
+    "geworden"
+   ],
+   "answer": 0,
+   "why": "The participle of sein is gewesen.",
+   "en": "Have you ever been to Rome?"
+  },
+  {
+   "id": "a1-19-16",
+   "type": "order",
+   "tiles": [
+    "seid",
+    "Wann",
+    "gekommen",
+    "ihr",
+    "nach Hause"
+   ],
+   "answers": [
+    "Wann seid ihr nach Hause gekommen?"
+   ],
+   "en": "When did you get home?"
+  },
+  {
+   "id": "a1-19-17",
+   "type": "cloze",
+   "de": "Wohin ___ ihr im Urlaub gefahren?",
+   "base": "sein",
+   "answers": [
+    "seid"
+   ],
+   "en": "Where did you go on holiday?"
+  },
+  {
+   "id": "a1-19-18",
+   "type": "choice",
+   "de": "Wir sind zum Bahnhof ___.",
+   "options": [
+    "gegeht",
+    "gegangen",
+    "gehen"
+   ],
+   "answer": 1,
+   "why": "gehen is irregular: gegangen.",
+   "en": "We walked to the station."
+  },
+  {
+   "id": "a1-19-19",
+   "type": "cloze",
+   "de": "Mein Sohn ist schon groß ___.",
+   "base": "werden",
+   "answers": [
+    "geworden"
+   ],
+   "en": "My son has already grown big."
+  },
+  {
+   "id": "a1-19-20",
+   "type": "order",
+   "tiles": [
+    "Paul",
+    "geflogen",
+    "nach Lissabon",
+    "ist",
+    "gestern"
+   ],
+   "answers": [
+    "Paul ist gestern nach Lissabon geflogen.",
+    "Gestern ist Paul nach Lissabon geflogen."
+   ],
+   "en": "Paul flew to Lisbon yesterday."
+  },
+  {
+   "id": "a1-19-21",
+   "type": "choice",
+   "de": "Ich ___ am Sonntag lange im Bett geblieben.",
+   "options": [
+    "habe",
+    "bin",
+    "war"
+   ],
+   "answer": 1,
+   "why": "bleiben takes sein, even though you don't move.",
+   "en": "On Sunday I stayed in bed for a long time."
+  },
+  {
+   "id": "a1-19-22",
+   "type": "cloze",
+   "de": "Habt ihr im Urlaub viel ___?",
+   "base": "sehen",
+   "answers": [
+    "gesehen"
+   ],
+   "en": "Did you see a lot on holiday?"
+  },
+  {
+   "id": "a1-19-23",
+   "type": "choice",
+   "de": "Wir haben ein Auto gemietet und ___ nach Porto gefahren.",
+   "options": [
+    "haben",
+    "sind",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "fahren from A to B takes sein, also in the second part of the sentence.",
+   "en": "We rented a car and drove to Porto."
+  },
+  {
+   "id": "a1-19-24",
+   "type": "order",
+   "tiles": [
+    "bin",
+    "im Urlaub",
+    "Ich",
+    "jeden Tag",
+    "geschwommen"
+   ],
+   "answers": [
+    "Ich bin im Urlaub jeden Tag geschwommen.",
+    "Im Urlaub bin ich jeden Tag geschwommen.",
+    "Jeden Tag bin ich im Urlaub geschwommen."
+   ],
+   "en": "On holiday I swam every day."
+  }
+ ],
+ "listening": {
+  "title": "Urlaub in Lissabon",
+  "intro": "Ben meets his neighbour Clara, who has just come back from a trip.",
+  "lines": [
+   {
+    "speaker": "Ben",
+    "de": "Hallo Clara! Du bist ja ganz braun! Wo bist du gewesen?",
+    "en": "Hi Clara! You're really tanned! Where have you been?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Meine Schwester und ich sind nach Lissabon geflogen.",
+    "en": "My sister and I flew to Lisbon."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Toll! Wie lange seid ihr geblieben?",
+    "en": "Great! How long did you stay?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Eine Woche. Wir sind jeden Tag viel gelaufen. Die Stadt ist sehr schön.",
+    "en": "A week. We walked a lot every day. The city is very beautiful."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Seid ihr auch im Meer geschwommen?",
+    "en": "Did you swim in the sea too?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Ja, am Mittwoch sind wir nach Cascais gefahren. Da sind wir geschwommen.",
+    "en": "Yes, on Wednesday we went to Cascais. We swam there."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und das Essen?",
+    "en": "And the food?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Super! Wir haben viel Fisch gegessen. Und du? Bist du zu Hause geblieben?",
+    "en": "Great! We ate a lot of fish. And you? Did you stay at home?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ja, ich habe viel gearbeitet. Aber am Samstag bin ich nach Hamburg gefahren.",
+    "en": "Yes, I worked a lot. But on Saturday I went to Hamburg."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who did Clara travel with?",
+    "options": [
+     "her mother",
+     "her sister",
+     "a friend"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How long did they stay in Lisbon?",
+    "options": [
+     "one week",
+     "three days",
+     "two weeks"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where did they swim?",
+    "options": [
+     "in Lisbon",
+     "in Porto",
+     "in Cascais"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What did Ben do?",
+    "options": [
+     "He flew to Porto.",
+     "He worked a lot and went to Hamburg on Saturday.",
+     "He stayed at home every day."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wir sind nach Lissabon geflogen.",
+  "Wie lange seid ihr geblieben?",
+  "Ich bin zu Hause geblieben."
+ ],
+ "speaking": [
+  {
+   "de": "Wo bist du gewesen?",
+   "en": "Where have you been?"
+  },
+  {
+   "de": "Wir sind nach Lissabon geflogen.",
+   "en": "We flew to Lisbon."
+  },
+  {
+   "de": "Wie lange seid ihr geblieben?",
+   "en": "How long did you stay?"
+  },
+  {
+   "de": "Wir sind jeden Tag viel gelaufen.",
+   "en": "We walked a lot every day."
+  },
+  {
+   "de": "Seid ihr auch im Meer geschwommen?",
+   "en": "Did you swim in the sea too?"
+  }
+ ],
+ "writing": {
+  "task": "Write a short message to a friend (3–4 sentences) about a trip you took: where you went, how long you stayed and what you did.",
+  "model": "Liebe Mia, am Freitag bin ich nach München gefahren. Ich bin drei Tage bei Lena geblieben. Wir sind viel gelaufen und haben im Biergarten gegessen. Am Sonntag bin ich wieder nach Hause gekommen. Viele Grüße, Alex"
+ }
+}

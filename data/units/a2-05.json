@@ -1,0 +1,466 @@
+{
+ "id": "a2-05",
+ "cefr": "A2",
+ "title": "stellen/stehen, legen/liegen, hängen",
+ "situation": "Tidying up and moving in",
+ "canDo": "You can say where things stand, lie or hang, and where you put them, when you tidy up or move in.",
+ "explanation": "When you move in or tidy up, you put things somewhere and then say where they are. German chooses the verb by the **position** of the thing:\n\n- **stehen / stellen**: upright: bottles, lamps, furniture, books on a shelf\n- **liegen / legen**: flat: a phone on the table, a carpet, a person in bed\n- **hängen**: on a wall or a hook: pictures, jackets\n\n| position: wo? + dative | action: wohin? + accusative |\n|---|---|\n| Die Flasche **steht** im Kühlschrank. | Ich **stelle** die Flasche in den Kühlschrank. |\n| Das Handy **liegt** auf dem Tisch. | Ich **lege** das Handy auf den Tisch. |\n| Das Bild **hängt** an der Wand. | Ich **hänge** das Bild an die Wand. |\n\n- The **action** verbs **stellen, legen, hängen** have an object and answer *wohin?*, so the place is in the **accusative**. They are regular: *hat gestellt, hat gelegt, hat gehängt*.\n- The **position** verbs **stehen, liegen, hängen** have no object and answer *wo?*, so the place is in the **dative**. They are irregular: *hat gestanden, hat gelegen, hat gehangen*.\n- **hängen** has the same infinitive for both; the object shows which one: *Ich hänge das Bild an die Wand* (action) – *Das Bild hängt an der Wand* (position).\n\nCommon mistakes: *Das Buch legt auf dem Tisch* → **liegt**, and *Ich stelle die Vase auf dem Tisch* → **auf den Tisch**.",
+ "french": "French uses « mettre » and « être » for almost everything; German makes you choose by shape: a bottle steht, a phone liegt, a picture hängt.",
+ "examples": [
+  {
+   "de": "Ich stelle die Flasche in den Kühlschrank.",
+   "en": "I'm putting the bottle in the fridge."
+  },
+  {
+   "de": "Die Flasche steht im Kühlschrank.",
+   "en": "The bottle is in the fridge."
+  },
+  {
+   "de": "Leg dein Handy bitte auf den Tisch.",
+   "en": "Please put your phone on the table."
+  },
+  {
+   "de": "Dein Handy liegt auf dem Tisch.",
+   "en": "Your phone is on the table."
+  },
+  {
+   "de": "Wir hängen das Bild an die Wand.",
+   "en": "We're hanging the picture on the wall."
+  },
+  {
+   "de": "Das Bild hängt an der Wand.",
+   "en": "The picture is hanging on the wall."
+  },
+  {
+   "de": "Die Bücher stehen im Regal.",
+   "en": "The books are on the shelf."
+  },
+  {
+   "de": "Wo liegen meine Schlüssel?",
+   "en": "Where are my keys?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-05-01",
+   "type": "cloze",
+   "de": "Die Flasche ___ im Kühlschrank.",
+   "base": "stehen/stellen",
+   "answers": [
+    "steht"
+   ],
+   "en": "The bottle is in the fridge."
+  },
+  {
+   "id": "a2-05-02",
+   "type": "cloze",
+   "de": "Ich ___ die Flasche in den Kühlschrank.",
+   "base": "stehen/stellen",
+   "answers": [
+    "stelle"
+   ],
+   "en": "I'm putting the bottle in the fridge."
+  },
+  {
+   "id": "a2-05-03",
+   "type": "choice",
+   "de": "Dein Handy ___ auf dem Tisch.",
+   "options": [
+    "legt",
+    "liegt",
+    "lagt"
+   ],
+   "answer": 1,
+   "why": "It's a position (wo? + dative), so liegen: es liegt.",
+   "en": "Your phone is on the table."
+  },
+  {
+   "id": "a2-05-04",
+   "type": "cloze",
+   "de": "___ dein Handy bitte auf den Tisch!",
+   "base": "liegen/legen",
+   "answers": [
+    "Leg",
+    "Lege"
+   ],
+   "en": "Put your phone on the table, please!"
+  },
+  {
+   "id": "a2-05-05",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "hängen",
+    "an die Wand",
+    "das Bild"
+   ],
+   "answers": [
+    "Wir hängen das Bild an die Wand.",
+    "Das Bild hängen wir an die Wand.",
+    "An die Wand hängen wir das Bild."
+   ],
+   "en": "We're hanging the picture on the wall."
+  },
+  {
+   "id": "a2-05-06",
+   "type": "choice",
+   "de": "Das Bild hängt an ___ Wand.",
+   "options": [
+    "die",
+    "der",
+    "den"
+   ],
+   "answer": 1,
+   "why": "hängen without an object is a position, so dative: an der Wand.",
+   "en": "The picture is hanging on the wall."
+  },
+  {
+   "id": "a2-05-07",
+   "type": "cloze",
+   "de": "Die Bücher ___ im Regal.",
+   "base": "stehen/stellen",
+   "answers": [
+    "stehen"
+   ],
+   "en": "The books are on the shelf."
+  },
+  {
+   "id": "a2-05-08",
+   "type": "choice",
+   "de": "Ich ___ die Teller auf den Tisch.",
+   "options": [
+    "stehe",
+    "stelle",
+    "liege"
+   ],
+   "answer": 1,
+   "why": "You put the plates somewhere (wohin? + accusative), so stellen.",
+   "en": "I'm putting the plates on the table."
+  },
+  {
+   "id": "a2-05-09",
+   "type": "cloze",
+   "de": "Der Teppich ___ im Flur.",
+   "base": "liegen/legen",
+   "answers": [
+    "liegt"
+   ],
+   "en": "The rug is in the hall."
+  },
+  {
+   "id": "a2-05-10",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lege",
+    "ins Bett",
+    "das Baby"
+   ],
+   "answers": [
+    "Ich lege das Baby ins Bett.",
+    "Das Baby lege ich ins Bett."
+   ],
+   "en": "I'm putting the baby to bed."
+  },
+  {
+   "id": "a2-05-11",
+   "type": "choice",
+   "de": "Häng die Jacke bitte an ___ Tür.",
+   "options": [
+    "der",
+    "die",
+    "dem"
+   ],
+   "answer": 1,
+   "why": "You put it somewhere (wohin?), so accusative: an die Tür.",
+   "en": "Please hang the jacket on the door."
+  },
+  {
+   "id": "a2-05-12",
+   "type": "cloze",
+   "de": "Wo ___ meine Schlüssel?",
+   "base": "liegen/legen",
+   "answers": [
+    "liegen"
+   ],
+   "en": "Where are my keys?"
+  },
+  {
+   "id": "a2-05-13",
+   "type": "choice",
+   "de": "Ich habe die Milch in den Kühlschrank ___.",
+   "options": [
+    "gestanden",
+    "gestellt",
+    "gestellen"
+   ],
+   "answer": 1,
+   "why": "stellen is regular: gestellt; gestanden is from stehen.",
+   "en": "I put the milk in the fridge."
+  },
+  {
+   "id": "a2-05-14",
+   "type": "cloze",
+   "de": "Die Lampe ___ neben dem Sofa.",
+   "base": "stehen/stellen",
+   "answers": [
+    "steht"
+   ],
+   "en": "The lamp is next to the sofa."
+  },
+  {
+   "id": "a2-05-15",
+   "type": "order",
+   "tiles": [
+    "Wohin",
+    "ich",
+    "die Gläser",
+    "stelle"
+   ],
+   "answers": [
+    "Wohin stelle ich die Gläser?"
+   ],
+   "en": "Where shall I put the glasses?"
+  },
+  {
+   "id": "a2-05-16",
+   "type": "choice",
+   "de": "Warum ___ deine Socken auf dem Boden?",
+   "options": [
+    "legen",
+    "liegen",
+    "gelegt"
+   ],
+   "answer": 1,
+   "why": "It's a position (wo? + dative), so liegen, plural: liegen.",
+   "en": "Why are your socks on the floor?"
+  },
+  {
+   "id": "a2-05-17",
+   "type": "cloze",
+   "de": "Wir ___ das Sofa an die Wand.",
+   "base": "stehen/stellen",
+   "answers": [
+    "stellen"
+   ],
+   "en": "We're putting the sofa against the wall."
+  },
+  {
+   "id": "a2-05-18",
+   "type": "choice",
+   "de": "Der Mantel hat im Flur ___.",
+   "options": [
+    "gehängt",
+    "gehangen",
+    "hängt"
+   ],
+   "answer": 1,
+   "why": "For a position, hängen is irregular: hat gehangen.",
+   "en": "The coat was hanging in the hall."
+  },
+  {
+   "id": "a2-05-19",
+   "type": "cloze",
+   "de": "Hast du die Zeitung auf den Tisch ___?",
+   "base": "liegen/legen",
+   "answers": [
+    "gelegt"
+   ],
+   "en": "Did you put the newspaper on the table?"
+  },
+  {
+   "id": "a2-05-20",
+   "type": "order",
+   "tiles": [
+    "steht",
+    "Der Fernseher",
+    "in der Ecke",
+    "jetzt"
+   ],
+   "answers": [
+    "Der Fernseher steht jetzt in der Ecke.",
+    "Jetzt steht der Fernseher in der Ecke.",
+    "In der Ecke steht jetzt der Fernseher."
+   ],
+   "en": "The TV is in the corner now."
+  },
+  {
+   "id": "a2-05-21",
+   "type": "choice",
+   "de": "Kannst du die Blumen auf ___ Balkon stellen?",
+   "options": [
+    "dem",
+    "den",
+    "der"
+   ],
+   "answer": 1,
+   "why": "stellen answers wohin?, so accusative: auf den Balkon.",
+   "en": "Can you put the flowers on the balcony?"
+  },
+  {
+   "id": "a2-05-22",
+   "type": "cloze",
+   "de": "Ich ___ die Bilder morgen an die Wand.",
+   "base": "hängen",
+   "answers": [
+    "hänge"
+   ],
+   "en": "I'll hang the pictures on the wall tomorrow."
+  },
+  {
+   "id": "a2-05-23",
+   "type": "order",
+   "tiles": [
+    "Die Teller",
+    "stehen",
+    "schon",
+    "auf dem Tisch"
+   ],
+   "answers": [
+    "Die Teller stehen schon auf dem Tisch.",
+    "Auf dem Tisch stehen schon die Teller."
+   ],
+   "en": "The plates are already on the table."
+  },
+  {
+   "id": "a2-05-24",
+   "type": "order",
+   "tiles": [
+    "Wer",
+    "meine Brille",
+    "hat",
+    "gelegt",
+    "ins Bad"
+   ],
+   "answers": [
+    "Wer hat meine Brille ins Bad gelegt?"
+   ],
+   "en": "Who put my glasses in the bathroom?"
+  }
+ ],
+ "listening": {
+  "title": "Aufräumen nach dem Umzug",
+  "intro": "Hanna and Lukas are unpacking and tidying up their new flat.",
+  "lines": [
+   {
+    "speaker": "Hanna",
+    "de": "Lukas, wo sind die Teller?",
+    "en": "Lukas, where are the plates?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Die stehen schon im Schrank, oben links.",
+    "en": "They're already in the cupboard, top left."
+   },
+   {
+    "speaker": "Hanna",
+    "de": "Gut. Und die Gläser?",
+    "en": "Good. And the glasses?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Die stehen noch auf dem Tisch. Ich stelle sie gleich in die Spülmaschine.",
+    "en": "They're still on the table. I'll put them in the dishwasher in a minute."
+   },
+   {
+    "speaker": "Hanna",
+    "de": "Danke. Dann lege ich die Handtücher ins Bad.",
+    "en": "Thanks. Then I'll put the towels in the bathroom."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Moment, wo ist denn mein Handy? Es war doch eben noch hier!",
+    "en": "Wait, where's my phone? It was right here a moment ago!"
+   },
+   {
+    "speaker": "Hanna",
+    "de": "Es liegt auf dem Sofa, unter der Zeitung.",
+    "en": "It's on the sofa, under the newspaper."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ah, danke! Und was machen wir mit dem Bild von deiner Oma?",
+    "en": "Ah, thanks! And what shall we do with the picture of your grandma?"
+   },
+   {
+    "speaker": "Hanna",
+    "de": "Das hängen wir über das Sofa. Hast du einen Nagel?",
+    "en": "We'll hang it above the sofa. Do you have a nail?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ja, die Nägel liegen in der Schublade in der Küche.",
+    "en": "Yes, the nails are in the drawer in the kitchen."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where are the plates?",
+    "options": [
+     "Still on the table.",
+     "In the cupboard.",
+     "In the dishwasher."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where will Lukas put the glasses?",
+    "options": [
+     "In the dishwasher.",
+     "In the cupboard.",
+     "On the balcony."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is Lukas's phone?",
+    "options": [
+     "In the bathroom.",
+     "In the kitchen drawer.",
+     "On the sofa, under the newspaper."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where will they hang the picture?",
+    "options": [
+     "Next to the door.",
+     "Above the sofa.",
+     "In the bathroom."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Die Gläser stehen noch auf dem Tisch.",
+  "Ich lege die Handtücher ins Bad.",
+  "Wir hängen das Bild über das Sofa."
+ ],
+ "speaking": [
+  {
+   "de": "Die Teller stehen schon im Schrank.",
+   "en": "The plates are already in the cupboard."
+  },
+  {
+   "de": "Ich stelle sie gleich in die Spülmaschine.",
+   "en": "I'll put them in the dishwasher in a minute."
+  },
+  {
+   "de": "Dann lege ich die Handtücher ins Bad.",
+   "en": "Then I'll put the towels in the bathroom."
+  },
+  {
+   "de": "Es liegt auf dem Sofa, unter der Zeitung.",
+   "en": "It's on the sofa, under the newspaper."
+  },
+  {
+   "de": "Das hängen wir über das Sofa.",
+   "en": "We'll hang it above the sofa."
+  }
+ ],
+ "writing": {
+  "task": "You're going away and a friend is looking after your flat. Write 5–6 sentences: where things are and where they should put them.",
+  "model": "Hallo Max, danke für deine Hilfe! Der Schlüssel liegt bei meiner Nachbarin im Erdgeschoss. Die Pflanzen stehen auf dem Balkon. Stell sie bitte am Abend in die Küche. Die Post liegt im Briefkasten, leg sie bitte auf den Tisch im Flur. Mein Fahrrad steht im Keller. Bis bald, Tom"
+ }
+}

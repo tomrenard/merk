@@ -1,0 +1,466 @@
+{
+ "id": "a1-20",
+ "cefr": "A1",
+ "title": "und, aber, oder, denn; time first",
+ "situation": "Writing a short message to a friend",
+ "canDo": "You can write a short message that links sentences with und, aber, oder and denn and starts with a time, keeping the verb second.",
+ "explanation": "In a message to a friend you join ideas and say when things happen. Two rules do most of the work.\n\n**1. und, aber, oder, denn don't change the word order.** They stand before the sentence (position 0), and the next sentence starts as normal:\n- **und** (and): *Ich koche **und** du kaufst Wein.*\n- **aber** (but): *Ich habe Zeit, **aber** ich bin müde.*\n- **oder** (or): *Kommst du **oder** bleibst du zu Hause?*\n- **denn** (because): *Ich komme nicht, **denn** ich bin krank.*\n\nPut a comma before aber and denn; you usually don't need one before und and oder.\n\n**2. Time first → verb second, then the subject.** The verb stays in position 2 even when a time comes first:\n\n| 1 | 2 (verb) | 3 | … |\n|---|---|---|---|\n| Ich | **gehe** | morgen | zum Sport. |\n| Morgen | **gehe** | ich | zum Sport. |\n| Am Samstag | **habe** | ich | Zeit. |\n\nThis works after und too: *Und dann **gehen wir** essen.* (und = 0, dann = 1, verb = 2.)\n\nMost common mistake: *Morgen ich gehe…* (the English and French order). Say *Morgen **gehe ich**…*",
+ "french": "As in French, et, mais, ou and car don't change the word order (denn ≈ car); but after a time word French keeps subject + verb (Demain je viens), while German swaps them: Morgen komme ich.",
+ "examples": [
+  {
+   "de": "Ich habe heute keine Zeit, aber morgen kann ich.",
+   "en": "I don't have time today, but tomorrow I can."
+  },
+  {
+   "de": "Am Samstag gehe ich zum Sport und am Abend koche ich.",
+   "en": "On Saturday I'm going to sport, and in the evening I'm cooking."
+  },
+  {
+   "de": "Kommst du mit oder bleibst du zu Hause?",
+   "en": "Are you coming along or staying at home?"
+  },
+  {
+   "de": "Ich bleibe heute zu Hause, denn ich bin krank.",
+   "en": "I'm staying at home today because I'm ill."
+  },
+  {
+   "de": "Morgen habe ich frei.",
+   "en": "Tomorrow I'm off."
+  },
+  {
+   "de": "Um acht treffe ich Lisa und dann gehen wir essen.",
+   "en": "At eight I'm meeting Lisa, and then we're going out to eat."
+  },
+  {
+   "de": "Am Wochenende habe ich Fußball gespielt und Freunde getroffen.",
+   "en": "At the weekend I played football and met friends."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-20-01",
+   "type": "cloze",
+   "de": "Morgen ___ ich keine Zeit.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "Tomorrow I don't have time."
+  },
+  {
+   "id": "a1-20-02",
+   "type": "cloze",
+   "de": "Heute ___ ich zu Hause.",
+   "base": "bleiben",
+   "answers": [
+    "bleibe"
+   ],
+   "en": "Today I'm staying at home."
+  },
+  {
+   "id": "a1-20-03",
+   "type": "choice",
+   "de": "Ich bin müde, ___ ich habe viel gearbeitet.",
+   "options": [
+    "denn",
+    "aber",
+    "oder"
+   ],
+   "answer": 0,
+   "why": "denn gives a reason.",
+   "en": "I'm tired because I've worked a lot."
+  },
+  {
+   "id": "a1-20-04",
+   "type": "order",
+   "tiles": [
+    "habe",
+    "Morgen",
+    "ich",
+    "Zeit"
+   ],
+   "answers": [
+    "Morgen habe ich Zeit.",
+    "Ich habe morgen Zeit."
+   ],
+   "en": "Tomorrow I have time."
+  },
+  {
+   "id": "a1-20-05",
+   "type": "cloze",
+   "de": "Am Samstag ___ Lisa für uns.",
+   "base": "kochen",
+   "answers": [
+    "kocht"
+   ],
+   "en": "On Saturday Lisa is cooking for us."
+  },
+  {
+   "id": "a1-20-06",
+   "type": "choice",
+   "de": "Am Freitag ___ zum Sport.",
+   "options": [
+    "ich gehe",
+    "gehe ich",
+    "ich gehen"
+   ],
+   "answer": 1,
+   "why": "A time comes first, so the verb comes second and ich comes after it.",
+   "en": "On Friday I'm going to sport."
+  },
+  {
+   "id": "a1-20-07",
+   "type": "cloze",
+   "de": "Ich lerne Deutsch, denn ich ___ in Berlin.",
+   "base": "wohnen",
+   "answers": [
+    "wohne"
+   ],
+   "en": "I'm learning German because I live in Berlin."
+  },
+  {
+   "id": "a1-20-08",
+   "type": "order",
+   "tiles": [
+    "ich",
+    "Heute",
+    "müde",
+    "bin"
+   ],
+   "answers": [
+    "Heute bin ich müde.",
+    "Ich bin heute müde."
+   ],
+   "en": "Today I'm tired."
+  },
+  {
+   "id": "a1-20-09",
+   "type": "cloze",
+   "de": "Um sieben ___ mein Kurs.",
+   "base": "beginnen",
+   "answers": [
+    "beginnt"
+   ],
+   "en": "My course starts at seven."
+  },
+  {
+   "id": "a1-20-10",
+   "type": "choice",
+   "de": "Ich möchte kommen, ___ ich habe keine Zeit.",
+   "options": [
+    "und",
+    "aber",
+    "denn"
+   ],
+   "answer": 1,
+   "why": "aber shows a contrast: I'd like to, but I can't.",
+   "en": "I'd like to come, but I don't have time."
+  },
+  {
+   "id": "a1-20-11",
+   "type": "cloze",
+   "de": "Am Abend ___ du mich anrufen.",
+   "base": "können",
+   "answers": [
+    "kannst"
+   ],
+   "en": "You can call me in the evening."
+  },
+  {
+   "id": "a1-20-12",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "komme",
+    "heute nicht",
+    "denn",
+    "ich bin krank"
+   ],
+   "answers": [
+    "Ich komme heute nicht, denn ich bin krank."
+   ],
+   "en": "I'm not coming today because I'm ill."
+  },
+  {
+   "id": "a1-20-13",
+   "type": "choice",
+   "de": "Trinkst du Tee ___ Kaffee?",
+   "options": [
+    "oder",
+    "aber",
+    "denn"
+   ],
+   "answer": 0,
+   "why": "oder offers a choice.",
+   "en": "Do you drink tea or coffee?"
+  },
+  {
+   "id": "a1-20-14",
+   "type": "cloze",
+   "de": "Heute Abend ___ Paul zum Konzert.",
+   "base": "gehen",
+   "answers": [
+    "geht"
+   ],
+   "en": "Tonight Paul is going to the concert."
+  },
+  {
+   "id": "a1-20-15",
+   "type": "choice",
+   "de": "Ich komme nicht, denn ___ krank.",
+   "options": [
+    "ich bin",
+    "bin ich",
+    "ich"
+   ],
+   "answer": 0,
+   "why": "After denn the order doesn't change: subject, then verb.",
+   "en": "I'm not coming because I'm ill."
+  },
+  {
+   "id": "a1-20-16",
+   "type": "order",
+   "tiles": [
+    "Kommst",
+    "du",
+    "oder",
+    "bleibst",
+    "du",
+    "zu Hause"
+   ],
+   "answers": [
+    "Kommst du oder bleibst du zu Hause?",
+    "Bleibst du zu Hause oder kommst du?"
+   ],
+   "en": "Are you coming or staying at home?"
+  },
+  {
+   "id": "a1-20-17",
+   "type": "cloze",
+   "de": "Ich habe Hunger, aber der Kühlschrank ___ leer.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "I'm hungry, but the fridge is empty."
+  },
+  {
+   "id": "a1-20-18",
+   "type": "choice",
+   "de": "Zuerst kaufen wir ein und dann ___.",
+   "options": [
+    "kochen wir",
+    "wir kochen",
+    "kochen"
+   ],
+   "answer": 0,
+   "why": "dann takes position 1, so the verb comes next, then wir.",
+   "en": "First we go shopping and then we cook."
+  },
+  {
+   "id": "a1-20-19",
+   "type": "cloze",
+   "de": "Gestern ___ wir nach Potsdam gefahren.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "Yesterday we went to Potsdam."
+  },
+  {
+   "id": "a1-20-20",
+   "type": "order",
+   "tiles": [
+    "Am Wochenende",
+    "Freunde",
+    "habe",
+    "getroffen",
+    "ich"
+   ],
+   "answers": [
+    "Am Wochenende habe ich Freunde getroffen.",
+    "Ich habe am Wochenende Freunde getroffen."
+   ],
+   "en": "At the weekend I met friends."
+  },
+  {
+   "id": "a1-20-21",
+   "type": "choice",
+   "de": "Am Samstag ___ Fußball gespielt.",
+   "options": [
+    "ich habe",
+    "habe ich",
+    "habe"
+   ],
+   "answer": 1,
+   "why": "The time comes first, so haben comes second and ich after it.",
+   "en": "On Saturday I played football."
+  },
+  {
+   "id": "a1-20-22",
+   "type": "cloze",
+   "de": "Nimmst du den Bus oder ___ du?",
+   "base": "laufen",
+   "answers": [
+    "läufst"
+   ],
+   "en": "Are you taking the bus or walking?"
+  },
+  {
+   "id": "a1-20-23",
+   "type": "choice",
+   "de": "Ich nehme ein Taxi, ___ mein Bus kommt nicht.",
+   "options": [
+    "weil",
+    "denn",
+    "oder"
+   ],
+   "answer": 1,
+   "why": "denn keeps the verb second; weil would send the verb to the end.",
+   "en": "I'm taking a taxi because my bus isn't coming."
+  },
+  {
+   "id": "a1-20-24",
+   "type": "order",
+   "tiles": [
+    "Um acht",
+    "beginnt",
+    "der Film",
+    "aber",
+    "ich",
+    "komme",
+    "später"
+   ],
+   "answers": [
+    "Um acht beginnt der Film, aber ich komme später.",
+    "Der Film beginnt um acht, aber ich komme später."
+   ],
+   "en": "The film starts at eight, but I'm coming later."
+  }
+ ],
+ "listening": {
+  "title": "Nachrichten am Freitag",
+  "intro": "Nina and Max send each other messages to plan the weekend.",
+  "lines": [
+   {
+    "speaker": "Nina",
+    "de": "Hallo Max! Am Samstag habe ich Geburtstag. Kommst du?",
+    "en": "Hi Max! It's my birthday on Saturday. Are you coming?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Hallo Nina! Ja, gern! Aber am Nachmittag muss ich arbeiten.",
+    "en": "Hi Nina! Yes, I'd love to! But I have to work in the afternoon."
+   },
+   {
+    "speaker": "Nina",
+    "de": "Kein Problem, denn die Party beginnt erst um acht.",
+    "en": "No problem, because the party only starts at eight."
+   },
+   {
+    "speaker": "Max",
+    "de": "Super! Kann ich etwas mitbringen?",
+    "en": "Great! Can I bring something?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Ja, gern. Bringst du einen Salat oder einen Kuchen mit?",
+    "en": "Yes, please. Will you bring a salad or a cake?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Ich bringe einen Kuchen mit, denn ich backe gern.",
+    "en": "I'll bring a cake, because I like baking."
+   },
+   {
+    "speaker": "Nina",
+    "de": "Toll! Und am Sonntag frühstücken wir zusammen, oder?",
+    "en": "Great! And on Sunday we'll have breakfast together, right?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Am Sonntag kann ich leider nicht, denn meine Eltern kommen.",
+    "en": "Unfortunately I can't on Sunday, because my parents are coming."
+   },
+   {
+    "speaker": "Nina",
+    "de": "Schade! Dann bis Samstag!",
+    "en": "What a shame! See you on Saturday, then!"
+   },
+   {
+    "speaker": "Max",
+    "de": "Bis Samstag! Und dann feiern wir!",
+    "en": "See you on Saturday! And then we'll celebrate!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Nina having a party?",
+    "options": [
+     "It's her birthday.",
+     "She has a new flat.",
+     "She has a new job."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When does Max have to work?",
+    "options": [
+     "on Saturday morning",
+     "on Saturday afternoon",
+     "on Sunday"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What will Max bring?",
+    "options": [
+     "a salad",
+     "wine",
+     "a cake"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why can't Max come on Sunday?",
+    "options": [
+     "He has to work.",
+     "His parents are coming.",
+     "He is ill."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Am Samstag habe ich Zeit.",
+  "Ich komme nicht, denn ich bin krank.",
+  "Kommst du oder bleibst du zu Hause?"
+ ],
+ "speaking": [
+  {
+   "de": "Am Samstag habe ich Geburtstag.",
+   "en": "It's my birthday on Saturday."
+  },
+  {
+   "de": "Aber am Nachmittag muss ich arbeiten.",
+   "en": "But I have to work in the afternoon."
+  },
+  {
+   "de": "Die Party beginnt erst um acht.",
+   "en": "The party only starts at eight."
+  },
+  {
+   "de": "Am Sonntag kann ich leider nicht, denn meine Eltern kommen.",
+   "en": "Unfortunately I can't on Sunday, because my parents are coming."
+  },
+  {
+   "de": "Dann bis Samstag!",
+   "en": "See you on Saturday, then!"
+  }
+ ],
+ "writing": {
+  "task": "A friend invites you to the cinema on Friday. Write a short reply (3–4 sentences): say you can't on Friday and why (with denn), suggest another day starting with the time, and ask a question with oder.",
+  "model": "Hallo Jonas, danke für die Einladung! Am Freitag kann ich leider nicht, denn ich muss lange arbeiten. Aber am Samstag habe ich Zeit. Gehen wir um sieben oder um acht? Liebe Grüße, Lea"
+ }
+}

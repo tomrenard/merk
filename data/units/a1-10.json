@@ -1,0 +1,457 @@
+{
+ "id": "a1-10",
+ "cefr": "A1",
+ "title": "Possessive articles: mein, dein, sein, ihr, Ihr",
+ "situation": "Talking about family",
+ "canDo": "You can talk about your family and other people's families with mein, dein, sein, ihr and Ihr.",
+ "explanation": "When you show family photos, you say whose person it is: *Das ist mein Bruder. Wie heißt deine Schwester?* Possessive articles take the same endings as **ein/eine**:\n\n| owner | der Vater | die Mutter | das Kind | die Eltern (pl.) |\n|---|---|---|---|---|\n| ich | mein | meine | mein | meine |\n| du | dein | deine | dein | deine |\n| er | sein | seine | sein | seine |\n| sie (she) | ihr | ihre | ihr | ihre |\n| sie (they) | ihr | ihre | ihr | ihre |\n| Sie | Ihr | Ihre | Ihr | Ihre |\n\nFor wir and ihr (you all) the words are **unser** and **euer** (*unsere Kinder, eure Eltern*).\n\nTwo questions decide the form:\n- **Who owns it?** Paul → **sein**, Anna or a couple → **ihr**, formal you → **Ihr** with a capital I.\n- **Which noun follows?** die-words and plurals add **-e**: *seine Mutter, ihre Eltern*.\n\nThe most common mistake for French speakers: choosing by the noun only. *Paul und seine Mutter* (his mother), but *Anna und ihr Vater* (her father).\n\nAs an object (accusative), masculine adds **-en**, like *einen*: *Ich habe einen Bruder. Kennst du meinen Bruder?*",
+ "french": "In French son/sa only agree with the noun (son père, sa mère, for him or her), but German also asks who the owner is: his mother = seine Mutter, her father = ihr Vater.",
+ "examples": [
+  {
+   "de": "Das ist meine Mutter, und das ist mein Vater.",
+   "en": "This is my mother, and this is my father."
+  },
+  {
+   "de": "Wie heißt dein Bruder? – Er heißt Paul.",
+   "en": "What's your brother's name? – His name is Paul."
+  },
+  {
+   "de": "Paul und seine Frau wohnen in Köln.",
+   "en": "Paul and his wife live in Cologne."
+  },
+  {
+   "de": "Anna besucht heute ihren Vater.",
+   "en": "Anna is visiting her father today."
+  },
+  {
+   "de": "Wie alt sind Ihre Kinder? – Mein Sohn ist acht, meine Tochter ist fünf.",
+   "en": "How old are your children? – My son is eight, my daughter is five."
+  },
+  {
+   "de": "Hast du Geschwister? – Ja, meine Schwester wohnt in Lyon.",
+   "en": "Do you have brothers and sisters? – Yes, my sister lives in Lyon."
+  },
+  {
+   "de": "Unsere Oma kommt heute.",
+   "en": "Our grandma is coming today."
+  },
+  {
+   "de": "Ist das Ihr Mann? – Nein, das ist mein Bruder.",
+   "en": "Is that your husband? – No, that's my brother."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-10-01",
+   "type": "cloze",
+   "de": "Das ist ___ Mutter.",
+   "base": "mein",
+   "answers": [
+    "meine"
+   ],
+   "en": "This is my mother."
+  },
+  {
+   "id": "a1-10-02",
+   "type": "choice",
+   "de": "Wie heißt ___ Bruder?",
+   "options": [
+    "dein",
+    "deine",
+    "deinen"
+   ],
+   "answer": 0,
+   "why": "Bruder is masculine (der) and the subject here, so: dein.",
+   "en": "What's your brother's name?"
+  },
+  {
+   "id": "a1-10-03",
+   "type": "cloze",
+   "de": "Das ist ___ Vater.",
+   "base": "mein",
+   "answers": [
+    "mein"
+   ],
+   "en": "This is my father."
+  },
+  {
+   "id": "a1-10-04",
+   "type": "choice",
+   "de": "Paul und ___ Frau wohnen in Köln.",
+   "options": [
+    "ihre",
+    "seine",
+    "sein"
+   ],
+   "answer": 1,
+   "why": "The owner is Paul (his), and Frau is feminine: seine.",
+   "en": "Paul and his wife live in Cologne."
+  },
+  {
+   "id": "a1-10-05",
+   "type": "cloze",
+   "de": "Wie heißt ___ Schwester?",
+   "base": "dein",
+   "answers": [
+    "deine"
+   ],
+   "en": "What's your sister's name?"
+  },
+  {
+   "id": "a1-10-06",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Das",
+    "mein Sohn"
+   ],
+   "answers": [
+    "Das ist mein Sohn."
+   ],
+   "en": "This is my son."
+  },
+  {
+   "id": "a1-10-07",
+   "type": "choice",
+   "de": "Anna und ___ Vater kochen heute.",
+   "options": [
+    "sein",
+    "ihr",
+    "ihre"
+   ],
+   "answer": 1,
+   "why": "The owner is Anna (her), and Vater is masculine, so no ending: ihr.",
+   "en": "Anna and her father are cooking today."
+  },
+  {
+   "id": "a1-10-08",
+   "type": "cloze",
+   "de": "Frau Weber, wie alt sind ___ Kinder?",
+   "base": "Ihr",
+   "answers": [
+    "Ihre"
+   ],
+   "en": "Ms Weber, how old are your children?"
+  },
+  {
+   "id": "a1-10-09",
+   "type": "cloze",
+   "de": "Ich habe einen Bruder. ___ Bruder heißt Jan.",
+   "base": "mein",
+   "answers": [
+    "Mein"
+   ],
+   "en": "I have a brother. My brother's name is Jan."
+  },
+  {
+   "id": "a1-10-10",
+   "type": "order",
+   "tiles": [
+    "Wie",
+    "heißt",
+    "deine Mutter"
+   ],
+   "answers": [
+    "Wie heißt deine Mutter?"
+   ],
+   "en": "What's your mother's name?"
+  },
+  {
+   "id": "a1-10-11",
+   "type": "choice",
+   "de": "Ich besuche heute ___ Bruder.",
+   "options": [
+    "mein",
+    "meine",
+    "meinen"
+   ],
+   "answer": 2,
+   "why": "Bruder is the object here (accusative), so masculine takes -en: meinen.",
+   "en": "I'm visiting my brother today."
+  },
+  {
+   "id": "a1-10-12",
+   "type": "cloze",
+   "de": "Tom liebt ___ Kinder.",
+   "base": "sein",
+   "answers": [
+    "seine"
+   ],
+   "en": "Tom loves his children."
+  },
+  {
+   "id": "a1-10-13",
+   "type": "choice",
+   "de": "Ist das ___ Mann, Frau Schmidt?",
+   "options": [
+    "Ihr",
+    "Ihre",
+    "dein"
+   ],
+   "answer": 0,
+   "why": "You say Sie to Frau Schmidt, so 'your' is Ihr, and Mann is masculine, so no ending.",
+   "en": "Is that your husband, Ms Schmidt?"
+  },
+  {
+   "id": "a1-10-14",
+   "type": "order",
+   "tiles": [
+    "Meine Eltern",
+    "in Lyon",
+    "wohnen"
+   ],
+   "answers": [
+    "Meine Eltern wohnen in Lyon.",
+    "In Lyon wohnen meine Eltern."
+   ],
+   "en": "My parents live in Lyon."
+  },
+  {
+   "id": "a1-10-15",
+   "type": "cloze",
+   "de": "Lisa, ist das ___ Schwester?",
+   "base": "dein",
+   "answers": [
+    "deine"
+   ],
+   "en": "Lisa, is that your sister?"
+  },
+  {
+   "id": "a1-10-16",
+   "type": "choice",
+   "de": "Sabine sucht ___ Sohn.",
+   "options": [
+    "ihren",
+    "seinen",
+    "ihr"
+   ],
+   "answer": 0,
+   "why": "The owner is Sabine (her), and Sohn is the object, so masculine takes -en: ihren.",
+   "en": "Sabine is looking for her son."
+  },
+  {
+   "id": "a1-10-17",
+   "type": "cloze",
+   "de": "Kennst du ___ Freundin?",
+   "base": "mein",
+   "answers": [
+    "meine"
+   ],
+   "en": "Do you know my girlfriend?"
+  },
+  {
+   "id": "a1-10-18",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "Mein Bruder",
+    "zwei Kinder"
+   ],
+   "answers": [
+    "Mein Bruder hat zwei Kinder."
+   ],
+   "en": "My brother has two children."
+  },
+  {
+   "id": "a1-10-19",
+   "type": "choice",
+   "de": "Herr Klein, wie heißt ___ Tochter?",
+   "options": [
+    "deine",
+    "Ihre",
+    "Ihr"
+   ],
+   "answer": 1,
+   "why": "Formal 'your' is Ihr, and Tochter is feminine: Ihre.",
+   "en": "Mr Klein, what's your daughter's name?"
+  },
+  {
+   "id": "a1-10-20",
+   "type": "cloze",
+   "de": "Peter und Eva haben einen Sohn. ___ Sohn ist zehn.",
+   "base": "ihr",
+   "answers": [
+    "Ihr"
+   ],
+   "en": "Peter and Eva have a son. Their son is ten."
+  },
+  {
+   "id": "a1-10-21",
+   "type": "order",
+   "tiles": [
+    "Wo",
+    "deine Eltern",
+    "wohnen"
+   ],
+   "answers": [
+    "Wo wohnen deine Eltern?"
+   ],
+   "en": "Where do your parents live?"
+  },
+  {
+   "id": "a1-10-22",
+   "type": "choice",
+   "de": "Mein Vater hat ein Auto. ___ Auto ist alt.",
+   "options": [
+    "Sein",
+    "Seine",
+    "Ihr"
+   ],
+   "answer": 0,
+   "why": "The owner is my father (his), and Auto is neuter: sein.",
+   "en": "My father has a car. His car is old."
+  },
+  {
+   "id": "a1-10-23",
+   "type": "cloze",
+   "de": "Martin besucht oft ___ Mutter.",
+   "base": "sein",
+   "answers": [
+    "seine"
+   ],
+   "en": "Martin often visits his mother."
+  },
+  {
+   "id": "a1-10-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "meinen Vater",
+    "besuche",
+    "heute"
+   ],
+   "answers": [
+    "Ich besuche heute meinen Vater.",
+    "Heute besuche ich meinen Vater.",
+    "Ich besuche meinen Vater heute.",
+    "Meinen Vater besuche ich heute."
+   ],
+   "en": "I'm visiting my father today."
+  }
+ ],
+ "listening": {
+  "title": "Familienfotos",
+  "intro": "Clara shows her colleague Ben some family photos on her phone.",
+  "lines": [
+   {
+    "speaker": "Ben",
+    "de": "Ist das deine Familie?",
+    "en": "Is that your family?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Ja! Das ist mein Vater, und das ist meine Mutter.",
+    "en": "Yes! This is my father, and this is my mother."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und wer ist das? Ist das dein Bruder?",
+    "en": "And who is that? Is that your brother?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Nein, das ist mein Freund Leo. Mein Bruder ist hier links. Und das ist seine Frau, Julia.",
+    "en": "No, that's my friend Leo. My brother is here on the left. And that's his wife, Julia."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Haben sie Kinder?",
+    "en": "Do they have children?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Ja, einen Sohn. Sein Name ist Max. Er ist drei.",
+    "en": "Yes, a son. His name is Max. He's three."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Süß! Und wo wohnen deine Eltern?",
+    "en": "Cute! And where do your parents live?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "In Lyon. Meine Mutter ist Französin, mein Vater ist Deutscher.",
+    "en": "In Lyon. My mother is French, my father is German."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ach so! Sprecht ihr Deutsch oder Französisch?",
+    "en": "I see! Do you speak German or French?"
+   },
+   {
+    "speaker": "Clara",
+    "de": "Beides! Aber meine Mutter spricht nicht so gut Deutsch.",
+    "en": "Both! But my mother doesn't speak German very well."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who is the man Ben thinks is Clara's brother?",
+    "options": [
+     "Her father",
+     "Her friend",
+     "Her son"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who is Max?",
+    "options": [
+     "Her brother's son",
+     "Her friend",
+     "Her father"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where do Clara's parents live?",
+    "options": [
+     "In Berlin",
+     "In Paris",
+     "In Lyon"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Who doesn't speak German very well?",
+    "options": [
+     "Clara's father",
+     "Clara's mother",
+     "Julia"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Das ist meine Schwester.",
+  "Wie heißt dein Vater?",
+  "Paul besucht heute seine Mutter."
+ ],
+ "speaking": [
+  {
+   "de": "Ist das deine Familie?",
+   "en": "Is that your family?"
+  },
+  {
+   "de": "Das ist mein Vater, und das ist meine Mutter.",
+   "en": "This is my father, and this is my mother."
+  },
+  {
+   "de": "Das ist seine Frau, Julia.",
+   "en": "That's his wife, Julia."
+  },
+  {
+   "de": "Wo wohnen deine Eltern?",
+   "en": "Where do your parents live?"
+  },
+  {
+   "de": "Meine Mutter spricht nicht so gut Deutsch.",
+   "en": "My mother doesn't speak German very well."
+  }
+ ],
+ "writing": {
+  "task": "A new colleague asks about your family. Write 3–4 short sentences: who is in your family, their names and where they live.",
+  "model": "Mein Vater heißt Marc und meine Mutter heißt Sophie. Meine Eltern wohnen in Lyon. Ich habe eine Schwester, Julie. Ihr Sohn heißt Léo."
+ }
+}

@@ -1,0 +1,474 @@
+{
+ "id": "a2-13",
+ "cefr": "A2",
+ "title": "wo- and da-words",
+ "situation": "Asking about interests",
+ "canDo": "You can ask about someone's interests with wofür, worauf or mit wem, and answer with dafür, darauf or a pronoun.",
+ "explanation": "When you ask about interests, you often need a verb with a preposition (last unit): *sich interessieren für, sich freuen auf, sprechen über*. For **things**, German doesn't say *für was* or *für es*. It uses short words:\n\n- question: **wo + preposition**: *Wofür interessierst du dich?*\n- answer, instead of repeating the thing: **da + preposition**: *Für Musik? Dafür interessiere ich mich auch.*\n- If the preposition starts with a vowel, add **r**: wo**r**auf, da**r**auf, wo**r**an, da**r**an, wo**r**über, da**r**über.\n\n| preposition | question | answer |\n|---|---|---|\n| für | wofür? | dafür |\n| mit | womit? | damit |\n| auf | worauf? | darauf |\n| an | woran? | daran |\n| über | worüber? | darüber |\n\nFor **people**, keep the preposition and use **wen/wem** or a pronoun:\n- *Auf wen wartest du? – Auf Lisa. – Ich warte auch auf sie.*\n- *Mit wem gehst du ins Kino? – Mit Tom. – Ich gehe auch mit ihm.*\n\nUse **wen** after prepositions with the accusative (auf, für, über, an), **wem** after prepositions with the dative (mit, vor).\n\nSo *Worauf wartest du?* asks about a thing (the bus), *Auf wen wartest du?* about a person.\n\nThe most common mistake is *Ich freue mich auf es.* For a thing, say **Ich freue mich darauf.** You will hear *Für was…?* in spoken German, but *Wofür…?* is always correct.",
+ "french": "Like French « y » and « en » (j'y pense, j'en parle), German replaces a thing after a preposition with one short word: daran denken ≈ y penser, darüber sprechen ≈ en parler.",
+ "examples": [
+  {
+   "de": "Wofür interessierst du dich? – Für Musik.",
+   "en": "What are you interested in? – Music."
+  },
+  {
+   "de": "Für Fußball? Dafür interessiere ich mich gar nicht.",
+   "en": "Football? I'm not interested in that at all."
+  },
+  {
+   "de": "Worauf wartest du? – Auf den Bus.",
+   "en": "What are you waiting for? – The bus."
+  },
+  {
+   "de": "Auf wen wartest du? – Auf meine Schwester.",
+   "en": "Who are you waiting for? – My sister."
+  },
+  {
+   "de": "Ich habe eine neue Kamera und mache damit tolle Fotos.",
+   "en": "I have a new camera and take great photos with it."
+  },
+  {
+   "de": "Wir fahren ans Meer. Ich freue mich schon sehr darauf.",
+   "en": "We're going to the sea. I'm really looking forward to it."
+  },
+  {
+   "de": "Mit wem gehst du ins Kino? – Mit Tom.",
+   "en": "Who are you going to the cinema with? – With Tom."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-13-01",
+   "type": "cloze",
+   "de": "___ interessierst du dich? – Für Musik.",
+   "base": "wo- + für",
+   "answers": [
+    "Wofür"
+   ],
+   "en": "What are you interested in? – Music."
+  },
+  {
+   "id": "a2-13-02",
+   "type": "choice",
+   "de": "Interessierst du dich für Sport? – Ja, ich interessiere mich sehr ___.",
+   "options": [
+    "dafür",
+    "für es",
+    "für ihn"
+   ],
+   "answer": 0,
+   "why": "For a thing, use da + preposition instead of a pronoun: dafür.",
+   "en": "Are you interested in sport? – Yes, I'm very interested in it."
+  },
+  {
+   "id": "a2-13-03",
+   "type": "cloze",
+   "de": "___ wartest du? – Auf den Bus.",
+   "base": "wo- + auf",
+   "answers": [
+    "Worauf"
+   ],
+   "en": "What are you waiting for? – The bus."
+  },
+  {
+   "id": "a2-13-04",
+   "type": "choice",
+   "de": "___ wartest du? – Auf meine Schwester.",
+   "options": [
+    "Worauf",
+    "Auf wen",
+    "Auf wem"
+   ],
+   "answer": 1,
+   "why": "The answer is a person, so you ask with preposition + wen (auf takes the accusative here).",
+   "en": "Who are you waiting for? – My sister."
+  },
+  {
+   "id": "a2-13-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "freue",
+    "mich",
+    "auch",
+    "darauf"
+   ],
+   "answers": [
+    "Ich freue mich auch darauf.",
+    "Darauf freue ich mich auch."
+   ],
+   "en": "I'm looking forward to it too."
+  },
+  {
+   "id": "a2-13-06",
+   "type": "cloze",
+   "de": "Denkst du an den Termin? – Ja, ich denke ___.",
+   "base": "da- + an",
+   "answers": [
+    "daran"
+   ],
+   "en": "Are you thinking of the appointment? – Yes, I am."
+  },
+  {
+   "id": "a2-13-07",
+   "type": "choice",
+   "de": "___ sprecht ihr? – Über den Film von gestern.",
+   "options": [
+    "Über wen",
+    "Worüber",
+    "Worauf"
+   ],
+   "answer": 1,
+   "why": "The answer is a thing, so the question is wo + r + über: worüber.",
+   "en": "What are you talking about? – About yesterday's film."
+  },
+  {
+   "id": "a2-13-08",
+   "type": "cloze",
+   "de": "___ fährst du zur Arbeit? – Mit dem Fahrrad.",
+   "base": "wo- + mit",
+   "answers": [
+    "Womit"
+   ],
+   "en": "How do you get to work? – By bike."
+  },
+  {
+   "id": "a2-13-09",
+   "type": "order",
+   "tiles": [
+    "Worüber",
+    "ärgerst",
+    "du",
+    "dich"
+   ],
+   "answers": [
+    "Worüber ärgerst du dich?"
+   ],
+   "en": "What are you annoyed about?"
+  },
+  {
+   "id": "a2-13-10",
+   "type": "choice",
+   "de": "Denkst du oft an deine Oma? – Ja, ich denke oft ___.",
+   "options": [
+    "daran",
+    "an ihr",
+    "an sie"
+   ],
+   "answer": 2,
+   "why": "Your grandma is a person, so you keep the preposition and use a pronoun: an sie.",
+   "en": "Do you often think of your grandma? – Yes, I often think of her."
+  },
+  {
+   "id": "a2-13-11",
+   "type": "cloze",
+   "de": "Ich interessiere mich für Fotografie. Interessierst du dich auch ___?",
+   "base": "da- + für",
+   "answers": [
+    "dafür"
+   ],
+   "en": "I'm interested in photography. Are you interested in it too?"
+  },
+  {
+   "id": "a2-13-12",
+   "type": "choice",
+   "de": "Hast du schon mit Tom gesprochen? – Ja, ich habe gestern mit ___ gesprochen.",
+   "options": [
+    "ihn",
+    "damit",
+    "ihm"
+   ],
+   "answer": 2,
+   "why": "Tom is a person, and mit takes the dative: mit ihm.",
+   "en": "Have you talked to Tom yet? – Yes, I talked to him yesterday."
+  },
+  {
+   "id": "a2-13-13",
+   "type": "cloze",
+   "de": "Für ___ ist das Geschenk? – Für meinen Bruder.",
+   "base": "wer",
+   "answers": [
+    "wen"
+   ],
+   "en": "Who is the present for? – For my brother."
+  },
+  {
+   "id": "a2-13-14",
+   "type": "order",
+   "tiles": [
+    "Wofür",
+    "interessiert",
+    "sich",
+    "dein Sohn"
+   ],
+   "answers": [
+    "Wofür interessiert sich dein Sohn?",
+    "Wofür interessiert dein Sohn sich?"
+   ],
+   "en": "What is your son interested in?"
+  },
+  {
+   "id": "a2-13-15",
+   "type": "choice",
+   "de": "Ich habe eine neue Kamera. Ich mache ___ tolle Fotos.",
+   "options": [
+    "mit sie",
+    "damit",
+    "mit es"
+   ],
+   "answer": 1,
+   "why": "For a thing, use da + preposition: damit.",
+   "en": "I have a new camera. I take great photos with it."
+  },
+  {
+   "id": "a2-13-16",
+   "type": "cloze",
+   "de": "Wir fahren am Samstag ans Meer. Ich freue mich schon sehr ___.",
+   "base": "da- + auf",
+   "answers": [
+    "darauf"
+   ],
+   "en": "We're going to the sea on Saturday. I'm already really looking forward to it."
+  },
+  {
+   "id": "a2-13-17",
+   "type": "order",
+   "tiles": [
+    "Worauf",
+    "freust",
+    "du",
+    "dich",
+    "am meisten"
+   ],
+   "answers": [
+    "Worauf freust du dich am meisten?"
+   ],
+   "en": "What are you looking forward to most?"
+  },
+  {
+   "id": "a2-13-18",
+   "type": "cloze",
+   "de": "Mit ___ gehst du ins Kino? – Mit Lisa.",
+   "base": "wer",
+   "answers": [
+    "wem"
+   ],
+   "en": "Who are you going to the cinema with? – With Lisa."
+  },
+  {
+   "id": "a2-13-19",
+   "type": "choice",
+   "de": "Ärgerst du dich über den Lärm? – Ja, ich ärgere mich jeden Tag ___.",
+   "options": [
+    "worüber",
+    "darüber",
+    "über ihn"
+   ],
+   "answer": 1,
+   "why": "In an answer about a thing you use da + r + über; wo- is only for questions.",
+   "en": "Are you annoyed about the noise? – Yes, I'm annoyed about it every day."
+  },
+  {
+   "id": "a2-13-20",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "sprechen",
+    "morgen",
+    "darüber"
+   ],
+   "answers": [
+    "Wir sprechen morgen darüber.",
+    "Morgen sprechen wir darüber.",
+    "Darüber sprechen wir morgen."
+   ],
+   "en": "We'll talk about it tomorrow."
+  },
+  {
+   "id": "a2-13-21",
+   "type": "choice",
+   "de": "___ denkst du gerade? – An meinen Urlaub.",
+   "options": [
+    "An wen",
+    "Woran",
+    "Worauf"
+   ],
+   "answer": 1,
+   "why": "The verb is denken an and the answer is a thing, so the question is woran.",
+   "en": "What are you thinking about right now? – My holiday."
+  },
+  {
+   "id": "a2-13-22",
+   "type": "cloze",
+   "de": "Über ___ sprecht ihr? – Über unseren neuen Kollegen.",
+   "base": "wer",
+   "answers": [
+    "wen"
+   ],
+   "en": "Who are you talking about? – About our new colleague."
+  },
+  {
+   "id": "a2-13-23",
+   "type": "order",
+   "tiles": [
+    "Interessierst",
+    "du",
+    "dich",
+    "auch",
+    "dafür"
+   ],
+   "answers": [
+    "Interessierst du dich auch dafür?"
+   ],
+   "en": "Are you interested in it too?"
+  },
+  {
+   "id": "a2-13-24",
+   "type": "choice",
+   "de": "Hast du die Fotos schon gesehen? – Ja, ich habe mich sehr ___ gefreut.",
+   "options": [
+    "über sie",
+    "darüber",
+    "worüber"
+   ],
+   "answer": 1,
+   "why": "Photos are things, so after a preposition you use da + r + über.",
+   "en": "Have you seen the photos yet? – Yes, I was very happy about them."
+  }
+ ],
+ "listening": {
+  "title": "Das erste Tandem-Treffen",
+  "intro": "Anna and Karim meet for the first time to practise languages together and talk about their interests.",
+  "lines": [
+   {
+    "speaker": "Anna",
+    "de": "Erzähl mal, Karim: Wofür interessierst du dich?",
+    "en": "Tell me, Karim: what are you interested in?"
+   },
+   {
+    "speaker": "Karim",
+    "de": "Für Musik und für Fußball. Ich spiele jeden Samstag in einem Verein.",
+    "en": "Music and football. I play in a club every Saturday."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Fußball? Nein, dafür interessiere ich mich gar nicht.",
+    "en": "Football? No, I'm not interested in that at all."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Und du? Was machst du gern?",
+    "en": "And you? What do you like doing?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich fotografiere gern. Ich habe eine neue Kamera und mache damit viele Fotos in der Stadt.",
+    "en": "I like taking photos. I have a new camera and take lots of photos in the city with it."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Schön! Und worüber möchtest du heute sprechen?",
+    "en": "Nice! And what would you like to talk about today?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Über Reisen. Ich fahre im Sommer nach Marokko und freue mich schon sehr darauf.",
+    "en": "About travelling. I'm going to Morocco in the summer and I'm already really looking forward to it."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Marokko! Meine Familie kommt von dort. Worauf freust du dich am meisten?",
+    "en": "Morocco! My family is from there. What are you looking forward to most?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Auf das Essen, auf das Meer und auf den Markt in Marrakesch.",
+    "en": "The food, the sea and the market in Marrakesh."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Dann musst du mit meiner Tante sprechen. Sie wohnt in Marrakesch.",
+    "en": "Then you have to talk to my aunt. She lives in Marrakesh."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Mit ihr? Sehr gern! Kannst du mir ihre Nummer geben?",
+    "en": "With her? I'd love to! Can you give me her number?"
+   },
+   {
+    "speaker": "Karim",
+    "de": "Klar. Sie freut sich bestimmt darüber.",
+    "en": "Sure. I'm sure she'll be happy about it."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Karim interested in?",
+    "options": [
+     "Photography and travel",
+     "Music and football",
+     "Cooking"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Anna think about football?",
+    "options": [
+     "She isn't interested in it at all.",
+     "She plays it every Saturday.",
+     "She watches it with Karim."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Anna do with her new camera?",
+    "options": [
+     "She takes photos at football games.",
+     "She takes lots of photos in the city.",
+     "She wants to sell it."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who could help Anna with her trip?",
+    "options": [
+     "Karim's parents",
+     "A travel agency",
+     "Karim's aunt in Marrakesh"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Wofür interessierst du dich in deiner Freizeit?",
+  "Ich freue mich schon sehr darauf.",
+  "Mit wem fährst du am Wochenende weg?"
+ ],
+ "speaking": [
+  {
+   "de": "Wofür interessierst du dich?",
+   "en": "What are you interested in?"
+  },
+  {
+   "de": "Dafür interessiere ich mich gar nicht.",
+   "en": "I'm not interested in that at all."
+  },
+  {
+   "de": "Ich mache damit viele Fotos.",
+   "en": "I take lots of photos with it."
+  },
+  {
+   "de": "Worauf freust du dich am meisten?",
+   "en": "What are you looking forward to most?"
+  },
+  {
+   "de": "Ich freue mich schon sehr darauf.",
+   "en": "I'm already really looking forward to it."
+  }
+ ],
+ "writing": {
+  "task": "Answer a message from your new tandem partner (5–6 sentences): say what you are interested in and what not, what you are looking forward to, and ask two questions about their interests.",
+  "model": "Hallo Jana, danke für deine Nachricht! Ich interessiere mich sehr für Kochen und für alte Filme. Für Sport interessiere ich mich leider nicht so. Nächste Woche koche ich für meine Kollegen, darauf freue ich mich schon. Und du? Wofür interessierst du dich? Mit wem sprichst du sonst Französisch? Liebe Grüße, Hugo"
+ }
+}

@@ -1,0 +1,471 @@
+{
+ "id": "a2-02",
+ "cefr": "A2",
+ "title": "Past of sein, haben and modals",
+ "situation": "Talking about your childhood",
+ "canDo": "You can talk about your childhood with war, hatte and the past of the modal verbs.",
+ "explanation": "When you talk about your childhood, Germans usually don't say *ich bin gewesen* or *ich habe gehabt*. For **sein**, **haben** and the **modal verbs** they use the simple past (Präteritum): *Ich war oft bei meiner Oma. Wir hatten einen Hund. Ich musste früh ins Bett.*\n\n| | sein | haben | können | müssen |\n|---|---|---|---|---|\n| ich | war | hatte | konnte | musste |\n| du | warst | hattest | konntest | musstest |\n| er/sie/es | war | hatte | konnte | musste |\n| wir | waren | hatten | konnten | mussten |\n| ihr | wart | hattet | konntet | musstet |\n| sie/Sie | waren | hatten | konnten | mussten |\n\n- **ich** and **er/sie/es** have the same form, with no ending.\n- The other modal verbs work the same way: **wollte**, **durfte** (was allowed to), **sollte** (was supposed to), **mochte** (liked).\n- The modal verbs **lose their umlaut**: können → konnte, müssen → musste, dürfen → durfte, mögen → mochte.\n- Age goes with sein: *Da war ich sechs.*\n\nCommon mistake: writing *könnte*, *müsste* or *möchte* with an umlaut. Those are different words: *könnte* = could / would be able to, *möchte* = would like.",
+ "french": "war and hatte work like the imparfait (j'étais, j'avais), but for age German uses sein: j'avais six ans = ich war sechs.",
+ "examples": [
+  {
+   "de": "Als Kind war ich sehr ruhig.",
+   "en": "As a child I was very quiet."
+  },
+  {
+   "de": "Wir hatten keinen Fernseher.",
+   "en": "We didn't have a TV."
+  },
+  {
+   "de": "Ich musste jeden Tag zu Fuß zur Schule gehen.",
+   "en": "I had to walk to school every day."
+  },
+  {
+   "de": "Am Wochenende durften wir lange draußen spielen.",
+   "en": "At the weekend we were allowed to play outside for a long time."
+  },
+  {
+   "de": "Meine Schwester wollte immer einen Hund.",
+   "en": "My sister always wanted a dog."
+  },
+  {
+   "de": "Konntest du mit sechs schon schwimmen?",
+   "en": "Could you swim when you were six?"
+  },
+  {
+   "de": "Früher mochte ich keinen Fisch.",
+   "en": "I didn't like fish when I was younger."
+  },
+  {
+   "de": "Wo wart ihr im Sommer?",
+   "en": "Where were you in the summer?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-02-01",
+   "type": "cloze",
+   "de": "Als Kind ___ ich sehr ruhig.",
+   "base": "sein",
+   "answers": [
+    "war"
+   ],
+   "en": "As a child I was very quiet."
+  },
+  {
+   "id": "a2-02-02",
+   "type": "cloze",
+   "de": "Wir ___ einen Hund.",
+   "base": "haben",
+   "answers": [
+    "hatten"
+   ],
+   "en": "We had a dog."
+  },
+  {
+   "id": "a2-02-03",
+   "type": "choice",
+   "de": "Früher ___ ich keinen Fisch.",
+   "options": [
+    "mochte",
+    "mögte",
+    "möchte"
+   ],
+   "answer": 0,
+   "why": "The past of mögen is mochte; möchte means 'would like'.",
+   "en": "I didn't like fish when I was younger."
+  },
+  {
+   "id": "a2-02-04",
+   "type": "cloze",
+   "de": "___ du als Kind schon schwimmen?",
+   "base": "können",
+   "answers": [
+    "Konntest"
+   ],
+   "en": "Could you swim as a child?"
+  },
+  {
+   "id": "a2-02-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "musste",
+    "um acht",
+    "ins Bett",
+    "gehen"
+   ],
+   "answers": [
+    "Ich musste um acht ins Bett gehen.",
+    "Um acht musste ich ins Bett gehen."
+   ],
+   "en": "I had to go to bed at eight."
+  },
+  {
+   "id": "a2-02-06",
+   "type": "choice",
+   "de": "Meine Eltern ___ nicht viel Geld.",
+   "options": [
+    "hatte",
+    "hatten",
+    "hattet"
+   ],
+   "answer": 1,
+   "why": "With sie (they) the form is hatten.",
+   "en": "My parents didn't have much money."
+  },
+  {
+   "id": "a2-02-07",
+   "type": "cloze",
+   "de": "Mein Bruder ___ immer Fußball spielen.",
+   "base": "wollen",
+   "answers": [
+    "wollte"
+   ],
+   "en": "My brother always wanted to play football."
+  },
+  {
+   "id": "a2-02-08",
+   "type": "choice",
+   "de": "Wo ___ ihr im Sommer?",
+   "options": [
+    "war",
+    "wart",
+    "waren"
+   ],
+   "answer": 1,
+   "why": "With ihr the past of sein is wart.",
+   "en": "Where were you (all) in the summer?"
+  },
+  {
+   "id": "a2-02-09",
+   "type": "cloze",
+   "de": "Ich ___ jeden Tag zu Fuß zur Schule gehen.",
+   "base": "müssen",
+   "answers": [
+    "musste"
+   ],
+   "en": "I had to walk to school every day."
+  },
+  {
+   "id": "a2-02-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "hatten",
+    "keinen Fernseher",
+    "zu Hause"
+   ],
+   "answers": [
+    "Wir hatten zu Hause keinen Fernseher.",
+    "Zu Hause hatten wir keinen Fernseher.",
+    "Wir hatten keinen Fernseher zu Hause."
+   ],
+   "en": "We didn't have a TV at home."
+  },
+  {
+   "id": "a2-02-11",
+   "type": "choice",
+   "de": "Am Wochenende ___ wir lange draußen spielen.",
+   "options": [
+    "dürften",
+    "durften",
+    "durfen"
+   ],
+   "answer": 1,
+   "why": "The past of dürfen loses the umlaut: durften.",
+   "en": "At the weekend we were allowed to play outside for a long time."
+  },
+  {
+   "id": "a2-02-12",
+   "type": "cloze",
+   "de": "Meine Oma ___ sehr gut kochen.",
+   "base": "können",
+   "answers": [
+    "konnte"
+   ],
+   "en": "My grandma could cook very well."
+  },
+  {
+   "id": "a2-02-13",
+   "type": "choice",
+   "de": "Ich ___ damals sechs Jahre alt.",
+   "options": [
+    "hatte",
+    "warst",
+    "war"
+   ],
+   "answer": 2,
+   "why": "Age goes with sein in German, and ich takes war.",
+   "en": "I was six years old then."
+  },
+  {
+   "id": "a2-02-14",
+   "type": "cloze",
+   "de": "___ ihr als Kinder ein Haustier?",
+   "base": "haben",
+   "answers": [
+    "Hattet"
+   ],
+   "en": "Did you (all) have a pet as children?"
+  },
+  {
+   "id": "a2-02-15",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "durfte",
+    "nicht",
+    "fernsehen",
+    "abends"
+   ],
+   "answers": [
+    "Ich durfte abends nicht fernsehen.",
+    "Abends durfte ich nicht fernsehen."
+   ],
+   "en": "I wasn't allowed to watch TV in the evening."
+  },
+  {
+   "id": "a2-02-16",
+   "type": "choice",
+   "de": "Du ___ immer gut in Mathe.",
+   "options": [
+    "warst",
+    "warest",
+    "war"
+   ],
+   "answer": 0,
+   "why": "With du the past of sein is warst.",
+   "en": "You were always good at maths."
+  },
+  {
+   "id": "a2-02-17",
+   "type": "cloze",
+   "de": "Ich ___ mein Zimmer aufräumen, aber ich hatte keine Lust.",
+   "base": "sollen",
+   "answers": [
+    "sollte"
+   ],
+   "en": "I was supposed to tidy my room, but I didn't feel like it."
+  },
+  {
+   "id": "a2-02-18",
+   "type": "choice",
+   "de": "Mein Vater ___ oft lange arbeiten.",
+   "options": [
+    "müsste",
+    "musste",
+    "musstet"
+   ],
+   "answer": 1,
+   "why": "The past of müssen has no umlaut: musste; müsste means 'would have to'.",
+   "en": "My father often had to work late."
+  },
+  {
+   "id": "a2-02-19",
+   "type": "cloze",
+   "de": "Wie alt ___ du da?",
+   "base": "sein",
+   "answers": [
+    "warst"
+   ],
+   "en": "How old were you then?"
+  },
+  {
+   "id": "a2-02-20",
+   "type": "order",
+   "tiles": [
+    "Als Kind",
+    "wollte",
+    "ich",
+    "immer",
+    "einen Hund"
+   ],
+   "answers": [
+    "Als Kind wollte ich immer einen Hund.",
+    "Ich wollte als Kind immer einen Hund."
+   ],
+   "en": "As a child I always wanted a dog."
+  },
+  {
+   "id": "a2-02-21",
+   "type": "choice",
+   "de": "___ du als Kind oft Angst?",
+   "options": [
+    "Warst",
+    "Hattest",
+    "Hatte"
+   ],
+   "answer": 1,
+   "why": "Angst haben uses haben, and du takes hattest.",
+   "en": "Were you often scared as a child?"
+  },
+  {
+   "id": "a2-02-22",
+   "type": "cloze",
+   "de": "Meine Freunde ___ nicht kommen, sie waren krank.",
+   "base": "können",
+   "answers": [
+    "konnten"
+   ],
+   "en": "My friends couldn't come, they were ill."
+  },
+  {
+   "id": "a2-02-23",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "konnten",
+    "nicht",
+    "in Urlaub fahren",
+    "damals"
+   ],
+   "answers": [
+    "Wir konnten damals nicht in Urlaub fahren.",
+    "Damals konnten wir nicht in Urlaub fahren."
+   ],
+   "en": "We couldn't go on holiday back then."
+  },
+  {
+   "id": "a2-02-24",
+   "type": "order",
+   "tiles": [
+    "hatten",
+    "wir",
+    "Am Samstag",
+    "immer",
+    "Schule"
+   ],
+   "answers": [
+    "Am Samstag hatten wir immer Schule.",
+    "Wir hatten am Samstag immer Schule.",
+    "Wir hatten immer am Samstag Schule."
+   ],
+   "en": "We always had school on Saturdays."
+  }
+ ],
+ "listening": {
+  "title": "Alte Fotos",
+  "intro": "Sophie shows Malte a photo from her childhood.",
+  "lines": [
+   {
+    "speaker": "Sophie",
+    "de": "Schau mal, das bin ich mit sieben.",
+    "en": "Look, that's me at seven."
+   },
+   {
+    "speaker": "Malte",
+    "de": "Süß! Wo wart ihr da?",
+    "en": "Cute! Where were you there?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Bei meiner Oma auf dem Land. Wir waren jeden Sommer da.",
+    "en": "At my grandma's in the country. We were there every summer."
+   },
+   {
+    "speaker": "Malte",
+    "de": "Hattet ihr dort Tiere?",
+    "en": "Did you have animals there?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, meine Oma hatte Hühner und eine Katze. Ich durfte jeden Morgen die Eier holen.",
+    "en": "Yes, my grandma had chickens and a cat. I was allowed to fetch the eggs every morning."
+   },
+   {
+    "speaker": "Malte",
+    "de": "Toll! Ich war immer in der Stadt. Wir hatten nicht mal einen Balkon.",
+    "en": "Great! I was always in the city. We didn't even have a balcony."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Und was wolltest du als Kind immer machen?",
+    "en": "And what did you always want to do as a child?"
+   },
+   {
+    "speaker": "Malte",
+    "de": "Fußball spielen! Aber ich musste jeden Nachmittag Klavier üben.",
+    "en": "Play football! But I had to practise the piano every afternoon."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Konntest du gut Klavier spielen?",
+    "en": "Could you play the piano well?"
+   },
+   {
+    "speaker": "Malte",
+    "de": "Nein, gar nicht. Ich mochte das Klavier nie!",
+    "en": "No, not at all. I never liked the piano!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Sophie spend her summers?",
+    "options": [
+     "At the seaside.",
+     "At her grandma's in the country.",
+     "In the city."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What was Sophie allowed to do every morning?",
+    "options": [
+     "Ride a horse.",
+     "Feed the cat.",
+     "Fetch the eggs."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What did Malte have to do every afternoon?",
+    "options": [
+     "Practise the piano.",
+     "Play football.",
+     "Help his grandma."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How did Malte feel about the piano?",
+    "options": [
+     "He loved it.",
+     "He never liked it.",
+     "He played it very well."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Als Kind war ich oft bei meiner Oma.",
+  "Wir hatten zu Hause keinen Fernseher.",
+  "Ich musste jeden Tag Klavier üben."
+ ],
+ "speaking": [
+  {
+   "de": "Das bin ich mit sieben.",
+   "en": "That's me at seven."
+  },
+  {
+   "de": "Wir waren jeden Sommer da.",
+   "en": "We were there every summer."
+  },
+  {
+   "de": "Ich durfte jeden Morgen die Eier holen.",
+   "en": "I was allowed to fetch the eggs every morning."
+  },
+  {
+   "de": "Was wolltest du als Kind immer machen?",
+   "en": "What did you always want to do as a child?"
+  },
+  {
+   "de": "Ich musste jeden Nachmittag Klavier üben.",
+   "en": "I had to practise the piano every afternoon."
+  }
+ ],
+ "writing": {
+  "task": "Write 5–6 sentences about your childhood: where you lived, what you had, and what you could, had to and wanted to do.",
+  "model": "Als Kind habe ich in Lyon gewohnt. Wir hatten eine Wohnung im Zentrum und eine Katze. Ich war oft im Park. Mit fünf konnte ich schon Rad fahren. Jeden Mittwoch musste ich zum Sport gehen. Ich wollte immer einen Hund, aber ich durfte keinen haben."
+ }
+}

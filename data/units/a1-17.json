@@ -1,0 +1,463 @@
+{
+ "id": "a1-17",
+ "cefr": "A1",
+ "title": "mir, dir, Ihnen: gefallen, helfen, schmecken",
+ "situation": "Likes and asking for help",
+ "canDo": "You can say what you like with gefällt mir and schmeckt mir, and ask for or offer help with helfen.",
+ "explanation": "To say what you like or to ask for help, you need three verbs that put the person in the **dative**: **gefallen** (to please), **schmecken** (to taste good) and **helfen** (to help).\n\n| person | dative |\n|---|---|\n| ich | **mir** |\n| du | **dir** |\n| er / sie | **ihm** / **ihr** |\n| wir | **uns** |\n| ihr | **euch** |\n| Sie | **Ihnen** |\n\n- **gefallen**: the thing you like is the subject, the person is dative: *Die Stadt gefällt **mir**.* (= The city pleases me.) A plural thing needs a plural verb: *Die Schuhe gefallen mir.* Note: es **gefällt**.\n- **schmecken** works the same way for food and drink: *Die Suppe schmeckt mir. Schmeckt es Ihnen?*\n- **helfen**: *Kannst du **mir** helfen? Ich helfe **dir**.* Note: er **hilft**.\n- Be polite with **Ihnen**: *Kann ich Ihnen helfen? Wie gefällt Ihnen Berlin?*\n- You already know one: *Wie geht es **dir**? – Mir geht es gut.*\n\nUse gefallen for things you see or experience (a city, clothes, a film) and schmecken only for food.\n\nMost common mistakes: *Kannst du mich helfen?* (say **mir**) and *Ich gefalle die Stadt* (say *Die Stadt gefällt mir*).",
+ "french": "gefallen works exactly like plaire (ça me plaît = das gefällt mir), with the person as an indirect object; but helfen takes the dative while aider takes a direct object (je t'aide = ich helfe dir).",
+ "examples": [
+  {
+   "de": "Wie gefällt dir Berlin? – Sehr gut!",
+   "en": "How do you like Berlin? – A lot!"
+  },
+  {
+   "de": "Die Wohnung gefällt mir.",
+   "en": "I like the flat."
+  },
+  {
+   "de": "Das Essen schmeckt mir sehr gut.",
+   "en": "I really like the food."
+  },
+  {
+   "de": "Schmeckt es Ihnen?",
+   "en": "Are you enjoying your meal?"
+  },
+  {
+   "de": "Kannst du mir bitte helfen?",
+   "en": "Can you help me, please?"
+  },
+  {
+   "de": "Kann ich Ihnen helfen?",
+   "en": "Can I help you?"
+  },
+  {
+   "de": "Die Schuhe gefallen mir nicht.",
+   "en": "I don't like the shoes."
+  },
+  {
+   "de": "Ich helfe dir gern.",
+   "en": "I'm happy to help you."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-17-01",
+   "type": "cloze",
+   "de": "Die Stadt gefällt ___.",
+   "base": "ich",
+   "answers": [
+    "mir"
+   ],
+   "en": "I like the city."
+  },
+  {
+   "id": "a1-17-02",
+   "type": "cloze",
+   "de": "Kannst du ___ helfen?",
+   "base": "ich",
+   "answers": [
+    "mir"
+   ],
+   "en": "Can you help me?"
+  },
+  {
+   "id": "a1-17-03",
+   "type": "choice",
+   "de": "Guten Tag, kann ich ___ helfen?",
+   "options": [
+    "Ihnen",
+    "Sie",
+    "dich"
+   ],
+   "answer": 0,
+   "why": "helfen takes the dative, and the polite dative is Ihnen.",
+   "en": "Hello, can I help you?"
+  },
+  {
+   "id": "a1-17-04",
+   "type": "order",
+   "tiles": [
+    "gefällt",
+    "Berlin",
+    "mir"
+   ],
+   "answers": [
+    "Berlin gefällt mir.",
+    "Mir gefällt Berlin."
+   ],
+   "en": "I like Berlin."
+  },
+  {
+   "id": "a1-17-05",
+   "type": "cloze",
+   "de": "Schmeckt ___ der Kuchen?",
+   "base": "du",
+   "answers": [
+    "dir"
+   ],
+   "en": "Do you like the cake?"
+  },
+  {
+   "id": "a1-17-06",
+   "type": "choice",
+   "de": "Die Schuhe ___ mir.",
+   "options": [
+    "gefällt",
+    "gefallen",
+    "gefalle"
+   ],
+   "answer": 1,
+   "why": "die Schuhe is plural, so the verb is plural: gefallen.",
+   "en": "I like the shoes."
+  },
+  {
+   "id": "a1-17-07",
+   "type": "cloze",
+   "de": "Ich helfe ___ gern.",
+   "base": "du",
+   "answers": [
+    "dir"
+   ],
+   "en": "I'm happy to help you."
+  },
+  {
+   "id": "a1-17-08",
+   "type": "order",
+   "tiles": [
+    "schmeckt",
+    "Die Suppe",
+    "sehr gut",
+    "mir"
+   ],
+   "answers": [
+    "Die Suppe schmeckt mir sehr gut.",
+    "Mir schmeckt die Suppe sehr gut."
+   ],
+   "en": "I really like the soup."
+  },
+  {
+   "id": "a1-17-09",
+   "type": "choice",
+   "de": "Wie gefällt ___ die Wohnung, Frau Klein?",
+   "options": [
+    "Sie",
+    "dir",
+    "Ihnen"
+   ],
+   "answer": 2,
+   "why": "Frau Klein gets the polite form, and gefallen needs the dative: Ihnen.",
+   "en": "How do you like the flat, Ms Klein?"
+  },
+  {
+   "id": "a1-17-10",
+   "type": "cloze",
+   "de": "Wie ___ dir mein Kleid?",
+   "base": "gefallen",
+   "answers": [
+    "gefällt"
+   ],
+   "en": "How do you like my dress?"
+  },
+  {
+   "id": "a1-17-11",
+   "type": "choice",
+   "de": "Paul, hilf ___ bitte!",
+   "options": [
+    "mich",
+    "mir",
+    "ich"
+   ],
+   "answer": 1,
+   "why": "helfen takes the dative: mir, not mich.",
+   "en": "Paul, help me, please!"
+  },
+  {
+   "id": "a1-17-12",
+   "type": "order",
+   "tiles": [
+    "dir",
+    "Gefällt",
+    "die Musik"
+   ],
+   "answers": [
+    "Gefällt dir die Musik?"
+   ],
+   "en": "Do you like the music?"
+  },
+  {
+   "id": "a1-17-13",
+   "type": "cloze",
+   "de": "Das Essen ___ uns sehr gut.",
+   "base": "schmecken",
+   "answers": [
+    "schmeckt"
+   ],
+   "en": "We really like the food."
+  },
+  {
+   "id": "a1-17-14",
+   "type": "choice",
+   "de": "Paul ist in Hamburg. Die Stadt gefällt ___ sehr.",
+   "options": [
+    "ihn",
+    "ihm",
+    "er"
+   ],
+   "answer": 1,
+   "why": "gefallen takes the dative: er → ihm.",
+   "en": "Paul is in Hamburg. He really likes the city."
+  },
+  {
+   "id": "a1-17-15",
+   "type": "cloze",
+   "de": "Schmeckt es ___, Herr Weber?",
+   "base": "Sie",
+   "answers": [
+    "Ihnen"
+   ],
+   "en": "Are you enjoying your meal, Mr Weber?"
+  },
+  {
+   "id": "a1-17-16",
+   "type": "order",
+   "tiles": [
+    "helfe",
+    "Ich",
+    "morgen",
+    "dir"
+   ],
+   "answers": [
+    "Ich helfe dir morgen.",
+    "Morgen helfe ich dir."
+   ],
+   "en": "I'll help you tomorrow."
+  },
+  {
+   "id": "a1-17-17",
+   "type": "choice",
+   "de": "Der Film ___ mir nicht.",
+   "options": [
+    "gefällt",
+    "mag",
+    "schmeckt"
+   ],
+   "answer": 0,
+   "why": "For a film, use gefallen; schmecken is only for food, and mag doesn't go with mir.",
+   "en": "I don't like the film."
+  },
+  {
+   "id": "a1-17-18",
+   "type": "cloze",
+   "de": "Anna hat viel Arbeit. Ich helfe ___.",
+   "base": "sie",
+   "answers": [
+    "ihr"
+   ],
+   "en": "Anna has a lot of work. I'm helping her."
+  },
+  {
+   "id": "a1-17-19",
+   "type": "choice",
+   "de": "Hallo Lisa! Wie geht es ___?",
+   "options": [
+    "dich",
+    "dir",
+    "du"
+   ],
+   "answer": 1,
+   "why": "es geht takes the dative: dir.",
+   "en": "Hi Lisa! How are you?"
+  },
+  {
+   "id": "a1-17-20",
+   "type": "order",
+   "tiles": [
+    "Ihnen",
+    "Wie",
+    "Hamburg",
+    "gefällt"
+   ],
+   "answers": [
+    "Wie gefällt Ihnen Hamburg?"
+   ],
+   "en": "How do you like Hamburg?"
+  },
+  {
+   "id": "a1-17-21",
+   "type": "cloze",
+   "de": "Mein Sohn ___ mir in der Küche.",
+   "base": "helfen",
+   "answers": [
+    "hilft"
+   ],
+   "en": "My son helps me in the kitchen."
+  },
+  {
+   "id": "a1-17-22",
+   "type": "choice",
+   "de": "___ schmeckt der Kaffee nicht.",
+   "options": [
+    "Mich",
+    "Ich",
+    "Mir"
+   ],
+   "answer": 2,
+   "why": "schmecken takes the dative, also at the start of the sentence: Mir.",
+   "en": "I don't like the coffee."
+  },
+  {
+   "id": "a1-17-23",
+   "type": "cloze",
+   "de": "Hilfst du ___? Wir haben viel Arbeit.",
+   "base": "wir",
+   "answers": [
+    "uns"
+   ],
+   "en": "Will you help us? We have a lot of work."
+  },
+  {
+   "id": "a1-17-24",
+   "type": "order",
+   "tiles": [
+    "kann",
+    "nicht",
+    "Ich",
+    "helfen",
+    "dir",
+    "leider"
+   ],
+   "answers": [
+    "Ich kann dir leider nicht helfen.",
+    "Leider kann ich dir nicht helfen.",
+    "Dir kann ich leider nicht helfen."
+   ],
+   "en": "I'm afraid I can't help you."
+  }
+ ],
+ "listening": {
+  "title": "Beim Essen",
+  "intro": "David is having dinner at his colleague Emma's new flat.",
+  "lines": [
+   {
+    "speaker": "Emma",
+    "de": "Komm rein, David! Wie gefällt dir die Wohnung?",
+    "en": "Come in, David! How do you like the flat?"
+   },
+   {
+    "speaker": "David",
+    "de": "Sie gefällt mir sehr! Die Küche ist toll.",
+    "en": "I like it a lot! The kitchen is great."
+   },
+   {
+    "speaker": "Emma",
+    "de": "Danke! Das Essen ist gleich fertig.",
+    "en": "Thanks! The food is almost ready."
+   },
+   {
+    "speaker": "David",
+    "de": "Kann ich dir helfen?",
+    "en": "Can I help you?"
+   },
+   {
+    "speaker": "Emma",
+    "de": "Ja, gern. Mach bitte den Salat.",
+    "en": "Yes, please. Make the salad, please."
+   },
+   {
+    "speaker": "David",
+    "de": "Mmh, die Suppe schmeckt mir sehr gut!",
+    "en": "Mmm, I really like the soup!"
+   },
+   {
+    "speaker": "Emma",
+    "de": "Wirklich? Das freut mich.",
+    "en": "Really? I'm glad."
+   },
+   {
+    "speaker": "David",
+    "de": "Ja, und der Salat schmeckt mir auch. Kochst du oft?",
+    "en": "Yes, and I like the salad too. Do you cook often?"
+   },
+   {
+    "speaker": "Emma",
+    "de": "Ja, am Wochenende. Möchtest du noch Suppe?",
+    "en": "Yes, at the weekend. Would you like some more soup?"
+   },
+   {
+    "speaker": "David",
+    "de": "Nein danke. Aber ein Stück Kuchen nehme ich gern!",
+    "en": "No, thanks. But I'd love a piece of cake!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does David think of the flat?",
+    "options": [
+     "He likes it a lot.",
+     "He finds it small.",
+     "He doesn't say."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does David help Emma?",
+    "options": [
+     "He cooks the soup.",
+     "He makes the salad.",
+     "He buys a cake."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When does Emma cook?",
+    "options": [
+     "every day",
+     "never",
+     "at the weekend"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does David want at the end?",
+    "options": [
+     "more soup",
+     "a piece of cake",
+     "a coffee"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Die Wohnung gefällt mir sehr.",
+  "Kannst du mir bitte helfen?",
+  "Schmeckt Ihnen der Kaffee?"
+ ],
+ "speaking": [
+  {
+   "de": "Wie gefällt dir die Wohnung?",
+   "en": "How do you like the flat?"
+  },
+  {
+   "de": "Sie gefällt mir sehr!",
+   "en": "I like it a lot!"
+  },
+  {
+   "de": "Kann ich dir helfen?",
+   "en": "Can I help you?"
+  },
+  {
+   "de": "Die Suppe schmeckt mir sehr gut.",
+   "en": "I really like the soup."
+  },
+  {
+   "de": "Kann ich Ihnen helfen?",
+   "en": "Can I help you?"
+  }
+ ],
+ "writing": {
+  "task": "You have just moved to a new city. Write a short message to a friend (3–4 sentences): say what you like and what you don't like there, and ask for help with something.",
+  "model": "Hallo Nina, ich wohne jetzt in Leipzig. Die Stadt gefällt mir sehr. Das Essen schmeckt mir auch, aber das Wetter gefällt mir nicht. Kannst du mir am Samstag in der Wohnung helfen?"
+ }
+}

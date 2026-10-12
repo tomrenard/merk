@@ -1,0 +1,475 @@
+{
+ "id": "b1-09",
+ "cefr": "B1",
+ "title": "The genitive: wegen, trotz, während",
+ "situation": "Official letters",
+ "canDo": "You can understand and write the genitive in official letters, including wegen, trotz and während.",
+ "explanation": "Official letters (from your landlord, the bank, the Bürgeramt) use the **genitive** a lot: *am Ende **des Monats**, eine Kopie **Ihres Ausweises**, **wegen des Feiertags**.* In speech people usually say *von* + dative (*das Auto von meinem Bruder*), but you need to read and write the genitive.\n\n| | masc. | fem. | neuter | plural |\n|---|---|---|---|---|\n| definite | des Vertrag**s** | der Wohnung | des Geld**es** | der Kosten |\n| indefinite | eines Vertrag**s** | einer Wohnung | eines Kind**es** | – |\n| possessive | meines Vertrag**s** | meiner Wohnung | meines Kind**es** | meiner Eltern |\n\n- Masculine and neuter nouns add **-s** or **-es** (short words often -es): *des Vertrags, des Jahres, des Geldes.*\n- Feminine and plural nouns don't change: *der Wohnung, der Kosten.*\n- Adjectives in the genitive end in **-en**: *wegen des schlechten Wetters.*\n- Names just add **-s**, with no apostrophe: *Annas Adresse.*\n\nThe genitive comes **after** the noun it belongs to: *die Adresse **der Firma*** (the company's address).\n\nPrepositions you'll see in every letter:\n- **wegen** (because of): *Wegen des Streiks fährt kein Zug.*\n- **trotz** (despite): *Trotz des Regens findet das Fest statt.*\n- **während** (during): *Während der Ferien ist das Büro geschlossen.*\n- also **innerhalb** (within): *innerhalb einer Woche.*\n\nIn everyday speech you'll hear *wegen dem Regen*. That's fine when chatting, but write *wegen des Regens*.\n\nMost common mistake: forgetting the **-s** on the noun. Write *am Ende des Monat**s***, not *des Monat*.",
+ "french": "The genitive often matches French de (la fin du mois = das Ende des Monats, la copie de votre passeport = eine Kopie Ihres Passes), and in everyday speech German also uses von + dative, just like French de.",
+ "examples": [
+  {
+   "de": "Die Miete ist am Anfang des Monats fällig.",
+   "en": "The rent is due at the beginning of the month."
+  },
+  {
+   "de": "Bitte schicken Sie uns eine Kopie Ihres Ausweises.",
+   "en": "Please send us a copy of your ID card."
+  },
+  {
+   "de": "Wegen des Feiertags ist das Amt geschlossen.",
+   "en": "The office is closed because of the public holiday."
+  },
+  {
+   "de": "Trotz des Regens fand das Fest statt.",
+   "en": "The festival took place despite the rain."
+  },
+  {
+   "de": "Während der Ferien ist das Büro geschlossen.",
+   "en": "The office is closed during the holidays."
+  },
+  {
+   "de": "Die Kosten der Reparatur übernimmt der Vermieter.",
+   "en": "The landlord pays the costs of the repair."
+  },
+  {
+   "de": "Das ist Annas neue Adresse.",
+   "en": "That's Anna's new address."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-09-01",
+   "type": "cloze",
+   "de": "Die Miete ist am Anfang ___ Monats fällig.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "The rent is due at the beginning of the month."
+  },
+  {
+   "id": "b1-09-02",
+   "type": "cloze",
+   "de": "Die Adresse ___ Firma hat sich geändert.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "The company's address has changed."
+  },
+  {
+   "id": "b1-09-03",
+   "type": "choice",
+   "de": "___ des Regens fällt das Fest aus.",
+   "options": [
+    "Trotz",
+    "Wegen",
+    "Während"
+   ],
+   "answer": 1,
+   "why": "The rain is the reason, so: wegen (because of).",
+   "en": "The festival is cancelled because of the rain."
+  },
+  {
+   "id": "b1-09-04",
+   "type": "cloze",
+   "de": "Trotz ___ Regens gingen wir spazieren.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "Despite the rain we went for a walk."
+  },
+  {
+   "id": "b1-09-05",
+   "type": "order",
+   "tiles": [
+    "Das ist",
+    "das Auto",
+    "meines Bruders"
+   ],
+   "answers": [
+    "Das ist das Auto meines Bruders."
+   ],
+   "en": "That's my brother's car."
+  },
+  {
+   "id": "b1-09-06",
+   "type": "choice",
+   "de": "Während ___ Ferien ist das Büro geschlossen.",
+   "options": [
+    "den",
+    "die",
+    "der"
+   ],
+   "answer": 2,
+   "why": "während takes the genitive, and the genitive plural article is der.",
+   "en": "The office is closed during the holidays."
+  },
+  {
+   "id": "b1-09-07",
+   "type": "cloze",
+   "de": "Bitte zahlen Sie bis zum Ende ___ Woche.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "Please pay by the end of the week."
+  },
+  {
+   "id": "b1-09-08",
+   "type": "choice",
+   "de": "Das Datum des ___ fehlt.",
+   "options": [
+    "Vertrag",
+    "Vertrags",
+    "Verträge"
+   ],
+   "answer": 1,
+   "why": "A masculine noun in the genitive adds -s: des Vertrags.",
+   "en": "The date of the contract is missing."
+  },
+  {
+   "id": "b1-09-09",
+   "type": "cloze",
+   "de": "Wegen ___ Krankheit konnte ich nicht kommen.",
+   "base": "mein",
+   "answers": [
+    "meiner"
+   ],
+   "en": "I couldn't come because of my illness."
+  },
+  {
+   "id": "b1-09-10",
+   "type": "order",
+   "tiles": [
+    "Wegen",
+    "des Streiks",
+    "fährt",
+    "heute",
+    "kein Zug"
+   ],
+   "answers": [
+    "Wegen des Streiks fährt heute kein Zug.",
+    "Heute fährt wegen des Streiks kein Zug."
+   ],
+   "en": "Because of the strike there are no trains today."
+  },
+  {
+   "id": "b1-09-11",
+   "type": "choice",
+   "de": "Bitte schicken Sie uns eine Kopie ___ Ausweises.",
+   "options": [
+    "Ihren",
+    "Ihres",
+    "Ihrem"
+   ],
+   "answer": 1,
+   "why": "Ausweis is masculine, and the genitive of Ihr is Ihres.",
+   "en": "Please send us a copy of your ID card."
+  },
+  {
+   "id": "b1-09-12",
+   "type": "cloze",
+   "de": "Die Kosten ___ Reparatur übernimmt der Vermieter.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "The landlord pays the costs of the repair."
+  },
+  {
+   "id": "b1-09-13",
+   "type": "choice",
+   "de": "___ der Arbeitszeit darf man nicht privat telefonieren.",
+   "options": [
+    "Wegen",
+    "Während",
+    "Trotz"
+   ],
+   "answer": 1,
+   "why": "It's about a period of time, so: während (during).",
+   "en": "You're not allowed to make private calls during working hours."
+  },
+  {
+   "id": "b1-09-14",
+   "type": "cloze",
+   "de": "Am Ende ___ Jahres bekommen Sie eine Rechnung.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "At the end of the year you get a bill."
+  },
+  {
+   "id": "b1-09-15",
+   "type": "order",
+   "tiles": [
+    "Bitte",
+    "überweisen",
+    "Sie",
+    "den Betrag",
+    "innerhalb",
+    "einer Woche"
+   ],
+   "answers": [
+    "Bitte überweisen Sie den Betrag innerhalb einer Woche.",
+    "Bitte überweisen Sie innerhalb einer Woche den Betrag."
+   ],
+   "en": "Please transfer the amount within a week."
+  },
+  {
+   "id": "b1-09-16",
+   "type": "choice",
+   "de": "Die Wohnung ___ Eltern ist sehr groß.",
+   "options": [
+    "meine",
+    "meinen",
+    "meiner"
+   ],
+   "answer": 2,
+   "why": "Genitive plural: meiner Eltern.",
+   "en": "My parents' flat is very big."
+  },
+  {
+   "id": "b1-09-17",
+   "type": "cloze",
+   "de": "Trotz ___ Erkältung ging sie zur Arbeit.",
+   "base": "ein",
+   "answers": [
+    "einer"
+   ],
+   "en": "Despite a cold, she went to work."
+  },
+  {
+   "id": "b1-09-18",
+   "type": "choice",
+   "de": "Das Konzert findet ___ des Regens statt. Bringen Sie einen Schirm mit!",
+   "options": [
+    "wegen",
+    "trotz",
+    "während"
+   ],
+   "answer": 1,
+   "why": "The concert happens even though it rains, so: trotz (despite).",
+   "en": "The concert takes place despite the rain. Bring an umbrella!"
+  },
+  {
+   "id": "b1-09-19",
+   "type": "cloze",
+   "de": "Das ist die Telefonnummer ___ Arztes.",
+   "base": "mein",
+   "answers": [
+    "meines"
+   ],
+   "en": "That's my doctor's phone number."
+  },
+  {
+   "id": "b1-09-20",
+   "type": "order",
+   "tiles": [
+    "Während",
+    "des Umbaus",
+    "bleibt",
+    "das Büro",
+    "geschlossen"
+   ],
+   "answers": [
+    "Während des Umbaus bleibt das Büro geschlossen.",
+    "Das Büro bleibt während des Umbaus geschlossen."
+   ],
+   "en": "The office stays closed during the renovation."
+  },
+  {
+   "id": "b1-09-21",
+   "type": "choice",
+   "de": "Sie finden das Formular auf der Website ___.",
+   "options": [
+    "die Stadt",
+    "der Stadt",
+    "den Stadt"
+   ],
+   "answer": 1,
+   "why": "The genitive of die Stadt is der Stadt (the city's website).",
+   "en": "You'll find the form on the city's website."
+  },
+  {
+   "id": "b1-09-22",
+   "type": "cloze",
+   "de": "Wegen ___ Feiertags ist das Amt am Montag geschlossen.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "The office is closed on Monday because of the public holiday."
+  },
+  {
+   "id": "b1-09-23",
+   "type": "order",
+   "tiles": [
+    "Die Kündigung",
+    "muss",
+    "bis zum Ende",
+    "des Monats",
+    "bei uns",
+    "sein"
+   ],
+   "answers": [
+    "Die Kündigung muss bis zum Ende des Monats bei uns sein.",
+    "Bis zum Ende des Monats muss die Kündigung bei uns sein.",
+    "Bei uns muss die Kündigung bis zum Ende des Monats sein."
+   ],
+   "en": "The notice must reach us by the end of the month."
+  },
+  {
+   "id": "b1-09-24",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "ist",
+    "Annas",
+    "neue",
+    "Adresse"
+   ],
+   "answers": [
+    "Das ist Annas neue Adresse."
+   ],
+   "en": "That's Anna's new address."
+  }
+ ],
+ "listening": {
+  "title": "Ein Brief von der Hausverwaltung",
+  "intro": "Marc reads a letter from the property management to his partner Lena.",
+  "lines": [
+   {
+    "speaker": "Marc",
+    "de": "Lena, hier ist ein Brief von der Hausverwaltung. Hör mal: „Sehr geehrte Mieterinnen und Mieter, wegen der Renovierung des Treppenhauses …“",
+    "en": "Lena, here's a letter from the property management. Listen: \"Dear tenants, because of the renovation of the stairwell …\""
+   },
+   {
+    "speaker": "Lena",
+    "de": "Oh nein, schon wieder Bauarbeiten?",
+    "en": "Oh no, building work again?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja. „… ist der Aufzug während der Arbeiten außer Betrieb.“",
+    "en": "Yes. \"… the lift will be out of service during the work.\""
+   },
+   {
+    "speaker": "Lena",
+    "de": "Wie lange dauert das denn?",
+    "en": "How long will that take?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Bis zum Ende des Monats. Und hier steht: „Trotz der Arbeiten können Sie Ihre Wohnung jederzeit erreichen.“",
+    "en": "Until the end of the month. And it says here: \"Despite the work, you can reach your flat at any time.\""
+   },
+   {
+    "speaker": "Lena",
+    "de": "Na, wenigstens das. Und wir wohnen im fünften Stock …",
+    "en": "Well, at least that. And we live on the fifth floor …"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Und noch etwas: „Bitte entfernen Sie Ihre Fahrräder bis Freitag aus dem Eingang des Hauses.“",
+    "en": "And one more thing: \"Please move your bikes out of the building's entrance by Friday.\""
+   },
+   {
+    "speaker": "Lena",
+    "de": "Und wohin sollen wir die stellen?",
+    "en": "And where are we supposed to put them?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "In den Keller, denke ich. Ach ja, und die Kosten der Renovierung trägt der Vermieter.",
+    "en": "In the cellar, I think. Oh yes, and the landlord is paying the costs of the renovation."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Gut. Steht da auch, wen wir bei Fragen anrufen können?",
+    "en": "Good. Does it also say who we can call if we have questions?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, die Telefonnummer des Hausmeisters steht ganz unten.",
+    "en": "Yes, the caretaker's phone number is at the very bottom."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Dann rufe ich ihn morgen an. Ich will wissen, wann der Aufzug wieder fährt.",
+    "en": "Then I'll call him tomorrow. I want to know when the lift will be working again."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why will the lift be out of service?",
+    "options": [
+     "It is broken",
+     "The stairwell is being renovated",
+     "The building is being sold"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How long will the work last?",
+    "options": [
+     "Until the end of the month",
+     "Until Friday",
+     "Until the end of the year"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What must the tenants do by Friday?",
+    "options": [
+     "Pay extra rent",
+     "Move their bikes out of the entrance",
+     "Clean the stairs"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who pays for the renovation?",
+    "options": [
+     "The tenants",
+     "The city",
+     "The landlord"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Wegen des Feiertags ist das Bürgeramt am Montag geschlossen.",
+  "Bitte schicken Sie uns eine Kopie Ihres Mietvertrags.",
+  "Während der Arbeiten ist der Aufzug leider außer Betrieb."
+ ],
+ "speaking": [
+  {
+   "de": "Wegen der Renovierung des Treppenhauses ist der Aufzug außer Betrieb.",
+   "en": "Because of the renovation of the stairwell, the lift is out of service."
+  },
+  {
+   "de": "Wie lange dauert das denn?",
+   "en": "How long will that take?"
+  },
+  {
+   "de": "Bis zum Ende des Monats.",
+   "en": "Until the end of the month."
+  },
+  {
+   "de": "Die Kosten der Renovierung trägt der Vermieter.",
+   "en": "The landlord is paying the costs of the renovation."
+  },
+  {
+   "de": "Die Telefonnummer des Hausmeisters steht ganz unten.",
+   "en": "The caretaker's phone number is at the very bottom."
+  }
+ ],
+ "writing": {
+  "task": "Your property management writes that your heating will be checked on 12 November. Write an 80–100-word formal reply: say you can't be at home that day, explain why, and ask for another date.",
+  "model": "Sehr geehrte Damen und Herren,\n\nvielen Dank für Ihren Brief vom 3. November. Sie schreiben, dass die Heizung in meiner Wohnung am 12. November geprüft wird. Leider kann ich an diesem Tag nicht zu Hause sein. Wegen einer Dienstreise bin ich während der ganzen Woche in München. Ich möchte den Termin aber gern noch vor dem Ende des Monats machen. Wäre auch ein Termin am Anfang der nächsten Woche möglich? Ich kann den Schlüssel auch meiner Nachbarin, Frau Lehmann, geben. Sie wohnt im zweiten Stock.\n\nMit freundlichen Grüßen\nJulien Martin"
+ }
+}

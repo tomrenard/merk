@@ -1,0 +1,467 @@
+{
+ "id": "a1-14",
+ "cefr": "A1",
+ "title": "Time: um, am, im",
+ "situation": "Making an appointment",
+ "canDo": "You can say and understand days and clock times, and make an appointment with um, am and im.",
+ "explanation": "To make an appointment you need to say **when**: *Haben Sie am Montag Zeit? – Ja, um zehn Uhr.* Three small words do most of the work:\n\n| for | word | examples |\n|---|---|---|\n| clock times | **um** | um 9 Uhr, um halb drei |\n| days, parts of the day, the weekend | **am** | am Montag, am Abend, am Wochenende |\n| months and seasons | **im** | im Mai, im Sommer |\n\nException: **in der Nacht**. And no little word with *heute, morgen, jetzt*: *Morgen habe ich Zeit.*\n\nOfficial times (on the phone, at the doctor's) use 24 hours: *14:30 = vierzehn Uhr dreißig.* In everyday speech people say:\n- *Viertel nach drei* (3:15), *Viertel vor vier* (3:45)\n- *zehn nach drei* (3:10), *zehn vor vier* (3:50)\n- **halb vier** (3:30): half an hour **before** four\n\nThe most common mistake: **halb vier is 3:30, not 4:30**. German counts towards the next hour.\n\nAsk with *Wann …?* (when) or *Um wie viel Uhr …?* (at what time). *Wie spät ist es?* asks for the time now. The day usually comes before the clock time: *am Mittwoch um halb drei*. You can start with the time; the verb stays second: *Am Freitag kann ich nicht.*",
+ "french": "French says « trois heures et demie », but German counts towards the next hour: halb vier = 3:30; « à 9 heures » = um 9 Uhr and « lundi » = am Montag.",
+ "examples": [
+  {
+   "de": "Haben Sie am Montag Zeit? – Ja, um zehn Uhr.",
+   "en": "Are you free on Monday? – Yes, at ten o'clock."
+  },
+  {
+   "de": "Der Termin ist am Mittwoch um halb drei.",
+   "en": "The appointment is on Wednesday at half past two."
+  },
+  {
+   "de": "Ich habe im Juli Urlaub.",
+   "en": "I'm on holiday in July."
+  },
+  {
+   "de": "Wie spät ist es? – Es ist Viertel nach vier.",
+   "en": "What time is it? – It's a quarter past four."
+  },
+  {
+   "de": "Am Wochenende arbeite ich nicht.",
+   "en": "I don't work at the weekend."
+  },
+  {
+   "de": "Geht es am Freitag um neun? – Ja, das passt.",
+   "en": "Is Friday at nine OK? – Yes, that works."
+  },
+  {
+   "de": "Die Praxis ist von acht bis zwölf Uhr offen.",
+   "en": "The practice is open from eight to twelve."
+  },
+  {
+   "de": "Im Sommer fahren wir nach Frankreich.",
+   "en": "In the summer we're going to France."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-14-01",
+   "type": "cloze",
+   "de": "Der Termin ist ___ Montag.",
+   "base": "um/am/im",
+   "answers": [
+    "am"
+   ],
+   "en": "The appointment is on Monday."
+  },
+  {
+   "id": "a1-14-02",
+   "type": "cloze",
+   "de": "Ich komme ___ zehn Uhr.",
+   "base": "um/am/im",
+   "answers": [
+    "um"
+   ],
+   "en": "I'm coming at ten o'clock."
+  },
+  {
+   "id": "a1-14-03",
+   "type": "choice",
+   "de": "Ich habe ___ Juli Urlaub.",
+   "options": [
+    "im",
+    "am",
+    "um"
+   ],
+   "answer": 0,
+   "why": "Months take im: im Juli.",
+   "en": "I'm on holiday in July."
+  },
+  {
+   "id": "a1-14-04",
+   "type": "order",
+   "tiles": [
+    "habe",
+    "Ich",
+    "Zeit",
+    "am Freitag"
+   ],
+   "answers": [
+    "Ich habe am Freitag Zeit.",
+    "Am Freitag habe ich Zeit."
+   ],
+   "en": "I'm free on Friday."
+  },
+  {
+   "id": "a1-14-05",
+   "type": "cloze",
+   "de": "___ Wochenende arbeite ich nicht.",
+   "base": "um/am/im",
+   "answers": [
+    "Am"
+   ],
+   "en": "I don't work at the weekend."
+  },
+  {
+   "id": "a1-14-06",
+   "type": "choice",
+   "de": "Es ist 15:30. Es ist ___.",
+   "options": [
+    "halb vier",
+    "halb drei",
+    "drei Uhr halb"
+   ],
+   "answer": 0,
+   "why": "halb vier means half an hour before four: 3:30.",
+   "en": "It's 3:30."
+  },
+  {
+   "id": "a1-14-07",
+   "type": "cloze",
+   "de": "Der Kurs beginnt ___ September.",
+   "base": "um/am/im",
+   "answers": [
+    "im"
+   ],
+   "en": "The course starts in September."
+  },
+  {
+   "id": "a1-14-08",
+   "type": "choice",
+   "de": "Der Termin ist am Dienstag ___ 14 Uhr.",
+   "options": [
+    "am",
+    "um",
+    "im"
+   ],
+   "answer": 1,
+   "why": "Clock times take um.",
+   "en": "The appointment is on Tuesday at 2 pm."
+  },
+  {
+   "id": "a1-14-09",
+   "type": "cloze",
+   "de": "Wir fahren ___ Sommer nach Italien.",
+   "base": "um/am/im",
+   "answers": [
+    "im"
+   ],
+   "en": "We're going to Italy in the summer."
+  },
+  {
+   "id": "a1-14-10",
+   "type": "order",
+   "tiles": [
+    "Der Termin",
+    "ist",
+    "um halb drei",
+    "am Mittwoch"
+   ],
+   "answers": [
+    "Der Termin ist am Mittwoch um halb drei.",
+    "Am Mittwoch ist der Termin um halb drei."
+   ],
+   "en": "The appointment is on Wednesday at half past two."
+  },
+  {
+   "id": "a1-14-11",
+   "type": "choice",
+   "de": "Es ist 10:15. Es ist Viertel ___ zehn.",
+   "options": [
+    "nach",
+    "vor",
+    "halb"
+   ],
+   "answer": 0,
+   "why": "10:15 is a quarter past ten: Viertel nach zehn.",
+   "en": "It's 10:15."
+  },
+  {
+   "id": "a1-14-12",
+   "type": "cloze",
+   "de": "Können Sie ___ Donnerstag kommen?",
+   "base": "um/am/im",
+   "answers": [
+    "am"
+   ],
+   "en": "Can you come on Thursday?"
+  },
+  {
+   "id": "a1-14-13",
+   "type": "choice",
+   "de": "Es ist 8:45. Es ist ___.",
+   "options": [
+    "Viertel nach acht",
+    "Viertel vor neun",
+    "halb neun"
+   ],
+   "answer": 1,
+   "why": "8:45 is a quarter to nine: Viertel vor neun.",
+   "en": "It's 8:45."
+  },
+  {
+   "id": "a1-14-14",
+   "type": "order",
+   "tiles": [
+    "Um sieben Uhr",
+    "ich",
+    "stehe",
+    "auf"
+   ],
+   "answers": [
+    "Um sieben Uhr stehe ich auf.",
+    "Ich stehe um sieben Uhr auf."
+   ],
+   "en": "I get up at seven o'clock."
+  },
+  {
+   "id": "a1-14-15",
+   "type": "cloze",
+   "de": "Mein Geburtstag ist ___ Mai.",
+   "base": "um/am/im",
+   "answers": [
+    "im"
+   ],
+   "en": "My birthday is in May."
+  },
+  {
+   "id": "a1-14-16",
+   "type": "choice",
+   "de": "Haben Sie ___ Vormittag Zeit?",
+   "options": [
+    "um",
+    "im",
+    "am"
+   ],
+   "answer": 2,
+   "why": "Parts of the day take am: am Vormittag.",
+   "en": "Are you free in the morning?"
+  },
+  {
+   "id": "a1-14-17",
+   "type": "cloze",
+   "de": "Der Zug fährt ___ 7:20 Uhr.",
+   "base": "um/am/im",
+   "answers": [
+    "um"
+   ],
+   "en": "The train leaves at 7:20."
+  },
+  {
+   "id": "a1-14-18",
+   "type": "order",
+   "tiles": [
+    "Haben",
+    "Sie",
+    "Zeit",
+    "am Montag",
+    "um neun"
+   ],
+   "answers": [
+    "Haben Sie am Montag um neun Zeit?"
+   ],
+   "en": "Are you free on Monday at nine?"
+  },
+  {
+   "id": "a1-14-19",
+   "type": "choice",
+   "de": "Ich arbeite oft ___ Nacht.",
+   "options": [
+    "am",
+    "in der",
+    "im"
+   ],
+   "answer": 1,
+   "why": "Nacht is the exception: in der Nacht (but am Abend).",
+   "en": "I often work at night."
+  },
+  {
+   "id": "a1-14-20",
+   "type": "cloze",
+   "de": "Der Film beginnt ___ Viertel nach acht.",
+   "base": "um/am/im",
+   "answers": [
+    "um"
+   ],
+   "en": "The film starts at a quarter past eight."
+  },
+  {
+   "id": "a1-14-21",
+   "type": "order",
+   "tiles": [
+    "im August",
+    "Urlaub",
+    "Wir",
+    "haben"
+   ],
+   "answers": [
+    "Wir haben im August Urlaub.",
+    "Im August haben wir Urlaub."
+   ],
+   "en": "We're on holiday in August."
+  },
+  {
+   "id": "a1-14-22",
+   "type": "choice",
+   "de": "Geht es ___ Freitag um neun? – Ja, das passt.",
+   "options": [
+    "im",
+    "um",
+    "am"
+   ],
+   "answer": 2,
+   "why": "Days take am: am Freitag.",
+   "en": "Is Friday at nine OK? – Yes, that works."
+  },
+  {
+   "id": "a1-14-23",
+   "type": "cloze",
+   "de": "Es ist 9:45. Es ist Viertel ___ zehn.",
+   "base": "nach/vor",
+   "answers": [
+    "vor"
+   ],
+   "en": "It's 9:45."
+  },
+  {
+   "id": "a1-14-24",
+   "type": "order",
+   "tiles": [
+    "kann",
+    "Ich",
+    "am Dienstag",
+    "nicht",
+    "leider"
+   ],
+   "answers": [
+    "Ich kann am Dienstag leider nicht.",
+    "Am Dienstag kann ich leider nicht.",
+    "Leider kann ich am Dienstag nicht.",
+    "Ich kann leider am Dienstag nicht."
+   ],
+   "en": "Unfortunately I can't make it on Tuesday."
+  }
+ ],
+ "listening": {
+  "title": "Ein Termin beim Friseur",
+  "intro": "Lukas calls a hairdresser's to make an appointment for a haircut.",
+  "lines": [
+   {
+    "speaker": "Petra",
+    "de": "Friseur Schneider, guten Tag!",
+    "en": "Schneider hairdresser's, hello!"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Guten Tag! Ich möchte gern einen Termin. Nur Haare schneiden, bitte.",
+    "en": "Hello! I'd like an appointment, please. Just a haircut."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Gern. Wann haben Sie Zeit?",
+    "en": "Certainly. When are you free?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Geht es am Freitag?",
+    "en": "Is Friday possible?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Am Freitag ist leider alles voll. Am Samstag um halb zehn ist noch ein Termin frei.",
+    "en": "Unfortunately Friday is fully booked. There's still an appointment free on Saturday at half past nine."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Hm, am Samstag kann ich nicht so früh. Haben Sie auch am Nachmittag etwas?",
+    "en": "Hm, I can't come that early on Saturday. Do you have anything in the afternoon?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ja, um Viertel nach drei.",
+    "en": "Yes, at a quarter past three."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Super, das passt.",
+    "en": "Great, that works."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Gut. Und Ihr Name, bitte?",
+    "en": "Good. And your name, please?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Lukas Martin. Also am Samstag um Viertel nach drei. Vielen Dank!",
+    "en": "Lukas Martin. So, Saturday at a quarter past three. Thank you very much!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why can't Lukas come on Friday?",
+    "options": [
+     "He has to work.",
+     "The salon is fully booked.",
+     "The salon is closed."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Which time is free on Saturday morning?",
+    "options": [
+     "9:30",
+     "10:30",
+     "9:15"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When is Lukas's appointment?",
+    "options": [
+     "Friday at 3:15",
+     "Saturday at 3:45",
+     "Saturday at 3:15"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Lukas want?",
+    "options": [
+     "A new colour",
+     "A haircut",
+     "A shave"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Termin ist am Montag.",
+  "Ich komme um halb drei.",
+  "Im August haben wir Urlaub."
+ ],
+ "speaking": [
+  {
+   "de": "Wann haben Sie Zeit?",
+   "en": "When are you free?"
+  },
+  {
+   "de": "Geht es am Freitag?",
+   "en": "Is Friday possible?"
+  },
+  {
+   "de": "Am Samstag kann ich nicht so früh.",
+   "en": "I can't come that early on Saturday."
+  },
+  {
+   "de": "Haben Sie auch am Nachmittag etwas?",
+   "en": "Do you have anything in the afternoon?"
+  },
+  {
+   "de": "Um Viertel nach drei, das passt.",
+   "en": "At a quarter past three, that works."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message (3–4 sentences) to your language partner to arrange a meeting: suggest a day and a time, and say when you can't.",
+  "model": "Hallo Jana, hast du am Mittwoch Zeit? Ich kann um halb sieben. Am Donnerstag kann ich leider nicht, da muss ich lange arbeiten. Bis bald, Tom"
+ }
+}

@@ -1,0 +1,473 @@
+{
+ "id": "a2-14",
+ "cefr": "A2",
+ "title": "werden: future and changes",
+ "situation": "Plans for the future",
+ "canDo": "You can talk about your plans and about changes with werden, and you know that ich will means \"I want\".",
+ "explanation": "When you talk about plans and changes, you need **werden**. It is irregular:\n\n| | singular | plural |\n|---|---|---|\n| 1st | ich werde | wir werden |\n| 2nd | du **wirst** | ihr werdet |\n| 3rd | er/sie/es **wird** | sie/Sie werden |\n\n**1. Changes (to become, to get)**: werden + adjective or noun:\n- *Es wird kalt.* (It's getting cold.) *Mein Deutsch wird besser.*\n- *Ich werde 30.* *Sie wird Ärztin.* (no article with jobs)\n- The Perfekt is with sein: *Er ist groß geworden.*\n\n**2. The future**: werden in second position + infinitive at the end:\n- *Ich werde dich morgen anrufen.*\n- *Es wird morgen regnen.*\n\nIn everyday German you usually just use the present with a time word: *Morgen fahre ich nach Hamburg.* Use werden + infinitive for promises, predictions and bigger plans: *Ich werde euch besuchen, versprochen!*\n\nThe most common mistake comes from English: **ich will** does not mean \"I will\", it means **I want**.\n- *Ich will nach Berlin ziehen.* = I want to move to Berlin.\n- *Ich werde nach Berlin ziehen.* = I will move to Berlin.",
+ "french": "werden + adjective or noun is like « devenir » (Il devient médecin → Er wird Arzt), and werden + infinitive is like the futur simple, but Germans use the present for the future even more often than French does.",
+ "examples": [
+  {
+   "de": "Im Herbst wird es früh dunkel.",
+   "en": "In autumn it gets dark early."
+  },
+  {
+   "de": "Meine Tochter wird im Mai zehn.",
+   "en": "My daughter turns ten in May."
+  },
+  {
+   "de": "Mein Sohn wird Koch.",
+   "en": "My son is going to be a chef."
+  },
+  {
+   "de": "Ich werde dich morgen anrufen.",
+   "en": "I'll call you tomorrow."
+  },
+  {
+   "de": "Es wird morgen regnen.",
+   "en": "It will rain tomorrow."
+  },
+  {
+   "de": "Wir werden eine größere Wohnung brauchen.",
+   "en": "We'll need a bigger flat."
+  },
+  {
+   "de": "Du bist aber groß geworden!",
+   "en": "Haven't you grown!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-14-01",
+   "type": "cloze",
+   "de": "Im Herbst ___ es früh dunkel.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "In autumn it gets dark early."
+  },
+  {
+   "id": "a2-14-02",
+   "type": "cloze",
+   "de": "Ich ___ nächstes Jahr 30.",
+   "base": "werden",
+   "answers": [
+    "werde"
+   ],
+   "en": "I'm turning 30 next year."
+  },
+  {
+   "id": "a2-14-03",
+   "type": "choice",
+   "de": "Du ___ bestimmt eine gute Ärztin.",
+   "options": [
+    "wirst",
+    "wirdst",
+    "werdest"
+   ],
+   "answer": 0,
+   "why": "werden is irregular: du wirst.",
+   "en": "You'll surely be a good doctor."
+  },
+  {
+   "id": "a2-14-04",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "wird",
+    "kalt"
+   ],
+   "answers": [
+    "Es wird kalt."
+   ],
+   "en": "It's getting cold."
+  },
+  {
+   "id": "a2-14-05",
+   "type": "cloze",
+   "de": "___ ihr im Sommer heiraten?",
+   "base": "werden",
+   "answers": [
+    "Werdet"
+   ],
+   "en": "Are you going to get married in the summer?"
+  },
+  {
+   "id": "a2-14-06",
+   "type": "choice",
+   "de": "Morgen ___ es regnen.",
+   "options": [
+    "will",
+    "wird",
+    "werdet"
+   ],
+   "answer": 1,
+   "why": "For the future you use werden + infinitive; will means wants.",
+   "en": "It will rain tomorrow."
+  },
+  {
+   "id": "a2-14-07",
+   "type": "cloze",
+   "de": "Mein Sohn ___ Koch.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "My son is going to be a chef."
+  },
+  {
+   "id": "a2-14-08",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "werde",
+    "dich",
+    "morgen",
+    "anrufen"
+   ],
+   "answers": [
+    "Ich werde dich morgen anrufen.",
+    "Morgen werde ich dich anrufen."
+   ],
+   "en": "I'll call you tomorrow."
+  },
+  {
+   "id": "a2-14-09",
+   "type": "choice",
+   "de": "Ich werde nächste Woche mehr Sport ___.",
+   "options": [
+    "mache",
+    "gemacht",
+    "machen"
+   ],
+   "answer": 2,
+   "why": "In the future with werden, the second verb is an infinitive at the end.",
+   "en": "I'll do more sport next week."
+  },
+  {
+   "id": "a2-14-10",
+   "type": "cloze",
+   "de": "Nach dem Kurs ___ mein Deutsch viel besser.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "After the course my German will be much better."
+  },
+  {
+   "id": "a2-14-11",
+   "type": "choice",
+   "de": "Es ist schon spät. Die Kinder ___ müde.",
+   "options": [
+    "werden",
+    "wird",
+    "werdet"
+   ],
+   "answer": 0,
+   "why": "Die Kinder is plural (sie), so it is werden.",
+   "en": "It's already late. The children are getting tired."
+  },
+  {
+   "id": "a2-14-12",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "werden",
+    "in Berlin",
+    "eine Wohnung",
+    "suchen"
+   ],
+   "answers": [
+    "Wir werden in Berlin eine Wohnung suchen.",
+    "Wir werden eine Wohnung in Berlin suchen.",
+    "In Berlin werden wir eine Wohnung suchen."
+   ],
+   "en": "We'll look for a flat in Berlin."
+  },
+  {
+   "id": "a2-14-13",
+   "type": "cloze",
+   "de": "___ du morgen zu Hause sein?",
+   "base": "werden",
+   "answers": [
+    "Wirst"
+   ],
+   "en": "Will you be at home tomorrow?"
+  },
+  {
+   "id": "a2-14-14",
+   "type": "choice",
+   "de": "Das Wetter ___ morgen besser.",
+   "options": [
+    "will",
+    "werdet",
+    "wird"
+   ],
+   "answer": 2,
+   "why": "This is a change: das Wetter (es) wird besser.",
+   "en": "The weather will get better tomorrow."
+  },
+  {
+   "id": "a2-14-15",
+   "type": "cloze",
+   "de": "Meine Schwester ___ im Mai 18.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "My sister turns 18 in May."
+  },
+  {
+   "id": "a2-14-16",
+   "type": "order",
+   "tiles": [
+    "Die Tage",
+    "werden",
+    "im Frühling",
+    "länger"
+   ],
+   "answers": [
+    "Die Tage werden im Frühling länger.",
+    "Im Frühling werden die Tage länger."
+   ],
+   "en": "In spring the days get longer."
+  },
+  {
+   "id": "a2-14-17",
+   "type": "choice",
+   "de": "Ich glaube, er ___ den Zug nicht mehr bekommen.",
+   "options": [
+    "werden",
+    "wird",
+    "werdet"
+   ],
+   "answer": 1,
+   "why": "This is a prediction about the future with er, so it is er wird + infinitive.",
+   "en": "I think he won't catch the train any more."
+  },
+  {
+   "id": "a2-14-18",
+   "type": "cloze",
+   "de": "Ihr ___ sehen: Das wird ein tolles Fest!",
+   "base": "werden",
+   "answers": [
+    "werdet"
+   ],
+   "en": "You'll see: it's going to be a great party!"
+  },
+  {
+   "id": "a2-14-19",
+   "type": "choice",
+   "de": "Mein Sohn ist so groß ___!",
+   "options": [
+    "gewordet",
+    "geworden",
+    "gewerdet"
+   ],
+   "answer": 1,
+   "why": "The Perfekt of werden is ist geworden.",
+   "en": "My son has got so tall!"
+  },
+  {
+   "id": "a2-14-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "werde",
+    "nächstes Jahr",
+    "einen Deutschkurs",
+    "machen"
+   ],
+   "answers": [
+    "Ich werde nächstes Jahr einen Deutschkurs machen.",
+    "Nächstes Jahr werde ich einen Deutschkurs machen."
+   ],
+   "en": "I'll do a German course next year."
+  },
+  {
+   "id": "a2-14-21",
+   "type": "cloze",
+   "de": "Was ___ ihr nach dem Studium machen?",
+   "base": "werden",
+   "answers": [
+    "werdet"
+   ],
+   "en": "What will you do after your studies?"
+  },
+  {
+   "id": "a2-14-22",
+   "type": "choice",
+   "de": "Sie ___ bestimmt eine tolle Mutter.",
+   "options": [
+    "werde",
+    "wird",
+    "will"
+   ],
+   "answer": 1,
+   "why": "Here werden means become, and with sie (she) it is wird; will means wants.",
+   "en": "She'll surely be a great mother."
+  },
+  {
+   "id": "a2-14-23",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "wirst",
+    "du",
+    "mit der Arbeit",
+    "fertig",
+    "sein"
+   ],
+   "answers": [
+    "Wann wirst du mit der Arbeit fertig sein?"
+   ],
+   "en": "When will you be finished with work?"
+  },
+  {
+   "id": "a2-14-24",
+   "type": "cloze",
+   "de": "Ich hoffe, dass es morgen nicht so heiß ___.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "I hope it won't get so hot tomorrow."
+  }
+ ],
+ "listening": {
+  "title": "Pläne nach der Ausbildung",
+  "intro": "Ben talks with his friend Sophie, who will soon finish her training as a nurse.",
+  "lines": [
+   {
+    "speaker": "Ben",
+    "de": "Sophie, du bist bald mit der Ausbildung fertig. Was wirst du dann machen?",
+    "en": "Sophie, you'll soon be finished with your training. What will you do then?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ich fange im Oktober in einem Krankenhaus in München an.",
+    "en": "I'm starting at a hospital in Munich in October."
+   },
+   {
+    "speaker": "Ben",
+    "de": "München! Das wird teuer. Hast du schon eine Wohnung?",
+    "en": "Munich! That's going to be expensive. Do you already have a flat?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Noch nicht. Ich werde erst mal bei meiner Tante wohnen.",
+    "en": "Not yet. I'll live with my aunt at first."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und wirst du dann noch Zeit für uns haben?",
+    "en": "And will you still have time for us then?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Klar! Ich werde euch oft besuchen, versprochen.",
+    "en": "Of course! I'll visit you often, I promise."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Wir werden dich vermissen. Hier wird es ohne dich ruhig.",
+    "en": "We'll miss you. It'll be quiet here without you."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Und du? Was sind deine Pläne?",
+    "en": "And you? What are your plans?"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Ich werde nächstes Jahr Vater! Lea ist schwanger.",
+    "en": "I'm going to be a father next year! Lea is pregnant."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Was? Das ist ja toll! Herzlichen Glückwunsch!",
+    "en": "What? That's great! Congratulations!"
+   },
+   {
+    "speaker": "Ben",
+    "de": "Danke! Wir werden aber eine größere Wohnung brauchen.",
+    "en": "Thanks! But we'll need a bigger flat."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Das wird schon. Ihr findet bestimmt etwas.",
+    "en": "It'll be fine. I'm sure you'll find something."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where will Sophie work?",
+    "options": [
+     "At a school in Munich",
+     "At a hospital in Munich",
+     "At a hospital in her town"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where will Sophie live at first?",
+    "options": [
+     "With her aunt",
+     "In her own flat",
+     "With Ben and Lea"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is Ben's big news?",
+    "options": [
+     "He's moving to Munich.",
+     "He has a new job.",
+     "He's going to be a father."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will Ben and Lea need?",
+    "options": [
+     "A bigger flat",
+     "A car",
+     "A new job"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Im Winter wird es hier sehr früh dunkel.",
+  "Ich werde dich am Wochenende besuchen.",
+  "Meine Tochter wird nächsten Monat zehn Jahre alt."
+ ],
+ "speaking": [
+  {
+   "de": "Was wirst du dann machen?",
+   "en": "What will you do then?"
+  },
+  {
+   "de": "Ich werde euch oft besuchen, versprochen.",
+   "en": "I'll visit you often, I promise."
+  },
+  {
+   "de": "Wir werden dich vermissen.",
+   "en": "We'll miss you."
+  },
+  {
+   "de": "Ich werde nächstes Jahr Vater!",
+   "en": "I'm going to be a father next year!"
+  },
+  {
+   "de": "Das wird schon.",
+   "en": "It'll be fine."
+  }
+ ],
+ "writing": {
+  "task": "Write to a friend about next year (5–6 sentences): what will change in your life and what you will do.",
+  "model": "Liebe Marie, nächstes Jahr wird alles anders! Im Januar werde ich eine neue Stelle in Köln anfangen. Dann werde ich mit meinem Freund eine Wohnung suchen. Mein Deutsch wird hoffentlich noch besser, denn ich mache einen Kurs. Im Sommer werde ich 40, und wir werden ein großes Fest machen. Kommst du auch? Liebe Grüße, Camille"
+ }
+}

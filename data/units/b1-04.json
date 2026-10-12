@@ -1,0 +1,471 @@
+{
+ "id": "b1-04",
+ "cefr": "B1",
+ "title": "The passive in the present",
+ "situation": "How things work at the Bürgeramt",
+ "canDo": "You can understand and explain how things are done at an office, using the present passive (wird gemacht).",
+ "explanation": "At the Bürgeramt, what matters is **what happens**, not who does it: *Ihr Antrag **wird geprüft**.* (Your application is being checked.) That's the **passive**.\n\nForm: **werden** + **Partizip II** at the end.\n\n| | werden | example |\n|---|---|---|\n| ich | werde | Ich werde aufgerufen. |\n| du | wirst | Du wirst gefragt. |\n| er / sie / es | wird | Der Pass wird geprüft. |\n| wir | werden | Wir werden informiert. |\n| ihr | werdet | Ihr werdet abgeholt. |\n| sie / Sie | werden | Die Formulare werden abgegeben. |\n\nFrom active to passive:\n- the **accusative object becomes the subject**: *Die Mitarbeiterin prüft **den** Antrag.* → ***Der** Antrag wird geprüft.*\n- the person who does it is usually left out. If you need it, use **von** + dative: *von der Mitarbeiterin*.\n- a sentence with **man** often says the same thing: *Man spricht hier Englisch.* = *Hier wird Englisch gesprochen.*\n\nIn a subordinate clause, *wird* goes to the very end: *Ich hoffe, dass der Antrag schnell bearbeitet **wird**.*\n\nRules and notices often have no subject at all: *Hier wird nicht geraucht.* (No smoking here.)\n\nMost common mistake: mixing up the two uses of werden.\n- **werden + infinitive** = future: *Der Ausweis wird bald kommen.*\n- **werden + Partizip II** = passive: *Der Ausweis wird per Post geschickt.*",
+ "french": "Like the French passive (le dossier est vérifié), but German uses werden, not sein: est vérifié = wird geprüft; sentences with « on » (on parle anglais ici) often become man or a passive (Hier wird Englisch gesprochen).",
+ "examples": [
+  {
+   "de": "Ihre Nummer wird gleich aufgerufen.",
+   "en": "Your number will be called shortly."
+  },
+  {
+   "de": "Die Formulare werden am Schalter abgegeben.",
+   "en": "The forms are handed in at the counter."
+  },
+  {
+   "de": "Der Ausweis wird per Post geschickt.",
+   "en": "The ID card is sent by post."
+  },
+  {
+   "de": "Keine Sorge, hier wird auch Englisch gesprochen.",
+   "en": "Don't worry, English is spoken here too."
+  },
+  {
+   "de": "Die Gebühr wird mit Karte bezahlt.",
+   "en": "The fee is paid by card."
+  },
+  {
+   "de": "Die Unterlagen werden von der Mitarbeiterin geprüft.",
+   "en": "The documents are checked by the clerk."
+  },
+  {
+   "de": "Wie wird Ihr Name geschrieben?",
+   "en": "How is your name spelled?"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-04-01",
+   "type": "cloze",
+   "de": "Ihr Antrag ___ gerade geprüft.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "Your application is being checked right now."
+  },
+  {
+   "id": "b1-04-02",
+   "type": "cloze",
+   "de": "Bitte warten Sie, Ihre Formulare werden gleich ___.",
+   "base": "prüfen",
+   "answers": [
+    "geprüft"
+   ],
+   "en": "Please wait, your forms will be checked shortly."
+  },
+  {
+   "id": "b1-04-03",
+   "type": "choice",
+   "de": "Hier ___ Pässe und Ausweise gemacht.",
+   "options": [
+    "wird",
+    "werden",
+    "sind"
+   ],
+   "answer": 1,
+   "why": "The subject is plural (Pässe und Ausweise), and the passive uses werden.",
+   "en": "Passports and ID cards are made here."
+  },
+  {
+   "id": "b1-04-04",
+   "type": "cloze",
+   "de": "Der neue Ausweis wird per Post ___.",
+   "base": "schicken",
+   "answers": [
+    "geschickt"
+   ],
+   "en": "The new ID card is sent by post."
+  },
+  {
+   "id": "b1-04-05",
+   "type": "order",
+   "tiles": [
+    "Das Formular",
+    "wird",
+    "hier",
+    "unterschrieben"
+   ],
+   "answers": [
+    "Das Formular wird hier unterschrieben.",
+    "Hier wird das Formular unterschrieben."
+   ],
+   "en": "The form is signed here."
+  },
+  {
+   "id": "b1-04-06",
+   "type": "choice",
+   "de": "Die Wartenummer ___ auf dem Bildschirm angezeigt.",
+   "options": [
+    "werdet",
+    "wird",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "Wartenummer is singular, and the passive uses werden: wird.",
+   "en": "The waiting number is shown on the screen."
+  },
+  {
+   "id": "b1-04-07",
+   "type": "cloze",
+   "de": "Keine Sorge, hier ___ auch Englisch gesprochen.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "Don't worry, English is spoken here too."
+  },
+  {
+   "id": "b1-04-08",
+   "type": "choice",
+   "de": "Der Termin wird online ___.",
+   "options": [
+    "buchen",
+    "gebucht",
+    "buchte"
+   ],
+   "answer": 1,
+   "why": "The passive needs the Partizip II at the end: gebucht.",
+   "en": "The appointment is booked online."
+  },
+  {
+   "id": "b1-04-09",
+   "type": "cloze",
+   "de": "Das Geld ___ jeden Monat von Ihrem Konto abgebucht.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "The money is taken from your account every month."
+  },
+  {
+   "id": "b1-04-10",
+   "type": "order",
+   "tiles": [
+    "Ihre Daten",
+    "werden",
+    "im Computer",
+    "gespeichert"
+   ],
+   "answers": [
+    "Ihre Daten werden im Computer gespeichert.",
+    "Im Computer werden Ihre Daten gespeichert."
+   ],
+   "en": "Your data is saved on the computer."
+  },
+  {
+   "id": "b1-04-11",
+   "type": "choice",
+   "de": "Die Gebühr ___ bar oder mit Karte bezahlt.",
+   "options": [
+    "werden",
+    "wirst",
+    "wird"
+   ],
+   "answer": 2,
+   "why": "Gebühr is singular (sie), so werden becomes wird.",
+   "en": "The fee is paid in cash or by card."
+  },
+  {
+   "id": "b1-04-12",
+   "type": "cloze",
+   "de": "Wie ___ Ihr Name geschrieben?",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "How is your name spelled?"
+  },
+  {
+   "id": "b1-04-13",
+   "type": "choice",
+   "de": "Der Pass wird ___ der Mitarbeiterin geprüft.",
+   "options": [
+    "von",
+    "durch",
+    "für"
+   ],
+   "answer": 0,
+   "why": "The person who does the action in a passive sentence comes after von + dative (durch and für take the accusative).",
+   "en": "The passport is checked by the clerk."
+  },
+  {
+   "id": "b1-04-14",
+   "type": "cloze",
+   "de": "Passfotos werden heute oft am Automaten ___.",
+   "base": "machen",
+   "answers": [
+    "gemacht"
+   ],
+   "en": "Passport photos are often taken at a machine nowadays."
+  },
+  {
+   "id": "b1-04-15",
+   "type": "order",
+   "tiles": [
+    "Die Unterlagen",
+    "werden",
+    "in zwei Wochen",
+    "geschickt"
+   ],
+   "answers": [
+    "Die Unterlagen werden in zwei Wochen geschickt.",
+    "In zwei Wochen werden die Unterlagen geschickt."
+   ],
+   "en": "The documents will be sent in two weeks."
+  },
+  {
+   "id": "b1-04-16",
+   "type": "choice",
+   "de": "Hier ___ nicht geraucht.",
+   "options": [
+    "werden",
+    "wird",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "A passive sentence with no subject uses wird.",
+   "en": "No smoking here."
+  },
+  {
+   "id": "b1-04-17",
+   "type": "cloze",
+   "de": "Ohne Termin ___ hier niemand bedient.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "Nobody is served here without an appointment."
+  },
+  {
+   "id": "b1-04-18",
+   "type": "choice",
+   "de": "Man prüft die Unterlagen. → Die Unterlagen ___ geprüft.",
+   "options": [
+    "wird",
+    "sind",
+    "werden"
+   ],
+   "answer": 2,
+   "why": "Unterlagen is plural, so: werden geprüft.",
+   "en": "The documents are checked."
+  },
+  {
+   "id": "b1-04-19",
+   "type": "cloze",
+   "de": "Wo ___ der Antrag abgegeben?",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "Where is the application handed in?"
+  },
+  {
+   "id": "b1-04-20",
+   "type": "order",
+   "tiles": [
+    "Ihr Antrag",
+    "wird",
+    "sofort",
+    "bearbeitet"
+   ],
+   "answers": [
+    "Ihr Antrag wird sofort bearbeitet.",
+    "Sofort wird Ihr Antrag bearbeitet."
+   ],
+   "en": "Your application is being processed straight away."
+  },
+  {
+   "id": "b1-04-21",
+   "type": "choice",
+   "de": "In Deutschland ___ der Müll getrennt.",
+   "options": [
+    "wird",
+    "werden",
+    "wirst"
+   ],
+   "answer": 0,
+   "why": "Müll is singular, so: wird getrennt.",
+   "en": "In Germany, rubbish is separated."
+  },
+  {
+   "id": "b1-04-22",
+   "type": "cloze",
+   "de": "Ihre Adresse wird im System ___.",
+   "base": "ändern",
+   "answers": [
+    "geändert"
+   ],
+   "en": "Your address is changed in the system."
+  },
+  {
+   "id": "b1-04-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "glaube,",
+    "dass",
+    "der Antrag",
+    "schnell",
+    "bearbeitet",
+    "wird"
+   ],
+   "answers": [
+    "Ich glaube, dass der Antrag schnell bearbeitet wird."
+   ],
+   "en": "I think the application will be processed quickly."
+  },
+  {
+   "id": "b1-04-24",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "wird",
+    "mein Ausweis",
+    "geschickt"
+   ],
+   "answers": [
+    "Wann wird mein Ausweis geschickt?"
+   ],
+   "en": "When will my ID card be sent?"
+  }
+ ],
+ "listening": {
+  "title": "Anmeldung beim Bürgeramt",
+  "intro": "Karim has just moved to Leipzig and registers his new address at the Bürgeramt.",
+  "lines": [
+   {
+    "speaker": "Petra",
+    "de": "Guten Tag, Nummer 47? Bitte nehmen Sie Platz. Was kann ich für Sie tun?",
+    "en": "Hello, number 47? Please take a seat. What can I do for you?"
+   },
+   {
+    "speaker": "Karim",
+    "de": "Guten Tag. Ich möchte mich anmelden. Ich bin letzte Woche nach Leipzig gezogen.",
+    "en": "Hello. I'd like to register. I moved to Leipzig last week."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Gut. Haben Sie das Formular und die Bestätigung von Ihrem Vermieter dabei?",
+    "en": "Good. Do you have the form and the confirmation from your landlord with you?"
+   },
+   {
+    "speaker": "Karim",
+    "de": "Ja, hier. Wie geht es jetzt weiter?",
+    "en": "Yes, here. What happens now?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Zuerst werden Ihre Daten in den Computer eingegeben. Das dauert nur ein paar Minuten.",
+    "en": "First your data is entered into the computer. That only takes a few minutes."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Und wird mein Ausweis auch geändert?",
+    "en": "And is my ID card changed too?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ja, die neue Adresse wird auf einen kleinen Aufkleber gedruckt, und der Aufkleber wird hinten auf den Ausweis geklebt.",
+    "en": "Yes, the new address is printed on a small sticker, and the sticker is stuck on the back of the ID card."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Muss ich dafür etwas bezahlen?",
+    "en": "Do I have to pay anything for that?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Nein, die Anmeldung ist kostenlos. Sie bekommen noch eine Meldebescheinigung. Sie wird gleich ausgedruckt.",
+    "en": "No, registration is free. You also get a registration certificate. It will be printed in a moment."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Brauche ich die für die Bank?",
+    "en": "Do I need it for the bank?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ja, die wird oft gebraucht, zum Beispiel bei der Bank oder beim Arbeitgeber. Heben Sie sie gut auf.",
+    "en": "Yes, it's often needed, for example at the bank or by your employer. Keep it somewhere safe."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Vielen Dank für Ihre Hilfe!",
+    "en": "Thank you very much for your help!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Karim at the Bürgeramt?",
+    "options": [
+     "To get a new passport",
+     "To register his new address",
+     "To pay a fee"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happens to his ID card?",
+    "options": [
+     "A sticker with the new address is put on it",
+     "It is sent by post",
+     "He gets a new one in three weeks"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How much does the registration cost?",
+    "options": [
+     "10 euros",
+     "It depends on the city",
+     "Nothing"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is the registration certificate often needed for?",
+    "options": [
+     "For the doctor",
+     "For the bank or the employer",
+     "For the library"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ihre Daten werden jetzt in den Computer eingegeben.",
+  "Die neue Adresse wird auf den Ausweis geklebt.",
+  "Die Meldebescheinigung wird oft bei der Bank gebraucht."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte mich anmelden.",
+   "en": "I'd like to register."
+  },
+  {
+   "de": "Wie geht es jetzt weiter?",
+   "en": "What happens now?"
+  },
+  {
+   "de": "Zuerst werden Ihre Daten in den Computer eingegeben.",
+   "en": "First your data is entered into the computer."
+  },
+  {
+   "de": "Wird mein Ausweis auch geändert?",
+   "en": "Is my ID card changed too?"
+  },
+  {
+   "de": "Die Meldebescheinigung wird oft gebraucht.",
+   "en": "The registration certificate is often needed."
+  }
+ ],
+ "writing": {
+  "task": "A friend from Italy has just moved to your city. Write an 80–100-word message explaining how registering at the Bürgeramt works.",
+  "model": "Hallo Marco,\n\nwillkommen in Leipzig! Du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden. So geht es: Zuerst wird online ein Termin gebucht. Das Formular wird vorher ausgefüllt und unterschrieben. Vergiss die Bestätigung von deinem Vermieter nicht! Beim Termin werden deine Daten in den Computer eingegeben, und dein Pass wird geprüft. Die Anmeldung kostet nichts. Am Ende bekommst du eine Meldebescheinigung. Die wird oft gebraucht, zum Beispiel bei der Bank oder bei der Krankenkasse. Wenn du Hilfe brauchst, komme ich gern mit.\n\nLiebe Grüße\nClaire"
+ }
+}

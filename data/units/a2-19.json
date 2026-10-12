@@ -1,0 +1,475 @@
+{
+ "id": "a2-19",
+ "cefr": "A2",
+ "title": "man, jemand, niemand, etwas, nichts, alle",
+ "situation": "Rules and instructions",
+ "canDo": "You can understand and explain house rules and instructions with man, alle, jemand, niemand, etwas and nichts.",
+ "explanation": "House rules, signs and instructions often talk about people in general, not about one person:\n\n| word | meaning | example |\n|---|---|---|\n| man | you, people (in general) | Hier **darf man** nicht rauchen. |\n| jemand | someone | Ist **jemand** da? |\n| niemand | nobody | **Niemand hat** angerufen. |\n| etwas | something | Ich möchte **etwas** trinken. |\n| nichts | nothing | Ich habe **nichts** gekauft. |\n| alle | everybody | **Alle müssen** leise sein. |\n| alles | everything | **Alles ist** klar. |\n\n- **man, jemand, niemand** take the **er/sie/es form** of the verb: *man muss, jemand hat, niemand weiß*.\n- **alle** is plural: *alle müssen, alle sind*. **alles** (everything) is singular.\n- **man** has nothing to do with *der Mann*: one *n*, small letter.\n- **niemand** and **nichts** are already negative, so don't add *nicht* or *kein*: *Niemand kommt.*\n- In the accusative you will hear **jemanden / niemanden**: *Ich kenne hier niemanden.*\n- In spoken German, **etwas** often becomes **was**: *Möchtest du was trinken?*\n\nThe most common mistake is a plural verb after man: *Man müssen…* Say **Man muss den Müll trennen.**",
+ "french": "man ≈ « on » (on ne fume pas ici → hier raucht man nicht), niemand ≈ « personne » and nichts ≈ « rien », but without « ne »: German uses only one negative word.",
+ "examples": [
+  {
+   "de": "Hier darf man nicht rauchen.",
+   "en": "You can't smoke here."
+  },
+  {
+   "de": "Man muss den Müll trennen.",
+   "en": "You have to separate the rubbish."
+  },
+  {
+   "de": "Ist jemand zu Hause?",
+   "en": "Is anyone at home?"
+  },
+  {
+   "de": "Niemand hat angerufen.",
+   "en": "Nobody called."
+  },
+  {
+   "de": "Ich habe nichts gekauft.",
+   "en": "I didn't buy anything."
+  },
+  {
+   "de": "Ab 22 Uhr müssen alle leise sein.",
+   "en": "From 10 pm everybody has to be quiet."
+  },
+  {
+   "de": "Ist alles klar? – Ja, alles klar.",
+   "en": "Is everything clear? – Yes, everything's clear."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-19-01",
+   "type": "cloze",
+   "de": "Hier ___ man nicht rauchen.",
+   "base": "dürfen",
+   "answers": [
+    "darf"
+   ],
+   "en": "You can't smoke here."
+  },
+  {
+   "id": "a2-19-02",
+   "type": "choice",
+   "de": "Ist ___ zu Hause? – Nein, niemand.",
+   "options": [
+    "jemand",
+    "man",
+    "etwas"
+   ],
+   "answer": 0,
+   "why": "You are asking about a person, so it is jemand (someone).",
+   "en": "Is anyone at home? – No, nobody."
+  },
+  {
+   "id": "a2-19-03",
+   "type": "cloze",
+   "de": "Man ___ den Müll trennen.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "You have to separate the rubbish."
+  },
+  {
+   "id": "a2-19-04",
+   "type": "order",
+   "tiles": [
+    "Hier",
+    "darf",
+    "man",
+    "nicht",
+    "parken"
+   ],
+   "answers": [
+    "Hier darf man nicht parken.",
+    "Man darf hier nicht parken."
+   ],
+   "en": "You can't park here."
+  },
+  {
+   "id": "a2-19-05",
+   "type": "choice",
+   "de": "Hast du etwas gekauft? – Nein, ich habe ___ gekauft.",
+   "options": [
+    "niemand",
+    "nichts",
+    "nicht"
+   ],
+   "answer": 1,
+   "why": "The opposite of etwas (something) is nichts (nothing).",
+   "en": "Did you buy anything? – No, I didn't buy anything."
+  },
+  {
+   "id": "a2-19-06",
+   "type": "cloze",
+   "de": "___ alle da? Dann fangen wir an.",
+   "base": "sein",
+   "answers": [
+    "Sind"
+   ],
+   "en": "Is everybody here? Then let's start."
+  },
+  {
+   "id": "a2-19-07",
+   "type": "choice",
+   "de": "___ hat angerufen. Das Telefon war den ganzen Tag still.",
+   "options": [
+    "Jemand",
+    "Man",
+    "Niemand"
+   ],
+   "answer": 2,
+   "why": "The phone was silent, so nobody called: niemand.",
+   "en": "Nobody called. The phone was silent all day."
+  },
+  {
+   "id": "a2-19-08",
+   "type": "order",
+   "tiles": [
+    "Niemand",
+    "hat",
+    "mir",
+    "geholfen"
+   ],
+   "answers": [
+    "Niemand hat mir geholfen.",
+    "Mir hat niemand geholfen."
+   ],
+   "en": "Nobody helped me."
+  },
+  {
+   "id": "a2-19-09",
+   "type": "cloze",
+   "de": "Im Hof ___ man nicht Fußball spielen.",
+   "base": "dürfen",
+   "answers": [
+    "darf"
+   ],
+   "en": "You can't play football in the courtyard."
+  },
+  {
+   "id": "a2-19-10",
+   "type": "choice",
+   "de": "Wie ___ man das auf Deutsch?",
+   "options": [
+    "sagt",
+    "sagen",
+    "sagst"
+   ],
+   "answer": 0,
+   "why": "man takes the er/sie/es form of the verb: man sagt.",
+   "en": "How do you say that in German?"
+  },
+  {
+   "id": "a2-19-11",
+   "type": "cloze",
+   "de": "Weiß ___, wo der Schlüssel ist?",
+   "base": "jemand / niemand",
+   "answers": [
+    "jemand"
+   ],
+   "en": "Does anyone know where the key is?"
+  },
+  {
+   "id": "a2-19-12",
+   "type": "order",
+   "tiles": [
+    "Kann",
+    "mir",
+    "jemand",
+    "helfen"
+   ],
+   "answers": [
+    "Kann mir jemand helfen?",
+    "Kann jemand mir helfen?"
+   ],
+   "en": "Can somebody help me?"
+  },
+  {
+   "id": "a2-19-13",
+   "type": "choice",
+   "de": "Ich verstehe ___. Können Sie das bitte noch einmal erklären?",
+   "options": [
+    "niemand",
+    "kein",
+    "nichts"
+   ],
+   "answer": 2,
+   "why": "You don't understand anything, so it is nichts (nothing).",
+   "en": "I don't understand anything. Can you explain that again, please?"
+  },
+  {
+   "id": "a2-19-14",
+   "type": "cloze",
+   "de": "Die Kinder haben ___ gegessen. Die Teller sind leer.",
+   "base": "alles / nichts",
+   "answers": [
+    "alles"
+   ],
+   "en": "The children have eaten everything. The plates are empty."
+  },
+  {
+   "id": "a2-19-15",
+   "type": "choice",
+   "de": "Am Sonntag ___ man keine laute Musik machen.",
+   "options": [
+    "dürfen",
+    "darf",
+    "darfst"
+   ],
+   "answer": 1,
+   "why": "man takes the er/sie/es form: man darf.",
+   "en": "On Sundays you can't play loud music."
+  },
+  {
+   "id": "a2-19-16",
+   "type": "order",
+   "tiles": [
+    "Hat",
+    "jemand",
+    "meine Brille",
+    "gesehen"
+   ],
+   "answers": [
+    "Hat jemand meine Brille gesehen?"
+   ],
+   "en": "Has anybody seen my glasses?"
+  },
+  {
+   "id": "a2-19-17",
+   "type": "cloze",
+   "de": "Hier spricht ___ Englisch. Alle sprechen nur Deutsch.",
+   "base": "jemand / niemand",
+   "answers": [
+    "niemand"
+   ],
+   "en": "Nobody here speaks English. Everybody speaks only German."
+  },
+  {
+   "id": "a2-19-18",
+   "type": "choice",
+   "de": "Ab 22 Uhr ___ alle leise sein.",
+   "options": [
+    "muss",
+    "müssen",
+    "musst"
+   ],
+   "answer": 1,
+   "why": "alle means everybody and is plural: alle müssen.",
+   "en": "From 10 pm everybody has to be quiet."
+  },
+  {
+   "id": "a2-19-19",
+   "type": "cloze",
+   "de": "Man ___ hier nur mit Karte bezahlen.",
+   "base": "können",
+   "answers": [
+    "kann"
+   ],
+   "en": "You can only pay by card here."
+  },
+  {
+   "id": "a2-19-20",
+   "type": "order",
+   "tiles": [
+    "Im Haus",
+    "darf",
+    "man",
+    "nicht",
+    "rauchen"
+   ],
+   "answers": [
+    "Im Haus darf man nicht rauchen.",
+    "Man darf im Haus nicht rauchen."
+   ],
+   "en": "You can't smoke in the building."
+  },
+  {
+   "id": "a2-19-21",
+   "type": "choice",
+   "de": "Ist alles in Ordnung? – Ja, ___ ist gut.",
+   "options": [
+    "alle",
+    "alles",
+    "etwas"
+   ],
+   "answer": 1,
+   "why": "Everything is alles, with a singular verb; alle means everybody.",
+   "en": "Is everything all right? – Yes, everything is fine."
+  },
+  {
+   "id": "a2-19-22",
+   "type": "cloze",
+   "de": "Hast du ___ zu trinken für mich?",
+   "base": "etwas / nichts",
+   "answers": [
+    "etwas"
+   ],
+   "en": "Do you have something to drink for me?"
+  },
+  {
+   "id": "a2-19-23",
+   "type": "choice",
+   "de": "Niemand ___ gern früh auf.",
+   "options": [
+    "steht nicht",
+    "stehen",
+    "steht"
+   ],
+   "answer": 2,
+   "why": "niemand is already negative and takes the er/sie/es form: niemand steht.",
+   "en": "Nobody likes getting up early."
+  },
+  {
+   "id": "a2-19-24",
+   "type": "order",
+   "tiles": [
+    "Man",
+    "muss",
+    "den Müll",
+    "in den Hof",
+    "bringen"
+   ],
+   "answers": [
+    "Man muss den Müll in den Hof bringen.",
+    "Den Müll muss man in den Hof bringen."
+   ],
+   "en": "You have to take the rubbish to the courtyard."
+  }
+ ],
+ "listening": {
+  "title": "Die Hausordnung",
+  "intro": "Amira is moving into a new flat, and the caretaker Uwe explains the house rules.",
+  "lines": [
+   {
+    "speaker": "Uwe",
+    "de": "So, Frau Haddad, das ist Ihre Wohnung. Ich erkläre Ihnen kurz die Hausordnung.",
+    "en": "So, Ms Haddad, this is your flat. I'll quickly explain the house rules."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Gern. Was muss man hier wissen?",
+    "en": "Sure. What do I need to know here?"
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Den Müll muss man trennen. Die Mülltonnen stehen im Hof.",
+    "en": "You have to separate the rubbish. The bins are in the courtyard."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Okay. Darf man das Fahrrad im Hof lassen?",
+    "en": "Okay. Can you leave your bike in the courtyard?"
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Ja, aber nicht im Treppenhaus. Da darf nichts stehen.",
+    "en": "Yes, but not in the stairwell. Nothing is allowed to stand there."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Verstanden. Gibt es Ruhezeiten?",
+    "en": "Understood. Are there quiet hours?"
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Ja. Ab 22 Uhr müssen alle leise sein. Und am Sonntag darf man keine laute Musik machen.",
+    "en": "Yes. From 10 pm everybody has to be quiet. And on Sundays you can't play loud music."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Und wenn etwas kaputt ist? Wen kann ich dann anrufen?",
+    "en": "And if something is broken? Who can I call then?"
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Mich. Wenn ich nicht da bin, ruft man die Hausverwaltung an. Die Nummer hängt unten an der Tür.",
+    "en": "Me. If I'm not there, you call the property management. The number is on the door downstairs."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Wohnen hier auch Familien mit Kindern? Meine Tochter ist sechs.",
+    "en": "Do families with children live here too? My daughter is six."
+   },
+   {
+    "speaker": "Uwe",
+    "de": "Ja, im zweiten Stock. Die sind alle sehr nett. Hier ist niemand unfreundlich.",
+    "en": "Yes, on the second floor. They're all very nice. Nobody here is unfriendly."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Das ist gut zu hören. Vielen Dank!",
+    "en": "That's good to hear. Thanks a lot!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where are the bins?",
+    "options": [
+     "In the cellar",
+     "In the courtyard",
+     "On the street"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is not allowed in the stairwell?",
+    "options": [
+     "Leaving anything there",
+     "Talking loudly",
+     "Playing music"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "From when does everybody have to be quiet?",
+    "options": [
+     "From 8 pm",
+     "From midnight",
+     "From 10 pm"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Who should Amira call if Uwe isn't there?",
+    "options": [
+     "The neighbours",
+     "The property management",
+     "The police"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Im Treppenhaus darf man nicht rauchen.",
+  "Ab 22 Uhr müssen alle leise sein.",
+  "Hat jemand heute meinen Schlüssel gesehen?"
+ ],
+ "speaking": [
+  {
+   "de": "Was muss man hier wissen?",
+   "en": "What do I need to know here?"
+  },
+  {
+   "de": "Den Müll muss man trennen.",
+   "en": "You have to separate the rubbish."
+  },
+  {
+   "de": "Ab 22 Uhr müssen alle leise sein.",
+   "en": "From 10 pm everybody has to be quiet."
+  },
+  {
+   "de": "Und wenn etwas kaputt ist?",
+   "en": "And if something is broken?"
+  },
+  {
+   "de": "Hier ist niemand unfreundlich.",
+   "en": "Nobody here is unfriendly."
+  }
+ ],
+ "writing": {
+  "task": "A friend is staying in your flat while you are away. Write a note (5–6 sentences) with the most important house rules.",
+  "model": "Hallo Paul, willkommen in meiner Wohnung! Im Haus darf man nicht rauchen. Den Müll muss man trennen, die Tonnen stehen im Hof. Ab 22 Uhr müssen alle leise sein. Im Treppenhaus darf nichts stehen, auch kein Fahrrad. Wenn etwas kaputt ist, ruf mich bitte an. Viele Grüße, Nora"
+ }
+}

@@ -1,0 +1,458 @@
+{
+ "id": "a1-09",
+ "cefr": "A1",
+ "title": "Irregular verbs in the present",
+ "situation": "Getting around town",
+ "canDo": "You can use fahren, nehmen, sehen, essen and lesen with every person, for example to say how you and others get around town.",
+ "explanation": "Getting around town, you talk about who takes what: *Ich fahre Fahrrad, aber Anna nimmt den Bus.* Some common verbs change their vowel, but **only with du and er/sie/es**:\n\n| | fahren | nehmen | essen | sehen | lesen |\n|---|---|---|---|---|---|\n| ich | fahre | nehme | esse | sehe | lese |\n| du | **fährst** | **nimmst** | **isst** | **siehst** | **liest** |\n| er/sie/es | **fährt** | **nimmt** | **isst** | **sieht** | **liest** |\n| wir | fahren | nehmen | essen | sehen | lesen |\n| ihr | fahrt | nehmt | esst | seht | lest |\n| sie/Sie | fahren | nehmen | essen | sehen | lesen |\n\nThere are three patterns:\n- **a → ä**: fahren, schlafen (*du schläfst*)\n- **e → i**: nehmen, essen, sprechen (*er spricht*)\n- **e → ie**: sehen, lesen\n\nThe endings stay the normal ones. Watch two spellings: *du isst* (not ~~esst~~) and *du liest* (not ~~liesst~~). nehmen also changes its consonant: *du nimmst, er nimmt*.\n\nThe most common mistake is changing the vowel everywhere. Say *ich fahre* (not ~~fähre~~) and *ihr fahrt*, *wir nehmen*: only du and er/sie/es change.\n\nUseful without an article: *Ich fahre Fahrrad. Er fährt Auto. Wir fahren Bus.*",
+ "french": "French has stem-changing verbs too (je prends, nous prenons), but in German only the du and er/sie/es forms change.",
+ "examples": [
+  {
+   "de": "Fährst du Fahrrad oder nimmst du die U-Bahn?",
+   "en": "Do you cycle or take the underground?"
+  },
+  {
+   "de": "Lukas fährt jeden Tag Auto.",
+   "en": "Lukas drives every day."
+  },
+  {
+   "de": "Wir nehmen die S-Bahn.",
+   "en": "We're taking the S-Bahn."
+  },
+  {
+   "de": "Siehst du die Haltestelle? – Ja, da vorne.",
+   "en": "Can you see the stop? – Yes, up ahead."
+  },
+  {
+   "de": "Anna liest im Zug die Zeitung.",
+   "en": "Anna reads the newspaper on the train."
+  },
+  {
+   "de": "Er isst schnell ein Brötchen.",
+   "en": "He quickly eats a bread roll."
+  },
+  {
+   "de": "Der Zug fährt nach Hamburg.",
+   "en": "The train goes to Hamburg."
+  },
+  {
+   "de": "Nimmst du ein Taxi? – Nein, ich fahre Fahrrad.",
+   "en": "Are you taking a taxi? – No, I'm cycling."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-09-01",
+   "type": "cloze",
+   "de": "Du ___ Fahrrad.",
+   "base": "fahren",
+   "answers": [
+    "fährst"
+   ],
+   "en": "You cycle."
+  },
+  {
+   "id": "a1-09-02",
+   "type": "cloze",
+   "de": "Er ___ den Bus.",
+   "base": "nehmen",
+   "answers": [
+    "nimmt"
+   ],
+   "en": "He takes the bus."
+  },
+  {
+   "id": "a1-09-03",
+   "type": "choice",
+   "de": "Ich ___ die U-Bahn.",
+   "options": [
+    "nimmst",
+    "nehme",
+    "nimmt"
+   ],
+   "answer": 1,
+   "why": "ich has no vowel change: ich nehme.",
+   "en": "I take the underground."
+  },
+  {
+   "id": "a1-09-04",
+   "type": "cloze",
+   "de": "___ du die Haltestelle?",
+   "base": "sehen",
+   "answers": [
+    "Siehst"
+   ],
+   "en": "Can you see the stop?"
+  },
+  {
+   "id": "a1-09-05",
+   "type": "order",
+   "tiles": [
+    "Der Zug",
+    "fährt",
+    "nach Hamburg"
+   ],
+   "answers": [
+    "Der Zug fährt nach Hamburg.",
+    "Nach Hamburg fährt der Zug."
+   ],
+   "en": "The train goes to Hamburg."
+  },
+  {
+   "id": "a1-09-06",
+   "type": "choice",
+   "de": "Anna ___ gern Bücher.",
+   "options": [
+    "lest",
+    "liest",
+    "lesen"
+   ],
+   "answer": 1,
+   "why": "lesen changes e → ie with er/sie/es: sie liest.",
+   "en": "Anna likes reading books."
+  },
+  {
+   "id": "a1-09-07",
+   "type": "cloze",
+   "de": "Was ___ du? – Ein Brötchen.",
+   "base": "essen",
+   "answers": [
+    "isst"
+   ],
+   "en": "What are you eating? – A bread roll."
+  },
+  {
+   "id": "a1-09-08",
+   "type": "choice",
+   "de": "Wir ___ heute Fahrrad.",
+   "options": [
+    "fahren",
+    "fähren",
+    "fahrt"
+   ],
+   "answer": 0,
+   "why": "wir has no vowel change: wir fahren.",
+   "en": "We're cycling today."
+  },
+  {
+   "id": "a1-09-09",
+   "type": "cloze",
+   "de": "Ihr ___ den Bus, oder?",
+   "base": "nehmen",
+   "answers": [
+    "nehmt"
+   ],
+   "en": "You're taking the bus, right?"
+  },
+  {
+   "id": "a1-09-10",
+   "type": "order",
+   "tiles": [
+    "Fährst",
+    "du",
+    "Fahrrad"
+   ],
+   "answers": [
+    "Fährst du Fahrrad?"
+   ],
+   "en": "Do you cycle?"
+  },
+  {
+   "id": "a1-09-11",
+   "type": "choice",
+   "de": "Er ___ die Zeitung.",
+   "options": [
+    "lest",
+    "lies",
+    "liest"
+   ],
+   "answer": 2,
+   "why": "lesen changes e → ie with er/sie/es and takes -t: er liest.",
+   "en": "He reads the newspaper."
+  },
+  {
+   "id": "a1-09-12",
+   "type": "cloze",
+   "de": "Heute ___ Lukas Fahrrad.",
+   "base": "fahren",
+   "answers": [
+    "fährt"
+   ],
+   "en": "Today Lukas is cycling."
+  },
+  {
+   "id": "a1-09-13",
+   "type": "choice",
+   "de": "___ du den Bahnhof?",
+   "options": [
+    "Siehst",
+    "Sehst",
+    "Sieht"
+   ],
+   "answer": 0,
+   "why": "sehen changes e → ie with du: du siehst.",
+   "en": "Can you see the station?"
+  },
+  {
+   "id": "a1-09-14",
+   "type": "order",
+   "tiles": [
+    "nimmt",
+    "Maria",
+    "ein Taxi"
+   ],
+   "answers": [
+    "Maria nimmt ein Taxi."
+   ],
+   "en": "Maria takes a taxi."
+  },
+  {
+   "id": "a1-09-15",
+   "type": "cloze",
+   "de": "Die Kinder ___ ein Eis.",
+   "base": "essen",
+   "answers": [
+    "essen"
+   ],
+   "en": "The children are eating an ice cream."
+  },
+  {
+   "id": "a1-09-16",
+   "type": "choice",
+   "de": "Wohin ___ die S-Bahn?",
+   "options": [
+    "fährt",
+    "fahrt",
+    "fähren"
+   ],
+   "answer": 0,
+   "why": "die S-Bahn is like sie (it), so fahren changes a → ä: fährt.",
+   "en": "Where does the S-Bahn go?"
+  },
+  {
+   "id": "a1-09-17",
+   "type": "cloze",
+   "de": "Ich ___ die Linie 5.",
+   "base": "nehmen",
+   "answers": [
+    "nehme"
+   ],
+   "en": "I take line 5."
+  },
+  {
+   "id": "a1-09-18",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "du",
+    "isst",
+    "heute"
+   ],
+   "answers": [
+    "Was isst du heute?"
+   ],
+   "en": "What are you eating today?"
+  },
+  {
+   "id": "a1-09-19",
+   "type": "choice",
+   "de": "Ihr ___ zu schnell!",
+   "options": [
+    "fährt",
+    "fahrt",
+    "fährst"
+   ],
+   "answer": 1,
+   "why": "ihr has no vowel change: ihr fahrt.",
+   "en": "You're driving too fast!"
+  },
+  {
+   "id": "a1-09-20",
+   "type": "cloze",
+   "de": "___ ihr das Schild?",
+   "base": "sehen",
+   "answers": [
+    "Seht"
+   ],
+   "en": "Can you see the sign?"
+  },
+  {
+   "id": "a1-09-21",
+   "type": "order",
+   "tiles": [
+    "liest",
+    "Er",
+    "jeden Morgen",
+    "die Zeitung"
+   ],
+   "answers": [
+    "Er liest jeden Morgen die Zeitung.",
+    "Jeden Morgen liest er die Zeitung.",
+    "Er liest die Zeitung jeden Morgen.",
+    "Die Zeitung liest er jeden Morgen."
+   ],
+   "en": "He reads the newspaper every morning."
+  },
+  {
+   "id": "a1-09-22",
+   "type": "choice",
+   "de": "Heute ___ kein Bus.",
+   "options": [
+    "fährt",
+    "fahrt",
+    "fahren"
+   ],
+   "answer": 0,
+   "why": "kein Bus is like er, so fahren changes a → ä: fährt.",
+   "en": "There's no bus today."
+  },
+  {
+   "id": "a1-09-23",
+   "type": "cloze",
+   "de": "Nimmst du die U-Bahn? – Nein, ich ___ Fahrrad.",
+   "base": "fahren",
+   "answers": [
+    "fahre"
+   ],
+   "en": "Are you taking the underground? – No, I'm cycling."
+  },
+  {
+   "id": "a1-09-24",
+   "type": "order",
+   "tiles": [
+    "Fährt",
+    "nach Berlin",
+    "der Zug"
+   ],
+   "answers": [
+    "Fährt der Zug nach Berlin?"
+   ],
+   "en": "Does the train go to Berlin?"
+  }
+ ],
+ "listening": {
+  "title": "Wie fährst du heute?",
+  "intro": "Jonas and Lea are neighbours and meet outside their building in the morning.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Hallo Lea! Fährst du heute Fahrrad?",
+    "en": "Hi Lea! Are you cycling today?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Nein, es regnet. Ich nehme die U-Bahn.",
+    "en": "No, it's raining. I'm taking the underground."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Die U-Bahn? Die fährt heute nicht.",
+    "en": "The underground? It isn't running today."
+   },
+   {
+    "speaker": "Lea",
+    "de": "Was? Und der Bus?",
+    "en": "What? And the bus?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Der Bus fährt, aber er ist sehr voll.",
+    "en": "The bus is running, but it's very full."
+   },
+   {
+    "speaker": "Lea",
+    "de": "Hm. Nimmst du ein Taxi?",
+    "en": "Hm. Are you taking a taxi?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nein, ein Taxi ist zu teuer. Ich fahre Auto.",
+    "en": "No, a taxi is too expensive. I'm driving."
+   },
+   {
+    "speaker": "Lea",
+    "de": "Super! Hast du noch Platz?",
+    "en": "Great! Do you have room for one more?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Klar! Aber ich esse noch schnell ein Brötchen.",
+    "en": "Sure! But I'm just quickly eating a bread roll first."
+   },
+   {
+    "speaker": "Lea",
+    "de": "Kein Problem. Ich lese so lange die Zeitung.",
+    "en": "No problem. I'll read the newspaper in the meantime."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why isn't Lea cycling today?",
+    "options": [
+     "It's raining.",
+     "Her bike is broken.",
+     "She is late."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is the problem with the underground?",
+    "options": [
+     "It's very full.",
+     "It isn't running today.",
+     "It's too expensive."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Jonas take a taxi?",
+    "options": [
+     "There are no taxis.",
+     "He likes driving.",
+     "It's too expensive."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Lea do while Jonas eats?",
+    "options": [
+     "She eats a roll too.",
+     "She reads the newspaper.",
+     "She calls a taxi."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Fährst du heute Fahrrad?",
+  "Er nimmt jeden Tag den Bus.",
+  "Anna liest gern die Zeitung."
+ ],
+ "speaking": [
+  {
+   "de": "Ich nehme die U-Bahn.",
+   "en": "I'm taking the underground."
+  },
+  {
+   "de": "Die U-Bahn fährt heute nicht.",
+   "en": "The underground isn't running today."
+  },
+  {
+   "de": "Nimmst du ein Taxi?",
+   "en": "Are you taking a taxi?"
+  },
+  {
+   "de": "Ein Taxi ist zu teuer. Ich fahre Auto.",
+   "en": "A taxi is too expensive. I'm driving."
+  },
+  {
+   "de": "Siehst du die Haltestelle?",
+   "en": "Can you see the stop?"
+  }
+ ],
+ "writing": {
+  "task": "Write 3–4 short sentences to a friend: how do you get around town, and how does someone you know get around?",
+  "model": "Hallo Max! Ich fahre jeden Tag Fahrrad. Anna nimmt die U-Bahn. Sie liest dort die Zeitung. Und du? Fährst du Auto oder nimmst du den Bus?"
+ }
+}

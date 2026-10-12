@@ -1,0 +1,463 @@
+{
+ "id": "a1-06",
+ "cefr": "A1",
+ "title": "Noun plurals",
+ "situation": "Shopping list",
+ "canDo": "You can write a shopping list and talk about more than one thing, using the right plural forms with die.",
+ "explanation": "A shopping list is full of plurals: *Tomaten, Eier, Äpfel.* In the plural the article is always **die**, for all three genders: der Apfel → **die** Äpfel, die Tomate → **die** Tomaten, das Ei → **die** Eier. *ein* has no plural: *ein Apfel → Äpfel* or *zwei Äpfel*.\n\nGerman has five plural patterns:\n\n| pattern | singular | plural |\n|---|---|---|\n| -e (often with umlaut) | der Fisch, die Wurst | die Fische, die Würste |\n| -(e)n | die Tomate, die Packung | die Tomaten, die Packungen |\n| -er (with umlaut if possible) | das Ei, das Glas | die Eier, die Gläser |\n| no ending (sometimes umlaut) | das Brötchen, der Apfel | die Brötchen, die Äpfel |\n| -s | das Auto, das Handy | die Autos, die Handys |\n\nSome patterns help:\n- Most feminine nouns add **-n** or **-en**: die Banane → die Bananen, die Flasche → die Flaschen.\n- Nouns in **-chen** and masculine or neuter nouns in **-el** or **-er** usually add nothing: das Brötchen, der Löffel, das Messer.\n- **-s** is mostly for foreign words: das Handy → die Handys.\n\nAlways learn a noun with its plural: **der Apfel, die Äpfel**.\n\nAfter a number, **Kilo**, **Liter** and **Stück** stay singular: *zwei Kilo Kartoffeln*. Feminine words like Flasche or Packung take the plural: *zwei Flaschen Wasser*.\n\nThe most common mistake is adding **-s** to everything, as in French or English: *Tomates* is wrong, it's *Tomaten*.",
+ "french": "In French the plural is usually a silent -s (des pommes, des tomates), but in German you hear the plural, it changes from word to word (die Äpfel, die Tomaten, die Eier), and the article is always die.",
+ "examples": [
+  {
+   "de": "Wir brauchen Tomaten und Kartoffeln.",
+   "en": "We need tomatoes and potatoes."
+  },
+  {
+   "de": "Ich kaufe sechs Eier.",
+   "en": "I'm buying six eggs."
+  },
+  {
+   "de": "Die Äpfel sind heute billig.",
+   "en": "The apples are cheap today."
+  },
+  {
+   "de": "Haben Sie Brötchen?",
+   "en": "Do you have bread rolls?"
+  },
+  {
+   "de": "Zwei Flaschen Wasser, bitte.",
+   "en": "Two bottles of water, please."
+  },
+  {
+   "de": "Die Bananen sind noch grün.",
+   "en": "The bananas are still green."
+  },
+  {
+   "de": "Ein Kilo Kartoffeln kostet zwei Euro.",
+   "en": "A kilo of potatoes costs two euros."
+  },
+  {
+   "de": "Wie viel kosten die Gläser?",
+   "en": "How much are the glasses?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-06-01",
+   "type": "cloze",
+   "de": "Ich kaufe zwei ___.",
+   "base": "Apfel",
+   "answers": [
+    "Äpfel"
+   ],
+   "en": "I'm buying two apples."
+  },
+  {
+   "id": "a1-06-02",
+   "type": "cloze",
+   "de": "Wir brauchen sechs ___.",
+   "base": "Ei",
+   "answers": [
+    "Eier"
+   ],
+   "en": "We need six eggs."
+  },
+  {
+   "id": "a1-06-03",
+   "type": "choice",
+   "de": "Die ___ sind frisch.",
+   "options": [
+    "Tomaten",
+    "Tomate",
+    "Tomates"
+   ],
+   "answer": 0,
+   "why": "Tomate is feminine and ends in -e, so the plural adds -n: die Tomaten.",
+   "en": "The tomatoes are fresh."
+  },
+  {
+   "id": "a1-06-04",
+   "type": "cloze",
+   "de": "Ich brauche zwei ___ Wasser.",
+   "base": "Flasche",
+   "answers": [
+    "Flaschen"
+   ],
+   "en": "I need two bottles of water."
+  },
+  {
+   "id": "a1-06-05",
+   "type": "choice",
+   "de": "Haben Sie ___?",
+   "options": [
+    "Brötchen",
+    "Brötchens",
+    "Brötchenen"
+   ],
+   "answer": 0,
+   "why": "Nouns in -chen don't change in the plural: das Brötchen, die Brötchen.",
+   "en": "Do you have bread rolls?"
+  },
+  {
+   "id": "a1-06-06",
+   "type": "cloze",
+   "de": "Die ___ sind noch grün.",
+   "base": "Banane",
+   "answers": [
+    "Bananen"
+   ],
+   "en": "The bananas are still green."
+  },
+  {
+   "id": "a1-06-07",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "brauchen",
+    "Kartoffeln"
+   ],
+   "answers": [
+    "Wir brauchen Kartoffeln.",
+    "Kartoffeln brauchen wir."
+   ],
+   "en": "We need potatoes."
+  },
+  {
+   "id": "a1-06-08",
+   "type": "choice",
+   "de": "___ Äpfel sind teuer.",
+   "options": [
+    "Der",
+    "Das",
+    "Die"
+   ],
+   "answer": 2,
+   "why": "In the plural the article is always die, whatever the gender.",
+   "en": "The apples are expensive."
+  },
+  {
+   "id": "a1-06-09",
+   "type": "cloze",
+   "de": "Im Kühlschrank sind zwei ___.",
+   "base": "Tomate",
+   "answers": [
+    "Tomaten"
+   ],
+   "en": "There are two tomatoes in the fridge."
+  },
+  {
+   "id": "a1-06-10",
+   "type": "choice",
+   "de": "Wir brauchen zwei ___ Kartoffeln.",
+   "options": [
+    "Kilo",
+    "Kilos",
+    "Kilogramme"
+   ],
+   "answer": 0,
+   "why": "After a number, Kilo stays singular: zwei Kilo.",
+   "en": "We need two kilos of potatoes."
+  },
+  {
+   "id": "a1-06-11",
+   "type": "cloze",
+   "de": "Die ___ kosten zwei Euro.",
+   "base": "Kartoffel",
+   "answers": [
+    "Kartoffeln"
+   ],
+   "en": "The potatoes cost two euros."
+  },
+  {
+   "id": "a1-06-12",
+   "type": "order",
+   "tiles": [
+    "Die Äpfel",
+    "sind",
+    "heute",
+    "billig"
+   ],
+   "answers": [
+    "Die Äpfel sind heute billig.",
+    "Heute sind die Äpfel billig."
+   ],
+   "en": "The apples are cheap today."
+  },
+  {
+   "id": "a1-06-13",
+   "type": "choice",
+   "de": "Das ist ein Glas. Das sind zwei ___.",
+   "options": [
+    "Glase",
+    "Gläser",
+    "Glasen"
+   ],
+   "answer": 1,
+   "why": "das Glas takes -er and an umlaut: die Gläser.",
+   "en": "That's a glass. Those are two glasses."
+  },
+  {
+   "id": "a1-06-14",
+   "type": "cloze",
+   "de": "Wo sind die ___? – Im Schrank.",
+   "base": "Tasse",
+   "answers": [
+    "Tassen"
+   ],
+   "en": "Where are the cups? – In the cupboard."
+  },
+  {
+   "id": "a1-06-15",
+   "type": "choice",
+   "de": "Wir brauchen drei ___.",
+   "options": [
+    "Löffels",
+    "Löffeln",
+    "Löffel"
+   ],
+   "answer": 2,
+   "why": "Masculine nouns in -el usually take no plural ending: der Löffel, die Löffel.",
+   "en": "We need three spoons."
+  },
+  {
+   "id": "a1-06-16",
+   "type": "order",
+   "tiles": [
+    "Wie viel",
+    "kosten",
+    "die Tomaten"
+   ],
+   "answers": [
+    "Wie viel kosten die Tomaten?"
+   ],
+   "en": "How much are the tomatoes?"
+  },
+  {
+   "id": "a1-06-17",
+   "type": "cloze",
+   "de": "Wir brauchen zwei ___.",
+   "base": "Brot",
+   "answers": [
+    "Brote"
+   ],
+   "en": "We need two loaves of bread."
+  },
+  {
+   "id": "a1-06-18",
+   "type": "order",
+   "tiles": [
+    "Die Orangen",
+    "kosten",
+    "heute",
+    "nur zwei Euro"
+   ],
+   "answers": [
+    "Die Orangen kosten heute nur zwei Euro.",
+    "Heute kosten die Orangen nur zwei Euro."
+   ],
+   "en": "The oranges only cost two euros today."
+  },
+  {
+   "id": "a1-06-19",
+   "type": "cloze",
+   "de": "Wie viel kosten die ___?",
+   "base": "Fisch",
+   "answers": [
+    "Fische"
+   ],
+   "en": "How much are the fish?"
+  },
+  {
+   "id": "a1-06-20",
+   "type": "choice",
+   "de": "Die ___ sind noch klein.",
+   "options": [
+    "Kinds",
+    "Kinder",
+    "Kindern"
+   ],
+   "answer": 1,
+   "why": "das Kind takes -er in the plural: die Kinder.",
+   "en": "The children are still small."
+  },
+  {
+   "id": "a1-06-21",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "brauchen",
+    "noch",
+    "drei Flaschen Milch"
+   ],
+   "answers": [
+    "Wir brauchen noch drei Flaschen Milch.",
+    "Drei Flaschen Milch brauchen wir noch."
+   ],
+   "en": "We still need three bottles of milk."
+  },
+  {
+   "id": "a1-06-22",
+   "type": "choice",
+   "de": "Wir brauchen zwei ___ Tee.",
+   "options": [
+    "Packung",
+    "Packungs",
+    "Packungen"
+   ],
+   "answer": 2,
+   "why": "Packung is feminine and takes -en; only Kilo, Liter and Stück stay singular after a number.",
+   "en": "We need two packets of tea."
+  },
+  {
+   "id": "a1-06-23",
+   "type": "cloze",
+   "de": "Ich kaufe drei ___ für die Party.",
+   "base": "Pizza",
+   "answers": [
+    "Pizzas",
+    "Pizzen"
+   ],
+   "en": "I'm buying three pizzas for the party."
+  },
+  {
+   "id": "a1-06-24",
+   "type": "order",
+   "tiles": [
+    "sind",
+    "Die Brötchen",
+    "und",
+    "die Eier",
+    "frisch"
+   ],
+   "answers": [
+    "Die Brötchen und die Eier sind frisch.",
+    "Die Eier und die Brötchen sind frisch."
+   ],
+   "en": "The bread rolls and the eggs are fresh."
+  }
+ ],
+ "listening": {
+  "title": "Die Einkaufsliste",
+  "intro": "Lena is writing the shopping list and asks Max what they need.",
+  "lines": [
+   {
+    "speaker": "Lena",
+    "de": "Max, ich mache die Einkaufsliste. Was brauchen wir?",
+    "en": "Max, I'm doing the shopping list. What do we need?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Wir brauchen Brötchen für morgen. Und Eier.",
+    "en": "We need bread rolls for tomorrow. And eggs."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Wie viele Eier?",
+    "en": "How many eggs?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Zehn. Und Tomaten und Gurken. Wir machen Salat.",
+    "en": "Ten. And tomatoes and cucumbers. We're making a salad."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Haben wir noch Kartoffeln?",
+    "en": "Do we still have potatoes?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Nein, die Kartoffeln sind alle. Ein Kilo, bitte.",
+    "en": "No, the potatoes are all gone. A kilo, please."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Okay. Und Obst? Äpfel oder Bananen?",
+    "en": "Okay. And fruit? Apples or bananas?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Äpfel. Die Bananen sind noch gut.",
+    "en": "Apples. The bananas are still good."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Und Getränke? Wasser?",
+    "en": "And drinks? Water?"
+   },
+   {
+    "speaker": "Max",
+    "de": "Ja, sechs Flaschen Wasser. Und zwei Flaschen Wein für Samstag!",
+    "en": "Yes, six bottles of water. And two bottles of wine for Saturday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many eggs do they need?",
+    "options": [
+     "six",
+     "ten",
+     "twelve"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why do they need tomatoes and cucumbers?",
+    "options": [
+     "for a salad",
+     "for a soup",
+     "for Saturday"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Which fruit does Lena buy?",
+    "options": [
+     "bananas",
+     "oranges",
+     "apples"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much water do they need?",
+    "options": [
+     "two bottles",
+     "six bottles",
+     "one litre"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wir brauchen zehn Eier und Brötchen.",
+  "Die Äpfel sind heute billig.",
+  "Ich kaufe zwei Flaschen Wasser."
+ ],
+ "speaking": [
+  {
+   "de": "Was brauchen wir?",
+   "en": "What do we need?"
+  },
+  {
+   "de": "Wie viele Eier?",
+   "en": "How many eggs?"
+  },
+  {
+   "de": "Haben wir noch Kartoffeln?",
+   "en": "Do we still have potatoes?"
+  },
+  {
+   "de": "Die Bananen sind noch gut.",
+   "en": "The bananas are still good."
+  },
+  {
+   "de": "Sechs Flaschen Wasser, bitte.",
+   "en": "Six bottles of water, please."
+  }
+ ],
+ "writing": {
+  "task": "Your flatmate is going shopping. Write a short message (3–4 sentences) saying what you need, with several plurals.",
+  "model": "Hallo Jana, wir brauchen noch Tomaten und Kartoffeln. Kaufst du bitte auch sechs Eier und zwei Flaschen Milch? Und vier Äpfel, bitte. Danke!"
+ }
+}

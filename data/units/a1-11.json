@@ -1,0 +1,465 @@
+{
+ "id": "a1-11",
+ "cefr": "A1",
+ "title": "können and müssen",
+ "situation": "Appointments and obligations",
+ "canDo": "You can say what you can and can't do and what you have to do, for example when you make or move an appointment.",
+ "explanation": "When you make an appointment, you say what is possible and what you have to do: *Morgen kann ich leider nicht. Ich muss arbeiten.*\n\n| | können (can) | müssen (must, have to) |\n|---|---|---|\n| ich | **kann** | **muss** |\n| du | kannst | musst |\n| er/sie/es | **kann** | **muss** |\n| wir | können | müssen |\n| ihr | könnt | müsst |\n| sie/Sie | können | müssen |\n\nNote that **ich** and **er/sie/es** have the same form, with no ending: *er kann* (not ~~er kannt~~).\n\nThe modal verb is the conjugated verb in **position 2** (or first in a yes/no question). The second verb goes to the **very end** in the infinitive, without *zu*:\n- *Ich **muss** heute lange **arbeiten**.*\n- ***Kannst** du morgen **kommen**?*\n- *Wann **können** Sie **kommen**?*\n\nThe most common mistake is putting the infinitive right after the modal: ~~Ich muss arbeiten heute.~~ → *Ich muss heute arbeiten.*\n\nCareful with **nicht müssen**: it means \"don't have to\", not \"must not\": *Du musst nicht kommen.* = You don't have to come.\n\nIf the meaning is clear, the infinitive can go: *Morgen kann ich leider nicht.* (= can't come)",
+ "french": "Like « je dois travailler », the second verb is an infinitive, but in German it goes to the very end; and « nicht müssen » means « ne pas être obligé de », not « il ne faut pas ».",
+ "examples": [
+  {
+   "de": "Ich muss heute lange arbeiten.",
+   "en": "I have to work late today."
+  },
+  {
+   "de": "Kannst du morgen kommen? – Ja, klar.",
+   "en": "Can you come tomorrow? – Yes, sure."
+  },
+  {
+   "de": "Morgen kann ich leider nicht.",
+   "en": "Unfortunately I can't make it tomorrow."
+  },
+  {
+   "de": "Wir müssen einen Termin machen.",
+   "en": "We have to make an appointment."
+  },
+  {
+   "de": "Sie müssen hier warten.",
+   "en": "You have to wait here."
+  },
+  {
+   "de": "Du musst nicht kommen.",
+   "en": "You don't have to come."
+  },
+  {
+   "de": "Können Sie morgen Vormittag kommen?",
+   "en": "Can you come tomorrow morning?"
+  },
+  {
+   "de": "Mein Sohn ist krank. Ich muss zu Hause bleiben.",
+   "en": "My son is ill. I have to stay at home."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-11-01",
+   "type": "cloze",
+   "de": "Ich ___ heute arbeiten.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "I have to work today."
+  },
+  {
+   "id": "a1-11-02",
+   "type": "cloze",
+   "de": "___ du morgen kommen?",
+   "base": "können",
+   "answers": [
+    "Kannst"
+   ],
+   "en": "Can you come tomorrow?"
+  },
+  {
+   "id": "a1-11-03",
+   "type": "choice",
+   "de": "Er ___ gut Deutsch sprechen.",
+   "options": [
+    "kann",
+    "kannt",
+    "könnt"
+   ],
+   "answer": 0,
+   "why": "er/sie/es has the same form as ich, with no ending: er kann.",
+   "en": "He can speak German well."
+  },
+  {
+   "id": "a1-11-04",
+   "type": "order",
+   "tiles": [
+    "muss",
+    "Ich",
+    "arbeiten",
+    "heute"
+   ],
+   "answers": [
+    "Ich muss heute arbeiten.",
+    "Heute muss ich arbeiten."
+   ],
+   "en": "I have to work today."
+  },
+  {
+   "id": "a1-11-05",
+   "type": "cloze",
+   "de": "Wir ___ einen Termin machen.",
+   "base": "müssen",
+   "answers": [
+    "müssen"
+   ],
+   "en": "We have to make an appointment."
+  },
+  {
+   "id": "a1-11-06",
+   "type": "choice",
+   "de": "Ich kann heute nicht ___.",
+   "options": [
+    "kommen",
+    "komme",
+    "kommt"
+   ],
+   "answer": 0,
+   "why": "After a modal verb, the second verb goes to the end in the infinitive.",
+   "en": "I can't come today."
+  },
+  {
+   "id": "a1-11-07",
+   "type": "cloze",
+   "de": "Ihr ___ hier warten.",
+   "base": "müssen",
+   "answers": [
+    "müsst"
+   ],
+   "en": "You have to wait here."
+  },
+  {
+   "id": "a1-11-08",
+   "type": "order",
+   "tiles": [
+    "Kannst",
+    "morgen",
+    "du",
+    "kommen"
+   ],
+   "answers": [
+    "Kannst du morgen kommen?"
+   ],
+   "en": "Can you come tomorrow?"
+  },
+  {
+   "id": "a1-11-09",
+   "type": "choice",
+   "de": "Frau Meier, Sie ___ hier warten.",
+   "options": [
+    "muss",
+    "müssen",
+    "müsst"
+   ],
+   "answer": 1,
+   "why": "Formal Sie takes the same form as wir: Sie müssen.",
+   "en": "Ms Meier, you have to wait here."
+  },
+  {
+   "id": "a1-11-10",
+   "type": "cloze",
+   "de": "Mein Sohn ist krank. Ich ___ zu Hause bleiben.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "My son is ill. I have to stay at home."
+  },
+  {
+   "id": "a1-11-11",
+   "type": "choice",
+   "de": "Morgen ___ ich leider nicht.",
+   "options": [
+    "kann",
+    "können",
+    "kannst"
+   ],
+   "answer": 0,
+   "why": "With ich the form is kann, and it stays in position 2 after Morgen.",
+   "en": "Unfortunately I can't make it tomorrow."
+  },
+  {
+   "id": "a1-11-12",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bezahlen",
+    "mit Karte",
+    "kann"
+   ],
+   "answers": [
+    "Ich kann mit Karte bezahlen.",
+    "Mit Karte kann ich bezahlen."
+   ],
+   "en": "I can pay by card."
+  },
+  {
+   "id": "a1-11-13",
+   "type": "cloze",
+   "de": "___ Sie morgen Vormittag kommen?",
+   "base": "können",
+   "answers": [
+    "Können"
+   ],
+   "en": "Can you come tomorrow morning?"
+  },
+  {
+   "id": "a1-11-14",
+   "type": "choice",
+   "de": "Du ___ nicht kommen. Das ist kein Problem.",
+   "options": [
+    "muss",
+    "musst",
+    "müsst"
+   ],
+   "answer": 1,
+   "why": "du takes musst, and nicht müssen means 'don't have to'.",
+   "en": "You don't have to come. That's no problem."
+  },
+  {
+   "id": "a1-11-15",
+   "type": "order",
+   "tiles": [
+    "müssen",
+    "Wir",
+    "einen Termin",
+    "machen"
+   ],
+   "answers": [
+    "Wir müssen einen Termin machen."
+   ],
+   "en": "We have to make an appointment."
+  },
+  {
+   "id": "a1-11-16",
+   "type": "cloze",
+   "de": "Das Kind ___ schon lesen.",
+   "base": "können",
+   "answers": [
+    "kann"
+   ],
+   "en": "The child can already read."
+  },
+  {
+   "id": "a1-11-17",
+   "type": "choice",
+   "de": "Ich muss morgen früh ___.",
+   "options": [
+    "arbeiten",
+    "arbeite",
+    "zu arbeiten"
+   ],
+   "answer": 0,
+   "why": "After a modal verb the infinitive comes without zu.",
+   "en": "I have to work early tomorrow."
+  },
+  {
+   "id": "a1-11-18",
+   "type": "cloze",
+   "de": "___ ihr heute Abend kommen?",
+   "base": "können",
+   "answers": [
+    "Könnt"
+   ],
+   "en": "Can you come this evening?"
+  },
+  {
+   "id": "a1-11-19",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "Sie",
+    "können",
+    "kommen"
+   ],
+   "answers": [
+    "Wann können Sie kommen?"
+   ],
+   "en": "When can you come?"
+  },
+  {
+   "id": "a1-11-20",
+   "type": "choice",
+   "de": "Lisa ___ heute lange arbeiten.",
+   "options": [
+    "müsst",
+    "muss",
+    "musst"
+   ],
+   "answer": 1,
+   "why": "sie (she) takes the same form as ich: sie muss.",
+   "en": "Lisa has to work late today."
+  },
+  {
+   "id": "a1-11-21",
+   "type": "cloze",
+   "de": "Herr Braun ___ heute nicht kommen. Er ist krank.",
+   "base": "können",
+   "answers": [
+    "kann"
+   ],
+   "en": "Mr Braun can't come today. He's ill."
+  },
+  {
+   "id": "a1-11-22",
+   "type": "choice",
+   "de": "Ihr ___ nicht warten. Der Bus ist schon da.",
+   "options": [
+    "müssen",
+    "müsst",
+    "musst"
+   ],
+   "answer": 1,
+   "why": "ihr takes müsst; nicht müssen means 'don't have to'.",
+   "en": "You don't have to wait. The bus is already here."
+  },
+  {
+   "id": "a1-11-23",
+   "type": "cloze",
+   "de": "Mein Mann ___ heute nicht kochen. Ich koche.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "My husband doesn't have to cook today. I'm cooking."
+  },
+  {
+   "id": "a1-11-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "leider",
+    "kann",
+    "nicht",
+    "kommen",
+    "morgen"
+   ],
+   "answers": [
+    "Ich kann morgen leider nicht kommen.",
+    "Morgen kann ich leider nicht kommen.",
+    "Leider kann ich morgen nicht kommen.",
+    "Ich kann leider morgen nicht kommen."
+   ],
+   "en": "Unfortunately I can't come tomorrow."
+  }
+ ],
+ "listening": {
+  "title": "Ein Termin beim Arzt",
+  "intro": "Marc calls a doctor's practice because he is ill and needs an appointment.",
+  "lines": [
+   {
+    "speaker": "Sandra",
+    "de": "Praxis Dr. Berger, guten Tag.",
+    "en": "Dr Berger's practice, hello."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Guten Tag, hier ist Marc Dubois. Ich bin krank und brauche einen Termin.",
+    "en": "Hello, this is Marc Dubois. I'm ill and need an appointment."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Können Sie morgen Vormittag kommen?",
+    "en": "Can you come tomorrow morning?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Morgen Vormittag kann ich leider nicht. Da muss ich arbeiten.",
+    "en": "Unfortunately I can't tomorrow morning. I have to work then."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Hm. Morgen Nachmittag ist noch ein Termin frei.",
+    "en": "Hm. There's still an appointment free tomorrow afternoon."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, das geht. Muss ich lange warten?",
+    "en": "Yes, that works. Will I have to wait long?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Vielleicht ein bisschen. Und Sie müssen Ihre Krankenkassenkarte dabeihaben.",
+    "en": "Maybe a little. And you have to bring your health insurance card."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Okay. Kann ich auch ein bisschen früher kommen?",
+    "en": "OK. Can I come a bit earlier, too?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Ja, natürlich. Dann müssen Sie noch ein Formular ausfüllen.",
+    "en": "Yes, of course. Then you have to fill in a form."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Gut, vielen Dank! Bis morgen.",
+    "en": "Good, thank you very much! See you tomorrow."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why can't Marc come in the morning?",
+    "options": [
+     "He has to work.",
+     "He has to stay in bed.",
+     "He has another appointment."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When is his appointment?",
+    "options": [
+     "This afternoon",
+     "Tomorrow morning",
+     "Tomorrow afternoon"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Marc have to bring?",
+    "options": [
+     "His passport",
+     "His health insurance card",
+     "Money"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Marc have to do if he comes earlier?",
+    "options": [
+     "See the doctor sooner",
+     "Fill in a form",
+     "Wait outside"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich muss heute lange arbeiten.",
+  "Kannst du morgen kommen?",
+  "Wir müssen einen Termin machen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich brauche einen Termin.",
+   "en": "I need an appointment."
+  },
+  {
+   "de": "Können Sie morgen Vormittag kommen?",
+   "en": "Can you come tomorrow morning?"
+  },
+  {
+   "de": "Morgen Vormittag kann ich leider nicht.",
+   "en": "Unfortunately I can't tomorrow morning."
+  },
+  {
+   "de": "Da muss ich arbeiten.",
+   "en": "I have to work then."
+  },
+  {
+   "de": "Kann ich auch ein bisschen früher kommen?",
+   "en": "Can I come a bit earlier, too?"
+  }
+ ],
+ "writing": {
+  "task": "A friend wants to meet today. Write 3–4 short sentences: say you can't, say what you have to do, and ask if they can tomorrow.",
+  "model": "Hallo Sara, heute kann ich leider nicht. Ich muss lange arbeiten. Dann muss ich noch einkaufen. Kannst du morgen?"
+ }
+}

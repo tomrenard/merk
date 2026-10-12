@@ -183,6 +183,73 @@ ${batch.join("\n")}`,
   return cached;
 }
 
+const VerbInfo = z.object({
+  items: z.array(
+    z.object({
+      de: z.string(),
+      forms: z.string(),
+      governs: z.string(),
+    }),
+  ),
+});
+type Verb = z.infer<typeof VerbInfo>["items"][number];
+
+/**
+ * Forms and the case/preposition each A1/A2 verb takes, from Claude once. Committed in
+ * data/verbs.json (it is ours to share), so re-runs and other machines cost nothing.
+ */
+async function verbInfo(headwords: string[]): Promise<Record<string, Verb>> {
+  const file = `${DATA}verbs.json`;
+  const known: Record<string, Verb> = existsSync(file)
+    ? JSON.parse(readFileSync(file, "utf8"))
+    : {};
+  const missing = headwords.filter((de) => !known[de]);
+  if (!missing.length) return known;
+  const client = new Anthropic({
+    baseURL: "https://ai-gateway.vercel.sh",
+    apiKey: process.env.AI_GATEWAY_API_KEY ?? process.env.VERCEL_OIDC_TOKEN,
+  });
+  for (let i = 0; i < missing.length; i += 80) {
+    const batch = missing.slice(i, i + 80);
+    const response = await client.messages.parse({
+      model: "anthropic/claude-opus-5.5",
+      max_tokens: 16000,
+      output_config: { effort: "medium", format: zodOutputFormat(VerbInfo) },
+      messages: [
+        {
+          role: "user",
+          content: `These are German verbs from the Goethe A1/A2 word lists, for a flashcard app for an English-speaking learner. For each one, return:
+- de: the headword exactly as given
+- forms: third person singular present, Präteritum (3rd sg) and Perfekt with its auxiliary, separated by " · ", e.g. "fährt · fuhr · ist gefahren" (for a reflexive verb include sich: "freut sich · freute sich · hat sich gefreut")
+- governs: the preposition with its case that the verb typically takes in everyday use, e.g. "auf + Akk." for warten, "mit + Dat." for telefonieren; or "+ Dat." for verbs whose object is dative (helfen, gefallen, gehören); empty string if none. Only list a preposition when it is a fixed pairing a learner must memorise, not a free location or time phrase.
+
+${batch.join("\n")}`,
+        },
+      ],
+    });
+    for (const item of response.parsed_output?.items ?? []) known[item.de] = item;
+    writeFileSync(file, `${JSON.stringify(known, null, 1)}\n`);
+    console.log(`verbs ${Math.min(i + 80, missing.length)}/${missing.length}`);
+  }
+  return known;
+}
+
+/** Adds forms (A1 and core words have none) and the governed case/preposition to verbs. */
+async function withVerbInfo(list: Note[]): Promise<Note[]> {
+  const isVerb = (note: Note) => note.cefr !== "B1" && /^to /.test(note.en);
+  const verbs = await verbInfo([...new Set(list.filter(isVerb).map((note) => note.de))]);
+  return list.map((note) => {
+    const verb = isVerb(note) ? verbs[note.de] : undefined;
+    if (!verb) return note;
+    const needsForms = note.source !== "goethe-a2" && verb.forms;
+    return {
+      ...note,
+      governs: verb.governs || null,
+      hint: needsForms ? [verb.forms, note.hint].filter(Boolean).join(" · ") : note.hint,
+    };
+  });
+}
+
 async function b1Notes(): Promise<Note[]> {
   const dir = fetchRepo("b1", "https://github.com/kennethsible/goethe-wortliste.git");
   // Verbs come with their forms ("retten, rettet, rettete, hat gerettet"): word first, forms as hint.
@@ -217,7 +284,11 @@ const ranks = frequencyRanks();
 const ordered = (list: Note[], base: number) =>
   frequencyOrder(list, ranks).map((note, i) => ({ ...note, ord: base + i }));
 const a1 = [...a1Notes(), ...coreNotes()];
-const words = [...ordered(a1, 0), ...ordered(a2Notes(), 100_000), ...(await b1Notes())];
+const words = await withVerbInfo([
+  ...ordered(a1, 0),
+  ...ordered(a2Notes(), 100_000),
+  ...(await b1Notes()),
+]);
 /** B1 is for recognition: no English→German card. */
 const directions = (note: Note) =>
   note.cefr === "B1" ? (["de_en"] as const) : (["de_en", "en_de"] as const);
@@ -237,6 +308,7 @@ const dropped = await db.transaction(async (tx) => {
         exampleDe: sql`excluded.example_de`,
         exampleEn: sql`excluded.example_en`,
         hint: sql`excluded.hint`,
+        governs: sql`excluded.governs`,
       },
       setWhere: sql`${notes.editedAt} is null`,
     });

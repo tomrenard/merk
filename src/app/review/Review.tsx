@@ -151,7 +151,9 @@ export function Review({ first }: Props) {
             <p className="text-3xl font-black">
               {note.en}
               {/* Says a preposition belongs to the answer, without giving it away. */}
-              {note.governs && <span className="muted text-lg"> · + prep.</span>}
+              {/^\p{Ll}/u.test(note.governs ?? "") && (
+                <span className="muted text-lg"> · + prep.</span>
+              )}
             </p>
             <form
               className="mt-4 w-full"

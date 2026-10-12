@@ -96,6 +96,7 @@ describe("checkTyped", () => {
     ["warten", "warten", "auf + Akk.", "right"],
     ["warten auf", "warten", "auf + Akk.", "right"],
     ["auf", "auf", undefined, "right"],
+    ["helfen", "helfen", "+ Dat.", "right"],
   ])("%j for %j → %s", (input, headword, governs, result) => {
     expect(checkTyped(input, headword, governs)).toBe(result);
   });

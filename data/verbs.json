@@ -1,0 +1,1502 @@
+{
+ "haben": {
+  "de": "haben",
+  "forms": "hat · hatte · hat gehabt",
+  "governs": ""
+ },
+ "heißen": {
+  "de": "heißen",
+  "forms": "heißt · hieß · hat geheißen",
+  "governs": ""
+ },
+ "kommen": {
+  "de": "kommen",
+  "forms": "kommt · kam · ist gekommen",
+  "governs": "aus + Dat."
+ },
+ "wohnen": {
+  "de": "wohnen",
+  "forms": "wohnt · wohnte · hat gewohnt",
+  "governs": ""
+ },
+ "sprechen": {
+  "de": "sprechen",
+  "forms": "spricht · sprach · hat gesprochen",
+  "governs": "mit + Dat. / über + Akk."
+ },
+ "verstehen": {
+  "de": "verstehen",
+  "forms": "versteht · verstand · hat verstanden",
+  "governs": ""
+ },
+ "machen": {
+  "de": "machen",
+  "forms": "macht · machte · hat gemacht",
+  "governs": ""
+ },
+ "gehen": {
+  "de": "gehen",
+  "forms": "geht · ging · ist gegangen",
+  "governs": ""
+ },
+ "essen": {
+  "de": "essen",
+  "forms": "isst · aß · hat gegessen",
+  "governs": ""
+ },
+ "trinken": {
+  "de": "trinken",
+  "forms": "trinkt · trank · hat getrunken",
+  "governs": ""
+ },
+ "brauchen": {
+  "de": "brauchen",
+  "forms": "braucht · brauchte · hat gebraucht",
+  "governs": ""
+ },
+ "kaufen": {
+  "de": "kaufen",
+  "forms": "kauft · kaufte · hat gekauft",
+  "governs": ""
+ },
+ "kosten": {
+  "de": "kosten",
+  "forms": "kostet · kostete · hat gekostet",
+  "governs": ""
+ },
+ "können": {
+  "de": "können",
+  "forms": "kann · konnte · hat gekonnt",
+  "governs": ""
+ },
+ "müssen": {
+  "de": "müssen",
+  "forms": "muss · musste · hat gemusst",
+  "governs": ""
+ },
+ "sein": {
+  "de": "sein",
+  "forms": "ist · war · ist gewesen",
+  "governs": ""
+ },
+ "lernen": {
+  "de": "lernen",
+  "forms": "lernt · lernte · hat gelernt",
+  "governs": ""
+ },
+ "werden": {
+  "de": "werden",
+  "forms": "wird · wurde · ist geworden",
+  "governs": ""
+ },
+ "nach": {
+  "de": "nach",
+  "forms": "(preposition, not a verb – no verb forms)",
+  "governs": "+ Dat."
+ },
+ "geben": {
+  "de": "geben",
+  "forms": "gibt · gab · hat gegeben",
+  "governs": ""
+ },
+ "sagen": {
+  "de": "sagen",
+  "forms": "sagt · sagte · hat gesagt",
+  "governs": ""
+ },
+ "wollen": {
+  "de": "wollen",
+  "forms": "will · wollte · hat gewollt",
+  "governs": ""
+ },
+ "bis": {
+  "de": "bis",
+  "forms": "(preposition/conjunction, not a verb – no verb forms)",
+  "governs": "+ Akk."
+ },
+ "stehen": {
+  "de": "stehen",
+  "forms": "steht · stand · hat gestanden",
+  "governs": ""
+ },
+ "sehen": {
+  "de": "sehen",
+  "forms": "sieht · sah · hat gesehen",
+  "governs": ""
+ },
+ "finden": {
+  "de": "finden",
+  "forms": "findet · fand · hat gefunden",
+  "governs": ""
+ },
+ "bleiben": {
+  "de": "bleiben",
+  "forms": "bleibt · blieb · ist geblieben",
+  "governs": ""
+ },
+ "liegen": {
+  "de": "liegen",
+  "forms": "liegt · lag · hat gelegen",
+  "governs": ""
+ },
+ "stellen": {
+  "de": "stellen",
+  "forms": "stellt · stellte · hat gestellt",
+  "governs": ""
+ },
+ "nehmen": {
+  "de": "nehmen",
+  "forms": "nimmt · nahm · hat genommen",
+  "governs": ""
+ },
+ "dürfen": {
+  "de": "dürfen",
+  "forms": "darf · durfte · hat gedurft",
+  "governs": ""
+ },
+ "halten": {
+  "de": "halten",
+  "forms": "hält · hielt · hat gehalten",
+  "governs": "von + Dat."
+ },
+ "spielen": {
+  "de": "spielen",
+  "forms": "spielt · spielte · hat gespielt",
+  "governs": ""
+ },
+ "bringen": {
+  "de": "bringen",
+  "forms": "bringt · brachte · hat gebracht",
+  "governs": ""
+ },
+ "leben": {
+  "de": "leben",
+  "forms": "lebt · lebte · hat gelebt",
+  "governs": ""
+ },
+ "beginnen": {
+  "de": "beginnen",
+  "forms": "beginnt · begann · hat begonnen",
+  "governs": "mit + Dat."
+ },
+ "gehören": {
+  "de": "gehören",
+  "forms": "gehört · gehörte · hat gehört",
+  "governs": "+ Dat."
+ },
+ "wissen": {
+  "de": "wissen",
+  "forms": "weiß · wusste · hat gewusst",
+  "governs": ""
+ },
+ "erklären": {
+  "de": "erklären",
+  "forms": "erklärt · erklärte · hat erklärt",
+  "governs": ""
+ },
+ "gewinnen": {
+  "de": "gewinnen",
+  "forms": "gewinnt · gewann · hat gewonnen",
+  "governs": ""
+ },
+ "tun": {
+  "de": "tun",
+  "forms": "tut · tat · hat getan",
+  "governs": ""
+ },
+ "mögen": {
+  "de": "mögen",
+  "forms": "mag · mochte · hat gemocht",
+  "governs": ""
+ },
+ "(sich) treffen": {
+  "de": "(sich) treffen",
+  "forms": "trifft (sich) · traf (sich) · hat (sich) getroffen",
+  "governs": "mit + Dat."
+ },
+ "bekommen": {
+  "de": "bekommen",
+  "forms": "bekommt · bekam · hat bekommen",
+  "governs": ""
+ },
+ "arbeiten": {
+  "de": "arbeiten",
+  "forms": "arbeitet · arbeitete · hat gearbeitet",
+  "governs": "bei + Dat."
+ },
+ "schreiben": {
+  "de": "schreiben",
+  "forms": "schreibt · schrieb · hat geschrieben",
+  "governs": "an + Akk."
+ },
+ "laufen": {
+  "de": "laufen",
+  "forms": "läuft · lief · ist gelaufen",
+  "governs": ""
+ },
+ "feiern": {
+  "de": "feiern",
+  "forms": "feiert · feierte · hat gefeiert",
+  "governs": ""
+ },
+ "fahren": {
+  "de": "fahren",
+  "forms": "fährt · fuhr · ist gefahren",
+  "governs": ""
+ },
+ "suchen": {
+  "de": "suchen",
+  "forms": "sucht · suchte · hat gesucht",
+  "governs": "nach + Dat."
+ },
+ "legen": {
+  "de": "legen",
+  "forms": "legt · legte · hat gelegt",
+  "governs": ""
+ },
+ "fehlen": {
+  "de": "fehlen",
+  "forms": "fehlt · fehlte · hat gefehlt",
+  "governs": "+ Dat."
+ },
+ "scheinen": {
+  "de": "scheinen",
+  "forms": "scheint · schien · hat geschienen",
+  "governs": ""
+ },
+ "glauben": {
+  "de": "glauben",
+  "forms": "glaubt · glaubte · hat geglaubt",
+  "governs": "an + Akk."
+ },
+ "kennen": {
+  "de": "kennen",
+  "forms": "kennt · kannte · hat gekannt",
+  "governs": ""
+ },
+ "(sich) freuen": {
+  "de": "(sich) freuen",
+  "forms": "freut sich · freute sich · hat sich gefreut",
+  "governs": "auf + Akk. / über + Akk."
+ },
+ "helfen": {
+  "de": "helfen",
+  "forms": "hilft · half · hat geholfen",
+  "governs": "+ Dat."
+ },
+ "schließen": {
+  "de": "schließen",
+  "forms": "schließt · schloss · hat geschlossen",
+  "governs": ""
+ },
+ "sitzen": {
+  "de": "sitzen",
+  "forms": "sitzt · saß · hat gesessen",
+  "governs": ""
+ },
+ "erzählen": {
+  "de": "erzählen",
+  "forms": "erzählt · erzählte · hat erzählt",
+  "governs": "von + Dat."
+ },
+ "hören": {
+  "de": "hören",
+  "forms": "hört · hörte · hat gehört",
+  "governs": ""
+ },
+ "fragen": {
+  "de": "fragen",
+  "forms": "fragt · fragte · hat gefragt",
+  "governs": "nach + Dat."
+ },
+ "lesen": {
+  "de": "lesen",
+  "forms": "liest · las · hat gelesen",
+  "governs": ""
+ },
+ "holen": {
+  "de": "holen",
+  "forms": "holt · holte · hat geholt",
+  "governs": ""
+ },
+ "öffnen": {
+  "de": "öffnen",
+  "forms": "öffnet · öffnete · hat geöffnet",
+  "governs": ""
+ },
+ "warten": {
+  "de": "warten",
+  "forms": "wartet · wartete · hat gewartet",
+  "governs": "auf + Akk."
+ },
+ "bedeuten": {
+  "de": "bedeuten",
+  "forms": "bedeutet · bedeutete · hat bedeutet",
+  "governs": ""
+ },
+ "bitten": {
+  "de": "bitten",
+  "forms": "bittet · bat · hat gebeten",
+  "governs": "um + Akk."
+ },
+ "zahlen": {
+  "de": "zahlen",
+  "forms": "zahlt · zahlte · hat gezahlt",
+  "governs": ""
+ },
+ "(sich) vorstellen": {
+  "de": "(sich) vorstellen",
+  "forms": "stellt (sich) vor · stellte (sich) vor · hat (sich) vorgestellt",
+  "governs": ""
+ },
+ "besuchen": {
+  "de": "besuchen",
+  "forms": "besucht · besuchte · hat besucht",
+  "governs": ""
+ },
+ "verkaufen": {
+  "de": "verkaufen",
+  "forms": "verkauft · verkaufte · hat verkauft",
+  "governs": ""
+ },
+ "dauern": {
+  "de": "dauern",
+  "forms": "dauert · dauerte · hat gedauert",
+  "governs": ""
+ },
+ "einladen": {
+  "de": "einladen",
+  "forms": "lädt ein · lud ein · hat eingeladen",
+  "governs": "zu + Dat."
+ },
+ "verdienen": {
+  "de": "verdienen",
+  "forms": "verdient · verdiente · hat verdient",
+  "governs": ""
+ },
+ "bezahlen": {
+  "de": "bezahlen",
+  "forms": "bezahlt · bezahlte · hat bezahlt",
+  "governs": ""
+ },
+ "enden": {
+  "de": "enden",
+  "forms": "endet · endete · hat geendet",
+  "governs": ""
+ },
+ "fernsehen": {
+  "de": "fernsehen",
+  "forms": "sieht fern · sah fern · hat ferngesehen",
+  "governs": ""
+ },
+ "gefallen": {
+  "de": "gefallen",
+  "forms": "gefällt · gefiel · hat gefallen",
+  "governs": "+ Dat."
+ },
+ "fliegen": {
+  "de": "fliegen",
+  "forms": "fliegt · flog · ist geflogen",
+  "governs": ""
+ },
+ "empfehlen": {
+  "de": "empfehlen",
+  "forms": "empfiehlt · empfahl · hat empfohlen",
+  "governs": "+ Dat. (jmdm. etw. empfehlen)"
+ },
+ "sich kümmern": {
+  "de": "sich kümmern",
+  "forms": "kümmert sich · kümmerte sich · hat sich gekümmert",
+  "governs": "um + Akk."
+ },
+ "reisen": {
+  "de": "reisen",
+  "forms": "reist · reiste · ist gereist",
+  "governs": ""
+ },
+ "danken": {
+  "de": "danken",
+  "forms": "dankt · dankte · hat gedankt",
+  "governs": "+ Dat.; für + Akk."
+ },
+ "studieren": {
+  "de": "studieren",
+  "forms": "studiert · studierte · hat studiert",
+  "governs": ""
+ },
+ "lachen": {
+  "de": "lachen",
+  "forms": "lacht · lachte · hat gelacht",
+  "governs": "über + Akk."
+ },
+ "drücken": {
+  "de": "drücken",
+  "forms": "drückt · drückte · hat gedrückt",
+  "governs": ""
+ },
+ "aussehen": {
+  "de": "aussehen",
+  "forms": "sieht aus · sah aus · hat ausgesehen",
+  "governs": ""
+ },
+ "lieben": {
+  "de": "lieben",
+  "forms": "liebt · liebte · hat geliebt",
+  "governs": ""
+ },
+ "schicken": {
+  "de": "schicken",
+  "forms": "schickt · schickte · hat geschickt",
+  "governs": ""
+ },
+ "benutzen": {
+  "de": "benutzen",
+  "forms": "benutzt · benutzte · hat benutzt",
+  "governs": ""
+ },
+ "tanzen": {
+  "de": "tanzen",
+  "forms": "tanzt · tanzte · hat getanzt",
+  "governs": ""
+ },
+ "wiederholen": {
+  "de": "wiederholen",
+  "forms": "wiederholt · wiederholte · hat wiederholt",
+  "governs": ""
+ },
+ "bestellen": {
+  "de": "bestellen",
+  "forms": "bestellt · bestellte · hat bestellt",
+  "governs": ""
+ },
+ "antworten": {
+  "de": "antworten",
+  "forms": "antwortet · antwortete · hat geantwortet",
+  "governs": "+ Dat.; auf + Akk."
+ },
+ "heiraten": {
+  "de": "heiraten",
+  "forms": "heiratet · heiratete · hat geheiratet",
+  "governs": ""
+ },
+ "schlafen": {
+  "de": "schlafen",
+  "forms": "schläft · schlief · hat geschlafen",
+  "governs": ""
+ },
+ "wandern": {
+  "de": "wandern",
+  "forms": "wandert · wanderte · ist gewandert",
+  "governs": ""
+ },
+ "mitmachen": {
+  "de": "mitmachen",
+  "forms": "macht mit · machte mit · hat mitgemacht",
+  "governs": "bei + Dat."
+ },
+ "schwimmen": {
+  "de": "schwimmen",
+  "forms": "schwimmt · schwamm · ist geschwommen",
+  "governs": ""
+ },
+ "mitbringen": {
+  "de": "mitbringen",
+  "forms": "bringt mit · brachte mit · hat mitgebracht",
+  "governs": ""
+ },
+ "unterschreiben": {
+  "de": "unterschreiben",
+  "forms": "unterschreibt · unterschrieb · hat unterschrieben",
+  "governs": ""
+ },
+ "kriegen": {
+  "de": "kriegen",
+  "forms": "kriegt · kriegte · hat gekriegt",
+  "governs": ""
+ },
+ "gratulieren": {
+  "de": "gratulieren",
+  "forms": "gratuliert · gratulierte · hat gratuliert",
+  "governs": "+ Dat.; zu + Dat."
+ },
+ "ausmachen": {
+  "de": "ausmachen",
+  "forms": "macht aus · machte aus · hat ausgemacht",
+  "governs": ""
+ },
+ "kochen": {
+  "de": "kochen",
+  "forms": "kocht · kochte · hat gekocht",
+  "governs": ""
+ },
+ "kennenlernen": {
+  "de": "kennenlernen",
+  "forms": "lernt kennen · lernte kennen · hat kennengelernt",
+  "governs": ""
+ },
+ "rauchen": {
+  "de": "rauchen",
+  "forms": "raucht · rauchte · hat geraucht",
+  "governs": ""
+ },
+ "besichtigen": {
+  "de": "besichtigen",
+  "forms": "besichtigt · besichtigte · hat besichtigt",
+  "governs": ""
+ },
+ "mitnehmen": {
+  "de": "mitnehmen",
+  "forms": "nimmt mit · nahm mit · hat mitgenommen",
+  "governs": ""
+ },
+ "einkaufen": {
+  "de": "einkaufen",
+  "forms": "kauft ein · kaufte ein · hat eingekauft",
+  "governs": ""
+ },
+ "aufhören": {
+  "de": "aufhören",
+  "forms": "hört auf · hörte auf · hat aufgehört",
+  "governs": "mit + Dat."
+ },
+ "wohin": {
+  "de": "wohin",
+  "forms": "— (question word/adverb 'where to', not a verb)",
+  "governs": ""
+ },
+ "schmecken": {
+  "de": "schmecken",
+  "forms": "schmeckt · schmeckte · hat geschmeckt",
+  "governs": "+ Dat."
+ },
+ "(sich) anziehen": {
+  "de": "(sich) anziehen",
+  "forms": "zieht (sich) an · zog (sich) an · hat (sich) angezogen",
+  "governs": ""
+ },
+ "einsteigen": {
+  "de": "einsteigen",
+  "forms": "steigt ein · stieg ein · ist eingestiegen",
+  "governs": "in + Akk."
+ },
+ "entschuldigen": {
+  "de": "entschuldigen",
+  "forms": "entschuldigt · entschuldigte · hat entschuldigt",
+  "governs": "sich bei + Dat.; für + Akk."
+ },
+ "drucken": {
+  "de": "drucken",
+  "forms": "druckt · druckte · hat gedruckt",
+  "governs": ""
+ },
+ "überweisen": {
+  "de": "überweisen",
+  "forms": "überweist · überwies · hat überwiesen",
+  "governs": ""
+ },
+ "riechen": {
+  "de": "riechen",
+  "forms": "riecht · roch · hat gerochen",
+  "governs": "nach + Dat."
+ },
+ "aussteigen": {
+  "de": "aussteigen",
+  "forms": "steigt aus · stieg aus · ist ausgestiegen",
+  "governs": "aus + Dat."
+ },
+ "(sich) waschen": {
+  "de": "(sich) waschen",
+  "forms": "wäscht (sich) · wusch (sich) · hat (sich) gewaschen",
+  "governs": ""
+ },
+ "baden": {
+  "de": "baden",
+  "forms": "badet · badete · hat gebadet",
+  "governs": ""
+ },
+ "regnen": {
+  "de": "regnen",
+  "forms": "es regnet · es regnete · es hat geregnet",
+  "governs": ""
+ },
+ "telefonieren": {
+  "de": "telefonieren",
+  "forms": "telefoniert · telefonierte · hat telefoniert",
+  "governs": "mit + Dat."
+ },
+ "ausfüllen": {
+  "de": "ausfüllen",
+  "forms": "füllt aus · füllte aus · hat ausgefüllt",
+  "governs": ""
+ },
+ "reparieren": {
+  "de": "reparieren",
+  "forms": "repariert · reparierte · hat repariert",
+  "governs": ""
+ },
+ "umziehen": {
+  "de": "umziehen",
+  "forms": "zieht um · zog um · ist umgezogen",
+  "governs": ""
+ },
+ "mieten": {
+  "de": "mieten",
+  "forms": "mietet · mietete · hat gemietet",
+  "governs": ""
+ },
+ "vermieten": {
+  "de": "vermieten",
+  "forms": "vermietet · vermietete · hat vermietet",
+  "governs": "an + Akk."
+ },
+ "ausziehen": {
+  "de": "ausziehen",
+  "forms": "zieht aus · zog aus · ist ausgezogen (move out) / hat ausgezogen (take off)",
+  "governs": ""
+ },
+ "sich ausziehen": {
+  "de": "sich ausziehen",
+  "forms": "zieht sich aus · zog sich aus · hat sich ausgezogen",
+  "governs": ""
+ },
+ "aufstehen": {
+  "de": "aufstehen",
+  "forms": "steht auf · stand auf · ist aufgestanden",
+  "governs": ""
+ },
+ "übernachten": {
+  "de": "übernachten",
+  "forms": "übernachtet · übernachtete · hat übernachtet",
+  "governs": ""
+ },
+ "grillen": {
+  "de": "grillen",
+  "forms": "grillt · grillte · hat gegrillt",
+  "governs": ""
+ },
+ "frühstücken": {
+  "de": "frühstücken",
+  "forms": "frühstückt · frühstückte · hat gefrühstückt",
+  "governs": ""
+ },
+ "(sich) duschen": {
+  "de": "(sich) duschen",
+  "forms": "duscht (sich) · duschte (sich) · hat (sich) geduscht",
+  "governs": ""
+ },
+ "mitkommen": {
+  "de": "mitkommen",
+  "forms": "kommt mit · kam mit · ist mitgekommen",
+  "governs": ""
+ },
+ "buchstabieren": {
+  "de": "buchstabieren",
+  "forms": "buchstabiert · buchstabierte · hat buchstabiert",
+  "governs": ""
+ },
+ "abfliegen": {
+  "de": "abfliegen",
+  "forms": "fliegt ab · flog ab · ist abgeflogen",
+  "governs": ""
+ },
+ "an sein": {
+  "de": "an sein",
+  "forms": "ist an · war an · ist an gewesen",
+  "governs": ""
+ },
+ "auf sein": {
+  "de": "auf sein",
+  "forms": "ist auf · war auf · ist auf gewesen",
+  "governs": ""
+ },
+ "aus sein": {
+  "de": "aus sein",
+  "forms": "ist aus · war aus · ist aus gewesen",
+  "governs": ""
+ },
+ "lieber": {
+  "de": "lieber",
+  "forms": "— (adverb 'rather', comparative of gern; not a verb)",
+  "governs": ""
+ },
+ "Rad fahren": {
+  "de": "Rad fahren",
+  "forms": "fährt Rad · fuhr Rad · ist Rad gefahren",
+  "governs": ""
+ },
+ "weg sein": {
+  "de": "weg sein",
+  "forms": "ist weg · war weg · ist weg gewesen",
+  "governs": ""
+ },
+ "zu sein": {
+  "de": "zu sein",
+  "forms": "ist zu · war zu · ist zu gewesen",
+  "governs": ""
+ },
+ "weh tun": {
+  "de": "weh tun",
+  "forms": "tut weh · tat weh · hat wehgetan",
+  "governs": "+ Dat."
+ },
+ "lassen": {
+  "de": "lassen",
+  "forms": "lässt · ließ · hat gelassen",
+  "governs": ""
+ },
+ "zeigen": {
+  "de": "zeigen",
+  "forms": "zeigt · zeigte · hat gezeigt",
+  "governs": "+ Dat. (jmdm. etw. zeigen)"
+ },
+ "sich setzen": {
+  "de": "sich setzen",
+  "forms": "setzt sich · setzte sich · hat sich gesetzt",
+  "governs": ""
+ },
+ "nennen": {
+  "de": "nennen",
+  "forms": "nennt · nannte · hat genannt",
+  "governs": ""
+ },
+ "unternehmen": {
+  "de": "unternehmen",
+  "forms": "unternimmt · unternahm · hat unternommen",
+  "governs": ""
+ },
+ "berichten": {
+  "de": "berichten",
+  "forms": "berichtet · berichtete · hat berichtet",
+  "governs": "über + Akk."
+ },
+ "meinen": {
+  "de": "meinen",
+  "forms": "meint · meinte · hat gemeint",
+  "governs": ""
+ },
+ "erreichen": {
+  "de": "erreichen",
+  "forms": "erreicht · erreichte · hat erreicht",
+  "governs": ""
+ },
+ "schaffen": {
+  "de": "schaffen",
+  "forms": "schafft · schaffte · hat geschafft",
+  "governs": ""
+ },
+ "planen": {
+  "de": "planen",
+  "forms": "plant · plante · hat geplant",
+  "governs": ""
+ },
+ "tragen": {
+  "de": "tragen",
+  "forms": "trägt · trug · hat getragen",
+  "governs": ""
+ },
+ "denken": {
+  "de": "denken",
+  "forms": "denkt · dachte · hat gedacht",
+  "governs": "an + Akk."
+ },
+ "verlieren": {
+  "de": "verlieren",
+  "forms": "verliert · verlor · hat verloren",
+  "governs": ""
+ },
+ "fallen": {
+  "de": "fallen",
+  "forms": "fällt · fiel · ist gefallen",
+  "governs": ""
+ },
+ "versuchen": {
+  "de": "versuchen",
+  "forms": "versucht · versuchte · hat versucht",
+  "governs": ""
+ },
+ "wählen": {
+  "de": "wählen",
+  "forms": "wählt · wählte · hat gewählt",
+  "governs": ""
+ },
+ "teilen": {
+  "de": "teilen",
+  "forms": "teilt · teilte · hat geteilt",
+  "governs": "mit + Dat."
+ },
+ "bauen": {
+  "de": "bauen",
+  "forms": "baut · baute · hat gebaut",
+  "governs": ""
+ },
+ "rechnen": {
+  "de": "rechnen",
+  "forms": "rechnet · rechnete · hat gerechnet",
+  "governs": "mit + Dat."
+ },
+ "sterben": {
+  "de": "sterben",
+  "forms": "stirbt · starb · ist gestorben",
+  "governs": "an + Dat."
+ },
+ "hoffen": {
+  "de": "hoffen",
+  "forms": "hofft · hoffte · hat gehofft",
+  "governs": "auf + Akk."
+ },
+ "sich erinnern": {
+  "de": "sich erinnern",
+  "forms": "erinnert sich · erinnerte sich · hat sich erinnert",
+  "governs": "an + Akk."
+ },
+ "bestätigen": {
+  "de": "bestätigen",
+  "forms": "bestätigt · bestätigte · hat bestätigt",
+  "governs": ""
+ },
+ "ändern": {
+  "de": "ändern",
+  "forms": "ändert · änderte · hat geändert",
+  "governs": ""
+ },
+ "sich verletzen": {
+  "de": "sich verletzen",
+  "forms": "verletzt sich · verletzte sich · hat sich verletzt",
+  "governs": ""
+ },
+ "anbieten": {
+  "de": "anbieten",
+  "forms": "bietet an · bot an · hat angeboten",
+  "governs": "+ Dat."
+ },
+ "rufen": {
+  "de": "rufen",
+  "forms": "ruft · rief · hat gerufen",
+  "governs": ""
+ },
+ "sich fühlen": {
+  "de": "sich fühlen",
+  "forms": "fühlt sich · fühlte sich · hat sich gefühlt",
+  "governs": ""
+ },
+ "wünschen": {
+  "de": "wünschen",
+  "forms": "wünscht · wünschte · hat gewünscht",
+  "governs": "+ Dat."
+ },
+ "beschreiben": {
+  "de": "beschreiben",
+  "forms": "beschreibt · beschrieb · hat beschrieben",
+  "governs": ""
+ },
+ "wechseln": {
+  "de": "wechseln",
+  "forms": "wechselt · wechselte · hat gewechselt",
+  "governs": ""
+ },
+ "singen": {
+  "de": "singen",
+  "forms": "singt · sang · hat gesungen",
+  "governs": ""
+ },
+ "reden": {
+  "de": "reden",
+  "forms": "redet · redete · hat geredet",
+  "governs": "mit + Dat.; über + Akk."
+ },
+ "hängen": {
+  "de": "hängen",
+  "forms": "hängt · hing/hängte · hat gehangen/gehängt",
+  "governs": ""
+ },
+ "stattfinden": {
+  "de": "stattfinden",
+  "forms": "findet statt · fand statt · hat stattgefunden",
+  "governs": ""
+ },
+ "passieren": {
+  "de": "passieren",
+  "forms": "passiert · passierte · ist passiert",
+  "governs": "+ Dat."
+ },
+ "kündigen": {
+  "de": "kündigen",
+  "forms": "kündigt · kündigte · hat gekündigt",
+  "governs": "+ Dat."
+ },
+ "abschließen": {
+  "de": "abschließen",
+  "forms": "schließt ab · schloss ab · hat abgeschlossen",
+  "governs": ""
+ },
+ "liefern": {
+  "de": "liefern",
+  "forms": "liefert · lieferte · hat geliefert",
+  "governs": ""
+ },
+ "organisieren": {
+  "de": "organisieren",
+  "forms": "organisiert · organisierte · hat organisiert",
+  "governs": ""
+ },
+ "beenden": {
+  "de": "beenden",
+  "forms": "beendet · beendete · hat beendet",
+  "governs": ""
+ },
+ "teilnehmen": {
+  "de": "teilnehmen",
+  "forms": "nimmt teil · nahm teil · hat teilgenommen",
+  "governs": "an + Dat."
+ },
+ "passen": {
+  "de": "passen",
+  "forms": "passt · passte · hat gepasst",
+  "governs": "+ Dat.; zu + Dat."
+ },
+ "vergessen": {
+  "de": "vergessen",
+  "forms": "vergisst · vergaß · hat vergessen",
+  "governs": ""
+ },
+ "diskutieren": {
+  "de": "diskutieren",
+  "forms": "diskutiert · diskutierte · hat diskutiert",
+  "governs": "über + Akk."
+ },
+ "prüfen": {
+  "de": "prüfen",
+  "forms": "prüft · prüfte · hat geprüft",
+  "governs": ""
+ },
+ "sich interessieren": {
+  "de": "sich interessieren",
+  "forms": "interessiert sich · interessierte sich · hat sich interessiert",
+  "governs": "für + Akk."
+ },
+ "sammeln": {
+  "de": "sammeln",
+  "forms": "sammelt · sammelte · hat gesammelt",
+  "governs": ""
+ },
+ "abgeben": {
+  "de": "abgeben",
+  "forms": "gibt ab · gab ab · hat abgegeben",
+  "governs": ""
+ },
+ "vorbereiten": {
+  "de": "vorbereiten",
+  "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+  "governs": "auf + Akk."
+ },
+ "zeichnen": {
+  "de": "zeichnen",
+  "forms": "zeichnet · zeichnete · hat gezeichnet",
+  "governs": ""
+ },
+ "sparen": {
+  "de": "sparen",
+  "forms": "spart · sparte · hat gespart",
+  "governs": ""
+ },
+ "verbieten": {
+  "de": "verbieten",
+  "forms": "verbietet · verbot · hat verboten",
+  "governs": "+ Dat."
+ },
+ "herstellen": {
+  "de": "herstellen",
+  "forms": "stellt her · stellte her · hat hergestellt",
+  "governs": ""
+ },
+ "beraten": {
+  "de": "beraten",
+  "forms": "berät · beriet · hat beraten",
+  "governs": ""
+ },
+ "stören": {
+  "de": "stören",
+  "forms": "stört · störte · hat gestört",
+  "governs": ""
+ },
+ "üben": {
+  "de": "üben",
+  "forms": "übt · übte · hat geübt",
+  "governs": ""
+ },
+ "untersuchen": {
+  "de": "untersuchen",
+  "forms": "untersucht · untersuchte · hat untersucht",
+  "governs": ""
+ },
+ "merken": {
+  "de": "merken",
+  "forms": "merkt · merkte · hat gemerkt",
+  "governs": ""
+ },
+ "raten": {
+  "de": "raten",
+  "forms": "rät · riet · hat geraten",
+  "governs": "+ Dat."
+ },
+ "anfangen": {
+  "de": "anfangen",
+  "forms": "fängt an · fing an · hat angefangen",
+  "governs": "mit + Dat."
+ },
+ "kontrollieren": {
+  "de": "kontrollieren",
+  "forms": "kontrolliert · kontrollierte · hat kontrolliert",
+  "governs": ""
+ },
+ "vereinbaren": {
+  "de": "vereinbaren",
+  "forms": "vereinbart · vereinbarte · hat vereinbart",
+  "governs": ""
+ },
+ "vergleichen": {
+  "de": "vergleichen",
+  "forms": "vergleicht · verglich · hat verglichen",
+  "governs": "mit + Dat."
+ },
+ "beantworten": {
+  "de": "beantworten",
+  "forms": "beantwortet · beantwortete · hat beantwortet",
+  "governs": ""
+ },
+ "sich unterhalten": {
+  "de": "sich unterhalten",
+  "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+  "governs": "mit + Dat.; über + Akk."
+ },
+ "ausgeben": {
+  "de": "ausgeben",
+  "forms": "gibt aus · gab aus · hat ausgegeben",
+  "governs": "für + Akk."
+ },
+ "schenken": {
+  "de": "schenken",
+  "forms": "schenkt · schenkte · hat geschenkt",
+  "governs": "+ Dat."
+ },
+ "verpassen": {
+  "de": "verpassen",
+  "forms": "verpasst · verpasste · hat verpasst",
+  "governs": ""
+ },
+ "verschieben": {
+  "de": "verschieben",
+  "forms": "verschiebt · verschob · hat verschoben",
+  "governs": "auf + Akk."
+ },
+ "sich anmelden": {
+  "de": "sich anmelden",
+  "forms": "meldet sich an · meldete sich an · hat sich angemeldet",
+  "governs": "für + Akk."
+ },
+ "malen": {
+  "de": "malen",
+  "forms": "malt · malte · hat gemalt",
+  "governs": ""
+ },
+ "sich bewerben": {
+  "de": "sich bewerben",
+  "forms": "bewirbt sich · bewarb sich · hat sich beworben",
+  "governs": "um + Akk.; bei + Dat."
+ },
+ "packen": {
+  "de": "packen",
+  "forms": "packt · packte · hat gepackt",
+  "governs": ""
+ },
+ "austragen": {
+  "de": "austragen",
+  "forms": "trägt aus · trug aus · hat ausgetragen",
+  "governs": ""
+ },
+ "sich ärgern": {
+  "de": "sich ärgern",
+  "forms": "ärgert sich · ärgerte sich · hat sich geärgert",
+  "governs": "über + Akk."
+ },
+ "sich streiten": {
+  "de": "sich streiten",
+  "forms": "streitet sich · stritt sich · hat sich gestritten",
+  "governs": "mit + Dat.; über + Akk."
+ },
+ "klappen": {
+  "de": "klappen",
+  "forms": "klappt · klappte · hat geklappt",
+  "governs": ""
+ },
+ "träumen": {
+  "de": "träumen",
+  "forms": "träumt · träumte · hat geträumt",
+  "governs": "von + Dat."
+ },
+ "übersetzen": {
+  "de": "übersetzen",
+  "forms": "übersetzt · übersetzte · hat übersetzt",
+  "governs": ""
+ },
+ "sich schneiden": {
+  "de": "sich schneiden",
+  "forms": "schneidet sich · schnitt sich · hat sich geschnitten",
+  "governs": ""
+ },
+ "wecken": {
+  "de": "wecken",
+  "forms": "weckt · weckte · hat geweckt",
+  "governs": ""
+ },
+ "zurückgehen": {
+  "de": "zurückgehen",
+  "forms": "geht zurück · ging zurück · ist zurückgegangen",
+  "governs": ""
+ },
+ "notieren": {
+  "de": "notieren",
+  "forms": "notiert · notierte · hat notiert",
+  "governs": ""
+ },
+ "sich bedanken": {
+  "de": "sich bedanken",
+  "forms": "bedankt sich · bedankte sich · hat sich bedankt",
+  "governs": "bei + Dat.; für + Akk."
+ },
+ "einziehen": {
+  "de": "einziehen",
+  "forms": "zieht ein · zog ein · ist eingezogen",
+  "governs": ""
+ },
+ "basteln": {
+  "de": "basteln",
+  "forms": "bastelt · bastelte · hat gebastelt",
+  "governs": ""
+ },
+ "sich eintragen": {
+  "de": "sich eintragen",
+  "forms": "trägt sich ein · trug sich ein · hat sich eingetragen",
+  "governs": "in + Akk."
+ },
+ "weinen": {
+  "de": "weinen",
+  "forms": "weint · weinte · hat geweint",
+  "governs": ""
+ },
+ "mitspielen": {
+  "de": "mitspielen",
+  "forms": "spielt mit · spielte mit · hat mitgespielt",
+  "governs": ""
+ },
+ "reiten": {
+  "de": "reiten",
+  "forms": "reitet · ritt · ist geritten",
+  "governs": ""
+ },
+ "tauschen": {
+  "de": "tauschen",
+  "forms": "tauscht · tauschte · hat getauscht",
+  "governs": ""
+ },
+ "parken": {
+  "de": "parken",
+  "forms": "parkt · parkte · hat geparkt",
+  "governs": ""
+ },
+ "schimpfen": {
+  "de": "schimpfen",
+  "forms": "schimpft · schimpfte · hat geschimpft",
+  "governs": "über + Akk., mit + Dat."
+ },
+ "buchen": {
+  "de": "buchen",
+  "forms": "bucht · buchte · hat gebucht",
+  "governs": ""
+ },
+ "backen": {
+  "de": "backen",
+  "forms": "backt (bäckt) · backte · hat gebacken",
+  "governs": ""
+ },
+ "sich beschweren": {
+  "de": "sich beschweren",
+  "forms": "beschwert sich · beschwerte sich · hat sich beschwert",
+  "governs": "über + Akk., bei + Dat."
+ },
+ "speichern": {
+  "de": "speichern",
+  "forms": "speichert · speicherte · hat gespeichert",
+  "governs": ""
+ },
+ "renovieren": {
+  "de": "renovieren",
+  "forms": "renoviert · renovierte · hat renoviert",
+  "governs": ""
+ },
+ "probieren": {
+  "de": "probieren",
+  "forms": "probiert · probierte · hat probiert",
+  "governs": ""
+ },
+ "zurückgeben": {
+  "de": "zurückgeben",
+  "forms": "gibt zurück · gab zurück · hat zurückgegeben",
+  "governs": ""
+ },
+ "fotografieren": {
+  "de": "fotografieren",
+  "forms": "fotografiert · fotografierte · hat fotografiert",
+  "governs": ""
+ },
+ "zurückkommen": {
+  "de": "zurückkommen",
+  "forms": "kommt zurück · kam zurück · ist zurückgekommen",
+  "governs": ""
+ },
+ "weitermachen": {
+  "de": "weitermachen",
+  "forms": "macht weiter · machte weiter · hat weitergemacht",
+  "governs": "mit + Dat."
+ },
+ "sich verlieben": {
+  "de": "sich verlieben",
+  "forms": "verliebt sich · verliebte sich · hat sich verliebt",
+  "governs": "in + Akk."
+ },
+ "zuhören": {
+  "de": "zuhören",
+  "forms": "hört zu · hörte zu · hat zugehört",
+  "governs": "+ Dat."
+ },
+ "lügen": {
+  "de": "lügen",
+  "forms": "lügt · log · hat gelogen",
+  "governs": ""
+ },
+ "reservieren": {
+  "de": "reservieren",
+  "forms": "reserviert · reservierte · hat reserviert",
+  "governs": ""
+ },
+ "umsteigen": {
+  "de": "umsteigen",
+  "forms": "steigt um · stieg um · ist umgestiegen",
+  "governs": "in + Akk."
+ },
+ "putzen": {
+  "de": "putzen",
+  "forms": "putzt · putzte · hat geputzt",
+  "governs": ""
+ },
+ "leihen": {
+  "de": "leihen",
+  "forms": "leiht · lieh · hat geliehen",
+  "governs": ""
+ },
+ "wegnehmen": {
+  "de": "wegnehmen",
+  "forms": "nimmt weg · nahm weg · hat weggenommen",
+  "governs": ""
+ },
+ "surfen": {
+  "de": "surfen",
+  "forms": "surft · surfte · hat/ist gesurft",
+  "governs": ""
+ },
+ "sich ausruhen": {
+  "de": "sich ausruhen",
+  "forms": "ruht sich aus · ruhte sich aus · hat sich ausgeruht",
+  "governs": ""
+ },
+ "aufräumen": {
+  "de": "aufräumen",
+  "forms": "räumt auf · räumte auf · hat aufgeräumt",
+  "governs": ""
+ },
+ "herunterladen": {
+  "de": "herunterladen",
+  "forms": "lädt herunter · lud herunter · hat heruntergeladen",
+  "governs": ""
+ },
+ "weiterhelfen": {
+  "de": "weiterhelfen",
+  "forms": "hilft weiter · half weiter · hat weitergeholfen",
+  "governs": "+ Dat."
+ },
+ "schneien": {
+  "de": "schneien",
+  "forms": "es schneit · es schneite · es hat geschneit",
+  "governs": ""
+ },
+ "wegwerfen": {
+  "de": "wegwerfen",
+  "forms": "wirft weg · warf weg · hat weggeworfen",
+  "governs": ""
+ },
+ "braten": {
+  "de": "braten",
+  "forms": "brät · briet · hat gebraten",
+  "governs": ""
+ },
+ "einpacken": {
+  "de": "einpacken",
+  "forms": "packt ein · packte ein · hat eingepackt",
+  "governs": ""
+ },
+ "zurückfahren": {
+  "de": "zurückfahren",
+  "forms": "fährt zurück · fuhr zurück · ist zurückgefahren",
+  "governs": ""
+ },
+ "joggen": {
+  "de": "joggen",
+  "forms": "joggt · joggte · ist/hat gejoggt",
+  "governs": ""
+ },
+ "zumachen": {
+  "de": "zumachen",
+  "forms": "macht zu · machte zu · hat zugemacht",
+  "governs": ""
+ },
+ "weggehen": {
+  "de": "weggehen",
+  "forms": "geht weg · ging weg · ist weggegangen",
+  "governs": ""
+ },
+ "verreisen": {
+  "de": "verreisen",
+  "forms": "verreist · verreiste · ist verreist",
+  "governs": ""
+ },
+ "sich beeilen": {
+  "de": "sich beeilen",
+  "forms": "beeilt sich · beeilte sich · hat sich beeilt",
+  "governs": ""
+ },
+ "husten": {
+  "de": "husten",
+  "forms": "hustet · hustete · hat gehustet",
+  "governs": ""
+ },
+ "wegfahren": {
+  "de": "wegfahren",
+  "forms": "fährt weg · fuhr weg · ist weggefahren",
+  "governs": ""
+ },
+ "weglaufen": {
+  "de": "weglaufen",
+  "forms": "läuft weg · lief weg · ist weggelaufen",
+  "governs": ""
+ },
+ "wehtun": {
+  "de": "wehtun",
+  "forms": "tut weh · tat weh · hat wehgetan",
+  "governs": "+ Dat."
+ },
+ "anmachen": {
+  "de": "anmachen",
+  "forms": "macht an · machte an · hat angemacht",
+  "governs": ""
+ },
+ "chatten": {
+  "de": "chatten",
+  "forms": "chattet · chattete · hat gechattet",
+  "governs": "mit + Dat."
+ },
+ "wegbringen": {
+  "de": "wegbringen",
+  "forms": "bringt weg · brachte weg · hat weggebracht",
+  "governs": ""
+ },
+ "zurücklaufen": {
+  "de": "zurücklaufen",
+  "forms": "läuft zurück · lief zurück · ist zurückgelaufen",
+  "governs": ""
+ },
+ "wegmachen": {
+  "de": "wegmachen",
+  "forms": "macht weg · machte weg · hat weggemacht",
+  "governs": ""
+ },
+ "dabei sein": {
+  "de": "dabei sein",
+  "forms": "ist dabei · war dabei · ist dabei gewesen",
+  "governs": ""
+ },
+ "dafür sein": {
+  "de": "dafür sein",
+  "forms": "ist dafür · war dafür · ist dafür gewesen",
+  "governs": ""
+ },
+ "einverstanden sein": {
+  "de": "einverstanden sein",
+  "forms": "ist einverstanden · war einverstanden · ist einverstanden gewesen",
+  "governs": "mit + Dat."
+ },
+ "erkältet sein": {
+  "de": "erkältet sein",
+  "forms": "ist erkältet · war erkältet · ist erkältet gewesen",
+  "governs": ""
+ },
+ "erlaubt sein": {
+  "de": "erlaubt sein",
+  "forms": "ist erlaubt · war erlaubt · ist erlaubt gewesen",
+  "governs": ""
+ },
+ "fertig sein": {
+  "de": "fertig sein",
+  "forms": "ist fertig · war fertig · ist fertig gewesen",
+  "governs": "mit + Dat."
+ },
+ "fit sein": {
+  "de": "fit sein",
+  "forms": "ist fit · war fit · ist fit gewesen",
+  "governs": ""
+ },
+ "gültig sein": {
+  "de": "gültig sein",
+  "forms": "ist gültig · war gültig · ist gültig gewesen",
+  "governs": ""
+ },
+ "her kommen": {
+  "de": "her kommen",
+  "forms": "kommt her · kam her · ist hergekommen",
+  "governs": ""
+ },
+ "sich über informieren": {
+  "de": "sich über informieren",
+  "forms": "informiert sich · informierte sich · hat sich informiert",
+  "governs": "über + Akk."
+ },
+ "recht haben": {
+  "de": "recht haben",
+  "forms": "hat recht · hatte recht · hat recht gehabt",
+  "governs": ""
+ },
+ "spazieren gehen": {
+  "de": "spazieren gehen",
+  "forms": "geht spazieren · ging spazieren · ist spazieren gegangen",
+  "governs": ""
+ },
+ "unterwegs sein": {
+  "de": "unterwegs sein",
+  "forms": "ist unterwegs · war unterwegs · ist unterwegs gewesen",
+  "governs": ""
+ },
+ "verabredet sein": {
+  "de": "verabredet sein",
+  "forms": "ist verabredet · war verabredet · ist verabredet gewesen",
+  "governs": "mit + Dat."
+ },
+ "verboten sein": {
+  "de": "verboten sein",
+  "forms": "ist verboten · war verboten · ist verboten gewesen",
+  "governs": ""
+ },
+ "wem": {
+  "de": "wem",
+  "forms": "(not a verb: dative of the question word 'wer' = to whom)",
+  "governs": ""
+ }
+}

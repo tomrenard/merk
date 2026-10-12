@@ -107,7 +107,8 @@ export function checkTyped(input: string, headword: string, governs?: string | n
   const given = answerKey(input);
   if (!given) return "blank";
   const answers = acceptedAnswers(headword).map(answerKey);
-  const prep = governs?.split(" ")[0];
+  // "auf + Akk." names a preposition; "+ Dat." only a case, nothing to type.
+  const prep = governs?.match(/^\p{Ll}+/u)?.[0];
   if (prep) answers.push(...answers.map((answer) => `${answer} ${answerKey(prep)}`));
   if (answers.includes(given)) return "right";
   if (articleOf(headword) && answers.some((a) => withoutArticle(a) === withoutArticle(given))) {

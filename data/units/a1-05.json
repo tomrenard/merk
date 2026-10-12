@@ -3,7 +3,7 @@
  "cefr": "A1",
  "title": "Gender and articles: der, die, das, ein, eine",
  "situation": "Things in your flat",
- "canDo": "You can name the things in your flat with the right article and say what there is, using ein, eine and es gibt.",
+ "canDo": "You can name the things in your flat with the right article, and use ein/eine for something new and der/die/das for something known.",
  "explanation": "Every German noun has a gender: **der** (masculine), **die** (feminine) or **das** (neuter). The article is part of the word, so always learn them together: *der Tisch, die Lampe, das Bett.* Nouns always start with a capital letter.\n\n| | definite (the) | indefinite (a) |\n|---|---|---|\n| masculine | der Tisch | ein Tisch |\n| feminine | die Lampe | eine Lampe |\n| neuter | das Bett | ein Bett |\n| plural | die Stühle | – Stühle |\n\nUse **ein/eine** when you mention something for the first time, **der/die/das** when it is known: *Da ist ein Sofa. Das Sofa ist neu.*\n\nThe gender often doesn't follow logic, but some endings help:\n- **die**: -ung, -heit, -keit, -e (often): die Wohnung, die Küche\n- **das**: -chen, -um, -ment: das Mädchen, das Zentrum, das Apartment\n- **der**: days, months, seasons: der Montag, der Sommer\n\nThe pronoun follows the article: der → **er**, die → **sie**, das → **es**: *Die Lampe ist alt. Sie ist schön.*\n\nTip: the colours in merk help: blue = der, red = die, green = das.",
  "french": "German has three genders, French two, and they often differ: la table → der Tisch, le lit → das Bett, la lune → der Mond, so don't copy the French gender.",
  "examples": [

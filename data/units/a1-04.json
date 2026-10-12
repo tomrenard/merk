@@ -89,11 +89,15 @@
   },
   {
    "id": "a1-04-05",
-   "type": "cloze",
-   "de": "Der Kaffee ist ___ heiß.",
-   "base": "nicht",
+   "type": "order",
+   "tiles": [
+    "Der Kaffee",
+    "ist",
+    "nicht",
+    "heiß"
+   ],
    "answers": [
-    "nicht"
+    "Der Kaffee ist nicht heiß."
    ],
    "en": "The coffee isn't hot."
   },
@@ -116,8 +120,7 @@
    "de": "___ Sie bestellen?",
    "base": "möchten",
    "answers": [
-    "Möchten",
-    "Moechten"
+    "Möchten"
    ],
    "en": "Would you like to order?"
   },
@@ -150,13 +153,18 @@
   },
   {
    "id": "a1-04-10",
-   "type": "cloze",
-   "de": "Ich mag Tee ___.",
-   "base": "nicht",
-   "answers": [
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "mag",
+    "das",
     "nicht"
    ],
-   "en": "I don't like tea."
+   "answers": [
+    "Ich mag das nicht.",
+    "Das mag ich nicht."
+   ],
+   "en": "I don't like that."
   },
   {
    "id": "a1-04-11",
@@ -181,7 +189,8 @@
     "trinke"
    ],
    "answers": [
-    "Ich trinke heute nicht."
+    "Ich trinke heute nicht.",
+    "Heute trinke ich nicht."
    ],
    "en": "I'm not drinking today."
   },
@@ -191,8 +200,7 @@
    "de": "___ du auch einen Kuchen?",
    "base": "möchten",
    "answers": [
-    "Möchtest",
-    "Moechtest"
+    "Möchtest"
    ],
    "en": "Would you like a cake too?"
   },
@@ -285,12 +293,15 @@
   },
   {
    "id": "a1-04-21",
-   "type": "cloze",
+   "type": "choice",
    "de": "___ du heute Zeit?",
-   "base": "haben",
-   "answers": [
-    "Hast"
+   "options": [
+    "Hast",
+    "Habst",
+    "Hat"
    ],
+   "answer": 0,
+   "why": "haben is irregular: du hast.",
    "en": "Do you have time today?"
   },
   {
@@ -321,11 +332,17 @@
   },
   {
    "id": "a1-04-24",
-   "type": "cloze",
-   "de": "Ich esse ___ gern Fisch.",
-   "base": "nicht",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "esse",
+    "nicht",
+    "gern",
+    "Fisch"
+   ],
    "answers": [
-    "nicht"
+    "Ich esse nicht gern Fisch.",
+    "Fisch esse ich nicht gern."
    ],
    "en": "I don't like eating fish."
   }

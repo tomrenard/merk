@@ -2,34 +2,15 @@
 
 import { useState } from "react";
 import { sameAnswer } from "@/lib/german";
-import type { UnitItem } from "@/lib/units";
+import { shuffled, type UnitItem } from "@/lib/units";
+import { PANEL, SOLID } from "../feedback";
 import { speak } from "../review/German";
-
-const PANEL = {
-  right: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
-  wrong: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
-};
-const BUTTON = {
-  idle: "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]",
-  right: "[--c:#2f7d00] [--edge:#235e00]",
-  wrong: "[--c:#d61f1f] [--edge:#a51515]",
-};
 
 /** The sentence with the gap filled in, for feedback and speech. */
 function solved(item: UnitItem): string {
   if (item.type === "order") return item.answers[0] ?? "";
   const answer = item.type === "cloze" ? item.answers[0] : item.options[item.answer];
   return item.de.replace("___", answer ?? "");
-}
-
-/** Shuffled once per item, so tiles don't jump around while you tap. */
-function shuffled<T>(items: readonly T[]): T[] {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j] as T, copy[i] as T];
-  }
-  return copy;
 }
 
 /**
@@ -41,6 +22,10 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
   const [picked, setPicked] = useState<number | null>(null);
   const [pool] = useState(() =>
     item.type === "order" ? shuffled(item.tiles.map((tile, i) => ({ tile, i }))) : [],
+  );
+  // Options in a random order: in the content the right one is often first.
+  const [options] = useState(() =>
+    item.type === "choice" ? shuffled(item.options.map((option, i) => ({ option, i }))) : [],
   );
   const [placed, setPlaced] = useState<number[]>([]);
   const [result, setResult] = useState<"right" | "wrong" | null>(null);
@@ -130,7 +115,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
       )}
       {item.type === "choice" && (
         <div className="grid grid-cols-2 gap-2">
-          {item.options.map((option, i) => (
+          {options.map(({ option, i }) => (
             <button
               key={option}
               type="button"
@@ -179,7 +164,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
         type="submit"
         disabled={!ready && !result}
         onMouseDown={(event) => event.preventDefault()}
-        className={`btn btn-solid w-full disabled:opacity-50 ${BUTTON[result ?? "idle"]}`}
+        className={`btn btn-solid w-full disabled:opacity-50 ${SOLID[result ?? "idle"]}`}
       >
         {result ? "Continue" : "Check"}
       </button>

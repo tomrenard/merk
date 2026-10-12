@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { nextUnit, PASS, UNITS, unitScores } from "@/lib/course";
+import { CHECK_SIZE, nextUnit, PASS, UNITS, unitScores } from "@/lib/course";
 import { TabBar } from "../TabBar";
 
 export const dynamic = "force-dynamic";
@@ -45,7 +45,7 @@ export default async function CoursePage() {
                   <span className="block font-extrabold">{unit.title}</span>
                   <span className="muted text-sm font-semibold">
                     {unit.situation}
-                    {best !== undefined && ` · best ${best}/6`}
+                    {best !== undefined && ` · best ${best}/${CHECK_SIZE}`}
                   </span>
                 </span>
                 <span className="muted text-2xl font-black">›</span>

@@ -192,7 +192,8 @@
     "Mein Bruder"
    ],
    "answers": [
-    "Mein Bruder arbeitet in München."
+    "Mein Bruder arbeitet in München.",
+    "In München arbeitet mein Bruder."
    ],
    "en": "My brother works in Munich."
   },
@@ -301,7 +302,9 @@
     "jetzt"
    ],
    "answers": [
-    "Meine Eltern wohnen jetzt in Hamburg."
+    "Meine Eltern wohnen jetzt in Hamburg.",
+    "Jetzt wohnen meine Eltern in Hamburg.",
+    "In Hamburg wohnen meine Eltern jetzt."
    ],
    "en": "My parents live in Hamburg now."
   },
@@ -332,7 +335,8 @@
     "du"
    ],
    "answers": [
-    "Woher kommst du und wo wohnst du?"
+    "Woher kommst du und wo wohnst du?",
+    "Wo wohnst du und woher kommst du?"
    ],
    "en": "Where are you from and where do you live?"
   }

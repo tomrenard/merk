@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { type Drill, drills, isRightDrill } from "@/lib/drills";
+import { PANEL, SOLID } from "../../feedback";
 import { SoundToggle, speak } from "../../review/German";
 
 const ROUND = 10;
@@ -110,7 +111,7 @@ export default function NumbersPage() {
         />
         {checked && drill && (
           <div
-            className={`flex flex-col gap-1 rounded-2xl p-4 ${right ? "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300" : "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300"}`}
+            className={`flex flex-col gap-1 rounded-2xl p-4 ${PANEL[right ? "right" : "wrong"]}`}
           >
             <p className="text-xl font-black">{right ? "✓ Richtig!" : `✗ It was ${drill.shown}`}</p>
             <p className="font-semibold">„{drill.say}"</p>
@@ -119,7 +120,7 @@ export default function NumbersPage() {
         <button
           type="submit"
           onMouseDown={(event) => event.preventDefault()}
-          className={`btn btn-solid w-full ${!checked ? "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]" : right ? "[--c:#2f7d00] [--edge:#235e00]" : "[--c:#d61f1f] [--edge:#a51515]"}`}
+          className={`btn btn-solid w-full ${SOLID[!checked ? "idle" : right ? "right" : "wrong"]}`}
         >
           {checked ? "Continue" : "Check"}
         </button>

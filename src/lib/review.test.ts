@@ -112,7 +112,8 @@ describe("unit review cards", () => {
     await startUnitCard({ id: "a1-01", cefr: "A1", title: "sein", canDo: "Say who you are" });
     await startUnitCard({ id: "a1-01", cefr: "A1", title: "sein", canDo: "Say who you are" });
     const [card] = await db.select().from(cards).where(eq(cards.id, "unit:a1-01:unit"));
-    expect(card?.due?.getTime()).toBeGreaterThan(Date.now());
+    expect(card?.due?.getTime()).toBeGreaterThan(Date.now() + DAY);
+    expect(card?.fsrs?.state).toBe(State.Review);
     expect(card?.introducedAt).not.toBeNull();
     expect((await counts()).newLeft).toBe(3);
   });

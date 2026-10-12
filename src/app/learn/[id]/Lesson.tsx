@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, useTransition } from "react";
-import type { Unit, UnitItem } from "@/lib/units";
+import { useState, useTransition } from "react";
+import { shuffled, type Unit } from "@/lib/units";
 import { SoundToggle, speak, useSpeechUnlock } from "../../review/German";
 import { recordUnit } from "../actions";
 import { Exercise } from "../Exercise";
@@ -26,9 +26,9 @@ export function Lesson({
 }) {
   useSpeechUnlock();
   const [step, setStep] = useState<Step>("learn");
-  // Shuffled after mount: a random order on the server would not match the browser.
-  const [order, setOrder] = useState<UnitItem[]>([]);
-  useEffect(() => setOrder([...unit.items].sort(() => Math.random() - 0.5)), [unit]);
+  // The first screen doesn't show the items, so server and browser orders may differ.
+  const [order] = useState(() => shuffled(unit.items));
+  const [saveFailed, setSaveFailed] = useState(false);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [saving, startSaving] = useTransition();
@@ -42,8 +42,18 @@ export function Lesson({
     if (index + 1 < items.length) return setIndex(index + 1);
     setIndex(0);
     if (step === "drill") return setStep("check");
+    save(newScore);
+  }
+
+  /** Saves the check; on failure (offline, server down) the score is kept for a retry. */
+  function save(final: number) {
     startSaving(async () => {
-      await recordUnit(unit.id, newScore);
+      try {
+        await recordUnit(unit.id, final);
+        setSaveFailed(false);
+      } catch {
+        setSaveFailed(true);
+      }
       setStep("done");
     });
   }
@@ -107,7 +117,17 @@ export function Lesson({
             ? "It will come back in your reviews, so it sticks."
             : `You need ${pass} to pass. Try it again another day; the next unit is open anyway.`}
         </p>
-        {next && (
+        {saveFailed && (
+          <button
+            type="button"
+            disabled={saving}
+            onClick={() => save(score)}
+            className="btn btn-primary"
+          >
+            Couldn't save: retry
+          </button>
+        )}
+        {next && !saveFailed && (
           <Link href={`/learn/${next}`} className="btn btn-primary">
             Next unit
           </Link>

@@ -5,22 +5,10 @@ import { useState } from "react";
 import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
+import { PANEL, SOLID } from "../feedback";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
-
-/** Colours of the answer panel and button. Sits right under the input, above the iPhone keyboard. */
-const FEEDBACK = {
-  idle: { panel: "", button: "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]" },
-  right: {
-    panel: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
-    button: "[--c:#2f7d00] [--edge:#235e00]",
-  },
-  wrong: {
-    panel: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
-    button: "[--c:#d61f1f] [--edge:#a51515]",
-  },
-};
 
 /** English → typed German over a fixed set, scored at the end. Nothing is saved. */
 export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
@@ -137,7 +125,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
 
         {checked && (
           <div
-            className={`flex flex-col items-start gap-1 rounded-2xl p-4 ${FEEDBACK[state].panel}`}
+            className={`flex flex-col items-start gap-1 rounded-2xl p-4 ${state === "idle" ? "" : PANEL[state]}`}
           >
             <p className="text-xl font-black">{right ? "✓ Richtig!" : "✗ Correct answer:"}</p>
             <German word={note.de} />
@@ -148,7 +136,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         <button
           type="submit"
           onMouseDown={(event) => event.preventDefault()}
-          className={`btn btn-solid w-full ${FEEDBACK[state].button}`}
+          className={`btn btn-solid w-full ${SOLID[state]}`}
         >
           {checked ? "Continue" : "Check"}
         </button>

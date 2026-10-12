@@ -226,7 +226,12 @@ export async function startUnitCard(unit: {
 }) {
   const noteId = `unit:${unit.id}`;
   const now = new Date();
-  const { card } = scheduler.next(createEmptyCard(now), now, Rating.Good);
+  // No 10-minute learning step: you just did the unit, so its first review is days away.
+  const { card } = fsrs({ enable_fuzz: true, enable_short_term: false }).next(
+    createEmptyCard(now),
+    now,
+    Rating.Good,
+  );
   await db().transaction(async (tx) => {
     await tx
       .insert(notes)

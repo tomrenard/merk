@@ -222,12 +222,15 @@
   },
   {
    "id": "a1-03-16",
-   "type": "cloze",
+   "type": "choice",
    "de": "Wie viele Sprachen ___ du?",
-   "base": "sprechen",
-   "answers": [
-    "sprichst"
+   "options": [
+    "sprichst",
+    "sprechst",
+    "spricht"
    ],
+   "answer": 0,
+   "why": "sprechen changes e to i with du: du sprichst.",
    "en": "How many languages do you speak?"
   },
   {
@@ -258,12 +261,15 @@
   },
   {
    "id": "a1-03-19",
-   "type": "cloze",
+   "type": "choice",
    "de": "Was ___ du gern?",
-   "base": "lesen",
-   "answers": [
-    "liest"
+   "options": [
+    "liest",
+    "lest",
+    "lesst"
    ],
+   "answer": 0,
+   "why": "lesen changes e to ie with du, and as the stem ends in s, du only adds -t: du liest.",
    "en": "What do you like to read?"
   },
   {

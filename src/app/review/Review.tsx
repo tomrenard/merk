@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { articleColor, isCorrect, spokenForm } from "@/lib/german";
+import { isCorrect, spokenForm } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
+import { German, speak } from "./German";
 
 const GRADES = [
   { rating: 1, label: "Again", className: "bg-red-600" },
@@ -12,30 +13,6 @@ const GRADES = [
   { rating: 3, label: "Good", className: "bg-green-600" },
   { rating: 4, label: "Easy", className: "bg-sky-600" },
 ];
-
-function speak(text: string) {
-  if (!("speechSynthesis" in window)) return;
-  speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "de-DE";
-  speechSynthesis.speak(utterance);
-}
-
-function German({ word }: { word: string }) {
-  return (
-    <button
-      type="button"
-      onClick={() => speak(spokenForm(word))}
-      className={`text-3xl font-semibold ${articleColor(word)}`}
-      title="Listen"
-    >
-      {word}{" "}
-      <span aria-hidden="true" className="text-xl opacity-50">
-        🔊
-      </span>
-    </button>
-  );
-}
 
 type Props = { first: ReviewItem | null };
 

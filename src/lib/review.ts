@@ -1,6 +1,6 @@
-import { and, asc, eq, lte, type SQL, sql } from "drizzle-orm";
+import { and, asc, eq, gte, lte, type SQL, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
-import { createEmptyCard, fsrs, type Grade, TypeConvert } from "ts-fsrs";
+import { createEmptyCard, fsrs, type Grade, State, TypeConvert } from "ts-fsrs";
 import { db } from "@/db/client";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { streakLength } from "@/lib/streak";
@@ -137,4 +137,42 @@ export async function activity() {
       latest.today,
     ),
   };
+}
+
+/**
+ * `remembered`: % of reviews of already-learned cards in the last 30 days not graded Again
+ * (null before there are any). `known`: words whose next German→English review is a week+ away.
+ */
+export async function progress() {
+  const [[row], known] = await Promise.all([
+    db()
+      .select({
+        remembered: sql<
+          number | null
+        >`round(100.0 * count(*) filter (where ${reviewLogs.rating} > 1) / nullif(count(*), 0))::int`,
+      })
+      .from(reviewLogs)
+      .where(
+        and(
+          eq(reviewLogs.state, State.Review),
+          gte(reviewLogs.reviewedAt, sql`now() - interval '30 days'`),
+        ),
+      ),
+    db().$count(
+      cards,
+      and(eq(cards.direction, "de_en"), sql`(${cards.fsrs}->>'scheduled_days')::int >= 7`),
+    ),
+  ]);
+  return { remembered: row?.remembered ?? null, known };
+}
+
+export type PracticeScope = "today" | "all";
+
+/** Up to 20 random words to practise: ones studied today, or any seen so far. */
+export async function practiceWords(scope: PracticeScope) {
+  const studied =
+    scope === "today"
+      ? sql`exists (select 1 from ${reviewLogs} join ${cards} on ${cards.id} = ${reviewLogs.cardId} where ${cards.noteId} = ${notes.id} and ${reviewLogs.reviewedAt} >= ${DAY_START})`
+      : sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.introducedAt} is not null)`;
+  return db().select().from(notes).where(studied).orderBy(sql`random()`).limit(20);
 }

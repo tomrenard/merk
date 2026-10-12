@@ -47,16 +47,20 @@ export const cards = pgTable(
   (t) => [index("cards_due_idx").on(t.due), index("cards_note_idx").on(t.noteId)],
 );
 
-export const reviewLogs = pgTable("review_logs", {
-  id: serial("id").primaryKey(),
-  cardId: text("card_id")
-    .notNull()
-    .references(() => cards.id, { onDelete: "cascade" }),
-  rating: smallint("rating").notNull(),
-  state: smallint("state").notNull(),
-  durationMs: integer("duration_ms"),
-  reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull().defaultNow(),
-});
+export const reviewLogs = pgTable(
+  "review_logs",
+  {
+    id: serial("id").primaryKey(),
+    cardId: text("card_id")
+      .notNull()
+      .references(() => cards.id, { onDelete: "cascade" }),
+    rating: smallint("rating").notNull(),
+    state: smallint("state").notNull(),
+    durationMs: integer("duration_ms"),
+    reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("review_logs_card_idx").on(t.cardId, t.reviewedAt)],
+);
 
 /** A single row: there is one user. */
 export const settings = pgTable(

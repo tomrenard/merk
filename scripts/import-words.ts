@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { and, eq, isNull, notInArray, sql } from "drizzle-orm";
+import { and, eq, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
 import { z } from "zod";
 import { connect } from "../src/db/client.ts";
 import { cards, notes } from "../src/db/schema.ts";
@@ -176,41 +176,57 @@ async function b1Notes(): Promise<Note[]> {
 const words = [...a1Notes(), ...a2Notes(), ...(await b1Notes())];
 const db = connect();
 const before = await db.$count(notes);
-await db
-  .insert(notes)
-  .values(words)
-  .onConflictDoUpdate({
-    target: notes.id,
-    set: {
-      ord: sql`excluded.ord`,
-      de: sql`excluded.de`,
-      en: sql`excluded.en`,
-      exampleDe: sql`excluded.example_de`,
-      exampleEn: sql`excluded.example_en`,
-      hint: sql`excluded.hint`,
-    },
-    setWhere: sql`${notes.editedAt} is null`,
-  });
-// A1 rows dropped as duplicates go, with their cards; edited ones stay. Only A1: the other
-// lists come from upstream repos, and a change there must not wipe your history.
-const a1Ids = words.filter((w) => w.source === "goethe-a1").map((w) => w.id);
-if (!a1Ids.length) throw new Error("No A1 words loaded");
-const dropped = await db
-  .delete(notes)
-  .where(and(eq(notes.source, "goethe-a1"), notInArray(notes.id, a1Ids), isNull(notes.editedAt)))
-  .returning({ id: notes.id });
-await db
-  .insert(cards)
-  .values(
-    words.flatMap((note) =>
-      (["de_en", "en_de"] as const).map((direction) => ({
-        id: `${note.id}:${direction}`,
-        noteId: note.id,
-        direction,
-      })),
-    ),
-  )
-  .onConflictDoNothing();
+const introduced = () => db.$count(cards, isNotNull(cards.introducedAt));
+const introducedBefore = await introduced();
+// One transaction: a failure half-way leaves the deck as it was.
+const dropped = await db.transaction(async (tx) => {
+  await tx
+    .insert(notes)
+    .values(words)
+    .onConflictDoUpdate({
+      target: notes.id,
+      set: {
+        ord: sql`excluded.ord`,
+        de: sql`excluded.de`,
+        en: sql`excluded.en`,
+        exampleDe: sql`excluded.example_de`,
+        exampleEn: sql`excluded.example_en`,
+        hint: sql`excluded.hint`,
+      },
+      setWhere: sql`${notes.editedAt} is null`,
+    });
+  // A1 rows dropped as duplicates go, with their cards; edited ones stay. Only A1: the other
+  // lists come from upstream repos, and a change there must not wipe your history.
+  const a1Ids = words.filter((w) => w.source === "goethe-a1").map((w) => w.id);
+  if (!a1Ids.length) throw new Error("No A1 words loaded");
+  // Never a note you have started learning: its review history would go with it.
+  const removed = await tx
+    .delete(notes)
+    .where(
+      and(
+        eq(notes.source, "goethe-a1"),
+        notInArray(notes.id, a1Ids),
+        isNull(notes.editedAt),
+        sql`not exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.introducedAt} is not null)`,
+      ),
+    )
+    .returning({ id: notes.id });
+  await tx
+    .insert(cards)
+    .values(
+      words.flatMap((note) =>
+        (["de_en", "en_de"] as const).map((direction) => ({
+          id: `${note.id}:${direction}`,
+          noteId: note.id,
+          direction,
+        })),
+      ),
+    )
+    .onConflictDoNothing();
+  return removed;
+});
+if ((await introduced()) !== introducedBefore)
+  throw new Error("Started cards changed: check the import");
 const perLevel = ["A1", "A2", "B1"].map((l) => `${l}: ${words.filter((w) => w.cefr === l).length}`);
 const added = (await db.$count(notes)) - before + dropped.length;
 console.log(`${perLevel.join(", ")} · ${added} new notes, ${dropped.length} removed`);

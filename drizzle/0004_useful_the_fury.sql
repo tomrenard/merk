@@ -1,0 +1,1 @@
+CREATE INDEX "review_logs_card_idx" ON "review_logs" USING btree ("card_id","reviewed_at");

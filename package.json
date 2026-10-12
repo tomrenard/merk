@@ -9,8 +9,9 @@
     "lint": "biome check .",
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
-    "import:words": "node --env-file=.env.local --env-file-if-exists=.env.vercel --experimental-strip-types scripts/import-words.ts"
+    "db:migrate": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
+    "import:words": "pnpm db:backup && node --env-file=.env.local --env-file-if-exists=.env.vercel --experimental-strip-types scripts/import-words.ts",
+    "db:backup": "node --env-file=.env.local --experimental-strip-types scripts/backup.ts"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.4",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
     "@biomejs/biome": "2.5.14",
+    "@electric-sql/pglite": "0.5.8",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",

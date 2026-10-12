@@ -21,10 +21,10 @@ async function save(form: FormData) {
 export default async function SettingsPage() {
   const current = await getSettings();
   return (
-    <form action={save} className="mx-auto mt-16 flex max-w-xs flex-col gap-4 p-4">
-      <h1 className="text-2xl font-semibold">Settings</h1>
+    <form action={save} className="card mx-auto mt-16 flex max-w-xs flex-col gap-4">
+      <h1 className="text-3xl font-extrabold">Settings</h1>
       <label className="flex flex-col gap-1">
-        <span className="text-sm opacity-60">New cards per day</span>
+        <span className="muted text-sm font-semibold">New cards per day</span>
         <input
           type="number"
           name="newPerDay"
@@ -37,7 +37,7 @@ export default async function SettingsPage() {
       <button type="submit" className="btn btn-primary">
         Save
       </button>
-      <Link href="/" className="text-center text-sm opacity-60">
+      <Link href="/" className="muted text-center text-sm font-semibold">
         Cancel
       </Link>
     </form>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
-import { German, speak } from "../review/German";
+import { German, Headword, speak } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
 
@@ -18,16 +18,18 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
 
   if (!note) {
     return (
-      <section className="mt-12 flex flex-col gap-4 text-center">
-        <p className="text-4xl font-semibold">
+      <section className="card mt-8 flex flex-col gap-4 text-center">
+        <p className="text-6xl">
+          {missed.length === 0 ? "🏆" : missed.length <= words.length / 4 ? "💪" : "📖"}
+        </p>
+        <p className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-6xl font-extrabold text-transparent">
           {words.length - missed.length}/{words.length}
         </p>
         {missed.length > 0 && (
           <ul className="flex flex-col divide-y divide-current/10 text-left">
             {missed.map((m) => (
               <li key={m.id} className="py-2">
-                <span className="font-medium">{m.de}</span>{" "}
-                <span className="opacity-70">{m.en}</span>
+                <Headword de={m.de} className="font-bold" /> <span className="muted">{m.en}</span>
               </li>
             ))}
           </ul>
@@ -56,11 +58,17 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   }
 
   return (
-    <section className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
-      <p className="text-sm opacity-60">
+    <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
+      <div className="h-2 w-full overflow-hidden rounded-full bg-current/10">
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-orange-400 transition-[width]"
+          style={{ width: `${(index / words.length) * 100}%` }}
+        />
+      </div>
+      <p className="muted text-sm font-semibold">
         {index + 1}/{words.length}
       </p>
-      <p className="text-3xl font-semibold">{note.en}</p>
+      <p className="text-3xl font-bold">{note.en}</p>
       <form
         className="mt-4 w-full"
         onSubmit={(event) => {
@@ -95,7 +103,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
       </form>
       {checked && (
         <div className="mt-2 flex flex-col items-center gap-2">
-          <p className={right ? "text-green-600" : "text-red-600"}>
+          <p
+            className={`font-bold ${right ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}`}
+          >
             {right ? "✓ Richtig" : `✗ ${typed || "—"}`}
           </p>
           <German word={note.de} />

@@ -2,7 +2,7 @@ import { asc, eq, ilike, or, sql } from "drizzle-orm";
 import Link from "next/link";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
-import { articleColor } from "@/lib/german";
+import { Headword } from "../review/German";
 
 export const dynamic = "force-dynamic";
 
@@ -21,10 +21,12 @@ export default async function WordsPage({
     .where(q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined)
     .orderBy(asc(notes.ord));
   return (
-    <main className="mx-auto flex max-w-md flex-col gap-4 p-4">
-      <header className="flex justify-between text-sm opacity-60">
-        <Link href="/">← merk</Link>
-        <span>
+    <main className="mx-auto flex max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+      <header className="topbar">
+        <Link href="/" className="pill">
+          ← merk
+        </Link>
+        <span className="pill">
           {words.length} {q ? "found" : "words"}
         </span>
       </header>
@@ -40,7 +42,7 @@ export default async function WordsPage({
           className="field w-full"
         />
       </form>
-      <ul className="flex flex-col divide-y divide-current/10">
+      <ul className="card flex flex-col divide-y divide-current/10 py-2">
         {words.map((word) => (
           <li key={word.id}>
             <Link
@@ -48,10 +50,10 @@ export default async function WordsPage({
               className="flex items-baseline justify-between gap-3 py-2"
             >
               <span>
-                <span className={`font-medium ${articleColor(word.de)}`}>{word.de}</span>{" "}
-                <span className="opacity-70">{word.en}</span>
+                <Headword de={word.de} className="font-bold" />{" "}
+                <span className="muted">{word.en}</span>
               </span>
-              <span className="shrink-0 text-xs opacity-50">
+              <span className="muted shrink-0 text-xs font-semibold">
                 {word.cefr} · {word.due ? word.due.toLocaleDateString("de-DE") : "new"}
               </span>
             </Link>

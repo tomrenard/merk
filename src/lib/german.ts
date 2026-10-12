@@ -4,15 +4,26 @@ export function articleOf(headword: string): string | null {
 }
 
 const ARTICLE_COLOR: Record<string, string> = {
-  der: "text-blue-600 dark:text-blue-400",
-  die: "text-red-600 dark:text-red-400",
-  das: "text-green-600 dark:text-green-400",
-  "der/die": "text-purple-600 dark:text-purple-400",
+  der: "text-blue-600 dark:text-sky-300",
+  die: "text-rose-600 dark:text-rose-300",
+  das: "text-emerald-600 dark:text-emerald-300",
+  "der/die": "text-violet-600 dark:text-violet-300",
 };
 
 /** Tailwind colour for a headword's gender: der blue, die red, das green. */
 export function articleColor(headword: string): string {
   return ARTICLE_COLOR[articleOf(headword) ?? ""] ?? "";
+}
+
+/**
+ * Splits "der Apfel, -̈" into the word and its plural note, for display. The lists mark umlaut
+ * plurals with a combining diaeresis on the hyphen, which fonts draw on the next letter
+ * ("-ë"), so it becomes a standalone "¨".
+ */
+export function splitPlural(headword: string): [string, string | null] {
+  const at = headword.indexOf(", ");
+  if (at < 0) return [headword, null];
+  return [headword.slice(0, at), headword.slice(at).replace(/-\u0308/g, "-¨")];
 }
 
 /**

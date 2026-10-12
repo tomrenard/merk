@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, isCorrect, lemmaKeys, spokenForm } from "./german.ts";
+import { articleOf, isCorrect, lemmaKeys, splitPlural, spokenForm } from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -63,5 +63,13 @@ describe("spokenForm", () => {
     expect(spokenForm("gern(e)")).toBe("gerne");
     expect(spokenForm("dein-")).toBe("dein");
     expect(spokenForm("das Stück/-stück")).toBe("das Stück, stück");
+  });
+});
+
+describe("splitPlural", () => {
+  it("separates the plural and makes umlaut marks readable", () => {
+    expect(splitPlural("die Ansage, -n")).toEqual(["die Ansage", ", -n"]);
+    expect(splitPlural("der Arzt, -\u0308e")).toEqual(["der Arzt", ", -¨e"]);
+    expect(splitPlural("retten")).toEqual(["retten", null]);
   });
 });

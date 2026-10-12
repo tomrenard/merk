@@ -1,35 +1,93 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-bricolage), system-ui, sans-serif;
+}
+
 :root {
   color-scheme: light dark;
-  --bg: #fafaf9;
-  --fg: #1c1917;
-  --accent: #0284c7;
+  --bg: #fdf8f3;
+  --fg: #1e1530;
+  --muted: color-mix(in oklab, var(--fg) 60%, transparent);
+  --glass: rgb(255 255 255 / 0.62);
+  --glass-border: rgb(255 255 255 / 0.9);
+  --shadow: 0 10px 30px -12px rgb(76 29 149 / 0.25);
+  --blob-1: #c4b5fd;
+  --blob-2: #f9a8d4;
+  --blob-3: #fcd34d;
+  --blob-4: #99f6e4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1c1917;
-    --fg: #f5f5f4;
+    --bg: #120c22;
+    --fg: #f5f0ff;
+    --glass: rgb(40 28 70 / 0.55);
+    --glass-border: rgb(255 255 255 / 0.08);
+    --shadow: 0 10px 30px -12px rgb(0 0 0 / 0.6);
+    --blob-1: #5b21b6;
+    --blob-2: #9d174d;
+    --blob-3: #92400e;
+    --blob-4: #115e59;
   }
 }
 
 body {
-  background: var(--bg);
+  min-height: 100dvh;
   color: var(--fg);
-  font-family: system-ui, sans-serif;
+  background:
+    radial-gradient(40rem 30rem at 0% 0%, var(--blob-1), transparent 60%),
+    radial-gradient(35rem 30rem at 100% 10%, var(--blob-2), transparent 60%),
+    radial-gradient(35rem 30rem at 100% 100%, var(--blob-3), transparent 60%),
+    radial-gradient(35rem 30rem at 0% 90%, var(--blob-4), transparent 60%), var(--bg);
+  background-attachment: fixed;
   -webkit-tap-highlight-color: transparent;
 }
 
 @layer components {
+  /* Frosted panel: the one surface every screen is built from. */
+  .card {
+    @apply rounded-[28px] border p-5 backdrop-blur-xl;
+    background: var(--glass);
+    border-color: var(--glass-border);
+    box-shadow: var(--shadow);
+  }
+
+  /* Chunky button: a darker edge underneath that disappears when pressed. */
   .btn {
-    @apply rounded-lg px-4 py-3 font-medium;
+    --edge: rgb(0 0 0 / 0.12);
+    @apply inline-flex items-center justify-center rounded-2xl px-5 py-3.5 text-center font-bold transition-[translate,box-shadow] duration-75 select-none;
+    background: var(--glass);
+    box-shadow: 0 4px 0 var(--edge);
+  }
+  .btn:active:not(:disabled) {
+    translate: 0 4px;
+    box-shadow: 0 0 0 var(--edge);
   }
   .btn-primary {
-    background: var(--accent);
+    --edge: #5b21b6;
     @apply text-white;
+    background: linear-gradient(135deg, #8b5cf6, #d946ef 55%, #f97316);
   }
+
   .field {
-    @apply rounded-lg border border-current/20 bg-transparent px-3 py-2;
+    @apply rounded-2xl border-2 border-transparent px-4 py-3 outline-none transition-colors;
+    background: var(--glass);
+  }
+  .field:focus {
+    border-color: #a855f7;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  /* Header row of every inner screen: back link left, context right. */
+  .topbar {
+    @apply flex items-center justify-between text-sm font-semibold;
+  }
+  .pill {
+    @apply rounded-full px-3 py-1;
+    background: var(--glass);
   }
 }

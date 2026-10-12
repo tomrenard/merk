@@ -60,9 +60,9 @@ export default async function EditWordPage({
   if (!note) notFound();
   const back = (await searchParams).back === "review" ? "review" : "words";
   return (
-    <form action={save} className="mx-auto mt-8 flex max-w-md flex-col gap-4 p-4">
-      <h1 className="text-2xl font-semibold">Edit word</h1>
-      <p className="text-sm opacity-60">
+    <form action={save} className="card mx-auto mt-8 flex max-w-md flex-col gap-4">
+      <h1 className="text-3xl font-extrabold">Edit word</h1>
+      <p className="muted text-sm font-semibold">
         {note.cefr} · {note.source}
         {note.editedAt && " · edited"}
       </p>
@@ -70,7 +70,7 @@ export default async function EditWordPage({
       <input type="hidden" name="back" value={back} />
       {FIELDS.map(({ name, label, required }) => (
         <label key={name} className="flex flex-col gap-1">
-          <span className="text-sm opacity-60">{label}</span>
+          <span className="muted text-sm font-semibold">{label}</span>
           <textarea
             name={name}
             defaultValue={note[name] ?? ""}
@@ -85,7 +85,7 @@ export default async function EditWordPage({
       <button type="submit" className="btn btn-primary">
         Save
       </button>
-      <Link href={BACK[back]} className="text-center text-sm opacity-60">
+      <Link href={BACK[back]} className="muted text-center text-sm font-semibold">
         Cancel
       </Link>
     </form>

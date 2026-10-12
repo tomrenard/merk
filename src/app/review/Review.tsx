@@ -8,10 +8,10 @@ import { gradeAndNext } from "./actions";
 import { German, speak } from "./German";
 
 const GRADES = [
-  { rating: 1, label: "Again", className: "bg-red-600" },
-  { rating: 2, label: "Hard", className: "bg-amber-600" },
-  { rating: 3, label: "Good", className: "bg-green-600" },
-  { rating: 4, label: "Easy", className: "bg-sky-600" },
+  { rating: 1, label: "Again", className: "bg-rose-500 [--edge:#9f1239]" },
+  { rating: 2, label: "Hard", className: "bg-amber-500 [--edge:#92400e]" },
+  { rating: 3, label: "Good", className: "bg-emerald-500 [--edge:#065f46]" },
+  { rating: 4, label: "Easy", className: "bg-sky-500 [--edge:#075985]" },
 ];
 
 type Props = { first: ReviewItem | null };
@@ -60,11 +60,17 @@ export function Review({ first }: Props) {
 
   if (!item) {
     return (
-      <main className="mx-auto mt-24 max-w-md text-center">
-        <p className="text-2xl">Fertig für heute! 🎉</p>
-        <Link href="/" className="btn mt-6 inline-block">
-          Back
-        </Link>
+      <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-6 p-5 text-center">
+        <p className="text-7xl">🎉</p>
+        <p className="text-3xl font-extrabold">Fertig für heute!</p>
+        <div className="flex w-full flex-col gap-3">
+          <Link href="/practice" className="btn btn-primary">
+            🎯 Practice today's words
+          </Link>
+          <Link href="/" className="btn">
+            Home
+          </Link>
+        </div>
       </main>
     );
   }
@@ -73,10 +79,12 @@ export function Review({ first }: Props) {
   const right = item.direction === "en_de" && typed && isCorrect(typed, note.de);
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-4">
-      <header className="flex justify-between text-sm opacity-60">
-        <Link href="/">← merk</Link>
-        <span>
+    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+      <header className="topbar">
+        <Link href="/" className="pill">
+          ← merk
+        </Link>
+        <span className="pill">
           {note.cefr} · {item.isNew ? "new" : "review"}
           {/* Only once revealed: the edit form shows the answer. */}
           {revealed && (
@@ -88,12 +96,12 @@ export function Review({ first }: Props) {
         </span>
       </header>
 
-      <section className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
+      <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
         {item.direction === "de_en" ? (
           <German word={note.de} />
         ) : (
           <>
-            <p className="text-3xl font-semibold">{note.en}</p>
+            <p className="text-3xl font-bold">{note.en}</p>
             <form
               className="mt-4 w-full"
               onSubmit={(event) => {
@@ -119,15 +127,17 @@ export function Review({ first }: Props) {
         )}
 
         {revealed && (
-          <div className="mt-4 flex w-full flex-col gap-3 border-t border-current/10 pt-4">
+          <div className="mt-4 flex w-full flex-col gap-3 border-t-2 border-dashed border-current/10 pt-4">
             {item.direction === "de_en" ? (
               <>
-                <p className="text-2xl">{note.en}</p>
+                <p className="text-2xl font-semibold">{note.en}</p>
               </>
             ) : (
               <>
                 {typed && (
-                  <p className={right ? "text-green-600" : "text-red-600"}>
+                  <p
+                    className={`font-bold ${right ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}`}
+                  >
                     {right ? "✓ Richtig" : `✗ ${typed}`}
                   </p>
                 )}
@@ -139,8 +149,8 @@ export function Review({ first }: Props) {
                 {note.exampleDe}
               </button>
             )}
-            {note.exampleEn && <p className="text-sm opacity-70">{note.exampleEn}</p>}
-            {note.hint && <p className="text-sm opacity-60">{note.hint}</p>}
+            {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}
+            {note.hint && <p className="muted text-sm">{note.hint}</p>}
           </div>
         )}
       </section>
@@ -154,7 +164,7 @@ export function Review({ first }: Props) {
                 type="button"
                 disabled={pending}
                 onClick={() => answer(g.rating)}
-                className={`btn text-white ${g.className} disabled:opacity-50`}
+                className={`btn px-1 text-white ${g.className} disabled:opacity-50`}
               >
                 {g.label}
               </button>

@@ -12,15 +12,19 @@ export default async function PracticePage({
   const scope: PracticeScope = (await searchParams).scope === "all" ? "all" : "today";
   const words = await practiceWords(scope);
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-4">
-      <header className="flex justify-between text-sm">
-        <Link href="/" className="opacity-60">
+    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+      <header className="topbar">
+        <Link href="/" className="pill">
           ← merk
         </Link>
-        <nav className="flex gap-4">
+        <nav className="flex gap-1 rounded-full p-1" style={{ background: "var(--glass)" }}>
           {(["today", "all"] as const).map((s) => (
-            <a key={s} href={`/practice?scope=${s}`} className={s === scope ? "" : "opacity-60"}>
-              {s === "today" ? "Today's words" : "All my words"}
+            <a
+              key={s}
+              href={`/practice?scope=${s}`}
+              className={`rounded-full px-3 py-1 ${s === scope ? "bg-violet-600 text-white" : "muted"}`}
+            >
+              {s === "today" ? "Today" : "All"}
             </a>
           ))}
         </nav>
@@ -28,7 +32,7 @@ export default async function PracticePage({
       {words.length ? (
         <Practice words={words} scope={scope} />
       ) : (
-        <p className="mt-24 text-center opacity-60">
+        <p className="card mt-24 text-center font-semibold">
           {scope === "today" ? "Nothing studied today yet." : "No words studied yet."}
         </p>
       )}

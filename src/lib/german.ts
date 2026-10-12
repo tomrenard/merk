@@ -15,6 +15,12 @@ export function articleColor(headword: string): string {
   return ARTICLE_COLOR[articleOf(headword) ?? ""] ?? "";
 }
 
+/** What the voice should read: "die Ansage, -n" → "die Ansage", "(sich) anziehen" → "sich anziehen". */
+export function spokenForm(headword: string): string {
+  const base = (headword.split(",")[0] ?? headword).replace("(pl.)", "");
+  return base.replace(/[()]/g, "").replace(/\//g, ", ").replace(/\s+/g, " ").trim();
+}
+
 /** Folds what a phone keyboard makes hard to type: case, umlauts as ae/oe/ue, ß as ss. */
 function normalize(text: string): string {
   return text

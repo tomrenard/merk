@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, isCorrect, lemmaKeys } from "./german.ts";
+import { articleOf, isCorrect, lemmaKeys, spokenForm } from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -48,5 +48,15 @@ describe("lemmaKeys", () => {
 
   it("keeps words that differ only by article apart", () => {
     expect(lemmaKeys("der See")).not.toEqual(lemmaKeys("die See"));
+  });
+});
+
+describe("spokenForm", () => {
+  it("drops the plural, brackets and slashes so the voice reads only words", () => {
+    expect(spokenForm("die Ansage, -n")).toBe("die Ansage");
+    expect(spokenForm("der Arzt, -̈e")).toBe("der Arzt");
+    expect(spokenForm("(sich) anziehen")).toBe("sich anziehen");
+    expect(spokenForm("viel/viele")).toBe("viel, viele");
+    expect(spokenForm("retten")).toBe("retten");
   });
 });

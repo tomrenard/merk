@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { articleColor, isCorrect } from "@/lib/german";
+import { articleColor, isCorrect, spokenForm } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
 
@@ -25,7 +25,7 @@ function German({ word }: { word: string }) {
   return (
     <button
       type="button"
-      onClick={() => speak(word)}
+      onClick={() => speak(spokenForm(word))}
       className={`text-3xl font-semibold ${articleColor(word)}`}
       title="Listen"
     >
@@ -47,12 +47,12 @@ export function Review({ first }: Props) {
   const shownAt = useRef(Date.now());
 
   useEffect(() => {
-    if (item?.direction === "de_en") speak(item.note.de);
+    if (item?.direction === "de_en") speak(spokenForm(item.note.de));
   }, [item]);
 
   function reveal() {
     setRevealed(true);
-    if (item?.direction === "en_de") speak(item.note.de);
+    if (item?.direction === "en_de") speak(spokenForm(item.note.de));
   }
 
   function answer(rating: number) {

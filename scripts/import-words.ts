@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { sql } from "drizzle-orm";
+import { and, isNull, notInArray, sql } from "drizzle-orm";
 import { z } from "zod";
 import { connect } from "../src/db/client.ts";
 import { cards, notes } from "../src/db/schema.ts";
@@ -40,26 +40,33 @@ const orNull = (value: string | undefined | null) => value?.trim() || null;
 
 /** Columns: anki id, German, example DE, English, example EN, hint, (unused), audio. */
 function a1Notes(): Note[] {
+  const pairs = new Set<string>();
   return readFileSync(`${DATA}goethe-a1.tsv`, "utf8")
     .split("\n")
     .filter((line) => line.trim())
     .map((line, ord) => {
       const [id, de, exampleDe, en, exampleEn, hint] = line.split("\t");
       if (!id || !de || !en) throw new Error(`Bad A1 row ${ord + 1}: ${line}`);
-      // Several A1 notes are senses of one word ("schlecht" ×3): all of them stay.
+      // Several A1 notes are senses of one word ("auf": on / until / in): those stay. A word
+      // repeated with the same English only differs by its example, so it is dropped.
+      const pair = `${de.trim()}\t${en.trim()}`;
+      if (pairs.has(pair)) return null;
+      pairs.add(pair);
       for (const key of lemmaKeys(de)) seen.add(key);
       return {
         id: `goethe-a1:${id}`,
         source: "goethe-a1",
         cefr: "A1",
         ord,
-        de: de.trim(),
+        // This deck writes umlaut plurals as "-ä, e" or "-Ä"; the other lists use "-̈e".
+        de: de.trim().replace(/, -[äöüÄÖÜ](?:, (\p{L}+))?$/u, ", -̈$1"),
         exampleDe: orNull(exampleDe),
         en: en.trim(),
         exampleEn: orNull(exampleEn),
         hint: orNull(hint),
       };
-    });
+    })
+    .filter((note) => note !== null);
 }
 
 function a2Notes(): Note[] {
@@ -184,6 +191,16 @@ await db
     },
     setWhere: sql`${notes.editedAt} is null`,
   });
+// Notes no longer in the lists (dropped duplicates) go, with their cards; edited ones stay.
+await db.delete(notes).where(
+  and(
+    notInArray(
+      notes.id,
+      words.map((w) => w.id),
+    ),
+    isNull(notes.editedAt),
+  ),
+);
 await db
   .insert(cards)
   .values(

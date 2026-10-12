@@ -3,6 +3,18 @@ export function articleOf(headword: string): string | null {
   return headword.match(/^(der\/die|der|die|das) /)?.[1] ?? null;
 }
 
+const ARTICLE_COLOR: Record<string, string> = {
+  der: "text-blue-600 dark:text-blue-400",
+  die: "text-red-600 dark:text-red-400",
+  das: "text-green-600 dark:text-green-400",
+  "der/die": "text-purple-600 dark:text-purple-400",
+};
+
+/** Tailwind colour for a headword's gender: der blue, die red, das green. */
+export function articleColor(headword: string): string {
+  return ARTICLE_COLOR[articleOf(headword) ?? ""] ?? "";
+}
+
 /** Folds what a phone keyboard makes hard to type: case, umlauts as ae/oe/ue, ß as ss. */
 function normalize(text: string): string {
   return text

@@ -3,6 +3,7 @@ import { alias } from "drizzle-orm/pg-core";
 import { createEmptyCard, fsrs, type Grade, TypeConvert } from "ts-fsrs";
 import { db } from "@/db/client";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
+import { streakLength } from "@/lib/streak";
 
 const scheduler = fsrs();
 
@@ -16,6 +17,10 @@ const DAY_START = sql`((date_trunc('day', (now() at time zone 'Europe/Berlin') -
 const sibling = alias(cards, "sibling");
 const siblingJoin = and(eq(sibling.noteId, cards.noteId), eq(sibling.direction, "de_en"));
 const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START})`;
+
+/** The study day a timestamp belongs to, as a date, with the same 4:00 Berlin rollover. */
+const studyDay = (at: SQL | typeof reviewLogs.reviewedAt) =>
+  sql`((${at} at time zone 'Europe/Berlin') - interval '4 hours')::date`;
 
 export type Settings = typeof settings.$inferSelect;
 export type ReviewItem = {
@@ -109,4 +114,27 @@ export async function grade(cardId: string, rating: Grade, durationMs: number, s
       reviewedAt: now,
     });
   });
+}
+
+/** Reviews done today, and how many study days in a row (today or yesterday counts as current). */
+export async function activity() {
+  const days = await db()
+    .selectDistinct({ day: sql<string>`${studyDay(reviewLogs.reviewedAt)}::text` })
+    .from(reviewLogs)
+    .orderBy(sql`1 desc`)
+    .limit(1000);
+  const [today] = await db()
+    .select({
+      day: sql<string>`${studyDay(sql`now()`)}::text`,
+      reviews: sql<number>`count(*)::int`,
+    })
+    .from(reviewLogs)
+    .where(sql`${reviewLogs.reviewedAt} >= ${DAY_START}`);
+  return {
+    reviewsToday: today?.reviews ?? 0,
+    streak: streakLength(
+      days.map((d) => d.day),
+      today?.day,
+    ),
+  };
 }

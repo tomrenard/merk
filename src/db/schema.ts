@@ -27,6 +27,8 @@ export const notes = pgTable("notes", {
   hint: text("hint"),
   explainEn: text("explain_en"),
   explainFr: text("explain_fr"),
+  /** Set when you fix a note by hand, so re-imports leave it alone. */
+  editedAt: timestamp("edited_at", { withTimezone: true }),
 });
 
 /** One direction of a note: `de_en` shows German, `en_de` asks for it. */

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { articleOf, isCorrect } from "@/lib/german";
+import { articleColor, isCorrect } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
 
@@ -13,13 +13,6 @@ const GRADES = [
   { rating: 4, label: "Easy", className: "bg-sky-600" },
 ];
 
-const ARTICLE_COLOR: Record<string, string> = {
-  der: "text-blue-600 dark:text-blue-400",
-  die: "text-red-600 dark:text-red-400",
-  das: "text-green-600 dark:text-green-400",
-  "der/die": "text-purple-600 dark:text-purple-400",
-};
-
 function speak(text: string) {
   if (!("speechSynthesis" in window)) return;
   speechSynthesis.cancel();
@@ -29,12 +22,11 @@ function speak(text: string) {
 }
 
 function German({ word }: { word: string }) {
-  const article = articleOf(word);
   return (
     <button
       type="button"
       onClick={() => speak(word)}
-      className={`text-3xl font-semibold ${article ? ARTICLE_COLOR[article] : ""}`}
+      className={`text-3xl font-semibold ${articleColor(word)}`}
       title="Listen"
     >
       {word}{" "}
@@ -108,7 +100,8 @@ export function Review({ first }: Props) {
       <header className="flex justify-between text-sm opacity-60">
         <Link href="/">← merk</Link>
         <span>
-          {note.cefr} · {item.isNew ? "new" : "review"}
+          {note.cefr} · {item.isNew ? "new" : "review"} ·{" "}
+          <Link href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Link>
         </span>
       </header>
 

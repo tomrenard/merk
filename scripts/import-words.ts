@@ -182,6 +182,7 @@ await db
       exampleEn: sql`excluded.example_en`,
       hint: sql`excluded.hint`,
     },
+    setWhere: sql`${notes.editedAt} is null`,
   });
 await db
   .insert(cards)

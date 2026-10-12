@@ -4,7 +4,7 @@ export function articleOf(headword: string): string | null {
 }
 
 /** Folds what a phone keyboard makes hard to type: case, umlauts as ae/oe/ue, ß as ss. */
-export function normalize(text: string): string {
+function normalize(text: string): string {
   return text
     .toLowerCase()
     .replace(/ä/g, "ae")
@@ -17,9 +17,12 @@ export function normalize(text: string): string {
 }
 
 /** The answers that count as right for a headword: plural, "(pl.)" and optional parts dropped. */
-export function acceptedAnswers(headword: string): string[] {
+function acceptedAnswers(headword: string): string[] {
   const base = (headword.split(",")[0] ?? headword).replace("(pl.)", "").trim();
-  const forms = [base, base.replace(/[()]/g, ""), base.replace(/\([^)]*\)\s*/g, "")];
+  const optionalKept = base.replace(/[()]/g, "");
+  const optionalDropped = base.replace(/\([^)]*\)[\s-]*/g, "");
+  // Typing the headword exactly as shown, plural and all, also counts.
+  const forms = [headword, base, optionalKept, optionalKept.replace(/-/g, ""), optionalDropped];
   const pair = base.match(/^der\/die (.+)$/);
   if (pair) forms.push(`der ${pair[1]}`, `die ${pair[1]}`);
   else if (!articleOf(base)) forms.push(...base.split("/"));

@@ -1,13 +1,19 @@
 "use server";
 
-import { Rating } from "ts-fsrs";
+import type { Grade } from "ts-fsrs";
 import { grade, nextCard } from "@/lib/review";
+import { requireSession } from "@/lib/session";
 
-const GRADES = [Rating.Again, Rating.Hard, Rating.Good, Rating.Easy] as const;
-
-export async function gradeAndNext(cardId: string, rating: number, durationMs: number) {
-  const valid = GRADES.find((g) => g === rating);
-  if (valid === undefined || typeof cardId !== "string") throw new Error("Bad grade");
-  await grade(cardId, valid, Number(durationMs) || 0);
+export async function gradeAndNext(
+  cardId: string,
+  rating: number,
+  durationMs: number,
+  seenReps: number,
+) {
+  await requireSession();
+  if (typeof cardId !== "string" || ![1, 2, 3, 4].includes(rating) || !Number.isInteger(seenReps)) {
+    throw new Error("Bad grade");
+  }
+  await grade(cardId, rating as Grade, Number(durationMs) || 0, seenReps);
   return nextCard();
 }

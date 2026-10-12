@@ -1,8 +1,8 @@
-import { and, asc, eq, isNotNull, isNull, lte, type SQL, sql } from "drizzle-orm";
+import { and, asc, eq, lte, type SQL, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
-import { type Card, createEmptyCard, fsrs, type Grade } from "ts-fsrs";
+import { createEmptyCard, fsrs, type Grade, TypeConvert } from "ts-fsrs";
 import { db } from "@/db/client";
-import { cards, notes, reviewLogs, type StoredFsrs, settings } from "@/db/schema";
+import { cards, notes, reviewLogs, settings } from "@/db/schema";
 
 const scheduler = fsrs();
 
@@ -12,75 +12,67 @@ const LEARN_AHEAD = sql`now() + interval '20 minutes'`;
 /** The study day starts at 4:00 Berlin time, so a late-night session counts for that day. */
 const DAY_START = sql`((date_trunc('day', (now() at time zone 'Europe/Berlin') - interval '4 hours') + interval '4 hours') at time zone 'Europe/Berlin')`;
 
+/** The de_en card of the same note, to hold back en_de until it was seen on an earlier day. */
+const sibling = alias(cards, "sibling");
+const siblingJoin = and(eq(sibling.noteId, cards.noteId), eq(sibling.direction, "de_en"));
+const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START})`;
+
 export type Settings = typeof settings.$inferSelect;
 export type ReviewItem = {
   cardId: string;
   direction: "de_en" | "en_de";
+  reps: number;
   isNew: boolean;
   note: typeof notes.$inferSelect;
 };
 
 export async function getSettings(): Promise<Settings> {
-  const [row] = await db().insert(settings).values({}).onConflictDoNothing().returning();
-  if (row) return row;
-  const [existing] = await db().select().from(settings);
-  if (!existing) throw new Error("settings row missing");
-  return existing;
-}
-
-async function newIntroducedToday(): Promise<number> {
-  const [row] = await db()
-    .select({ n: sql<number>`count(*)::int` })
-    .from(cards)
-    .where(sql`${cards.introducedAt} >= ${DAY_START}`);
-  return row?.n ?? 0;
+  const [row] = await db().select().from(settings);
+  if (!row) throw new Error("settings row missing: run the migrations");
+  return row;
 }
 
 export async function counts() {
-  const [due] = await db()
-    .select({ n: sql<number>`count(*)::int` })
+  const [row] = await db()
+    .select({
+      due: sql<number>`count(*) filter (where ${cards.due} <= now())::int`,
+      offerable: sql<number>`count(*) filter (where ${NEW_OFFERABLE})::int`,
+      newToday: sql<number>`count(*) filter (where ${cards.introducedAt} >= ${DAY_START})::int`,
+    })
     .from(cards)
-    .where(and(isNotNull(cards.introducedAt), lte(cards.due, sql`now()`)));
+    .leftJoin(sibling, siblingJoin);
   const { newPerDay } = await getSettings();
-  const [unseen] = await db()
-    .select({ n: sql<number>`count(*)::int` })
-    .from(cards)
-    .where(isNull(cards.introducedAt));
-  return {
-    due: due?.n ?? 0,
-    newLeft: Math.min(Math.max(newPerDay - (await newIntroducedToday()), 0), unseen?.n ?? 0),
-  };
+  const { due = 0, offerable = 0, newToday = 0 } = row ?? {};
+  return { due, newLeft: Math.min(Math.max(newPerDay - newToday, 0), offerable) };
 }
 
-const ITEM = { cardId: cards.id, direction: cards.direction, note: notes };
+const ITEM = {
+  cardId: cards.id,
+  direction: cards.direction,
+  reps: sql<number>`coalesce((${cards.fsrs}->>'reps')::int, 0)`,
+  note: notes,
+};
 
+/** `due` is only set once a card has been reviewed, so new cards never match here. */
 async function firstSeenDueBy(by: SQL): Promise<ReviewItem | null> {
   const [row] = await db()
     .select(ITEM)
     .from(cards)
     .innerJoin(notes, eq(notes.id, cards.noteId))
-    .where(and(isNotNull(cards.introducedAt), lte(cards.due, by)))
+    .where(lte(cards.due, by))
     .orderBy(asc(cards.due))
     .limit(1);
   return row ? { ...row, isNew: false } : null;
 }
 
 async function firstNew(): Promise<ReviewItem | null> {
-  const { newPerDay } = await getSettings();
-  if ((await newIntroducedToday()) >= newPerDay) return null;
-  // Asking for the German only once you have seen it on an earlier day (Anki's sibling burying).
-  const sibling = alias(cards, "sibling");
+  if ((await counts()).newLeft === 0) return null;
   const [row] = await db()
     .select(ITEM)
     .from(cards)
     .innerJoin(notes, eq(notes.id, cards.noteId))
-    .leftJoin(sibling, and(eq(sibling.noteId, cards.noteId), eq(sibling.direction, "de_en")))
-    .where(
-      and(
-        isNull(cards.introducedAt),
-        sql`(${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START})`,
-      ),
-    )
+    .leftJoin(sibling, siblingJoin)
+    .where(NEW_OFFERABLE)
     .orderBy(asc(notes.ord), asc(cards.direction))
     .limit(1);
   return row ? { ...row, isNew: true } : null;
@@ -93,35 +85,21 @@ export async function nextCard(): Promise<ReviewItem | null> {
   );
 }
 
-function toCard(stored: StoredFsrs | null): Card {
-  if (!stored) return createEmptyCard();
-  const { due, last_review, ...rest } = stored;
-  return {
-    ...rest,
-    due: new Date(due),
-    ...(last_review && { last_review: new Date(last_review) }),
-  };
-}
-
-function toStored(card: Card): StoredFsrs {
-  const { due, last_review, ...rest } = card;
-  return {
-    ...rest,
-    due: due.toISOString(),
-    ...(last_review && { last_review: last_review.toISOString() }),
-  };
-}
-
-export async function grade(cardId: string, rating: Grade, durationMs: number): Promise<void> {
+/**
+ * Applies one grade. `seenReps` is the review count the client was shown: a repeated submit
+ * (double tap, second tab) no longer matches and is dropped instead of scheduling twice.
+ */
+export async function grade(cardId: string, rating: Grade, durationMs: number, seenReps: number) {
   await db().transaction(async (tx) => {
     const [row] = await tx.select().from(cards).where(eq(cards.id, cardId)).for("update");
     if (!row) throw new Error(`Unknown card ${cardId}`);
+    const before = row.fsrs ? TypeConvert.card(row.fsrs) : createEmptyCard();
+    if (before.reps !== seenReps) return;
     const now = new Date();
-    const before = toCard(row.fsrs);
     const { card } = scheduler.next(before, now, rating);
     await tx
       .update(cards)
-      .set({ fsrs: toStored(card), due: card.due, introducedAt: row.introducedAt ?? now })
+      .set({ fsrs: card, due: card.due, introducedAt: row.introducedAt ?? now })
       .where(eq(cards.id, cardId));
     await tx.insert(reviewLogs).values({
       cardId,

@@ -33,36 +33,32 @@ const parsed = rows.map(([id, de, exampleDe, en, exampleEn, hint], ord) => {
 });
 
 const before = await db.$count(notes);
-for (let i = 0; i < parsed.length; i += 200) {
-  const chunk = parsed.slice(i, i + 200);
-  await db
-    .insert(notes)
-    .values(chunk)
-    .onConflictDoUpdate({
-      target: notes.id,
-      set: {
-        ord: sql`excluded.ord`,
-        de: sql`excluded.de`,
-        exampleDe: sql`excluded.example_de`,
-        en: sql`excluded.en`,
-        exampleEn: sql`excluded.example_en`,
-        hint: sql`excluded.hint`,
-        updatedAt: sql`now()`,
-      },
-    });
-  await db
-    .insert(cards)
-    .values(
-      chunk.flatMap((note) =>
-        (["de_en", "en_de"] as const).map((direction) => ({
-          id: `${note.id}:${direction}`,
-          noteId: note.id,
-          direction,
-        })),
-      ),
-    )
-    .onConflictDoNothing();
-}
+await db
+  .insert(notes)
+  .values(parsed)
+  .onConflictDoUpdate({
+    target: notes.id,
+    set: {
+      ord: sql`excluded.ord`,
+      de: sql`excluded.de`,
+      exampleDe: sql`excluded.example_de`,
+      en: sql`excluded.en`,
+      exampleEn: sql`excluded.example_en`,
+      hint: sql`excluded.hint`,
+    },
+  });
+await db
+  .insert(cards)
+  .values(
+    parsed.flatMap((note) =>
+      (["de_en", "en_de"] as const).map((direction) => ({
+        id: `${note.id}:${direction}`,
+        noteId: note.id,
+        direction,
+      })),
+    ),
+  )
+  .onConflictDoNothing();
 const after = await db.$count(notes);
 console.log(`${parsed.length} rows, ${after - before} new notes, ${after} total`);
 process.exit(0);

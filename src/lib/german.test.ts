@@ -21,6 +21,10 @@ describe("isCorrect", () => {
     ["die Bekannte", "der/die Bekannte, -n"],
     ["z. B.", "zum Beispiel/z. B."],
     ["die Eltern", "die Eltern (pl.)"],
+    ["die Eltern (pl.)", "die Eltern (pl.)"],
+    ["die Ansage, -n", "die Ansage, -n"],
+    ["Kreditkarte", "(Kredit)-Karte, -n"],
+    ["Karte", "(Kredit)-Karte, -n"],
   ])("accepts %s for %s", (input, word) => expect(isCorrect(input, word)).toBe(true));
 
   it.each([

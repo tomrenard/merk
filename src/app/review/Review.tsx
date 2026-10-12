@@ -58,9 +58,6 @@ export function Review({ first, explainLang }: Props) {
   const showFr = explainLang !== "en";
 
   useEffect(() => {
-    shownAt.current = Date.now();
-    setRevealed(false);
-    setTyped("");
     if (item?.direction === "de_en") speak(item.note.de);
   }, [item]);
 
@@ -72,12 +69,20 @@ export function Review({ first, explainLang }: Props) {
   function answer(rating: number) {
     if (!item || pending) return;
     const duration = Date.now() - shownAt.current;
-    startTransition(async () => setItem(await gradeAndNext(item.cardId, rating, duration)));
+    startTransition(async () => {
+      const next = await gradeAndNext(item.cardId, rating, duration, item.reps);
+      // Reset in the same update as the new card, so its answer never flashes for a frame.
+      setRevealed(false);
+      setTyped("");
+      shownAt.current = Date.now();
+      setItem(next);
+    });
   }
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       if (event.target instanceof HTMLInputElement) return;
+      if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         reveal();

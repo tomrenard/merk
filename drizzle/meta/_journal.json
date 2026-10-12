@@ -8,6 +8,20 @@
       "when": 1791792073963,
       "tag": "0000_short_jazinda",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791794905940,
+      "tag": "0001_quiet_roughhouse",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791794906458,
+      "tag": "0002_seed_settings",
+      "breakpoints": true
     }
   ]
 }

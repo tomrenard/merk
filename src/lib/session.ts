@@ -1,4 +1,5 @@
 import { jwtVerify, SignJWT } from "jose";
+import { cookies } from "next/headers";
 
 export const SESSION_COOKIE = "merk_session";
 export const SESSION_MAX_AGE = 60 * 60 * 24 * 365;
@@ -24,5 +25,12 @@ export async function isValidSession(token: string | undefined): Promise<boolean
     return true;
   } catch {
     return false;
+  }
+}
+
+/** Server actions are reachable as plain POSTs, so each checks the session itself. */
+export async function requireSession(): Promise<void> {
+  if (!(await isValidSession((await cookies()).get(SESSION_COOKIE)?.value))) {
+    throw new Error("Unauthorized");
   }
 }

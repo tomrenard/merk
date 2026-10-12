@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { settings } from "@/db/schema";
 import { getSettings } from "@/lib/review";
+import { requireSession } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
@@ -10,12 +11,17 @@ const LANGS = { en: "English", fr: "Français", both: "Both" } as const;
 
 async function save(form: FormData) {
   "use server";
+  await requireSession();
   const lang = String(form.get("explainLang"));
   const newPerDay = Number(form.get("newPerDay"));
-  if (!(lang in LANGS) || !Number.isInteger(newPerDay) || newPerDay < 0 || newPerDay > 200) {
+  if (
+    !Object.hasOwn(LANGS, lang) ||
+    !Number.isInteger(newPerDay) ||
+    newPerDay < 0 ||
+    newPerDay > 200
+  ) {
     throw new Error("Invalid settings");
   }
-  await getSettings();
   await db()
     .update(settings)
     .set({ explainLang: lang as keyof typeof LANGS, newPerDay });

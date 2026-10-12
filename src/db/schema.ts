@@ -10,7 +10,7 @@ import {
   text,
   timestamp,
 } from "drizzle-orm/pg-core";
-import type { Card as FsrsCard } from "ts-fsrs";
+import type { CardInput } from "ts-fsrs";
 
 /** One word or phrase. Its id comes from the source deck, so re-imports update in place. */
 export const notes = pgTable("notes", {
@@ -27,14 +27,7 @@ export const notes = pgTable("notes", {
   hint: text("hint"),
   explainEn: text("explain_en"),
   explainFr: text("explain_fr"),
-  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });
-
-/** Stored as JSON, so dates come back as ISO strings. */
-export type StoredFsrs = Omit<FsrsCard, "due" | "last_review"> & {
-  due: string;
-  last_review?: string;
-};
 
 /** One direction of a note: `de_en` shows German, `en_de` asks for it. */
 export const cards = pgTable(
@@ -45,7 +38,7 @@ export const cards = pgTable(
       .notNull()
       .references(() => notes.id, { onDelete: "cascade" }),
     direction: text("direction", { enum: ["de_en", "en_de"] }).notNull(),
-    fsrs: jsonb("fsrs").$type<StoredFsrs>(),
+    fsrs: jsonb("fsrs").$type<CardInput>(),
     due: timestamp("due", { withTimezone: true }),
     introducedAt: timestamp("introduced_at", { withTimezone: true }),
   },

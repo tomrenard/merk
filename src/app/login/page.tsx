@@ -9,7 +9,8 @@ async function login(form: FormData) {
   "use server";
   const expected = process.env.APP_PASSWORD;
   const given = String(form.get("password") ?? "");
-  if (!expected || !timingSafeEqual(digest(given), digest(expected))) {
+  // Fails closed: the URL is public, so a short password would be guessable.
+  if (!expected || expected.length < 16 || !timingSafeEqual(digest(given), digest(expected))) {
     // Slows guessing; there is one user, so no per-IP bookkeeping.
     await new Promise((resolve) => setTimeout(resolve, 1000));
     redirect("/login?error=1");

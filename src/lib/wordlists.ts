@@ -149,3 +149,14 @@ export function parseRanks(text: string): Map<string, number> {
   }
   return ranks;
 }
+
+/** Mixes `extra` into `main`: one extra item after every `every` main items, the rest at the end. */
+export function interleave<T>(main: T[], extra: T[], every: number): T[] {
+  const result: T[] = [];
+  let next = 0;
+  main.forEach((item, i) => {
+    result.push(item);
+    if ((i + 1) % every === 0 && next < extra.length) result.push(extra[next++] as T);
+  });
+  return [...result, ...extra.slice(next)];
+}

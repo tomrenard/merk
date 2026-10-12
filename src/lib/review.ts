@@ -205,5 +205,11 @@ export async function practiceWords(scope: PracticeScope) {
     scope === "today"
       ? sql`exists (select 1 from ${reviewLogs} join ${cards} on ${cards.id} = ${reviewLogs.cardId} where ${cards.noteId} = ${notes.id} and ${reviewLogs.reviewedAt} >= ${DAY_START})`
       : sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.introducedAt} is not null)`;
-  return db().select().from(notes).where(studied).orderBy(sql`random()`).limit(20);
+  // Typed practice is checked strictly, so it skips phrases (many right ways to say them).
+  return db()
+    .select()
+    .from(notes)
+    .where(and(studied, sql`${notes.source} <> 'phrase'`))
+    .orderBy(sql`random()`)
+    .limit(20);
 }

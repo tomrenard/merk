@@ -56,6 +56,18 @@ export default async function PracticePage({
             </a>
           </li>
         ))}
+        <li>
+          <a href="/practice/numbers" className="card flex items-center gap-3">
+            <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
+            <span className="flex-1">
+              <span className="block font-extrabold">Numbers & time by ear</span>
+              <span className="muted text-sm font-semibold">
+                Prices, times, phone numbers, spelled names
+              </span>
+            </span>
+            <span className="muted text-2xl font-black">›</span>
+          </a>
+        </li>
       </ul>
       <TabBar active="/practice" />
     </main>

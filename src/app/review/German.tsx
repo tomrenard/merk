@@ -4,13 +4,39 @@ import { useEffect, useState } from "react";
 import { articleColor, splitPlural, spokenForm } from "@/lib/german";
 
 const MUTED = "merk-muted";
+const VOICE = "merk-voice";
+
+function stored(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
 
 function isMuted(): boolean {
+  return stored(MUTED) === "1";
+}
+
+/** Apple's novelty voices (Grandma, Rocko…) are listed as German too. */
+const NOVELTY =
+  /eddy|flo|reed|rocko|sandy|shelley|grandma|grandpa|bahh|bells|boing|bubbles|jester|organ|superstar|trinoids|whisper|wobble|zarvox|albert|bad news|good news|cellos/i;
+
+/** German voices on this device, best first (Premium/Enhanced before the compact default). */
+export function germanVoices(): SpeechSynthesisVoice[] {
+  if (!("speechSynthesis" in window)) return [];
+  const quality = (v: SpeechSynthesisVoice) =>
+    /premium/i.test(v.name) ? 0 : /enhanced|erweitert/i.test(v.name) ? 1 : 2;
+  return speechSynthesis
+    .getVoices()
+    .filter((v) => v.lang.replace("_", "-").startsWith("de") && !NOVELTY.test(v.name))
+    .sort((a, b) => quality(a) - quality(b));
+}
+
+export function setVoice(voiceURI: string) {
   try {
-    return localStorage.getItem(MUTED) === "1";
-  } catch {
-    return false;
-  }
+    localStorage.setItem(VOICE, voiceURI);
+  } catch {}
 }
 
 export function speak(text: string) {
@@ -18,7 +44,23 @@ export function speak(text: string) {
   speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "de-DE";
+  const voices = germanVoices();
+  const chosen = voices.find((v) => v.voiceURI === stored(VOICE)) ?? voices[0];
+  if (chosen) utterance.voice = chosen;
   speechSynthesis.speak(utterance);
+}
+
+/**
+ * iOS only speaks once a tap has started speech; until then automatic speech is silent. The
+ * first tap anywhere speaks an empty utterance, so later automatic speech works.
+ */
+export function useSpeechUnlock() {
+  useEffect(() => {
+    if (!("speechSynthesis" in window)) return;
+    const unlock = () => speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+    window.addEventListener("pointerdown", unlock, { once: true });
+    return () => window.removeEventListener("pointerdown", unlock);
+  }, []);
 }
 
 /** 🔊/🔇 switch for the voice, remembered on this device. */

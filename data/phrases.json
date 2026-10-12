@@ -1,0 +1,2522 @@
+[
+ {
+  "de": "Guten Morgen!",
+  "en": "Good morning!",
+  "cefr": "A1",
+  "note": "Used until about 10–11 a.m. Often shortened to \"Morgen!\" among neighbours.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Guten Tag!",
+  "en": "Hello! / Good afternoon!",
+  "cefr": "A1",
+  "note": "Neutral and polite. In southern Germany you will often hear \"Grüß Gott!\" instead.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Hallo!",
+  "en": "Hi!",
+  "cefr": "A1",
+  "note": "Informal but fine with most neighbours.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Wie geht es Ihnen?",
+  "en": "How are you?",
+  "cefr": "A1",
+  "note": "Formal. With people you call du: \"Wie geht's?\" Germans may expect a real answer.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Danke, gut. Und Ihnen?",
+  "en": "Fine, thanks. And you?",
+  "cefr": "A1",
+  "note": "Standard reply. Informal: \"Danke, gut. Und dir?\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Ich heiße Claire.",
+  "en": "My name is Claire.",
+  "cefr": "A1",
+  "note": "Alternative: \"Mein Name ist …\" (a bit more formal).",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Ich komme aus Frankreich.",
+  "en": "I'm from France.",
+  "cefr": "A1",
+  "note": "You may hear: \"Woher kommen Sie?\" (Where are you from?)",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Freut mich!",
+  "en": "Nice to meet you!",
+  "cefr": "A1",
+  "note": "Short for \"Es freut mich, Sie kennenzulernen.\" Reply: \"Mich auch!\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Tschüss!",
+  "en": "Bye!",
+  "cefr": "A1",
+  "note": "Very common, informal. More formal: \"Auf Wiedersehen!\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Ich wohne seit Kurzem hier.",
+  "en": "I've only recently moved in here.",
+  "cefr": "A2",
+  "note": "Useful when introducing yourself to new neighbours.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Ich wohne im dritten Stock.",
+  "en": "I live on the third floor.",
+  "cefr": "A2",
+  "note": "German floors: Erdgeschoss = ground floor, erster Stock = first floor above it.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Sind Sie neu hier?",
+  "en": "Are you new here?",
+  "cefr": "A2",
+  "note": "Something you will often hear from neighbours.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Schönes Wetter heute, oder?",
+  "en": "Nice weather today, isn't it?",
+  "cefr": "A2",
+  "note": "Classic small talk. Reply: \"Ja, endlich!\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Schönes Wochenende!",
+  "en": "Have a nice weekend!",
+  "cefr": "A2",
+  "note": "Said on Fridays. Reply: \"Danke, gleichfalls!\" (Thanks, you too!)",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Danke, gleichfalls!",
+  "en": "Thanks, you too!",
+  "cefr": "A2",
+  "note": "Standard reply to any good wish.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Können Sie das bitte wiederholen?",
+  "en": "Could you repeat that, please?",
+  "cefr": "A2",
+  "note": "Add \"Ich spreche noch nicht so gut Deutsch.\" if needed.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Wir können uns gern duzen.",
+  "en": "We can use \"du\" with each other.",
+  "cefr": "B1",
+  "note": "You will hear this when a neighbour offers the informal du. Reply: \"Gern, ich bin Claire.\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Wenn Sie etwas brauchen, klingeln Sie einfach.",
+  "en": "If you need anything, just ring the bell.",
+  "cefr": "B1",
+  "note": "Friendly offer you may hear from neighbours.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Könnten Sie ein Paket für mich annehmen?",
+  "en": "Could you accept a parcel for me?",
+  "cefr": "B1",
+  "note": "Very common neighbour request in Germany. You may also find a note: \"Ihr Paket ist bei …\"",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Entschuldigung, ich muss leider los.",
+  "en": "Sorry, I have to go now.",
+  "cefr": "B1",
+  "note": "Polite way to end a conversation in the stairwell.",
+  "situation": "Greetings, introducing yourself, small talk with neighbours"
+ },
+ {
+  "de": "Wie bitte?",
+  "en": "Sorry? / Pardon?",
+  "cefr": "A1",
+  "note": "Most common polite way to ask someone to repeat. Rising intonation.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Entschuldigung, ich verstehe das nicht.",
+  "en": "Sorry, I don't understand.",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Noch einmal, bitte.",
+  "en": "Once more, please.",
+  "cefr": "A1",
+  "note": "In speech often shortened to \"Nochmal, bitte.\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Können Sie bitte langsamer sprechen?",
+  "en": "Could you speak more slowly, please?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Ich spreche nur ein bisschen Deutsch.",
+  "en": "I only speak a little German.",
+  "cefr": "A1",
+  "note": "Useful at the start so people adapt their speed.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Sprechen Sie Englisch oder Französisch?",
+  "en": "Do you speak English or French?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Wie schreibt man das?",
+  "en": "How do you spell that?",
+  "cefr": "A1",
+  "note": "Common at offices and on the phone.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Können Sie das bitte buchstabieren?",
+  "en": "Could you spell that, please?",
+  "cefr": "A1",
+  "note": "You will also hear it: \"Buchstabieren Sie bitte Ihren Namen.\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Was bedeutet das?",
+  "en": "What does that mean?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Was heißt das auf Deutsch?",
+  "en": "What's that in German?",
+  "cefr": "A1",
+  "note": "Point at the object or say the word in English or French.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Können Sie das bitte aufschreiben?",
+  "en": "Could you write that down, please?",
+  "cefr": "A2",
+  "note": "Very helpful for addresses, numbers and appointments.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Können Sie das bitte wiederholen?",
+  "en": "Could you repeat that, please?",
+  "cefr": "A2",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Haben Sie mich verstanden?",
+  "en": "Did you understand me?",
+  "cefr": "A2",
+  "note": "You'll hear this. Reply: \"Ja, danke.\" or \"Nicht ganz.\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Ich habe Sie leider nicht verstanden.",
+  "en": "Sorry, I didn't catch that.",
+  "cefr": "A2",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Meinen Sie …?",
+  "en": "Do you mean …?",
+  "cefr": "A2",
+  "note": "Check by repeating what you think you heard.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Habe ich das richtig verstanden?",
+  "en": "Did I understand that correctly?",
+  "cefr": "B1",
+  "note": "Follow with a summary: \"Also, ich soll morgen um neun kommen?\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Können Sie das bitte einfacher erklären?",
+  "en": "Could you explain that more simply, please?",
+  "cefr": "B1",
+  "note": "Useful for official letters and forms.",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Was meinen Sie damit genau?",
+  "en": "What exactly do you mean by that?",
+  "cefr": "B1",
+  "note": "",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Die Verbindung ist schlecht, ich höre Sie kaum.",
+  "en": "The connection is bad, I can barely hear you.",
+  "cefr": "B1",
+  "note": "On the phone. You may hear: \"Sie sind ganz schlecht zu verstehen.\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Ist alles klar, oder haben Sie noch Fragen?",
+  "en": "Is everything clear, or do you have any questions?",
+  "cefr": "B1",
+  "note": "You'll hear this. Reply: \"Alles klar, danke.\" or \"Eine Frage noch: …\"",
+  "situation": "Not understanding: asking to repeat, slow down, spell, explain"
+ },
+ {
+  "de": "Guten Tag!",
+  "en": "Hello!",
+  "cefr": "A1",
+  "note": "Standard greeting when entering; in southern Germany you'll often hear \"Grüß Gott!\", in the north \"Moin!\".",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Ich hätte gern einen Kaffee, bitte.",
+  "en": "I'd like a coffee, please.",
+  "cefr": "A1",
+  "note": "The most common polite way to order; \"Ich nehme...\" is also very common.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Was darf es sein?",
+  "en": "What can I get you?",
+  "cefr": "A1",
+  "note": "You'll hear this at the counter or table; also \"Was hätten Sie gern?\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Zwei Brötchen, bitte.",
+  "en": "Two bread rolls, please.",
+  "cefr": "A1",
+  "note": "At the bakery; in the south rolls are called \"Semmeln\", in Berlin \"Schrippen\".",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Zum Mitnehmen oder zum Hieressen?",
+  "en": "To take away or to eat in?",
+  "cefr": "A1",
+  "note": "Typical bakery/café question; answer \"Zum Mitnehmen, bitte.\" or \"Für hier, bitte.\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Die Rechnung, bitte.",
+  "en": "The bill, please.",
+  "cefr": "A1",
+  "note": "Also very common: \"Zahlen, bitte!\" or \"Ich möchte bitte zahlen.\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Noch etwas?",
+  "en": "Anything else?",
+  "cefr": "A1",
+  "note": "Reply \"Nein, danke, das war's.\" or \"Ja, noch ein Wasser, bitte.\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Das war's, danke.",
+  "en": "That's all, thanks.",
+  "cefr": "A1",
+  "note": "Informal but polite enough everywhere.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Ich nehme das Schnitzel.",
+  "en": "I'll have the schnitzel.",
+  "cefr": "A1",
+  "note": "Use \"Ich nehme...\" when ordering from a menu.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Haben Sie einen Tisch für zwei Personen?",
+  "en": "Do you have a table for two?",
+  "cefr": "A2",
+  "note": "In many restaurants you seat yourself; in nicer ones you wait to be seated.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Die Speisekarte, bitte.",
+  "en": "The menu, please.",
+  "cefr": "A2",
+  "note": "Often just \"die Karte\"; note that \"das Menü\" means a set meal, not the menu.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Was möchten Sie trinken?",
+  "en": "What would you like to drink?",
+  "cefr": "A2",
+  "note": "Drinks are usually ordered first; still water is \"stilles Wasser\".",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Zusammen oder getrennt?",
+  "en": "Together or separately?",
+  "cefr": "A2",
+  "note": "Very common question when paying in a group; splitting the bill is normal in Germany.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Kann ich mit Karte zahlen?",
+  "en": "Can I pay by card?",
+  "cefr": "A2",
+  "note": "Ask before ordering in small cafés and bakeries; some still take cash only (\"nur Barzahlung\").",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Stimmt so.",
+  "en": "Keep the change.",
+  "cefr": "A2",
+  "note": "Tipping: round up or add about 5–10%, said when handing over the money, not left on the table.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Machen Sie 20 Euro.",
+  "en": "Make it 20 euros.",
+  "cefr": "A2",
+  "note": "Way to include the tip: you tell the server the total you want to pay.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Hat es Ihnen geschmeckt?",
+  "en": "Did you enjoy your meal?",
+  "cefr": "A2",
+  "note": "Server asks when clearing plates; reply \"Ja, danke, sehr gut!\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Ist der Platz hier noch frei?",
+  "en": "Is this seat free?",
+  "cefr": "A2",
+  "note": "Useful in busy cafés or beer gardens where sharing tables is common.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Ich bin allergisch gegen Nüsse.",
+  "en": "I'm allergic to nuts.",
+  "cefr": "B1",
+  "note": "Restaurants must provide allergen information; you can also ask \"Ist da Gluten drin?\"",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Entschuldigung, das habe ich nicht bestellt.",
+  "en": "Excuse me, I didn't order this.",
+  "cefr": "B1",
+  "note": "Polite way to point out a mistake; \"Entschuldigung!\" is also how you call the server.",
+  "situation": "Café, bakery and restaurant: ordering, asking for the bill, paying"
+ },
+ {
+  "de": "Entschuldigung, wo finde ich die Milch?",
+  "en": "Excuse me, where can I find the milk?",
+  "cefr": "A1",
+  "note": "Swap in any product: den Reis, das Brot, die Eier.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Kann ich mit Karte zahlen?",
+  "en": "Can I pay by card?",
+  "cefr": "A1",
+  "note": "Most shops accept cards now, but some small bakeries and kiosks are still cash only.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Brauchen Sie eine Tüte?",
+  "en": "Do you need a bag?",
+  "cefr": "A1",
+  "note": "You will hear this at the till. Bags cost extra. Reply: Ja, bitte. / Nein, danke.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Das macht 12,50 Euro.",
+  "en": "That comes to 12.50 euros.",
+  "cefr": "A1",
+  "note": "Heard at the till. Said as 'zwölf Euro fünfzig'.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Bar oder mit Karte?",
+  "en": "Cash or card?",
+  "cefr": "A1",
+  "note": "Common question at the till. Reply: Mit Karte, bitte.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Haben Sie das auch in Größe M?",
+  "en": "Do you have this in a medium too?",
+  "cefr": "A1",
+  "note": "For shoes, use a number: in Größe 39.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Ich schaue nur, danke.",
+  "en": "I'm just looking, thanks.",
+  "cefr": "A1",
+  "note": "A polite reply to 'Kann ich Ihnen helfen?'",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Kann ich Ihnen helfen?",
+  "en": "Can I help you?",
+  "cefr": "A1",
+  "note": "What shop staff say to you. 'Suchen Sie etwas Bestimmtes?' is also common.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Wo sind die Umkleidekabinen?",
+  "en": "Where are the changing rooms?",
+  "cefr": "A2",
+  "note": "People often just say 'die Kabinen'.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Das ist mir zu groß.",
+  "en": "It's too big for me.",
+  "cefr": "A2",
+  "note": "Also: zu klein, zu eng (too tight), zu lang.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Sammeln Sie Payback-Punkte?",
+  "en": "Do you collect Payback points?",
+  "cefr": "A2",
+  "note": "Heard at dm, Rewe and others. Reply: Nein, danke.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Möchten Sie den Kassenbon?",
+  "en": "Would you like the receipt?",
+  "cefr": "A2",
+  "note": "Always keep the receipt if you might return the item. Also called 'die Quittung'.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Stecken Sie bitte die Karte ein.",
+  "en": "Please insert your card.",
+  "cefr": "A2",
+  "note": "Heard when contactless doesn't work. You may then need to type your PIN: 'Bitte PIN eingeben'.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Kann ich auch kontaktlos zahlen?",
+  "en": "Can I pay contactless?",
+  "cefr": "A2",
+  "note": "Phone payment: 'Kann ich mit dem Handy zahlen?'",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Haben Sie das noch im Lager?",
+  "en": "Do you have any more in the stockroom?",
+  "cefr": "B1",
+  "note": "Useful when the shelf is empty. Possible reply: Leider ausverkauft. (Sorry, sold out.)",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Ich möchte das gern umtauschen.",
+  "en": "I'd like to exchange this.",
+  "cefr": "B1",
+  "note": "'Umtauschen' means swapping it for another item. You will usually need the receipt.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Kann ich das zurückgeben?",
+  "en": "Can I return this?",
+  "cefr": "B1",
+  "note": "In shops, returns are a goodwill policy and not a legal right, unless the item is faulty.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Bekomme ich das Geld zurück oder nur einen Gutschein?",
+  "en": "Do I get my money back or just a voucher?",
+  "cefr": "B1",
+  "note": "Many shops offer only a voucher or an exchange for returns.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Die Kartenzahlung hat leider nicht funktioniert.",
+  "en": "Sorry, the card payment didn't go through.",
+  "cefr": "B1",
+  "note": "Heard at the till. You can try again or pay cash.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Wo kann ich die Pfandflaschen abgeben?",
+  "en": "Where can I return the deposit bottles?",
+  "cefr": "B1",
+  "note": "Use the machine (Pfandautomat) and take the voucher to the till to get money off your shopping.",
+  "situation": "Supermarket and shops: finding things, sizes, returns, paying by card"
+ },
+ {
+  "de": "Eine Fahrkarte nach Berlin, bitte.",
+  "en": "A ticket to Berlin, please.",
+  "cefr": "A1",
+  "note": "At the ticket counter (DB Reisezentrum). 'Ticket' is also common.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Einfach oder hin und zurück?",
+  "en": "One way or return?",
+  "cefr": "A1",
+  "note": "You will hear this when buying a ticket. Reply: 'Einfach, bitte.' or 'Hin und zurück, bitte.'",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Wo ist der Bahnhof?",
+  "en": "Where is the train station?",
+  "cefr": "A1",
+  "note": "'Hauptbahnhof' (Hbf) = main station.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Von welchem Gleis fährt der Zug nach München?",
+  "en": "Which platform does the train to Munich leave from?",
+  "cefr": "A1",
+  "note": "Gleis = platform/track. Reply: 'Von Gleis 7.'",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Wann fährt der nächste Zug nach Köln?",
+  "en": "When is the next train to Cologne?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Die Fahrkarten, bitte!",
+  "en": "Tickets, please!",
+  "cefr": "A1",
+  "note": "Heard from the conductor on the train. Also: 'Noch jemand zugestiegen?'",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Entschuldigung, ist der Platz noch frei?",
+  "en": "Excuse me, is this seat free?",
+  "cefr": "A1",
+  "note": "Reply: 'Ja, bitte.' or 'Nein, der ist besetzt.'",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Wie komme ich zum Marktplatz?",
+  "en": "How do I get to the market square?",
+  "cefr": "A1",
+  "note": "Standard way to ask for directions. Note: zum (masc./neut.), zur (fem.).",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Der Zug hat zehn Minuten Verspätung.",
+  "en": "The train is ten minutes late.",
+  "cefr": "A2",
+  "note": "Very common announcement. Often: 'ca. 10 Minuten später'.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Muss ich umsteigen?",
+  "en": "Do I have to change trains?",
+  "cefr": "A2",
+  "note": "Reply: 'Ja, in Frankfurt.' umsteigen = to change (trains/buses).",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Hält dieser Bus am Rathaus?",
+  "en": "Does this bus stop at the town hall?",
+  "cefr": "A2",
+  "note": "Ask the driver when getting on.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Wo kann ich die Fahrkarte entwerten?",
+  "en": "Where do I validate my ticket?",
+  "cefr": "A2",
+  "note": "Some local tickets must be stamped in a machine (Entwerter) before travel; otherwise you risk a fine.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Nächster Halt: Hauptbahnhof.",
+  "en": "Next stop: main station.",
+  "cefr": "A2",
+  "note": "Heard on buses, trams and trains.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Ich habe das Deutschlandticket.",
+  "en": "I have the Deutschlandticket.",
+  "cefr": "A2",
+  "note": "Monthly ticket valid on all local and regional transport, not on ICE/IC/EC.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Bitte einsteigen und Türen schließen!",
+  "en": "All aboard, doors closing!",
+  "cefr": "A2",
+  "note": "Platform announcement. Also: 'Vorsicht an der Bahnsteigkante!' (Mind the gap).",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Der Zug fällt heute aus.",
+  "en": "The train is cancelled today.",
+  "cefr": "B1",
+  "note": "Announcement: 'Der RE 5 fällt heute aus.' ausfallen = to be cancelled.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Heute fährt der Zug von Gleis 4 statt Gleis 2.",
+  "en": "Today the train leaves from platform 4 instead of 2.",
+  "cefr": "B1",
+  "note": "Platform changes (Gleiswechsel) are common; listen carefully to announcements.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Erreiche ich noch meinen Anschluss?",
+  "en": "Will I still make my connection?",
+  "cefr": "B1",
+  "note": "Ask the conductor if your train is late. Anschluss = connecting train.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Kann ich mit diesem Ticket auch einen anderen Zug nehmen?",
+  "en": "Can I take a different train with this ticket?",
+  "cefr": "B1",
+  "note": "After a delay of 20+ minutes, the 'Zugbindung' (fixed train) is usually lifted.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Wie bekomme ich eine Entschädigung für die Verspätung?",
+  "en": "How do I get compensation for the delay?",
+  "cefr": "B1",
+  "note": "From 60 minutes' delay you get money back; apply online or with the 'Fahrgastrechte' form.",
+  "situation": "Public transport and Deutsche Bahn: tickets, delays, platforms, asking the way"
+ },
+ {
+  "de": "Ich möchte einen Termin machen.",
+  "en": "I'd like to make an appointment.",
+  "cefr": "A1",
+  "note": "Standard opener on the phone or at the reception desk.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich habe Kopfschmerzen.",
+  "en": "I have a headache.",
+  "cefr": "A1",
+  "note": "Also: Bauchschmerzen (stomachache), Halsschmerzen (sore throat).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich habe Fieber.",
+  "en": "I have a fever.",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Haben Sie Ihre Versichertenkarte dabei?",
+  "en": "Do you have your health insurance card with you?",
+  "cefr": "A1",
+  "note": "You will hear this at reception. Often just: \"Ihre Karte, bitte.\"",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Was fehlt Ihnen?",
+  "en": "What's the problem?",
+  "cefr": "A1",
+  "note": "Typical doctor's question. Also: \"Was kann ich für Sie tun?\"",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Mir ist schlecht.",
+  "en": "I feel sick.",
+  "cefr": "A1",
+  "note": "Means nauseous, not just generally ill.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Nehmen Sie bitte noch kurz im Wartezimmer Platz.",
+  "en": "Please take a seat in the waiting room for a moment.",
+  "cefr": "A2",
+  "note": "Heard at reception after check-in.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Seit wann haben Sie die Beschwerden?",
+  "en": "How long have you had these symptoms?",
+  "cefr": "A2",
+  "note": "Answer with seit: \"Seit drei Tagen.\"",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich bin erkältet.",
+  "en": "I have a cold.",
+  "cefr": "A2",
+  "note": "",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Haben Sie heute noch einen Termin frei?",
+  "en": "Do you have an appointment available today?",
+  "cefr": "A2",
+  "note": "Useful for acute illness. Many practices also have an open consultation hour (offene Sprechstunde).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich brauche eine Krankmeldung.",
+  "en": "I need a sick note.",
+  "cefr": "A2",
+  "note": "Officially called AU (Arbeitsunfähigkeitsbescheinigung). Usually sent electronically to your insurer now (eAU).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Sind Sie allergisch gegen etwas?",
+  "en": "Are you allergic to anything?",
+  "cefr": "A2",
+  "note": "Heard at the doctor's and at the pharmacy.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Nehmen Sie das dreimal täglich nach dem Essen.",
+  "en": "Take this three times a day after meals.",
+  "cefr": "A2",
+  "note": "Also: vor dem Essen (before meals).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Haben Sie etwas gegen Husten?",
+  "en": "Do you have something for a cough?",
+  "cefr": "A2",
+  "note": "Typical question at the pharmacy (Apotheke).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Das ist rezeptpflichtig.",
+  "en": "This requires a prescription.",
+  "cefr": "B1",
+  "note": "You will hear this at the pharmacy. The opposite is rezeptfrei.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Das Medikament müssen wir bestellen, Sie können es heute Nachmittag abholen.",
+  "en": "We have to order this medicine; you can pick it up this afternoon.",
+  "cefr": "B1",
+  "note": "Very common at German pharmacies.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich schreibe Sie bis Freitag krank.",
+  "en": "I'll sign you off sick until Friday.",
+  "cefr": "B1",
+  "note": "krankschreiben = to issue a sick note. Your employer usually gets the information via the eAU.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich muss mich krankmelden.",
+  "en": "I have to call in sick.",
+  "cefr": "B1",
+  "note": "Say this to your employer. Notify them on the first day, before work starts.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Ich würde gern eine Zuzahlung leisten, was kostet das?",
+  "en": "I'll pay the co-payment. How much is it?",
+  "cefr": "B1",
+  "note": "Prescription medicines usually cost a co-payment of €5–10.",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Kommen Sie wieder, wenn es nicht besser wird.",
+  "en": "Come back if it doesn't get better.",
+  "cefr": "B1",
+  "note": "Typical closing advice from the doctor. Also: \"Gute Besserung!\" (Get well soon).",
+  "situation": "Doctor and pharmacy: appointments, symptoms, sick note (Krankmeldung, AU)"
+ },
+ {
+  "de": "Guten Tag, hier spricht Marie Dubois.",
+  "en": "Hello, this is Marie Dubois speaking.",
+  "cefr": "A1",
+  "note": "Standard way to start a call; Germans state their name right away.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Praxis Dr. Weber, Schmidt, guten Tag.",
+  "en": "Dr. Weber's practice, Schmidt speaking, hello.",
+  "cefr": "A1",
+  "note": "What you hear: company/office name, then the person's surname.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Wie bitte? Können Sie das wiederholen?",
+  "en": "Sorry? Could you repeat that?",
+  "cefr": "A1",
+  "note": "Very useful on the phone when the line or speed is a problem.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Können Sie bitte langsamer sprechen?",
+  "en": "Could you speak more slowly, please?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Ich möchte einen Termin machen.",
+  "en": "I'd like to make an appointment.",
+  "cefr": "A1",
+  "note": "Also: \"einen Termin vereinbaren\" (more formal).",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Wann haben Sie Zeit?",
+  "en": "When are you available?",
+  "cefr": "A1",
+  "note": "What you hear when booking; answer with a day and time.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Geht es am Dienstag um zehn Uhr?",
+  "en": "Does Tuesday at ten work?",
+  "cefr": "A1",
+  "note": "Reply: \"Ja, das geht.\" or \"Nein, da geht es leider nicht.\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Wie ist Ihr Name, bitte?",
+  "en": "What's your name, please?",
+  "cefr": "A1",
+  "note": "Often followed by: \"Wie schreibt man das?\" – be ready to spell it.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Ich hätte gern Frau Müller gesprochen.",
+  "en": "I'd like to speak to Ms Müller.",
+  "cefr": "A2",
+  "note": "Polite standard phrase; simpler: \"Ist Frau Müller da?\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Einen Moment, bitte, ich verbinde Sie.",
+  "en": "One moment, please, I'll put you through.",
+  "cefr": "A2",
+  "note": "What you hear before being transferred.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Bleiben Sie bitte dran.",
+  "en": "Please hold the line.",
+  "cefr": "A2",
+  "note": "You hear this when put on hold.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Frau Müller ist gerade nicht am Platz.",
+  "en": "Ms Müller isn't at her desk right now.",
+  "cefr": "A2",
+  "note": "Also common: \"... ist gerade in einer Besprechung.\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Kann ich ihr etwas ausrichten?",
+  "en": "Can I take a message for her?",
+  "cefr": "A2",
+  "note": "Reply: \"Ja, bitte sagen Sie ihr, dass ich angerufen habe.\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Können Sie mich bitte zurückrufen?",
+  "en": "Could you call me back, please?",
+  "cefr": "A2",
+  "note": "Often asked: \"Unter welcher Nummer sind Sie erreichbar?\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Meine Nummer ist 0176 23 45 67 89.",
+  "en": "My number is 0176 23 45 67 89.",
+  "cefr": "A2",
+  "note": "Germans say numbers in pairs or digit by digit; \"zwo\" is often used for 2.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Ich rufe wegen meines Termins am Freitag an.",
+  "en": "I'm calling about my appointment on Friday.",
+  "cefr": "A2",
+  "note": "Colloquially also \"wegen meinem Termin\".",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Ich muss meinen Termin leider absagen.",
+  "en": "Unfortunately I have to cancel my appointment.",
+  "cefr": "A2",
+  "note": "To move it instead: \"Kann ich den Termin verschieben?\"",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Sie haben Ihren Termin am Montag, den 3. Juni, um 14 Uhr.",
+  "en": "Your appointment is on Monday, 3 June, at 2 p.m.",
+  "cefr": "B1",
+  "note": "What you hear as confirmation; repeat it back to check.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Sie sind mit der Mailbox von Thomas Becker verbunden. Bitte hinterlassen Sie eine Nachricht nach dem Signalton.",
+  "en": "You've reached Thomas Becker's voicemail. Please leave a message after the tone.",
+  "cefr": "B1",
+  "note": "Typical voicemail greeting; also \"Anrufbeantworter\" for a landline.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Hallo, hier ist Marie Dubois, bitte rufen Sie mich unter 0176 23 45 67 89 zurück. Danke, tschüss!",
+  "en": "Hi, this is Marie Dubois, please call me back on 0176 23 45 67 89. Thanks, bye!",
+  "cefr": "B1",
+  "note": "Model voicemail message: name, reason if needed, number, goodbye. Say \"Auf Wiederhören\" in formal calls.",
+  "situation": "Phone calls: making appointments, leaving a message, being put through"
+ },
+ {
+  "de": "Guten Tag, ich habe einen Termin.",
+  "en": "Hello, I have an appointment.",
+  "cefr": "A1",
+  "note": "Say this at the reception or info desk when you arrive.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Ich möchte mich anmelden.",
+  "en": "I'd like to register my address.",
+  "cefr": "A1",
+  "note": "Anmeldung = registering your residence; required within 14 days of moving in.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Ihren Ausweis, bitte.",
+  "en": "Your ID, please.",
+  "cefr": "A1",
+  "note": "You will hear this. Hand over your passport or ID card.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Hier ist mein Reisepass.",
+  "en": "Here is my passport.",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Ziehen Sie bitte eine Nummer.",
+  "en": "Please take a number.",
+  "cefr": "A1",
+  "note": "You will hear this. Watch the screen for your number and room (Platz/Zimmer).",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Wie ist Ihre Adresse?",
+  "en": "What is your address?",
+  "cefr": "A1",
+  "note": "You will hear this. Answer: street, house number, postcode, city.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Können Sie das bitte langsamer sagen?",
+  "en": "Could you say that more slowly, please?",
+  "cefr": "A1",
+  "note": "Very useful; officials usually speak fast.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Haben Sie die Wohnungsgeberbestätigung?",
+  "en": "Do you have the landlord's confirmation?",
+  "cefr": "A2",
+  "note": "You will hear this. The landlord signs this form; you need it for the Anmeldung.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Füllen Sie bitte dieses Formular aus.",
+  "en": "Please fill in this form.",
+  "cefr": "A2",
+  "note": "You will hear this. 'Ausfüllen' is separable: ich fülle das Formular aus.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Wo muss ich unterschreiben?",
+  "en": "Where do I have to sign?",
+  "cefr": "A2",
+  "note": "Reply often: 'Hier unten, bitte.' (Down here, please.)",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Wie kann ich einen Termin machen?",
+  "en": "How can I make an appointment?",
+  "cefr": "A2",
+  "note": "Usually the answer is: online or by phone. 'Termin vereinbaren' is more formal.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Es fehlt noch ein Dokument.",
+  "en": "One document is still missing.",
+  "cefr": "A2",
+  "note": "You will hear this. Ask: 'Welches Dokument genau?'",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Welche Unterlagen brauche ich?",
+  "en": "Which documents do I need?",
+  "cefr": "A2",
+  "note": "'Unterlagen' is the common word for paperwork/documents.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Brauche ich eine Kopie davon?",
+  "en": "Do I need a copy of it?",
+  "cefr": "A2",
+  "note": "Bring originals and copies to the Ausländerbehörde to be safe.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Hier ist Ihre Meldebescheinigung.",
+  "en": "Here is your registration certificate.",
+  "cefr": "A2",
+  "note": "You will hear this. Keep it: you need it for the bank, tax ID and more.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Als EU-Bürger brauche ich keinen Aufenthaltstitel, oder?",
+  "en": "As an EU citizen I don't need a residence permit, right?",
+  "cefr": "B1",
+  "note": "True for French citizens: Anmeldung is enough.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Ich möchte meinen Wohnsitz ummelden.",
+  "en": "I'd like to change my registered address.",
+  "cefr": "B1",
+  "note": "Use 'ummelden' when moving within Germany, 'abmelden' when leaving Germany.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Die Bearbeitung dauert ungefähr vier Wochen.",
+  "en": "Processing takes about four weeks.",
+  "cefr": "B1",
+  "note": "You will hear this. Ask: 'Bekomme ich das per Post?'",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Könnten Sie mir bitte eine Bestätigung geben?",
+  "en": "Could you please give me a confirmation?",
+  "cefr": "B1",
+  "note": "Useful as proof for your employer or landlord while you wait.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Die Gebühr beträgt zwölf Euro, bitte mit Karte.",
+  "en": "The fee is twelve euros, by card please.",
+  "cefr": "B1",
+  "note": "You will hear this. Some offices accept only card (EC-Karte), not cash.",
+  "situation": "Bürgeramt and Ausländerbehörde: Anmeldung, documents, appointments, forms"
+ },
+ {
+  "de": "Die Heizung funktioniert nicht.",
+  "en": "The heating isn't working.",
+  "cefr": "A1",
+  "note": "Swap in any item: die Dusche, das Licht, die Klingel.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Wann kommt der Handwerker?",
+  "en": "When is the tradesman coming?",
+  "cefr": "A1",
+  "note": "Handwerker = any repair person (plumber, electrician, etc.).",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Wie hoch ist die Miete?",
+  "en": "How much is the rent?",
+  "cefr": "A1",
+  "note": "Common reply: '800 Euro kalt' or '950 Euro warm'.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ist die Miete warm oder kalt?",
+  "en": "Does the rent include utilities or not?",
+  "cefr": "A1",
+  "note": "Kaltmiete = rent without utilities; Warmmiete = rent including Nebenkosten.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Das Wasser tropft.",
+  "en": "The tap is dripping.",
+  "cefr": "A1",
+  "note": "Also heard: 'Der Wasserhahn tropft.'",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ich habe meinen Schlüssel verloren.",
+  "en": "I've lost my key.",
+  "cefr": "A1",
+  "note": "Often the landlord will say a new key or lock costs money.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Sind Sie morgen zu Hause?",
+  "en": "Will you be at home tomorrow?",
+  "cefr": "A2",
+  "note": "You'll hear this when a repair or meter reading is being arranged.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ich möchte einen Schaden melden.",
+  "en": "I'd like to report some damage.",
+  "cefr": "A2",
+  "note": "Standard phrase when calling or emailing the Hausverwaltung.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Der Handwerker kommt zwischen 8 und 12 Uhr.",
+  "en": "The tradesman will come between 8 and 12.",
+  "cefr": "A2",
+  "note": "Typical time window you'll hear; someone needs to be home.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Wie hoch ist die Kaution?",
+  "en": "How much is the deposit?",
+  "cefr": "A2",
+  "note": "Usually up to three months' Kaltmiete.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Die Nebenkosten sind im Preis enthalten.",
+  "en": "Utilities are included in the price.",
+  "cefr": "A2",
+  "note": "Nebenkosten cover water, heating, rubbish, building cleaning, etc.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Wer ist für die Reparatur zuständig?",
+  "en": "Who is responsible for the repair?",
+  "cefr": "A2",
+  "note": "Zuständig = responsible; a very common word in German admin.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ich ziehe Ende des Monats aus.",
+  "en": "I'm moving out at the end of the month.",
+  "cefr": "A2",
+  "note": "Einziehen = move in; umziehen = move house.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Können Sie mir die Nummer der Hausverwaltung geben?",
+  "en": "Could you give me the property management's number?",
+  "cefr": "A2",
+  "note": "The Hausverwaltung often handles repairs instead of the landlord.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Im Bad ist Schimmel.",
+  "en": "There's mould in the bathroom.",
+  "cefr": "A2",
+  "note": "Common reply: 'Sie müssen mehr lüften.' (You need to air the flat more.)",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Bitte lüften Sie regelmäßig.",
+  "en": "Please air the flat regularly.",
+  "cefr": "B1",
+  "note": "Typical landlord advice: open windows fully for a few minutes (Stoßlüften).",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Die Nebenkostenabrechnung ist gekommen.",
+  "en": "The utility bill statement has arrived.",
+  "cefr": "B1",
+  "note": "Yearly statement; it can mean a Nachzahlung (extra payment) or a refund.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ich muss leider eine Nachzahlung leisten.",
+  "en": "Unfortunately I have to pay extra.",
+  "cefr": "B1",
+  "note": "You can ask: 'Kann ich die Abrechnung einsehen?' to check the details.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Die Kündigungsfrist beträgt drei Monate.",
+  "en": "The notice period is three months.",
+  "cefr": "B1",
+  "note": "Standard for tenants; notice must be in writing and signed.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Wir machen einen Termin für die Wohnungsübergabe.",
+  "en": "Let's set a date for the flat handover.",
+  "cefr": "B1",
+  "note": "At the Übergabe, damage and meter readings are recorded in a Protokoll.",
+  "situation": "Flat and landlord: rent, repairs, Hausverwaltung, Handwerker, Nebenkosten, moving"
+ },
+ {
+  "de": "Ich möchte ein Paket abholen.",
+  "en": "I'd like to pick up a parcel.",
+  "cefr": "A1",
+  "note": "Say this at the counter and hand over the notification card and your ID.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ich möchte dieses Paket nach Frankreich schicken.",
+  "en": "I'd like to send this parcel to France.",
+  "cefr": "A1",
+  "note": "Replace 'Frankreich' with any country or city.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Eine Briefmarke für Frankreich, bitte.",
+  "en": "A stamp for France, please.",
+  "cefr": "A1",
+  "note": "For several: 'Drei Briefmarken für Frankreich, bitte.'",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Was kostet das?",
+  "en": "How much is it?",
+  "cefr": "A1",
+  "note": "Common reply: 'Das macht 5,49 Euro.'",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Hier ist die Benachrichtigung.",
+  "en": "Here's the delivery notice.",
+  "cefr": "A1",
+  "note": "The 'Benachrichtigung' is the card left in your mailbox when you missed a delivery.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ihren Ausweis, bitte.",
+  "en": "Your ID, please.",
+  "cefr": "A1",
+  "note": "You will hear this when picking up. A passport or residence permit also works.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Unterschreiben Sie bitte hier.",
+  "en": "Please sign here.",
+  "cefr": "A1",
+  "note": "Often on a small electronic screen with a stylus.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Wie lange dauert das?",
+  "en": "How long will it take?",
+  "cefr": "A2",
+  "note": "Typical reply: 'Zwei bis drei Werktage.' (two to three working days).",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Haben Sie auch Kartons?",
+  "en": "Do you sell boxes too?",
+  "cefr": "A2",
+  "note": "Post offices sell boxes in standard sizes (S, M, L).",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Stellen Sie das Paket bitte auf die Waage.",
+  "en": "Please put the parcel on the scale.",
+  "cefr": "A2",
+  "note": "You will hear this at the counter when sending.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Möchten Sie das mit Sendungsverfolgung verschicken?",
+  "en": "Would you like to send it with tracking?",
+  "cefr": "A2",
+  "note": "Short answer: 'Ja, bitte.' or 'Nein, danke.' Tracking costs extra for letters.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Das Paket ist noch nicht da.",
+  "en": "The parcel hasn't arrived yet.",
+  "cefr": "A2",
+  "note": "You may hear this if you come too early; check the date on the card.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ab wann kann ich das Paket abholen?",
+  "en": "From when can I pick up the parcel?",
+  "cefr": "A2",
+  "note": "On the card it often says 'abholbereit ab' followed by a date and time.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Wo ist hier die nächste Packstation?",
+  "en": "Where's the nearest parcel locker around here?",
+  "cefr": "A2",
+  "note": "A 'Packstation' is a DHL self-service locker; you open it with the Post & DHL app.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Was ist da drin?",
+  "en": "What's inside?",
+  "cefr": "A2",
+  "note": "Heard at the counter; some items (batteries, liquids) have special rules.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ich war nicht zu Hause, als der Bote kam.",
+  "en": "I wasn't home when the delivery driver came.",
+  "cefr": "B1",
+  "note": "Useful when explaining a missed delivery on the phone or at the counter.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ihr Paket wurde bei Ihrem Nachbarn abgegeben.",
+  "en": "Your parcel was left with your neighbour.",
+  "cefr": "B1",
+  "note": "Very common on notification cards; the neighbour's name is written on it.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Für die Abholung brauchen Sie eine Vollmacht.",
+  "en": "You need a signed authorisation to pick it up.",
+  "cefr": "B1",
+  "note": "Heard when collecting for someone else; the back of the card often has a Vollmacht section.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Wie lautet die Sendungsnummer?",
+  "en": "What's the tracking number?",
+  "cefr": "B1",
+  "note": "Heard on the phone or at the counter when a parcel is missing.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ich habe eine Benachrichtigung bekommen, obwohl ich den ganzen Tag zu Hause war.",
+  "en": "I got a missed-delivery card even though I was home all day.",
+  "cefr": "B1",
+  "note": "A frequent complaint; you can report it online to DHL customer service.",
+  "situation": "Post office and parcels: sending, picking up, missed delivery (Benachrichtigung)"
+ },
+ {
+  "de": "Ich möchte ein Konto eröffnen.",
+  "en": "I'd like to open an account.",
+  "cefr": "A1",
+  "note": "In Germany, you usually need to book an appointment first, often online.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ich möchte Geld abheben.",
+  "en": "I'd like to withdraw money.",
+  "cefr": "A1",
+  "note": "Geld einzahlen means to deposit money.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Wo ist der nächste Geldautomat?",
+  "en": "Where's the nearest cash machine?",
+  "cefr": "A1",
+  "note": "Many people just say Bankautomat. Using another bank's machine can cost a fee.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Haben Sie einen Termin?",
+  "en": "Do you have an appointment?",
+  "cefr": "A1",
+  "note": "You will hear this at the bank counter. Reply: Ja, um zehn Uhr. or Nein, leider nicht.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ihren Ausweis, bitte.",
+  "en": "Your ID, please.",
+  "cefr": "A1",
+  "note": "You will hear this. A passport (Reisepass) or EU ID card is accepted.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Kann ich mit Karte zahlen?",
+  "en": "Can I pay by card?",
+  "cefr": "A1",
+  "note": "Cash is still common in Germany, so ask in small shops, bakeries and restaurants.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Wir nehmen nur Bargeld.",
+  "en": "We only take cash.",
+  "cefr": "A2",
+  "note": "You will hear this. A variant is Kartenzahlung erst ab zehn Euro (card payments only from €10).",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Meine Karte ist gesperrt.",
+  "en": "My card is blocked.",
+  "cefr": "A2",
+  "note": "This often happens after entering the wrong PIN three times.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ich habe meine PIN vergessen.",
+  "en": "I forgot my PIN.",
+  "cefr": "A2",
+  "note": "The bank will usually send a new PIN by post, which takes a few days.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Bitte geben Sie Ihre PIN ein.",
+  "en": "Please enter your PIN.",
+  "cefr": "A2",
+  "note": "You will see or hear this at cash machines and card terminals.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ich möchte Geld überweisen.",
+  "en": "I'd like to transfer money.",
+  "cefr": "A2",
+  "note": "Transfers are mostly done in the banking app. Eine Überweisung means a bank transfer.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Können Sie mir Ihre IBAN geben?",
+  "en": "Can you give me your IBAN?",
+  "cefr": "A2",
+  "note": "Landlords and employers ask for this. A German IBAN starts with DE.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Wir brauchen noch Ihre Meldebescheinigung.",
+  "en": "We still need your proof of address registration.",
+  "cefr": "A2",
+  "note": "You will hear this. The Meldebescheinigung comes from the Bürgeramt after you register your address (Anmeldung).",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Die Überweisung dauert ein bis zwei Werktage.",
+  "en": "The transfer takes one to two business days.",
+  "cefr": "A2",
+  "note": "You will hear this. An Echtzeitüberweisung (instant transfer) arrives in seconds.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ich möchte meine Karte sperren lassen.",
+  "en": "I'd like to have my card blocked.",
+  "cefr": "B1",
+  "note": "Use this if your card is lost or stolen. The emergency blocking number in Germany is 116 116.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Der Automat hat meine Karte eingezogen.",
+  "en": "The machine swallowed my card.",
+  "cefr": "B1",
+  "note": "Contact the bank that owns the machine as soon as possible.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Ich möchte einen Dauerauftrag für die Miete einrichten.",
+  "en": "I'd like to set up a standing order for the rent.",
+  "cefr": "B1",
+  "note": "A Dauerauftrag is a fixed monthly transfer. A Lastschrift is a direct debit pulled by the company.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Das Geld ist noch nicht auf meinem Konto angekommen.",
+  "en": "The money hasn't reached my account yet.",
+  "cefr": "B1",
+  "note": "A common reply is Bitte warten Sie noch einen Werktag.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Sie müssen die Überweisung in der App freigeben.",
+  "en": "You need to approve the transfer in the app.",
+  "cefr": "B1",
+  "note": "You will hear this. It refers to the pushTAN or security app confirmation step.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Auf meinem Kontoauszug ist eine Abbuchung, die ich nicht kenne.",
+  "en": "There's a charge on my bank statement that I don't recognise.",
+  "cefr": "B1",
+  "note": "In Germany, you can usually reverse a direct debit (Lastschrift zurückgeben) within 8 weeks.",
+  "situation": "Bank and money: account, card blocked, transfers"
+ },
+ {
+  "de": "Guten Morgen!",
+  "en": "Good morning!",
+  "cefr": "A1",
+  "note": "Standard greeting at work until about 11 am. Reply with the same, or just \"Morgen!\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Mahlzeit!",
+  "en": "Enjoy your lunch! / Hi! (around lunchtime)",
+  "cefr": "A1",
+  "note": "Very common greeting around midday in offices, especially in the canteen. Reply: \"Mahlzeit!\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Wie geht's?",
+  "en": "How are you?",
+  "cefr": "A1",
+  "note": "Informal and very common among colleagues. Typical reply: \"Gut, danke. Und dir?\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ich habe eine Frage.",
+  "en": "I have a question.",
+  "cefr": "A1",
+  "note": "A simple way to start asking for help.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Können Sie mir helfen?",
+  "en": "Can you help me?",
+  "cefr": "A1",
+  "note": "With colleagues you say du: \"Kannst du mir helfen?\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ich bin krank.",
+  "en": "I'm ill.",
+  "cefr": "A1",
+  "note": "In German, \"krank\" covers being sick or unwell in general.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Schönes Wochenende!",
+  "en": "Have a nice weekend!",
+  "cefr": "A1",
+  "note": "Said on Friday afternoon. Reply: \"Danke, gleichfalls!\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Wie war dein Wochenende?",
+  "en": "How was your weekend?",
+  "cefr": "A2",
+  "note": "Typical Monday small talk. Polite form: \"Wie war Ihr Wochenende?\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Hast du kurz Zeit?",
+  "en": "Have you got a minute?",
+  "cefr": "A2",
+  "note": "A polite way to interrupt a colleague. Formal version: \"Haben Sie kurz Zeit?\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Können Sie das bitte wiederholen?",
+  "en": "Could you repeat that, please?",
+  "cefr": "A2",
+  "note": "Very useful in meetings. You can add: \"Etwas langsamer, bitte.\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Gute Besserung!",
+  "en": "Get well soon!",
+  "cefr": "A2",
+  "note": "What colleagues say when you are sick. Reply: \"Danke!\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ich bin heute im Homeoffice.",
+  "en": "I'm working from home today.",
+  "cefr": "A2",
+  "note": "\"Homeoffice\" is the standard German word for working from home.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Das Meeting fängt gleich an.",
+  "en": "The meeting is about to start.",
+  "cefr": "A2",
+  "note": "You will also hear \"die Besprechung\" for a meeting.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ich schicke Ihnen das per Mail.",
+  "en": "I'll send it to you by email.",
+  "cefr": "A2",
+  "note": "Very common at the end of a conversation or meeting.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Gehen wir zusammen Mittag essen?",
+  "en": "Shall we go for lunch together?",
+  "cefr": "A2",
+  "note": "A friendly invitation among colleagues.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Wollen wir uns duzen?",
+  "en": "Shall we use \"du\" with each other?",
+  "cefr": "B1",
+  "note": "An offer to switch to informal address. Many workplaces use du from the start.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ich muss mich heute krankmelden.",
+  "en": "I have to call in sick today.",
+  "cefr": "B1",
+  "note": "Tell your manager in the morning, before work starts.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Ab dem dritten Tag brauchen wir eine Krankmeldung.",
+  "en": "From the third day we need a sick note.",
+  "cefr": "B1",
+  "note": "You will hear this from your employer. The doctor issues the sick note; it is also called \"AU\".",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Können wir den Termin verschieben?",
+  "en": "Can we reschedule the meeting?",
+  "cefr": "B1",
+  "note": "\"Termin\" means any appointment or scheduled meeting.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Wie meinen Sie das genau?",
+  "en": "What exactly do you mean?",
+  "cefr": "B1",
+  "note": "A polite way to ask for clarification in a meeting.",
+  "situation": "Work: colleagues, meetings, small talk, asking for help, being off sick"
+ },
+ {
+  "de": "Hast du am Samstag Zeit?",
+  "en": "Are you free on Saturday?",
+  "cefr": "A1",
+  "note": "Standard opener. Use du with friends; to a group, say: Habt ihr am Samstag Zeit?",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ja, gern!",
+  "en": "Yes, I'd love to!",
+  "cefr": "A1",
+  "note": "Quick, warm acceptance. Also common: Gerne!",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Leider kann ich nicht.",
+  "en": "Unfortunately I can't.",
+  "cefr": "A1",
+  "note": "Polite decline. A short reason is usual, e.g. Ich muss arbeiten.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Wann treffen wir uns?",
+  "en": "When shall we meet?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Wo treffen wir uns?",
+  "en": "Where shall we meet?",
+  "cefr": "A1",
+  "note": "Common reply: Vor dem Kino or Am Bahnhof.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Wollen wir ins Kino gehen?",
+  "en": "Shall we go to the cinema?",
+  "cefr": "A1",
+  "note": "Wollen wir …? is the everyday way to suggest something, like 'On va … ?'",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Kein Problem!",
+  "en": "No problem!",
+  "cefr": "A1",
+  "note": "You'll hear this when you cancel or are late. Also: Alles gut!",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Bis dann!",
+  "en": "See you then!",
+  "cefr": "A1",
+  "note": "Ends a plan. Bis gleich means 'see you in a moment', Bis später means 'see you later'.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Hast du Lust, was trinken zu gehen?",
+  "en": "Do you feel like going for a drink?",
+  "cefr": "A2",
+  "note": "Hast du Lust …? is the most natural invitation among friends. Was is colloquial for etwas.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Klingt gut, ich bin dabei!",
+  "en": "Sounds good, count me in!",
+  "cefr": "A2",
+  "note": "Casual, enthusiastic yes.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Passt dir 19 Uhr?",
+  "en": "Does 7 p.m. work for you?",
+  "cefr": "A2",
+  "note": "Reply: Ja, das passt or Lieber etwas später.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ich komme ein bisschen später.",
+  "en": "I'll be a bit late.",
+  "cefr": "A2",
+  "note": "Punctuality matters in Germany. Send a message even if you're only 5 to 10 minutes late.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Sorry, ich bin spät dran.",
+  "en": "Sorry, I'm running late.",
+  "cefr": "A2",
+  "note": "Sorry is very common in casual German. More formal: Entschuldigung.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ich bin in zehn Minuten da.",
+  "en": "I'll be there in ten minutes.",
+  "cefr": "A2",
+  "note": "In texts often shortened to: Bin in 10 Min. da.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ich lade dich ein.",
+  "en": "It's on me.",
+  "cefr": "A2",
+  "note": "Careful: einladen also means 'to pay for someone', like 'je t'invite'. Otherwise people usually pay separately.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ich melde mich.",
+  "en": "I'll get back to you.",
+  "cefr": "A2",
+  "note": "Used when you're not sure yet. Sometimes it's a soft no.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Wie wäre es mit Freitag?",
+  "en": "How about Friday?",
+  "cefr": "B1",
+  "note": "Suggests an alternative. Casual form: Wie wär's mit Freitag?",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ich muss leider absagen.",
+  "en": "I'm afraid I have to cancel.",
+  "cefr": "B1",
+  "note": "Polite cancellation. Say it early, because last-minute cancelling is seen as rude.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Können wir das auf nächste Woche verschieben?",
+  "en": "Can we postpone it to next week?",
+  "cefr": "B1",
+  "note": "Verschieben means 'to postpone' (reporter).",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Sag mir einfach Bescheid.",
+  "en": "Just let me know.",
+  "cefr": "B1",
+  "note": "Very frequent. Bescheid sagen means 'to let someone know'.",
+  "situation": "Invitations and plans with friends: suggesting, accepting, declining, being late"
+ },
+ {
+  "de": "Ja, genau.",
+  "en": "Yes, exactly.",
+  "cefr": "A1",
+  "note": "Very common way to agree in conversation.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Das stimmt.",
+  "en": "That's true.",
+  "cefr": "A1",
+  "note": "Neutral agreement, works in any register.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Nein, das stimmt nicht.",
+  "en": "No, that's not true.",
+  "cefr": "A1",
+  "note": "Direct disagreement; Germans find this normal, not rude.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Das finde ich gut.",
+  "en": "I think that's good.",
+  "cefr": "A1",
+  "note": "Opposite: \"Das finde ich nicht gut.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich mag das.",
+  "en": "I like that.",
+  "cefr": "A1",
+  "note": "For food, things, activities. Negative: \"Ich mag das nicht.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich bin müde.",
+  "en": "I'm tired.",
+  "cefr": "A1",
+  "note": "Stronger, informal: \"Ich bin total kaputt.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Wie geht es Ihnen?",
+  "en": "How are you?",
+  "cefr": "A1",
+  "note": "Informal: \"Wie geht's?\" Typical reply: \"Gut, danke. Und Ihnen?\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Es geht.",
+  "en": "So-so.",
+  "cefr": "A1",
+  "note": "Honest reply to \"Wie geht's?\" when you're not great.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich habe keine Lust.",
+  "en": "I don't feel like it.",
+  "cefr": "A2",
+  "note": "Informal; with friends rather than at work. \"Hast du Lust?\" = Do you feel like it?",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Was meinen Sie?",
+  "en": "What do you think?",
+  "cefr": "A2",
+  "note": "Informal: \"Was meinst du?\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich glaube, ja.",
+  "en": "I think so.",
+  "cefr": "A2",
+  "note": "Negative: \"Ich glaube nicht.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich bin gestresst.",
+  "en": "I'm stressed.",
+  "cefr": "A2",
+  "note": "Also very common: \"Ich habe viel Stress.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Das ist mir egal.",
+  "en": "I don't mind. / I don't care.",
+  "cefr": "A2",
+  "note": "Can sound dismissive; softer: \"Beides ist okay für mich.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich esse gern Käse, aber lieber Brot.",
+  "en": "I like cheese, but I prefer bread.",
+  "cefr": "A2",
+  "note": "Pattern: gern = like, lieber = prefer, am liebsten = like most.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Das gefällt mir sehr.",
+  "en": "I really like it.",
+  "cefr": "A2",
+  "note": "For things you see or experience (clothes, a film, a city).",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Meiner Meinung nach ist das zu teuer.",
+  "en": "In my opinion, that's too expensive.",
+  "cefr": "B1",
+  "note": "Verb comes right after \"Meiner Meinung nach\".",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Da bin ich anderer Meinung.",
+  "en": "I see it differently.",
+  "cefr": "B1",
+  "note": "Polite disagreement, good at work or with neighbours.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Da haben Sie recht.",
+  "en": "You're right about that.",
+  "cefr": "B1",
+  "note": "Informal: \"Da hast du recht.\"",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Ich bin total erschöpft.",
+  "en": "I'm completely exhausted.",
+  "cefr": "B1",
+  "note": "Stronger than \"müde\"; you may hear \"Ruh dich aus!\" (Get some rest!).",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Das nervt mich.",
+  "en": "That annoys me.",
+  "cefr": "B1",
+  "note": "Informal and very common in everyday speech.",
+  "situation": "Opinions and feelings: agreeing, disagreeing, likes, being tired or stressed"
+ },
+ {
+  "de": "Hi, wie geht's?",
+  "en": "Hi, how's it going?",
+  "cefr": "A1",
+  "note": "Short for 'Wie geht es dir?'. Common reply: 'Gut, und dir?'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Na?",
+  "en": "Hey, what's up?",
+  "cefr": "A1",
+  "note": "Very casual greeting among friends; reply 'Na?' or 'Alles gut.'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Alles klar?",
+  "en": "All good?",
+  "cefr": "A1",
+  "note": "Used as a greeting or to check understanding; reply 'Ja, alles klar.'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Bis später!",
+  "en": "See you later!",
+  "cefr": "A1",
+  "note": "Also common: 'Bis dann!' or 'Bis morgen!'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Tschüss!",
+  "en": "Bye!",
+  "cefr": "A1",
+  "note": "Standard informal goodbye; in the south you may hear 'Ciao!' or 'Servus!'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Danke dir!",
+  "en": "Thanks!",
+  "cefr": "A1",
+  "note": "Friendly 'thank you'; reply 'Gerne!' or 'Kein Ding!'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Keine Ahnung.",
+  "en": "No idea.",
+  "cefr": "A1",
+  "note": "Very common, casual.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Hast du Zeit?",
+  "en": "Are you free?",
+  "cefr": "A1",
+  "note": "To ask if someone has time, e.g. 'Hast du heute Abend Zeit?'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Lust auf ein Bier?",
+  "en": "Fancy a beer?",
+  "cefr": "A2",
+  "note": "Short for 'Hast du Lust auf...?' Reply: 'Klar!' or 'Heute leider nicht.'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Klar, gerne!",
+  "en": "Sure, I'd love to!",
+  "cefr": "A1",
+  "note": "Enthusiastic yes to an invitation.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Kein Problem.",
+  "en": "No problem.",
+  "cefr": "A1",
+  "note": "Casual variants: 'Passt schon.' or 'Kein Ding.'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Passt!",
+  "en": "Works for me!",
+  "cefr": "A2",
+  "note": "Agreeing to a plan or time; also 'Passt schon' = it's fine.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Was machst du so?",
+  "en": "What are you up to?",
+  "cefr": "A2",
+  "note": "Small talk about life or plans; 'so' softens the question.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Echt?",
+  "en": "Really?",
+  "cefr": "A2",
+  "note": "Shows surprise or interest; also 'Echt jetzt?' or 'Ernsthaft?'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Ach so!",
+  "en": "Oh, I see!",
+  "cefr": "A2",
+  "note": "When you suddenly understand something.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Mal schauen.",
+  "en": "We'll see.",
+  "cefr": "A2",
+  "note": "Non-committal answer; often means 'maybe'. Also 'Mal sehen.'",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Schreib mir einfach.",
+  "en": "Just text me.",
+  "cefr": "A2",
+  "note": "'einfach' makes it relaxed; often means WhatsApp.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Komm doch mit!",
+  "en": "Come along!",
+  "cefr": "B1",
+  "note": "'doch' makes the invitation friendly and encouraging.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Das ist ja krass!",
+  "en": "That's crazy!",
+  "cefr": "B1",
+  "note": "'krass' = wild, intense (good or bad); 'ja' adds surprise. Very colloquial.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Ich hab's eilig, ich meld mich nachher.",
+  "en": "I'm in a hurry, I'll get back to you later.",
+  "cefr": "B1",
+  "note": "Spoken short forms: 'hab's' = habe es, 'meld' = melde. 'sich melden' = get in touch.",
+  "situation": "Informal spoken German with friends (du, common short forms and particles)"
+ },
+ {
+  "de": "Hilfe!",
+  "en": "Help!",
+  "cefr": "A1",
+  "note": "Shout this in an emergency.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Rufen Sie bitte einen Krankenwagen!",
+  "en": "Please call an ambulance!",
+  "cefr": "A1",
+  "note": "Emergency number for ambulance and fire brigade is 112.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Rufen Sie die Polizei!",
+  "en": "Call the police!",
+  "cefr": "A1",
+  "note": "Police number in Germany is 110.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ich brauche Hilfe.",
+  "en": "I need help.",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Wo ist das nächste Krankenhaus?",
+  "en": "Where is the nearest hospital?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ich habe mein Handy verloren.",
+  "en": "I've lost my phone.",
+  "cefr": "A1",
+  "note": "Swap in: meinen Schlüssel, meine Tasche, mein Portemonnaie.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Das funktioniert nicht.",
+  "en": "This doesn't work.",
+  "cefr": "A1",
+  "note": "Very common for machines, tickets, cards, etc.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Die Heizung ist kaputt.",
+  "en": "The heating is broken.",
+  "cefr": "A1",
+  "note": "'kaputt' is the everyday word for broken.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Notruf, wo genau ist der Notfallort?",
+  "en": "Emergency services, where exactly is the emergency?",
+  "cefr": "A2",
+  "note": "What you hear when you call 112; give the street and house number first.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Was ist passiert?",
+  "en": "What happened?",
+  "cefr": "A2",
+  "note": "You will hear this from police, paramedics or passers-by.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ist jemand verletzt?",
+  "en": "Is anyone hurt?",
+  "cefr": "A2",
+  "note": "Typical question after an accident.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Mir wurde das Portemonnaie gestohlen.",
+  "en": "My wallet was stolen.",
+  "cefr": "A2",
+  "note": "Also common: 'Man hat mir … geklaut.' (informal).",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ich möchte einen Diebstahl anzeigen.",
+  "en": "I'd like to report a theft.",
+  "cefr": "B1",
+  "note": "Say this at the police station; you will get a written report (Anzeige) for insurance.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Wo ist das Fundbüro?",
+  "en": "Where is the lost and found office?",
+  "cefr": "A2",
+  "note": "Towns and Deutsche Bahn each have their own Fundbüro.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ich muss meine Karte sperren lassen.",
+  "en": "I need to block my card.",
+  "cefr": "B1",
+  "note": "Central blocking number in Germany: 116 116.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Können Sie mir bitte helfen?",
+  "en": "Could you help me, please?",
+  "cefr": "A1",
+  "note": "Polite way to ask a stranger or staff.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Ich habe mich ausgesperrt.",
+  "en": "I've locked myself out.",
+  "cefr": "B1",
+  "note": "Call a Schlüsseldienst; ask for the price first, they can be expensive.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Können Sie bitte einen Handwerker schicken?",
+  "en": "Could you please send a repairman?",
+  "cefr": "B1",
+  "note": "Say this to your landlord or Hausverwaltung.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Haben Sie einen Ausweis dabei?",
+  "en": "Do you have ID on you?",
+  "cefr": "A2",
+  "note": "Police may ask this; show your passport or residence permit.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Bitte bleiben Sie ruhig, Hilfe ist unterwegs.",
+  "en": "Please stay calm, help is on the way.",
+  "cefr": "B1",
+  "note": "What you may hear from the emergency operator.",
+  "situation": "Emergencies and problems: help, police, lost things, something is broken"
+ },
+ {
+  "de": "Schönes Wetter heute, oder?",
+  "en": "Nice weather today, isn't it?",
+  "cefr": "A1",
+  "note": "Classic opener with neighbours or colleagues. Typical reply: \"Ja, endlich!\"",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Es regnet schon wieder.",
+  "en": "It's raining again.",
+  "cefr": "A1",
+  "note": "Complaining about the weather is a very common, safe topic in Germany.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Heute ist es aber kalt!",
+  "en": "It's really cold today!",
+  "cefr": "A1",
+  "note": "\"aber\" here adds emphasis, not \"but\". Use \"warm\" or \"heiß\" for the opposite.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Schönes Wochenende!",
+  "en": "Have a nice weekend!",
+  "cefr": "A1",
+  "note": "Said on Friday when leaving work or a shop. Reply: \"Danke, gleichfalls!\"",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Danke, gleichfalls!",
+  "en": "Thanks, you too!",
+  "cefr": "A1",
+  "note": "Standard reply to any good wish. \"Ebenfalls\" means the same.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Was machen Sie am Wochenende?",
+  "en": "What are you doing this weekend?",
+  "cefr": "A1",
+  "note": "With colleagues on first-name terms: \"Was machst du am Wochenende?\"",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Wie war Ihr Wochenende?",
+  "en": "How was your weekend?",
+  "cefr": "A1",
+  "note": "Typical Monday question. Informal: \"Wie war dein Wochenende?\"",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Ich gehe gern spazieren.",
+  "en": "I like going for walks.",
+  "cefr": "A1",
+  "note": "Use \"gern\" + verb to talk about hobbies: \"Ich lese gern\", \"Ich koche gern\".",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Ich habe nichts Besonderes gemacht.",
+  "en": "I didn't do anything special.",
+  "cefr": "A2",
+  "note": "Very common, relaxed answer to \"Wie war Ihr Wochenende?\"",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Ich war mit Freunden unterwegs.",
+  "en": "I was out with friends.",
+  "cefr": "A2",
+  "note": "\"unterwegs sein\" = to be out and about.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Ich habe mich einfach ausgeruht.",
+  "en": "I just relaxed.",
+  "cefr": "A2",
+  "note": "Also common: \"Ich habe einfach gechillt.\" (informal)",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Morgen soll es regnen.",
+  "en": "It's supposed to rain tomorrow.",
+  "cefr": "A2",
+  "note": "\"soll\" = according to the forecast. You'll hear this a lot.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Haben Sie schon Pläne für das Wochenende?",
+  "en": "Do you have any plans for the weekend yet?",
+  "cefr": "A2",
+  "note": "Often asked on Thursday or Friday.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Was machen Sie gern in Ihrer Freizeit?",
+  "en": "What do you like to do in your free time?",
+  "cefr": "A2",
+  "note": "Slightly more personal; good when getting to know someone.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Bei dem Wetter bleibe ich lieber zu Hause.",
+  "en": "In this weather I'd rather stay at home.",
+  "cefr": "A2",
+  "note": "\"lieber\" = rather, preferably.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Das Wochenende war leider viel zu kurz.",
+  "en": "Unfortunately the weekend was way too short.",
+  "cefr": "A2",
+  "note": "Typical light Monday complaint; people will usually agree and laugh.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Hoffentlich bleibt das Wetter so.",
+  "en": "Hopefully the weather stays like this.",
+  "cefr": "B1",
+  "note": "Said when the weather is nice. \"Hoffentlich\" starts many small-talk wishes.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Mal sehen, ich habe noch nichts geplant.",
+  "en": "We'll see, I haven't planned anything yet.",
+  "cefr": "B1",
+  "note": "Casual, noncommittal answer to questions about plans.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Was für ein Sauwetter!",
+  "en": "What awful weather!",
+  "cefr": "B1",
+  "note": "Colloquial but very common and not rude. Best with people you know a bit.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Wenn das Wetter mitspielt, machen wir einen Ausflug.",
+  "en": "If the weather cooperates, we'll go on a day trip.",
+  "cefr": "B1",
+  "note": "\"mitspielen\" = to play along; common idiom for weather.",
+  "situation": "Weather, weekend and free time small talk"
+ },
+ {
+  "de": "Entschuldigung!",
+  "en": "Excuse me!",
+  "cefr": "A1",
+  "note": "Use to get attention politely, e.g. in a shop or on the street.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Können Sie mir bitte helfen?",
+  "en": "Can you help me, please?",
+  "cefr": "A1",
+  "note": "Common reply: \"Ja, natürlich.\"",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Noch einmal, bitte.",
+  "en": "Once more, please.",
+  "cefr": "A1",
+  "note": "Ask someone to repeat something.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Können Sie bitte langsamer sprechen?",
+  "en": "Could you speak more slowly, please?",
+  "cefr": "A1",
+  "note": "",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Es tut mir leid.",
+  "en": "I'm sorry.",
+  "cefr": "A1",
+  "note": "For apologies and sympathy; for small things, \"Entschuldigung\" is enough.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Kein Problem.",
+  "en": "No problem.",
+  "cefr": "A1",
+  "note": "Typical reply to an apology or a thank-you.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Ich hätte gern eine Quittung.",
+  "en": "I'd like a receipt, please.",
+  "cefr": "A2",
+  "note": "\"Ich hätte gern…\" is the standard polite way to ask for something.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Könnten Sie das bitte wiederholen?",
+  "en": "Could you repeat that, please?",
+  "cefr": "A2",
+  "note": "More polite than \"Können Sie…\".",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Das funktioniert nicht.",
+  "en": "This doesn't work.",
+  "cefr": "A2",
+  "note": "Simple way to start a complaint about a device or service.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Hier stimmt etwas nicht.",
+  "en": "Something is wrong here.",
+  "cefr": "A2",
+  "note": "Often said when checking a bill: \"Die Rechnung stimmt nicht.\"",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Das habe ich nicht bestellt.",
+  "en": "I didn't order this.",
+  "cefr": "A2",
+  "note": "In a restaurant or about a delivery.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Einen Moment, bitte.",
+  "en": "One moment, please.",
+  "cefr": "A2",
+  "note": "You will often hear this from staff on the phone or at a counter.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Es tut mir leid, aber das geht leider nicht.",
+  "en": "I'm sorry, but that's not possible.",
+  "cefr": "A2",
+  "note": "Common polite refusal you will hear from staff.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Könnten Sie mir bitte sagen, wo das Bürgeramt ist?",
+  "en": "Could you tell me where the citizens' office is?",
+  "cefr": "A2",
+  "note": "\"Könnten Sie mir sagen, …\" works for any polite question.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Würden Sie bitte etwas leiser sein?",
+  "en": "Would you mind being a bit quieter?",
+  "cefr": "B1",
+  "note": "Polite request to neighbours, e.g. during Ruhezeit (quiet hours).",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Ich möchte mich beschweren.",
+  "en": "I'd like to make a complaint.",
+  "cefr": "B1",
+  "note": "Formal; staff may reply: \"Worum geht es denn?\"",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Ich möchte das umtauschen.",
+  "en": "I'd like to exchange this.",
+  "cefr": "B1",
+  "note": "Staff will often ask: \"Haben Sie den Kassenbon?\"",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Kann ich mein Geld zurückbekommen?",
+  "en": "Can I get my money back?",
+  "cefr": "B1",
+  "note": "Shops are not always obliged to refund if the item is not faulty.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Wir kümmern uns darum.",
+  "en": "We'll take care of it.",
+  "cefr": "B1",
+  "note": "Typical reply you will hear after a complaint.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ },
+ {
+  "de": "Vielen Dank für Ihr Verständnis.",
+  "en": "Thank you for your understanding.",
+  "cefr": "B1",
+  "note": "Heard in announcements and emails, e.g. from Deutsche Bahn about delays.",
+  "situation": "Polite requests and complaints (Könnten Sie…, Es tut mir leid, aber…)"
+ }
+]

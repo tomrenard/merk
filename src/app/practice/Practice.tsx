@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
-import { German, Headword, SoundToggle, speak } from "../review/German";
+import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
 
@@ -29,6 +29,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   const [checked, setChecked] = useState(false);
   const [missed, setMissed] = useState<Note[]>([]);
   const note = words[index];
+  useSpeechUnlock();
 
   if (!note) {
     const score = words.length - missed.length;

@@ -7,6 +7,7 @@
  * (AI_GATEWAY_API_KEY or VERCEL_OIDC_TOKEN from `vercel env pull .env.vercel`), then from cache.
  */
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
@@ -15,7 +16,7 @@ import { z } from "zod";
 import { connect } from "../src/db/client.ts";
 import { cards, notes } from "../src/db/schema.ts";
 import { lemmaKeys } from "../src/lib/german.ts";
-import { frequencyOrder, parseB1Line, parseRanks } from "../src/lib/wordlists.ts";
+import { frequencyOrder, interleave, parseB1Line, parseRanks } from "../src/lib/wordlists.ts";
 
 type Note = typeof notes.$inferInsert;
 
@@ -92,6 +93,25 @@ function coreNotes(): Note[] {
       };
     })
     .filter((note) => isNewWord(note.de));
+}
+
+/** Everyday phrases by situation (data/phrases.json, from scripts/generate-phrases.ts). */
+function phraseNotes(): Note[] {
+  const list: { de: string; en: string; cefr: string; note: string }[] = JSON.parse(
+    readFileSync(`${DATA}phrases.json`, "utf8"),
+  );
+  const seen = new Set<string>();
+  return list
+    .filter((p) => !seen.has(p.de) && seen.add(p.de))
+    .map((p) => ({
+      id: `phrase:${createHash("sha1").update(p.de).digest("hex").slice(0, 12)}`,
+      source: "phrase",
+      cefr: p.cefr,
+      ord: 0,
+      de: p.de,
+      en: p.en,
+      hint: p.note || null,
+    }));
 }
 
 /** DeReWo corpus frequency ranks (CC BY-NC, fetched, never committed): key → rank. */
@@ -281,18 +301,23 @@ async function b1Notes(): Promise<Note[]> {
 }
 
 const ranks = frequencyRanks();
-// Order of the list = teaching order: A1 and core words together, then A2; B1 is already by frequency.
-const ordered = (list: Note[], base: number) =>
-  frequencyOrder(list, ranks).map((note, i) => ({ ...note, ord: base + i }));
+// Order of the list = teaching order: A1 and core words by frequency, then A2; B1 is already by
+// frequency. Phrases go in among the words of their level, one after every four words.
 const a1 = [...a1Notes(), ...coreNotes()];
+const phrases = phraseNotes();
+const level = (cefr: string) => phrases.filter((p) => p.cefr === cefr);
+const numbered = (list: Note[], base: number) =>
+  list.map((note, i) => ({ ...note, ord: base + i }));
 const words = await withVerbInfo([
-  ...ordered(a1, 0),
-  ...ordered(a2Notes(), 100_000),
-  ...(await b1Notes()),
+  ...numbered(interleave(frequencyOrder(a1, ranks), level("A1"), 4), 0),
+  ...numbered(interleave(frequencyOrder(a2Notes(), ranks), level("A2"), 4), 100_000),
+  ...numbered(interleave(await b1Notes(), level("B1"), 4), 200_000),
 ]);
-/** B1 is for recognition: no English→German card. */
+/** B1 words are for recognition: no English→German card. Phrases get both at every level. */
 const directions = (note: Note) =>
-  note.cefr === "B1" ? (["de_en"] as const) : (["de_en", "en_de"] as const);
+  note.cefr === "B1" && note.source !== "phrase"
+    ? (["de_en"] as const)
+    : (["de_en", "en_de"] as const);
 const db = connect();
 const before = await db.$count(notes);
 const introducedBefore = await db.$count(cards, isNotNull(cards.introducedAt));
@@ -350,13 +375,14 @@ const dropped = await db.transaction(async (tx) => {
     .onConflictDoNothing();
   // English→German cards of B1 words you have not started yet (B1 is recognition only).
   await tx.execute(
-    sql`delete from ${cards} using ${notes} where ${cards.noteId} = ${notes.id} and ${notes.cefr} = 'B1' and ${cards.direction} = 'en_de' and ${cards.introducedAt} is null`,
+    sql`delete from ${cards} using ${notes} where ${cards.noteId} = ${notes.id} and ${notes.cefr} = 'B1' and ${notes.source} <> 'phrase' and ${cards.direction} = 'en_de' and ${cards.introducedAt} is null`,
   );
   if ((await tx.$count(cards, isNotNull(cards.introducedAt))) !== introducedBefore)
     throw new Error("Started cards changed: import rolled back");
   return removed;
 });
 const perLevel = ["A1", "A2", "B1"].map((l) => `${l}: ${words.filter((w) => w.cefr === l).length}`);
+perLevel.push(`phrases: ${phrases.length}`);
 const added = (await db.$count(notes)) - before + dropped.length;
 console.log(`${perLevel.join(", ")} · ${added} new notes, ${dropped.length} removed`);
 process.exit(0);

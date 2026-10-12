@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { frequencyOrder, parseB1Line, parseRanks } from "./wordlists.ts";
+import { frequencyOrder, interleave, parseB1Line, parseRanks } from "./wordlists.ts";
 
 describe("parseB1Line", () => {
   it.each([
@@ -51,5 +51,20 @@ describe("frequencyOrder", () => {
     ).map((w) => w.de);
     expect(result.indexOf("auf")).toBe(0);
     expect(result.lastIndexOf("auf")).toBe(50);
+  });
+});
+
+describe("interleave", () => {
+  it("puts one extra after every n items, leftovers at the end", () => {
+    expect(interleave<number | string>([1, 2, 3, 4, 5], ["a", "b", "c"], 2)).toEqual([
+      1,
+      2,
+      "a",
+      3,
+      4,
+      "b",
+      5,
+      "c",
+    ]);
   });
 });

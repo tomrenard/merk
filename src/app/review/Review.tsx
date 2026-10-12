@@ -12,7 +12,7 @@ import {
 } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
-import { German, SoundToggle, speak } from "./German";
+import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
 const GRADES = [
   { rating: 1, label: "Again", className: "[--c:#d61f1f] [--edge:#a51515]" },
@@ -35,7 +35,8 @@ const RATINGS: Record<TypedResult, number[]> = {
 };
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
-  if (item?.direction !== "en_de") return "blank";
+  // A phrase can be said many ways: compare yourself, then grade.
+  if (item?.direction !== "en_de" || item.note.source === "phrase") return "blank";
   return checkTyped(typed, item.note.de, item.note.governs);
 }
 
@@ -44,7 +45,7 @@ const FEEDBACK: Record<TypedResult, string> = {
   almost: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300",
   article: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
   wrong: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
-  blank: "",
+  blank: "bg-[var(--field)]",
 };
 
 /** A card forgotten this often gets a nudge to add a memory hook (in the hint). */
@@ -58,6 +59,7 @@ export function Review({ first }: Props) {
   const [typed, setTyped] = useState("");
   const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
+  useSpeechUnlock();
 
   useEffect(() => {
     if (item?.direction === "de_en") speak(spokenForm(item.note.de));
@@ -129,7 +131,7 @@ export function Review({ first }: Props) {
     almost: "≈ Almost: check the spelling",
     article: `✗ Article: ${articleOf(note.de)}`,
     wrong: `✗ ${typed}`,
-    blank: "",
+    blank: typed.trim() ? `You wrote: ${typed.trim()}` : "",
   }[result];
 
   return (

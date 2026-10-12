@@ -33,9 +33,9 @@ export default async function WordsPage({
     <main className="screen with-tabs">
       <header className="topbar">
         <h1 className="text-3xl font-black">Words</h1>
-        <span className="muted font-bold">
-          {words.length} {q ? "found" : known ? "known" : "words"}
-        </span>
+        <Link href="/words/new" className="chip bg-[var(--brand-soft)] text-[var(--brand)]">
+          + Add
+        </Link>
       </header>
       <form>
         <input
@@ -49,7 +49,7 @@ export default async function WordsPage({
           className="field w-full"
         />
       </form>
-      <nav className="flex gap-2">
+      <nav className="flex items-center gap-2">
         {[
           { href: "/words", label: "All", on: !known },
           { href: "/words?known=1", label: "⭐ Known", on: known },
@@ -62,6 +62,9 @@ export default async function WordsPage({
             {f.label}
           </Link>
         ))}
+        <span className="muted ml-auto text-sm font-bold">
+          {words.length} {q ? "found" : known ? "known" : "words"}
+        </span>
       </nav>
       <ul className="card flex flex-col divide-y-2 divide-[var(--line)] py-0">
         {words.map((word) => (

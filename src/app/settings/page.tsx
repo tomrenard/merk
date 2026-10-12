@@ -4,6 +4,7 @@ import { settings } from "@/db/schema";
 import { getSettings } from "@/lib/review";
 import { requireSession } from "@/lib/session";
 import { TabBar } from "../TabBar";
+import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +42,7 @@ export default async function SettingsPage() {
       <button type="submit" className="btn btn-primary">
         Save
       </button>
+      <VoicePicker />
       <TabBar active="/settings" />
     </form>
   );

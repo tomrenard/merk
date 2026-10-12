@@ -5,7 +5,11 @@ import { db } from "@/db/client";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { streakLength } from "@/lib/streak";
 
-const scheduler = fsrs();
+// Fuzz spreads due dates a little, so words learned together don't stay bunched together.
+const scheduler = fsrs({ enable_fuzz: true });
+
+/** No new words while this many reviews are waiting: catch up first. */
+const BACKLOG = 120;
 
 /** Cards due within this window are shown now rather than making you wait (as Anki does). */
 const LEARN_AHEAD = sql`now() + interval '20 minutes'`;
@@ -18,6 +22,15 @@ const sibling = alias(cards, "sibling");
 const siblingJoin = and(eq(sibling.noteId, cards.noteId), eq(sibling.direction, "de_en"));
 const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START})`;
 
+/**
+ * A card waits until tomorrow if the other direction of its word was reviewed today, so one
+ * doesn't give the other away. Not while it is being learned (state 1) or relearned (3): those
+ * short steps must happen today.
+ */
+const SIBLING_FREE = sql`(coalesce(${cards.fsrs}->>'state', '0') in ('1', '3') or not exists (
+  select 1 from review_logs rl join cards s on s.id = rl.card_id
+  where s.note_id = ${cards.noteId} and s.id <> ${cards.id} and rl.reviewed_at >= ${DAY_START}))`;
+
 /** The study day a timestamp belongs to, as a date, with the same 4:00 Berlin rollover. */
 const studyDay = (at: SQL | typeof reviewLogs.reviewedAt) =>
   sql`((${at} at time zone 'Europe/Berlin') - interval '4 hours')::date`;
@@ -27,6 +40,7 @@ export type ReviewItem = {
   cardId: string;
   direction: "de_en" | "en_de";
   reps: number;
+  lapses: number;
   isNew: boolean;
   note: typeof notes.$inferSelect;
 };
@@ -37,24 +51,34 @@ export async function getSettings(): Promise<Settings> {
   return row;
 }
 
+/**
+ * `due`: reviews waiting now. `newLeft`: new words still to start today (none while the backlog
+ * is high). `followUps`: English→German cards of words started on an earlier day; they don't
+ * count against the daily new words.
+ */
 export async function counts() {
-  const [row] = await db()
-    .select({
-      due: sql<number>`count(*) filter (where ${cards.due} <= now())::int`,
-      offerable: sql<number>`count(*) filter (where ${NEW_OFFERABLE})::int`,
-      newToday: sql<number>`count(*) filter (where ${cards.introducedAt} >= ${DAY_START})::int`,
-    })
-    .from(cards)
-    .leftJoin(sibling, siblingJoin);
-  const { newPerDay } = await getSettings();
-  const { due = 0, offerable = 0, newToday = 0 } = row ?? {};
-  return { due, newLeft: Math.min(Math.max(newPerDay - newToday, 0), offerable) };
+  const [[row], { newPerDay }] = await Promise.all([
+    db()
+      .select({
+        due: sql<number>`count(*) filter (where ${cards.due} <= now() and ${SIBLING_FREE})::int`,
+        newWords: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'de_en')::int`,
+        followUps: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'en_de')::int`,
+        startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
+      })
+      .from(cards)
+      .leftJoin(sibling, siblingJoin),
+    getSettings(),
+  ]);
+  const { due = 0, newWords = 0, followUps = 0, startedToday = 0 } = row ?? {};
+  const budget = due > BACKLOG ? 0 : Math.max(newPerDay - startedToday, 0);
+  return { due, newLeft: Math.min(budget, newWords), followUps };
 }
 
 const ITEM = {
   cardId: cards.id,
   direction: cards.direction,
   reps: sql<number>`coalesce((${cards.fsrs}->>'reps')::int, 0)`,
+  lapses: sql<number>`coalesce((${cards.fsrs}->>'lapses')::int, 0)`,
   note: notes,
 };
 
@@ -64,20 +88,22 @@ async function firstSeenDueBy(by: SQL): Promise<ReviewItem | null> {
     .select(ITEM)
     .from(cards)
     .innerJoin(notes, eq(notes.id, cards.noteId))
-    .where(lte(cards.due, by))
+    .where(and(lte(cards.due, by), SIBLING_FREE))
     .orderBy(asc(cards.due))
     .limit(1);
   return row ? { ...row, isNew: false } : null;
 }
 
+/** Follow-ups always; a new word only while today's budget lasts. */
 async function firstNew(): Promise<ReviewItem | null> {
-  if ((await counts()).newLeft === 0) return null;
+  const { newLeft, followUps } = await counts();
+  if (newLeft === 0 && followUps === 0) return null;
   const [row] = await db()
     .select(ITEM)
     .from(cards)
     .innerJoin(notes, eq(notes.id, cards.noteId))
     .leftJoin(sibling, siblingJoin)
-    .where(NEW_OFFERABLE)
+    .where(newLeft > 0 ? NEW_OFFERABLE : and(NEW_OFFERABLE, eq(cards.direction, "en_de")))
     .orderBy(asc(notes.ord), asc(cards.direction))
     .limit(1);
   return row ? { ...row, isNew: true } : null;

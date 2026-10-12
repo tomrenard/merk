@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { isCorrect, spokenForm } from "@/lib/german";
+import { articleOf, checkTyped, spokenForm, type TypedResult } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak } from "./German";
@@ -13,6 +13,35 @@ const GRADES = [
   { rating: 3, label: "Good", className: "[--c:#2f7d00] [--edge:#235e00]" },
   { rating: 4, label: "Easy", className: "[--c:#0077b6] [--edge:#005a8a]" },
 ];
+
+/**
+ * Grades on offer. A typed answer is checked for you, so a wrong one can't be graded Good by
+ * accident (people overrate what they know); "I was right" covers answers the check can't know,
+ * like a synonym. German→English and blank answers are graded by you.
+ */
+const RATINGS: Record<TypedResult, number[]> = {
+  right: [2, 3, 4],
+  almost: [1, 2],
+  article: [1],
+  wrong: [1],
+  blank: [1, 2, 3, 4],
+};
+
+function typedResult(item: ReviewItem | null, typed: string): TypedResult {
+  if (item?.direction !== "en_de") return "blank";
+  return checkTyped(typed, item.note.de, item.note.governs);
+}
+
+const FEEDBACK: Record<TypedResult, string> = {
+  right: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
+  almost: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300",
+  article: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
+  wrong: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
+  blank: "",
+};
+
+/** A card forgotten this often gets a nudge to add a memory hook (in the hint). */
+const TRICKY = 8;
 
 type Props = { first: ReviewItem | null };
 
@@ -52,7 +81,9 @@ export function Review({ first }: Props) {
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         reveal();
-      } else if (revealed && ["1", "2", "3", "4"].includes(event.key)) answer(Number(event.key));
+      } else if (revealed && RATINGS[typedResult(item, typed)].includes(Number(event.key))) {
+        answer(Number(event.key));
+      }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -77,7 +108,15 @@ export function Review({ first }: Props) {
   }
 
   const { note } = item;
-  const right = item.direction === "en_de" && typed && isCorrect(typed, note.de);
+  const result = typedResult(item, typed);
+  const ratings = RATINGS[result];
+  const message = {
+    right: "✓ Richtig!",
+    almost: "≈ Almost: check the spelling",
+    article: `✗ Article: ${articleOf(note.de)}`,
+    wrong: `✗ ${typed}`,
+    blank: "",
+  }[result];
 
   return (
     <main className="screen">
@@ -100,13 +139,20 @@ export function Review({ first }: Props) {
 
       <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
         {item.direction === "de_en" ? (
-          <German word={note.de} />
+          <>
+            <German word={note.de} />
+            {note.governs && <p className="muted font-bold">+ {note.governs}</p>}
+          </>
         ) : (
           <>
             <p className="muted text-sm font-extrabold tracking-wide uppercase">
               Write this in German
             </p>
-            <p className="text-3xl font-black">{note.en}</p>
+            <p className="text-3xl font-black">
+              {note.en}
+              {/* Says a preposition belongs to the answer, without giving it away. */}
+              {note.governs && <span className="muted text-lg"> · + prep.</span>}
+            </p>
             <form
               className="mt-4 w-full"
               onSubmit={(event) => {
@@ -139,14 +185,9 @@ export function Review({ first }: Props) {
               </>
             ) : (
               <>
-                {typed && (
-                  <p
-                    className={`chip mx-auto ${right ? "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400" : "bg-red-100 text-red-600 dark:bg-red-950 dark:text-red-400"}`}
-                  >
-                    {right ? "✓ Richtig!" : `✗ ${typed}`}
-                  </p>
-                )}
+                {message && <p className={`chip mx-auto ${FEEDBACK[result]}`}>{message}</p>}
                 <German word={note.de} />
+                {note.governs && <p className="muted font-bold">+ {note.governs}</p>}
               </>
             )}
             {note.exampleDe && (
@@ -160,24 +201,42 @@ export function Review({ first }: Props) {
             )}
             {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}
             {note.hint && <p className="muted text-sm">{note.hint}</p>}
+            {item.lapses >= TRICKY && (
+              <Link
+                href={`/words/${encodeURIComponent(note.id)}?back=review`}
+                className="chip mx-auto bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
+              >
+                🧠 Tricky word: add a memory hook
+              </Link>
+            )}
           </div>
         )}
       </section>
 
       <footer className="sticky bottom-0 pb-[env(safe-area-inset-bottom)]">
         {revealed ? (
-          <div className="grid grid-cols-4 gap-2">
-            {GRADES.map((g) => (
-              <button
-                key={g.rating}
-                type="button"
-                disabled={pending}
-                onClick={() => answer(g.rating)}
-                className={`btn btn-solid px-1 text-sm ${g.className} disabled:opacity-50`}
-              >
-                {g.label}
+          <div className="flex flex-col gap-2">
+            <div
+              className="grid gap-2"
+              style={{ gridTemplateColumns: `repeat(${ratings.length}, 1fr)` }}
+            >
+              {GRADES.filter((g) => ratings.includes(g.rating)).map((g) => (
+                <button
+                  key={g.rating}
+                  type="button"
+                  disabled={pending}
+                  onClick={() => answer(g.rating)}
+                  className={`btn btn-solid px-1 text-sm ${g.className} disabled:opacity-50`}
+                >
+                  {ratings.length === 1 ? "Continue" : g.label}
+                </button>
+              ))}
+            </div>
+            {result === "wrong" && (
+              <button type="button" disabled={pending} onClick={() => answer(3)} className="btn">
+                I was right
               </button>
-            ))}
+            )}
           </div>
         ) : (
           <button type="button" onClick={reveal} className="btn btn-primary w-full">

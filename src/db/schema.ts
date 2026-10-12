@@ -25,6 +25,8 @@ export const notes = pgTable("notes", {
   fr: text("fr"),
   exampleFr: text("example_fr"),
   hint: text("hint"),
+  /** Case or preposition a verb takes, e.g. "auf + Akk." for warten. */
+  governs: text("governs"),
   explainEn: text("explain_en"),
   explainFr: text("explain_fr"),
   /** Set when you fix a note by hand, so re-imports leave it alone. */
@@ -70,7 +72,8 @@ export const settings = pgTable(
     explainLang: text("explain_lang", { enum: ["en", "fr", "both"] })
       .notNull()
       .default("both"),
-    newPerDay: smallint("new_per_day").notNull().default(15),
+    /** New words (German→English cards) per day; their English→German cards follow a day later. */
+    newPerDay: smallint("new_per_day").notNull().default(7),
   },
   (t) => [check("settings_single_row", sql`${t.id} = 1`)],
 );

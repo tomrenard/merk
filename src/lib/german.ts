@@ -69,8 +69,58 @@ function acceptedAnswers(headword: string): string[] {
   return [...new Set(forms.map(normalize))];
 }
 
+/** Answer comparison also ignores commas, quotes and long dashes. */
+const answerKey = (text: string) => normalize(text.replace(/[,"'„“”‚‘’«»–—]/g, " "));
+
+/** Umlauts and ß reduced to their base letter: "schön" and "schon" look alike here. */
+const vowelBase = (key: string) =>
+  key.replace(/ae/g, "a").replace(/oe/g, "o").replace(/ue/g, "u").replace(/ss/g, "s");
+
+const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
+
+/** Edit distance (insert, delete, replace one letter). */
+function distance(a: string, b: string): number {
+  let row = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const next = [i];
+    for (let j = 1; j <= b.length; j++) {
+      next[j] = Math.min(
+        (row[j] ?? 0) + 1,
+        (next[j - 1] ?? 0) + 1,
+        (row[j - 1] ?? 0) + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+    }
+    row = next;
+  }
+  return row[b.length] ?? 0;
+}
+
+/**
+ * How a typed answer compares to the headword: `right`; `article` (the word is right but the
+ * gender is wrong or missing, which is part of the word); `almost` (one letter off, but not an
+ * umlaut or ß, since schon/schön are different words); `wrong`; or `blank`. A verb that takes a
+ * preposition (`governs` "auf + Akk.") is also right with it: "warten auf".
+ */
+export type TypedResult = "right" | "article" | "almost" | "wrong" | "blank";
+
+export function checkTyped(input: string, headword: string, governs?: string | null): TypedResult {
+  const given = answerKey(input);
+  if (!given) return "blank";
+  const answers = acceptedAnswers(headword).map(answerKey);
+  const prep = governs?.split(" ")[0];
+  if (prep) answers.push(...answers.map((answer) => `${answer} ${answerKey(prep)}`));
+  if (answers.includes(given)) return "right";
+  if (articleOf(headword) && answers.some((a) => withoutArticle(a) === withoutArticle(given))) {
+    return "article";
+  }
+  const almost = answers.some(
+    (a) => a.length >= 4 && distance(a, given) === 1 && vowelBase(a) !== vowelBase(given),
+  );
+  return almost ? "almost" : "wrong";
+}
+
 export function isCorrect(input: string, headword: string): boolean {
-  return acceptedAnswers(headword).includes(normalize(input));
+  return checkTyped(input, headword) === "right";
 }
 
 /**

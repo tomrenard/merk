@@ -17,12 +17,9 @@ function Stat({ icon, tint, label, value }: StatProps) {
 }
 
 export default async function Home() {
-  const [{ due, newLeft }, { reviewsToday, streak }, { remembered, known }] = await Promise.all([
-    counts(),
-    activity(),
-    progress(),
-  ]);
-  const todo = due + newLeft;
+  const [{ due, newLeft, followUps }, { reviewsToday, streak }, { remembered, known }] =
+    await Promise.all([counts(), activity(), progress()]);
+  const todo = due + newLeft + followUps;
   return (
     <main className="screen with-tabs">
       <header className="topbar">
@@ -42,7 +39,7 @@ export default async function Home() {
           </h2>
           <p className="muted mt-1 font-semibold">
             {todo > 0
-              ? `${due} to review · ${newLeft} new words`
+              ? `${due} to review · ${newLeft} new words${followUps ? ` · ${followUps} to write` : ""}`
               : "Come back tomorrow, or keep going"}
           </p>
         </div>

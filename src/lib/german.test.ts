@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, isCorrect, lemmaKeys, splitPlural, spokenForm } from "./german.ts";
+import { articleOf, checkTyped, isCorrect, lemmaKeys, splitPlural, spokenForm } from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -79,5 +79,24 @@ describe("splitPlural", () => {
       " die Professorin",
       "[, -nen]",
     ]);
+  });
+});
+
+describe("checkTyped", () => {
+  it.each([
+    ["der Tisch", "der Tisch, -e", undefined, "right"],
+    ["Der Tisch!", "der Tisch, -e", undefined, "right"],
+    ["die Tisch", "der Tisch, -e", undefined, "article"],
+    ["Tisch", "der Tisch, -e", undefined, "article"],
+    ["der Tisvh", "der Tisch, -e", undefined, "almost"],
+    ["schon", "schön", undefined, "wrong"],
+    ["die Mutter", "die Mütter", undefined, "wrong"],
+    ["der Stuhl", "der Tisch, -e", undefined, "wrong"],
+    ["  ", "der Tisch, -e", undefined, "blank"],
+    ["warten", "warten", "auf + Akk.", "right"],
+    ["warten auf", "warten", "auf + Akk.", "right"],
+    ["auf", "auf", undefined, "right"],
+  ])("%j for %j → %s", (input, headword, governs, result) => {
+    expect(checkTyped(input, headword, governs)).toBe(result);
   });
 });

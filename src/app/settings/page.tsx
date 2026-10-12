@@ -11,7 +11,7 @@ async function save(form: FormData) {
   "use server";
   await requireSession();
   const newPerDay = Number(form.get("newPerDay"));
-  if (!Number.isInteger(newPerDay) || newPerDay < 0 || newPerDay > 200) {
+  if (!Number.isInteger(newPerDay) || newPerDay < 0 || newPerDay > 50) {
     throw new Error("Invalid settings");
   }
   await db().update(settings).set({ newPerDay });
@@ -24,15 +24,19 @@ export default async function SettingsPage() {
     <form action={save} className="screen with-tabs">
       <h1 className="text-3xl font-black">Settings</h1>
       <label className="card flex flex-col gap-2">
-        <span className="muted text-sm font-semibold">New cards per day</span>
+        <span className="muted text-sm font-semibold">New words per day</span>
         <input
           type="number"
           name="newPerDay"
           min={0}
-          max={200}
+          max={50}
           defaultValue={current.newPerDay}
           className="field"
         />
+        <span className="muted text-sm">
+          7 is about 15 minutes of reviews a day once things settle. New words pause by themselves
+          when more than 120 reviews are waiting.
+        </span>
       </label>
       <button type="submit" className="btn btn-primary">
         Save

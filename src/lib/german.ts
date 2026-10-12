@@ -15,10 +15,18 @@ export function articleColor(headword: string): string {
   return ARTICLE_COLOR[articleOf(headword) ?? ""] ?? "";
 }
 
-/** What the voice should read: "die Ansage, -n" → "die Ansage", "(sich) anziehen" → "sich anziehen". */
+/**
+ * What the voice should read: "die Ansage, -n" → "die Ansage", "die Bank (Geldinstitut)" →
+ * "die Bank", "(sich) anziehen" → "sich anziehen", "dein-" → "dein".
+ */
 export function spokenForm(headword: string): string {
-  const base = (headword.split(",")[0] ?? headword).replace("(pl.)", "");
-  return base.replace(/[()]/g, "").replace(/\//g, ", ").replace(/\s+/g, " ").trim();
+  return (headword.split(",")[0] ?? headword)
+    .replace(/\s\([^)]*\)$/, "")
+    .replace(/[()]/g, "")
+    .replace(/\//g, ", ")
+    .replace(/-(?=\s|,|$)|(?<=^|\s)-/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 /** Folds what a phone keyboard makes hard to type: case, umlauts as ae/oe/ue, ß as ss. */

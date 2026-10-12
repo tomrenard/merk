@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { and, isNull, notInArray, sql } from "drizzle-orm";
+import { and, eq, isNull, notInArray, sql } from "drizzle-orm";
 import { z } from "zod";
 import { connect } from "../src/db/client.ts";
 import { cards, notes } from "../src/db/schema.ts";
@@ -191,16 +191,14 @@ await db
     },
     setWhere: sql`${notes.editedAt} is null`,
   });
-// Notes no longer in the lists (dropped duplicates) go, with their cards; edited ones stay.
-await db.delete(notes).where(
-  and(
-    notInArray(
-      notes.id,
-      words.map((w) => w.id),
-    ),
-    isNull(notes.editedAt),
-  ),
-);
+// A1 rows dropped as duplicates go, with their cards; edited ones stay. Only A1: the other
+// lists come from upstream repos, and a change there must not wipe your history.
+const a1Ids = words.filter((w) => w.source === "goethe-a1").map((w) => w.id);
+if (!a1Ids.length) throw new Error("No A1 words loaded");
+const dropped = await db
+  .delete(notes)
+  .where(and(eq(notes.source, "goethe-a1"), notInArray(notes.id, a1Ids), isNull(notes.editedAt)))
+  .returning({ id: notes.id });
 await db
   .insert(cards)
   .values(
@@ -214,5 +212,6 @@ await db
   )
   .onConflictDoNothing();
 const perLevel = ["A1", "A2", "B1"].map((l) => `${l}: ${words.filter((w) => w.cefr === l).length}`);
-console.log(`${perLevel.join(", ")} · ${(await db.$count(notes)) - before} new notes`);
+const added = (await db.$count(notes)) - before + dropped.length;
+console.log(`${perLevel.join(", ")} · ${added} new notes, ${dropped.length} removed`);
 process.exit(0);

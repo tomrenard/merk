@@ -19,13 +19,14 @@ export default async function WordsPage({
     .from(notes)
     .leftJoin(cards, eq(cards.id, sql`${notes.id} || ':de_en'`))
     .where(q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined)
-    .orderBy(asc(notes.ord))
-    .limit(100);
+    .orderBy(asc(notes.ord));
   return (
     <main className="mx-auto flex max-w-md flex-col gap-4 p-4">
       <header className="flex justify-between text-sm opacity-60">
         <Link href="/">← merk</Link>
-        <span>{q ? `${words.length}${words.length === 100 ? "+" : ""} found` : "first 100"}</span>
+        <span>
+          {words.length} {q ? "found" : "words"}
+        </span>
       </header>
       <form>
         <input

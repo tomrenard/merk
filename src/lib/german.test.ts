@@ -58,5 +58,10 @@ describe("spokenForm", () => {
     expect(spokenForm("(sich) anziehen")).toBe("sich anziehen");
     expect(spokenForm("viel/viele")).toBe("viel, viele");
     expect(spokenForm("retten")).toBe("retten");
+    expect(spokenForm("die Kosten (Pl.)")).toBe("die Kosten");
+    expect(spokenForm("die Bank (Geldinstitut)")).toBe("die Bank");
+    expect(spokenForm("gern(e)")).toBe("gerne");
+    expect(spokenForm("dein-")).toBe("dein");
+    expect(spokenForm("das Stück/-stück")).toBe("das Stück, stück");
   });
 });

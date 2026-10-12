@@ -35,13 +35,21 @@
 body {
   min-height: 100dvh;
   color: var(--fg);
+  background: var(--bg);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Its own fixed layer: iOS Safari ignores background-attachment: fixed. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background:
     radial-gradient(40rem 30rem at 0% 0%, var(--blob-1), transparent 60%),
     radial-gradient(35rem 30rem at 100% 10%, var(--blob-2), transparent 60%),
     radial-gradient(35rem 30rem at 100% 100%, var(--blob-3), transparent 60%),
-    radial-gradient(35rem 30rem at 0% 90%, var(--blob-4), transparent 60%), var(--bg);
-  background-attachment: fixed;
-  -webkit-tap-highlight-color: transparent;
+    radial-gradient(35rem 30rem at 0% 90%, var(--blob-4), transparent 60%);
 }
 
 @layer components {
@@ -76,6 +84,15 @@ body {
   }
   .field:focus {
     border-color: #a855f7;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-transparent;
+  }
+
+  /* An inner screen: phone-width column clear of the notch. */
+  .screen {
+    @apply mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))];
   }
 
   .muted {

@@ -16,14 +16,17 @@ export function articleColor(headword: string): string {
 }
 
 /**
- * Splits "der Apfel, -̈" into the word and its plural note, for display. The lists mark umlaut
- * plurals with a combining diaeresis on the hyphen, which fonts draw on the next letter
- * ("-ë"), so it becomes a standalone "¨".
+ * Splits a headword into words and plural notes, for display: "der Professor, -en die
+ * Professorin, -nen" → words "der Professor", " die Professorin", notes ", -en", ", -nen".
+ * The lists mark umlaut plurals with a combining diaeresis on the hyphen, which fonts draw on
+ * the next letter ("-ë"), so it becomes a standalone "¨".
  */
-export function splitPlural(headword: string): [string, string | null] {
-  const at = headword.indexOf(", ");
-  if (at < 0) return [headword, null];
-  return [headword.slice(0, at), headword.slice(at).replace(/-\u0308/g, "-¨")];
+export function splitPlural(headword: string): { text: string; plural: boolean }[] {
+  return headword
+    .replace(/-\u0308/g, "-¨")
+    .split(/(, [^,]*?(?= (?:der|die|das) |$))/)
+    .filter(Boolean)
+    .map((text) => ({ text, plural: text.startsWith(", ") }));
 }
 
 /**

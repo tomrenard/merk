@@ -68,8 +68,16 @@ describe("spokenForm", () => {
 
 describe("splitPlural", () => {
   it("separates the plural and makes umlaut marks readable", () => {
-    expect(splitPlural("die Ansage, -n")).toEqual(["die Ansage", ", -n"]);
-    expect(splitPlural("der Arzt, -\u0308e")).toEqual(["der Arzt", ", -¨e"]);
-    expect(splitPlural("retten")).toEqual(["retten", null]);
+    const notes = (headword: string) =>
+      splitPlural(headword).map(({ text, plural }) => (plural ? `[${text}]` : text));
+    expect(notes("die Ansage, -n")).toEqual(["die Ansage", "[, -n]"]);
+    expect(notes("der Arzt, -\u0308e")).toEqual(["der Arzt", "[, -¨e]"]);
+    expect(notes("retten")).toEqual(["retten"]);
+    expect(notes("der Professor, -en die Professorin, -nen")).toEqual([
+      "der Professor",
+      "[, -en]",
+      " die Professorin",
+      "[, -nen]",
+    ]);
   });
 });

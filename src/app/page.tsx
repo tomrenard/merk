@@ -19,32 +19,30 @@ export default async function Home() {
     progress(),
   ]);
   return (
-    <main className="mx-auto flex min-h-dvh max-w-sm flex-col gap-5 p-5 pt-[max(2.5rem,env(safe-area-inset-top))]">
+    <main className="mx-auto flex min-h-dvh max-w-sm flex-col gap-5 p-5 pt-[max(2.5rem,env(safe-area-inset-top))] pb-[max(1.25rem,env(safe-area-inset-bottom))]">
       <header className="flex items-center justify-between">
-        <h1 className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-5xl font-extrabold tracking-tight text-transparent">
-          merk
-        </h1>
+        <h1 className="gradient-text text-5xl font-extrabold tracking-tight">merk</h1>
         <span className="pill text-sm font-bold">
           {streak > 0 ? `🔥 ${streak} day${streak === 1 ? "" : "s"}` : "🌱 day 1"}
         </span>
       </header>
 
       <div className="grid grid-cols-2 gap-3">
-        <Tile label="Due" value={due} tone="bg-gradient-to-br from-sky-400 to-blue-600" />
+        <Tile label="Due" value={due} tone="bg-gradient-to-br from-sky-600 to-indigo-700" />
         <Tile
           label="New today"
           value={newLeft}
-          tone="bg-gradient-to-br from-lime-400 to-emerald-600"
+          tone="bg-gradient-to-br from-emerald-600 to-teal-700"
         />
         <Tile
           label="Remembered · 30d"
           value={remembered === null ? "–" : `${remembered}%`}
-          tone="bg-gradient-to-br from-pink-400 to-rose-600"
+          tone="bg-gradient-to-br from-pink-600 to-rose-700"
         />
         <Tile
           label="Words known"
           value={known}
-          tone="bg-gradient-to-br from-amber-400 to-orange-600"
+          tone="bg-gradient-to-br from-orange-600 to-red-700"
         />
       </div>
 

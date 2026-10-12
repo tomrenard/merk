@@ -22,7 +22,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         <p className="text-6xl">
           {missed.length === 0 ? "🏆" : missed.length <= words.length / 4 ? "💪" : "📖"}
         </p>
-        <p className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-6xl font-extrabold text-transparent">
+        <p className="gradient-text text-6xl font-extrabold">
           {words.length - missed.length}/{words.length}
         </p>
         {missed.length > 0 && (

@@ -8,10 +8,10 @@ import { gradeAndNext } from "./actions";
 import { German, speak } from "./German";
 
 const GRADES = [
-  { rating: 1, label: "Again", className: "bg-rose-500 [--edge:#9f1239]" },
-  { rating: 2, label: "Hard", className: "bg-amber-500 [--edge:#92400e]" },
-  { rating: 3, label: "Good", className: "bg-emerald-500 [--edge:#065f46]" },
-  { rating: 4, label: "Easy", className: "bg-sky-500 [--edge:#075985]" },
+  { rating: 1, label: "Again", className: "bg-rose-600 [--edge:#881337]" },
+  { rating: 2, label: "Hard", className: "bg-amber-600 [--edge:#78350f]" },
+  { rating: 3, label: "Good", className: "bg-emerald-600 [--edge:#064e3b]" },
+  { rating: 4, label: "Easy", className: "bg-sky-600 [--edge:#0c4a6e]" },
 ];
 
 type Props = { first: ReviewItem | null };
@@ -79,7 +79,7 @@ export function Review({ first }: Props) {
   const right = item.direction === "en_de" && typed && isCorrect(typed, note.de);
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+    <main className="screen">
       <header className="topbar">
         <Link href="/" className="pill">
           ← merk

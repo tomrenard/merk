@@ -12,11 +12,18 @@ export function speak(text: string) {
 
 /** A headword with its plural note set smaller, in the word's gender colour. */
 export function Headword({ de, className = "" }: { de: string; className?: string }) {
-  const [word, plural] = splitPlural(de);
   return (
     <span className={`${articleColor(de)} ${className}`}>
-      {word}
-      {plural && <span className="text-[0.6em] opacity-70">{plural}</span>}
+      {splitPlural(de).map(({ text, plural }, i) =>
+        plural ? (
+          // biome-ignore lint/suspicious/noArrayIndexKey: parts of a fixed string
+          <span key={i} className="text-[0.6em] opacity-70">
+            {text}
+          </span>
+        ) : (
+          text
+        ),
+      )}
     </span>
   );
 }

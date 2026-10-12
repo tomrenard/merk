@@ -12,7 +12,7 @@ export default async function PracticePage({
   const scope: PracticeScope = (await searchParams).scope === "all" ? "all" : "today";
   const words = await practiceWords(scope);
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))]">
+    <main className="screen">
       <header className="topbar">
         <Link href="/" className="pill">
           ← merk

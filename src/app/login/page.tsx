@@ -33,9 +33,7 @@ export default async function LoginPage({
   const { error } = await searchParams;
   return (
     <form action={login} className="card mx-auto mt-24 flex max-w-xs flex-col gap-3">
-      <h1 className="bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-center text-5xl font-extrabold text-transparent">
-        merk
-      </h1>
+      <h1 className="gradient-text text-center text-5xl font-extrabold">merk</h1>
       <p className="muted mb-2 text-center text-sm font-semibold">
         Deutsch, ein Kärtchen nach dem anderen.
       </p>
@@ -48,7 +46,9 @@ export default async function LoginPage({
         required
         className="field"
       />
-      {error && <p className="text-sm font-semibold text-rose-600">Wrong password.</p>}
+      {error && (
+        <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">Wrong password.</p>
+      )}
       <button type="submit" className="btn btn-primary">
         Log in
       </button>

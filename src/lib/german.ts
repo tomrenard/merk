@@ -33,8 +33,15 @@ export function isCorrect(input: string, headword: string): boolean {
   return acceptedAnswers(headword).includes(normalize(input));
 }
 
-/** The bare word, to spot the same entry across level lists: "die Ansage, -n" → "ansage". */
-export function lemmaKey(headword: string): string {
-  const base = (headword.split(",")[0] ?? headword).replace(/\([^)]*\)/g, "");
-  return normalize(base.replace(/^(der\/die|der|die|das) /, ""));
+/**
+ * Keys that identify a headword across level lists, one per spelling it allows:
+ * "der/die Bekannte, -n" → ["der bekannte", "die bekannte"], "viel/viele" → ["viel", "viele"].
+ * The article stays in, so "der See" (lake) and "die See" (sea) are different words.
+ * ponytail: same-article homographs (die Bank: bench / bank) still collide; fine for a word list.
+ */
+export function lemmaKeys(headword: string): string[] {
+  const base = (headword.split(",")[0] ?? headword).replace(/\([^)]*\)/g, "").trim();
+  const pair = base.match(/^der\/die (.+)$/);
+  const spellings = pair ? [`der ${pair[1]}`, `die ${pair[1]}`] : base.split("/");
+  return spellings.map((spelling) => normalize(spelling.replace(/^sich /, ""))).filter(Boolean);
 }

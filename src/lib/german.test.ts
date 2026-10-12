@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, isCorrect, lemmaKey } from "./german.ts";
+import { articleOf, isCorrect, lemmaKeys } from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -34,12 +34,19 @@ describe("isCorrect", () => {
   ])("rejects %s for %s", (input, word) => expect(isCorrect(input, word)).toBe(false));
 });
 
-describe("lemmaKey", () => {
+describe("lemmaKeys", () => {
   it.each([
-    ["die Ansage, -n", "ansage"],
-    ["der/die Bekannte, -n", "bekannte"],
-    ["(sich) anziehen", "anziehen"],
-    ["die Eltern (pl.)", "eltern"],
-    ["Straße", "strasse"],
-  ])("%s → %s", (word, key) => expect(lemmaKey(word)).toBe(key));
+    ["die Ansage, -n", ["die ansage"]],
+    ["der/die Bekannte, -n", ["der bekannte", "die bekannte"]],
+    ["(sich) anziehen", ["anziehen"]],
+    ["sich freuen", ["freuen"]],
+    ["die Eltern (pl.)", ["die eltern"]],
+    ["gern(e)", ["gern"]],
+    ["viel/viele", ["viel", "viele"]],
+    ["Straße", ["strasse"]],
+  ])("%s → %j", (word, keys) => expect(lemmaKeys(word)).toEqual(keys));
+
+  it("keeps words that differ only by article apart", () => {
+    expect(lemmaKeys("der See")).not.toEqual(lemmaKeys("die See"));
+  });
 });

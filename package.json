@@ -10,8 +10,7 @@
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
-    "import:a1": "node --env-file=.env.local --experimental-strip-types scripts/import-goethe-a1.ts",
-    "import:levels": "node --env-file=.env.local --env-file-if-exists=.env.vercel --experimental-strip-types scripts/import-levels.ts"
+    "import:words": "node --env-file=.env.local --env-file-if-exists=.env.vercel --experimental-strip-types scripts/import-words.ts"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.4",

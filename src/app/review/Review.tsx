@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
 import { articleOf, isCorrect } from "@/lib/german";
-import type { ReviewItem, Settings } from "@/lib/review";
+import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
 
 const GRADES = [
@@ -45,17 +45,14 @@ function German({ word }: { word: string }) {
   );
 }
 
-type Props = { first: ReviewItem | null; explainLang: Settings["explainLang"] };
+type Props = { first: ReviewItem | null };
 
-export function Review({ first, explainLang }: Props) {
+export function Review({ first }: Props) {
   const [item, setItem] = useState(first);
   const [revealed, setRevealed] = useState(false);
   const [typed, setTyped] = useState("");
   const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
-
-  const showEn = explainLang !== "fr" || !item?.note.fr;
-  const showFr = explainLang !== "en";
 
   useEffect(() => {
     if (item?.direction === "de_en") speak(item.note.de);
@@ -121,7 +118,6 @@ export function Review({ first, explainLang }: Props) {
         ) : (
           <>
             <p className="text-3xl font-semibold">{note.en}</p>
-            {showFr && note.fr && <p className="text-xl opacity-70">{note.fr}</p>}
             <form
               className="mt-4 w-full"
               onSubmit={(event) => {
@@ -150,8 +146,7 @@ export function Review({ first, explainLang }: Props) {
           <div className="mt-4 flex w-full flex-col gap-3 border-t border-current/10 pt-4">
             {item.direction === "de_en" ? (
               <>
-                {showEn && <p className="text-2xl">{note.en}</p>}
-                {showFr && note.fr && <p className="text-2xl">{note.fr}</p>}
+                <p className="text-2xl">{note.en}</p>
               </>
             ) : (
               <>
@@ -168,11 +163,8 @@ export function Review({ first, explainLang }: Props) {
                 {note.exampleDe}
               </button>
             )}
-            {showEn && note.exampleEn && <p className="text-sm opacity-70">{note.exampleEn}</p>}
-            {showFr && note.exampleFr && <p className="text-sm opacity-70">{note.exampleFr}</p>}
+            {note.exampleEn && <p className="text-sm opacity-70">{note.exampleEn}</p>}
             {note.hint && <p className="text-sm opacity-60">{note.hint}</p>}
-            {showEn && note.explainEn && <p className="text-left text-sm">{note.explainEn}</p>}
-            {showFr && note.explainFr && <p className="text-left text-sm">🇫🇷 {note.explainFr}</p>}
           </div>
         )}
       </section>

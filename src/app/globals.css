@@ -53,6 +53,12 @@ body {
     color: var(--brand);
   }
   /* The margin keeps the box height, so nothing below jumps on press. */
+  .btn:focus-visible,
+  .field:focus-visible,
+  a:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+  }
   .btn:active:not(:disabled) {
     @apply mb-0.5 translate-y-0.5 border-b-2;
   }

@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
+import { seededShuffle } from "./shuffle.ts";
 import { buildsFrom, Unit, unitProblems } from "./units.ts";
 
 describe("buildsFrom", () => {
@@ -21,5 +22,14 @@ describe.each(readdirSync(dir).filter((f) => f.endsWith(".json")))("data/units/%
     const unit = Unit.parse(JSON.parse(readFileSync(`${dir}${file}`, "utf8")));
     expect(unit.id).toBe(file.replace(".json", ""));
     expect(unitProblems(unit)).toEqual([]);
+  });
+});
+
+describe("seededShuffle", () => {
+  it("gives the same order for the same seed, different for others", () => {
+    const items = [1, 2, 3, 4, 5, 6, 7, 8];
+    expect(seededShuffle(items, "a1-01-02")).toEqual(seededShuffle(items, "a1-01-02"));
+    expect(seededShuffle(items, "a1-01-02")).not.toEqual(seededShuffle(items, "a1-01-03"));
+    expect([...seededShuffle(items, "x")].sort()).toEqual(items);
   });
 });

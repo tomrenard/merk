@@ -10,7 +10,7 @@ import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review
 
 type Note = typeof notes.$inferSelect;
 
-/** English → typed German over a fixed set, scored at the end. Nothing is saved. */
+/** English → typed German over a fixed set, scored at the end. Doesn't change the schedule. */
 export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState("");
@@ -54,7 +54,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           <a href={`/practice?scope=${scope}`} className="btn btn-primary">
             Practice again
           </a>
-          <Link href="/" className="btn">
+          <Link href="/practice" className="btn">
             Done
           </Link>
         </div>

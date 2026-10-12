@@ -52,10 +52,19 @@ const FEEDBACK: Record<TypedResult, string> = {
 /** A card forgotten this often gets a nudge to add a memory hook (in the hint). */
 const TRICKY = 8;
 
-type Props = { first: ReviewItem | null };
+type Props = {
+  first: ReviewItem | null;
+  /** Cards in this session, as far as known at the start (new learning steps may add some). */
+  total: number;
+  limit: number | null;
+  /** Today's lesson part, if not done yet: where the end screen leads. */
+  lesson: { href: string; label: string } | null;
+};
 
-export function Review({ first }: Props) {
+export function Review({ first, total, limit, lesson }: Props) {
   const [item, setItem] = useState(first);
+  const [done, setDone] = useState(0);
+  const [remembered, setRemembered] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [typed, setTyped] = useState("");
   const [pending, startTransition] = useTransition();
@@ -74,6 +83,8 @@ export function Review({ first }: Props) {
   function answer(rating: number) {
     if (!item || pending) return;
     const duration = Date.now() - shownAt.current;
+    setDone((n) => n + 1);
+    if (rating > 1) setRemembered((n) => n + 1);
     startTransition(async () => {
       const next = await gradeAndNext(item.cardId, rating, duration, item.reps);
       // Reset in the same update as the new card, so its answer never flashes for a frame.
@@ -107,35 +118,68 @@ export function Review({ first }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  if (!item) {
+  if (!item || (limit !== null && done >= limit)) {
+    const rate = done ? Math.round((100 * remembered) / done) : null;
     return (
       <main className="screen justify-center text-center">
-        <span className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">🎉</span>
-        <p className="text-3xl font-black">Fertig für heute!</p>
-        <p className="muted font-semibold">Everything due is done. Bis morgen!</p>
+        <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
+          {item ? "☕" : "🎉"}
+        </span>
+        <p className="text-3xl font-black">{item ? "Session done!" : "Fertig für heute!"}</p>
+        <p className="muted font-semibold">
+          {done ? `${done} cards · ${rate}% remembered` : "Nothing was due."}
+          {item ? " The rest waits for your next session." : ""}
+        </p>
         <div className="flex w-full flex-col gap-3">
-          <a href="/practice?scope=today" className="btn btn-primary">
-            Practice today's words
-          </a>
+          {lesson ? (
+            <Link href={lesson.href} className="btn btn-primary">
+              Today's lesson: {lesson.label}
+            </Link>
+          ) : item ? (
+            <a href="/review" className="btn btn-primary">
+              Keep going
+            </a>
+          ) : (
+            <a href="/practice" className="btn btn-primary">
+              Practise more
+            </a>
+          )}
           <Link href="/" className="btn">
-            Home
+            Done for now
           </Link>
         </div>
       </main>
     );
   }
 
+  /** ✕, progress through the session, cards left, sound switch. */
+  const left = Math.max(total - done, 0);
+  const header = (chip: React.ReactNode) => (
+    <header className="flex flex-col gap-2">
+      <div className="topbar">
+        <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
+          ✕
+        </Link>
+        <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
+          <div
+            className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
+            style={{ width: `${total ? Math.min(100, (100 * done) / total) : 0}%` }}
+          />
+        </div>
+        <SoundToggle />
+      </div>
+      <div className="flex items-center justify-between gap-2 text-sm">
+        {chip}
+        <span className="muted font-bold">{left ? `${left} left` : "almost done"}</span>
+      </div>
+    </header>
+  );
+
   const { note } = item;
   if (item.exercise) {
     return (
       <main className="screen">
-        <header className="topbar">
-          <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
-            ✕
-          </Link>
-          <span className="chip muted line border-2">🎓 {note.de}</span>
-          <SoundToggle />
-        </header>
+        {header(<span className="chip muted line border-2">🎓 {note.de}</span>)}
         {/* Right counts as Good, wrong as Again: the exercise is checked, not self-graded. */}
         <Exercise
           key={item.cardId + item.reps}
@@ -157,10 +201,7 @@ export function Review({ first }: Props) {
 
   return (
     <main className="screen">
-      <header className="topbar">
-        <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
-          ✕
-        </Link>
+      {header(
         <span className="chip muted line border-2">
           {note.cefr} · {item.isNew ? "new" : "review"}
           {/* Only once revealed: the edit form shows the answer. */}
@@ -170,9 +211,8 @@ export function Review({ first }: Props) {
               <Link href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Link>
             </>
           )}
-        </span>
-        <SoundToggle />
-      </header>
+        </span>,
+      )}
 
       <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
         {item.direction === "de_en" ? (

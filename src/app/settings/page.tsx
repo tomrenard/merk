@@ -54,6 +54,9 @@ export default async function SettingsPage() {
         Save
       </button>
       <VoicePicker />
+      <Link href="/placement" className="btn">
+        🧭 Retake the placement test
+      </Link>
       <button type="submit" formAction={logout} formNoValidate className="btn mt-4">
         Log out
       </button>

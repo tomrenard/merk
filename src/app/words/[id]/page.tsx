@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
+import { learnNow, markKnown } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
@@ -16,7 +17,24 @@ const FIELDS = [
 ] as const;
 
 /** Where to go after saving: only these, never a URL from the request. */
-const BACK = { review: "/review", words: "/words" } as const;
+const BACK = { review: "/review", words: "/words", practice: "/practice" } as const;
+type Back = keyof typeof BACK;
+const backTo = (value: unknown): Back =>
+  Object.hasOwn(BACK, String(value)) ? (String(value) as Back) : "words";
+
+/** "I know this": the word is scheduled weeks out, for a quick check later. */
+async function known(form: FormData) {
+  "use server";
+  await markKnown(await requireUser(), [String(form.get("id"))]);
+  redirect(BACK[backTo(form.get("back"))]);
+}
+
+/** "Learn now": the word comes up in the next review session. */
+async function now(form: FormData) {
+  "use server";
+  await learnNow(await requireUser(), String(form.get("id")));
+  redirect("/review");
+}
 
 async function save(form: FormData) {
   "use server";
@@ -73,9 +91,14 @@ export default async function EditWordPage({
       ),
     );
   if (!note) notFound();
-  const back = (await searchParams).back === "review" ? "review" : "words";
+  const back = backTo((await searchParams).back);
   return (
     <form action={save} className="screen">
+      <header className="topbar">
+        <Link href={BACK[back]} className="muted text-lg font-black">
+          ‹ Back
+        </Link>
+      </header>
       <h1 className="text-3xl font-extrabold">Edit word</h1>
       <p className="muted text-sm font-semibold">
         {note.cefr} · {note.source}
@@ -100,9 +123,14 @@ export default async function EditWordPage({
       <button type="submit" className="btn btn-primary">
         Save
       </button>
-      <Link href={BACK[back]} className="muted text-center text-sm font-semibold">
-        Cancel
-      </Link>
+      <div className="grid grid-cols-2 gap-2">
+        <button type="submit" formAction={known} formNoValidate className="btn normal-case">
+          ⭐ I know this
+        </button>
+        <button type="submit" formAction={now} formNoValidate className="btn normal-case">
+          🌱 Learn now
+        </button>
+      </div>
     </form>
   );
 }

@@ -43,14 +43,26 @@ export function setVoice(voiceURI: string) {
   } catch {}
 }
 
-export function speak(text: string) {
-  if (!("speechSynthesis" in window) || isMuted()) return;
+/**
+ * Says `text` in German. `second` picks another German voice if the device has one (the other
+ * speaker in a dialogue); `onEnd` runs when it finishes (or straight away when muted).
+ */
+export function speak(
+  text: string,
+  { second = false, onEnd }: { second?: boolean; onEnd?: () => void } = {},
+) {
+  if (!("speechSynthesis" in window) || isMuted()) {
+    onEnd?.();
+    return;
+  }
   speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "de-DE";
   const voices = germanVoices();
-  const chosen = voices.find((v) => v.voiceURI === stored(VOICE)) ?? voices[0];
+  const mine = voices.find((v) => v.voiceURI === stored(VOICE)) ?? voices[0];
+  const chosen = second ? (voices.find((v) => v !== mine) ?? mine) : mine;
   if (chosen) utterance.voice = chosen;
+  if (onEnd) utterance.onend = () => onEnd();
   speechSynthesis.speak(utterance);
 }
 

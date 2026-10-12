@@ -85,16 +85,26 @@ export async function counts(userId: string) {
         startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
         // Reviews of already-learned cards done today: with `due`, the day's review load.
         reviewedToday: sql<number>`(select count(distinct card_id) from review_logs where user_id = ${userId} and state <> 0 and reviewed_at >= ${DAY_START})::int`,
+        // "+5 new words today" taps.
+        extra: sql<number>`(select coalesce(sum(score), 0) from activity_logs where user_id = ${userId} and kind = 'extra_new' and at >= ${DAY_START})::int`,
       })
       .from(cards)
       .leftJoin(sibling, siblingJoin)
       .where(eq(cards.userId, userId)),
     getSettings(userId),
   ]);
-  const { due = 0, newWords = 0, followUps = 0, startedToday = 0, reviewedToday = 0 } = row ?? {};
+  const {
+    due = 0,
+    newWords = 0,
+    followUps = 0,
+    startedToday = 0,
+    reviewedToday = 0,
+    extra = 0,
+  } = row ?? {};
   // A heavy review day (done or waiting) gets no new words, so the backlog can shrink.
-  const budget = due + reviewedToday > BACKLOG ? 0 : Math.max(newPerDay - startedToday, 0);
-  return { due, newLeft: Math.min(budget, newWords), followUps };
+  const paused = due + reviewedToday > BACKLOG;
+  const budget = paused ? 0 : Math.max(newPerDay + extra - startedToday, 0);
+  return { due, newLeft: Math.min(budget, newWords), followUps, paused, backlog: BACKLOG };
 }
 
 const ITEM = {
@@ -186,17 +196,19 @@ export async function grade(
 
 /** Reviews done today, and how many study days in a row (today or yesterday counts as current). */
 export async function activity(userId: string) {
-  const days = await db()
-    .select({
-      day: sql<string>`${studyDay(reviewLogs.reviewedAt)}::text`,
-      reviews: sql<number>`count(*)::int`,
-      today: sql<string>`${studyDay(sql`now()`)}::text`,
-    })
-    .from(reviewLogs)
-    .where(eq(reviewLogs.userId, userId))
-    .groupBy(sql`1`)
-    .orderBy(sql`1 desc`)
-    .limit(1000);
+  // A study day is any day with reviews or a lesson part.
+  const days = (await db().execute(sql`
+    select ${studyDay(sql`at`)}::text as day, sum(reviews)::int as reviews, ${studyDay(sql`now()`)}::text as today
+    from (
+      select reviewed_at as at, 1 as reviews from review_logs where user_id = ${userId}
+      union all
+      select at, 0 from activity_logs where user_id = ${userId} and kind in ('unit', 'listen', 'speak', 'write')
+    ) as study
+    group by 1 order by 1 desc limit 1000`)) as unknown as {
+    day: string;
+    reviews: number;
+    today: string;
+  }[];
   const [latest] = days;
   if (!latest) return { reviewsToday: 0, streak: 0 };
   return {
@@ -236,14 +248,17 @@ export async function progress(userId: string) {
   return { remembered: row?.remembered ?? null, known };
 }
 
-export type PracticeScope = "today" | "all";
+export type PracticeScope = "today" | "all" | "tricky";
 
 /** Up to 20 random words to practise: ones studied today, or any seen so far. */
 export async function practiceWords(userId: string, scope: PracticeScope) {
   const studied =
     scope === "today"
       ? sql`exists (select 1 from ${reviewLogs} join ${cards} on ${cards.id} = ${reviewLogs.cardId} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${reviewLogs.reviewedAt} >= ${DAY_START})`
-      : sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${cards.introducedAt} is not null)`;
+      : scope === "tricky"
+        ? // Forgotten more than once, or answered Again in the last two weeks.
+          sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and (coalesce((${cards.fsrs}->>'lapses')::int, 0) >= 2 or exists (select 1 from review_logs rl where rl.card_id = ${cards.id} and rl.rating = 1 and rl.reviewed_at > now() - interval '14 days')))`
+        : sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${cards.introducedAt} is not null)`;
   // Typed practice is checked strictly, so it skips phrases (many right ways to say them).
   return db()
     .select()
@@ -312,6 +327,9 @@ export async function ensureCards(userId: string) {
     where (n.user_id = ${userId} or (n.user_id is null and n.source <> 'mine')) and n.source <> 'unit'
       and (d.direction = 'de_en' or n.cefr <> 'B1' or n.source = 'phrase')
     on conflict do nothing`);
+  // A new deck adds thousands of rows at once: refresh the planner's statistics now, or it
+  // plans for an empty table and the review queue takes seconds until autovacuum catches up.
+  await db().execute(sql`analyze cards`);
 }
 
 /** Cards, logs and own words made before accounts existed become `userId`'s. */
@@ -331,4 +349,39 @@ export async function claimUnowned(userId: string) {
       .set({ userId })
       .where(sql`${notes.source} = 'mine' and ${notes.userId} is null`);
   });
+}
+
+/**
+ * "I know this": the words' cards become learned cards (as if answered Easy), due at random over
+ * the next weeks, so a wrong guess still shows up for a quick check. With `onlyUnstarted`, cards
+ * already in progress keep their schedule (the placement test uses this).
+ */
+export async function markKnown(
+  userId: string,
+  noteIds: string[],
+  { stabilityDays = 20, spreadDays = 60, onlyUnstarted = false } = {},
+) {
+  if (!noteIds.length) return;
+  await db().execute(sql`
+    update cards c set
+      due = x.due,
+      introduced_at = coalesce(c.introduced_at, now()),
+      fsrs = jsonb_build_object(
+        'due', x.due, 'stability', ${stabilityDays}::real, 'difficulty', 3, 'elapsed_days', 0,
+        'scheduled_days', ceil(extract(epoch from x.due - now()) / 86400)::int,
+        'learning_steps', 0, 'reps', 1, 'lapses', 0, 'state', ${State.Review}::int, 'last_review', now())
+    from (
+      select id, now() + (3 + random() * ${spreadDays}) * interval '1 day' as due from cards
+      where user_id = ${userId} and note_id in ${noteIds} and direction <> 'unit'
+        ${onlyUnstarted ? sql`and introduced_at is null` : sql``}
+    ) x
+    where c.id = x.id`);
+}
+
+/** "Learn now": the word's German→English card comes up in the next review session. */
+export async function learnNow(userId: string, noteId: string) {
+  await db()
+    .update(cards)
+    .set({ due: new Date() })
+    .where(and(eq(cards.userId, userId), eq(cards.noteId, noteId), eq(cards.direction, "de_en")));
 }

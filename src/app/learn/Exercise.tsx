@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { sameAnswer } from "@/lib/german";
-import { shuffled, type UnitItem } from "@/lib/units";
+import { seededShuffle } from "@/lib/shuffle";
+import type { UnitItem } from "@/lib/units";
 import { PANEL, SOLID } from "../feedback";
 import { speak } from "../review/German";
 
@@ -21,11 +22,21 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
   const [typed, setTyped] = useState("");
   const [picked, setPicked] = useState<number | null>(null);
   const [pool] = useState(() =>
-    item.type === "order" ? shuffled(item.tiles.map((tile, i) => ({ tile, i }))) : [],
+    item.type === "order"
+      ? seededShuffle(
+          item.tiles.map((tile, i) => ({ tile, i })),
+          item.id,
+        )
+      : [],
   );
   // Options in a random order: in the content the right one is often first.
   const [options] = useState(() =>
-    item.type === "choice" ? shuffled(item.options.map((option, i) => ({ option, i }))) : [],
+    item.type === "choice"
+      ? seededShuffle(
+          item.options.map((option, i) => ({ option, i })),
+          item.id,
+        )
+      : [],
   );
   const [placed, setPlaced] = useState<number[]>([]);
   const [result, setResult] = useState<"right" | "wrong" | null>(null);

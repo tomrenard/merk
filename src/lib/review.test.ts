@@ -33,7 +33,7 @@ beforeEach(async () => {
 describe("new words", () => {
   it("offers new words in order, German→English first", async () => {
     expect((await nextCard(U))?.cardId).toBe("eins:de_en");
-    expect(await counts(U)).toEqual({ due: 0, newLeft: 3, followUps: 0 });
+    expect(await counts(U)).toMatchObject({ due: 0, newLeft: 3, followUps: 0, paused: false });
   });
 
   it("holds back English→German until the day after", async () => {
@@ -67,6 +67,29 @@ describe("new words", () => {
     const { due, newLeft } = await counts(U);
     expect(due).toBeLessThan(121);
     expect(newLeft).toBe(0);
+  });
+});
+
+describe("extra new words and known words", () => {
+  it("+5 new words today raises today's budget", async () => {
+    await db.insert(settings).values({ userId: U, newPerDay: 1 });
+    await grade(U, "eins:de_en", 3, 1000, 0);
+    expect((await counts(U)).newLeft).toBe(0);
+    await db.execute(
+      sql`insert into activity_logs (user_id, kind, ref, score) values ('u1', 'extra_new', 'today', 5)`,
+    );
+    expect((await counts(U)).newLeft).toBe(2);
+  });
+
+  it("I know this: the word's cards become learned, due weeks later", async () => {
+    const { markKnown } = await import("./review");
+    await markKnown(U, ["eins"]);
+    const mine = await db.select().from(cards).where(eq(cards.noteId, "eins"));
+    for (const card of mine) {
+      expect(card.fsrs?.state).toBe(State.Review);
+      expect(card.due?.getTime()).toBeGreaterThan(Date.now() + 2 * DAY);
+    }
+    expect((await nextCard(U))?.cardId).toBe("zwei:de_en");
   });
 });
 

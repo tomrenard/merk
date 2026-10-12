@@ -20,13 +20,15 @@ export function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
             <Link
               href={tab.href}
               aria-current={tab.href === active ? "page" : undefined}
-              className={`flex flex-col items-center rounded-2xl border-2 py-1.5 text-[11px] font-extrabold tracking-wide uppercase ${
+              className={`flex flex-col items-center rounded-2xl border-2 py-1.5 text-xs font-extrabold ${
                 tab.href === active
                   ? "border-[var(--brand)] bg-[var(--brand-soft)] text-[var(--brand)]"
                   : "muted border-transparent"
               }`}
             >
-              <span className="text-2xl leading-8">{tab.icon}</span>
+              <span aria-hidden="true" className="text-2xl leading-8">
+                {tab.icon}
+              </span>
               {tab.label}
             </Link>
           </li>

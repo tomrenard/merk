@@ -7,7 +7,7 @@ const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 export const metadata: Metadata = {
   title: "merk",
   description: "Deutsch lernen, ein Kärtchen nach dem anderen.",
-  appleWebApp: { capable: true, title: "merk", statusBarStyle: "default" },
+  appleWebApp: { capable: true, title: "merk", statusBarStyle: "black-translucent" },
 };
 
 export const viewport: Viewport = {

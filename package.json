@@ -12,7 +12,8 @@
     "db:migrate": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
     "import:words": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/import-words.ts",
     "db:backup": "node --env-file=.env.local --experimental-strip-types scripts/backup.ts",
-    "claim": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/claim.ts"
+    "claim": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/claim.ts",
+    "units:index": "node --experimental-strip-types scripts/units-index.ts && biome format --write src/lib/units-index.ts"
   },
   "dependencies": {
     "better-auth": "1.7.7",

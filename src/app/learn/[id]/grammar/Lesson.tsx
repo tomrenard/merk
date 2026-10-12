@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useTransition } from "react";
-import { shuffled, type Unit } from "@/lib/units";
-import { SoundToggle, speak, useSpeechUnlock } from "../../review/German";
-import { recordUnit } from "../actions";
-import { Exercise } from "../Exercise";
-import { Prose } from "../Prose";
+import { useEffect, useState, useTransition } from "react";
+import { shuffled } from "@/lib/shuffle";
+import type { Unit, UnitItem } from "@/lib/units";
+import { SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
+import { recordUnit } from "../../actions";
+import { Exercise } from "../../Exercise";
+import { Prose } from "../../Prose";
 
 const DRILL = 12;
 
@@ -18,16 +19,21 @@ export function Lesson({
   checkSize,
   pass,
   next,
+  testOut,
 }: {
   unit: Unit;
   checkSize: number;
   pass: number;
-  next: string | null;
+  /** Where to go after the unit's grammar. */
+  next: { href: string; label: string } | null;
+  /** Test-out: straight to the check; passing it marks the whole unit done. */
+  testOut: boolean;
 }) {
   useSpeechUnlock();
-  const [step, setStep] = useState<Step>("learn");
-  // The first screen doesn't show the items, so server and browser orders may differ.
-  const [order] = useState(() => shuffled(unit.items));
+  const [step, setStep] = useState<Step>(testOut ? "check" : "learn");
+  // Shuffled in the browser only: a different order on the server would break hydration.
+  const [order, setOrder] = useState<UnitItem[]>([]);
+  useEffect(() => setOrder(shuffled(unit.items)), [unit]);
   const [saveFailed, setSaveFailed] = useState(false);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -49,7 +55,7 @@ export function Lesson({
   function save(final: number) {
     startSaving(async () => {
       try {
-        await recordUnit(unit.id, final);
+        await recordUnit(unit.id, final, testOut);
         setSaveFailed(false);
       } catch {
         setSaveFailed(true);
@@ -62,7 +68,11 @@ export function Lesson({
     return (
       <main className="screen">
         <header className="topbar">
-          <Link href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
+          <Link
+            href={`/learn/${unit.id}`}
+            className="muted text-2xl font-black"
+            aria-label="Back to the unit"
+          >
             ✕
           </Link>
           <span className="chip muted line border-2">{unit.cefr}</span>
@@ -108,14 +118,16 @@ export function Lesson({
         <span className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
           {passed ? "🎉" : "💪"}
         </span>
-        <p className="text-3xl font-black">{passed ? "Unit done!" : "Almost there"}</p>
+        <p className="text-3xl font-black">
+          {passed ? (testOut ? "You know this unit!" : "Unit done!") : "Almost there"}
+        </p>
         <p className="text-5xl font-black text-[var(--brand)]">
           {score}/{checkSize}
         </p>
         <p className="muted font-semibold">
           {passed
             ? "It will come back in your reviews, so it sticks."
-            : `You need ${pass} to pass. Try it again another day; the next unit is open anyway.`}
+            : `You need ${pass} to pass. Try the check again another day; the rest of the course stays open.`}
         </p>
         {saveFailed && (
           <button
@@ -127,9 +139,9 @@ export function Lesson({
             Couldn't save: retry
           </button>
         )}
-        {next && !saveFailed && (
-          <Link href={`/learn/${next}`} className="btn btn-primary">
-            Next unit
+        {!saveFailed && next && (
+          <Link href={testOut && passed ? "/learn" : next.href} className="btn btn-primary">
+            {testOut && passed ? "Back to the course" : next.label}
           </Link>
         )}
         <Link href="/" className="btn">
@@ -142,7 +154,11 @@ export function Lesson({
   return (
     <main className="screen">
       <header className="topbar">
-        <Link href="/learn" className="muted text-2xl font-black" aria-label="Stop the lesson">
+        <Link
+          href={`/learn/${unit.id}`}
+          className="muted text-2xl font-black"
+          aria-label="Stop the lesson"
+        >
           ✕
         </Link>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">

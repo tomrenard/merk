@@ -317,6 +317,9 @@ export async function ensureCards(userId: string) {
 /** Cards, logs and own words made before accounts existed become `userId`'s. */
 export async function claimUnowned(userId: string) {
   await db().transaction(async (tx) => {
+    // Sign-up gave the owner a fresh deck; its unstarted cards make way for the old ones.
+    await tx.execute(sql`delete from cards c where c.user_id = ${userId} and c.introduced_at is null
+      and exists (select 1 from cards o where o.user_id is null and o.note_id = c.note_id and o.direction = c.direction)`);
     await tx.update(cards).set({ userId }).where(sql`${cards.userId} is null`);
     await tx.update(reviewLogs).set({ userId }).where(sql`${reviewLogs.userId} is null`);
     // Only lessons: failed logins also have no user, and stay that way.

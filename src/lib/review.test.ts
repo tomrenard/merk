@@ -164,7 +164,9 @@ describe("two people", () => {
 
   it("claims cards made before accounts for the owner", async () => {
     const { claimUnowned } = await import("./review");
+    const { ensureCards } = await import("./review");
     await db.update(cards).set({ userId: null });
+    await ensureCards("u2"); // the fresh deck sign-up gives
     await claimUnowned("u2");
     expect((await nextCard("u2"))?.cardId).toBe("eins:de_en");
     expect(await nextCard(U)).toBeNull();

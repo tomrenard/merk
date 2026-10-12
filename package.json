@@ -11,7 +11,8 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
     "import:words": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/import-words.ts",
-    "db:backup": "node --env-file=.env.local --experimental-strip-types scripts/backup.ts"
+    "db:backup": "node --env-file=.env.local --experimental-strip-types scripts/backup.ts",
+    "claim": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/claim.ts"
   },
   "dependencies": {
     "better-auth": "1.7.7",

@@ -1,4 +1,4 @@
-import { and, eq, isNull, or, sql } from "drizzle-orm";
+import { and, eq, isNull, ne, or, sql } from "drizzle-orm";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { db } from "@/db/client";
@@ -39,7 +39,12 @@ async function save(form: FormData) {
       editedAt: sql`now()`,
     })
     // A shared word (a fix helps everyone) or your own; never someone else's.
-    .where(and(eq(notes.id, id), or(isNull(notes.userId), eq(notes.userId, userId))));
+    .where(
+      and(
+        eq(notes.id, id),
+        or(eq(notes.userId, userId), and(isNull(notes.userId), ne(notes.source, "mine"))),
+      ),
+    );
   const back = String(form.get("back"));
   redirect(Object.hasOwn(BACK, back) ? BACK[back as keyof typeof BACK] : BACK.words);
 }
@@ -61,7 +66,12 @@ export default async function EditWordPage({
   const [note] = await db()
     .select()
     .from(notes)
-    .where(and(eq(notes.id, id), or(isNull(notes.userId), eq(notes.userId, userId))));
+    .where(
+      and(
+        eq(notes.id, id),
+        or(eq(notes.userId, userId), and(isNull(notes.userId), ne(notes.source, "mine"))),
+      ),
+    );
   if (!note) notFound();
   const back = (await searchParams).back === "review" ? "review" : "words";
   return (

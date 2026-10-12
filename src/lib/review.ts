@@ -307,7 +307,9 @@ export async function ensureCards(userId: string) {
     insert into cards (id, note_id, direction, user_id)
     select ${userId} || '/' || n.id || ':' || d.direction, n.id, d.direction, ${userId}
     from notes n cross join (values ('de_en'), ('en_de')) as d(direction)
-    where (n.user_id is null or n.user_id = ${userId}) and n.source <> 'unit'
+    -- Shared words, or this person's own; someone's own words are never shared, even before the
+    -- claim gives words from before accounts an owner.
+    where (n.user_id = ${userId} or (n.user_id is null and n.source <> 'mine')) and n.source <> 'unit'
       and (d.direction = 'de_en' or n.cefr <> 'B1' or n.source = 'phrase')
     on conflict do nothing`);
 }
@@ -317,7 +319,10 @@ export async function claimUnowned(userId: string) {
   await db().transaction(async (tx) => {
     await tx.update(cards).set({ userId }).where(sql`${cards.userId} is null`);
     await tx.update(reviewLogs).set({ userId }).where(sql`${reviewLogs.userId} is null`);
-    await tx.execute(sql`update activity_logs set user_id = ${userId} where user_id is null`);
+    // Only lessons: failed logins also have no user, and stay that way.
+    await tx.execute(
+      sql`update activity_logs set user_id = ${userId} where user_id is null and kind = 'unit'`,
+    );
     await tx
       .update(notes)
       .set({ userId })

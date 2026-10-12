@@ -1,7 +1,7 @@
 import { eq, sql } from "drizzle-orm";
 import { createEmptyCard, State } from "ts-fsrs";
 import { beforeEach, describe, expect, it } from "vitest";
-import { cards, reviewLogs, settings } from "@/db/schema";
+import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { seedWords, testDb } from "@/test/db";
 import { counts, grade, nextCard } from "./review";
 
@@ -145,6 +145,21 @@ describe("two people", () => {
     await grade(U, "eins:de_en", 3, 1000, 0);
     expect((await nextCard("u2"))?.cardId).toBe("u2/eins:de_en");
     await expect(grade("u2", "eins:de_en", 3, 1000, 1)).rejects.toThrow("Unknown card");
+  });
+
+  it("doesn't give one person's own words to someone else", async () => {
+    const { ensureCards } = await import("./review");
+    await db.insert(notes).values({
+      id: "mine:x",
+      source: "mine",
+      cefr: "Mine",
+      ord: -1,
+      de: "der Kiez",
+      en: "neighbourhood",
+    });
+    await ensureCards("u2");
+    const hers = await db.select().from(cards).where(eq(cards.userId, "u2"));
+    expect(hers.some((card) => card.noteId === "mine:x")).toBe(false);
   });
 
   it("claims cards made before accounts for the owner", async () => {

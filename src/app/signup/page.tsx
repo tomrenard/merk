@@ -7,7 +7,7 @@ import { auth } from "@/lib/auth";
 const ERRORS: Record<string, string> = {
   invite: "This email isn't invited. Ask Tom to add it.",
   taken: "There is already an account with this email. Log in instead.",
-  password: "The password needs at least 10 characters.",
+  password: "Check the email, and use a password of 10 or more characters.",
   other: "Something went wrong. Try again.",
 };
 
@@ -24,15 +24,14 @@ async function signup(form: FormData) {
       headers: await headers(),
     });
   } catch (e) {
-    const status = e instanceof APIError ? e.status : "";
-    error =
-      status === "FORBIDDEN"
-        ? "invite"
-        : status === "UNPROCESSABLE_ENTITY"
-          ? "taken"
-          : status === "BAD_REQUEST"
-            ? "password"
-            : "other";
+    const status = e instanceof APIError ? String(e.status) : "";
+    const codes: Record<string, keyof typeof ERRORS> = {
+      FORBIDDEN: "invite",
+      UNPROCESSABLE_ENTITY: "taken",
+      BAD_REQUEST: "password",
+    };
+    error = codes[status] ?? "other";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   }
   redirect(error ? `/signup?error=${error}` : "/");
 }

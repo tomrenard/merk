@@ -2,9 +2,10 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { APIError } from "better-auth/api";
 import { nextCookies } from "better-auth/next-js";
+import { sql } from "drizzle-orm";
 import { db } from "@/db/client";
-import { account, session, user, verification } from "@/db/schema";
-import { claimUnowned, ensureCards } from "@/lib/review";
+import { account, cards, session, user, verification } from "@/db/schema";
+import { ensureCards } from "@/lib/review";
 
 /** Comma-separated env list, compared lowercased. */
 const emails = (value: string | undefined) =>
@@ -15,7 +16,8 @@ const emails = (value: string | undefined) =>
 
 /**
  * Email + password accounts. Only invited emails (ALLOWED_EMAILS) can sign up: the URL is
- * public. OWNER_EMAIL's account takes over the progress made before accounts existed.
+ * public. Progress from before accounts is claimed by hand (scripts/claim.ts), never on sign-up:
+ * anyone who knew the owner's email could otherwise sign up first and take it.
  */
 export const auth = betterAuth({
   database: drizzleAdapter(db(), {
@@ -28,14 +30,12 @@ export const auth = betterAuth({
     user: {
       create: {
         before: async (newUser) => {
-          if (!emails(process.env.ALLOWED_EMAILS).includes(newUser.email.toLowerCase())) {
+          const email = newUser.email.toLowerCase();
+          if (!emails(process.env.ALLOWED_EMAILS).includes(email)) {
             throw new APIError("FORBIDDEN", { message: "This email isn't invited." });
           }
         },
         after: async (newUser) => {
-          if (emails(process.env.OWNER_EMAIL).includes(newUser.email.toLowerCase())) {
-            await claimUnowned(newUser.id);
-          }
           await ensureCards(newUser.id);
         },
       },

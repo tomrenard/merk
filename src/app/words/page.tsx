@@ -33,7 +33,7 @@ export default async function WordsPage({
         known ? KNOWN : undefined,
         ne(notes.source, "unit"),
         // Shared words, plus your own (not someone else's).
-        or(isNull(notes.userId), eq(notes.userId, userId)),
+        or(eq(notes.userId, userId), and(isNull(notes.userId), ne(notes.source, "mine"))),
       ),
     )
     .orderBy(asc(notes.ord));

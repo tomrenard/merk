@@ -60,7 +60,7 @@ export default async function EditWordPage({
   if (!note) notFound();
   const back = (await searchParams).back === "review" ? "review" : "words";
   return (
-    <form action={save} className="card mx-auto mt-8 flex max-w-md flex-col gap-4">
+    <form action={save} className="screen">
       <h1 className="text-3xl font-extrabold">Edit word</h1>
       <p className="muted text-sm font-semibold">
         {note.cefr} · {note.source}

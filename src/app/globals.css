@@ -1,113 +1,111 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: var(--font-nunito), system-ui, sans-serif;
 }
 
+/* Flat and calm: white surfaces, one grey line colour, colour only where it means something. */
 :root {
   color-scheme: light dark;
-  --bg: #fdf8f3;
-  --fg: #1e1530;
-  --muted: color-mix(in oklab, var(--fg) 60%, transparent);
-  --glass: rgb(255 255 255 / 0.62);
-  --glass-border: rgb(255 255 255 / 0.9);
-  --shadow: 0 10px 30px -12px rgb(76 29 149 / 0.25);
-  --blob-1: #c4b5fd;
-  --blob-2: #f9a8d4;
-  --blob-3: #fcd34d;
-  --blob-4: #99f6e4;
+  --bg: #ffffff;
+  --ink: #3c3c3c;
+  --muted: #777777;
+  --line: #e5e5e5;
+  --field: #f7f7f7;
+  --brand: #7c4dff;
+  --brand-edge: #5a2fd9;
+  --brand-soft: #efe9ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #120c22;
-    --fg: #f5f0ff;
-    --glass: rgb(40 28 70 / 0.55);
-    --glass-border: rgb(255 255 255 / 0.08);
-    --shadow: 0 10px 30px -12px rgb(0 0 0 / 0.6);
-    --blob-1: #5b21b6;
-    --blob-2: #9d174d;
-    --blob-3: #92400e;
-    --blob-4: #115e59;
+    --bg: #131f24;
+    --ink: #f1f7fb;
+    --muted: #9fb0b9;
+    --line: #37464f;
+    --field: #202f36;
+    --brand: #9b7bff;
+    --brand-edge: #6f4ee6;
+    --brand-soft: #2a2550;
   }
 }
 
 body {
   min-height: 100dvh;
-  color: var(--fg);
   background: var(--bg);
+  color: var(--ink);
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Its own fixed layer: iOS Safari ignores background-attachment: fixed. */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(40rem 30rem at 0% 0%, var(--blob-1), transparent 60%),
-    radial-gradient(35rem 30rem at 100% 10%, var(--blob-2), transparent 60%),
-    radial-gradient(35rem 30rem at 100% 100%, var(--blob-3), transparent 60%),
-    radial-gradient(35rem 30rem at 0% 90%, var(--blob-4), transparent 60%);
-}
-
 @layer components {
-  /* Frosted panel: the one surface every screen is built from. */
   .card {
-    @apply rounded-[28px] border p-5 backdrop-blur-xl;
-    background: var(--glass);
-    border-color: var(--glass-border);
-    box-shadow: var(--shadow);
+    @apply rounded-2xl border-2 border-b-4 p-4;
+    border-color: var(--line);
   }
 
-  /* Chunky button: a darker edge underneath that disappears when pressed. */
+  /* Duolingo-style button: a thick bottom edge that the press pushes in. */
   .btn {
-    --edge: rgb(0 0 0 / 0.12);
-    @apply inline-flex items-center justify-center rounded-2xl px-5 py-3.5 text-center font-bold transition-[translate,box-shadow] duration-75 select-none;
-    background: var(--glass);
-    box-shadow: 0 4px 0 var(--edge);
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-b-4 px-5 py-3 text-center text-[15px] font-extrabold tracking-wide uppercase transition-[translate,border-bottom-width] duration-75 select-none;
+    border-color: var(--line);
+    color: var(--brand);
   }
   .btn:active:not(:disabled) {
-    translate: 0 4px;
-    box-shadow: 0 0 0 var(--edge);
+    @apply translate-y-0.5 border-b-2;
+  }
+  /* Solid button: set --c (fill) and --edge (bottom edge), or use .btn-primary. */
+  .btn-solid {
+    background: var(--c);
+    border-color: var(--c);
+    border-bottom-color: var(--edge);
+    color: white;
   }
   .btn-primary {
-    --edge: #5b21b6;
-    @apply text-white;
-    background: linear-gradient(135deg, #8b5cf6, #d946ef 55%, #f97316);
+    --c: var(--brand);
+    --edge: var(--brand-edge);
+    background: var(--c);
+    border-color: var(--c);
+    border-bottom-color: var(--edge);
+    color: white;
   }
 
   .field {
-    @apply rounded-2xl border-2 border-transparent px-4 py-3 outline-none transition-colors;
-    background: var(--glass);
+    @apply rounded-2xl border-2 px-4 py-3 outline-none;
+    background: var(--field);
+    border-color: var(--line);
   }
   .field:focus {
-    border-color: #a855f7;
+    border-color: var(--brand);
   }
   .field:focus::placeholder {
     color: transparent;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-transparent;
+  /* An emoji on a soft tinted tile: pass the tint, e.g. "icon bg-orange-100". */
+  .icon {
+    @apply grid size-12 shrink-0 place-items-center rounded-2xl text-2xl;
   }
 
-  /* An inner screen: phone-width column clear of the notch. */
-  .screen {
-    @apply mx-auto flex min-h-dvh max-w-md flex-col gap-4 p-5 pt-[max(1.25rem,env(safe-area-inset-top))];
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-extrabold;
   }
 
   .muted {
     color: var(--muted);
   }
 
-  /* Header row of every inner screen: back link left, context right. */
-  .topbar {
-    @apply flex items-center justify-between text-sm font-semibold;
+  .line {
+    border-color: var(--line);
   }
-  .pill {
-    @apply rounded-full px-3 py-1;
-    background: var(--glass);
+
+  /* An inner screen: phone-width column clear of the notch; .with-tabs leaves room for the tab bar. */
+  .screen {
+    @apply mx-auto flex min-h-dvh max-w-md flex-col gap-5 px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-6;
+  }
+  .with-tabs {
+    @apply pb-[calc(6rem+env(safe-area-inset-bottom))];
+  }
+
+  .topbar {
+    @apply flex items-center justify-between gap-3;
   }
 }

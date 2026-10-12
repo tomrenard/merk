@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { activity, counts, progress } from "@/lib/review";
+import { TabBar } from "./TabBar";
 
 export const dynamic = "force-dynamic";
 
-function Tile({ label, value, tone }: { label: string; value: string | number; tone: string }) {
+type StatProps = { icon: string; tint: string; label: string; value: string | number };
+
+function Stat({ icon, tint, label, value }: StatProps) {
   return (
-    <div className={`rounded-3xl p-4 text-left text-white shadow-lg ${tone}`}>
-      <p className="text-4xl font-extrabold tracking-tight">{value}</p>
-      <p className="text-sm font-semibold opacity-90">{label}</p>
+    <div className="flex items-center gap-3 py-3">
+      <span className={`icon ${tint}`}>{icon}</span>
+      <span className="flex-1 font-bold">{label}</span>
+      <span className="text-xl font-black">{value}</span>
     </div>
   );
 }
@@ -18,55 +22,62 @@ export default async function Home() {
     activity(),
     progress(),
   ]);
+  const todo = due + newLeft;
   return (
-    <main className="mx-auto flex min-h-dvh max-w-sm flex-col gap-5 p-5 pt-[max(2.5rem,env(safe-area-inset-top))] pb-[max(1.25rem,env(safe-area-inset-bottom))]">
-      <header className="flex items-center justify-between">
-        <h1 className="gradient-text text-5xl font-extrabold tracking-tight">merk</h1>
-        <span className="pill text-sm font-bold">
-          {streak > 0 ? `🔥 ${streak} day${streak === 1 ? "" : "s"}` : "🌱 day 1"}
+    <main className="screen with-tabs">
+      <header className="topbar">
+        <h1 className="text-3xl font-black tracking-tight text-[var(--brand)]">merk</h1>
+        <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
+          🔥 {streak}
         </span>
       </header>
 
-      <div className="grid grid-cols-2 gap-3">
-        <Tile label="Due" value={due} tone="bg-gradient-to-br from-sky-600 to-indigo-700" />
-        <Tile
-          label="New today"
-          value={newLeft}
-          tone="bg-gradient-to-br from-emerald-600 to-teal-700"
-        />
-        <Tile
-          label="Remembered · 30d"
-          value={remembered === null ? "–" : `${remembered}%`}
-          tone="bg-gradient-to-br from-pink-600 to-rose-700"
-        />
-        <Link href="/words?known=1">
-          <Tile
-            label="Words known →"
-            value={known}
-            tone="bg-gradient-to-br from-orange-600 to-red-700"
+      <section className="card flex flex-col items-center gap-4 py-6 text-center">
+        <span className="icon size-20 bg-[var(--brand-soft)] text-5xl">
+          {todo > 0 ? "📚" : "🎉"}
+        </span>
+        <div>
+          <h2 className="text-2xl font-black">
+            {todo > 0 ? "Ready to learn" : "All done for today"}
+          </h2>
+          <p className="muted mt-1 font-semibold">
+            {todo > 0
+              ? `${due} to review · ${newLeft} new words`
+              : "Come back tomorrow, or keep going"}
+          </p>
+        </div>
+        <Link href="/review" className={`btn w-full ${todo > 0 ? "btn-primary" : ""}`}>
+          {todo > 0 ? "Start" : "Review anyway"}
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="muted mb-2 text-sm font-extrabold tracking-wide uppercase">Your progress</h2>
+        <div className="card divide-y-2 divide-[var(--line)] py-0">
+          <Stat
+            icon="✅"
+            tint="bg-green-100 dark:bg-green-950"
+            label="Reviews today"
+            value={reviewsToday}
           />
-        </Link>
-      </div>
+          <Stat
+            icon="🎯"
+            tint="bg-sky-100 dark:bg-sky-950"
+            label="Remembered · 30 days"
+            value={remembered === null ? "–" : `${remembered}%`}
+          />
+          <Link href="/words?known=1" className="block">
+            <Stat
+              icon="⭐"
+              tint="bg-amber-100 dark:bg-amber-950"
+              label="Words known ›"
+              value={known}
+            />
+          </Link>
+        </div>
+      </section>
 
-      <p className="muted text-center text-sm font-medium">
-        {reviewsToday} review{reviewsToday === 1 ? "" : "s"} today
-      </p>
-
-      <Link href="/review" className="btn btn-primary py-5 text-xl">
-        {due + newLeft > 0 ? "Lernen →" : "Review anyway"}
-      </Link>
-      <Link href="/practice" className="btn">
-        🎯 Practice
-      </Link>
-
-      <nav className="mt-auto flex justify-center gap-3 text-sm font-semibold">
-        <Link href="/words" className="pill">
-          📚 Words
-        </Link>
-        <Link href="/settings" className="pill">
-          ⚙️ Settings
-        </Link>
-      </nav>
+      <TabBar active="/" />
     </main>
   );
 }

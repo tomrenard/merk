@@ -34,7 +34,12 @@ export function SoundToggle() {
     if (next && "speechSynthesis" in window) speechSynthesis.cancel();
   }
   return (
-    <button type="button" onClick={toggle} className="pill" aria-label={muted ? "Unmute" : "Mute"}>
+    <button
+      type="button"
+      onClick={toggle}
+      className="chip line border-2 text-base"
+      aria-label={muted ? "Unmute" : "Mute"}
+    >
       {muted ? "🔇" : "🔊"}
     </button>
   );
@@ -63,7 +68,7 @@ export function German({ word }: { word: string }) {
     <button
       type="button"
       onClick={() => speak(spokenForm(word))}
-      className="text-4xl font-extrabold tracking-tight"
+      className="text-4xl font-black tracking-tight"
       title="Listen"
     >
       <Headword de={word} />{" "}

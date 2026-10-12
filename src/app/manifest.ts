@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Deutsch lernen, ein Kärtchen nach dem anderen.",
     start_url: "/",
     display: "standalone",
-    background_color: "#fdf8f3",
-    theme_color: "#8b5cf6",
+    background_color: "#ffffff",
+    theme_color: "#7c4dff",
     icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }

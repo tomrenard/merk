@@ -4,6 +4,7 @@ import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
 import { KNOWN } from "@/lib/review";
 import { Headword } from "../review/German";
+import { TabBar } from "../TabBar";
 
 export const dynamic = "force-dynamic";
 
@@ -29,12 +30,10 @@ export default async function WordsPage({
     )
     .orderBy(asc(notes.ord));
   return (
-    <main className="screen">
+    <main className="screen with-tabs">
       <header className="topbar">
-        <Link href="/" className="pill">
-          ← merk
-        </Link>
-        <span className="pill">
+        <h1 className="text-3xl font-black">Words</h1>
+        <span className="muted font-bold">
           {words.length} {q ? "found" : known ? "known" : "words"}
         </span>
       </header>
@@ -50,24 +49,39 @@ export default async function WordsPage({
           className="field w-full"
         />
       </form>
-      <ul className="card backdrop-blur-none flex flex-col divide-y divide-current/10 py-2">
+      <nav className="flex gap-2">
+        {[
+          { href: "/words", label: "All", on: !known },
+          { href: "/words?known=1", label: "⭐ Known", on: known },
+        ].map((f) => (
+          <Link
+            key={f.href}
+            href={f.href}
+            className={`chip border-2 ${f.on ? "border-[var(--brand)] bg-[var(--brand-soft)] text-[var(--brand)]" : "line muted"}`}
+          >
+            {f.label}
+          </Link>
+        ))}
+      </nav>
+      <ul className="card flex flex-col divide-y-2 divide-[var(--line)] py-0">
         {words.map((word) => (
           <li key={word.id}>
             <Link
               href={`/words/${encodeURIComponent(word.id)}`}
-              className="flex items-baseline justify-between gap-3 py-2"
+              className="flex items-baseline justify-between gap-3 py-3"
             >
               <span>
-                <Headword de={word.de} className="font-bold" />{" "}
+                <Headword de={word.de} className="font-extrabold" />{" "}
                 <span className="muted">{word.en}</span>
               </span>
-              <span className="muted shrink-0 text-xs font-semibold">
+              <span className="muted shrink-0 text-xs font-bold">
                 {word.cefr} · {word.due ? word.due.toLocaleDateString("de-DE") : "new"}
               </span>
             </Link>
           </li>
         ))}
       </ul>
+      <TabBar active="/words" />
     </main>
   );
 }

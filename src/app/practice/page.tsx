@@ -1,43 +1,63 @@
-import Link from "next/link";
 import { type PracticeScope, practiceWords } from "@/lib/review";
-import { SoundToggle } from "../review/German";
+import { TabBar } from "../TabBar";
 import { Practice } from "./Practice";
 
 export const dynamic = "force-dynamic";
 
+const SCOPES = [
+  {
+    scope: "today",
+    icon: "☀️",
+    tint: "bg-amber-100 dark:bg-amber-950",
+    title: "Today's words",
+    text: "What you studied today",
+  },
+  {
+    scope: "all",
+    icon: "🗂️",
+    tint: "bg-sky-100 dark:bg-sky-950",
+    title: "All my words",
+    text: "Anything you've seen so far",
+  },
+] as const;
+
+/** Without `scope`: pick a set. With it: a round of up to 20 words. */
 export default async function PracticePage({
   searchParams,
 }: {
   searchParams: Promise<{ scope?: string }>;
 }) {
-  const scope: PracticeScope = (await searchParams).scope === "all" ? "all" : "today";
-  const words = await practiceWords(scope);
+  const raw = (await searchParams).scope;
+  const scope: PracticeScope | null = raw === "all" || raw === "today" ? raw : null;
+  const words = scope ? await practiceWords(scope) : [];
+  if (scope && words.length) return <Practice words={words} scope={scope} />;
   return (
-    <main className="screen">
-      <header className="topbar">
-        <Link href="/" className="pill">
-          ← merk
-        </Link>
-        <SoundToggle />
-        <nav className="flex gap-1 rounded-full p-1" style={{ background: "var(--glass)" }}>
-          {(["today", "all"] as const).map((s) => (
-            <a
-              key={s}
-              href={`/practice?scope=${s}`}
-              className={`rounded-full px-3 py-1 ${s === scope ? "bg-violet-600 text-white" : "muted"}`}
-            >
-              {s === "today" ? "Today" : "All"}
-            </a>
-          ))}
-        </nav>
+    <main className="screen with-tabs">
+      <header>
+        <h1 className="text-3xl font-black">Practice</h1>
+        <p className="muted font-semibold">20 words, typed in German. Nothing is saved.</p>
       </header>
-      {words.length ? (
-        <Practice words={words} scope={scope} />
-      ) : (
-        <p className="card mt-24 text-center font-semibold">
+      {scope && (
+        <p className="card text-center font-bold">
           {scope === "today" ? "Nothing studied today yet." : "No words studied yet."}
         </p>
       )}
+      <ul className="flex flex-col gap-3">
+        {SCOPES.map((s) => (
+          <li key={s.scope}>
+            {/* A full load, so the server picks a fresh random set. */}
+            <a href={`/practice?scope=${s.scope}`} className="card flex items-center gap-3">
+              <span className={`icon ${s.tint}`}>{s.icon}</span>
+              <span className="flex-1">
+                <span className="block font-extrabold">{s.title}</span>
+                <span className="muted text-sm font-semibold">{s.text}</span>
+              </span>
+              <span className="muted text-2xl font-black">›</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <TabBar active="/practice" />
     </main>
   );
 }

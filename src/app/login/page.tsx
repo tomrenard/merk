@@ -32,8 +32,9 @@ export default async function LoginPage({
 }) {
   const { error } = await searchParams;
   return (
-    <form action={login} className="card mx-auto mt-24 flex max-w-xs flex-col gap-3">
-      <h1 className="gradient-text text-center text-5xl font-extrabold">merk</h1>
+    <form action={login} className="screen max-w-xs justify-center gap-3">
+      <span className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">🇩🇪</span>
+      <h1 className="text-center text-4xl font-black text-[var(--brand)]">merk</h1>
       <p className="muted mb-2 text-center text-sm font-semibold">
         Deutsch, ein Kärtchen nach dem anderen.
       </p>

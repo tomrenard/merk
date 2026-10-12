@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
@@ -30,19 +30,44 @@ export function Listen({
   const [options] = useState(() =>
     questions.map((q) => shuffled(q.options.map((option, i) => ({ option, i })))),
   );
-  const { finished, failed, save, retry } = usePartSave(unit.id, "listen");
+  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "listen");
   const total = questions.length + unit.dictation.length;
   // The other speaker gets the second voice, if the device has one.
   const speakers = [...new Set(lines.map((line) => line.speaker))];
 
-  function play(from = 0) {
+  // Each playback has an id: a newer one, another sound or leaving the screen stops the chain.
+  const run = useRef(0);
+  useEffect(
+    () => () => {
+      run.current++;
+      if ("speechSynthesis" in window) speechSynthesis.cancel();
+    },
+    [],
+  );
+
+  function play(from = 0, id = ++run.current) {
     const line = lines[from];
-    if (!line) return setPlaying(null);
+    if (!line || id !== run.current) return setPlaying(null);
     setPlaying(from);
     speak(line.de, {
       second: speakers.indexOf(line.speaker) % 2 === 1,
-      onEnd: () => play(from + 1),
+      onEnd: () => {
+        if (id === run.current) play(from + 1, id);
+      },
     });
+  }
+
+  function stop() {
+    run.current++;
+    setPlaying(null);
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+  }
+
+  /** A single line or sentence; stops the dialogue first. */
+  function say(text: string, second = false) {
+    run.current++;
+    setPlaying(null);
+    speak(text, { second });
   }
 
   function next(correct: boolean, count: number) {
@@ -64,6 +89,7 @@ export function Listen({
         detail={`${right}/${total} right. Try the dialogue again any time.`}
         saveFailed={failed}
         onRetry={retry}
+        saving={saving}
       />
     );
   }
@@ -78,11 +104,22 @@ export function Listen({
         </p>
         <h1 className="text-2xl font-black">{unit.listening.title}</h1>
         <p className="font-semibold">{unit.listening.intro}</p>
-        <button type="button" onClick={() => play()} className="btn btn-primary py-5 text-xl">
-          {playing === null ? "▶ Play the dialogue" : `🔊 Line ${playing + 1}/${lines.length}…`}
+        <button
+          type="button"
+          onClick={() => (playing === null ? play() : stop())}
+          className="btn btn-primary py-5 text-xl"
+        >
+          {playing === null ? "▶ Play the dialogue" : `⏹ Line ${playing + 1}/${lines.length}`}
         </button>
         <p className="muted text-sm">Listen twice if you like. Then answer a few questions.</p>
-        <button type="button" onClick={() => setStep("questions")} className="btn mt-auto">
+        <button
+          type="button"
+          onClick={() => {
+            stop();
+            setStep("questions");
+          }}
+          className="btn mt-auto"
+        >
           Questions
         </button>
       </PartShell>
@@ -112,8 +149,8 @@ export function Listen({
             </button>
           ))}
         </div>
-        <button type="button" onClick={() => play()} className="btn">
-          🔊 Hear it again
+        <button type="button" onClick={() => (playing === null ? play() : stop())} className="btn">
+          {playing === null ? "🔊 Hear it again" : "⏹ Stop"}
         </button>
         {checked && (
           <p className={`rounded-2xl p-4 text-xl font-black ${PANEL[correct ? "right" : "wrong"]}`}>
@@ -148,7 +185,7 @@ export function Listen({
             <li key={`${line.speaker}: ${line.de}`}>
               <button
                 type="button"
-                onClick={() => speak(line.de, { second: speakers.indexOf(line.speaker) % 2 === 1 })}
+                onClick={() => say(line.de, speakers.indexOf(line.speaker) % 2 === 1)}
                 className="text-left"
               >
                 <span className="muted block text-xs font-extrabold uppercase">{line.speaker}</span>
@@ -173,7 +210,7 @@ export function Listen({
       <p className="muted text-sm font-extrabold tracking-wide uppercase">
         Dictation {index + 1}/{unit.dictation.length}: type what you hear
       </p>
-      <button type="button" onClick={() => speak(sentence)} className="btn self-start text-2xl">
+      <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">
         🔊 Play
       </button>
       <form

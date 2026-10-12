@@ -71,9 +71,11 @@ export function Review({ first, total, limit, lesson }: Props) {
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
 
+  const ended = limit !== null && done >= limit;
   useEffect(() => {
-    if (item?.direction === "de_en") speak(spokenForm(item.note.de));
-  }, [item]);
+    // Not behind the end-of-session screen.
+    if (item?.direction === "de_en" && !ended) speak(spokenForm(item.note.de));
+  }, [item, ended]);
 
   function reveal() {
     setRevealed(true);
@@ -118,7 +120,7 @@ export function Review({ first, total, limit, lesson }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  if (!item || (limit !== null && done >= limit)) {
+  if (!item || ended) {
     const rate = done ? Math.round((100 * remembered) / done) : null;
     return (
       <main className="screen justify-center text-center">

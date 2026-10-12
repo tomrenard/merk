@@ -41,9 +41,14 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
             </h2>
             <ul className="card divide-y-2 divide-[var(--line)] py-0">
               {missed.map((m) => (
-                <li key={m.id} className="py-3">
-                  <Headword de={m.de} className="font-extrabold" />{" "}
-                  <span className="muted">{m.en}</span>
+                <li key={m.id}>
+                  <Link
+                    href={`/words/${encodeURIComponent(m.id)}?back=practice`}
+                    className="block py-3"
+                  >
+                    <Headword de={m.de} className="font-extrabold" />{" "}
+                    <span className="muted">{m.en}</span>
+                  </Link>
                 </li>
               ))}
             </ul>

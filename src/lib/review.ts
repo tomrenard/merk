@@ -115,7 +115,7 @@ const ITEM = {
   note: notes,
 };
 
-/** `due` is only set once a card has been reviewed, so new cards never match here. */
+/** Cards due by `by`: reviewed ones, plus new ones put up front by "Learn now" (fsrs still empty). */
 async function firstSeenDueBy(userId: string, by: SQL): Promise<ReviewItem | null> {
   const [row] = await db()
     .select(ITEM)
@@ -124,7 +124,7 @@ async function firstSeenDueBy(userId: string, by: SQL): Promise<ReviewItem | nul
     .where(and(eq(cards.userId, userId), lte(cards.due, by), SIBLING_FREE))
     .orderBy(asc(cards.due))
     .limit(1);
-  return row ? { ...row, isNew: false } : null;
+  return row ? { ...row, isNew: row.reps === 0 } : null;
 }
 
 /** Follow-ups always; a new word only while today's budget lasts. */
@@ -202,7 +202,7 @@ export async function activity(userId: string) {
     from (
       select reviewed_at as at, 1 as reviews from review_logs where user_id = ${userId}
       union all
-      select at, 0 from activity_logs where user_id = ${userId} and kind in ('unit', 'listen', 'speak', 'write')
+      select at, 0 from activity_logs where user_id = ${userId} and kind in ('unit', 'listen', 'speak', 'write', 'tested')
     ) as study
     group by 1 order by 1 desc limit 1000`)) as unknown as {
     day: string;
@@ -219,6 +219,10 @@ export async function activity(userId: string) {
     ),
   };
 }
+
+/** A tricky card: forgotten more than once, or answered Again in the last two weeks. */
+export const TRICKY = sql`(coalesce((${cards.fsrs}->>'lapses')::int, 0) >= 2 or exists (
+  select 1 from review_logs rl where rl.card_id = ${cards.id} and rl.rating = 1 and rl.reviewed_at > now() - interval '14 days'))`;
 
 /** A word counts as known once its German→English card was last scheduled a week+ out. */
 export const KNOWN = sql`(${cards.fsrs}->>'scheduled_days')::int >= 7`;
@@ -256,8 +260,7 @@ export async function practiceWords(userId: string, scope: PracticeScope) {
     scope === "today"
       ? sql`exists (select 1 from ${reviewLogs} join ${cards} on ${cards.id} = ${reviewLogs.cardId} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${reviewLogs.reviewedAt} >= ${DAY_START})`
       : scope === "tricky"
-        ? // Forgotten more than once, or answered Again in the last two weeks.
-          sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and (coalesce((${cards.fsrs}->>'lapses')::int, 0) >= 2 or exists (select 1 from review_logs rl where rl.card_id = ${cards.id} and rl.rating = 1 and rl.reviewed_at > now() - interval '14 days')))`
+        ? sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${TRICKY})`
         : sql`exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${cards.introducedAt} is not null)`;
   // Typed practice is checked strictly, so it skips phrases (many right ways to say them).
   return db()
@@ -277,37 +280,56 @@ export async function startUnitCard(
   userId: string,
   unit: { id: string; cefr: string; title: string; canDo: string },
 ) {
-  const noteId = `unit:${unit.id}`;
+  await startUnitCards(userId, [unit]);
+}
+
+/** startUnitCard for several units in two statements (the placement test marks many at once). */
+export async function startUnitCards(
+  userId: string,
+  units: { id: string; cefr: string; title: string; canDo: string }[],
+  /** Spread first reviews over this many days (placement marks many units at once). */
+  spreadDays = 0,
+) {
+  if (!units.length) return;
   const now = new Date();
   // No 10-minute learning step: you just did the unit, so its first review is days away.
-  const { card } = fsrs({ enable_fuzz: true, enable_short_term: false }).next(
-    createEmptyCard(now),
-    now,
-    Rating.Good,
-  );
+  const scheduler = fsrs({ enable_fuzz: true, enable_short_term: false });
   await db().transaction(async (tx) => {
     await tx
       .insert(notes)
-      .values({
-        id: noteId,
-        source: "unit",
-        cefr: unit.cefr,
-        ord: 0,
-        de: unit.title,
-        en: unit.canDo,
-      })
+      .values(
+        units.map((unit) => ({
+          id: `unit:${unit.id}`,
+          source: "unit",
+          cefr: unit.cefr,
+          ord: 0,
+          de: unit.title,
+          en: unit.canDo,
+        })),
+      )
       .onConflictDoNothing();
     await tx
       .insert(cards)
-      .values({
-        id: cardId(userId, noteId, "unit"),
-        noteId,
-        userId,
-        direction: "unit",
-        fsrs: card,
-        due: card.due,
-        introducedAt: now,
-      })
+      .values(
+        units.map((unit) => {
+          const { card } = scheduler.next(createEmptyCard(now), now, Rating.Good);
+          if (spreadDays) {
+            const days = 3 + Math.floor(Math.random() * spreadDays);
+            card.due = new Date(now.getTime() + days * 86_400_000);
+            card.scheduled_days = days;
+          }
+          const noteId = `unit:${unit.id}`;
+          return {
+            id: cardId(userId, noteId, "unit"),
+            noteId,
+            userId,
+            direction: "unit" as const,
+            fsrs: card,
+            due: card.due,
+            introducedAt: now,
+          };
+        }),
+      )
       .onConflictDoNothing();
   });
 }
@@ -365,11 +387,13 @@ export async function markKnown(
   await db().execute(sql`
     update cards c set
       due = x.due,
-      introduced_at = coalesce(c.introduced_at, now()),
+      -- Before today: a word marked known must not use one of today's new-word slots.
+      introduced_at = coalesce(c.introduced_at, ${DAY_START} - interval '1 second'),
       fsrs = jsonb_build_object(
         'due', x.due, 'stability', ${stabilityDays}::real, 'difficulty', 3, 'elapsed_days', 0,
         'scheduled_days', ceil(extract(epoch from x.due - now()) / 86400)::int,
-        'learning_steps', 0, 'reps', 1, 'lapses', 0, 'state', ${State.Review}::int, 'last_review', now())
+        'learning_steps', 0, 'reps', coalesce((c.fsrs->>'reps')::int, 0) + 1,
+        'lapses', coalesce((c.fsrs->>'lapses')::int, 0), 'state', ${State.Review}::int, 'last_review', now())
     from (
       select id, now() + (3 + random() * ${spreadDays}) * interval '1 day' as due from cards
       where user_id = ${userId} and note_id in ${noteIds} and direction <> 'unit'

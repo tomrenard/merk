@@ -1,9 +1,10 @@
 "use server";
 
+import { and, eq, gte, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { UNITS } from "@/lib/course";
-import { markKnown, startUnitCard } from "@/lib/review";
+import { markKnown, startUnitCards } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { wordBands } from "./data";
 
@@ -20,6 +21,18 @@ export async function applyPlacement(input: {
   summary: string;
 }) {
   const userId = await requireUser();
+  // One placement per 10 minutes: each one writes many rows.
+  const [recent] = await db()
+    .select({ n: sql<number>`count(*)::int` })
+    .from(activityLogs)
+    .where(
+      and(
+        eq(activityLogs.userId, userId),
+        eq(activityLogs.kind, "placement-test"),
+        gte(activityLogs.at, sql`now() - interval '10 minutes'`),
+      ),
+    );
+  if ((recent?.n ?? 0) > 0) return { ok: false as const };
   const start = Number(input.startUnit);
   if (!Number.isInteger(start) || start < 0 || start > UNITS.length)
     throw new Error("Bad start unit");
@@ -27,7 +40,7 @@ export async function applyPlacement(input: {
     .filter(Number.isInteger)
     .slice(0, 20);
   const confirmed = (Array.isArray(input.confirmedWords) ? input.confirmedWords : [])
-    .map(String)
+    .filter((id): id is string => typeof id === "string" && id.length <= 80)
     .slice(0, 200);
   const done = UNITS.slice(0, start);
   if (done.length) {
@@ -36,7 +49,7 @@ export async function applyPlacement(input: {
       .values(
         done.map((unit) => ({ userId, kind: "placement", ref: unit.id, score: 1, total: 1 })),
       );
-    for (const unit of done) await startUnitCard(userId, unit);
+    await startUnitCards(userId, done, 27);
   }
   if (input.markWords) {
     const bands = await wordBands();
@@ -50,4 +63,5 @@ export async function applyPlacement(input: {
   await db()
     .insert(activityLogs)
     .values({ userId, kind: "placement-test", ref: String(input.summary).slice(0, 2000) });
+  return { ok: true as const };
 }

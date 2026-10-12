@@ -147,7 +147,7 @@ export function Placement({ packet }: { packet: Packet }) {
     setFailed(false);
     startSaving(async () => {
       try {
-        await applyPlacement({
+        const result = await applyPlacement({
           startUnit,
           markWords: markWords && !vocab.unreliable,
           knownBands: vocab.knownBands,
@@ -160,6 +160,10 @@ export function Placement({ packet }: { packet: Packet }) {
             startUnit,
           }),
         });
+        if (!result.ok) {
+          setFailed(true);
+          return;
+        }
         router.push("/");
       } catch {
         setFailed(true);
@@ -420,7 +424,10 @@ export function Placement({ packet }: { packet: Packet }) {
         </label>
       )}
       {failed && (
-        <p className="font-semibold text-rose-600 dark:text-rose-400">Couldn't save. Try again.</p>
+        <p className="font-semibold text-rose-600 dark:text-rose-400">
+          Couldn't save. A placement saved in the last 10 minutes blocks a new one; otherwise try
+          again.
+        </p>
       )}
       <button type="button" disabled={saving} onClick={apply} className="btn btn-primary">
         {saving ? "Saving…" : "Start learning"}

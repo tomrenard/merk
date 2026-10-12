@@ -91,6 +91,13 @@ describe("extra new words and known words", () => {
     }
     expect((await nextCard(U))?.cardId).toBe("zwei:de_en");
   });
+
+  it("marking words known doesn't use up today's new words", async () => {
+    const { markKnown } = await import("./review");
+    await db.insert(settings).values({ userId: U, newPerDay: 1 });
+    await markKnown(U, ["eins", "zwei"]);
+    expect((await counts(U)).newLeft).toBe(1);
+  });
 });
 
 describe("siblings", () => {

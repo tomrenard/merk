@@ -86,7 +86,8 @@ export async function lessonDoneToday(userId: string): Promise<boolean> {
     .where(
       and(
         eq(activityLogs.userId, userId),
-        inArray(activityLogs.kind, KINDS),
+        // Lessons and test-outs; a placement is not today's lesson.
+        inArray(activityLogs.kind, [...PARTS.map((p) => p.kind), "tested"]),
         gte(activityLogs.at, DAY_START),
       ),
     );

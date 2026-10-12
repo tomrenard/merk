@@ -140,8 +140,11 @@ export function Lesson({
           </button>
         )}
         {!saveFailed && next && (
-          <Link href={testOut && passed ? "/learn" : next.href} className="btn btn-primary">
-            {testOut && passed ? "Back to the course" : next.label}
+          <Link
+            href={testOut ? (passed ? "/learn" : `/learn/${unit.id}/grammar`) : next.href}
+            className="btn btn-primary"
+          >
+            {testOut ? (passed ? "Back to the course" : "Learn this unit") : next.label}
           </Link>
         )}
         <Link href="/" className="btn">

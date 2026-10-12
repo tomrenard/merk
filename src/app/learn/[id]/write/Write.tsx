@@ -16,7 +16,7 @@ export function Write({
   useSpeechUnlock();
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
-  const { finished, failed, save, retry } = usePartSave(unit.id, "write");
+  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "write");
 
   if (finished) {
     return (
@@ -26,6 +26,7 @@ export function Write({
         detail="Copying good phrases from the model into your own texts is how writing grows."
         saveFailed={failed}
         onRetry={retry}
+        saving={saving}
       />
     );
   }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { sameAnswer } from "@/lib/german";
 import type { Unit } from "@/lib/units";
 import { speak, useSpeechUnlock } from "../../../review/German";
@@ -36,55 +36,93 @@ export function Speak({
   const lines = unit.speaking;
   const [index, setIndex] = useState(0);
   const [recording, setRecording] = useState(false);
+  const [listening, setListening] = useState(false);
   const [mine, setMine] = useState<string | null>(null);
   const [heard, setHeard] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const recorder = useRef<MediaRecorder | null>(null);
+  const stream = useRef<MediaStream | null>(null);
   const listener = useRef<Recognition | null>(null);
-  const { finished, failed, save, retry } = usePartSave(unit.id, "speak");
+  const busy = useRef(false);
+  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "speak");
   const line = lines[index];
+  // Known only in the browser; checked after mount so server and phone render the same.
+  const [canCheck, setCanCheck] = useState(false);
+  useEffect(() => setCanCheck(recognition() !== null), []);
 
-  async function record() {
-    setError(null);
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const chunks: Blob[] = [];
-      const media = new MediaRecorder(stream);
-      media.ondataavailable = (event) => chunks.push(event.data);
-      media.onstop = () => {
-        for (const track of stream.getTracks()) track.stop();
-        setMine(URL.createObjectURL(new Blob(chunks, { type: media.mimeType })));
-      };
-      media.start();
-      recorder.current = media;
-      setRecording(true);
-      const rec = recognition();
-      if (rec) {
-        rec.lang = "de-DE";
-        rec.interimResults = false;
-        rec.onresult = (event) => setHeard(event.results[0]?.[0]?.transcript ?? null);
-        try {
-          rec.start();
-          listener.current = rec;
-        } catch {
-          // Recognition is a bonus; recording works without it.
-        }
-      }
-    } catch {
-      setError("No microphone: allow it for this app in your phone's settings.");
+  /** Stops recorder, mic and recognition; `drop` also forgets the recording. */
+  function stopAll(drop = false) {
+    if (recorder.current?.state === "recording") recorder.current.stop();
+    recorder.current = null;
+    for (const track of stream.current?.getTracks() ?? []) track.stop();
+    stream.current = null;
+    listener.current?.stop();
+    listener.current = null;
+    setRecording(false);
+    setListening(false);
+    if (drop) {
+      setMine((url) => {
+        if (url) URL.revokeObjectURL(url);
+        return null;
+      });
+      setHeard(null);
     }
   }
 
-  function stop() {
-    recorder.current?.stop();
-    listener.current?.stop();
-    setRecording(false);
+  // Leaving the screen turns the mic off.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: cleanup only, on unmount
+  useEffect(() => () => stopAll(true), []);
+
+  async function record() {
+    if (busy.current) return;
+    busy.current = true;
+    setError(null);
+    stopAll(true);
+    try {
+      const media = await navigator.mediaDevices.getUserMedia({ audio: true });
+      stream.current = media;
+      const chunks: Blob[] = [];
+      const rec = new MediaRecorder(media);
+      rec.ondataavailable = (event) => chunks.push(event.data);
+      rec.onstop = () => {
+        if (chunks.length) setMine(URL.createObjectURL(new Blob(chunks, { type: rec.mimeType })));
+        for (const track of media.getTracks()) track.stop();
+      };
+      rec.start();
+      recorder.current = rec;
+      setRecording(true);
+    } catch {
+      stopAll(true);
+      setError("No microphone: allow it for this app in your phone's settings.");
+    } finally {
+      busy.current = false;
+    }
+  }
+
+  /** Speech-to-text on its own (not while recording: on iPhone the two fight over the mic). */
+  function check() {
+    if (busy.current) return;
+    stopAll();
+    setHeard(null);
+    const rec = recognition();
+    if (!rec) return;
+    rec.lang = "de-DE";
+    rec.interimResults = false;
+    rec.onresult = (event) => {
+      setHeard(event.results[0]?.[0]?.transcript ?? null);
+      setListening(false);
+    };
+    try {
+      rec.start();
+      listener.current = rec;
+      setListening(true);
+    } catch {
+      setError("Speech-to-text isn't available here.");
+    }
   }
 
   function next() {
-    if (mine) URL.revokeObjectURL(mine);
-    setMine(null);
-    setHeard(null);
+    stopAll(true);
     if (index + 1 < lines.length) setIndex(index + 1);
     else save(lines.length, lines.length);
   }
@@ -97,6 +135,7 @@ export function Speak({
         detail="Saying it out loud is what makes it come out in real conversations."
         saveFailed={failed}
         onRetry={retry}
+        saving={saving}
       />
     );
   }
@@ -115,31 +154,40 @@ export function Speak({
       </button>
       <button
         type="button"
-        onClick={recording ? stop : record}
+        onClick={recording ? () => stopAll() : record}
         className={`btn btn-solid py-5 text-lg ${recording ? "[--c:#d61f1f] [--edge:#a51515]" : "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]"}`}
       >
         {recording ? "⏹ Stop" : mine ? "🎙 Record again" : "🎙 Record yourself"}
       </button>
       {error && <p className="font-semibold text-rose-600 dark:text-rose-400">{error}</p>}
-      {mine && (
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              type="button"
-              onClick={() => new Audio(mine).play()}
-              className="btn normal-case"
-            >
-              ▶ Me
-            </button>
-            <button type="button" onClick={() => speak(line.de)} className="btn normal-case">
-              ▶ Model
-            </button>
-          </div>
-          {heard && (
-            <p className="rounded-2xl bg-[var(--field)] p-3 font-semibold">
-              {sameAnswer(heard, line.de) ? "✓ " : ""}Heard: „{heard}"
-            </p>
-          )}
+      {mine && !recording && (
+        <div className="grid grid-cols-2 gap-2">
+          <button type="button" onClick={() => new Audio(mine).play()} className="btn normal-case">
+            ▶ Me
+          </button>
+          <button type="button" onClick={() => speak(line.de)} className="btn normal-case">
+            ▶ Model
+          </button>
+        </div>
+      )}
+      {canCheck && !recording && (
+        <button
+          type="button"
+          onClick={listening ? () => stopAll() : check}
+          className="btn normal-case"
+        >
+          {listening ? "Listening… tap to stop" : "🗣 Check with speech-to-text"}
+        </button>
+      )}
+      {heard && (
+        <div className="flex flex-col gap-1">
+          <p className="rounded-2xl bg-[var(--field)] p-3 font-semibold">
+            {sameAnswer(heard, line.de) ? "✓ " : ""}Heard: „{heard}"
+          </p>
+          <p className="muted text-xs">
+            Speech-to-text is done by your phone's provider (Apple or Google). Recordings stay on
+            your phone.
+          </p>
         </div>
       )}
       <button type="button" onClick={next} className="btn mt-auto">

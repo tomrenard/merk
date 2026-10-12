@@ -46,11 +46,13 @@ export function PartDone({
   saveFailed,
   onRetry,
   next,
+  saving = false,
 }: {
   title: string;
   detail: string;
   saveFailed: boolean;
   onRetry: () => void;
+  saving?: boolean;
   next: { href: string; label: string } | null;
 }) {
   return (
@@ -61,7 +63,12 @@ export function PartDone({
       <p className="text-3xl font-black">{title}</p>
       <p className="muted font-semibold">{detail}</p>
       {saveFailed ? (
-        <button type="button" onClick={onRetry} className="btn btn-primary">
+        <button
+          type="button"
+          disabled={saving}
+          onClick={onRetry}
+          className="btn btn-primary disabled:opacity-50"
+        >
           Couldn't save: retry
         </button>
       ) : (
@@ -78,13 +85,17 @@ export function PartDone({
   );
 }
 
-/** Saves a finished part; on failure (offline) keeps the result so the end screen can retry. */
+/**
+ * Saves a finished part. `finished` turns true the moment saving starts, so the part can't be
+ * submitted twice; on failure (offline) the result is kept so the end screen can retry.
+ */
 export function usePartSave(unitId: string, kind: PartKind) {
-  const [state, setState] = useState<"working" | "saved" | "failed">("working");
+  const [state, setState] = useState<"working" | "saving" | "saved" | "failed">("working");
   const [last, setLast] = useState<[number, number]>([0, 1]);
   const [, startSaving] = useTransition();
   function save(score: number, total: number) {
     setLast([score, total]);
+    setState("saving");
     startSaving(async () => {
       try {
         await recordPart(unitId, kind, score, total);
@@ -97,6 +108,7 @@ export function usePartSave(unitId: string, kind: PartKind) {
   return {
     finished: state !== "working",
     failed: state === "failed",
+    saving: state === "saving",
     save,
     retry: () => save(...last),
   };

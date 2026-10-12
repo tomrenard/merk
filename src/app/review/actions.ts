@@ -1,11 +1,12 @@
 "use server";
 
+import { and, eq, gte, sql } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import type { Grade } from "ts-fsrs";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { withExercise } from "@/lib/course";
-import { grade, nextCard } from "@/lib/review";
+import { DAY_START, grade, nextCard } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
 export async function gradeAndNext(
@@ -22,9 +23,24 @@ export async function gradeAndNext(
   return withExercise(await nextCard(userId));
 }
 
-/** "+5 new words today": raises today's new-word budget once, then starts a session. */
+/** At most this many extra new words a day, however often "+5" is tapped. */
+const MAX_EXTRA = 20;
+
+/** "+5 new words today": raises today's new-word budget (up to MAX_EXTRA), then starts a session. */
 export async function moreNewWords() {
   const userId = await requireUser();
-  await db().insert(activityLogs).values({ userId, kind: "extra_new", ref: "today", score: 5 });
+  const [row] = await db()
+    .select({ extra: sql<number>`coalesce(sum(${activityLogs.score}), 0)::int` })
+    .from(activityLogs)
+    .where(
+      and(
+        eq(activityLogs.userId, userId),
+        eq(activityLogs.kind, "extra_new"),
+        gte(activityLogs.at, DAY_START),
+      ),
+    );
+  if ((row?.extra ?? 0) < MAX_EXTRA) {
+    await db().insert(activityLogs).values({ userId, kind: "extra_new", ref: "today", score: 5 });
+  }
   redirect("/review");
 }

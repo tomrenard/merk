@@ -2,7 +2,7 @@ import { and, asc, eq, ilike, isNull, ne, or, type SQL, sql } from "drizzle-orm"
 import Link from "next/link";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
-import { KNOWN } from "@/lib/review";
+import { KNOWN, TRICKY } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Headword } from "../review/German";
 import { TabBar } from "../TabBar";
@@ -24,7 +24,7 @@ const FILTERS: { key: string; label: string; where: SQL }[] = [
   {
     key: "tricky",
     label: "🧠 Tricky",
-    where: sql`coalesce((${cards.fsrs}->>'lapses')::int, 0) >= 2`,
+    where: TRICKY,
   },
   { key: "A1", label: "A1", where: sql`${notes.cefr} = 'A1'` },
   { key: "A2", label: "A2", where: sql`${notes.cefr} = 'A2'` },

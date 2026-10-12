@@ -10,6 +10,7 @@ import {
   type MeaningCheck,
   PSEUDOWORDS,
   type Search,
+  startLesson,
   startSearch,
   type VocabAnswer,
   vocabResult,
@@ -27,7 +28,9 @@ const CAN_DO: { level: Level; text: string }[] = [
   { level: "A1", text: "I can introduce myself, order in a café and ask simple questions." },
   { level: "A2", text: "I can talk about my day, my last weekend and my plans." },
   { level: "B1", text: "I can handle most everyday situations, tell a story and give my opinion." },
+  { level: "B2", text: "I can follow the news, discuss pros and cons and write a formal letter." },
 ];
+const ORDER: Level[] = ["A1", "A2", "B1", "B2"];
 
 /** About 10 minutes: words (yes/no, with made-up words mixed in), grammar, then listening. */
 export function Placement({ packet }: { packet: Packet }) {
@@ -35,8 +38,7 @@ export function Placement({ packet }: { packet: Packet }) {
   const router = useRouter();
   const [step, setStep] = useState<Step>("intro");
   const [ticked, setTicked] = useState<Level[]>([]);
-  const prior: Level =
-    (["B1", "A2", "A1"] as const).find((level) => ticked.includes(level)) ?? "A1";
+  const prior: Level = [...ORDER].reverse().find((level) => ticked.includes(level)) ?? "A1";
   // Made-up words in one random order: round 1 takes 15, round 2 the next 5.
   const [pseudo] = useState(() => shuffled(PSEUDOWORDS));
   // Vocabulary: two rounds of cards; every 3rd real "yes" gets a meaning check.
@@ -104,9 +106,8 @@ export function Placement({ packet }: { packet: Packet }) {
     const secure = vocabResult(bandScores(packet.bands, allAnswers, allChecks)).levels.filter(
       (l) => l.state === "secure",
     ).length;
-    const fromWords: Level = (["A1", "A2", "B1"] as const)[Math.min(secure, 2)] ?? "A1";
-    const order = ["A1", "A2", "B1"];
-    const start = order.indexOf(prior) <= order.indexOf(fromWords) ? prior : fromWords;
+    const fromWords: Level = ORDER[Math.min(secure, 3)] ?? "A1";
+    const start = ORDER.indexOf(prior) <= ORDER.indexOf(fromWords) ? prior : fromWords;
     setSearch(startSearch(packet.units.length, start));
     setStep("grammar");
   }
@@ -122,7 +123,8 @@ export function Placement({ packet }: { packet: Packet }) {
     setProbeItem(0);
     setProbeRight(0);
     if (next.done) {
-      setStartUnit(next.lo);
+      const last = packet.course.at(-1)?.lessons.at(-1)?.index ?? 0;
+      setStartUnit(startLesson(packet.grammarAt, next.lo, last));
       setStep(packet.listening[0]?.length ? "listen" : "result");
     }
   }
@@ -249,9 +251,7 @@ export function Placement({ packet }: { packet: Packet }) {
       return (
         <main className="screen">
           {bar}
-          <p className="muted text-sm font-extrabold tracking-wide uppercase">
-            Quick check: what does it mean?
-          </p>
+          <p className="muted text-sm font-extrabold">Quick check: what does it mean?</p>
           <p className="text-3xl font-black">{checking.de}</p>
           <div className="flex flex-col gap-2">
             {checking.options.map((option, i) => (
@@ -274,9 +274,7 @@ export function Placement({ packet }: { packet: Packet }) {
     return (
       <main className="screen">
         {bar}
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">
-          Do you know what it means?
-        </p>
+        <p className="muted text-sm font-extrabold">Do you know what it means?</p>
         <p className="py-10 text-center text-4xl font-black">
           {card ? ("word" in card ? card.word.de : card.pseudo) : ""}
         </p>
@@ -284,14 +282,14 @@ export function Placement({ packet }: { packet: Packet }) {
           <button
             type="button"
             onClick={() => answerCard(false)}
-            className="btn btn-solid py-5 text-lg [--c:#d61f1f] [--edge:#a51515]"
+            className="btn btn-solid py-5 text-lg [--c:#d63c3c]"
           >
             No
           </button>
           <button
             type="button"
             onClick={() => answerCard(true)}
-            className="btn btn-solid py-5 text-lg [--c:#2f7d00] [--edge:#235e00]"
+            className="btn btn-solid py-5 text-lg [--c:#1a7a43]"
           >
             Yes
           </button>
@@ -319,8 +317,8 @@ export function Placement({ packet }: { packet: Packet }) {
     return (
       <main className="screen">
         {bar}
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">
-          Listening · {["A1", "A2", "B1"][listenLevel]} · {listenItem + 1}/3
+        <p className="muted text-sm font-extrabold">
+          Listening · {ORDER[listenLevel]} · {listenItem + 1}/3
         </p>
         <button
           type="button"
@@ -385,14 +383,14 @@ export function Placement({ packet }: { packet: Packet }) {
         <p className="font-extrabold">🧩 Grammar</p>
         <p className="font-semibold">
           {search.lo
-            ? `${grammarLevel}: you know up to about unit ${search.lo} (somewhere between ${search.lo} and ${Math.max(search.lo, search.hi - 1)}).`
+            ? `${grammarLevel}: you know the grammar up to about “${packet.units[search.lo - 1]?.title}”.`
             : "Start from the beginning."}
         </p>
       </section>
       <section className="card flex flex-col gap-2">
         <p className="font-extrabold">🎧 Listening</p>
         <p className="font-semibold">
-          {listenPassed >= 0 ? `${["A1", "A2", "B1"][listenPassed]} understood` : "Start at A1"}
+          {listenPassed >= 0 ? `${ORDER[listenPassed]} understood` : "Start at A1"}
         </p>
       </section>
       <label className="flex flex-col gap-1">
@@ -402,14 +400,19 @@ export function Placement({ packet }: { packet: Packet }) {
           onChange={(event) => setStartUnit(Number(event.target.value))}
           className="field"
         >
-          {packet.units.map((unit, i) => (
-            <option key={unit.id} value={i}>
-              Unit {i + 1}: {unit.title} ({unit.cefr})
-            </option>
+          {packet.course.map((part) => (
+            <optgroup key={part.id} label={part.id}>
+              {part.lessons.map((lesson) => (
+                <option key={lesson.index} value={lesson.index}>
+                  {part.id} · {lesson.title}
+                </option>
+              ))}
+            </optgroup>
           ))}
         </select>
         <span className="muted text-sm">
-          Units before it count as done; each still comes back once in your reviews.
+          Lessons and exams before it count as done; each lesson still comes back once in your
+          reviews.
         </span>
       </label>
       {!vocab.unreliable && markCount > 0 && (

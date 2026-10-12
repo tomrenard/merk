@@ -1,0 +1,501 @@
+{
+ "id": "a1-t09",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "der Körper",
+  "der Kopf",
+  "das Auge",
+  "das Ohr",
+  "der Mund",
+  "der Zahn",
+  "der Hals",
+  "der Arm",
+  "die Hand",
+  "das Bein",
+  "der Fuß",
+  "der Bauch",
+  "der Rücken",
+  "krank",
+  "gesund",
+  "das Fieber",
+  "der Schmerz",
+  "weh tun",
+  "der Arzt",
+  "die Praxis",
+  "der Termin",
+  "die Sprechstunde",
+  "das Medikament",
+  "die Tablette",
+  "die Apotheke",
+  "die Grippe",
+  "erkältet sein",
+  "husten",
+  "müde"
+ ],
+ "title": "Body and health",
+ "situation": "Calling in sick and at the doctor",
+ "canDo": "I can name parts of the body, say what hurts, call in sick and make an appointment at the doctor's.",
+ "explanation": "When you're ill, you call your boss and the doctor's practice (**die Praxis**) and say what's wrong.\n\n| German | English |\n|---|---|\n| der Kopf, Köpfe | head |\n| das Auge, -n / das Ohr, -en | eye / ear |\n| der Mund, Münder / der Zahn, Zähne | mouth / tooth |\n| der Hals, Hälse | throat, neck |\n| der Bauch, Bäuche / der Rücken, - | stomach / back |\n| der Arm, -e / die Hand, Hände | arm / hand |\n| das Bein, -e / der Fuß, Füße | leg / foot |\n\n| Phrase | English |\n|---|---|\n| Ich bin krank. / Ich bin erkältet. | I'm ill. / I've got a cold. |\n| Ich habe Fieber / Husten / Grippe. | I've got a temperature / a cough / flu. |\n| Ich habe Kopfschmerzen / Halsschmerzen. | I've got a headache / a sore throat. |\n| Mir tut der Rücken weh. | My back hurts. |\n| Ich brauche einen Termin. | I need an appointment. |\n| Gute Besserung! | Get well soon! |\n\nTips:\n- Two ways to say what hurts: body part + **-schmerzen** (*Bauchschmerzen, Zahnschmerzen*) or **Mir tut … weh**. With a plural, the verb is plural: *Mir tun die Füße weh.*\n- Calling in sick: phone or write to your boss before work starts: *Ich bin krank und kann heute nicht kommen.* After three days off (some employers: from day one) you need a doctor's note (**die Krankschreibung**); the practice sends it to your health insurer electronically.\n- Medicines are sold in the **Apotheke**, not in the supermarket.\n- *Gesundheit!* is what you say when someone sneezes; to a sick person you say *Gute Besserung!*",
+ "french": "Ich habe Kopfschmerzen works like j'ai mal à la tête, but German glues the body part to -schmerzen: Kopf + Schmerzen, Bauch + Schmerzen.",
+ "examples": [
+  {
+   "de": "Ich bin krank. Ich habe Fieber.",
+   "en": "I'm ill. I've got a temperature."
+  },
+  {
+   "de": "Mir tut der Kopf weh.",
+   "en": "My head hurts."
+  },
+  {
+   "de": "Ich habe Halsschmerzen und Husten.",
+   "en": "I've got a sore throat and a cough."
+  },
+  {
+   "de": "Ich kann heute nicht zur Arbeit kommen.",
+   "en": "I can't come to work today."
+  },
+  {
+   "de": "Ich brauche einen Termin beim Arzt.",
+   "en": "I need an appointment with the doctor."
+  },
+  {
+   "de": "Nehmen Sie die Tabletten dreimal am Tag.",
+   "en": "Take the tablets three times a day."
+  },
+  {
+   "de": "Die Apotheke ist gleich hier an der Ecke.",
+   "en": "The pharmacy is right here on the corner."
+  },
+  {
+   "de": "Gute Besserung!",
+   "en": "Get well soon!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t09-01",
+   "type": "cloze",
+   "de": "Ich habe ___. 39 Grad!",
+   "base": "fever, temperature",
+   "answers": [
+    "Fieber"
+   ],
+   "en": "I've got a temperature. 39 degrees!"
+  },
+  {
+   "id": "a1-t09-02",
+   "type": "cloze",
+   "de": "Mir tut der ___ weh. Ich kann nicht laufen.",
+   "base": "foot",
+   "answers": [
+    "Fuß"
+   ],
+   "en": "My foot hurts. I can't walk."
+  },
+  {
+   "id": "a1-t09-03",
+   "type": "choice",
+   "de": "Ich bin ___. Ich kann heute nicht arbeiten.",
+   "options": [
+    "gesund",
+    "krank",
+    "froh"
+   ],
+   "answer": 1,
+   "why": "If you can't work, you're ill: krank; gesund means healthy.",
+   "en": "I'm ill. I can't work today."
+  },
+  {
+   "id": "a1-t09-04",
+   "type": "order",
+   "tiles": [
+    "weh",
+    "Mir",
+    "der Kopf",
+    "tut"
+   ],
+   "answers": [
+    "Mir tut der Kopf weh.",
+    "Der Kopf tut mir weh."
+   ],
+   "en": "My head hurts."
+  },
+  {
+   "id": "a1-t09-05",
+   "type": "cloze",
+   "de": "Ich habe ___schmerzen und esse heute nichts.",
+   "base": "stomach",
+   "answers": [
+    "Bauch"
+   ],
+   "en": "I've got stomach ache and I'm not eating anything today."
+  },
+  {
+   "id": "a1-t09-06",
+   "type": "choice",
+   "de": "Mir ___ die Füße weh.",
+   "options": [
+    "tut",
+    "tun",
+    "tue"
+   ],
+   "answer": 1,
+   "why": "die Füße is plural, so the verb is plural: Mir tun die Füße weh.",
+   "en": "My feet hurt."
+  },
+  {
+   "id": "a1-t09-07",
+   "type": "cloze",
+   "de": "Ich brauche einen ___ beim Arzt.",
+   "base": "appointment",
+   "answers": [
+    "Termin"
+   ],
+   "en": "I need an appointment with the doctor."
+  },
+  {
+   "id": "a1-t09-08",
+   "type": "choice",
+   "de": "Tabletten und Medikamente kaufen Sie in der ___.",
+   "options": [
+    "Praxis",
+    "Apotheke",
+    "Bäckerei"
+   ],
+   "answer": 1,
+   "why": "Medicines are sold at the pharmacy: die Apotheke.",
+   "en": "You buy tablets and medicines at the pharmacy."
+  },
+  {
+   "id": "a1-t09-09",
+   "type": "order",
+   "tiles": [
+    "krank",
+    "Ich",
+    "heute",
+    "bin"
+   ],
+   "answers": [
+    "Ich bin heute krank.",
+    "Heute bin ich krank."
+   ],
+   "en": "I'm ill today."
+  },
+  {
+   "id": "a1-t09-10",
+   "type": "cloze",
+   "de": "Ich bin ___. Ich habe Schnupfen und Husten.",
+   "base": "having a cold",
+   "answers": [
+    "erkältet"
+   ],
+   "en": "I've got a cold. I've got a runny nose and a cough."
+  },
+  {
+   "id": "a1-t09-11",
+   "type": "choice",
+   "de": "Beim Zahnarzt: Welcher ___ tut weh?",
+   "options": [
+    "Mund",
+    "Zahn",
+    "Hals"
+   ],
+   "answer": 1,
+   "why": "At the dentist's, it's a tooth that hurts: der Zahn.",
+   "en": "At the dentist's: Which tooth hurts?"
+  },
+  {
+   "id": "a1-t09-12",
+   "type": "cloze",
+   "de": "Ich habe Halsschmerzen. Mein ___ tut weh.",
+   "base": "throat",
+   "answers": [
+    "Hals"
+   ],
+   "en": "I've got a sore throat. My throat hurts."
+  },
+  {
+   "id": "a1-t09-13",
+   "type": "choice",
+   "de": "Ich ___ seit drei Tagen.",
+   "options": [
+    "Husten",
+    "huste",
+    "hustet"
+   ],
+   "answer": 1,
+   "why": "husten is the verb: ich huste; der Husten is the noun.",
+   "en": "I've been coughing for three days."
+  },
+  {
+   "id": "a1-t09-14",
+   "type": "order",
+   "tiles": [
+    "Termin",
+    "Ich",
+    "einen",
+    "brauche",
+    "heute"
+   ],
+   "answers": [
+    "Ich brauche heute einen Termin.",
+    "Heute brauche ich einen Termin."
+   ],
+   "en": "I need an appointment today."
+  },
+  {
+   "id": "a1-t09-15",
+   "type": "cloze",
+   "de": "Ich sitze den ganzen Tag am Computer. Jetzt tut mir der ___ weh.",
+   "base": "back",
+   "answers": [
+    "Rücken"
+   ],
+   "en": "I sit at the computer all day. Now my back hurts."
+  },
+  {
+   "id": "a1-t09-16",
+   "type": "choice",
+   "de": "Gute ___! – Danke!",
+   "options": [
+    "Gesundheit",
+    "Krankheit",
+    "Besserung"
+   ],
+   "answer": 2,
+   "why": "To a sick person you say 'Gute Besserung!'; 'Gesundheit!' is for when someone sneezes.",
+   "en": "Get well soon! – Thanks!"
+  },
+  {
+   "id": "a1-t09-17",
+   "type": "cloze",
+   "de": "Nehmen Sie eine ___ am Morgen und eine am Abend.",
+   "base": "tablet",
+   "answers": [
+    "Tablette"
+   ],
+   "en": "Take one tablet in the morning and one in the evening."
+  },
+  {
+   "id": "a1-t09-18",
+   "type": "choice",
+   "de": "Wann ist die ___? – Montag bis Freitag, 8 bis 12 Uhr.",
+   "options": [
+    "Sprechstunde",
+    "Termin",
+    "Apotheke"
+   ],
+   "answer": 0,
+   "why": "die Sprechstunde = the practice's consultation hours; der Termin is your own appointment.",
+   "en": "When are the consultation hours? – Monday to Friday, 8 to 12."
+  },
+  {
+   "id": "a1-t09-19",
+   "type": "order",
+   "tiles": [
+    "weh",
+    "Mir",
+    "die Augen",
+    "tun"
+   ],
+   "answers": [
+    "Mir tun die Augen weh.",
+    "Die Augen tun mir weh."
+   ],
+   "en": "My eyes hurt."
+  },
+  {
+   "id": "a1-t09-20",
+   "type": "cloze",
+   "de": "Ich habe ___: Fieber, Husten und mir tut alles weh.",
+   "base": "flu",
+   "answers": [
+    "Grippe",
+    "die Grippe"
+   ],
+   "en": "I've got flu: a temperature, a cough and everything hurts."
+  },
+  {
+   "id": "a1-t09-21",
+   "type": "choice",
+   "de": "Für die Arbeit brauche ich eine ___ vom Arzt.",
+   "options": [
+    "Krankschreibung",
+    "Rechnung",
+    "Fahrkarte"
+   ],
+   "answer": 0,
+   "why": "If you're off sick, your employer needs a doctor's note: die Krankschreibung.",
+   "en": "For work I need a doctor's note."
+  },
+  {
+   "id": "a1-t09-22",
+   "type": "cloze",
+   "de": "Mir tut das ___ weh. Ich höre nicht gut.",
+   "base": "ear",
+   "answers": [
+    "Ohr"
+   ],
+   "en": "My ear hurts. I can't hear well."
+  },
+  {
+   "id": "a1-t09-23",
+   "type": "order",
+   "tiles": [
+    "beim Arzt",
+    "Ich",
+    "morgen",
+    "um 9 Uhr",
+    "bin"
+   ],
+   "answers": [
+    "Ich bin morgen um 9 Uhr beim Arzt.",
+    "Morgen bin ich um 9 Uhr beim Arzt.",
+    "Morgen um 9 Uhr bin ich beim Arzt."
+   ],
+   "en": "I'm at the doctor's tomorrow at 9 o'clock."
+  },
+  {
+   "id": "a1-t09-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "nicht",
+    "heute",
+    "kommen",
+    "kann"
+   ],
+   "answers": [
+    "Ich kann heute nicht kommen.",
+    "Heute kann ich nicht kommen."
+   ],
+   "en": "I can't come today."
+  }
+ ],
+ "listening": {
+  "title": "Anruf in der Praxis",
+  "intro": "Luca is ill and calls his doctor's practice, where Frau Schulz answers the phone.",
+  "lines": [
+   {
+    "speaker": "Frau Schulz",
+    "de": "Praxis Dr. Becker, Schulz, guten Morgen.",
+    "en": "Dr Becker's practice, Schulz speaking, good morning."
+   },
+   {
+    "speaker": "Luca",
+    "de": "Guten Morgen, hier ist Luca Moretti. Ich bin krank und brauche heute einen Termin.",
+    "en": "Good morning, this is Luca Moretti. I'm ill and I need an appointment today."
+   },
+   {
+    "speaker": "Frau Schulz",
+    "de": "Was haben Sie denn?",
+    "en": "What's the matter?"
+   },
+   {
+    "speaker": "Luca",
+    "de": "Ich habe Fieber und Halsschmerzen. Und mir tut der Kopf weh.",
+    "en": "I've got a temperature and a sore throat. And my head hurts."
+   },
+   {
+    "speaker": "Frau Schulz",
+    "de": "Seit wann haben Sie Fieber?",
+    "en": "Since when have you had a temperature?"
+   },
+   {
+    "speaker": "Luca",
+    "de": "Seit gestern Abend. 38,5 Grad.",
+    "en": "Since yesterday evening. 38.5 degrees."
+   },
+   {
+    "speaker": "Frau Schulz",
+    "de": "Können Sie um halb elf kommen?",
+    "en": "Can you come at half past ten?"
+   },
+   {
+    "speaker": "Luca",
+    "de": "Ja, das geht. Ich brauche auch eine Krankschreibung für die Arbeit.",
+    "en": "Yes, that's fine. I also need a doctor's note for work."
+   },
+   {
+    "speaker": "Frau Schulz",
+    "de": "Kein Problem. Bringen Sie bitte Ihre Versichertenkarte mit.",
+    "en": "No problem. Please bring your health insurance card."
+   },
+   {
+    "speaker": "Luca",
+    "de": "Mache ich. Vielen Dank, bis später!",
+    "en": "I will. Thank you very much, see you later!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Luca call?",
+    "options": [
+     "He needs an appointment.",
+     "He wants to cancel an appointment.",
+     "He needs a medicine."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What's wrong with him?",
+    "options": [
+     "stomach ache and a cough",
+     "a temperature, a sore throat and a headache",
+     "a bad back"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When is his appointment?",
+    "options": [
+     "at 9:30",
+     "at 11:30",
+     "at 10:30"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does he need for work?",
+    "options": [
+     "a letter from his boss",
+     "a doctor's note",
+     "a phone number"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe Fieber und Halsschmerzen.",
+  "Mir tut der Kopf weh.",
+  "Ich brauche heute einen Termin."
+ ],
+ "speaking": [
+  {
+   "de": "Ich bin krank.",
+   "en": "I'm ill."
+  },
+  {
+   "de": "Ich brauche heute einen Termin.",
+   "en": "I need an appointment today."
+  },
+  {
+   "de": "Ich habe Fieber und Halsschmerzen.",
+   "en": "I've got a temperature and a sore throat."
+  },
+  {
+   "de": "Mir tut der Kopf weh.",
+   "en": "My head hurts."
+  },
+  {
+   "de": "Ich brauche eine Krankschreibung für die Arbeit.",
+   "en": "I need a doctor's note for work."
+  }
+ ],
+ "writing": {
+  "task": "You're ill. Write a short message (3–4 sentences) to your boss: say that you're ill, what's wrong and that you're going to the doctor.",
+  "model": "Guten Morgen, Frau Weber, ich bin leider krank. Ich habe Fieber und mir tut der Hals weh. Ich kann heute nicht zur Arbeit kommen. Um zehn Uhr bin ich beim Arzt. Viele Grüße, Luca"
+ }
+}

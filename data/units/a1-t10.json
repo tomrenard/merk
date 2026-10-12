@@ -1,0 +1,505 @@
+{
+ "id": "a1-t10",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "der Beruf",
+  "die Arbeit",
+  "arbeiten",
+  "die Firma",
+  "das Büro",
+  "der Kollege",
+  "die Kollegin",
+  "der Chef",
+  "die Chefin",
+  "der Arbeitsplatz",
+  "der Job",
+  "verdienen",
+  "das Gehalt",
+  "der Feierabend",
+  "die Pause",
+  "der Lehrer",
+  "der Fahrer",
+  "der Koch",
+  "der Ingenieur",
+  "die Krankenschwester",
+  "der Kellner",
+  "die Ausbildung",
+  "das Praktikum",
+  "arbeitslos",
+  "selbstständig",
+  "die Stelle",
+  "der Kunde",
+  "der Hausmann"
+ ],
+ "title": "Work and jobs",
+ "situation": "Talking about your job",
+ "canDo": "I can say what job I do, where and when I work and what I did before, and ask other people about their work.",
+ "explanation": "\"What do you do?\" is one of the first questions people ask in Germany: *Was sind Sie von Beruf?* or, more casually, *Was machst du beruflich?*\n\n| German | English |\n|---|---|\n| der Lehrer, - / die Lehrerin, -nen | teacher |\n| der Ingenieur, -e / die Ingenieurin, -nen | engineer |\n| der Koch, Köche / die Köchin, -nen | cook |\n| der Kellner, - / die Kellnerin, -nen | waiter / waitress |\n| der Krankenpfleger / die Krankenschwester | nurse |\n| der Kollege, -n / die Kollegin, -nen | colleague |\n| der Chef, -s / die Chefin, -nen | boss |\n\n| Phrase | English |\n|---|---|\n| Ich bin Ingenieurin. | I'm an engineer. |\n| Ich arbeite als Koch bei Lufthansa. | I work as a cook for Lufthansa. |\n| Ich bin selbstständig / arbeitslos. | I'm self-employed / unemployed. |\n| Ich mache eine Ausbildung / ein Praktikum. | I'm doing an apprenticeship / an internship. |\n| Um fünf habe ich Feierabend. | I finish work at five. |\n\nTips:\n- No article with jobs: *Ich bin Lehrer*, not *ein Lehrer*.\n- Women's job titles usually add **-in**: *Lehrerin, Chefin*, sometimes with an umlaut: *Köchin*.\n- **als** + job, **bei** + company, **in** + place: *Ich arbeite als Ingenieur bei Bosch in Stuttgart.*\n- **der Job** is casual; **die Stelle** is a position, as in job ads.\n- **Feierabend** is the end of the working day, and also the free time after it.\n- Asking about someone's salary (**das Gehalt**) is quite personal in Germany.",
+ "french": "As in French (je suis infirmière), there's no article with jobs: Ich bin Krankenschwester; and bei + company is like chez: bei Airbus = chez Airbus.",
+ "examples": [
+  {
+   "de": "Was sind Sie von Beruf? – Ich bin Koch.",
+   "en": "What do you do? – I'm a cook."
+  },
+  {
+   "de": "Ich arbeite als Ingenieurin bei einer Firma in Stuttgart.",
+   "en": "I work as an engineer for a company in Stuttgart."
+  },
+  {
+   "de": "Meine Kollegen sind sehr nett.",
+   "en": "My colleagues are very nice."
+  },
+  {
+   "de": "Ich arbeite von neun bis fünf im Büro.",
+   "en": "I work in the office from nine to five."
+  },
+  {
+   "de": "Heute habe ich um vier Feierabend.",
+   "en": "Today I finish work at four."
+  },
+  {
+   "de": "Er hat eine neue Stelle gefunden.",
+   "en": "He has found a new job."
+  },
+  {
+   "de": "Sie ist selbstständig.",
+   "en": "She's self-employed."
+  },
+  {
+   "de": "Ich habe ein Praktikum in Berlin gemacht.",
+   "en": "I did an internship in Berlin."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t10-01",
+   "type": "cloze",
+   "de": "Ich arbeite in einem Restaurant. Ich bin ___.",
+   "base": "cook",
+   "answers": [
+    "Koch",
+    "Köchin"
+   ],
+   "en": "I work in a restaurant. I'm a cook."
+  },
+  {
+   "id": "a1-t10-02",
+   "type": "cloze",
+   "de": "Was sind Sie von ___?",
+   "base": "profession",
+   "answers": [
+    "Beruf"
+   ],
+   "en": "What do you do for a living?"
+  },
+  {
+   "id": "a1-t10-03",
+   "type": "choice",
+   "de": "Ich bin ___.",
+   "options": [
+    "eine Lehrerin",
+    "Lehrerin",
+    "die Lehrerin"
+   ],
+   "answer": 1,
+   "why": "With jobs after sein, German uses no article: Ich bin Lehrerin.",
+   "en": "I'm a teacher."
+  },
+  {
+   "id": "a1-t10-04",
+   "type": "order",
+   "tiles": [
+    "von Beruf",
+    "Was",
+    "Sie",
+    "sind"
+   ],
+   "answers": [
+    "Was sind Sie von Beruf?"
+   ],
+   "en": "What do you do for a living?"
+  },
+  {
+   "id": "a1-t10-05",
+   "type": "cloze",
+   "de": "Ich arbeite ___ Siemens.",
+   "base": "for (a company)",
+   "answers": [
+    "bei",
+    "für"
+   ],
+   "en": "I work for Siemens."
+  },
+  {
+   "id": "a1-t10-06",
+   "type": "choice",
+   "de": "Ich arbeite ___ Kellner in einem Café.",
+   "options": [
+    "bei",
+    "als",
+    "wie"
+   ],
+   "answer": 1,
+   "why": "To say what you work as, use als: als Kellner arbeiten.",
+   "en": "I work as a waiter in a café."
+  },
+  {
+   "id": "a1-t10-07",
+   "type": "cloze",
+   "de": "Um 17 Uhr habe ich ___. Dann gehe ich nach Hause.",
+   "base": "end of the working day",
+   "answers": [
+    "Feierabend"
+   ],
+   "en": "At 5 pm I finish work. Then I go home."
+  },
+  {
+   "id": "a1-t10-08",
+   "type": "choice",
+   "de": "Mein Kollege heißt Max und meine ___ heißt Sara.",
+   "options": [
+    "Kollege",
+    "Kollegin",
+    "Kolleginnen"
+   ],
+   "answer": 1,
+   "why": "A female colleague is die Kollegin.",
+   "en": "My colleague is called Max and my (female) colleague is called Sara."
+  },
+  {
+   "id": "a1-t10-09",
+   "type": "order",
+   "tiles": [
+    "im Büro",
+    "arbeite",
+    "Ich",
+    "von neun bis fünf"
+   ],
+   "answers": [
+    "Ich arbeite von neun bis fünf im Büro.",
+    "Ich arbeite im Büro von neun bis fünf.",
+    "Von neun bis fünf arbeite ich im Büro.",
+    "Im Büro arbeite ich von neun bis fünf."
+   ],
+   "en": "I work in the office from nine to five."
+  },
+  {
+   "id": "a1-t10-10",
+   "type": "cloze",
+   "de": "Ich habe keine Arbeit. Ich bin ___.",
+   "base": "unemployed",
+   "answers": [
+    "arbeitslos"
+   ],
+   "en": "I don't have a job. I'm unemployed."
+  },
+  {
+   "id": "a1-t10-11",
+   "type": "choice",
+   "de": "Mein ___ ist sehr nett. Er hilft mir oft.",
+   "options": [
+    "Chef",
+    "Chefin",
+    "Arbeit"
+   ],
+   "answer": 0,
+   "why": "Er tells you it's a man: der Chef.",
+   "en": "My boss is very nice. He often helps me."
+  },
+  {
+   "id": "a1-t10-12",
+   "type": "cloze",
+   "de": "Ich habe eine neue ___ als Ingenieur gefunden.",
+   "base": "position, post",
+   "answers": [
+    "Stelle",
+    "Arbeitsstelle"
+   ],
+   "en": "I've found a new position as an engineer."
+  },
+  {
+   "id": "a1-t10-13",
+   "type": "choice",
+   "de": "Ich habe meine eigene Firma. Ich bin ___.",
+   "options": [
+    "arbeitslos",
+    "Kollege",
+    "selbstständig"
+   ],
+   "answer": 2,
+   "why": "If you run your own business, you're self-employed: selbstständig.",
+   "en": "I have my own company. I'm self-employed."
+  },
+  {
+   "id": "a1-t10-14",
+   "type": "order",
+   "tiles": [
+    "Ingenieurin",
+    "Meine Frau",
+    "bei Airbus",
+    "ist",
+    "und",
+    "arbeitet"
+   ],
+   "answers": [
+    "Meine Frau ist Ingenieurin und arbeitet bei Airbus.",
+    "Meine Frau arbeitet bei Airbus und ist Ingenieurin."
+   ],
+   "en": "My wife is an engineer and works for Airbus."
+  },
+  {
+   "id": "a1-t10-15",
+   "type": "cloze",
+   "de": "Ich mache eine ___ als Koch. Sie dauert drei Jahre.",
+   "base": "apprenticeship",
+   "answers": [
+    "Ausbildung"
+   ],
+   "en": "I'm doing an apprenticeship as a cook. It takes three years."
+  },
+  {
+   "id": "a1-t10-16",
+   "type": "choice",
+   "de": "Wie viel ___ du? – 3000 Euro im Monat.",
+   "options": [
+    "arbeitest",
+    "verdienst",
+    "bezahlst"
+   ],
+   "answer": 1,
+   "why": "verdienen = to earn (money).",
+   "en": "How much do you earn? – 3,000 euros a month."
+  },
+  {
+   "id": "a1-t10-17",
+   "type": "cloze",
+   "de": "Ich habe drei Monate ein ___ bei einer Firma gemacht.",
+   "base": "internship",
+   "answers": [
+    "Praktikum"
+   ],
+   "en": "I did a three-month internship at a company."
+  },
+  {
+   "id": "a1-t10-18",
+   "type": "choice",
+   "de": "Ich bin Busfahrer. Mein ___ ist der Bus.",
+   "options": [
+    "Arbeitsplatz",
+    "Feierabend",
+    "Beruf"
+   ],
+   "answer": 0,
+   "why": "der Arbeitsplatz = the place where you work.",
+   "en": "I'm a bus driver. My workplace is the bus."
+  },
+  {
+   "id": "a1-t10-19",
+   "type": "order",
+   "tiles": [
+    "gearbeitet",
+    "Ich",
+    "in Paris",
+    "habe",
+    "zehn Jahre"
+   ],
+   "answers": [
+    "Ich habe zehn Jahre in Paris gearbeitet.",
+    "Zehn Jahre habe ich in Paris gearbeitet.",
+    "In Paris habe ich zehn Jahre gearbeitet.",
+    "Ich habe in Paris zehn Jahre gearbeitet."
+   ],
+   "en": "I worked in Paris for ten years."
+  },
+  {
+   "id": "a1-t10-20",
+   "type": "cloze",
+   "de": "Der ___ fährt jeden Tag nach München.",
+   "base": "driver",
+   "answers": [
+    "Fahrer"
+   ],
+   "en": "The driver goes to Munich every day."
+  },
+  {
+   "id": "a1-t10-21",
+   "type": "choice",
+   "de": "Um zwölf machen wir 30 Minuten ___.",
+   "options": [
+    "Feierabend",
+    "Pause",
+    "Termin"
+   ],
+   "answer": 1,
+   "why": "A short break during work is die Pause.",
+   "en": "At twelve we take a 30-minute break."
+  },
+  {
+   "id": "a1-t10-22",
+   "type": "cloze",
+   "de": "Ich verkaufe Computer. Ich habe viele ___.",
+   "base": "customers",
+   "answers": [
+    "Kunden"
+   ],
+   "en": "I sell computers. I have a lot of customers."
+  },
+  {
+   "id": "a1-t10-23",
+   "type": "order",
+   "tiles": [
+    "von Beruf",
+    "Er",
+    "Krankenpfleger",
+    "ist"
+   ],
+   "answers": [
+    "Er ist von Beruf Krankenpfleger.",
+    "Er ist Krankenpfleger von Beruf.",
+    "Von Beruf ist er Krankenpfleger."
+   ],
+   "en": "He's a nurse by profession."
+  },
+  {
+   "id": "a1-t10-24",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "Mein Mann",
+    "gefunden",
+    "eine neue Stelle"
+   ],
+   "answers": [
+    "Mein Mann hat eine neue Stelle gefunden.",
+    "Eine neue Stelle hat mein Mann gefunden."
+   ],
+   "en": "My husband has found a new job."
+  }
+ ],
+ "listening": {
+  "title": "Was machst du beruflich?",
+  "intro": "At a friend's party in Cologne, Katrin and Julien talk about their jobs.",
+  "lines": [
+   {
+    "speaker": "Katrin",
+    "de": "Und was machst du beruflich, Julien?",
+    "en": "And what do you do for a living, Julien?"
+   },
+   {
+    "speaker": "Julien",
+    "de": "Ich bin Ingenieur. Ich arbeite bei einer Firma für Solartechnik.",
+    "en": "I'm an engineer. I work for a solar technology company."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Interessant! Arbeitest du im Büro?",
+    "en": "Interesting! Do you work in an office?"
+   },
+   {
+    "speaker": "Julien",
+    "de": "Meistens ja, aber ich fahre auch oft zu Kunden. Und du?",
+    "en": "Mostly, yes, but I also often visit customers. And you?"
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Ich bin Krankenschwester im Krankenhaus. Heute Nacht arbeite ich wieder.",
+    "en": "I'm a nurse at the hospital. I'm working again tonight."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Oh, das ist bestimmt schwer.",
+    "en": "Oh, that must be hard."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Ja, aber die Kollegen sind super. Wie lange arbeitest du schon hier in Köln?",
+    "en": "Yes, but my colleagues are great. How long have you been working here in Cologne?"
+   },
+   {
+    "speaker": "Julien",
+    "de": "Seit zwei Jahren. Vorher habe ich in Lyon gearbeitet.",
+    "en": "For two years. Before that I worked in Lyon."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Und wann hast du Feierabend?",
+    "en": "And when do you finish work?"
+   },
+   {
+    "speaker": "Julien",
+    "de": "Meistens um fünf. Am Freitag schon um drei!",
+    "en": "Usually at five. On Fridays already at three!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Julien's job?",
+    "options": [
+     "engineer",
+     "nurse",
+     "salesman"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Katrin work?",
+    "options": [
+     "in an office",
+     "in a school",
+     "in a hospital"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where did Julien work before?",
+    "options": [
+     "in Cologne",
+     "in Lyon",
+     "in Paris"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When does Julien finish work on Fridays?",
+    "options": [
+     "at five",
+     "at three",
+     "at four"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Was sind Sie von Beruf?",
+  "Ich arbeite bei einer Firma in Köln.",
+  "Um fünf habe ich Feierabend."
+ ],
+ "speaking": [
+  {
+   "de": "Was machst du beruflich?",
+   "en": "What do you do for a living?"
+  },
+  {
+   "de": "Ich bin Ingenieur.",
+   "en": "I'm an engineer."
+  },
+  {
+   "de": "Ich arbeite bei einer Firma für Solartechnik.",
+   "en": "I work for a solar technology company."
+  },
+  {
+   "de": "Die Kollegen sind super.",
+   "en": "My colleagues are great."
+  },
+  {
+   "de": "Vorher habe ich in Lyon gearbeitet.",
+   "en": "Before that I worked in Lyon."
+  }
+ ],
+ "writing": {
+  "task": "Write 3–4 sentences about your job for a new colleague: what you do, where you work, your hours and what you did before.",
+  "model": "Ich bin Grafikerin und arbeite bei einer Agentur in Berlin. Ich arbeite von neun bis fünf im Büro, am Freitag oft zu Hause. Meine Kollegen sind sehr nett. Vorher habe ich drei Jahre in Paris gearbeitet."
+ }
+}

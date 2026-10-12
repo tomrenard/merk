@@ -1,0 +1,646 @@
+{
+ "id": "b1",
+ "cefr": "B1",
+ "title": "B1 exam (modelled on Goethe-Zertifikat B1)",
+ "hoeren": [
+  {
+   "title": "Durchsagen und Ansagen",
+   "intro": "You hear an announcement on the train, a message on an answering machine and a radio notice.",
+   "lines": [
+    {
+     "speaker": "Durchsage",
+     "de": "Sehr geehrte Fahrgäste, wegen Bauarbeiten endet dieser Zug heute bereits in Erkner. Für die Weiterfahrt nach Frankfurt (Oder) steht ein Ersatzbus vor dem Bahnhof bereit. Bitte beachten Sie, dass Sie mit dem Bus etwa 40 Minuten länger unterwegs sind.",
+     "en": "Dear passengers, due to construction work this train terminates today in Erkner. A replacement bus is waiting outside the station for the onward journey to Frankfurt (Oder). Please note that the bus takes about 40 minutes longer."
+    },
+    {
+     "speaker": "Anrufbeantworter",
+     "de": "Guten Tag, hier ist die Autowerkstatt Brandt. Herr Laurent, wir haben uns Ihr Auto angesehen. Die Bremsen müssen erneuert werden, das kostet ungefähr 380 Euro. Wir machen das aber nur, wenn Sie einverstanden sind. Rufen Sie uns bitte bis morgen Mittag an, sonst wird das Auto erst nächste Woche fertig.",
+     "en": "Hello, this is Brandt garage. Mr Laurent, we have looked at your car. The brakes need to be replaced, which costs about 380 euros. But we'll only do it if you agree. Please call us by tomorrow noon, otherwise the car won't be ready until next week."
+    },
+    {
+     "speaker": "Radio",
+     "de": "Und noch ein Hinweis für alle Berlinerinnen und Berliner: Am Samstag findet in vielen Bezirken der Tag der offenen Tür in den Bürgerämtern statt. Termine können an diesem Tag nicht vergeben werden, Sie können sich aber in Ruhe über Anträge und Formulare informieren.",
+     "en": "And one more notice for all Berliners: on Saturday many districts are holding an open day at the citizens' offices. No appointments can be given on that day, but you can find out about applications and forms at your leisure."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was müssen die Fahrgäste in Erkner tun?",
+     "options": [
+      "Auf den nächsten Zug warten.",
+      "In einen Bus umsteigen.",
+      "Eine neue Fahrkarte kaufen."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Warum soll Herr Laurent die Werkstatt anrufen?",
+     "options": [
+      "Er soll die Reparatur erlauben.",
+      "Er soll das Auto heute abholen.",
+      "Er soll einen neuen Termin machen."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Was kann man am Samstag im Bürgeramt machen?",
+     "options": [
+      "Einen neuen Pass beantragen.",
+      "Einen Termin für die Anmeldung bekommen.",
+      "Sich über Formulare informieren."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Der erste Arbeitstag",
+   "intro": "On your first day in a new company, the HR manager welcomes the new employees. You hear part of her talk.",
+   "lines": [
+    {
+     "speaker": "Frau Krüger",
+     "de": "Guten Morgen und herzlich willkommen bei Nordlicht Software! Ich bin Sabine Krüger aus der Personalabteilung und erkläre Ihnen heute die wichtigsten Dinge.",
+     "en": "Good morning and a warm welcome to Nordlicht Software! I'm Sabine Krüger from HR and today I'll explain the most important things to you."
+    },
+    {
+     "speaker": "Frau Krüger",
+     "de": "Zuerst zur Arbeitszeit: Bei uns gibt es Gleitzeit. Sie müssen nur zwischen 10 und 15 Uhr im Büro oder online erreichbar sein. Wann Sie anfangen, entscheiden Sie selbst.",
+     "en": "First, working hours: we have flexitime. You only have to be reachable in the office or online between 10 am and 3 pm. You decide yourself when you start."
+    },
+    {
+     "speaker": "Frau Krüger",
+     "de": "Homeoffice ist an zwei Tagen pro Woche möglich. In den ersten drei Monaten, also in der Probezeit, möchten wir Sie aber möglichst jeden Tag hier sehen, damit Sie Ihr Team gut kennenlernen.",
+     "en": "Working from home is possible two days a week. But in the first three months, during the probation period, we'd like to see you here every day if possible, so that you get to know your team well."
+    },
+    {
+     "speaker": "Frau Krüger",
+     "de": "Wenn Sie krank sind, rufen Sie bitte vor 9 Uhr Ihre Teamleitung an. Ab dem dritten Krankheitstag brauchen wir eine Krankmeldung vom Arzt.",
+     "en": "If you are ill, please call your team lead before 9 am. From the third day of illness we need a sick note from a doctor."
+    },
+    {
+     "speaker": "Frau Krüger",
+     "de": "Und zum Schluss etwas Angenehmes: Das Mittagessen in der Kantine ist für Sie in der ersten Woche kostenlos. Danach zahlen Sie mit Ihrem Mitarbeiterausweis.",
+     "en": "And finally something nice: lunch in the canteen is free for you in the first week. After that, you pay with your staff card."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was gilt für die Arbeitszeit?",
+     "options": [
+      "Alle fangen um 10 Uhr an.",
+      "Man muss zwischen 10 und 15 Uhr erreichbar sein.",
+      "Man arbeitet von 9 bis 15 Uhr."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was wünscht sich die Firma in der Probezeit?",
+     "options": [
+      "Die neuen Mitarbeiter arbeiten zwei Tage von zu Hause.",
+      "Die neuen Mitarbeiter machen keinen Urlaub.",
+      "Die neuen Mitarbeiter kommen jeden Tag ins Büro."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Ab wann braucht man eine Krankmeldung vom Arzt?",
+     "options": [
+      "Ab dem ersten Tag",
+      "Ab dem dritten Tag",
+      "Ab dem fünften Tag"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was ist in der ersten Woche kostenlos?",
+     "options": [
+      "Das Mittagessen in der Kantine",
+      "Das Monatsticket",
+      "Der Mitarbeiterausweis"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Ärger mit dem Nachbarn",
+   "intro": "Tom talks to his friend Mia in a café about a problem in his building.",
+   "lines": [
+    {
+     "speaker": "Mia",
+     "de": "Du siehst müde aus. Ist alles in Ordnung?",
+     "en": "You look tired. Is everything OK?"
+    },
+    {
+     "speaker": "Tom",
+     "de": "Nicht wirklich. Über mir ist vor einem Monat ein neuer Nachbar eingezogen, und der hört jeden Abend bis Mitternacht laute Musik.",
+     "en": "Not really. A new neighbour moved in above me a month ago, and he plays loud music every evening until midnight."
+    },
+    {
+     "speaker": "Mia",
+     "de": "Hast du schon mit ihm gesprochen?",
+     "en": "Have you talked to him yet?"
+    },
+    {
+     "speaker": "Tom",
+     "de": "Ja, letzte Woche. Er war eigentlich ganz nett und hat sich entschuldigt. Zwei Tage lang war es ruhig, aber jetzt geht es wieder los.",
+     "en": "Yes, last week. He was actually quite nice and apologised. For two days it was quiet, but now it's starting again."
+    },
+    {
+     "speaker": "Mia",
+     "de": "Hm. Laut Hausordnung gilt doch ab 22 Uhr Nachtruhe, oder? Du könntest der Hausverwaltung schreiben.",
+     "en": "Hm. According to the house rules, quiet time starts at 10 pm, doesn't it? You could write to the property management."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Das wollte ich eigentlich vermeiden. Wir wohnen ja noch lange im selben Haus. Ich möchte keinen Streit.",
+     "en": "I actually wanted to avoid that. We'll be living in the same building for a long time. I don't want a fight."
+    },
+    {
+     "speaker": "Mia",
+     "de": "Verstehe. Dann lad ihn doch mal auf ein Bier ein und erklär ihm, dass du um sechs aufstehen musst. Wenn ihr euch besser kennt, nimmt er bestimmt mehr Rücksicht.",
+     "en": "I see. Then why not invite him for a beer and explain that you have to get up at six. When you know each other better, he'll surely be more considerate."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Gute Idee. Das probiere ich am Wochenende. Und wenn das nicht hilft, schreibe ich der Verwaltung.",
+     "en": "Good idea. I'll try that at the weekend. And if that doesn't help, I'll write to the management."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was ist Toms Problem?",
+     "options": [
+      "Sein Nachbar macht abends laute Musik.",
+      "Sein Nachbar ist unfreundlich.",
+      "Er muss bald ausziehen."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Was ist nach dem ersten Gespräch passiert?",
+     "options": [
+      "Der Nachbar hat sich beschwert.",
+      "Es war nur kurz ruhig.",
+      "Der Nachbar ist ausgezogen."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Warum will Tom zuerst nicht an die Hausverwaltung schreiben?",
+     "options": [
+      "Er kennt die Hausordnung nicht.",
+      "Die Hausverwaltung antwortet nie.",
+      "Er möchte keinen Streit mit dem Nachbarn."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Was will Tom am Wochenende machen?",
+     "options": [
+      "Den Nachbarn auf ein Bier einladen.",
+      "Mit der Hausverwaltung telefonieren.",
+      "Bei Mia übernachten."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Radiodiskussion: Homeoffice für alle?",
+   "intro": "In a radio programme, the presenter talks with Mr Albers, the owner of a small company, and Ms Yilmaz, a nurse.",
+   "lines": [
+    {
+     "speaker": "Moderatorin",
+     "de": "Seit einigen Jahren arbeiten viele Menschen in Deutschland von zu Hause aus. Herr Albers, Sie haben ein kleines Unternehmen mit 25 Mitarbeitern. Wie sehen Sie das Homeoffice?",
+     "en": "For some years now many people in Germany have been working from home. Mr Albers, you have a small company with 25 employees. How do you see working from home?"
+    },
+    {
+     "speaker": "Herr Albers",
+     "de": "Grundsätzlich positiv. Meine Leute sparen sich den langen Weg und sind oft konzentrierter. Was mir aber fehlt, sind die spontanen Gespräche in der Küche. Da entstehen oft die besten Ideen. Deshalb haben wir einen festen Bürotag pro Woche eingeführt.",
+     "en": "Positive in principle. My people save the long commute and are often more focused. But what I miss are the spontaneous chats in the kitchen. That's often where the best ideas come from. That's why we have introduced one fixed office day per week."
+    },
+    {
+     "speaker": "Moderatorin",
+     "de": "Frau Yilmaz, Sie arbeiten als Pflegerin im Krankenhaus. Für Sie ist Homeoffice keine Option.",
+     "en": "Ms Yilmaz, you work as a nurse in a hospital. For you, working from home is not an option."
+    },
+    {
+     "speaker": "Frau Yilmaz",
+     "de": "Nein, natürlich nicht. Und ehrlich gesagt ärgert mich die Diskussion manchmal ein bisschen. Es wird so getan, als ob alle zu Hause arbeiten könnten. Dabei gibt es Millionen Menschen in der Pflege, im Verkauf oder auf dem Bau, die das nie können.",
+     "en": "No, of course not. And to be honest, the debate sometimes annoys me a bit. People act as if everyone could work from home. Yet there are millions of people in care, retail or construction who never can."
+    },
+    {
+     "speaker": "Moderatorin",
+     "de": "Was würden Sie sich stattdessen wünschen?",
+     "en": "What would you wish for instead?"
+    },
+    {
+     "speaker": "Frau Yilmaz",
+     "de": "Mehr Flexibilität bei den Dienstplänen. Wenn ich meine Schichten früher planen könnte, wäre mir schon sehr geholfen.",
+     "en": "More flexibility in the rotas. If I could plan my shifts earlier, that would already help me a lot."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was fehlt Herrn Albers beim Homeoffice?",
+     "options": [
+      "Die Kontrolle über die Arbeitszeit.",
+      "Die spontanen Gespräche im Büro.",
+      "Die Konzentration seiner Mitarbeiter."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wie hat Herr Albers reagiert?",
+     "options": [
+      "Er hat das Homeoffice abgeschafft.",
+      "Er hat eine größere Küche gebaut.",
+      "Er hat einen festen Bürotag eingeführt."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Was ärgert Frau Yilmaz?",
+     "options": [
+      "Dass viele Berufe in der Diskussion vergessen werden.",
+      "Dass sie zu wenig verdient.",
+      "Dass ihre Kollegen oft von zu Hause arbeiten."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Was wünscht sich Frau Yilmaz?",
+     "options": [
+      "Mehr Homeoffice in der Pflege.",
+      "Kürzere Schichten.",
+      "Dienstpläne, die früher feststehen."
+     ],
+     "answer": 2
+    }
+   ]
+  }
+ ],
+ "lesen": [
+  {
+   "title": "Eine E-Mail aus Leipzig",
+   "text": "Lieber Tom,\n\nendlich komme ich dazu, dir zu schreiben! Seit sechs Wochen wohne ich jetzt in Leipzig, und ich muss sagen: Der Umzug war die richtige Entscheidung. Meine Wohnung ist zwar kleiner als die in Berlin, aber sie kostet fast 300 Euro weniger, und ich brauche mit dem Fahrrad nur zehn Minuten ins Büro.\n\nAm Anfang war es trotzdem nicht leicht. Ich kannte hier niemanden und die ersten Wochenenden waren ziemlich einsam. Dann hat mich eine Kollegin zu ihrem Chor mitgenommen. Ich hatte seit der Schulzeit nicht mehr gesungen, aber es macht riesig Spaß, und nach der Probe gehen wir immer noch etwas trinken.\n\nWas mir noch fehlt, ist der Hausarzt. Alle Praxen in meiner Nähe nehmen keine neuen Patienten auf. Hast du vielleicht einen Tipp, wie man das am besten macht?\n\nIm Mai habe ich übrigens Geburtstag. Hast du Lust, mich zu besuchen? Mein Sofa ist sehr bequem!\n\nViele Grüße\nNina",
+   "questions": [
+    {
+     "q": "Was ist für Nina in Leipzig besser als in Berlin?",
+     "options": [
+      "Ihre Wohnung ist größer.",
+      "Ihre Wohnung ist günstiger.",
+      "Sie verdient mehr Geld."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wie hat Nina neue Leute kennengelernt?",
+     "options": [
+      "In einem Chor.",
+      "In einem Sportverein.",
+      "Über ihre Nachbarn."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Wobei braucht Nina Hilfe?",
+     "options": [
+      "Bei der Suche nach einem Sofa.",
+      "Bei der Organisation ihrer Geburtstagsfeier.",
+      "Bei der Suche nach einem Hausarzt."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Zeitungsartikel: Leihen statt kaufen",
+   "text": "Bohrmaschine, Zelt oder Raclette-Gerät – viele Dinge braucht man nur ein- oder zweimal im Jahr. Trotzdem steht in fast jedem Haushalt eine eigene Bohrmaschine, die im Durchschnitt nur wenige Minuten pro Jahr benutzt wird. Genau hier setzen sogenannte Leihläden an, die es inzwischen in vielen deutschen Städten gibt.\n\nDas Prinzip ist einfach: Mitglieder zahlen einen kleinen Jahresbeitrag – in Hamburg-Altona sind es 20 Euro – und können dafür Werkzeug, Campingausrüstung oder Küchengeräte für bis zu zwei Wochen ausleihen. Wer wenig Geld hat, zahlt, so viel er kann. Die meisten Gegenstände wurden von Bürgerinnen und Bürgern gespendet.\n\n„Es geht uns nicht nur ums Sparen“, sagt Mitgründerin Lea Brandt. „Jedes Gerät, das nicht neu produziert werden muss, schont die Umwelt.“ Außerdem sei der Laden ein Treffpunkt geworden: Einmal im Monat findet ein Reparatur-Café statt, in dem Ehrenamtliche zeigen, wie man kaputte Geräte selbst repariert.\n\nEin Problem bleibt allerdings der Platz. Weil die Miete für den Laden im letzten Jahr gestiegen ist, sucht der Verein dringend nach günstigeren Räumen.",
+   "questions": [
+    {
+     "q": "Was kostet die Mitgliedschaft im Leihladen in Altona?",
+     "options": [
+      "20 Euro pro Monat.",
+      "20 Euro pro Jahr; wer wenig Geld hat, zahlt weniger.",
+      "Nichts, der Laden ist kostenlos."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Woher kommen die meisten Gegenstände?",
+     "options": [
+      "Von Firmen.",
+      "Aus Spenden der Bevölkerung.",
+      "Vom Staat."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was passiert einmal im Monat?",
+     "options": [
+      "Man kann gemeinsam Geräte reparieren.",
+      "Die Mitglieder treffen sich zum Essen.",
+      "Der Laden verkauft alte Geräte."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Welches Problem hat der Verein?",
+     "options": [
+      "Er hat zu wenige Mitglieder.",
+      "Viele Geräte kommen kaputt zurück.",
+      "Die Räume sind zu teuer geworden."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Meinungen: Sollen Geschäfte auch sonntags öffnen?",
+   "text": "Eine Zeitung hat ihre Leserinnen und Leser gefragt, ob Geschäfte auch am Sonntag öffnen sollten.\n\nKarin, 52: Ich arbeite selbst im Einzelhandel und bin froh, dass der Sonntag frei ist. Das ist oft der einzige Tag, an dem meine ganze Familie zusammen ist. Wer einkaufen will, hat sechs Tage Zeit.\n\nJens, 29: Ich arbeite in Schichten und habe unter der Woche kaum Zeit zum Einkaufen. Für Leute wie mich wäre es eine große Erleichterung, wenn wenigstens größere Supermärkte sonntags ein paar Stunden öffnen dürften.\n\nAylin, 35: Ich finde, man muss unterscheiden. Bäckereien und Blumenläden dürfen ja schon jetzt sonntags öffnen, und das reicht völlig. Große Kaufhäuser brauchen wir am Sonntag nicht – lieber gehe ich mit den Kindern in den Park.\n\nMichael, 41: Online kann ich heute rund um die Uhr bestellen. Wenn die Läden in der Stadt da nicht mithalten dürfen, verlieren sie noch mehr Kunden. Ich bin klar für eine Öffnung.",
+   "questions": [
+    {
+     "q": "Wer ist gegen jede Sonntagsöffnung, weil der Sonntag für die Familie wichtig ist?",
+     "options": [
+      "Karin",
+      "Aylin",
+      "Jens"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Wer möchte aus persönlichen Gründen sonntags einkaufen können?",
+     "options": [
+      "Michael",
+      "Jens",
+      "Karin"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wer findet die aktuelle Regelung gut so, wie sie ist?",
+     "options": [
+      "Michael",
+      "Jens",
+      "Aylin"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Wer denkt an die Konkurrenz durch den Internethandel?",
+     "options": [
+      "Michael",
+      "Karin",
+      "Aylin"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Hausordnung",
+   "text": "Hausordnung der Wohnanlage Lindenhof (Auszug)\n\n1. Ruhezeiten: Von 22 bis 6 Uhr sowie an Sonn- und Feiertagen ist auf besondere Ruhe zu achten. Laute Arbeiten wie Bohren sind werktags nur von 8 bis 12 und von 15 bis 19 Uhr erlaubt.\n\n2. Treppenhaus: Fahrräder, Kinderwagen und Schuhe dürfen nicht im Treppenhaus abgestellt werden, da sie im Notfall den Fluchtweg versperren. Für Fahrräder und Kinderwagen steht der Raum im Erdgeschoss zur Verfügung.\n\n3. Müll: Der Müll ist zu trennen. Sperrmüll darf nicht neben die Tonnen gestellt werden; er muss beim Abfallunternehmen angemeldet werden.\n\n4. Grillen: Auf den Balkonen ist nur das Grillen mit Elektrogrills gestattet. Holzkohlegrills können im Innenhof auf dem dafür vorgesehenen Platz benutzt werden.",
+   "questions": [
+    {
+     "q": "Wann darf man in der Wohnung bohren?",
+     "options": [
+      "Am Dienstag um 16 Uhr.",
+      "Am Sonntag um 10 Uhr.",
+      "Am Montag um 13 Uhr."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Wo soll man seinen Kinderwagen abstellen?",
+     "options": [
+      "Vor der Wohnungstür.",
+      "Im Raum im Erdgeschoss.",
+      "Im Innenhof."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was muss man mit einem alten Sofa machen?",
+     "options": [
+      "Es neben die Mülltonnen stellen.",
+      "Es in den Keller bringen.",
+      "Es beim Abfallunternehmen anmelden."
+     ],
+     "answer": 2
+    }
+   ]
+  }
+ ],
+ "sprachbausteine": [
+  {
+   "de": "Als ich nach Hause kam, ___ meine Mitbewohnerin schon das Abendessen gekocht.",
+   "options": [
+    "hat",
+    "hatte",
+    "war"
+   ],
+   "answer": 1,
+   "why": "The cooking happened before 'I came home' (Präteritum), so it takes the Plusquamperfekt: hatte gekocht. kochen forms its past with haben."
+  },
+  {
+   "de": "Nachdem er den Vertrag ___ hatte, bekam er die Schlüssel.",
+   "options": [
+    "unterschreiben",
+    "unterschrieben",
+    "unterschrieb"
+   ],
+   "answer": 1,
+   "why": "nachdem + Plusquamperfekt needs the past participle: unterschrieben hatte. unter- is inseparable here, so no ge-."
+  },
+  {
+   "de": "Das ist die Kollegin, ___ ich die Präsentation geschickt habe.",
+   "options": [
+    "die",
+    "der",
+    "denen"
+   ],
+   "answer": 1,
+   "why": "schicken takes a dative person (jemandem etwas schicken); the feminine dative relative pronoun is der."
+  },
+  {
+   "de": "Die Firma, für ___ ich arbeite, hat 200 Mitarbeiter.",
+   "options": [
+    "die",
+    "der",
+    "das"
+   ],
+   "answer": 0,
+   "why": "für takes the accusative; die Firma is feminine, so the relative pronoun is die."
+  },
+  {
+   "de": "Der Antrag ___ gerade von einer Mitarbeiterin bearbeitet.",
+   "options": [
+    "wird",
+    "ist",
+    "hat"
+   ],
+   "answer": 0,
+   "why": "The passive in the present is werden + past participle: der Antrag wird bearbeitet. ist bearbeitet (state) can't take gerade or von + agent."
+  },
+  {
+   "de": "Die Heizung muss dringend repariert ___.",
+   "options": [
+    "werden",
+    "worden",
+    "wird"
+   ],
+   "answer": 0,
+   "why": "Passive with a modal verb: modal + participle + werden (infinitive) at the end: muss repariert werden."
+  },
+  {
+   "de": "Wenn ich mehr Zeit ___, würde ich einen Tanzkurs machen.",
+   "options": [
+    "habe",
+    "hätte",
+    "hatte"
+   ],
+   "answer": 1,
+   "why": "An unreal if-sentence uses Konjunktiv II: wenn ich mehr Zeit hätte …"
+  },
+  {
+   "de": "Wenn ich früher losgefahren ___, hätte ich den Zug noch bekommen.",
+   "options": [
+    "hätte",
+    "wäre",
+    "würde"
+   ],
+   "answer": 1,
+   "why": "Konjunktiv II in the past = hätte/wäre + participle; losfahren is movement, so it takes wäre."
+  },
+  {
+   "de": "Wegen ___ Streiks fallen heute viele Züge aus.",
+   "options": [
+    "dem",
+    "die",
+    "des"
+   ],
+   "answer": 2,
+   "why": "In written German wegen takes the genitive: der Streik → wegen des Streiks. The -s on Streiks only fits des."
+  },
+  {
+   "de": "Je länger ich in Deutschland wohne, ___ besser verstehe ich die Bürokratie.",
+   "options": [
+    "desto",
+    "als",
+    "so dass"
+   ],
+   "answer": 0,
+   "why": "The pair is je + comparative … desto + comparative."
+  },
+  {
+   "de": "___ es stark geregnet hat, sind wir zu Fuß nach Hause gegangen.",
+   "options": [
+    "Weil",
+    "Obwohl",
+    "Trotzdem"
+   ],
+   "answer": 1,
+   "why": "obwohl introduces a contrast and sends the verb to the end. trotzdem is an adverb and can't start a subordinate clause."
+  },
+  {
+   "de": "Ich mache einen Deutschkurs, ___ meine Chancen auf dem Arbeitsmarkt zu verbessern.",
+   "options": [
+    "damit",
+    "um",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "Same subject in both parts + zu-infinitive → um … zu. damit is used with a full clause (often a different subject)."
+  },
+  {
+   "de": "Ich habe noch nicht mit dem neuen ___ gesprochen.",
+   "options": [
+    "Kunde",
+    "Kunden",
+    "Kundes"
+   ],
+   "answer": 1,
+   "why": "der Kunde is an n-noun: it takes -n in every case except the nominative singular: mit dem Kunden."
+  },
+  {
+   "de": "Ich lasse mein Fahrrad in der Werkstatt ___.",
+   "options": [
+    "reparieren",
+    "repariert",
+    "zu reparieren"
+   ],
+   "answer": 0,
+   "why": "lassen + infinitive (no zu) means having something done: etwas reparieren lassen."
+  },
+  {
+   "de": "Kümmerst du dich während meines Urlaubs ___ meine Pflanzen?",
+   "options": [
+    "für",
+    "auf",
+    "um"
+   ],
+   "answer": 2,
+   "why": "The fixed combination is sich kümmern um + accusative."
+  }
+ ],
+ "schreiben": [
+  {
+   "task": "Your friend Nina has moved to Leipzig (see her email above). Write back (about 80 words): react to her news, give her a tip for finding a family doctor, and answer her invitation – say whether you can come in May and suggest a plan for your visit.",
+   "model": "Liebe Nina,\n\nvielen Dank für deine E-Mail! Ich freue mich sehr, dass du dich in Leipzig so wohlfühlst und sogar in einem Chor singst.\n\nWegen des Hausarztes: Ruf doch bei der Terminservicestelle unter 116 117 an. Die helfen dir, eine Praxis zu finden, die noch Patienten aufnimmt. Du kannst auch deine Kollegen fragen, ob ihr Arzt noch Platz hat.\n\nDeine Einladung nehme ich gern an! Im Mai habe ich Zeit: Ich könnte am Wochenende nach deinem Geburtstag kommen. Wollen wir dann zusammen durch die Stadt bummeln und abends etwas Schönes essen gehen?\n\nLiebe Grüße\nTom",
+   "checklist": [
+    "Covers all three points: reaction, a tip, the visit with a suggestion.",
+    "Informal register used consistently (du, Liebe Nina, Liebe Grüße).",
+    "Organised in short paragraphs with linking words (wegen, auch, dann).",
+    "Uses some B1 structures: a subordinate clause (dass, ob, die …), Konjunktiv II for suggestions (Ich könnte …).",
+    "About 80 words."
+   ]
+  },
+  {
+   "task": "In an online forum the question is: 'Should shops in Germany be allowed to open on Sundays?' Write your opinion (about 80 words).",
+   "model": "Ich bin aus Frankreich, wo viele Supermärkte sonntags vormittags geöffnet haben. Als ich nach Berlin gezogen bin, war der geschlossene Sonntag für mich zuerst ungewohnt. Inzwischen finde ich ihn aber gut. Einerseits ist es manchmal unpraktisch, wenn man etwas vergessen hat. Andererseits ist der Sonntag ein ruhiger Tag, an dem man Zeit für Familie und Freunde hat. Außerdem sollten auch die Verkäuferinnen und Verkäufer einen freien Tag haben. Meiner Meinung nach reicht es, wenn Bäckereien und Tankstellen öffnen.",
+   "checklist": [
+    "States a clear opinion (Meiner Meinung nach … / Ich finde …).",
+    "Gives at least two reasons and considers the other side (einerseits … andererseits).",
+    "Uses connectors to link ideas (außerdem, aber, deshalb).",
+    "Includes subordinate clauses with the verb at the end (wenn, als, dass, an dem …).",
+    "About 80 words; neutral forum register."
+   ]
+  }
+ ],
+ "sprechen": [
+  {
+   "task": "Plan something together. A colleague in your team is leaving the company. With your partner, plan a small farewell: when and where, what to eat and drink, a present, who does what. Make suggestions, react to your partner's and reach an agreement.",
+   "model": "A: Du, Sarah hört ja Ende des Monats auf. Sollen wir für sie eine kleine Abschiedsfeier organisieren?\nB: Unbedingt! Wann würde es am besten passen? Vielleicht an ihrem letzten Arbeitstag, am Freitag nach der Arbeit?\nA: Freitag finde ich schwierig, da gehen viele früh ins Wochenende. Was hältst du von Donnerstagmittag in unserer Teeküche?\nB: Gute Idee. Dann könnten alle kommen, auch die Kollegen im Homeoffice können sich kurz zuschalten. Was machen wir mit dem Essen?\nA: Ich schlage vor, dass jeder etwas mitbringt. Ich backe einen Kuchen.\nB: Und ich kümmere mich um das Geschenk. Sie geht doch gern wandern – wie wäre es mit einem Gutschein für ein Outdoor-Geschäft?\nA: Perfekt. Ich sammle das Geld im Team ein. Dann sind wir uns einig: Donnerstag, zwölf Uhr, Teeküche.",
+   "checklist": [
+    "Makes suggestions (Ich schlage vor … / Wie wäre es mit … / Was hältst du von …?).",
+    "Reacts to the partner: agrees, disagrees politely and gives reasons.",
+    "Covers time, place, food, present and the division of tasks.",
+    "Ends with a clear agreement that sums up the plan.",
+    "Uses B1 grammar naturally (dass clause, Konjunktiv II: könnte, würde)."
+   ]
+  },
+  {
+   "task": "Give a short presentation (about 3 minutes) on 'Working from home – good or bad?': introduce the topic, describe your own experience, explain advantages and disadvantages, describe the situation in your home country, and give your opinion with a conclusion.",
+   "model": "In meiner Präsentation geht es um das Thema Homeoffice. Ich möchte zuerst von meinen eigenen Erfahrungen erzählen, dann über Vor- und Nachteile sprechen und zum Schluss meine Meinung sagen.\n\nIch arbeite als Softwareentwickler und bin zwei Tage pro Woche im Homeoffice. Das finde ich super, weil ich dann keine Zeit in der S-Bahn verliere.\n\nEin großer Vorteil ist also, dass man Zeit und Geld spart. Außerdem kann man sich zu Hause oft besser konzentrieren. Ein Nachteil ist aber, dass man weniger Kontakt zu den Kollegen hat. Viele Menschen fühlen sich einsam, und Arbeit und Freizeit lassen sich schwerer trennen.\n\nIn Frankreich, meinem Heimatland, ist Homeoffice inzwischen auch sehr verbreitet, besonders in großen Städten wie Paris, wo die Wege zur Arbeit sehr lang sind.\n\nMeiner Meinung nach ist eine Mischung am besten: ein paar Tage zu Hause, ein paar Tage im Büro. Vielen Dank für Ihre Aufmerksamkeit. Haben Sie noch Fragen?",
+   "checklist": [
+    "Structured: introduction with an overview, main part, conclusion and thanks.",
+    "Covers own experience, pros and cons, home country and own opinion.",
+    "Uses presentation phrases (In meiner Präsentation geht es um … / Zum Schluss … / Vielen Dank für Ihre Aufmerksamkeit).",
+    "Links arguments (außerdem, aber, also) and uses subordinate clauses.",
+    "Speaks freely for about three minutes."
+   ]
+  },
+  {
+   "task": "After your partner's presentation, give short feedback (what you liked, what was new for you) and ask one question. Then answer your partner's question about your presentation.",
+   "model": "Feedback: Vielen Dank für deine Präsentation! Mir hat besonders gefallen, dass du so viele Beispiele aus deinem Alltag gebracht hast. Neu war für mich, dass es in deinem Heimatland kaum Homeoffice gibt. Ich habe noch eine Frage: Würdest du gern öfter von zu Hause arbeiten?\nAntwort auf eine Frage: Das ist eine gute Frage. Ich glaube, drei Tage pro Woche wären für mich ideal, weil ich dann trotzdem regelmäßig meine Kollegen sehe.",
+   "checklist": [
+    "Thanks the partner and names something specific they liked.",
+    "Says what was new or interesting.",
+    "Asks one clear, relevant question.",
+    "Answers the question directly and gives a reason."
+   ]
+  }
+ ]
+}

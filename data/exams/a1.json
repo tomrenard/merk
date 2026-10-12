@@ -1,0 +1,613 @@
+{
+ "id": "a1",
+ "cefr": "A1",
+ "title": "A1 exam (modelled on Goethe-Zertifikat A1: Start Deutsch 1)",
+ "hoeren": [
+  {
+   "title": "Durchsagen",
+   "intro": "You hear three short announcements: at the station, in a supermarket and at the Bürgeramt.",
+   "lines": [
+    {
+     "speaker": "Durchsage",
+     "de": "Achtung, eine Information für Gleis 5: Der Regionalexpress nach Potsdam fährt heute nicht von Gleis 5, sondern von Gleis 7. Abfahrt 14:20 Uhr.",
+     "en": "Attention, information for platform 5: today the regional express to Potsdam does not leave from platform 5 but from platform 7. Departure 2:20 pm."
+    },
+    {
+     "speaker": "Durchsage",
+     "de": "Liebe Kundinnen und Kunden, heute haben wir ein Angebot für Sie: Ein Kilo Äpfel kostet nur 1,99 Euro.",
+     "en": "Dear customers, today we have an offer for you: one kilo of apples costs only 1.99 euros."
+    },
+    {
+     "speaker": "Durchsage",
+     "de": "Die Wartenummer 34 bitte zu Schalter 2. Die Nummer 34 bitte zu Schalter 2.",
+     "en": "Waiting number 34 to counter 2, please. Number 34 to counter 2, please."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Where does the train to Potsdam leave from today?",
+     "options": [
+      "Platform 5",
+      "Platform 7",
+      "Platform 14"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "How much is a kilo of apples today?",
+     "options": [
+      "€1.09",
+      "€1.90",
+      "€1.99"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Where should number 34 go?",
+     "options": [
+      "To counter 2",
+      "To counter 3",
+      "To counter 4"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Auf dem Anrufbeantworter",
+   "intro": "You hear a message on Tom's answering machine from his doctor's practice.",
+   "lines": [
+    {
+     "speaker": "Praxis",
+     "de": "Guten Tag, Herr Laurent, hier ist die Praxis Dr. Weber.",
+     "en": "Hello, Mr Laurent, this is Dr Weber's practice."
+    },
+    {
+     "speaker": "Praxis",
+     "de": "Sie haben am Donnerstag um 10 Uhr einen Termin. Leider ist Frau Dr. Weber am Donnerstag nicht da.",
+     "en": "You have an appointment on Thursday at 10 o'clock. Unfortunately Dr Weber is not in on Thursday."
+    },
+    {
+     "speaker": "Praxis",
+     "de": "Können Sie am Freitag um 9 Uhr kommen? Bitte rufen Sie uns an. Unsere Nummer ist 030 45 67 89.",
+     "en": "Can you come on Friday at 9 o'clock? Please call us. Our number is 030 45 67 89."
+    },
+    {
+     "speaker": "Praxis",
+     "de": "Vielen Dank und auf Wiederhören!",
+     "en": "Thank you very much and goodbye!"
+    }
+   ],
+   "questions": [
+    {
+     "q": "Why does the practice call?",
+     "options": [
+      "Tom is late for his appointment.",
+      "The practice is closed on Friday.",
+      "The doctor is not in on Thursday."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "What is the new appointment?",
+     "options": [
+      "Friday at 9",
+      "Thursday at 10",
+      "Friday at 10"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "What should Tom do?",
+     "options": [
+      "Write an email",
+      "Call the practice",
+      "Come to the practice on Thursday"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Mittagessen mit einer Kollegin",
+   "intro": "Two colleagues, Lena and Marc, talk in the office.",
+   "lines": [
+    {
+     "speaker": "Lena",
+     "de": "Marc, gehen wir heute zusammen essen?",
+     "en": "Marc, shall we go for lunch together today?"
+    },
+    {
+     "speaker": "Marc",
+     "de": "Gern! Wann denn?",
+     "en": "Sure! When?"
+    },
+    {
+     "speaker": "Lena",
+     "de": "Um halb eins?",
+     "en": "At half past twelve?"
+    },
+    {
+     "speaker": "Marc",
+     "de": "Um halb eins habe ich ein Meeting. Geht es auch um eins?",
+     "en": "At half past twelve I have a meeting. Does one o'clock work too?"
+    },
+    {
+     "speaker": "Lena",
+     "de": "Ja, das geht. Gehen wir in die Kantine?",
+     "en": "Yes, that works. Shall we go to the canteen?"
+    },
+    {
+     "speaker": "Marc",
+     "de": "Die Kantine ist heute leider zu. Gehen wir zum Italiener am Marktplatz?",
+     "en": "Unfortunately the canteen is closed today. Shall we go to the Italian place on the market square?"
+    },
+    {
+     "speaker": "Lena",
+     "de": "Gute Idee! Bis später.",
+     "en": "Good idea! See you later."
+    }
+   ],
+   "questions": [
+    {
+     "q": "When do Lena and Marc go for lunch?",
+     "options": [
+      "At 12:30",
+      "At 1:30",
+      "At 1:00"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Why don't they eat in the canteen?",
+     "options": [
+      "It is closed today.",
+      "It is too expensive.",
+      "Marc doesn't like it."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Where do they eat?",
+     "options": [
+      "At home",
+      "At an Italian restaurant",
+      "In the office"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "In der Bäckerei",
+   "intro": "Tom buys bread at the bakery.",
+   "lines": [
+    {
+     "speaker": "Verkäuferin",
+     "de": "Guten Morgen! Was möchten Sie?",
+     "en": "Good morning! What would you like?"
+    },
+    {
+     "speaker": "Tom",
+     "de": "Guten Morgen. Ich möchte vier Brötchen und ein Vollkornbrot, bitte.",
+     "en": "Good morning. I'd like four rolls and a wholemeal bread, please."
+    },
+    {
+     "speaker": "Verkäuferin",
+     "de": "Das Vollkornbrot ist leider aus. Wir haben noch Roggenbrot.",
+     "en": "Sorry, the wholemeal bread is sold out. We still have rye bread."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Gut, dann nehme ich das Roggenbrot.",
+     "en": "Fine, then I'll take the rye bread."
+    },
+    {
+     "speaker": "Verkäuferin",
+     "de": "Das macht 5,40 Euro.",
+     "en": "That's 5.40 euros."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Kann ich mit Karte bezahlen?",
+     "en": "Can I pay by card?"
+    },
+    {
+     "speaker": "Verkäuferin",
+     "de": "Ja, natürlich.",
+     "en": "Yes, of course."
+    }
+   ],
+   "questions": [
+    {
+     "q": "How many rolls does Tom buy?",
+     "options": [
+      "Two",
+      "Four",
+      "Five"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Which bread does Tom take?",
+     "options": [
+      "Wholemeal bread",
+      "White bread",
+      "Rye bread"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "How much does Tom pay?",
+     "options": [
+      "€5.40",
+      "€4.50",
+      "€5.14"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "How does Tom pay?",
+     "options": [
+      "In cash",
+      "By card",
+      "He doesn't pay today."
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ],
+ "lesen": [
+  {
+   "title": "Ein Schild an der Arztpraxis",
+   "text": "Praxis Dr. med. Anna Schulz – Allgemeinmedizin\n\nSprechzeiten:\nMontag, Dienstag, Donnerstag: 8–12 Uhr und 15–18 Uhr\nMittwoch und Freitag: 8–13 Uhr\n\nBitte machen Sie vorher einen Termin: Telefon 0221 33 44 55.\n\nVom 4. bis 15. August ist die Praxis geschlossen. Bitte gehen Sie in dieser Zeit zu Dr. Peter Klein, Hauptstraße 12.",
+   "questions": [
+    {
+     "q": "Can you see the doctor on Wednesday afternoon?",
+     "options": [
+      "Yes, from 3 to 6 pm.",
+      "No, only until 1 pm.",
+      "Yes, without an appointment."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What must you do before you go?",
+     "options": [
+      "Send an email",
+      "Nothing",
+      "Make an appointment by phone"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Where do you go on 10 August?",
+     "options": [
+      "To Dr Klein, Hauptstraße 12",
+      "To Dr Schulz",
+      "To the hospital"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Eine E-Mail von Julia",
+   "text": "Hallo Tom,\n\nam Samstag habe ich Geburtstag und mache eine kleine Party. Kommst du? Die Party beginnt um 19 Uhr. Die Party ist in meiner neuen Wohnung: Lindenstraße 8, dritter Stock.\n\nBitte bring keine Geschenke mit! Aber du kannst gern einen Salat mitbringen. Getränke habe ich genug.\n\nSchreib mir bitte bis Donnerstag.\n\nLiebe Grüße\nJulia",
+   "questions": [
+    {
+     "q": "Where is the party?",
+     "options": [
+      "In a restaurant",
+      "At Julia's new flat",
+      "At Julia's office"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What can Tom bring?",
+     "options": [
+      "A salad",
+      "A present",
+      "Drinks"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "When should Tom answer?",
+     "options": [
+      "By Saturday",
+      "By Friday",
+      "By Thursday"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Kleinanzeigen",
+   "text": "A) Verkaufe Fahrrad, 3 Jahre alt, sehr gut, 120 Euro. Telefon 0176 23 45 67 (ab 18 Uhr).\n\nB) Deutsch am Abend! Volkshochschule Mitte, Kurs A1, montags und mittwochs von 18:30 bis 20 Uhr, 10 Wochen, 150 Euro. Anmeldung online.\n\nC) Zimmer frei: 14 m² in einer WG mit zwei Studentinnen, 380 Euro warm, ab 1. November.",
+   "questions": [
+    {
+     "q": "You work during the day and want to learn German. Which ad is for you?",
+     "options": [
+      "Ad A",
+      "Ad C",
+      "Ad B"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "When is the German course?",
+     "options": [
+      "Every evening",
+      "On Mondays and Wednesdays",
+      "On Mondays and Fridays"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "How much is the room per month, heating included?",
+     "options": [
+      "€380",
+      "€150",
+      "€120"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "When can you call about the bike?",
+     "options": [
+      "In the morning",
+      "From 6 pm",
+      "Only on Monday"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Information im Bürgeramt",
+   "text": "Bürgeramt Neukölln – Wichtige Information\n\nAb 1. März kommen Sie bitte nur mit Termin. Einen Termin bekommen Sie online oder am Telefon unter 115.\n\nBringen Sie bitte Ihren Pass oder Ihren Personalausweis mit. Für die Anmeldung brauchen Sie auch die Wohnungsgeberbestätigung. Das Formular bekommen Sie von Ihrem Vermieter.",
+   "questions": [
+    {
+     "q": "From March, can you go to the Bürgeramt without an appointment?",
+     "options": [
+      "Yes",
+      "Only in the morning",
+      "No"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "How do you get an appointment?",
+     "options": [
+      "Online or by phone",
+      "Only at the counter",
+      "By letter"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Who gives you the form for the registration (Anmeldung)?",
+     "options": [
+      "The Bürgeramt",
+      "Your landlord",
+      "Your employer"
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ],
+ "sprachbausteine": [
+  {
+   "de": "Ich ___ Tom und komme aus Frankreich.",
+   "options": [
+    "heißt",
+    "heiße",
+    "heißen"
+   ],
+   "answer": 1,
+   "why": "With ich the verb ends in -e: ich heiße."
+  },
+  {
+   "de": "Woher ___ du?",
+   "options": [
+    "kommst",
+    "kommt",
+    "komme"
+   ],
+   "answer": 0,
+   "why": "With du the verb ends in -st: du kommst."
+  },
+  {
+   "de": "Ich brauche noch ___ Löffel.",
+   "options": [
+    "ein",
+    "eine",
+    "einen"
+   ],
+   "answer": 2,
+   "why": "der Löffel is masculine and the object of brauchen, so it takes the accusative: einen."
+  },
+  {
+   "de": "Im Kühlschrank ist ___ Milch mehr.",
+   "options": [
+    "keine",
+    "nicht",
+    "kein"
+   ],
+   "answer": 0,
+   "why": "kein negates a noun; die Milch is feminine, so keine. nicht negates verbs and adjectives."
+  },
+  {
+   "de": "Er ___ jeden Tag mit dem Bus zur Arbeit.",
+   "options": [
+    "fahrt",
+    "fahren",
+    "fährt"
+   ],
+   "answer": 2,
+   "why": "fahren changes a → ä with du and er/sie/es: er fährt."
+  },
+  {
+   "de": "Ich muss morgen um sechs Uhr ___.",
+   "options": [
+    "aufstehen",
+    "stehe auf",
+    "aufstehe"
+   ],
+   "answer": 0,
+   "why": "After a modal verb (müssen) the second verb goes to the end in the infinitive, and separable verbs stay in one piece: aufstehen."
+  },
+  {
+   "de": "Der Deutschkurs beginnt ___ 9 Uhr.",
+   "options": [
+    "am",
+    "um",
+    "im"
+   ],
+   "answer": 1,
+   "why": "Clock times take um: um 9 Uhr. am is for days, im for months and seasons."
+  },
+  {
+   "de": "Wir fahren ___ Juli nach Frankreich.",
+   "options": [
+    "im",
+    "am",
+    "um"
+   ],
+   "answer": 0,
+   "why": "Months take im: im Juli."
+  },
+  {
+   "de": "Das ist meine Schwester und das ist ___ Mann Paul.",
+   "options": [
+    "ihre",
+    "sein",
+    "ihr"
+   ],
+   "answer": 2,
+   "why": "The husband belongs to the sister (a woman), so ihr; der Mann is masculine nominative, so no ending: ihr Mann."
+  },
+  {
+   "de": "Ich habe Kopfschmerzen und gehe heute ___ Arzt.",
+   "options": [
+    "zum",
+    "zur",
+    "beim"
+   ],
+   "answer": 0,
+   "why": "Going to a person takes zu + dative; der Arzt is masculine: zu dem → zum."
+  },
+  {
+   "de": "Am Wochenende ___ ich nach Hamburg gefahren.",
+   "options": [
+    "habe",
+    "bin",
+    "war"
+   ],
+   "answer": 1,
+   "why": "fahren is a verb of movement, so its Perfekt uses sein: ich bin gefahren."
+  },
+  {
+   "de": "Gestern Abend habe ich Pizza ___.",
+   "options": [
+    "geessen",
+    "essen",
+    "gegessen"
+   ],
+   "answer": 2,
+   "why": "The past participle of essen is irregular: gegessen."
+  },
+  {
+   "de": "Herr Müller, ___ Sie bitte Platz!",
+   "options": [
+    "nehmen",
+    "nimm",
+    "nehmt"
+   ],
+   "answer": 0,
+   "why": "The Sie imperative is the infinitive + Sie: Nehmen Sie Platz! nimm is du, nehmt is ihr."
+  },
+  {
+   "de": "Frau Klein, wie gefällt ___ die neue Wohnung?",
+   "options": [
+    "Sie",
+    "Ihnen",
+    "Ihr"
+   ],
+   "answer": 1,
+   "why": "gefallen takes a dative: the polite dative of Sie is Ihnen."
+  },
+  {
+   "de": "Ich komme heute nicht ins Büro, ___ ich bin krank.",
+   "options": [
+    "weil",
+    "aber",
+    "denn"
+   ],
+   "answer": 2,
+   "why": "denn gives a reason and keeps normal word order (ich bin). weil would send the verb to the end (weil ich krank bin)."
+  }
+ ],
+ "schreiben": [
+  {
+   "task": "Your friend Sophie wants to register for an evening German course at the Volkshochschule. Read her information and fill in the form for her: Sophie Martin, born 12.05.1994 in Lyon (France), lives at Bergstraße 14, 10115 Berlin, phone 0157 12 34 56 78. She wants the A1 course on Tuesday and Thursday evenings and pays by bank transfer.",
+   "model": "Familienname: Martin\nVorname: Sophie\nGeburtsdatum: 12.05.1994\nGeburtsort: Lyon\nLand: Frankreich\nAdresse: Bergstraße 14, 10115 Berlin\nTelefon: 0157 12 34 56 78\nKurs: Deutsch A1, dienstags und donnerstags, abends\nBezahlung: Überweisung",
+   "checklist": [
+    "Every field has the right information from the text (name, birth date and place, address, phone).",
+    "Familienname (surname) and Vorname (first name) are not mixed up.",
+    "The course and the days are correct (A1, Tuesday and Thursday evening).",
+    "The payment method is filled in (Überweisung, not bar).",
+    "German spelling is correct (Frankreich, dienstags, Überweisung)."
+   ]
+  },
+  {
+   "task": "Write a short message (about 30 words) to your colleague Anna. You can't go to lunch with her tomorrow. Say why, and suggest another day and time.",
+   "model": "Liebe Anna,\n\nleider kann ich morgen nicht mit dir essen gehen. Ich habe um 12 Uhr einen Termin beim Arzt. Hast du am Freitag Zeit? Wir können um halb eins in die Kantine gehen.\n\nViele Grüße\nTom",
+   "checklist": [
+    "Opens with a greeting (Liebe Anna / Hallo Anna) and ends with a closing (Viele Grüße + name).",
+    "Says clearly that you can't come (leider kann ich nicht …).",
+    "Gives a reason.",
+    "Suggests a new day and time.",
+    "Uses du consistently and puts the verb in second position (Morgen habe ich …)."
+   ]
+  }
+ ],
+ "sprechen": [
+  {
+   "task": "Introduce yourself to the group: name, age, country, where you live, languages, job and a hobby. Then spell your surname and say your phone number.",
+   "model": "Hallo! Mein Name ist Tom Laurent. Ich bin 34 Jahre alt und komme aus Frankreich, aus Lyon. Jetzt wohne ich in Berlin. Ich spreche Französisch, Englisch und ein bisschen Deutsch. Ich bin Softwareentwickler. In meiner Freizeit fahre ich gern Fahrrad. Mein Nachname ist Laurent: L-A-U-R-E-N-T. Meine Handynummer ist 0176 23 45 67 89.",
+   "checklist": [
+    "Covers all points: name, age, country, city, languages, job, hobby.",
+    "No article before the job (Ich bin Softwareentwickler).",
+    "Uses the right verb forms (ich bin, ich wohne, ich spreche).",
+    "Spells the name with German letter names (A = ah, E = eh, U = uh).",
+    "Says the phone number clearly in German digits."
+   ]
+  },
+  {
+   "task": "Topic: food and drink. Ask your partner a question with the word card 'Frühstück', then answer your partner's question with the card 'Lieblingsessen'.",
+   "model": "Frage: Was isst du zum Frühstück?\nAntwort (Lieblingsessen): Mein Lieblingsessen ist Pasta mit Tomatensoße. Ich koche sie oft am Wochenende.",
+   "checklist": [
+    "The question uses the word on the card and is a real question (W-word or verb first).",
+    "The verb is in second position in the W-question (Was isst du …?).",
+    "The answer matches the question and is a full sentence.",
+    "du forms are correct (isst, trinkst)."
+   ]
+  },
+  {
+   "task": "Make polite requests and react to them. Cards: a window, a pen, a glass of water. Ask your partner to do something with each one, and answer a request with yes or no.",
+   "model": "Kannst du bitte das Fenster aufmachen? – Ja, gern.\nHast du einen Kuli für mich? – Ja, hier, bitte.\nGibst du mir bitte ein Glas Wasser? – Tut mir leid, die Flasche ist leer.",
+   "checklist": [
+    "Each request uses bitte and a polite form (Kannst du …? / Können Sie …? / imperative + bitte).",
+    "Uses the accusative correctly (einen Kuli, das Fenster).",
+    "The reaction fits (Ja, gern / Hier, bitte / Tut mir leid …).",
+    "Separable verbs split correctly (Machst du das Fenster auf? / Kannst du das Fenster aufmachen?)."
+   ]
+  }
+ ]
+}

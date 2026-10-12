@@ -1,0 +1,522 @@
+{
+ "id": "b1-t14",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Verein",
+  "das Mitglied",
+  "der Beitrag",
+  "freiwillig",
+  "helfen",
+  "die Hilfe",
+  "unterstützen",
+  "die Unterstützung",
+  "sich kümmern",
+  "mitmachen",
+  "teilnehmen",
+  "der Teilnehmer",
+  "organisieren",
+  "die Veranstaltung",
+  "das Fest",
+  "die Aktion",
+  "sammeln",
+  "der Nachbar",
+  "die Nachbarin",
+  "der Rentner",
+  "die Senioren (Pl.)",
+  "betreuen",
+  "die Betreuung",
+  "begleiten",
+  "vorlesen",
+  "die Nachhilfe",
+  "die Tafel",
+  "die Gemeinschaft",
+  "sozial",
+  "regelmäßig"
+ ],
+ "title": "Volunteering and community",
+ "situation": "Helping in the neighbourhood",
+ "canDo": "You can ask how to volunteer, offer your help, say when you have time and talk about what you do for your neighbourhood.",
+ "explanation": "Many people in Germany do an *Ehrenamt*: unpaid work for a club, a school or the neighbourhood. It's also a great way to meet people and practise German.\n\n| German | English |\n|---|---|\n| das Ehrenamt, ehrenamtlich | volunteering, as a volunteer |\n| freiwillig | voluntary, by choice |\n| der Verein, das Mitglied | club / association, member |\n| der Mitgliedsbeitrag | membership fee |\n| die Tafel | food bank |\n| die Nachbarschaftshilfe | neighbours helping neighbours |\n| die Nachhilfe | tutoring |\n| die Senioren (pl.) | older people |\n| spenden, die Spende | to donate, donation |\n\nUseful phrases:\n- *Ich würde gern helfen. Wo kann man mitmachen?*\n- *Ich habe dienstags nachmittags Zeit.*\n- *Ich kümmere mich um den Garten.* (to look after)\n- *Wir sammeln Spenden für den Kindergarten.*\n- *Ich arbeite ehrenamtlich bei der Tafel.*\n\nTips:\n- *ehrenamtlich* means unpaid, *freiwillig* means by choice. You hear both: *freiwillige Helfer*, *ehrenamtliche Arbeit*.\n- A *Verein* exists for almost everything: sport, music, gardens, neighbours. You become a *Mitglied* and pay a small *Beitrag*.\n- *helfen* takes the dative, *unterstützen* the accusative: *Ich helfe **ihr**.* / *Ich unterstütze **sie**.*\n- *teilnehmen **an*** (an event), but *mitmachen **bei*** (a group or project): *Ich nehme an dem Kurs teil. Ich mache bei der Aktion mit.*",
+ "french": "Das Ehrenamt is le bénévolat and ehrenamtlich is bénévole; a Verein is very much like a French association.",
+ "examples": [
+  {
+   "de": "Ich arbeite seit zwei Jahren ehrenamtlich bei der Tafel.",
+   "en": "I've been volunteering at the food bank for two years."
+  },
+  {
+   "de": "Unser Verein sucht noch Helfer für das Sommerfest.",
+   "en": "Our association is still looking for helpers for the summer party."
+  },
+  {
+   "de": "Jeden Mittwoch lese ich im Seniorenheim vor.",
+   "en": "Every Wednesday I read aloud at the old people's home."
+  },
+  {
+   "de": "Wir sammeln Spenden für die Kinder im Viertel.",
+   "en": "We're collecting donations for the children in the neighbourhood."
+  },
+  {
+   "de": "Kannst du dich am Wochenende um die Katze von Frau Klein kümmern?",
+   "en": "Can you look after Mrs Klein's cat at the weekend?"
+  },
+  {
+   "de": "Ich gebe zwei Schülern kostenlos Nachhilfe in Französisch.",
+   "en": "I give two pupils free French tutoring."
+  },
+  {
+   "de": "Das Ehrenamt macht Spaß, und man lernt viele Leute kennen.",
+   "en": "Volunteering is fun, and you get to know lots of people."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t14-01",
+   "type": "choice",
+   "de": "Ich arbeite ___ bei der Tafel, ich bekomme kein Geld dafür.",
+   "options": [
+    "beruflich",
+    "ehrenamtlich",
+    "freundlich"
+   ],
+   "answer": 1,
+   "why": "Unpaid work for a good cause is ehrenamtlich.",
+   "en": "I volunteer at the food bank; I don't get any money for it."
+  },
+  {
+   "id": "b1-t14-02",
+   "type": "cloze",
+   "de": "Ich bin seit fünf Jahren ___ im Sportverein.",
+   "base": "member",
+   "answers": [
+    "Mitglied"
+   ],
+   "en": "I've been a member of the sports club for five years."
+  },
+  {
+   "id": "b1-t14-03",
+   "type": "cloze",
+   "de": "Unser ___ organisiert jedes Jahr ein Straßenfest.",
+   "base": "association / club",
+   "answers": [
+    "Verein"
+   ],
+   "en": "Our association organises a street party every year."
+  },
+  {
+   "id": "b1-t14-04",
+   "type": "choice",
+   "de": "Kannst du dich am Wochenende ___ meine Katze kümmern?",
+   "options": [
+    "für",
+    "an",
+    "um"
+   ],
+   "answer": 2,
+   "why": "The verb is sich kümmern um (to look after).",
+   "en": "Can you look after my cat at the weekend?"
+  },
+  {
+   "id": "b1-t14-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "würde",
+    "gern",
+    "helfen"
+   ],
+   "answers": [
+    "Ich würde gern helfen.",
+    "Gern würde ich helfen."
+   ],
+   "en": "I'd like to help."
+  },
+  {
+   "id": "b1-t14-06",
+   "type": "cloze",
+   "de": "Bei der ___ bekommen Menschen mit wenig Geld kostenlos Lebensmittel.",
+   "base": "food bank",
+   "answers": [
+    "Tafel"
+   ],
+   "en": "At the food bank, people with little money get food for free."
+  },
+  {
+   "id": "b1-t14-07",
+   "type": "choice",
+   "de": "Der Verein sammelt ___ für ein neues Dach für den Kindergarten.",
+   "options": [
+    "Spenden",
+    "Kosten",
+    "Preise"
+   ],
+   "answer": 0,
+   "why": "Money people give for a good cause is Spenden (donations).",
+   "en": "The association is collecting donations for a new roof for the nursery."
+  },
+  {
+   "id": "b1-t14-08",
+   "type": "cloze",
+   "de": "Ich gebe einem Schüler aus der Nachbarschaft ___ in Mathe.",
+   "base": "tutoring",
+   "answers": [
+    "Nachhilfe"
+   ],
+   "en": "I give a pupil from the neighbourhood tutoring in maths."
+  },
+  {
+   "id": "b1-t14-09",
+   "type": "choice",
+   "de": "Der ___ für den Verein ist nur 30 Euro im Jahr.",
+   "options": [
+    "Lohn",
+    "Eintritt",
+    "Mitgliedsbeitrag"
+   ],
+   "answer": 2,
+   "why": "What members pay each year is the Mitgliedsbeitrag.",
+   "en": "The membership fee for the association is only 30 euros a year."
+  },
+  {
+   "id": "b1-t14-10",
+   "type": "cloze",
+   "de": "Jeden Mittwoch ___ ich den Kindern in der Bibliothek Geschichten vor.",
+   "base": "vorlesen (read aloud)",
+   "answers": [
+    "lese"
+   ],
+   "en": "Every Wednesday I read stories aloud to the children in the library."
+  },
+  {
+   "id": "b1-t14-11",
+   "type": "order",
+   "tiles": [
+    "Wo",
+    "kann",
+    "man",
+    "hier",
+    "mitmachen"
+   ],
+   "answers": [
+    "Wo kann man hier mitmachen?"
+   ],
+   "en": "Where can you get involved here?"
+  },
+  {
+   "id": "b1-t14-12",
+   "type": "choice",
+   "de": "Wir suchen Leute, die ältere Nachbarn zum Arzt ___.",
+   "options": [
+    "besuchen",
+    "begleiten",
+    "betreuen"
+   ],
+   "answer": 1,
+   "why": "You go with someone to a place: begleiten.",
+   "en": "We're looking for people who go to the doctor with older neighbours."
+  },
+  {
+   "id": "b1-t14-13",
+   "type": "cloze",
+   "de": "Am Samstag ___ wir zusammen den Müll im Park.",
+   "base": "collect",
+   "answers": [
+    "sammeln"
+   ],
+   "en": "On Saturday we're collecting the litter in the park together."
+  },
+  {
+   "id": "b1-t14-14",
+   "type": "choice",
+   "de": "Niemand muss mitmachen, alles ist ___.",
+   "options": [
+    "freiwillig",
+    "Pflicht",
+    "verboten"
+   ],
+   "answer": 0,
+   "why": "If nobody has to do it, it's freiwillig (voluntary).",
+   "en": "Nobody has to take part; everything is voluntary."
+  },
+  {
+   "id": "b1-t14-15",
+   "type": "cloze",
+   "de": "Viele Rentner ___ sich in ihrer Freizeit für andere.",
+   "base": "get involved",
+   "answers": [
+    "engagieren"
+   ],
+   "en": "Many pensioners get involved in helping others in their free time."
+  },
+  {
+   "id": "b1-t14-16",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "kümmere",
+    "mich",
+    "um die Blumen",
+    "im Hof"
+   ],
+   "answers": [
+    "Ich kümmere mich um die Blumen im Hof.",
+    "Um die Blumen im Hof kümmere ich mich.",
+    "Im Hof kümmere ich mich um die Blumen."
+   ],
+   "en": "I look after the flowers in the courtyard."
+  },
+  {
+   "id": "b1-t14-17",
+   "type": "choice",
+   "de": "Am Sonntag gibt es ein Fest für alle Nachbarn. Möchtest du daran ___?",
+   "options": [
+    "mitmachen",
+    "helfen",
+    "teilnehmen"
+   ],
+   "answer": 2,
+   "why": "daran goes with teilnehmen an (take part in); mitmachen and helfen don't take an.",
+   "en": "On Sunday there's a party for all the neighbours. Would you like to take part?"
+  },
+  {
+   "id": "b1-t14-18",
+   "type": "cloze",
+   "de": "Die ___ in unserem Haus ist toll, alle helfen sich gegenseitig.",
+   "base": "community",
+   "answers": [
+    "Gemeinschaft",
+    "Hausgemeinschaft"
+   ],
+   "en": "The community in our building is great; everyone helps each other."
+  },
+  {
+   "id": "b1-t14-19",
+   "type": "choice",
+   "de": "Ich habe nicht viel Zeit, aber ich kann ___ zwei Stunden pro Woche helfen.",
+   "options": [
+    "plötzlich",
+    "regelmäßig",
+    "selten"
+   ],
+   "answer": 1,
+   "why": "Two hours every week is regelmäßig (regularly).",
+   "en": "I don't have much time, but I can help regularly for two hours a week."
+  },
+  {
+   "id": "b1-t14-20",
+   "type": "cloze",
+   "de": "Der Verein ___ Familien, die neu in der Stadt sind.",
+   "base": "supports",
+   "answers": [
+    "unterstützt",
+    "hilft"
+   ],
+   "en": "The association supports families who are new in the city."
+  },
+  {
+   "id": "b1-t14-21",
+   "type": "order",
+   "tiles": [
+    "Seit einem Jahr",
+    "betreue",
+    "ich",
+    "zweimal pro Woche",
+    "eine ältere Dame"
+   ],
+   "answers": [
+    "Seit einem Jahr betreue ich zweimal pro Woche eine ältere Dame.",
+    "Ich betreue seit einem Jahr zweimal pro Woche eine ältere Dame.",
+    "Zweimal pro Woche betreue ich seit einem Jahr eine ältere Dame."
+   ],
+   "en": "For a year I've been looking after an elderly lady twice a week."
+  },
+  {
+   "id": "b1-t14-22",
+   "type": "choice",
+   "de": "Wenn man in einem Verein ___ ist, zahlt man einen Beitrag.",
+   "options": [
+    "Teilnehmer",
+    "Mitglied",
+    "Nachbar"
+   ],
+   "answer": 1,
+   "why": "You are a Mitglied (member) of a club; a Teilnehmer takes part in a single event.",
+   "en": "If you're a member of a club, you pay a fee."
+  },
+  {
+   "id": "b1-t14-23",
+   "type": "cloze",
+   "de": "Wir ___ ein Kinderfest im Park. Kannst du uns helfen?",
+   "base": "are organising",
+   "answers": [
+    "organisieren",
+    "planen"
+   ],
+   "en": "We're organising a children's party in the park. Can you help us?"
+  },
+  {
+   "id": "b1-t14-24",
+   "type": "order",
+   "tiles": [
+    "Einerseits",
+    "kostet",
+    "es",
+    "Zeit",
+    "andererseits",
+    "macht",
+    "es",
+    "Spaß"
+   ],
+   "answers": [
+    "Einerseits kostet es Zeit, andererseits macht es Spaß.",
+    "Es kostet einerseits Zeit, andererseits macht es Spaß."
+   ],
+   "en": "On the one hand it takes time, on the other hand it's fun."
+  }
+ ],
+ "listening": {
+  "title": "Im Nachbarschaftstreff",
+  "intro": "Hugo has seen a notice asking for volunteers and goes to the neighbourhood centre, where he meets Leonie.",
+  "lines": [
+   {
+    "speaker": "Hugo",
+    "de": "Hallo, ich habe euren Aushang im Treppenhaus gesehen. Ihr sucht Helfer?",
+    "en": "Hello, I saw your notice in the stairwell. You're looking for helpers?"
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Ja, genau! Schön, dass du vorbeikommst. Ich bin Leonie, ich organisiere hier die Nachbarschaftshilfe.",
+    "en": "Yes, exactly! Nice of you to drop by. I'm Leonie, I organise the neighbourhood help here."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Ich heiße Hugo und wohne seit einem Jahr hier im Viertel. Ich würde gern etwas für die Nachbarn machen.",
+    "en": "I'm Hugo and I've been living here in the neighbourhood for a year. I'd like to do something for the neighbours."
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Super. Viele ältere Leute brauchen Hilfe beim Einkaufen oder möchten, dass jemand sie zum Arzt begleitet.",
+    "en": "Great. Many older people need help with their shopping or would like someone to go to the doctor with them."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Das kann ich machen. Ich habe dienstags und donnerstags nachmittags Zeit.",
+    "en": "I can do that. I have time on Tuesday and Thursday afternoons."
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Perfekt. Und dann gibt es noch die Hausaufgabenhilfe für Kinder. Sprichst du gut Französisch?",
+    "en": "Perfect. And then there's homework help for children. Do you speak French well?"
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Natürlich, ich komme aus Lyon.",
+    "en": "Of course, I'm from Lyon."
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Das ist ja ideal! Zwei Schüler brauchen dringend Nachhilfe in Französisch.",
+    "en": "That's ideal! Two pupils urgently need French tutoring."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Gern. Muss ich dafür Mitglied im Verein werden?",
+    "en": "Happy to. Do I have to become a member of the association for that?"
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Nein, das ist freiwillig. Der Beitrag ist nur zwanzig Euro im Jahr, aber du kannst auch ohne Mitgliedschaft mitmachen.",
+    "en": "No, that's voluntary. The fee is only twenty euros a year, but you can also take part without being a member."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Und wann trefft ihr euch?",
+    "en": "And when do you meet?"
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Jeden ersten Montag im Monat um sieben, hier im Treff. Und im Juni organisieren wir ein großes Straßenfest.",
+    "en": "Every first Monday of the month at seven, here in the centre. And in June we're organising a big street party."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Da helfe ich auch gern. Ich kann eine Quiche backen!",
+    "en": "I'd be happy to help with that too. I can bake a quiche!"
+   },
+   {
+    "speaker": "Leonie",
+    "de": "Sehr gut! Gib mir doch deine Telefonnummer, dann melde ich mich bei dir.",
+    "en": "Very good! Why don't you give me your phone number, then I'll get in touch."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Hugo come to the neighbourhood centre?",
+    "options": [
+     "He saw a notice asking for helpers",
+     "A neighbour sent him",
+     "He wants to join a sports club"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When does Hugo have time?",
+    "options": [
+     "On Monday evenings",
+     "On Tuesday and Thursday afternoons",
+     "At the weekend"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What will Hugo teach?",
+    "options": [
+     "German to adults",
+     "Cooking to children",
+     "French to two pupils"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Does Hugo have to become a member?",
+    "options": [
+     "Yes, it costs twenty euros a month",
+     "No, membership is voluntary",
+     "Yes, but only from June"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich arbeite seit zwei Jahren ehrenamtlich bei der Tafel.",
+  "Viele ältere Nachbarn brauchen Hilfe beim Einkaufen oder beim Arzt.",
+  "Im Juni organisiert unser Verein ein großes Fest im Park."
+ ],
+ "speaking": [
+  {
+   "de": "Ich würde gern etwas für die Nachbarn machen.",
+   "en": "I'd like to do something for the neighbours."
+  },
+  {
+   "de": "Ich habe dienstags und donnerstags nachmittags Zeit.",
+   "en": "I have time on Tuesday and Thursday afternoons."
+  },
+  {
+   "de": "Muss ich dafür Mitglied im Verein werden?",
+   "en": "Do I have to become a member of the association for that?"
+  },
+  {
+   "de": "Wo kann man hier mitmachen?",
+   "en": "Where can you get involved here?"
+  },
+  {
+   "de": "Da helfe ich auch gern.",
+   "en": "I'd be happy to help with that too."
+  }
+ ],
+ "writing": {
+  "task": "Your neighbourhood association is looking for volunteers for its summer street party. Write an 80–100-word email to the organiser: introduce yourself, say how you'd like to help and when you have time, and ask one question.",
+  "model": "Liebe Frau Hoffmann,\n\nich habe Ihren Aushang im Treppenhaus gelesen und würde gern beim Straßenfest im Juni helfen. Ich heiße Claire Moreau, komme aus Frankreich und wohne seit zwei Jahren in der Gartenstraße. Ich backe sehr gern und könnte zwei Kuchen für das Café mitbringen. Außerdem kann ich am Nachmittag beim Kinderprogramm helfen, zum Beispiel beim Malen. Am Samstag habe ich den ganzen Tag Zeit, nur am Abend muss ich um acht gehen. Brauchen Sie am Freitag auch Hilfe beim Aufbau? Ich freue mich schon sehr auf das Fest.\n\nViele Grüße\nClaire Moreau"
+ }
+}

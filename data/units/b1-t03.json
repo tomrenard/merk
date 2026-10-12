@@ -1,0 +1,514 @@
+{
+ "id": "b1-t03",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Nachbar",
+  "die Nachbarin",
+  "der Lärm",
+  "laut",
+  "leise",
+  "stören",
+  "die Ruhe",
+  "der Hausmeister",
+  "der Vermieter",
+  "sich beschweren",
+  "der Streit",
+  "sich streiten",
+  "der Konflikt",
+  "die Rücksicht",
+  "der Flur",
+  "der Keller",
+  "die Treppe",
+  "der Hof",
+  "der Mieter",
+  "die Regel",
+  "verboten",
+  "erlaubt sein",
+  "sich einigen",
+  "der Kompromiss",
+  "klingeln",
+  "der Zettel",
+  "entschuldigen"
+ ],
+ "title": "Neighbours, house rules and conflicts",
+ "situation": "A problem with the neighbours",
+ "canDo": "You can understand the house rules, talk politely to a neighbour about noise or other problems and find a compromise.",
+ "explanation": "In a German block of flats, the **Hausordnung** (house rules) is usually on the wall in the stairwell (**das Treppenhaus**). Most conflicts are about noise, bikes and rubbish.\n\n| German | English |\n|---|---|\n| der Nachbar, -n / die Nachbarin, -nen | neighbour |\n| der Mieter, - / der Vermieter, - | tenant / landlord |\n| der Hausmeister, - | caretaker |\n| die Hausordnung | house rules |\n| die Ruhe / die Nachtruhe | quiet / quiet hours at night |\n| der Lärm | noise |\n| der Flur, -e / der Keller, - / der Hof, Höfe | hall / cellar / courtyard |\n| der Streit / der Kompromiss, -e | argument / compromise |\n\nUseful phrases:\n- *Entschuldigen Sie die Störung.* – Sorry to bother you.\n- *Könnten Sie bitte etwas leiser sein?*\n- *Die Musik stört mich.* – The music bothers me.\n- *Ich möchte mich nicht streiten.*\n- *Sagen Sie mir einfach vorher Bescheid.* – Just let me know beforehand.\n- *Rücksicht nehmen auf* + accusative – to be considerate of\n\nTips:\n- **Nachtruhe** is usually from 22:00 to 6:00, and Sundays and public holidays are quiet days too.\n- Talk to your neighbour first. If that doesn't help, write to the landlord or the Hausverwaltung.\n- House rules are often written in the passive: *Im Treppenhaus wird nicht geraucht.*\n- **stören** takes the accusative: *Das stört **mich*** – not *mir*.",
+ "french": "Stören works like déranger, with a direct object (ça me dérange = das stört mich), and Entschuldigen Sie die Störung is the German « excusez-moi de vous déranger ».",
+ "examples": [
+  {
+   "de": "Entschuldigung, die Musik ist sehr laut. Könnten Sie sie bitte leiser machen?",
+   "en": "Excuse me, the music is very loud. Could you please turn it down?"
+  },
+  {
+   "de": "Ab 22 Uhr ist Nachtruhe.",
+   "en": "Quiet hours start at 10 p.m."
+  },
+  {
+   "de": "Im Treppenhaus wird nicht geraucht.",
+   "en": "No smoking in the stairwell."
+  },
+  {
+   "de": "Der Müll wird jeden Dienstag abgeholt.",
+   "en": "The rubbish is collected every Tuesday."
+  },
+  {
+   "de": "Die Nachbarn über uns feiern jedes Wochenende bis drei Uhr morgens.",
+   "en": "The neighbours above us party every weekend until three in the morning."
+  },
+  {
+   "de": "Ich möchte mich nicht streiten, aber so geht das nicht weiter.",
+   "en": "I don't want to argue, but this can't go on."
+  },
+  {
+   "de": "Wir haben uns geeinigt: Am Samstag ist bis Mitternacht Party, danach ist Ruhe.",
+   "en": "We've agreed: on Saturday there's a party until midnight, then it's quiet."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t03-01",
+   "type": "cloze",
+   "de": "Die Musik von nebenan ist mir zu ___.",
+   "base": "loud",
+   "answers": [
+    "laut"
+   ],
+   "en": "The music next door is too loud for me."
+  },
+  {
+   "id": "b1-t03-02",
+   "type": "choice",
+   "de": "Von 22 bis 6 Uhr ist ___: Dann muss es im Haus leise sein.",
+   "options": [
+    "Nachtruhe",
+    "Feierabend",
+    "Ruhetag"
+   ],
+   "answer": 0,
+   "why": "The quiet hours at night are die Nachtruhe; Feierabend is the end of the working day, and a Ruhetag is a day a shop or restaurant is closed.",
+   "en": "From 10 p.m. to 6 a.m. are the quiet hours: then it must be quiet in the building."
+  },
+  {
+   "id": "b1-t03-03",
+   "type": "cloze",
+   "de": "Wir haben ein Problem mit unseren ___.",
+   "base": "neighbours",
+   "answers": [
+    "Nachbarn"
+   ],
+   "en": "We have a problem with our neighbours."
+  },
+  {
+   "id": "b1-t03-04",
+   "type": "cloze",
+   "de": "Die Nachbarn sind jede Nacht laut. Ich möchte mich beim Vermieter ___.",
+   "base": "complain",
+   "answers": [
+    "beschweren"
+   ],
+   "en": "The neighbours are loud every night. I want to complain to the landlord."
+  },
+  {
+   "id": "b1-t03-05",
+   "type": "choice",
+   "de": "Die Lampe im Treppenhaus ist kaputt. Das sage ich dem ___.",
+   "options": [
+    "Hausarzt",
+    "Hausmann",
+    "Hausmeister"
+   ],
+   "answer": 2,
+   "why": "The caretaker who repairs things in the building is der Hausmeister; ein Hausmann is a man who looks after the home.",
+   "en": "The light in the stairwell is broken. I'll tell the caretaker."
+  },
+  {
+   "id": "b1-t03-06",
+   "type": "order",
+   "tiles": [
+    "Könnten",
+    "Sie",
+    "bitte",
+    "etwas leiser",
+    "sein"
+   ],
+   "answers": [
+    "Könnten Sie bitte etwas leiser sein?"
+   ],
+   "en": "Could you please be a bit quieter?"
+  },
+  {
+   "id": "b1-t03-07",
+   "type": "cloze",
+   "de": "In der ___ steht, dass man im Hof nicht grillen darf.",
+   "base": "house rules",
+   "answers": [
+    "Hausordnung"
+   ],
+   "en": "The house rules say that you mustn't barbecue in the courtyard."
+  },
+  {
+   "id": "b1-t03-08",
+   "type": "choice",
+   "de": "Bitte nehmen Sie ___ auf die anderen Mieter.",
+   "options": [
+    "Respekt",
+    "Rücksicht",
+    "Ruhe"
+   ],
+   "answer": 1,
+   "why": "To be considerate is Rücksicht nehmen auf; Respekt and Ruhe don't go with nehmen auf.",
+   "en": "Please be considerate of the other tenants."
+  },
+  {
+   "id": "b1-t03-09",
+   "type": "cloze",
+   "de": "Der ___ wird jeden Mittwoch abgeholt.",
+   "base": "rubbish",
+   "answers": [
+    "Müll",
+    "Abfall"
+   ],
+   "en": "The rubbish is collected every Wednesday."
+  },
+  {
+   "id": "b1-t03-10",
+   "type": "order",
+   "tiles": [
+    "Die Musik",
+    "stört",
+    "mich",
+    "beim Schlafen"
+   ],
+   "answers": [
+    "Die Musik stört mich beim Schlafen.",
+    "Beim Schlafen stört mich die Musik."
+   ],
+   "en": "The music disturbs me when I'm trying to sleep."
+  },
+  {
+   "id": "b1-t03-11",
+   "type": "choice",
+   "de": "Im Haus gibt es oft ___ über den Lärm.",
+   "options": [
+    "Streit",
+    "Ruhe",
+    "Rücksicht"
+   ],
+   "answer": 0,
+   "why": "An argument is der Streit; Ruhe and Rücksicht are what you want instead.",
+   "en": "There are often arguments about the noise in the building."
+  },
+  {
+   "id": "b1-t03-12",
+   "type": "cloze",
+   "de": "Grillen auf dem Balkon ist in unserem Haus nicht ___.",
+   "base": "allowed",
+   "answers": [
+    "erlaubt",
+    "gestattet"
+   ],
+   "en": "Barbecuing on the balcony isn't allowed in our building."
+  },
+  {
+   "id": "b1-t03-13",
+   "type": "choice",
+   "de": "Die Fahrräder gehören in den ___, nicht in den Flur.",
+   "options": [
+    "Balkon",
+    "Keller",
+    "Briefkasten"
+   ],
+   "answer": 1,
+   "why": "Bikes are kept in the cellar (der Keller), not in the hall.",
+   "en": "The bikes belong in the cellar, not in the hall."
+  },
+  {
+   "id": "b1-t03-14",
+   "type": "order",
+   "tiles": [
+    "Der Müll",
+    "wird",
+    "im Hof",
+    "getrennt"
+   ],
+   "answers": [
+    "Der Müll wird im Hof getrennt.",
+    "Im Hof wird der Müll getrennt."
+   ],
+   "en": "The rubbish is sorted in the courtyard."
+  },
+  {
+   "id": "b1-t03-15",
+   "type": "cloze",
+   "de": "Wir haben lange gesprochen und uns am Ende ___.",
+   "base": "agree (reflexive)",
+   "answers": [
+    "geeinigt"
+   ],
+   "en": "We talked for a long time and agreed in the end."
+  },
+  {
+   "id": "b1-t03-16",
+   "type": "choice",
+   "de": "Ich wollte mich ___: Unsere Party gestern war wirklich zu laut.",
+   "options": [
+    "beschweren",
+    "entschuldigen",
+    "bedanken"
+   ],
+   "answer": 1,
+   "why": "You apologise for your own loud party: sich entschuldigen; sich beschweren is to complain and sich bedanken is to say thank you.",
+   "en": "I wanted to apologise: our party yesterday was really too loud."
+  },
+  {
+   "id": "b1-t03-17",
+   "type": "cloze",
+   "de": "Nach 22 Uhr müssen alle Mieter ___ sein.",
+   "base": "quiet",
+   "answers": [
+    "leise",
+    "ruhig"
+   ],
+   "en": "After 10 p.m. all tenants must be quiet."
+  },
+  {
+   "id": "b1-t03-18",
+   "type": "order",
+   "tiles": [
+    "Ab 22 Uhr",
+    "ist",
+    "im Haus",
+    "Nachtruhe"
+   ],
+   "answers": [
+    "Ab 22 Uhr ist im Haus Nachtruhe.",
+    "Im Haus ist ab 22 Uhr Nachtruhe."
+   ],
+   "en": "From 10 p.m. there are quiet hours in the building."
+  },
+  {
+   "id": "b1-t03-19",
+   "type": "choice",
+   "de": "Wir feiern am Samstag. Wir hängen einen ___ ins Treppenhaus und entschuldigen uns schon vorher.",
+   "options": [
+    "Vertrag",
+    "Zettel",
+    "Prospekt"
+   ],
+   "answer": 1,
+   "why": "A short handwritten note is ein Zettel; ein Vertrag is a contract and ein Prospekt is a brochure.",
+   "en": "We're having a party on Saturday. We'll put a note up in the stairwell and apologise in advance."
+  },
+  {
+   "id": "b1-t03-20",
+   "type": "cloze",
+   "de": "Du willst Party machen, ich will meine Ruhe. Wir müssen einen ___ finden.",
+   "base": "compromise",
+   "answers": [
+    "Kompromiss"
+   ],
+   "en": "You want to party, I want my peace and quiet. We have to find a compromise."
+  },
+  {
+   "id": "b1-t03-21",
+   "type": "choice",
+   "de": "Wenn das Gespräch mit der Nachbarin nicht hilft, schreibt man an den ___.",
+   "options": [
+    "Vermieter",
+    "Verkäufer",
+    "Vertreter"
+   ],
+   "answer": 0,
+   "why": "Problems in the building go to the landlord (der Vermieter); a Verkäufer sells things in a shop.",
+   "en": "If talking to the neighbour doesn't help, you write to the landlord."
+  },
+  {
+   "id": "b1-t03-22",
+   "type": "cloze",
+   "de": "Der Lärm in der Nacht ___ mich sehr.",
+   "base": "bother, disturb",
+   "answers": [
+    "stört"
+   ],
+   "en": "The noise at night bothers me a lot."
+  },
+  {
+   "id": "b1-t03-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "mich",
+    "nicht",
+    "streiten"
+   ],
+   "answers": [
+    "Ich möchte mich nicht streiten."
+   ],
+   "en": "I don't want to argue."
+  },
+  {
+   "id": "b1-t03-24",
+   "type": "order",
+   "tiles": [
+    "Im Hof",
+    "wird",
+    "am Sonntag",
+    "nicht",
+    "gegrillt"
+   ],
+   "answers": [
+    "Im Hof wird am Sonntag nicht gegrillt.",
+    "Am Sonntag wird im Hof nicht gegrillt."
+   ],
+   "en": "There's no barbecuing in the courtyard on Sundays."
+  }
+ ],
+ "listening": {
+  "title": "Zu laut!",
+  "intro": "Claire rings the doorbell of her upstairs neighbour Jonas the day after a loud party.",
+  "lines": [
+   {
+    "speaker": "Claire",
+    "de": "Hallo, entschuldigen Sie die Störung. Ich wohne direkt unter Ihnen.",
+    "en": "Hello, sorry to bother you. I live right below you."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ah, hallo. Ist etwas passiert?",
+    "en": "Oh, hello. Has something happened?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Na ja, gestern Nacht war es wieder sehr laut bei Ihnen. Die Musik lief bis zwei Uhr.",
+    "en": "Well, last night it was very loud at your place again. The music was on until two o'clock."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Oh, das tut mir leid. Mein Bruder hatte Geburtstag, und wir haben ein bisschen gefeiert.",
+    "en": "Oh, I'm sorry. It was my brother's birthday, and we had a bit of a party."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Das verstehe ich, aber ich muss um sechs Uhr aufstehen. Und ab 22 Uhr ist eigentlich Nachtruhe.",
+    "en": "I understand, but I have to get up at six. And quiet hours actually start at 10 p.m."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Stimmt, das steht ja auch in der Hausordnung. Es kommt nicht wieder vor.",
+    "en": "True, it's in the house rules too. It won't happen again."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Danke. Und noch etwas: Ihr Fahrrad steht immer im Flur. Da komme ich mit dem Kinderwagen kaum vorbei.",
+    "en": "Thanks. And one more thing: your bike is always in the hall. I can hardly get past with the pram."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ach so, das wusste ich nicht. Wo werden die Fahrräder denn abgestellt?",
+    "en": "Oh, I didn't know that. Where are the bikes kept, then?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Unten im Keller. Der Hausmeister hat letzte Woche einen Zettel aufgehängt.",
+    "en": "Down in the cellar. The caretaker put up a note last week."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Okay, ich stelle es heute Abend in den Keller.",
+    "en": "OK, I'll put it in the cellar this evening."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Super. Und wenn Sie wieder feiern, sagen Sie mir einfach vorher Bescheid.",
+    "en": "Great. And if you have another party, just let me know beforehand."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Mache ich. Und um zehn machen wir die Musik leiser, versprochen.",
+    "en": "I will. And we'll turn the music down at ten, I promise."
+   },
+   {
+    "speaker": "Claire",
+    "de": "Das ist ein guter Kompromiss. Dann noch einen schönen Abend!",
+    "en": "That's a good compromise. Have a nice evening, then!"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Danke, Ihnen auch!",
+    "en": "Thanks, you too!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Claire ring Jonas's doorbell?",
+    "options": [
+     "His dog barks at night",
+     "His music was too loud last night",
+     "He parked in her space"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why was there a party?",
+    "options": [
+     "It was his brother's birthday",
+     "Jonas got a new job",
+     "It was New Year's Eve"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where should bikes be kept?",
+    "options": [
+     "In the courtyard",
+     "In the hall",
+     "In the cellar"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What do they agree on?",
+    "options": [
+     "No more parties at all",
+     "Jonas tells her before a party and turns the music down at ten",
+     "Claire calls the caretaker next time"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ab 22 Uhr ist in unserem Haus Nachtruhe.",
+  "Die Fahrräder werden im Keller abgestellt, nicht im Flur.",
+  "Könnten Sie die Musik bitte etwas leiser machen?"
+ ],
+ "speaking": [
+  {
+   "de": "Entschuldigen Sie die Störung, ich wohne direkt unter Ihnen.",
+   "en": "Sorry to bother you, I live right below you."
+  },
+  {
+   "de": "Gestern Nacht war es wieder sehr laut.",
+   "en": "Last night it was very loud again."
+  },
+  {
+   "de": "Ab 22 Uhr ist eigentlich Nachtruhe.",
+   "en": "Quiet hours actually start at 10 p.m."
+  },
+  {
+   "de": "Sagen Sie mir einfach vorher Bescheid.",
+   "en": "Just let me know beforehand."
+  },
+  {
+   "de": "Das ist ein guter Kompromiss.",
+   "en": "That's a good compromise."
+  }
+ ],
+ "writing": {
+  "task": "You're having a birthday party on Saturday. Write an 80–100-word note for the other tenants in your building: apologise in advance, say until when it will be loud, and give your phone number.",
+  "model": "Liebe Nachbarinnen und Nachbarn,\n\nam Samstag feiere ich meinen 30. Geburtstag. Es kommen ungefähr zwanzig Gäste, und ab 20 Uhr wird bei mir in der Wohnung gefeiert. Es wird sicher etwas lauter als sonst. Dafür entschuldige ich mich schon jetzt. Um 23 Uhr machen wir die Musik leiser, und auf dem Balkon wird nach 22 Uhr nicht mehr geraucht. Wenn es Sie trotzdem stört, klingeln Sie einfach bei mir oder rufen Sie mich an: 0176 2345678. Sie sind natürlich auch herzlich eingeladen!\n\nViele Grüße\nMathieu Leroy, 2. Stock links"
+ }
+}

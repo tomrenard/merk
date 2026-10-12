@@ -1,8 +1,18 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CHECK_SIZE, courseProgress, PARTS, PASS, unitById } from "@/lib/course";
+import {
+  CHECK_SIZE,
+  COURSE,
+  courseProgress,
+  PARTS,
+  PASS,
+  partIcon,
+  partLabel,
+  unitById,
+} from "@/lib/course";
 import { requireUser } from "@/lib/session";
 import { TabBar } from "../../TabBar";
+import { learnWords } from "../actions";
 
 export const dynamic = "force-dynamic";
 
@@ -18,10 +28,12 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
         <Link href="/learn" className="muted text-lg font-black" aria-label="Back to the course">
           ‹ Course
         </Link>
-        <span className="chip muted line border-2">{unit.cefr}</span>
+        <span className="chip muted line border">
+          {COURSE.find((c) => c.units.includes(unit))?.id ?? unit.cefr}
+        </span>
       </header>
       <div>
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">{unit.situation}</p>
+        <p className="muted text-sm font-extrabold">{unit.situation}</p>
         <h1 className="text-3xl font-black">{unit.title}</h1>
         <p className="muted mt-1 font-semibold">{unit.canDo}</p>
       </div>
@@ -38,10 +50,10 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
                 <span
                   className={`icon ${score !== undefined && !retry ? "bg-green-100 dark:bg-green-950" : "bg-[var(--field)]"}`}
                 >
-                  {score !== undefined && !retry ? "✓" : part.icon}
+                  {score !== undefined && !retry ? "✓" : partIcon(unit, part)}
                 </span>
                 <span className="flex-1 font-extrabold">
-                  {part.label}
+                  {partLabel(unit, part)}
                   {retry && (
                     <span className="muted block text-sm font-semibold">
                       Check again: {score}/{CHECK_SIZE}
@@ -62,6 +74,14 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
           Already know this? Take the check
         </Link>
       )}
+      {unit.words?.length ? (
+        <form action={learnWords}>
+          <input type="hidden" name="unit" value={unit.id} />
+          <button type="submit" className="btn w-full">
+            🌱 Learn this topic's {unit.words.length} words next
+          </button>
+        </form>
+      ) : null}
       <TabBar active="/learn" />
     </main>
   );

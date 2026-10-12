@@ -1,0 +1,512 @@
+{
+ "id": "b1-t09",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Vertrag",
+  "unterschreiben",
+  "das Gehalt",
+  "der Lohn",
+  "verdienen",
+  "die Vollzeit",
+  "die Teilzeit",
+  "die Überstunde",
+  "die Pause",
+  "der Urlaub",
+  "der Feiertag",
+  "krank",
+  "die Krankenkasse",
+  "die Kündigung",
+  "kündigen",
+  "die Frist",
+  "arbeitslos",
+  "der Anspruch",
+  "das Recht",
+  "das Gesetz",
+  "der Betriebsrat",
+  "die Gewerkschaft",
+  "das Mitglied",
+  "die Arbeitserlaubnis",
+  "die Bedingung",
+  "rechtzeitig"
+ ],
+ "title": "Rights at work",
+ "situation": "Questions about your work contract",
+ "canDo": "You can ask and answer questions about your work contract: hours, pay, holidays, sick leave, overtime and notice.",
+ "explanation": "Before you sign a work contract (*der Arbeitsvertrag*) you need these words:\n\n| German | English |\n|---|---|\n| der Arbeitgeber / der Arbeitnehmer | employer / employee |\n| das Gehalt (per month) / der Lohn (per hour) | salary / wage |\n| brutto / netto | before / after tax |\n| die Vollzeit / die Teilzeit | full-time / part-time |\n| die Probezeit | probation period |\n| die Überstunde, -n | hour of overtime |\n| der Urlaub, der Urlaubstag, -e | holiday, day off |\n| die Krankmeldung | sick note |\n| die Kündigung, die Kündigungsfrist | notice, notice period |\n| der Betriebsrat | works council |\n\nUseful phrases:\n- *Ich habe **Anspruch auf** 28 Tage Urlaub.* (I'm entitled to …)\n- *Ich bin **krankgeschrieben**.* (The doctor has signed me off sick.)\n- *Die Überstunden werden bezahlt / mit Freizeit ausgeglichen.*\n- *Der Vertrag ist **befristet** / **unbefristet**.* (fixed-term / permanent)\n\nTips:\n- If you're sick, call your employer **on the first day**, before work starts. From the fourth day you usually need a doctor's note (*Arbeitsunfähigkeitsbescheinigung*, short *AU*); some contracts ask for it earlier. The doctor sends it to your health insurance electronically, but telling your boss is still your job.\n- *kündigen* works both ways: *Ich habe gekündigt* = I quit; *Mir wurde gekündigt* = I was dismissed.\n- A *Kündigung* must be on paper with a signature. An email or a WhatsApp message is not valid.",
+ "french": "Like a French contrat de travail, a German Arbeitsvertrag is befristet (CDD) or unbefristet (CDI), and the Probezeit is the période d'essai.",
+ "examples": [
+  {
+   "de": "Ich arbeite in Teilzeit, 25 Stunden pro Woche.",
+   "en": "I work part-time, 25 hours a week."
+  },
+  {
+   "de": "Ich habe Anspruch auf 28 Tage Urlaub im Jahr.",
+   "en": "I'm entitled to 28 days' holiday a year."
+  },
+  {
+   "de": "Mein Arzt hat mich für eine Woche krankgeschrieben.",
+   "en": "My doctor has signed me off sick for a week."
+  },
+  {
+   "de": "Werden die Überstunden bezahlt?",
+   "en": "Is overtime paid?"
+  },
+  {
+   "de": "Die Probezeit dauert sechs Monate.",
+   "en": "The probation period lasts six months."
+  },
+  {
+   "de": "Während der Probezeit ist die Kündigungsfrist nur zwei Wochen.",
+   "en": "During probation the notice period is only two weeks."
+  },
+  {
+   "de": "Mein Vertrag ist bis Ende Dezember befristet.",
+   "en": "My contract is fixed-term until the end of December."
+  },
+  {
+   "de": "Bei Problemen kannst du mit dem Betriebsrat sprechen.",
+   "en": "If you have problems, you can talk to the works council."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t09-01",
+   "type": "choice",
+   "de": "Ich arbeite nur 20 Stunden pro Woche, also in ___.",
+   "options": [
+    "Vollzeit",
+    "Teilzeit",
+    "Freizeit"
+   ],
+   "answer": 1,
+   "why": "20 hours a week is part-time: Teilzeit.",
+   "en": "I only work 20 hours a week, so part-time."
+  },
+  {
+   "id": "b1-t09-02",
+   "type": "cloze",
+   "de": "Hast du den ___ schon unterschrieben?",
+   "base": "contract",
+   "answers": [
+    "Vertrag",
+    "Arbeitsvertrag"
+   ],
+   "en": "Have you signed the contract yet?"
+  },
+  {
+   "id": "b1-t09-03",
+   "type": "cloze",
+   "de": "Im August nehme ich drei Wochen ___.",
+   "base": "holiday",
+   "answers": [
+    "Urlaub"
+   ],
+   "en": "I'm taking three weeks' holiday in August."
+  },
+  {
+   "id": "b1-t09-04",
+   "type": "choice",
+   "de": "Ich verdiene 3.200 Euro ___ im Monat, nach den Steuern sind es etwa 2.100.",
+   "options": [
+    "netto",
+    "bar",
+    "brutto"
+   ],
+   "answer": 2,
+   "why": "The amount before tax is brutto; after tax it's netto.",
+   "en": "I earn 3,200 euros gross a month; after tax it's about 2,100."
+  },
+  {
+   "id": "b1-t09-05",
+   "type": "cloze",
+   "de": "Der Arzt hat mich bis Freitag ___.",
+   "base": "signed off sick",
+   "answers": [
+    "krankgeschrieben"
+   ],
+   "en": "The doctor has signed me off sick until Friday."
+  },
+  {
+   "id": "b1-t09-06",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "Anspruch",
+    "auf 30 Tage Urlaub"
+   ],
+   "answers": [
+    "Ich habe Anspruch auf 30 Tage Urlaub.",
+    "Auf 30 Tage Urlaub habe ich Anspruch."
+   ],
+   "en": "I'm entitled to 30 days' holiday."
+  },
+  {
+   "id": "b1-t09-07",
+   "type": "choice",
+   "de": "Wenn du krank bist, musst du deinen Arbeitgeber ___ informieren.",
+   "options": [
+    "am ersten Tag",
+    "nach einer Woche",
+    "am Ende des Monats"
+   ],
+   "answer": 0,
+   "why": "You must tell your employer on the first day you're sick, before work starts.",
+   "en": "If you're sick, you must inform your employer on the first day."
+  },
+  {
+   "id": "b1-t09-08",
+   "type": "cloze",
+   "de": "Für jede ___ bekomme ich 20 Euro extra.",
+   "base": "hour of overtime",
+   "answers": [
+    "Überstunde"
+   ],
+   "en": "I get 20 euros extra for every hour of overtime."
+  },
+  {
+   "id": "b1-t09-09",
+   "type": "choice",
+   "de": "Mein Vertrag endet im Dezember, er ist ___.",
+   "options": [
+    "unbefristet",
+    "befristet",
+    "gekündigt"
+   ],
+   "answer": 1,
+   "why": "A contract with a fixed end date is befristet.",
+   "en": "My contract ends in December; it's fixed-term."
+  },
+  {
+   "id": "b1-t09-10",
+   "type": "cloze",
+   "de": "In den ersten sechs Monaten bin ich noch in der ___.",
+   "base": "probation period",
+   "answers": [
+    "Probezeit"
+   ],
+   "en": "In the first six months I'm still on probation."
+  },
+  {
+   "id": "b1-t09-11",
+   "type": "order",
+   "tiles": [
+    "Werden",
+    "die Überstunden",
+    "bezahlt"
+   ],
+   "answers": [
+    "Werden die Überstunden bezahlt?"
+   ],
+   "en": "Is overtime paid?"
+  },
+  {
+   "id": "b1-t09-12",
+   "type": "choice",
+   "de": "Ich habe einen neuen Job gefunden und meine alte Stelle ___.",
+   "options": [
+    "entlassen",
+    "gekündigt",
+    "geschlossen"
+   ],
+   "answer": 1,
+   "why": "When you quit your job, you kündigen it; entlassen is what an employer does to a person.",
+   "en": "I've found a new job and handed in my notice at my old one."
+  },
+  {
+   "id": "b1-t09-13",
+   "type": "cloze",
+   "de": "Die ___ muss schriftlich sein, eine E-Mail reicht nicht.",
+   "base": "notice (ending a contract)",
+   "answers": [
+    "Kündigung"
+   ],
+   "en": "The notice must be in writing; an email isn't enough."
+  },
+  {
+   "id": "b1-t09-14",
+   "type": "choice",
+   "de": "Bei Problemen mit dem Chef kannst du mit dem ___ sprechen.",
+   "options": [
+    "Betriebsrat",
+    "Bürgeramt",
+    "Hausmeister"
+   ],
+   "answer": 0,
+   "why": "The Betriebsrat represents the employees inside the company.",
+   "en": "If you have problems with your boss, you can talk to the works council."
+  },
+  {
+   "id": "b1-t09-15",
+   "type": "cloze",
+   "de": "Ab dem vierten Tag brauche ich eine ___ vom Arzt.",
+   "base": "sick note",
+   "answers": [
+    "Krankmeldung",
+    "Arbeitsunfähigkeitsbescheinigung",
+    "AU",
+    "AU-Bescheinigung",
+    "Bescheinigung"
+   ],
+   "en": "From the fourth day I need a sick note from the doctor."
+  },
+  {
+   "id": "b1-t09-16",
+   "type": "order",
+   "tiles": [
+    "Der Arzt",
+    "hat",
+    "mich",
+    "für eine Woche",
+    "krankgeschrieben"
+   ],
+   "answers": [
+    "Der Arzt hat mich für eine Woche krankgeschrieben.",
+    "Für eine Woche hat mich der Arzt krankgeschrieben.",
+    "Für eine Woche hat der Arzt mich krankgeschrieben."
+   ],
+   "en": "The doctor has signed me off sick for a week."
+  },
+  {
+   "id": "b1-t09-17",
+   "type": "choice",
+   "de": "Wie lang ist die ___? – Vier Wochen zum Monatsende.",
+   "options": [
+    "Probezeit",
+    "Arbeitszeit",
+    "Kündigungsfrist"
+   ],
+   "answer": 2,
+   "why": "Four weeks to the end of the month is a typical notice period: Kündigungsfrist.",
+   "en": "How long is the notice period? – Four weeks to the end of the month."
+  },
+  {
+   "id": "b1-t09-18",
+   "type": "cloze",
+   "de": "Meine ___ ist von 8 bis 16 Uhr, mit einer halben Stunde Pause.",
+   "base": "working hours",
+   "answers": [
+    "Arbeitszeit"
+   ],
+   "en": "My working hours are from 8 to 4, with a half-hour break."
+  },
+  {
+   "id": "b1-t09-19",
+   "type": "choice",
+   "de": "Im November zahlt die Firma ___, das ist ein Extra-Gehalt für Weihnachten.",
+   "options": [
+    "Trinkgeld",
+    "Weihnachtsgeld",
+    "Kindergeld"
+   ],
+   "answer": 1,
+   "why": "An extra payment for Christmas is Weihnachtsgeld.",
+   "en": "In November the company pays a Christmas bonus, an extra salary for Christmas."
+  },
+  {
+   "id": "b1-t09-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "im Juli",
+    "zwei Wochen",
+    "Urlaub",
+    "nehmen"
+   ],
+   "answers": [
+    "Ich möchte im Juli zwei Wochen Urlaub nehmen.",
+    "Im Juli möchte ich zwei Wochen Urlaub nehmen."
+   ],
+   "en": "I'd like to take two weeks' holiday in July."
+  },
+  {
+   "id": "b1-t09-21",
+   "type": "cloze",
+   "de": "Ich bin seit drei Jahren ___ der Gewerkschaft.",
+   "base": "member",
+   "answers": [
+    "Mitglied"
+   ],
+   "en": "I've been a member of the union for three years."
+  },
+  {
+   "id": "b1-t09-22",
+   "type": "choice",
+   "de": "Mir wurde gekündigt und ich habe noch keine neue Stelle. Jetzt bin ich leider ___.",
+   "options": [
+    "krankgeschrieben",
+    "befristet",
+    "arbeitslos"
+   ],
+   "answer": 2,
+   "why": "Without a job you are arbeitslos (unemployed).",
+   "en": "I was dismissed and I don't have a new job yet. Now, unfortunately, I'm unemployed."
+  },
+  {
+   "id": "b1-t09-23",
+   "type": "order",
+   "tiles": [
+    "Obwohl",
+    "ich",
+    "Überstunden",
+    "mache",
+    "bekomme",
+    "ich",
+    "nicht mehr Geld"
+   ],
+   "answers": [
+    "Obwohl ich Überstunden mache, bekomme ich nicht mehr Geld.",
+    "Ich bekomme nicht mehr Geld, obwohl ich Überstunden mache."
+   ],
+   "en": "Although I do overtime, I don't get more money."
+  },
+  {
+   "id": "b1-t09-24",
+   "type": "cloze",
+   "de": "Wenn du krank bist, bekommst du bis zu sechs Wochen weiter dein ___.",
+   "base": "salary",
+   "answers": [
+    "Gehalt",
+    "Lohn"
+   ],
+   "en": "When you're sick, you keep getting your salary for up to six weeks."
+  }
+ ],
+ "listening": {
+  "title": "Fragen zum Arbeitsvertrag",
+  "intro": "Camille has just started a new job and asks her colleague Jonas, who is on the works council, about her contract.",
+  "lines": [
+   {
+    "speaker": "Camille",
+    "de": "Jonas, hast du kurz Zeit? Ich habe ein paar Fragen zu meinem Arbeitsvertrag.",
+    "en": "Jonas, have you got a minute? I have a few questions about my work contract."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Klar. Ich bin ja im Betriebsrat, dafür sind wir da. Was willst du wissen?",
+    "en": "Sure. I'm on the works council, that's what we're there for. What do you want to know?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Hier steht, dass ich 28 Tage Urlaub habe. Sind das Arbeitstage?",
+    "en": "It says here that I have 28 days' holiday. Are those working days?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, Arbeitstage. Bei fünf Tagen pro Woche sind das fast sechs Wochen.",
+    "en": "Yes, working days. With five days a week, that's almost six weeks."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Super. Und wie ist das mit Überstunden? Letzte Woche bin ich jeden Tag bis sieben geblieben.",
+    "en": "Great. And what about overtime? Last week I stayed until seven every day."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Die werden bei uns nicht bezahlt, sondern mit Freizeit ausgeglichen. Du musst sie aber aufschreiben.",
+    "en": "Here they aren't paid, they're made up with time off. But you have to write them down."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Okay. Und wenn ich krank bin? Muss ich sofort zum Arzt?",
+    "en": "Okay. And if I'm sick? Do I have to go to the doctor straight away?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Du musst deine Chefin am ersten Tag vor neun Uhr anrufen. Und bei uns brauchst du schon ab dem zweiten Tag eine Krankmeldung vom Arzt.",
+    "en": "You have to call your boss on the first day before nine. And here you need a sick note from the doctor from the second day."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Gut zu wissen. Meine Probezeit dauert sechs Monate, oder?",
+    "en": "Good to know. My probation lasts six months, right?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Genau. In dieser Zeit ist die Kündigungsfrist nur zwei Wochen. Danach sind es vier Wochen.",
+    "en": "Exactly. During that time the notice period is only two weeks. After that it's four weeks."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Und der Vertrag ist unbefristet. Das ist mir am wichtigsten.",
+    "en": "And the contract is permanent. That's the most important thing for me."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, unbefristet. Und vergiss nicht: Im November gibt es Weihnachtsgeld!",
+    "en": "Yes, permanent. And don't forget: in November there's a Christmas bonus!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much holiday does Camille have?",
+    "options": [
+     "24 calendar days",
+     "28 working days",
+     "30 working days"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happens to overtime in this company?",
+    "options": [
+     "It is made up with time off",
+     "It is paid extra",
+     "It is not allowed"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "From which day does Camille need a doctor's note?",
+    "options": [
+     "From the first day",
+     "From the fourth day",
+     "From the second day"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How long is the notice period during probation?",
+    "options": [
+     "Four weeks",
+     "Two weeks",
+     "Six months"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Während der Probezeit ist die Kündigungsfrist nur zwei Wochen.",
+  "Bei uns werden die Überstunden mit Freizeit ausgeglichen.",
+  "Wenn du krank bist, musst du sofort deine Chefin anrufen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich habe ein paar Fragen zu meinem Arbeitsvertrag.",
+   "en": "I have a few questions about my work contract."
+  },
+  {
+   "de": "Wie ist das mit Überstunden?",
+   "en": "What about overtime?"
+  },
+  {
+   "de": "Ich habe Anspruch auf 28 Tage Urlaub.",
+   "en": "I'm entitled to 28 days' holiday."
+  },
+  {
+   "de": "Der Arzt hat mich bis Freitag krankgeschrieben.",
+   "en": "The doctor has signed me off sick until Friday."
+  },
+  {
+   "de": "Meine Probezeit dauert sechs Monate, oder?",
+   "en": "My probation lasts six months, right?"
+  }
+ ],
+ "writing": {
+  "task": "You're sick and the doctor has signed you off until Friday. Write an 80–100-word email to your boss: say that you're sick and for how long, explain where the sick note goes, and say what should happen with your work while you're away.",
+  "model": "Liebe Frau Krüger,\n\nleider bin ich seit gestern Abend krank. Heute Morgen war ich beim Arzt, und er hat mich bis Freitag krankgeschrieben. Die Krankmeldung schickt die Praxis direkt an meine Krankenkasse, Sie können sie dort abrufen. Am Montag bin ich hoffentlich wieder im Büro. Das Treffen mit dem neuen Kunden am Mittwoch kann leider nicht ohne mich stattfinden. Könnten Sie es bitte auf nächste Woche verschieben? Die Unterlagen für das Projekt liegen auf meinem Schreibtisch, wenn Herr Yilmaz sie braucht.\n\nViele Grüße\nCamille Durand"
+ }
+}

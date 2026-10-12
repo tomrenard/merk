@@ -1,0 +1,477 @@
+{
+ "id": "b2-02",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Konjunktiv I in the news",
+ "situation": "Reading the news",
+ "canDo": "You can understand news reports in Konjunktiv I and use it yourself to report in writing what someone said or asked.",
+ "explanation": "Much of the news is what someone *said*: the police, a minister, a witness. German news marks this with the **Konjunktiv I**. It doesn't mean the information is false, only \"this is what they said, we don't claim it ourselves\".\n\n**Form:** verb stem + **-e**. In practice you mostly need er/sie/es:\n\n| infinitive | er/sie/es | sie (plural) |\n|---|---|---|\n| sein | **sei** | **seien** |\n| haben | **habe** | hätten |\n| können | **könne** | könnten |\n| werden | **werde** | würden |\n| kommen | **komme** | kämen / würden kommen |\n\n- **Past:** habe/sei + Partizip II: *Er sagte, er **habe** nichts **gesehen**.* *Sie **sei** nach Hause **gegangen**.*\n- **Future:** werde + infinitive: *Die Firma **werde** neue Leute **einstellen**.*\n- **Plural:** when the Konjunktiv I looks exactly like the normal present (*sie haben, sie können*), writers switch to the **Konjunktiv II**: *Die Anwohner sagten, sie **hätten** nichts gehört.*\n- **dass** is usually left out, so you keep main-clause order: *Er sagte, er **sei** krank.* Questions: *ob* or a question word, verb at the end: *Sie fragte, ob er das gewusst **habe**.* Requests: **solle**: *Man **solle** zu Hause bleiben.*\n- Often there's no *sagte* at all: *Laut Polizei **sei** der Fahrer zu schnell gefahren.* The verb form alone tells you it's reported, sometimes for several sentences.\n\nIn conversation people hardly use it; they say *Er hat gesagt, dass er krank ist.* You need it for the news, official reports and formal writing.\n\nThe most common mistake: reading *er habe* as \"he would have\". That is *er hätte*. *Er habe* only means \"(he says) he has\".",
+ "french": "French news uses the conditionnel for unconfirmed reports (le ministre aurait menti); German uses Konjunktiv I (der Minister habe gelogen) for anything it reports, confirmed or not.",
+ "examples": [
+  {
+   "de": "Der Minister sagte, die Lage sei unter Kontrolle.",
+   "en": "The minister said the situation was under control."
+  },
+  {
+   "de": "Die Polizei teilte mit, der Fahrer habe zu viel getrunken.",
+   "en": "The police announced that the driver had drunk too much."
+  },
+  {
+   "de": "Laut Polizei sei der Mann in Richtung Bahnhof gelaufen.",
+   "en": "According to the police, the man ran towards the station."
+  },
+  {
+   "de": "Die Firma erklärte, sie könne die Löhne nicht mehr zahlen.",
+   "en": "The company stated that it could no longer pay the wages."
+  },
+  {
+   "de": "Die Anwohner sagten, sie hätten nichts gehört.",
+   "en": "The residents said they hadn't heard anything."
+  },
+  {
+   "de": "Der Bürgermeister kündigte an, die Brücke werde im Mai wieder geöffnet.",
+   "en": "The mayor announced that the bridge would reopen in May."
+  },
+  {
+   "de": "Die Reporterin fragte, ob die Regierung davon gewusst habe.",
+   "en": "The reporter asked whether the government had known about it."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-02-01",
+   "type": "cloze",
+   "de": "Der Minister sagte, die Lage ___ unter Kontrolle.",
+   "base": "sein (Konjunktiv I)",
+   "answers": [
+    "sei"
+   ],
+   "en": "The minister said the situation was under control."
+  },
+  {
+   "id": "b2-02-02",
+   "type": "choice",
+   "de": "Der Zeuge sagte, er ___ den Unfall genau gesehen.",
+   "options": [
+    "sei",
+    "habe",
+    "werde"
+   ],
+   "answer": 1,
+   "why": "sehen forms its Perfekt with haben, so the reported form is habe gesehen.",
+   "en": "The witness said he had seen the accident clearly."
+  },
+  {
+   "id": "b2-02-03",
+   "type": "cloze",
+   "de": "Die Firma erklärte, sie ___ die Löhne nicht mehr zahlen.",
+   "base": "können (Konjunktiv I)",
+   "answers": [
+    "könne"
+   ],
+   "en": "The company stated that it could no longer pay the wages."
+  },
+  {
+   "id": "b2-02-04",
+   "type": "order",
+   "tiles": [
+    "Der Sprecher",
+    "sagte",
+    "das Problem",
+    "sei",
+    "gelöst"
+   ],
+   "answers": [
+    "Der Sprecher sagte, das Problem sei gelöst.",
+    "Das Problem sei gelöst, sagte der Sprecher."
+   ],
+   "en": "The spokesman said the problem was solved."
+  },
+  {
+   "id": "b2-02-05",
+   "type": "choice",
+   "de": "Der Fahrer sagte, er ___ nicht zu schnell gefahren.",
+   "options": [
+    "habe",
+    "sei",
+    "würde"
+   ],
+   "answer": 1,
+   "why": "fahren forms its Perfekt with sein, so the reported form is sei gefahren.",
+   "en": "The driver said he hadn't been driving too fast."
+  },
+  {
+   "id": "b2-02-06",
+   "type": "cloze",
+   "de": "Laut Polizei ___ der Mann mit einem roten Auto weggefahren.",
+   "base": "sein (Konjunktiv I)",
+   "answers": [
+    "sei"
+   ],
+   "en": "According to the police, the man drove off in a red car."
+  },
+  {
+   "id": "b2-02-07",
+   "type": "choice",
+   "de": "Der Minister sagte, er ___ morgen nach Paris reisen.",
+   "options": [
+    "werde",
+    "sei",
+    "habe"
+   ],
+   "answer": 0,
+   "why": "The future is reported with werde + infinitive.",
+   "en": "The minister said he would travel to Paris tomorrow."
+  },
+  {
+   "id": "b2-02-08",
+   "type": "cloze",
+   "de": "Die Ministerin sagte, sie ___ von dem Problem nichts gewusst.",
+   "base": "haben (Konjunktiv I)",
+   "answers": [
+    "habe"
+   ],
+   "en": "The minister said she hadn't known anything about the problem."
+  },
+  {
+   "id": "b2-02-09",
+   "type": "order",
+   "tiles": [
+    "Die Reporterin",
+    "fragte",
+    "ob",
+    "die Regierung",
+    "davon",
+    "gewusst",
+    "habe"
+   ],
+   "answers": [
+    "Die Reporterin fragte, ob die Regierung davon gewusst habe."
+   ],
+   "en": "The reporter asked whether the government had known about it."
+  },
+  {
+   "id": "b2-02-10",
+   "type": "cloze",
+   "de": "Der Chef erklärte, er ___ die Entscheidung morgen bekannt geben.",
+   "base": "werden (Konjunktiv I)",
+   "answers": [
+    "werde"
+   ],
+   "en": "The boss stated that he would announce the decision tomorrow."
+  },
+  {
+   "id": "b2-02-11",
+   "type": "choice",
+   "de": "Der Journalist wollte wissen, ___ der Minister zurücktreten werde.",
+   "options": [
+    "dass",
+    "ob",
+    "wenn"
+   ],
+   "answer": 1,
+   "why": "A reported yes/no question starts with ob.",
+   "en": "The journalist wanted to know whether the minister would resign."
+  },
+  {
+   "id": "b2-02-12",
+   "type": "cloze",
+   "de": "Die Frau behauptet, sie ___ seit 30 Jahren in diesem Haus.",
+   "base": "wohnen (Konjunktiv I)",
+   "answers": [
+    "wohne"
+   ],
+   "en": "The woman claims she has lived in this house for 30 years."
+  },
+  {
+   "id": "b2-02-13",
+   "type": "order",
+   "tiles": [
+    "Der Zeuge",
+    "sagte",
+    "er",
+    "habe",
+    "nichts",
+    "gesehen"
+   ],
+   "answers": [
+    "Der Zeuge sagte, er habe nichts gesehen.",
+    "Er habe nichts gesehen, sagte der Zeuge."
+   ],
+   "en": "The witness said he hadn't seen anything."
+  },
+  {
+   "id": "b2-02-14",
+   "type": "choice",
+   "de": "Die Polizei sagte, man ___ die Fenster geschlossen halten.",
+   "options": [
+    "sollen",
+    "solle",
+    "sei"
+   ],
+   "answer": 1,
+   "why": "A reported request uses solle, and man takes the er/sie/es form.",
+   "en": "The police said people should keep their windows closed."
+  },
+  {
+   "id": "b2-02-15",
+   "type": "cloze",
+   "de": "Ein Sprecher der Bahn sagte, es ___ keine Verletzten.",
+   "base": "geben (Konjunktiv I)",
+   "answers": [
+    "gebe"
+   ],
+   "en": "A rail spokesman said there were no injuries."
+  },
+  {
+   "id": "b2-02-16",
+   "type": "choice",
+   "de": "Ein Sprecher sagte, ___.",
+   "options": [
+    "die Fabrik werde geschlossen",
+    "die Fabrik geschlossen werde",
+    "werde die Fabrik geschlossen"
+   ],
+   "answer": 0,
+   "why": "Without dass the reported sentence keeps main-clause order, verb in second place.",
+   "en": "A spokesman said the factory would be closed."
+  },
+  {
+   "id": "b2-02-17",
+   "type": "cloze",
+   "de": "Der Arzt sagte, der Patient ___ noch eine Woche im Krankenhaus bleiben.",
+   "base": "müssen (Konjunktiv I)",
+   "answers": [
+    "müsse"
+   ],
+   "en": "The doctor said the patient had to stay in hospital for another week."
+  },
+  {
+   "id": "b2-02-18",
+   "type": "order",
+   "tiles": [
+    "Die Firma",
+    "teilte",
+    "mit",
+    "sie",
+    "werde",
+    "100 neue Stellen",
+    "schaffen"
+   ],
+   "answers": [
+    "Die Firma teilte mit, sie werde 100 neue Stellen schaffen.",
+    "Sie werde 100 neue Stellen schaffen, teilte die Firma mit."
+   ],
+   "en": "The company announced that it would create 100 new jobs."
+  },
+  {
+   "id": "b2-02-19",
+   "type": "choice",
+   "de": "„Ich bin nicht müde.“ – Die Sportlerin sagte, ___ nicht müde.",
+   "options": [
+    "ich sei",
+    "sie seien",
+    "sie sei"
+   ],
+   "answer": 2,
+   "why": "ich becomes sie, and one person needs the singular sei.",
+   "en": "\"I'm not tired.\" – The athlete said she wasn't tired."
+  },
+  {
+   "id": "b2-02-20",
+   "type": "cloze",
+   "de": "Der Minister sagte, er ___ sich persönlich um das Problem kümmern.",
+   "base": "wollen (Konjunktiv I)",
+   "answers": [
+    "wolle"
+   ],
+   "en": "The minister said he wanted to deal with the problem personally."
+  },
+  {
+   "id": "b2-02-21",
+   "type": "order",
+   "tiles": [
+    "Laut Polizei",
+    "sei",
+    "der Fahrer",
+    "zu schnell",
+    "gefahren"
+   ],
+   "answers": [
+    "Laut Polizei sei der Fahrer zu schnell gefahren.",
+    "Der Fahrer sei laut Polizei zu schnell gefahren."
+   ],
+   "en": "According to the police, the driver was going too fast."
+  },
+  {
+   "id": "b2-02-22",
+   "type": "choice",
+   "de": "Die Nachbarn erzählten, sie ___ den Mann schon oft gesehen.",
+   "options": [
+    "hätten",
+    "habe",
+    "wären"
+   ],
+   "answer": 0,
+   "why": "sehen takes haben, and for the plural the news uses Konjunktiv II hätten because sie haben looks like the normal present.",
+   "en": "The neighbours said they had often seen the man."
+  },
+  {
+   "id": "b2-02-23",
+   "type": "cloze",
+   "de": "Ein Sprecher sagte, das Museum ___ ab Montag wieder geöffnet.",
+   "base": "sein (Konjunktiv I)",
+   "answers": [
+    "sei"
+   ],
+   "en": "A spokesman said the museum would be open again from Monday."
+  },
+  {
+   "id": "b2-02-24",
+   "type": "order",
+   "tiles": [
+    "Die Zeitung",
+    "schreibt",
+    "der Sänger",
+    "habe",
+    "seine Tour",
+    "abgesagt"
+   ],
+   "answers": [
+    "Die Zeitung schreibt, der Sänger habe seine Tour abgesagt.",
+    "Der Sänger habe seine Tour abgesagt, schreibt die Zeitung."
+   ],
+   "en": "The paper writes that the singer has cancelled his tour."
+  }
+ ],
+ "listening": {
+  "title": "Die Nachrichten am Morgen",
+  "intro": "A local radio station's morning news, with a short report from the motorway.",
+  "lines": [
+   {
+    "speaker": "Katrin",
+    "de": "Guten Morgen, hier sind die Nachrichten. In der Nacht hat es auf der A9 bei Leipzig einen schweren Unfall mit einem Lkw gegeben.",
+    "en": "Good morning, here is the news. During the night there was a serious accident involving a lorry on the A9 near Leipzig."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Die Polizei teilte mit, der Fahrer sei vermutlich am Steuer eingeschlafen.",
+    "en": "The police announced that the driver had probably fallen asleep at the wheel."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Er sei nur leicht verletzt worden. Andere Autos seien nicht beteiligt gewesen.",
+    "en": "He was only slightly injured, they said. No other cars were involved."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Die Autobahn bleibt in Richtung Berlin bis zum Mittag gesperrt. Unser Reporter Jonas ist vor Ort.",
+    "en": "The motorway towards Berlin remains closed until midday. Our reporter Jonas is at the scene."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, hier gibt es zehn Kilometer Stau. Ein Polizist sagte mir, die Aufräumarbeiten würden noch etwa drei Stunden dauern.",
+    "en": "Yes, there's a ten-kilometre traffic jam here. A police officer told me the clean-up would take about another three hours."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Er empfiehlt, über Halle zu fahren. Viele Autofahrer erzählen, sie hätten von der Sperrung erst im Radio gehört.",
+    "en": "He recommends going via Halle. Many drivers say they only heard about the closure on the radio."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Danke, Jonas. Und nun nach Leipzig: Die Stadt will mehr Wohnungen bauen.",
+    "en": "Thanks, Jonas. And now to Leipzig: the city wants to build more flats."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Der Oberbürgermeister erklärte gestern, die Stadt werde bis 2030 rund 5000 neue Wohnungen bauen.",
+    "en": "The mayor stated yesterday that the city would build around 5,000 new flats by 2030."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Ein Drittel davon sei für Familien mit wenig Geld reserviert.",
+    "en": "A third of them would be reserved for families with little money, he said."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Kritiker sagen, das Geld dafür fehle. Der Oberbürgermeister antwortete, die Finanzierung sei gesichert.",
+    "en": "Critics say the money for it is missing. The mayor replied that the funding was secured."
+   },
+   {
+    "speaker": "Katrin",
+    "de": "Zum Wetter: Heute bleibt es trocken, bei Temperaturen bis 18 Grad.",
+    "en": "And the weather: today stays dry, with temperatures up to 18 degrees."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What happened to the lorry driver, according to the police?",
+    "options": [
+     "He probably fell asleep at the wheel.",
+     "He was driving much too fast.",
+     "His brakes stopped working."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How long will the clean-up take, according to the police officer?",
+    "options": [
+     "About one hour.",
+     "About three hours.",
+     "Until the evening."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What do many drivers say?",
+    "options": [
+     "They saw the accident happen.",
+     "They have been waiting all night.",
+     "They only heard about the closure on the radio."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What do critics say about the housing plan?",
+    "options": [
+     "It is far too small.",
+     "The money for it is missing.",
+     "Families don't want to live there."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Die Polizei sagte, der Fahrer sei am Steuer eingeschlafen.",
+  "Der Minister erklärte, er habe davon nichts gewusst.",
+  "Ein Sprecher sagte, es gebe zum Glück keine Verletzten."
+ ],
+ "speaking": [
+  {
+   "de": "Die Polizei teilte mit, der Fahrer sei vermutlich eingeschlafen.",
+   "en": "The police announced that the driver had probably fallen asleep."
+  },
+  {
+   "de": "Er sei nur leicht verletzt worden.",
+   "en": "He was only slightly injured, they said."
+  },
+  {
+   "de": "Viele Autofahrer erzählen, sie hätten erst im Radio davon gehört.",
+   "en": "Many drivers say they only heard about it on the radio."
+  },
+  {
+   "de": "Die Stadt werde bis 2030 rund 5000 neue Wohnungen bauen.",
+   "en": "The city would build around 5,000 new flats by 2030, he said."
+  },
+  {
+   "de": "Der Oberbürgermeister antwortete, die Finanzierung sei gesichert.",
+   "en": "The mayor replied that the funding was secured."
+  }
+ ],
+ "writing": {
+  "task": "You went to a residents' meeting at the town hall about a new playground. Write a short report of about 100 words for the neighbourhood newsletter, saying what the mayor and the residents said and asked. Use Konjunktiv I.",
+  "model": "Neuer Spielplatz in der Gartenstraße\n\nAm Dienstag fand im Rathaus ein Treffen zum geplanten Spielplatz in der Gartenstraße statt. Die Bürgermeisterin erklärte, die Stadt habe das Geld dafür schon bereitgestellt. Die Bauarbeiten würden im März beginnen und etwa drei Monate dauern. Einige Anwohner sagten, sie hätten Angst vor Lärm am Abend. Die Bürgermeisterin antwortete, der Spielplatz werde um 20 Uhr geschlossen. Ein Vater wollte wissen, ob es auch Bänke für die Eltern gebe. Laut Plan seien zehn Bänke und mehrere neue Bäume vorgesehen. Das nächste Treffen soll im Februar stattfinden."
+ }
+}

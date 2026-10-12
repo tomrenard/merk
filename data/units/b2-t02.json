@@ -1,0 +1,523 @@
+{
+ "id": "b2-t02",
+ "cefr": "B2",
+ "kind": "topic",
+ "words": [
+  "die Miete",
+  "mieten",
+  "vermieten",
+  "der Vermieter",
+  "die Vermieterin",
+  "der Mieter",
+  "der Vertrag",
+  "kündigen",
+  "die Kündigung",
+  "erhöhen",
+  "die Erhöhung",
+  "die Frist",
+  "der Mangel",
+  "der Schaden",
+  "die Reparatur",
+  "das Recht",
+  "das Gesetz",
+  "der Anwalt",
+  "widersprechen",
+  "die Forderung",
+  "schriftlich",
+  "die Unterlagen (Pl.)",
+  "die Lage",
+  "der Hausmeister",
+  "sich beschweren",
+  "die Heizung",
+  "die Gebühr",
+  "umziehen",
+  "der Umzug",
+  "besichtigen"
+ ],
+ "title": "Renting and tenants' rights",
+ "situation": "Disputing a rent increase",
+ "canDo": "You can understand a rent increase, talk about defects in your flat and discuss your rights as a tenant.",
+ "explanation": "Your landlord writes that the rent will go up. Before you pay, check the letter with these words:\n\n| German | English |\n|---|---|\n| die Kaltmiete / die Warmmiete | rent without / with heating and charges |\n| die Nebenkosten (Pl.) | service charges |\n| die Nebenkostenabrechnung, -en | yearly statement of charges |\n| die Kaution, -en | deposit |\n| der Mietvertrag, ¨-e | tenancy agreement |\n| die Mieterhöhung, -en | rent increase |\n| der Mietspiegel, - | official local rent index |\n| der Mangel, ¨- | defect |\n| der Mieterverein, -e | tenants' association |\n| die Kündigung, -en | notice (to end a contract) |\n\nTips:\n- **mieten** is what the tenant does, **vermieten** what the landlord does. *Ich miete eine Wohnung. Frau Kahl vermietet sie.*\n- A rent increase must come in writing, with a reason, usually the **Mietspiegel**. In most places rent may rise by at most 20 % in three years (15 % in many cities), and you have until the end of the second month after the letter to agree.\n- Report a **Mangel** (broken heating, mould) to the landlord in writing; for a defect that clearly affects your use of the flat you can pay less rent (*die Miete mindern*).\n- A **Mieterverein** checks letters and advises its members for a small yearly fee.",
+ "french": "Die Kaution is la caution and kündigen is résilier or donner son préavis, but French louer covers both sides, while German says mieten for the tenant and vermieten for the landlord.",
+ "examples": [
+  {
+   "de": "Die Kaltmiete beträgt 850 Euro, die Nebenkosten kommen noch dazu.",
+   "en": "The basic rent is 850 euros, plus service charges."
+  },
+  {
+   "de": "Unser Vermieter will die Miete um 15 Prozent erhöhen.",
+   "en": "Our landlord wants to raise the rent by 15 percent."
+  },
+  {
+   "de": "Eine Mieterhöhung muss schriftlich begründet werden.",
+   "en": "A rent increase has to be justified in writing."
+  },
+  {
+   "de": "Seit drei Wochen ist die Heizung kaputt, und sie ist immer noch nicht repariert.",
+   "en": "The heating has been broken for three weeks, and it still hasn't been repaired."
+  },
+  {
+   "de": "Die geforderte Miete liegt deutlich über dem Mietspiegel.",
+   "en": "The rent being asked for is well above the rent index."
+  },
+  {
+   "de": "Der Mieterverein hat unseren Mietvertrag geprüft.",
+   "en": "The tenants' association checked our tenancy agreement."
+  },
+  {
+   "de": "Die Kaution bekommen Sie nach dem Auszug zurück.",
+   "en": "You get the deposit back after you move out."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-t02-01",
+   "type": "choice",
+   "de": "Wir ___ seit drei Jahren eine Wohnung in Leipzig.",
+   "options": [
+    "vermieten",
+    "mieten",
+    "verleihen"
+   ],
+   "answer": 1,
+   "why": "The tenant mietet; vermieten is what the landlord does.",
+   "en": "We've been renting a flat in Leipzig for three years."
+  },
+  {
+   "id": "b2-t02-02",
+   "type": "cloze",
+   "de": "Beim Einzug haben wir ___ von drei Monatsmieten bezahlt.",
+   "base": "a deposit",
+   "answers": [
+    "eine Kaution",
+    "die Kaution"
+   ],
+   "en": "When we moved in, we paid a deposit of three months' rent."
+  },
+  {
+   "id": "b2-t02-03",
+   "type": "cloze",
+   "de": "Die Warmmiete ist die Kaltmiete plus ___.",
+   "base": "service charges",
+   "answers": [
+    "Nebenkosten",
+    "die Nebenkosten"
+   ],
+   "en": "The total rent is the basic rent plus service charges."
+  },
+  {
+   "id": "b2-t02-04",
+   "type": "choice",
+   "de": "Der ___ zeigt, wie viel Miete in einer Stadt üblich ist.",
+   "options": [
+    "Mietvertrag",
+    "Mieterverein",
+    "Mietspiegel"
+   ],
+   "answer": 2,
+   "why": "der Mietspiegel is the official overview of usual rents.",
+   "en": "The rent index shows how much rent is usual in a town."
+  },
+  {
+   "id": "b2-t02-05",
+   "type": "order",
+   "tiles": [
+    "Der Vermieter",
+    "will",
+    "die Miete",
+    "um 10 Prozent",
+    "erhöhen"
+   ],
+   "answers": [
+    "Der Vermieter will die Miete um 10 Prozent erhöhen.",
+    "Die Miete will der Vermieter um 10 Prozent erhöhen.",
+    "Um 10 Prozent will der Vermieter die Miete erhöhen."
+   ],
+   "en": "The landlord wants to raise the rent by 10 percent."
+  },
+  {
+   "id": "b2-t02-06",
+   "type": "cloze",
+   "de": "Wir haben die Wohnung zum 31. März ___.",
+   "base": "given notice on (Perfekt)",
+   "answers": [
+    "gekündigt"
+   ],
+   "en": "We've given notice on the flat for 31 March."
+  },
+  {
+   "id": "b2-t02-07",
+   "type": "choice",
+   "de": "Eine Mieterhöhung muss ___ begründet werden, ein Anruf reicht nicht.",
+   "options": [
+    "schriftlich",
+    "mündlich",
+    "persönlich"
+   ],
+   "answer": 0,
+   "why": "A rent increase has to come in writing, so a phone call isn't enough.",
+   "en": "A rent increase has to be justified in writing; a phone call isn't enough."
+  },
+  {
+   "id": "b2-t02-08",
+   "type": "cloze",
+   "de": "Wir sind Mitglied im ___. Er berät uns kostenlos.",
+   "base": "tenants' association",
+   "answers": [
+    "Mieterverein"
+   ],
+   "en": "We're members of the tenants' association. It advises us for free."
+  },
+  {
+   "id": "b2-t02-09",
+   "type": "choice",
+   "de": "Ich ___ mich beim Hausmeister über den Lärm.",
+   "options": [
+    "bedanke",
+    "beschwere",
+    "entschuldige"
+   ],
+   "answer": 1,
+   "why": "sich beschweren über means to complain about something.",
+   "en": "I complain to the caretaker about the noise."
+  },
+  {
+   "id": "b2-t02-10",
+   "type": "cloze",
+   "de": "Die Kaltmiete wurde zuletzt vor drei Jahren ___.",
+   "base": "raised",
+   "answers": [
+    "erhöht"
+   ],
+   "en": "The basic rent was last raised three years ago."
+  },
+  {
+   "id": "b2-t02-11",
+   "type": "order",
+   "tiles": [
+    "Die Heizung",
+    "ist",
+    "seit zwei Wochen",
+    "kaputt"
+   ],
+   "answers": [
+    "Die Heizung ist seit zwei Wochen kaputt.",
+    "Seit zwei Wochen ist die Heizung kaputt."
+   ],
+   "en": "The heating has been broken for two weeks."
+  },
+  {
+   "id": "b2-t02-12",
+   "type": "choice",
+   "de": "Wenn Sie ausziehen, bekommen Sie die Kaution ___.",
+   "options": [
+    "zurück",
+    "mit",
+    "weg"
+   ],
+   "answer": 0,
+   "why": "zurückbekommen means to get something back; mitbekommen means to notice, wegbekommen to get rid of.",
+   "en": "When you move out, you get the deposit back."
+  },
+  {
+   "id": "b2-t02-13",
+   "type": "cloze",
+   "de": "Die ___ Miete liegt deutlich über dem Mietspiegel.",
+   "base": "asked for (fordern, as an adjective)",
+   "answers": [
+    "geforderte"
+   ],
+   "en": "The rent being asked for is well above the rent index."
+  },
+  {
+   "id": "b2-t02-14",
+   "type": "choice",
+   "de": "Der Vermieter kann nicht einfach ___, er braucht einen guten Grund.",
+   "options": [
+    "ausziehen",
+    "kündigen",
+    "umziehen"
+   ],
+   "answer": 1,
+   "why": "The landlord ends the tenancy with kündigen; ausziehen and umziehen are what the tenant does when moving.",
+   "en": "The landlord can't simply give notice; he needs a good reason."
+  },
+  {
+   "id": "b2-t02-15",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "stimmen",
+    "der Mieterhöhung",
+    "nicht",
+    "zu"
+   ],
+   "answers": [
+    "Wir stimmen der Mieterhöhung nicht zu.",
+    "Der Mieterhöhung stimmen wir nicht zu."
+   ],
+   "en": "We don't agree to the rent increase."
+  },
+  {
+   "id": "b2-t02-16",
+   "type": "cloze",
+   "de": "Für die Nebenkosten bekommen wir jedes Jahr eine ___.",
+   "base": "statement (of charges)",
+   "answers": [
+    "Abrechnung",
+    "Nebenkostenabrechnung"
+   ],
+   "en": "We get a statement for the service charges every year."
+  },
+  {
+   "id": "b2-t02-17",
+   "type": "choice",
+   "de": "Die Wohnung liegt zentral und ruhig, die ___ ist also perfekt.",
+   "options": [
+    "Lage",
+    "Stelle",
+    "Platz"
+   ],
+   "answer": 0,
+   "why": "die Lage is the location of a flat or building.",
+   "en": "The flat is central and quiet, so the location is perfect."
+  },
+  {
+   "id": "b2-t02-18",
+   "type": "order",
+   "tiles": [
+    "Die Frist",
+    "endet",
+    "am 31. Mai"
+   ],
+   "answers": [
+    "Die Frist endet am 31. Mai.",
+    "Am 31. Mai endet die Frist."
+   ],
+   "en": "The deadline runs out on 31 May."
+  },
+  {
+   "id": "b2-t02-19",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "haben",
+    "die Mieterhöhung",
+    "vom Mieterverein",
+    "prüfen lassen"
+   ],
+   "answers": [
+    "Wir haben die Mieterhöhung vom Mieterverein prüfen lassen.",
+    "Die Mieterhöhung haben wir vom Mieterverein prüfen lassen."
+   ],
+   "en": "We had the rent increase checked by the tenants' association."
+  },
+  {
+   "id": "b2-t02-20",
+   "type": "choice",
+   "de": "In München findet man kaum eine Wohnung, der ___ ist sehr angespannt.",
+   "options": [
+    "Wohnort",
+    "Wohnungsmarkt",
+    "Wohnungsmangel"
+   ],
+   "answer": 1,
+   "why": "Ein angespannter Wohnungsmarkt is a tight housing market.",
+   "en": "It's very hard to find a flat in Munich; the housing market is very tight."
+  },
+  {
+   "id": "b2-t02-21",
+   "type": "cloze",
+   "de": "Seit Wochen ist das Fenster kaputt, und es ist immer noch nicht ___.",
+   "base": "repaired",
+   "answers": [
+    "repariert"
+   ],
+   "en": "The window has been broken for weeks, and it still hasn't been repaired."
+  },
+  {
+   "id": "b2-t02-22",
+   "type": "choice",
+   "de": "Ich ___ der Mieterhöhung, weil sie über dem Mietspiegel liegt.",
+   "options": [
+    "entspreche",
+    "verspreche",
+    "widerspreche"
+   ],
+   "answer": 2,
+   "why": "widersprechen means to object to something.",
+   "en": "I object to the rent increase because it is above the rent index."
+  },
+  {
+   "id": "b2-t02-23",
+   "type": "cloze",
+   "de": "Wir bekommen die Kaution zurück, wenn es in der Wohnung keine ___ gibt.",
+   "base": "damage (plural)",
+   "answers": [
+    "Schäden"
+   ],
+   "en": "We'll get the deposit back if there is no damage in the flat."
+  },
+  {
+   "id": "b2-t02-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "die Wohnung",
+    "fristgerecht",
+    "gekündigt"
+   ],
+   "answers": [
+    "Ich habe die Wohnung fristgerecht gekündigt.",
+    "Die Wohnung habe ich fristgerecht gekündigt."
+   ],
+   "en": "I gave notice on the flat on time."
+  }
+ ],
+ "listening": {
+  "title": "Anruf beim Mieterverein",
+  "intro": "Sofia has received a letter announcing a rent increase and calls Thomas, an adviser at the tenants' association in Cologne.",
+  "lines": [
+   {
+    "speaker": "Thomas",
+    "de": "Mieterverein Köln, Thomas Neumann, guten Tag.",
+    "en": "Cologne tenants' association, Thomas Neumann speaking, hello."
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Guten Tag, hier ist Sofia Martín. Ich bin Mitglied bei Ihnen und habe gestern eine Mieterhöhung bekommen.",
+    "en": "Hello, this is Sofia Martín. I'm a member and I got a rent increase yesterday."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Okay. Um wie viel soll die Miete denn steigen?",
+    "en": "OK. How much is the rent supposed to go up?"
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Von 900 auf 1.120 Euro kalt. Das sind über 24 Prozent! Ist das überhaupt erlaubt?",
+    "en": "From 900 to 1,120 euros basic rent. That's over 24 percent! Is that even allowed?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "In Köln darf die Miete in drei Jahren höchstens um 15 Prozent steigen. Wann wurde sie denn zuletzt erhöht?",
+    "en": "In Cologne the rent may rise by at most 15 percent in three years. When was it last raised?"
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Noch nie. Ich wohne seit vier Jahren dort, und die Miete ist immer gleich geblieben.",
+    "en": "Never. I've lived there for four years and the rent has always stayed the same."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Dann sind 24 Prozent auf jeden Fall zu viel. Wie begründet der Vermieter die Erhöhung?",
+    "en": "Then 24 percent is definitely too much. How does the landlord justify the increase?"
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Er schreibt, das Haus sei frisch renoviert und die Lage sehr gefragt.",
+    "en": "He writes that the building has just been renovated and the location is in high demand."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Renoviert? Was wurde denn gemacht?",
+    "en": "Renovated? What was done?"
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Nur das Treppenhaus wurde gestrichen. Und in meiner Wohnung ist die Heizung seit Wochen kaputt.",
+    "en": "Only the stairwell was painted. And the heating in my flat has been broken for weeks."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Das ist ein Mangel. Den sollten Sie dem Vermieter sofort schriftlich melden, am besten mit Fotos.",
+    "en": "That's a defect. You should report it to the landlord in writing straight away, ideally with photos."
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Und was mache ich mit der Mieterhöhung? Muss ich sofort antworten?",
+    "en": "And what do I do about the rent increase? Do I have to reply straight away?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Nein, Sie haben bis Ende des übernächsten Monats Zeit. Schicken Sie uns den Brief, dann vergleichen wir die Miete mit dem Mietspiegel.",
+    "en": "No, you have until the end of the month after next. Send us the letter and we'll compare the rent with the rent index."
+   },
+   {
+    "speaker": "Sofia",
+    "de": "Super, vielen Dank. Ich scanne ihn heute noch ein.",
+    "en": "Great, thank you very much. I'll scan it in today."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much is Sofia's rent supposed to go up?",
+    "options": [
+     "By exactly 15 percent.",
+     "From 900 to 1,120 euros.",
+     "From 1,120 to 1,350 euros."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does the landlord justify the increase?",
+    "options": [
+     "The heating is new.",
+     "All rents in Cologne have gone up.",
+     "The building was renovated and the location is popular."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What was actually renovated?",
+    "options": [
+     "Only the stairwell was painted.",
+     "The heating in all flats.",
+     "The windows and the stairwell."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Thomas tell Sofia to do?",
+    "options": [
+     "Pay the new rent and complain later.",
+     "Report the defect in writing and send the letter to the association.",
+     "Reply to the landlord today."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Unser Vermieter will die Miete um mehr als zwanzig Prozent erhöhen.",
+  "Der Mieterverein prüft, ob die geforderte Miete über dem Mietspiegel liegt.",
+  "Die Heizung ist seit Wochen kaputt, aber niemand kommt."
+ ],
+ "speaking": [
+  {
+   "de": "Ich habe gestern eine Mieterhöhung bekommen. Ist das überhaupt erlaubt?",
+   "en": "I got a rent increase yesterday. Is that even allowed?"
+  },
+  {
+   "de": "Die Miete ist immer gleich geblieben.",
+   "en": "The rent has always stayed the same."
+  },
+  {
+   "de": "In meiner Wohnung ist die Heizung seit Wochen kaputt.",
+   "en": "The heating in my flat has been broken for weeks."
+  },
+  {
+   "de": "Den Mangel sollten Sie dem Vermieter schriftlich melden.",
+   "en": "You should report the defect to the landlord in writing."
+  },
+  {
+   "de": "Muss ich sofort antworten?",
+   "en": "Do I have to reply straight away?"
+  }
+ ],
+ "writing": {
+  "task": "Write a letter of 100–130 words to your landlord. Refer to his rent increase, say why you don't agree (it is above the rent index) and report a defect in your flat that still hasn't been repaired.",
+  "model": "Sehr geehrter Herr Kahl,\n\nvielen Dank für Ihr Schreiben vom 3. März, in dem Sie die Kaltmiete von 900 auf 1.120 Euro erhöhen möchten.\n\nDieser Erhöhung stimme ich nicht zu. Die geforderte Miete liegt deutlich über dem aktuellen Mietspiegel, und in Köln darf die Miete in drei Jahren um höchstens 15 Prozent steigen. Der Mieterverein hat Ihr Schreiben bereits geprüft.\n\nAußerdem möchte ich Sie noch einmal auf einen Mangel hinweisen: Die Heizung in meiner Wohnung ist seit dem 10. Februar kaputt. Ich habe den Hausmeister zweimal informiert, aber bis heute ist nichts passiert. Bitte kümmern Sie sich bis Ende der Woche darum. Fotos schicke ich Ihnen gern.\n\nMit freundlichen Grüßen\nSofia Martín"
+ }
+}

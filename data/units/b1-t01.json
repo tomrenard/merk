@@ -1,0 +1,525 @@
+{
+ "id": "b1-t01",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "das Vorstellungsgespräch",
+  "die Bewerbung",
+  "sich bewerben",
+  "der Lebenslauf",
+  "das Zeugnis",
+  "die Stelle",
+  "die Arbeitsstelle",
+  "die Anzeige",
+  "die Ausbildung",
+  "der Abschluss",
+  "die Erfahrung",
+  "die Kenntnisse",
+  "die Qualifikation",
+  "das Gehalt",
+  "der Lohn",
+  "die Vollzeit",
+  "die Teilzeit",
+  "die Weiterbildung",
+  "das Team",
+  "zuverlässig",
+  "flexibel",
+  "arbeitslos",
+  "kündigen",
+  "berufstätig",
+  "das Praktikum",
+  "der Beruf"
+ ],
+ "title": "Job search, CV and interview",
+ "situation": "A job interview",
+ "canDo": "You can talk about your training, experience and skills in a job interview and understand the key words of job ads and applications.",
+ "explanation": "In a job interview (**das Vorstellungsgespräch**) you talk about your training, your experience and what you can do. These words come up in every job ad and every interview.\n\n| German | English |\n|---|---|\n| die Stelle, -n | job, position |\n| die Anzeige, -n | (job) ad |\n| die Bewerbung, -en | application |\n| der Lebenslauf, -läufe | CV |\n| das Zeugnis, -se | certificate; reference from an employer |\n| die Ausbildung, -en | vocational training |\n| der Abschluss, -schlüsse | degree, qualification |\n| die Erfahrung, -en | experience |\n| die Kenntnisse (pl.) | knowledge, skills |\n| das Gehalt, Gehälter | salary |\n| die Vollzeit / die Teilzeit | full time / part time |\n\nUseful phrases:\n- *Ich bewerbe mich um die Stelle als …* – I'm applying for the job as …\n- *Ich habe drei Jahre Erfahrung als Koch.*\n- *Ich habe eine Ausbildung als … gemacht.*\n- *Wann könnte ich anfangen?*\n\nTips:\n- **sich bewerben** is reflexive: *Ich bewerbe **mich***. Forgetting *mich* is the most common mistake.\n- A German application usually has a cover letter (das Anschreiben), the **Lebenslauf** and your **Zeugnisse**. An *Arbeitszeugnis* is a written reference from your old employer.\n- **das Gehalt** is a monthly salary; **der Lohn** is often paid by the hour.\n- Don't mix up **das Zeugnis** (certificate) and **der Zeuge** (witness).",
+ "french": "Unlike postuler, sich bewerben is reflexive (je postule = ich bewerbe mich), and une formation professionnelle is eine Ausbildung, not eine Bildung.",
+ "examples": [
+  {
+   "de": "Ich bewerbe mich um die Stelle als Verkäuferin.",
+   "en": "I'm applying for the job as a sales assistant."
+  },
+  {
+   "de": "Meinen Lebenslauf und meine Zeugnisse habe ich per E-Mail geschickt.",
+   "en": "I sent my CV and my certificates by email."
+  },
+  {
+   "de": "Ich habe eine Ausbildung als Koch gemacht.",
+   "en": "I trained as a cook."
+  },
+  {
+   "de": "Nach der Ausbildung arbeitete ich fünf Jahre in einem Hotel.",
+   "en": "After my training I worked in a hotel for five years."
+  },
+  {
+   "de": "Haben Sie schon Erfahrung in der Küche?",
+   "en": "Do you already have experience in the kitchen?"
+  },
+  {
+   "de": "Die Stelle ist in Teilzeit, 20 Stunden pro Woche.",
+   "en": "The job is part time, 20 hours a week."
+  },
+  {
+   "de": "Wie hoch ist das Gehalt?",
+   "en": "How high is the salary?"
+  },
+  {
+   "de": "Ich spreche Französisch und Englisch, und meine Deutschkenntnisse sind gut.",
+   "en": "I speak French and English, and my German is good."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t01-01",
+   "type": "cloze",
+   "de": "Ich schicke Ihnen gern meinen ___.",
+   "base": "CV",
+   "answers": [
+    "Lebenslauf"
+   ],
+   "en": "I'm happy to send you my CV."
+  },
+  {
+   "id": "b1-t01-02",
+   "type": "choice",
+   "de": "Morgen habe ich ___ bei einer Firma in Köln.",
+   "options": [
+    "ein Vorstellungsgespräch",
+    "eine Vorstellung",
+    "eine Bewerbung"
+   ],
+   "answer": 0,
+   "why": "A job interview is das Vorstellungsgespräch; eine Vorstellung is a show or an idea, and die Bewerbung is the application you send.",
+   "en": "Tomorrow I have a job interview with a company in Cologne."
+  },
+  {
+   "id": "b1-t01-03",
+   "type": "cloze",
+   "de": "Ich ___ mich um die Stelle als Koch.",
+   "base": "to apply",
+   "answers": [
+    "bewerbe"
+   ],
+   "en": "I'm applying for the job as a cook."
+  },
+  {
+   "id": "b1-t01-04",
+   "type": "cloze",
+   "de": "Ich habe eine ___ als Krankenpfleger gemacht.",
+   "base": "vocational training",
+   "answers": [
+    "Ausbildung"
+   ],
+   "en": "I trained as a nurse."
+  },
+  {
+   "id": "b1-t01-05",
+   "type": "choice",
+   "de": "Die Stelle ist in ___: nur 20 Stunden pro Woche.",
+   "options": [
+    "Vollzeit",
+    "Teilzeit",
+    "Freizeit"
+   ],
+   "answer": 1,
+   "why": "20 hours a week is part time: Teilzeit; Freizeit is free time.",
+   "en": "The job is part time: only 20 hours a week."
+  },
+  {
+   "id": "b1-t01-06",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "drei Jahre",
+    "Erfahrung",
+    "als Koch"
+   ],
+   "answers": [
+    "Ich habe drei Jahre Erfahrung als Koch.",
+    "Als Koch habe ich drei Jahre Erfahrung.",
+    "Ich habe als Koch drei Jahre Erfahrung."
+   ],
+   "en": "I have three years' experience as a cook."
+  },
+  {
+   "id": "b1-t01-07",
+   "type": "cloze",
+   "de": "Wie hoch ist das ___?",
+   "base": "salary",
+   "answers": [
+    "Gehalt"
+   ],
+   "en": "How high is the salary?"
+  },
+  {
+   "id": "b1-t01-08",
+   "type": "choice",
+   "de": "Mein alter Chef hat mir ein gutes ___ geschrieben.",
+   "options": [
+    "Zeugnis",
+    "Zeuge",
+    "Gehalt"
+   ],
+   "answer": 0,
+   "why": "An employer writes you a Zeugnis (reference); der Zeuge is a witness and das Gehalt is your salary.",
+   "en": "My old boss wrote me a good reference."
+  },
+  {
+   "id": "b1-t01-09",
+   "type": "cloze",
+   "de": "Für die Stelle braucht man ___ in Excel.",
+   "base": "knowledge, skills",
+   "answers": [
+    "Kenntnisse"
+   ],
+   "en": "For this job you need skills in Excel."
+  },
+  {
+   "id": "b1-t01-10",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "könnte",
+    "ich",
+    "anfangen"
+   ],
+   "answers": [
+    "Wann könnte ich anfangen?"
+   ],
+   "en": "When could I start?"
+  },
+  {
+   "id": "b1-t01-11",
+   "type": "choice",
+   "de": "Ich habe Ihre ___ für die Stelle als Fahrer in der Zeitung gesehen.",
+   "options": [
+    "Nachricht",
+    "Werbung",
+    "Anzeige"
+   ],
+   "answer": 2,
+   "why": "A job ad is eine Anzeige (or Stellenanzeige); Werbung is advertising for products, and eine Nachricht is a message or a news item.",
+   "en": "I saw your ad for the driver's job in the newspaper."
+  },
+  {
+   "id": "b1-t01-12",
+   "type": "cloze",
+   "de": "Ich habe einen ___ in Informatik.",
+   "base": "degree",
+   "answers": [
+    "Abschluss",
+    "Hochschulabschluss",
+    "Studienabschluss"
+   ],
+   "en": "I have a degree in computer science."
+  },
+  {
+   "id": "b1-t01-13",
+   "type": "choice",
+   "de": "Warum haben Sie bei Ihrer alten Firma ___?",
+   "options": [
+    "beendet",
+    "gekündigt",
+    "verlassen"
+   ],
+   "answer": 1,
+   "why": "To quit a job is kündigen (bei einer Firma kündigen); beenden and verlassen need an object.",
+   "en": "Why did you quit your old company?"
+  },
+  {
+   "id": "b1-t01-14",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "eine Ausbildung",
+    "als Koch",
+    "gemacht"
+   ],
+   "answers": [
+    "Ich habe eine Ausbildung als Koch gemacht."
+   ],
+   "en": "I trained as a cook."
+  },
+  {
+   "id": "b1-t01-15",
+   "type": "cloze",
+   "de": "Wir arbeiten auch manchmal am Wochenende. Sind Sie ___?",
+   "base": "flexible",
+   "answers": [
+    "flexibel"
+   ],
+   "en": "We sometimes work at the weekend too. Are you flexible?"
+  },
+  {
+   "id": "b1-t01-16",
+   "type": "choice",
+   "de": "Ich arbeite gern im ___ und spreche viel mit den Kollegen.",
+   "options": [
+    "Gruppe",
+    "Mannschaft",
+    "Team"
+   ],
+   "answer": 2,
+   "why": "At work you say im Team; die Mannschaft is a sports team, and Gruppe is feminine (in der Gruppe).",
+   "en": "I like working in a team and talk a lot with my colleagues."
+  },
+  {
+   "id": "b1-t01-17",
+   "type": "cloze",
+   "de": "Ich habe Ihre Anzeige gelesen und möchte mich um die ___ bewerben.",
+   "base": "job, position",
+   "answers": [
+    "Stelle",
+    "Arbeitsstelle"
+   ],
+   "en": "I read your ad and would like to apply for the job."
+  },
+  {
+   "id": "b1-t01-18",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bewerbe",
+    "mich",
+    "um die Stelle",
+    "als Fahrer"
+   ],
+   "answers": [
+    "Ich bewerbe mich um die Stelle als Fahrer."
+   ],
+   "en": "I'm applying for the job as a driver."
+  },
+  {
+   "id": "b1-t01-19",
+   "type": "choice",
+   "de": "Mein Mann arbeitet im Moment nicht, er ist ___.",
+   "options": [
+    "arbeitslos",
+    "berufstätig",
+    "selbstständig"
+   ],
+   "answer": 0,
+   "why": "Someone without a job is arbeitslos; berufstätig means working, and selbstständig means self-employed.",
+   "en": "My husband isn't working at the moment, he's unemployed."
+  },
+  {
+   "id": "b1-t01-20",
+   "type": "cloze",
+   "de": "Bei uns lernen Sie immer dazu: Wir bieten regelmäßig ___ an.",
+   "base": "further training courses",
+   "answers": [
+    "Weiterbildungen",
+    "Fortbildungen"
+   ],
+   "en": "You keep learning with us: we regularly offer further training."
+  },
+  {
+   "id": "b1-t01-21",
+   "type": "order",
+   "tiles": [
+    "Wie viele Stunden",
+    "pro Woche",
+    "würden",
+    "Sie",
+    "gern",
+    "arbeiten"
+   ],
+   "answers": [
+    "Wie viele Stunden pro Woche würden Sie gern arbeiten?",
+    "Wie viele Stunden würden Sie pro Woche gern arbeiten?",
+    "Wie viele Stunden würden Sie gern pro Woche arbeiten?"
+   ],
+   "en": "How many hours a week would you like to work?"
+  },
+  {
+   "id": "b1-t01-22",
+   "type": "choice",
+   "de": "Ich bin sehr ___: Ich komme immer pünktlich und mache meine Aufgaben.",
+   "options": [
+    "neugierig",
+    "zuverlässig",
+    "selbstständig"
+   ],
+   "answer": 1,
+   "why": "Being on time and doing your tasks means you are zuverlässig (reliable); neugierig is curious and selbstständig is independent.",
+   "en": "I'm very reliable: I'm always on time and do my tasks."
+  },
+  {
+   "id": "b1-t01-23",
+   "type": "cloze",
+   "de": "Wann können Sie ___? – Ab dem ersten März.",
+   "base": "start (a job)",
+   "answers": [
+    "anfangen",
+    "beginnen"
+   ],
+   "en": "When can you start? – From the first of March."
+  },
+  {
+   "id": "b1-t01-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "mich",
+    "letzte Woche",
+    "bei Ihnen",
+    "beworben"
+   ],
+   "answers": [
+    "Ich habe mich letzte Woche bei Ihnen beworben.",
+    "Letzte Woche habe ich mich bei Ihnen beworben.",
+    "Ich habe mich bei Ihnen letzte Woche beworben."
+   ],
+   "en": "I applied to you last week."
+  }
+ ],
+ "listening": {
+  "title": "Das Vorstellungsgespräch",
+  "intro": "Lucas, a French cook, has a job interview at a hotel restaurant in Munich.",
+  "lines": [
+   {
+    "speaker": "Frau Becker",
+    "de": "Guten Tag, Herr Martin. Schön, dass Sie da sind. Bitte setzen Sie sich.",
+    "en": "Hello, Mr Martin. Nice that you're here. Please sit down."
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Guten Tag, Frau Becker. Vielen Dank für die Einladung.",
+    "en": "Hello, Ms Becker. Thank you very much for inviting me."
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Erzählen Sie doch mal etwas über sich. Wo haben Sie Ihre Ausbildung gemacht?",
+    "en": "Tell me a bit about yourself. Where did you do your training?"
+   },
+   {
+    "speaker": "Lucas",
+    "de": "In Lyon. Danach habe ich vier Jahre als Koch in einem Restaurant dort gearbeitet. Das war eine tolle Zeit.",
+    "en": "In Lyon. After that I worked as a cook in a restaurant there for four years. It was a great time."
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Und seit wann sind Sie in Deutschland?",
+    "en": "And how long have you been in Germany?"
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Seit zwei Jahren. Im Moment arbeite ich in Teilzeit in einer Kantine, aber ich suche eine Stelle in Vollzeit.",
+    "en": "For two years. At the moment I work part time in a canteen, but I'm looking for a full-time job."
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Wie sind Ihre Deutschkenntnisse?",
+    "en": "How good is your German?"
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Ich habe einen Intensivkurs gemacht und letztes Jahr die B1-Prüfung bestanden. In der Küche spreche ich nur Deutsch.",
+    "en": "I did an intensive course and passed the B1 exam last year. In the kitchen I only speak German."
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Sehr gut. Bei uns arbeiten Sie im Team mit sechs Köchen, manchmal auch am Wochenende. Ist das ein Problem?",
+    "en": "Very good. Here you'd work in a team with six cooks, sometimes at the weekend too. Is that a problem?"
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Nein, das ist kein Problem. Ich bin flexibel.",
+    "en": "No, that's not a problem. I'm flexible."
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Haben Sie noch Fragen an uns?",
+    "en": "Do you have any questions for us?"
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Ja, zwei Fragen: Wie hoch ist das Gehalt, und wann könnte ich anfangen?",
+    "en": "Yes, two questions: how high is the salary, and when could I start?"
+   },
+   {
+    "speaker": "Frau Becker",
+    "de": "Wir zahlen 2.800 Euro brutto im Monat. Anfangen könnten Sie am ersten Juni. Wir melden uns bis Freitag bei Ihnen.",
+    "en": "We pay 2,800 euros gross a month. You could start on the first of June. We'll get back to you by Friday."
+   },
+   {
+    "speaker": "Lucas",
+    "de": "Das klingt gut. Vielen Dank, ich freue mich auf Ihre Antwort.",
+    "en": "That sounds good. Thank you very much, I look forward to your answer."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Lucas train as a cook?",
+    "options": [
+     "In Berlin",
+     "In Paris",
+     "In Lyon"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is his job situation now?",
+    "options": [
+     "He's unemployed",
+     "He works part time in a canteen",
+     "He works full time in a hotel"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Frau Becker ask about working hours?",
+    "options": [
+     "Whether weekends are a problem for him",
+     "Whether he can work at night",
+     "Whether he wants to work part time"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When could he start?",
+    "options": [
+     "On the first of May",
+     "On the first of June",
+     "Next Friday"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich habe mich um die Stelle als Koch beworben.",
+  "Nach der Ausbildung habe ich vier Jahre in Lyon gearbeitet.",
+  "Wie hoch ist das Gehalt, und wann könnte ich anfangen?"
+ ],
+ "speaking": [
+  {
+   "de": "Vielen Dank für die Einladung.",
+   "en": "Thank you very much for inviting me."
+  },
+  {
+   "de": "Im Moment arbeite ich in Teilzeit, aber ich suche eine Stelle in Vollzeit.",
+   "en": "At the moment I work part time, but I'm looking for a full-time job."
+  },
+  {
+   "de": "Das ist kein Problem, ich bin flexibel.",
+   "en": "That's not a problem, I'm flexible."
+  },
+  {
+   "de": "Wie hoch ist das Gehalt, und wann könnte ich anfangen?",
+   "en": "How high is the salary, and when could I start?"
+  },
+  {
+   "de": "Ich freue mich auf Ihre Antwort.",
+   "en": "I look forward to your answer."
+  }
+ ],
+ "writing": {
+  "task": "You saw an ad for a part-time job as a sales assistant in a bakery. Write an 80–100-word email: say who you are, describe your training and experience, say when you can start and mention the documents you're sending.",
+  "model": "Sehr geehrte Frau Weber,\n\nich habe Ihre Anzeige im Internet gelesen und bewerbe mich um die Stelle als Verkäuferin in Teilzeit. Ich komme aus Frankreich und wohne seit drei Jahren in Hamburg. In Frankreich habe ich eine Ausbildung als Bäckerin gemacht. Danach arbeitete ich fünf Jahre in einer Bäckerei in Lille. Ich bin zuverlässig und arbeite gern mit Menschen. Meine Deutschkenntnisse sind gut, ich habe letztes Jahr die B1-Prüfung bestanden. Ich könnte ab dem ersten April anfangen. Meinen Lebenslauf und meine Zeugnisse finden Sie im Anhang. Ich freue mich auf ein Vorstellungsgespräch.\n\nMit freundlichen Grüßen\nCamille Durand"
+ }
+}

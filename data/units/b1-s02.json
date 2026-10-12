@@ -1,0 +1,536 @@
+{
+ "id": "b1-s02",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The flat viewing",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a flat viewing in a German city and use the key words of the flat hunt: viewing, documents, rent including heating, tenancy agreement.",
+ "explanation": "Camille has lived in Cologne for almost two months, in a small room she only sublets. Now she is looking for her own flat, and in a big German city that is hard: dozens of people come to every viewing. On Saturday she finally has an invitation. In the staircase she meets an older lady with a heavy shopping bag…\n\nYou will hear relative clauses (*der Balkon, der nach Süden geht*) and the passive (*die Küche wurde renoviert*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| die Besichtigung, -en | (flat) viewing |\n| die Zwischenmiete | sublet |\n| die Anfrage, -n | enquiry |\n| warm / kalt | rent including / without heating |\n| das Treppenhaus, -häuser | staircase |\n| die Unterlagen (pl.) | documents |\n| die Schufa | credit report |\n| der Mietvertrag, -verträge | tenancy agreement |\n| gehören + dative | to belong to |\n| der Einzug | moving in |\n\nTip: Germans say *850 warm* for rent with heating and service charges, and *kalt* without them. Always ask which one an ad means.",
+ "french": "Like for a French dossier de location you bring payslips to the viewing, but also a Schufa credit report, which France doesn't have; a guarantor is rarely asked for.",
+ "examples": [
+  {
+   "de": "Camille wohnte in einem Zimmer, in dem sie nur zur Zwischenmiete wohnte.",
+   "en": "Camille lived in a room she only sublet."
+  },
+  {
+   "de": "Die Wohnung kostet 850 Euro warm.",
+   "en": "The flat costs 850 euros including heating."
+  },
+  {
+   "de": "Im Treppenhaus standen schon vierzig Leute.",
+   "en": "Forty people were already standing in the staircase."
+  },
+  {
+   "de": "Ich habe alle Unterlagen dabei.",
+   "en": "I've got all my documents with me."
+  },
+  {
+   "de": "Die Küche wurde letztes Jahr renoviert.",
+   "en": "The kitchen was renovated last year."
+  },
+  {
+   "de": "Mir gehört das Haus.",
+   "en": "The house belongs to me."
+  },
+  {
+   "de": "Am ersten Mai wurde der Mietvertrag unterschrieben.",
+   "en": "The tenancy agreement was signed on the first of May."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Am Samstag hatte Camille endlich eine ___ in der Südstadt.",
+   "base": "flat viewing",
+   "answers": [
+    "Besichtigung",
+    "Wohnungsbesichtigung"
+   ],
+   "en": "On Saturday Camille finally had a flat viewing in the Südstadt.",
+   "id": "b1-s02-01"
+  },
+  {
+   "type": "choice",
+   "de": "Camille wohnte seit fast zwei Monaten in ___.",
+   "options": [
+    "einer eigenen Wohnung",
+    "einem WG-Zimmer",
+    "einem Hotel"
+   ],
+   "answer": 1,
+   "why": "At the start of the story she lives in a small shared-flat room that she only sublets.",
+   "en": "Camille had been living in a shared-flat room for almost two months.",
+   "id": "b1-s02-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Die Wohnung kostet 850 Euro ___, also mit Heizung und Nebenkosten.",
+   "base": "including heating",
+   "answers": [
+    "warm"
+   ],
+   "en": "The flat costs 850 euros including heating, so with heating and service charges.",
+   "id": "b1-s02-03"
+  },
+  {
+   "type": "choice",
+   "de": "Als Camille ankam, standen schon etwa ___ Leute im Treppenhaus.",
+   "options": [
+    "zehn",
+    "vierzig",
+    "hundert"
+   ],
+   "answer": 1,
+   "why": "About forty people were already waiting in the staircase.",
+   "en": "When Camille arrived, about forty people were already standing in the staircase.",
+   "id": "b1-s02-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "alle Unterlagen",
+    "habe",
+    "dabei"
+   ],
+   "answers": [
+    "Ich habe alle Unterlagen dabei.",
+    "Alle Unterlagen habe ich dabei."
+   ],
+   "en": "I've got all my documents with me.",
+   "id": "b1-s02-05"
+  },
+  {
+   "type": "cloze",
+   "de": "Im ___ wartete eine ältere Frau mit einer schweren Tasche.",
+   "base": "staircase",
+   "answers": [
+    "Treppenhaus"
+   ],
+   "en": "An older woman with a heavy bag was waiting in the staircase.",
+   "id": "b1-s02-06"
+  },
+  {
+   "type": "choice",
+   "de": "Camille bot der älteren Frau an, ___ zu tragen.",
+   "options": [
+    "ihre Tasche",
+    "ihren Koffer",
+    "ihr Fahrrad"
+   ],
+   "answer": 0,
+   "why": "Camille offered to carry the woman's heavy shopping bag.",
+   "en": "Camille offered to carry the older woman's bag.",
+   "id": "b1-s02-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Für die Wohnung braucht man eine ___ und drei Gehaltsnachweise.",
+   "base": "credit report",
+   "answers": [
+    "Schufa",
+    "Schufa-Auskunft"
+   ],
+   "en": "For the flat you need a credit report and three payslips.",
+   "id": "b1-s02-08"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Mir",
+    "gehört",
+    "das Haus"
+   ],
+   "answers": [
+    "Mir gehört das Haus.",
+    "Das Haus gehört mir."
+   ],
+   "en": "The house belongs to me.",
+   "id": "b1-s02-09"
+  },
+  {
+   "type": "cloze",
+   "de": "Am besten gefiel ihr der Balkon, ___ nach Süden geht.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "She liked the balcony best, which faces south.",
+   "id": "b1-s02-10"
+  },
+  {
+   "type": "choice",
+   "de": "Laut der Anzeige ___ die Küche letztes Jahr renoviert.",
+   "options": [
+    "wird",
+    "wurde",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "Passive in the past: wurde + past participle (wurde renoviert).",
+   "en": "According to the ad, the kitchen was renovated last year.",
+   "id": "b1-s02-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Camille füllte das Formular aus, ___ auf dem Küchentisch lag.",
+   "base": "der/die/das",
+   "answers": [
+    "das"
+   ],
+   "en": "Camille filled in the form that was lying on the kitchen table.",
+   "id": "b1-s02-12"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Die Fenster",
+    "letztes Jahr",
+    "wurden",
+    "erneuert"
+   ],
+   "answers": [
+    "Die Fenster wurden letztes Jahr erneuert.",
+    "Letztes Jahr wurden die Fenster erneuert."
+   ],
+   "en": "The windows were replaced last year.",
+   "id": "b1-s02-13"
+  },
+  {
+   "type": "choice",
+   "de": "Nach der Besichtigung war die ältere Frau plötzlich ___.",
+   "options": [
+    "krank",
+    "im Keller",
+    "verschwunden"
+   ],
+   "answer": 2,
+   "why": "Camille couldn't see her any more: she had disappeared.",
+   "en": "After the viewing, the older woman had suddenly disappeared.",
+   "id": "b1-s02-14"
+  },
+  {
+   "type": "cloze",
+   "de": "Zwei Tage später rief eine ___ Nummer an.",
+   "base": "unknown",
+   "answers": [
+    "unbekannte"
+   ],
+   "en": "Two days later an unknown number called.",
+   "id": "b1-s02-15"
+  },
+  {
+   "type": "choice",
+   "de": "Frau Schmitz ist ___.",
+   "options": [
+    "die Vermieterin",
+    "eine Maklerin",
+    "die alte Mieterin"
+   ],
+   "answer": 0,
+   "why": "The house belongs to her: she is the landlady.",
+   "en": "Frau Schmitz is the landlady.",
+   "id": "b1-s02-16"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Die Wohnung",
+    "Ihnen",
+    "gehört",
+    "wenn Sie wollen"
+   ],
+   "answers": [
+    "Wenn Sie wollen, gehört die Wohnung Ihnen.",
+    "Die Wohnung gehört Ihnen, wenn Sie wollen.",
+    "Wenn Sie wollen, gehört Ihnen die Wohnung.",
+    "Ihnen gehört die Wohnung, wenn Sie wollen."
+   ],
+   "en": "If you want, the flat is yours.",
+   "id": "b1-s02-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Auf die meisten ___, die sie schickte, bekam sie keine Antwort.",
+   "base": "enquiries",
+   "answers": [
+    "Anfragen"
+   ],
+   "en": "To most of the enquiries she sent, she got no answer.",
+   "id": "b1-s02-18"
+  },
+  {
+   "type": "choice",
+   "de": "Sie waren die Einzige, ___ mir geholfen hat.",
+   "options": [
+    "die",
+    "der",
+    "das"
+   ],
+   "answer": 0,
+   "why": "die Einzige is feminine, so the relative pronoun is die.",
+   "en": "You were the only one who helped me.",
+   "id": "b1-s02-19"
+  },
+  {
+   "type": "cloze",
+   "de": "Am ersten Mai wurde der ___ unterschrieben.",
+   "base": "tenancy agreement",
+   "answers": [
+    "Mietvertrag"
+   ],
+   "en": "The tenancy agreement was signed on the first of May.",
+   "id": "b1-s02-20"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Am ersten Mai",
+    "wurde",
+    "der Mietvertrag",
+    "unterschrieben"
+   ],
+   "answers": [
+    "Am ersten Mai wurde der Mietvertrag unterschrieben.",
+    "Der Mietvertrag wurde am ersten Mai unterschrieben."
+   ],
+   "en": "The tenancy agreement was signed on the first of May.",
+   "id": "b1-s02-21"
+  },
+  {
+   "type": "choice",
+   "de": "Zum Einzug brachte Frau Schmitz Camille ___ mit.",
+   "options": [
+    "Blumen",
+    "einen Kuchen",
+    "eine Flasche Wein"
+   ],
+   "answer": 1,
+   "why": "She brought a cake, in the same shopping bag as at the viewing.",
+   "en": "When Camille moved in, Frau Schmitz brought her a cake.",
+   "id": "b1-s02-22"
+  },
+  {
+   "type": "cloze",
+   "de": "Zum ___ brachte Frau Schmitz einen Kuchen mit.",
+   "base": "moving in",
+   "answers": [
+    "Einzug"
+   ],
+   "en": "When Camille moved in, Frau Schmitz brought a cake.",
+   "id": "b1-s02-23"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Das ist",
+    "von Ihnen",
+    "sehr nett"
+   ],
+   "answers": [
+    "Das ist sehr nett von Ihnen."
+   ],
+   "en": "That's very kind of you.",
+   "id": "b1-s02-24"
+  }
+ ],
+ "listening": {
+  "title": "Die Besichtigung",
+  "intro": "Camille goes to a flat viewing in Cologne, where about forty people are already waiting.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Seit fast zwei Monaten wohnte Camille in einem kleinen WG-Zimmer, in dem sie nur zur Zwischenmiete wohnte.",
+    "en": "For almost two months Camille had been living in a small shared-flat room that she only sublet."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Jetzt suchte sie eine eigene Wohnung. Aber in Köln war das nicht einfach.",
+    "en": "Now she was looking for her own flat. But in Cologne that wasn't easy."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Auf die meisten Anfragen, die sie schickte, bekam sie gar keine Antwort.",
+    "en": "To most of the enquiries she sent, she got no answer at all."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Doch dann kam eine Einladung zu einer Besichtigung: zwei Zimmer, Altbau, Balkon, 850 Euro warm.",
+    "en": "But then an invitation to a viewing came: two rooms, old building, balcony, 850 euros including heating."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Als sie am Samstag ankam, standen schon etwa vierzig Leute im Treppenhaus.",
+    "en": "When she arrived on Saturday, about forty people were already standing in the staircase."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Neben ihr wartete eine ältere Frau mit einer schweren Einkaufstasche.",
+    "en": "Next to her an older woman with a heavy shopping bag was waiting."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Puh, diese Treppen! Und einen Aufzug gibt es hier natürlich nicht.",
+    "en": "Phew, these stairs! And of course there's no lift here."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Soll ich Ihnen die Tasche tragen? Wir müssen ja sowieso noch warten.",
+    "en": "Shall I carry your bag for you? We have to wait anyway."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Das ist sehr nett von Ihnen. Suchen Sie auch eine Wohnung?",
+    "en": "That's very kind of you. Are you looking for a flat too?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ja, ich bin vor zwei Monaten aus Frankreich gekommen. Ich habe alle Unterlagen dabei: Schufa, Gehaltsnachweise, Personalausweis.",
+    "en": "Yes, I came from France two months ago. I've got all my documents with me: credit report, payslips, ID card."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Sie sind aber gut vorbereitet! Und was gefällt Ihnen an der Wohnung?",
+    "en": "You're well prepared! And what do you like about the flat?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Vor allem der Balkon, der nach Süden geht. Und in der Anzeige stand, dass die Küche letztes Jahr renoviert wurde.",
+    "en": "Above all the balcony, which faces south. And the ad said that the kitchen was renovated last year."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Endlich wurde die Tür geöffnet. Immer zehn Leute durften gleichzeitig hinein.",
+    "en": "At last the door was opened. Ten people at a time were allowed in."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Wohnung war hell und ruhig. Die Böden waren aus Holz, und auch die Fenster waren neu.",
+    "en": "The flat was bright and quiet. The floors were wooden, and the windows were new too."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille füllte das Formular aus, das auf dem Küchentisch lag, und gab ihre Unterlagen ab.",
+    "en": "Camille filled in the form that was lying on the kitchen table and handed in her documents."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Als sie wieder ins Treppenhaus kam, war die ältere Frau verschwunden. Camille dachte nicht mehr an sie.",
+    "en": "When she came back into the staircase, the older woman had disappeared. Camille didn't think about her any more."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Zwei Tage später klingelte ihr Handy. Es war eine unbekannte Nummer.",
+    "en": "Two days later her phone rang. It was an unknown number."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Guten Tag, hier ist Hildegard Schmitz. Wir haben uns am Samstag im Treppenhaus kennengelernt.",
+    "en": "Hello, this is Hildegard Schmitz. We met in the staircase on Saturday."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ach, die Dame mit der Einkaufstasche! Haben Sie die Wohnung bekommen?",
+    "en": "Oh, the lady with the shopping bag! Did you get the flat?"
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Nein, nein. Mir gehört das Haus! Bei Besichtigungen stehe ich immer im Treppenhaus. So lerne ich die Leute kennen, wie sie wirklich sind.",
+    "en": "No, no. The house belongs to me! At viewings I always stand in the staircase. That way I get to know people as they really are."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Sie waren die Einzige, die mir geholfen hat. Wenn Sie wollen, gehört die Wohnung Ihnen.",
+    "en": "You were the only one who helped me. If you want, the flat is yours."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille konnte es kaum glauben. Am ersten Mai wurde der Mietvertrag unterschrieben.",
+    "en": "Camille could hardly believe it. The tenancy agreement was signed on the first of May."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Und zum Einzug brachte Frau Schmitz ihr einen Kuchen mit, in derselben Einkaufstasche.",
+    "en": "And when she moved in, Frau Schmitz brought her a cake, in the same shopping bag."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum suchte Camille eine Wohnung?",
+    "options": [
+     "Ihr Zimmer war zu teuer.",
+     "Sie wohnte in ihrem Zimmer nur zur Zwischenmiete.",
+     "Sie wollte mit einem Freund zusammenziehen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was gefiel Camille an der Wohnung besonders?",
+    "options": [
+     "Der Balkon nach Süden",
+     "Der Aufzug",
+     "Der Garten hinter dem Haus"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was machte Camille im Treppenhaus?",
+    "options": [
+     "Sie telefonierte mit ihrer Mutter.",
+     "Sie füllte das Formular aus.",
+     "Sie trug die Tasche einer älteren Frau."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Warum steht Frau Schmitz bei Besichtigungen im Treppenhaus?",
+    "options": [
+     "Sie will sehen, wie die Leute wirklich sind.",
+     "Sie wohnt im ersten Stock.",
+     "Sie wartet auf ihre Tochter."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Warum bekam Camille die Wohnung?",
+    "options": [
+     "Sie hatte das meiste Geld.",
+     "Sie hatte Frau Schmitz geholfen.",
+     "Sie war als Erste da."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Im Treppenhaus warteten schon etwa vierzig Leute auf die Besichtigung.",
+  "Die Küche, die letztes Jahr renoviert wurde, ist sehr schön.",
+  "Am ersten Mai wurde endlich der Mietvertrag unterschrieben."
+ ],
+ "speaking": [
+  {
+   "de": "Soll ich Ihnen die Tasche tragen?",
+   "en": "Shall I carry your bag for you?"
+  },
+  {
+   "de": "Ich habe alle Unterlagen dabei.",
+   "en": "I've got all my documents with me."
+  },
+  {
+   "de": "Vor allem der Balkon, der nach Süden geht.",
+   "en": "Above all the balcony, which faces south."
+  },
+  {
+   "de": "Wir haben uns am Samstag im Treppenhaus kennengelernt.",
+   "en": "We met in the staircase on Saturday."
+  },
+  {
+   "de": "Wenn Sie wollen, gehört die Wohnung Ihnen.",
+   "en": "If you want, the flat is yours."
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Write an 80–100-word email to Frau Schmitz: thank her for the flat, say what you like about it and ask one practical question about moving in.",
+  "model": "Liebe Frau Schmitz,\n\nvielen herzlichen Dank für Ihren Anruf! Ich freue mich sehr, dass ich die Wohnung bekommen habe. Am besten gefällt mir der Balkon, der nach Süden geht, aber auch die Küche, die letztes Jahr renoviert wurde, finde ich toll. Ich habe noch eine Frage zum Einzug: Am ersten Mai ist ein Feiertag. Darf ich trotzdem schon morgens kommen, oder ist das für die Nachbarn zu laut? Meine Möbel werden von zwei Freunden gebracht. Ich freue mich, Sie bald wiederzusehen!\n\nViele Grüße\nCamille Durand"
+ }
+}

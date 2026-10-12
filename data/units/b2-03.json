@@ -1,0 +1,492 @@
+{
+ "id": "b2-03",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Participles as adjectives",
+ "situation": "Formal texts and descriptions",
+ "canDo": "You can understand and use participles before nouns (die steigenden Preise, das gekaufte Auto) and read longer extended attributes in letters and ads.",
+ "explanation": "Letters, ads and reports pack a lot of information **before** the noun. The key is the participle used as an adjective:\n\n- **Partizip I** = infinitive + **-d**: something is happening, active: *der schlafen**d**e Hund* (the dog that is sleeping), *steigende Preise*, *die kommende Woche*, *ein überraschendes Angebot*.\n- **Partizip II**: something was done to it, or is finished: *das gekaufte Auto* (the car that was bought), *ein gebrauchtes Fahrrad*, *der angekommene Zug* (the train that has arrived).\n\nBoth take normal adjective endings: *mit steigend**en** Preisen*, *ein gebraucht**es** Rad*.\n\n**Extended attributes.** Anything that belongs to the participle goes between the article and the participle:\n\n| relative clause | extended attribute |\n|---|---|\n| die Mieten, die seit Jahren steigen | die **seit Jahren steigenden** Mieten |\n| das Sofa, das Sie bestellt haben | das **von Ihnen bestellte** Sofa |\n| der Zug, der aus Köln kommt | der **aus Köln kommende** Zug |\n\n**How to read them:** when an article is followed by something that isn't an adjective or noun (*von, seit, im, gestern…*), jump ahead to the noun, then read the middle part: *die [im Mai angekündigten] Bauarbeiten* = the building work that was announced in May.\n\nIn conversation a relative clause sounds more natural; extended attributes are mainly for written German, so first learn to read them.\n\nCommon mistakes:\n- Mixing up I and II: *die steigenden Preise* (are rising) vs *die gestiegenen Preise* (have risen); *ein überraschendes Angebot* (it surprises) vs *ein überraschter Kunde* (he is surprised).\n- Forgetting the ending: not ~~das gekauft Auto~~, but *das gekaufte Auto*.\n- Putting the extra words after the participle: not ~~die gekaufte gestern Jacke~~, but *die gestern gekaufte Jacke*.",
+ "french": "Partizip I works like the participe présent (l'eau bouillante = das kochende Wasser, une offre surprenante = ein überraschendes Angebot) and Partizip II like the participe passé (la voiture achetée = das gekaufte Auto), but German puts them before the noun, with endings.",
+ "examples": [
+  {
+   "de": "Weck den schlafenden Hund nicht!",
+   "en": "Don't wake the sleeping dog!"
+  },
+  {
+   "de": "Wir haben ein gebrauchtes Auto gekauft.",
+   "en": "We bought a used car."
+  },
+  {
+   "de": "Wegen der steigenden Preise kaufen viele Leute weniger ein.",
+   "en": "Because of rising prices, many people are buying less."
+  },
+  {
+   "de": "Die gestohlene Tasche wurde im Park gefunden.",
+   "en": "The stolen bag was found in the park."
+  },
+  {
+   "de": "Bitte schicken Sie das ausgefüllte Formular bis Freitag zurück.",
+   "en": "Please send back the completed form by Friday."
+  },
+  {
+   "de": "Die seit Jahren steigenden Mieten sind ein großes Problem.",
+   "en": "Rents, which have been rising for years, are a big problem."
+  },
+  {
+   "de": "Der aus München kommende Zug hat 20 Minuten Verspätung.",
+   "en": "The train from Munich is 20 minutes late."
+  },
+  {
+   "de": "Das von Ihnen bestellte Sofa wird am Montag geliefert.",
+   "en": "The sofa you ordered will be delivered on Monday."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-03-01",
+   "type": "cloze",
+   "de": "Weck den ___ Hund nicht!",
+   "base": "schlafen (Partizip I)",
+   "answers": [
+    "schlafenden"
+   ],
+   "en": "Don't wake the sleeping dog!"
+  },
+  {
+   "id": "b2-03-02",
+   "type": "choice",
+   "de": "Wir haben ein ___ Fahrrad gekauft.",
+   "options": [
+    "gebrauchendes",
+    "gebrauchtes",
+    "gebraucht"
+   ],
+   "answer": 1,
+   "why": "Someone used the bike before, so you need Partizip II, and after ein + neuter the ending is -es.",
+   "en": "We bought a used bike."
+  },
+  {
+   "id": "b2-03-03",
+   "type": "cloze",
+   "de": "Bitte schicken Sie das ___ Formular zurück.",
+   "base": "ausfüllen (Partizip II)",
+   "answers": [
+    "ausgefüllte"
+   ],
+   "en": "Please send back the completed form."
+  },
+  {
+   "id": "b2-03-04",
+   "type": "order",
+   "tiles": [
+    "Wegen der",
+    "steigenden",
+    "Preise",
+    "sparen",
+    "wir",
+    "mehr"
+   ],
+   "answers": [
+    "Wegen der steigenden Preise sparen wir mehr.",
+    "Wir sparen wegen der steigenden Preise mehr.",
+    "Wir sparen mehr wegen der steigenden Preise."
+   ],
+   "en": "Because of rising prices we're saving more."
+  },
+  {
+   "id": "b2-03-05",
+   "type": "choice",
+   "de": "In der ___ Woche habe ich Urlaub.",
+   "options": [
+    "kommende",
+    "kommenden",
+    "gekommenen"
+   ],
+   "answer": 1,
+   "why": "kommende Woche (next week) uses Partizip I, and after in der the ending is -en.",
+   "en": "I'm on holiday next week."
+  },
+  {
+   "id": "b2-03-06",
+   "type": "cloze",
+   "de": "Die ___ Tasche wurde im Park gefunden.",
+   "base": "stehlen (Partizip II)",
+   "answers": [
+    "gestohlene"
+   ],
+   "en": "The stolen bag was found in the park."
+  },
+  {
+   "id": "b2-03-07",
+   "type": "choice",
+   "de": "die Kinder, die spielen = die ___ Kinder",
+   "options": [
+    "gespielten",
+    "spielende",
+    "spielenden"
+   ],
+   "answer": 2,
+   "why": "The children are doing something right now, so Partizip I, and after die + plural the ending is -en.",
+   "en": "the children who are playing = the playing children"
+  },
+  {
+   "id": "b2-03-08",
+   "type": "cloze",
+   "de": "Wir suchen eine ___ Wohnung in der Nähe vom Zentrum.",
+   "base": "möblieren (Partizip II)",
+   "answers": [
+    "möblierte"
+   ],
+   "en": "We're looking for a furnished flat near the centre."
+  },
+  {
+   "id": "b2-03-09",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "von Ihnen",
+    "bestellte",
+    "Sofa",
+    "wird",
+    "am Montag",
+    "geliefert"
+   ],
+   "answers": [
+    "Das von Ihnen bestellte Sofa wird am Montag geliefert.",
+    "Am Montag wird das von Ihnen bestellte Sofa geliefert."
+   ],
+   "en": "The sofa you ordered will be delivered on Monday."
+  },
+  {
+   "id": "b2-03-10",
+   "type": "cloze",
+   "de": "Das ___ Jahr war für unsere Firma sehr erfolgreich.",
+   "base": "vergehen (Partizip II)",
+   "answers": [
+    "vergangene"
+   ],
+   "en": "The past year was very successful for our company."
+  },
+  {
+   "id": "b2-03-11",
+   "type": "choice",
+   "de": "Die Mieten sind stark gestiegen. = die stark ___ Mieten",
+   "options": [
+    "gestiegenen",
+    "steigenden",
+    "gestiegene"
+   ],
+   "answer": 0,
+   "why": "The rise is finished, so Partizip II, and after die + plural the ending is -en.",
+   "en": "Rents have risen sharply. = the sharply risen rents"
+  },
+  {
+   "id": "b2-03-12",
+   "type": "cloze",
+   "de": "Der aus München ___ Zug hat Verspätung.",
+   "base": "kommen (Partizip I)",
+   "answers": [
+    "kommende"
+   ],
+   "en": "The train from Munich is late."
+  },
+  {
+   "id": "b2-03-13",
+   "type": "order",
+   "tiles": [
+    "Die",
+    "seit Jahren",
+    "steigenden",
+    "Mieten",
+    "sind",
+    "ein großes Problem"
+   ],
+   "answers": [
+    "Die seit Jahren steigenden Mieten sind ein großes Problem.",
+    "Ein großes Problem sind die seit Jahren steigenden Mieten."
+   ],
+   "en": "Rents that have been rising for years are a big problem."
+  },
+  {
+   "id": "b2-03-14",
+   "type": "choice",
+   "de": "Das ist ___.",
+   "options": [
+    "die gekaufte gestern Jacke",
+    "die gestern gekaufte Jacke",
+    "die Jacke gestern gekaufte"
+   ],
+   "answer": 1,
+   "why": "Everything that belongs to the participle goes between the article and the participle.",
+   "en": "That's the jacket I bought yesterday."
+  },
+  {
+   "id": "b2-03-15",
+   "type": "cloze",
+   "de": "Wegen der ___ Bauarbeiten ist die Straße gesperrt.",
+   "base": "laufen (Partizip I)",
+   "answers": [
+    "laufenden"
+   ],
+   "en": "Because of the ongoing building work, the street is closed."
+  },
+  {
+   "id": "b2-03-16",
+   "type": "choice",
+   "de": "Die ___ Gäste wurden mit einem Glas Sekt begrüßt.",
+   "options": [
+    "angekommene",
+    "angekommenen",
+    "ankommende"
+   ],
+   "answer": 1,
+   "why": "After die + plural the ending is -en; angekommen describes guests who have arrived.",
+   "en": "The guests who had arrived were welcomed with a glass of sparkling wine."
+  },
+  {
+   "id": "b2-03-17",
+   "type": "cloze",
+   "de": "Bitte bringen Sie eine ___ Kopie Ihres Ausweises mit.",
+   "base": "unterschreiben (Partizip II)",
+   "answers": [
+    "unterschriebene"
+   ],
+   "en": "Please bring a signed copy of your ID."
+  },
+  {
+   "id": "b2-03-18",
+   "type": "order",
+   "tiles": [
+    "Der",
+    "im Keller",
+    "gefundene",
+    "Schlüssel",
+    "gehört",
+    "Frau Becker"
+   ],
+   "answers": [
+    "Der im Keller gefundene Schlüssel gehört Frau Becker."
+   ],
+   "en": "The key found in the cellar belongs to Ms Becker."
+  },
+  {
+   "id": "b2-03-19",
+   "type": "choice",
+   "de": "Wir haben ein ___ Angebot bekommen.",
+   "options": [
+    "überraschtes",
+    "überraschendes",
+    "überraschend"
+   ],
+   "answer": 1,
+   "why": "The offer surprises us, so Partizip I with the ending -es; überrascht describes a person who is surprised.",
+   "en": "We got a surprising offer."
+  },
+  {
+   "id": "b2-03-20",
+   "type": "cloze",
+   "de": "Die gestern ___ Pakete sind noch nicht ausgepackt.",
+   "base": "liefern (Partizip II)",
+   "answers": [
+    "gelieferten"
+   ],
+   "en": "The parcels delivered yesterday haven't been unpacked yet."
+  },
+  {
+   "id": "b2-03-21",
+   "type": "order",
+   "tiles": [
+    "Die",
+    "von uns",
+    "angebotenen",
+    "Kurse",
+    "sind",
+    "kostenlos"
+   ],
+   "answers": [
+    "Die von uns angebotenen Kurse sind kostenlos."
+   ],
+   "en": "The courses we offer are free."
+  },
+  {
+   "id": "b2-03-22",
+   "type": "choice",
+   "de": "Er wohnt in einem ___ Haus.",
+   "options": [
+    "frisch renovierte",
+    "renovierten frisch",
+    "frisch renovierten"
+   ],
+   "answer": 2,
+   "why": "The adverb goes before the participle, and after in einem the ending is -en.",
+   "en": "He lives in a freshly renovated house."
+  },
+  {
+   "id": "b2-03-23",
+   "type": "cloze",
+   "de": "Die im letzten Jahr stark ___ Energiepreise sind wieder gesunken.",
+   "base": "steigen (Partizip II)",
+   "answers": [
+    "gestiegenen"
+   ],
+   "en": "Energy prices, which rose sharply last year, have gone down again."
+  },
+  {
+   "id": "b2-03-24",
+   "type": "order",
+   "tiles": [
+    "Der",
+    "seit drei Tagen",
+    "vermisste",
+    "Hund",
+    "ist",
+    "wieder",
+    "zu Hause"
+   ],
+   "answers": [
+    "Der seit drei Tagen vermisste Hund ist wieder zu Hause."
+   ],
+   "en": "The dog that had been missing for three days is back home."
+  }
+ ],
+ "listening": {
+  "title": "Ein Brief von der Hausverwaltung",
+  "intro": "Paul has received a formal letter from his property management and asks his neighbour Mia to help him understand it.",
+  "lines": [
+   {
+    "speaker": "Paul",
+    "de": "Mia, kannst du mir mal helfen? Ich verstehe diesen Brief von der Hausverwaltung nicht.",
+    "en": "Mia, can you help me? I don't understand this letter from the property management."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Zeig mal. „Die im Mai angekündigten Bauarbeiten beginnen am 3. Juni.“",
+    "en": "Let me see. \"The building work announced in May will begin on 3 June.\""
+   },
+   {
+    "speaker": "Paul",
+    "de": "Und was heißt „die im Mai angekündigten Bauarbeiten“?",
+    "en": "And what does \"the building work announced in May\" mean?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Das sind die Bauarbeiten, die sie im Mai angekündigt haben. Weißt du noch? Die neuen Fenster.",
+    "en": "That's the building work they announced in May. Remember? The new windows."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ach so, die Fenster. Und weiter?",
+    "en": "Oh right, the windows. And what else?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "„Wir bitten alle Mieter, die im Hof abgestellten Fahrräder bis Ende Mai in den Keller zu bringen.“",
+    "en": "\"We ask all tenants to move the bikes parked in the courtyard to the cellar by the end of May.\""
+   },
+   {
+    "speaker": "Paul",
+    "de": "Also die Fahrräder, die im Hof stehen, müssen weg. Mein Rad steht da auch.",
+    "en": "So the bikes that are in the courtyard have to go. My bike is there too."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Genau. Und hier: „Die von den Arbeiten betroffenen Wohnungen müssen am Montag zugänglich sein.“",
+    "en": "Exactly. And here: \"The flats affected by the work must be accessible on Monday.\""
+   },
+   {
+    "speaker": "Paul",
+    "de": "Betroffen? Welche Wohnungen sind das?",
+    "en": "Affected? Which flats are those?"
+   },
+   {
+    "speaker": "Mia",
+    "de": "Hier steht eine Liste. Deine Wohnung ist dabei, meine nicht. Du musst also am Montag jemanden reinlassen.",
+    "en": "There's a list here. Your flat is on it, mine isn't. So on Monday you have to let someone in."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Am Montag arbeite ich. Dann gebe ich den Schlüssel einfach beim Hausmeister ab.",
+    "en": "I'm working on Monday. Then I'll just leave the key with the caretaker."
+   },
+   {
+    "speaker": "Mia",
+    "de": "Gute Idee. Und am Ende steht: „Für die entstehenden Unannehmlichkeiten bitten wir um Verständnis.“",
+    "en": "Good idea. And at the end it says: \"We ask for your understanding for any inconvenience caused.\""
+   },
+   {
+    "speaker": "Paul",
+    "de": "Das verstehe ich sogar: Sie entschuldigen sich schon mal für den Lärm!",
+    "en": "Even I understand that: they're apologising in advance for the noise!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What building work is planned?",
+    "options": [
+     "New windows.",
+     "A new heating system.",
+     "Painting the stairwell."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do tenants have to do with the bikes in the courtyard?",
+    "options": [
+     "Lock them to the fence.",
+     "Take them to the cellar by the end of May.",
+     "Remove them by 3 June."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why does Paul have to do something on Monday?",
+    "options": [
+     "He has to move his car.",
+     "He has to pay for the work.",
+     "His flat is one of the affected flats."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will Paul do on Monday?",
+    "options": [
+     "Stay at home.",
+     "Leave his key with the caretaker.",
+     "Ask Mia to let the workers in."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Bitte schicken Sie das ausgefüllte Formular bis Freitag zurück.",
+  "Die seit Jahren steigenden Mieten sind ein großes Problem.",
+  "Der aus München kommende Zug hat zwanzig Minuten Verspätung."
+ ],
+ "speaking": [
+  {
+   "de": "Die im Mai angekündigten Bauarbeiten beginnen am 3. Juni.",
+   "en": "The building work announced in May begins on 3 June."
+  },
+  {
+   "de": "Das sind die Bauarbeiten, die sie im Mai angekündigt haben.",
+   "en": "That's the building work they announced in May."
+  },
+  {
+   "de": "Die im Hof abgestellten Fahrräder müssen in den Keller.",
+   "en": "The bikes parked in the courtyard have to go to the cellar."
+  },
+  {
+   "de": "Die von den Arbeiten betroffenen Wohnungen müssen am Montag zugänglich sein.",
+   "en": "The flats affected by the work must be accessible on Monday."
+  },
+  {
+   "de": "Für die entstehenden Unannehmlichkeiten bitten wir um Verständnis.",
+   "en": "We ask for your understanding for any inconvenience caused."
+  }
+ ],
+ "writing": {
+  "task": "You're moving abroad and want to sell some furniture. Write an online ad of about 100 words describing the items and their condition, with prices and pick-up details. Use participles before nouns (gut erhaltene Möbel, eine kaum benutzte Waschmaschine).",
+  "model": "Möbel zu verkaufen – Umzug ins Ausland\n\nWegen meines Umzugs nach Frankreich verkaufe ich mehrere gut erhaltene Möbel. Das graue Sofa ist erst zwei Jahre alt und hat keine Flecken (150 Euro). Den dazu passenden Sessel gibt es für 50 Euro extra. Außerdem biete ich eine kaum benutzte Waschmaschine (200 Euro) und einen ausziehbaren Esstisch für bis zu acht Personen an (80 Euro). Alle genannten Möbel stehen in einer Nichtraucherwohnung. Die Preise sind verhandelbar. Die gekauften Sachen müssen bis zum 30. September abgeholt werden. Bei Interesse schreiben Sie mir bitte eine Nachricht mit Ihrer Telefonnummer.\n\nClaire, Leipzig"
+ }
+}

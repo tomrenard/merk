@@ -1,0 +1,508 @@
+{
+ "id": "a2-t10",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "der Freund",
+  "die Freundin",
+  "der Partner",
+  "die Partnerin",
+  "das Paar",
+  "kennenlernen",
+  "(sich) treffen",
+  "verabredet sein",
+  "ausgehen",
+  "sich verlieben",
+  "lieben",
+  "heiraten",
+  "die Hochzeit",
+  "verheiratet",
+  "ledig",
+  "zusammen",
+  "sich unterhalten",
+  "sich streiten",
+  "sich ärgern",
+  "sich fühlen",
+  "glücklich",
+  "traurig",
+  "froh",
+  "sauer",
+  "allein",
+  "weinen",
+  "lachen",
+  "die Beziehung",
+  "(sich) trennen",
+  "vermissen"
+ ],
+ "title": "Relationships and feelings",
+ "situation": "Talking about friends and partners",
+ "canDo": "You can talk about friends and partners, say how you met, and describe feelings like being happy, sad or annoyed.",
+ "explanation": "Talking about friends and partners, you need words for people, for what happens in a relationship, and for feelings.\n\n| German | English |\n|---|---|\n| der Freund, -e / die Freundin, -nen | friend; boyfriend / girlfriend |\n| der Partner, - / die Partnerin, -nen | partner |\n| das Paar, -e | couple |\n| die Beziehung, -en | relationship |\n| die Hochzeit, -en | wedding |\n| kennenlernen | to meet (for the first time) |\n| sich verlieben (in + acc.) | to fall in love (with) |\n| sich streiten / sich trennen | to argue / to split up |\n| verheiratet / ledig | married / single |\n\n| feeling | English |\n|---|---|\n| glücklich / froh | happy / glad |\n| traurig | sad |\n| sauer (auf + acc.) | annoyed, cross (with) |\n| allein | alone, lonely |\n\nTips:\n- **mein Freund / meine Freundin** usually means *my boyfriend / girlfriend*. For a friend, say **ein Freund von mir** or **eine gute Freundin**.\n- **kennenlernen** is the first meeting; **treffen** is meeting someone you already know: *Ich habe Tom 2019 kennengelernt. Heute treffe ich ihn im Café.*\n- **Ich vermisse dich.** = *Tu me manques.* The person who misses is the subject.\n- Say how you feel with **sich fühlen**: *Ich fühle mich allein.*\n- **sauer** (literally *sour*) is the everyday word for angry: *Sie ist sauer auf mich.*",
+ "french": "Watch the direction: « tu me manques » is Ich vermisse dich (the one who misses is the subject), and « mon copain » is mein Freund, while « un ami » is ein Freund von mir.",
+ "examples": [
+  {
+   "de": "Ein Freund von mir heißt Paul.",
+   "en": "A friend of mine is called Paul."
+  },
+  {
+   "de": "Wir haben uns im Urlaub kennengelernt.",
+   "en": "We met on holiday."
+  },
+  {
+   "de": "Er hat sich in seine Kollegin verliebt.",
+   "en": "He has fallen in love with his colleague."
+  },
+  {
+   "de": "Sie sind seit zehn Jahren verheiratet.",
+   "en": "They've been married for ten years."
+  },
+  {
+   "de": "Am Freitag bin ich mit Lena verabredet.",
+   "en": "I'm meeting Lena on Friday."
+  },
+  {
+   "de": "Meine Eltern streiten sich selten.",
+   "en": "My parents rarely argue."
+  },
+  {
+   "de": "Ich vermisse meine Freunde in Frankreich.",
+   "en": "I miss my friends in France."
+  },
+  {
+   "de": "Ich fühle mich heute ein bisschen traurig.",
+   "en": "I feel a bit sad today."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t10-01",
+   "type": "cloze",
+   "de": "Das ist Paul, ___ von mir.",
+   "base": "a friend",
+   "answers": [
+    "ein Freund"
+   ],
+   "en": "This is Paul, a friend of mine."
+  },
+  {
+   "id": "a2-t10-02",
+   "type": "choice",
+   "de": "Ich habe meine Frau im Urlaub in Spanien ___. Vorher habe ich sie nicht gekannt.",
+   "options": [
+    "kennengelernt",
+    "getroffen",
+    "gewusst"
+   ],
+   "answer": 0,
+   "why": "The very first meeting is kennenlernen; treffen is for people you already know.",
+   "en": "I met my wife on holiday in Spain. I didn't know her before."
+  },
+  {
+   "id": "a2-t10-03",
+   "type": "cloze",
+   "de": "Sind Sie ___? – Nein, ich bin ledig.",
+   "base": "married",
+   "answers": [
+    "verheiratet"
+   ],
+   "en": "Are you married? – No, I'm single."
+  },
+  {
+   "id": "a2-t10-04",
+   "type": "choice",
+   "de": "Er hat sich ___ seine Kollegin verliebt.",
+   "options": [
+    "an",
+    "in",
+    "mit"
+   ],
+   "answer": 1,
+   "why": "The verb is sich verlieben in + accusative.",
+   "en": "He has fallen in love with his colleague."
+  },
+  {
+   "id": "a2-t10-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "dich",
+    "vermisse",
+    "sehr"
+   ],
+   "answers": [
+    "Ich vermisse dich sehr.",
+    "Dich vermisse ich sehr."
+   ],
+   "en": "I miss you a lot."
+  },
+  {
+   "id": "a2-t10-06",
+   "type": "cloze",
+   "de": "Lisa und Tom sind seit drei Jahren ein ___.",
+   "base": "couple",
+   "answers": [
+    "Paar"
+   ],
+   "en": "Lisa and Tom have been a couple for three years."
+  },
+  {
+   "id": "a2-t10-07",
+   "type": "choice",
+   "de": "Warum bist du so ___? – Mein Freund hat unsere Verabredung vergessen.",
+   "options": [
+    "froh",
+    "ledig",
+    "sauer"
+   ],
+   "answer": 2,
+   "why": "When someone forgets your date, you are annoyed: sauer.",
+   "en": "Why are you so cross? – My boyfriend forgot our date."
+  },
+  {
+   "id": "a2-t10-08",
+   "type": "cloze",
+   "de": "Nächsten Sommer wollen wir ___.",
+   "base": "to get married",
+   "answers": [
+    "heiraten"
+   ],
+   "en": "We want to get married next summer."
+  },
+  {
+   "id": "a2-t10-09",
+   "type": "choice",
+   "de": "Ich ___ mich heute nicht gut. Ich bleibe zu Hause.",
+   "options": [
+    "bin",
+    "fühle",
+    "finde"
+   ],
+   "answer": 1,
+   "why": "How you feel is sich fühlen; *ich bin mich* is wrong.",
+   "en": "I don't feel well today. I'm staying at home."
+  },
+  {
+   "id": "a2-t10-10",
+   "type": "cloze",
+   "de": "Wir haben uns gestern lange ___.",
+   "base": "to talk, to chat",
+   "answers": [
+    "unterhalten"
+   ],
+   "en": "We talked for a long time yesterday."
+  },
+  {
+   "id": "a2-t10-11",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "sich",
+    "oft",
+    "streiten"
+   ],
+   "answers": [
+    "Sie streiten sich oft.",
+    "Oft streiten sie sich."
+   ],
+   "en": "They often argue."
+  },
+  {
+   "id": "a2-t10-12",
+   "type": "choice",
+   "de": "Nach fünf Jahren haben sie sich ___. Jetzt wohnt Anna allein.",
+   "options": [
+    "geheiratet",
+    "kennengelernt",
+    "getrennt"
+   ],
+   "answer": 2,
+   "why": "Anna now lives alone, so they split up: sich trennen.",
+   "en": "After five years they split up. Now Anna lives alone."
+  },
+  {
+   "id": "a2-t10-13",
+   "type": "cloze",
+   "de": "Die ___ ist am 12. Juni. Wir feiern mit 80 Gästen.",
+   "base": "wedding",
+   "answers": [
+    "Hochzeit"
+   ],
+   "en": "The wedding is on 12 June. We're celebrating with 80 guests."
+  },
+  {
+   "id": "a2-t10-14",
+   "type": "choice",
+   "de": "Am Samstag bin ich mit Lena ___. Wir gehen ins Kino.",
+   "options": [
+    "verheiratet",
+    "verliebt",
+    "verabredet"
+   ],
+   "answer": 2,
+   "why": "A plan to meet someone is verabredet sein.",
+   "en": "On Saturday I'm meeting Lena. We're going to the cinema."
+  },
+  {
+   "id": "a2-t10-15",
+   "type": "cloze",
+   "de": "Meine Freundin wohnt jetzt in Paris. Ich fühle mich oft ___.",
+   "base": "alone, lonely",
+   "answers": [
+    "allein",
+    "alleine"
+   ],
+   "en": "My girlfriend lives in Paris now. I often feel lonely."
+  },
+  {
+   "id": "a2-t10-16",
+   "type": "order",
+   "tiles": [
+    "Wie",
+    "ihr",
+    "habt",
+    "kennengelernt",
+    "euch"
+   ],
+   "answers": [
+    "Wie habt ihr euch kennengelernt?"
+   ],
+   "en": "How did you two meet?"
+  },
+  {
+   "id": "a2-t10-17",
+   "type": "choice",
+   "de": "Das ist ___ Marc. Wir sind seit zwei Jahren zusammen.",
+   "options": [
+    "mein Freund",
+    "ein Freund von mir",
+    "mein Kollege"
+   ],
+   "answer": 0,
+   "why": "Together for two years means a couple, so mein Freund (my boyfriend).",
+   "en": "This is my boyfriend Marc. We've been together for two years."
+  },
+  {
+   "id": "a2-t10-18",
+   "type": "cloze",
+   "de": "Der Film war so traurig, ich habe ___.",
+   "base": "to cry",
+   "answers": [
+    "geweint"
+   ],
+   "en": "The film was so sad, I cried."
+  },
+  {
+   "id": "a2-t10-19",
+   "type": "choice",
+   "de": "Ich ärgere mich ___ meinen Mitbewohner. Er räumt nie auf.",
+   "options": [
+    "über",
+    "auf",
+    "an"
+   ],
+   "answer": 0,
+   "why": "The verb is sich ärgern über + accusative.",
+   "en": "I'm annoyed with my flatmate. He never tidies up."
+  },
+  {
+   "id": "a2-t10-20",
+   "type": "cloze",
+   "de": "Wir haben eine gute ___ und reden über alles.",
+   "base": "relationship",
+   "answers": [
+    "Beziehung"
+   ],
+   "en": "We have a good relationship and talk about everything."
+  },
+  {
+   "id": "a2-t10-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "mich",
+    "freue",
+    "für euch"
+   ],
+   "answers": [
+    "Ich freue mich für euch.",
+    "Für euch freue ich mich."
+   ],
+   "en": "I'm happy for you."
+  },
+  {
+   "id": "a2-t10-22",
+   "type": "choice",
+   "de": "Ich glaube, meine Freundin ist ___ auf mich. Sie antwortet nicht.",
+   "options": [
+    "traurig",
+    "sauer",
+    "froh"
+   ],
+   "answer": 1,
+   "why": "Only sauer goes with auf: sauer auf jemanden sein.",
+   "en": "I think my girlfriend is cross with me. She isn't answering."
+  },
+  {
+   "id": "a2-t10-23",
+   "type": "cloze",
+   "de": "Wollen wir am Freitag zusammen ___?",
+   "base": "to go out",
+   "answers": [
+    "ausgehen"
+   ],
+   "en": "Shall we go out together on Friday?"
+  },
+  {
+   "id": "a2-t10-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "glücklich",
+    "bin",
+    "sehr",
+    "mit dir"
+   ],
+   "answers": [
+    "Ich bin sehr glücklich mit dir.",
+    "Ich bin mit dir sehr glücklich.",
+    "Mit dir bin ich sehr glücklich."
+   ],
+   "en": "I'm very happy with you."
+  }
+ ],
+ "listening": {
+  "title": "Neuigkeiten im Café",
+  "intro": "Jana and Felix meet in a café and talk about their love lives.",
+  "lines": [
+   {
+    "speaker": "Jana",
+    "de": "Felix, du siehst so glücklich aus! Was ist los?",
+    "en": "Felix, you look so happy! What's going on?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Ich habe jemanden kennengelernt. Sie heißt Marie.",
+    "en": "I've met someone. Her name is Marie."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Wie schön! Wo habt ihr euch kennengelernt?",
+    "en": "How lovely! Where did you meet?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "In einem Tanzkurs. Nach dem Kurs haben wir uns lange unterhalten.",
+    "en": "At a dance class. After the class we talked for a long time."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Und seid ihr schon zusammen?",
+    "en": "And are you already together?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Noch nicht richtig. Aber am Samstag sind wir verabredet. Wir gehen essen.",
+    "en": "Not really yet. But we have a date on Saturday. We're going out for dinner."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ich glaube, du bist verliebt!",
+    "en": "I think you're in love!"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Vielleicht ein bisschen. Und wie geht es dir und Tobias?",
+    "en": "Maybe a little. And how are you and Tobias?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ehrlich gesagt nicht so gut. Wir streiten uns oft, und ich ärgere mich über ihn.",
+    "en": "To be honest, not so good. We argue a lot, and I get annoyed with him."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Oh, das tut mir leid. Worüber streitet ihr euch denn?",
+    "en": "Oh, I'm sorry. What do you argue about?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Er arbeitet so viel, wir haben nie Zeit zusammen. Ich fühle mich oft allein.",
+    "en": "He works so much, we never have time together. I often feel lonely."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Sprich mit ihm! Vielleicht könntet ihr am Wochenende zusammen wegfahren.",
+    "en": "Talk to him! Maybe you could go away together at the weekend."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Felix meet Marie?",
+    "options": [
+     "At work.",
+     "At a dance class.",
+     "At a party."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What are Felix and Marie doing on Saturday?",
+    "options": [
+     "Going out for dinner.",
+     "Going dancing.",
+     "Meeting her parents."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why do Jana and Tobias argue?",
+    "options": [
+     "He forgets their dates.",
+     "He wants to move away.",
+     "He works a lot and they have no time together."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Felix suggest?",
+    "options": [
+     "That Jana splits up with Tobias.",
+     "That they go away together at the weekend.",
+     "That Jana takes a dance class."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wann und wo habt ihr euch kennengelernt?",
+  "Am Samstag bin ich mit Marie verabredet.",
+  "Wir streiten uns oft über die Arbeit."
+ ],
+ "speaking": [
+  {
+   "de": "Ich habe jemanden kennengelernt.",
+   "en": "I've met someone."
+  },
+  {
+   "de": "Nach dem Kurs haben wir uns lange unterhalten.",
+   "en": "After the class we talked for a long time."
+  },
+  {
+   "de": "Am Samstag sind wir verabredet.",
+   "en": "We have a date on Saturday."
+  },
+  {
+   "de": "Ich fühle mich oft allein.",
+   "en": "I often feel lonely."
+  },
+  {
+   "de": "Oh, das tut mir leid.",
+   "en": "Oh, I'm sorry."
+  }
+ ],
+ "writing": {
+  "task": "Write 5–6 sentences to a friend about someone new in your life (a friend or a partner): how you met, what they are like, and how you feel.",
+  "model": "Liebe Sophie, stell dir vor: Ich bin verliebt! Er heißt Lukas, und wir haben uns im Mai in einem Sprachkurs kennengelernt. Nach dem Kurs haben wir uns oft lange unterhalten. Lukas ist sehr nett und lustig, und wir lachen viel zusammen. Wenn er nicht da ist, vermisse ich ihn. Ich bin gerade sehr glücklich! Viele Grüße, Claire"
+ }
+}

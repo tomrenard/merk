@@ -1,0 +1,501 @@
+{
+ "id": "a1-t08",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "das Wetter",
+  "die Sonne",
+  "der Regen",
+  "der Wind",
+  "der Schnee",
+  "die Wolke",
+  "das Gewitter",
+  "regnen",
+  "schneien",
+  "scheinen",
+  "kalt",
+  "warm",
+  "heiß",
+  "kühl",
+  "sonnig",
+  "windig",
+  "bewölkt",
+  "neblig",
+  "Grad (Celsius)",
+  "die Temperatur",
+  "der Frühling",
+  "der Sommer",
+  "der Herbst",
+  "der Winter",
+  "die Jahreszeit",
+  "der Himmel",
+  "nass",
+  "trocken",
+  "der Schirm",
+  "schön"
+ ],
+ "title": "Weather and seasons",
+ "situation": "Small talk about the weather",
+ "canDo": "I can talk about the weather and the seasons and make small talk about the weather.",
+ "explanation": "Weather is the classic small-talk topic with neighbours and colleagues: *Was für ein Wetter heute!*\n\n| German | English |\n|---|---|\n| die Sonne – sonnig | sun – sunny |\n| der Regen – regnen | rain – to rain |\n| der Schnee – schneien | snow – to snow |\n| der Wind – windig | wind – windy |\n| die Wolke, -n – bewölkt | cloud – cloudy |\n| das Gewitter, - | thunderstorm |\n| heiß, warm / kühl, kalt | hot, warm / cool, cold |\n| der Frühling, der Sommer, der Herbst, der Winter | spring, summer, autumn, winter |\n\n| Phrase | English |\n|---|---|\n| Wie ist das Wetter? | What's the weather like? |\n| Es ist sonnig / kalt / schön. | It's sunny / cold / nice. |\n| Es regnet. / Es schneit. | It's raining. / It's snowing. |\n| Die Sonne scheint. | The sun is shining. |\n| Es sind 25 Grad. | It's 25 degrees. |\n| im Sommer, im Winter | in summer, in winter |\n\nTips:\n- Weather verbs always have **es**: *Es regnet. Heute schneit es.*\n- The seasons are all **der**, and you use **im**: *im Frühling, im Herbst*.\n- Temperatures: **Es sind 20 Grad** (plural verb); *Grad* has no plural ending, and below zero it's *minus fünf Grad*.\n- I'm cold = **Mir ist kalt**, not *Ich bin kalt* (that means you're a cold person).\n- Easy small talk: *Schönes Wetter heute, oder?* *Morgen regnet es wieder.*",
+ "french": "Where French says il fait beau and il pleut, German says es ist schön and es regnet; and j'ai froid is mir ist kalt, never ich bin kalt.",
+ "examples": [
+  {
+   "de": "Wie ist das Wetter heute?",
+   "en": "What's the weather like today?"
+  },
+  {
+   "de": "Die Sonne scheint und es ist warm.",
+   "en": "The sun is shining and it's warm."
+  },
+  {
+   "de": "Es regnet schon seit Stunden.",
+   "en": "It's been raining for hours."
+  },
+  {
+   "de": "Im Winter schneit es oft in München.",
+   "en": "In winter it often snows in Munich."
+  },
+  {
+   "de": "Morgen sind es nur fünf Grad.",
+   "en": "Tomorrow it'll be only five degrees."
+  },
+  {
+   "de": "Im Herbst ist es oft windig.",
+   "en": "In autumn it's often windy."
+  },
+  {
+   "de": "Nimm einen Schirm mit!",
+   "en": "Take an umbrella with you!"
+  },
+  {
+   "de": "Der Frühling ist meine Lieblingsjahreszeit.",
+   "en": "Spring is my favourite season."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t08-01",
+   "type": "cloze",
+   "de": "Es ___. Ich brauche einen Schirm.",
+   "base": "to rain",
+   "answers": [
+    "regnet"
+   ],
+   "en": "It's raining. I need an umbrella."
+  },
+  {
+   "id": "a1-t08-02",
+   "type": "cloze",
+   "de": "Die ___ scheint.",
+   "base": "sun",
+   "answers": [
+    "Sonne"
+   ],
+   "en": "The sun is shining."
+  },
+  {
+   "id": "a1-t08-03",
+   "type": "choice",
+   "de": "Im ___ ist es kalt und es schneit.",
+   "options": [
+    "Sommer",
+    "Winter",
+    "Frühling"
+   ],
+   "answer": 1,
+   "why": "Cold and snow mean winter: der Winter.",
+   "en": "In winter it's cold and it snows."
+  },
+  {
+   "id": "a1-t08-04",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Wie",
+    "das Wetter"
+   ],
+   "answers": [
+    "Wie ist das Wetter?"
+   ],
+   "en": "What's the weather like?"
+  },
+  {
+   "id": "a1-t08-05",
+   "type": "cloze",
+   "de": "Heute ist es sehr ___: 35 Grad!",
+   "base": "hot",
+   "answers": [
+    "heiß"
+   ],
+   "en": "Today it's very hot: 35 degrees!"
+  },
+  {
+   "id": "a1-t08-06",
+   "type": "choice",
+   "de": "Es ___ heute. Alles ist weiß!",
+   "options": [
+    "regnet",
+    "schneit",
+    "scheint"
+   ],
+   "answer": 1,
+   "why": "When everything is white, it's snowing: es schneit.",
+   "en": "It's snowing today. Everything is white!"
+  },
+  {
+   "id": "a1-t08-07",
+   "type": "cloze",
+   "de": "Im ___ sind die Blätter bunt.",
+   "base": "autumn",
+   "answers": [
+    "Herbst"
+   ],
+   "en": "In autumn the leaves are colourful."
+  },
+  {
+   "id": "a1-t08-08",
+   "type": "choice",
+   "de": "Es sind nur zwei ___. Das ist kalt!",
+   "options": [
+    "Grade",
+    "Grad",
+    "Gräder"
+   ],
+   "answer": 1,
+   "why": "Grad has no plural ending: zwei Grad, zwanzig Grad.",
+   "en": "It's only two degrees. That's cold!"
+  },
+  {
+   "id": "a1-t08-09",
+   "type": "order",
+   "tiles": [
+    "schön",
+    "Heute",
+    "ist",
+    "es"
+   ],
+   "answers": [
+    "Heute ist es schön.",
+    "Es ist heute schön."
+   ],
+   "en": "It's nice today."
+  },
+  {
+   "id": "a1-t08-10",
+   "type": "cloze",
+   "de": "Viele ___ am Himmel: Es ist bewölkt.",
+   "base": "clouds",
+   "answers": [
+    "Wolken"
+   ],
+   "en": "Lots of clouds in the sky: it's cloudy."
+  },
+  {
+   "id": "a1-t08-11",
+   "type": "choice",
+   "de": "Es ist sehr ___. Mein Schirm fliegt weg!",
+   "options": [
+    "sonnig",
+    "neblig",
+    "windig"
+   ],
+   "answer": 2,
+   "why": "If the wind takes your umbrella, it's windy.",
+   "en": "It's very windy. My umbrella is flying away!"
+  },
+  {
+   "id": "a1-t08-12",
+   "type": "cloze",
+   "de": "Der ___ ist meine Lieblingsjahreszeit: Alles ist grün.",
+   "base": "spring",
+   "answers": [
+    "Frühling"
+   ],
+   "en": "Spring is my favourite season: everything is green."
+  },
+  {
+   "id": "a1-t08-13",
+   "type": "choice",
+   "de": "___ Sommer fahren wir ans Meer.",
+   "options": [
+    "Am",
+    "Um",
+    "Im"
+   ],
+   "answer": 2,
+   "why": "Seasons take im: im Sommer.",
+   "en": "In summer we go to the seaside."
+  },
+  {
+   "id": "a1-t08-14",
+   "type": "order",
+   "tiles": [
+    "regnet",
+    "es",
+    "Im April",
+    "oft"
+   ],
+   "answers": [
+    "Im April regnet es oft.",
+    "Es regnet im April oft.",
+    "Es regnet oft im April.",
+    "Oft regnet es im April."
+   ],
+   "en": "It often rains in April."
+  },
+  {
+   "id": "a1-t08-15",
+   "type": "cloze",
+   "de": "Nimm einen ___ mit. Es regnet!",
+   "base": "umbrella",
+   "answers": [
+    "Schirm",
+    "Regenschirm"
+   ],
+   "en": "Take an umbrella. It's raining!"
+  },
+  {
+   "id": "a1-t08-16",
+   "type": "choice",
+   "de": "Im Sommer ist es oft ___ und trocken.",
+   "options": [
+    "nass",
+    "heiß",
+    "neblig"
+   ],
+   "answer": 1,
+   "why": "Summer is often hot and dry; nass (wet) is the opposite of trocken.",
+   "en": "In summer it's often hot and dry."
+  },
+  {
+   "id": "a1-t08-17",
+   "type": "cloze",
+   "de": "Es ist ___: Ich sehe nichts.",
+   "base": "foggy",
+   "answers": [
+    "neblig"
+   ],
+   "en": "It's foggy: I can't see anything."
+  },
+  {
+   "id": "a1-t08-18",
+   "type": "choice",
+   "de": "Bleib zu Hause! Es kommt ein ___.",
+   "options": [
+    "Wolke",
+    "Sonne",
+    "Gewitter"
+   ],
+   "answer": 2,
+   "why": "das Gewitter = a thunderstorm, a good reason to stay at home.",
+   "en": "Stay at home! A thunderstorm is coming."
+  },
+  {
+   "id": "a1-t08-19",
+   "type": "order",
+   "tiles": [
+    "scheint",
+    "die Sonne",
+    "heute",
+    "nicht"
+   ],
+   "answers": [
+    "Heute scheint die Sonne nicht.",
+    "Die Sonne scheint heute nicht."
+   ],
+   "en": "The sun isn't shining today."
+  },
+  {
+   "id": "a1-t08-20",
+   "type": "cloze",
+   "de": "Im Winter ___ es in den Bergen.",
+   "base": "to snow",
+   "answers": [
+    "schneit"
+   ],
+   "en": "In winter it snows in the mountains."
+  },
+  {
+   "id": "a1-t08-21",
+   "type": "choice",
+   "de": "Der ___ ist blau, keine Wolke!",
+   "options": [
+    "Regen",
+    "Himmel",
+    "Schnee"
+   ],
+   "answer": 1,
+   "why": "der Himmel = the sky.",
+   "en": "The sky is blue, not a cloud!"
+  },
+  {
+   "id": "a1-t08-22",
+   "type": "cloze",
+   "de": "Die Straße ist ___. Es regnet seit Stunden.",
+   "base": "wet",
+   "answers": [
+    "nass"
+   ],
+   "en": "The street is wet. It's been raining for hours."
+  },
+  {
+   "id": "a1-t08-23",
+   "type": "order",
+   "tiles": [
+    "fahren",
+    "im Winter",
+    "Wir",
+    "Ski",
+    "gern"
+   ],
+   "answers": [
+    "Wir fahren im Winter gern Ski.",
+    "Im Winter fahren wir gern Ski.",
+    "Wir fahren gern im Winter Ski."
+   ],
+   "en": "We like skiing in winter."
+  },
+  {
+   "id": "a1-t08-24",
+   "type": "order",
+   "tiles": [
+    "Morgen",
+    "es",
+    "20 Grad",
+    "sind",
+    "nur"
+   ],
+   "answers": [
+    "Morgen sind es nur 20 Grad.",
+    "Es sind morgen nur 20 Grad."
+   ],
+   "en": "Tomorrow it'll be only 20 degrees."
+  }
+ ],
+ "listening": {
+  "title": "Was für ein Wetter!",
+  "intro": "Monika and her neighbour Paul meet at the front door of their building in Berlin one morning in May.",
+  "lines": [
+   {
+    "speaker": "Monika",
+    "de": "Guten Morgen! Was für ein Wetter heute!",
+    "en": "Good morning! What weather today!"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, es regnet schon seit sechs Uhr. Und es ist so kalt!",
+    "en": "Yes, it's been raining since six o'clock. And it's so cold!"
+   },
+   {
+    "speaker": "Monika",
+    "de": "Nur acht Grad. Und das im Mai!",
+    "en": "Only eight degrees. And that in May!"
+   },
+   {
+    "speaker": "Paul",
+    "de": "In Nizza sind es heute 24 Grad. Meine Mutter sagt, die Sonne scheint.",
+    "en": "In Nice it's 24 degrees today. My mother says the sun is shining."
+   },
+   {
+    "speaker": "Monika",
+    "de": "Oh, schön! Ist es da im Winter auch warm?",
+    "en": "Oh, nice! Is it warm there in winter too?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, im Winter ist es mild. Es schneit fast nie.",
+    "en": "Yes, in winter it's mild. It almost never snows."
+   },
+   {
+    "speaker": "Monika",
+    "de": "Hier in Berlin schneit es im Winter oft. Ich liebe Schnee!",
+    "en": "Here in Berlin it often snows in winter. I love snow!"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ich nicht. Ich mag den Sommer. Wie ist das Wetter morgen?",
+    "en": "Not me. I like summer. What's the weather like tomorrow?"
+   },
+   {
+    "speaker": "Monika",
+    "de": "Morgen ist es sonnig, aber windig.",
+    "en": "Tomorrow it'll be sunny but windy."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Na gut. Dann nehme ich heute meinen Schirm und morgen meine Sonnenbrille!",
+    "en": "Oh well. Then today I'll take my umbrella and tomorrow my sunglasses!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What's the weather like in Berlin today?",
+    "options": [
+     "sunny and warm",
+     "rainy and cold",
+     "windy and dry"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What's the temperature in Nice today?",
+    "options": [
+     "8 degrees",
+     "18 degrees",
+     "24 degrees"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Which season does Paul like?",
+    "options": [
+     "summer",
+     "winter",
+     "spring"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What will the weather be like tomorrow?",
+    "options": [
+     "rainy",
+     "sunny but windy",
+     "snowy"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Heute regnet es und es ist kalt.",
+  "Im Winter schneit es oft.",
+  "Morgen sind es zwanzig Grad."
+ ],
+ "speaking": [
+  {
+   "de": "Was für ein Wetter heute!",
+   "en": "What weather today!"
+  },
+  {
+   "de": "Es regnet schon seit sechs Uhr.",
+   "en": "It's been raining since six o'clock."
+  },
+  {
+   "de": "Im Winter schneit es oft.",
+   "en": "In winter it often snows."
+  },
+  {
+   "de": "Wie ist das Wetter morgen?",
+   "en": "What's the weather like tomorrow?"
+  },
+  {
+   "de": "Morgen ist es sonnig, aber windig.",
+   "en": "Tomorrow it'll be sunny but windy."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message (3–4 sentences) to a friend in France about the weather where you live today and about your favourite season.",
+  "model": "Hallo Julie! Hier in Hamburg ist das Wetter heute schlecht: Es regnet und es sind nur zehn Grad. Im Sommer ist es hier oft schön, aber nicht so heiß. Ich mag den Herbst: Es ist kühl und die Bäume sind bunt. Wie ist das Wetter in Toulouse?"
+ }
+}

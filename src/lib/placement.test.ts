@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { afterProbe, type Band, bandScores, startSearch, vocabResult } from "./placement.ts";
+import {
+  afterProbe,
+  type Band,
+  bandScores,
+  startLesson,
+  startSearch,
+  vocabResult,
+} from "./placement.ts";
 
 const bands: Band[] = [
   { id: 0, level: "A1", size: 300 },
@@ -52,5 +59,17 @@ describe("grammar search", () => {
     let search = startSearch(60, "A1");
     while (!search.done) search = afterProbe(search, false);
     expect(search.lo).toBe(0);
+  });
+});
+
+describe("startLesson", () => {
+  // Grammar lessons at course positions 0, 2, 5 (topics in between); last lesson 7.
+  const grammarAt = [0, 2, 5];
+  it("starts at the first grammar lesson not passed, topics before it done", () => {
+    expect(startLesson(grammarAt, 0, 7)).toBe(0);
+    expect(startLesson(grammarAt, 2, 7)).toBe(5);
+  });
+  it("starts at the last lesson when all grammar is passed", () => {
+    expect(startLesson(grammarAt, 3, 7)).toBe(7);
   });
 });

@@ -1,13 +1,15 @@
 import { and, asc, isNull, notInArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
-import { UNITS } from "@/lib/course";
+import { COURSE, kindOf, UNITS } from "@/lib/course";
 import type { Band, Level } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";
 
 const BAND_SIZE = 320;
-const LEVELS: Level[] = ["A1", "A2", "B1"];
+export const LEVELS: Level[] = ["A1", "A2", "B1", "B2"];
+/** The grammar search runs over the grammar lessons only; topics and stories sit between them. */
+const GRAMMAR = UNITS.filter((unit) => kindOf(unit) === "grammar");
 
 /** The shared word lists cut into frequency bands of ~320 words per level (same cut every time). */
 export async function wordBands() {
@@ -57,7 +59,7 @@ export async function placementPacket() {
     });
   });
   // Three items per unit, of different kinds where possible.
-  const grammar = UNITS.map((unit) => {
+  const grammar = GRAMMAR.map((unit) => {
     const byType = (["choice", "cloze", "order"] as const).map(
       (type) => shuffled(unit.items.filter((item) => item.type === type))[0],
     );
@@ -80,7 +82,13 @@ export async function placementPacket() {
     vocab,
     grammar,
     listening,
-    units: UNITS.map((u) => ({ id: u.id, title: u.title, cefr: u.cefr, canDo: u.canDo })),
+    units: GRAMMAR.map((u) => ({ id: u.id, title: u.title, cefr: u.cefr })),
+    // Where each grammar lesson sits in the whole course, to turn the search into a start lesson.
+    grammarAt: GRAMMAR.map((u) => UNITS.indexOf(u)),
+    course: COURSE.map((part) => ({
+      id: part.id,
+      lessons: part.units.map((u) => ({ index: UNITS.indexOf(u), title: u.title })),
+    })),
   };
 }
 

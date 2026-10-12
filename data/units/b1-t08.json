@@ -1,0 +1,528 @@
+{
+ "id": "b1-t08",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Arzt",
+  "die Praxis",
+  "der Spezialist",
+  "die Überweisung",
+  "die Krankenkasse",
+  "die Versichertenkarte",
+  "die Sprechstunde",
+  "der Termin",
+  "das Krankenhaus",
+  "die Klinik",
+  "die Notaufnahme",
+  "der Notfall",
+  "der Krankenwagen",
+  "der Notruf",
+  "die Untersuchung",
+  "untersuchen",
+  "die Operation",
+  "operieren",
+  "der Patient",
+  "die Therapie",
+  "das Rezept",
+  "verschreiben",
+  "der Schmerz",
+  "das Schmerzmittel",
+  "behandeln",
+  "die Spritze",
+  "die Apotheke"
+ ],
+ "title": "The health system",
+ "situation": "Getting a specialist appointment",
+ "canDo": "You can get a referral, make an appointment with a specialist, and understand the main words for practices, hospitals and emergencies.",
+ "explanation": "In Germany you usually see your **Hausarzt** (GP) first. If you need a specialist, the GP usually gives you an **Überweisung** (referral); many specialist practices ask for one. Then you call the specialist's practice, and you often have to wait several weeks for a Termin.\n\n| German | English |\n|---|---|\n| der Hausarzt / die Hausärztin | GP, family doctor |\n| der Facharzt / die Fachärztin | specialist |\n| der Hautarzt, der Augenarzt, der Frauenarzt | dermatologist, eye doctor, gynaecologist |\n| der Orthopäde | orthopaedist (bones, joints, back) |\n| die Überweisung, -en | referral |\n| die Versichertenkarte, -n | health insurance card |\n| die Praxis, Praxen / die Sprechstunde | practice / consulting hours |\n| die Warteliste | waiting list |\n| das Krankenhaus, -häuser / die Notaufnahme | hospital / A&E |\n| das Rezept, -e | prescription |\n\nUseful phrases:\n- *Ich hätte gern einen Termin. Ich habe eine Überweisung.*\n- *Gibt es auch einen früheren Termin?*\n- *Können Sie mich auf die Warteliste setzen?*\n- *Sind Sie gesetzlich oder privat versichert?*\n\nTips:\n- Emergencies: call **112** (Notruf, Krankenwagen). At night or at weekends, when the practices are closed, call **116 117** for an on-call doctor.\n- If you wait too long for a specialist, the **116 117** service or your Krankenkasse can help you find an appointment.\n- **die Überweisung** is also a bank transfer, and **das Rezept** is also a recipe: the context tells you which.\n- Always bring your **Versichertenkarte**, or the practice can't bill your Krankenkasse.",
+ "french": "It works much like the médecin traitant and the parcours de soins: your Hausarzt writes an Überweisung to the Facharzt (le spécialiste); and das Rezept is your ordonnance.",
+ "examples": [
+  {
+   "de": "Ich brauche eine Überweisung zum Hautarzt.",
+   "en": "I need a referral to a dermatologist."
+  },
+  {
+   "de": "Der nächste freie Termin ist erst in sechs Wochen.",
+   "en": "The next free appointment isn't for six weeks."
+  },
+  {
+   "de": "Bitte bringen Sie Ihre Versichertenkarte und die Überweisung mit.",
+   "en": "Please bring your insurance card and the referral."
+  },
+  {
+   "de": "Obwohl ich starke Schmerzen habe, bekomme ich keinen früheren Termin.",
+   "en": "Although I'm in a lot of pain, I can't get an earlier appointment."
+  },
+  {
+   "de": "Bevor Sie operiert werden, machen wir noch ein paar Untersuchungen.",
+   "en": "Before you have the operation, we'll do a few more tests."
+  },
+  {
+   "de": "Seitdem ich die Tabletten nehme, geht es mir besser.",
+   "en": "Since I've been taking the tablets, I've felt better."
+  },
+  {
+   "de": "Im Notfall wählen Sie die 112.",
+   "en": "In an emergency, dial 112."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t08-01",
+   "type": "cloze",
+   "de": "Für einen Termin beim Facharzt brauche ich eine ___ von meinem Hausarzt.",
+   "base": "referral",
+   "answers": [
+    "Überweisung"
+   ],
+   "en": "For an appointment with a specialist, I need a referral from my GP."
+  },
+  {
+   "id": "b1-t08-02",
+   "type": "choice",
+   "de": "Ich habe Probleme mit der Haut. Ich gehe zum ___.",
+   "options": [
+    "Hautarzt",
+    "Augenarzt",
+    "Zahnarzt"
+   ],
+   "answer": 0,
+   "why": "A doctor for skin problems is der Hautarzt.",
+   "en": "I have problems with my skin. I'm going to the dermatologist."
+  },
+  {
+   "id": "b1-t08-03",
+   "type": "cloze",
+   "de": "Bitte vergessen Sie Ihre ___ nicht.",
+   "base": "health insurance card",
+   "answers": [
+    "Versichertenkarte",
+    "Krankenkassenkarte",
+    "Gesundheitskarte",
+    "Karte"
+   ],
+   "en": "Please don't forget your health insurance card."
+  },
+  {
+   "id": "b1-t08-04",
+   "type": "choice",
+   "de": "Ich sehe nicht mehr gut. Ich brauche einen Termin beim ___.",
+   "options": [
+    "Ohrenarzt",
+    "Augenarzt",
+    "Hausmeister"
+   ],
+   "answer": 1,
+   "why": "A doctor for the eyes is der Augenarzt.",
+   "en": "I can't see well any more. I need an appointment with an eye doctor."
+  },
+  {
+   "id": "b1-t08-05",
+   "type": "cloze",
+   "de": "Der nächste freie ___ ist erst im Mai.",
+   "base": "appointment",
+   "answers": [
+    "Termin"
+   ],
+   "en": "The next free appointment isn't until May."
+  },
+  {
+   "id": "b1-t08-06",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "brauche",
+    "eine Überweisung",
+    "zum Hautarzt"
+   ],
+   "answers": [
+    "Ich brauche eine Überweisung zum Hautarzt."
+   ],
+   "en": "I need a referral to a dermatologist."
+  },
+  {
+   "id": "b1-t08-07",
+   "type": "choice",
+   "de": "Mit starken Schmerzen in der Brust fahren Sie sofort in die ___.",
+   "options": [
+    "Apotheke",
+    "Sprechstunde",
+    "Notaufnahme"
+   ],
+   "answer": 2,
+   "why": "In an emergency you go to the hospital's A&E: die Notaufnahme.",
+   "en": "With severe chest pain, go straight to A&E."
+  },
+  {
+   "id": "b1-t08-08",
+   "type": "cloze",
+   "de": "Die Ärztin hat mir ein Medikament gegen die Schmerzen ___.",
+   "base": "prescribe",
+   "answers": [
+    "verschrieben",
+    "verordnet"
+   ],
+   "en": "The doctor prescribed me a medicine for the pain."
+  },
+  {
+   "id": "b1-t08-09",
+   "type": "choice",
+   "de": "Die ___ in der Praxis ist nur vormittags von 8 bis 12 Uhr.",
+   "options": [
+    "Sprechstunde",
+    "Stundenplan",
+    "Sprechzimmer"
+   ],
+   "answer": 0,
+   "why": "A practice's opening hours for patients are die Sprechstunde; das Sprechzimmer is the doctor's room.",
+   "en": "Consulting hours at the practice are only in the morning from 8 to 12."
+  },
+  {
+   "id": "b1-t08-10",
+   "type": "order",
+   "tiles": [
+    "Obwohl",
+    "ich",
+    "Schmerzen habe,",
+    "bekomme",
+    "ich",
+    "keinen früheren Termin"
+   ],
+   "answers": [
+    "Obwohl ich Schmerzen habe, bekomme ich keinen früheren Termin.",
+    "Ich bekomme keinen früheren Termin, obwohl ich Schmerzen habe."
+   ],
+   "en": "Although I'm in pain, I can't get an earlier appointment."
+  },
+  {
+   "id": "b1-t08-11",
+   "type": "cloze",
+   "de": "Im Krankenhaus wird sie morgen am Knie ___.",
+   "base": "operate",
+   "answers": [
+    "operiert"
+   ],
+   "en": "She's having an operation on her knee in hospital tomorrow."
+  },
+  {
+   "id": "b1-t08-12",
+   "type": "choice",
+   "de": "Mein Vater ist gestürzt und kann nicht aufstehen. Ich rufe einen ___.",
+   "options": [
+    "Krankenschein",
+    "Krankenwagen",
+    "Krankenpfleger"
+   ],
+   "answer": 1,
+   "why": "In an emergency you call an ambulance: einen Krankenwagen.",
+   "en": "My father has fallen and can't get up. I'm calling an ambulance."
+  },
+  {
+   "id": "b1-t08-13",
+   "type": "cloze",
+   "de": "Können Sie mich bitte auf die ___ setzen? Vielleicht sagt jemand ab.",
+   "base": "waiting list",
+   "answers": [
+    "Warteliste"
+   ],
+   "en": "Could you put me on the waiting list, please? Maybe someone will cancel."
+  },
+  {
+   "id": "b1-t08-14",
+   "type": "order",
+   "tiles": [
+    "Bevor",
+    "Sie",
+    "operiert werden,",
+    "machen",
+    "wir",
+    "einen Bluttest"
+   ],
+   "answers": [
+    "Bevor Sie operiert werden, machen wir einen Bluttest.",
+    "Wir machen einen Bluttest, bevor Sie operiert werden."
+   ],
+   "en": "Before you have the operation, we'll do a blood test."
+  },
+  {
+   "id": "b1-t08-15",
+   "type": "cloze",
+   "de": "Die Ärztin möchte mein Knie genau ___.",
+   "base": "examine",
+   "answers": [
+    "untersuchen",
+    "anschauen",
+    "ansehen"
+   ],
+   "en": "The doctor wants to examine my knee carefully."
+  },
+  {
+   "id": "b1-t08-16",
+   "type": "choice",
+   "de": "Mit dem ___ gehe ich in die Apotheke.",
+   "options": [
+    "Rezept",
+    "Zeugnis",
+    "Termin"
+   ],
+   "answer": 0,
+   "why": "You take the prescription (das Rezept) to the pharmacy.",
+   "en": "I take the prescription to the pharmacy."
+  },
+  {
+   "id": "b1-t08-17",
+   "type": "cloze",
+   "de": "Nach der Operation muss er noch drei Tage im ___ bleiben.",
+   "base": "hospital",
+   "answers": [
+    "Krankenhaus",
+    "Klinikum"
+   ],
+   "en": "After the operation he has to stay in hospital for three more days."
+  },
+  {
+   "id": "b1-t08-18",
+   "type": "order",
+   "tiles": [
+    "Seitdem",
+    "ich",
+    "die Tabletten",
+    "nehme,",
+    "geht",
+    "es",
+    "mir",
+    "besser"
+   ],
+   "answers": [
+    "Seitdem ich die Tabletten nehme, geht es mir besser.",
+    "Es geht mir besser, seitdem ich die Tabletten nehme.",
+    "Mir geht es besser, seitdem ich die Tabletten nehme."
+   ],
+   "en": "Since I've been taking the tablets, I've felt better."
+  },
+  {
+   "id": "b1-t08-19",
+   "type": "choice",
+   "de": "Ich warte schon eine Stunde im ___.",
+   "options": [
+    "Sprechzimmer",
+    "Wartezimmer",
+    "Schlafzimmer"
+   ],
+   "answer": 1,
+   "why": "Patients wait in das Wartezimmer; das Sprechzimmer is where the doctor sees you.",
+   "en": "I've been waiting in the waiting room for an hour."
+  },
+  {
+   "id": "b1-t08-20",
+   "type": "cloze",
+   "de": "Gegen die Schmerzen bekomme ich eine ___ in den Arm.",
+   "base": "injection",
+   "answers": [
+    "Spritze"
+   ],
+   "en": "For the pain I'm getting an injection in my arm."
+  },
+  {
+   "id": "b1-t08-21",
+   "type": "choice",
+   "de": "Der Hausarzt schickt mich zu einem ___, weil er das Problem nicht selbst behandeln kann.",
+   "options": [
+    "Fachmann",
+    "Fachgeschäft",
+    "Facharzt"
+   ],
+   "answer": 2,
+   "why": "A specialist doctor is der Facharzt; a Fachmann is an expert in general and a Fachgeschäft is a specialist shop.",
+   "en": "My GP is sending me to a specialist because he can't treat the problem himself."
+  },
+  {
+   "id": "b1-t08-22",
+   "type": "cloze",
+   "de": "Die Krankenkasse ___ die Kosten für die Behandlung.",
+   "base": "pay, cover",
+   "answers": [
+    "übernimmt",
+    "zahlt",
+    "bezahlt",
+    "trägt"
+   ],
+   "en": "The health insurance covers the cost of the treatment."
+  },
+  {
+   "id": "b1-t08-23",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "ist",
+    "der nächste freie Termin"
+   ],
+   "answers": [
+    "Wann ist der nächste freie Termin?"
+   ],
+   "en": "When is the next free appointment?"
+  },
+  {
+   "id": "b1-t08-24",
+   "type": "order",
+   "tiles": [
+    "Bis",
+    "ich",
+    "einen Termin bekomme,",
+    "dauert",
+    "es",
+    "sechs Wochen"
+   ],
+   "answers": [
+    "Bis ich einen Termin bekomme, dauert es sechs Wochen.",
+    "Es dauert sechs Wochen, bis ich einen Termin bekomme."
+   ],
+   "en": "It'll be six weeks before I get an appointment."
+  }
+ ],
+ "listening": {
+  "title": "Ein Termin beim Facharzt",
+  "intro": "Mathilde has had knee pain for weeks and calls an orthopaedic practice with her referral.",
+  "lines": [
+   {
+    "speaker": "Frau Lang",
+    "de": "Praxis Dr. Hoffmann, Orthopädie, Sie sprechen mit Frau Lang. Was kann ich für Sie tun?",
+    "en": "Dr Hoffmann's practice, orthopaedics, you're speaking to Ms Lang. What can I do for you?"
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Guten Tag, mein Name ist Mathilde Bernard. Ich hätte gern einen Termin. Ich habe seit drei Wochen starke Schmerzen im Knie.",
+    "en": "Hello, my name is Mathilde Bernard. I'd like an appointment. I've had severe knee pain for three weeks."
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Waren Sie schon bei Ihrem Hausarzt? Haben Sie eine Überweisung?",
+    "en": "Have you been to your GP yet? Do you have a referral?"
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Ja, mein Hausarzt hat mich gestern untersucht und mir eine Überweisung gegeben.",
+    "en": "Yes, my GP examined me yesterday and gave me a referral."
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Gut. Sind Sie gesetzlich oder privat versichert?",
+    "en": "Good. Do you have public or private health insurance?"
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Gesetzlich.",
+    "en": "Public."
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Einen Moment … Der nächste freie Termin ist leider erst am 14. November.",
+    "en": "One moment … Unfortunately the next free appointment isn't until 14 November."
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Das sind ja noch sieben Wochen! Obwohl ich kaum laufen kann?",
+    "en": "That's another seven weeks! Even though I can hardly walk?"
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Das tut mir leid. Ich kann Sie aber auf die Warteliste setzen. Wenn jemand absagt, rufe ich Sie an.",
+    "en": "I'm sorry. But I can put you on the waiting list. If someone cancels, I'll call you."
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Ja, bitte. Und was mache ich, bis ich einen Termin habe?",
+    "en": "Yes, please. And what do I do until I have an appointment?"
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Nehmen Sie bis dahin die Schmerzmittel von Ihrem Hausarzt. Und wenn es schlimmer wird, gehen Sie in die Notaufnahme.",
+    "en": "Until then, take the painkillers from your GP. And if it gets worse, go to A&E."
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Gut. Was muss ich zum Termin mitbringen?",
+    "en": "OK. What do I need to bring to the appointment?"
+   },
+   {
+    "speaker": "Frau Lang",
+    "de": "Ihre Versichertenkarte, die Überweisung und alte Röntgenbilder, wenn Sie welche haben.",
+    "en": "Your insurance card, the referral and old X-rays if you have any."
+   },
+   {
+    "speaker": "Mathilde",
+    "de": "Alles klar. Vielen Dank, Frau Lang!",
+    "en": "All right. Thank you very much, Ms Lang!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Mathilde's problem?",
+    "options": [
+     "Back pain",
+     "Knee pain for three weeks",
+     "A skin problem"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When is the next free appointment?",
+    "options": [
+     "Tomorrow",
+     "Next week",
+     "In about seven weeks"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What can the receptionist do for her?",
+    "options": [
+     "Put her on the waiting list",
+     "Give her an emergency appointment",
+     "Send her a prescription"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should she bring to the appointment?",
+    "options": [
+     "Only her passport",
+     "Her insurance card, the referral and any old X-rays",
+     "Her painkillers"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Für einen Termin beim Facharzt brauche ich eine Überweisung.",
+  "Bis ich einen Termin bekomme, dauert es sieben Wochen.",
+  "Bitte bringen Sie Ihre Versichertenkarte und die Überweisung mit."
+ ],
+ "speaking": [
+  {
+   "de": "Ich hätte gern einen Termin.",
+   "en": "I'd like an appointment."
+  },
+  {
+   "de": "Ich habe seit drei Wochen starke Schmerzen im Knie.",
+   "en": "I've had severe knee pain for three weeks."
+  },
+  {
+   "de": "Mein Hausarzt hat mir eine Überweisung gegeben.",
+   "en": "My GP gave me a referral."
+  },
+  {
+   "de": "Können Sie mich auf die Warteliste setzen?",
+   "en": "Could you put me on the waiting list?"
+  },
+  {
+   "de": "Was muss ich zum Termin mitbringen?",
+   "en": "What do I need to bring to the appointment?"
+  }
+ ],
+ "writing": {
+  "task": "Your GP has sent you to a dermatologist (Hautarzt), and the practice prefers requests by email. Write an 80–100-word email asking for an appointment: describe your problem, say you have a referral, and say when you're free.",
+  "model": "Betreff: Bitte um einen Termin\n\nSehr geehrte Damen und Herren,\n\nmein Hausarzt, Dr. Wolf, hat mir eine Überweisung zu Ihnen gegeben. Seit ungefähr zwei Monaten habe ich einen roten Fleck am Arm. Obwohl ich schon eine Creme benutze, wird er nicht kleiner, und manchmal juckt er stark. Deshalb hätte ich gern so bald wie möglich einen Termin bei Ihnen. Ich bin gesetzlich versichert. Montags und freitags habe ich den ganzen Tag Zeit, an den anderen Tagen ab 16 Uhr. Wenn ein Termin frei wird, können Sie mich auch kurzfristig anrufen: 0151 23456789.\n\nMit freundlichen Grüßen\nJulie Moreau"
+ }
+}

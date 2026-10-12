@@ -1,0 +1,480 @@
+{
+ "id": "b2-01",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "State passive and passive alternatives",
+ "situation": "Official notices and instructions",
+ "canDo": "You can understand and write notices that describe a state (ist geschlossen) and say what can or can't be done with man, sich lassen and -bar.",
+ "explanation": "Notices on doors, in letters and on forms often describe a **state**, not an action:\n\n| action: werden + Partizip II | state: sein + Partizip II |\n|---|---|\n| Die Tür **wird** um 22 Uhr **abgeschlossen**. | Die Tür **ist** ab 22 Uhr **abgeschlossen**. |\n| Der Antrag **wird** gerade **geprüft**. | Der Antrag **ist** schon **geprüft**. |\n\n- **werden + Partizip II** (Vorgangspassiv) = something is being done: the process.\n- **sein + Partizip II** (Zustandspassiv) = the result: it is done, it is in that state. In the past: *Die Post **war** schon **geschlossen**.*\n\nGerman often avoids the passive altogether. Three common alternatives:\n\n- **man** + active verb (er/sie/es form): *Hier **darf man** nicht parken.* = Hier darf nicht geparkt werden.\n- **sich lassen** + infinitive = can (or can't) be done: *Das Fenster **lässt sich** nicht **öffnen**.* = Das Fenster kann nicht geöffnet werden.\n- adjectives in **-bar** (verb stem + -bar) = can be done: *Das Wasser ist nicht **trinkbar**.* (can't be drunk), *erreichbar* (can be reached), *machbar* (can be done), *lesbar* (can be read).\n\nJust recognise this one: official texts also use **sein + zu + infinitive** for \"must be done\": *Der Ausweis **ist mitzubringen**.* = You must bring your ID.\n\nThe most common mistake: using **werden** when you mean the state. *Das Geschäft wird geschlossen* means someone is closing it (or it's closing for good); a closed shop **ist geschlossen**. And after *sich lassen* there is no *zu*: not ~~lässt sich nicht zu öffnen~~.",
+ "french": "French uses être + participe for both: la porte est fermée can be a state or an action, while German splits them into ist geschlossen (state) and wird geschlossen (action); -bar works like -able (lavable = waschbar).",
+ "examples": [
+  {
+   "de": "Das Büro ist heute den ganzen Tag geschlossen.",
+   "en": "The office is closed all day today."
+  },
+  {
+   "de": "Die Haustür wird jeden Abend um 22 Uhr abgeschlossen.",
+   "en": "The front door is locked every evening at 10 pm."
+  },
+  {
+   "de": "Alle Plätze sind schon reserviert.",
+   "en": "All the seats are already reserved."
+  },
+  {
+   "de": "In diesem Gebäude darf man nicht rauchen.",
+   "en": "Smoking isn't allowed in this building."
+  },
+  {
+   "de": "Das Fenster im Bad lässt sich nicht öffnen.",
+   "en": "The bathroom window can't be opened."
+  },
+  {
+   "de": "Das Leitungswasser ist hier trinkbar.",
+   "en": "The tap water here is drinkable."
+  },
+  {
+   "de": "Ihr Antrag ist leider nicht vollständig ausgefüllt.",
+   "en": "Unfortunately, your application isn't completely filled in."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-01-01",
+   "type": "cloze",
+   "de": "Die Apotheke ___ heute geschlossen.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "The pharmacy is closed today."
+  },
+  {
+   "id": "b2-01-02",
+   "type": "choice",
+   "de": "Achtung: Der Aufzug ___ gerade repariert.",
+   "options": [
+    "ist",
+    "wird",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "gerade shows an action in progress, so you need werden.",
+   "en": "Attention: the lift is being repaired right now."
+  },
+  {
+   "id": "b2-01-03",
+   "type": "cloze",
+   "de": "Keine Sorge, die Rechnung ist schon ___.",
+   "base": "bezahlen",
+   "answers": [
+    "bezahlt"
+   ],
+   "en": "Don't worry, the bill has already been paid."
+  },
+  {
+   "id": "b2-01-04",
+   "type": "order",
+   "tiles": [
+    "Der Parkplatz",
+    "ist",
+    "für Kunden",
+    "reserviert"
+   ],
+   "answers": [
+    "Der Parkplatz ist für Kunden reserviert.",
+    "Für Kunden ist der Parkplatz reserviert."
+   ],
+   "en": "The car park is reserved for customers."
+  },
+  {
+   "id": "b2-01-05",
+   "type": "choice",
+   "de": "Wir kommen nicht rein, die Tür ___ abgeschlossen.",
+   "options": [
+    "wird",
+    "hat",
+    "ist"
+   ],
+   "answer": 2,
+   "why": "You see the result, a locked door, so you use sein.",
+   "en": "We can't get in, the door is locked."
+  },
+  {
+   "id": "b2-01-06",
+   "type": "cloze",
+   "de": "Das Fenster ___ sich nicht öffnen.",
+   "base": "lassen",
+   "answers": [
+    "lässt"
+   ],
+   "en": "The window can't be opened."
+  },
+  {
+   "id": "b2-01-07",
+   "type": "choice",
+   "de": "In der Bibliothek ___ man leise sein.",
+   "options": [
+    "müssen",
+    "muss",
+    "musst"
+   ],
+   "answer": 1,
+   "why": "man always takes the er/sie/es form of the verb.",
+   "en": "You have to be quiet in the library."
+  },
+  {
+   "id": "b2-01-08",
+   "type": "cloze",
+   "de": "Das Wasser aus dem See ist nicht ___.",
+   "base": "trinken (+ -bar)",
+   "answers": [
+    "trinkbar"
+   ],
+   "en": "The water from the lake isn't drinkable."
+  },
+  {
+   "id": "b2-01-09",
+   "type": "order",
+   "tiles": [
+    "Die Heizung",
+    "lässt",
+    "sich",
+    "nicht",
+    "ausschalten"
+   ],
+   "answers": [
+    "Die Heizung lässt sich nicht ausschalten."
+   ],
+   "en": "The heating can't be switched off."
+  },
+  {
+   "id": "b2-01-10",
+   "type": "choice",
+   "de": "Ich bin morgen nur per E-Mail ___.",
+   "options": [
+    "erreicht",
+    "erreichbar",
+    "erreichen"
+   ],
+   "answer": 1,
+   "why": "erreichbar means 'can be reached'; -bar turns the verb into an adjective.",
+   "en": "Tomorrow I can only be reached by email."
+  },
+  {
+   "id": "b2-01-11",
+   "type": "cloze",
+   "de": "Am Sonntag sind fast alle Geschäfte ___.",
+   "base": "schließen",
+   "answers": [
+    "geschlossen"
+   ],
+   "en": "On Sundays almost all shops are closed."
+  },
+  {
+   "id": "b2-01-12",
+   "type": "choice",
+   "de": "Das Problem lässt sich leicht ___.",
+   "options": [
+    "gelöst",
+    "zu lösen",
+    "lösen"
+   ],
+   "answer": 2,
+   "why": "sich lassen is followed by a plain infinitive without zu.",
+   "en": "The problem can easily be solved."
+  },
+  {
+   "id": "b2-01-13",
+   "type": "cloze",
+   "de": "Ihr Konto ist leider ___. Bitte rufen Sie uns an.",
+   "base": "sperren",
+   "answers": [
+    "gesperrt"
+   ],
+   "en": "Unfortunately, your account is blocked. Please call us."
+  },
+  {
+   "id": "b2-01-14",
+   "type": "order",
+   "tiles": [
+    "Hier",
+    "darf",
+    "man",
+    "nicht",
+    "rauchen"
+   ],
+   "answers": [
+    "Hier darf man nicht rauchen.",
+    "Man darf hier nicht rauchen."
+   ],
+   "en": "You're not allowed to smoke here."
+  },
+  {
+   "id": "b2-01-15",
+   "type": "choice",
+   "de": "Ihre Unterschrift ist leider nicht ___.",
+   "options": [
+    "lesbar",
+    "gelesen",
+    "lesen"
+   ],
+   "answer": 0,
+   "why": "lesbar means 'can be read', which is what is meant here.",
+   "en": "Unfortunately, your signature isn't legible."
+  },
+  {
+   "id": "b2-01-16",
+   "type": "cloze",
+   "de": "Die Kosten ___ sich noch nicht genau berechnen.",
+   "base": "lassen",
+   "answers": [
+    "lassen"
+   ],
+   "en": "The costs can't be calculated exactly yet."
+  },
+  {
+   "id": "b2-01-17",
+   "type": "choice",
+   "de": "Bitte nicht stören – das Zimmer ___ gerade geputzt.",
+   "options": [
+    "wird",
+    "ist",
+    "hat"
+   ],
+   "answer": 0,
+   "why": "The cleaning is happening right now, so you need werden.",
+   "en": "Please do not disturb – the room is being cleaned."
+  },
+  {
+   "id": "b2-01-18",
+   "type": "cloze",
+   "de": "Der Antrag ist nicht vollständig ___.",
+   "base": "ausfüllen",
+   "answers": [
+    "ausgefüllt"
+   ],
+   "en": "The application isn't completely filled in."
+  },
+  {
+   "id": "b2-01-19",
+   "type": "order",
+   "tiles": [
+    "Alle Termine",
+    "sind",
+    "leider",
+    "schon",
+    "vergeben"
+   ],
+   "answers": [
+    "Alle Termine sind leider schon vergeben.",
+    "Leider sind alle Termine schon vergeben."
+   ],
+   "en": "Unfortunately, all appointments are already taken."
+  },
+  {
+   "id": "b2-01-20",
+   "type": "choice",
+   "de": "Ich wollte gestern noch zur Post, aber sie ___ schon geschlossen.",
+   "options": [
+    "wurde",
+    "war",
+    "ist"
+   ],
+   "answer": 1,
+   "why": "A state in the past is war + Partizip II.",
+   "en": "I wanted to go to the post office yesterday, but it was already closed."
+  },
+  {
+   "id": "b2-01-21",
+   "type": "cloze",
+   "de": "So viel Arbeit in einer Woche? Das ist nicht ___.",
+   "base": "machen (+ -bar)",
+   "answers": [
+    "machbar"
+   ],
+   "en": "So much work in one week? That can't be done."
+  },
+  {
+   "id": "b2-01-22",
+   "type": "order",
+   "tiles": [
+    "Die Tür",
+    "lässt",
+    "sich",
+    "von außen",
+    "nicht",
+    "öffnen"
+   ],
+   "answers": [
+    "Die Tür lässt sich von außen nicht öffnen.",
+    "Von außen lässt sich die Tür nicht öffnen.",
+    "Die Tür lässt sich nicht von außen öffnen."
+   ],
+   "en": "The door can't be opened from the outside."
+  },
+  {
+   "id": "b2-01-23",
+   "type": "choice",
+   "de": "Man kann das alte Gerät nicht mehr reparieren. = Das alte Gerät ist nicht mehr ___.",
+   "options": [
+    "repariert",
+    "reparierbar",
+    "reparieren"
+   ],
+   "answer": 1,
+   "why": "reparierbar means 'can be repaired', like man kann … reparieren.",
+   "en": "The old device can't be repaired any more."
+  },
+  {
+   "id": "b2-01-24",
+   "type": "order",
+   "tiles": [
+    "Als wir ankamen",
+    "war",
+    "die Wohnung",
+    "schon",
+    "geputzt"
+   ],
+   "answers": [
+    "Als wir ankamen, war die Wohnung schon geputzt.",
+    "Die Wohnung war schon geputzt, als wir ankamen."
+   ],
+   "en": "When we arrived, the flat was already cleaned."
+  }
+ ],
+ "listening": {
+  "title": "Der Zettel an der Haustür",
+  "intro": "Lena has read a notice on the front door of her building and asks the caretaker, Mr Kaya, about it.",
+  "lines": [
+   {
+    "speaker": "Lena",
+    "de": "Guten Morgen, Herr Kaya. Ich habe den Zettel an der Haustür gelesen. Was ist denn los?",
+    "en": "Good morning, Mr Kaya. I read the notice on the front door. What's going on?"
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Morgen, Frau Hoffmann. Am Donnerstag wird das Wasser von neun bis zwölf abgestellt. Die Leitungen im Keller werden repariert.",
+    "en": "Morning, Ms Hoffmann. On Thursday the water will be turned off from nine to twelve. The pipes in the cellar are being repaired."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Kann man in der Zeit gar kein Wasser benutzen?",
+    "en": "Can you not use any water at all during that time?"
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Nein, leider nicht. Füllen Sie am besten vorher ein paar Flaschen. Danach sollten Sie das Wasser ein paar Minuten laufen lassen.",
+    "en": "No, unfortunately not. Best fill a few bottles beforehand. Afterwards you should let the water run for a few minutes."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Verstehe. Und der Aufzug? Der ist ja schon seit Montag gesperrt.",
+    "en": "I see. And the lift? It's been out of service since Monday."
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Da fehlt ein Ersatzteil. Es ist bestellt, aber es lässt sich nicht sagen, wann es kommt.",
+    "en": "A spare part is missing. It's been ordered, but there's no saying when it will arrive."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Das ist ärgerlich. Ich wohne im fünften Stock.",
+    "en": "That's annoying. I live on the fifth floor."
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Ich weiß. Übrigens ist der Fahrradkeller ab jetzt abgeschlossen. Den Schlüssel bekommen Sie bei mir.",
+    "en": "I know. By the way, the bike cellar is locked from now on. You can get the key from me."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Warum ist er denn plötzlich abgeschlossen?",
+    "en": "Why is it suddenly locked?"
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Letzte Woche wurden zwei Fahrräder gestohlen. Jetzt kommt man nur noch mit Schlüssel rein.",
+    "en": "Two bikes were stolen last week. Now you can only get in with a key."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Gut, dann komme ich heute Abend vorbei. Sind Sie bis sieben erreichbar?",
+    "en": "OK, then I'll drop by this evening. Can I reach you until seven?"
+   },
+   {
+    "speaker": "Herr Kaya",
+    "de": "Bis sechs. Danach ist mein Büro geschlossen.",
+    "en": "Until six. After that my office is closed."
+   }
+  ],
+  "questions": [
+   {
+    "q": "When will the water be turned off?",
+    "options": [
+     "On Thursday morning.",
+     "On Monday afternoon.",
+     "On Thursday evening."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why isn't the lift working?",
+    "options": [
+     "It is being cleaned.",
+     "A spare part is missing.",
+     "Someone damaged it last week."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why is the bike cellar locked now?",
+    "options": [
+     "Bikes were stolen.",
+     "It is being repaired.",
+     "Too many people left bikes there."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Until when can Lena pick up the key today?",
+    "options": [
+     "Until five.",
+     "Until seven.",
+     "Until six."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Das Büro ist am Freitag den ganzen Tag geschlossen.",
+  "Das Fenster in der Küche lässt sich nicht mehr öffnen.",
+  "In diesem Gebäude darf man leider nirgends rauchen."
+ ],
+ "speaking": [
+  {
+   "de": "Am Donnerstag wird das Wasser von neun bis zwölf abgestellt.",
+   "en": "On Thursday the water will be turned off from nine to twelve."
+  },
+  {
+   "de": "Der Aufzug ist schon seit Montag gesperrt.",
+   "en": "The lift has been out of service since Monday."
+  },
+  {
+   "de": "Es lässt sich nicht sagen, wann es kommt.",
+   "en": "There's no saying when it will arrive."
+  },
+  {
+   "de": "Der Fahrradkeller ist ab jetzt abgeschlossen.",
+   "en": "The bike cellar is locked from now on."
+  },
+  {
+   "de": "Sind Sie bis sieben erreichbar?",
+   "en": "Can I reach you until seven?"
+  }
+ ],
+ "writing": {
+  "task": "In your flat the bedroom window won't close any more and the bathroom radiator can't be turned down. The caretaker's office was closed twice. Write an email of about 100 words to the property management describing the problems and asking for a repair.",
+  "model": "Sehr geehrte Damen und Herren,\n\nin meiner Wohnung (Lindenstraße 12, 3. Stock) gibt es seit letzter Woche zwei Probleme. Das Fenster im Schlafzimmer lässt sich nicht mehr richtig schließen, deshalb ist es nachts sehr kalt. Außerdem ist die Heizung im Bad defekt: Sie lässt sich nicht herunterdrehen und ist ständig heiß. Ich wollte den Hausmeister informieren, aber sein Büro war zweimal geschlossen, und telefonisch ist er leider nicht erreichbar. Könnten Sie bitte so bald wie möglich einen Handwerker schicken? Vormittags bin ich meistens zu Hause.\n\nVielen Dank im Voraus.\n\nMit freundlichen Grüßen\nClaire Martin"
+ }
+}

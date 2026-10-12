@@ -1,0 +1,490 @@
+{
+ "id": "a1-t03",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "null",
+  "elf",
+  "zwölf",
+  "dreizehn",
+  "zwanzig",
+  "einundzwanzig",
+  "dreißig",
+  "fünfzig",
+  "hundert",
+  "tausend",
+  "wie viel",
+  "kosten",
+  "der Preis",
+  "teuer",
+  "billig",
+  "günstig",
+  "bezahlen",
+  "bar",
+  "die Kasse",
+  "das Geld",
+  "die Rechnung",
+  "(Kredit)-Karte",
+  "der Markt",
+  "das Obst",
+  "das Gemüse",
+  "der Apfel",
+  "die Tomate",
+  "die Kartoffel",
+  "die Banane",
+  "die Birne"
+ ],
+ "title": "Numbers, prices and paying",
+ "situation": "At the market",
+ "canDo": "I can understand and say numbers and prices, ask what something costs and pay at the market.",
+ "explanation": "At the market you hear prices all the time, so you need numbers fast. From 13 to 99, German says the **units first**: 21 = *einundzwanzig* (\"one-and-twenty\"), 35 = *fünfunddreißig*.\n\n| number | German | number | German |\n|---|---|---|---|\n| 11 / 12 | elf / zwölf | 20 | zwanzig |\n| 13 | dreizehn | 30 | dreißig (with ß) |\n| 16 | sechzehn (not sechs-) | 60 | sechzig |\n| 17 | siebzehn (not sieben-) | 70 | siebzig |\n| 21 | einundzwanzig | 100 | (ein)hundert |\n| 99 | neunundneunzig | 1000 | (ein)tausend |\n\n| Phrase | English |\n|---|---|\n| Was kostet das? / Wie viel kostet das? | How much is it? |\n| Ein Kilo Tomaten, bitte. | A kilo of tomatoes, please. |\n| Das ist teuer / billig / günstig. | That's expensive / cheap / good value. |\n| Das macht zusammen 7,30 €. | That's €7.30 altogether. |\n| Kann ich mit Karte zahlen? – Nur bar. | Can I pay by card? – Cash only. |\n\nTips:\n- Prices: **3,50 €** is written with a comma and said *drei Euro fünfzig*; **0,99 €** is *neunundneunzig Cent*.\n- The most common mistake: hearing *dreiundfünfzig* and writing 35. Write the second number first!\n- Many market stalls and small shops take only cash (**bar**), so carry some money.\n- **billig** can sound like \"cheap and bad\"; **günstig** is the positive word for a good price.",
+ "french": "French says the tens first (vingt-quatre), German the units first (vierundzwanzig); but 70, 80 and 90 are simple: siebzig, achtzig, neunzig.",
+ "examples": [
+  {
+   "de": "Was kostet ein Kilo Tomaten?",
+   "en": "How much is a kilo of tomatoes?"
+  },
+  {
+   "de": "Ein Kilo Äpfel kostet zwei Euro fünfzig.",
+   "en": "A kilo of apples costs two euros fifty."
+  },
+  {
+   "de": "Das ist nicht teuer.",
+   "en": "That's not expensive."
+  },
+  {
+   "de": "Die Bananen sind heute sehr günstig.",
+   "en": "The bananas are very cheap today."
+  },
+  {
+   "de": "Das macht zusammen elf Euro zwanzig.",
+   "en": "That's eleven euros twenty altogether."
+  },
+  {
+   "de": "Zahlen Sie bar? – Nein, mit Karte.",
+   "en": "Are you paying cash? – No, by card."
+  },
+  {
+   "de": "Ich bin vierunddreißig Jahre alt.",
+   "en": "I'm thirty-four years old."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t03-01",
+   "type": "cloze",
+   "de": "Ich bin ___ Jahre alt.",
+   "base": "21",
+   "answers": [
+    "einundzwanzig"
+   ],
+   "en": "I'm 21 years old."
+  },
+  {
+   "id": "a1-t03-02",
+   "type": "choice",
+   "de": "Das kostet ___ Euro. (35 €)",
+   "options": [
+    "dreiundfünfzig",
+    "fünfunddreißig",
+    "fünfdreißig"
+   ],
+   "answer": 1,
+   "why": "German says the units first: 35 = fünfunddreißig.",
+   "en": "That costs €35."
+  },
+  {
+   "id": "a1-t03-03",
+   "type": "cloze",
+   "de": "Ein Kilo Tomaten ___ drei Euro.",
+   "base": "kosten",
+   "answers": [
+    "kostet"
+   ],
+   "en": "A kilo of tomatoes costs three euros."
+  },
+  {
+   "id": "a1-t03-04",
+   "type": "order",
+   "tiles": [
+    "kostet",
+    "Was",
+    "das"
+   ],
+   "answers": [
+    "Was kostet das?"
+   ],
+   "en": "How much is that?"
+  },
+  {
+   "id": "a1-t03-05",
+   "type": "cloze",
+   "de": "Fünfzig Euro? Das ist zu ___!",
+   "base": "expensive",
+   "answers": [
+    "teuer"
+   ],
+   "en": "Fifty euros? That's too expensive!"
+  },
+  {
+   "id": "a1-t03-06",
+   "type": "choice",
+   "de": "Die Bananen sind heute ___: nur 99 Cent!",
+   "options": [
+    "teuer",
+    "günstig",
+    "alt"
+   ],
+   "answer": 1,
+   "why": "99 cents is a good price: günstig; teuer means expensive.",
+   "en": "The bananas are cheap today: only 99 cents!"
+  },
+  {
+   "id": "a1-t03-07",
+   "type": "cloze",
+   "de": "Auf dem Markt kaufe ich Obst und ___.",
+   "base": "vegetables",
+   "answers": [
+    "Gemüse"
+   ],
+   "en": "At the market I buy fruit and vegetables."
+  },
+  {
+   "id": "a1-t03-08",
+   "type": "choice",
+   "de": "Kann ich mit Karte zahlen? – Nein, leider nur ___.",
+   "options": [
+    "Geld",
+    "bar",
+    "Kasse"
+   ],
+   "answer": 1,
+   "why": "Paying cash is 'bar zahlen'; Geld is money in general.",
+   "en": "Can I pay by card? – No, cash only, I'm afraid."
+  },
+  {
+   "id": "a1-t03-09",
+   "type": "cloze",
+   "de": "Das kostet ___ Euro. (30 €)",
+   "base": "30",
+   "answers": [
+    "dreißig"
+   ],
+   "en": "That costs €30."
+  },
+  {
+   "id": "a1-t03-10",
+   "type": "order",
+   "tiles": [
+    "kostet",
+    "Das Kilo",
+    "drei Euro"
+   ],
+   "answers": [
+    "Das Kilo kostet drei Euro.",
+    "Drei Euro kostet das Kilo."
+   ],
+   "en": "The kilo costs three euros."
+  },
+  {
+   "id": "a1-t03-11",
+   "type": "choice",
+   "de": "Das macht ___ Euro. (17 €)",
+   "options": [
+    "siebenzehn",
+    "siebzig",
+    "siebzehn"
+   ],
+   "answer": 2,
+   "why": "17 is siebzehn (sieben loses -en); siebzig is 70.",
+   "en": "That's €17."
+  },
+  {
+   "id": "a1-t03-12",
+   "type": "cloze",
+   "de": "Äpfel und Bananen sind ___.",
+   "base": "fruit",
+   "answers": [
+    "Obst"
+   ],
+   "en": "Apples and bananas are fruit."
+  },
+  {
+   "id": "a1-t03-13",
+   "type": "choice",
+   "de": "Wo ist die ___? Ich möchte bezahlen.",
+   "options": [
+    "Kasse",
+    "Preis",
+    "Geld"
+   ],
+   "answer": 0,
+   "why": "You pay at the till: die Kasse; der Preis and das Geld don't go with die.",
+   "en": "Where's the till? I'd like to pay."
+  },
+  {
+   "id": "a1-t03-14",
+   "type": "order",
+   "tiles": [
+    "Tomaten",
+    "Ein Kilo",
+    "bitte"
+   ],
+   "answers": [
+    "Ein Kilo Tomaten, bitte.",
+    "Bitte ein Kilo Tomaten."
+   ],
+   "en": "A kilo of tomatoes, please."
+  },
+  {
+   "id": "a1-t03-15",
+   "type": "cloze",
+   "de": "Ein Kilo Äpfel kostet zwei Euro ___. (2,50 €)",
+   "base": "50",
+   "answers": [
+    "fünfzig"
+   ],
+   "en": "A kilo of apples costs €2.50."
+  },
+  {
+   "id": "a1-t03-16",
+   "type": "choice",
+   "de": "Was ___ die Kartoffeln?",
+   "options": [
+    "kostet",
+    "kosten",
+    "kostest"
+   ],
+   "answer": 1,
+   "why": "die Kartoffeln is plural, so the verb is kosten.",
+   "en": "How much are the potatoes?"
+  },
+  {
+   "id": "a1-t03-17",
+   "type": "cloze",
+   "de": "Das macht zusammen ___ Euro. (11 €)",
+   "base": "11",
+   "answers": [
+    "elf"
+   ],
+   "en": "That's €11 altogether."
+  },
+  {
+   "id": "a1-t03-18",
+   "type": "choice",
+   "de": "Der ___ ist gut: nur ein Euro.",
+   "options": [
+    "Preis",
+    "Rechnung",
+    "Kasse"
+   ],
+   "answer": 0,
+   "why": "der Preis = the price; die Rechnung is the bill and die Kasse the till.",
+   "en": "The price is good: only one euro."
+  },
+  {
+   "id": "a1-t03-19",
+   "type": "cloze",
+   "de": "Die ___, bitte! – Das macht 23,40 €.",
+   "base": "the bill",
+   "answers": [
+    "Rechnung"
+   ],
+   "en": "The bill, please! – That's €23.40."
+  },
+  {
+   "id": "a1-t03-20",
+   "type": "order",
+   "tiles": [
+    "günstig",
+    "Die Äpfel",
+    "sehr",
+    "sind",
+    "heute"
+   ],
+   "answers": [
+    "Die Äpfel sind heute sehr günstig.",
+    "Heute sind die Äpfel sehr günstig."
+   ],
+   "en": "The apples are very cheap today."
+  },
+  {
+   "id": "a1-t03-21",
+   "type": "choice",
+   "de": "Das kostet ___ Euro. (99 €)",
+   "options": [
+    "neunzigneun",
+    "neunundneunzig",
+    "neunzehnneun"
+   ],
+   "answer": 1,
+   "why": "Units first, then und, then the tens: neun-und-neunzig.",
+   "en": "That costs €99."
+  },
+  {
+   "id": "a1-t03-22",
+   "type": "cloze",
+   "de": "Das ist nicht teuer. Das ist ___.",
+   "base": "cheap",
+   "answers": [
+    "billig",
+    "günstig"
+   ],
+   "en": "That's not expensive. That's cheap."
+  },
+  {
+   "id": "a1-t03-23",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "mit Karte",
+    "Zahlen"
+   ],
+   "answers": [
+    "Zahlen Sie mit Karte?"
+   ],
+   "en": "Are you paying by card?"
+  },
+  {
+   "id": "a1-t03-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "zahle",
+    "bar",
+    "heute",
+    "nur"
+   ],
+   "answers": [
+    "Ich zahle heute nur bar.",
+    "Heute zahle ich nur bar."
+   ],
+   "en": "Today I'm only paying cash."
+  }
+ ],
+ "listening": {
+  "title": "Auf dem Markt",
+  "intro": "Julie is buying fruit and vegetables at a market stall run by Herr Weber.",
+  "lines": [
+   {
+    "speaker": "Herr Weber",
+    "de": "Guten Tag! Was möchten Sie?",
+    "en": "Hello! What would you like?"
+   },
+   {
+    "speaker": "Julie",
+    "de": "Guten Tag. Was kostet ein Kilo Tomaten?",
+    "en": "Hello. How much is a kilo of tomatoes?"
+   },
+   {
+    "speaker": "Herr Weber",
+    "de": "Zwei Euro neunzig. Die Tomaten sind heute sehr gut.",
+    "en": "Two euros ninety. The tomatoes are very good today."
+   },
+   {
+    "speaker": "Julie",
+    "de": "Gut, dann ein Kilo Tomaten, bitte. Und die Äpfel?",
+    "en": "Good, then a kilo of tomatoes, please. And the apples?"
+   },
+   {
+    "speaker": "Herr Weber",
+    "de": "Ein Kilo Äpfel kostet drei Euro vierzig.",
+    "en": "A kilo of apples costs three euros forty."
+   },
+   {
+    "speaker": "Julie",
+    "de": "Hm, das ist teuer. Und die Birnen?",
+    "en": "Hm, that's expensive. And the pears?"
+   },
+   {
+    "speaker": "Herr Weber",
+    "de": "Die Birnen sind günstig: ein Kilo nur zwei Euro.",
+    "en": "The pears are cheap: only two euros a kilo."
+   },
+   {
+    "speaker": "Julie",
+    "de": "Dann ein Kilo Birnen, bitte. Was macht das zusammen?",
+    "en": "Then a kilo of pears, please. How much is that altogether?"
+   },
+   {
+    "speaker": "Herr Weber",
+    "de": "Das macht vier Euro neunzig. Zahlen Sie bar?",
+    "en": "That's four euros ninety. Are you paying cash?"
+   },
+   {
+    "speaker": "Julie",
+    "de": "Ja. Hier sind zehn Euro.",
+    "en": "Yes. Here's ten euros."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much is a kilo of tomatoes?",
+    "options": [
+     "€2.90",
+     "€3.40",
+     "€2.00"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why doesn't Julie buy apples?",
+    "options": [
+     "They aren't fresh.",
+     "She thinks they're expensive.",
+     "There are no apples."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does she buy?",
+    "options": [
+     "tomatoes and apples",
+     "apples and pears",
+     "tomatoes and pears"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much does she pay altogether?",
+    "options": [
+     "€10.00",
+     "€4.90",
+     "€5.90"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Was kostet ein Kilo Tomaten?",
+  "Die Äpfel sind heute teuer.",
+  "Das macht zusammen elf Euro."
+ ],
+ "speaking": [
+  {
+   "de": "Was kostet ein Kilo Tomaten?",
+   "en": "How much is a kilo of tomatoes?"
+  },
+  {
+   "de": "Hm, das ist teuer.",
+   "en": "Hm, that's expensive."
+  },
+  {
+   "de": "Dann ein Kilo Birnen, bitte.",
+   "en": "Then a kilo of pears, please."
+  },
+  {
+   "de": "Was macht das zusammen?",
+   "en": "How much is that altogether?"
+  },
+  {
+   "de": "Hier sind zehn Euro.",
+   "en": "Here's ten euros."
+  }
+ ],
+ "writing": {
+  "task": "You are at the market with €20. Write 3–4 short sentences: what things cost, what is cheap or expensive, and the total.",
+  "model": "Ich bin auf dem Markt. Ein Kilo Äpfel kostet drei Euro und ein Kilo Tomaten kostet zwei Euro fünfzig. Die Kartoffeln sind sehr günstig: nur ein Euro achtzig. Das macht zusammen sieben Euro dreißig."
+ }
+}

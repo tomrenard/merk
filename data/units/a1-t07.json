@@ -1,0 +1,499 @@
+{
+ "id": "a1-t07",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "die Stadt",
+  "die Straße",
+  "der Bahnhof",
+  "die Haltestelle",
+  "der Bus",
+  "die Straßenbahn",
+  "die U-Bahn",
+  "die S-Bahn",
+  "der Zug",
+  "das Taxi",
+  "die Fahrkarte",
+  "das Ticket",
+  "einsteigen",
+  "aussteigen",
+  "umsteigen",
+  "links",
+  "rechts",
+  "geradeaus",
+  "die Ecke",
+  "die Ampel",
+  "die Kreuzung",
+  "weit",
+  "der Stadtplan",
+  "die Linie",
+  "fahren",
+  "gehen",
+  "der Platz",
+  "die Kirche",
+  "die Brücke",
+  "das Rathaus"
+ ],
+ "title": "Directions and public transport",
+ "situation": "Finding your way",
+ "canDo": "I can ask the way, understand simple directions and get around by bus, tram and train.",
+ "explanation": "In a new city you ask the way and take buses, trams and trains: *Entschuldigung, wo ist der Bahnhof?*\n\n| German | English |\n|---|---|\n| der Bus, -se / die Straßenbahn, -en | bus / tram |\n| die U-Bahn / die S-Bahn | underground / suburban train |\n| der Zug, Züge / der Bahnhof, Bahnhöfe | train / station |\n| die Haltestelle, -n | stop (bus, tram) |\n| die Fahrkarte, -n / das Ticket, -s | ticket |\n| einsteigen / aussteigen / umsteigen | to get on / get off / change |\n\n| Directions | English |\n|---|---|\n| geradeaus | straight on |\n| links / rechts | (to the) left / right |\n| an der Ampel / an der Kreuzung | at the lights / at the crossroads |\n| an der Ecke | on the corner |\n| Ist das weit? – Nein, fünf Minuten zu Fuß. | Is it far? – No, five minutes on foot. |\n\nTypical answers: *Sie gehen geradeaus und dann links.* *Sie fahren mit der U2 und steigen am Rathaus aus.*\n\nTips:\n- Remember the separable verbs: *Ich steige am Bahnhof aus.* *Wo muss ich umsteigen?*\n- **fahren** = with a vehicle, **gehen** = on foot: *Ich gehe zu Fuß.*\n- Buy your ticket before you get on, at the machine or in the app. Inspectors check, and a ride without a valid ticket costs a fine.\n- **Linie** + number: *die Linie 4, die U3, die S1*.",
+ "french": "links and rechts work like à gauche and à droite, geradeaus is tout droit, and umsteigen is changer (de ligne).",
+ "examples": [
+  {
+   "de": "Entschuldigung, wo ist die Haltestelle?",
+   "en": "Excuse me, where is the stop?"
+  },
+  {
+   "de": "Sie gehen geradeaus und dann rechts.",
+   "en": "You go straight on and then right."
+  },
+  {
+   "de": "Der Bahnhof ist nicht weit.",
+   "en": "The station isn't far."
+  },
+  {
+   "de": "Ich fahre mit der U-Bahn in die Stadt.",
+   "en": "I take the underground into town."
+  },
+  {
+   "de": "Wo muss ich aussteigen?",
+   "en": "Where do I have to get off?"
+  },
+  {
+   "de": "Sie steigen am Rathaus aus.",
+   "en": "You get off at the town hall."
+  },
+  {
+   "de": "Am Hauptbahnhof steigen Sie in die S1 um.",
+   "en": "At the main station you change to the S1."
+  },
+  {
+   "de": "Die Kirche ist an der Ecke.",
+   "en": "The church is on the corner."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t07-01",
+   "type": "cloze",
+   "de": "Sie gehen ___ und dann links.",
+   "base": "straight on",
+   "answers": [
+    "geradeaus"
+   ],
+   "en": "You go straight on and then left."
+  },
+  {
+   "id": "a1-t07-02",
+   "type": "cloze",
+   "de": "Sie gehen hier ___ und dann geradeaus.",
+   "base": "right",
+   "answers": [
+    "rechts"
+   ],
+   "en": "You go right here and then straight on."
+  },
+  {
+   "id": "a1-t07-03",
+   "type": "choice",
+   "de": "Wo ist die ___? Ich nehme den Bus.",
+   "options": [
+    "Ampel",
+    "Haltestelle",
+    "Kreuzung"
+   ],
+   "answer": 1,
+   "why": "You wait for a bus at a stop: die Haltestelle.",
+   "en": "Where is the stop? I'm taking the bus."
+  },
+  {
+   "id": "a1-t07-04",
+   "type": "order",
+   "tiles": [
+    "der Bahnhof",
+    "Wo",
+    "ist"
+   ],
+   "answers": [
+    "Wo ist der Bahnhof?"
+   ],
+   "en": "Where is the station?"
+  },
+  {
+   "id": "a1-t07-05",
+   "type": "cloze",
+   "de": "Ich brauche eine ___ für den Bus.",
+   "base": "ticket",
+   "answers": [
+    "Fahrkarte",
+    "Karte"
+   ],
+   "en": "I need a ticket for the bus."
+  },
+  {
+   "id": "a1-t07-06",
+   "type": "choice",
+   "de": "Am Bahnhof ___ wir in die S-Bahn um.",
+   "options": [
+    "fahren",
+    "gehen",
+    "steigen"
+   ],
+   "answer": 2,
+   "why": "To change trains is umsteigen: wir steigen … um.",
+   "en": "At the station we change to the suburban train."
+  },
+  {
+   "id": "a1-t07-07",
+   "type": "cloze",
+   "de": "Ist das ___? – Nein, nur fünf Minuten.",
+   "base": "far",
+   "answers": [
+    "weit"
+   ],
+   "en": "Is it far? – No, only five minutes."
+  },
+  {
+   "id": "a1-t07-08",
+   "type": "choice",
+   "de": "Die ___ ist rot. Wir warten.",
+   "options": [
+    "Ampel",
+    "Ecke",
+    "Brücke"
+   ],
+   "answer": 0,
+   "why": "Traffic lights are die Ampel; red means wait.",
+   "en": "The lights are red. We wait."
+  },
+  {
+   "id": "a1-t07-09",
+   "type": "order",
+   "tiles": [
+    "aus",
+    "Ich",
+    "am Rathaus",
+    "steige"
+   ],
+   "answers": [
+    "Ich steige am Rathaus aus.",
+    "Am Rathaus steige ich aus."
+   ],
+   "en": "I get off at the town hall."
+  },
+  {
+   "id": "a1-t07-10",
+   "type": "cloze",
+   "de": "Die ___ fährt unter der Erde.",
+   "base": "underground",
+   "answers": [
+    "U-Bahn"
+   ],
+   "en": "The underground runs under the ground."
+  },
+  {
+   "id": "a1-t07-11",
+   "type": "choice",
+   "de": "Wo muss ich ___? – An der Haltestelle Marktplatz.",
+   "options": [
+    "aussteige",
+    "aussteigen",
+    "steigen aus"
+   ],
+   "answer": 1,
+   "why": "After müssen, the separable verb stays in one piece at the end: aussteigen.",
+   "en": "Where do I have to get off? – At the Marktplatz stop."
+  },
+  {
+   "id": "a1-t07-12",
+   "type": "cloze",
+   "de": "Ich habe keinen ___. Wo ist das Museum?",
+   "base": "city map",
+   "answers": [
+    "Stadtplan"
+   ],
+   "en": "I don't have a city map. Where is the museum?"
+  },
+  {
+   "id": "a1-t07-13",
+   "type": "choice",
+   "de": "Der Bus ist weg. Ich ___ ein Taxi.",
+   "options": [
+    "nehme",
+    "fahre",
+    "steige"
+   ],
+   "answer": 0,
+   "why": "You take a taxi: ein Taxi nehmen; ein Taxi fahren means to drive a taxi.",
+   "en": "The bus has gone. I'm taking a taxi."
+  },
+  {
+   "id": "a1-t07-14",
+   "type": "order",
+   "tiles": [
+    "umsteigen",
+    "Wo",
+    "ich",
+    "muss"
+   ],
+   "answers": [
+    "Wo muss ich umsteigen?"
+   ],
+   "en": "Where do I have to change?"
+  },
+  {
+   "id": "a1-t07-15",
+   "type": "cloze",
+   "de": "An der ___ gehen Sie links.",
+   "base": "crossroads",
+   "answers": [
+    "Kreuzung"
+   ],
+   "en": "At the crossroads you go left."
+  },
+  {
+   "id": "a1-t07-16",
+   "type": "choice",
+   "de": "Der ___ nach Berlin fährt gleich.",
+   "options": [
+    "Taxi",
+    "Fahrrad",
+    "Zug"
+   ],
+   "answer": 2,
+   "why": "der Zug = the train; it's also the only masculine noun here.",
+   "en": "The train to Berlin is leaving soon."
+  },
+  {
+   "id": "a1-t07-17",
+   "type": "cloze",
+   "de": "Das Café ist an der ___, links.",
+   "base": "corner",
+   "answers": [
+    "Ecke"
+   ],
+   "en": "The café is on the corner, on the left."
+  },
+  {
+   "id": "a1-t07-18",
+   "type": "choice",
+   "de": "Wir nehmen nicht den Bus. Wir ___ zu Fuß.",
+   "options": [
+    "fahren",
+    "gehen",
+    "steigen"
+   ],
+   "answer": 1,
+   "why": "On foot is zu Fuß gehen; fahren needs a vehicle.",
+   "en": "We're not taking the bus. We're walking."
+  },
+  {
+   "id": "a1-t07-19",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "links",
+    "geradeaus",
+    "gehen",
+    "und dann"
+   ],
+   "answers": [
+    "Sie gehen geradeaus und dann links.",
+    "Gehen Sie geradeaus und dann links."
+   ],
+   "en": "You go straight on and then left."
+  },
+  {
+   "id": "a1-t07-20",
+   "type": "cloze",
+   "de": "Wir ___ hier in den Bus ein.",
+   "base": "to get on",
+   "answers": [
+    "steigen"
+   ],
+   "en": "We get on the bus here."
+  },
+  {
+   "id": "a1-t07-21",
+   "type": "choice",
+   "de": "Die ___ geht über den Fluss.",
+   "options": [
+    "Kirche",
+    "Brücke",
+    "Ampel"
+   ],
+   "answer": 1,
+   "why": "A bridge goes over a river: die Brücke.",
+   "en": "The bridge goes over the river."
+  },
+  {
+   "id": "a1-t07-22",
+   "type": "cloze",
+   "de": "Ich ___ am Bahnhof um.",
+   "base": "to change (trains)",
+   "answers": [
+    "steige"
+   ],
+   "en": "I change at the station."
+  },
+  {
+   "id": "a1-t07-23",
+   "type": "order",
+   "tiles": [
+    "Ist",
+    "weit",
+    "der Bahnhof",
+    "hier",
+    "von"
+   ],
+   "answers": [
+    "Ist der Bahnhof weit von hier?",
+    "Ist der Bahnhof von hier weit?"
+   ],
+   "en": "Is the station far from here?"
+  },
+  {
+   "id": "a1-t07-24",
+   "type": "order",
+   "tiles": [
+    "aus",
+    "an der Haltestelle Rathaus",
+    "steigen",
+    "Sie",
+    "dann"
+   ],
+   "answers": [
+    "Sie steigen dann an der Haltestelle Rathaus aus.",
+    "Dann steigen Sie an der Haltestelle Rathaus aus.",
+    "An der Haltestelle Rathaus steigen Sie dann aus."
+   ],
+   "en": "Then you get off at the Rathaus stop."
+  }
+ ],
+ "listening": {
+  "title": "Wie komme ich zum Museum?",
+  "intro": "Elif is new in the city and asks a man in the street, Thomas, how to get to the museum.",
+  "lines": [
+   {
+    "speaker": "Elif",
+    "de": "Entschuldigung, wie komme ich zum Museum?",
+    "en": "Excuse me, how do I get to the museum?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Zum Museum? Das ist ziemlich weit. Sie fahren am besten mit der U-Bahn.",
+    "en": "To the museum? That's quite far. It's best to take the underground."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Und wo ist die U-Bahn?",
+    "en": "And where is the underground?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Sie gehen hier geradeaus und an der Ampel rechts. Da ist die Station.",
+    "en": "You go straight on here and right at the lights. The station is there."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Welche Linie muss ich nehmen?",
+    "en": "Which line do I have to take?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Die U3. Am Rathaus steigen Sie in die U5 um.",
+    "en": "The U3. At the town hall you change to the U5."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Und wo steige ich aus?",
+    "en": "And where do I get off?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Am Marktplatz. Das Museum ist dann gleich an der Ecke.",
+    "en": "At Marktplatz. The museum is then right on the corner."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Wo kaufe ich eine Fahrkarte?",
+    "en": "Where do I buy a ticket?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Am Automaten in der Station. Oder mit der App.",
+    "en": "At the machine in the station. Or with the app."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How should Elif get to the museum?",
+    "options": [
+     "on foot",
+     "by underground",
+     "by bus"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where does she turn right?",
+    "options": [
+     "at the traffic lights",
+     "at the church",
+     "at the crossroads"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does she change lines?",
+    "options": [
+     "at Marktplatz",
+     "at the main station",
+     "at the town hall"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where can she buy a ticket?",
+    "options": [
+     "on the train",
+     "from the machine or in the app",
+     "at the museum"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Sie gehen geradeaus und dann rechts.",
+  "Wo muss ich umsteigen?",
+  "Ich steige am Marktplatz aus."
+ ],
+ "speaking": [
+  {
+   "de": "Entschuldigung, wie komme ich zum Museum?",
+   "en": "Excuse me, how do I get to the museum?"
+  },
+  {
+   "de": "Wo ist die U-Bahn?",
+   "en": "Where is the underground?"
+  },
+  {
+   "de": "Welche Linie muss ich nehmen?",
+   "en": "Which line do I have to take?"
+  },
+  {
+   "de": "Wo steige ich aus?",
+   "en": "Where do I get off?"
+  },
+  {
+   "de": "Wo kaufe ich eine Fahrkarte?",
+   "en": "Where do I buy a ticket?"
+  }
+ ],
+ "writing": {
+  "task": "A friend is coming to visit you. Write 3–4 sentences telling them how to get from the station to your flat.",
+  "model": "Hallo Tom! Am Bahnhof nimmst du die Straßenbahn, Linie 4. Am Rathaus steigst du aus. Dann gehst du geradeaus und an der Ampel links. Meine Wohnung ist an der Ecke, Nummer 12. Bis später!"
+ }
+}

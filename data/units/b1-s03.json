@@ -1,0 +1,537 @@
+{
+ "id": "b1-s03",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The lost suitcase",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about lost luggage, report a missing suitcase at the airport and say what you would have done differently.",
+ "explanation": "Camille spent the Whitsun holiday with her family in Lyon. On the way back to Cologne she has to change planes in Munich, with very little time. She makes it, but her red suitcase doesn't. Inside: presents, wine, a big cheese and the recipe book her grandmother wrote by hand.\n\nYou will hear Camille's regrets in the Konjunktiv II: *Hätte ich das Buch doch nur ins Handgepäck gepackt!*\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| der Koffer, - | suitcase |\n| das Handgepäck | hand luggage |\n| umsteigen | to change (planes, trains) |\n| das Gepäckband, -bänder | baggage carousel |\n| die Gepäckermittlung | lost luggage office |\n| der Kurier, -e | courier |\n| ein Paket annehmen | to take in a parcel |\n| riechen nach | to smell of |\n| die Feuerwehr | fire brigade |\n\nTip: in Germany neighbours often take in parcels for each other (*Ich habe es für Sie angenommen*). It's normal to ask a neighbour, and to do it for them too.",
+ "french": "Note the Konjunktiv II of regret: Hätte ich doch … gepackt! is exactly Si seulement j'avais mis …!",
+ "examples": [
+  {
+   "de": "In München musste sie umsteigen.",
+   "en": "She had to change planes in Munich."
+  },
+  {
+   "de": "Ihr Koffer ist nicht angekommen.",
+   "en": "Her suitcase didn't arrive."
+  },
+  {
+   "de": "Am Ende war das Gepäckband leer.",
+   "en": "In the end the baggage carousel was empty."
+  },
+  {
+   "de": "Hätte ich das Buch doch nur ins Handgepäck gepackt!",
+   "en": "If only I had put the book in my hand luggage!"
+  },
+  {
+   "de": "Wenn ich einen späteren Flug genommen hätte, wäre der Koffer mitgekommen.",
+   "en": "If I had taken a later flight, the suitcase would have come too."
+  },
+  {
+   "de": "Ich habe Ihren Koffer für Sie angenommen.",
+   "en": "I took in your suitcase for you."
+  },
+  {
+   "de": "Das ganze Haus riecht nach Käse.",
+   "en": "The whole house smells of cheese."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Auf dem Rückweg musste Camille in München ___.",
+   "base": "to change planes",
+   "answers": [
+    "umsteigen"
+   ],
+   "en": "On the way back Camille had to change planes in Munich.",
+   "id": "b1-s03-01"
+  },
+  {
+   "type": "choice",
+   "de": "Camille hatte Pfingsten in ___ verbracht.",
+   "options": [
+    "München",
+    "Lyon",
+    "Köln"
+   ],
+   "answer": 1,
+   "why": "She had spent the Whitsun holiday with her family in Lyon.",
+   "en": "Camille had spent the Whitsun holiday in Lyon.",
+   "id": "b1-s03-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Ihr ___ war groß und rot.",
+   "base": "suitcase",
+   "answers": [
+    "Koffer"
+   ],
+   "en": "Her suitcase was big and red.",
+   "id": "b1-s03-03"
+  },
+  {
+   "type": "choice",
+   "de": "In München hatte sie nur noch ___ Minuten zum Umsteigen.",
+   "options": [
+    "zwanzig",
+    "vierzig",
+    "sechzig"
+   ],
+   "answer": 0,
+   "why": "The flight from Lyon was half an hour late, so only twenty minutes were left.",
+   "en": "In Munich she only had twenty minutes left to change planes.",
+   "id": "b1-s03-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "durch den ganzen Flughafen",
+    "rannte"
+   ],
+   "answers": [
+    "Sie rannte durch den ganzen Flughafen.",
+    "Durch den ganzen Flughafen rannte sie."
+   ],
+   "en": "She ran through the whole airport.",
+   "id": "b1-s03-05"
+  },
+  {
+   "type": "cloze",
+   "de": "In Köln wartete sie lange am ___, aber ihr Koffer kam nicht.",
+   "base": "baggage carousel",
+   "answers": [
+    "Gepäckband"
+   ],
+   "en": "In Cologne she waited a long time at the baggage carousel, but her suitcase didn't come.",
+   "id": "b1-s03-06"
+  },
+  {
+   "type": "choice",
+   "de": "Das Wichtigste im Koffer war für Camille ___.",
+   "options": [
+    "der Wein",
+    "der Käse",
+    "das Kochbuch von ihrer Oma"
+   ],
+   "answer": 2,
+   "why": "Her grandmother had written all the recipes by hand: the book was the most important thing.",
+   "en": "The most important thing in the suitcase for Camille was her grandmother's cookbook.",
+   "id": "b1-s03-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Sie meldete den Koffer bei der ___.",
+   "base": "lost luggage office",
+   "answers": [
+    "Gepäckermittlung"
+   ],
+   "en": "She reported the suitcase at the lost luggage office.",
+   "id": "b1-s03-08"
+  },
+  {
+   "type": "choice",
+   "de": "Normalerweise ___ der Koffer in ein bis zwei Tagen nach Hause gebracht.",
+   "options": [
+    "ist",
+    "wird",
+    "hat"
+   ],
+   "answer": 1,
+   "why": "Passive in the present: wird + past participle (wird gebracht).",
+   "en": "Usually the suitcase is brought to your home in one or two days.",
+   "id": "b1-s03-09"
+  },
+  {
+   "type": "cloze",
+   "de": "___ ich das Buch doch nur ins Handgepäck gepackt!",
+   "base": "haben",
+   "answers": [
+    "Hätte"
+   ],
+   "en": "If only I had put the book in my hand luggage!",
+   "id": "b1-s03-10"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "ins Handgepäck",
+    "Hätte",
+    "ich",
+    "das Buch",
+    "doch nur",
+    "gepackt"
+   ],
+   "answers": [
+    "Hätte ich das Buch doch nur ins Handgepäck gepackt!",
+    "Hätte ich doch nur das Buch ins Handgepäck gepackt!"
+   ],
+   "en": "If only I had put the book in my hand luggage!",
+   "id": "b1-s03-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Wenn ich einen späteren Flug genommen hätte, ___ der Koffer mit mir angekommen.",
+   "base": "sein",
+   "answers": [
+    "wäre"
+   ],
+   "en": "If I had taken a later flight, the suitcase would have arrived with me.",
+   "id": "b1-s03-12"
+  },
+  {
+   "type": "choice",
+   "de": "Wenn ich mehr Zeit gehabt ___, wäre ich nicht gerannt.",
+   "options": [
+    "habe",
+    "hätte",
+    "wäre"
+   ],
+   "answer": 1,
+   "why": "Konjunktiv II in the past with a haben verb: gehabt hätte.",
+   "en": "If I had had more time, I wouldn't have run.",
+   "id": "b1-s03-13"
+  },
+  {
+   "type": "cloze",
+   "de": "Online stand zwei Tage lang: „Ihr Gepäck ___ gesucht.“",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "For two days it said online: Your luggage is being searched for.",
+   "id": "b1-s03-14"
+  },
+  {
+   "type": "choice",
+   "de": "Am vierten Tag roch es im Treppenhaus nach ___.",
+   "options": [
+    "Kuchen",
+    "Käse",
+    "Wein"
+   ],
+   "answer": 1,
+   "why": "The cheese had been in the suitcase for four days without a fridge.",
+   "en": "On the fourth day the staircase smelled of cheese.",
+   "id": "b1-s03-15"
+  },
+  {
+   "type": "cloze",
+   "de": "Ein ___ hat heute Mittag Ihren Koffer gebracht.",
+   "base": "courier",
+   "answers": [
+    "Kurier"
+   ],
+   "en": "A courier brought your suitcase at lunchtime today.",
+   "id": "b1-s03-16"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "für Sie",
+    "habe",
+    "ihn",
+    "angenommen"
+   ],
+   "answers": [
+    "Ich habe ihn für Sie angenommen."
+   ],
+   "en": "I took it in for you.",
+   "id": "b1-s03-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich habe den Koffer für Sie ___.",
+   "base": "annehmen",
+   "answers": [
+    "angenommen"
+   ],
+   "en": "I took in the suitcase for you.",
+   "id": "b1-s03-18"
+  },
+  {
+   "type": "choice",
+   "de": "Frau Schmitz sagte: „Ich ___ fast die Feuerwehr gerufen!“",
+   "options": [
+    "hätte",
+    "wäre",
+    "würde"
+   ],
+   "answer": 0,
+   "why": "rufen takes haben, so the past Konjunktiv II is hätte … gerufen.",
+   "en": "Frau Schmitz said: I almost called the fire brigade!",
+   "id": "b1-s03-19"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Das ganze Haus",
+    "nach Käse",
+    "riecht",
+    "seit Stunden"
+   ],
+   "answers": [
+    "Das ganze Haus riecht seit Stunden nach Käse.",
+    "Seit Stunden riecht das ganze Haus nach Käse."
+   ],
+   "en": "The whole house has smelled of cheese for hours.",
+   "id": "b1-s03-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich hätte fast die ___ gerufen!",
+   "base": "fire brigade",
+   "answers": [
+    "Feuerwehr"
+   ],
+   "en": "I almost called the fire brigade!",
+   "id": "b1-s03-21"
+  },
+  {
+   "type": "choice",
+   "de": "Nach dem Öffnen war das Kochbuch ___.",
+   "options": [
+    "nass",
+    "kaputt",
+    "in Ordnung"
+   ],
+   "answer": 2,
+   "why": "The book lay safe under her pullovers.",
+   "en": "After she opened the suitcase, the cookbook was fine.",
+   "id": "b1-s03-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "Sie",
+    "wieder nach Lyon fliegen,",
+    "bringen",
+    "Sie",
+    "mir",
+    "einen mit"
+   ],
+   "answers": [
+    "Wenn Sie wieder nach Lyon fliegen, bringen Sie mir einen mit.",
+    "Bringen Sie mir einen mit, wenn Sie wieder nach Lyon fliegen."
+   ],
+   "en": "When you fly to Lyon again, bring me one.",
+   "id": "b1-s03-23"
+  },
+  {
+   "type": "choice",
+   "de": "Am Abend ___ Camille und Frau Schmitz den Käse zusammen.",
+   "options": [
+    "verschenkten",
+    "aßen",
+    "versteckten"
+   ],
+   "answer": 1,
+   "why": "They ate it with bread and wine: it smelled terrible but tasted wonderful.",
+   "en": "In the evening Camille and Frau Schmitz ate the cheese together.",
+   "id": "b1-s03-24"
+  }
+ ],
+ "listening": {
+  "title": "Der rote Koffer",
+  "intro": "After the Whitsun holiday in Lyon, Camille flies back to Cologne with a short change in Munich.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Camille hatte Pfingsten bei ihrer Familie in Lyon verbracht. Am Pfingstmontag flog sie zurück nach Köln, mit Umsteigen in München.",
+    "en": "Camille had spent the Whitsun holiday with her family in Lyon. On Whit Monday she flew back to Cologne, changing in Munich."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "In ihrem großen roten Koffer waren Geschenke für die Kollegen, zwei Flaschen Wein, ein riesiger Käse aus den Alpen und das alte Kochbuch von ihrer Oma.",
+    "en": "In her big red suitcase there were presents for her colleagues, two bottles of wine, a huge cheese from the Alps and her grandmother's old cookbook."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Ihre Oma hatte alle Rezepte selbst mit der Hand geschrieben. Für Camille war dieses Buch das wichtigste Geschenk.",
+    "en": "Her grandmother had written all the recipes by hand herself. For Camille this book was the most important present."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "In Lyon hatte der Flug eine halbe Stunde Verspätung. In München blieben ihr nur noch zwanzig Minuten zum Umsteigen.",
+    "en": "In Lyon the flight was half an hour late. In Munich she only had twenty minutes left to change planes."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Sie rannte durch den ganzen Flughafen und erreichte das Flugzeug in letzter Minute.",
+    "en": "She ran through the whole airport and caught the plane at the last minute."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "In Köln wartete sie am Gepäckband. Die anderen Passagiere nahmen ihre Koffer und gingen. Am Ende war das Band leer.",
+    "en": "In Cologne she waited at the baggage carousel. The other passengers took their suitcases and left. In the end the carousel was empty."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Ihr roter Koffer war nicht dabei. Camille ging zur Gepäckermittlung.",
+    "en": "Her red suitcase wasn't there. Camille went to the lost luggage office."
+   },
+   {
+    "speaker": "Mitarbeiter",
+    "de": "Guten Abend. Ihr Koffer ist nicht angekommen? Wie sieht er denn aus?",
+    "en": "Good evening. Your suitcase didn't arrive? What does it look like?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Er ist groß und rot, mit einem gelben Band am Griff.",
+    "en": "It's big and red, with a yellow ribbon on the handle."
+   },
+   {
+    "speaker": "Mitarbeiter",
+    "de": "Wahrscheinlich steht er noch in München. Das passiert oft, wenn man so wenig Zeit zum Umsteigen hat. Normalerweise wird der Koffer in ein bis zwei Tagen nach Hause gebracht.",
+    "en": "It's probably still in Munich. That often happens when you have so little time to change. Usually the suitcase is brought to your home in one or two days."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Und wenn er nicht kommt? Da ist ein Buch drin, das ich auf keinen Fall verlieren darf.",
+    "en": "And if it doesn't come? There's a book in it that I mustn't lose under any circumstances."
+   },
+   {
+    "speaker": "Mitarbeiter",
+    "de": "Keine Sorge, die meisten Koffer kommen wieder. Mit dieser Nummer können Sie online sehen, wo er ist.",
+    "en": "Don't worry, most suitcases turn up again. With this number you can see online where it is."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Zu Hause konnte Camille nicht schlafen.",
+    "en": "At home Camille couldn't sleep."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Hätte ich das Buch doch nur ins Handgepäck gepackt! Und wenn ich einen späteren Flug genommen hätte, wäre der Koffer mit mir angekommen.",
+    "en": "If only I had put the book in my hand luggage! And if I had taken a later flight, the suitcase would have arrived with me."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am nächsten Tag stand online: „Ihr Gepäck wird gesucht.“ Am Tag danach stand da immer noch dasselbe.",
+    "en": "The next day it said online: Your luggage is being searched for. The day after, it still said the same."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am vierten Tag kam Camille müde von der Arbeit nach Hause. Schon unten im Treppenhaus roch es komisch.",
+    "en": "On the fourth day Camille came home from work tired. Already downstairs in the staircase there was a strange smell."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Frau Schmitz, ihre Vermieterin, öffnete ihre Wohnungstür im Erdgeschoss.",
+    "en": "Frau Schmitz, her landlady, opened her flat door on the ground floor."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Frau Durand, endlich! Ein Kurier hat heute Mittag Ihren Koffer gebracht. Ich habe ihn für Sie angenommen.",
+    "en": "Frau Durand, at last! A courier brought your suitcase at lunchtime today. I took it in for you."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Aber sagen Sie mal, was ist denn da drin? Das ganze Haus riecht seit Stunden nach alten Socken! Ich hätte fast die Feuerwehr gerufen.",
+    "en": "But tell me, what's in it? The whole house has smelled of old socks for hours! I almost called the fire brigade."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Das ist nur Käse aus den Alpen, nach vier Tagen ohne Kühlschrank. Es tut mir so leid!",
+    "en": "That's just cheese from the Alps, after four days without a fridge. I'm so sorry!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille öffnete den Koffer sofort. Der Wein war ganz, die Geschenke auch, und das Kochbuch lag sicher unter ihrer Kleidung.",
+    "en": "Camille opened the suitcase at once. The wine was in one piece, the presents too, and the cookbook lay safely under her pullovers."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend saßen die beiden bei Frau Schmitz in der Küche und aßen den Käse mit Brot und Wein.",
+    "en": "In the evening the two of them sat in Frau Schmitz's kitchen and ate the cheese with bread and wine."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Wissen Sie was? Er riecht schrecklich, aber er schmeckt wunderbar. Wenn Sie wieder nach Lyon fliegen, bringen Sie mir einen mit!",
+    "en": "You know what? It smells terrible, but it tastes wonderful. When you fly to Lyon again, bring me one!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum kam der Koffer nicht mit Camille in Köln an?",
+    "options": [
+     "Sie hatte ihn in Lyon vergessen.",
+     "Die Zeit zum Umsteigen in München war zu kurz.",
+     "Er war zu schwer."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum war das Kochbuch so wichtig für Camille?",
+    "options": [
+     "Ihre Oma hatte die Rezepte mit der Hand geschrieben.",
+     "Es war sehr teuer.",
+     "Es war ein Geschenk für Frau Schmitz."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was hätte Camille gern anders gemacht?",
+    "options": [
+     "Sie hätte den Zug genommen.",
+     "Sie hätte keinen Käse gekauft.",
+     "Sie hätte das Buch ins Handgepäck gepackt."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Wer nahm den Koffer an?",
+    "options": [
+     "Frau Schmitz",
+     "Ein Kollege",
+     "Camille selbst"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was dachte Frau Schmitz am Ende über den Käse?",
+    "options": [
+     "Er riecht gut und schmeckt schlecht.",
+     "Er riecht schlecht, aber er schmeckt sehr gut.",
+     "Man muss ihn wegwerfen."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "In München hatte sie nur zwanzig Minuten zum Umsteigen.",
+  "Hätte ich das Buch doch nur ins Handgepäck gepackt!",
+  "Ein Kurier hat heute Mittag Ihren Koffer gebracht."
+ ],
+ "speaking": [
+  {
+   "de": "Mein Koffer ist nicht angekommen.",
+   "en": "My suitcase didn't arrive."
+  },
+  {
+   "de": "Er ist groß und rot, mit einem gelben Band am Griff.",
+   "en": "It's big and red, with a yellow ribbon on the handle."
+  },
+  {
+   "de": "Hätte ich das Buch doch nur ins Handgepäck gepackt!",
+   "en": "If only I had put the book in my hand luggage!"
+  },
+  {
+   "de": "Ich habe ihn für Sie angenommen.",
+   "en": "I took it in for you."
+  },
+  {
+   "de": "Es tut mir so leid!",
+   "en": "I'm so sorry!"
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Write an 80–100-word message to your mother in Lyon: tell her what happened to the suitcase, what you would have done differently and how the story ended.",
+  "model": "Liebe Mama,\n\nstell dir vor: Mein Koffer ist erst nach vier Tagen angekommen! In München hatte ich nur zwanzig Minuten zum Umsteigen. Ich habe das Flugzeug noch erreicht, aber der Koffer nicht. Ich hatte solche Angst um das Kochbuch von Oma! Hätte ich es doch nur ins Handgepäck gepackt. Wenn ich einen späteren Flug genommen hätte, wäre das nicht passiert. Am Ende hat Frau Schmitz den Koffer angenommen, und das ganze Haus hat nach Käse gerochen. Aber das Buch ist in Ordnung, und Frau Schmitz findet unseren Käse wunderbar!\n\nKüsschen\nCamille"
+ }
+}

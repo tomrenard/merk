@@ -1,0 +1,479 @@
+{
+ "id": "b2-04",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Modal verbs for guessing",
+ "situation": "Guessing and speculating",
+ "canDo": "You can say how sure you are about something now or in the past with muss, dürfte, könnte, kann nicht, soll and will.",
+ "explanation": "When you guess why the neighbour's light is on or where a colleague is, German uses modal verbs to show **how sure** you are:\n\n| how sure? | modal | example |\n|---|---|---|\n| almost certain | **muss** | *Er **muss** krank sein.* He must be ill. |\n| very likely | **dürfte** | *Das **dürfte** 50 Euro kosten.* That probably costs 50 euros. |\n| possible | **kann / könnte** | *Sie **könnte** im Stau stehen.* She might be stuck in traffic. |\n| impossible | **kann nicht** | *Das **kann nicht** stimmen.* That can't be right. |\n| others say so | **soll** | *Er **soll** sehr reich sein.* He's said to be very rich. |\n| he says so himself | **will** | *Er **will** nichts gesehen haben.* He claims he saw nothing. |\n\n**werden (+ wohl)** + infinitive also expresses a guess: *Sie **wird** (wohl) noch im Büro **sein**.* She'll probably still be at the office.\n\n**Guessing about the past:** modal + Partizip II + **haben/sein**:\n- *Er **muss** den Bus **verpasst haben**.* He must have missed the bus.\n- *Sie **könnte** schon nach Hause **gegangen sein**.* She might have gone home already.\n\nWatch out:\n- **muss nicht** means \"not necessarily\", not \"can't be\": *Er muss nicht zu Hause sein.* For \"can't be\" say **kann nicht**.\n- **dürfte** here has nothing to do with permission: it just means \"probably\".\n- Don't put the modal in the past: *Er musste den Bus verpassen* means he *had to* miss it. A guess about the past keeps the modal in the present: *Er muss den Bus verpasst haben.*",
+ "french": "devoir has both meanings just like müssen (il doit être malade = er muss krank sein, il a dû rater le bus = er muss den Bus verpasst haben), and soll for rumours does the job of the conditionnel (il serait très riche = er soll sehr reich sein).",
+ "examples": [
+  {
+   "de": "Die Tür ist offen – Tom muss schon zu Hause sein.",
+   "en": "The door is open – Tom must be home already."
+  },
+  {
+   "de": "Sie ist noch nicht da. Sie könnte im Stau stehen.",
+   "en": "She isn't here yet. She might be stuck in traffic."
+  },
+  {
+   "de": "Die Reparatur dürfte etwa 200 Euro kosten.",
+   "en": "The repair will probably cost about 200 euros."
+  },
+  {
+   "de": "Das kann nicht stimmen – ich habe die Rechnung doch bezahlt!",
+   "en": "That can't be right – I paid the bill!"
+  },
+  {
+   "de": "Das neue Restaurant am Markt soll sehr gut sein.",
+   "en": "The new restaurant on the market square is said to be very good."
+  },
+  {
+   "de": "Er muss den Bus verpasst haben.",
+   "en": "He must have missed the bus."
+  },
+  {
+   "de": "Sie könnte den Schlüssel im Büro vergessen haben.",
+   "en": "She might have left the key at the office."
+  },
+  {
+   "de": "Der Nachbar will nichts gehört haben.",
+   "en": "The neighbour claims he didn't hear anything."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-04-01",
+   "type": "cloze",
+   "de": "Das Licht ist an. Paul ___ zu Hause sein.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "The light is on. Paul must be at home."
+  },
+  {
+   "id": "b2-04-02",
+   "type": "choice",
+   "de": "Ich bin nicht sicher, aber sie ___ im Stau stehen.",
+   "options": [
+    "muss",
+    "könnte",
+    "will"
+   ],
+   "answer": 1,
+   "why": "You're not sure, it's only possible, so könnte.",
+   "en": "I'm not sure, but she might be stuck in traffic."
+  },
+  {
+   "id": "b2-04-03",
+   "type": "cloze",
+   "de": "Das ___ nicht stimmen! Ich habe die Rechnung schon bezahlt.",
+   "base": "können",
+   "answers": [
+    "kann"
+   ],
+   "en": "That can't be right! I've already paid the bill."
+  },
+  {
+   "id": "b2-04-04",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "muss",
+    "den Bus",
+    "verpasst",
+    "haben"
+   ],
+   "answers": [
+    "Er muss den Bus verpasst haben."
+   ],
+   "en": "He must have missed the bus."
+  },
+  {
+   "id": "b2-04-05",
+   "type": "choice",
+   "de": "Ich habe gehört, das neue Café ___ sehr gut sein.",
+   "options": [
+    "soll",
+    "muss",
+    "dürfte"
+   ],
+   "answer": 0,
+   "why": "You're passing on what other people say, so soll.",
+   "en": "I've heard the new café is supposed to be very good."
+  },
+  {
+   "id": "b2-04-06",
+   "type": "cloze",
+   "de": "Die Reparatur ___ ungefähr 200 Euro kosten.",
+   "base": "dürfen (Konjunktiv II)",
+   "answers": [
+    "dürfte"
+   ],
+   "en": "The repair will probably cost about 200 euros."
+  },
+  {
+   "id": "b2-04-07",
+   "type": "choice",
+   "de": "Alle Lichter sind aus und das Auto ist weg. Sie ___ weggefahren sein.",
+   "options": [
+    "soll",
+    "darf",
+    "muss"
+   ],
+   "answer": 2,
+   "why": "All the signs point one way, so you're almost certain: muss.",
+   "en": "All the lights are off and the car is gone. She must have driven off."
+  },
+  {
+   "id": "b2-04-08",
+   "type": "cloze",
+   "de": "Ich finde meinen Schlüssel nicht. Ich ___ ihn im Büro vergessen haben.",
+   "base": "können (Konjunktiv II)",
+   "answers": [
+    "könnte"
+   ],
+   "en": "I can't find my key. I might have left it at the office."
+  },
+  {
+   "id": "b2-04-09",
+   "type": "order",
+   "tiles": [
+    "Die Nachbarin",
+    "soll",
+    "früher",
+    "Ärztin",
+    "gewesen",
+    "sein"
+   ],
+   "answers": [
+    "Die Nachbarin soll früher Ärztin gewesen sein.",
+    "Früher soll die Nachbarin Ärztin gewesen sein."
+   ],
+   "en": "The neighbour is said to have been a doctor in the past."
+  },
+  {
+   "id": "b2-04-10",
+   "type": "cloze",
+   "de": "Der Mann ___ nichts gesehen haben, sagt er. Aber ich glaube ihm nicht.",
+   "base": "wollen",
+   "answers": [
+    "will"
+   ],
+   "en": "The man claims he didn't see anything. But I don't believe him."
+  },
+  {
+   "id": "b2-04-11",
+   "type": "choice",
+   "de": "Wo ist Lisa? – Keine Ahnung. Sie ___ noch beim Arzt sein.",
+   "options": [
+    "muss",
+    "will",
+    "könnte"
+   ],
+   "answer": 2,
+   "why": "Keine Ahnung shows you're only guessing a possibility, so könnte.",
+   "en": "Where's Lisa? – No idea. She might still be at the doctor's."
+  },
+  {
+   "id": "b2-04-12",
+   "type": "cloze",
+   "de": "Es ist Sonntag. Die Geschäfte ___ geschlossen sein.",
+   "base": "müssen",
+   "answers": [
+    "müssen"
+   ],
+   "en": "It's Sunday. The shops must be closed."
+  },
+  {
+   "id": "b2-04-13",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "kann",
+    "nicht",
+    "die richtige Adresse",
+    "sein"
+   ],
+   "answers": [
+    "Das kann nicht die richtige Adresse sein.",
+    "Die richtige Adresse kann das nicht sein."
+   ],
+   "en": "That can't be the right address."
+  },
+  {
+   "id": "b2-04-14",
+   "type": "choice",
+   "de": "Sein Auto steht vor der Tür, aber er ___ nicht unbedingt zu Hause sein.",
+   "options": [
+    "kann",
+    "muss",
+    "darf"
+   ],
+   "answer": 1,
+   "why": "muss nicht (unbedingt) means 'not necessarily'.",
+   "en": "His car is outside, but he isn't necessarily at home."
+  },
+  {
+   "id": "b2-04-15",
+   "type": "cloze",
+   "de": "Keine Sorge, sie ___ wohl gleich kommen.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "Don't worry, she'll probably be here soon."
+  },
+  {
+   "id": "b2-04-16",
+   "type": "choice",
+   "de": "Die Straße ist nass. Es ___ geregnet haben.",
+   "options": [
+    "muss",
+    "will",
+    "soll"
+   ],
+   "answer": 0,
+   "why": "You can see the proof yourself, so you're almost certain: muss.",
+   "en": "The street is wet. It must have rained."
+  },
+  {
+   "id": "b2-04-17",
+   "type": "cloze",
+   "de": "Laut Zeitung ___ der Bürgermeister bald zurücktreten.",
+   "base": "sollen",
+   "answers": [
+    "soll"
+   ],
+   "en": "According to the paper, the mayor is said to be resigning soon."
+  },
+  {
+   "id": "b2-04-18",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "könnte",
+    "den Termin",
+    "vergessen",
+    "haben"
+   ],
+   "answers": [
+    "Sie könnte den Termin vergessen haben.",
+    "Den Termin könnte sie vergessen haben."
+   ],
+   "en": "She might have forgotten the appointment."
+  },
+  {
+   "id": "b2-04-19",
+   "type": "choice",
+   "de": "Niemand macht auf. Sie müssen schon in den Urlaub ___.",
+   "options": [
+    "gefahren haben",
+    "fahren haben",
+    "gefahren sein"
+   ],
+   "answer": 2,
+   "why": "fahren forms its past with sein, so: gefahren sein.",
+   "en": "Nobody's answering the door. They must have gone on holiday already."
+  },
+  {
+   "id": "b2-04-20",
+   "type": "cloze",
+   "de": "Ihr ___ ja ganz müde sein nach der langen Reise!",
+   "base": "müssen",
+   "answers": [
+    "müsst"
+   ],
+   "en": "You must be really tired after the long journey!"
+  },
+  {
+   "id": "b2-04-21",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "dürfte",
+    "kein Problem",
+    "sein"
+   ],
+   "answers": [
+    "Das dürfte kein Problem sein."
+   ],
+   "en": "That shouldn't be a problem."
+  },
+  {
+   "id": "b2-04-22",
+   "type": "choice",
+   "de": "Er ___ die Mail nie bekommen haben – das sagt er jedenfalls.",
+   "options": [
+    "soll",
+    "will",
+    "muss"
+   ],
+   "answer": 1,
+   "why": "He claims it himself, so will.",
+   "en": "He claims he never got the email – at least that's what he says."
+  },
+  {
+   "id": "b2-04-23",
+   "type": "cloze",
+   "de": "Bei dem Verkehr ___ es noch eine Stunde dauern.",
+   "base": "dürfen (Konjunktiv II)",
+   "answers": [
+    "dürfte"
+   ],
+   "en": "With this traffic it will probably take another hour."
+  },
+  {
+   "id": "b2-04-24",
+   "type": "order",
+   "tiles": [
+    "Der Dieb",
+    "muss",
+    "durch das Fenster",
+    "gekommen",
+    "sein"
+   ],
+   "answers": [
+    "Der Dieb muss durch das Fenster gekommen sein.",
+    "Durch das Fenster muss der Dieb gekommen sein."
+   ],
+   "en": "The thief must have come in through the window."
+  }
+ ],
+ "listening": {
+  "title": "Die neuen Nachbarn",
+  "intro": "Sabine and Erik see a moving van outside their building and guess who is moving in.",
+  "lines": [
+   {
+    "speaker": "Sabine",
+    "de": "Hast du gesehen? Vor dem Haus steht ein Umzugswagen.",
+    "en": "Have you seen? There's a moving van outside the building."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Ja, das müssen die neuen Nachbarn für den dritten Stock sein.",
+    "en": "Yes, that must be the new neighbours for the third floor."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Die Wohnung ist ziemlich groß. Das dürfte eine Familie sein.",
+    "en": "The flat is pretty big. It's probably a family."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Könnte sein. Da sind jedenfalls viele Kisten mit Spielzeug.",
+    "en": "Could be. There are lots of boxes of toys, anyway."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Frau Schulz sagt, der Mann soll Arzt an der Uniklinik sein.",
+    "en": "Mrs Schulz says the man is supposed to be a doctor at the university hospital."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Frau Schulz weiß immer alles. Woher will sie das denn wissen?",
+    "en": "Mrs Schulz always knows everything. How is she supposed to know that?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Keine Ahnung. Sie könnte mit der Hausverwaltung gesprochen haben.",
+    "en": "No idea. She might have talked to the property management."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Schau mal, da tragen sie ein Klavier! Das muss wahnsinnig schwer sein.",
+    "en": "Look, they're carrying a piano! That must be incredibly heavy."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Das kann doch nicht durch unser enges Treppenhaus passen.",
+    "en": "That can't possibly fit through our narrow stairwell."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Doch, die Männer sind Profis. Die dürften so etwas jeden Tag machen.",
+    "en": "Sure it can, those men are professionals. They probably do that every day."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Wir sollten sie am Wochenende zum Kaffee einladen.",
+    "en": "We should invite them for coffee at the weekend."
+   },
+   {
+    "speaker": "Erik",
+    "de": "Gute Idee. Bis dahin dürften sie die meisten Kisten ausgepackt haben.",
+    "en": "Good idea. By then they'll probably have unpacked most of the boxes."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What do Sabine and Erik see outside?",
+    "options": [
+     "A moving van.",
+     "A police car.",
+     "A delivery van with a new sofa."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why do they think a family is moving in?",
+    "options": [
+     "Mrs Schulz told them so.",
+     "The flat is big and there are boxes of toys.",
+     "They saw children in the van."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What has Mrs Schulz heard about the man?",
+    "options": [
+     "He is a music teacher.",
+     "He works for the property management.",
+     "He is a doctor at the university hospital."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What do Sabine and Erik plan to do?",
+    "options": [
+     "Help carry the piano.",
+     "Invite the new neighbours for coffee.",
+     "Ask Mrs Schulz for more information."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Er ist noch nicht da, er muss den Bus verpasst haben.",
+  "Die Reparatur dürfte ungefähr zweihundert Euro kosten.",
+  "Das neue Restaurant am Markt soll sehr gut sein."
+ ],
+ "speaking": [
+  {
+   "de": "Das müssen die neuen Nachbarn sein.",
+   "en": "That must be the new neighbours."
+  },
+  {
+   "de": "Die Wohnung ist ziemlich groß. Das dürfte eine Familie sein.",
+   "en": "The flat is pretty big. It's probably a family."
+  },
+  {
+   "de": "Sie könnte mit der Hausverwaltung gesprochen haben.",
+   "en": "She might have talked to the property management."
+  },
+  {
+   "de": "Das kann doch nicht durch unser Treppenhaus passen.",
+   "en": "That can't possibly fit through our stairwell."
+  },
+  {
+   "de": "Bis dahin dürften sie die meisten Kisten ausgepackt haben.",
+   "en": "By then they'll probably have unpacked most of the boxes."
+  }
+ ],
+ "writing": {
+  "task": "A colleague hasn't come to work today and isn't answering her phone. Write a message of about 100 words to another colleague: guess what might have happened, say what you've heard, and suggest what to do.",
+  "model": "Hallo Jonas,\n\nweißt du, wo Anna ist? Sie ist heute nicht ins Büro gekommen, und an ihr Handy geht sie auch nicht. Gestern sah sie schon ziemlich blass aus, sie könnte also krank sein. Dass sie verschlafen hat, glaube ich nicht – das passiert ihr nie. Frau Klein hat gehört, Annas Mutter soll im Krankenhaus sein. Dann muss Anna heute früh nach Hamburg gefahren sein. Das kann aber nicht ganz stimmen, denn dann hätte sie dem Chef sicher eine Nachricht geschrieben. Kannst du sie in der Mittagspause noch mal anrufen? Ich habe den ganzen Vormittag Termine.\n\nViele Grüße\nClaire"
+ }
+}

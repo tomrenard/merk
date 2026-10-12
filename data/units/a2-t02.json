@@ -1,0 +1,501 @@
+{
+ "id": "a2-t02",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "der Arzt",
+  "die Praxis",
+  "der Termin",
+  "die Sprechstunde",
+  "die Anmeldung",
+  "die Krankenkasse",
+  "die Versichertenkarte",
+  "untersuchen",
+  "die Apotheke",
+  "das Rezept",
+  "das Medikament",
+  "die Tablette",
+  "das Krankenhaus",
+  "krank",
+  "gesund",
+  "die Krankheit",
+  "die Gesundheit",
+  "der Schmerz",
+  "wehtun",
+  "das Fieber",
+  "husten",
+  "erkältet sein",
+  "die Grippe",
+  "der Kopf",
+  "der Hals",
+  "der Bauch",
+  "der Rücken",
+  "der Zahn"
+ ],
+ "title": "Doctor, pharmacy and health insurance",
+ "situation": "At the doctor's practice",
+ "canDo": "You can make an appointment, say what hurts, understand the doctor's instructions and get your medicine at the pharmacy.",
+ "explanation": "At the practice (**die Praxis**) you first go to the **Anmeldung** (reception) and show your **Versichertenkarte** from your **Krankenkasse**. The doctor **untersucht** you and may give you a **Rezept**. With it you get your medicine at the **Apotheke**.\n\n| German | English |\n|---|---|\n| der Arzt, -¨e / die Ärztin, -nen | doctor |\n| der Termin, -e | appointment |\n| die Sprechstunde, -n | consultation hours |\n| die Krankenkasse, -n | health insurance |\n| das Rezept, -e | prescription |\n| das Medikament, -e · die Tablette, -n | medicine · pill |\n| das Krankenhaus, -¨er | hospital |\n\n| Saying what's wrong | English |\n|---|---|\n| Mir tut der Kopf weh. | My head hurts. |\n| Ich habe Halsschmerzen. | I have a sore throat. |\n| Ich habe Fieber. · Ich huste. | I have a temperature. · I'm coughing. |\n| Ich bin erkältet. · Ich habe Grippe. | I have a cold. · I have flu. |\n| Was fehlt Ihnen? | What's the matter? |\n\n- **wehtun** takes the dative: *Mir tut der Bauch weh.* With a plural: *Mir tun die Zähne weh.*\n- Pains are compounds with **-schmerzen**: *Kopfschmerzen, Bauchschmerzen, Rückenschmerzen.*\n- **das Rezept** is a prescription (or a recipe), never a receipt.\n- Ask: *Haben Sie heute noch einen Termin frei?*\n- Common mistake: *Ich bin kalt* for a cold. Say **Ich bin erkältet**.",
+ "french": "« J'ai mal à la tête » is Ich habe Kopfschmerzen or Mir tut der Kopf weh (mir works like « me »), and « l'ordonnance » is das Rezept.",
+ "examples": [
+  {
+   "de": "Ich brauche einen Termin, ich bin krank.",
+   "en": "I need an appointment, I'm ill."
+  },
+  {
+   "de": "Mir tut der Bauch weh.",
+   "en": "My stomach hurts."
+  },
+  {
+   "de": "Ich habe Kopfschmerzen und Fieber.",
+   "en": "I have a headache and a temperature."
+  },
+  {
+   "de": "Haben Sie Ihre Versichertenkarte dabei?",
+   "en": "Do you have your insurance card with you?"
+  },
+  {
+   "de": "Die Ärztin hat mich untersucht.",
+   "en": "The doctor examined me."
+  },
+  {
+   "de": "Ich gebe Ihnen ein Rezept.",
+   "en": "I'll give you a prescription."
+  },
+  {
+   "de": "Nehmen Sie die Tabletten nach dem Essen.",
+   "en": "Take the pills after meals."
+  },
+  {
+   "de": "Die Sprechstunde ist am Montag von 8 bis 12 Uhr.",
+   "en": "Consultation hours are on Monday from 8 to 12."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t02-01",
+   "type": "cloze",
+   "de": "Ich bin krank. Ich brauche heute einen ___ beim Arzt.",
+   "base": "appointment",
+   "answers": [
+    "Termin"
+   ],
+   "en": "I'm ill. I need an appointment at the doctor's today."
+  },
+  {
+   "id": "a2-t02-02",
+   "type": "choice",
+   "de": "Mit dem Rezept gehen Sie zur ___.",
+   "options": [
+    "Praxis",
+    "Apotheke",
+    "Krankenkasse"
+   ],
+   "answer": 1,
+   "why": "You take a prescription to the pharmacy: die Apotheke.",
+   "en": "Take the prescription to the pharmacy."
+  },
+  {
+   "id": "a2-t02-03",
+   "type": "cloze",
+   "de": "Mir tut der ___ weh.",
+   "base": "head",
+   "answers": [
+    "Kopf"
+   ],
+   "en": "My head hurts."
+  },
+  {
+   "id": "a2-t02-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "seit gestern",
+    "Fieber"
+   ],
+   "answers": [
+    "Ich habe seit gestern Fieber.",
+    "Seit gestern habe ich Fieber."
+   ],
+   "en": "I've had a temperature since yesterday."
+  },
+  {
+   "id": "a2-t02-05",
+   "type": "choice",
+   "de": "Haben Sie Ihre ___ dabei? – Ja, hier bitte.",
+   "options": [
+    "Sprechstunde",
+    "Krankheit",
+    "Versichertenkarte"
+   ],
+   "answer": 2,
+   "why": "At reception you show your health insurance card: die Versichertenkarte.",
+   "en": "Do you have your insurance card with you? – Yes, here you are."
+  },
+  {
+   "id": "a2-t02-06",
+   "type": "cloze",
+   "de": "Nehmen Sie dreimal am Tag eine ___.",
+   "base": "pill",
+   "answers": [
+    "Tablette"
+   ],
+   "en": "Take one pill three times a day."
+  },
+  {
+   "id": "a2-t02-07",
+   "type": "choice",
+   "de": "Ich bin ___ und habe Husten.",
+   "options": [
+    "erkältet",
+    "gesund",
+    "kalt"
+   ],
+   "answer": 0,
+   "why": "erkältet sein = to have a cold; ich bin kalt is wrong.",
+   "en": "I've got a cold and a cough."
+  },
+  {
+   "id": "a2-t02-08",
+   "type": "cloze",
+   "de": "Die Ärztin ___ meinen Rücken.",
+   "base": "examines (untersuchen)",
+   "answers": [
+    "untersucht"
+   ],
+   "en": "The doctor examines my back."
+  },
+  {
+   "id": "a2-t02-09",
+   "type": "order",
+   "tiles": [
+    "Mir",
+    "tut",
+    "der Hals",
+    "weh"
+   ],
+   "answers": [
+    "Mir tut der Hals weh.",
+    "Der Hals tut mir weh."
+   ],
+   "en": "My throat hurts."
+  },
+  {
+   "id": "a2-t02-10",
+   "type": "choice",
+   "de": "Dr. Weber hat von 8 bis 12 Uhr ___.",
+   "options": [
+    "Sprechstunde",
+    "Apotheke",
+    "Krankheit"
+   ],
+   "answer": 0,
+   "why": "die Sprechstunde = the hours when the doctor sees patients.",
+   "en": "Dr Weber sees patients from 8 to 12."
+  },
+  {
+   "id": "a2-t02-11",
+   "type": "cloze",
+   "de": "Ich ___ gestern Fieber.",
+   "base": "had (haben)",
+   "answers": [
+    "hatte"
+   ],
+   "en": "I had a temperature yesterday."
+  },
+  {
+   "id": "a2-t02-12",
+   "type": "choice",
+   "de": "Wo tut es ___ weh?",
+   "options": [
+    "Sie",
+    "Ihnen",
+    "Ihr"
+   ],
+   "answer": 1,
+   "why": "wehtun takes the dative: Ihnen.",
+   "en": "Where does it hurt?"
+  },
+  {
+   "id": "a2-t02-13",
+   "type": "cloze",
+   "de": "Für die Tabletten brauchen Sie ein ___.",
+   "base": "prescription",
+   "answers": [
+    "Rezept"
+   ],
+   "en": "You need a prescription for the pills."
+  },
+  {
+   "id": "a2-t02-14",
+   "type": "order",
+   "tiles": [
+    "Haben Sie",
+    "heute",
+    "noch",
+    "einen Termin",
+    "frei"
+   ],
+   "answers": [
+    "Haben Sie heute noch einen Termin frei?"
+   ],
+   "en": "Do you have an appointment free today?"
+  },
+  {
+   "id": "a2-t02-15",
+   "type": "choice",
+   "de": "Mir tun die ___ weh. Ich muss zum Zahnarzt.",
+   "options": [
+    "Zahn",
+    "Zähne",
+    "Hälse"
+   ],
+   "answer": 1,
+   "why": "tun is plural, and the dentist is for teeth: die Zähne.",
+   "en": "My teeth hurt. I have to go to the dentist."
+  },
+  {
+   "id": "a2-t02-16",
+   "type": "cloze",
+   "de": "Ich ___ nicht arbeiten, ich war krank.",
+   "base": "could (können)",
+   "answers": [
+    "konnte"
+   ],
+   "en": "I couldn't work, I was ill."
+  },
+  {
+   "id": "a2-t02-17",
+   "type": "choice",
+   "de": "Bei der ___ zeigen Sie zuerst Ihre Versichertenkarte.",
+   "options": [
+    "Anmeldung",
+    "Grippe",
+    "Gesundheit"
+   ],
+   "answer": 0,
+   "why": "die Anmeldung is the reception desk in a practice.",
+   "en": "First you show your insurance card at reception."
+  },
+  {
+   "id": "a2-t02-18",
+   "type": "cloze",
+   "de": "Bleiben Sie im Bett und trinken Sie viel. Dann sind Sie bald wieder ___.",
+   "base": "healthy",
+   "answers": [
+    "gesund"
+   ],
+   "en": "Stay in bed and drink a lot. Then you'll soon be well again."
+  },
+  {
+   "id": "a2-t02-19",
+   "type": "order",
+   "tiles": [
+    "Der Arzt",
+    "hat",
+    "mir",
+    "ein Rezept",
+    "gegeben"
+   ],
+   "answers": [
+    "Der Arzt hat mir ein Rezept gegeben.",
+    "Mir hat der Arzt ein Rezept gegeben.",
+    "Ein Rezept hat mir der Arzt gegeben."
+   ],
+   "en": "The doctor gave me a prescription."
+  },
+  {
+   "id": "a2-t02-20",
+   "type": "choice",
+   "de": "Meine ___ bezahlt den Arzt.",
+   "options": [
+    "Apotheke",
+    "Krankenkasse",
+    "Praxis"
+   ],
+   "answer": 1,
+   "why": "die Krankenkasse (health insurance) pays the doctor.",
+   "en": "My health insurance pays for the doctor."
+  },
+  {
+   "id": "a2-t02-21",
+   "type": "cloze",
+   "de": "Was ___ Ihnen denn?",
+   "base": "is the matter (fehlen)",
+   "answers": [
+    "fehlt"
+   ],
+   "en": "What's the matter with you?"
+  },
+  {
+   "id": "a2-t02-22",
+   "type": "choice",
+   "de": "Er hatte einen Unfall und ist jetzt im ___.",
+   "options": [
+    "Rathaus",
+    "Kaufhaus",
+    "Krankenhaus"
+   ],
+   "answer": 2,
+   "why": "After an accident you go to hospital: das Krankenhaus.",
+   "en": "He had an accident and is now in hospital."
+  },
+  {
+   "id": "a2-t02-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "musste",
+    "drei Tage",
+    "im Bett",
+    "bleiben"
+   ],
+   "answers": [
+    "Ich musste drei Tage im Bett bleiben.",
+    "Drei Tage musste ich im Bett bleiben."
+   ],
+   "en": "I had to stay in bed for three days."
+  },
+  {
+   "id": "a2-t02-24",
+   "type": "cloze",
+   "de": "Ich ___ seit drei Tagen und habe Halsschmerzen.",
+   "base": "to cough (husten)",
+   "answers": [
+    "huste"
+   ],
+   "en": "I've been coughing for three days and I have a sore throat."
+  }
+ ],
+ "listening": {
+  "title": "Beim Arzt",
+  "intro": "Marc is ill and sees Dr Anna Weber at her practice.",
+  "lines": [
+   {
+    "speaker": "Anna",
+    "de": "Guten Morgen, Herr Dubois. Was fehlt Ihnen denn?",
+    "en": "Good morning, Mr Dubois. What's the matter?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Mir geht es seit Montag nicht gut. Ich habe Halsschmerzen und Kopfschmerzen, und ich huste viel.",
+    "en": "I haven't been well since Monday. I have a sore throat and a headache, and I'm coughing a lot."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Haben Sie auch Fieber?",
+    "en": "Do you have a temperature too?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, gestern Abend hatte ich 39 Grad. Ich konnte nicht schlafen.",
+    "en": "Yes, last night I had 39 degrees. I couldn't sleep."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich untersuche Sie jetzt. … So. Sie haben keine Erkältung, Sie haben Grippe.",
+    "en": "I'll examine you now. … Right. You don't have a cold, you have flu."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Brauche ich Medikamente?",
+    "en": "Do I need medicine?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ich gebe Ihnen ein Rezept für Tabletten gegen das Fieber. Nehmen Sie dreimal am Tag eine Tablette.",
+    "en": "I'll give you a prescription for pills for the fever. Take one pill three times a day."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Kann ich morgen wieder arbeiten?",
+    "en": "Can I go back to work tomorrow?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Nein, Sie müssen bis Freitag im Bett bleiben. Ich schreibe Sie krank. Und trinken Sie viel Tee!",
+    "en": "No, you must stay in bed until Friday. I'll sign you off sick. And drink a lot of tea!"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Danke. Gibt es hier eine Apotheke in der Nähe?",
+    "en": "Thank you. Is there a pharmacy near here?"
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ja, gleich gegenüber. Gute Besserung!",
+    "en": "Yes, right opposite. Get well soon!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Since when has Marc been unwell?",
+    "options": [
+     "Since Monday.",
+     "Since last night.",
+     "Since last week."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What happened last night?",
+    "options": [
+     "He had a stomach ache.",
+     "He couldn't sleep.",
+     "He went to hospital."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does the doctor say Marc has?",
+    "options": [
+     "A cold.",
+     "An allergy.",
+     "Flu."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Until when must Marc stay in bed?",
+    "options": [
+     "Until tomorrow.",
+     "Until Friday.",
+     "Until Monday."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Mir tut seit gestern der Hals weh.",
+  "Ich brauche heute noch einen Termin beim Arzt.",
+  "Mit dem Rezept gehen Sie zur Apotheke."
+ ],
+ "speaking": [
+  {
+   "de": "Was fehlt Ihnen denn?",
+   "en": "What's the matter?"
+  },
+  {
+   "de": "Ich habe Halsschmerzen und huste viel.",
+   "en": "I have a sore throat and I'm coughing a lot."
+  },
+  {
+   "de": "Gestern Abend hatte ich Fieber.",
+   "en": "Last night I had a temperature."
+  },
+  {
+   "de": "Brauche ich Medikamente?",
+   "en": "Do I need medicine?"
+  },
+  {
+   "de": "Gibt es hier eine Apotheke in der Nähe?",
+   "en": "Is there a pharmacy near here?"
+  }
+ ],
+ "writing": {
+  "task": "You are ill and can't go to work. Write 5–6 sentences to a colleague: say what is wrong, what the doctor said and when you will be back.",
+  "model": "Hallo Sabine, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Heute Morgen war ich beim Arzt. Er hat mich untersucht, ich habe Grippe. Ich muss bis Freitag im Bett bleiben und Tabletten nehmen. Am Montag bin ich wieder im Büro. Viele Grüße, Marc"
+ }
+}

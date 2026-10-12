@@ -1,0 +1,548 @@
+{
+ "id": "b2-s01",
+ "cefr": "B2",
+ "kind": "story",
+ "title": "A podcast about life in Berlin",
+ "situation": "A longer text to understand",
+ "canDo": "You can follow a longer podcast interview about everyday life in a big city and understand the speakers' experiences and opinions.",
+ "explanation": "In the podcast *Zugezogen* (\"Moved here\"), the host Mira talks to people who have moved to Berlin. Today's guest is Camille from Lyon, who has lived in the city for six years. She talks about finding a flat, the famous Berlin bluntness, the authorities and what she loves about the city. Listen for the reported speech with Konjunktiv I (*er meinte, das sei normal*).\n\n| German | English |\n|---|---|\n| die Folge, -n | episode |\n| die Besichtigung, -en | flat viewing |\n| das Treppenhaus, ¨-er | stairwell |\n| jemanden anschnauzen | to snap at someone |\n| die Berliner Schnauze | Berliners' blunt way of talking |\n| das Bürgeramt, ¨-er | citizens' office (where you register) |\n| der Späti, -s | late-night corner shop |\n| der Stadtrand | outskirts of the city |\n| vermissen | to miss |",
+ "french": "",
+ "examples": [
+  {
+   "de": "Mein Mitbewohner meinte, das sei normal im Februar.",
+   "en": "My flatmate said that was normal in February."
+  },
+  {
+   "de": "Bei jeder Besichtigung standen fünfzig Leute im Treppenhaus.",
+   "en": "At every viewing there were fifty people in the stairwell."
+  },
+  {
+   "de": "Die Berliner Schnauze ist direkt, aber selten böse gemeint.",
+   "en": "The Berlin bluntness is direct but rarely meant badly."
+  },
+  {
+   "de": "Man wartet zwei Monate auf einen Termin beim Bürgeramt.",
+   "en": "You wait two months for an appointment at the citizens' office."
+  },
+  {
+   "de": "Viele Freunde sind an den Stadtrand gezogen.",
+   "en": "Many friends have moved to the outskirts."
+  },
+  {
+   "de": "Ich vermisse gutes Brot und Käse.",
+   "en": "I miss good bread and cheese."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-s01-01",
+   "type": "choice",
+   "de": "Camille kommt ursprünglich aus ___.",
+   "options": [
+    "Paris",
+    "Lyon",
+    "Leipzig"
+   ],
+   "answer": 1,
+   "why": "Mira says Camille comes from Lyon.",
+   "en": "Camille originally comes from Lyon."
+  },
+  {
+   "id": "b2-s01-02",
+   "type": "cloze",
+   "de": "Das Zimmer hatte sie über eine ___ gefunden.",
+   "base": "ad",
+   "answers": [
+    "Anzeige"
+   ],
+   "en": "She had found the room through an ad."
+  },
+  {
+   "id": "b2-s01-03",
+   "type": "choice",
+   "de": "Ihr Mitbewohner meinte, das ___ normal im Februar.",
+   "options": [
+    "seien",
+    "sei",
+    "sein"
+   ],
+   "answer": 1,
+   "why": "Reported speech uses Konjunktiv I: er/es sei.",
+   "en": "Her flatmate said that was normal in February."
+  },
+  {
+   "id": "b2-s01-04",
+   "type": "cloze",
+   "de": "Bei jeder ___ standen fünfzig Leute im Treppenhaus.",
+   "base": "flat viewing",
+   "answers": [
+    "Besichtigung",
+    "Wohnungsbesichtigung"
+   ],
+   "en": "At every viewing there were fifty people in the stairwell."
+  },
+  {
+   "id": "b2-s01-05",
+   "type": "order",
+   "tiles": [
+    "Plötzlich",
+    "hat",
+    "es",
+    "geklappt"
+   ],
+   "answers": [
+    "Plötzlich hat es geklappt.",
+    "Es hat plötzlich geklappt."
+   ],
+   "en": "Suddenly it worked."
+  },
+  {
+   "id": "b2-s01-06",
+   "type": "choice",
+   "de": "Der Busfahrer hat sie ___, weil sie kein passendes Kleingeld hatte.",
+   "options": [
+    "angerufen",
+    "angeschnauzt",
+    "angezogen"
+   ],
+   "answer": 1,
+   "why": "jemanden anschnauzen means to snap at someone, which is what the driver did.",
+   "en": "The bus driver snapped at her because she didn't have the right change."
+  },
+  {
+   "id": "b2-s01-07",
+   "type": "cloze",
+   "de": "Die Berliner Schnauze ist direkt, aber selten böse ___.",
+   "base": "meant",
+   "answers": [
+    "gemeint"
+   ],
+   "en": "The Berlin bluntness is direct but rarely meant badly."
+  },
+  {
+   "id": "b2-s01-08",
+   "type": "choice",
+   "de": "Ihre ___ hat drei Wochen lang die Einkäufe hochgetragen.",
+   "options": [
+    "Mitbewohnerin",
+    "Nachbarin",
+    "Freundin"
+   ],
+   "answer": 1,
+   "why": "An older lady from next door helped her when her foot was broken.",
+   "en": "Her neighbour carried her shopping upstairs for three weeks."
+  },
+  {
+   "id": "b2-s01-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "dachte",
+    "in Deutschland",
+    "sei",
+    "alles",
+    "digital"
+   ],
+   "answers": [
+    "Ich dachte, in Deutschland sei alles digital.",
+    "Ich dachte, alles sei in Deutschland digital."
+   ],
+   "en": "I thought everything in Germany was digital."
+  },
+  {
+   "id": "b2-s01-10",
+   "type": "cloze",
+   "de": "Man wartet zwei Monate auf einen Termin beim ___.",
+   "base": "citizens' office",
+   "answers": [
+    "Bürgeramt"
+   ],
+   "en": "You wait two months for an appointment at the citizens' office."
+  },
+  {
+   "id": "b2-s01-11",
+   "type": "choice",
+   "de": "Wowereit hat gesagt, Berlin sei arm, ___ sexy.",
+   "options": [
+    "sondern",
+    "aber",
+    "denn"
+   ],
+   "answer": 1,
+   "why": "The famous quote is arm, aber sexy; sondern only follows a negation.",
+   "en": "Wowereit said Berlin was poor but sexy."
+  },
+  {
+   "id": "b2-s01-12",
+   "type": "cloze",
+   "de": "Viele Freunde sind an den ___ gezogen, weil die Mieten gestiegen sind.",
+   "base": "outskirts",
+   "answers": [
+    "Stadtrand"
+   ],
+   "en": "Many friends have moved to the outskirts because rents have gone up."
+  },
+  {
+   "id": "b2-s01-13",
+   "type": "choice",
+   "de": "Ein ___ ist ein kleiner Laden, der bis spät in die Nacht offen hat.",
+   "options": [
+    "Imbiss",
+    "Bäcker",
+    "Späti"
+   ],
+   "answer": 2,
+   "why": "A Späti (from spät) is a late-night corner shop.",
+   "en": "A Späti is a small shop that is open until late at night."
+  },
+  {
+   "id": "b2-s01-14",
+   "type": "order",
+   "tiles": [
+    "Die Mieten",
+    "sind",
+    "in den letzten Jahren",
+    "extrem",
+    "gestiegen"
+   ],
+   "answers": [
+    "Die Mieten sind in den letzten Jahren extrem gestiegen.",
+    "In den letzten Jahren sind die Mieten extrem gestiegen."
+   ],
+   "en": "Rents have risen enormously in recent years."
+  },
+  {
+   "id": "b2-s01-15",
+   "type": "cloze",
+   "de": "Camille ___ gutes Brot und Käse aus Frankreich.",
+   "base": "misses",
+   "answers": [
+    "vermisst"
+   ],
+   "en": "Camille misses good bread and cheese from France."
+  },
+  {
+   "id": "b2-s01-16",
+   "type": "choice",
+   "de": "Laut Camille öffnen sich die Leute, wenn man wenigstens ___, Deutsch zu sprechen.",
+   "options": [
+    "versucht",
+    "besucht",
+    "sucht"
+   ],
+   "answer": 0,
+   "why": "versuchen means to try.",
+   "en": "According to Camille, people open up if you at least try to speak German."
+  },
+  {
+   "id": "b2-s01-17",
+   "type": "cloze",
+   "de": "Danke für die ___, Mira!",
+   "base": "invitation",
+   "answers": [
+    "Einladung"
+   ],
+   "en": "Thanks for having me, Mira!"
+  },
+  {
+   "id": "b2-s01-18",
+   "type": "choice",
+   "de": "Mira sagt, die lange Wartezeit beim Amt sei leider kein ___.",
+   "options": [
+    "Problem",
+    "Klischee",
+    "Fehler"
+   ],
+   "answer": 1,
+   "why": "Mira means that it is really true, not just a cliché.",
+   "en": "Mira says the long wait at the office is unfortunately not just a cliché."
+  },
+  {
+   "id": "b2-s01-19",
+   "type": "order",
+   "tiles": [
+    "Viele Zuhörer",
+    "schreiben",
+    "die Berliner",
+    "seien",
+    "unfreundlich"
+   ],
+   "answers": [
+    "Viele Zuhörer schreiben, die Berliner seien unfreundlich.",
+    "Die Berliner seien unfreundlich, schreiben viele Zuhörer."
+   ],
+   "en": "Many listeners write that Berliners are unfriendly."
+  },
+  {
+   "id": "b2-s01-20",
+   "type": "cloze",
+   "de": "Danke fürs Zuhören und bis zur nächsten ___!",
+   "base": "episode",
+   "answers": [
+    "Folge"
+   ],
+   "en": "Thanks for listening, and see you in the next episode!"
+  },
+  {
+   "id": "b2-s01-21",
+   "type": "choice",
+   "de": "Camille hat das Zimmer gemietet, ___ es vorher gesehen zu haben.",
+   "options": [
+    "statt",
+    "um",
+    "ohne"
+   ],
+   "answer": 2,
+   "why": "ohne … zu means without doing something.",
+   "en": "Camille rented the room without having seen it first."
+  },
+  {
+   "id": "b2-s01-22",
+   "type": "cloze",
+   "de": "Vorher hatten die beiden Frauen kaum ein Wort ___.",
+   "base": "exchanged",
+   "answers": [
+    "gewechselt"
+   ],
+   "en": "Before that the two women had hardly exchanged a word."
+  },
+  {
+   "id": "b2-s01-23",
+   "type": "choice",
+   "de": "Im Sommer liebt Camille die ___ rund um Berlin.",
+   "options": [
+    "Berge",
+    "Strände",
+    "Seen"
+   ],
+   "answer": 2,
+   "why": "Camille says she loves the lakes in summer.",
+   "en": "In summer Camille loves the lakes around Berlin."
+  },
+  {
+   "id": "b2-s01-24",
+   "type": "order",
+   "tiles": [
+    "Lernt",
+    "Deutsch",
+    "auch wenn",
+    "alle",
+    "Englisch",
+    "sprechen"
+   ],
+   "answers": [
+    "Lernt Deutsch, auch wenn alle Englisch sprechen."
+   ],
+   "en": "Learn German, even if everyone speaks English."
+  }
+ ],
+ "listening": {
+  "title": "Zugezogen – Folge 12: Camille",
+  "intro": "In the podcast \"Zugezogen\", host Mira talks to Camille from Lyon about her six years in Berlin.",
+  "lines": [
+   {
+    "speaker": "Mira",
+    "de": "Hallo und herzlich willkommen zu „Zugezogen“, dem Podcast über das Leben in Berlin. Ich bin Mira, und heute ist Camille bei mir. Sie kommt aus Lyon und lebt seit sechs Jahren hier.",
+    "en": "Hello and welcome to \"Zugezogen\", the podcast about life in Berlin. I'm Mira, and today Camille is with me. She comes from Lyon and has lived here for six years."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Hallo Mira, danke für die Einladung!",
+    "en": "Hi Mira, thanks for having me!"
+   },
+   {
+    "speaker": "Mira",
+    "de": "Camille, erinnerst du dich an deinen ersten Tag in Berlin?",
+    "en": "Camille, do you remember your first day in Berlin?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Oh ja. Es war Februar, minus acht Grad, und ich stand mit zwei Koffern vor einem Haus in Neukölln. Das Zimmer hatte ich über eine Anzeige gefunden, ohne es vorher gesehen zu haben.",
+    "en": "Oh yes. It was February, minus eight degrees, and I was standing outside a building in Neukölln with two suitcases. I'd found the room through an ad, without having seen it first."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Mutig! Und wie war es?",
+    "en": "Brave! And what was it like?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Das Zimmer war in Ordnung, aber die Heizung war kaputt. Mein Mitbewohner meinte, das sei normal im Februar, der Hausmeister komme irgendwann.",
+    "en": "The room was OK, but the heating was broken. My flatmate said that was normal in February and the caretaker would come at some point."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Typisch. Wie lange hast du denn eine eigene Wohnung gesucht?",
+    "en": "Typical. How long did you look for a flat of your own?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Fast ein Jahr. Bei jeder Besichtigung standen fünfzig Leute im Treppenhaus. Irgendwann habe ich meiner Bewerbung ein Foto und einen kleinen Brief auf Deutsch beigelegt – und plötzlich hat es geklappt.",
+    "en": "Almost a year. At every viewing there were fifty people in the stairwell. At some point I added a photo and a short letter in German to my application – and suddenly it worked."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Viele Zuhörer schreiben uns, die Berliner seien unfreundlich. Wie siehst du das?",
+    "en": "Many listeners write to us that Berliners are unfriendly. How do you see it?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Am Anfang dachte ich das auch. Ein Busfahrer hat mich angeschnauzt, weil ich kein passendes Kleingeld hatte. Heute weiß ich: Das ist die berühmte Berliner Schnauze. Direkt, aber selten böse gemeint.",
+    "en": "At first I thought so too. A bus driver snapped at me because I didn't have the right change. Today I know: that's the famous Berlin bluntness. Direct, but rarely meant badly."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Und hinter der Schnauze steckt oft ein großes Herz.",
+    "en": "And behind the bluntness there's often a big heart."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Genau. Als ich mir den Fuß gebrochen hatte, hat mir meine Nachbarin, eine ältere Dame, drei Wochen lang jeden Tag die Einkäufe hochgetragen. Vorher hatten wir kaum ein Wort gewechselt.",
+    "en": "Exactly. When I'd broken my foot, my neighbour, an older lady, carried my shopping upstairs every day for three weeks. Before that we'd hardly exchanged a word."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Wie schön. Was hat dich am meisten überrascht?",
+    "en": "How lovely. What surprised you most?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Die Bürokratie. Ich dachte, in Deutschland sei alles digital und perfekt organisiert. Und dann wartet man zwei Monate auf einen Termin beim Bürgeramt, nur um sich anzumelden.",
+    "en": "The bureaucracy. I thought everything in Germany was digital and perfectly organised. And then you wait two months for an appointment at the citizens' office, just to register your address."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Ja, das ist leider kein Klischee. Inzwischen geht manches online, aber eben nicht alles.",
+    "en": "Yes, unfortunately that's not just a cliché. Some things can be done online now, but not everything."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Dafür ist das Leben hier sehr frei. Niemand schaut, was du anziehst oder wie du lebst. In Lyon war das anders.",
+    "en": "On the other hand, life here is very free. Nobody cares what you wear or how you live. In Lyon it was different."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Der frühere Bürgermeister Klaus Wowereit hat ja mal gesagt, Berlin sei arm, aber sexy. Stimmt das noch?",
+    "en": "The former mayor Klaus Wowereit once said Berlin was poor but sexy. Is that still true?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Sexy schon, aber arm? Die Mieten sind in den letzten Jahren extrem gestiegen. Viele Freunde von mir sind an den Stadtrand oder nach Leipzig gezogen.",
+    "en": "Sexy, yes, but poor? Rents have risen enormously in recent years. Many of my friends have moved to the outskirts or to Leipzig."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Und du? Bleibst du?",
+    "en": "And you? Are you staying?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ich glaube, ja. Ich liebe die Seen im Sommer, die Spätis an jeder Ecke und dass man um drei Uhr nachts noch eine Falafel bekommt.",
+    "en": "I think so. I love the lakes in summer, the late-night shops on every corner and that you can still get a falafel at three in the morning."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Vermisst du etwas aus Frankreich?",
+    "en": "Do you miss anything from France?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Gutes Brot und Käse, ganz klar! Wobei das Brot hier gar nicht schlecht ist, es ist nur anders.",
+    "en": "Good bread and cheese, definitely! Although the bread here isn't bad at all, it's just different."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Zum Schluss: Welchen Tipp gibst du Leuten, die neu nach Berlin kommen?",
+    "en": "Finally: what tip would you give people who are new to Berlin?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Lernt Deutsch, auch wenn alle mit euch Englisch sprechen. Die Leute öffnen sich viel mehr, wenn man es wenigstens versucht.",
+    "en": "Learn German, even if everyone speaks English to you. People open up much more if you at least try."
+   },
+   {
+    "speaker": "Mira",
+    "de": "Ein schönes Schlusswort. Danke, Camille! Und euch danke fürs Zuhören – bis zur nächsten Folge.",
+    "en": "A nice note to end on. Thank you, Camille! And thank you all for listening – see you in the next episode."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was war das Problem in Camilles erstem Zimmer?",
+    "options": [
+     "Es war zu klein.",
+     "Die Heizung war kaputt.",
+     "Der Mitbewohner war unfreundlich."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wie hat Camille schließlich eine eigene Wohnung bekommen?",
+    "options": [
+     "Über einen Makler.",
+     "Über ihre Nachbarin.",
+     "Mit einem Foto und einem kleinen Brief auf Deutsch."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was ist die Berliner Schnauze laut Camille?",
+    "options": [
+     "Eine direkte Art zu sprechen, die selten böse gemeint ist.",
+     "Ein typisches Berliner Essen.",
+     "Ein Spitzname für die Busfahrer."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was hat Camille in Deutschland am meisten überrascht?",
+    "options": [
+     "Dass alles digital ist.",
+     "Die lange Wartezeit für einen Termin beim Bürgeramt.",
+     "Dass die Leute so freundlich sind."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Welchen Tipp gibt Camille neuen Berlinern?",
+    "options": [
+     "Sie sollen an den Stadtrand ziehen.",
+     "Sie sollen nur Englisch sprechen.",
+     "Sie sollen Deutsch lernen, auch wenn alle Englisch sprechen."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Mein Mitbewohner meinte, das sei im Februar ganz normal.",
+  "Bei jeder Besichtigung standen fünfzig Leute im Treppenhaus.",
+  "Die Leute öffnen sich viel mehr, wenn man es wenigstens versucht."
+ ],
+ "speaking": [
+  {
+   "de": "Das Zimmer hatte ich über eine Anzeige gefunden.",
+   "en": "I'd found the room through an ad."
+  },
+  {
+   "de": "Mein Mitbewohner meinte, das sei normal im Februar.",
+   "en": "My flatmate said that was normal in February."
+  },
+  {
+   "de": "Direkt, aber selten böse gemeint.",
+   "en": "Direct, but rarely meant badly."
+  },
+  {
+   "de": "Ich dachte, in Deutschland sei alles perfekt organisiert.",
+   "en": "I thought everything in Germany was perfectly organised."
+  },
+  {
+   "de": "Lernt Deutsch, auch wenn alle mit euch Englisch sprechen.",
+   "en": "Learn German, even if everyone speaks English to you."
+  }
+ ],
+ "writing": {
+  "task": "The podcast asks its listeners to write in about their own first months in a German city. Write a message of 100–130 words: what was difficult at first, what surprised you and what you like now. Report one thing someone told you, using Konjunktiv I.",
+  "model": "Liebe Mira,\n\nich höre euren Podcast jede Woche und habe mich in Camilles Geschichte total wiedererkannt.\n\nIch bin vor drei Jahren aus Marseille nach Köln gezogen. Am Anfang war die Wohnungssuche ein Albtraum: Bei jeder Besichtigung standen dreißig Leute vor der Tür. Meine Kollegin meinte damals, das sei in Köln ganz normal, ich müsse einfach Geduld haben.\n\nÜberrascht hat mich, wie wichtig hier Regeln sind. Mein Nachbar hat mir am ersten Tag erklärt, wie man den Müll trennt – mit sechs verschiedenen Tonnen!\n\nHeute fühle ich mich hier wohl. Ich liebe den Rhein, den Karneval und die Kneipen, in denen man schnell mit Fremden ins Gespräch kommt. Nur das französische Brot vermisse ich noch.\n\nViele Grüße\nInès"
+ }
+}

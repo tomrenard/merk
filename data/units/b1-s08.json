@@ -1,0 +1,537 @@
+{
+ "id": "b1-s08",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "A misunderstanding at the doctor's",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a visit to a German GP, understand instructions for a blood test and ask when something isn't clear.",
+ "explanation": "Camille has been tired for weeks. Rafael is worried, so she finally goes to her GP, Dr. Wagner. He wants to do a blood test and tells her to come **nüchtern**. Camille knows the word, or thinks she does…\n\n**nüchtern** has two meanings: *sober* (no alcohol) and, at the doctor's, *on an empty stomach* (nothing to eat since the evening before, only water).\n\nListen for **ohne … zu** and **statt … zu** (*ohne nachzufragen*) and reflexive verbs with prepositions (*sich Sorgen machen um, sich ärgern über, sich erinnern an*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| die Praxis, Praxen | doctor's practice |\n| das Wartezimmer, - | waiting room |\n| die Arzthelferin, -nen | doctor's assistant |\n| ein Blutbild machen | to do a blood test |\n| nüchtern | sober / on an empty stomach |\n| der Mangel | deficiency, lack |\n| verschreiben | to prescribe |\n| die Tropfen (pl.) | drops |\n\nTip: when you don't understand a word at the doctor's, ask: *Was bedeutet das genau?* Nobody minds.",
+ "french": "French has two words, à jeun and sobre; German uses nüchtern for both, so listen for the context.",
+ "examples": [
+  {
+   "de": "Rafael machte sich Sorgen um sie.",
+   "en": "Rafael was worried about her."
+  },
+  {
+   "de": "Ich kann mich auf nichts konzentrieren.",
+   "en": "I can't concentrate on anything."
+  },
+  {
+   "de": "Kommen Sie bitte morgen früh nüchtern.",
+   "en": "Please come tomorrow morning on an empty stomach."
+  },
+  {
+   "de": "Camille nickte, ohne nachzufragen.",
+   "en": "Camille nodded without asking."
+  },
+  {
+   "de": "Ärgern Sie sich nicht darüber.",
+   "en": "Don't be annoyed about it."
+  },
+  {
+   "de": "Ab jetzt frage ich nach, statt einfach zu nicken.",
+   "en": "From now on I'll ask instead of just nodding."
+  },
+  {
+   "de": "An das Gesicht der Arzthelferin wird sie sich lange erinnern.",
+   "en": "She'll remember the assistant's face for a long time."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Rafael machte sich Sorgen ___ Camille.",
+   "base": "preposition",
+   "answers": [
+    "um"
+   ],
+   "en": "Rafael was worried about Camille.",
+   "id": "b1-s08-01"
+  },
+  {
+   "type": "choice",
+   "de": "Camille ging zum Arzt, weil sie ___.",
+   "options": [
+    "Fieber hatte",
+    "seit Wochen müde war",
+    "sich den Arm gebrochen hatte"
+   ],
+   "answer": 1,
+   "why": "She had been tired for weeks and couldn't concentrate.",
+   "en": "Camille went to the doctor because she had been tired for weeks.",
+   "id": "b1-s08-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Am Mittwoch wartete sie fast eine Stunde im ___.",
+   "base": "waiting room",
+   "answers": [
+    "Wartezimmer"
+   ],
+   "en": "On Wednesday she waited almost an hour in the waiting room.",
+   "id": "b1-s08-03"
+  },
+  {
+   "type": "choice",
+   "de": "Ich kann mich ___ nichts konzentrieren.",
+   "options": [
+    "an",
+    "auf",
+    "über"
+   ],
+   "answer": 1,
+   "why": "The verb is sich konzentrieren auf.",
+   "en": "I can't concentrate on anything.",
+   "id": "b1-s08-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "mich",
+    "kann",
+    "auf nichts",
+    "konzentrieren"
+   ],
+   "answers": [
+    "Ich kann mich auf nichts konzentrieren.",
+    "Auf nichts kann ich mich konzentrieren."
+   ],
+   "en": "I can't concentrate on anything.",
+   "id": "b1-s08-05"
+  },
+  {
+   "type": "cloze",
+   "de": "Wir machen ein ___. Kommen Sie bitte morgen früh um acht.",
+   "base": "blood test",
+   "answers": [
+    "Blutbild"
+   ],
+   "en": "We'll do a blood test. Please come tomorrow morning at eight.",
+   "id": "b1-s08-06"
+  },
+  {
+   "type": "choice",
+   "de": "Beim Arzt bedeutet „nüchtern“: ___.",
+   "options": [
+    "ohne Alkohol",
+    "ohne etwas zu essen",
+    "ohne Medikamente"
+   ],
+   "answer": 1,
+   "why": "At the doctor's it means on an empty stomach: only water is allowed.",
+   "en": "At the doctor's, nüchtern means without eating anything.",
+   "id": "b1-s08-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Camille nickte, ohne ___.",
+   "base": "nachfragen",
+   "answers": [
+    "nachzufragen"
+   ],
+   "en": "Camille nodded without asking.",
+   "id": "b1-s08-08"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Camille",
+    "nickte,",
+    "ohne",
+    "nachzufragen"
+   ],
+   "answers": [
+    "Camille nickte, ohne nachzufragen."
+   ],
+   "en": "Camille nodded without asking.",
+   "id": "b1-s08-09"
+  },
+  {
+   "type": "choice",
+   "de": "Zum Frühstück hatte Camille ___ getrunken.",
+   "options": [
+    "nur Wasser",
+    "Wein",
+    "einen Milchkaffee und Orangensaft"
+   ],
+   "answer": 2,
+   "why": "She had a croissant, a big milky coffee with sugar and an orange juice.",
+   "en": "For breakfast Camille had drunk a milky coffee and orange juice.",
+   "id": "b1-s08-10"
+  },
+  {
+   "type": "cloze",
+   "de": "In der Praxis holte die ___ schon die Nadel.",
+   "base": "doctor's assistant",
+   "answers": [
+    "Arzthelferin"
+   ],
+   "en": "In the practice the assistant was already getting the needle.",
+   "id": "b1-s08-11"
+  },
+  {
+   "type": "choice",
+   "de": "Die Arzthelferin lachte so laut, dass ___.",
+   "options": [
+    "Dr. Wagner aus seinem Zimmer kam",
+    "Camille weinte",
+    "alle Patienten gingen"
+   ],
+   "answer": 0,
+   "why": "She laughed so loudly that the doctor came out of his room.",
+   "en": "The assistant laughed so loudly that Dr. Wagner came out of his room.",
+   "id": "b1-s08-12"
+  },
+  {
+   "type": "cloze",
+   "de": "Ärgern Sie sich nicht ___!",
+   "base": "about it",
+   "answers": [
+    "darüber"
+   ],
+   "en": "Don't be annoyed about it!",
+   "id": "b1-s08-13"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lache",
+    "über Sie",
+    "nicht"
+   ],
+   "answers": [
+    "Ich lache nicht über Sie.",
+    "Über Sie lache ich nicht."
+   ],
+   "en": "I'm not laughing at you.",
+   "id": "b1-s08-14"
+  },
+  {
+   "type": "choice",
+   "de": "Am Freitag kam Camille wieder, diesmal ___.",
+   "options": [
+    "ohne zu frühstücken",
+    "ohne frühstücken",
+    "statt frühstücken"
+   ],
+   "answer": 0,
+   "why": "ohne … zu + infinitive: ohne zu frühstücken.",
+   "en": "On Friday Camille came back, this time without having breakfast.",
+   "id": "b1-s08-15"
+  },
+  {
+   "type": "cloze",
+   "de": "Statt Kaffee trank sie nur ein Glas ___.",
+   "base": "water",
+   "answers": [
+    "Wasser"
+   ],
+   "en": "Instead of coffee she only drank a glass of water.",
+   "id": "b1-s08-16"
+  },
+  {
+   "type": "choice",
+   "de": "Camille hatte zu wenig ___.",
+   "options": [
+    "Eisen",
+    "Vitamin D",
+    "Zucker"
+   ],
+   "answer": 1,
+   "why": "The results showed a lack of vitamin D, which is normal in a German winter.",
+   "en": "Camille didn't have enough vitamin D.",
+   "id": "b1-s08-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich ___ Ihnen Vitamin-D-Tropfen.",
+   "base": "to prescribe",
+   "answers": [
+    "verschreibe"
+   ],
+   "en": "I'll prescribe you vitamin D drops.",
+   "id": "b1-s08-18"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Statt",
+    "nur",
+    "zu schlafen,",
+    "sollten",
+    "Sie",
+    "nach draußen gehen"
+   ],
+   "answers": [
+    "Statt nur zu schlafen, sollten Sie nach draußen gehen.",
+    "Sie sollten nach draußen gehen, statt nur zu schlafen."
+   ],
+   "en": "Instead of just sleeping, you should go outside.",
+   "id": "b1-s08-19"
+  },
+  {
+   "type": "choice",
+   "de": "Du hast dich nicht ___ gewundert?",
+   "options": [
+    "darüber",
+    "daran",
+    "darum"
+   ],
+   "answer": 0,
+   "why": "The verb is sich wundern über, so the da-word is darüber.",
+   "en": "Weren't you surprised by that?",
+   "id": "b1-s08-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Ab jetzt frage ich nach, statt einfach ___.",
+   "base": "nicken",
+   "answers": [
+    "zu nicken"
+   ],
+   "en": "From now on I'll ask instead of just nodding.",
+   "id": "b1-s08-21"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ab jetzt",
+    "frage",
+    "ich",
+    "nach,",
+    "statt",
+    "einfach zu nicken"
+   ],
+   "answers": [
+    "Ab jetzt frage ich nach, statt einfach zu nicken.",
+    "Ich frage ab jetzt nach, statt einfach zu nicken."
+   ],
+   "en": "From now on I'll ask instead of just nodding.",
+   "id": "b1-s08-22"
+  },
+  {
+   "type": "choice",
+   "de": "An das Gesicht der Arzthelferin wird sie sich noch lange ___.",
+   "options": [
+    "erinnern",
+    "denken",
+    "vergessen"
+   ],
+   "answer": 0,
+   "why": "sich erinnern an: to remember.",
+   "en": "She will remember the assistant's face for a long time.",
+   "id": "b1-s08-23"
+  },
+  {
+   "type": "cloze",
+   "de": "Das klingt nach einem ___, vielleicht Eisen oder Vitamin D.",
+   "base": "deficiency",
+   "answers": [
+    "Mangel"
+   ],
+   "en": "That sounds like a deficiency, maybe iron or vitamin D.",
+   "id": "b1-s08-24"
+  }
+ ],
+ "listening": {
+  "title": "Nüchtern",
+  "intro": "Camille has been tired for weeks and finally goes to her GP, where one word causes a problem.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Seit Wochen fühlte sich Camille müde. Sie konnte sich kaum auf die Arbeit konzentrieren, und morgens kam sie nur schwer aus dem Bett.",
+    "en": "For weeks Camille had felt tired. She could hardly concentrate on her work, and in the mornings she found it hard to get out of bed."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Rafael machte sich Sorgen um sie. „Geh endlich zum Arzt“, sagte er jeden Tag.",
+    "en": "Rafael was worried about her. Go to the doctor at last, he said every day."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Montag rief sie in der Praxis von Dr. Wagner an und bekam einen Termin für Mittwoch.",
+    "en": "On Monday she called Dr. Wagner's practice and got an appointment for Wednesday."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Mittwoch wartete sie fast eine Stunde im Wartezimmer. Dann durfte sie endlich ins Sprechzimmer.",
+    "en": "On Wednesday she waited almost an hour in the waiting room. Then at last she was allowed into the consulting room."
+   },
+   {
+    "speaker": "Dr. Wagner",
+    "de": "Guten Tag, Frau Durand. Was führt Sie zu mir?",
+    "en": "Hello, Frau Durand. What brings you to me?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ich bin seit Wochen total müde, obwohl ich genug schlafe. Ich kann mich auf nichts konzentrieren.",
+    "en": "I've been totally tired for weeks, although I sleep enough. I can't concentrate on anything."
+   },
+   {
+    "speaker": "Dr. Wagner",
+    "de": "Das klingt nach einem Mangel, vielleicht Eisen oder Vitamin D. Wir machen ein Blutbild. Kommen Sie bitte morgen früh um acht, und zwar nüchtern.",
+    "en": "That sounds like a deficiency, maybe iron or vitamin D. We'll do a blood test. Please come tomorrow morning at eight, on an empty stomach."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille nickte, ohne nachzufragen. Nüchtern? Natürlich! Sie trank doch nie Alkohol am Morgen.",
+    "en": "Camille nodded without asking. Sober? Of course! She never drank alcohol in the morning."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am nächsten Morgen frühstückte sie wie immer: ein Croissant, ein großer Milchkaffee mit Zucker und ein Glas Orangensaft.",
+    "en": "The next morning she had breakfast as usual: a croissant, a big milky coffee with sugar and a glass of orange juice."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "In der Praxis holte die Arzthelferin schon die Nadel.",
+    "en": "In the practice the assistant was already getting the needle."
+   },
+   {
+    "speaker": "Arzthelferin",
+    "de": "Sie sind nüchtern, oder? Sie haben seit gestern Abend nichts gegessen?",
+    "en": "You're on an empty stomach, right? You haven't eaten anything since last night?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Gegessen? Doch, natürlich habe ich gefrühstückt. Aber ich habe keinen Alkohol getrunken, ich bin völlig nüchtern!",
+    "en": "Eaten? Yes, of course I've had breakfast. But I haven't drunk any alcohol, I'm completely sober!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Arzthelferin sah sie einen Moment an. Dann lachte sie so laut, dass Dr. Wagner aus seinem Zimmer kam.",
+    "en": "The assistant looked at her for a moment. Then she laughed so loudly that Dr. Wagner came out of his room."
+   },
+   {
+    "speaker": "Arzthelferin",
+    "de": "Entschuldigung, ich lache nicht über Sie! Aber beim Arzt heißt nüchtern: ohne etwas zu essen. Nur Wasser ist erlaubt.",
+    "en": "Sorry, I'm not laughing at you! But at the doctor's, nüchtern means without eating anything. Only water is allowed."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Oh nein! Das heißt, ich muss noch einmal kommen?",
+    "en": "Oh no! That means I have to come again?"
+   },
+   {
+    "speaker": "Dr. Wagner",
+    "de": "Leider ja. Aber ärgern Sie sich nicht darüber. Das passiert sogar Deutschen.",
+    "en": "I'm afraid so. But don't be annoyed about it. It even happens to Germans."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Freitag kam Camille wieder, diesmal ohne zu frühstücken. Statt Kaffee trank sie nur ein Glas Wasser.",
+    "en": "On Friday Camille came back, this time without having breakfast. Instead of coffee she only drank a glass of water."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Eine Woche später rief Dr. Wagner sie an. Die Ergebnisse waren da.",
+    "en": "A week later Dr. Wagner called her. The results were in."
+   },
+   {
+    "speaker": "Dr. Wagner",
+    "de": "Wie gedacht: Sie haben zu wenig Vitamin D. Das ist im deutschen Winter ganz normal. Ich verschreibe Ihnen Tropfen. Und statt nur zu schlafen, sollten Sie jeden Tag eine halbe Stunde nach draußen gehen.",
+    "en": "As I thought: you don't have enough vitamin D. That's quite normal in a German winter. I'll prescribe you drops. And instead of just sleeping, you should go outside for half an hour every day."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend erzählte Camille Rafael die ganze Geschichte. Er lachte Tränen.",
+    "en": "In the evening Camille told Rafael the whole story. He laughed till he cried."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Und du hast dich nicht darüber gewundert, dass der Arzt plötzlich über Alkohol gesprochen hat?",
+    "en": "And you weren't surprised that the doctor suddenly talked about alcohol?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Doch, ein bisschen. Ich dachte, das ist eben typisch deutsch. Aber ab jetzt frage ich nach, statt einfach zu nicken.",
+    "en": "Yes, a bit. I thought that's just typically German. But from now on I'll ask instead of just nodding."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "An das Gesicht der Arzthelferin wird sie sich aber noch lange erinnern.",
+    "en": "But she'll remember the assistant's face for a long time."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum ging Camille zum Arzt?",
+    "options": [
+     "Sie war seit Wochen sehr müde.",
+     "Sie hatte Bauchschmerzen.",
+     "Sie brauchte eine Impfung."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was dachte Camille, als der Arzt „nüchtern“ sagte?",
+    "options": [
+     "Sie soll nichts essen.",
+     "Sie soll keinen Alkohol trinken.",
+     "Sie soll nicht zu spät kommen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum musste Camille noch einmal kommen?",
+    "options": [
+     "Die Arzthelferin war krank.",
+     "Die Nadel war kaputt.",
+     "Sie hatte vor dem Bluttest gefrühstückt."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was hatte Camille zu wenig?",
+    "options": [
+     "Eisen",
+     "Vitamin D",
+     "Schlaf"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was will Camille in Zukunft anders machen?",
+    "options": [
+     "Sie will nachfragen, statt einfach zu nicken.",
+     "Sie will nie mehr frühstücken.",
+     "Sie will einen anderen Arzt suchen."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Camille nickte, ohne nachzufragen, und ging nach Hause.",
+  "Am Freitag kam sie wieder, diesmal ohne zu frühstücken.",
+  "Ab jetzt frage ich nach, statt einfach zu nicken."
+ ],
+ "speaking": [
+  {
+   "de": "Ich bin seit Wochen total müde, obwohl ich genug schlafe.",
+   "en": "I've been totally tired for weeks, although I sleep enough."
+  },
+  {
+   "de": "Ich kann mich auf nichts konzentrieren.",
+   "en": "I can't concentrate on anything."
+  },
+  {
+   "de": "Das heißt, ich muss noch einmal kommen?",
+   "en": "That means I have to come again?"
+  },
+  {
+   "de": "Was bedeutet das genau?",
+   "en": "What exactly does that mean?"
+  },
+  {
+   "de": "Ab jetzt frage ich nach, statt einfach zu nicken.",
+   "en": "From now on I'll ask instead of just nodding."
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Write an 80–100-word formal email to Dr. Wagner's practice: apologise for the misunderstanding, ask for a new appointment for the blood test and ask whether you may drink anything before it.",
+  "model": "Betreff: Neuer Termin für meine Blutabnahme\n\nSehr geehrte Damen und Herren,\n\nheute Morgen war ich zur Blutabnahme bei Ihnen, hatte aber leider gefrühstückt. Ich hatte das Wort „nüchtern“ falsch verstanden und habe genickt, ohne nachzufragen. Dafür möchte ich mich entschuldigen. Könnten Sie mir bitte einen neuen Termin geben, am liebsten am Freitag früh? Außerdem habe ich noch eine Frage: Darf ich vor dem Termin Wasser oder ungesüßten Tee trinken? Vielen Dank im Voraus für Ihre Hilfe.\n\nMit freundlichen Grüßen\nCamille Durand"
+ }
+}

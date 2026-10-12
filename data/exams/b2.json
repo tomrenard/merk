@@ -1,0 +1,582 @@
+{
+ "id": "b2",
+ "cefr": "B2",
+ "title": "B2 exam (modelled on Goethe-Zertifikat B2)",
+ "hoeren": [
+  {
+   "title": "Kurze Meldungen",
+   "intro": "You hear three short texts: a news item, a message from a health insurance company and a radio tip.",
+   "lines": [
+    {
+     "speaker": "Nachrichten",
+     "de": "Der Berliner Senat will die Wartezeiten in den Bürgerämtern deutlich verkürzen. Ab Januar sollen in allen Bezirken auch samstags Termine angeboten werden, außerdem sollen mehr Anliegen vollständig online erledigt werden können. Die Personalvertretung bemängelt allerdings, dass für die zusätzlichen Öffnungszeiten keine neuen Stellen geschaffen werden.",
+     "en": "The Berlin Senate wants to cut waiting times at the citizens' offices significantly. From January, appointments are to be offered on Saturdays in all districts as well, and more matters should be able to be handled entirely online. However, the staff council criticises that no new posts are being created for the extra opening hours."
+    },
+    {
+     "speaker": "Anrufbeantworter",
+     "de": "Guten Tag, Herr Laurent, hier ist Frau Peters von Ihrer Krankenkasse. Uns fehlt für die Bearbeitung Ihres Antrags auf Kostenübernahme für die Physiotherapie noch die ärztliche Verordnung. Sie können sie uns ganz einfach über die App hochladen; per Post dauert es leider deutlich länger. Sobald sie vorliegt, erhalten Sie innerhalb von drei Wochen eine Entscheidung.",
+     "en": "Hello, Mr Laurent, this is Ms Peters from your health insurance. To process your application for us to cover the cost of physiotherapy, we still need the doctor's prescription. You can simply upload it via the app; by post it unfortunately takes considerably longer. As soon as we have it, you'll get a decision within three weeks."
+    },
+    {
+     "speaker": "Radio",
+     "de": "Unser Tipp fürs Wochenende: Das Technikmuseum lädt am Samstag zur „Langen Nacht der Wissenschaften“. Bis Mitternacht können Besucher an Experimenten teilnehmen. Der Eintritt ist für Kinder frei, Erwachsene zahlen 12 Euro. Da erfahrungsgemäß viel los ist, empfiehlt das Museum, die Tickets vorab online zu kaufen.",
+     "en": "Our tip for the weekend: on Saturday the Technology Museum invites you to the 'Long Night of Science'. Until midnight visitors can take part in experiments. Entry is free for children, adults pay 12 euros. Since it's usually busy, the museum recommends buying tickets online in advance."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was kritisiert die Personalvertretung?",
+     "options": [
+      "Es wird kein zusätzliches Personal eingestellt.",
+      "Samstags kommen zu wenige Menschen ins Bürgeramt.",
+      "Viele Anliegen kann man nicht online erledigen."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Was soll Herr Laurent tun?",
+     "options": [
+      "Einen neuen Antrag per Post schicken.",
+      "Die Verordnung des Arztes hochladen.",
+      "Drei Wochen auf einen Rückruf warten."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was empfiehlt das Museum?",
+     "options": [
+      "Mit Kindern vor Mitternacht zu gehen.",
+      "Früh am Abend zu kommen.",
+      "Die Eintrittskarten im Voraus zu kaufen."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Interview: Die Vier-Tage-Woche",
+   "intro": "In a radio interview, a presenter talks with Katja Lorenz, managing director of a mid-sized IT company that introduced a four-day week.",
+   "lines": [
+    {
+     "speaker": "Moderator",
+     "de": "Frau Lorenz, Ihre Firma hat vor zwei Jahren die Vier-Tage-Woche eingeführt – bei vollem Gehalt. Viele haben Sie damals für verrückt erklärt.",
+     "en": "Ms Lorenz, two years ago your company introduced the four-day week – on full pay. Many people called you crazy at the time."
+    },
+    {
+     "speaker": "Katja Lorenz",
+     "de": "Das stimmt. Ausschlaggebend war für uns eigentlich der Fachkräftemangel. Wir haben monatelang keine Entwickler gefunden. Seit wir die Vier-Tage-Woche anbieten, bekommen wir auf jede Stelle dreimal so viele Bewerbungen wie vorher.",
+     "en": "That's true. What actually tipped the balance for us was the shortage of skilled workers. For months we couldn't find developers. Since we've offered the four-day week, we get three times as many applications for each position as before."
+    },
+    {
+     "speaker": "Moderator",
+     "de": "Aber schafft man in vier Tagen wirklich dasselbe wie in fünf?",
+     "en": "But can you really get the same done in four days as in five?"
+    },
+    {
+     "speaker": "Katja Lorenz",
+     "de": "Nicht automatisch. Wir mussten unsere Abläufe grundlegend ändern. Meetings dauern bei uns höchstens 30 Minuten, und vormittags gibt es feste Zeiten ohne Unterbrechungen, in denen niemand Nachrichten beantworten muss. Unterm Strich ist die Produktivität sogar leicht gestiegen.",
+     "en": "Not automatically. We had to change our processes fundamentally. Meetings last at most 30 minutes, and in the mornings there are fixed times without interruptions when nobody has to answer messages. All in all, productivity has even risen slightly."
+    },
+    {
+     "speaker": "Moderator",
+     "de": "Gibt es auch Nachteile?",
+     "en": "Are there any drawbacks too?"
+    },
+    {
+     "speaker": "Katja Lorenz",
+     "de": "Durchaus. Der Kundensupport muss natürlich an fünf Tagen erreichbar sein, das zu organisieren war anfangs ziemlich kompliziert. Und manche Mitarbeitende empfinden die vier Tage als dichter und anstrengender. Ein Allheilmittel ist das Modell also nicht, und ich würde es auch nicht jeder Branche empfehlen.",
+     "en": "Certainly. Customer support of course has to be reachable five days a week, and organising that was quite complicated at first. And some employees find the four days more intense and more tiring. So the model is not a cure-all, and I wouldn't recommend it to every industry either."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Warum hat die Firma die Vier-Tage-Woche eingeführt?",
+     "options": [
+      "Um Kosten zu sparen.",
+      "Weil sie kaum neue Fachkräfte fand.",
+      "Weil die Mitarbeitenden es gefordert hatten."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was hat die Firma verändert, damit das Modell funktioniert?",
+     "options": [
+      "Sie hat zusätzliche Mitarbeitende eingestellt.",
+      "Die Arbeitstage wurden auf zehn Stunden verlängert.",
+      "Besprechungen wurden kürzer und es gibt störungsfreie Zeiten."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Wie hat sich die Produktivität entwickelt?",
+     "options": [
+      "Sie ist etwas gestiegen.",
+      "Sie ist gleich geblieben.",
+      "Sie ist leicht gesunken."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Welche Haltung hat Frau Lorenz insgesamt?",
+     "options": [
+      "Sie hält das Modell für die Lösung für alle Branchen.",
+      "Sie sieht Vorteile, aber auch klare Grenzen.",
+      "Sie bereut die Entscheidung inzwischen."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Diskussion: Wohnen in der Großstadt",
+   "intro": "In a radio discussion, a presenter talks with Mr Hartmann from a landlords' association and Ms Neumann from a tenants' association about rising rents.",
+   "lines": [
+    {
+     "speaker": "Moderatorin",
+     "de": "Die Mieten in deutschen Großstädten sind in den letzten zehn Jahren um bis zu 50 Prozent gestiegen. Frau Neumann, wer leidet darunter am meisten?",
+     "en": "Rents in German cities have risen by up to 50 per cent in the last ten years. Ms Neumann, who suffers most from this?"
+    },
+    {
+     "speaker": "Frau Neumann",
+     "de": "Vor allem Familien mit mittlerem Einkommen, Auszubildende und ältere Menschen. Wer heute umziehen muss, zahlt für eine vergleichbare Wohnung oft das Doppelte. Viele bleiben deshalb in viel zu kleinen Wohnungen, und ältere Menschen ziehen nicht in kleinere, weil die kleinere teurer wäre als ihre alte große.",
+     "en": "Above all middle-income families, trainees and older people. Anyone who has to move today often pays double for a comparable flat. That's why many stay in flats that are far too small, and older people don't move to smaller ones because the smaller one would be more expensive than their old big one."
+    },
+    {
+     "speaker": "Moderatorin",
+     "de": "Herr Hartmann, ist die Mietpreisbremse die richtige Antwort darauf?",
+     "en": "Mr Hartmann, is the rent cap the right answer to this?"
+    },
+    {
+     "speaker": "Herr Hartmann",
+     "de": "Ich halte sie für gut gemeint, aber wenig wirksam. Das eigentliche Problem ist, dass zu wenig gebaut wird. Solange Genehmigungsverfahren Jahre dauern und die Baukosten so hoch sind, wird sich an der Knappheit nichts ändern. Eine Preisbremse schafft keine einzige neue Wohnung.",
+     "en": "I think it's well-intentioned but not very effective. The real problem is that too little is being built. As long as approval procedures take years and construction costs are so high, nothing will change about the shortage. A rent cap doesn't create a single new flat."
+    },
+    {
+     "speaker": "Frau Neumann",
+     "de": "Da muss ich widersprechen. Natürlich brauchen wir mehr Neubau, vor allem mehr Sozialwohnungen, aber das dauert Jahre. Die Menschen brauchen jetzt Schutz. Ohne Mietpreisbremse wären die Mieten noch viel stärker gestiegen.",
+     "en": "I have to disagree there. Of course we need more new building, above all more social housing, but that takes years. People need protection now. Without the rent cap, rents would have risen much more."
+    },
+    {
+     "speaker": "Herr Hartmann",
+     "de": "In einem Punkt gebe ich Frau Neumann recht: Wir brauchen deutlich mehr Sozialwohnungen. Da hat der Staat in den letzten Jahrzehnten viel versäumt.",
+     "en": "On one point I agree with Ms Neumann: we need significantly more social housing. The state has neglected a lot there in recent decades."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Warum ziehen ältere Menschen laut Frau Neumann nicht in kleinere Wohnungen?",
+     "options": [
+      "Weil sie ihre Nachbarschaft nicht verlassen wollen.",
+      "Weil eine neue, kleinere Wohnung mehr kosten würde.",
+      "Weil es keine kleinen Wohnungen gibt."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Was ist nach Herrn Hartmann das Hauptproblem?",
+     "options": [
+      "Es werden zu wenige Wohnungen gebaut.",
+      "Die Mieter ziehen zu selten um.",
+      "Die Mietpreisbremse ist zu streng."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Warum hält Frau Neumann die Mietpreisbremse für nötig?",
+     "options": [
+      "Weil Neubau zu teuer ist.",
+      "Weil Vermieter sonst keine Wohnungen bauen.",
+      "Weil Mieter sofort Schutz brauchen."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Worin sind sich beide einig?",
+     "options": [
+      "Die Mietpreisbremse sollte abgeschafft werden.",
+      "Es braucht mehr Sozialwohnungen.",
+      "Genehmigungen sollten länger dauern."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Vortrag: Wie Gewohnheiten entstehen",
+   "intro": "You hear part of a public lecture by a psychologist at the Volkshochschule.",
+   "lines": [
+    {
+     "speaker": "Dr. Wagner",
+     "de": "Meine Damen und Herren, Schätzungen zufolge sind rund 40 Prozent unserer täglichen Handlungen keine bewussten Entscheidungen, sondern Gewohnheiten. Heute möchte ich Ihnen zeigen, wie solche Gewohnheiten entstehen und wie man sie gezielt verändern kann.",
+     "en": "Ladies and gentlemen, according to estimates around 40 per cent of our daily actions are not conscious decisions but habits. Today I'd like to show you how such habits form and how you can change them deliberately."
+    },
+    {
+     "speaker": "Dr. Wagner",
+     "de": "Jede Gewohnheit besteht aus drei Teilen: einem Auslöser, der Handlung selbst und einer Belohnung. Nehmen wir das Smartphone: Der Auslöser ist vielleicht Langeweile an der Bushaltestelle, die Handlung ist der Griff zum Handy, und die Belohnung ist die kurze Ablenkung.",
+     "en": "Every habit consists of three parts: a trigger, the action itself and a reward. Take the smartphone: the trigger might be boredom at the bus stop, the action is reaching for the phone, and the reward is the brief distraction."
+    },
+    {
+     "speaker": "Dr. Wagner",
+     "de": "Viele Menschen versuchen, schlechte Gewohnheiten allein mit Willenskraft abzulegen. Das scheitert meistens. Wesentlich erfolgreicher ist es, den Auslöser zu verändern oder die alte Handlung durch eine neue zu ersetzen, die eine ähnliche Belohnung bietet.",
+     "en": "Many people try to drop bad habits through willpower alone. That usually fails. It is much more successful to change the trigger or to replace the old action with a new one that offers a similar reward."
+    },
+    {
+     "speaker": "Dr. Wagner",
+     "de": "Und noch etwas: Entgegen der weitverbreiteten Meinung braucht eine neue Gewohnheit nicht 21 Tage, bis sie sitzt. In einer Studie des University College London dauerte es im Durchschnitt 66 Tage – je nach Person und Handlung zwischen 18 und über 250 Tagen. Lassen Sie sich also nicht entmutigen, wenn es länger dauert.",
+     "en": "And one more thing: contrary to popular belief, a new habit doesn't take 21 days to stick. In a study at University College London it took 66 days on average – between 18 and more than 250 days depending on the person and the action. So don't get discouraged if it takes longer."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Was ist laut Dr. Wagner die Belohnung im Smartphone-Beispiel?",
+     "options": [
+      "Die Langeweile.",
+      "Die kurze Ablenkung.",
+      "Das Warten auf den Bus."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Welche Methode hält Dr. Wagner für besonders erfolgreich?",
+     "options": [
+      "Eine schlechte Gewohnheit mit starkem Willen zu bekämpfen.",
+      "Sich für jeden Erfolg selbst zu belohnen.",
+      "Die alte Handlung durch eine neue mit ähnlicher Belohnung zu ersetzen."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Was sagt Dr. Wagner über die Dauer, bis eine Gewohnheit entsteht?",
+     "options": [
+      "Sie ist sehr unterschiedlich und liegt im Schnitt deutlich über 21 Tagen.",
+      "Es dauert bei allen Menschen genau 66 Tage.",
+      "Nach 21 Tagen ist jede Gewohnheit fest."
+     ],
+     "answer": 0
+    }
+   ]
+  }
+ ],
+ "lesen": [
+  {
+   "title": "Forum: Sollte Homeoffice ein gesetzliches Recht sein?",
+   "text": "In einem Onlineforum diskutieren Leserinnen und Leser, ob Beschäftigte einen gesetzlichen Anspruch auf Homeoffice haben sollten.\n\nMarta: Für mich als alleinerziehende Mutter hat das Homeoffice alles verändert. Ich spare täglich zwei Stunden Pendelzeit, die ich jetzt mit meinem Sohn verbringe. Dass so etwas vom guten Willen des Chefs abhängt, finde ich nicht mehr zeitgemäß. Ein Rechtsanspruch wäre nur fair.\n\nFelix: Ich führe einen Handwerksbetrieb mit zwölf Angestellten. Bei uns ist Homeoffice schlicht unmöglich. Ein Gesetz würde vor allem eine neue Ungerechtigkeit schaffen: zwischen denen, die im Büro sitzen, und denen, die körperlich arbeiten. Und das Letzte, was kleine Betriebe brauchen, ist noch mehr Bürokratie.\n\nIrina: Ich bin grundsätzlich dafür, aber man sollte es nicht übertreiben. Ein Recht auf zwei Tage pro Woche würde reichen. Wer nur noch zu Hause arbeitet, verliert den Kontakt zum Team, und gerade Berufseinsteiger lernen viel, indem sie erfahrenen Kollegen über die Schulter schauen.\n\nDaniel: Mich wundert, wie selten über die Kosten gesprochen wird. Wer zu Hause arbeitet, zahlt Strom, Heizung und oft auch die Möbel selbst. Bevor man über ein Recht auf Homeoffice redet, sollte geklärt werden, wer für diese Ausgaben aufkommt.",
+   "questions": [
+    {
+     "q": "Wer befürchtet, dass ein Gesetz Beschäftigte ungleich behandeln würde?",
+     "options": [
+      "Marta",
+      "Felix",
+      "Daniel"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wer möchte das Recht auf Homeoffice begrenzen?",
+     "options": [
+      "Irina",
+      "Marta",
+      "Felix"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Wer weist auf eine Frage hin, die vorher geregelt werden müsste?",
+     "options": [
+      "Irina",
+      "Felix",
+      "Daniel"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Wer argumentiert vor allem mit der persönlichen Lebenssituation?",
+     "options": [
+      "Daniel",
+      "Marta",
+      "Irina"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Artikel: Abschied vom eigenen Auto",
+   "text": "Jahrzehntelang galt das eigene Auto in Deutschland als Symbol für Freiheit und Wohlstand. Doch zumindest in den Großstädten scheint sich das zu ändern: In Berlin verfügt inzwischen nur noch etwa jeder zweite Haushalt über ein Auto, in Hamburg und München liegt der Anteil nur wenig höher.\n\nDie Gründe sind vielfältig. Neben steigenden Kosten für Versicherung, Kraftstoff und Parkplätze nennen viele Befragte das gut ausgebaute Netz aus Bus, Bahn und Leihrädern. Hinzu kommt, dass Carsharing-Angebote es ermöglichen, nur dann ein Auto zu nutzen, wenn man tatsächlich eins braucht – etwa für den Großeinkauf oder den Ausflug ins Umland.\n\nVerkehrsforscherin Dr. Sabine Hölzl warnt allerdings davor, die Entwicklung zu verallgemeinern. „Auf dem Land ist das Auto nach wie vor unverzichtbar“, betont sie. „Solange dort ein Bus nur zweimal am Tag fährt, wird kaum jemand freiwillig auf sein Auto verzichten.“ Wer die Verkehrswende ernst nehme, müsse daher vor allem in den ländlichen Nahverkehr investieren.\n\nAuffällig ist zudem, dass der Verzicht aufs Auto stark vom Alter abhängt. Während unter den 18- bis 29-Jährigen in Großstädten nur noch jeder Dritte ein eigenes Fahrzeug besitzt, sind es bei den über 60-Jährigen fast doppelt so viele.",
+   "questions": [
+    {
+     "q": "Was ist laut Text ein Grund dafür, dass Städter auf ein Auto verzichten?",
+     "options": [
+      "Autos sind in der Stadt verboten worden.",
+      "Es gibt gute Alternativen wie Bahn, Leihräder und Carsharing.",
+      "Die Menschen fahren weniger in den Urlaub."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wozu wird Carsharing laut Text vor allem genutzt?",
+     "options": [
+      "Für gelegentliche Fahrten, z. B. Großeinkäufe.",
+      "Für den täglichen Weg zur Arbeit.",
+      "Für lange Urlaubsreisen."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Was fordert Dr. Hölzl?",
+     "options": [
+      "Höhere Parkgebühren in den Städten.",
+      "Mehr Carsharing in den Großstädten.",
+      "Bessere Bus- und Bahnverbindungen auf dem Land."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Was sagt der Text über ältere Menschen in Großstädten?",
+     "options": [
+      "Sie besitzen deutlich häufiger ein Auto als junge Menschen.",
+      "Sie nutzen besonders oft Carsharing.",
+      "Fast alle haben ihr Auto inzwischen verkauft."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "title": "Nutzungsbedingungen eines Carsharing-Anbieters",
+   "text": "Allgemeine Nutzungsbedingungen (Auszug)\n\n§ 3 Buchung und Nutzung\n(1) Fahrzeuge können frühestens 30 Minuten vor Fahrtbeginn über die App reserviert werden. Die Reservierung ist kostenlos.\n(2) Vor Fahrtantritt ist das Fahrzeug auf sichtbare Schäden zu überprüfen. Neue Schäden sind vor Fahrtbeginn über die App zu melden; andernfalls kann der Kunde für sie haftbar gemacht werden.\n\n§ 5 Rückgabe\n(1) Das Fahrzeug ist innerhalb des Geschäftsgebiets auf einem öffentlichen Parkplatz abzustellen. Private Parkplätze und Parkhäuser sind ausgeschlossen.\n(2) Liegt der Tankfüllstand bei Rückgabe unter einem Viertel, wird eine Servicegebühr von 15 Euro berechnet, sofern der Kunde nicht an einer Partnertankstelle tankt. Die Tankkarte befindet sich im Handschuhfach.\n\n§ 7 Haftung\nBei selbst verschuldeten Unfällen beträgt die Selbstbeteiligung 500 Euro. Sie kann durch ein zusätzliches Schutzpaket auf 100 Euro reduziert werden.",
+   "questions": [
+    {
+     "q": "Was muss man vor Fahrtbeginn tun?",
+     "options": [
+      "Das Auto auf Schäden prüfen und neue Schäden melden.",
+      "Das Auto mindestens 30 Minuten vorher reservieren.",
+      "Das Auto volltanken."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Wo darf man das Auto nach der Fahrt abstellen?",
+     "options": [
+      "In jedem Parkhaus im Geschäftsgebiet.",
+      "Auf einem öffentlichen Parkplatz im Geschäftsgebiet.",
+      "Auf dem eigenen Stellplatz."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Wann muss man die Servicegebühr von 15 Euro zahlen?",
+     "options": [
+      "Wenn man an einer Partnertankstelle tankt.",
+      "Wenn man das Auto mit vollem Tank zurückgibt.",
+      "Wenn der Tank weniger als ein Viertel voll ist und man nicht getankt hat."
+     ],
+     "answer": 2
+    }
+   ]
+  }
+ ],
+ "sprachbausteine": [
+  {
+   "de": "Nach der ___ des Antrags erhalten Sie innerhalb von vier Wochen einen Bescheid.",
+   "options": [
+    "Prüfung",
+    "Prüfen",
+    "Geprüften"
+   ],
+   "answer": 0,
+   "why": "nach takes the dative and der here is feminine dative, so you need a feminine noun: die Prüfung (from prüfen). das Prüfen would need dem."
+  },
+  {
+   "de": "Die Unterlagen hätten bereits letzte Woche eingereicht ___ müssen.",
+   "options": [
+    "geworden",
+    "worden",
+    "werden"
+   ],
+   "answer": 2,
+   "why": "Passive with a modal in the past subjunctive: hätten + participle + werden + müssen (double infinitive), so werden, not worden."
+  },
+  {
+   "de": "Man kann viel Energie sparen, ___ man die Heizung nachts herunterdreht.",
+   "options": [
+    "indem",
+    "sodass",
+    "damit"
+   ],
+   "answer": 0,
+   "why": "indem says how something is done (by turning the heating down). sodass = consequence, damit = purpose."
+  },
+  {
+   "de": "Wir können den Termin morgen wahrnehmen, ___ der Zug pünktlich ist.",
+   "options": [
+    "sofern",
+    "obwohl",
+    "trotzdem"
+   ],
+   "answer": 0,
+   "why": "sofern = provided that, a condition. obwohl is a contrast; trotzdem is an adverb and can't introduce a clause."
+  },
+  {
+   "de": "Ich komme morgen nicht ins Büro, es ___ denn, der Kunde besteht auf einem persönlichen Treffen.",
+   "options": [
+    "ist",
+    "sei",
+    "wäre"
+   ],
+   "answer": 1,
+   "why": "The fixed phrase is es sei denn (unless), always with Konjunktiv I sei."
+  },
+  {
+   "de": "Die von der Stadt ___ Maßnahmen sollen den Verkehr in der Innenstadt reduzieren.",
+   "options": [
+    "geplante",
+    "geplanten",
+    "planenden"
+   ],
+   "answer": 1,
+   "why": "An extended participle attribute between die and the noun takes the adjective ending: die … geplanten Maßnahmen (plural after die → -en). The measures are planned (passive), so the past participle."
+  },
+  {
+   "de": "In der Pressemitteilung heißt es, das Unternehmen ___ keine weiteren Stellen abbauen.",
+   "options": [
+    "wolle",
+    "wollen",
+    "wollest"
+   ],
+   "answer": 0,
+   "why": "Reported speech in writing (news, press releases) uses Konjunktiv I. For er/sie/es it is the stem + -e: das Unternehmen wolle. wollest is the du form."
+  },
+  {
+   "de": "___ der hohen Nachfrage wurde die Ausstellung um zwei Wochen verlängert.",
+   "options": [
+    "Trotz",
+    "Angesichts",
+    "Statt"
+   ],
+   "answer": 1,
+   "why": "angesichts (in view of) + genitive gives the reason. trotz would mean despite, which contradicts the extension."
+  },
+  {
+   "de": "Die Verhandlungen sind gescheitert, weil die Gewerkschaft auf ihren Forderungen ___.",
+   "options": [
+    "bestand",
+    "bestand aus",
+    "beruhte"
+   ],
+   "answer": 0,
+   "why": "bestehen auf (+ dative) = to insist on. bestehen aus = to consist of; beruhen auf = to be based on."
+  },
+  {
+   "de": "Bevor wir den Vertrag unterschreiben, müssen wir noch einige Punkte in Betracht ___.",
+   "options": [
+    "nehmen",
+    "ziehen",
+    "stellen"
+   ],
+   "answer": 1,
+   "why": "The fixed noun-verb pair is etwas in Betracht ziehen (to take into consideration)."
+  },
+  {
+   "de": "Sie hat das Angebot abgelehnt, ___ die Bezahlung deutlich besser gewesen wäre.",
+   "options": [
+    "obwohl",
+    "weil",
+    "wohingegen"
+   ],
+   "answer": 0,
+   "why": "A concession (despite better pay) needs obwohl. wohingegen contrasts two different subjects or facts."
+  },
+  {
+   "de": "Er soll früher als Koch in Paris gearbeitet ___.",
+   "options": [
+    "sein",
+    "haben",
+    "werden"
+   ],
+   "answer": 1,
+   "why": "Subjective sollen (he is said to have…) + past infinitive: gearbeitet haben. arbeiten forms its Perfekt with haben."
+  },
+  {
+   "de": "Die Wohnung ist zwar schön, ___ liegt sie direkt an einer lauten Straße.",
+   "options": [
+    "aber",
+    "allerdings",
+    "sondern"
+   ],
+   "answer": 1,
+   "why": "allerdings is an adverb in position 1, so the verb follows directly (allerdings liegt sie). aber and sondern are conjunctions and would need normal word order (aber sie liegt); sondern also needs a negation before it."
+  },
+  {
+   "de": "Die Kosten für die Reparatur gehen zu ___ des Vermieters.",
+   "options": [
+    "Lasten",
+    "Händen",
+    "Gunsten"
+   ],
+   "answer": 0,
+   "why": "zu Lasten des … = at the expense of (to be paid by). zu Gunsten = in favour of; zu Händen = for the attention of (on letters)."
+  },
+  {
+   "de": "Ich wäre Ihnen dankbar, ___ Sie mir die Unterlagen bis Freitag zusenden könnten.",
+   "options": [
+    "dass",
+    "ob",
+    "wenn"
+   ],
+   "answer": 2,
+   "why": "The polite formula is Ich wäre Ihnen dankbar, wenn Sie … könnten."
+  }
+ ],
+ "schreiben": [
+  {
+   "task": "Write a formal complaint (about 100 words) to your property management, Hausverwaltung Grünberg. The heating in your flat has been broken for two weeks, you reported it twice by phone and nothing happened. Describe the problem and its consequences, refer to your earlier calls, demand a repair by a set date and mention a rent reduction (Mietminderung).",
+   "model": "Tom Laurent\nBergstraße 14\n10115 Berlin\n\nHausverwaltung Grünberg GmbH\nKastanienallee 3\n10435 Berlin\n\nBerlin, 12. Oktober 2026\n\nDefekte Heizung in der Wohnung Bergstraße 14, 2. OG links\n\nSehr geehrte Damen und Herren,\n\nseit dem 28. September funktioniert die Heizung in meiner Wohnung nicht mehr. Ich habe Ihnen den Schaden bereits am 29. September und am 5. Oktober telefonisch gemeldet. Trotz Ihrer Zusage, umgehend einen Techniker zu schicken, ist bis heute nichts geschehen.\n\nInzwischen liegt die Temperatur in der Wohnung nachts bei nur 15 Grad, sodass ich mit einem Heizlüfter heizen muss. Dadurch entstehen mir zusätzliche Stromkosten.\n\nIch fordere Sie daher auf, die Heizung bis spätestens 19. Oktober reparieren zu lassen. Zudem weise ich Sie darauf hin, dass ich mir vorbehalte, die Miete für die Dauer des Mangels angemessen zu mindern.\n\nIch bitte um eine schriftliche Bestätigung des Reparaturtermins.\n\nMit freundlichen Grüßen\nTom Laurent",
+   "checklist": [
+    "Formal layout: sender, recipient, date, subject line, Sehr geehrte Damen und Herren …, Mit freundlichen Grüßen.",
+    "Covers every point: the problem since when, earlier calls, consequences, deadline, rent reduction.",
+    "Firm but polite tone (Ich fordere Sie auf … / Ich weise Sie darauf hin …), no informal phrases.",
+    "Clear paragraphs and connectors (trotz, sodass, dadurch, daher, zudem).",
+    "B2 grammar: lassen + infinitive, nominal style (für die Dauer des Mangels), subordinate clauses.",
+    "About 100 words."
+   ]
+  },
+  {
+   "task": "In an online discussion the question is: 'Should the right to work from home be guaranteed by law?' Write a post (about 150 words): give your opinion, support it with arguments and examples, address at least one counter-argument and end with a conclusion.",
+   "model": "Ich halte einen gesetzlichen Anspruch auf Homeoffice grundsätzlich für sinnvoll, allerdings nur in begrenztem Umfang.\n\nDafür spricht vor allem, dass Beschäftigte enorm viel Zeit sparen. Ich selbst pendle an Bürotagen fast anderthalb Stunden; an Homeoffice-Tagen nutze ich diese Zeit für Sport oder meinen Deutschkurs. Außerdem zeigen Studien, dass viele Menschen zu Hause konzentrierter arbeiten. Ein Rechtsanspruch würde verhindern, dass solche Vorteile allein von der Laune der Vorgesetzten abhängen.\n\nZwar wird oft eingewandt, ein solches Gesetz benachteilige alle, die körperlich arbeiten und gar nicht von zu Hause arbeiten können. Dieses Argument ist ernst zu nehmen. Es spricht jedoch nicht gegen das Homeoffice an sich, sondern dafür, auch für diese Berufe andere Formen der Flexibilität zu schaffen.\n\nAlles in allem plädiere ich für ein Recht auf zwei Homeoffice-Tage pro Woche – so bleibt der Kontakt zum Team erhalten, und die Beschäftigten gewinnen dennoch an Lebensqualität.",
+   "checklist": [
+    "Clear position stated at the start and repeated in the conclusion.",
+    "At least two arguments, each backed by an example or evidence.",
+    "Takes up a counter-argument and answers it (Zwar … jedoch …).",
+    "Paragraphs with a logical flow and varied connectors (dafür spricht, außerdem, alles in allem).",
+    "B2 grammar and register: Konjunktiv I or II, nominal phrases, neutral written style.",
+    "About 150 words."
+   ]
+  }
+ ],
+ "sprechen": [
+  {
+   "task": "Give a presentation (about 4 minutes) on 'Should cars be banned from city centres?': introduce the topic and your structure, present the situation, give arguments for and against with examples (including from your home country), state your own view and conclude.",
+   "model": "Ich möchte heute über die Frage sprechen, ob Autos aus den Innenstädten verbannt werden sollten. Zunächst beschreibe ich kurz die aktuelle Situation, dann gehe ich auf Argumente dafür und dagegen ein, und zum Schluss sage ich Ihnen meine eigene Meinung.\n\nIn vielen europäischen Städten wird über autofreie Zonen diskutiert. In Paris zum Beispiel wurden in den letzten Jahren zahlreiche Straßen für Autos gesperrt und in Radwege umgewandelt.\n\nFür ein Verbot spricht in erster Linie die Lebensqualität: weniger Lärm, sauberere Luft und mehr Platz für Fußgänger, Cafés und Grünflächen. Außerdem sinkt die Zahl der Unfälle deutlich.\n\nAuf der anderen Seite befürchten Einzelhändler, dass ihnen Kunden wegbleiben. Und für Menschen mit einer Behinderung oder Handwerker, die schweres Werkzeug transportieren, ist das Auto oft unverzichtbar.\n\nMeiner Ansicht nach ist ein vollständiges Verbot zu radikal. Sinnvoller fände ich es, die Innenstädte schrittweise autoarm zu machen, mit Ausnahmen für Lieferverkehr und Menschen mit Behinderung, und gleichzeitig den Nahverkehr auszubauen.\n\nDamit bin ich am Ende meiner Präsentation. Vielen Dank für Ihre Aufmerksamkeit – ich freue mich auf Ihre Fragen.",
+   "checklist": [
+    "Introduction states the topic and the structure of the talk.",
+    "Arguments for and against, each with a concrete example; one from your home country.",
+    "Own opinion clearly stated and justified, with a nuanced position.",
+    "Signposting phrases (Zunächst … / Auf der anderen Seite … / Meiner Ansicht nach … / Damit bin ich am Ende …).",
+    "B2 grammar: passive (wurden gesperrt), Konjunktiv II (fände ich sinnvoller), infinitive clauses.",
+    "Speaks freely and fluently for about four minutes."
+   ]
+  },
+  {
+   "task": "Discussion: with your partner, discuss 'Should learning a foreign language at school be compulsory until the Abitur?' Exchange arguments, respond to your partner's points, agree or disagree with reasons, and try to find a common position.",
+   "model": "A: Ich finde, eine Fremdsprache sollte bis zum Abitur Pflicht sein. In einer globalisierten Arbeitswelt sind Sprachkenntnisse einfach unverzichtbar.\nB: Da stimme ich dir nur teilweise zu. Natürlich sind Sprachen wichtig, aber wer überhaupt kein Talent dafür hat, quält sich jahrelang, statt sich auf seine Stärken zu konzentrieren.\nA: Das verstehe ich, aber gerade dann lohnt es sich doch dranzubleiben. Ich habe in der Schule Englisch gehasst, und heute brauche ich es jeden Tag im Job.\nB: Das mag in deinem Fall stimmen. Trotzdem frage ich mich, ob man das nicht anders lösen könnte – zum Beispiel mit praxisnäheren Kursen statt Grammatikprüfungen.\nA: Das ist ein guter Punkt. Vielleicht liegt das Problem gar nicht in der Pflicht, sondern in der Art des Unterrichts.\nB: Genau. Dann könnten wir uns darauf einigen: Pflicht ja, aber mit mehr Kommunikation und weniger Auswendiglernen.\nA: Einverstanden.",
+   "checklist": [
+    "States a position and supports it with reasons and personal examples.",
+    "Responds to the partner's points instead of just repeating own views (Das verstehe ich, aber … / Das mag stimmen, trotzdem …).",
+    "Uses polite disagreement and agreement phrases.",
+    "Works towards a compromise and states it clearly.",
+    "Keeps the conversation balanced: asks questions, lets the partner speak."
+   ]
+  }
+ ]
+}

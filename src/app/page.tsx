@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { courseProgress, lastUnitId, lessonDoneToday, nextStep } from "@/lib/course";
+import {
+  courseProgress,
+  currentPart,
+  lastUnitId,
+  lessonDoneToday,
+  nextStep,
+  partProgress,
+} from "@/lib/course";
 import { activity, counts, progress } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { moreNewWords } from "./review/actions";
@@ -77,8 +84,10 @@ export default async function Home() {
   ]);
   const cards = due + newLeft + followUps;
   const step = nextStep(course, last);
-  const lessonHref = step ? `/learn/${step.unit.id}/${step.part.path}` : "/learn";
+  const lessonHref = step?.href ?? "/learn";
   const allDone = cards === 0 && (lessonDone || !step);
+  const part = currentPart(course);
+  const partDone = part && partProgress(course, part);
   return (
     <main className="screen with-tabs">
       <header className="topbar">
@@ -87,7 +96,7 @@ export default async function Home() {
           <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
             🔥 {streak}
           </span>
-          <Link href="/settings" className="chip line border-2" aria-label="Settings">
+          <Link href="/settings" className="chip line border" aria-label="Settings">
             ⚙️
           </Link>
         </span>
@@ -114,7 +123,7 @@ export default async function Home() {
         <h2 className="text-2xl font-black">
           {allDone ? "All done for today 🎉" : "Today's plan"}
         </h2>
-        <div className="divide-y-2 divide-[var(--line)]">
+        <div className="divide-y divide-[var(--line)]">
           <PlanRow
             done={due === 0}
             icon="🔁"
@@ -138,9 +147,11 @@ export default async function Home() {
           {step && (
             <PlanRow
               done={lessonDone}
-              icon={step.part.icon}
-              title={lessonDone ? "Lesson done · next up" : "Lesson"}
-              detail={`${step.unit.title} · ${step.part.label}`}
+              icon={step.icon}
+              title={
+                lessonDone ? "Lesson done · next up" : step.type === "exam" ? "Exam" : "Lesson"
+              }
+              detail={step.label}
               href={lessonHref}
             />
           )}
@@ -154,7 +165,7 @@ export default async function Home() {
               <div className="flex items-center justify-center gap-2 text-sm font-bold">
                 <span className="muted">Short on time?</span>
                 {[10, 30].map((limit) => (
-                  <Link key={limit} href={`/review?limit=${limit}`} className="chip line border-2">
+                  <Link key={limit} href={`/review?limit=${limit}`} className="chip line border">
                     {minutes(limit)} min
                   </Link>
                 ))}
@@ -166,7 +177,7 @@ export default async function Home() {
 
       {allDone && (
         <section className="flex flex-col gap-2">
-          <h2 className="muted text-sm font-extrabold tracking-wide uppercase">Want more?</h2>
+          <h2 className="muted text-sm font-extrabold">Want more?</h2>
           <form action={moreNewWords}>
             <button type="submit" className="btn w-full">
               🌱 +5 new words today
@@ -177,15 +188,25 @@ export default async function Home() {
           </Link>
           {step && (
             <Link href={lessonHref} className="btn">
-              {step.part.icon} {step.unit.title} · {step.part.label}
+              {step.icon} {step.label}
             </Link>
           )}
         </section>
       )}
 
       <section>
-        <h2 className="muted mb-2 text-sm font-extrabold tracking-wide uppercase">Your progress</h2>
-        <div className="card divide-y-2 divide-[var(--line)] py-0">
+        <h2 className="muted mb-2 text-sm font-extrabold">Your progress</h2>
+        <div className="card divide-y divide-[var(--line)] py-0">
+          {part && partDone && (
+            <Link href={`/learn#${part.id}`} className="block">
+              <Stat
+                icon="🧭"
+                tint="bg-[var(--brand-soft)]"
+                label={`Course · ${part.id} ›`}
+                value={`${partDone.done}/${partDone.total}`}
+              />
+            </Link>
+          )}
           <Stat
             icon="✅"
             tint="bg-green-100 dark:bg-green-950"

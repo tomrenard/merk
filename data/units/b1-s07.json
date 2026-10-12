@@ -1,0 +1,539 @@
+{
+ "id": "b1-s07",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The broken heating",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a broken heating system in winter, understand what a tradesperson and a landlady report, and talk about repairs and rent reductions.",
+ "explanation": "It's January, minus ten degrees outside, and on Friday evening Camille's heating stops working. Her landlady is spending January in Mallorca, the repairman needs a spare part, and the spare part takes its time. Luckily Camille has good neighbours.\n\nListen for reported speech (*Die Sekretärin erklärte, das Ersatzteil **sei** noch nicht da*) and fixed noun-verb pairs (*Bescheid geben, eine Entscheidung treffen*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| der Heizkörper, - | radiator |\n| die Gastherme, -n | gas boiler |\n| der Handwerker, - | tradesman, repairman |\n| das Ersatzteil, -e | spare part |\n| der Heizlüfter, - | fan heater |\n| frieren | to be cold, to freeze |\n| Bescheid geben | to let someone know |\n| die Mietminderung | rent reduction |\n| eine Entscheidung treffen | to make a decision |\n\nTip: if the heating fails in winter, tell your landlord in writing at once. Until it's fixed, you usually have the right to pay less rent (*Mietminderung*).",
+ "french": "Bescheid geben means prévenir: Geben Sie mir Bescheid = Prévenez-moi.",
+ "examples": [
+  {
+   "de": "In der Wohnung war es eiskalt.",
+   "en": "It was freezing cold in the flat."
+  },
+  {
+   "de": "Geben Sie mir Bescheid, wenn er da war.",
+   "en": "Let me know when he's been."
+  },
+  {
+   "de": "Ich muss ein Ersatzteil bestellen.",
+   "en": "I have to order a spare part."
+  },
+  {
+   "de": "Die Sekretärin sagte, das Ersatzteil sei noch nicht da.",
+   "en": "The secretary said the spare part wasn't there yet."
+  },
+  {
+   "de": "Er sagte, es komme erst am Donnerstag.",
+   "en": "He said it wouldn't come until Thursday."
+  },
+  {
+   "de": "Ich friere jetzt seit fünf Tagen.",
+   "en": "I've been freezing for five days now."
+  },
+  {
+   "de": "Ihre Vermieterin sollte bald eine Entscheidung treffen.",
+   "en": "Your landlady should make a decision soon."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Die ___ waren kalt, und aus dem Wasserhahn kam nur kaltes Wasser.",
+   "base": "radiators",
+   "answers": [
+    "Heizkörper"
+   ],
+   "en": "The radiators were cold, and only cold water came out of the tap.",
+   "id": "b1-s07-01"
+  },
+  {
+   "type": "choice",
+   "de": "Frau Schmitz verbrachte den Januar ___.",
+   "options": [
+    "auf Mallorca",
+    "bei ihrer Tochter",
+    "im zweiten Stock"
+   ],
+   "answer": 0,
+   "why": "Like every year, she spent January in Mallorca.",
+   "en": "Frau Schmitz spent January in Mallorca.",
+   "id": "b1-s07-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Die alte ___ in der Küche zeigte eine rote Lampe.",
+   "base": "gas boiler",
+   "answers": [
+    "Gastherme",
+    "Therme"
+   ],
+   "en": "The old gas boiler in the kitchen showed a red light.",
+   "id": "b1-s07-03"
+  },
+  {
+   "type": "choice",
+   "de": "Und geben Sie mir ___, wenn er da war.",
+   "options": [
+    "Bescheid",
+    "Information",
+    "Antwort"
+   ],
+   "answer": 0,
+   "why": "The fixed pair is Bescheid geben: to let someone know.",
+   "en": "And let me know when he's been.",
+   "id": "b1-s07-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Geben",
+    "Sie",
+    "mir",
+    "Bescheid,",
+    "wenn",
+    "er",
+    "da war"
+   ],
+   "answers": [
+    "Geben Sie mir Bescheid, wenn er da war.",
+    "Wenn er da war, geben Sie mir Bescheid."
+   ],
+   "en": "Let me know when he's been.",
+   "id": "b1-s07-05"
+  },
+  {
+   "type": "cloze",
+   "de": "In der ersten Nacht schlief Camille in zwei ___ und mit Mütze.",
+   "base": "pullovers",
+   "answers": [
+    "Pullovern",
+    "Pullis"
+   ],
+   "en": "The first night Camille slept in two pullovers and a hat.",
+   "id": "b1-s07-06"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Öztürk sagte, die ___ sei kaputt.",
+   "options": [
+    "Lampe",
+    "Pumpe",
+    "Tür"
+   ],
+   "answer": 1,
+   "why": "He looked at the boiler and found that the pump was broken.",
+   "en": "Herr Öztürk said the pump was broken.",
+   "id": "b1-s07-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich muss leider ein ___ bestellen.",
+   "base": "spare part",
+   "answers": [
+    "Ersatzteil"
+   ],
+   "en": "Unfortunately I have to order a spare part.",
+   "id": "b1-s07-08"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Öztürk konnte die Heizung am Samstag nicht reparieren, weil ___.",
+   "options": [
+    "er am Wochenende frei hatte",
+    "er erst ein Ersatzteil bestellen musste",
+    "Frau Schmitz die Rechnung nicht bezahlen wollte"
+   ],
+   "answer": 1,
+   "why": "The pump was broken, and he had to order a spare part first.",
+   "en": "Herr Öztürk couldn't repair the heating on Saturday because he had to order a spare part first.",
+   "id": "b1-s07-09"
+  },
+  {
+   "type": "cloze",
+   "de": "Herr Krause brachte einen alten ___ mit.",
+   "base": "fan heater",
+   "answers": [
+    "Heizlüfter"
+   ],
+   "en": "Herr Krause brought an old fan heater.",
+   "id": "b1-s07-10"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Frau Schmitz",
+    "hat",
+    "gesagt,",
+    "Sie",
+    "frieren",
+    "hier oben"
+   ],
+   "answers": [
+    "Frau Schmitz hat gesagt, Sie frieren hier oben.",
+    "Sie frieren hier oben, hat Frau Schmitz gesagt."
+   ],
+   "en": "Frau Schmitz said you're freezing up here.",
+   "id": "b1-s07-11"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Krause wusste von der kaputten Heizung, weil ___.",
+   "options": [
+    "er Camille im Treppenhaus getroffen hatte",
+    "Frau Schmitz ihn angerufen hatte",
+    "Herr Öztürk es ihm gesagt hatte"
+   ],
+   "answer": 1,
+   "why": "Frau Schmitz had called him from Mallorca.",
+   "en": "Herr Krause knew about the broken heating because Frau Schmitz had called him.",
+   "id": "b1-s07-12"
+  },
+  {
+   "type": "cloze",
+   "de": "Der ___ hatte Probleme, deshalb kam das Ersatzteil erst am Donnerstag.",
+   "base": "supplier",
+   "answers": [
+    "Lieferant"
+   ],
+   "en": "The supplier had problems, so the spare part only came on Thursday.",
+   "id": "b1-s07-13"
+  },
+  {
+   "type": "choice",
+   "de": "Am Dienstag rief Camille ___ an.",
+   "options": [
+    "bei Herrn Krause",
+    "in Herrn Öztürks Firma",
+    "bei der Polizei"
+   ],
+   "answer": 1,
+   "why": "Herr Öztürk didn't come, so she called his company and spoke to the secretary.",
+   "en": "On Tuesday Camille called Herr Öztürk's company.",
+   "id": "b1-s07-14"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Das Ersatzteil",
+    "erst",
+    "kommt",
+    "am Donnerstag"
+   ],
+   "answers": [
+    "Das Ersatzteil kommt erst am Donnerstag.",
+    "Erst am Donnerstag kommt das Ersatzteil."
+   ],
+   "en": "The spare part won't come until Thursday.",
+   "id": "b1-s07-15"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich friere jetzt seit fünf ___.",
+   "base": "days",
+   "answers": [
+    "Tagen"
+   ],
+   "en": "I've been freezing for five days now.",
+   "id": "b1-s07-16"
+  },
+  {
+   "type": "choice",
+   "de": "Für die kalten Tage darf Camille ___.",
+   "options": [
+    "in einem Hotel schlafen",
+    "weniger Miete zahlen",
+    "eine neue Therme kaufen"
+   ],
+   "answer": 1,
+   "why": "Frau Schmitz says she should take a hundred euros off the rent.",
+   "en": "For the cold days Camille may pay less rent.",
+   "id": "b1-s07-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Weniger Miete wegen eines Mangels nennt man ___.",
+   "base": "rent reduction",
+   "answers": [
+    "Mietminderung"
+   ],
+   "en": "Paying less rent because of a defect is called a rent reduction.",
+   "id": "b1-s07-18"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ihre Vermieterin",
+    "bald",
+    "sollte",
+    "eine Entscheidung",
+    "treffen"
+   ],
+   "answers": [
+    "Ihre Vermieterin sollte bald eine Entscheidung treffen.",
+    "Bald sollte Ihre Vermieterin eine Entscheidung treffen."
+   ],
+   "en": "Your landlady should make a decision soon.",
+   "id": "b1-s07-19"
+  },
+  {
+   "type": "choice",
+   "de": "Ihre Vermieterin sollte bald eine Entscheidung ___.",
+   "options": [
+    "machen",
+    "treffen",
+    "geben"
+   ],
+   "answer": 1,
+   "why": "The fixed pair is eine Entscheidung treffen.",
+   "en": "Your landlady should make a decision soon.",
+   "id": "b1-s07-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Frau Schmitz versprach, im Frühling eine neue Heizung einbauen zu ___.",
+   "base": "to have something done",
+   "answers": [
+    "lassen"
+   ],
+   "en": "Frau Schmitz promised to have a new heating system installed in the spring.",
+   "id": "b1-s07-21"
+  },
+  {
+   "type": "choice",
+   "de": "Am Ende lud Camille Herrn Krause ___ ein.",
+   "options": [
+    "zum Essen",
+    "ins Kino",
+    "nach Mallorca"
+   ],
+   "answer": 0,
+   "why": "She brought back the fan heater and invited him for dinner.",
+   "en": "In the end Camille invited Herr Krause for dinner.",
+   "id": "b1-s07-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Den Heizlüfter",
+    "Sie",
+    "behalten",
+    "mal"
+   ],
+   "answers": [
+    "Den Heizlüfter behalten Sie mal.",
+    "Behalten Sie mal den Heizlüfter."
+   ],
+   "en": "You keep the fan heater.",
+   "id": "b1-s07-23"
+  },
+  {
+   "type": "choice",
+   "de": "Am Ende wollte Herr Krause Camille den Heizlüfter ___.",
+   "options": [
+    "verkaufen",
+    "schenken",
+    "reparieren"
+   ],
+   "answer": 1,
+   "why": "He said: Den Heizlüfter behalten Sie mal. Der nächste Winter kommt bestimmt.",
+   "en": "In the end Herr Krause wanted to give Camille the fan heater.",
+   "id": "b1-s07-24"
+  }
+ ],
+ "listening": {
+  "title": "Minus zehn Grad",
+  "intro": "In the middle of a cold January, Camille's heating stops working on a Friday evening.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Es war Mitte Januar, und draußen waren es minus zehn Grad. Am Freitagabend kam Camille nach Hause und merkte sofort: In der Wohnung war es eiskalt.",
+    "en": "It was mid-January, and it was minus ten degrees outside. On Friday evening Camille came home and noticed at once: it was freezing cold in the flat."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Heizkörper waren kalt, und aus dem Wasserhahn kam nur kaltes Wasser. Die alte Gastherme in der Küche zeigte eine rote Lampe.",
+    "en": "The radiators were cold, and only cold water came out of the tap. The old gas boiler in the kitchen showed a red light."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille rief sofort ihre Vermieterin an. Frau Schmitz verbrachte wie jedes Jahr den Januar auf Mallorca.",
+    "en": "Camille called her landlady immediately. As every year, Frau Schmitz was spending January in Mallorca."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Ach Gott, Sie Arme! Ich gebe Ihnen die Nummer von Herrn Öztürk. Er repariert seit Jahren alles im Haus.",
+    "en": "Oh dear, you poor thing! I'll give you Herr Öztürk's number. He's been repairing everything in the building for years."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Sagen Sie ihm, dass ich die Rechnung bezahle. Und geben Sie mir Bescheid, wenn er da war.",
+    "en": "Tell him that I'll pay the bill. And let me know when he's been."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Herr Öztürk hatte am Wochenende eigentlich frei, aber er versprach, am Samstagmorgen vorbeizukommen. In der Nacht schlief Camille in zwei Pullovern und mit Mütze.",
+    "en": "Herr Öztürk was actually off at the weekend, but he promised to come by on Saturday morning. That night Camille slept in two pullovers and a hat."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Samstag um neun klingelte es. Herr Öztürk sah sich die Therme genau an und machte ein ernstes Gesicht.",
+    "en": "On Saturday at nine the doorbell rang. Herr Öztürk looked at the boiler carefully and made a serious face."
+   },
+   {
+    "speaker": "Herr Öztürk",
+    "de": "Die Pumpe ist kaputt. Ich muss ein Ersatzteil bestellen. Vor Dienstag wird das leider nichts.",
+    "en": "The pump is broken. I have to order a spare part. I'm afraid nothing will happen before Tuesday."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Bis Dienstag? Bei minus zehn Grad?",
+    "en": "Until Tuesday? At minus ten degrees?"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Nachmittag stand Herr Krause vor der Tür, mit einem Heizlüfter unter dem Arm. Frau Schmitz hatte ihn von Mallorca aus angerufen.",
+    "en": "In the afternoon Herr Krause was at the door with a fan heater under his arm. Frau Schmitz had called him from Mallorca."
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Frau Schmitz hat gesagt, Sie frieren hier oben. Der hier ist alt, aber er funktioniert.",
+    "en": "Frau Schmitz said you're freezing up here. This one is old, but it works."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend brachte Rafael heiße Suppe aus dem Restaurant mit. So überlebte Camille das Wochenende.",
+    "en": "In the evening Rafael brought hot soup from the restaurant. That's how Camille survived the weekend."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Dienstag kam aber kein Herr Öztürk. Camille rief in seiner Firma an.",
+    "en": "But on Tuesday no Herr Öztürk came. Camille called his company."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Sekretärin erklärte, das Ersatzteil sei leider noch nicht da. Der Lieferant habe Probleme, es komme erst am Donnerstag.",
+    "en": "The secretary explained that unfortunately the spare part wasn't there yet. The supplier had problems; it wouldn't come until Thursday."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille war wütend. Am Abend rief sie Frau Schmitz an.",
+    "en": "Camille was furious. In the evening she called Frau Schmitz."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Frau Schmitz, ich will mich nicht beschweren, aber ich friere jetzt seit fünf Tagen.",
+    "en": "Frau Schmitz, I don't want to complain, but I've been freezing for five days now."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Das verstehe ich doch! Natürlich zahlen Sie für diesen Monat weniger Miete. Das nennt man Mietminderung, darauf haben Sie ein Recht. Ziehen Sie einfach hundert Euro ab.",
+    "en": "Of course I understand! Naturally you'll pay less rent for this month. It's called a rent reduction, you have a right to it. Just take a hundred euros off."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Donnerstag kam Herr Öztürk endlich mit dem Ersatzteil. Nach einer Stunde lief die Heizung wieder.",
+    "en": "On Thursday Herr Öztürk finally came with the spare part. After an hour the heating was working again."
+   },
+   {
+    "speaker": "Herr Öztürk",
+    "de": "So, jetzt ist alles in Ordnung. Aber ehrlich gesagt: Die Therme ist zwanzig Jahre alt. Ihre Vermieterin sollte bald eine Entscheidung treffen.",
+    "en": "There, everything's fine now. But to be honest: the boiler is twenty years old. Your landlady should make a decision soon."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille gab Frau Schmitz sofort Bescheid. Die versprach, im Frühling eine neue Heizung einbauen zu lassen.",
+    "en": "Camille let Frau Schmitz know at once. She promised to have a new heating system installed in the spring."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend brachte Camille den Heizlüfter zurück in den zweiten Stock und lud Herrn Krause zum Essen ein.",
+    "en": "In the evening Camille took the fan heater back to the second floor and invited Herr Krause to dinner."
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Danke, sehr gern. Aber den Heizlüfter behalten Sie mal. Der nächste Winter kommt bestimmt.",
+    "en": "Thank you, I'd love to. But you keep the fan heater. Next winter is sure to come."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum konnte Frau Schmitz nicht selbst kommen?",
+    "options": [
+     "Sie war krank.",
+     "Sie verbrachte den Januar auf Mallorca.",
+     "Sie hatte keine Zeit."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was war an der Heizung kaputt?",
+    "options": [
+     "Die Pumpe",
+     "Ein Heizkörper",
+     "Der Wasserhahn"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Warum kam Herr Öztürk am Dienstag nicht?",
+    "options": [
+     "Er war krank.",
+     "Er hatte den Termin vergessen.",
+     "Das Ersatzteil war noch nicht geliefert."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was schlug Frau Schmitz am Telefon vor?",
+    "options": [
+     "Camille soll in ein Hotel gehen.",
+     "Camille soll hundert Euro weniger Miete zahlen.",
+     "Camille soll einen anderen Handwerker anrufen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was sagte Herr Krause am Ende über den Heizlüfter?",
+    "options": [
+     "Camille soll ihn behalten.",
+     "Er braucht ihn selbst.",
+     "Er ist kaputt."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Geben Sie mir bitte Bescheid, wenn der Handwerker da war.",
+  "Er sagte, er müsse zuerst ein Ersatzteil bestellen.",
+  "Die Sekretärin erklärte, das Teil komme erst am Donnerstag."
+ ],
+ "speaking": [
+  {
+   "de": "Sagen Sie ihm, dass ich die Rechnung bezahle.",
+   "en": "Tell him that I'll pay the bill."
+  },
+  {
+   "de": "Die Pumpe ist kaputt. Ich muss ein Ersatzteil bestellen.",
+   "en": "The pump is broken. I have to order a spare part."
+  },
+  {
+   "de": "Ich will mich nicht beschweren, aber ich friere jetzt seit fünf Tagen.",
+   "en": "I don't want to complain, but I've been freezing for five days now."
+  },
+  {
+   "de": "Jetzt ist alles in Ordnung.",
+   "en": "Everything's fine now."
+  },
+  {
+   "de": "Der nächste Winter kommt bestimmt.",
+   "en": "Next winter is sure to come."
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Write an 80–100-word email to Frau Schmitz on Tuesday: report what Herr Öztürk and his secretary said, describe your situation and ask how to handle the rent.",
+  "model": "Liebe Frau Schmitz,\n\nich möchte Ihnen kurz Bescheid geben: Herr Öztürk war am Samstag hier. Er hat gesagt, dass die Pumpe kaputt ist und dass er ein Ersatzteil bestellen muss. Heute hat mir seine Sekretärin erklärt, dass das Teil leider noch nicht da ist und erst am Donnerstag kommt. Dank Herrn Krause und seinem Heizlüfter ist es im Wohnzimmer warm genug, aber im Bad und in der Küche friere ich sehr. Wie sollen wir das mit der Miete für Januar machen? Ich hoffe, Sie genießen die Sonne auf Mallorca!\n\nViele Grüße\nCamille"
+ }
+}

@@ -1,0 +1,507 @@
+{
+ "id": "a2-t09",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "der Sport",
+  "der Verein",
+  "der Kurs",
+  "schwimmen",
+  "Rad fahren",
+  "gewinnen",
+  "das Training",
+  "trainieren",
+  "die Mannschaft",
+  "das Spiel",
+  "verlieren",
+  "mitspielen",
+  "sportlich",
+  "fit sein",
+  "gesund",
+  "die Gesundheit",
+  "der Körper",
+  "der Rücken",
+  "der Stress",
+  "sich ausruhen",
+  "sich anmelden",
+  "kostenlos",
+  "der Vertrag",
+  "kündigen",
+  "die Ermäßigung",
+  "joggen",
+  "das Handtuch",
+  "das Mitglied",
+  "regelmäßig",
+  "der Trainer"
+ ],
+ "title": "Sport and healthy habits",
+ "situation": "Joining a gym or club",
+ "canDo": "You can join a gym or sports club, ask about prices, classes and contracts, and talk about sport and healthy habits.",
+ "explanation": "When you join a gym (das Fitnessstudio) or a sports club (der Verein), you need words for sports, membership and staying healthy.\n\n| German | English |\n|---|---|\n| der Verein, -e | club |\n| das Mitglied, -er | member |\n| der Kurs, -e | class, course |\n| das Training, -s | training session |\n| der Trainer, - / die Trainerin, -nen | coach, instructor |\n| die Mannschaft, -en | team |\n| der Vertrag, Verträge | contract |\n| die Ermäßigung, -en | reduced price (students etc.) |\n| sich anmelden / kündigen | to sign up / to cancel (a contract) |\n| kostenlos | free (no cost) |\n| gesund / die Gesundheit | healthy / health |\n| der Rücken, - | back |\n\nTips:\n- **Sport machen**, but **Fußball / Tennis spielen** (no article). Many sports are simply verbs: **schwimmen, joggen, Rad fahren**: *Ich schwimme gern.* Never *Sport spielen*.\n- **Mitglied werden** = to join: *Ich möchte Mitglied werden.*\n- **kündigen** is for contracts and memberships. An appointment (Termin) you cancel with **absagen**.\n- **das Training** is the session; the coach is **der Trainer**. Sports shoes are **Sportschuhe**.\n- **gewinnen ↔ verlieren**: *Wir haben gewonnen / verloren.*\n- After sport: *Ich bin müde, ich ruhe mich aus.*",
+ "french": "Like « faire du sport », German says Sport machen, but « jouer au foot » is Fußball spielen with no article, and « s'inscrire » is sich anmelden.",
+ "examples": [
+  {
+   "de": "Ich mache zweimal pro Woche Sport.",
+   "en": "I do sport twice a week."
+  },
+  {
+   "de": "Am Wochenende spiele ich mit Freunden Fußball.",
+   "en": "At the weekend I play football with friends."
+  },
+  {
+   "de": "Ich bin seit drei Jahren Mitglied in einem Tennisverein.",
+   "en": "I've been a member of a tennis club for three years."
+  },
+  {
+   "de": "Ich möchte mich für den Schwimmkurs anmelden.",
+   "en": "I'd like to sign up for the swimming class."
+  },
+  {
+   "de": "Für Studenten gibt es eine Ermäßigung.",
+   "en": "There's a reduced price for students."
+  },
+  {
+   "de": "Nach dem Training bin ich müde, aber glücklich.",
+   "en": "After training I'm tired but happy."
+  },
+  {
+   "de": "Obst und Gemüse sind gesund.",
+   "en": "Fruit and vegetables are healthy."
+  },
+  {
+   "de": "Zu viel Stress ist schlecht für die Gesundheit.",
+   "en": "Too much stress is bad for your health."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t09-01",
+   "type": "choice",
+   "de": "Ich gehe zweimal pro Woche ins ___ und schwimme eine Stunde.",
+   "options": [
+    "Sportplatz",
+    "Schwimmbad",
+    "Verein"
+   ],
+   "answer": 1,
+   "why": "You swim in a Schwimmbad (swimming pool).",
+   "en": "I go to the swimming pool twice a week and swim for an hour."
+  },
+  {
+   "id": "a2-t09-02",
+   "type": "cloze",
+   "de": "Spielst du gern ___?",
+   "base": "football",
+   "answers": [
+    "Fußball"
+   ],
+   "en": "Do you like playing football?"
+  },
+  {
+   "id": "a2-t09-03",
+   "type": "cloze",
+   "de": "Ich bin seit einem Jahr Mitglied in einem ___.",
+   "base": "club",
+   "answers": [
+    "Verein",
+    "Sportverein"
+   ],
+   "en": "I've been a member of a club for a year."
+  },
+  {
+   "id": "a2-t09-04",
+   "type": "choice",
+   "de": "Am Wochenende ___ ich gern Rad.",
+   "options": [
+    "mache",
+    "spiele",
+    "fahre"
+   ],
+   "answer": 2,
+   "why": "Cycling is Rad fahren.",
+   "en": "At the weekend I like cycling."
+  },
+  {
+   "id": "a2-t09-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "jeden Morgen",
+    "jogge",
+    "im Park"
+   ],
+   "answers": [
+    "Ich jogge jeden Morgen im Park.",
+    "Jeden Morgen jogge ich im Park.",
+    "Im Park jogge ich jeden Morgen."
+   ],
+   "en": "I go jogging in the park every morning."
+  },
+  {
+   "id": "a2-t09-06",
+   "type": "cloze",
+   "de": "Unsere ___ hat am Samstag 3:1 gewonnen.",
+   "base": "team",
+   "answers": [
+    "Mannschaft"
+   ],
+   "en": "Our team won 3–1 on Saturday."
+  },
+  {
+   "id": "a2-t09-07",
+   "type": "choice",
+   "de": "Leider haben wir das Spiel ___.",
+   "options": [
+    "gewonnen",
+    "verloren",
+    "gespielt"
+   ],
+   "answer": 1,
+   "why": "Leider (unfortunately) points to losing: verlieren → verloren.",
+   "en": "Unfortunately we lost the match."
+  },
+  {
+   "id": "a2-t09-08",
+   "type": "cloze",
+   "de": "Ich möchte mich für den Yogakurs ___.",
+   "base": "to sign up",
+   "answers": [
+    "anmelden"
+   ],
+   "en": "I'd like to sign up for the yoga class."
+  },
+  {
+   "id": "a2-t09-09",
+   "type": "choice",
+   "de": "Die Kurse sind für Mitglieder ___. Sie müssen nichts extra bezahlen.",
+   "options": [
+    "kostenlos",
+    "teuer",
+    "gesund"
+   ],
+   "answer": 0,
+   "why": "If you don't pay anything extra, the classes are kostenlos (free).",
+   "en": "The classes are free for members. You don't have to pay anything extra."
+  },
+  {
+   "id": "a2-t09-10",
+   "type": "cloze",
+   "de": "Gibt es eine ___ für Studenten?",
+   "base": "reduced price",
+   "answers": [
+    "Ermäßigung"
+   ],
+   "en": "Is there a reduced price for students?"
+  },
+  {
+   "id": "a2-t09-11",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "Mitglied",
+    "werden",
+    "möchte"
+   ],
+   "answers": [
+    "Ich möchte Mitglied werden."
+   ],
+   "en": "I'd like to become a member."
+  },
+  {
+   "id": "a2-t09-12",
+   "type": "choice",
+   "de": "Nach dem Training ___ ich mich eine halbe Stunde aus.",
+   "options": [
+    "mache",
+    "ruhe",
+    "lege"
+   ],
+   "answer": 1,
+   "why": "sich ausruhen = to rest; aus goes to the end.",
+   "en": "After training I rest for half an hour."
+  },
+  {
+   "id": "a2-t09-13",
+   "type": "cloze",
+   "de": "Mein ___ tut weh. Ich sitze zu viel.",
+   "base": "back",
+   "answers": [
+    "Rücken"
+   ],
+   "en": "My back hurts. I sit too much."
+  },
+  {
+   "id": "a2-t09-14",
+   "type": "cloze",
+   "de": "Obst und Gemüse sind sehr ___.",
+   "base": "healthy",
+   "answers": [
+    "gesund"
+   ],
+   "en": "Fruit and vegetables are very healthy."
+  },
+  {
+   "id": "a2-t09-15",
+   "type": "choice",
+   "de": "Ich bin nicht sehr ___, aber ich gehe gern spazieren.",
+   "options": [
+    "sportlich",
+    "sportliche",
+    "Sport"
+   ],
+   "answer": 0,
+   "why": "After sein, the adjective has no ending: Ich bin sportlich.",
+   "en": "I'm not very sporty, but I like going for walks."
+  },
+  {
+   "id": "a2-t09-16",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "Sport",
+    "mache",
+    "regelmäßig"
+   ],
+   "answers": [
+    "Ich mache regelmäßig Sport.",
+    "Regelmäßig mache ich Sport.",
+    "Sport mache ich regelmäßig."
+   ],
+   "en": "I do sport regularly."
+  },
+  {
+   "id": "a2-t09-17",
+   "type": "cloze",
+   "de": "Unser ___ zeigt uns die Übungen.",
+   "base": "coach",
+   "answers": [
+    "Trainer"
+   ],
+   "en": "Our coach shows us the exercises."
+  },
+  {
+   "id": "a2-t09-18",
+   "type": "choice",
+   "de": "Ich kann den ___ jeden Monat kündigen.",
+   "options": [
+    "Termin",
+    "Vertrag",
+    "Ziel"
+   ],
+   "answer": 1,
+   "why": "You cancel a contract with kündigen; a Termin is cancelled with absagen.",
+   "en": "I can cancel the contract every month."
+  },
+  {
+   "id": "a2-t09-19",
+   "type": "cloze",
+   "de": "Rauchen ist schlecht für die ___.",
+   "base": "health",
+   "answers": [
+    "Gesundheit"
+   ],
+   "en": "Smoking is bad for your health."
+  },
+  {
+   "id": "a2-t09-20",
+   "type": "order",
+   "tiles": [
+    "Kann",
+    "mitspielen",
+    "ich",
+    "auch"
+   ],
+   "answers": [
+    "Kann ich auch mitspielen?"
+   ],
+   "en": "Can I play too?"
+  },
+  {
+   "id": "a2-t09-21",
+   "type": "choice",
+   "de": "Ich bin oft müde nach der Arbeit. ___ gehe ich zweimal pro Woche joggen.",
+   "options": [
+    "Deshalb",
+    "Denn",
+    "Trotzdem"
+   ],
+   "answer": 2,
+   "why": "Trotzdem = still, anyway: you go jogging although you are tired.",
+   "en": "I'm often tired after work. I still go jogging twice a week."
+  },
+  {
+   "id": "a2-t09-22",
+   "type": "cloze",
+   "de": "Bringen Sie bitte ein ___ für die Dusche mit.",
+   "base": "towel",
+   "answers": [
+    "Handtuch"
+   ],
+   "en": "Please bring a towel for the shower."
+  },
+  {
+   "id": "a2-t09-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "ein Probetraining",
+    "machen",
+    "möchte",
+    "gern"
+   ],
+   "answers": [
+    "Ich möchte gern ein Probetraining machen.",
+    "Ein Probetraining möchte ich gern machen."
+   ],
+   "en": "I'd like to do a trial session."
+  },
+  {
+   "id": "a2-t09-24",
+   "type": "choice",
+   "de": "Wissen Sie, ___ der Yogakurs auch am Abend stattfindet?",
+   "options": [
+    "dass",
+    "ob",
+    "wenn"
+   ],
+   "answer": 1,
+   "why": "A polite yes/no question inside a sentence starts with ob.",
+   "en": "Do you know if the yoga class also takes place in the evening?"
+  }
+ ],
+ "listening": {
+  "title": "Im Fitnessstudio",
+  "intro": "Amélie asks Jonas at the gym reception about membership and classes.",
+  "lines": [
+   {
+    "speaker": "Amélie",
+    "de": "Guten Tag! Ich möchte vielleicht Mitglied werden. Wie viel kostet das?",
+    "en": "Hello! I might want to become a member. How much does it cost?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Der Vertrag kostet 29 Euro im Monat. Für Studenten gibt es eine Ermäßigung.",
+    "en": "The contract costs 29 euros a month. There's a reduced price for students."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Ich bin leider keine Studentin mehr. Wie lange läuft der Vertrag?",
+    "en": "Unfortunately I'm not a student any more. How long does the contract run?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Zwölf Monate. Danach können Sie jeden Monat kündigen.",
+    "en": "Twelve months. After that you can cancel every month."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Okay. Gibt es auch Kurse? Ich mache gern Yoga, und mein Rücken tut oft weh.",
+    "en": "Okay. Are there classes too? I like doing yoga, and my back often hurts."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, Yoga haben wir dreimal pro Woche: am Montag, Mittwoch und Freitag. Die Kurse sind für Mitglieder kostenlos.",
+    "en": "Yes, we have yoga three times a week: on Monday, Wednesday and Friday. The classes are free for members."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Super. Ich sitze den ganzen Tag im Büro, deshalb möchte ich mich mehr bewegen.",
+    "en": "Great. I sit in the office all day, so I want to move more."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Das verstehe ich. Möchten Sie heute ein kostenloses Probetraining machen?",
+    "en": "I understand. Would you like to do a free trial session today?"
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Gern! Aber ich habe kein Handtuch dabei.",
+    "en": "Gladly! But I haven't got a towel with me."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Kein Problem, Sie können eins bei uns leihen. Die Duschen sind dort hinten.",
+    "en": "No problem, you can borrow one from us. The showers are back there."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Und wer zeigt mir die Geräte?",
+    "en": "And who will show me the machines?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Unser Trainer Max. Er hat um fünf Uhr Zeit. Viel Spaß!",
+    "en": "Our trainer Max. He's free at five o'clock. Have fun!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much does the contract cost per month?",
+    "options": [
+     "19 euros.",
+     "29 euros.",
+     "39 euros."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Amélie get the reduced price?",
+    "options": [
+     "She isn't a student any more.",
+     "She only wants a trial session.",
+     "She signs a contract for two years."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why does Amélie want to move more?",
+    "options": [
+     "Her doctor told her to.",
+     "She wants to win a competition.",
+     "She sits in the office all day."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What hasn't Amélie got with her?",
+    "options": [
+     "Sports shoes.",
+     "A towel.",
+     "Money."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte mich für den Yogakurs anmelden.",
+  "Für Studenten gibt es eine Ermäßigung.",
+  "Nach dem Training ruhe ich mich aus."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte vielleicht Mitglied werden.",
+   "en": "I might want to become a member."
+  },
+  {
+   "de": "Wie lange läuft der Vertrag?",
+   "en": "How long does the contract run?"
+  },
+  {
+   "de": "Gibt es auch Kurse?",
+   "en": "Are there classes too?"
+  },
+  {
+   "de": "Ich sitze den ganzen Tag im Büro, deshalb möchte ich mich mehr bewegen.",
+   "en": "I sit in the office all day, so I want to move more."
+  },
+  {
+   "de": "Ich habe kein Handtuch dabei.",
+   "en": "I haven't got a towel with me."
+  }
+ ],
+ "writing": {
+  "task": "You have joined a gym or sports club. Write 5–6 sentences to a friend: what sport you want to do, why, how often, what it costs, and ask if they want to come along.",
+  "model": "Hallo Lea, ich möchte endlich wieder mehr Sport machen. Ich sitze den ganzen Tag im Büro, und mein Rücken tut oft weh. Deshalb habe ich mich gestern im Fitnessstudio angemeldet. Der Vertrag kostet 29 Euro im Monat, und die Kurse sind kostenlos. Ich möchte zweimal pro Woche trainieren, am Montag und am Donnerstag. Hast du Lust, am Montag mitzukommen? Liebe Grüße, Amélie"
+ }
+}

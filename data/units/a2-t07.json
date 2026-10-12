@@ -1,0 +1,510 @@
+{
+ "id": "a2-t07",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "die Anmeldung",
+  "sich anmelden",
+  "die Adresse",
+  "der Termin",
+  "das Formular",
+  "ausfüllen",
+  "unterschreiben",
+  "die Unterschrift",
+  "der Ausweis",
+  "der Pass",
+  "der Vorname",
+  "der Familienname",
+  "das Datum",
+  "der Geburtsort",
+  "der Familienstand",
+  "ledig",
+  "verheiratet",
+  "die Postleitzahl",
+  "der Vermieter",
+  "einziehen",
+  "umziehen",
+  "mitbringen",
+  "abgeben",
+  "bestätigen",
+  "der Schalter",
+  "der Beamte",
+  "online",
+  "das Amt",
+  "die Kopie",
+  "die Frist"
+ ],
+ "title": "Offices, forms and appointments",
+ "situation": "Registering your address (Anmeldung)",
+ "canDo": "You can book an appointment at the Bürgeramt, fill in the registration form and understand what the clerk asks you for.",
+ "explanation": "When you move into a flat in Germany, you must register your address at the **Bürgeramt** within two weeks: this is the **Anmeldung**.\n\n| German | English |\n|---|---|\n| der Termin, die Termine | appointment |\n| das Formular, die Formulare | form |\n| der Ausweis, die Ausweise | ID card |\n| der Pass, die Pässe | passport |\n| die Unterschrift, die Unterschriften | signature |\n| der Vorname / der Familienname | first name / surname |\n| der Geburtsort | place of birth |\n| der Familienstand | marital status: ledig, verheiratet |\n| die Postleitzahl, die Postleitzahlen | postcode |\n| der Vermieter, die Vermieter | landlord |\n\n| Phrase | English |\n|---|---|\n| sich anmelden | to register |\n| ein Formular ausfüllen | to fill in a form |\n| einen Termin online buchen | to book an appointment online |\n| Was muss ich mitbringen? | What do I need to bring? |\n| Unterschreiben Sie bitte hier. | Please sign here. |\n\nTips:\n- Bring your passport or ID and the **Wohnungsgeberbestätigung**: a short paper from your landlord that confirms you moved in.\n- At the end you get the **Meldebescheinigung**, the proof of your address. Keep it safe: banks and many offices want to see it.\n- Book your **Termin** early: in big cities the next free date is often weeks away.\n- **sich anmelden** is reflexive and separable: *Ich melde **mich** an.* Don't say *Ich anmelde.*",
+ "french": "Unlike in France, registering your address is compulsory in Germany, and the Meldebescheinigung works a bit like a « justificatif de domicile » for banks and contracts.",
+ "examples": [
+  {
+   "de": "Ich möchte mich anmelden. Ich bin letzte Woche umgezogen.",
+   "en": "I'd like to register. I moved last week."
+  },
+  {
+   "de": "Haben Sie einen Termin?",
+   "en": "Do you have an appointment?"
+  },
+  {
+   "de": "Bitte füllen Sie dieses Formular aus.",
+   "en": "Please fill in this form."
+  },
+  {
+   "de": "Was muss ich mitbringen?",
+   "en": "What do I need to bring?"
+  },
+  {
+   "de": "Ihren Pass und die Bestätigung von Ihrem Vermieter, bitte.",
+   "en": "Your passport and the confirmation from your landlord, please."
+  },
+  {
+   "de": "Sind Sie ledig oder verheiratet?",
+   "en": "Are you single or married?"
+  },
+  {
+   "de": "Unterschreiben Sie bitte hier unten.",
+   "en": "Please sign down here."
+  },
+  {
+   "de": "Hier ist Ihre Meldebescheinigung.",
+   "en": "Here's your registration certificate."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t07-01",
+   "type": "cloze",
+   "de": "Ich habe am Montag einen ___ beim Bürgeramt.",
+   "base": "appointment",
+   "answers": [
+    "Termin"
+   ],
+   "en": "I have an appointment at the Bürgeramt on Monday."
+  },
+  {
+   "id": "a2-t07-02",
+   "type": "choice",
+   "de": "Bitte füllen Sie das ___ aus.",
+   "options": [
+    "Formular",
+    "Termin",
+    "Amt"
+   ],
+   "answer": 0,
+   "why": "You fill in (ausfüllen) a form: das Formular.",
+   "en": "Please fill in the form."
+  },
+  {
+   "id": "a2-t07-03",
+   "type": "cloze",
+   "de": "Wie ist Ihr ___? – Martin.",
+   "base": "first name",
+   "answers": [
+    "Vorname"
+   ],
+   "en": "What's your first name? – Martin."
+  },
+  {
+   "id": "a2-t07-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "mich",
+    "anmelden"
+   ],
+   "answers": [
+    "Ich möchte mich anmelden."
+   ],
+   "en": "I'd like to register."
+  },
+  {
+   "id": "a2-t07-05",
+   "type": "choice",
+   "de": "Sind Sie verheiratet? – Nein, ich bin ___.",
+   "options": [
+    "leer",
+    "ledig",
+    "einzeln"
+   ],
+   "answer": 1,
+   "why": "On forms and at offices, single is ledig; leer means empty and einzeln means one by one.",
+   "en": "Are you married? – No, I'm single."
+  },
+  {
+   "id": "a2-t07-06",
+   "type": "cloze",
+   "de": "Bitte ___ Sie hier unten.",
+   "base": "to sign",
+   "answers": [
+    "unterschreiben"
+   ],
+   "en": "Please sign down here."
+  },
+  {
+   "id": "a2-t07-07",
+   "type": "cloze",
+   "de": "Was muss ich zum Termin ___?",
+   "base": "to bring (along)",
+   "answers": [
+    "mitbringen"
+   ],
+   "en": "What do I need to bring to the appointment?"
+  },
+  {
+   "id": "a2-t07-08",
+   "type": "choice",
+   "de": "Ich brauche Ihren ___ oder Ihren Pass.",
+   "options": [
+    "Ausgang",
+    "Ausflug",
+    "Ausweis"
+   ],
+   "answer": 2,
+   "why": "der Ausweis is the ID card; Ausgang is an exit and Ausflug a trip.",
+   "en": "I need your ID card or your passport."
+  },
+  {
+   "id": "a2-t07-09",
+   "type": "order",
+   "tiles": [
+    "Bitte",
+    "füllen",
+    "Sie",
+    "das Formular",
+    "aus"
+   ],
+   "answers": [
+    "Bitte füllen Sie das Formular aus.",
+    "Füllen Sie bitte das Formular aus.",
+    "Füllen Sie das Formular bitte aus."
+   ],
+   "en": "Please fill in the form."
+  },
+  {
+   "id": "a2-t07-10",
+   "type": "cloze",
+   "de": "Sie wohnen in der Linienstraße 5. Und wie ist die ___? – 10115.",
+   "base": "postcode",
+   "answers": [
+    "Postleitzahl"
+   ],
+   "en": "You live at Linienstraße 5. And what's the postcode? – 10115."
+  },
+  {
+   "id": "a2-t07-11",
+   "type": "choice",
+   "de": "Ich bin am 1. März in die neue Wohnung ___.",
+   "options": [
+    "eingezogen",
+    "ausgezogen",
+    "angezogen"
+   ],
+   "answer": 0,
+   "why": "einziehen means to move in; ausziehen is to move out and anziehen is to put on clothes.",
+   "en": "I moved into the new flat on 1 March."
+  },
+  {
+   "id": "a2-t07-12",
+   "type": "cloze",
+   "de": "Mein ___ ist Lyon. Dort bin ich geboren.",
+   "base": "place of birth",
+   "answers": [
+    "Geburtsort"
+   ],
+   "en": "My place of birth is Lyon. I was born there."
+  },
+  {
+   "id": "a2-t07-13",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "muss",
+    "ich",
+    "mitbringen"
+   ],
+   "answers": [
+    "Was muss ich mitbringen?"
+   ],
+   "en": "What do I need to bring?"
+  },
+  {
+   "id": "a2-t07-14",
+   "type": "choice",
+   "de": "Mein ___ hat mir die Bestätigung gegeben.",
+   "options": [
+    "Verkäufer",
+    "Vermieter",
+    "Vertreter"
+   ],
+   "answer": 1,
+   "why": "The landlord (Vermieter) confirms that you moved in; a Verkäufer is a shop assistant.",
+   "en": "My landlord gave me the confirmation."
+  },
+  {
+   "id": "a2-t07-15",
+   "type": "cloze",
+   "de": "Haben Sie auch eine ___ von Ihrem Pass?",
+   "base": "copy",
+   "answers": [
+    "Kopie"
+   ],
+   "en": "Do you also have a copy of your passport?"
+  },
+  {
+   "id": "a2-t07-16",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "letzte Woche",
+    "umgezogen"
+   ],
+   "answers": [
+    "Ich bin letzte Woche umgezogen.",
+    "Letzte Woche bin ich umgezogen."
+   ],
+   "en": "I moved last week."
+  },
+  {
+   "id": "a2-t07-17",
+   "type": "choice",
+   "de": "Wo kann ich ___ anmelden?",
+   "options": [
+    "ich",
+    "mir",
+    "mich"
+   ],
+   "answer": 2,
+   "why": "sich anmelden is reflexive with the accusative: ich melde mich an.",
+   "en": "Where can I register?"
+  },
+  {
+   "id": "a2-t07-18",
+   "type": "cloze",
+   "de": "Hier ist Ihre ___. Die brauchen Sie zum Beispiel für die Bank.",
+   "base": "registration certificate",
+   "answers": [
+    "Meldebescheinigung"
+   ],
+   "en": "Here's your registration certificate. You'll need it for the bank, for example."
+  },
+  {
+   "id": "a2-t07-19",
+   "type": "choice",
+   "de": "Wann sind Sie ___? – Am 3. Mai 1994.",
+   "options": [
+    "gekommen",
+    "geboren",
+    "gebaut"
+   ],
+   "answer": 1,
+   "why": "For your date of birth the question is Wann sind Sie geboren?",
+   "en": "When were you born? – On 3 May 1994."
+  },
+  {
+   "id": "a2-t07-20",
+   "type": "cloze",
+   "de": "Ihre ___ fehlt noch. Hier unten, bitte.",
+   "base": "signature",
+   "answers": [
+    "Unterschrift"
+   ],
+   "en": "Your signature is still missing. Down here, please."
+  },
+  {
+   "id": "a2-t07-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "um zehn Uhr",
+    "einen Termin"
+   ],
+   "answers": [
+    "Ich habe um zehn Uhr einen Termin.",
+    "Um zehn Uhr habe ich einen Termin.",
+    "Ich habe einen Termin um zehn Uhr."
+   ],
+   "en": "I have an appointment at ten o'clock."
+  },
+  {
+   "id": "a2-t07-22",
+   "type": "choice",
+   "de": "Bitte ziehen Sie eine ___ und warten Sie.",
+   "options": [
+    "Zahl",
+    "Nummer",
+    "Karte"
+   ],
+   "answer": 1,
+   "why": "At an office you take a ticket: eine Nummer ziehen; Zahl is a number in maths.",
+   "en": "Please take a number and wait."
+  },
+  {
+   "id": "a2-t07-23",
+   "type": "cloze",
+   "de": "Ich muss das Formular bis Freitag ___.",
+   "base": "to hand in",
+   "answers": [
+    "abgeben"
+   ],
+   "en": "I have to hand in the form by Friday."
+  },
+  {
+   "id": "a2-t07-24",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "müssen",
+    "noch",
+    "hier",
+    "unterschreiben"
+   ],
+   "answers": [
+    "Sie müssen hier noch unterschreiben.",
+    "Sie müssen noch hier unterschreiben.",
+    "Hier müssen Sie noch unterschreiben."
+   ],
+   "en": "You still need to sign here."
+  }
+ ],
+ "listening": {
+  "title": "Beim Bürgeramt",
+  "intro": "Amira has just moved to Leipzig and registers her new address at the Bürgeramt.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Guten Morgen. Haben Sie einen Termin?",
+    "en": "Good morning. Do you have an appointment?"
+   },
+   {
+    "speaker": "Amira",
+    "de": "Ja, um halb zehn. Ich möchte mich anmelden. Ich bin am ersten Oktober nach Leipzig umgezogen.",
+    "en": "Yes, at half past nine. I'd like to register. I moved to Leipzig on the first of October."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gut. Haben Sie das Formular schon ausgefüllt?",
+    "en": "Good. Have you already filled in the form?"
+   },
+   {
+    "speaker": "Amira",
+    "de": "Ja, hier. Aber beim Familienstand war ich nicht sicher. Ich bin nicht verheiratet, aber ich habe einen Freund.",
+    "en": "Yes, here. But I wasn't sure about the marital status. I'm not married, but I have a boyfriend."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Dann sind Sie ledig. Das schreibe ich hier. Ihren Pass, bitte.",
+    "en": "Then you're single. I'll write that here. Your passport, please."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Bitte. Und hier ist die Bestätigung von meinem Vermieter.",
+    "en": "Here you are. And here's the confirmation from my landlord."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Danke. Ihre neue Adresse ist Karl-Heine-Straße 14, 04229 Leipzig, richtig?",
+    "en": "Thank you. Your new address is Karl-Heine-Straße 14, 04229 Leipzig, right?"
+   },
+   {
+    "speaker": "Amira",
+    "de": "Ja, genau. Im zweiten Stock.",
+    "en": "Yes, exactly. On the second floor."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gut. Unterschreiben Sie bitte hier unten.",
+    "en": "Good. Please sign down here."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Muss ich noch etwas bezahlen?",
+    "en": "Do I have to pay anything?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nein, die Anmeldung ist kostenlos. Hier ist Ihre Meldebescheinigung. Die brauchen Sie zum Beispiel für die Bank.",
+    "en": "No, registering is free. Here's your registration certificate. You'll need it for the bank, for example."
+   },
+   {
+    "speaker": "Amira",
+    "de": "Super, vielen Dank! Das war ja schnell.",
+    "en": "Great, thank you very much! That was quick."
+   }
+  ],
+  "questions": [
+   {
+    "q": "When did Amira move to Leipzig?",
+    "options": [
+     "On 1 October.",
+     "On 1 September.",
+     "Two weeks ago."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What was Amira unsure about on the form?",
+    "options": [
+     "Her postcode.",
+     "Her marital status.",
+     "Her place of birth."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Amira give the clerk besides her passport?",
+    "options": [
+     "A copy of her rental contract.",
+     "A photo.",
+     "The confirmation from her landlord."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much does the registration cost?",
+    "options": [
+     "Nothing.",
+     "Ten euros.",
+     "She will get a bill later."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte mich beim Bürgeramt anmelden.",
+  "Haben Sie das Formular schon ausgefüllt?",
+  "Bitte bringen Sie Ihren Pass mit."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte mich anmelden.",
+   "en": "I'd like to register."
+  },
+  {
+   "de": "Ich bin am ersten Oktober nach Leipzig umgezogen.",
+   "en": "I moved to Leipzig on the first of October."
+  },
+  {
+   "de": "Hier ist die Bestätigung von meinem Vermieter.",
+   "en": "Here's the confirmation from my landlord."
+  },
+  {
+   "de": "Was muss ich mitbringen?",
+   "en": "What do I need to bring?"
+  },
+  {
+   "de": "Muss ich noch etwas bezahlen?",
+   "en": "Do I have to pay anything?"
+  }
+ ],
+ "writing": {
+  "task": "A friend has just moved to Germany. Write 5–6 sentences to explain how the Anmeldung works and what to bring.",
+  "model": "Hallo Paul, du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden. Buch den Termin schnell online, denn in Berlin sind die Termine oft schnell weg. Bring deinen Pass und die Bestätigung von deinem Vermieter mit. Das Formular kannst du schon zu Hause ausfüllen. Am Ende unterschreibst du und bekommst die Meldebescheinigung. Die brauchst du für die Bank! Viele Grüße, Léa"
+ }
+}

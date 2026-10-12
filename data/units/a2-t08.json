@@ -1,0 +1,511 @@
+{
+ "id": "a2-t08",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "das Handy",
+  "das Mobiltelefon",
+  "das Internet",
+  "der Vertrag",
+  "abschließen",
+  "kündigen",
+  "die Kündigung",
+  "der Monat",
+  "kosten",
+  "der Preis",
+  "günstig",
+  "teuer",
+  "preiswert",
+  "vergleichen",
+  "das Angebot",
+  "die Rechnung",
+  "bezahlen",
+  "unterschreiben",
+  "der Anschluss",
+  "surfen",
+  "herunterladen",
+  "das Passwort",
+  "die Nachricht",
+  "anrufen",
+  "der Anruf",
+  "das Netz",
+  "funktionieren",
+  "die Störung",
+  "kostenlos",
+  "der Kunde"
+ ],
+ "title": "Phone, internet and contracts",
+ "situation": "Getting a mobile contract",
+ "canDo": "You can compare phone and internet offers, ask about prices and contract terms, and report a problem with your connection.",
+ "explanation": "Getting a phone or internet contract in Germany means comparing offers and checking the details.\n\n| German | English |\n|---|---|\n| der Vertrag, die Verträge | contract |\n| der Tarif, die Tarife | plan |\n| die Laufzeit | minimum term (often 24 months) |\n| das Datenvolumen | data allowance (e.g. 20 GB) |\n| der Anschluss, die Anschlüsse | (internet) connection |\n| das WLAN / der Router | Wi-Fi / router |\n| die Rechnung, die Rechnungen | bill |\n| die Störung, die Störungen | outage, fault |\n\n| Phrase | English |\n|---|---|\n| einen Vertrag abschließen | to take out a contract |\n| einen Vertrag kündigen | to cancel a contract |\n| Angebote vergleichen | to compare offers |\n| Das Netz ist schlecht. | The signal is bad. |\n| Das Internet funktioniert nicht. | The internet isn't working. |\n\nTips:\n- **das Handy** is the normal word for a mobile phone. *Mobiltelefon* is the official word you see on forms.\n- **Prepaid** (no contract) is easy for your first months: you buy a SIM card in a supermarket and pay in advance.\n- Read the **Laufzeit** before you sign. After the minimum term, you can cancel with one month's notice.\n- Don't mix up **abschließen** (take out a contract) and **anschließen** (connect a device): *Ich schließe einen Vertrag ab. Ich schließe den Router an.*",
+ "french": "A « forfait » is der Tarif, « résilier un contrat » is einen Vertrag kündigen, and « la facture » is die Rechnung.",
+ "examples": [
+  {
+   "de": "Ich suche einen günstigen Handyvertrag.",
+   "en": "I'm looking for a cheap mobile contract."
+  },
+  {
+   "de": "Wie viel kostet der Tarif im Monat?",
+   "en": "How much is the plan per month?"
+  },
+  {
+   "de": "Wie lange ist die Laufzeit? – 24 Monate.",
+   "en": "How long is the minimum term? – 24 months."
+  },
+  {
+   "de": "Wie viel Datenvolumen habe ich?",
+   "en": "How much data do I get?"
+  },
+  {
+   "de": "Ich möchte meinen Vertrag kündigen.",
+   "en": "I'd like to cancel my contract."
+  },
+  {
+   "de": "Seit gestern funktioniert unser Internet nicht.",
+   "en": "Our internet hasn't been working since yesterday."
+  },
+  {
+   "de": "Der Techniker wird am Donnerstag kommen.",
+   "en": "The technician will come on Thursday."
+  },
+  {
+   "de": "Hast du Lust, die Angebote zusammen zu vergleichen?",
+   "en": "Do you feel like comparing the offers together?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t08-01",
+   "type": "cloze",
+   "de": "Ich möchte einen ___ für mein Handy abschließen.",
+   "base": "contract",
+   "answers": [
+    "Vertrag"
+   ],
+   "en": "I'd like to take out a contract for my mobile."
+  },
+  {
+   "id": "a2-t08-02",
+   "type": "choice",
+   "de": "Wie viel ___ der Tarif im Monat?",
+   "options": [
+    "kostet",
+    "bezahlt",
+    "kauft"
+   ],
+   "answer": 0,
+   "why": "kosten means to cost; bezahlen is what you do when you pay.",
+   "en": "How much does the plan cost per month?"
+  },
+  {
+   "id": "a2-t08-03",
+   "type": "cloze",
+   "de": "Mein ___ ist kaputt, ich kann nicht telefonieren.",
+   "base": "mobile phone",
+   "answers": [
+    "Handy",
+    "Mobiltelefon"
+   ],
+   "en": "My mobile is broken, I can't make calls."
+  },
+  {
+   "id": "a2-t08-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "meinen Vertrag",
+    "kündigen"
+   ],
+   "answers": [
+    "Ich möchte meinen Vertrag kündigen.",
+    "Meinen Vertrag möchte ich kündigen."
+   ],
+   "en": "I'd like to cancel my contract."
+  },
+  {
+   "id": "a2-t08-05",
+   "type": "choice",
+   "de": "Das ___ ist hier sehr schlecht. Ich verstehe dich nicht.",
+   "options": [
+    "Kabel",
+    "Netz",
+    "Passwort"
+   ],
+   "answer": 1,
+   "why": "das Netz is the mobile network: Das Netz ist schlecht means the signal is bad.",
+   "en": "The signal is very bad here. I can't understand you."
+  },
+  {
+   "id": "a2-t08-06",
+   "type": "cloze",
+   "de": "Die ___ kommt jeden Monat per E-Mail.",
+   "base": "bill",
+   "answers": [
+    "Rechnung"
+   ],
+   "en": "The bill comes by email every month."
+  },
+  {
+   "id": "a2-t08-07",
+   "type": "cloze",
+   "de": "Kannst du mir das WLAN-___ geben?",
+   "base": "password",
+   "answers": [
+    "Passwort"
+   ],
+   "en": "Can you give me the Wi-Fi password?"
+  },
+  {
+   "id": "a2-t08-08",
+   "type": "choice",
+   "de": "Der Vertrag hat eine ___ von 24 Monaten.",
+   "options": [
+    "Uhrzeit",
+    "Lebenszeit",
+    "Laufzeit"
+   ],
+   "answer": 2,
+   "why": "die Laufzeit is how long a contract runs at least.",
+   "en": "The contract has a minimum term of 24 months."
+  },
+  {
+   "id": "a2-t08-09",
+   "type": "order",
+   "tiles": [
+    "Seit gestern",
+    "funktioniert",
+    "das Internet",
+    "nicht"
+   ],
+   "answers": [
+    "Seit gestern funktioniert das Internet nicht.",
+    "Das Internet funktioniert seit gestern nicht."
+   ],
+   "en": "The internet hasn't been working since yesterday."
+  },
+  {
+   "id": "a2-t08-10",
+   "type": "cloze",
+   "de": "Ich will die Angebote erst ___.",
+   "base": "to compare",
+   "answers": [
+    "vergleichen"
+   ],
+   "en": "I want to compare the offers first."
+  },
+  {
+   "id": "a2-t08-11",
+   "type": "choice",
+   "de": "Ich telefoniere sehr viel. Ich brauche eine ___.",
+   "options": [
+    "Flatrate",
+    "Rechnung",
+    "Störung"
+   ],
+   "answer": 0,
+   "why": "A Flatrate means unlimited calls for one fixed price.",
+   "en": "I make a lot of calls. I need a flat rate."
+  },
+  {
+   "id": "a2-t08-12",
+   "type": "cloze",
+   "de": "Der Router ist ___, Sie bezahlen nichts dafür.",
+   "base": "free (of charge)",
+   "answers": [
+    "kostenlos",
+    "gratis",
+    "umsonst"
+   ],
+   "en": "The router is free, you don't pay anything for it."
+  },
+  {
+   "id": "a2-t08-13",
+   "type": "order",
+   "tiles": [
+    "Der Techniker",
+    "am Donnerstag",
+    "wird",
+    "kommen"
+   ],
+   "answers": [
+    "Der Techniker wird am Donnerstag kommen.",
+    "Am Donnerstag wird der Techniker kommen."
+   ],
+   "en": "The technician will come on Thursday."
+  },
+  {
+   "id": "a2-t08-14",
+   "type": "choice",
+   "de": "Mein ___ ist schon leer, ich kann unterwegs nicht mehr surfen.",
+   "options": [
+    "Anschluss",
+    "Datenvolumen",
+    "Passwort"
+   ],
+   "answer": 1,
+   "why": "das Datenvolumen is your mobile data; when it is used up, you can't surf.",
+   "en": "My data is already used up, I can't surf when I'm out any more."
+  },
+  {
+   "id": "a2-t08-15",
+   "type": "cloze",
+   "de": "Wir brauchen in der neuen Wohnung einen ___ für das Internet.",
+   "base": "connection",
+   "answers": [
+    "Anschluss"
+   ],
+   "en": "We need an internet connection in the new flat."
+  },
+  {
+   "id": "a2-t08-16",
+   "type": "choice",
+   "de": "Kann ich den Vertrag online ___?",
+   "options": [
+    "absagen",
+    "kündigen",
+    "ausmachen"
+   ],
+   "answer": 1,
+   "why": "You cancel a contract with kündigen; absagen is for appointments, ausmachen for lights or devices.",
+   "en": "Can I cancel the contract online?"
+  },
+  {
+   "id": "a2-t08-17",
+   "type": "cloze",
+   "de": "Kannst du die App für mich ___?",
+   "base": "to download",
+   "answers": [
+    "herunterladen",
+    "runterladen"
+   ],
+   "en": "Can you download the app for me?"
+  },
+  {
+   "id": "a2-t08-18",
+   "type": "order",
+   "tiles": [
+    "Hast du",
+    "Lust,",
+    "die Angebote",
+    "zu vergleichen"
+   ],
+   "answers": [
+    "Hast du Lust, die Angebote zu vergleichen?"
+   ],
+   "en": "Do you feel like comparing the offers?"
+  },
+  {
+   "id": "a2-t08-19",
+   "type": "order",
+   "tiles": [
+    "Wie lange",
+    "die Laufzeit",
+    "ist"
+   ],
+   "answers": [
+    "Wie lange ist die Laufzeit?"
+   ],
+   "en": "How long is the minimum term?"
+  },
+  {
+   "id": "a2-t08-20",
+   "type": "cloze",
+   "de": "Ich ___ Sie morgen wieder an.",
+   "base": "to call (on the phone)",
+   "answers": [
+    "rufe"
+   ],
+   "en": "I'll call you again tomorrow."
+  },
+  {
+   "id": "a2-t08-21",
+   "type": "choice",
+   "de": "Mein Handy funktioniert nicht. Ich rufe beim ___ an.",
+   "options": [
+    "Kundenkonto",
+    "Passwort",
+    "Kundenservice"
+   ],
+   "answer": 2,
+   "why": "der Kundenservice is customer service, the people you call when something doesn't work.",
+   "en": "My mobile isn't working. I'm calling customer service."
+  },
+  {
+   "id": "a2-t08-22",
+   "type": "cloze",
+   "de": "Wir haben seit Montag eine ___, das Internet geht nicht.",
+   "base": "outage",
+   "answers": [
+    "Störung"
+   ],
+   "en": "We've had an outage since Monday, the internet isn't working."
+  },
+  {
+   "id": "a2-t08-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "werde",
+    "den Vertrag",
+    "nächsten Monat",
+    "kündigen"
+   ],
+   "answers": [
+    "Ich werde den Vertrag nächsten Monat kündigen.",
+    "Ich werde nächsten Monat den Vertrag kündigen.",
+    "Nächsten Monat werde ich den Vertrag kündigen.",
+    "Den Vertrag werde ich nächsten Monat kündigen."
+   ],
+   "en": "I'm going to cancel the contract next month."
+  },
+  {
+   "id": "a2-t08-24",
+   "type": "choice",
+   "de": "Ich habe den neuen Vertrag gestern ___.",
+   "options": [
+    "angeschlossen",
+    "abgeschlossen",
+    "abgeholt"
+   ],
+   "answer": 1,
+   "why": "einen Vertrag abschließen means to take out a contract; anschließen means to connect a device.",
+   "en": "I took out the new contract yesterday."
+  }
+ ],
+ "listening": {
+  "title": "Im Handyladen",
+  "intro": "Sophie goes into a phone shop because her mobile contract is too expensive.",
+  "lines": [
+   {
+    "speaker": "Lukas",
+    "de": "Hallo! Kann ich Ihnen helfen?",
+    "en": "Hello! Can I help you?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, ich suche einen neuen Handyvertrag. Mein alter Vertrag ist zu teuer.",
+    "en": "Yes, I'm looking for a new mobile contract. My old contract is too expensive."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Wie viel bezahlen Sie im Moment?",
+    "en": "How much are you paying at the moment?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Fast 40 Euro im Monat, und mein Datenvolumen ist immer schon nach zwei Wochen leer.",
+    "en": "Almost 40 euros a month, and my data is always used up after two weeks."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Dann ist unser Tarif mit 30 GB interessant. Er kostet 19,99 Euro im Monat.",
+    "en": "Then our plan with 30 GB is interesting. It costs 19.99 euros a month."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Das klingt gut. Wie lange ist die Laufzeit?",
+    "en": "That sounds good. How long is the minimum term?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "24 Monate. Es gibt den Tarif auch ohne Laufzeit, dann kostet er 24,99 Euro.",
+    "en": "24 months. The plan also exists without a minimum term, then it costs 24.99 euros."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ich ziehe vielleicht nächstes Jahr nach Frankreich zurück. Dann nehme ich lieber den Tarif ohne Laufzeit.",
+    "en": "I might move back to France next year. Then I'd rather take the plan without a minimum term."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Kein Problem. Dann können Sie jeden Monat kündigen. Ihren Ausweis, bitte.",
+    "en": "No problem. Then you can cancel every month. Your ID, please."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Hier, bitte. Kann ich meine alte Nummer behalten?",
+    "en": "Here you are. Can I keep my old number?"
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ja, natürlich. Die neue SIM-Karte wird in zwei, drei Tagen funktionieren.",
+    "en": "Yes, of course. The new SIM card will work in two or three days."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Super, dann unterschreibe ich jetzt.",
+    "en": "Great, then I'll sign now."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Sophie want a new contract?",
+    "options": [
+     "Her phone is broken.",
+     "Her old contract is too expensive.",
+     "She has moved to a new city."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How much does the plan without a minimum term cost?",
+    "options": [
+     "24.99 euros a month.",
+     "19.99 euros a month.",
+     "40 euros a month."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why does Sophie choose the plan without a minimum term?",
+    "options": [
+     "It is cheaper.",
+     "It has more data.",
+     "She might move back to France next year."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What happens to Sophie's phone number?",
+    "options": [
+     "She gets a new one.",
+     "She keeps her old one.",
+     "She will get it by text message."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte meinen alten Handyvertrag kündigen.",
+  "Wie viel kostet der Tarif im Monat?",
+  "Seit gestern funktioniert unser Internet nicht mehr."
+ ],
+ "speaking": [
+  {
+   "de": "Ich suche einen neuen Handyvertrag.",
+   "en": "I'm looking for a new mobile contract."
+  },
+  {
+   "de": "Wie lange ist die Laufzeit?",
+   "en": "How long is the minimum term?"
+  },
+  {
+   "de": "Dann nehme ich lieber den Tarif ohne Laufzeit.",
+   "en": "Then I'd rather take the plan without a minimum term."
+  },
+  {
+   "de": "Kann ich meine alte Nummer behalten?",
+   "en": "Can I keep my old number?"
+  },
+  {
+   "de": "Das Internet funktioniert seit gestern nicht.",
+   "en": "The internet hasn't been working since yesterday."
+  }
+ ],
+ "writing": {
+  "task": "Your internet hasn't worked for three days. Write 5–6 sentences to your provider's customer service: describe the problem, ask when a technician will come and give your customer number.",
+  "model": "Sehr geehrte Damen und Herren, seit Montag funktioniert unser Internet nicht mehr. Der Router ist an, aber wir haben kein WLAN. Ich habe den Router schon zweimal neu gestartet. Wann wird ein Techniker kommen? Ich arbeite von zu Hause und brauche das Internet dringend. Meine Kundennummer ist 4471 2086. Mit freundlichen Grüßen, Sophie Martin"
+ }
+}

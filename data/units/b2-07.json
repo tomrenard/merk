@@ -1,0 +1,489 @@
+{
+ "id": "b2-07",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Fixed prepositions at work",
+ "situation": "Discussing at work",
+ "canDo": "You can use common verbs, nouns and adjectives with fixed prepositions in work discussions, including da-words before a clause.",
+ "explanation": "In meetings you constantly need words that come with a fixed preposition: who is *responsible for* what, what it *depends on*, who *complained about* what. Learn each word with its preposition and case as one block:\n\n| verbs | nouns | adjectives |\n|---|---|---|\n| sich beschäftigen **mit** + D | die Frage **nach** + D | zufrieden **mit** + D |\n| abhängen **von** + D | das Interesse **an** + D | abhängig **von** + D |\n| sich verlassen **auf** + A | die Kritik **an** + D | verantwortlich **für** + A |\n| sich beschweren **über** + A | die Angst **vor** + D | zuständig **für** + A |\n| sich einsetzen **für** + A | der Grund **für** + A | einverstanden **mit** + D |\n| teilnehmen **an** + D | die Bitte **um** + A | überzeugt **von** + D |\n| sich einigen **auf** + A | | |\n\nThings to watch:\n- **Nouns don't always keep the verb's preposition**: *sich interessieren **für*** but *das Interesse **an***; *kritisieren* (no preposition) but *die Kritik **an***.\n- **auf** and **über** take the accusative in almost all these combinations; **an** takes the dative with *teilnehmen, Interesse, Kritik*.\n- **Before a clause or an infinitive**, use the da-word: *Es hängt **davon** ab, ob der Kunde zustimmt.* *Ich bin **dafür** zuständig, die Termine zu planen.* *Kann ich mich **darauf** verlassen, dass du kommst?*\n- To ask about a thing, use the wo-word: ***Wofür** ist sie zuständig? **Womit** beschäftigst du dich gerade?*\n\nThe most common mistake is translating the preposition from French or English: not ~~verantwortlich von~~, but ***verantwortlich für***; not ~~bitten für~~, but ***bitten um***; not ~~abhängen auf~~ (\"depend on\"), but ***abhängen von***.",
+ "french": "Don't translate the preposition: s'intéresser à = sich interessieren für, être responsable de = verantwortlich für, se plaindre de = sich beschweren über, demander qc = bitten um; only a few match, like dépendre de = abhängen von and participer à = teilnehmen an.",
+ "examples": [
+  {
+   "de": "Ich beschäftige mich gerade mit dem neuen Projekt.",
+   "en": "I'm working on the new project at the moment."
+  },
+  {
+   "de": "Es hängt vom Budget ab, ob wir mehr Leute einstellen.",
+   "en": "Whether we hire more people depends on the budget."
+  },
+  {
+   "de": "Wer ist für die Planung zuständig?",
+   "en": "Who is responsible for the planning?"
+  },
+  {
+   "de": "Der Kunde hat sich über die lange Lieferzeit beschwert.",
+   "en": "The customer complained about the long delivery time."
+  },
+  {
+   "de": "Wir sind mit dem Ergebnis sehr zufrieden.",
+   "en": "We're very happy with the result."
+  },
+  {
+   "de": "Es gibt viel Kritik am neuen Dienstplan.",
+   "en": "There's a lot of criticism of the new rota."
+  },
+  {
+   "de": "Kann ich mich darauf verlassen, dass du das bis Freitag machst?",
+   "en": "Can I rely on you to do it by Friday?"
+  },
+  {
+   "de": "Sie hat großes Interesse an der Stelle in Hamburg.",
+   "en": "She is very interested in the job in Hamburg."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-07-01",
+   "type": "choice",
+   "de": "Ich beschäftige mich gerade ___ dem neuen Projekt.",
+   "options": [
+    "an",
+    "mit",
+    "über"
+   ],
+   "answer": 1,
+   "why": "It's sich beschäftigen mit + dative.",
+   "en": "I'm working on the new project at the moment."
+  },
+  {
+   "id": "b2-07-02",
+   "type": "cloze",
+   "de": "Es hängt ___ Budget ab, ob wir mehr Leute einstellen.",
+   "base": "von + der/die/das",
+   "answers": [
+    "vom"
+   ],
+   "en": "Whether we hire more people depends on the budget."
+  },
+  {
+   "id": "b2-07-03",
+   "type": "choice",
+   "de": "Wer ist ___ die Planung zuständig?",
+   "options": [
+    "für",
+    "von",
+    "an"
+   ],
+   "answer": 0,
+   "why": "It's zuständig für + accusative.",
+   "en": "Who is responsible for the planning?"
+  },
+  {
+   "id": "b2-07-04",
+   "type": "cloze",
+   "de": "Der Kunde hat sich über ___ lange Lieferzeit beschwert.",
+   "base": "der/die/das",
+   "answers": [
+    "die"
+   ],
+   "en": "The customer complained about the long delivery time."
+  },
+  {
+   "id": "b2-07-05",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "sind",
+    "mit dem Ergebnis",
+    "sehr",
+    "zufrieden"
+   ],
+   "answers": [
+    "Wir sind mit dem Ergebnis sehr zufrieden.",
+    "Mit dem Ergebnis sind wir sehr zufrieden.",
+    "Wir sind sehr zufrieden mit dem Ergebnis."
+   ],
+   "en": "We're very happy with the result."
+  },
+  {
+   "id": "b2-07-06",
+   "type": "choice",
+   "de": "Sie hat großes Interesse ___ der Stelle in Hamburg.",
+   "options": [
+    "für",
+    "an",
+    "auf"
+   ],
+   "answer": 1,
+   "why": "Interesse an + dative is the usual combination (der Stelle is dative), although the verb is sich interessieren für.",
+   "en": "She is very interested in the job in Hamburg."
+  },
+  {
+   "id": "b2-07-07",
+   "type": "cloze",
+   "de": "Kann ich mich ___ verlassen, dass du das bis Freitag machst?",
+   "base": "da(r)- + auf",
+   "answers": [
+    "darauf"
+   ],
+   "en": "Can I rely on you to do it by Friday?"
+  },
+  {
+   "id": "b2-07-08",
+   "type": "cloze",
+   "de": "Es gibt viel Kritik ___ neuen Dienstplan.",
+   "base": "an + der/die/das",
+   "answers": [
+    "am"
+   ],
+   "en": "There's a lot of criticism of the new rota."
+  },
+  {
+   "id": "b2-07-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "damit",
+    "nicht",
+    "einverstanden"
+   ],
+   "answers": [
+    "Ich bin damit nicht einverstanden.",
+    "Damit bin ich nicht einverstanden.",
+    "Ich bin nicht damit einverstanden."
+   ],
+   "en": "I don't agree with that."
+  },
+  {
+   "id": "b2-07-10",
+   "type": "choice",
+   "de": "Die Kollegen haben sich ___ die laute Klimaanlage beschwert.",
+   "options": [
+    "auf",
+    "von",
+    "über"
+   ],
+   "answer": 2,
+   "why": "It's sich beschweren über + accusative.",
+   "en": "The colleagues complained about the noisy air conditioning."
+  },
+  {
+   "id": "b2-07-11",
+   "type": "cloze",
+   "de": "Hast du schon an ___ Schulung teilgenommen?",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "Have you already taken part in the training?"
+  },
+  {
+   "id": "b2-07-12",
+   "type": "choice",
+   "de": "Ich bin ___ überzeugt, dass die Idee funktioniert.",
+   "options": [
+    "davon",
+    "darauf",
+    "dafür"
+   ],
+   "answer": 0,
+   "why": "It's überzeugt von, so before a dass clause you use davon.",
+   "en": "I'm convinced that the idea will work."
+  },
+  {
+   "id": "b2-07-13",
+   "type": "cloze",
+   "de": "Viele Mitarbeiter haben Angst vor ___ Veränderungen.",
+   "base": "der/die/das",
+   "answers": [
+    "den"
+   ],
+   "en": "Many employees are afraid of the changes."
+  },
+  {
+   "id": "b2-07-14",
+   "type": "order",
+   "tiles": [
+    "Frau Kaya",
+    "setzt",
+    "sich",
+    "für",
+    "bessere Arbeitszeiten",
+    "ein"
+   ],
+   "answers": [
+    "Frau Kaya setzt sich für bessere Arbeitszeiten ein.",
+    "Für bessere Arbeitszeiten setzt sich Frau Kaya ein."
+   ],
+   "en": "Ms Kaya is campaigning for better working hours."
+  },
+  {
+   "id": "b2-07-15",
+   "type": "choice",
+   "de": "Der Chef hat schon zweimal ___ dem Bericht gefragt.",
+   "options": [
+    "um",
+    "über",
+    "nach"
+   ],
+   "answer": 2,
+   "why": "fragen nach means asking about or for something.",
+   "en": "The boss has already asked about the report twice."
+  },
+  {
+   "id": "b2-07-16",
+   "type": "cloze",
+   "de": "Bitte achten Sie ___ die neuen Sicherheitsregeln.",
+   "base": "auf/an",
+   "answers": [
+    "auf"
+   ],
+   "en": "Please pay attention to the new safety rules."
+  },
+  {
+   "id": "b2-07-17",
+   "type": "choice",
+   "de": "Wir bitten ___ Ihr Verständnis.",
+   "options": [
+    "für",
+    "um",
+    "auf"
+   ],
+   "answer": 1,
+   "why": "It's bitten um + accusative, not für.",
+   "en": "We ask for your understanding."
+  },
+  {
+   "id": "b2-07-18",
+   "type": "cloze",
+   "de": "Ob wir den Auftrag bekommen, hängt ___ ab, wie viel es kostet.",
+   "base": "da(r)- + von",
+   "answers": [
+    "davon"
+   ],
+   "en": "Whether we get the contract depends on how much it costs."
+  },
+  {
+   "id": "b2-07-19",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "ist",
+    "für",
+    "die Kunden",
+    "in Frankreich",
+    "verantwortlich"
+   ],
+   "answers": [
+    "Er ist für die Kunden in Frankreich verantwortlich.",
+    "Für die Kunden in Frankreich ist er verantwortlich.",
+    "Er ist verantwortlich für die Kunden in Frankreich."
+   ],
+   "en": "He's responsible for the customers in France."
+  },
+  {
+   "id": "b2-07-20",
+   "type": "choice",
+   "de": "Ich konzentriere mich jetzt ___ die Präsentation.",
+   "options": [
+    "an",
+    "für",
+    "auf"
+   ],
+   "answer": 2,
+   "why": "It's sich konzentrieren auf + accusative.",
+   "en": "I'm concentrating on the presentation now."
+  },
+  {
+   "id": "b2-07-21",
+   "type": "cloze",
+   "de": "Auf ___ Kollegin kann ich mich immer verlassen.",
+   "base": "mein",
+   "answers": [
+    "meine"
+   ],
+   "en": "I can always rely on my colleague."
+  },
+  {
+   "id": "b2-07-22",
+   "type": "choice",
+   "de": "Was ist der Grund ___ deine Kündigung?",
+   "options": [
+    "von",
+    "für",
+    "über"
+   ],
+   "answer": 1,
+   "why": "It's der Grund für + accusative.",
+   "en": "What's the reason for your resignation?"
+  },
+  {
+   "id": "b2-07-23",
+   "type": "cloze",
+   "de": "Sie hat sich ___ beschwert, dass das Meeting zu lange gedauert hat.",
+   "base": "da(r)- + über",
+   "answers": [
+    "darüber"
+   ],
+   "en": "She complained that the meeting went on too long."
+  },
+  {
+   "id": "b2-07-24",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "haben",
+    "uns",
+    "auf",
+    "einen neuen Termin",
+    "geeinigt"
+   ],
+   "answers": [
+    "Wir haben uns auf einen neuen Termin geeinigt.",
+    "Auf einen neuen Termin haben wir uns geeinigt."
+   ],
+   "en": "We agreed on a new date."
+  }
+ ],
+ "listening": {
+  "title": "Die Teambesprechung",
+  "intro": "In a team meeting, Markus and Nadia discuss complaints about their customer service.",
+  "lines": [
+   {
+    "speaker": "Markus",
+    "de": "So, fangen wir an. Heute geht es um die Beschwerden über unseren Kundenservice.",
+    "en": "Right, let's start. Today it's about the complaints about our customer service."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Ja, letzte Woche haben sich drei Kunden über lange Wartezeiten am Telefon beschwert.",
+    "en": "Yes, last week three customers complained about long waiting times on the phone."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Woran liegt das? Haben wir zu wenige Leute?",
+    "en": "Why is that? Have we got too few people?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Zum Teil. Aber es hängt auch davon ab, wann die Leute anrufen. Montags ist es immer am schlimmsten.",
+    "en": "Partly. But it also depends on when people call. Mondays are always the worst."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Dann sollten wir uns auf den Montag konzentrieren. Wer ist eigentlich für den Dienstplan zuständig?",
+    "en": "Then we should concentrate on Mondays. Who's actually responsible for the rota?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Das bin ich. Ich könnte montags zwei Kollegen mehr einplanen.",
+    "en": "That's me. I could schedule two more colleagues on Mondays."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Sind die Kollegen damit einverstanden?",
+    "en": "Are the colleagues OK with that?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Die meisten schon. Nur Jens besteht darauf, montags im Homeoffice zu arbeiten.",
+    "en": "Most of them, yes. Only Jens insists on working from home on Mondays."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Das ist kein Problem, er kann ja auch von zu Hause telefonieren.",
+    "en": "That's not a problem, he can make calls from home too."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Stimmt. Außerdem haben viele Interesse an einer Schulung für schwierige Gespräche.",
+    "en": "True. Also, many people are interested in a training course on difficult conversations."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Gute Idee. Ich kümmere mich darum und frage bei der Personalabteilung nach einem Termin.",
+    "en": "Good idea. I'll take care of it and ask HR for a date."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Super. Kann ich mich darauf verlassen, dass es vor dem Sommer klappt?",
+    "en": "Great. Can I count on it happening before the summer?"
+   },
+   {
+    "speaker": "Markus",
+    "de": "Ich setze mich dafür ein. Versprechen kann ich es aber nicht.",
+    "en": "I'll push for it. But I can't promise."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the customers complain about?",
+    "options": [
+     "Rude staff on the phone.",
+     "Wrong bills.",
+     "Long waiting times on the phone."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "When is it busiest?",
+    "options": [
+     "On Fridays.",
+     "On Mondays.",
+     "In the summer."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Jens insist on?",
+    "options": [
+     "Working from home on Mondays.",
+     "Not working on Mondays at all.",
+     "Getting a training course first."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Markus say about the training course?",
+    "options": [
+     "It will definitely happen before summer.",
+     "He'll push for it but can't promise.",
+     "It's too expensive this year."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Kunde hat sich über die lange Lieferzeit beschwert.",
+  "Es hängt vom Budget ab, ob wir mehr Leute einstellen.",
+  "Wer ist in eurem Team für den Dienstplan zuständig?"
+ ],
+ "speaking": [
+  {
+   "de": "Heute geht es um die Beschwerden über unseren Kundenservice.",
+   "en": "Today it's about the complaints about our customer service."
+  },
+  {
+   "de": "Es hängt davon ab, wann die Leute anrufen.",
+   "en": "It depends on when people call."
+  },
+  {
+   "de": "Wer ist eigentlich für den Dienstplan zuständig?",
+   "en": "Who's actually responsible for the rota?"
+  },
+  {
+   "de": "Sind die Kollegen damit einverstanden?",
+   "en": "Are the colleagues OK with that?"
+  },
+  {
+   "de": "Kann ich mich darauf verlassen?",
+   "en": "Can I count on that?"
+  }
+ ],
+ "writing": {
+  "task": "Your team has too many meetings. Write an email of about 100 words to your boss: say who has complained about what, what it depends on, suggest a solution and offer to take on a task. Use verbs, nouns and adjectives with fixed prepositions.",
+  "model": "Betreff: Unsere Teambesprechungen\n\nLiebe Frau Schneider,\n\nin letzter Zeit haben sich mehrere Kollegen bei mir über die vielen Besprechungen beschwert. Viele haben das Gefühl, dass sie sich kaum noch auf ihre eigentliche Arbeit konzentrieren können. Natürlich hängt es vom Projekt ab, wie oft wir uns treffen müssen. Trotzdem bin ich davon überzeugt, dass ein Treffen pro Woche meistens reicht. Mein Vorschlag: Wir einigen uns auf einen festen Termin am Montag, und kurze Fragen klären wir im Chat. Ich wäre gern dafür verantwortlich, die Themen für die Besprechung zu sammeln. Sind Sie damit einverstanden?\n\nViele Grüße\nClaire Martin"
+ }
+}

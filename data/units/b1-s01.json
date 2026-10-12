@@ -1,0 +1,537 @@
+{
+ "id": "b1-s01",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The first day at a new job",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a first day at work in Germany and talk about office habits like du and Sie, flexitime and the coffee kitty.",
+ "explanation": "Camille is French and has just moved to Cologne. Today she starts her new job as a graphic designer. She wants to make a good impression, but German office life has a few surprises for her.\n\nThe story is told in the **Präteritum** (*sie stand auf, sie nahm ein Taxi*), with the **Plusquamperfekt** for things that had happened before (*sie hatte schlecht geschlafen*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| die Stelle, -n | job, position |\n| die Verspätung, -en | delay |\n| die Gleitzeit | flexitime |\n| duzen / siezen | to say du / Sie to someone |\n| per du sein | to be on first-name terms |\n| die Kantine, -n | staff canteen |\n| die Kaffeekasse, -n | coffee kitty |\n| einrichten | to set up (a computer, a flat) |\n| rot werden | to blush |\n\nTip: listen once without reading and try to answer: why was nobody at the office at a quarter to nine?",
+ "french": "In many German offices people say du from the first day, even to the boss, much faster than people start to tutoyer in a French company.",
+ "examples": [
+  {
+   "de": "Heute begann ihre neue Stelle als Grafikdesignerin.",
+   "en": "Today her new job as a graphic designer began."
+  },
+  {
+   "de": "Die Straßenbahn hatte an diesem Morgen Verspätung.",
+   "en": "That morning the tram was late."
+  },
+  {
+   "de": "Bei uns gibt es Gleitzeit.",
+   "en": "We have flexitime here."
+  },
+  {
+   "de": "Hier duzen sich alle, auch mit dem Chef.",
+   "en": "Everyone says du here, even to the boss."
+  },
+  {
+   "de": "In Frankreich hatte sie ihre Chefin immer gesiezt.",
+   "en": "In France she had always said Sie to her boss."
+  },
+  {
+   "de": "Für jeden Kaffee zahlst du fünfzig Cent in die Kaffeekasse.",
+   "en": "You pay fifty cents into the coffee kitty for every coffee."
+  },
+  {
+   "de": "Am Nachmittag richtete sie ihren Laptop ein.",
+   "en": "In the afternoon she set up her laptop."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Heute begann ihre neue ___ als Grafikdesignerin.",
+   "base": "job (position)",
+   "answers": [
+    "Stelle",
+    "Arbeit"
+   ],
+   "en": "Today her new job as a graphic designer began.",
+   "id": "b1-s01-01"
+  },
+  {
+   "type": "choice",
+   "de": "Am ersten Arbeitstag stand Camille schon um ___ Uhr auf.",
+   "options": [
+    "sechs",
+    "sieben",
+    "neun"
+   ],
+   "answer": 0,
+   "why": "She got up at six because she was nervous about her first day.",
+   "en": "On her first working day Camille got up at six o'clock.",
+   "id": "b1-s01-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Die Straßenbahn hatte an diesem Morgen ___.",
+   "base": "delay",
+   "answers": [
+    "Verspätung"
+   ],
+   "en": "That morning the tram was late.",
+   "id": "b1-s01-03"
+  },
+  {
+   "type": "choice",
+   "de": "Als Camille um Viertel vor neun ankam, war die Tür ___.",
+   "options": [
+    "offen",
+    "kaputt",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "She rang the bell, but nobody opened: the door was closed.",
+   "en": "When Camille arrived at a quarter to nine, the door was closed.",
+   "id": "b1-s01-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Die Straßenbahn",
+    "hatte",
+    "Verspätung",
+    "an diesem Morgen"
+   ],
+   "answers": [
+    "Die Straßenbahn hatte an diesem Morgen Verspätung.",
+    "An diesem Morgen hatte die Straßenbahn Verspätung."
+   ],
+   "en": "That morning the tram was late.",
+   "id": "b1-s01-05"
+  },
+  {
+   "type": "cloze",
+   "de": "Nachdem sie zehn Minuten gewartet ___, nahm sie ein Taxi.",
+   "base": "haben",
+   "answers": [
+    "hatte"
+   ],
+   "en": "After she had waited for ten minutes, she took a taxi.",
+   "id": "b1-s01-06"
+  },
+  {
+   "type": "choice",
+   "de": "Jonas kam mit dem ___ zur Arbeit.",
+   "options": [
+    "Bus",
+    "Fahrrad",
+    "Taxi"
+   ],
+   "answer": 1,
+   "why": "Jonas came round the corner with a bike.",
+   "en": "Jonas came to work by bike.",
+   "id": "b1-s01-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Bei uns gibt es ___: Man kann zwischen sieben und zehn Uhr anfangen.",
+   "base": "flexitime",
+   "answers": [
+    "Gleitzeit"
+   ],
+   "en": "We have flexitime: you can start between seven and ten.",
+   "id": "b1-s01-08"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Hier",
+    "sich",
+    "duzen",
+    "alle"
+   ],
+   "answers": [
+    "Hier duzen sich alle.",
+    "Alle duzen sich hier."
+   ],
+   "en": "Everyone says du here.",
+   "id": "b1-s01-09"
+  },
+  {
+   "type": "cloze",
+   "de": "Im Team ___ sich alle, auch mit dem Chef.",
+   "base": "to use the informal form",
+   "answers": [
+    "duzen"
+   ],
+   "en": "In the team everyone says du, even to the boss.",
+   "id": "b1-s01-10"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Becker sagte: „Bitte sag ___ zu mir.“",
+   "options": [
+    "Herr Becker",
+    "Thomas",
+    "Sie"
+   ],
+   "answer": 1,
+   "why": "The boss wants her to use his first name, because in the team everyone is per du.",
+   "en": "Herr Becker said: Please call me Thomas.",
+   "id": "b1-s01-11"
+  },
+  {
+   "type": "cloze",
+   "de": "In Frankreich hatte sie ihre Chefin immer ___.",
+   "base": "siezen",
+   "answers": [
+    "gesiezt"
+   ],
+   "en": "In France she had always said Sie to her boss.",
+   "id": "b1-s01-12"
+  },
+  {
+   "type": "choice",
+   "de": "Camille wurde ein bisschen ___, als der Chef ihr das Du anbot.",
+   "options": [
+    "rot",
+    "müde",
+    "böse"
+   ],
+   "answer": 0,
+   "why": "rot werden means to blush: she was embarrassed because she had said Sie.",
+   "en": "Camille blushed a little when the boss offered to say du.",
+   "id": "b1-s01-13"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "In Frankreich",
+    "hatte",
+    "sie",
+    "ihre Chefin",
+    "gesiezt"
+   ],
+   "answers": [
+    "In Frankreich hatte sie ihre Chefin gesiezt.",
+    "Sie hatte ihre Chefin in Frankreich gesiezt.",
+    "Sie hatte in Frankreich ihre Chefin gesiezt."
+   ],
+   "en": "In France she had said Sie to her boss.",
+   "id": "b1-s01-14"
+  },
+  {
+   "type": "cloze",
+   "de": "Mittags aßen alle zusammen in der ___.",
+   "base": "staff canteen",
+   "answers": [
+    "Kantine"
+   ],
+   "en": "At lunchtime everyone ate together in the canteen.",
+   "id": "b1-s01-15"
+  },
+  {
+   "type": "cloze",
+   "de": "Für jeden Kaffee zahlt man fünfzig Cent in die ___.",
+   "base": "coffee kitty",
+   "answers": [
+    "Kaffeekasse"
+   ],
+   "en": "You pay fifty cents into the coffee kitty for every coffee.",
+   "id": "b1-s01-16"
+  },
+  {
+   "type": "choice",
+   "de": "Am ersten Freitag bringt man ___ für alle mit.",
+   "options": [
+    "Wein",
+    "Blumen",
+    "Kuchen"
+   ],
+   "answer": 2,
+   "why": "Jonas explains that a new colleague brings cake on the first Friday.",
+   "en": "On the first Friday you bring cake for everyone.",
+   "id": "b1-s01-17"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Mittags",
+    "gingen",
+    "alle",
+    "in die Kantine"
+   ],
+   "answers": [
+    "Mittags gingen alle in die Kantine.",
+    "Alle gingen mittags in die Kantine.",
+    "In die Kantine gingen mittags alle."
+   ],
+   "en": "At lunchtime everyone went to the canteen.",
+   "id": "b1-s01-18"
+  },
+  {
+   "type": "choice",
+   "de": "Ihr neuer Laptop kam ___.",
+   "options": [
+    "am Nachmittag",
+    "am Morgen",
+    "erst am Freitag"
+   ],
+   "answer": 0,
+   "why": "Jonas hoped it would come the next day, but it arrived that afternoon.",
+   "en": "Her new laptop came in the afternoon.",
+   "id": "b1-s01-19"
+  },
+  {
+   "type": "cloze",
+   "de": "Am Nachmittag ___ Camille ihren neuen Laptop ein.",
+   "base": "einrichten",
+   "answers": [
+    "richtete"
+   ],
+   "en": "In the afternoon Camille set up her new laptop.",
+   "id": "b1-s01-20"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Nachdem",
+    "sie",
+    "gewartet hatte,",
+    "nahm",
+    "sie",
+    "ein Taxi"
+   ],
+   "answers": [
+    "Nachdem sie gewartet hatte, nahm sie ein Taxi.",
+    "Sie nahm ein Taxi, nachdem sie gewartet hatte."
+   ],
+   "en": "After she had waited, she took a taxi.",
+   "id": "b1-s01-21"
+  },
+  {
+   "type": "choice",
+   "de": "Nachdem sie gegessen hatte, ___ sie ihre Mutter in Lyon an.",
+   "options": [
+    "ruft",
+    "hatte gerufen",
+    "rief"
+   ],
+   "answer": 2,
+   "why": "After a nachdem clause in the Plusquamperfekt, the main clause is in the Präteritum: rief … an.",
+   "en": "After she had eaten, she called her mother in Lyon.",
+   "id": "b1-s01-22"
+  },
+  {
+   "type": "cloze",
+   "de": "Am Abend vorher hatte sie ihre Tasche schon ___.",
+   "base": "packen",
+   "answers": [
+    "gepackt"
+   ],
+   "en": "The evening before, she had already packed her bag.",
+   "id": "b1-s01-23"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "stellte",
+    "den Wecker",
+    "auf halb acht"
+   ],
+   "answers": [
+    "Sie stellte den Wecker auf halb acht.",
+    "Den Wecker stellte sie auf halb acht.",
+    "Auf halb acht stellte sie den Wecker."
+   ],
+   "en": "She set the alarm for half past seven.",
+   "id": "b1-s01-24"
+  }
+ ],
+ "listening": {
+  "title": "Der erste Tag",
+  "intro": "Camille, a French graphic designer, starts her new job at a small agency in Cologne.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Am ersten Montag im März stand Camille schon um sechs Uhr auf.",
+    "en": "On the first Monday in March, Camille got up at six o'clock."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Sie hatte die ganze Nacht schlecht geschlafen, denn heute begann ihre neue Stelle als Grafikdesignerin in Köln.",
+    "en": "She had slept badly all night, because today her new job as a graphic designer in Cologne began."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend vorher hatte sie ihre Kleidung ausgesucht und ihre Tasche gepackt. Sie wollte auf keinen Fall zu spät kommen.",
+    "en": "The evening before, she had chosen her clothes and packed her bag. She didn't want to be late under any circumstances."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Aber natürlich hatte die Straßenbahn an diesem Morgen Verspätung.",
+    "en": "But of course the tram was late that morning."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Nachdem sie zehn Minuten gewartet hatte, nahm sie ein Taxi. Um Viertel vor neun stand sie vor dem Büro.",
+    "en": "After she had waited for ten minutes, she took a taxi. At a quarter to nine she was standing outside the office."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Tür war zu. Sie klingelte, aber niemand machte auf.",
+    "en": "The door was closed. She rang the bell, but nobody opened."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Erst um zwanzig nach neun kam ein junger Mann mit einem Fahrrad um die Ecke.",
+    "en": "Only at twenty past nine did a young man come round the corner with a bike."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Hallo! Du bist bestimmt Camille, oder? Ich bin Jonas. Wartest du schon lange?",
+    "en": "Hello! You must be Camille, right? I'm Jonas. Have you been waiting long?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Seit Viertel vor neun. Herr Becker hatte mir doch neun Uhr geschrieben.",
+    "en": "Since a quarter to nine. Herr Becker had written nine o'clock to me."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ach so! Herr Becker kommt aber immer erst um halb zehn. Bei uns gibt es Gleitzeit.",
+    "en": "Oh, I see! But Herr Becker always comes at half past nine. We have flexitime here."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Jonas zeigte ihr die Küche, das Büro und ihren Schreibtisch am Fenster. Nur der neue Laptop war noch nicht da.",
+    "en": "Jonas showed her the kitchen, the office and her desk by the window. Only the new laptop wasn't there yet."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Der Laptop kommt hoffentlich morgen. Heute kannst du erst mal die Kollegen kennenlernen.",
+    "en": "The laptop will hopefully come tomorrow. Today you can get to know your colleagues first."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um halb zehn kam der Chef. Camille gab ihm die Hand und sagte: „Freut mich sehr, Herr Becker.“",
+    "en": "At half past nine the boss came. Camille shook his hand and said: Very pleased to meet you, Herr Becker."
+   },
+   {
+    "speaker": "Herr Becker",
+    "de": "Willkommen im Team! Aber bitte sag Thomas zu mir. Wir sind hier alle per du.",
+    "en": "Welcome to the team! But please call me Thomas. We're all on first-name terms here."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille wurde ein bisschen rot. In Frankreich hatte sie ihre Chefin immer gesiezt.",
+    "en": "Camille blushed a little. In France she had always said Sie to her boss."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Mittags gingen alle zusammen in die Kantine. Es gab Currywurst mit Pommes, und Jonas erklärte ihr die Regeln im Büro.",
+    "en": "At lunchtime everyone went to the canteen together. There was currywurst with chips, and Jonas explained the office rules to her."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ganz wichtig: Für jeden Kaffee zahlst du fünfzig Cent in die Kaffeekasse. Und am ersten Freitag bringst du einen Kuchen mit.",
+    "en": "Very important: you pay fifty cents into the coffee kitty for every coffee. And on your first Friday you bring a cake."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Einen Kuchen? Für alle? Wie viele Leute arbeiten denn hier?",
+    "en": "A cake? For everyone? How many people work here, then?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nur zwölf. Keine Sorge, ein einfacher Apfelkuchen reicht.",
+    "en": "Only twelve. Don't worry, a simple apple cake is enough."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Nachmittag kam der Laptop doch noch. Camille richtete alles ein und schrieb ihre ersten E-Mails auf Deutsch.",
+    "en": "In the afternoon the laptop arrived after all. Camille set everything up and wrote her first emails in German."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um fünf fuhr sie müde, aber glücklich nach Hause. Nachdem sie gegessen hatte, rief sie ihre Mutter in Lyon an und erzählte ihr alles.",
+    "en": "At five she went home, tired but happy. After she had eaten, she called her mother in Lyon and told her everything."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Danach suchte sie im Internet ein Rezept für Apfelkuchen. Und den Wecker stellte sie auf halb acht.",
+    "en": "After that she looked for an apple cake recipe online. And she set her alarm for half past seven."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum hatte Camille schlecht geschlafen?",
+    "options": [
+     "Die Nachbarn waren laut.",
+     "Heute begann ihre neue Stelle.",
+     "Sie war krank."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wie kam Camille am Ende zum Büro?",
+    "options": [
+     "Mit dem Taxi",
+     "Mit der Straßenbahn",
+     "Mit dem Fahrrad"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Warum war um Viertel vor neun niemand im Büro?",
+    "options": [
+     "Es war ein Feiertag.",
+     "Camille war an der falschen Adresse.",
+     "Es gibt Gleitzeit, und die Kollegen kommen später."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Warum wurde Camille rot?",
+    "options": [
+     "Sie hatte keinen Kuchen dabei.",
+     "Sie hatte den Chef gesiezt, aber im Team duzen sich alle.",
+     "Sie hatte ihren Laptop vergessen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was macht Camille am Abend?",
+    "options": [
+     "Sie sucht ein Rezept für Apfelkuchen.",
+     "Sie backt schon einen Kuchen.",
+     "Sie schreibt E-Mails an die Kollegen."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Am Abend vorher hatte sie schon ihre Tasche gepackt.",
+  "Nachdem sie zehn Minuten gewartet hatte, nahm sie ein Taxi.",
+  "Bei uns duzen sich alle, auch mit dem Chef."
+ ],
+ "speaking": [
+  {
+   "de": "Hallo! Du bist bestimmt Camille, oder?",
+   "en": "Hello! You must be Camille, right?"
+  },
+  {
+   "de": "Bitte sag Thomas zu mir. Wir sind hier alle per du.",
+   "en": "Please call me Thomas. We're all on first-name terms here."
+  },
+  {
+   "de": "Für jeden Kaffee zahlst du fünfzig Cent in die Kaffeekasse.",
+   "en": "You pay fifty cents into the coffee kitty for every coffee."
+  },
+  {
+   "de": "Wie viele Leute arbeiten denn hier?",
+   "en": "How many people work here, then?"
+  },
+  {
+   "de": "Keine Sorge, ein einfacher Apfelkuchen reicht.",
+   "en": "Don't worry, a simple apple cake is enough."
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Write an 80–100-word email to a friend in France about your first day: what you had prepared, what went wrong in the morning and what surprised you at the office.",
+  "model": "Liebe Julie,\n\ngestern war mein erster Tag in der neuen Firma! Ich hatte am Abend vorher alles vorbereitet, aber am Morgen hatte die Straßenbahn Verspätung. Nachdem ich zehn Minuten gewartet hatte, nahm ich ein Taxi. Ich war um Viertel vor neun da, aber das Büro war noch zu, denn hier gibt es Gleitzeit. Am meisten hat mich überrascht, dass sich alle duzen, auch mit dem Chef. Ich wurde ganz rot, weil ich ihn gesiezt hatte. Die Kollegen sind sehr nett. Am Freitag muss ich einen Kuchen mitbringen!\n\nBisous\nCamille"
+ }
+}

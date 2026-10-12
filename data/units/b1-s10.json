@@ -1,0 +1,548 @@
+{
+ "id": "b1-s10",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "A year in Germany",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story in which someone looks back on her first year in Germany, understand a short speech and talk about what you have learned since you arrived.",
+ "explanation": "Exactly one year ago Camille arrived in Cologne. To celebrate, she invites everyone who helped her: Rafael, her colleagues Jonas and Thomas, her landlady Frau Schmitz and Herr Krause from the second floor. Then she taps her glass and gives a little speech about her first year: the surprises, the hard moments and the people.\n\nThis story uses everything you've learned at B1: the Präteritum and Plusquamperfekt, relative clauses, the Konjunktiv II, reported speech, opinions and more.\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| es ist ein Jahr her, dass … | it's been a year since … |\n| eine Rede halten | to give a speech |\n| an das Glas klopfen | to tap one's glass |\n| schulden | to owe |\n| leihen | to lend |\n| Geduld haben (mit) | to be patient (with) |\n| die Prüfung, -en | exam |\n| vorhaben | to plan |\n| Auf …! / Prost! | Here's to …! / Cheers! |\n\nTip: if you did the other stories, listen for the moments Camille remembers. If not, no problem: everything you need is in this story.",
+ "french": "",
+ "examples": [
+  {
+   "de": "Es war genau ein Jahr her, dass Camille nach Köln gekommen war.",
+   "en": "It had been exactly a year since Camille came to Cologne."
+  },
+  {
+   "de": "Sie hatte alle eingeladen, die ihr geholfen hatten.",
+   "en": "She had invited everyone who had helped her."
+  },
+  {
+   "de": "Wenn mir das jemand gesagt hätte, hätte ich es nicht geglaubt.",
+   "en": "If someone had told me that, I wouldn't have believed it."
+  },
+  {
+   "de": "Herr Krause hat mir einen Heizlüfter geliehen, obwohl ich ihn am Anfang gar nicht mochte.",
+   "en": "Herr Krause lent me a fan heater, although I didn't like him at all at first."
+  },
+  {
+   "de": "Man muss nur ein bisschen Geduld haben.",
+   "en": "You just have to be a bit patient."
+  },
+  {
+   "de": "Jonas fragte, was sie im zweiten Jahr vorhabe.",
+   "en": "Jonas asked what she was planning for her second year."
+  },
+  {
+   "de": "Auf das nächste Jahr!",
+   "en": "Here's to next year!"
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Am ersten Montag im März war es genau ein Jahr ___, dass Camille nach Köln gekommen war.",
+   "base": "it has been … since",
+   "answers": [
+    "her"
+   ],
+   "en": "On the first Monday in March it had been exactly a year since Camille came to Cologne.",
+   "id": "b1-s10-01"
+  },
+  {
+   "type": "choice",
+   "de": "Camille hatte alle eingeladen, ___ ihr in diesem Jahr geholfen hatten.",
+   "options": [
+    "die",
+    "denen",
+    "dass"
+   ],
+   "answer": 0,
+   "why": "alle is plural and the subject of the relative clause, so the relative pronoun is die.",
+   "en": "Camille had invited everyone who had helped her that year.",
+   "id": "b1-s10-02"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Krause fragte, ob der Käse diesmal mit dem Flugzeug oder mit dem ___ gekommen sei.",
+   "options": [
+    "Zug",
+    "Kurier",
+    "Fahrrad"
+   ],
+   "answer": 1,
+   "why": "It's a joke about the suitcase: last time the cheese came by courier.",
+   "en": "Herr Krause asked whether the cheese had come by plane or by courier this time.",
+   "id": "b1-s10-03"
+  },
+  {
+   "type": "cloze",
+   "de": "Dann klopfte Camille an ihr ___ und begann ihre Rede.",
+   "base": "glass",
+   "answers": [
+    "Glas"
+   ],
+   "en": "Then Camille tapped her glass and began her speech.",
+   "id": "b1-s10-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Camille",
+    "eine kurze Rede",
+    "hielt"
+   ],
+   "answers": [
+    "Camille hielt eine kurze Rede.",
+    "Eine kurze Rede hielt Camille."
+   ],
+   "en": "Camille gave a short speech.",
+   "id": "b1-s10-05"
+  },
+  {
+   "type": "choice",
+   "de": "Vor einem Jahr stand Camille vor einem geschlossenen Büro, weil ihr niemand von der ___ erzählt hatte.",
+   "options": [
+    "Kaffeekasse",
+    "Gleitzeit",
+    "Nachtruhe"
+   ],
+   "answer": 1,
+   "why": "Nobody had told her that with flexitime colleagues come later.",
+   "en": "A year ago Camille stood outside a closed office because nobody had told her about flexitime.",
+   "id": "b1-s10-06"
+  },
+  {
+   "type": "cloze",
+   "de": "Camille ___ der Kaffeekasse noch drei Euro fünfzig.",
+   "base": "to owe",
+   "answers": [
+    "schuldet"
+   ],
+   "en": "Camille still owes the coffee kitty three euros fifty.",
+   "id": "b1-s10-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Am Anfang hat sie sich oft allein ___.",
+   "base": "fühlen",
+   "answers": [
+    "gefühlt"
+   ],
+   "en": "At the beginning she often felt lonely.",
+   "id": "b1-s10-08"
+  },
+  {
+   "type": "choice",
+   "de": "Wenn mir damals jemand das gesagt ___, hätte ich es nicht geglaubt.",
+   "options": [
+    "hat",
+    "hätte",
+    "wäre"
+   ],
+   "answer": 1,
+   "why": "Unreal past: wenn … gesagt hätte, … hätte … geglaubt.",
+   "en": "If anyone had told me that back then, I wouldn't have believed it.",
+   "id": "b1-s10-09"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "mir",
+    "das",
+    "jemand",
+    "gesagt hätte,",
+    "hätte ich es",
+    "nicht geglaubt"
+   ],
+   "answers": [
+    "Wenn mir das jemand gesagt hätte, hätte ich es nicht geglaubt.",
+    "Wenn jemand mir das gesagt hätte, hätte ich es nicht geglaubt.",
+    "Wenn mir jemand das gesagt hätte, hätte ich es nicht geglaubt."
+   ],
+   "en": "If someone had told me that, I wouldn't have believed it.",
+   "id": "b1-s10-10"
+  },
+  {
+   "type": "choice",
+   "de": "Laut Frau Schmitz bekam Camille die Wohnung auch, weil sie ___.",
+   "options": [
+    "mehr Geld bot",
+    "ihre Unterlagen dabeihatte",
+    "Französin war"
+   ],
+   "answer": 1,
+   "why": "Frau Schmitz adds: and because you had your documents with you.",
+   "en": "According to Frau Schmitz, Camille also got the flat because she had her documents with her.",
+   "id": "b1-s10-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Herr Krause hat mir im Winter einen Heizlüfter ___.",
+   "base": "leihen",
+   "answers": [
+    "geliehen"
+   ],
+   "en": "Herr Krause lent me a fan heater in the winter.",
+   "id": "b1-s10-12"
+  },
+  {
+   "type": "cloze",
+   "de": "Er hat mir geholfen, ___ ich ihn am Anfang gar nicht mochte.",
+   "base": "although",
+   "answers": [
+    "obwohl"
+   ],
+   "en": "He helped me, although I didn't like him at all at first.",
+   "id": "b1-s10-13"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael und Camille haben sich ___ kennengelernt.",
+   "options": [
+    "im Büro",
+    "auf dem Hoffest",
+    "in Hamburg"
+   ],
+   "answer": 1,
+   "why": "She met Rafael at the courtyard party, in the rain.",
+   "en": "Rafael and Camille met at the courtyard party.",
+   "id": "b1-s10-14"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "finde,",
+    "er",
+    "sollte",
+    "eine Rede",
+    "halten"
+   ],
+   "answers": [
+    "Ich finde, er sollte eine Rede halten."
+   ],
+   "en": "I think he should give a speech.",
+   "id": "b1-s10-15"
+  },
+  {
+   "type": "cloze",
+   "de": "Es war unter einem Pavillon, ___ Herrn Krause gehört.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "It was under a gazebo that belongs to Herr Krause.",
+   "id": "b1-s10-16"
+  },
+  {
+   "type": "choice",
+   "de": "___ ist Deutschland gar nicht so kalt, wie man in Frankreich sagt.",
+   "options": [
+    "Meiner Meinung nach",
+    "Meine Meinung",
+    "Nach meiner Meinung nach"
+   ],
+   "answer": 0,
+   "why": "The fixed phrase is meiner Meinung nach, followed directly by the verb.",
+   "en": "In my opinion Germany isn't nearly as cold as people say in France.",
+   "id": "b1-s10-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Man muss nur ein bisschen ___ haben, mit den Behörden, mit der Bahn und mit sich selbst.",
+   "base": "patience",
+   "answers": [
+    "Geduld"
+   ],
+   "en": "You just have to be a bit patient, with the authorities, with the trains and with yourself.",
+   "id": "b1-s10-18"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Man",
+    "muss",
+    "nur",
+    "ein bisschen",
+    "Geduld",
+    "haben"
+   ],
+   "answers": [
+    "Man muss nur ein bisschen Geduld haben."
+   ],
+   "en": "You just have to be a bit patient.",
+   "id": "b1-s10-19"
+  },
+  {
+   "type": "choice",
+   "de": "Später am Abend fragte Jonas Camille nach ihren ___ für das zweite Jahr.",
+   "options": [
+    "Plänen",
+    "Prüfungen",
+    "Kollegen"
+   ],
+   "answer": 0,
+   "why": "He asked what she was planning (vorhaben) for her second year.",
+   "en": "Later in the evening Jonas asked Camille about her plans for the second year.",
+   "id": "b1-s10-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Im Juni macht Camille die B2-___.",
+   "base": "exam",
+   "answers": [
+    "Prüfung"
+   ],
+   "en": "In June Camille is taking the B2 exam.",
+   "id": "b1-s10-21"
+  },
+  {
+   "type": "choice",
+   "de": "Im Sommer fahren Camille und Rafael nach Lyon, ___ Rafael ihre Familie kennenlernt.",
+   "options": [
+    "um",
+    "damit",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "Two different subjects (they travel, Rafael meets), so it's damit.",
+   "en": "In the summer Camille and Rafael are going to Lyon so that Rafael meets her family.",
+   "id": "b1-s10-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Je mehr",
+    "du",
+    "erzählst,",
+    "desto",
+    "nervöser",
+    "werde",
+    "ich"
+   ],
+   "answers": [
+    "Je mehr du erzählst, desto nervöser werde ich."
+   ],
+   "en": "The more you tell me, the more nervous I get.",
+   "id": "b1-s10-23"
+  },
+  {
+   "type": "choice",
+   "de": "Am Ende stellte Camille den Wecker nicht, weil sie ___.",
+   "options": [
+    "am nächsten Tag frei hatte",
+    "ihn verloren hatte",
+    "früh aufstehen wollte"
+   ],
+   "answer": 0,
+   "why": "She had the next day off.",
+   "en": "In the end Camille didn't set her alarm because she had the next day off.",
+   "id": "b1-s10-24"
+  }
+ ],
+ "listening": {
+  "title": "Ein Jahr in Köln",
+  "intro": "One year after she arrived in Cologne, Camille throws a small party for everyone who helped her and gives a speech.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Am ersten Montag im März war es genau ein Jahr her, dass Camille nach Köln gekommen war.",
+    "en": "On the first Monday in March it had been exactly a year since Camille came to Cologne."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Zur Feier hatte sie alle eingeladen, die ihr in diesem Jahr geholfen hatten: Rafael, Jonas und Thomas aus dem Büro, Frau Schmitz und Herrn Krause.",
+    "en": "To celebrate, she had invited everyone who had helped her that year: Rafael, Jonas and Thomas from the office, Frau Schmitz and Herr Krause."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Auf dem Tisch standen ein Apfelkuchen, eine Quiche nach dem Rezept ihrer Oma und natürlich ein Käse aus den Alpen.",
+    "en": "On the table there was an apple cake, a quiche made from her grandmother's recipe and, of course, a cheese from the Alps."
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Ist der Käse diesmal mit dem Flugzeug gekommen oder wieder mit dem Kurier?",
+    "en": "Did the cheese come by plane this time, or by courier again?"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Alle lachten. Dann klopfte Camille an ihr Glas.",
+    "en": "Everyone laughed. Then Camille tapped her glass."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Liebe Freunde, vor einem Jahr stand ich um Viertel vor neun vor einem geschlossenen Büro, weil mir niemand von der Gleitzeit erzählt hatte.",
+    "en": "Dear friends, a year ago I stood outside a closed office at a quarter to nine, because nobody had told me about flexitime."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Seitdem habe ich viel gelernt: dass man im Büro den Chef duzt, dass um zehn Uhr Nachtruhe ist und dass nüchtern nicht nur ohne Alkohol bedeutet.",
+    "en": "Since then I've learned a lot: that you say du to the boss at the office, that quiet hours start at ten and that nüchtern doesn't only mean without alcohol."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Und dass man der Kaffeekasse immer noch drei Euro fünfzig schuldet!",
+    "en": "And that you still owe the coffee kitty three euros fifty!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Die zahle ich heute, versprochen!",
+    "en": "I'll pay it today, I promise!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ehrlich gesagt war es nicht immer leicht. Ohne eigene Wohnung, ohne Freunde und mit einem Deutsch, das ich nur aus Büchern kannte, habe ich mich am Anfang oft allein gefühlt.",
+    "en": "To be honest, it wasn't always easy. With no flat of my own, no friends and German I only knew from books, I often felt lonely at the beginning."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Wenn mir damals jemand gesagt hätte, dass ich nach einem Jahr ein Team leite, hätte ich es nicht geglaubt.",
+    "en": "If anyone had told me back then that after a year I'd be leading a team, I wouldn't have believed it."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Aber ich hatte Glück. Frau Schmitz hat mir eine Wohnung gegeben, weil ich ihre Tasche getragen habe.",
+    "en": "But I was lucky. Frau Schmitz gave me a flat because I carried her bag."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Und weil Sie Ihre Unterlagen dabeihatten, Frau Durand. Vergessen Sie das nicht!",
+    "en": "And because you had your documents with you, Frau Durand. Don't forget that!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Herr Krause hat mir im Winter einen Heizlüfter geliehen, obwohl ich ihn am Anfang gar nicht mochte. Und Rafael habe ich auf dem Hoffest kennengelernt, im Regen.",
+    "en": "Herr Krause lent me a fan heater in the winter, although I didn't like him at all at first. And I met Rafael at the courtyard party, in the rain."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Unter einem Pavillon, der Herrn Krause gehört. Ich finde, er sollte auch eine Rede halten.",
+    "en": "Under a gazebo that belongs to Herr Krause. I think he should give a speech too."
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Auf keinen Fall. Ich spiele lieber Akkordeon. Aber nur bis zehn!",
+    "en": "No way. I'd rather play the accordion. But only until ten!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Meiner Meinung nach ist Deutschland gar nicht so kalt, wie man in Frankreich sagt. Man muss nur ein bisschen Geduld haben: mit den Behörden, mit der Bahn und mit sich selbst.",
+    "en": "In my opinion Germany isn't nearly as cold as people say in France. You just have to be a bit patient: with the authorities, with the trains and with yourself."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Deshalb möchte ich euch allen danken. Auf das nächste Jahr!",
+    "en": "That's why I'd like to thank you all. Here's to next year!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Alle hoben die Gläser. Später am Abend fragte Jonas, was sie im zweiten Jahr vorhabe.",
+    "en": "Everyone raised their glasses. Later in the evening Jonas asked what she was planning for her second year."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Im Juni mache ich die B2-Prüfung. Und im Sommer fahren wir nach Lyon, damit Rafael endlich meine Familie kennenlernt.",
+    "en": "In June I'm taking the B2 exam. And in the summer we're going to Lyon so that Rafael finally meets my family."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Ich habe jetzt schon Angst. Je mehr du von deiner Familie erzählst, desto nervöser werde ich.",
+    "en": "I'm scared already. The more you tell me about your family, the more nervous I get."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um Punkt zehn packte Herr Krause sein Akkordeon ein. „Nachtruhe!“, sagte er und lächelte.",
+    "en": "At ten on the dot Herr Krause packed up his accordion. Quiet hours! he said, and smiled."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille räumte auf, ohne sich zu beeilen. Sie war müde, aber glücklich, genau wie nach ihrem ersten Arbeitstag vor einem Jahr.",
+    "en": "Camille tidied up without hurrying. She was tired but happy, just like after her first working day a year ago."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Nur den Wecker stellte sie diesmal gar nicht. Am nächsten Tag hatte sie nämlich frei.",
+    "en": "Only this time she didn't set her alarm at all. She had the next day off, you see."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wen hatte Camille zu ihrer Feier eingeladen?",
+    "options": [
+     "Ihre Familie aus Lyon",
+     "Alle, die ihr im ersten Jahr geholfen hatten",
+     "Nur ihre Kollegen"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum stand Camille vor einem Jahr vor einem geschlossenen Büro?",
+    "options": [
+     "Niemand hatte ihr von der Gleitzeit erzählt.",
+     "Sie hatte die falsche Adresse.",
+     "Es war Sonntag."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Wie fühlte sich Camille am Anfang oft?",
+    "options": [
+     "Sehr glücklich",
+     "Krank",
+     "Allein"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was ist laut Camille in Deutschland wichtig?",
+    "options": [
+     "Viel Geld",
+     "Ein bisschen Geduld",
+     "Ein eigenes Auto"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was hat Camille im zweiten Jahr vor?",
+    "options": [
+     "Sie will nach Hamburg ziehen.",
+     "Sie will die B2-Prüfung machen und mit Rafael nach Lyon fahren.",
+     "Sie will eine neue Wohnung suchen."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Es ist genau ein Jahr her, dass ich nach Köln gekommen bin.",
+  "Wenn mir das jemand gesagt hätte, hätte ich es nicht geglaubt.",
+  "Man muss nur ein bisschen Geduld haben, auch mit sich selbst."
+ ],
+ "speaking": [
+  {
+   "de": "Liebe Freunde, vor einem Jahr bin ich nach Köln gekommen.",
+   "en": "Dear friends, a year ago I came to Cologne."
+  },
+  {
+   "de": "Ehrlich gesagt war es nicht immer leicht.",
+   "en": "To be honest, it wasn't always easy."
+  },
+  {
+   "de": "Wenn mir das jemand gesagt hätte, hätte ich es nicht geglaubt.",
+   "en": "If someone had told me that, I wouldn't have believed it."
+  },
+  {
+   "de": "Man muss nur ein bisschen Geduld haben.",
+   "en": "You just have to be a bit patient."
+  },
+  {
+   "de": "Ich möchte euch allen danken. Auf das nächste Jahr!",
+   "en": "I'd like to thank you all. Here's to next year!"
+  }
+ ],
+ "writing": {
+  "task": "A French friend is moving to Germany next month. Write her an 80–100-word email about your own experience: what was hard at the beginning, what helped you, and two pieces of advice.",
+  "model": "Liebe Léa,\n\nwie schön, dass du bald nach Deutschland kommst! Ich erinnere mich noch gut an mein erstes Jahr. Am Anfang war es nicht leicht: Ich hatte keine eigene Wohnung, und mein Deutsch war nicht so gut, wie ich gedacht hatte. Geholfen haben mir vor allem die Menschen, die ich hier kennengelernt habe. Mein erster Tipp: Sprich mit deinen Nachbarn, auch wenn sie am Anfang unfreundlich wirken. Mein zweiter Tipp: Wenn du etwas nicht verstehst, frag nach, statt einfach zu nicken. Glaub mir, das spart viel Zeit!\n\nBisous\nCamille"
+ }
+}

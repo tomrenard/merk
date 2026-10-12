@@ -28,12 +28,7 @@ export default async function ReviewPage({
       first={withExercise(first)}
       total={total}
       limit={limit}
-      lesson={
-        step && {
-          href: `/learn/${step.unit.id}/${step.part.path}`,
-          label: `${step.unit.title} · ${step.part.label}`,
-        }
-      }
+      lesson={step && { href: step.href, label: step.label }}
     />
   );
 }

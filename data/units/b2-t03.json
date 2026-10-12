@@ -1,0 +1,522 @@
+{
+ "id": "b2-t03",
+ "cefr": "B2",
+ "kind": "topic",
+ "words": [
+  "die Migration",
+  "der Migrant",
+  "die Integration",
+  "integrieren",
+  "die Herkunft",
+  "stammen",
+  "die Heimat",
+  "der Ausländer",
+  "die Gesellschaft",
+  "die Bevölkerung",
+  "der Bürger",
+  "der Staat",
+  "die Behörde",
+  "der Antrag",
+  "beantragen",
+  "der Aufenthalt",
+  "die Arbeitserlaubnis",
+  "das Visum",
+  "anerkennen",
+  "die Minderheit",
+  "die Gemeinschaft",
+  "die Muttersprache",
+  "die Fremdsprache",
+  "gleichberechtigt",
+  "der Respekt",
+  "tolerant",
+  "die Wahl",
+  "wählen",
+  "die Religion",
+  "die Tradition"
+ ],
+ "title": "Migration, integration and citizenship",
+ "situation": "Discussing integration",
+ "canDo": "You can talk about migration and integration and explain how to become a German citizen.",
+ "explanation": "Friends discuss who belongs, who may vote and how you become German. Key words:\n\n| German | English |\n|---|---|\n| die Herkunft / stammen aus | origin / to come from |\n| der Migrationshintergrund | migration background |\n| die Ausländerbehörde, -n | immigration office |\n| der Aufenthaltstitel, - | residence permit |\n| der Integrationskurs, -e | integration course |\n| die Einbürgerung, -en | naturalisation |\n| die Staatsangehörigkeit, -en | nationality, citizenship |\n| der Einbürgerungstest, -s | citizenship test |\n| die doppelte Staatsbürgerschaft | dual citizenship |\n| das Wahlrecht | right to vote |\n| die Minderheit, -en | minority |\n| ehrenamtlich | as a volunteer |\n\nTips:\n- To be naturalised, you usually need five years of legal residence, B1 German, the **Einbürgerungstest** (33 questions, 17 must be right) and your own income. Since 2024, Germany generally allows dual citizenship.\n- As an EU citizen you need no **Aufenthaltstitel**, and you may vote in local and European elections, but not in the Bundestag election.\n- *Menschen mit Migrationshintergrund* (in official statistics now often *mit Einwanderungsgeschichte*) is the neutral phrase. *Ausländer* only means people without a German passport and can sound cold in conversation.\n- **anerkennen** is used for diplomas: *Mein Abschluss wurde anerkannt.* Not *erkannt*.",
+ "french": "Die Einbürgerung is la naturalisation (literally becoming a Bürger), and die Staatsangehörigkeit is la nationalité in the legal sense.",
+ "examples": [
+  {
+   "de": "Zwar lebe ich schon zehn Jahre in Deutschland, aber ich habe immer noch einen französischen Pass.",
+   "en": "I've lived in Germany for ten years, but I still have a French passport."
+  },
+  {
+   "de": "Für die Einbürgerung braucht man Deutschkenntnisse auf B1-Niveau.",
+   "en": "For naturalisation you need German at B1 level."
+  },
+  {
+   "de": "Im Integrationskurs lernt man Deutsch und etwas über Politik und Geschichte.",
+   "en": "In the integration course you learn German and something about politics and history."
+  },
+  {
+   "de": "Meine Kollegin stammt aus Syrien und hat letztes Jahr die deutsche Staatsangehörigkeit bekommen.",
+   "en": "My colleague comes from Syria and got German citizenship last year."
+  },
+  {
+   "de": "EU-Bürger dürfen bei Kommunalwahlen wählen, bei der Bundestagswahl hingegen nicht.",
+   "en": "EU citizens may vote in local elections, but not in the Bundestag election."
+  },
+  {
+   "de": "Ihr Abschluss wurde in Deutschland nicht anerkannt, folglich musste sie eine Prüfung machen.",
+   "en": "Her degree wasn't recognised in Germany, so she had to take an exam."
+  },
+  {
+   "de": "Mehr als ein Viertel der Menschen in Deutschland hat einen Migrationshintergrund.",
+   "en": "More than a quarter of people in Germany have a migration background."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-t03-01",
+   "type": "cloze",
+   "de": "Ich habe bei der Behörde ___ auf Einbürgerung gestellt.",
+   "base": "an application",
+   "answers": [
+    "einen Antrag"
+   ],
+   "en": "I've applied for naturalisation at the authority."
+  },
+  {
+   "id": "b2-t03-02",
+   "type": "choice",
+   "de": "Sie ___ aus Vietnam, lebt aber seit zwanzig Jahren in Dresden.",
+   "options": [
+    "entsteht",
+    "stammt",
+    "kommt her"
+   ],
+   "answer": 1,
+   "why": "stammen aus means to come from (by origin).",
+   "en": "She comes from Vietnam but has lived in Dresden for twenty years."
+  },
+  {
+   "id": "b2-t03-03",
+   "type": "cloze",
+   "de": "Seit 2024 erlaubt Deutschland grundsätzlich die ___ Staatsbürgerschaft.",
+   "base": "dual",
+   "answers": [
+    "doppelte"
+   ],
+   "en": "Since 2024 Germany has generally allowed dual citizenship."
+  },
+  {
+   "id": "b2-t03-04",
+   "type": "choice",
+   "de": "Für die Einbürgerung muss man einen ___ bestehen.",
+   "options": [
+    "Integrationskurs",
+    "Aufenthaltstitel",
+    "Einbürgerungstest"
+   ],
+   "answer": 2,
+   "why": "You pass (bestehen) a test; a course is something you attend.",
+   "en": "For naturalisation you have to pass a citizenship test."
+  },
+  {
+   "id": "b2-t03-05",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "hat",
+    "die deutsche Staatsangehörigkeit",
+    "beantragt"
+   ],
+   "answers": [
+    "Sie hat die deutsche Staatsangehörigkeit beantragt.",
+    "Die deutsche Staatsangehörigkeit hat sie beantragt."
+   ],
+   "en": "She has applied for German citizenship."
+  },
+  {
+   "id": "b2-t03-06",
+   "type": "cloze",
+   "de": "In Deutschland leben viele Menschen mit ___.",
+   "base": "migration background",
+   "answers": [
+    "Migrationshintergrund"
+   ],
+   "en": "Many people with a migration background live in Germany."
+  },
+  {
+   "id": "b2-t03-07",
+   "type": "choice",
+   "de": "Ihr Diplom aus Brasilien wurde in Deutschland nicht ___.",
+   "options": [
+    "anerkannt",
+    "erkannt",
+    "bekannt"
+   ],
+   "answer": 0,
+   "why": "anerkennen is used for officially recognising diplomas.",
+   "en": "Her diploma from Brazil wasn't recognised in Germany."
+  },
+  {
+   "id": "b2-t03-08",
+   "type": "cloze",
+   "de": "Der ___ besteht aus 600 Stunden Deutsch und 100 Stunden Orientierungskurs.",
+   "base": "integration course",
+   "answers": [
+    "Integrationskurs"
+   ],
+   "en": "The integration course consists of 600 hours of German and a 100-hour orientation course."
+  },
+  {
+   "id": "b2-t03-09",
+   "type": "choice",
+   "de": "Als Französin brauche ich keinen ___, weil ich EU-Bürgerin bin.",
+   "options": [
+    "Aufenthaltstitel",
+    "Führerschein",
+    "Mietvertrag"
+   ],
+   "answer": 0,
+   "why": "EU citizens can live in Germany without a residence permit.",
+   "en": "As a Frenchwoman I don't need a residence permit because I'm an EU citizen."
+  },
+  {
+   "id": "b2-t03-10",
+   "type": "order",
+   "tiles": [
+    "Zwar",
+    "spricht",
+    "er",
+    "gut Deutsch",
+    "aber",
+    "er",
+    "fühlt sich",
+    "noch fremd"
+   ],
+   "answers": [
+    "Zwar spricht er gut Deutsch, aber er fühlt sich noch fremd.",
+    "Er spricht zwar gut Deutsch, aber er fühlt sich noch fremd."
+   ],
+   "en": "He does speak German well, but he still feels like a stranger."
+  },
+  {
+   "id": "b2-t03-11",
+   "type": "cloze",
+   "de": "Wer eingebürgert ist, hat bei der Bundestagswahl das ___.",
+   "base": "right to vote",
+   "answers": [
+    "Wahlrecht"
+   ],
+   "en": "Anyone who has been naturalised has the right to vote in the Bundestag election."
+  },
+  {
+   "id": "b2-t03-12",
+   "type": "choice",
+   "de": "Die Stadt ist sehr ___: Hier leben Menschen aus über 180 Ländern.",
+   "options": [
+    "vieldeutig",
+    "vielmals",
+    "vielfältig"
+   ],
+   "answer": 2,
+   "why": "vielfältig means diverse.",
+   "en": "The city is very diverse: people from over 180 countries live here."
+  },
+  {
+   "id": "b2-t03-13",
+   "type": "cloze",
+   "de": "Viele Menschen, die vor dem Krieg geflohen sind, haben in Deutschland ___ bekommen.",
+   "base": "asylum",
+   "answers": [
+    "Asyl"
+   ],
+   "en": "Many people who fled the war have been granted asylum in Germany."
+  },
+  {
+   "id": "b2-t03-14",
+   "type": "order",
+   "tiles": [
+    "EU-Bürger",
+    "dürfen",
+    "bei Kommunalwahlen",
+    "wählen"
+   ],
+   "answers": [
+    "EU-Bürger dürfen bei Kommunalwahlen wählen.",
+    "Bei Kommunalwahlen dürfen EU-Bürger wählen."
+   ],
+   "en": "EU citizens may vote in local elections."
+  },
+  {
+   "id": "b2-t03-15",
+   "type": "choice",
+   "de": "Er lebt seit 30 Jahren hier, ___ hat er nie einen deutschen Pass beantragt.",
+   "options": [
+    "deshalb",
+    "dennoch",
+    "außerdem"
+   ],
+   "answer": 1,
+   "why": "dennoch (nevertheless) introduces something you wouldn't expect.",
+   "en": "He has lived here for 30 years; nevertheless he has never applied for a German passport."
+  },
+  {
+   "id": "b2-t03-16",
+   "type": "cloze",
+   "de": "Die Sorben sind eine anerkannte ___ in Sachsen und Brandenburg.",
+   "base": "minority",
+   "answers": [
+    "Minderheit"
+   ],
+   "en": "The Sorbs are a recognised minority in Saxony and Brandenburg."
+  },
+  {
+   "id": "b2-t03-17",
+   "type": "choice",
+   "de": "Viele Menschen helfen ___ in der Flüchtlingshilfe, ohne Geld dafür zu bekommen.",
+   "options": [
+    "ehrlich",
+    "ehrenamtlich",
+    "ehrgeizig"
+   ],
+   "answer": 1,
+   "why": "ehrenamtlich means unpaid, as a volunteer.",
+   "en": "Many people help as volunteers with refugees without being paid for it."
+  },
+  {
+   "id": "b2-t03-18",
+   "type": "cloze",
+   "de": "Meine ___ ist Französisch, Deutsch ist meine Zweitsprache.",
+   "base": "mother tongue",
+   "answers": [
+    "Muttersprache"
+   ],
+   "en": "My mother tongue is French; German is my second language."
+  },
+  {
+   "id": "b2-t03-19",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "fühle",
+    "mich",
+    "in Deutschland",
+    "zu Hause"
+   ],
+   "answers": [
+    "Ich fühle mich in Deutschland zu Hause.",
+    "In Deutschland fühle ich mich zu Hause."
+   ],
+   "en": "I feel at home in Germany."
+  },
+  {
+   "id": "b2-t03-20",
+   "type": "choice",
+   "de": "In Großstädten leben viele Migranten, auf dem Land leben ___ deutlich weniger.",
+   "options": [
+    "sondern",
+    "folglich",
+    "hingegen"
+   ],
+   "answer": 2,
+   "why": "hingegen contrasts two facts (whereas); sondern only follows a negation.",
+   "en": "Many migrants live in big cities, whereas far fewer live in the countryside."
+  },
+  {
+   "id": "b2-t03-21",
+   "type": "cloze",
+   "de": "Menschen verschiedener Religionen sollten einander mit ___ begegnen.",
+   "base": "respect",
+   "answers": [
+    "Respekt"
+   ],
+   "en": "People of different religions should treat each other with respect."
+  },
+  {
+   "id": "b2-t03-22",
+   "type": "choice",
+   "de": "Das Visum beantragt man bei der deutschen ___ im Heimatland.",
+   "options": [
+    "Botschaft",
+    "Nachricht",
+    "Botschafterin"
+   ],
+   "answer": 0,
+   "why": "die Botschaft is the embassy; die Botschafterin is a person.",
+   "en": "You apply for the visa at the German embassy in your home country."
+  },
+  {
+   "id": "b2-t03-23",
+   "type": "cloze",
+   "de": "Meine Großeltern sind 1970 aus Italien nach Deutschland ___.",
+   "base": "immigrated",
+   "answers": [
+    "eingewandert",
+    "immigriert",
+    "zugewandert"
+   ],
+   "en": "My grandparents immigrated to Germany from Italy in 1970."
+  },
+  {
+   "id": "b2-t03-24",
+   "type": "order",
+   "tiles": [
+    "Ihre Ausbildung",
+    "wurde",
+    "nicht",
+    "anerkannt",
+    "folglich",
+    "musste",
+    "sie",
+    "eine Prüfung machen"
+   ],
+   "answers": [
+    "Ihre Ausbildung wurde nicht anerkannt, folglich musste sie eine Prüfung machen.",
+    "Ihre Ausbildung wurde nicht anerkannt, sie musste folglich eine Prüfung machen."
+   ],
+   "en": "Her training wasn't recognised, so she had to take an exam."
+  }
+ ],
+ "listening": {
+  "title": "Jetzt bin ich Deutsche",
+  "intro": "Paul, a Frenchman living in Germany, congratulates his friend Nadia, who has just become a German citizen.",
+  "lines": [
+   {
+    "speaker": "Paul",
+    "de": "Nadia, ich habe gehört, du bist jetzt Deutsche? Herzlichen Glückwunsch!",
+    "en": "Nadia, I heard you're German now? Congratulations!"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Danke! Letzte Woche war die Einbürgerungsfeier im Rathaus. Ich war ganz schön aufgeregt.",
+    "en": "Thanks! The naturalisation ceremony was at the town hall last week. I was pretty nervous."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Wie lange hat das alles gedauert?",
+    "en": "How long did it all take?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Den Antrag habe ich vor anderthalb Jahren gestellt. Die Behörde ist leider total überlastet.",
+    "en": "I applied a year and a half ago. Unfortunately, the office is completely overloaded."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Und musstest du deinen syrischen Pass abgeben?",
+    "en": "And did you have to give up your Syrian passport?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Nein, seit 2024 ist die doppelte Staatsbürgerschaft grundsätzlich erlaubt. Mir selbst ist das zwar nicht so wichtig, aber für meine Eltern schon.",
+    "en": "No, dual citizenship has generally been allowed since 2024. It's not that important to me, but it is to my parents."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ich überlege auch, ob ich mich einbürgern lasse. Als Franzose habe ich zwar fast alle Rechte, aber bei der Bundestagswahl darf ich nicht wählen.",
+    "en": "I'm also thinking about getting naturalised. As a Frenchman I have almost all the rights, but I can't vote in the Bundestag election."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Eben! Ich lebe seit zehn Jahren hier und zahle Steuern. Folglich will ich auch mitentscheiden.",
+    "en": "Exactly! I've lived here for ten years and pay taxes. So I want to have a say, too."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Was braucht man denn genau?",
+    "en": "What exactly do you need?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Deutsch auf B1-Niveau, den Einbürgerungstest und ein eigenes Einkommen. Außerdem musst du seit mindestens fünf Jahren hier leben.",
+    "en": "German at B1 level, the citizenship test and your own income. Also, you have to have lived here for at least five years."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ist der Test schwer?",
+    "en": "Is the test hard?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Eigentlich nicht. Es sind 33 Fragen zu Politik, Geschichte und Gesellschaft, und 17 müssen richtig sein. Für dich dürfte das kein Problem sein.",
+    "en": "Not really. There are 33 questions on politics, history and society, and 17 have to be right. That shouldn't be a problem for you."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Na ja, ich weiß nicht mal, wie viele Bundesländer es gibt.",
+    "en": "Well, I don't even know how many federal states there are."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Sechzehn! Siehst du, jetzt weißt du es schon.",
+    "en": "Sixteen! See, now you know."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long did Nadia's naturalisation take?",
+    "options": [
+     "About six months.",
+     "About a year and a half.",
+     "Ten years."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happened to Nadia's Syrian passport?",
+    "options": [
+     "She kept it, because dual citizenship is allowed.",
+     "She had to give it up.",
+     "It has expired."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is Paul thinking about becoming German?",
+    "options": [
+     "He needs a residence permit.",
+     "He wants a new job.",
+     "He can't vote in the Bundestag election."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is true about the citizenship test?",
+    "options": [
+     "It is an oral exam.",
+     "There are 33 questions and 17 must be right.",
+     "It takes 600 hours."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Für die Einbürgerung braucht man Deutschkenntnisse auf B1-Niveau.",
+  "Zwar habe ich fast alle Rechte, aber bei der Bundestagswahl darf ich nicht wählen.",
+  "Ihr Abschluss wurde nicht anerkannt, folglich musste sie eine Prüfung machen."
+ ],
+ "speaking": [
+  {
+   "de": "Herzlichen Glückwunsch zur Einbürgerung!",
+   "en": "Congratulations on your naturalisation!"
+  },
+  {
+   "de": "Den Antrag habe ich vor anderthalb Jahren gestellt.",
+   "en": "I applied a year and a half ago."
+  },
+  {
+   "de": "Seit 2024 ist die doppelte Staatsbürgerschaft grundsätzlich erlaubt.",
+   "en": "Dual citizenship has generally been allowed since 2024."
+  },
+  {
+   "de": "Ich überlege, ob ich mich einbürgern lasse.",
+   "en": "I'm thinking about getting naturalised."
+  },
+  {
+   "de": "Ich lebe seit zehn Jahren hier und zahle Steuern. Folglich will ich auch mitentscheiden.",
+   "en": "I've lived here for ten years and pay taxes. So I want to have a say, too."
+  }
+ ],
+ "writing": {
+  "task": "In an online forum someone asks: \"Should foreigners who have lived here for years be allowed to vote in national elections?\" Write a reply of 100–130 words with your opinion, one argument for and one against, using zwar … aber, außerdem or hingegen.",
+  "model": "Ich lebe selbst seit acht Jahren in Deutschland und finde diese Frage sehr wichtig.\n\nZwar können EU-Bürger wie ich bei Kommunalwahlen wählen, aber bei der Bundestagswahl dürfen wir nicht mitentscheiden. Dabei arbeiten wir hier, zahlen Steuern und unsere Kinder gehen hier zur Schule. Außerdem wäre es für die Integration ein gutes Zeichen, wenn man sich auch politisch beteiligen könnte.\n\nEinige sagen hingegen, das Wahlrecht gehöre zur Staatsangehörigkeit. Wer wählen will, solle sich einbürgern lassen. Seit 2024 ist das tatsächlich einfacher geworden, weil man seinen alten Pass behalten darf.\n\nMeiner Meinung nach sollte man nach etwa zehn Jahren Aufenthalt wählen dürfen. Bis dahin lasse ich mich vielleicht einfach einbürgern."
+ }
+}

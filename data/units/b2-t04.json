@@ -1,0 +1,522 @@
+{
+ "id": "b2-t04",
+ "cefr": "B2",
+ "kind": "topic",
+ "words": [
+  "die Wissenschaft",
+  "der Wissenschaftler",
+  "die Forschung",
+  "die Studie",
+  "der Versuch",
+  "beweisen",
+  "die Technik",
+  "die Technologie",
+  "die Entwicklung",
+  "entwickeln",
+  "erfinden",
+  "die Erfindung",
+  "der Fortschritt",
+  "digital",
+  "künstlich",
+  "die Intelligenz",
+  "virtuell",
+  "die Zukunft",
+  "zukünftig",
+  "das Risiko",
+  "die Gefahr",
+  "die Chance",
+  "die Möglichkeit",
+  "ersetzen",
+  "erleichtern",
+  "nutzen",
+  "anwenden",
+  "die Energie",
+  "der Schutz",
+  "das Netz"
+ ],
+ "title": "Science, technology and the future",
+ "situation": "Debating new technology",
+ "canDo": "You can discuss the chances and risks of new technology and refer to studies and research.",
+ "explanation": "Self-driving buses, AI at work, solar power: when people debate new technology, these words come up:\n\n| German | English |\n|---|---|\n| die künstliche Intelligenz (KI) | artificial intelligence (AI) |\n| die Forschung / die Studie, -n | research / study |\n| der Fortschritt, -e | progress |\n| die Erfindung, -en | invention |\n| die Digitalisierung | digitalisation |\n| der Datenschutz | data protection |\n| die Daten (Pl.) | data |\n| das Risiko, Risiken | risk |\n| die Chance, -n | opportunity |\n| erneuerbare Energien | renewable energy |\n| ausgereift | fully developed |\n\n| phrase | English |\n|---|---|\n| Laut einer Studie … | According to a study … |\n| Es besteht die Gefahr, dass … | There is a risk that … |\n| Das bietet große Chancen. | That offers great opportunities. |\n| Ich halte nicht viel davon. | I don't think much of it. |\n\nTips:\n- False friend: **die Chance** is an opportunity, not luck. Luck is **das Glück**: *Ich hatte Glück.*\n- **die Daten** is plural only; *das Datum* is a date in the calendar.\n- KI is said *Ka-I*; in English texts you'll also see *AI*.\n- In debates, weigh both sides: *Einerseits … andererseits*, *zwar … aber*.",
+ "french": "Avoir de la chance is Glück haben, not Chance haben; die Chance means une occasion or une possibilité.",
+ "examples": [
+  {
+   "de": "Künstliche Intelligenz kann viele Routineaufgaben erleichtern.",
+   "en": "Artificial intelligence can make many routine tasks easier."
+  },
+  {
+   "de": "Laut einer neuen Studie schlafen Jugendliche wegen ihrer Handys schlechter.",
+   "en": "According to a new study, teenagers sleep worse because of their phones."
+  },
+  {
+   "de": "Es besteht die Gefahr, dass Maschinen viele Arbeitsplätze ersetzen.",
+   "en": "There is a risk that machines will replace many jobs."
+  },
+  {
+   "de": "Die Forschung an Batterien macht große Fortschritte.",
+   "en": "Battery research is making great progress."
+  },
+  {
+   "de": "Selbstfahrende Autos sind technisch möglich, aber noch nicht ausgereift.",
+   "en": "Self-driving cars are technically possible but not yet fully developed."
+  },
+  {
+   "de": "Ich halte nichts davon, Kindern schon mit drei Jahren ein Tablet zu geben.",
+   "en": "I don't think it's a good idea to give children a tablet at the age of three."
+  },
+  {
+   "de": "Die Chancen dieser Technologie sind größer als die Risiken.",
+   "en": "The opportunities of this technology are greater than the risks."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-t04-01",
+   "type": "choice",
+   "de": "Der Zug hatte Verspätung, aber ich habe meinen Anschluss noch bekommen. Ich hatte großes ___.",
+   "options": [
+    "Glück",
+    "Chance",
+    "Möglichkeit"
+   ],
+   "answer": 0,
+   "why": "Luck is Glück; die Chance means an opportunity.",
+   "en": "The train was late, but I still made my connection. I was very lucky."
+  },
+  {
+   "id": "b2-t04-02",
+   "type": "cloze",
+   "de": "Laut einer neuen ___ nutzt fast die Hälfte der Deutschen KI im Alltag.",
+   "base": "study",
+   "answers": [
+    "Studie"
+   ],
+   "en": "According to a new study, almost half of Germans use AI in everyday life."
+  },
+  {
+   "id": "b2-t04-03",
+   "type": "choice",
+   "de": "Diese App ___ mir den Alltag sehr.",
+   "options": [
+    "erleuchtet",
+    "erleichtert",
+    "erlaubt"
+   ],
+   "answer": 1,
+   "why": "erleichtern means to make easier.",
+   "en": "This app makes my everyday life much easier."
+  },
+  {
+   "id": "b2-t04-04",
+   "type": "cloze",
+   "de": "Passwörter, Adressen, Kontonummern: Wir müssen unsere ___ besser schützen.",
+   "base": "data",
+   "answers": [
+    "Daten"
+   ],
+   "en": "Passwords, addresses, account numbers: we need to protect our data better."
+  },
+  {
+   "id": "b2-t04-05",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "besteht",
+    "die Gefahr",
+    "dass",
+    "Roboter",
+    "Arbeitsplätze",
+    "ersetzen"
+   ],
+   "answers": [
+    "Es besteht die Gefahr, dass Roboter Arbeitsplätze ersetzen."
+   ],
+   "en": "There is a risk that robots will replace jobs."
+  },
+  {
+   "id": "b2-t04-06",
+   "type": "cloze",
+   "de": "Die Uni bekommt mehr Geld für die ___.",
+   "base": "research",
+   "answers": [
+    "Forschung"
+   ],
+   "en": "The university is getting more money for research."
+  },
+  {
+   "id": "b2-t04-07",
+   "type": "choice",
+   "de": "Ich halte nicht viel ___ dieser Idee.",
+   "options": [
+    "über",
+    "von",
+    "an"
+   ],
+   "answer": 1,
+   "why": "etwas halten von means to think something of it.",
+   "en": "I don't think much of this idea."
+  },
+  {
+   "id": "b2-t04-08",
+   "type": "cloze",
+   "de": "Wer hat das Telefon ___?",
+   "base": "invented",
+   "answers": [
+    "erfunden"
+   ],
+   "en": "Who invented the telephone?"
+  },
+  {
+   "id": "b2-t04-09",
+   "type": "choice",
+   "de": "Strom aus Sonne und Wind nennt man ___ Energie.",
+   "options": [
+    "erneuerte",
+    "neue",
+    "erneuerbare"
+   ],
+   "answer": 2,
+   "why": "erneuerbare Energie is renewable energy.",
+   "en": "Electricity from the sun and the wind is called renewable energy."
+  },
+  {
+   "id": "b2-t04-10",
+   "type": "order",
+   "tiles": [
+    "Die Chancen",
+    "sind",
+    "meiner Meinung nach",
+    "größer",
+    "als",
+    "die Risiken"
+   ],
+   "answers": [
+    "Die Chancen sind meiner Meinung nach größer als die Risiken.",
+    "Meiner Meinung nach sind die Chancen größer als die Risiken."
+   ],
+   "en": "In my opinion the opportunities are greater than the risks."
+  },
+  {
+   "id": "b2-t04-11",
+   "type": "cloze",
+   "de": "In Hamburg testet man ___ Busse.",
+   "base": "self-driving",
+   "answers": [
+    "selbstfahrende"
+   ],
+   "en": "In Hamburg they're testing self-driving buses."
+  },
+  {
+   "id": "b2-t04-12",
+   "type": "choice",
+   "de": "Viele Menschen haben Angst ___, dass KI sie überwacht.",
+   "options": [
+    "davor",
+    "darauf",
+    "dafür"
+   ],
+   "answer": 0,
+   "why": "Angst haben vor becomes davor before a dass clause.",
+   "en": "Many people are afraid that AI will monitor them."
+  },
+  {
+   "id": "b2-t04-13",
+   "type": "cloze",
+   "de": "Diese Technik ist noch nicht ___, es gibt noch viele Fehler.",
+   "base": "fully developed",
+   "answers": [
+    "ausgereift"
+   ],
+   "en": "This technology isn't fully developed yet; there are still many errors."
+  },
+  {
+   "id": "b2-t04-14",
+   "type": "choice",
+   "de": "Die Studie ___, dass Bildschirmzeit den Schlaf stört.",
+   "options": [
+    "zeichnet",
+    "zählt",
+    "zeigt"
+   ],
+   "answer": 2,
+   "why": "Eine Studie zeigt, dass … means a study shows that …",
+   "en": "The study shows that screen time disturbs sleep."
+  },
+  {
+   "id": "b2-t04-15",
+   "type": "order",
+   "tiles": [
+    "Künstliche Intelligenz",
+    "kann",
+    "viele Aufgaben",
+    "erleichtern"
+   ],
+   "answers": [
+    "Künstliche Intelligenz kann viele Aufgaben erleichtern.",
+    "Viele Aufgaben kann künstliche Intelligenz erleichtern."
+   ],
+   "en": "Artificial intelligence can make many tasks easier."
+  },
+  {
+   "id": "b2-t04-16",
+   "type": "cloze",
+   "de": "Der ___ in der Medizin ist enorm: Viele Krankheiten sind heute heilbar.",
+   "base": "progress",
+   "answers": [
+    "Fortschritt"
+   ],
+   "en": "Progress in medicine is enormous: many diseases are curable today."
+  },
+  {
+   "id": "b2-t04-17",
+   "type": "choice",
+   "de": "Die Regierung will die Schulen schneller ___.",
+   "options": [
+    "digitalisieren",
+    "digital",
+    "Digitalisierung"
+   ],
+   "answer": 0,
+   "why": "After will … you need the infinitive of the verb.",
+   "en": "The government wants to digitalise schools faster."
+  },
+  {
+   "id": "b2-t04-18",
+   "type": "cloze",
+   "de": "Viele Firmen ___ KI schon jeden Tag.",
+   "base": "use",
+   "answers": [
+    "nutzen",
+    "benutzen",
+    "verwenden",
+    "einsetzen"
+   ],
+   "en": "Many companies already use AI every day."
+  },
+  {
+   "id": "b2-t04-19",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "halte",
+    "nichts",
+    "davon",
+    "Kindern",
+    "ein Handy",
+    "zu geben"
+   ],
+   "answers": [
+    "Ich halte nichts davon, Kindern ein Handy zu geben."
+   ],
+   "en": "I don't think it's a good idea to give children a phone."
+  },
+  {
+   "id": "b2-t04-20",
+   "type": "choice",
+   "de": "Wer ist ___, wenn ein selbstfahrendes Auto einen Unfall baut?",
+   "options": [
+    "verantwortungsvoll",
+    "verantwortlich",
+    "beantwortet"
+   ],
+   "answer": 1,
+   "why": "verantwortlich means responsible (to blame); verantwortungsvoll means behaving responsibly.",
+   "en": "Who is responsible if a self-driving car causes an accident?"
+  },
+  {
+   "id": "b2-t04-21",
+   "type": "cloze",
+   "de": "Ein Roboter kann einen Menschen nicht ganz ___.",
+   "base": "replace",
+   "answers": [
+    "ersetzen"
+   ],
+   "en": "A robot can't fully replace a human."
+  },
+  {
+   "id": "b2-t04-22",
+   "type": "choice",
+   "de": "Es ist noch nicht ___, dass Handystrahlung krank macht.",
+   "options": [
+    "gewiesen",
+    "verwiesen",
+    "bewiesen"
+   ],
+   "answer": 2,
+   "why": "beweisen means to prove.",
+   "en": "It hasn't been proven that mobile phone radiation makes you ill."
+  },
+  {
+   "id": "b2-t04-23",
+   "type": "cloze",
+   "de": "In ___ fahren wir vielleicht mit fliegenden Autos.",
+   "base": "the future",
+   "answers": [
+    "Zukunft",
+    "der Zukunft"
+   ],
+   "en": "In the future we may drive flying cars."
+  },
+  {
+   "id": "b2-t04-24",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "dürfen",
+    "die Risiken",
+    "nicht",
+    "unterschätzen"
+   ],
+   "answers": [
+    "Wir dürfen die Risiken nicht unterschätzen.",
+    "Die Risiken dürfen wir nicht unterschätzen."
+   ],
+   "en": "We mustn't underestimate the risks."
+  }
+ ],
+ "listening": {
+  "title": "Busse ohne Fahrer?",
+  "intro": "Mehmet and Jana discuss a newspaper article about self-driving buses that their town wants to introduce.",
+  "lines": [
+   {
+    "speaker": "Mehmet",
+    "de": "Hast du das gelesen? Ab nächstem Jahr sollen bei uns selbstfahrende Busse unterwegs sein.",
+    "en": "Have you read this? From next year there are supposed to be self-driving buses here."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ja, und ehrlich gesagt halte ich nicht viel davon. Wer ist denn verantwortlich, wenn ein Unfall passiert?",
+    "en": "Yes, and honestly I don't think much of it. Who is responsible if there's an accident?"
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Laut einer Studie machen Computer beim Fahren weniger Fehler als Menschen. Die meisten Unfälle passieren, weil Fahrer müde oder abgelenkt sind.",
+    "en": "According to a study, computers make fewer mistakes when driving than people. Most accidents happen because drivers are tired or distracted."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Mag sein. Aber die Technik ist noch nicht ausgereift. Bei Schnee oder an Baustellen funktionieren die Sensoren oft nicht.",
+    "en": "Maybe. But the technology isn't fully developed yet. In snow or at roadworks the sensors often don't work."
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Deshalb fahren die Busse am Anfang ja auch nur auf festen Strecken. Und es sitzt noch ein Mitarbeiter drin.",
+    "en": "That's why at first the buses only run on fixed routes. And there's still an employee on board."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Und was passiert danach mit den Busfahrern? Es besteht die Gefahr, dass Tausende ihre Arbeit verlieren.",
+    "en": "And what happens to the bus drivers after that? There's a risk that thousands will lose their jobs."
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Zwar werden manche Jobs verschwinden, aber es entstehen auch neue. Jemand muss die Busse ja überwachen und reparieren.",
+    "en": "Some jobs will disappear, but new ones will appear too. Someone has to monitor and repair the buses."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Das sagt man immer. Ein Busfahrer mit 55 wird aber nicht so einfach Software-Ingenieur.",
+    "en": "People always say that. But a 55-year-old bus driver doesn't just become a software engineer."
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Da hast du recht. Dafür bräuchte man gute Weiterbildungen.",
+    "en": "You're right there. You'd need good training for that."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Außerdem denke ich an den Datenschutz. Die Busse haben überall Kameras.",
+    "en": "I'm also thinking about data protection. The buses have cameras everywhere."
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Die Daten sollen nach 24 Stunden gelöscht werden. So steht es zumindest im Artikel.",
+    "en": "The data is supposed to be deleted after 24 hours. At least that's what the article says."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Hoffentlich hält man sich daran. Trotzdem bin ich gespannt, wie das funktioniert.",
+    "en": "Hopefully they'll stick to that. Still, I'm curious how it will work."
+   },
+   {
+    "speaker": "Mehmet",
+    "de": "Auf dem Land könnten solche Busse viel verändern. Da fährt abends ja oft gar nichts mehr.",
+    "en": "In the countryside buses like that could change a lot. Often nothing runs there at all in the evening."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Das stimmt. Für ältere Leute in den Dörfern wäre das tatsächlich eine Chance.",
+    "en": "That's true. For older people in the villages it really would be an opportunity."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Jana's first concern?",
+    "options": [
+     "The buses are too expensive.",
+     "Who is responsible if there is an accident.",
+     "The buses are too slow."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "According to Mehmet, why do most accidents happen?",
+    "options": [
+     "Because drivers are tired or distracted.",
+     "Because of snow and roadworks.",
+     "Because buses are too big."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What happens to the data from the cameras, according to the article?",
+    "options": [
+     "The police keep it.",
+     "It is sold to companies.",
+     "It is deleted after 24 hours."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Which advantage does Jana accept in the end?",
+    "options": [
+     "The buses could help older people in villages.",
+     "The buses are cheaper.",
+     "Bus drivers will get better jobs."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Es besteht die Gefahr, dass Maschinen viele Arbeitsplätze ersetzen.",
+  "Laut einer Studie machen Computer beim Fahren weniger Fehler als Menschen.",
+  "Die Chancen dieser Technologie sind meiner Meinung nach größer als die Risiken."
+ ],
+ "speaking": [
+  {
+   "de": "Ehrlich gesagt halte ich nicht viel davon.",
+   "en": "Honestly, I don't think much of it."
+  },
+  {
+   "de": "Laut einer Studie machen Computer beim Fahren weniger Fehler als Menschen.",
+   "en": "According to a study, computers make fewer mistakes when driving than people."
+  },
+  {
+   "de": "Die Technik ist noch nicht ausgereift.",
+   "en": "The technology isn't fully developed yet."
+  },
+  {
+   "de": "Es besteht die Gefahr, dass Tausende ihre Arbeit verlieren.",
+   "en": "There's a risk that thousands will lose their jobs."
+  },
+  {
+   "de": "Für ältere Leute wäre das tatsächlich eine Chance.",
+   "en": "For older people it really would be an opportunity."
+  }
+ ],
+ "writing": {
+  "task": "A news website asks its readers: \"Should pupils be allowed to use AI for their homework?\" Write a comment of 100–130 words: give your opinion, name one chance and one risk, and refer to a study or an experience.",
+  "model": "Meiner Meinung nach sollte man KI in der Schule nicht verbieten, sondern richtig nutzen.\n\nEinerseits bietet die Technik große Chancen. Eine KI kann Schülern einen schwierigen Text einfacher erklären oder Fragen beantworten, wenn die Eltern keine Zeit haben. Meine Tochter lernt so zum Beispiel Vokabeln für Englisch.\n\nAndererseits besteht die Gefahr, dass Kinder nicht mehr selbst denken und einfach alles kopieren. Laut einer Studie, die ich neulich gelesen habe, verstehen Schüler einen Text schlechter, wenn sie nur eine Zusammenfassung lesen.\n\nDeshalb halte ich nichts davon, Hausaufgaben komplett von der KI schreiben zu lassen. Die Lehrer sollten zeigen, wie man sie sinnvoll nutzt. Dann überwiegen die Vorteile."
+ }
+}

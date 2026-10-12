@@ -11,6 +11,8 @@ type Recognition = {
   lang: string;
   interimResults: boolean;
   onresult: (event: { results: ArrayLike<ArrayLike<{ transcript: string }>> }) => void;
+  onerror: (event: { error: string }) => void;
+  onend: () => void;
   start: () => void;
   stop: () => void;
 };
@@ -112,6 +114,18 @@ export function Speak({
       setHeard(event.results[0]?.[0]?.transcript ?? null);
       setListening(false);
     };
+    // Say why nothing came back, instead of hanging on "Listening…".
+    rec.onerror = (event) => {
+      setListening(false);
+      setError(
+        event.error === "not-allowed" || event.error === "service-not-allowed"
+          ? "Speech-to-text is blocked: allow the microphone, and turn on Siri & Dictation (Settings › Siri)."
+          : event.error === "no-speech"
+            ? "Didn't hear anything. Tap and say the sentence."
+            : `Speech-to-text failed (${event.error}). Recording and comparing still works.`,
+      );
+    };
+    rec.onend = () => setListening(false);
     try {
       rec.start();
       listener.current = rec;
@@ -142,7 +156,7 @@ export function Speak({
 
   return (
     <PartShell unitId={unit.id} progress={index / lines.length}>
-      <p className="muted text-sm font-extrabold tracking-wide uppercase">
+      <p className="muted text-sm font-extrabold">
         Say it {index + 1}/{lines.length}: listen, record, compare
       </p>
       <div className="card flex flex-col gap-2">
@@ -155,7 +169,7 @@ export function Speak({
       <button
         type="button"
         onClick={recording ? () => stopAll() : record}
-        className={`btn btn-solid py-5 text-lg ${recording ? "[--c:#d61f1f] [--edge:#a51515]" : "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]"}`}
+        className={`btn btn-solid py-5 text-lg ${recording ? "[--c:#d63c3c]" : "[--c:var(--brand-fill)]"}`}
       >
         {recording ? "⏹ Stop" : mine ? "🎙 Record again" : "🎙 Record yourself"}
       </button>
@@ -169,6 +183,13 @@ export function Speak({
             ▶ Model
           </button>
         </div>
+      )}
+      {!canCheck && (
+        <p className="muted text-sm">
+          Speech-to-text isn't available in this app on your phone (iOS often leaves it out of
+          home-screen apps). Recording and comparing works; for a transcript, open this page in
+          Safari with Siri & Dictation on.
+        </p>
       )}
       {canCheck && !recording && (
         <button

@@ -1,0 +1,542 @@
+{
+ "id": "b2-s02",
+ "cefr": "B2",
+ "kind": "story",
+ "title": "A news report with an interview",
+ "situation": "A longer text to understand",
+ "canDo": "You can follow a radio news report with an interview and tell apart what the reporter reports and what the people themselves say.",
+ "explanation": "A regional radio station reports from Kleinwiesenau, a village in Brandenburg where the last supermarket closed. Now the residents run their own shop, open day and night, without any staff. The reporter talks to the man who started it. News reports use a lot of reported speech in Konjunktiv I (*er sagte, er habe …*); in the interview you hear normal spoken German.\n\n| German | English |\n|---|---|\n| der Dorfladen, ¨- | village shop |\n| die Genossenschaft, -en | cooperative |\n| ohne Personal | unstaffed |\n| aussterben | to die out |\n| angewiesen sein auf + Akk. | to depend on |\n| klauen (informal) | to steal |\n| der Umsatz, ¨-e | sales, turnover |\n| die Kosten decken | to cover the costs |\n| zurechtkommen mit | to cope with |",
+ "french": "",
+ "examples": [
+  {
+   "de": "Der letzte Supermarkt des Dorfes hatte vor drei Jahren geschlossen.",
+   "en": "The village's last supermarket had closed three years earlier."
+  },
+  {
+   "de": "Er sagte, er habe nicht länger zusehen wollen, wie das Dorf ausstirbt.",
+   "en": "He said he hadn't wanted to watch the village die any longer."
+  },
+  {
+   "de": "Wer kein Auto hatte, war auf die Nachbarn angewiesen.",
+   "en": "Anyone without a car depended on their neighbours."
+  },
+  {
+   "de": "Viele sagten, das funktioniere nie.",
+   "en": "Many people said it would never work."
+  },
+  {
+   "de": "Alles, was wir verkaufen, kommt aus der Region.",
+   "en": "Everything we sell comes from the region."
+  },
+  {
+   "de": "Wir machen gerade so viel Umsatz, dass wir die Kosten decken.",
+   "en": "We make just enough sales to cover our costs."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-s02-01",
+   "type": "choice",
+   "de": "Bis vor Kurzem musste man zwölf Kilometer ___, um Brot zu kaufen.",
+   "options": [
+    "laufen",
+    "fahren",
+    "fliegen"
+   ],
+   "answer": 1,
+   "why": "The reporter says people had to drive twelve kilometres.",
+   "en": "Until recently you had to drive twelve kilometres to buy bread."
+  },
+  {
+   "id": "b2-s02-02",
+   "type": "cloze",
+   "de": "Der Laden gehört einer ___, die Einwohner sind Mitglieder.",
+   "base": "cooperative",
+   "answers": [
+    "Genossenschaft"
+   ],
+   "en": "The shop belongs to a cooperative; the residents are members."
+  },
+  {
+   "id": "b2-s02-03",
+   "type": "choice",
+   "de": "Der Laden ist rund um die Uhr ___.",
+   "options": [
+    "eröffnet",
+    "offenbar",
+    "geöffnet"
+   ],
+   "answer": 2,
+   "why": "geöffnet means open; eröffnet means opened for the first time.",
+   "en": "The shop is open around the clock."
+  },
+  {
+   "id": "b2-s02-04",
+   "type": "cloze",
+   "de": "Bezahlt ___ per App oder an der Kasse zum Selbstscannen.",
+   "base": "werden",
+   "answers": [
+    "wird"
+   ],
+   "en": "You pay by app or at the self-checkout."
+  },
+  {
+   "id": "b2-s02-05",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "sagte",
+    "er",
+    "habe",
+    "nicht länger",
+    "zusehen wollen"
+   ],
+   "answers": [
+    "Er sagte, er habe nicht länger zusehen wollen."
+   ],
+   "en": "He said he hadn't wanted to watch any longer."
+  },
+  {
+   "id": "b2-s02-06",
+   "type": "choice",
+   "de": "Wer kein Auto hatte, war auf die Nachbarn ___.",
+   "options": [
+    "abhängig",
+    "angewiesen",
+    "angewendet"
+   ],
+   "answer": 1,
+   "why": "angewiesen sein auf means to depend on; abhängig takes von.",
+   "en": "Anyone without a car depended on their neighbours."
+  },
+  {
+   "id": "b2-s02-07",
+   "type": "cloze",
+   "de": "Die meisten sagten, da werde doch alles ___.",
+   "base": "stolen",
+   "answers": [
+    "geklaut",
+    "gestohlen"
+   ],
+   "en": "Most people said everything would be stolen."
+  },
+  {
+   "id": "b2-s02-08",
+   "type": "choice",
+   "de": "Viele ___ die Idee am Anfang für verrückt.",
+   "options": [
+    "fanden",
+    "hielten",
+    "dachten"
+   ],
+   "answer": 1,
+   "why": "etwas für verrückt halten means to think something is crazy; finden takes no für.",
+   "en": "At first many people thought the idea was crazy."
+  },
+  {
+   "id": "b2-s02-09",
+   "type": "cloze",
+   "de": "Im ersten halben Jahr hat der Laden Waren für etwa 200 Euro ___.",
+   "base": "lost",
+   "answers": [
+    "verloren"
+   ],
+   "en": "In the first six months the shop lost goods worth about 200 euros."
+  },
+  {
+   "id": "b2-s02-10",
+   "type": "order",
+   "tiles": [
+    "Daraus",
+    "ist",
+    "ein richtiger Treffpunkt",
+    "geworden"
+   ],
+   "answers": [
+    "Daraus ist ein richtiger Treffpunkt geworden.",
+    "Ein richtiger Treffpunkt ist daraus geworden."
+   ],
+   "en": "It has turned into a real meeting place."
+  },
+  {
+   "id": "b2-s02-11",
+   "type": "choice",
+   "de": "___ ich mich besonders freue: Der Laden ist ein Treffpunkt geworden.",
+   "options": [
+    "Was",
+    "Darüber",
+    "Worüber"
+   ],
+   "answer": 2,
+   "why": "sich freuen über becomes worüber at the start of the clause.",
+   "en": "What I'm especially happy about: the shop has become a meeting place."
+  },
+  {
+   "id": "b2-s02-12",
+   "type": "cloze",
+   "de": "Der Laden macht gerade so viel ___, dass er die Kosten deckt.",
+   "base": "sales",
+   "answers": [
+    "Umsatz"
+   ],
+   "en": "The shop makes just enough sales to cover its costs."
+  },
+  {
+   "id": "b2-s02-13",
+   "type": "choice",
+   "de": "Alles, ___ im Laden verkauft wird, kommt aus der Region.",
+   "options": [
+    "was",
+    "das",
+    "welches"
+   ],
+   "answer": 0,
+   "why": "After alles, the relative pronoun is was.",
+   "en": "Everything that is sold in the shop comes from the region."
+  },
+  {
+   "id": "b2-s02-14",
+   "type": "cloze",
+   "de": "Wie kommen ältere Menschen mit der Technik ___?",
+   "base": "zurechtkommen",
+   "answers": [
+    "zurecht"
+   ],
+   "en": "How do older people cope with the technology?"
+  },
+  {
+   "id": "b2-s02-15",
+   "type": "order",
+   "tiles": [
+    "Gewinn",
+    "ist",
+    "nicht",
+    "das Ziel"
+   ],
+   "answers": [
+    "Gewinn ist nicht das Ziel.",
+    "Das Ziel ist nicht Gewinn."
+   ],
+   "en": "Profit isn't the aim."
+  },
+  {
+   "id": "b2-s02-16",
+   "type": "choice",
+   "de": "Eine Bewohnerin sagte, sie ___ sich ein Leben ohne den Laden nicht mehr vorstellen.",
+   "options": [
+    "könnten",
+    "können",
+    "könne"
+   ],
+   "answer": 2,
+   "why": "Reported speech in the news uses Konjunktiv I: sie könne.",
+   "en": "A resident said she could no longer imagine life without the shop."
+  },
+  {
+   "id": "b2-s02-17",
+   "type": "cloze",
+   "de": "Die Idee ___ von Gerd Wollny, einem pensionierten Lehrer.",
+   "base": "to come from",
+   "answers": [
+    "stammt",
+    "kommt"
+   ],
+   "en": "The idea comes from Gerd Wollny, a retired teacher."
+  },
+  {
+   "id": "b2-s02-18",
+   "type": "choice",
+   "de": "Herr Wollny ist ein ___ Lehrer.",
+   "options": [
+    "pensionierte",
+    "pensionierter",
+    "pensioniertes"
+   ],
+   "answer": 1,
+   "why": "After ein with a masculine noun in the nominative, the adjective ends in -er.",
+   "en": "Mr Wollny is a retired teacher."
+  },
+  {
+   "id": "b2-s02-19",
+   "type": "order",
+   "tiles": [
+    "Wer",
+    "kein Auto",
+    "hatte",
+    "war",
+    "auf die Nachbarn",
+    "angewiesen"
+   ],
+   "answers": [
+    "Wer kein Auto hatte, war auf die Nachbarn angewiesen."
+   ],
+   "en": "Anyone without a car depended on their neighbours."
+  },
+  {
+   "id": "b2-s02-20",
+   "type": "cloze",
+   "de": "Früher hat mich mein Sohn jeden Samstag zum ___ gefahren.",
+   "base": "shopping",
+   "answers": [
+    "Einkaufen"
+   ],
+   "en": "My son used to drive me to the shops every Saturday."
+  },
+  {
+   "id": "b2-s02-21",
+   "type": "choice",
+   "de": "Ohne den Laden würde das Dorf langsam ___.",
+   "options": [
+    "aussterben",
+    "ausfallen",
+    "absterben"
+   ],
+   "answer": 0,
+   "why": "aussterben (to die out) is used for villages; absterben is for plants or cells.",
+   "en": "Without the shop the village would slowly die out."
+  },
+  {
+   "id": "b2-s02-22",
+   "type": "cloze",
+   "de": "Rund 150 Einwohner haben sich an der Genossenschaft ___.",
+   "base": "taken part (beteiligen)",
+   "answers": [
+    "beteiligt"
+   ],
+   "en": "Around 150 residents have taken part in the cooperative."
+  },
+  {
+   "id": "b2-s02-23",
+   "type": "choice",
+   "de": "Jeden Dienstag ist eine Stunde lang jemand im Laden, ___ beim Bezahlen hilft.",
+   "options": [
+    "wer",
+    "der",
+    "was"
+   ],
+   "answer": 1,
+   "why": "After jemand, the relative pronoun is der; wer is not used as a relative pronoun after a pronoun like this.",
+   "en": "Every Tuesday someone is in the shop for an hour who helps with paying."
+  },
+  {
+   "id": "b2-s02-24",
+   "type": "order",
+   "tiles": [
+    "Alles",
+    "was",
+    "wir",
+    "verkaufen",
+    "kommt",
+    "aus der Region"
+   ],
+   "answers": [
+    "Alles, was wir verkaufen, kommt aus der Region."
+   ],
+   "en": "Everything we sell comes from the region."
+  }
+ ],
+ "listening": {
+  "title": "Ein Laden ohne Personal",
+  "intro": "A regional radio news programme reports on a village shop without staff and interviews the man who started it.",
+  "lines": [
+   {
+    "speaker": "Anna",
+    "de": "Guten Abend. Wer in Kleinwiesenau in der Uckermark Milch oder Brot kaufen wollte, musste bis vor Kurzem zwölf Kilometer fahren.",
+    "en": "Good evening. Until recently, anyone in Kleinwiesenau in the Uckermark who wanted to buy milk or bread had to drive twelve kilometres."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Der letzte Supermarkt des Dorfes hatte vor drei Jahren geschlossen, und der Bus fährt nur zweimal am Tag.",
+    "en": "The village's last supermarket had closed three years earlier, and the bus only runs twice a day."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Seit diesem Frühjahr gibt es nun einen Dorfladen, der rund um die Uhr geöffnet ist – ohne Personal. Bezahlt wird per App oder an einer Kasse zum Selbstscannen.",
+    "en": "Since this spring there has been a village shop that is open around the clock – without staff. You pay by app or at a self-checkout."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Die Idee stammt von Gerd Wollny, einem pensionierten Lehrer. Er sagte unserem Sender, er habe nicht länger zusehen wollen, wie das Dorf ausstirbt.",
+    "en": "The idea comes from Gerd Wollny, a retired teacher. He told our station he hadn't wanted to watch the village die any longer."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Rund 150 Einwohner hätten sich an der Genossenschaft beteiligt, jeder mit mindestens 100 Euro. Ich habe Herrn Wollny vor Ort getroffen.",
+    "en": "He said around 150 residents had taken part in the cooperative, each with at least 100 euros. I met Mr Wollny there."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Herr Wollny, wie kam es zu dem Laden?",
+    "en": "Mr Wollny, how did the shop come about?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Na ja, als der Supermarkt zugemacht hat, war das für viele Ältere eine Katastrophe. Wer kein Auto hatte, war plötzlich auf die Nachbarn angewiesen.",
+    "en": "Well, when the supermarket closed, it was a disaster for many older people. Anyone without a car suddenly depended on their neighbours."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Und dann hatten Sie die Idee mit dem Laden ohne Personal?",
+    "en": "And then you had the idea of a shop without staff?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Ich hatte im Fernsehen einen Bericht über so einen Laden in Schleswig-Holstein gesehen. Da dachte ich: Was die können, können wir auch.",
+    "en": "I'd seen a TV report about a shop like that in Schleswig-Holstein. I thought: if they can do it, so can we."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Viele hielten das am Anfang für verrückt, oder?",
+    "en": "At first many people thought it was crazy, didn't they?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Oh ja. Die meisten haben gesagt, das funktioniere nie, da werde doch alles geklaut.",
+    "en": "Oh yes. Most people said it would never work, everything would get stolen."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Und? Wird geklaut?",
+    "en": "And? Do things get stolen?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Kaum. Im ersten halben Jahr haben wir Waren für vielleicht 200 Euro verloren. Das ist viel weniger, als ich befürchtet hatte.",
+    "en": "Hardly. In the first six months we lost goods worth maybe 200 euros. That's much less than I had feared."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Wie kommen ältere Menschen mit der Technik zurecht?",
+    "en": "How do older people cope with the technology?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Das war unsere größte Sorge. Deshalb ist jeden Dienstagnachmittag eine Stunde lang jemand von uns im Laden und hilft. Worüber ich mich besonders freue: Daraus ist ein richtiger Treffpunkt geworden. Die Leute trinken Kaffee und reden.",
+    "en": "That was our biggest worry. So every Tuesday afternoon one of us is in the shop for an hour and helps. What I'm especially happy about: it has turned into a real meeting place. People drink coffee and chat."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Ist der Laden auch wirtschaftlich erfolgreich?",
+    "en": "Is the shop also a financial success?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Noch nicht ganz. Wir machen gerade so viel Umsatz, dass wir die Kosten decken. Aber Gewinn ist auch nicht das Ziel.",
+    "en": "Not quite yet. We make just enough sales to cover our costs. But profit isn't the aim anyway."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Was wünschen Sie sich für die Zukunft?",
+    "en": "What do you hope for in the future?"
+   },
+   {
+    "speaker": "Gerd",
+    "de": "Dass mehr Jüngere bei uns einkaufen, statt auf dem Heimweg in den Supermarkt in der Stadt zu gehen. Alles, was wir verkaufen, kommt aus der Region: Eier, Honig, Gemüse.",
+    "en": "That more young people shop with us instead of going to the supermarket in town on their way home. Everything we sell comes from the region: eggs, honey, vegetables."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Herr Wollny, vielen Dank für das Gespräch.",
+    "en": "Mr Wollny, thank you very much for talking to us."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Auch eine Bewohnerin, die wir vor dem Laden trafen, ist begeistert.",
+    "en": "A resident we met outside the shop is also delighted."
+   },
+   {
+    "speaker": "Erna",
+    "de": "Früher hat mich mein Sohn jeden Samstag zum Einkaufen gefahren. Jetzt gehe ich einfach rüber, wann ich will. Ein Leben ohne den Laden kann ich mir gar nicht mehr vorstellen.",
+    "en": "My son used to drive me to the shops every Saturday. Now I just pop over whenever I want. I can't imagine life without the shop any more."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Der Landkreis teilte inzwischen mit, zwei weitere Dörfer würden bereits eigene Läden nach dem Vorbild von Kleinwiesenau planen.",
+    "en": "The district has since announced that two more villages are already planning their own shops modelled on Kleinwiesenau."
+   },
+   {
+    "speaker": "Anna",
+    "de": "Das war unser Bericht aus der Uckermark. Und nun zum Wetter.",
+    "en": "That was our report from the Uckermark. And now for the weather."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum gibt es in Kleinwiesenau einen neuen Laden?",
+    "options": [
+     "Der alte Laden war zu teuer.",
+     "Der letzte Supermarkt hatte vor drei Jahren geschlossen.",
+     "Die Stadt hat ihn gebaut."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wie bezahlt man im Dorfladen?",
+    "options": [
+     "Bar bei einem Verkäufer.",
+     "Nur mit Kreditkarte.",
+     "Per App oder an einer Kasse zum Selbstscannen."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was haben viele Leute am Anfang befürchtet?",
+    "options": [
+     "Dass alles geklaut wird.",
+     "Dass niemand einkauft.",
+     "Dass die Preise zu hoch sind."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was passiert jeden Dienstagnachmittag?",
+    "options": [
+     "Neue Waren kommen an.",
+     "Jemand aus der Genossenschaft hilft im Laden.",
+     "Der Laden ist geschlossen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was wünscht sich Herr Wollny für die Zukunft?",
+    "options": [
+     "Mehr Gewinn.",
+     "Einen zweiten Laden in der Stadt.",
+     "Dass mehr Jüngere im Dorfladen einkaufen."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Der letzte Supermarkt des Dorfes hatte vor drei Jahren geschlossen.",
+  "Viele sagten, das funktioniere nie, da werde doch alles geklaut.",
+  "Alles, was im Laden verkauft wird, kommt aus der Region."
+ ],
+ "speaking": [
+  {
+   "de": "Wer kein Auto hatte, war plötzlich auf die Nachbarn angewiesen.",
+   "en": "Anyone without a car suddenly depended on their neighbours."
+  },
+  {
+   "de": "Was die können, können wir auch.",
+   "en": "If they can do it, so can we."
+  },
+  {
+   "de": "Das ist viel weniger, als ich befürchtet hatte.",
+   "en": "That's much less than I had feared."
+  },
+  {
+   "de": "Worüber ich mich besonders freue: Daraus ist ein richtiger Treffpunkt geworden.",
+   "en": "What I'm especially happy about: it has turned into a real meeting place."
+  },
+  {
+   "de": "Ein Leben ohne den Laden kann ich mir gar nicht mehr vorstellen.",
+   "en": "I can't imagine life without the shop any more."
+  }
+ ],
+ "writing": {
+  "task": "Write a letter of 100–130 words to the radio station about the report. Say what you think of the idea, whether a shop like this would work where you live, and report one thing Mr Wollny said, using Konjunktiv I.",
+  "model": "Liebe Redaktion,\n\nmit großem Interesse habe ich Ihren Bericht über den Dorfladen in Kleinwiesenau gehört.\n\nHerr Wollny sagte, viele hätten die Idee am Anfang für verrückt gehalten und befürchtet, dass alles geklaut werde. Umso schöner finde ich, dass der Laden heute funktioniert und sogar ein Treffpunkt geworden ist. Genau das, was auf dem Land oft fehlt.\n\nIch wohne in einem kleinen Ort bei Kassel, in dem es seit Jahren keinen Bäcker mehr gibt. Bei uns könnte so ein Laden auch funktionieren, denn viele Ältere haben kein Auto. Allerdings wäre die Technik für manche sicher ein Problem. Eine Stunde Hilfe pro Woche, wie in Kleinwiesenau, wäre deshalb eine gute Lösung.\n\nMit freundlichen Grüßen\nJonas Krüger"
+ }
+}

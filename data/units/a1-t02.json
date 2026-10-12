@@ -1,0 +1,501 @@
+{
+ "id": "a1-t02",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "das Brot",
+  "das Brötchen",
+  "der Kuchen",
+  "der Kaffee",
+  "der Tee",
+  "das Wasser",
+  "die Milch",
+  "der Saft",
+  "das Ei",
+  "die Butter",
+  "der Käse",
+  "die Wurst",
+  "die Marmelade",
+  "der Zucker",
+  "das Frühstück",
+  "frühstücken",
+  "das Getränk",
+  "das Essen",
+  "essen",
+  "trinken",
+  "bestellen",
+  "bezahlen",
+  "zahlen",
+  "die Bäckerei",
+  "das Café",
+  "der Hunger",
+  "der Durst",
+  "der Appetit",
+  "die Speisekarte",
+  "schmecken"
+ ],
+ "title": "Food and drinks",
+ "situation": "At the bakery and the café",
+ "canDo": "I can name common breakfast foods and drinks, order at a bakery or café and pay.",
+ "explanation": "At the bakery (**die Bäckerei**) and the café you need the names of food and drinks and a few set phrases.\n\n| German | English |\n|---|---|\n| das Brot, -e / das Brötchen, - | bread / bread roll |\n| der Kuchen, - | cake |\n| das Ei, -er | egg |\n| die Butter / der Käse / die Wurst | butter / cheese / cold meat, sausage |\n| die Marmelade, -n | jam |\n| der Kaffee / der Tee / die Milch | coffee / tea / milk |\n| das Wasser / der Saft, Säfte | water / juice |\n\n| Phrase | English |\n|---|---|\n| Ich möchte zwei Brötchen, bitte. | I'd like two rolls, please. |\n| Für hier oder zum Mitnehmen? | For here or to take away? |\n| Was kostet das? | How much is that? |\n| Zahlen, bitte! / Ich zahle mit Karte. | The bill, please! / I'll pay by card. |\n| Ich habe Hunger / Durst. | I'm hungry / thirsty. |\n| Guten Appetit! | Enjoy your meal! |\n\nTips:\n- Food and drinks you can't count need no article: *Ich trinke Kaffee. Ich esse Brot mit Butter.*\n- **Das Brötchen** is the typical German roll (in the south: *die Semmel*). The plural is the same: *ein Brötchen, zwei Brötchen*.\n- **Marmelade** is any jam, not only orange marmalade.\n- To say food tastes good, use **schmecken**: *Der Kuchen schmeckt super!*\n- Say *Ich möchte …* to order; *Ich will …* sounds rude.",
+ "french": "Like French j'ai faim and j'ai soif, German uses haben: Ich habe Hunger, ich habe Durst, rarely ich bin hungrig in everyday speech.",
+ "examples": [
+  {
+   "de": "Ich möchte zwei Brötchen, bitte.",
+   "en": "I'd like two rolls, please."
+  },
+  {
+   "de": "Ich trinke Kaffee mit Milch und Zucker.",
+   "en": "I drink coffee with milk and sugar."
+  },
+  {
+   "de": "Zum Frühstück esse ich Brot mit Butter und Marmelade.",
+   "en": "For breakfast I eat bread with butter and jam."
+  },
+  {
+   "de": "Für hier oder zum Mitnehmen? – Zum Mitnehmen, bitte.",
+   "en": "For here or to take away? – To take away, please."
+  },
+  {
+   "de": "Ich habe Durst.",
+   "en": "I'm thirsty."
+  },
+  {
+   "de": "Wir frühstücken am Sonntag zusammen.",
+   "en": "We have breakfast together on Sunday."
+  },
+  {
+   "de": "Der Kuchen schmeckt sehr gut.",
+   "en": "The cake tastes very good."
+  },
+  {
+   "de": "Zahlen, bitte!",
+   "en": "The bill, please!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t02-01",
+   "type": "cloze",
+   "de": "Ich trinke ___ mit Milch.",
+   "base": "coffee",
+   "answers": [
+    "Kaffee"
+   ],
+   "en": "I drink coffee with milk."
+  },
+  {
+   "id": "a1-t02-02",
+   "type": "cloze",
+   "de": "Zum Frühstück esse ich Brot mit ___.",
+   "base": "butter",
+   "answers": [
+    "Butter"
+   ],
+   "en": "For breakfast I eat bread with butter."
+  },
+  {
+   "id": "a1-t02-03",
+   "type": "choice",
+   "de": "Ich habe ___. Ich trinke Wasser.",
+   "options": [
+    "Hunger",
+    "Durst",
+    "Appetit"
+   ],
+   "answer": 1,
+   "why": "When you need a drink, you're thirsty: Durst; Hunger is for food.",
+   "en": "I'm thirsty. I'm drinking water."
+  },
+  {
+   "id": "a1-t02-04",
+   "type": "order",
+   "tiles": [
+    "zwei Brötchen",
+    "Ich möchte",
+    "bitte"
+   ],
+   "answers": [
+    "Ich möchte zwei Brötchen, bitte.",
+    "Ich möchte bitte zwei Brötchen."
+   ],
+   "en": "I'd like two rolls, please."
+  },
+  {
+   "id": "a1-t02-05",
+   "type": "cloze",
+   "de": "Ich trinke ___ mit Zitrone.",
+   "base": "tea",
+   "answers": [
+    "Tee"
+   ],
+   "en": "I drink tea with lemon."
+  },
+  {
+   "id": "a1-t02-06",
+   "type": "choice",
+   "de": "Zwei ___ mit Käse, bitte.",
+   "options": [
+    "Kuchen",
+    "Brötchen",
+    "Säfte"
+   ],
+   "answer": 1,
+   "why": "You put cheese in a roll, das Brötchen; Kuchen is sweet cake and Säfte are drinks.",
+   "en": "Two rolls with cheese, please."
+  },
+  {
+   "id": "a1-t02-07",
+   "type": "cloze",
+   "de": "Wir ___ am Sonntag um zehn.",
+   "base": "to have breakfast",
+   "answers": [
+    "frühstücken"
+   ],
+   "en": "We have breakfast at ten on Sunday."
+  },
+  {
+   "id": "a1-t02-08",
+   "type": "choice",
+   "de": "___, bitte! – Zusammen oder getrennt?",
+   "options": [
+    "Zahlen",
+    "Bestellen",
+    "Trinken"
+   ],
+   "answer": 0,
+   "why": "To ask for the bill you say 'Zahlen, bitte!'; the waiter then asks if you pay together or separately.",
+   "en": "The bill, please! – Together or separately?"
+  },
+  {
+   "id": "a1-t02-09",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "Was",
+    "trinken",
+    "gern"
+   ],
+   "answers": [
+    "Was trinken Sie gern?"
+   ],
+   "en": "What do you like to drink?"
+  },
+  {
+   "id": "a1-t02-10",
+   "type": "cloze",
+   "de": "Ich esse ___ mit Marmelade.",
+   "base": "bread",
+   "answers": [
+    "Brot"
+   ],
+   "en": "I eat bread with jam."
+  },
+  {
+   "id": "a1-t02-11",
+   "type": "choice",
+   "de": "Ich trinke ein Glas ___.",
+   "options": [
+    "Kuchen",
+    "Saft",
+    "Käse"
+   ],
+   "answer": 1,
+   "why": "You drink a glass of juice; Kuchen and Käse are food.",
+   "en": "I drink a glass of juice."
+  },
+  {
+   "id": "a1-t02-12",
+   "type": "cloze",
+   "de": "Das ___ hier ist sehr gut.",
+   "base": "food",
+   "answers": [
+    "Essen"
+   ],
+   "en": "The food here is very good."
+  },
+  {
+   "id": "a1-t02-13",
+   "type": "choice",
+   "de": "Für hier oder zum ___?",
+   "options": [
+    "Nehmen",
+    "Mitnehmen",
+    "Mitbringen"
+   ],
+   "answer": 1,
+   "why": "The set phrase is 'zum Mitnehmen' = to take away.",
+   "en": "For here or to take away?"
+  },
+  {
+   "id": "a1-t02-14",
+   "type": "order",
+   "tiles": [
+    "kostet",
+    "Was",
+    "der Kuchen"
+   ],
+   "answers": [
+    "Was kostet der Kuchen?"
+   ],
+   "en": "How much is the cake?"
+  },
+  {
+   "id": "a1-t02-15",
+   "type": "cloze",
+   "de": "Ich ___ mit Karte.",
+   "base": "to pay",
+   "answers": [
+    "zahle",
+    "bezahle"
+   ],
+   "en": "I'm paying by card."
+  },
+  {
+   "id": "a1-t02-16",
+   "type": "choice",
+   "de": "Der Kuchen ___ sehr gut!",
+   "options": [
+    "isst",
+    "schmeckt",
+    "trinkt"
+   ],
+   "answer": 1,
+   "why": "To say food tastes good, use schmecken: Das schmeckt gut.",
+   "en": "The cake tastes very good!"
+  },
+  {
+   "id": "a1-t02-17",
+   "type": "cloze",
+   "de": "Entschuldigung, wir möchten ___.",
+   "base": "to order",
+   "answers": [
+    "bestellen"
+   ],
+   "en": "Excuse me, we'd like to order."
+  },
+  {
+   "id": "a1-t02-18",
+   "type": "choice",
+   "de": "In der ___ kaufe ich Brot und Brötchen.",
+   "options": [
+    "Bäckerei",
+    "Bank",
+    "Apotheke"
+   ],
+   "answer": 0,
+   "why": "Bread and rolls come from the bakery: die Bäckerei.",
+   "en": "I buy bread and rolls at the bakery."
+  },
+  {
+   "id": "a1-t02-19",
+   "type": "order",
+   "tiles": [
+    "mit Milch",
+    "Ich",
+    "Kaffee",
+    "trinke",
+    "und Zucker"
+   ],
+   "answers": [
+    "Ich trinke Kaffee mit Milch und Zucker.",
+    "Kaffee trinke ich mit Milch und Zucker.",
+    "Mit Milch und Zucker trinke ich Kaffee."
+   ],
+   "en": "I drink coffee with milk and sugar."
+  },
+  {
+   "id": "a1-t02-20",
+   "type": "cloze",
+   "de": "Ich habe ___. Ich möchte ein Brötchen.",
+   "base": "hunger",
+   "answers": [
+    "Hunger"
+   ],
+   "en": "I'm hungry. I'd like a roll."
+  },
+  {
+   "id": "a1-t02-21",
+   "type": "choice",
+   "de": "Möchten Sie ein ___? – Ja, einen Orangensaft, bitte.",
+   "options": [
+    "Essen",
+    "Frühstück",
+    "Getränk"
+   ],
+   "answer": 2,
+   "why": "Orange juice is a drink: das Getränk.",
+   "en": "Would you like a drink? – Yes, an orange juice, please."
+  },
+  {
+   "id": "a1-t02-22",
+   "type": "cloze",
+   "de": "Die ___, bitte. – Hier, bitte.",
+   "base": "menu",
+   "answers": [
+    "Speisekarte",
+    "Karte"
+   ],
+   "en": "The menu, please. – Here you are."
+  },
+  {
+   "id": "a1-t02-23",
+   "type": "order",
+   "tiles": [
+    "Hunger",
+    "Ich",
+    "habe",
+    "und",
+    "Durst"
+   ],
+   "answers": [
+    "Ich habe Hunger und Durst.",
+    "Ich habe Durst und Hunger."
+   ],
+   "en": "I'm hungry and thirsty."
+  },
+  {
+   "id": "a1-t02-24",
+   "type": "order",
+   "tiles": [
+    "zum Mitnehmen",
+    "Zwei Brötchen",
+    "bitte",
+    "und",
+    "zwei Croissants"
+   ],
+   "answers": [
+    "Zwei Brötchen und zwei Croissants zum Mitnehmen, bitte.",
+    "Zwei Croissants und zwei Brötchen zum Mitnehmen, bitte.",
+    "Bitte zwei Brötchen und zwei Croissants zum Mitnehmen.",
+    "Bitte zwei Croissants und zwei Brötchen zum Mitnehmen."
+   ],
+   "en": "Two rolls and two croissants to take away, please."
+  }
+ ],
+ "listening": {
+  "title": "In der Bäckerei",
+  "intro": "Marc stops at a bakery café on his way to work and orders from Lena.",
+  "lines": [
+   {
+    "speaker": "Lena",
+    "de": "Guten Morgen! Was möchten Sie?",
+    "en": "Good morning! What would you like?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Guten Morgen. Ich möchte zwei Brötchen und ein Croissant, bitte.",
+    "en": "Good morning. I'd like two rolls and a croissant, please."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Gern. Und zu trinken?",
+    "en": "Sure. And to drink?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Einen Kaffee mit Milch, bitte. Ohne Zucker.",
+    "en": "A coffee with milk, please. No sugar."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Für hier oder zum Mitnehmen?",
+    "en": "For here or to take away?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Für hier. Und ein Stück Käsekuchen, bitte. Ich habe Hunger!",
+    "en": "For here. And a piece of cheesecake, please. I'm hungry!"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Der Käsekuchen ist heute sehr gut. Das macht acht Euro zwanzig.",
+    "en": "The cheesecake is very good today. That's eight euros twenty."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ich zahle mit Karte.",
+    "en": "I'll pay by card."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Kein Problem. Guten Appetit!",
+    "en": "No problem. Enjoy your meal!"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Danke! Hm, der Kuchen schmeckt super.",
+    "en": "Thanks! Mm, the cake tastes great."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many rolls does Marc order?",
+    "options": [
+     "one",
+     "two",
+     "three"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does he take his coffee?",
+    "options": [
+     "with milk and sugar",
+     "black",
+     "with milk, no sugar"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Where does he eat?",
+    "options": [
+     "at the bakery",
+     "at home",
+     "at work"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How much does he pay?",
+    "options": [
+     "€2.80",
+     "€8.20",
+     "€12.80"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte zwei Brötchen, bitte.",
+  "Ich trinke Kaffee mit Milch.",
+  "Der Kuchen schmeckt sehr gut."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte zwei Brötchen, bitte.",
+   "en": "I'd like two rolls, please."
+  },
+  {
+   "de": "Einen Kaffee mit Milch, bitte.",
+   "en": "A coffee with milk, please."
+  },
+  {
+   "de": "Für hier, bitte.",
+   "en": "For here, please."
+  },
+  {
+   "de": "Ich zahle mit Karte.",
+   "en": "I'll pay by card."
+  },
+  {
+   "de": "Der Kuchen schmeckt super.",
+   "en": "The cake tastes great."
+  }
+ ],
+ "writing": {
+  "task": "Write a short message (3–4 sentences) to a friend about your breakfast: what you eat and drink and what tastes good.",
+  "model": "Hallo Anna! Ich frühstücke gerade. Ich esse Brot mit Butter und Marmelade. Ich trinke Kaffee mit Milch. Das schmeckt super! Was frühstückst du?"
+ }
+}

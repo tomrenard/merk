@@ -3,14 +3,15 @@
 import { and, eq, gte, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { UNITS } from "@/lib/course";
+import { COURSE, UNITS } from "@/lib/course";
 import { markKnown, startUnitCards } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { wordBands } from "./data";
 
 /**
- * Applies a placement result: units before `startUnit` count as done (kind "placement", each
- * with a review card so gaps show up), and, if asked, known words are scheduled weeks out:
+ * Applies a placement result: lessons before `startUnit` (course order) count as done (kind
+ * "placement", each with a review card so gaps show up), and so do the exams of parts skipped
+ * whole. If asked, known words are scheduled weeks out:
  * whole bands the test is confident about plus each word confirmed by a meaning check.
  */
 export async function applyPlacement(input: {
@@ -50,6 +51,20 @@ export async function applyPlacement(input: {
         done.map((unit) => ({ userId, kind: "placement", ref: unit.id, score: 1, total: 1 })),
       );
     await startUnitCards(userId, done, 27);
+    const skipped = COURSE.filter((part) => part.units.every((u) => done.includes(u)));
+    const exams = skipped.flatMap((part) => part.exams);
+    if (exams.length)
+      await db()
+        .insert(activityLogs)
+        .values(
+          exams.map((exam) => ({
+            userId,
+            kind: "placement",
+            ref: `exam:${exam.id}`,
+            score: 1,
+            total: 1,
+          })),
+        );
   }
   if (input.markWords) {
     const bands = await wordBands();

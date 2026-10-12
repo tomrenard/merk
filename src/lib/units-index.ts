@@ -20,6 +20,16 @@ import ua1_17 from "../../data/units/a1-17.json";
 import ua1_18 from "../../data/units/a1-18.json";
 import ua1_19 from "../../data/units/a1-19.json";
 import ua1_20 from "../../data/units/a1-20.json";
+import ua1_t01 from "../../data/units/a1-t01.json";
+import ua1_t02 from "../../data/units/a1-t02.json";
+import ua1_t03 from "../../data/units/a1-t03.json";
+import ua1_t04 from "../../data/units/a1-t04.json";
+import ua1_t05 from "../../data/units/a1-t05.json";
+import ua1_t06 from "../../data/units/a1-t06.json";
+import ua1_t07 from "../../data/units/a1-t07.json";
+import ua1_t08 from "../../data/units/a1-t08.json";
+import ua1_t09 from "../../data/units/a1-t09.json";
+import ua1_t10 from "../../data/units/a1-t10.json";
 import ua2_01 from "../../data/units/a2-01.json";
 import ua2_02 from "../../data/units/a2-02.json";
 import ua2_03 from "../../data/units/a2-03.json";
@@ -40,6 +50,16 @@ import ua2_17 from "../../data/units/a2-17.json";
 import ua2_18 from "../../data/units/a2-18.json";
 import ua2_19 from "../../data/units/a2-19.json";
 import ua2_20 from "../../data/units/a2-20.json";
+import ua2_t01 from "../../data/units/a2-t01.json";
+import ua2_t02 from "../../data/units/a2-t02.json";
+import ua2_t03 from "../../data/units/a2-t03.json";
+import ua2_t04 from "../../data/units/a2-t04.json";
+import ua2_t05 from "../../data/units/a2-t05.json";
+import ua2_t06 from "../../data/units/a2-t06.json";
+import ua2_t07 from "../../data/units/a2-t07.json";
+import ua2_t08 from "../../data/units/a2-t08.json";
+import ua2_t09 from "../../data/units/a2-t09.json";
+import ua2_t10 from "../../data/units/a2-t10.json";
 import ub1_01 from "../../data/units/b1-01.json";
 import ub1_02 from "../../data/units/b1-02.json";
 import ub1_03 from "../../data/units/b1-03.json";
@@ -60,6 +80,51 @@ import ub1_17 from "../../data/units/b1-17.json";
 import ub1_18 from "../../data/units/b1-18.json";
 import ub1_19 from "../../data/units/b1-19.json";
 import ub1_20 from "../../data/units/b1-20.json";
+import ub1_s01 from "../../data/units/b1-s01.json";
+import ub1_s02 from "../../data/units/b1-s02.json";
+import ub1_s03 from "../../data/units/b1-s03.json";
+import ub1_s04 from "../../data/units/b1-s04.json";
+import ub1_s05 from "../../data/units/b1-s05.json";
+import ub1_s06 from "../../data/units/b1-s06.json";
+import ub1_s07 from "../../data/units/b1-s07.json";
+import ub1_s08 from "../../data/units/b1-s08.json";
+import ub1_s09 from "../../data/units/b1-s09.json";
+import ub1_s10 from "../../data/units/b1-s10.json";
+import ub1_t01 from "../../data/units/b1-t01.json";
+import ub1_t02 from "../../data/units/b1-t02.json";
+import ub1_t03 from "../../data/units/b1-t03.json";
+import ub1_t04 from "../../data/units/b1-t04.json";
+import ub1_t05 from "../../data/units/b1-t05.json";
+import ub1_t06 from "../../data/units/b1-t06.json";
+import ub1_t07 from "../../data/units/b1-t07.json";
+import ub1_t08 from "../../data/units/b1-t08.json";
+import ub1_t09 from "../../data/units/b1-t09.json";
+import ub1_t10 from "../../data/units/b1-t10.json";
+import ub1_t11 from "../../data/units/b1-t11.json";
+import ub1_t12 from "../../data/units/b1-t12.json";
+import ub1_t13 from "../../data/units/b1-t13.json";
+import ub1_t14 from "../../data/units/b1-t14.json";
+import ub1_t15 from "../../data/units/b1-t15.json";
+import ub2_01 from "../../data/units/b2-01.json";
+import ub2_02 from "../../data/units/b2-02.json";
+import ub2_03 from "../../data/units/b2-03.json";
+import ub2_04 from "../../data/units/b2-04.json";
+import ub2_05 from "../../data/units/b2-05.json";
+import ub2_06 from "../../data/units/b2-06.json";
+import ub2_07 from "../../data/units/b2-07.json";
+import ub2_08 from "../../data/units/b2-08.json";
+import ub2_09 from "../../data/units/b2-09.json";
+import ub2_10 from "../../data/units/b2-10.json";
+import ub2_11 from "../../data/units/b2-11.json";
+import ub2_12 from "../../data/units/b2-12.json";
+import ub2_s01 from "../../data/units/b2-s01.json";
+import ub2_s02 from "../../data/units/b2-s02.json";
+import ub2_s03 from "../../data/units/b2-s03.json";
+import ub2_t01 from "../../data/units/b2-t01.json";
+import ub2_t02 from "../../data/units/b2-t02.json";
+import ub2_t03 from "../../data/units/b2-t03.json";
+import ub2_t04 from "../../data/units/b2-t04.json";
+import ub2_t05 from "../../data/units/b2-t05.json";
 import type { Unit } from "./units";
 
 export const UNITS = [
@@ -83,6 +148,16 @@ export const UNITS = [
   ua1_18,
   ua1_19,
   ua1_20,
+  ua1_t01,
+  ua1_t02,
+  ua1_t03,
+  ua1_t04,
+  ua1_t05,
+  ua1_t06,
+  ua1_t07,
+  ua1_t08,
+  ua1_t09,
+  ua1_t10,
   ua2_01,
   ua2_02,
   ua2_03,
@@ -103,6 +178,16 @@ export const UNITS = [
   ua2_18,
   ua2_19,
   ua2_20,
+  ua2_t01,
+  ua2_t02,
+  ua2_t03,
+  ua2_t04,
+  ua2_t05,
+  ua2_t06,
+  ua2_t07,
+  ua2_t08,
+  ua2_t09,
+  ua2_t10,
   ub1_01,
   ub1_02,
   ub1_03,
@@ -123,4 +208,49 @@ export const UNITS = [
   ub1_18,
   ub1_19,
   ub1_20,
+  ub1_s01,
+  ub1_s02,
+  ub1_s03,
+  ub1_s04,
+  ub1_s05,
+  ub1_s06,
+  ub1_s07,
+  ub1_s08,
+  ub1_s09,
+  ub1_s10,
+  ub1_t01,
+  ub1_t02,
+  ub1_t03,
+  ub1_t04,
+  ub1_t05,
+  ub1_t06,
+  ub1_t07,
+  ub1_t08,
+  ub1_t09,
+  ub1_t10,
+  ub1_t11,
+  ub1_t12,
+  ub1_t13,
+  ub1_t14,
+  ub1_t15,
+  ub2_01,
+  ub2_02,
+  ub2_03,
+  ub2_04,
+  ub2_05,
+  ub2_06,
+  ub2_07,
+  ub2_08,
+  ub2_09,
+  ub2_10,
+  ub2_11,
+  ub2_12,
+  ub2_s01,
+  ub2_s02,
+  ub2_s03,
+  ub2_t01,
+  ub2_t02,
+  ub2_t03,
+  ub2_t04,
+  ub2_t05,
 ] as Unit[];

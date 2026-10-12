@@ -1,0 +1,494 @@
+{
+ "id": "a1-t04",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "die Familie",
+  "die Eltern (pl.)",
+  "die Mutter",
+  "der Vater",
+  "der Sohn",
+  "die Tochter",
+  "der Bruder",
+  "die Schwester",
+  "die Geschwister (pl.)",
+  "die Großeltern (pl.)",
+  "die Großmutter",
+  "der Großvater",
+  "die Oma",
+  "der Opa",
+  "das Kind",
+  "das Baby",
+  "der Mann",
+  "die Frau",
+  "der Ehemann",
+  "die Ehefrau",
+  "verheiratet",
+  "heiraten",
+  "das Foto",
+  "das Einzelkind",
+  "der Verwandte",
+  "die Tante",
+  "der Onkel",
+  "alt",
+  "jung",
+  "das Jahr"
+ ],
+ "title": "Family",
+ "situation": "Showing family photos",
+ "canDo": "I can name family members, show a family photo and ask and answer simple questions about someone's family.",
+ "explanation": "When you show photos on your phone, you say who is who: *Das ist mein Bruder. Das sind meine Eltern.*\n\n| German | English |\n|---|---|\n| der Vater, Väter / die Mutter, Mütter | father / mother |\n| die Eltern (pl.) | parents |\n| der Sohn, Söhne / die Tochter, Töchter | son / daughter |\n| der Bruder, Brüder / die Schwester, -n | brother / sister |\n| die Geschwister (pl.) | brothers and sisters |\n| der Großvater (Opa) / die Großmutter (Oma) | grandfather / grandmother |\n| die Großeltern (pl.) | grandparents |\n| der Onkel, - / die Tante, -n | uncle / aunt |\n| das Kind, -er / das Baby, -s | child / baby |\n\nUseful questions and answers:\n- *Hast du Geschwister?* – *Ja, ich habe einen Bruder und zwei Schwestern.* / *Nein, ich bin Einzelkind.*\n- *Hast du Kinder?* – *Ja, einen Sohn und eine Tochter.*\n- *Wie alt ist sie?* – *Sie ist acht Jahre alt.*\n- *Wer ist das auf dem Foto?*\n\nTips:\n- **Mann** and **Frau** also mean husband and wife: *Das ist mein Mann.* *Ehemann* and *Ehefrau* sound formal (forms, letters).\n- Everyone says **Oma** and **Opa**; *Großmutter* and *Großvater* are more formal.\n- **Geschwister** has no singular in daily speech: one brother or sister is *ein Bruder* or *eine Schwester*.\n- One person: *Das ist …*; several: *Das sind …*",
+ "french": "Careful: Eltern means only your mother and father, not the wider family as in French les parents; relatives are die Verwandten.",
+ "examples": [
+  {
+   "de": "Das ist meine Familie.",
+   "en": "This is my family."
+  },
+  {
+   "de": "Das sind meine Eltern.",
+   "en": "These are my parents."
+  },
+  {
+   "de": "Ich habe einen Bruder und eine Schwester.",
+   "en": "I have a brother and a sister."
+  },
+  {
+   "de": "Meine Tochter ist acht Jahre alt.",
+   "en": "My daughter is eight years old."
+  },
+  {
+   "de": "Hast du Geschwister? – Nein, ich bin Einzelkind.",
+   "en": "Do you have brothers and sisters? – No, I'm an only child."
+  },
+  {
+   "de": "Meine Großeltern wohnen in Lyon.",
+   "en": "My grandparents live in Lyon."
+  },
+  {
+   "de": "Das ist mein Mann, Thomas.",
+   "en": "This is my husband, Thomas."
+  },
+  {
+   "de": "Wie alt ist das Baby? – Sechs Monate.",
+   "en": "How old is the baby? – Six months."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t04-01",
+   "type": "cloze",
+   "de": "Das ist meine ___, Lisa. Sie ist zehn.",
+   "base": "daughter",
+   "answers": [
+    "Tochter"
+   ],
+   "en": "This is my daughter, Lisa. She's ten."
+  },
+  {
+   "id": "a1-t04-02",
+   "type": "cloze",
+   "de": "Das ist mein ___, Paul. Er ist 40.",
+   "base": "brother",
+   "answers": [
+    "Bruder"
+   ],
+   "en": "This is my brother, Paul. He's 40."
+  },
+  {
+   "id": "a1-t04-03",
+   "type": "choice",
+   "de": "Mein Vater und meine Mutter sind meine ___.",
+   "options": [
+    "Großeltern",
+    "Eltern",
+    "Geschwister"
+   ],
+   "answer": 1,
+   "why": "Your father and mother are your parents: die Eltern.",
+   "en": "My father and mother are my parents."
+  },
+  {
+   "id": "a1-t04-04",
+   "type": "order",
+   "tiles": [
+    "meine",
+    "Familie",
+    "Das ist"
+   ],
+   "answers": [
+    "Das ist meine Familie."
+   ],
+   "en": "This is my family."
+  },
+  {
+   "id": "a1-t04-05",
+   "type": "cloze",
+   "de": "Mein ___ ist 80 Jahre alt.",
+   "base": "grandfather",
+   "answers": [
+    "Großvater",
+    "Opa"
+   ],
+   "en": "My grandfather is 80 years old."
+  },
+  {
+   "id": "a1-t04-06",
+   "type": "choice",
+   "de": "Hast du ___? – Ja, einen Bruder und eine Schwester.",
+   "options": [
+    "Eltern",
+    "Kinder",
+    "Geschwister"
+   ],
+   "answer": 2,
+   "why": "Brothers and sisters together are die Geschwister.",
+   "en": "Do you have brothers and sisters? – Yes, a brother and a sister."
+  },
+  {
+   "id": "a1-t04-07",
+   "type": "cloze",
+   "de": "Das ___ ist erst drei Monate alt.",
+   "base": "baby",
+   "answers": [
+    "Baby"
+   ],
+   "en": "The baby is only three months old."
+  },
+  {
+   "id": "a1-t04-08",
+   "type": "choice",
+   "de": "Das ist mein ___. Wir sind seit zehn Jahren verheiratet.",
+   "options": [
+    "Mann",
+    "Bruder",
+    "Sohn"
+   ],
+   "answer": 0,
+   "why": "The man you're married to is your husband: mein Mann.",
+   "en": "This is my husband. We've been married for ten years."
+  },
+  {
+   "id": "a1-t04-09",
+   "type": "order",
+   "tiles": [
+    "Kinder",
+    "Sie",
+    "Haben"
+   ],
+   "answers": [
+    "Haben Sie Kinder?"
+   ],
+   "en": "Do you have children?"
+  },
+  {
+   "id": "a1-t04-10",
+   "type": "cloze",
+   "de": "Meine ___ wohnen in Marseille.",
+   "base": "grandparents",
+   "answers": [
+    "Großeltern"
+   ],
+   "en": "My grandparents live in Marseille."
+  },
+  {
+   "id": "a1-t04-11",
+   "type": "choice",
+   "de": "Papa hat eine Schwester. Sie ist meine ___.",
+   "options": [
+    "Oma",
+    "Tante",
+    "Mutter"
+   ],
+   "answer": 1,
+   "why": "Your father's sister is your aunt: die Tante.",
+   "en": "Dad has a sister. She's my aunt."
+  },
+  {
+   "id": "a1-t04-12",
+   "type": "cloze",
+   "de": "Wir haben zwei ___: einen Sohn und eine Tochter.",
+   "base": "children",
+   "answers": [
+    "Kinder"
+   ],
+   "en": "We have two children: a son and a daughter."
+  },
+  {
+   "id": "a1-t04-13",
+   "type": "choice",
+   "de": "Wie alt ___ deine Eltern?",
+   "options": [
+    "ist",
+    "bist",
+    "sind"
+   ],
+   "answer": 2,
+   "why": "Eltern is plural, so the verb is sind.",
+   "en": "How old are your parents?"
+  },
+  {
+   "id": "a1-t04-14",
+   "type": "order",
+   "tiles": [
+    "einen Bruder",
+    "habe",
+    "Ich",
+    "und",
+    "zwei Schwestern"
+   ],
+   "answers": [
+    "Ich habe einen Bruder und zwei Schwestern.",
+    "Ich habe zwei Schwestern und einen Bruder."
+   ],
+   "en": "I have a brother and two sisters."
+  },
+  {
+   "id": "a1-t04-15",
+   "type": "cloze",
+   "de": "Meine Mutter heißt Anne und mein ___ heißt Marc.",
+   "base": "father",
+   "answers": [
+    "Vater"
+   ],
+   "en": "My mother is called Anne and my father is called Marc."
+  },
+  {
+   "id": "a1-t04-16",
+   "type": "choice",
+   "de": "Meine Mutter hat ___ Bruder. Er ist mein Onkel.",
+   "options": [
+    "einen",
+    "ein",
+    "eine"
+   ],
+   "answer": 0,
+   "why": "Bruder is masculine (der), so after haben it is einen.",
+   "en": "My mother has a brother. He's my uncle."
+  },
+  {
+   "id": "a1-t04-17",
+   "type": "cloze",
+   "de": "Sind Sie ___? – Ja, das ist meine Frau.",
+   "base": "married",
+   "answers": [
+    "verheiratet"
+   ],
+   "en": "Are you married? – Yes, this is my wife."
+  },
+  {
+   "id": "a1-t04-18",
+   "type": "choice",
+   "de": "Eltern, Geschwister, Tanten, Onkel: Das ist meine ___.",
+   "options": [
+    "Familie",
+    "Eltern",
+    "Kinder"
+   ],
+   "answer": 0,
+   "why": "The whole group is die Familie (singular).",
+   "en": "Parents, brothers and sisters, aunts, uncles: that's my family."
+  },
+  {
+   "id": "a1-t04-19",
+   "type": "order",
+   "tiles": [
+    "das",
+    "ist",
+    "Wer",
+    "auf dem Foto"
+   ],
+   "answers": [
+    "Wer ist das auf dem Foto?"
+   ],
+   "en": "Who is that in the photo?"
+  },
+  {
+   "id": "a1-t04-20",
+   "type": "cloze",
+   "de": "Meine Schwester hat ein Baby. Ich bin jetzt ___!",
+   "base": "uncle",
+   "answers": [
+    "Onkel"
+   ],
+   "en": "My sister has a baby. I'm an uncle now!"
+  },
+  {
+   "id": "a1-t04-21",
+   "type": "choice",
+   "de": "Mein ___ heißt Max. Er ist sechs.",
+   "options": [
+    "Tochter",
+    "Sohn",
+    "Töchter"
+   ],
+   "answer": 1,
+   "why": "Max is a boy, so he's your son: der Sohn.",
+   "en": "My son is called Max. He's six."
+  },
+  {
+   "id": "a1-t04-22",
+   "type": "cloze",
+   "de": "Mein Bruder ist 30, meine Schwester ist erst 18. Sie ist noch sehr ___.",
+   "base": "young",
+   "answers": [
+    "jung"
+   ],
+   "en": "My brother is 30, my sister is only 18. She's still very young."
+  },
+  {
+   "id": "a1-t04-23",
+   "type": "order",
+   "tiles": [
+    "deine Eltern",
+    "wohnen",
+    "Wo"
+   ],
+   "answers": [
+    "Wo wohnen deine Eltern?"
+   ],
+   "en": "Where do your parents live?"
+  },
+  {
+   "id": "a1-t04-24",
+   "type": "order",
+   "tiles": [
+    "Meine Schwester",
+    "ist",
+    "verheiratet",
+    "zwei Kinder",
+    "hat",
+    "und"
+   ],
+   "answers": [
+    "Meine Schwester ist verheiratet und hat zwei Kinder.",
+    "Meine Schwester hat zwei Kinder und ist verheiratet."
+   ],
+   "en": "My sister is married and has two children."
+  }
+ ],
+ "listening": {
+  "title": "Familienfotos",
+  "intro": "During a coffee break, Nina shows her colleague Karim photos of her family on her phone.",
+  "lines": [
+   {
+    "speaker": "Karim",
+    "de": "Ist das deine Familie?",
+    "en": "Is that your family?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Ja, das sind meine Eltern. Mein Vater ist Lehrer und meine Mutter ist Ärztin.",
+    "en": "Yes, these are my parents. My father is a teacher and my mother is a doctor."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Und wer ist das? Dein Bruder?",
+    "en": "And who is that? Your brother?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Nein, das ist mein Mann, Felix! Ich habe nur eine Schwester.",
+    "en": "No, that's my husband, Felix! I only have a sister."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Oh, Entschuldigung! Und die Kinder?",
+    "en": "Oh, sorry! And the children?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Das sind unsere Kinder: Mia ist sieben und Leo ist vier.",
+    "en": "Those are our children: Mia is seven and Leo is four."
+   },
+   {
+    "speaker": "Karim",
+    "de": "Wohnen deine Eltern auch hier in Hamburg?",
+    "en": "Do your parents live here in Hamburg too?"
+   },
+   {
+    "speaker": "Nina",
+    "de": "Nein, sie wohnen in Bremen. Und deine Familie?",
+    "en": "No, they live in Bremen. And your family?"
+   },
+   {
+    "speaker": "Karim",
+    "de": "Meine Familie ist in Marseille. Ich habe drei Geschwister und meine Schwester hat ein Baby.",
+    "en": "My family is in Marseille. I have three brothers and sisters, and my sister has a baby."
+   },
+   {
+    "speaker": "Nina",
+    "de": "Oh, schön! Dann bist du Onkel!",
+    "en": "Oh, lovely! So you're an uncle!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Nina's mother's job?",
+    "options": [
+     "teacher",
+     "doctor",
+     "nurse"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who is Felix?",
+    "options": [
+     "Nina's brother",
+     "Nina's son",
+     "Nina's husband"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How old is Leo?",
+    "options": [
+     "four",
+     "seven",
+     "eleven"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How many brothers and sisters does Karim have?",
+    "options": [
+     "one",
+     "two",
+     "three"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Das sind meine Eltern.",
+  "Ich habe eine Schwester.",
+  "Meine Tochter ist sieben Jahre alt."
+ ],
+ "speaking": [
+  {
+   "de": "Das sind meine Eltern.",
+   "en": "These are my parents."
+  },
+  {
+   "de": "Das ist mein Mann, Felix.",
+   "en": "This is my husband, Felix."
+  },
+  {
+   "de": "Ich habe nur eine Schwester.",
+   "en": "I only have a sister."
+  },
+  {
+   "de": "Ich habe drei Geschwister.",
+   "en": "I have three brothers and sisters."
+  },
+  {
+   "de": "Hast du Kinder?",
+   "en": "Do you have children?"
+  }
+ ],
+ "writing": {
+  "task": "Write a short message (3–4 sentences) to a new friend about your family: who is in it, their names and ages, and where they live.",
+  "model": "Hallo Sara! Meine Familie ist klein. Ich habe einen Bruder, er heißt Hugo und ist 25. Meine Eltern wohnen in Lyon. Meine Oma ist 82 und noch sehr fit! Liebe Grüße, Claire"
+ }
+}

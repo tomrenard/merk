@@ -1,0 +1,536 @@
+{
+ "id": "b1-s04",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The neighbourhood party",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a party in the courtyard of a German block of flats and talk about neighbours, house rules and quiet hours.",
+ "explanation": "It's June, and Frau Schmitz, Camille's landlady, invites all the tenants to a courtyard party. Camille is looking forward to it, but not to meeting Herr Krause from the second floor, who writes notes about everything. And then the rain comes…\n\nListen for **wegen**, **trotz** and **während** with the genitive (*trotz des Regens*), and adjectives without an article (*kaltes Bier, herzliche Grüße*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| der Zettel, - | note (piece of paper) |\n| der Hof, Höfe | courtyard |\n| das Hoffest, -e | courtyard party |\n| der Lärm | noise |\n| den Müll trennen | to sort the rubbish |\n| der Pavillon, -s | gazebo (party tent) |\n| die Nachtruhe | quiet hours at night |\n| das Akkordeon, -s | accordion |\n| verraten | to give away (a secret) |\n\nTip: in most German buildings the *Hausordnung* (house rules) says it must be quiet from 10 p.m. (*Nachtruhe*), and often at lunchtime and on Sundays too.",
+ "french": "",
+ "examples": [
+  {
+   "de": "Am Samstag feiern wir unser Hoffest.",
+   "en": "On Saturday we're having our courtyard party."
+  },
+  {
+   "de": "Er schrieb Zettel wegen des Lärms.",
+   "en": "He wrote notes about the noise."
+  },
+  {
+   "de": "Es gab Nudelsalat und kaltes Bier.",
+   "en": "There was pasta salad and cold beer."
+  },
+  {
+   "de": "Während des Essens begann es zu regnen.",
+   "en": "During the meal it started to rain."
+  },
+  {
+   "de": "Trotz des Regens saßen alle wieder draußen.",
+   "en": "Despite the rain, everyone was sitting outside again."
+  },
+  {
+   "de": "Um zehn ist Nachtruhe.",
+   "en": "Quiet hours start at ten."
+  },
+  {
+   "de": "Ich kenne ein Café mit dem besten Kuchen der Stadt.",
+   "en": "I know a café with the best cake in town."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "An der Haustür hing ein ___ mit einer Einladung.",
+   "base": "note",
+   "answers": [
+    "Zettel"
+   ],
+   "en": "There was a note with an invitation on the front door.",
+   "id": "b1-s04-01"
+  },
+  {
+   "type": "choice",
+   "de": "Das Fest fand ___ statt.",
+   "options": [
+    "im Hof",
+    "im Park",
+    "in einem Restaurant"
+   ],
+   "answer": 0,
+   "why": "It's a Hoffest: the party is in the courtyard of the building.",
+   "en": "The party took place in the courtyard.",
+   "id": "b1-s04-02"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Krause schrieb ständig Zettel, zum Beispiel ___ Lärms.",
+   "options": [
+    "wegen dem",
+    "wegen des",
+    "wegen der"
+   ],
+   "answer": 1,
+   "why": "In written German wegen takes the genitive: der Lärm → wegen des Lärms.",
+   "en": "Herr Krause kept writing notes, for example about the noise.",
+   "id": "b1-s04-03"
+  },
+  {
+   "type": "cloze",
+   "de": "Viele Nachbarn ärgerten sich, weil niemand den ___ richtig trennte.",
+   "base": "rubbish",
+   "answers": [
+    "Müll"
+   ],
+   "en": "Many neighbours were annoyed because nobody sorted the rubbish properly.",
+   "id": "b1-s04-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Jeder",
+    "bringt",
+    "mit",
+    "etwas zu essen"
+   ],
+   "answers": [
+    "Jeder bringt etwas zu essen mit.",
+    "Etwas zu essen bringt jeder mit."
+   ],
+   "en": "Everyone brings something to eat.",
+   "id": "b1-s04-05"
+  },
+  {
+   "type": "choice",
+   "de": "Camille backte eine Quiche nach dem Rezept ___.",
+   "options": [
+    "von ihrer Mutter",
+    "ihrer Oma",
+    "von Frau Schmitz"
+   ],
+   "answer": 1,
+   "why": "It's her grandmother's recipe (Rezept ihrer Oma, genitive).",
+   "en": "Camille baked a quiche from her grandmother's recipe.",
+   "id": "b1-s04-06"
+  },
+  {
+   "type": "cloze",
+   "de": "Es gab Würstchen vom Grill und ___ Bier.",
+   "base": "kalt",
+   "answers": [
+    "kaltes"
+   ],
+   "en": "There were sausages from the grill and cold beer.",
+   "id": "b1-s04-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Herzliche ___, Hildegard Schmitz",
+   "base": "Gruß (plural)",
+   "answers": [
+    "Grüße"
+   ],
+   "en": "Warm regards, Hildegard Schmitz",
+   "id": "b1-s04-08"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael kommt aus ___ und arbeitet als Koch.",
+   "options": [
+    "Portugal",
+    "Spanien",
+    "Brasilien"
+   ],
+   "answer": 2,
+   "why": "He says he comes from Recife in Brazil.",
+   "en": "Rafael comes from Brazil and works as a cook.",
+   "id": "b1-s04-09"
+  },
+  {
+   "type": "cloze",
+   "de": "___ des Essens wurde der Himmel immer dunkler.",
+   "base": "during",
+   "answers": [
+    "Während"
+   ],
+   "en": "During the meal the sky got darker and darker.",
+   "id": "b1-s04-10"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Während",
+    "des Essens",
+    "es",
+    "begann",
+    "zu regnen"
+   ],
+   "answers": [
+    "Während des Essens begann es zu regnen.",
+    "Es begann während des Essens zu regnen."
+   ],
+   "en": "During the meal it began to rain.",
+   "id": "b1-s04-11"
+  },
+  {
+   "type": "choice",
+   "de": "Als es regnete, war Frau Schmitz ___.",
+   "options": [
+    "traurig",
+    "froh",
+    "böse auf die Nachbarn"
+   ],
+   "answer": 0,
+   "why": "She said So ein Pech! and was sad about the rain.",
+   "en": "When it rained, Frau Schmitz was sad.",
+   "id": "b1-s04-12"
+  },
+  {
+   "type": "cloze",
+   "de": "Herr Krause holte einen großen ___ aus seiner Garage.",
+   "base": "gazebo",
+   "answers": [
+    "Pavillon"
+   ],
+   "en": "Herr Krause fetched a big gazebo from his garage.",
+   "id": "b1-s04-13"
+  },
+  {
+   "type": "cloze",
+   "de": "___ des Regens saßen bald alle wieder draußen.",
+   "base": "despite",
+   "answers": [
+    "Trotz"
+   ],
+   "en": "Despite the rain, soon everyone was sitting outside again.",
+   "id": "b1-s04-14"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Trotz",
+    "des Regens",
+    "saßen",
+    "alle",
+    "draußen"
+   ],
+   "answers": [
+    "Trotz des Regens saßen alle draußen.",
+    "Alle saßen trotz des Regens draußen."
+   ],
+   "en": "Despite the rain, everyone sat outside.",
+   "id": "b1-s04-15"
+  },
+  {
+   "type": "choice",
+   "de": "Camille sagte: „Sie spielen Akkordeon? Das ___ ich nie gedacht!“",
+   "options": [
+    "habe",
+    "hätte",
+    "wäre"
+   ],
+   "answer": 1,
+   "why": "It's a surprise about the past in the Konjunktiv II: hätte … gedacht.",
+   "en": "Camille said: You play the accordion? I'd never have thought it!",
+   "id": "b1-s04-16"
+  },
+  {
+   "type": "cloze",
+   "de": "Um zehn ist ___, das wissen Sie ja.",
+   "base": "quiet hours at night",
+   "answers": [
+    "Nachtruhe"
+   ],
+   "en": "Quiet hours start at ten, as you know.",
+   "id": "b1-s04-17"
+  },
+  {
+   "type": "choice",
+   "de": "Herr Krause spielte ___.",
+   "options": [
+    "moderne Popmusik",
+    "Samba",
+    "alte kölsche Lieder"
+   ],
+   "answer": 2,
+   "why": "He played old Cologne songs; Rafael showed the others how to dance samba to them.",
+   "en": "Herr Krause played old Cologne songs.",
+   "id": "b1-s04-18"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Um Punkt zehn",
+    "hörte",
+    "auf",
+    "Herr Krause"
+   ],
+   "answers": [
+    "Um Punkt zehn hörte Herr Krause auf.",
+    "Herr Krause hörte um Punkt zehn auf."
+   ],
+   "en": "At ten on the dot Herr Krause stopped.",
+   "id": "b1-s04-19"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich kenne ein kleines Café mit dem besten Kuchen ___ Stadt.",
+   "base": "der/die/das",
+   "answers": [
+    "der"
+   ],
+   "en": "I know a little café with the best cake in town.",
+   "id": "b1-s04-20"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael lud Camille ___ ein.",
+   "options": [
+    "zum Abendessen",
+    "zu einem Kaffee am Sonntag",
+    "ins Kino"
+   ],
+   "answer": 1,
+   "why": "He asked if she had time on Sunday and suggested a café on the Rhine.",
+   "en": "Rafael invited Camille for a coffee on Sunday.",
+   "id": "b1-s04-21"
+  },
+  {
+   "type": "cloze",
+   "de": "Rafael sollte Camille das Rezept für seine Käsebrötchen ___.",
+   "base": "to give away (a secret)",
+   "answers": [
+    "verraten"
+   ],
+   "en": "Rafael was supposed to tell Camille the recipe for his cheese rolls.",
+   "id": "b1-s04-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "wenn",
+    "du",
+    "verrätst",
+    "Gern, aber nur,",
+    "mir",
+    "das Rezept"
+   ],
+   "answers": [
+    "Gern, aber nur, wenn du mir das Rezept verrätst."
+   ],
+   "en": "Gladly, but only if you tell me the recipe.",
+   "id": "b1-s04-23"
+  },
+  {
+   "type": "choice",
+   "de": "Auf dem neuen Zettel stand am Montag ___.",
+   "options": [
+    "eine Beschwerde wegen des Lärms",
+    "ein Dank für das schöne Fest",
+    "eine Einladung zum nächsten Fest"
+   ],
+   "answer": 1,
+   "why": "This time his note said: Thank you for the lovely party!",
+   "en": "On Monday the new note said thank you for the lovely party.",
+   "id": "b1-s04-24"
+  }
+ ],
+ "listening": {
+  "title": "Das Hoffest",
+  "intro": "Camille's landlady invites all the tenants to a party in the courtyard of their building.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Im Juni hing ein Zettel an der Haustür: „Liebe Nachbarn, am Samstag feiern wir unser Hoffest! Jeder bringt etwas zu essen mit. Herzliche Grüße, Hildegard Schmitz.“",
+    "en": "In June there was a note on the front door: Dear neighbours, on Saturday we're having our courtyard party! Everyone brings something to eat. Warm regards, Hildegard Schmitz."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille freute sich. Seit ihrem Einzug kannte sie nur wenige Nachbarn, und Herr Krause aus dem zweiten Stock war nicht gerade freundlich.",
+    "en": "Camille was pleased. Since she moved in she had only known a few neighbours, and Herr Krause from the second floor wasn't exactly friendly."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Er schrieb ständig Zettel: wegen des Lärms, wegen der Fahrräder im Hof und natürlich wegen des Mülls.",
+    "en": "He was always writing notes: about the noise, about the bikes in the courtyard and of course about the rubbish."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Samstag backte Camille eine Quiche nach dem Rezept ihrer Oma.",
+    "en": "On Saturday Camille baked a quiche from her grandmother's recipe."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um vier Uhr war der Hof voll. Es gab Nudelsalat, Würstchen vom Grill, selbst gemachten Kuchen und kaltes Bier.",
+    "en": "At four o'clock the courtyard was full. There was pasta salad, sausages from the grill, homemade cake and cold beer."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Neben dem Grill stand ein junger Mann mit dunklen Locken. Er war erst vor einer Woche in den dritten Stock gezogen.",
+    "en": "Next to the grill stood a young man with dark curls. He had moved into the third floor only a week before."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Hallo, ich bin Rafael, der Neue von oben. Hast du die Quiche gemacht? Die ist fantastisch!",
+    "en": "Hi, I'm Rafael, the new guy from upstairs. Did you make the quiche? It's fantastic!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Danke! Das Rezept ist von meiner Oma aus Lyon. Und du? Woher kommst du?",
+    "en": "Thanks! The recipe is from my grandma in Lyon. And you? Where are you from?"
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Aus Brasilien, aus Recife. Ich bin Koch in einem Restaurant am Rhein. Ich habe Pão de Queijo mitgebracht, kleine Käsebrötchen.",
+    "en": "From Brazil, from Recife. I'm a cook in a restaurant on the Rhine. I brought pão de queijo, little cheese rolls."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Während des Essens wurde der Himmel immer dunkler. Plötzlich begann es stark zu regnen.",
+    "en": "During the meal the sky got darker and darker. Suddenly it began to rain hard."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Alle liefen mit ihren Tellern ins Treppenhaus. Frau Schmitz war ganz traurig.",
+    "en": "Everyone ran into the staircase with their plates. Frau Schmitz was very sad."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "So ein Pech! Jedes Jahr dasselbe. Vielleicht sollten wir nächstes Jahr im Juli feiern.",
+    "en": "What bad luck! The same every year. Maybe we should celebrate in July next year."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Da kam Herr Krause aus seiner Garage. Er trug einen großen weißen Pavillon.",
+    "en": "Then Herr Krause came out of his garage. He was carrying a big white gazebo."
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Na los, jemand muss mir helfen! In zehn Minuten steht das Ding.",
+    "en": "Come on, somebody has to help me! The thing will be up in ten minutes."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Rafael und Camille halfen ihm sofort. Trotz des Regens saßen bald alle wieder draußen, trocken unter dem weißen Dach.",
+    "en": "Rafael and Camille helped him at once. Despite the rain, soon everyone was sitting outside again, dry under the white roof."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Dann holte Herr Krause noch etwas aus seiner Wohnung: ein altes Akkordeon.",
+    "en": "Then Herr Krause fetched something else from his flat: an old accordion."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Herr Krause, Sie spielen Akkordeon? Das hätte ich nie gedacht!",
+    "en": "Herr Krause, you play the accordion? I'd never have thought it!"
+   },
+   {
+    "speaker": "Herr Krause",
+    "de": "Seit fünfzig Jahren. Aber nur bis zehn Uhr. Um zehn ist Nachtruhe, das wissen Sie ja.",
+    "en": "For fifty years. But only until ten. Quiet hours start at ten, as you know."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Er spielte alte kölsche Lieder, und die Nachbarn sangen mit. Rafael zeigte allen, wie man dazu Samba tanzt.",
+    "en": "He played old Cologne songs, and the neighbours sang along. Rafael showed everyone how to dance samba to them."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um Punkt zehn hörte Herr Krause auf. „Nachtruhe!“, sagte er, aber diesmal lächelte er dabei.",
+    "en": "At ten on the dot Herr Krause stopped. Quiet hours! he said, but this time he smiled as he said it."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Sag mal, Camille, hast du am Sonntag Zeit? Ich kenne ein kleines Café am Rhein mit dem besten Kuchen der Stadt.",
+    "en": "Tell me, Camille, are you free on Sunday? I know a little café on the Rhine with the best cake in town."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Gern, aber nur, wenn du mir das Rezept für deine Käsebrötchen verrätst.",
+    "en": "Gladly, but only if you tell me the recipe for your cheese rolls."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Montag hing wieder ein Zettel an der Haustür. Diesmal stand darauf: „Danke für das schöne Fest! Ihr Nachbar Heinz Krause.“",
+    "en": "On Monday there was another note on the front door. This time it said: Thank you for the lovely party! Your neighbour, Heinz Krause."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wie war Herr Krause am Anfang der Geschichte?",
+    "options": [
+     "Er war unfreundlich und schrieb ständig Zettel.",
+     "Er war sehr laut.",
+     "Er war neu im Haus."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was passierte während des Essens?",
+    "options": [
+     "Der Grill ging kaputt.",
+     "Es begann stark zu regnen.",
+     "Die Polizei kam wegen des Lärms."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wie half Herr Krause den Nachbarn?",
+    "options": [
+     "Er öffnete seine Wohnung für alle.",
+     "Er rief ein Taxi.",
+     "Er baute mit Rafael und Camille einen Pavillon auf."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Warum hörte Herr Krause um zehn Uhr auf zu spielen?",
+    "options": [
+     "Er war müde.",
+     "Um zehn beginnt die Nachtruhe.",
+     "Das Akkordeon war kaputt."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was stand am Montag auf dem neuen Zettel?",
+    "options": [
+     "Ein Dank für das Fest",
+     "Eine Beschwerde wegen des Lärms",
+     "Eine Einladung zum Kaffee"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Während des Essens begann es plötzlich stark zu regnen.",
+  "Trotz des Regens saßen bald alle wieder draußen im Hof.",
+  "Um zehn Uhr ist Nachtruhe, das wissen Sie ja."
+ ],
+ "speaking": [
+  {
+   "de": "Hallo, ich bin Rafael, der Neue von oben.",
+   "en": "Hi, I'm Rafael, the new guy from upstairs."
+  },
+  {
+   "de": "So ein Pech! Jedes Jahr dasselbe.",
+   "en": "What bad luck! The same every year."
+  },
+  {
+   "de": "Das hätte ich nie gedacht!",
+   "en": "I'd never have thought it!"
+  },
+  {
+   "de": "Sag mal, hast du am Sonntag Zeit?",
+   "en": "Tell me, are you free on Sunday?"
+  },
+  {
+   "de": "Danke für das schöne Fest!",
+   "en": "Thank you for the lovely party!"
+  }
+ ],
+ "writing": {
+  "task": "You are Frau Schmitz. Write an 80–100-word note for the front door after the party: thank the neighbours, mention what happened because of the rain and say something about next year.",
+  "model": "Liebe Nachbarinnen und Nachbarn,\n\nvielen Dank für das schöne Hoffest am Samstag! Es gab leckeres Essen, kalte Getränke und gute Laune. Während des Essens hat es leider stark geregnet, aber Herr Krause hat uns mit seinem Pavillon geholfen. So konnten wir trotz des Regens draußen weiterfeiern, und niemand ist nass geworden. Vielen Dank auch für die schöne Musik! Wegen des Wetters feiern wir nächstes Jahr erst im Juli. Hoffentlich regnet es dann nicht! Ich freue mich schon darauf.\n\nHerzliche Grüße\nHildegard Schmitz, Erdgeschoss"
+ }
+}

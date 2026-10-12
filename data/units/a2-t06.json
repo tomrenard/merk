@@ -1,0 +1,506 @@
+{
+ "id": "a2-t06",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "der Kollege",
+  "die Kollegin",
+  "der Chef",
+  "die Chefin",
+  "die Firma",
+  "das Büro",
+  "das Team",
+  "das Projekt",
+  "der Mitarbeiter",
+  "die Aufgabe",
+  "der Arbeitsplatz",
+  "der Schreibtisch",
+  "der Computer",
+  "der Drucker",
+  "das Passwort",
+  "die E-Mail",
+  "die Nachricht",
+  "antworten",
+  "beantworten",
+  "schicken",
+  "der Termin",
+  "die Besprechung",
+  "die Pause",
+  "die Kantine",
+  "der Feierabend",
+  "dringend",
+  "erklären",
+  "(sich) vorstellen",
+  "duzen",
+  "Bescheid sagen"
+ ],
+ "title": "Work life and emails",
+ "situation": "First week at a new job",
+ "canDo": "You can introduce yourself to new colleagues, talk about your workplace and day, and start and end a work email correctly.",
+ "explanation": "Your first week at a new job: you meet the team, find your desk and write your first emails.\n\n| German | English |\n|---|---|\n| der Kollege, -n / die Kollegin, -nen | colleague |\n| der Chef, -s / die Chefin, -nen | boss |\n| das Büro, -s | office |\n| der Arbeitsplatz, -plätze | workplace, desk |\n| die Besprechung, -en | meeting |\n| die Aufgabe, -n | task |\n| die Kantine, -n | canteen |\n| das Passwort, -wörter | password |\n| der Feierabend | end of the working day |\n\n| In an email | |\n|---|---|\n| formal start | **Sehr geehrte** Frau Weber, / **Sehr geehrter** Herr Klein, |\n| to a colleague | Hallo Jan, / Liebe Anna, / Lieber Tom, |\n| formal end | **Mit freundlichen Grüßen** |\n| friendly end | Viele Grüße / Liebe Grüße |\n\n- **du or Sie?** Many teams say du, but wait until it is offered: *Wollen wir uns duzen?* With customers, and often with the boss, use Sie.\n- **Feierabend** is not a party: it's the end of your working day. *Schönen Feierabend!*\n- After the greeting line, the email goes on with a small letter: *Sehr geehrte Frau Weber, ich schicke Ihnen …*\n- **beantworten** takes a direct object; **antworten** needs **auf**: *Ich beantworte die E-Mail. = Ich antworte auf die E-Mail.*\n\nCommon mistake: *Sehr geehrte Herr Klein* → **Sehr geehrter Herr Klein**.",
+ "french": "Like tu and vous, du and Sie are a real choice at work; « Cordialement » is Mit freundlichen Grüßen, and « bonne soirée » after work is Schönen Feierabend.",
+ "examples": [
+  {
+   "de": "Darf ich mich vorstellen? Ich bin der neue Kollege.",
+   "en": "May I introduce myself? I'm the new colleague."
+  },
+  {
+   "de": "Willkommen im Team!",
+   "en": "Welcome to the team!"
+  },
+  {
+   "de": "Die Besprechung beginnt um zehn Uhr.",
+   "en": "The meeting starts at ten."
+  },
+  {
+   "de": "Kannst du mir bitte den Drucker erklären?",
+   "en": "Can you explain the printer to me, please?"
+  },
+  {
+   "de": "Ich schicke Ihnen die Unterlagen per E-Mail.",
+   "en": "I'll send you the documents by email."
+  },
+  {
+   "de": "Das ist dringend. Bitte sagen Sie mir heute noch Bescheid.",
+   "en": "It's urgent. Please let me know today."
+  },
+  {
+   "de": "Wollen wir uns duzen? Ich bin Sandra.",
+   "en": "Shall we say du to each other? I'm Sandra."
+  },
+  {
+   "de": "Schönen Feierabend, bis morgen!",
+   "en": "Have a nice evening, see you tomorrow!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t06-01",
+   "type": "cloze",
+   "de": "Meine neue ___ heißt Sandra. Sie sitzt neben mir.",
+   "base": "colleague (female)",
+   "answers": [
+    "Kollegin"
+   ],
+   "en": "My new colleague is called Sandra. She sits next to me."
+  },
+  {
+   "id": "a2-t06-02",
+   "type": "choice",
+   "de": "Um zwölf Uhr gehen wir zusammen in die ___ und essen.",
+   "options": [
+    "Kantine",
+    "Besprechung",
+    "Firma"
+   ],
+   "answer": 0,
+   "why": "You have lunch at work in die Kantine, the canteen.",
+   "en": "At twelve we go to the canteen together and eat."
+  },
+  {
+   "id": "a2-t06-03",
+   "type": "cloze",
+   "de": "Oh nein, ich habe mein ___ vergessen!",
+   "base": "password",
+   "answers": [
+    "Passwort"
+   ],
+   "en": "Oh no, I've forgotten my password!"
+  },
+  {
+   "id": "a2-t06-04",
+   "type": "order",
+   "tiles": [
+    "Schönen",
+    "Feierabend",
+    "bis morgen"
+   ],
+   "answers": [
+    "Schönen Feierabend, bis morgen!"
+   ],
+   "en": "Have a nice evening, see you tomorrow!"
+  },
+  {
+   "id": "a2-t06-05",
+   "type": "choice",
+   "de": "Die ___ beginnt um zehn Uhr in Raum 3.",
+   "options": [
+    "Pause",
+    "Besprechung",
+    "Aufgabe"
+   ],
+   "answer": 1,
+   "why": "A meeting is die Besprechung; it starts in a room at a fixed time.",
+   "en": "The meeting starts at ten in room 3."
+  },
+  {
+   "id": "a2-t06-06",
+   "type": "cloze",
+   "de": "Ich ___ Ihnen die Unterlagen per E-Mail.",
+   "base": "send",
+   "answers": [
+    "schicke"
+   ],
+   "en": "I'll send you the documents by email."
+  },
+  {
+   "id": "a2-t06-07",
+   "type": "choice",
+   "de": "Eine E-Mail: „___ Herr Klein, …“",
+   "options": [
+    "Sehr geehrte",
+    "Lieber geehrter",
+    "Sehr geehrter"
+   ],
+   "answer": 2,
+   "why": "Herr is masculine, so it's Sehr geehrter Herr…; Sehr geehrte is for Frau.",
+   "en": "An email: 'Dear Mr Klein, …'"
+  },
+  {
+   "id": "a2-t06-08",
+   "type": "cloze",
+   "de": "Um halb sechs habe ich ___. Dann gehe ich nach Hause.",
+   "base": "end of the working day",
+   "answers": [
+    "Feierabend"
+   ],
+   "en": "At half past five I finish work. Then I go home."
+  },
+  {
+   "id": "a2-t06-09",
+   "type": "order",
+   "tiles": [
+    "Darf",
+    "ich",
+    "mich",
+    "vorstellen"
+   ],
+   "answers": [
+    "Darf ich mich vorstellen?"
+   ],
+   "en": "May I introduce myself?"
+  },
+  {
+   "id": "a2-t06-10",
+   "type": "choice",
+   "de": "Am Ende einer formellen E-Mail: „Mit freundlichen ___“",
+   "options": [
+    "Grüßen",
+    "Grüße",
+    "Gruß"
+   ],
+   "answer": 0,
+   "why": "The fixed ending of a formal email is Mit freundlichen Grüßen.",
+   "en": "At the end of a formal email: 'Kind regards'"
+  },
+  {
+   "id": "a2-t06-11",
+   "type": "cloze",
+   "de": "Das ist ___! Bitte antworten Sie heute noch.",
+   "base": "urgent",
+   "answers": [
+    "dringend"
+   ],
+   "en": "This is urgent! Please answer today."
+  },
+  {
+   "id": "a2-t06-12",
+   "type": "choice",
+   "de": "Wollen wir uns ___? Ich bin Sandra.",
+   "options": [
+    "siezen",
+    "duzen",
+    "kennen"
+   ],
+   "answer": 1,
+   "why": "duzen = to say du to each other; you offer it with your first name, so siezen makes no sense here.",
+   "en": "Shall we say du to each other? I'm Sandra."
+  },
+  {
+   "id": "a2-t06-13",
+   "type": "cloze",
+   "de": "Ich habe deine E-Mail noch nicht ___.",
+   "base": "answered",
+   "answers": [
+    "beantwortet"
+   ],
+   "en": "I haven't answered your email yet."
+  },
+  {
+   "id": "a2-t06-14",
+   "type": "order",
+   "tiles": [
+    "Die Besprechung",
+    "beginnt",
+    "um zehn Uhr"
+   ],
+   "answers": [
+    "Die Besprechung beginnt um zehn Uhr.",
+    "Um zehn Uhr beginnt die Besprechung."
+   ],
+   "en": "The meeting starts at ten."
+  },
+  {
+   "id": "a2-t06-15",
+   "type": "choice",
+   "de": "Ich weiß es noch nicht. Ich ___ dir morgen Bescheid.",
+   "options": [
+    "mache",
+    "sage",
+    "erkläre"
+   ],
+   "answer": 1,
+   "why": "The fixed phrase is Bescheid sagen, to let someone know.",
+   "en": "I don't know yet. I'll let you know tomorrow."
+  },
+  {
+   "id": "a2-t06-16",
+   "type": "cloze",
+   "de": "Kannst du mir den ___ erklären? Er druckt nicht.",
+   "base": "printer",
+   "answers": [
+    "Drucker"
+   ],
+   "en": "Can you explain the printer to me? It isn't printing."
+  },
+  {
+   "id": "a2-t06-17",
+   "type": "choice",
+   "de": "Frau Krüger ist meine ___. Sie gibt mir meine Aufgaben.",
+   "options": [
+    "Kundin",
+    "Chefin",
+    "Firma"
+   ],
+   "answer": 1,
+   "why": "Your boss is die Chefin; eine Kundin buys from the company.",
+   "en": "Ms Krüger is my boss. She gives me my tasks."
+  },
+  {
+   "id": "a2-t06-18",
+   "type": "cloze",
+   "de": "Am ersten Tag hat mir mein Kollege alles ___.",
+   "base": "explained",
+   "answers": [
+    "erklärt"
+   ],
+   "en": "On the first day my colleague explained everything to me."
+  },
+  {
+   "id": "a2-t06-19",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "ein neues Projekt",
+    "diese Woche"
+   ],
+   "answers": [
+    "Ich habe diese Woche ein neues Projekt.",
+    "Diese Woche habe ich ein neues Projekt."
+   ],
+   "en": "I have a new project this week."
+  },
+  {
+   "id": "a2-t06-20",
+   "type": "cloze",
+   "de": "Ich arbeite gern hier. Die ___ sind sehr nett.",
+   "base": "colleagues",
+   "answers": [
+    "Kollegen",
+    "Kolleginnen"
+   ],
+   "en": "I like working here. The colleagues are very nice."
+  },
+  {
+   "id": "a2-t06-21",
+   "type": "cloze",
+   "de": "Ich mache jetzt eine ___. Kommst du mit in die Kantine?",
+   "base": "break",
+   "answers": [
+    "Pause"
+   ],
+   "en": "I'm taking a break now. Are you coming to the canteen?"
+  },
+  {
+   "id": "a2-t06-22",
+   "type": "choice",
+   "de": "E-Mail an eine Kundin. Sie kennen Frau Schmidt noch nicht: „___ Frau Schmidt, …“",
+   "options": [
+    "Hallo",
+    "Sehr geehrte",
+    "Liebe"
+   ],
+   "answer": 1,
+   "why": "To a customer you don't know yet, write formally: Sehr geehrte Frau…",
+   "en": "An email to a customer. You don't know Ms Schmidt yet: 'Dear Ms Schmidt, …'"
+  },
+  {
+   "id": "a2-t06-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schicke",
+    "Ihnen",
+    "die Unterlagen",
+    "morgen"
+   ],
+   "answers": [
+    "Ich schicke Ihnen morgen die Unterlagen.",
+    "Ich schicke Ihnen die Unterlagen morgen.",
+    "Morgen schicke ich Ihnen die Unterlagen.",
+    "Die Unterlagen schicke ich Ihnen morgen."
+   ],
+   "en": "I'll send you the documents tomorrow."
+  },
+  {
+   "id": "a2-t06-24",
+   "type": "order",
+   "tiles": [
+    "Wollen",
+    "wir",
+    "uns",
+    "duzen"
+   ],
+   "answers": [
+    "Wollen wir uns duzen?"
+   ],
+   "en": "Shall we say du to each other?"
+  }
+ ],
+ "listening": {
+  "title": "Der erste Tag",
+  "intro": "Paul starts his new job, and his colleague Sandra shows him around.",
+  "lines": [
+   {
+    "speaker": "Sandra",
+    "de": "Guten Morgen! Sind Sie der neue Kollege?",
+    "en": "Good morning! Are you the new colleague?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Ja, guten Morgen! Darf ich mich vorstellen? Ich heiße Paul Martin.",
+    "en": "Yes, good morning! May I introduce myself? My name is Paul Martin."
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Willkommen im Team! Ich bin Sandra. Bei uns im Team duzen wir uns, okay?",
+    "en": "Welcome to the team! I'm Sandra. In our team we say du to each other, OK?"
+   },
+   {
+    "speaker": "Paul",
+    "de": "Gern! Wo ist denn mein Arbeitsplatz?",
+    "en": "Sure! So where's my desk?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Hier, der Schreibtisch am Fenster. Dein Computer ist schon da, aber das Passwort bekommst du erst morgen.",
+    "en": "Here, the desk by the window. Your computer is already here, but you'll only get the password tomorrow."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Kein Problem. Gibt es heute eine Besprechung?",
+    "en": "No problem. Is there a meeting today?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Ja, um zehn Uhr mit unserer Chefin, Frau Krüger. Sie erklärt dir dann dein erstes Projekt.",
+    "en": "Yes, at ten with our boss, Ms Krüger. She'll explain your first project to you."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Gut. Und wann macht ihr Mittagspause?",
+    "en": "Good. And when do you have lunch?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Meistens um zwölf. Wir gehen zusammen in die Kantine, das Essen ist günstig und ziemlich gut.",
+    "en": "Usually at twelve. We go to the canteen together; the food is cheap and pretty good."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Super. Und wann ist hier normalerweise Feierabend?",
+    "en": "Great. And when do people usually finish work here?"
+   },
+   {
+    "speaker": "Sandra",
+    "de": "Meistens um halb fünf. Wenn du Fragen hast, schreib mir einfach eine Nachricht.",
+    "en": "Usually at half past four. If you have questions, just send me a message."
+   },
+   {
+    "speaker": "Paul",
+    "de": "Danke, das ist sehr nett!",
+    "en": "Thanks, that's very kind!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When will Paul get his password?",
+    "options": [
+     "Today at ten.",
+     "Tomorrow.",
+     "Next week."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who is Frau Krüger?",
+    "options": [
+     "Their boss.",
+     "A new colleague.",
+     "A customer."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where do the colleagues have lunch?",
+    "options": [
+     "In a café.",
+     "At their desks.",
+     "In the canteen."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How do the people in Sandra's team talk to each other?",
+    "options": [
+     "They say Sie.",
+     "They say du.",
+     "They speak English."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Die Besprechung beginnt heute um zehn Uhr.",
+  "Ich schicke Ihnen die Unterlagen per E-Mail.",
+  "Mittags gehen wir zusammen in die Kantine."
+ ],
+ "speaking": [
+  {
+   "de": "Darf ich mich vorstellen? Ich heiße Paul Martin.",
+   "en": "May I introduce myself? My name is Paul Martin."
+  },
+  {
+   "de": "Willkommen im Team!",
+   "en": "Welcome to the team!"
+  },
+  {
+   "de": "Wo ist denn mein Arbeitsplatz?",
+   "en": "So where's my desk?"
+  },
+  {
+   "de": "Wenn du Fragen hast, schreib mir einfach eine Nachricht.",
+   "en": "If you have questions, just send me a message."
+  },
+  {
+   "de": "Schönen Feierabend, bis morgen!",
+   "en": "Have a nice evening, see you tomorrow!"
+  }
+ ],
+ "writing": {
+  "task": "It's your first week at a new job. Write a short email (5–6 sentences) to your new team: introduce yourself, say where you sit and what you work on, and suggest lunch together.",
+  "model": "Hallo zusammen, ich bin Claire Dubois, die neue Kollegin im Marketing. Ich komme aus Lyon und wohne seit zwei Jahren in Köln. Mein Schreibtisch ist in Raum 3, direkt neben der Küche. Diese Woche arbeite ich mit Frau Krüger an einem neuen Projekt. Wollen wir am Mittwoch zusammen in die Kantine gehen? Viele Grüße, Claire"
+ }
+}

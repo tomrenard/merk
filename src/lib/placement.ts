@@ -49,7 +49,7 @@ export const PSEUDOWORDS = [
   "knepp",
 ];
 
-export type Level = "A1" | "A2" | "B1";
+export type Level = "A1" | "A2" | "B1" | "B2";
 export type Band = { id: number; level: Level; size: number };
 export type VocabAnswer = { band: number | null; yes: boolean };
 export type MeaningCheck = { level: Level; right: boolean };
@@ -87,7 +87,7 @@ export function vocabResult(scores: ReturnType<typeof bandScores>) {
     (sum, s) => sum + (s.n ? 1.96 * Math.sqrt((s.p * (1 - s.p)) / s.n) * s.size : 0),
     0,
   );
-  const levels = (["A1", "A2", "B1"] as const).map((level) => {
+  const levels = (["A1", "A2", "B1", "B2"] as const).map((level) => {
     const inLevel = scores.filter((s) => s.level === level);
     const total = inLevel.reduce((sum, s) => sum + s.size, 0);
     const share = total ? inLevel.reduce((sum, s) => sum + s.p * s.size, 0) / total : 0;
@@ -116,7 +116,7 @@ export function vocabResult(scores: ReturnType<typeof bandScores>) {
 export type Search = { lo: number; hi: number; probes: number; next: number; done: boolean };
 
 export function startSearch(units: number, prior: Level): Search {
-  const start = { A1: 10, A2: 30, B1: 50 }[prior];
+  const start = { A1: 10, A2: 30, B1: 50, B2: 66 }[prior];
   return { lo: 0, hi: units + 1, probes: 0, next: Math.min(start, units), done: units === 0 };
 }
 
@@ -126,4 +126,12 @@ export function afterProbe(search: Search, passed: boolean): Search {
   const probes = search.probes + 1;
   const done = hi - lo <= 3 || probes >= 7 || (!passed && search.next === 1);
   return { lo, hi, probes, next: Math.floor((lo + hi) / 2), done };
+}
+
+/**
+ * The course lesson to start at: the first grammar lesson not passed (`lo` grammar lessons were
+ * passed; the topics before it count as done too), at most the last lesson.
+ */
+export function startLesson(grammarAt: number[], lo: number, last: number): number {
+  return Math.min(grammarAt[lo] ?? last, last);
 }

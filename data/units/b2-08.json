@@ -1,0 +1,492 @@
+{
+ "id": "b2-08",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Relative clauses with was, wo and wer",
+ "situation": "Explaining precisely",
+ "canDo": "You can explain things precisely with relative clauses after alles, nichts and das Beste, about a whole sentence, with wo(r)- + preposition and with wer.",
+ "explanation": "When you explain exactly what someone should do or what you mean, you need relative clauses that don't refer to a simple noun:\n\n| what comes before | relative word | example |\n|---|---|---|\n| a noun | der/die/das | das Buch, **das** ich lese |\n| alles, nichts, vieles, das Einzige, das Beste | **was** | alles, **was** ich weiß |\n| a whole sentence | **was** | Er hilft uns, **was** mich freut. |\n| verb with a preposition | **wo(r)- + preposition** | etwas, **worüber** ich nachdenke |\n| a place | **wo** | die Stadt, **wo** ich wohne |\n| nothing: \"whoever\" | **wer** | **Wer** Hunger hat, kann essen. |\n\nNotes:\n- **was** after *alles, nichts, vieles, das Einzige* and after superlatives used as nouns: *das Schönste, **was** ich je gesehen habe*.\n- **was** can refer back to the whole sentence before it: *Er kam pünktlich, **was** selten passiert.*\n- If the verb in the clause needs a preposition, *was* becomes **wo(r)- + preposition**: *sich freuen auf → alles, **worauf** ich mich freue*; *sprechen über → etwas, **worüber** ich nicht spreche*; *dankbar sein für → …, **wofür** ich dankbar bin*. Add -r- before a vowel: *wor**an**, wor**über***.\n- **wo** after places: *das Café, **wo** wir uns kennengelernt haben* (or: *in dem*).\n- **wer** means \"anyone who\" and has no noun before it: ***Wer** zu spät kommt, muss warten.* If the main clause needs another case, add *den* or *dem*: ***Wer** mir hilft, **den** lade ich ein.*\n\nThe most common mistakes:\n- **das** instead of **was** after *alles, nichts, das Einzige*: not ~~alles, das ich weiß~~, but *alles, **was** ich weiß*.\n- **was** instead of **das** after a real noun: *das Buch, **das** ich lese* (not ~~was~~).\n- *über was* in writing: use ***worüber***.",
+ "french": "was after alles or nichts is ce que/ce qui (tout ce que je sais = alles, was ich weiß), worüber and wovon often match ce dont (ce dont je rêve = das, wovon ich träume), and wer…, der… is celui qui…",
+ "examples": [
+  {
+   "de": "Das ist alles, was ich weiß.",
+   "en": "That's all I know."
+  },
+  {
+   "de": "Es gibt nichts, was mich mehr ärgert.",
+   "en": "There's nothing that annoys me more."
+  },
+  {
+   "de": "Das Beste, was du tun kannst, ist, mit dem Chef zu sprechen.",
+   "en": "The best thing you can do is talk to the boss."
+  },
+  {
+   "de": "Er hat die Prüfung bestanden, was mich sehr freut.",
+   "en": "He passed the exam, which makes me very happy."
+  },
+  {
+   "de": "Das ist etwas, worüber ich nicht sprechen möchte.",
+   "en": "That's something I don't want to talk about."
+  },
+  {
+   "de": "Die Stadt, wo ich aufgewachsen bin, ist sehr klein.",
+   "en": "The town where I grew up is very small."
+  },
+  {
+   "de": "Wer Fragen hat, kann mich jederzeit anrufen.",
+   "en": "Anyone who has questions can call me any time."
+  },
+  {
+   "de": "Sie hat uns geholfen, wofür wir ihr sehr dankbar sind.",
+   "en": "She helped us, which we're very grateful to her for."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-08-01",
+   "type": "cloze",
+   "de": "Das ist alles, ___ ich weiß.",
+   "base": "relative word",
+   "answers": [
+    "was"
+   ],
+   "en": "That's all I know."
+  },
+  {
+   "id": "b2-08-02",
+   "type": "choice",
+   "de": "Es gibt nichts, ___ mich mehr ärgert.",
+   "options": [
+    "das",
+    "was",
+    "wer"
+   ],
+   "answer": 1,
+   "why": "After nichts the relative word is was.",
+   "en": "There's nothing that annoys me more."
+  },
+  {
+   "id": "b2-08-03",
+   "type": "cloze",
+   "de": "___ Fragen hat, kann mich jederzeit anrufen.",
+   "base": "relative word",
+   "answers": [
+    "Wer"
+   ],
+   "en": "Anyone who has questions can call me any time."
+  },
+  {
+   "id": "b2-08-04",
+   "type": "order",
+   "tiles": [
+    "Das",
+    "ist",
+    "das Beste",
+    "was",
+    "mir",
+    "je",
+    "passiert ist"
+   ],
+   "answers": [
+    "Das ist das Beste, was mir je passiert ist."
+   ],
+   "en": "That's the best thing that has ever happened to me."
+  },
+  {
+   "id": "b2-08-05",
+   "type": "choice",
+   "de": "Er hat die Prüfung bestanden, ___ mich sehr freut.",
+   "options": [
+    "das",
+    "der",
+    "was"
+   ],
+   "answer": 2,
+   "why": "was refers back to the whole sentence before it.",
+   "en": "He passed the exam, which makes me very happy."
+  },
+  {
+   "id": "b2-08-06",
+   "type": "cloze",
+   "de": "Das ist etwas, ___ ich nicht sprechen möchte.",
+   "base": "wo(r)- + über",
+   "answers": [
+    "worüber"
+   ],
+   "en": "That's something I don't want to talk about."
+  },
+  {
+   "id": "b2-08-07",
+   "type": "choice",
+   "de": "Die Stadt, ___ ich aufgewachsen bin, ist sehr klein.",
+   "options": [
+    "wo",
+    "was",
+    "wer"
+   ],
+   "answer": 0,
+   "why": "After a place you can use wo.",
+   "en": "The town where I grew up is very small."
+  },
+  {
+   "id": "b2-08-08",
+   "type": "cloze",
+   "de": "Vieles, ___ er erzählt, stimmt einfach nicht.",
+   "base": "relative word",
+   "answers": [
+    "was"
+   ],
+   "en": "A lot of what he says simply isn't true."
+  },
+  {
+   "id": "b2-08-09",
+   "type": "order",
+   "tiles": [
+    "Wer",
+    "zu spät",
+    "kommt",
+    "muss",
+    "draußen",
+    "warten"
+   ],
+   "answers": [
+    "Wer zu spät kommt, muss draußen warten."
+   ],
+   "en": "Anyone who comes late has to wait outside."
+  },
+  {
+   "id": "b2-08-10",
+   "type": "choice",
+   "de": "Sie hat uns beim Umzug geholfen, ___ wir ihr sehr dankbar sind.",
+   "options": [
+    "dafür",
+    "wofür",
+    "was"
+   ],
+   "answer": 1,
+   "why": "dankbar sein für becomes wofür in a relative clause.",
+   "en": "She helped us move, which we're very grateful to her for."
+  },
+  {
+   "id": "b2-08-11",
+   "type": "cloze",
+   "de": "Das Einzige, ___ mir an der Wohnung nicht gefällt, ist der Lärm.",
+   "base": "relative word",
+   "answers": [
+    "was"
+   ],
+   "en": "The only thing I don't like about the flat is the noise."
+  },
+  {
+   "id": "b2-08-12",
+   "type": "choice",
+   "de": "Das ist das Buch, ___ ich dir empfohlen habe.",
+   "options": [
+    "das",
+    "was",
+    "wo"
+   ],
+   "answer": 0,
+   "why": "After a real noun (das Buch) you use the relative pronoun das, not was.",
+   "en": "That's the book I recommended to you."
+  },
+  {
+   "id": "b2-08-13",
+   "type": "cloze",
+   "de": "Pünktlich sein – das ist alles, ___ es ankommt.",
+   "base": "wo(r)- + auf",
+   "answers": [
+    "worauf"
+   ],
+   "en": "Being on time – that's all that matters."
+  },
+  {
+   "id": "b2-08-14",
+   "type": "order",
+   "tiles": [
+    "Alles",
+    "was",
+    "du",
+    "brauchst",
+    "ist",
+    "ein Ausweis"
+   ],
+   "answers": [
+    "Alles, was du brauchst, ist ein Ausweis.",
+    "Ein Ausweis ist alles, was du brauchst."
+   ],
+   "en": "All you need is an ID."
+  },
+  {
+   "id": "b2-08-15",
+   "type": "choice",
+   "de": "___ mitkommen will, muss sich bis Freitag anmelden.",
+   "options": [
+    "Was",
+    "Der",
+    "Wer"
+   ],
+   "answer": 2,
+   "why": "wer means 'anyone who' and refers to a person without a noun before it.",
+   "en": "Anyone who wants to come along has to sign up by Friday."
+  },
+  {
+   "id": "b2-08-16",
+   "type": "cloze",
+   "de": "Diese Wohnung ist genau das, ___ ich immer geträumt habe.",
+   "base": "wo(r)- + von",
+   "answers": [
+    "wovon"
+   ],
+   "en": "This flat is exactly what I've always dreamed of."
+  },
+  {
+   "id": "b2-08-17",
+   "type": "choice",
+   "de": "Morgen ist mein letzter Arbeitstag, ___ ich ein bisschen traurig bin.",
+   "options": [
+    "darüber",
+    "worüber",
+    "was"
+   ],
+   "answer": 1,
+   "why": "traurig sein über becomes worüber when it refers to the whole sentence.",
+   "en": "Tomorrow is my last day at work, which I'm a bit sad about."
+  },
+  {
+   "id": "b2-08-18",
+   "type": "cloze",
+   "de": "Das Café, ___ wir uns kennengelernt haben, gibt es nicht mehr.",
+   "base": "relative word (place)",
+   "answers": [
+    "wo",
+    "in dem"
+   ],
+   "en": "The café where we met doesn't exist any more."
+  },
+  {
+   "id": "b2-08-19",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "hat",
+    "angerufen",
+    "was",
+    "ich",
+    "nicht erwartet hatte"
+   ],
+   "answers": [
+    "Er hat angerufen, was ich nicht erwartet hatte."
+   ],
+   "en": "He called, which I hadn't expected."
+  },
+  {
+   "id": "b2-08-20",
+   "type": "choice",
+   "de": "Ich habe endlich etwas gefunden, ___ ich mich wirklich interessiere.",
+   "options": [
+    "wofür",
+    "dafür",
+    "wovon"
+   ],
+   "answer": 0,
+   "why": "sich interessieren für becomes wofür in a relative clause.",
+   "en": "I've finally found something I'm really interested in."
+  },
+  {
+   "id": "b2-08-21",
+   "type": "cloze",
+   "de": "Wer A sagt, ___ auch B sagen.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "In for a penny, in for a pound."
+  },
+  {
+   "id": "b2-08-22",
+   "type": "choice",
+   "de": "Wer mir beim Umzug hilft, ___ lade ich zum Essen ein.",
+   "options": [
+    "der",
+    "den",
+    "dem"
+   ],
+   "answer": 1,
+   "why": "einladen needs the accusative in the main clause, so wer … den.",
+   "en": "Anyone who helps me move, I'll invite for a meal."
+  },
+  {
+   "id": "b2-08-23",
+   "type": "cloze",
+   "de": "Das ist das Schönste, ___ ich je gesehen habe.",
+   "base": "relative word",
+   "answers": [
+    "was"
+   ],
+   "en": "That's the most beautiful thing I've ever seen."
+  },
+  {
+   "id": "b2-08-24",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "hat",
+    "mir",
+    "etwas",
+    "erzählt",
+    "worüber",
+    "ich lachen musste"
+   ],
+   "answers": [
+    "Sie hat mir etwas erzählt, worüber ich lachen musste."
+   ],
+   "en": "She told me something that made me laugh."
+  }
+ ],
+ "listening": {
+  "title": "Alles, was du wissen musst",
+  "intro": "Lea is going away and explains to her friend Max exactly what to do while he looks after her flat.",
+  "lines": [
+   {
+    "speaker": "Lea",
+    "de": "Danke, dass du auf meine Wohnung aufpasst! Ich erkläre dir kurz alles, was wichtig ist.",
+    "en": "Thanks for looking after my flat! I'll quickly explain everything that's important."
+   },
+   {
+    "speaker": "Max",
+    "de": "Gern. Was muss ich denn machen?",
+    "en": "Sure. So what do I have to do?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Das Einzige, was jeden Tag wichtig ist: die Katze füttern. Das Futter ist im Schrank, wo auch die Teller stehen.",
+    "en": "The only thing that matters every day: feeding the cat. The food is in the cupboard where the plates are."
+   },
+   {
+    "speaker": "Max",
+    "de": "Und wie viel bekommt sie?",
+    "en": "And how much does she get?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Eine Dose am Morgen. Sie frisst zwar alles, was du ihr gibst, aber dann wird ihr schlecht.",
+    "en": "One tin in the morning. She'll eat everything you give her, but then she feels sick."
+   },
+   {
+    "speaker": "Max",
+    "de": "Verstehe. Und die Pflanzen?",
+    "en": "I see. And the plants?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Die auf dem Balkon brauchen jeden zweiten Tag Wasser, was bei dieser Hitze wirklich wichtig ist.",
+    "en": "The ones on the balcony need water every other day, which is really important in this heat."
+   },
+   {
+    "speaker": "Max",
+    "de": "Gibt es noch etwas, worauf ich achten muss?",
+    "en": "Is there anything else I need to watch out for?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Ja, die Haustür. Wer abends als Letzter reinkommt, muss sie abschließen. Das ist eine Hausregel.",
+    "en": "Yes, the front door. Whoever comes in last in the evening has to lock it. That's a house rule."
+   },
+   {
+    "speaker": "Max",
+    "de": "Und wenn etwas kaputtgeht?",
+    "en": "And if something breaks?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Dann ruf Herrn Brandt an. Er ist der Nachbar, dem ich am meisten vertraue, und er hat auch einen Schlüssel.",
+    "en": "Then call Mr Brandt. He's the neighbour I trust most, and he has a key too."
+   },
+   {
+    "speaker": "Max",
+    "de": "Okay. Und darf ich deinen Fernseher benutzen?",
+    "en": "OK. And can I use your TV?"
+   },
+   {
+    "speaker": "Lea",
+    "de": "Klar, du darfst alles benutzen, was du findest – nur nicht meinen Wein im Keller!",
+    "en": "Sure, you can use anything you find – just not my wine in the cellar!"
+   },
+   {
+    "speaker": "Max",
+    "de": "Schade. Das war das Erste, woran ich gedacht habe.",
+    "en": "Too bad. That was the first thing I thought of."
+   }
+  ],
+  "questions": [
+   {
+    "q": "How often should Max feed the cat?",
+    "options": [
+     "Twice a day.",
+     "Once, in the morning.",
+     "Every other day."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why shouldn't the cat get more food?",
+    "options": [
+     "She feels sick afterwards.",
+     "She gets too fat.",
+     "The food is expensive."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who should Max call if something breaks?",
+    "options": [
+     "Lea.",
+     "The caretaker.",
+     "Mr Brandt, the neighbour."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is Max not allowed to use?",
+    "options": [
+     "The TV.",
+     "The wine in the cellar.",
+     "The balcony."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Das ist alles, was ich über die neue Kollegin weiß.",
+  "Wer Fragen hat, kann mich jederzeit gern anrufen.",
+  "Das ist etwas, worüber ich nicht sprechen möchte."
+ ],
+ "speaking": [
+  {
+   "de": "Ich erkläre dir kurz alles, was wichtig ist.",
+   "en": "I'll quickly explain everything that's important."
+  },
+  {
+   "de": "Gibt es noch etwas, worauf ich achten muss?",
+   "en": "Is there anything else I need to watch out for?"
+  },
+  {
+   "de": "Wer als Letzter reinkommt, muss die Tür abschließen.",
+   "en": "Whoever comes in last has to lock the door."
+  },
+  {
+   "de": "Du darfst alles benutzen, was du findest.",
+   "en": "You can use anything you find."
+  },
+  {
+   "de": "Das war das Erste, woran ich gedacht habe.",
+   "en": "That was the first thing I thought of."
+  }
+ ],
+ "writing": {
+  "task": "A colleague will take over your work while you're on holiday next week. Write a message of about 100 words explaining precisely what they need to do, using was, wo, wer and wo(r)- + preposition.",
+  "model": "Hallo Jonas,\n\ndanke, dass du mich nächste Woche vertrittst! Hier ist alles, was du wissen musst. Das Wichtigste, was jeden Tag zu tun ist: die neuen Bestellungen prüfen und bis 12 Uhr an das Lager schicken. Wer nach 12 Uhr bestellt, bekommt die Ware erst einen Tag später. Herr Wolf ruft vielleicht an, weil seine Lieferung zu spät kam, worüber er sich sehr geärgert hat. Bitte sei besonders freundlich zu ihm. Die Verträge findest du im Schrank, wo auch die Rechnungen sind. Es gibt eigentlich nichts, was du nicht allein schaffst. Wenn doch etwas ist, worüber du mit mir sprechen möchtest, schreib mir einfach.\n\nViele Grüße\nClaire"
+ }
+}

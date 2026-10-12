@@ -1,0 +1,545 @@
+{
+ "id": "b1-s09",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "The job offer",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a difficult decision, understand different opinions and say what you think about a job offer.",
+ "explanation": "Almost a year after her first day in Cologne, Camille gets an email from Hamburg: a big agency wants her as art director, with more responsibility and more money. Should she go? Rafael, her colleague Jonas, Frau Schmitz and her boss Thomas all have an opinion.\n\nListen for the language of opinions: **meiner Meinung nach**, **ich finde**, **ich bin der Meinung, dass**, **einerseits … andererseits**, **da hast du recht**, **ich sehe das so**.\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| das Angebot, -e | offer |\n| die Verantwortung | responsibility |\n| das Gehalt, Gehälter | salary |\n| die Vorteile / Nachteile | advantages / disadvantages |\n| ein Team leiten | to lead a team |\n| befürchten | to fear |\n| zusagen | to accept (an offer) |\n| die Absage, -n | refusal, rejection |\n| Es geht um … | It's about … |\n\nTip: before you listen, decide what *you* would do. Then see who in the story agrees with you.",
+ "french": "Einerseits … andererseits works like d'un côté … de l'autre, and meiner Meinung nach like à mon avis, with the verb right after it: Meiner Meinung nach solltest du …",
+ "examples": [
+  {
+   "de": "Eine Agentur bot ihr eine Stelle als Art Director an.",
+   "en": "An agency offered her a job as art director."
+  },
+  {
+   "de": "Einerseits ist das eine riesige Chance, andererseits bin ich gerade erst angekommen.",
+   "en": "On the one hand it's a huge chance, on the other hand I've only just arrived."
+  },
+  {
+   "de": "Meiner Meinung nach solltest du dir das genau überlegen.",
+   "en": "In my opinion you should think about it carefully."
+  },
+  {
+   "de": "Ich bin der Meinung, dass Geld nicht alles ist.",
+   "en": "I believe that money isn't everything."
+  },
+  {
+   "de": "Da hast du recht.",
+   "en": "You're right there."
+  },
+  {
+   "de": "Was hältst du davon, wenn du das Designteam leitest?",
+   "en": "How about you leading the design team?"
+  },
+  {
+   "de": "Es geht nicht um Hamburg oder Köln.",
+   "en": "It's not about Hamburg or Cologne."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Eine Agentur in Hamburg machte Camille ein tolles ___.",
+   "base": "offer",
+   "answers": [
+    "Angebot"
+   ],
+   "en": "An agency in Hamburg made Camille a great offer.",
+   "id": "b1-s09-01"
+  },
+  {
+   "type": "choice",
+   "de": "In Hamburg sollte Camille ___ mehr verdienen.",
+   "options": [
+    "fünf Prozent",
+    "fünfzehn Prozent",
+    "fünfzig Prozent"
+   ],
+   "answer": 1,
+   "why": "The offer was fifteen percent more salary.",
+   "en": "In Hamburg Camille was to earn fifteen percent more.",
+   "id": "b1-s09-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Die neue Stelle bedeutete mehr ___ und internationale Kunden.",
+   "base": "responsibility",
+   "answers": [
+    "Verantwortung"
+   ],
+   "en": "The new job meant more responsibility and international clients.",
+   "id": "b1-s09-03"
+  },
+  {
+   "type": "choice",
+   "de": "___ ist das eine riesige Chance, andererseits bin ich gerade erst angekommen.",
+   "options": [
+    "Einerseits",
+    "Erstens",
+    "Entweder"
+   ],
+   "answer": 0,
+   "why": "andererseits is paired with einerseits: on the one hand … on the other hand.",
+   "en": "On the one hand it's a huge chance, on the other hand I've only just arrived.",
+   "id": "b1-s09-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Meiner Meinung nach",
+    "du",
+    "solltest",
+    "dir das",
+    "genau überlegen"
+   ],
+   "answers": [
+    "Meiner Meinung nach solltest du dir das genau überlegen.",
+    "Du solltest dir das meiner Meinung nach genau überlegen."
+   ],
+   "en": "In my opinion you should think about it carefully.",
+   "id": "b1-s09-05"
+  },
+  {
+   "type": "choice",
+   "de": "Meiner Meinung nach ___ das machen.",
+   "options": [
+    "du solltest",
+    "solltest du",
+    "du sollst"
+   ],
+   "answer": 1,
+   "why": "Meiner Meinung nach takes position 1, so the verb comes next and the subject after it: solltest du.",
+   "en": "In my opinion you should do it.",
+   "id": "b1-s09-06"
+  },
+  {
+   "type": "cloze",
+   "de": "Ich ___, du musst das machen!",
+   "base": "to think (have an opinion)",
+   "answers": [
+    "finde",
+    "glaube",
+    "meine",
+    "denke"
+   ],
+   "en": "I think you have to do it!",
+   "id": "b1-s09-07"
+  },
+  {
+   "type": "choice",
+   "de": "Jonas war der Meinung, dass Camille ___.",
+   "options": [
+    "in Köln bleiben sollte",
+    "das Angebot annehmen sollte",
+    "zuerst mit dem Chef sprechen sollte"
+   ],
+   "answer": 1,
+   "why": "He said: you have to do it, you don't get an offer like that every day.",
+   "en": "Jonas thought Camille should accept the offer.",
+   "id": "b1-s09-08"
+  },
+  {
+   "type": "cloze",
+   "de": "Da hast du ___, aber ganz ehrlich: Hier machst du in fünf Jahren noch dasselbe.",
+   "base": "right",
+   "answers": [
+    "recht",
+    "Recht"
+   ],
+   "en": "You're right there, but honestly: here you'll still be doing the same thing in five years.",
+   "id": "b1-s09-09"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "der Meinung,",
+    "dass",
+    "Geld",
+    "nicht alles",
+    "ist"
+   ],
+   "answers": [
+    "Ich bin der Meinung, dass Geld nicht alles ist."
+   ],
+   "en": "I believe that money isn't everything.",
+   "id": "b1-s09-10"
+  },
+  {
+   "type": "choice",
+   "de": "Frau Schmitz sagte: „Wenn ich in Ihrem Alter ___, würde ich vielleicht auch gehen.“",
+   "options": [
+    "bin",
+    "wäre",
+    "war"
+   ],
+   "answer": 1,
+   "why": "An unreal condition takes the Konjunktiv II: wenn ich … wäre.",
+   "en": "Frau Schmitz said: If I were your age, I might go too.",
+   "id": "b1-s09-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Sie machte eine Liste mit Vorteilen und ___.",
+   "base": "disadvantages",
+   "answers": [
+    "Nachteilen"
+   ],
+   "en": "She made a list of advantages and disadvantages.",
+   "id": "b1-s09-12"
+  },
+  {
+   "type": "choice",
+   "de": "Als Camille ihm alles erzählte, sagte Thomas, er habe so etwas ___.",
+   "options": [
+    "befürchtet",
+    "gewünscht",
+    "vergessen"
+   ],
+   "answer": 0,
+   "why": "He had feared it: good people get offers from other companies.",
+   "en": "When Camille told him everything, Thomas said he had feared something like that.",
+   "id": "b1-s09-13"
+  },
+  {
+   "type": "cloze",
+   "de": "Was hältst du davon, wenn du ab Mai das Designteam ___?",
+   "base": "leiten",
+   "answers": [
+    "leitest"
+   ],
+   "en": "How about you leading the design team from May?",
+   "id": "b1-s09-14"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Darf",
+    "ich",
+    "bis Freitag",
+    "darüber",
+    "nachdenken"
+   ],
+   "answers": [
+    "Darf ich bis Freitag darüber nachdenken?",
+    "Darf ich darüber bis Freitag nachdenken?"
+   ],
+   "en": "May I think about it until Friday?",
+   "id": "b1-s09-15"
+  },
+  {
+   "type": "choice",
+   "de": "Thomas bot Camille an, ___.",
+   "options": [
+    "mehr im Homeoffice zu arbeiten",
+    "das Designteam zu leiten",
+    "nach Hamburg zu gehen"
+   ],
+   "answer": 1,
+   "why": "He suggested that she lead the design team from May, with a new contract.",
+   "en": "Thomas offered to let Camille lead the design team.",
+   "id": "b1-s09-16"
+  },
+  {
+   "type": "cloze",
+   "de": "Die Entscheidung ___ du, nicht wir.",
+   "base": "treffen",
+   "answers": [
+    "triffst"
+   ],
+   "en": "You make the decision, not us.",
+   "id": "b1-s09-17"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael sagte, wenn Camille nach Hamburg geht, ___.",
+   "options": [
+    "bleibt er in Köln",
+    "kommt er mit",
+    "sucht er eine neue Freundin"
+   ],
+   "answer": 1,
+   "why": "He said: if you go to Hamburg, I'll come with you; cooks are needed everywhere.",
+   "en": "Rafael said that if Camille goes to Hamburg, he'll come along.",
+   "id": "b1-s09-18"
+  },
+  {
+   "type": "cloze",
+   "de": "Köche werden überall ___.",
+   "base": "suchen",
+   "answers": [
+    "gesucht"
+   ],
+   "en": "Cooks are needed everywhere.",
+   "id": "b1-s09-19"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Es",
+    "geht",
+    "nicht",
+    "um Hamburg oder Köln"
+   ],
+   "answers": [
+    "Es geht nicht um Hamburg oder Köln."
+   ],
+   "en": "It's not about Hamburg or Cologne.",
+   "id": "b1-s09-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Am Freitag ___ sie Thomas zu.",
+   "base": "zusagen",
+   "answers": [
+    "sagte"
+   ],
+   "en": "On Friday she accepted Thomas's offer.",
+   "id": "b1-s09-21"
+  },
+  {
+   "type": "choice",
+   "de": "Der Agentur in Hamburg schrieb Camille eine freundliche ___.",
+   "options": [
+    "Bewerbung",
+    "Absage",
+    "Rechnung"
+   ],
+   "answer": 1,
+   "why": "She turned the offer down: eine Absage.",
+   "en": "Camille wrote the agency in Hamburg a friendly refusal.",
+   "id": "b1-s09-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Eine bessere Mieterin",
+    "ich",
+    "finde",
+    "nie"
+   ],
+   "answers": [
+    "Eine bessere Mieterin finde ich nie.",
+    "Ich finde nie eine bessere Mieterin."
+   ],
+   "en": "I'll never find a better tenant.",
+   "id": "b1-s09-23"
+  },
+  {
+   "type": "cloze",
+   "de": "Gott sei Dank! Eine ___ Mieterin finde ich nie.",
+   "base": "gut (comparative)",
+   "answers": [
+    "bessere"
+   ],
+   "en": "Thank God! I'll never find a better tenant.",
+   "id": "b1-s09-24"
+  }
+ ],
+ "listening": {
+  "title": "Hamburg oder Köln?",
+  "intro": "Almost a year after she started in Cologne, Camille receives a job offer from Hamburg and asks everyone for their opinion.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Im Februar, fast ein Jahr nach ihrem ersten Arbeitstag, bekam Camille eine E-Mail aus Hamburg.",
+    "en": "In February, almost a year after her first working day, Camille got an email from Hamburg."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Eine große Agentur bot ihr eine Stelle als Art Director an: mehr Verantwortung, internationale Kunden und fünfzehn Prozent mehr Gehalt.",
+    "en": "A big agency offered her a job as art director: more responsibility, international clients and fifteen percent more salary."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille las die E-Mail dreimal. Dann rief sie Rafael an.",
+    "en": "Camille read the email three times. Then she called Rafael."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Hamburg? Wow, herzlichen Glückwunsch! Und, was meinst du?",
+    "en": "Hamburg? Wow, congratulations! So, what do you think?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ich weiß es nicht. Einerseits ist das eine riesige Chance. Andererseits bin ich hier gerade erst richtig angekommen.",
+    "en": "I don't know. On the one hand it's a huge chance. On the other hand I've only just really settled in here."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Meiner Meinung nach solltest du dir das genau überlegen. Es ist deine Karriere.",
+    "en": "In my opinion you should think about it carefully. It's your career."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am nächsten Tag erzählte sie Jonas in der Kantine davon.",
+    "en": "The next day she told Jonas about it in the canteen."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ich finde, du musst das machen! So ein Angebot bekommt man nicht jeden Tag.",
+    "en": "I think you have to do it! You don't get an offer like that every day."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Aber das Team hier ist toll. Und ich mag meine Arbeit.",
+    "en": "But the team here is great. And I like my work."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Da hast du recht. Aber ganz ehrlich: Hier machst du in fünf Jahren noch dasselbe.",
+    "en": "You're right there. But honestly: here you'll still be doing the same thing in five years."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend klingelte Camille bei Frau Schmitz. Die hörte ihr ruhig zu und holte eine Flasche Wein.",
+    "en": "In the evening Camille rang Frau Schmitz's bell. She listened calmly and fetched a bottle of wine."
+   },
+   {
+    "speaker": "Frau Schmitz",
+    "de": "Wissen Sie, ich bin der Meinung, dass Geld nicht alles ist. Aber ich bin alt. Wenn ich in Ihrem Alter wäre, würde ich vielleicht auch gehen.",
+    "en": "You know, I believe that money isn't everything. But I'm old. If I were your age, I might go too."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille schlief schlecht. Sie machte eine Liste mit Vorteilen und Nachteilen, aber die Liste half ihr nicht.",
+    "en": "Camille slept badly. She made a list of advantages and disadvantages, but the list didn't help her."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Schließlich ging sie zu ihrem Chef und erzählte ihm alles ganz offen.",
+    "en": "Finally she went to her boss and told him everything quite openly."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Ehrlich gesagt habe ich so etwas befürchtet. Du bist gut, und das sehen auch andere.",
+    "en": "To be honest, I was afraid of something like this. You're good, and others can see that too."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Ich sehe das so: Wir wollen dich nicht verlieren. Was hältst du davon, wenn du ab Mai das Designteam leitest? Mit einem neuen Vertrag natürlich.",
+    "en": "The way I see it: we don't want to lose you. How about you leading the design team from May? With a new contract, of course."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Das kommt sehr überraschend. Darf ich bis Freitag darüber nachdenken?",
+    "en": "That comes as a big surprise. May I think about it until Friday?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Natürlich. Die Entscheidung triffst du, nicht wir.",
+    "en": "Of course. You make the decision, not us."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend kochte Rafael Feijoada, sein Lieblingsessen aus Brasilien. Camille erzählte ihm von dem Angebot ihres Chefs.",
+    "en": "In the evening Rafael cooked feijoada, his favourite dish from Brazil. Camille told him about her boss's offer."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Ich muss dir etwas sagen: Wenn du nach Hamburg gehst, komme ich mit. Köche werden überall gesucht.",
+    "en": "I have to tell you something: if you go to Hamburg, I'll come with you. Cooks are needed everywhere."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Camille sah ihn lange an. In diesem Moment wusste sie, was sie wollte.",
+    "en": "Camille looked at him for a long time. At that moment she knew what she wanted."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Weißt du was? Es geht nicht um Hamburg oder Köln. Und hier habe ich alles: dich, das Team, Frau Schmitz, sogar Herrn Krause.",
+    "en": "You know what? It's not about Hamburg or Cologne. And here I have everything: you, the team, Frau Schmitz, even Herr Krause."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Freitag sagte sie Thomas zu. Der Agentur in Hamburg schrieb sie eine freundliche Absage.",
+    "en": "On Friday she accepted Thomas's offer. She wrote the agency in Hamburg a friendly refusal."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Und als sie Frau Schmitz die Neuigkeit erzählte, sagte die nur: „Gott sei Dank! Eine bessere Mieterin finde ich nie.“",
+    "en": "And when she told Frau Schmitz the news, she just said: Thank God! I'll never find a better tenant."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Was bot die Agentur in Hamburg Camille an?",
+    "options": [
+     "Eine Stelle als Art Director mit mehr Gehalt",
+     "Ein Praktikum",
+     "Eine Stelle im Homeoffice"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was meinte Jonas?",
+    "options": [
+     "Camille sollte in Köln bleiben.",
+     "Camille sollte das Angebot annehmen.",
+     "Camille sollte zuerst Rafael fragen."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Was sagte Frau Schmitz?",
+    "options": [
+     "Sie war froh, dass Camille geht.",
+     "Geld ist das Wichtigste.",
+     "Geld ist nicht alles, aber in Camilles Alter würde sie vielleicht auch gehen."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was bot Thomas Camille an?",
+    "options": [
+     "Mehr Urlaub",
+     "Die Leitung des Designteams",
+     "Eine Stelle in Hamburg"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum blieb Camille am Ende in Köln?",
+    "options": [
+     "Rafael wollte nicht mitkommen.",
+     "Die Agentur in Hamburg sagte ab.",
+     "Sie hatte in Köln alles, was ihr wichtig war."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Einerseits ist das eine große Chance, andererseits mag ich mein Team.",
+  "Meiner Meinung nach solltest du dir das genau überlegen.",
+  "Ich bin der Meinung, dass Geld nicht alles ist."
+ ],
+ "speaking": [
+  {
+   "de": "Einerseits ist das eine riesige Chance. Andererseits bin ich hier gerade erst angekommen.",
+   "en": "On the one hand it's a huge chance. On the other hand I've only just arrived here."
+  },
+  {
+   "de": "Meiner Meinung nach solltest du dir das genau überlegen.",
+   "en": "In my opinion you should think about it carefully."
+  },
+  {
+   "de": "Da hast du recht. Aber ganz ehrlich …",
+   "en": "You're right there. But honestly …"
+  },
+  {
+   "de": "Darf ich bis Freitag darüber nachdenken?",
+   "en": "May I think about it until Friday?"
+  },
+  {
+   "de": "Es geht nicht um Hamburg oder Köln.",
+   "en": "It's not about Hamburg or Cologne."
+  }
+ ],
+ "writing": {
+  "task": "Camille asks you for advice before she decides. Write her an 80–100-word message with your opinion: should she take the job in Hamburg or stay in Cologne? Use einerseits … andererseits and meiner Meinung nach.",
+  "model": "Liebe Camille,\n\nherzlichen Glückwunsch zu dem Angebot! Ich verstehe gut, dass die Entscheidung schwer ist. Einerseits ist die Stelle in Hamburg eine tolle Chance: mehr Verantwortung, mehr Geld und internationale Kunden. Andererseits hast du in Köln ein super Team, eine schöne Wohnung und nette Nachbarn. Und Rafael hat gerade erst als Küchenchef angefangen. Meiner Meinung nach solltest du mit deinem Chef sprechen, bevor du dich entscheidest. Vielleicht bekommst du auch in Köln mehr Verantwortung. Ich bin sicher, du triffst die richtige Entscheidung!\n\nLiebe Grüße\nAnna"
+ }
+}

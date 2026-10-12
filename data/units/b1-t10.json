@@ -1,0 +1,526 @@
+{
+ "id": "b1-t10",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Film",
+  "das Kino",
+  "das Buch",
+  "der Roman",
+  "der Krimi",
+  "die Serie",
+  "die Geschichte",
+  "der Autor",
+  "der Schriftsteller",
+  "der Schauspieler",
+  "die Rolle",
+  "die Figur",
+  "das Ende",
+  "die Kritik",
+  "das Publikum",
+  "der Zuschauer",
+  "der Leser",
+  "die Literatur",
+  "das Theater",
+  "die Bühne",
+  "die Buchhandlung",
+  "die Bibliothek",
+  "empfehlen",
+  "die Empfehlung",
+  "sich lohnen",
+  "spannend",
+  "langweilig",
+  "witzig",
+  "lustig",
+  "traurig"
+ ],
+ "title": "Films and books",
+ "situation": "Recommending a film or book",
+ "canDo": "You can say what a film or book is about, where it's set and who plays in it, and recommend it to someone.",
+ "explanation": "When you recommend a film or a book, you need words for what it is, what it's about and what you thought of it.\n\n| German | English |\n|---|---|\n| der Film, der Krimi, die Komödie, die Serie | film, crime story, comedy, series |\n| das Buch, der Roman, die Geschichte | book, novel, story |\n| der Autor / die Autorin | author |\n| der Schauspieler / die Schauspielerin | actor / actress |\n| die Hauptrolle, die Figur | lead role, character |\n| das Ende | ending |\n| die Kritik | review |\n\nUseful phrases:\n- ***Es geht um** eine junge Lehrerin.* / *Der Film **handelt von** einer jungen Lehrerin.* (It's about …)\n- *Die Geschichte **spielt in** Hamburg.* (It's set in …)\n- *Die Hauptrolle spielt …* / *Sie spielt eine Ärztin.*\n- *Ich kann dir den Film sehr **empfehlen**.* / *Der Film **lohnt sich**!*\n- *Er war spannend / witzig / traurig / langweilig.*\n- *Läuft der Film noch im Kino?*\n\nTips:\n- *Es geht um* + accusative, *handeln von* + dative. Don't mix them: not *es geht von*.\n- *spannend* means exciting, gripping. It's the word for a good thriller.\n- In the cinema most foreign films are dubbed (*synchronisiert*). *OmU* (Original mit Untertiteln) means the original version with German subtitles.",
+ "french": "Un roman is ein Roman and « l'histoire se passe à Hambourg » is Die Geschichte spielt in Hamburg, but une nouvelle is eine Kurzgeschichte (eine Novelle is longer).",
+ "examples": [
+  {
+   "de": "Es geht um eine Familie, die ein kleines Hotel an der Ostsee hat.",
+   "en": "It's about a family who have a small hotel on the Baltic Sea."
+  },
+  {
+   "de": "Der Film spielt in den Siebzigerjahren in Hamburg.",
+   "en": "The film is set in Hamburg in the seventies."
+  },
+  {
+   "de": "Die Hauptrolle spielt eine junge Schauspielerin aus Wien.",
+   "en": "A young actress from Vienna plays the lead role."
+  },
+  {
+   "de": "Das Buch war so spannend, dass ich es an einem Wochenende gelesen habe.",
+   "en": "The book was so gripping that I read it in one weekend."
+  },
+  {
+   "de": "Ich kann dir die Serie wirklich empfehlen.",
+   "en": "I can really recommend the series to you."
+  },
+  {
+   "de": "Das Ende fand ich ein bisschen traurig.",
+   "en": "I found the ending a bit sad."
+  },
+  {
+   "de": "Die Kritiken waren gut, aber mir war der Film zu langweilig.",
+   "en": "The reviews were good, but the film was too boring for me."
+  },
+  {
+   "de": "Läuft der Film noch im Kino?",
+   "en": "Is the film still on at the cinema?"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t10-01",
+   "type": "choice",
+   "de": "Gestern habe ich einen ___ gesehen. Erst am Ende wusste ich, wer der Mörder war.",
+   "options": [
+    "Krimi",
+    "Komödie",
+    "Roman"
+   ],
+   "answer": 0,
+   "why": "A story about a murder that you watch is a Krimi; you read a Roman, and Komödie is feminine (eine).",
+   "en": "Yesterday I watched a crime film. Only at the end did I know who the murderer was."
+  },
+  {
+   "id": "b1-t10-02",
+   "type": "cloze",
+   "de": "Kannst du mir ein gutes ___ für den Urlaub empfehlen?",
+   "base": "book",
+   "answers": [
+    "Buch"
+   ],
+   "en": "Can you recommend a good book for the holidays?"
+  },
+  {
+   "id": "b1-t10-03",
+   "type": "cloze",
+   "de": "Der Film war sehr ___, wir haben die ganze Zeit gelacht.",
+   "base": "funny",
+   "answers": [
+    "witzig",
+    "lustig",
+    "komisch"
+   ],
+   "en": "The film was very funny; we laughed the whole time."
+  },
+  {
+   "id": "b1-t10-04",
+   "type": "choice",
+   "de": "Worum geht es in dem Film? – Es geht ___ zwei Schwestern.",
+   "options": [
+    "von",
+    "um",
+    "über"
+   ],
+   "answer": 1,
+   "why": "The fixed phrase is es geht um + accusative.",
+   "en": "What's the film about? – It's about two sisters."
+  },
+  {
+   "id": "b1-t10-05",
+   "type": "order",
+   "tiles": [
+    "Der Film",
+    "spielt",
+    "in Berlin"
+   ],
+   "answers": [
+    "Der Film spielt in Berlin.",
+    "In Berlin spielt der Film."
+   ],
+   "en": "The film is set in Berlin."
+  },
+  {
+   "id": "b1-t10-06",
+   "type": "cloze",
+   "de": "Die ___ spielt Lisa Brandt, eine junge Schauspielerin aus München.",
+   "base": "lead role",
+   "answers": [
+    "Hauptrolle"
+   ],
+   "en": "The lead role is played by Lisa Brandt, a young actress from Munich."
+  },
+  {
+   "id": "b1-t10-07",
+   "type": "choice",
+   "de": "Das Buch war so ___, dass ich es in zwei Tagen gelesen habe.",
+   "options": [
+    "langweilig",
+    "kurz",
+    "spannend"
+   ],
+   "answer": 2,
+   "why": "You read a book quickly when it's gripping: spannend.",
+   "en": "The book was so gripping that I read it in two days."
+  },
+  {
+   "id": "b1-t10-08",
+   "type": "cloze",
+   "de": "Jeden Abend schaue ich eine Folge von meiner neuen ___.",
+   "base": "series",
+   "answers": [
+    "Serie"
+   ],
+   "en": "Every evening I watch an episode of my new series."
+  },
+  {
+   "id": "b1-t10-09",
+   "type": "choice",
+   "de": "Der Roman ___ von einem Mann, der seine Familie sucht.",
+   "options": [
+    "handelt",
+    "geht",
+    "spielt"
+   ],
+   "answer": 0,
+   "why": "handeln von = to be about; es geht needs um, and spielen is for the place or time.",
+   "en": "The novel is about a man who is looking for his family."
+  },
+  {
+   "id": "b1-t10-10",
+   "type": "cloze",
+   "de": "Wer hat das Buch geschrieben? – Die ___ heißt Anna Keller und kommt aus der Schweiz.",
+   "base": "author (a woman)",
+   "answers": [
+    "Autorin",
+    "Schriftstellerin"
+   ],
+   "en": "Who wrote the book? – The author is called Anna Keller and comes from Switzerland."
+  },
+  {
+   "id": "b1-t10-11",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "kann",
+    "dir",
+    "den Film",
+    "sehr",
+    "empfehlen"
+   ],
+   "answers": [
+    "Ich kann dir den Film sehr empfehlen.",
+    "Den Film kann ich dir sehr empfehlen."
+   ],
+   "en": "I can really recommend the film to you."
+  },
+  {
+   "id": "b1-t10-12",
+   "type": "choice",
+   "de": "Am Ende standen alle Schauspieler auf der ___ und das Publikum hat lange geklatscht.",
+   "options": [
+    "Bühne",
+    "Leinwand",
+    "Kasse"
+   ],
+   "answer": 0,
+   "why": "Actors in a theatre stand on the stage: die Bühne.",
+   "en": "At the end all the actors stood on the stage and the audience clapped for a long time."
+  },
+  {
+   "id": "b1-t10-13",
+   "type": "cloze",
+   "de": "Das ___ fand ich traurig: Am Schluss stirbt der Hund.",
+   "base": "ending",
+   "answers": [
+    "Ende"
+   ],
+   "en": "I found the ending sad: at the end the dog dies."
+  },
+  {
+   "id": "b1-t10-14",
+   "type": "choice",
+   "de": "Der Film war ein großer Erfolg, über eine Million ___ haben ihn im Kino gesehen.",
+   "options": [
+    "Leser",
+    "Zuschauer",
+    "Autoren"
+   ],
+   "answer": 1,
+   "why": "People who watch a film are Zuschauer; Leser read books.",
+   "en": "The film was a big success; over a million viewers saw it at the cinema."
+  },
+  {
+   "id": "b1-t10-15",
+   "type": "cloze",
+   "de": "In der Zeitung stand eine sehr gute ___ über das Buch.",
+   "base": "review",
+   "answers": [
+    "Kritik",
+    "Rezension",
+    "Besprechung"
+   ],
+   "en": "There was a very good review of the book in the newspaper."
+  },
+  {
+   "id": "b1-t10-16",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "geht",
+    "um",
+    "eine Lehrerin",
+    "aus Hamburg"
+   ],
+   "answers": [
+    "Es geht um eine Lehrerin aus Hamburg."
+   ],
+   "en": "It's about a teacher from Hamburg."
+  },
+  {
+   "id": "b1-t10-17",
+   "type": "choice",
+   "de": "Ich habe den Film auf Englisch mit deutschen ___ gesehen.",
+   "options": [
+    "Stimmen",
+    "Untertiteln",
+    "Übersetzern"
+   ],
+   "answer": 1,
+   "why": "The text at the bottom of the screen is Untertitel (subtitles).",
+   "en": "I watched the film in English with German subtitles."
+  },
+  {
+   "id": "b1-t10-18",
+   "type": "cloze",
+   "de": "Mir hat das Buch nicht gefallen. Es war ziemlich ___.",
+   "base": "boring",
+   "answers": [
+    "langweilig"
+   ],
+   "en": "I didn't like the book. It was rather boring."
+  },
+  {
+   "id": "b1-t10-19",
+   "type": "choice",
+   "de": "Hast du das Buch gekauft? – Nein, ich habe es in der ___ ausgeliehen.",
+   "options": [
+    "Buchhandlung",
+    "Bibliothek",
+    "Apotheke"
+   ],
+   "answer": 1,
+   "why": "You borrow books from a library (Bibliothek); a Buchhandlung sells them.",
+   "en": "Did you buy the book? – No, I borrowed it from the library."
+  },
+  {
+   "id": "b1-t10-20",
+   "type": "cloze",
+   "de": "Der Film ist lang, aber er ___ sich wirklich!",
+   "base": "is worth it",
+   "answers": [
+    "lohnt"
+   ],
+   "en": "The film is long, but it's really worth it!"
+  },
+  {
+   "id": "b1-t10-21",
+   "type": "order",
+   "tiles": [
+    "Die Geschichte",
+    "spielt",
+    "im Jahr 1989",
+    "in Leipzig"
+   ],
+   "answers": [
+    "Die Geschichte spielt im Jahr 1989 in Leipzig.",
+    "Im Jahr 1989 spielt die Geschichte in Leipzig.",
+    "In Leipzig spielt die Geschichte im Jahr 1989."
+   ],
+   "en": "The story is set in Leipzig in 1989."
+  },
+  {
+   "id": "b1-t10-22",
+   "type": "choice",
+   "de": "Welche ___ im Buch hat dir am besten gefallen? – Die alte Nachbarin, sie ist so witzig.",
+   "options": [
+    "Figur",
+    "Seite",
+    "Szene"
+   ],
+   "answer": 0,
+   "why": "A person in a story is a Figur (character); the answer names a person.",
+   "en": "Which character in the book did you like best? – The old neighbour, she's so funny."
+  },
+  {
+   "id": "b1-t10-23",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "du",
+    "Krimis",
+    "magst",
+    "musst",
+    "du",
+    "diesen Roman",
+    "lesen"
+   ],
+   "answers": [
+    "Wenn du Krimis magst, musst du diesen Roman lesen.",
+    "Du musst diesen Roman lesen, wenn du Krimis magst."
+   ],
+   "en": "If you like crime stories, you have to read this novel."
+  },
+  {
+   "id": "b1-t10-24",
+   "type": "cloze",
+   "de": "Der Film basiert auf einem bekannten ___ von Daniel Kehlmann.",
+   "base": "novel",
+   "answers": [
+    "Roman"
+   ],
+   "en": "The film is based on a well-known novel by Daniel Kehlmann."
+  }
+ ],
+ "listening": {
+  "title": "Ein Filmtipp",
+  "intro": "Ben wants to see a film tonight and asks his friend Sophie for a tip.",
+  "lines": [
+   {
+    "speaker": "Ben",
+    "de": "Sophie, hast du einen Tipp für heute Abend? Ich habe Lust auf einen guten Film.",
+    "en": "Sophie, have you got a tip for tonight? I feel like seeing a good film."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja! Ich habe am Wochenende „Das Haus am See“ gesehen. Den kann ich dir wirklich empfehlen.",
+    "en": "Yes! At the weekend I saw \"The House by the Lake\". I can really recommend it."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Worum geht es denn?",
+    "en": "What's it about?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Es geht um eine Frau, die nach dreißig Jahren in ihr altes Dorf zurückkommt. Dort findet sie alte Briefe von ihrer Mutter.",
+    "en": "It's about a woman who comes back to her old village after thirty years. There she finds old letters from her mother."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Klingt ein bisschen traurig.",
+    "en": "Sounds a bit sad."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Am Anfang schon, aber er ist auch sehr witzig. Die Hauptrolle spielt Nina Berger, und sie ist fantastisch.",
+    "en": "At the beginning, yes, but it's also very funny. Nina Berger plays the lead role, and she's fantastic."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Und wo spielt die Geschichte?",
+    "en": "And where is the story set?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "An einem See in Brandenburg. Die Bilder sind wunderschön. Der Film basiert übrigens auf einem Roman.",
+    "en": "By a lake in Brandenburg. The images are beautiful. By the way, the film is based on a novel."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Hast du das Buch auch gelesen?",
+    "en": "Have you read the book too?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, letztes Jahr. Das Buch ist noch spannender, aber das Ende ist im Film besser.",
+    "en": "Yes, last year. The book is even more gripping, but the ending is better in the film."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Läuft der Film noch im Kino?",
+    "en": "Is the film still on at the cinema?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Nur noch diese Woche, im Kino am Markt. Die Vorstellung um acht ist auf Deutsch, die um zehn mit englischen Untertiteln.",
+    "en": "Only this week, at the cinema on the market square. The eight o'clock showing is in German, the ten o'clock one has English subtitles."
+   },
+   {
+    "speaker": "Ben",
+    "de": "Dann gehe ich um acht. Kommst du noch mal mit?",
+    "en": "Then I'll go at eight. Will you come again?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Warum nicht? Ich sehe ihn gern ein zweites Mal.",
+    "en": "Why not? I'm happy to see it a second time."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the film about?",
+    "options": [
+     "A woman who returns to her old village",
+     "A mother who writes a novel",
+     "A family that moves to Berlin"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is the story set?",
+    "options": [
+     "In Berlin",
+     "On the Baltic Sea",
+     "By a lake in Brandenburg"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Sophie say about the book?",
+    "options": [
+     "It's boring",
+     "It's more gripping, but the film has the better ending",
+     "She hasn't read it yet"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What do Ben and Sophie decide?",
+    "options": [
+     "To read the book first",
+     "To wait until the film is on TV",
+     "To see the film together at eight"
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Ich kann dir diesen Film wirklich sehr empfehlen.",
+  "Die Geschichte spielt in einem kleinen Dorf an der Ostsee.",
+  "Das Buch war so spannend, dass ich nicht aufhören konnte."
+ ],
+ "speaking": [
+  {
+   "de": "Den kann ich dir wirklich empfehlen.",
+   "en": "I can really recommend it."
+  },
+  {
+   "de": "Worum geht es denn?",
+   "en": "What's it about?"
+  },
+  {
+   "de": "Es geht um eine Frau, die in ihr altes Dorf zurückkommt.",
+   "en": "It's about a woman who comes back to her old village."
+  },
+  {
+   "de": "Das Buch ist noch spannender, aber das Ende ist im Film besser.",
+   "en": "The book is even more gripping, but the ending is better in the film."
+  },
+  {
+   "de": "Läuft der Film noch im Kino?",
+   "en": "Is the film still on at the cinema?"
+  }
+ ],
+ "writing": {
+  "task": "A friend asks you for a good book or film for the holidays. Write an 80–100-word message: recommend one, say what it's about and where it's set, and explain why you liked it.",
+  "model": "Hallo Jana,\n\ndu hast mich nach einem guten Buch für deinen Urlaub gefragt. Ich kann dir „Ein Sommer in Lissabon“ empfehlen. Es ist ein Roman von einer jungen Autorin aus Österreich. Es geht um einen Mann, der nach dem Tod seines Vaters nach Portugal reist. Dort findet er eine Schwester, von der er nichts wusste. Die Geschichte spielt in den Achtzigerjahren. Am Anfang ist sie ein bisschen langsam, aber dann wird sie richtig spannend. Das Ende war für mich eine große Überraschung. Wenn du willst, leihe ich dir das Buch.\n\nLiebe Grüße\nClaire"
+ }
+}

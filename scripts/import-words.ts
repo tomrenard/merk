@@ -1,6 +1,6 @@
 /**
- * Loads the word lists A1 (+ core words) → A2 → B1, one note per word (the earliest level wins).
- * A1/core/A2 get both card directions, B1 only German→English (recognition). Within a level, new
+ * Loads the word lists A1 (+ core words) → A2 → B1 → B2, one note per word (the earliest level wins).
+ * A1/core/A2 get both card directions, B1/B2 only German→English (recognition). Within a level, new
  * words come in frequency order (DeReWo, fetched into the cache). Safe to re-run: notes update in
  * place, started cards and their history are never removed.
  * Sources and licences: data/README.md. B1 English/examples, verb info and phrases were written
@@ -179,7 +179,7 @@ function written<T>(file: string, headwords: string[]): Record<string, T> {
 
 /** Adds forms (A1 and core words have none) and the governed case/preposition to verbs. */
 function withVerbInfo(list: Note[]): Note[] {
-  const isVerb = (note: Note) => note.cefr !== "B1" && /^to /.test(note.en);
+  const isVerb = (note: Note) => !["B1", "B2"].includes(note.cefr) && /^to /.test(note.en);
   const verbs = written<Verb>("verbs.json", [
     ...new Set(list.filter(isVerb).map((note) => note.de)),
   ]);
@@ -227,6 +227,26 @@ function b1Notes(): Note[] {
   });
 }
 
+/** B2 words (data/b2-words.json, written by Claude from DeReWo ranks after B1): recognition only. */
+function b2Notes(): Note[] {
+  const list: { de: string; en: string; example_de: string; example_en: string }[] = JSON.parse(
+    readFileSync(`${DATA}b2-words.json`, "utf8"),
+  );
+  return list
+    .filter((w) => isNewWord(w.de))
+    .map((w) => ({
+      id: `b2:${lemmaKeys(w.de)[0]}`,
+      source: "b2-freq",
+      cefr: "B2",
+      ord: 0,
+      de: w.de,
+      en: w.en,
+      exampleDe: w.example_de,
+      exampleEn: w.example_en,
+      hint: null,
+    }));
+}
+
 const ranks = frequencyRanks();
 // Order of the list = teaching order: A1 and core words by frequency, then A2; B1 is already by
 // frequency. Phrases go in among the words of their level, one after every four words.
@@ -239,6 +259,7 @@ const words = withVerbInfo([
   ...numbered(interleave(frequencyOrder(a1, ranks), level("A1"), 4), 0),
   ...numbered(interleave(frequencyOrder(a2Notes(), ranks), level("A2"), 4), 100_000),
   ...numbered(interleave(b1Notes(), level("B1"), 4), 200_000),
+  ...numbered(b2Notes(), 300_000),
 ]);
 const db = connect();
 const before = await db.$count(notes);
@@ -287,17 +308,19 @@ const dropped = await db.transaction(async (tx) => {
       ),
     )
     .returning({ id: notes.id });
-  // English→German cards of B1 words you have not started yet (B1 is recognition only).
+  // English→German cards of B1/B2 words you have not started yet (recognition only).
   await tx.execute(
-    sql`delete from ${cards} using ${notes} where ${cards.noteId} = ${notes.id} and ${notes.cefr} = 'B1' and ${notes.source} <> 'phrase' and ${cards.direction} = 'en_de' and ${cards.introducedAt} is null`,
+    sql`delete from ${cards} using ${notes} where ${cards.noteId} = ${notes.id} and ${notes.cefr} in ('B1', 'B2') and ${notes.source} <> 'phrase' and ${cards.direction} = 'en_de' and ${cards.introducedAt} is null`,
   );
   if ((await tx.$count(cards, isNotNull(cards.introducedAt))) !== introducedBefore)
     throw new Error("Started cards changed: import rolled back");
   return removed;
 });
-// Everyone gets cards for the new words (B1: recognition only; see ensureCards).
+// Everyone gets cards for the new words (B1/B2: recognition only; see ensureCards).
 for (const { id } of await db.select({ id: user.id }).from(user)) await ensureCards(id);
-const perLevel = ["A1", "A2", "B1"].map((l) => `${l}: ${words.filter((w) => w.cefr === l).length}`);
+const perLevel = ["A1", "A2", "B1", "B2"].map(
+  (l) => `${l}: ${words.filter((w) => w.cefr === l).length}`,
+);
 perLevel.push(`phrases: ${phrases.length}`);
 const added = (await db.$count(notes)) - before + dropped.length;
 console.log(`${perLevel.join(", ")} · ${added} new notes, ${dropped.length} removed`);

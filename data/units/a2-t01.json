@@ -1,0 +1,498 @@
+{
+ "id": "a2-t01",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "die Wohnung",
+  "das Zimmer",
+  "das Wohnzimmer",
+  "das Schlafzimmer",
+  "die Küche",
+  "das Bad",
+  "der Balkon",
+  "der Keller",
+  "das Erdgeschoss",
+  "der Stock",
+  "der Aufzug",
+  "die Heizung",
+  "die Möbel (pl.)",
+  "die Miete",
+  "der Vermieter",
+  "die Vermieterin",
+  "der Vertrag",
+  "die Anzeige",
+  "besichtigen",
+  "mieten",
+  "umziehen",
+  "einziehen",
+  "ausziehen",
+  "der Umzug",
+  "packen",
+  "hell",
+  "ruhig",
+  "die Nähe"
+ ],
+ "title": "Flat hunting and moving",
+ "situation": "Viewing a flat",
+ "canDo": "You can read a flat ad, ask about the rooms, the floor and the rent at a viewing, and talk about moving.",
+ "explanation": "Flat hunting: you read an **Anzeige** (ad), call the **Vermieter** or **Vermieterin**, **besichtigen** the flat, sign the **Vertrag** and then you **umziehen**.\n\n| German | English |\n|---|---|\n| die Wohnung, -en | flat |\n| das Zimmer, - | room |\n| das Wohnzimmer / Schlafzimmer, - | living room / bedroom |\n| die Küche, -n · das Bad, -¨er | kitchen · bathroom |\n| der Balkon, -e · der Keller, - | balcony · cellar |\n| das Erdgeschoss · der 1. Stock | ground floor · first floor |\n| der Aufzug, -¨e · die Heizung, -en | lift · heating |\n| die Möbel (pl.) | furniture |\n\n| German | English |\n|---|---|\n| die Miete, -n · mieten | rent · to rent |\n| der Vertrag, -¨e | contract |\n| der Umzug, -¨e · umziehen | move · to move house |\n| einziehen · ausziehen | to move in · to move out |\n\n- **kalt** or **warm**: *800 Euro kalt* is the rent alone; *warm* includes heating and other costs. Always ask which one.\n- **umziehen, einziehen, ausziehen** are separable and take **sein** in the Perfekt: *Wir ziehen im Mai um. Ich bin gestern eingezogen.*\n- **die Möbel** is plural: *Die Möbel sind neu.*\n- **das Zimmer** is any room; the bedroom is **das Schlafzimmer**.\n- Common mistake: *Wie viel ist die Miete?* is understood, but people say **Wie hoch ist die Miete?**",
+ "french": "Floors count as in French (das Erdgeschoss = le rez-de-chaussée, der erste Stock = le premier étage), but « la chambre » is das Schlafzimmer, while das Zimmer is any room, like « la pièce ».",
+ "examples": [
+  {
+   "de": "Die Wohnung hat drei Zimmer, eine Küche und ein Bad.",
+   "en": "The flat has three rooms, a kitchen and a bathroom."
+  },
+  {
+   "de": "Wie hoch ist die Miete?",
+   "en": "How much is the rent?"
+  },
+  {
+   "de": "Die Miete ist 800 Euro warm.",
+   "en": "The rent is 800 euros including heating."
+  },
+  {
+   "de": "Kann ich die Wohnung am Montag besichtigen?",
+   "en": "Can I view the flat on Monday?"
+  },
+  {
+   "de": "Wir wohnen im Erdgeschoss.",
+   "en": "We live on the ground floor."
+  },
+  {
+   "de": "Gibt es einen Keller?",
+   "en": "Is there a cellar?"
+  },
+  {
+   "de": "Wann ziehst du um?",
+   "en": "When are you moving?"
+  },
+  {
+   "de": "Ich bin im Mai eingezogen.",
+   "en": "I moved in in May."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t01-01",
+   "type": "cloze",
+   "de": "Die Wohnung hat drei ___, eine Küche und ein Bad.",
+   "base": "rooms",
+   "answers": [
+    "Zimmer"
+   ],
+   "en": "The flat has three rooms, a kitchen and a bathroom."
+  },
+  {
+   "id": "a2-t01-02",
+   "type": "choice",
+   "de": "Wir kochen in der ___.",
+   "options": [
+    "Küche",
+    "Bad",
+    "Keller"
+   ],
+   "answer": 0,
+   "why": "You cook in the kitchen: die Küche.",
+   "en": "We cook in the kitchen."
+  },
+  {
+   "id": "a2-t01-03",
+   "type": "cloze",
+   "de": "Wie hoch ist die ___?",
+   "base": "the rent",
+   "answers": [
+    "Miete"
+   ],
+   "en": "How much is the rent?"
+  },
+  {
+   "id": "a2-t01-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "die Wohnung",
+    "besichtigen"
+   ],
+   "answers": [
+    "Ich möchte die Wohnung besichtigen.",
+    "Die Wohnung möchte ich besichtigen."
+   ],
+   "en": "I'd like to view the flat."
+  },
+  {
+   "id": "a2-t01-05",
+   "type": "choice",
+   "de": "Die Wohnung ist im fünften Stock, aber Sie müssen nicht laufen. Es gibt einen ___.",
+   "options": [
+    "Keller",
+    "Aufzug",
+    "Garten"
+   ],
+   "answer": 1,
+   "why": "der Aufzug (the lift) takes you up, so you don't have to walk.",
+   "en": "The flat is on the fifth floor, but you don't have to walk. There's a lift."
+  },
+  {
+   "id": "a2-t01-06",
+   "type": "cloze",
+   "de": "Wir ___ am Samstag nach Köln um.",
+   "base": "to move house (umziehen)",
+   "answers": [
+    "ziehen"
+   ],
+   "en": "We're moving to Cologne on Saturday."
+  },
+  {
+   "id": "a2-t01-07",
+   "type": "choice",
+   "de": "Das Sofa, das Bett und der Schrank: Das sind unsere ___.",
+   "options": [
+    "Zimmer",
+    "Möbel",
+    "Fenster"
+   ],
+   "answer": 1,
+   "why": "Sofa, bed and wardrobe are furniture: die Möbel, always plural.",
+   "en": "The sofa, the bed and the wardrobe: that's our furniture."
+  },
+  {
+   "id": "a2-t01-08",
+   "type": "cloze",
+   "de": "Die Wohnung hat viele Fenster, sie ist sehr ___.",
+   "base": "bright",
+   "answers": [
+    "hell"
+   ],
+   "en": "The flat has lots of windows, it's very bright."
+  },
+  {
+   "id": "a2-t01-09",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "kann",
+    "ich",
+    "einziehen"
+   ],
+   "answers": [
+    "Wann kann ich einziehen?"
+   ],
+   "en": "When can I move in?"
+  },
+  {
+   "id": "a2-t01-10",
+   "type": "choice",
+   "de": "Die Wohnung liegt in der ___ vom Bahnhof.",
+   "options": [
+    "Ecke",
+    "Nähe",
+    "Mitte"
+   ],
+   "answer": 1,
+   "why": "in der Nähe von = near.",
+   "en": "The flat is near the station."
+  },
+  {
+   "id": "a2-t01-11",
+   "type": "cloze",
+   "de": "Wir haben gestern die Wohnung ___.",
+   "base": "viewed (besichtigen)",
+   "answers": [
+    "besichtigt"
+   ],
+   "en": "We viewed the flat yesterday."
+  },
+  {
+   "id": "a2-t01-12",
+   "type": "choice",
+   "de": "Wer vermietet die Wohnung? – Die ___, Frau Krause.",
+   "options": [
+    "Mieterin",
+    "Nachbarin",
+    "Vermieterin"
+   ],
+   "answer": 2,
+   "why": "The woman who lets the flat is die Vermieterin; die Mieterin pays the rent.",
+   "en": "Who's letting the flat? – The landlady, Mrs Krause."
+  },
+  {
+   "id": "a2-t01-13",
+   "type": "cloze",
+   "de": "Wo ist mein Fahrrad? – Unten im ___.",
+   "base": "cellar",
+   "answers": [
+    "Keller"
+   ],
+   "en": "Where's my bike? – Down in the cellar."
+  },
+  {
+   "id": "a2-t01-14",
+   "type": "order",
+   "tiles": [
+    "Die Wohnung",
+    "kostet",
+    "900 Euro",
+    "warm"
+   ],
+   "answers": [
+    "Die Wohnung kostet 900 Euro warm."
+   ],
+   "en": "The flat costs 900 euros including heating."
+  },
+  {
+   "id": "a2-t01-15",
+   "type": "choice",
+   "de": "Im Winter ist es hier warm, denn die ___ funktioniert gut.",
+   "options": [
+    "Heizung",
+    "Küche",
+    "Miete"
+   ],
+   "answer": 0,
+   "why": "die Heizung (the heating) keeps the flat warm.",
+   "en": "In winter it's warm here, because the heating works well."
+  },
+  {
+   "id": "a2-t01-16",
+   "type": "cloze",
+   "de": "Der Vertrag ist fertig. Wir ___ die Wohnung ab Juni.",
+   "base": "to rent (mieten)",
+   "answers": [
+    "mieten"
+   ],
+   "en": "The contract is ready. We're renting the flat from June."
+  },
+  {
+   "id": "a2-t01-17",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "sind",
+    "im Mai",
+    "umgezogen"
+   ],
+   "answers": [
+    "Wir sind im Mai umgezogen.",
+    "Im Mai sind wir umgezogen."
+   ],
+   "en": "We moved in May."
+  },
+  {
+   "id": "a2-t01-18",
+   "type": "choice",
+   "de": "Morgen ist der Umzug. Heute ___ ich meine Sachen.",
+   "options": [
+    "miete",
+    "packe",
+    "ziehe"
+   ],
+   "answer": 1,
+   "why": "packen = to pack: before the move you put your things in boxes.",
+   "en": "The move is tomorrow. Today I'm packing my things."
+  },
+  {
+   "id": "a2-t01-19",
+   "type": "cloze",
+   "de": "Die Wohnung ist im ___, also ganz unten.",
+   "base": "ground floor",
+   "answers": [
+    "Erdgeschoss"
+   ],
+   "en": "The flat is on the ground floor, right at the bottom."
+  },
+  {
+   "id": "a2-t01-20",
+   "type": "choice",
+   "de": "Ich habe die ___ im Internet gesehen. Ist die Wohnung noch frei?",
+   "options": [
+    "Heizung",
+    "Anzeige",
+    "Miete"
+   ],
+   "answer": 1,
+   "why": "die Anzeige = the ad; you find flats in ads.",
+   "en": "I saw the ad online. Is the flat still available?"
+  },
+  {
+   "id": "a2-t01-21",
+   "type": "cloze",
+   "de": "Wann sind Sie ___?",
+   "base": "moved in (einziehen)",
+   "answers": [
+    "eingezogen"
+   ],
+   "en": "When did you move in?"
+  },
+  {
+   "id": "a2-t01-22",
+   "type": "order",
+   "tiles": [
+    "Hat",
+    "die Wohnung",
+    "einen Balkon"
+   ],
+   "answers": [
+    "Hat die Wohnung einen Balkon?"
+   ],
+   "en": "Does the flat have a balcony?"
+  },
+  {
+   "id": "a2-t01-23",
+   "type": "choice",
+   "de": "Unser Nachbar ___ im Juni aus. Dann ist seine Wohnung frei.",
+   "options": [
+    "geht",
+    "kommt",
+    "zieht"
+   ],
+   "answer": 2,
+   "why": "ausziehen = to move out of a flat; then the flat is free.",
+   "en": "Our neighbour is moving out in June. Then his flat will be free."
+  },
+  {
+   "id": "a2-t01-24",
+   "type": "order",
+   "tiles": [
+    "Ist",
+    "die Wohnung",
+    "noch",
+    "frei"
+   ],
+   "answers": [
+    "Ist die Wohnung noch frei?"
+   ],
+   "en": "Is the flat still available?"
+  }
+ ],
+ "listening": {
+  "title": "Die Wohnungsbesichtigung",
+  "intro": "Julien is viewing a flat; the landlady, Petra Krause, shows him around.",
+  "lines": [
+   {
+    "speaker": "Petra",
+    "de": "Guten Tag, Herr Martin! Kommen Sie rein. Hier ist die Wohnung.",
+    "en": "Hello, Mr Martin! Come in. Here's the flat."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Guten Tag, Frau Krause. Ich habe Ihre Anzeige gelesen. Die Wohnung ist im dritten Stock, oder?",
+    "en": "Hello, Mrs Krause. I read your ad. The flat is on the third floor, isn't it?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ja, und leider gibt es keinen Aufzug. Hier links ist das Wohnzimmer.",
+    "en": "Yes, and unfortunately there's no lift. Here on the left is the living room."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Oh, das Zimmer ist schön hell! Und es hat einen Balkon.",
+    "en": "Oh, the room is nice and bright! And it has a balcony."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Genau. Da ist das Schlafzimmer, und hier sind die Küche und das Bad. Das Bad ist ganz neu.",
+    "en": "Exactly. There's the bedroom, and here are the kitchen and the bathroom. The bathroom is brand new."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Und wie hoch ist die Miete?",
+    "en": "And how much is the rent?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "750 Euro kalt. Mit Heizung und Wasser sind es 900 Euro warm.",
+    "en": "750 euros without bills. With heating and water it's 900 euros."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Ist es hier ruhig? Ich arbeite oft zu Hause.",
+    "en": "Is it quiet here? I often work from home."
+   },
+   {
+    "speaker": "Petra",
+    "de": "Ja, sehr ruhig. Und der Supermarkt ist gleich in der Nähe.",
+    "en": "Yes, very quiet. And the supermarket is just nearby."
+   },
+   {
+    "speaker": "Julien",
+    "de": "Super! Wann kann ich einziehen?",
+    "en": "Great! When can I move in?"
+   },
+   {
+    "speaker": "Petra",
+    "de": "Mein Mieter zieht Ende Mai aus. Sie können am ersten Juni einziehen.",
+    "en": "My tenant is moving out at the end of May. You can move in on the first of June."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Which floor is the flat on?",
+    "options": [
+     "The ground floor.",
+     "The second floor.",
+     "The third floor."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How much is the rent with heating and water?",
+    "options": [
+     "750 euros.",
+     "900 euros.",
+     "950 euros."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why does Julien ask if the flat is quiet?",
+    "options": [
+     "He often works at home.",
+     "He has small children.",
+     "He sleeps badly."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When can Julien move in?",
+    "options": [
+     "At the end of May.",
+     "On the first of June.",
+     "Right away."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte die Wohnung am Samstag besichtigen.",
+  "Die Wohnung hat einen Balkon und einen Keller.",
+  "Wir sind im März nach Hamburg umgezogen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich habe Ihre Anzeige gelesen.",
+   "en": "I read your ad."
+  },
+  {
+   "de": "Das Zimmer ist schön hell!",
+   "en": "The room is nice and bright!"
+  },
+  {
+   "de": "Wie hoch ist die Miete?",
+   "en": "How much is the rent?"
+  },
+  {
+   "de": "Ist es hier ruhig?",
+   "en": "Is it quiet here?"
+  },
+  {
+   "de": "Wann kann ich einziehen?",
+   "en": "When can I move in?"
+  }
+ ],
+ "writing": {
+  "task": "You have just viewed a flat. Write 5–6 sentences to a friend: describe the flat, say how much the rent is and when you can move in, and ask for help with the move.",
+  "model": "Hallo Lea, heute habe ich eine Wohnung in Köln besichtigt! Sie hat zwei Zimmer, eine Küche, ein Bad und einen Balkon. Die Wohnung ist im zweiten Stock und sehr hell. Die Miete ist 850 Euro warm. Ich kann am ersten Juli einziehen. Hilfst du mir beim Umzug? Liebe Grüße, Julien"
+ }
+}

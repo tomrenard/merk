@@ -1,0 +1,541 @@
+{
+ "id": "b2-s03",
+ "cefr": "B2",
+ "kind": "story",
+ "title": "A short story with a twist",
+ "situation": "A longer text to understand",
+ "canDo": "You can follow a longer short story, keep track of who is who and understand an unexpected ending.",
+ "explanation": "Léa, a Frenchwoman, lives in an old building in Hamburg. When she hangs notes in the stairwell, someone secretly corrects her German with a green pen. Who could it be? Listen carefully to the details: the ending will surprise you. The story uses the narrative past (Präteritum) and several connectors you know: *als ob*, *je nachdem*, *sodass*, *falls*.\n\n| German | English |\n|---|---|\n| der Altbau, -ten | old building |\n| der Zettel, - | note, slip of paper |\n| das Treppenhaus, ¨-er | stairwell |\n| der Verdacht | suspicion |\n| frech | cheeky |\n| absichtlich | on purpose |\n| die Rechtschreibung | spelling |\n| der Umzugskarton, -s | moving box |\n| krumm | crooked |",
+ "french": "",
+ "examples": [
+  {
+   "de": "Sie hängte einen Zettel ins Treppenhaus.",
+   "en": "She put up a note in the stairwell."
+  },
+  {
+   "de": "Die Korrekturen waren so genau, als ob ein Lehrer sie geschrieben hätte.",
+   "en": "The corrections were as precise as if a teacher had written them."
+  },
+  {
+   "de": "Je nachdem, wie ihr Tag gewesen war, fand sie die Korrekturen lustig oder frech.",
+   "en": "Depending on how her day had been, she found the corrections funny or cheeky."
+  },
+  {
+   "de": "Sie hatte einen Verdacht.",
+   "en": "She had a suspicion."
+  },
+  {
+   "de": "Sie schrieb absichtlich schwierige Sätze.",
+   "en": "She wrote difficult sentences on purpose."
+  },
+  {
+   "de": "Ich habe gerade herausgefunden, wer meine Lehrerin war.",
+   "en": "I've just found out who my teacher was."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-s03-01",
+   "type": "choice",
+   "de": "Léa wohnte in einem ___ in Hamburg.",
+   "options": [
+    "Neubau",
+    "Hochhaus",
+    "Altbau"
+   ],
+   "answer": 2,
+   "why": "The story says she lived in an old building.",
+   "en": "Léa lived in an old building in Hamburg."
+  },
+  {
+   "id": "b2-s03-02",
+   "type": "cloze",
+   "de": "Sie hängte einen ___ ins Treppenhaus.",
+   "base": "note (slip of paper)",
+   "answers": [
+    "Zettel"
+   ],
+   "en": "She put up a note in the stairwell."
+  },
+  {
+   "id": "b2-s03-03",
+   "type": "choice",
+   "de": "Richtig heißt es: Sonst kommen Fremde ___ Haus.",
+   "options": [
+    "ins",
+    "in der",
+    "im"
+   ],
+   "answer": 0,
+   "why": "A movement into something takes the accusative: in das = ins.",
+   "en": "Correctly it's: otherwise strangers come into the building."
+  },
+  {
+   "id": "b2-s03-04",
+   "type": "cloze",
+   "de": "Die Korrekturen waren so genau, als ob ein Lehrer sie geschrieben ___.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "The corrections were as precise as if a teacher had written them."
+  },
+  {
+   "id": "b2-s03-05",
+   "type": "order",
+   "tiles": [
+    "Léa",
+    "ärgerte",
+    "sich",
+    "über",
+    "die Korrekturen"
+   ],
+   "answers": [
+    "Léa ärgerte sich über die Korrekturen.",
+    "Über die Korrekturen ärgerte sich Léa."
+   ],
+   "en": "Léa was annoyed about the corrections."
+  },
+  {
+   "id": "b2-s03-06",
+   "type": "choice",
+   "de": "Je ___, wie ihr Tag gewesen war, fand sie die Korrekturen lustig oder frech.",
+   "options": [
+    "nach",
+    "nachdem",
+    "danach"
+   ],
+   "answer": 1,
+   "why": "je nachdem means depending on.",
+   "en": "Depending on how her day had been, she found the corrections funny or cheeky."
+  },
+  {
+   "id": "b2-s03-07",
+   "type": "cloze",
+   "de": "Herr Krause ___ sich über alles: über Kinderwagen, Musik und Müll.",
+   "base": "complained",
+   "answers": [
+    "beschwerte"
+   ],
+   "en": "Mr Krause complained about everything: prams, music and rubbish."
+  },
+  {
+   "id": "b2-s03-08",
+   "type": "choice",
+   "de": "Manchmal fand Léa die Korrekturen ziemlich ___.",
+   "options": [
+    "frisch",
+    "frech",
+    "fremd"
+   ],
+   "answer": 1,
+   "why": "frech means cheeky.",
+   "en": "Sometimes Léa found the corrections rather cheeky."
+  },
+  {
+   "id": "b2-s03-09",
+   "type": "cloze",
+   "de": "Sie schrieb ___ schwierige Sätze, um den grünen Stift zu testen.",
+   "base": "on purpose",
+   "answers": [
+    "absichtlich",
+    "bewusst",
+    "extra"
+   ],
+   "en": "She wrote difficult sentences on purpose to test the green pen."
+  },
+  {
+   "id": "b2-s03-10",
+   "type": "order",
+   "tiles": [
+    "Herr Krause",
+    "kann",
+    "seit seiner Augenoperation",
+    "kaum",
+    "lesen"
+   ],
+   "answers": [
+    "Herr Krause kann seit seiner Augenoperation kaum lesen.",
+    "Seit seiner Augenoperation kann Herr Krause kaum lesen."
+   ],
+   "en": "Since his eye operation Mr Krause can hardly read."
+  },
+  {
+   "id": "b2-s03-11",
+   "type": "choice",
+   "de": "Ihr Deutsch wurde besser, ___ der Stift immer weniger Fehler fand.",
+   "options": [
+    "damit",
+    "sodass",
+    "obwohl"
+   ],
+   "answer": 1,
+   "why": "sodass introduces a result; damit introduces a purpose.",
+   "en": "Her German got better, so the pen found fewer and fewer mistakes."
+  },
+  {
+   "id": "b2-s03-12",
+   "type": "cloze",
+   "de": "Léa wurde rot und ___ sich.",
+   "base": "apologised",
+   "answers": [
+    "entschuldigte"
+   ],
+   "en": "Léa went red and apologised."
+  },
+  {
+   "id": "b2-s03-13",
+   "type": "choice",
+   "de": "___ es zu laut wird, kommen Sie doch einfach dazu!",
+   "options": [
+    "Ob",
+    "Wann",
+    "Falls"
+   ],
+   "answer": 2,
+   "why": "falls means in case or if; ob is for indirect questions.",
+   "en": "If it gets too loud, just come and join us!"
+  },
+  {
+   "id": "b2-s03-14",
+   "type": "cloze",
+   "de": "Die Petersens packten gerade ihre ___.",
+   "base": "moving boxes",
+   "answers": [
+    "Umzugskartons",
+    "Kartons",
+    "Umzugskisten"
+   ],
+   "en": "The Petersens were just packing their moving boxes."
+  },
+  {
+   "id": "b2-s03-15",
+   "type": "order",
+   "tiles": [
+    "Am Samstag",
+    "kamen",
+    "fast alle",
+    "Nachbarn"
+   ],
+   "answers": [
+    "Am Samstag kamen fast alle Nachbarn.",
+    "Fast alle Nachbarn kamen am Samstag."
+   ],
+   "en": "On Saturday almost all the neighbours came."
+  },
+  {
+   "id": "b2-s03-16",
+   "type": "choice",
+   "de": "Mila schrieb, Léa habe so schöne ___ gemacht.",
+   "options": [
+    "Fehler",
+    "Zettel",
+    "Fotos"
+   ],
+   "answer": 0,
+   "why": "Mila liked Léa's mistakes because she was learning spelling at school.",
+   "en": "Mila wrote that Léa had made such lovely mistakes."
+  },
+  {
+   "id": "b2-s03-17",
+   "type": "cloze",
+   "de": "Die Karte war in großer, etwas ___ Schrift geschrieben.",
+   "base": "crooked",
+   "answers": [
+    "krummer"
+   ],
+   "en": "The card was written in large, slightly crooked handwriting."
+  },
+  {
+   "id": "b2-s03-18",
+   "type": "choice",
+   "de": "Mila lernt in der Schule gerade ___.",
+   "options": [
+    "Rechnen",
+    "Rechtschreibung",
+    "Lesen"
+   ],
+   "answer": 1,
+   "why": "Mila writes that her class is learning spelling.",
+   "en": "Mila is learning spelling at school at the moment."
+  },
+  {
+   "id": "b2-s03-19",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "gerade",
+    "herausgefunden",
+    "wer",
+    "meine Lehrerin",
+    "war"
+   ],
+   "answers": [
+    "Ich habe gerade herausgefunden, wer meine Lehrerin war."
+   ],
+   "en": "I've just found out who my teacher was."
+  },
+  {
+   "id": "b2-s03-20",
+   "type": "cloze",
+   "de": "Léa lachte so laut, ___ Herr Krause im Treppenhaus stehen blieb.",
+   "base": "so … that",
+   "answers": [
+    "dass"
+   ],
+   "en": "Léa laughed so loudly that Mr Krause stopped in the stairwell."
+  },
+  {
+   "id": "b2-s03-21",
+   "type": "choice",
+   "de": "Die Korrekturen kamen von einem Mädchen, ___ im Erdgeschoss wohnte.",
+   "options": [
+    "die",
+    "das",
+    "der"
+   ],
+   "answer": 1,
+   "why": "Mädchen is neuter, so the relative pronoun is das.",
+   "en": "The corrections came from a girl who lived on the ground floor."
+  },
+  {
+   "id": "b2-s03-22",
+   "type": "cloze",
+   "de": "Indem sie immer neue Zettel ___, übte sie Deutsch.",
+   "base": "schreiben (Präteritum)",
+   "answers": [
+    "schrieb"
+   ],
+   "en": "By writing more and more notes, she practised German."
+  },
+  {
+   "id": "b2-s03-23",
+   "type": "choice",
+   "de": "Den grünen Stift hat Mila Léa ___.",
+   "options": [
+    "geliehen",
+    "verkauft",
+    "geschenkt"
+   ],
+   "answer": 2,
+   "why": "Mila writes: Den Stift schenke ich Ihnen.",
+   "en": "Mila gave Léa the green pen as a present."
+  },
+  {
+   "id": "b2-s03-24",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "brauchen",
+    "mich",
+    "jetzt",
+    "nicht mehr"
+   ],
+   "answers": [
+    "Sie brauchen mich jetzt nicht mehr.",
+    "Jetzt brauchen Sie mich nicht mehr."
+   ],
+   "en": "You don't need me any more now."
+  }
+ ],
+ "listening": {
+  "title": "Der grüne Stift",
+  "intro": "A short story about Léa, a Frenchwoman in Hamburg, and the mysterious corrections on her notes in the stairwell.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Léa wohnte seit einem Jahr in einem Altbau in Hamburg-Eimsbüttel, im zweiten Stock links.",
+    "en": "Léa had lived for a year in an old building in Hamburg-Eimsbüttel, second floor on the left."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Weil die Haustür ständig offen stand, hängte sie eines Morgens einen Zettel ins Treppenhaus: „Bitte die Tür immer zumachen, sonst kommen Fremde in der Haus.“",
+    "en": "Because the front door was always open, one morning she put up a note in the stairwell: \"Please always close the door, otherwise strangers come in the building.\""
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am nächsten Tag hing der Zettel noch da. Aber jemand hatte mit grünem Stift „ins“ über „in der“ geschrieben, und daneben war ein kleiner Smiley.",
+    "en": "The next day the note was still there. But someone had written \"ins\" above \"in der\" in green pen, and next to it was a little smiley."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Na super. Jetzt korrigiert mich auch noch jemand.",
+    "en": "Great. Now someone's correcting me as well."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Eine Woche später schrieb sie einen zweiten Zettel, diesmal zum Thema Müll. Wieder gab es grüne Korrekturen, kurz und genau, als ob ein Lehrer sie geschrieben hätte.",
+    "en": "A week later she wrote a second note, this time about the rubbish. Again there were green corrections, short and precise, as if a teacher had written them."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Je nachdem, wie ihr Tag gewesen war, fand Léa die Korrekturen mal lustig, mal ziemlich frech.",
+    "en": "Depending on how her day had been, Léa found the corrections sometimes funny, sometimes rather cheeky."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Sie hatte einen Verdacht: Herr Krause aus dem dritten Stock, ein pensionierter Beamter, der sich über alles beschwerte – über Kinderwagen im Flur, über laute Musik, über falsch getrennten Müll.",
+    "en": "She had a suspicion: Mr Krause from the third floor, a retired civil servant who complained about everything – prams in the hallway, loud music, wrongly sorted rubbish."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Eines Abends klingelte sie bei ihm, den letzten Zettel in der Hand.",
+    "en": "One evening she rang his doorbell, the latest note in her hand."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Herr Krause, ich finde es nicht nett, dass Sie meine Fehler korrigieren. Wenn Sie ein Problem haben, sagen Sie es mir bitte direkt.",
+    "en": "Mr Krause, I don't think it's nice of you to correct my mistakes. If you have a problem, please tell me directly."
+   },
+   {
+    "speaker": "Heinz",
+    "de": "Ich? Junge Frau, ich kann seit meiner Augenoperation kaum noch die Zeitung lesen. Wie soll ich da Ihre Zettel korrigieren?",
+    "en": "Me? Young lady, since my eye operation I can hardly read the newspaper. How am I supposed to correct your notes?"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Léa wurde rot, entschuldigte sich und ging schnell wieder nach unten.",
+    "en": "Léa went red, apologised and quickly went back downstairs."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Die Korrekturen gingen weiter. Und irgendwann merkte Léa, dass sie sich darauf freute. Sie schrieb absichtlich schwierige Sätze, nur um zu sehen, was der grüne Stift daraus machte.",
+    "en": "The corrections went on. And at some point Léa noticed that she was looking forward to them. She wrote difficult sentences on purpose, just to see what the green pen would make of them."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Ihr Deutsch wurde besser, sodass der Stift immer weniger Fehler fand. Manchmal stand unter ihrem Zettel nur noch ein Smiley.",
+    "en": "Her German got better, so the pen found fewer and fewer mistakes. Sometimes there was only a smiley under her note."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Im Mai hängte sie einen Zettel ohne einen einzigen Fehler auf: „Liebe Nachbarn, am Samstag feiere ich meinen Geburtstag. Falls es zu laut wird, kommen Sie doch einfach dazu!“",
+    "en": "In May she put up a note without a single mistake: \"Dear neighbours, I'm celebrating my birthday on Saturday. If it gets too loud, just come and join us!\""
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Samstag kamen fast alle Nachbarn. Sogar Herr Krause brachte eine Flasche Sekt mit.",
+    "en": "On Saturday almost all the neighbours came. Even Mr Krause brought a bottle of sparkling wine."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Nur eine Familie fehlte: die Petersens aus dem Erdgeschoss mit ihren zwei Kindern. Sie packten gerade ihre Umzugskartons.",
+    "en": "Only one family was missing: the Petersens from the ground floor with their two children. They were busy packing their moving boxes."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Montag fand Léa einen Umschlag in ihrem Briefkasten. Darin lagen ein grüner Stift und eine Karte, in großer, etwas krummer Schrift.",
+    "en": "On Monday Léa found an envelope in her letterbox. Inside were a green pen and a card, in large, slightly crooked handwriting."
+   },
+   {
+    "speaker": "Mila",
+    "de": "„Liebe Léa, wir ziehen nach München. Die Korrekturen waren von mir. Wir lernen in der Schule gerade Rechtschreibung, und Sie haben so schöne Fehler gemacht.“",
+    "en": "\"Dear Léa, we're moving to Munich. The corrections were from me. We're learning spelling at school at the moment, and you made such lovely mistakes.\""
+   },
+   {
+    "speaker": "Mila",
+    "de": "„Jetzt brauchen Sie mich nicht mehr. Ihr Deutsch ist schon besser als das von meinem Bruder. Den Stift schenke ich Ihnen. Viele Grüße, Mila, Klasse 3b.“",
+    "en": "\"You don't need me any more now. Your German is already better than my brother's. I'm giving you the pen. Best wishes, Mila, class 3b.\""
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Léa lachte so laut, dass Herr Krause im Treppenhaus stehen blieb.",
+    "en": "Léa laughed so loudly that Mr Krause stopped in the stairwell."
+   },
+   {
+    "speaker": "Heinz",
+    "de": "Na, gute Nachrichten?",
+    "en": "Well, good news?"
+   },
+   {
+    "speaker": "Léa",
+    "de": "Die besten. Ich habe gerade herausgefunden, wer meine Lehrerin war.",
+    "en": "The best. I've just found out who my teacher was."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Abend hängte Léa einen letzten Zettel ins Treppenhaus. Darauf stand nur: „Danke, Mila!“ Und darunter, mit grünem Stift, ein kleiner Smiley.",
+    "en": "In the evening Léa put up one last note in the stairwell. All it said was: \"Thank you, Mila!\" And below it, in green pen, a little smiley."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum hängte Léa den ersten Zettel auf?",
+    "options": [
+     "Weil es im Haus zu laut war.",
+     "Weil die Haustür ständig offen stand.",
+     "Weil der Müll falsch getrennt war."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum verdächtigte Léa Herrn Krause?",
+    "options": [
+     "Weil er Lehrer war.",
+     "Weil er einen grünen Stift hatte.",
+     "Weil er sich über alles beschwerte."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Warum konnte Herr Krause die Zettel nicht korrigiert haben?",
+    "options": [
+     "Er kann seit einer Augenoperation kaum lesen.",
+     "Er war im Urlaub.",
+     "Er spricht kein Deutsch."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was passierte, als Léas Deutsch besser wurde?",
+    "options": [
+     "Die Korrekturen hörten sofort auf.",
+     "Unter ihren Zetteln stand manchmal nur noch ein Smiley.",
+     "Herr Krause gab ihr Unterricht."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wer hatte die Zettel korrigiert?",
+    "options": [
+     "Herr Krause.",
+     "Ein Lehrer aus dem dritten Stock.",
+     "Mila, ein Mädchen aus dem Erdgeschoss."
+    ],
+    "answer": 2
+   }
+  ]
+ },
+ "dictation": [
+  "Die Korrekturen waren so genau, als ob ein Lehrer sie geschrieben hätte.",
+  "Falls es zu laut wird, kommen Sie doch einfach dazu!",
+  "Ich habe gerade herausgefunden, wer meine Lehrerin war."
+ ],
+ "speaking": [
+  {
+   "de": "Jetzt korrigiert mich auch noch jemand.",
+   "en": "Now someone's correcting me as well."
+  },
+  {
+   "de": "Wenn Sie ein Problem haben, sagen Sie es mir bitte direkt.",
+   "en": "If you have a problem, please tell me directly."
+  },
+  {
+   "de": "Falls es zu laut wird, kommen Sie doch einfach dazu!",
+   "en": "If it gets too loud, just come and join us!"
+  },
+  {
+   "de": "Na, gute Nachrichten?",
+   "en": "Well, good news?"
+  },
+  {
+   "de": "Ich habe gerade herausgefunden, wer meine Lehrerin war.",
+   "en": "I've just found out who my teacher was."
+  }
+ ],
+ "writing": {
+  "task": "Léa wants to write back to Mila in Munich. Write her letter of 100–130 words: thank Mila, say what Léa thought at first and what she felt when she read the card, and tell Mila something new about life in the building.",
+  "model": "Liebe Mila,\n\nvielen Dank für deine Karte und den grünen Stift! Ich habe so laut gelacht, dass Herr Krause im Treppenhaus stehen geblieben ist.\n\nWeißt du, wen ich zuerst im Verdacht hatte? Herrn Krause! Ich habe sogar bei ihm geklingelt und mich beschwert. Das war ziemlich peinlich, denn er kann ja kaum noch lesen.\n\nEhrlich gesagt habe ich mich am Ende jede Woche auf deine Korrekturen gefreut. Manchmal habe ich absichtlich Fehler gemacht, nur um zu sehen, ob du sie findest. Du warst wirklich eine tolle Lehrerin.\n\nHier im Haus ist alles wie immer, nur die Tür steht nicht mehr offen. Unser Zettel hat also geholfen!\n\nIch wünsche dir einen guten Start in München.\n\nLiebe Grüße\nLéa"
+ }
+}

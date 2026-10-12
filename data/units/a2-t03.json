@@ -1,0 +1,509 @@
+{
+ "id": "a2-t03",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "buchen",
+  "reservieren",
+  "umsteigen",
+  "abfahren",
+  "ankommen",
+  "die Abfahrt",
+  "die Ankunft",
+  "die Verspätung",
+  "der Fahrplan",
+  "verpassen",
+  "die Unterkunft",
+  "die Jugendherberge",
+  "die Ermäßigung",
+  "der Rucksack",
+  "der Flug",
+  "der Wagen",
+  "die Fahrkarte",
+  "das Gleis",
+  "der Bahnsteig",
+  "der Anschluss",
+  "einsteigen",
+  "aussteigen",
+  "das Doppelzimmer",
+  "das Einzelzimmer",
+  "die Halbpension",
+  "übernachten",
+  "die Rezeption",
+  "der Koffer",
+  "das Reisebüro",
+  "der Schlüssel"
+ ],
+ "title": "Travel, trains and hotels",
+ "situation": "Booking a trip",
+ "canDo": "You can buy a train ticket, understand departure times and delays, and book a hotel room.",
+ "explanation": "When you plan a trip, you buy a ticket, check the times and book a place to sleep.\n\n| Train | English |\n|---|---|\n| die Fahrkarte, -n | ticket |\n| einfach / hin und zurück | single / return |\n| das Gleis, -e | platform (number) |\n| die Abfahrt / die Ankunft | departure / arrival |\n| die Verspätung, -en | delay |\n| der Anschluss, Anschlüsse | connection |\n| einsteigen / aussteigen / umsteigen | get on / get off / change |\n| verpassen | to miss |\n\n| Hotel | English |\n|---|---|\n| das Einzelzimmer, - / das Doppelzimmer, - | single / double room |\n| übernachten | to stay the night |\n| mit Frühstück / die Halbpension | with breakfast / half board |\n| die Rezeption | reception |\n| buchen, reservieren | to book, to reserve |\n| die Jugendherberge, -n | youth hostel |\n\n- Signs and announcements use **Gleis**: *Der Zug fährt von Gleis 7 ab.* The Bahnsteig is the platform you stand on.\n- abfahren, ankommen, einsteigen and umsteigen are separable and take **sein** in the Perfekt: *Wir **sind** in Köln **umgestiegen**.* But: *Ich **habe** den Zug **verpasst**.*\n- Delays come without an article: *Der Zug hat 20 Minuten **Verspätung**.*\n- Common mistake for a French speaker: *Ich muss den Zug wechseln.* Say **Ich muss umsteigen.**",
+ "french": "Der Wagen on a German train is like la voiture on a French train (Wagen 12 = voiture 12), and an Ermäßigung is the réduction you get with a card.",
+ "examples": [
+  {
+   "de": "Eine Fahrkarte nach Hamburg, bitte. Hin und zurück.",
+   "en": "A ticket to Hamburg, please. Return."
+  },
+  {
+   "de": "Der Zug nach München fährt heute von Gleis 7 ab.",
+   "en": "The train to Munich leaves from platform 7 today."
+  },
+  {
+   "de": "Wo muss ich umsteigen? – In Hannover.",
+   "en": "Where do I have to change? – In Hanover."
+  },
+  {
+   "de": "Der Zug hat 20 Minuten Verspätung.",
+   "en": "The train is 20 minutes late."
+  },
+  {
+   "de": "Ich habe meinen Anschluss verpasst.",
+   "en": "I've missed my connection."
+  },
+  {
+   "de": "Ich möchte ein Doppelzimmer für zwei Nächte reservieren.",
+   "en": "I'd like to reserve a double room for two nights."
+  },
+  {
+   "de": "Ist das Frühstück inklusive?",
+   "en": "Is breakfast included?"
+  },
+  {
+   "de": "Wir sind um 22 Uhr in Hamburg angekommen.",
+   "en": "We arrived in Hamburg at 10 p.m."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t03-01",
+   "type": "cloze",
+   "de": "Eine ___ nach Hamburg, bitte.",
+   "base": "ticket",
+   "answers": [
+    "Fahrkarte",
+    "Karte"
+   ],
+   "en": "A ticket to Hamburg, please."
+  },
+  {
+   "id": "a2-t03-02",
+   "type": "choice",
+   "de": "Der Zug nach Berlin fährt von ___ 4 ab.",
+   "options": [
+    "Gleis",
+    "Bahnhof",
+    "Haltestelle"
+   ],
+   "answer": 0,
+   "why": "In the station, the platform number is Gleis; a Haltestelle is a bus or tram stop.",
+   "en": "The train to Berlin leaves from platform 4."
+  },
+  {
+   "id": "a2-t03-03",
+   "type": "cloze",
+   "de": "Ich möchte ein ___ für eine Nacht.",
+   "base": "single room",
+   "answers": [
+    "Einzelzimmer"
+   ],
+   "en": "I'd like a single room for one night."
+  },
+  {
+   "id": "a2-t03-04",
+   "type": "order",
+   "tiles": [
+    "hat",
+    "der Zug",
+    "Verspätung",
+    "leider"
+   ],
+   "answers": [
+    "Der Zug hat leider Verspätung.",
+    "Leider hat der Zug Verspätung."
+   ],
+   "en": "Unfortunately the train is delayed."
+  },
+  {
+   "id": "a2-t03-05",
+   "type": "choice",
+   "de": "Der Zug fährt nicht direkt nach Bremen. In Hannover müssen Sie ___.",
+   "options": [
+    "umziehen",
+    "umsteigen",
+    "ankommen"
+   ],
+   "answer": 1,
+   "why": "umsteigen means to change trains; umziehen means to move house.",
+   "en": "The train doesn't go directly to Bremen. You have to change in Hanover."
+  },
+  {
+   "id": "a2-t03-06",
+   "type": "cloze",
+   "de": "Wann ist die ___ in München?",
+   "base": "arrival",
+   "answers": [
+    "Ankunft"
+   ],
+   "en": "When is the arrival in Munich?"
+  },
+  {
+   "id": "a2-t03-07",
+   "type": "choice",
+   "de": "Ich habe den Zug ___. Jetzt muss ich eine Stunde warten.",
+   "options": [
+    "verpasst",
+    "vermisst",
+    "verloren"
+   ],
+   "answer": 0,
+   "why": "You miss a train with verpassen; vermissen is for missing a person.",
+   "en": "I've missed the train. Now I have to wait an hour."
+  },
+  {
+   "id": "a2-t03-08",
+   "type": "cloze",
+   "de": "Wir möchten ein ___ mit Frühstück.",
+   "base": "double room",
+   "answers": [
+    "Doppelzimmer"
+   ],
+   "en": "We'd like a double room with breakfast."
+  },
+  {
+   "id": "a2-t03-09",
+   "type": "order",
+   "tiles": [
+    "Wo",
+    "muss",
+    "ich",
+    "umsteigen"
+   ],
+   "answers": [
+    "Wo muss ich umsteigen?"
+   ],
+   "en": "Where do I have to change?"
+  },
+  {
+   "id": "a2-t03-10",
+   "type": "choice",
+   "de": "Haben Sie eine ___ für Studenten?",
+   "options": [
+    "Rechnung",
+    "Verspätung",
+    "Ermäßigung"
+   ],
+   "answer": 2,
+   "why": "An Ermäßigung is a reduced price, like a réduction.",
+   "en": "Do you have a reduction for students?"
+  },
+  {
+   "id": "a2-t03-11",
+   "type": "cloze",
+   "de": "Ihr Schlüssel liegt an der ___.",
+   "base": "reception",
+   "answers": [
+    "Rezeption"
+   ],
+   "en": "Your key is at reception."
+  },
+  {
+   "id": "a2-t03-12",
+   "type": "cloze",
+   "de": "Wir haben zwei Nächte in einer ___ übernachtet. Das war billig.",
+   "base": "youth hostel",
+   "answers": [
+    "Jugendherberge"
+   ],
+   "en": "We stayed two nights in a youth hostel. It was cheap."
+  },
+  {
+   "id": "a2-t03-13",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "ein Zimmer",
+    "reservieren"
+   ],
+   "answers": [
+    "Ich möchte ein Zimmer reservieren.",
+    "Ein Zimmer möchte ich reservieren."
+   ],
+   "en": "I'd like to reserve a room."
+  },
+  {
+   "id": "a2-t03-14",
+   "type": "choice",
+   "de": "Der Zug fährt um 8:15 Uhr in Köln ___.",
+   "options": [
+    "an",
+    "ab",
+    "aus"
+   ],
+   "answer": 1,
+   "why": "abfahren means to leave or depart; arriving is ankommen.",
+   "en": "The train leaves Cologne at 8:15."
+  },
+  {
+   "id": "a2-t03-15",
+   "type": "cloze",
+   "de": "Wann kommen wir in Berlin ___?",
+   "base": "arrive",
+   "answers": [
+    "an"
+   ],
+   "en": "When do we arrive in Berlin?"
+  },
+  {
+   "id": "a2-t03-16",
+   "type": "choice",
+   "de": "Wie möchten Sie fahren? ___ oder hin und zurück?",
+   "options": [
+    "Allein",
+    "Direkt",
+    "Einfach"
+   ],
+   "answer": 2,
+   "why": "einfach is a single (one-way) ticket; hin und zurück is a return.",
+   "en": "How would you like to travel? Single or return?"
+  },
+  {
+   "id": "a2-t03-17",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "meinen Anschluss",
+    "verpasst"
+   ],
+   "answers": [
+    "Ich habe meinen Anschluss verpasst.",
+    "Meinen Anschluss habe ich verpasst."
+   ],
+   "en": "I've missed my connection."
+  },
+  {
+   "id": "a2-t03-18",
+   "type": "cloze",
+   "de": "Hast du schon auf den ___ geschaut? Wann fährt der Bus?",
+   "base": "timetable",
+   "answers": [
+    "Fahrplan"
+   ],
+   "en": "Have you looked at the timetable yet? When does the bus leave?"
+  },
+  {
+   "id": "a2-t03-19",
+   "type": "choice",
+   "de": "Für die Reise packe ich alles in meinen ___.",
+   "options": [
+    "Schlüssel",
+    "Rucksack",
+    "Fahrplan"
+   ],
+   "answer": 1,
+   "why": "You pack things in a Rucksack (backpack).",
+   "en": "For the trip I'm packing everything in my backpack."
+  },
+  {
+   "id": "a2-t03-20",
+   "type": "cloze",
+   "de": "Ich steige am Hauptbahnhof ___.",
+   "base": "get off",
+   "answers": [
+    "aus"
+   ],
+   "en": "I'm getting off at the main station."
+  },
+  {
+   "id": "a2-t03-21",
+   "type": "choice",
+   "de": "Entschuldigung, in welchem ___ ist Platz 45?",
+   "options": [
+    "Wagen",
+    "Auto",
+    "Zimmer"
+   ],
+   "answer": 0,
+   "why": "On a train, a coach is der Wagen; an Auto is a car on the road.",
+   "en": "Excuse me, which coach is seat 45 in?"
+  },
+  {
+   "id": "a2-t03-22",
+   "type": "order",
+   "tiles": [
+    "Ist",
+    "das Frühstück",
+    "im Preis",
+    "inklusive"
+   ],
+   "answers": [
+    "Ist das Frühstück im Preis inklusive?"
+   ],
+   "en": "Is breakfast included in the price?"
+  },
+  {
+   "id": "a2-t03-23",
+   "type": "cloze",
+   "de": "Wir haben das Hotel online ___.",
+   "base": "booked",
+   "answers": [
+    "gebucht",
+    "reserviert"
+   ],
+   "en": "We booked the hotel online."
+  },
+  {
+   "id": "a2-t03-24",
+   "type": "order",
+   "tiles": [
+    "Der Zug",
+    "fährt",
+    "heute",
+    "von Gleis 9",
+    "ab"
+   ],
+   "answers": [
+    "Der Zug fährt heute von Gleis 9 ab.",
+    "Heute fährt der Zug von Gleis 9 ab.",
+    "Von Gleis 9 fährt der Zug heute ab."
+   ],
+   "en": "Today the train leaves from platform 9."
+  }
+ ],
+ "listening": {
+  "title": "Ein Zimmer in Hamburg",
+  "intro": "Léa calls a hotel in Hamburg to book a room for the weekend.",
+  "lines": [
+   {
+    "speaker": "Jonas",
+    "de": "Hotel am Markt, Jonas Becker, guten Tag.",
+    "en": "Hotel am Markt, Jonas Becker speaking, hello."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Guten Tag, hier ist Léa Martin. Ich möchte ein Zimmer reservieren, für Freitag und Samstag.",
+    "en": "Hello, this is Léa Martin. I'd like to reserve a room for Friday and Saturday."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Gern. Ein Einzelzimmer oder ein Doppelzimmer?",
+    "en": "Certainly. A single room or a double room?"
+   },
+   {
+    "speaker": "Léa",
+    "de": "Ein Doppelzimmer, bitte. Ich komme mit meinem Freund.",
+    "en": "A double room, please. I'm coming with my boyfriend."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Das Doppelzimmer kostet 95 Euro pro Nacht, mit Frühstück.",
+    "en": "The double room costs 95 euros a night, with breakfast."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Gut. Wir kommen mit dem Zug. Wie weit ist das Hotel vom Bahnhof?",
+    "en": "Good. We're coming by train. How far is the hotel from the station?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nur zehn Minuten zu Fuß. Oder Sie nehmen die Straßenbahn, die Haltestelle ist direkt vor dem Hotel.",
+    "en": "Only ten minutes on foot. Or you take the tram, the stop is right in front of the hotel."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Super. Aber unser Zug kommt erst um 23 Uhr an. Ist die Rezeption dann noch offen?",
+    "en": "Great. But our train only arrives at 11 p.m. Is reception still open then?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Nein, leider nur bis 22 Uhr. Aber Ihr Schlüssel liegt dann in einer Box neben der Tür. Wir schicken Ihnen den Code per SMS.",
+    "en": "No, unfortunately only until 10 p.m. But your key will be in a box next to the door. We'll send you the code by text."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Perfekt. Kann ich mit Karte bezahlen?",
+    "en": "Perfect. Can I pay by card?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ja, natürlich. So, ich habe das Zimmer für Sie gebucht.",
+    "en": "Yes, of course. Right, I've booked the room for you."
+   },
+   {
+    "speaker": "Léa",
+    "de": "Vielen Dank! Bis Freitag.",
+    "en": "Thank you very much! See you on Friday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What kind of room does Léa book?",
+    "options": [
+     "A single room.",
+     "A double room.",
+     "A room with half board."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How much does the room cost?",
+    "options": [
+     "95 euros a night, with breakfast.",
+     "95 euros a night, without breakfast.",
+     "59 euros a night, with breakfast."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is Léa's arrival time a problem?",
+    "options": [
+     "The trams stop at 10 p.m.",
+     "The hotel is full on Friday.",
+     "Reception closes at 10 p.m."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How will Léa get her key?",
+    "options": [
+     "At the station.",
+     "From a box by the door, with a code.",
+     "From a neighbour."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Zug nach Hamburg hat leider Verspätung.",
+  "Ich habe ein Doppelzimmer mit Frühstück gebucht.",
+  "In Hannover müssen wir in den ICE umsteigen."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte ein Zimmer reservieren, für Freitag und Samstag.",
+   "en": "I'd like to reserve a room for Friday and Saturday."
+  },
+  {
+   "de": "Ein Doppelzimmer, bitte.",
+   "en": "A double room, please."
+  },
+  {
+   "de": "Wie weit ist das Hotel vom Bahnhof?",
+   "en": "How far is the hotel from the station?"
+  },
+  {
+   "de": "Unser Zug kommt erst um 23 Uhr an.",
+   "en": "Our train only arrives at 11 p.m."
+  },
+  {
+   "de": "Kann ich mit Karte bezahlen?",
+   "en": "Can I pay by card?"
+  }
+ ],
+ "writing": {
+  "task": "You've organised a weekend trip with a friend. Write 5–6 sentences: say you've bought the tickets, when the train leaves and arrives, where you change, and what hotel room you've booked.",
+  "model": "Hallo Jana, ich habe die Fahrkarten für Samstag gekauft! Der Zug fährt um 8:10 Uhr von Gleis 5 ab. In Hannover müssen wir umsteigen. Um 12:30 Uhr kommen wir in Hamburg an. Ich habe auch ein Doppelzimmer mit Frühstück reserviert, für zwei Nächte. Kannst du mir 50 Euro für das Hotel geben? Bis Samstag, Léa"
+ }
+}

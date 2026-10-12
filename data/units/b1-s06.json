@@ -1,0 +1,540 @@
+{
+ "id": "b1-s06",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "A weekend in Hamburg",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about a weekend trip in Germany and talk about travel surprises, sights and markets.",
+ "explanation": "It's Rafael's birthday, and Camille has planned a surprise: a weekend in Hamburg. Rain, wind, a boat trip, the Elbphilharmonie, a kind stranger and the famous fish market on Sunday morning, where things get a little out of hand.\n\nListen for **lassen** (*Sie ließ ihn raten. Lassen Sie mal!*) and nouns of the n-declension (*dem Herrn, einen Studenten*).\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| die Überraschung, -en | surprise |\n| raten | to guess |\n| die Hafenrundfahrt, -en | harbour boat tour |\n| die Rolltreppe, -n | escalator |\n| der Marktschreier, - | market crier |\n| der Korb, Körbe | basket |\n| das Fischbrötchen, - | fish roll |\n| verteilen | to hand out |\n| der Schaffner, - | ticket inspector (on a train) |\n\nTip: *Lassen Sie mal!* is a friendly way to refuse money or help: Don't worry about it!",
+ "french": "",
+ "examples": [
+  {
+   "de": "Sie ließ ihn bis zum Bahnhof raten, wohin die Reise ging.",
+   "en": "She let him guess where they were going until they reached the station."
+  },
+  {
+   "de": "Sie ließen ihre Taschen im Hotel.",
+   "en": "They left their bags at the hotel."
+  },
+  {
+   "de": "Trotz des Regens machten sie eine Hafenrundfahrt.",
+   "en": "Despite the rain they took a harbour tour."
+  },
+  {
+   "de": "Rafael wollte dem Herrn Geld geben.",
+   "en": "Rafael wanted to give the gentleman some money."
+  },
+  {
+   "de": "Lassen Sie mal, das ist mein Geschenk.",
+   "en": "Don't worry about it, it's my present."
+  },
+  {
+   "de": "Ein ganzer Korb Obst für zehn Euro!",
+   "en": "A whole basket of fruit for ten euros!"
+  },
+  {
+   "de": "Sie gaben einem müden Studenten eine Banane.",
+   "en": "They gave a tired student a banana."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Zu Rafaels Geburtstag hatte Camille eine ___ geplant.",
+   "base": "surprise",
+   "answers": [
+    "Überraschung"
+   ],
+   "en": "Camille had planned a surprise for Rafael's birthday.",
+   "id": "b1-s06-01"
+  },
+  {
+   "type": "cloze",
+   "de": "Camille ___ Rafael bis zum Bahnhof raten, wohin die Reise ging.",
+   "base": "lassen",
+   "answers": [
+    "ließ"
+   ],
+   "en": "Camille let Rafael guess where they were going until they reached the station.",
+   "id": "b1-s06-02"
+  },
+  {
+   "type": "choice",
+   "de": "Zuerst riet Rafael: „___?“",
+   "options": [
+    "Hamburg",
+    "München",
+    "Paris"
+   ],
+   "answer": 2,
+   "why": "He guessed Paris and Berlin first; Camille said: cold, very cold.",
+   "en": "First Rafael guessed: Paris?",
+   "id": "b1-s06-03"
+  },
+  {
+   "type": "choice",
+   "de": "Mit dem ICE kamen sie ___ in Hamburg an.",
+   "options": [
+    "pünktlich",
+    "erst am Nachmittag",
+    "schon am Morgen"
+   ],
+   "answer": 1,
+   "why": "The train was an hour late, so they only arrived in the afternoon.",
+   "en": "With the ICE they only arrived in Hamburg in the afternoon.",
+   "id": "b1-s06-04"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "ihre Taschen",
+    "ließen",
+    "im Hotel"
+   ],
+   "answers": [
+    "Sie ließen ihre Taschen im Hotel.",
+    "Ihre Taschen ließen sie im Hotel.",
+    "Im Hotel ließen sie ihre Taschen."
+   ],
+   "en": "They left their bags at the hotel.",
+   "id": "b1-s06-05"
+  },
+  {
+   "type": "cloze",
+   "de": "Trotz des Regens machten sie eine ___.",
+   "base": "harbour boat tour",
+   "answers": [
+    "Hafenrundfahrt"
+   ],
+   "en": "Despite the rain they took a harbour boat tour.",
+   "id": "b1-s06-06"
+  },
+  {
+   "type": "choice",
+   "de": "In Hamburg gibt es kein schlechtes Wetter, nur falsche ___.",
+   "options": [
+    "Kleidung",
+    "Schuhe",
+    "Leute"
+   ],
+   "answer": 0,
+   "why": "It's a famous saying: there's no bad weather, only the wrong clothes.",
+   "en": "In Hamburg there's no bad weather, only the wrong clothes.",
+   "id": "b1-s06-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Auf die Plaza der Elbphilharmonie fährt man mit einer langen ___.",
+   "base": "escalator",
+   "answers": [
+    "Rolltreppe"
+   ],
+   "en": "You go up to the Elbphilharmonie Plaza on a long escalator.",
+   "id": "b1-s06-08"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael wollte dem ___ Geld geben.",
+   "options": [
+    "Herr",
+    "Herrn",
+    "Herren"
+   ],
+   "answer": 1,
+   "why": "Herr is an n-noun: dem Herrn (singular, dative).",
+   "en": "Rafael wanted to give the gentleman money.",
+   "id": "b1-s06-09"
+  },
+  {
+   "type": "choice",
+   "de": "Der ältere Herr hatte zwei Karten, weil ___.",
+   "options": [
+    "seine Frau krank war",
+    "er Geburtstag hatte",
+    "er im Orchester spielte"
+   ],
+   "answer": 0,
+   "why": "His wife was ill, and he didn't want to go alone.",
+   "en": "The older gentleman had two tickets because his wife was ill.",
+   "id": "b1-s06-10"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Lassen",
+    "Sie",
+    "mal,",
+    "das ist",
+    "mein Geschenk"
+   ],
+   "answers": [
+    "Lassen Sie mal, das ist mein Geschenk."
+   ],
+   "en": "Don't worry about it, that's my present.",
+   "id": "b1-s06-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Soll ich Sie beide ___?",
+   "base": "to take a photo of",
+   "answers": [
+    "fotografieren"
+   ],
+   "en": "Shall I take a photo of you both?",
+   "id": "b1-s06-12"
+  },
+  {
+   "type": "cloze",
+   "de": "Auf der Plaza sprachen sie mit einem älteren ___.",
+   "base": "Herr",
+   "answers": [
+    "Herrn"
+   ],
+   "en": "On the Plaza they talked to an older gentleman.",
+   "id": "b1-s06-13"
+  },
+  {
+   "type": "choice",
+   "de": "Am Sonntag stand Rafael um fünf Uhr auf, weil ___.",
+   "options": [
+    "der Zug so früh fuhr",
+    "er auf den Fischmarkt wollte",
+    "er nicht schlafen konnte"
+   ],
+   "answer": 1,
+   "why": "As a cook he really wanted to see the fresh fish at the fish market.",
+   "en": "On Sunday Rafael got up at five because he wanted to go to the fish market.",
+   "id": "b1-s06-14"
+  },
+  {
+   "type": "cloze",
+   "de": "Ein ___ rief: „Nur heute! Ein ganzer Korb Obst für zehn Euro!“",
+   "base": "market crier",
+   "answers": [
+    "Marktschreier"
+   ],
+   "en": "A market crier shouted: Today only! A whole basket of fruit for ten euros!",
+   "id": "b1-s06-15"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Rafael",
+    "schon",
+    "hatte",
+    "bezahlt"
+   ],
+   "answers": [
+    "Rafael hatte schon bezahlt."
+   ],
+   "en": "Rafael had already paid.",
+   "id": "b1-s06-16"
+  },
+  {
+   "type": "cloze",
+   "de": "Der Marktschreier gab ihm einen riesigen ___ mit Obst.",
+   "base": "basket",
+   "answers": [
+    "Korb"
+   ],
+   "en": "The market crier gave him a huge basket of fruit.",
+   "id": "b1-s06-17"
+  },
+  {
+   "type": "choice",
+   "de": "Zum Frühstück aßen sie ___.",
+   "options": [
+    "ein Croissant",
+    "ein Fischbrötchen",
+    "eine Banane"
+   ],
+   "answer": 1,
+   "why": "At six in the morning they ate their first fish roll.",
+   "en": "For breakfast they ate a fish roll.",
+   "id": "b1-s06-18"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Um sechs Uhr morgens",
+    "sie",
+    "aßen",
+    "ein Fischbrötchen"
+   ],
+   "answers": [
+    "Um sechs Uhr morgens aßen sie ein Fischbrötchen.",
+    "Sie aßen um sechs Uhr morgens ein Fischbrötchen."
+   ],
+   "en": "At six in the morning they ate a fish roll.",
+   "id": "b1-s06-19"
+  },
+  {
+   "type": "choice",
+   "de": "Im Zug gaben sie einem müden ___ eine Banane.",
+   "options": [
+    "Student",
+    "Studenten",
+    "Studentes"
+   ],
+   "answer": 1,
+   "why": "Student is an n-noun: einem Studenten (dative).",
+   "en": "On the train they gave a tired student a banana.",
+   "id": "b1-s06-20"
+  },
+  {
+   "type": "cloze",
+   "de": "Im Zug ___ sie Bananen an andere Fahrgäste.",
+   "base": "verteilen",
+   "answers": [
+    "verteilten"
+   ],
+   "en": "On the train they handed out bananas to other passengers.",
+   "id": "b1-s06-21"
+  },
+  {
+   "type": "cloze",
+   "de": "Auch der ___ bekam eine Banane.",
+   "base": "ticket inspector",
+   "answers": [
+    "Schaffner"
+   ],
+   "en": "The ticket inspector got a banana too.",
+   "id": "b1-s06-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Nächstes Mal",
+    "ich",
+    "lasse",
+    "das Obst",
+    "auf dem Markt"
+   ],
+   "answers": [
+    "Nächstes Mal lasse ich das Obst auf dem Markt.",
+    "Ich lasse nächstes Mal das Obst auf dem Markt.",
+    "Das Obst lasse ich nächstes Mal auf dem Markt."
+   ],
+   "en": "Next time I'll leave the fruit at the market.",
+   "id": "b1-s06-23"
+  },
+  {
+   "type": "choice",
+   "de": "Den Rest vom Obst bekamen ___.",
+   "options": [
+    "die Kollegen",
+    "Camilles Eltern",
+    "Frau Schmitz und Herr Krause"
+   ],
+   "answer": 2,
+   "why": "Back in Cologne they gave the rest to their neighbours.",
+   "en": "Frau Schmitz and Herr Krause got the rest of the fruit.",
+   "id": "b1-s06-24"
+  }
+ ],
+ "listening": {
+  "title": "Moin, Hamburg!",
+  "intro": "For Rafael's birthday, Camille takes him on a surprise trip; he doesn't know where they are going.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Zu Rafaels Geburtstag im Oktober hatte Camille eine Überraschung geplant: ein Wochenende in Hamburg.",
+    "en": "For Rafael's birthday in October, Camille had planned a surprise: a weekend in Hamburg."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Sie ließ ihn bis zum Bahnhof raten, wohin die Reise ging.",
+    "en": "She let him guess where they were going until they got to the station."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Paris? Berlin? Komm, sag schon!",
+    "en": "Paris? Berlin? Come on, tell me!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Kalt, ganz kalt. Wir fahren in den Norden, an die Elbe!",
+    "en": "Cold, very cold. We're going north, to the Elbe!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Der ICE hatte natürlich eine Stunde Verspätung. Erst am Nachmittag kamen sie in Hamburg an.",
+    "en": "Of course the ICE was an hour late. They only arrived in Hamburg in the afternoon."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Sie ließen ihre Taschen im Hotel und liefen sofort zum Hafen. Es regnete, und ein kalter Wind kam vom Wasser.",
+    "en": "They left their bags at the hotel and walked straight to the harbour. It was raining, and a cold wind was blowing off the water."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Ist das Wetter hier immer so?",
+    "en": "Is the weather always like this here?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ein Kollege von mir sagt immer: In Hamburg gibt es kein schlechtes Wetter, nur falsche Kleidung.",
+    "en": "A colleague of mine always says: in Hamburg there's no bad weather, only the wrong clothes."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Trotz des Regens machten sie eine Hafenrundfahrt. Der Kapitän erzählte lustige Geschichten auf Plattdeutsch, und sie verstanden kaum ein Wort.",
+    "en": "Despite the rain they took a harbour tour. The captain told funny stories in Low German, and they hardly understood a word."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Danach fuhren sie mit einer langen Rolltreppe auf die Plaza der Elbphilharmonie. Von oben sah man den ganzen Hafen.",
+    "en": "Afterwards they rode a long escalator up to the Elbphilharmonie Plaza. From up there you could see the whole harbour."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Neben ihnen stand ein älterer Herr mit Hut.",
+    "en": "Next to them stood an older gentleman with a hat."
+   },
+   {
+    "speaker": "Herr Peters",
+    "de": "Soll ich Sie beide fotografieren? Sie sind wohl nicht von hier, oder?",
+    "en": "Shall I take a photo of you both? You're not from here, are you?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Nein, wir kommen aus Köln. Mein Freund hat heute Geburtstag.",
+    "en": "No, we're from Cologne. It's my boyfriend's birthday today."
+   },
+   {
+    "speaker": "Herr Peters",
+    "de": "Na, so ein Zufall! Meine Frau ist leider krank, und ich habe zwei Karten für das Konzert heute Abend. Allein gehe ich nicht. Möchten Sie die Karten haben?",
+    "en": "Well, what a coincidence! Unfortunately my wife is ill, and I have two tickets for tonight's concert. I'm not going alone. Would you like the tickets?"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Rafael wollte dem Herrn Geld geben, aber er nahm nichts.",
+    "en": "Rafael wanted to give the gentleman some money, but he took nothing."
+   },
+   {
+    "speaker": "Herr Peters",
+    "de": "Lassen Sie mal, das ist mein Geschenk. Herzlichen Glückwunsch, junger Mann!",
+    "en": "Don't worry about it, that's my present. Happy birthday, young man!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Das Konzert war wunderbar. Rafael hatte noch nie ein Orchester live gehört.",
+    "en": "The concert was wonderful. Rafael had never heard an orchestra live before."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Am Sonntag klingelte der Wecker um fünf Uhr. Als Koch wollte Rafael unbedingt auf den Fischmarkt.",
+    "en": "On Sunday the alarm went off at five. As a cook, Rafael really wanted to go to the fish market."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Auf dem Markt war es laut und voll. Ein Marktschreier rief: „Nur heute! Ein ganzer Korb Obst für zehn Euro!“",
+    "en": "The market was loud and crowded. A market crier shouted: Today only! A whole basket of fruit for ten euros!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Rafael, nein! Wie sollen wir das alles nach Köln bringen?",
+    "en": "Rafael, no! How are we supposed to get all that to Cologne?"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Aber es war zu spät. Rafael hatte schon bezahlt, und der Marktschreier gab ihm einen riesigen Korb mit Bananen, Äpfeln, Ananas und Trauben.",
+    "en": "But it was too late. Rafael had already paid, and the market crier gave him a huge basket of bananas, apples, pineapples and grapes."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Dann aßen sie ihr erstes Fischbrötchen, um sechs Uhr morgens. Camille fand, dass das zum Frühstück ein bisschen viel Fisch war.",
+    "en": "Then they ate their first fish roll, at six in the morning. Camille thought that was a bit much fish for breakfast."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Im ICE nach Köln verteilten sie Bananen: an einen müden Studenten, an den Schaffner und an zwei Kinder. Den Rest bekamen Frau Schmitz und Herr Krause.",
+    "en": "On the ICE to Cologne they handed out bananas: to a tired student, to the ticket inspector and to two children. Frau Schmitz and Herr Krause got the rest."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Das war mein schönster Geburtstag. Aber nächstes Mal lasse ich das Obst auf dem Markt.",
+    "en": "That was my best birthday ever. But next time I'll leave the fruit at the market."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Wann wusste Rafael, wohin die Reise ging?",
+    "options": [
+     "Schon eine Woche vorher",
+     "Erst am Bahnhof",
+     "Erst in Hamburg"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wie war das Wetter am Samstag?",
+    "options": [
+     "Es regnete, und es war windig.",
+     "Es war sonnig und warm.",
+     "Es schneite."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Woher hatten Camille und Rafael die Konzertkarten?",
+    "options": [
+     "Sie hatten sie online gekauft.",
+     "Sie hatten sie im Hotel bekommen.",
+     "Ein älterer Herr schenkte sie ihnen."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was kaufte Rafael auf dem Fischmarkt?",
+    "options": [
+     "Einen ganzen Korb Obst",
+     "Zehn Fische für das Restaurant",
+     "Blumen für Camille"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was machten sie mit dem Obst?",
+    "options": [
+     "Sie ließen es im Hotel.",
+     "Sie verteilten es im Zug und an die Nachbarn.",
+     "Rafael kochte damit im Restaurant."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Sie ließ ihn bis zum Bahnhof raten, wohin die Reise ging.",
+  "Rafael wollte dem älteren Herrn Geld geben, aber er nahm nichts.",
+  "Im Zug verteilten sie Bananen an einen müden Studenten."
+ ],
+ "speaking": [
+  {
+   "de": "Komm, sag schon!",
+   "en": "Come on, tell me!"
+  },
+  {
+   "de": "Soll ich Sie beide fotografieren?",
+   "en": "Shall I take a photo of you both?"
+  },
+  {
+   "de": "Lassen Sie mal, das ist mein Geschenk.",
+   "en": "Don't worry about it, that's my present."
+  },
+  {
+   "de": "Wie sollen wir das alles nach Köln bringen?",
+   "en": "How are we supposed to get all that to Cologne?"
+  },
+  {
+   "de": "Das war mein schönster Geburtstag.",
+   "en": "That was my best birthday ever."
+  }
+ ],
+ "writing": {
+  "task": "You are Camille. Herr Peters gave you his address. Write him an 80–100-word thank-you letter: thank him for the tickets, say how you liked the concert and tell him one funny thing from the rest of the weekend.",
+  "model": "Lieber Herr Peters,\n\nnoch einmal ganz herzlichen Dank für die Konzertkarten! Das war das schönste Geschenk für Rafael. Er hatte noch nie ein Orchester live gehört, und die Musik in der Elbphilharmonie war wunderbar. Am Sonntag sind wir um fünf Uhr aufgestanden und auf den Fischmarkt gegangen. Dort hat Rafael einen riesigen Korb Obst gekauft! Im Zug haben wir Bananen an einen Studenten, an den Schaffner und an zwei Kinder verteilt. Ich hoffe, Ihre Frau ist wieder gesund. Wenn Sie einmal nach Köln kommen, lassen Sie es uns bitte wissen!\n\nViele Grüße\nCamille Durand"
+ }
+}

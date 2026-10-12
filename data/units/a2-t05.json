@@ -1,0 +1,510 @@
+{
+ "id": "a2-t05",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "der Geburtstag",
+  "feiern",
+  "die Feier",
+  "das Fest",
+  "die Party",
+  "die Einladung",
+  "einladen",
+  "der Gast",
+  "das Geschenk",
+  "schenken",
+  "gratulieren",
+  "der Glückwunsch",
+  "herzlich",
+  "wünschen",
+  "sich bedanken",
+  "mitbringen",
+  "der Kuchen",
+  "die Torte",
+  "die Kerze",
+  "die Blume",
+  "die Karte",
+  "der Feiertag",
+  "die Hochzeit",
+  "heiraten",
+  "tanzen",
+  "lustig",
+  "zusagen",
+  "absagen",
+  "die Überraschung",
+  "Prost"
+ ],
+ "title": "Celebrations and holidays",
+ "situation": "An invitation to a birthday",
+ "canDo": "You can invite people, accept or decline an invitation, congratulate someone and talk about German holidays.",
+ "explanation": "A friend invites you to her birthday party. You need to say yes or no, bring something and congratulate her.\n\n| German | English |\n|---|---|\n| der Geburtstag, -e | birthday |\n| die Feier, -n / die Party, -s | celebration / party |\n| die Einladung, -en | invitation |\n| der Gast, Gäste | guest |\n| das Geschenk, -e | present |\n| der Feiertag, -e | public holiday |\n| die Hochzeit, -en | wedding |\n| einladen, mitbringen, feiern | invite, bring along, celebrate |\n| zusagen / absagen | say yes / say you can't come |\n\n| Occasion | What you say |\n|---|---|\n| birthday | **Herzlichen Glückwunsch!** / **Alles Gute zum Geburtstag!** |\n| Christmas | **Frohe Weihnachten!** |\n| before New Year | **Guten Rutsch!** |\n| after midnight | **Frohes neues Jahr!** |\n| Easter | **Frohe Ostern!** |\n| a toast | **Prost!** |\n\n- Learn the wishes as fixed phrases, endings and all.\n- **gratulieren** takes the dative and **zum**: *Ich gratuliere dir zum Geburtstag.* Not *für*.\n- **Ich lade dich ein** can also mean \"I'm paying\" in a café or bar.\n- Never wish a happy birthday **before** the day: many Germans think it brings bad luck.\n- Big holidays: Weihnachten (the main evening is the 24th, *Heiligabend*), Silvester (31 December), Ostern, and the Tag der Deutschen Einheit (3 October).\n\nCommon mistake: *Ich danke mich.* → **Ich bedanke mich** or **Ich danke dir.**",
+ "french": "Like « bonne année », Frohes neues Jahr is said after midnight; before it Germans say Guten Rutsch, and « inviter » (= einladen) also means paying, just as in French.",
+ "examples": [
+  {
+   "de": "Am Samstag habe ich Geburtstag. Ich lade dich ein!",
+   "en": "It's my birthday on Saturday. I'm inviting you!"
+  },
+  {
+   "de": "Danke für die Einladung, ich komme gern!",
+   "en": "Thanks for the invitation, I'd love to come!"
+  },
+  {
+   "de": "Leider kann ich nicht kommen, ich muss arbeiten.",
+   "en": "Unfortunately I can't come, I have to work."
+  },
+  {
+   "de": "Soll ich etwas mitbringen?",
+   "en": "Shall I bring anything?"
+  },
+  {
+   "de": "Herzlichen Glückwunsch zum Geburtstag!",
+   "en": "Happy birthday!"
+  },
+  {
+   "de": "Wir haben bis drei Uhr gefeiert und getanzt.",
+   "en": "We celebrated and danced until three."
+  },
+  {
+   "de": "Frohe Weihnachten und einen guten Rutsch!",
+   "en": "Merry Christmas and a happy New Year!"
+  },
+  {
+   "de": "Am 3. Oktober ist ein Feiertag.",
+   "en": "3 October is a public holiday."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t05-01",
+   "type": "cloze",
+   "de": "Danke für die ___! Ich komme gern.",
+   "base": "invitation",
+   "answers": [
+    "Einladung"
+   ],
+   "en": "Thanks for the invitation! I'd love to come."
+  },
+  {
+   "id": "a2-t05-02",
+   "type": "choice",
+   "de": "Morgen hat Lisa ___. Wir feiern bei ihr.",
+   "options": [
+    "Geschenk",
+    "Geburtstag",
+    "Feiertag"
+   ],
+   "answer": 1,
+   "why": "Geburtstag haben = to have your birthday.",
+   "en": "It's Lisa's birthday tomorrow. We're celebrating at her place."
+  },
+  {
+   "id": "a2-t05-03",
+   "type": "cloze",
+   "de": "Ich bringe einen ___ mit. Ich backe gern.",
+   "base": "cake",
+   "answers": [
+    "Kuchen"
+   ],
+   "en": "I'll bring a cake. I like baking."
+  },
+  {
+   "id": "a2-t05-04",
+   "type": "order",
+   "tiles": [
+    "Alles",
+    "Gute",
+    "zum Geburtstag"
+   ],
+   "answers": [
+    "Alles Gute zum Geburtstag!"
+   ],
+   "en": "Happy birthday!"
+  },
+  {
+   "id": "a2-t05-05",
+   "type": "choice",
+   "de": "Wir ___ am Samstag eine Party.",
+   "options": [
+    "feiern",
+    "gratulieren",
+    "schenken"
+   ],
+   "answer": 0,
+   "why": "eine Party feiern = to have a party; you gratulieren a person and schenken a present.",
+   "en": "We're having a party on Saturday."
+  },
+  {
+   "id": "a2-t05-06",
+   "type": "cloze",
+   "de": "Was ___ du deiner Schwester zum Geburtstag?",
+   "base": "give (as a present)",
+   "answers": [
+    "schenkst"
+   ],
+   "en": "What are you giving your sister for her birthday?"
+  },
+  {
+   "id": "a2-t05-07",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "schenken",
+    "ihr",
+    "Blumen"
+   ],
+   "answers": [
+    "Wir schenken ihr Blumen.",
+    "Blumen schenken wir ihr.",
+    "Ihr schenken wir Blumen."
+   ],
+   "en": "We're giving her flowers."
+  },
+  {
+   "id": "a2-t05-08",
+   "type": "choice",
+   "de": "Am 31. Dezember sagst du zu deinen Freunden: „___“",
+   "options": [
+    "Frohe Ostern!",
+    "Gute Besserung!",
+    "Guten Rutsch!"
+   ],
+   "answer": 2,
+   "why": "Before the New Year you wish a good 'slide' into it: Guten Rutsch!",
+   "en": "On 31 December you say to your friends: 'Happy New Year!'"
+  },
+  {
+   "id": "a2-t05-09",
+   "type": "cloze",
+   "de": "Wir haben zwanzig ___ eingeladen.",
+   "base": "guests",
+   "answers": [
+    "Gäste"
+   ],
+   "en": "We've invited twenty guests."
+  },
+  {
+   "id": "a2-t05-10",
+   "type": "choice",
+   "de": "Ich kann am Samstag leider nicht kommen. Ich muss ___.",
+   "options": [
+    "zusagen",
+    "absagen",
+    "einladen"
+   ],
+   "answer": 1,
+   "why": "absagen = to say you can't come; zusagen = to say yes.",
+   "en": "Unfortunately I can't come on Saturday. I have to cancel."
+  },
+  {
+   "id": "a2-t05-11",
+   "type": "cloze",
+   "de": "Am 24. Dezember ___ wir mit der Familie.",
+   "base": "celebrate",
+   "answers": [
+    "feiern"
+   ],
+   "en": "On 24 December we celebrate with the family."
+  },
+  {
+   "id": "a2-t05-12",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "lade",
+    "dich",
+    "zu meiner Party",
+    "ein"
+   ],
+   "answers": [
+    "Ich lade dich zu meiner Party ein.",
+    "Zu meiner Party lade ich dich ein."
+   ],
+   "en": "I'm inviting you to my party."
+  },
+  {
+   "id": "a2-t05-13",
+   "type": "choice",
+   "de": "Anna und Tom ___ im Mai. Wir sind zur Hochzeit eingeladen.",
+   "options": [
+    "tanzen",
+    "heiraten",
+    "feiern"
+   ],
+   "answer": 1,
+   "why": "heiraten = to get married; the wedding is die Hochzeit.",
+   "en": "Anna and Tom are getting married in May. We're invited to the wedding."
+  },
+  {
+   "id": "a2-t05-14",
+   "type": "cloze",
+   "de": "Am 3. Oktober ist ein ___. Da muss ich nicht arbeiten.",
+   "base": "public holiday",
+   "answers": [
+    "Feiertag"
+   ],
+   "en": "3 October is a public holiday. I don't have to work then."
+  },
+  {
+   "id": "a2-t05-15",
+   "type": "order",
+   "tiles": [
+    "Soll",
+    "ich",
+    "etwas",
+    "mitbringen"
+   ],
+   "answers": [
+    "Soll ich etwas mitbringen?"
+   ],
+   "en": "Shall I bring anything?"
+  },
+  {
+   "id": "a2-t05-16",
+   "type": "choice",
+   "de": "Ich ___ mich für das Geschenk.",
+   "options": [
+    "danke",
+    "bedanke",
+    "gratuliere"
+   ],
+   "answer": 1,
+   "why": "sich bedanken für is reflexive; danken has no mich: Ich danke dir.",
+   "en": "Thank you for the present."
+  },
+  {
+   "id": "a2-t05-17",
+   "type": "cloze",
+   "de": "Wir haben bis zwei Uhr nachts ___.",
+   "base": "danced",
+   "answers": [
+    "getanzt"
+   ],
+   "en": "We danced until two in the morning."
+  },
+  {
+   "id": "a2-t05-18",
+   "type": "choice",
+   "de": "Paul hat es nicht gewusst. Die Party war eine ___ für ihn.",
+   "options": [
+    "Überraschung",
+    "Einladung",
+    "Hochzeit"
+   ],
+   "answer": 0,
+   "why": "A party someone didn't know about is eine Überraschung, a surprise.",
+   "en": "Paul didn't know. The party was a surprise for him."
+  },
+  {
+   "id": "a2-t05-19",
+   "type": "cloze",
+   "de": "Auf der Torte sind dreißig ___.",
+   "base": "candles",
+   "answers": [
+    "Kerzen"
+   ],
+   "en": "There are thirty candles on the cake."
+  },
+  {
+   "id": "a2-t05-20",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "komme",
+    "gern",
+    "zu deiner Feier"
+   ],
+   "answers": [
+    "Ich komme gern zu deiner Feier.",
+    "Zu deiner Feier komme ich gern."
+   ],
+   "en": "I'd love to come to your celebration."
+  },
+  {
+   "id": "a2-t05-21",
+   "type": "choice",
+   "de": "Komm, ich lade dich ___. Du musst heute nicht bezahlen.",
+   "options": [
+    "an",
+    "ein",
+    "mit"
+   ],
+   "answer": 1,
+   "why": "einladen = to invite, and in a café or bar it also means 'I'm paying'.",
+   "en": "Come on, it's on me. You don't have to pay today."
+  },
+  {
+   "id": "a2-t05-22",
+   "type": "cloze",
+   "de": "Ich ___ dir alles Gute!",
+   "base": "wish",
+   "answers": [
+    "wünsche"
+   ],
+   "en": "I wish you all the best!"
+  },
+  {
+   "id": "a2-t05-23",
+   "type": "choice",
+   "de": "___ ich ein Kind war, haben wir Weihnachten immer bei meiner Oma gefeiert.",
+   "options": [
+    "Wenn",
+    "Wann",
+    "Als"
+   ],
+   "answer": 2,
+   "why": "For one period in the past you use als, even if things happened often.",
+   "en": "When I was a child, we always celebrated Christmas at my grandma's."
+  },
+  {
+   "id": "a2-t05-24",
+   "type": "order",
+   "tiles": [
+    "Am Samstag",
+    "feiern",
+    "wir",
+    "meinen Geburtstag"
+   ],
+   "answers": [
+    "Am Samstag feiern wir meinen Geburtstag.",
+    "Wir feiern am Samstag meinen Geburtstag.",
+    "Meinen Geburtstag feiern wir am Samstag."
+   ],
+   "en": "We're celebrating my birthday on Saturday."
+  }
+ ],
+ "listening": {
+  "title": "Die Einladung",
+  "intro": "Jana calls her friend Marc to invite him to her birthday party.",
+  "lines": [
+   {
+    "speaker": "Marc",
+    "de": "Hallo Jana! Du hast mir eine Nachricht geschickt?",
+    "en": "Hi Jana! You sent me a message?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ja! Am Samstag habe ich Geburtstag, und ich feiere bei mir. Ich lade dich ein!",
+    "en": "Yes! It's my birthday on Saturday, and I'm celebrating at my place. I'm inviting you!"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Toll, danke für die Einladung! Wann beginnt die Party?",
+    "en": "Great, thanks for the invitation! When does the party start?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Um acht Uhr. Ich habe auch Kollegen und Nachbarn eingeladen. Wir sind ungefähr zwanzig Gäste.",
+    "en": "At eight. I've also invited colleagues and neighbours. We'll be about twenty guests."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Soll ich etwas mitbringen? Vielleicht einen Kuchen?",
+    "en": "Shall I bring anything? Maybe a cake?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Nein, danke, meine Mutter backt eine Torte. Aber du kannst Getränke mitbringen.",
+    "en": "No, thanks, my mother is baking a cake. But you can bring drinks."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Gern. Ich kann aber nicht so lange bleiben, weil ich am Sonntag früh arbeiten muss.",
+    "en": "Sure. But I can't stay very long, because I have to work early on Sunday."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Kein Problem. Letztes Jahr haben wir bis drei Uhr getanzt. Das war so lustig!",
+    "en": "No problem. Last year we danced until three. That was so much fun!"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ich weiß, ich war doch dabei! Kommt Lea auch?",
+    "en": "I know, I was there! Is Lea coming too?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ich habe sie auch eingeladen, aber sie hat noch nicht geantwortet.",
+    "en": "I invited her too, but she hasn't answered yet."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ich glaube, sie hat am Samstag einen Termin. Vielleicht sagt sie ab.",
+    "en": "I think she has an appointment on Saturday. Maybe she'll say she can't come."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Schade. Aber du kommst, oder? Sag mir bis Donnerstag Bescheid!",
+    "en": "Pity. But you're coming, right? Let me know by Thursday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is Jana celebrating her birthday?",
+    "options": [
+     "In a bar.",
+     "At her place.",
+     "At her mother's."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What should Marc bring?",
+    "options": [
+     "A cake.",
+     "Flowers.",
+     "Drinks."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why can't Marc stay long?",
+    "options": [
+     "He has to work early on Sunday.",
+     "He is tired.",
+     "He has another party."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Marc think about Lea?",
+    "options": [
+     "She will bring a present.",
+     "She has an appointment on Saturday.",
+     "She is ill."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Danke für die Einladung, ich komme gern!",
+  "Soll ich etwas zur Party mitbringen?",
+  "Wir haben bis drei Uhr getanzt und gefeiert."
+ ],
+ "speaking": [
+  {
+   "de": "Am Samstag habe ich Geburtstag. Ich lade dich ein!",
+   "en": "It's my birthday on Saturday. I'm inviting you!"
+  },
+  {
+   "de": "Danke für die Einladung!",
+   "en": "Thanks for the invitation!"
+  },
+  {
+   "de": "Soll ich etwas mitbringen?",
+   "en": "Shall I bring anything?"
+  },
+  {
+   "de": "Herzlichen Glückwunsch zum Geburtstag!",
+   "en": "Happy birthday!"
+  },
+  {
+   "de": "Sag mir bis Donnerstag Bescheid!",
+   "en": "Let me know by Thursday!"
+  }
+ ],
+ "writing": {
+  "task": "A colleague has invited you to her birthday party. Write her a message (5–6 sentences): thank her, say that you are coming and when you can be there, and ask what you can bring.",
+  "model": "Liebe Sabine, vielen Dank für die Einladung! Ich komme sehr gern zu deiner Feier am Freitag. Leider kann ich erst um neun Uhr da sein, weil ich bis acht arbeiten muss. Soll ich etwas mitbringen? Ich backe gern einen Kuchen. Ich freue mich schon sehr! Liebe Grüße, Julien"
+ }
+}

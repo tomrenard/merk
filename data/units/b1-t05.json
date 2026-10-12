@@ -1,0 +1,522 @@
+{
+ "id": "b1-t05",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "die Nachricht",
+  "die Zeitung",
+  "die Politik",
+  "politisch",
+  "der Politiker",
+  "die Wahl",
+  "wählen",
+  "die Demokratie",
+  "der Bürger",
+  "die Gesellschaft",
+  "das Gesetz",
+  "der Staat",
+  "die Meldung",
+  "der Bericht",
+  "berichten",
+  "die Medien (Pl.)",
+  "der Journalist",
+  "die Presse",
+  "die Steuer",
+  "die Krise",
+  "der Krieg",
+  "der Streik",
+  "streiken",
+  "die Umfrage",
+  "die Mehrheit",
+  "die Bevölkerung",
+  "die Integration",
+  "die Diskussion",
+  "diskutieren",
+  "aktuell"
+ ],
+ "title": "News, politics and society",
+ "situation": "Talking about the news",
+ "canDo": "You can understand the main words of the news, tell someone what you heard or read and ask what they think about it.",
+ "explanation": "At lunch with colleagues, people often talk about what was in the news: a strike, an election, a new law.\n\n| German | English |\n|---|---|\n| die Nachrichten (pl.) | the news |\n| die Zeitung, -en / der Artikel, - | newspaper / article |\n| die Regierung, -en | government |\n| die Partei, -en | (political) party |\n| die Wahl, -en / wählen | election / to vote, elect |\n| der Bundestag | German parliament |\n| das Gesetz, -e | law |\n| die Steuer, -n | tax |\n| der Streik, -s / streiken | strike / to strike |\n| die Umfrage, -n | survey, poll |\n| die Mehrheit | majority |\n\nUseful phrases:\n- *Hast du gehört, dass …?* – Have you heard that …?\n- *Ich habe in der Zeitung gelesen, dass …*\n- *Was hältst du davon?* – What do you think of it?\n- *Ich finde das gut / richtig / nicht in Ordnung.*\n- *Das sehe ich anders.* – I see it differently.\n\nTips:\n- **die Nachricht** is one message; **die Nachrichten** (plural) are the news on TV or radio.\n- False friend: **die Partei** is a political party; a celebration is **die Party**.\n- **die Steuer** (tax) and **das Steuer** (steering wheel) are different words.\n- People talk about politics quite openly, but who you voted for (*Wen hast du gewählt?*) is often seen as private.",
+ "french": "Many words look like French (die Demokratie, die Krise, die Reform, die Integration), and like les infos, the news is plural: die Nachrichten.",
+ "examples": [
+  {
+   "de": "Hast du heute die Nachrichten gesehen?",
+   "en": "Did you see the news today?"
+  },
+  {
+   "de": "Ich habe in der Zeitung gelesen, dass die Mieten wieder steigen.",
+   "en": "I read in the paper that rents are going up again."
+  },
+  {
+   "de": "Im September wird ein neuer Bundestag gewählt.",
+   "en": "A new parliament is elected in September."
+  },
+  {
+   "de": "Morgen streiken die Busfahrer, deshalb fahren keine Busse.",
+   "en": "The bus drivers are on strike tomorrow, so there are no buses."
+  },
+  {
+   "de": "Was hältst du von dem neuen Gesetz?",
+   "en": "What do you think of the new law?"
+  },
+  {
+   "de": "Eine Umfrage zeigt, dass die meisten Leute mehr Radwege wollen.",
+   "en": "A survey shows that most people want more cycle paths."
+  },
+  {
+   "de": "Wenn ich das gewusst hätte, wäre ich nicht mit dem Zug gefahren.",
+   "en": "If I'd known that, I wouldn't have gone by train."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t05-01",
+   "type": "cloze",
+   "de": "Um 20 Uhr sehe ich immer die ___ im Fernsehen.",
+   "base": "the news",
+   "answers": [
+    "Nachrichten",
+    "Tagesschau"
+   ],
+   "en": "At 8 p.m. I always watch the news on TV."
+  },
+  {
+   "id": "b1-t05-02",
+   "type": "choice",
+   "de": "In Deutschland wird alle vier Jahre ein neuer Bundestag ___.",
+   "options": [
+    "gewonnen",
+    "gewählt",
+    "gestimmt"
+   ],
+   "answer": 1,
+   "why": "To elect is wählen: der Bundestag wird gewählt; gewinnen means to win.",
+   "en": "In Germany a new parliament is elected every four years."
+  },
+  {
+   "id": "b1-t05-03",
+   "type": "cloze",
+   "de": "Die ___ hat ein neues Gesetz beschlossen.",
+   "base": "government",
+   "answers": [
+    "Regierung",
+    "Bundesregierung"
+   ],
+   "en": "The government has passed a new law."
+  },
+  {
+   "id": "b1-t05-04",
+   "type": "choice",
+   "de": "Die Grünen sind eine ___.",
+   "options": [
+    "Party",
+    "Partei",
+    "Teil"
+   ],
+   "answer": 1,
+   "why": "A political party is eine Partei; eine Party is a celebration.",
+   "en": "The Greens are a political party."
+  },
+  {
+   "id": "b1-t05-05",
+   "type": "cloze",
+   "de": "Jeder, der arbeitet, muss ___ zahlen.",
+   "base": "taxes",
+   "answers": [
+    "Steuern"
+   ],
+   "en": "Everyone who works has to pay taxes."
+  },
+  {
+   "id": "b1-t05-06",
+   "type": "order",
+   "tiles": [
+    "Hast",
+    "du",
+    "heute",
+    "die Nachrichten",
+    "gesehen"
+   ],
+   "answers": [
+    "Hast du heute die Nachrichten gesehen?",
+    "Hast du die Nachrichten heute gesehen?"
+   ],
+   "en": "Did you see the news today?"
+  },
+  {
+   "id": "b1-t05-07",
+   "type": "choice",
+   "de": "Eine ___ zeigt: Die meisten Leute wollen mehr Radwege.",
+   "options": [
+    "Anfrage",
+    "Auskunft",
+    "Umfrage"
+   ],
+   "answer": 2,
+   "why": "A survey or poll is eine Umfrage; eine Anfrage is a request and eine Auskunft is a piece of information.",
+   "en": "A survey shows that most people want more cycle paths."
+  },
+  {
+   "id": "b1-t05-08",
+   "type": "cloze",
+   "de": "In der Zeitung stand ein langer ___ über die hohen Mieten.",
+   "base": "article, report",
+   "answers": [
+    "Artikel",
+    "Bericht"
+   ],
+   "en": "There was a long article in the paper about the high rents."
+  },
+  {
+   "id": "b1-t05-09",
+   "type": "choice",
+   "de": "In Deutschland darf jeder seine Meinung sagen. Die ___ ist sehr wichtig.",
+   "options": [
+    "Meinungsfreiheit",
+    "Freizeit",
+    "Freundlichkeit"
+   ],
+   "answer": 0,
+   "why": "Freedom of speech is die Meinungsfreiheit; Freizeit is free time.",
+   "en": "In Germany everyone may say what they think. Freedom of speech is very important."
+  },
+  {
+   "id": "b1-t05-10",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "gelesen,",
+    "dass",
+    "die Mieten",
+    "steigen"
+   ],
+   "answers": [
+    "Ich habe gelesen, dass die Mieten steigen."
+   ],
+   "en": "I've read that rents are going up."
+  },
+  {
+   "id": "b1-t05-11",
+   "type": "cloze",
+   "de": "Mit 18 darf man in Deutschland ___.",
+   "base": "vote",
+   "answers": [
+    "wählen"
+   ],
+   "en": "In Germany you can vote at 18."
+  },
+  {
+   "id": "b1-t05-12",
+   "type": "choice",
+   "de": "60 Prozent sind für das neue Gesetz. Die ___ ist dafür.",
+   "options": [
+    "Minderheit",
+    "Mehrheit",
+    "Hälfte"
+   ],
+   "answer": 1,
+   "why": "More than half is die Mehrheit (majority); die Minderheit is the minority and die Hälfte is exactly 50 per cent.",
+   "en": "60 per cent are for the new law. The majority is in favour."
+  },
+  {
+   "id": "b1-t05-13",
+   "type": "cloze",
+   "de": "Hast du gehört? Morgen ___ die Busfahrer.",
+   "base": "go on strike",
+   "answers": [
+    "streiken"
+   ],
+   "en": "Have you heard? The bus drivers are going on strike tomorrow."
+  },
+  {
+   "id": "b1-t05-14",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "ich",
+    "das",
+    "gewusst hätte,",
+    "wäre",
+    "ich",
+    "zu Hause geblieben"
+   ],
+   "answers": [
+    "Wenn ich das gewusst hätte, wäre ich zu Hause geblieben.",
+    "Ich wäre zu Hause geblieben, wenn ich das gewusst hätte."
+   ],
+   "en": "If I'd known that, I'd have stayed at home."
+  },
+  {
+   "id": "b1-t05-15",
+   "type": "cloze",
+   "de": "Viele Menschen ___ auf der Straße gegen den Krieg.",
+   "base": "demonstrate, protest",
+   "answers": [
+    "demonstrieren",
+    "protestieren"
+   ],
+   "en": "Many people are demonstrating in the street against the war."
+  },
+  {
+   "id": "b1-t05-16",
+   "type": "choice",
+   "de": "Was ___ du von dem neuen Gesetz?",
+   "options": [
+    "findest",
+    "hältst",
+    "glaubst"
+   ],
+   "answer": 1,
+   "why": "To ask for an opinion you say Was hältst du von …? (halten von); finden and glauben don't go with von.",
+   "en": "What do you think of the new law?"
+  },
+  {
+   "id": "b1-t05-17",
+   "type": "cloze",
+   "de": "Im Fernsehen gab es eine lange ___ über die Wahl.",
+   "base": "discussion, debate",
+   "answers": [
+    "Diskussion",
+    "Debatte"
+   ],
+   "en": "There was a long debate about the election on TV."
+  },
+  {
+   "id": "b1-t05-18",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "hältst",
+    "du",
+    "davon"
+   ],
+   "answers": [
+    "Was hältst du davon?"
+   ],
+   "en": "What do you think of it?"
+  },
+  {
+   "id": "b1-t05-19",
+   "type": "choice",
+   "de": "Für die ___ sind Sprachkurse sehr wichtig.",
+   "options": [
+    "Integration",
+    "Generation",
+    "Information"
+   ],
+   "answer": 0,
+   "why": "Fitting into a new society is die Integration; language courses help with that.",
+   "en": "Language courses are very important for integration."
+  },
+  {
+   "id": "b1-t05-20",
+   "type": "cloze",
+   "de": "Mieten, Klima, Renten: Über diese ___ wird im Moment viel diskutiert.",
+   "base": "topics",
+   "answers": [
+    "Themen"
+   ],
+   "en": "Rents, climate, pensions: these topics are much discussed at the moment."
+  },
+  {
+   "id": "b1-t05-21",
+   "type": "choice",
+   "de": "Er arbeitet für eine große Zeitung. Er ist ___.",
+   "options": [
+    "Politiker",
+    "Polizist",
+    "Journalist"
+   ],
+   "answer": 2,
+   "why": "Someone who writes for a newspaper is ein Journalist.",
+   "en": "He works for a big newspaper. He's a journalist."
+  },
+  {
+   "id": "b1-t05-22",
+   "type": "cloze",
+   "de": "Das neue ___ gilt ab Januar.",
+   "base": "law",
+   "answers": [
+    "Gesetz"
+   ],
+   "en": "The new law applies from January."
+  },
+  {
+   "id": "b1-t05-23",
+   "type": "order",
+   "tiles": [
+    "Morgen",
+    "streiken",
+    "die Busfahrer"
+   ],
+   "answers": [
+    "Morgen streiken die Busfahrer.",
+    "Die Busfahrer streiken morgen."
+   ],
+   "en": "The bus drivers are on strike tomorrow."
+  },
+  {
+   "id": "b1-t05-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hätte",
+    "das",
+    "nicht",
+    "gedacht"
+   ],
+   "answers": [
+    "Ich hätte das nicht gedacht.",
+    "Das hätte ich nicht gedacht."
+   ],
+   "en": "I wouldn't have thought so."
+  }
+ ],
+ "listening": {
+  "title": "Hast du das gehört?",
+  "intro": "Sophie and her colleague Tobias talk about the news during their lunch break.",
+  "lines": [
+   {
+    "speaker": "Tobias",
+    "de": "Hast du heute Morgen die Nachrichten gehört?",
+    "en": "Did you hear the news this morning?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Nein, ich war spät dran. Was ist denn passiert?",
+    "en": "No, I was running late. What happened?"
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ab Mittwoch streiken die Lokführer. Zwei Tage lang fahren fast keine Züge.",
+    "en": "The train drivers are going on strike from Wednesday. For two days there'll be almost no trains."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Oh nein! Am Mittwoch wollte ich mit dem Zug zu meiner Schwester nach Köln fahren.",
+    "en": "Oh no! On Wednesday I wanted to take the train to my sister's in Cologne."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Dann musst du das wohl verschieben. Oder du nimmst den Fernbus.",
+    "en": "Then you'll probably have to postpone it. Or you take the coach."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Wenn ich das früher gewusst hätte, hätte ich einen Flug gebucht. Jetzt ist alles so teuer.",
+    "en": "If I'd known that earlier, I'd have booked a flight. Now everything is so expensive."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ich verstehe die Lokführer aber. Sie arbeiten viel und verdienen nicht besonders gut.",
+    "en": "But I understand the train drivers. They work a lot and don't earn very well."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Das stimmt. In Frankreich wird auch oft gestreikt, das bin ich gewohnt.",
+    "en": "That's true. In France there are often strikes too, I'm used to it."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Und hast du gelesen, dass die Regierung die Mieten begrenzen will?",
+    "en": "And did you read that the government wants to limit rents?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, das stand gestern in der Zeitung. Was hältst du davon?",
+    "en": "Yes, that was in the paper yesterday. What do you think of it?"
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Ich finde das gut. In unserer Stadt sind die Mieten viel zu hoch.",
+    "en": "I think it's good. In our city rents are much too high."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ich bin mir nicht sicher. Ich habe gelesen, dass dann weniger Wohnungen gebaut werden.",
+    "en": "I'm not sure. I read that fewer flats will be built then."
+   },
+   {
+    "speaker": "Tobias",
+    "de": "Hm, das ist auch ein Argument. Darüber können wir beim nächsten Mittagessen weiterdiskutieren.",
+    "en": "Hm, that's a point too. We can carry on discussing it at our next lunch."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Gern! Aber jetzt muss ich los.",
+    "en": "Sure! But now I have to go."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What news did Tobias hear?",
+    "options": [
+     "Train drivers are going on strike from Wednesday",
+     "Rents are going down",
+     "Flights are cancelled"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why is Sophie annoyed?",
+    "options": [
+     "She has to work on Wednesday",
+     "She wanted to visit her sister in Cologne by train",
+     "Her flight was cancelled"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Sophie say about France?",
+    "options": [
+     "People never strike there",
+     "Trains are cheaper there",
+     "There are often strikes there too"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is Sophie's worry about the rent plan?",
+    "options": [
+     "Her own rent will go up",
+     "Fewer flats might be built",
+     "It will start too late"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ab Mittwoch streiken die Lokführer, und es fahren kaum Züge.",
+  "Wenn ich das gewusst hätte, hätte ich einen Flug gebucht.",
+  "Ich habe in der Zeitung gelesen, dass die Mieten steigen."
+ ],
+ "speaking": [
+  {
+   "de": "Hast du heute Morgen die Nachrichten gehört?",
+   "en": "Did you hear the news this morning?"
+  },
+  {
+   "de": "Was ist denn passiert?",
+   "en": "What happened?"
+  },
+  {
+   "de": "Wenn ich das früher gewusst hätte, hätte ich einen Flug gebucht.",
+   "en": "If I'd known that earlier, I'd have booked a flight."
+  },
+  {
+   "de": "Was hältst du davon?",
+   "en": "What do you think of it?"
+  },
+  {
+   "de": "Ich bin mir nicht sicher.",
+   "en": "I'm not sure."
+  }
+ ],
+ "writing": {
+  "task": "Write an 80–100-word message to a friend about a piece of news you read this week: say what happened, what you think about it, and ask for their opinion.",
+  "model": "Hallo Jana,\n\nhast du schon gehört? Ab Montag streiken die Erzieherinnen in unserer Stadt, und die Kitas bleiben drei Tage geschlossen. Ich habe es gestern in der Zeitung gelesen. Für uns ist das ein großes Problem, weil wir beide arbeiten müssen. Wenn ich das früher gewusst hätte, hätte ich Urlaub genommen. Trotzdem verstehe ich die Erzieherinnen: Sie haben sehr viel Arbeit und verdienen nicht genug. Ich finde, dass sie mehr Geld bekommen sollten. Was hältst du davon? Und kannst du vielleicht am Dienstag auf Léo aufpassen?\n\nLiebe Grüße\nMargaux"
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "id": "b2-11",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "falls, sofern, je nachdem, indem, sodass",
+ "situation": "Conditions and consequences",
+ "canDo": "You can talk about conditions, means and results with falls, sofern, je nachdem, indem and sodass.",
+ "explanation": "When you make plans, things depend on conditions: the weather, the train, how many people come. These conjunctions help you say exactly how:\n\n| conjunction | meaning | example |\n|---|---|---|\n| **falls** | in case, if | ***Falls** es regnet, bleiben wir zu Hause.* |\n| **sofern** | provided that | *Wir kommen, **sofern** wir einen Babysitter finden.* |\n| **je nachdem, ob / wie / wann…** | depending on | ***Je nachdem, wie** das Wetter ist, gehen wir wandern.* |\n| **indem** | by (doing) | *Man spart Geld, **indem** man selbst kocht.* |\n| **sodass** / **so …, dass** | so that (result) | *Es regnete, **sodass** das Spiel ausfiel.* *Es war **so** laut, **dass** …* |\n\nAll of them send the verb **to the end**. If the clause comes first, the main clause starts with its verb: ***Falls** du Zeit hast, **ruf** mich an.*\n\nHow they differ:\n- **falls** is \"if, maybe\": it's less sure than *wenn*, and it never means \"when\". ***Falls** du Hilfe brauchst* = in case you need help.\n- **sofern** is \"provided that\": a condition that must be met. It's a bit more formal.\n- **je nachdem** needs a question word or *ob*: *je nachdem, **ob** / **wie** / **wann** …*. On its own it means \"it depends\": *Kommst du? – Je nachdem.*\n- **indem** answers **wie?** (how?): the method. *Wie lernst du? – **Indem** ich jeden Tag lese.*\n- **sodass** (also written *so dass*) shows a **result**. Don't mix it up with **damit** (B1), which shows a **purpose**: *Ich stehe früh auf, **damit** ich den Zug erreiche* (my aim), *Der Wecker klingelte nicht, **sodass** ich den Zug verpasste* (what happened).\n\nThe most common mistakes:\n- **damit** for a result: not ~~Es schneite, damit keine Busse fuhren~~, but ***sodass***.\n- English or French word order: not ~~indem man kocht selbst~~, but *indem man selbst **kocht***.",
+ "french": "indem works like en + gérondif (on économise en cuisinant soi-même = man spart, indem man selbst kocht), falls ≈ au cas où, sofern ≈ à condition que (but with the normal indicative), sodass ≈ si bien que, je nachdem ≈ selon que.",
+ "examples": [
+  {
+   "de": "Falls es regnet, bleiben wir zu Hause.",
+   "en": "If it rains, we'll stay at home."
+  },
+  {
+   "de": "Wir kommen gern, sofern wir einen Babysitter finden.",
+   "en": "We'd love to come, provided we find a babysitter."
+  },
+  {
+   "de": "Je nachdem, wie das Wetter ist, gehen wir wandern oder ins Museum.",
+   "en": "Depending on the weather, we'll go hiking or to the museum."
+  },
+  {
+   "de": "Man kann viel Geld sparen, indem man selbst kocht.",
+   "en": "You can save a lot of money by cooking yourself."
+  },
+  {
+   "de": "Der Zug hatte Verspätung, sodass ich den Anschluss verpasst habe.",
+   "en": "The train was late, so I missed my connection."
+  },
+  {
+   "de": "Es war so laut, dass ich nichts verstanden habe.",
+   "en": "It was so loud that I didn't understand anything."
+  },
+  {
+   "de": "Ruf mich an, falls du Hilfe brauchst.",
+   "en": "Call me in case you need help."
+  },
+  {
+   "de": "Kommst du mit? – Je nachdem, wie lange ich arbeiten muss.",
+   "en": "Are you coming? – Depends how long I have to work."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-11-01",
+   "type": "cloze",
+   "de": "Falls du Hilfe ___, ruf mich an.",
+   "base": "brauchen",
+   "answers": [
+    "brauchst"
+   ],
+   "en": "If you need help, call me."
+  },
+  {
+   "id": "b2-11-02",
+   "type": "choice",
+   "de": "Man kann viel Geld sparen, ___ man selbst kocht.",
+   "options": [
+    "indem",
+    "sodass",
+    "falls"
+   ],
+   "answer": 0,
+   "why": "indem says how: by cooking yourself.",
+   "en": "You can save a lot of money by cooking yourself."
+  },
+  {
+   "id": "b2-11-03",
+   "type": "cloze",
+   "de": "Falls du morgen Zeit hast, ___ mich bitte an.",
+   "base": "anrufen (imperative, du)",
+   "answers": [
+    "ruf",
+    "rufe"
+   ],
+   "en": "If you have time tomorrow, please call me."
+  },
+  {
+   "id": "b2-11-04",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "kommen",
+    "gern",
+    "sofern",
+    "wir",
+    "einen Babysitter",
+    "finden"
+   ],
+   "answers": [
+    "Wir kommen gern, sofern wir einen Babysitter finden.",
+    "Sofern wir einen Babysitter finden, kommen wir gern."
+   ],
+   "en": "We'd love to come, provided we find a babysitter."
+  },
+  {
+   "id": "b2-11-05",
+   "type": "choice",
+   "de": "Der Zug hatte Verspätung, ___ ich den Anschluss verpasst habe.",
+   "options": [
+    "damit",
+    "sodass",
+    "indem"
+   ],
+   "answer": 1,
+   "why": "Missing the connection was the result, not the aim, so sodass.",
+   "en": "The train was late, so I missed my connection."
+  },
+  {
+   "id": "b2-11-06",
+   "type": "cloze",
+   "de": "Es war ___ laut, dass ich nichts verstanden habe.",
+   "base": "so … dass",
+   "answers": [
+    "so"
+   ],
+   "en": "It was so loud that I didn't understand anything."
+  },
+  {
+   "id": "b2-11-07",
+   "type": "choice",
+   "de": "___, wie das Wetter ist, gehen wir wandern oder ins Museum.",
+   "options": [
+    "Sofern",
+    "Je nachdem",
+    "Indem"
+   ],
+   "answer": 1,
+   "why": "je nachdem + wie means 'depending on how'.",
+   "en": "Depending on the weather, we'll go hiking or to the museum."
+  },
+  {
+   "id": "b2-11-08",
+   "type": "cloze",
+   "de": "Ich habe meine Wohnung gefunden, indem ich jeden Tag die Anzeigen ___ habe.",
+   "base": "lesen",
+   "answers": [
+    "gelesen"
+   ],
+   "en": "I found my flat by reading the ads every day."
+  },
+  {
+   "id": "b2-11-09",
+   "type": "order",
+   "tiles": [
+    "Man",
+    "lernt",
+    "eine Sprache",
+    "am besten",
+    "indem",
+    "man",
+    "viel spricht"
+   ],
+   "answers": [
+    "Man lernt eine Sprache am besten, indem man viel spricht.",
+    "Am besten lernt man eine Sprache, indem man viel spricht.",
+    "Eine Sprache lernt man am besten, indem man viel spricht."
+   ],
+   "en": "The best way to learn a language is by speaking a lot."
+  },
+  {
+   "id": "b2-11-10",
+   "type": "cloze",
+   "de": "Wir fahren morgen los, sofern das Auto bis dahin repariert ___.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "We'll set off tomorrow, provided the car is repaired by then."
+  },
+  {
+   "id": "b2-11-11",
+   "type": "choice",
+   "de": "Kommst du heute Abend mit? – ___, wie lange ich arbeiten muss.",
+   "options": [
+    "Falls",
+    "Sofern",
+    "Je nachdem"
+   ],
+   "answer": 2,
+   "why": "Je nachdem, wie … means 'it depends how …'.",
+   "en": "Are you coming tonight? – Depends how long I have to work."
+  },
+  {
+   "id": "b2-11-12",
+   "type": "cloze",
+   "de": "Je nachdem, wann ich Feierabend ___, komme ich um sieben oder um acht.",
+   "base": "haben",
+   "answers": [
+    "habe"
+   ],
+   "en": "Depending on when I finish work, I'll come at seven or eight."
+  },
+  {
+   "id": "b2-11-13",
+   "type": "order",
+   "tiles": [
+    "Falls",
+    "du",
+    "Fragen",
+    "hast",
+    "schreib",
+    "mir",
+    "einfach"
+   ],
+   "answers": [
+    "Falls du Fragen hast, schreib mir einfach.",
+    "Schreib mir einfach, falls du Fragen hast."
+   ],
+   "en": "If you have any questions, just write to me."
+  },
+  {
+   "id": "b2-11-14",
+   "type": "choice",
+   "de": "Es hat die ganze Nacht geschneit, ___ heute keine Busse fahren.",
+   "options": [
+    "sodass",
+    "damit",
+    "indem"
+   ],
+   "answer": 0,
+   "why": "The snow had no aim; no buses is the result, so sodass.",
+   "en": "It snowed all night, so there are no buses today."
+  },
+  {
+   "id": "b2-11-15",
+   "type": "cloze",
+   "de": "Sie hat sich so gefreut, ___ sie geweint hat.",
+   "base": "so … dass",
+   "answers": [
+    "dass"
+   ],
+   "en": "She was so happy that she cried."
+  },
+  {
+   "id": "b2-11-16",
+   "type": "choice",
+   "de": "Ich nehme einen Regenschirm mit, ___ es regnet.",
+   "options": [
+    "sodass",
+    "falls",
+    "indem"
+   ],
+   "answer": 1,
+   "why": "falls means 'in case'.",
+   "en": "I'll take an umbrella in case it rains."
+  },
+  {
+   "id": "b2-11-17",
+   "type": "cloze",
+   "de": "Man kann den Vertrag kündigen, indem man der Firma eine E-Mail ___.",
+   "base": "schicken",
+   "answers": [
+    "schickt"
+   ],
+   "en": "You can cancel the contract by sending the company an email."
+  },
+  {
+   "id": "b2-11-18",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "war",
+    "so",
+    "müde",
+    "dass",
+    "er",
+    "sofort einschlief"
+   ],
+   "answers": [
+    "Er war so müde, dass er sofort einschlief."
+   ],
+   "en": "He was so tired that he fell asleep at once."
+  },
+  {
+   "id": "b2-11-19",
+   "type": "choice",
+   "de": "Wie hast du so gut Deutsch gelernt? – ___ ich jeden Tag mit meinen Kollegen gesprochen habe.",
+   "options": [
+    "Sodass",
+    "Falls",
+    "Indem"
+   ],
+   "answer": 2,
+   "why": "The answer to wie? (how?) is introduced by indem.",
+   "en": "How did you learn German so well? – By talking to my colleagues every day."
+  },
+  {
+   "id": "b2-11-20",
+   "type": "cloze",
+   "de": "Je nachdem, ___ viel Zeit wir haben, fahren wir mit dem Auto oder mit dem Zug.",
+   "base": "question word",
+   "answers": [
+    "wie"
+   ],
+   "en": "Depending on how much time we have, we'll go by car or by train."
+  },
+  {
+   "id": "b2-11-21",
+   "type": "order",
+   "tiles": [
+    "Sofern",
+    "ich",
+    "rechtzeitig",
+    "fertig werde",
+    "komme",
+    "ich",
+    "mit"
+   ],
+   "answers": [
+    "Sofern ich rechtzeitig fertig werde, komme ich mit.",
+    "Ich komme mit, sofern ich rechtzeitig fertig werde."
+   ],
+   "en": "Provided I finish in time, I'll come along."
+  },
+  {
+   "id": "b2-11-22",
+   "type": "choice",
+   "de": "Er hat zu wenig geschlafen, ___ er sich nicht konzentrieren konnte.",
+   "options": [
+    "damit",
+    "sodass",
+    "sofern"
+   ],
+   "answer": 1,
+   "why": "Not being able to concentrate was the result, so sodass.",
+   "en": "He slept too little, so he couldn't concentrate."
+  },
+  {
+   "id": "b2-11-23",
+   "type": "cloze",
+   "de": "Falls der Zug ausfällt, ___ ich ein Taxi.",
+   "base": "nehmen",
+   "answers": [
+    "nehme"
+   ],
+   "en": "If the train is cancelled, I'll take a taxi."
+  },
+  {
+   "id": "b2-11-24",
+   "type": "order",
+   "tiles": [
+    "Die Straße",
+    "war",
+    "gesperrt",
+    "sodass",
+    "wir",
+    "einen Umweg fahren mussten"
+   ],
+   "answers": [
+    "Die Straße war gesperrt, sodass wir einen Umweg fahren mussten."
+   ],
+   "en": "The road was closed, so we had to take a detour."
+  }
+ ],
+ "listening": {
+  "title": "Wandern im Harz?",
+  "intro": "Julia and Tim are planning a day of hiking in the Harz mountains, but a few things are still uncertain.",
+  "lines": [
+   {
+    "speaker": "Julia",
+    "de": "Tim, bleibt es bei Samstag? Wir wollten doch im Harz wandern.",
+    "en": "Tim, is Saturday still on? We wanted to go hiking in the Harz."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ja, sofern das Wetter mitspielt. Für Samstag ist Regen angesagt.",
+    "en": "Yes, provided the weather plays along. Rain is forecast for Saturday."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Und falls es regnet? Fahren wir dann gar nicht?",
+    "en": "And if it rains? Do we not go at all then?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Je nachdem, wie stark es regnet. Bei leichtem Regen gehen wir trotzdem, mit guten Jacken.",
+    "en": "Depends how hard it rains. If it's light rain, we'll go anyway, with good jackets."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Okay. Und wie kommen wir hin? Mein Auto ist in der Werkstatt.",
+    "en": "OK. And how do we get there? My car is at the garage."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Mit dem Zug. Wir sparen Geld, indem wir mit dem Deutschlandticket fahren.",
+    "en": "By train. We save money by using the Deutschlandticket."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Gute Idee. Letztes Mal hatte der Zug so viel Verspätung, dass wir erst mittags angekommen sind.",
+    "en": "Good idea. Last time the train was so late that we didn't arrive until midday."
+   },
+   {
+    "speaker": "Tim",
+    "de": "Stimmt. Deshalb nehmen wir diesmal den Zug um sieben. Falls er Verspätung hat, haben wir trotzdem genug Zeit.",
+    "en": "True. That's why we're taking the seven o'clock train this time. If it's late, we'll still have enough time."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Um sieben? Dann muss ich um sechs aufstehen!",
+    "en": "At seven? Then I have to get up at six!"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Du kannst ja im Zug schlafen. Und falls du willst, bringe ich Kaffee mit.",
+    "en": "You can sleep on the train. And if you like, I'll bring coffee."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Dann bin ich dabei. Soll ich etwas zu essen mitnehmen?",
+    "en": "Then I'm in. Shall I bring something to eat?"
+   },
+   {
+    "speaker": "Tim",
+    "de": "Ja, gern. Je nachdem, wie weit wir laufen, essen wir unterwegs oder in einer Hütte.",
+    "en": "Yes, please. Depending on how far we walk, we'll eat on the way or in a mountain hut."
+   },
+   {
+    "speaker": "Julia",
+    "de": "Abgemacht. Ich schreibe dir am Freitagabend, wie das Wetter aussieht.",
+    "en": "Deal. I'll text you on Friday evening about what the weather looks like."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the trip depend on?",
+    "options": [
+     "Julia's car.",
+     "The price of the tickets.",
+     "The weather."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How will they save money?",
+    "options": [
+     "By driving.",
+     "By travelling with the Deutschlandticket.",
+     "By staying at a friend's place."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why are they taking the seven o'clock train?",
+    "options": [
+     "To have enough time if the train is late.",
+     "Because it's cheaper.",
+     "Because Julia wants to sleep on the train."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What will Tim bring if Julia wants?",
+    "options": [
+     "Food.",
+     "Coffee.",
+     "Rain jackets."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Falls es morgen regnet, bleiben wir lieber zu Hause.",
+  "Man kann viel Geld sparen, indem man selbst kocht.",
+  "Der Zug hatte Verspätung, sodass ich den Anschluss verpasst habe."
+ ],
+ "speaking": [
+  {
+   "de": "Ja, sofern das Wetter mitspielt.",
+   "en": "Yes, provided the weather plays along."
+  },
+  {
+   "de": "Und falls es regnet?",
+   "en": "And if it rains?"
+  },
+  {
+   "de": "Je nachdem, wie stark es regnet.",
+   "en": "Depends how hard it rains."
+  },
+  {
+   "de": "Wir sparen Geld, indem wir mit dem Zug fahren.",
+   "en": "We save money by going by train."
+  },
+  {
+   "de": "Der Zug hatte so viel Verspätung, dass wir erst mittags angekommen sind.",
+   "en": "The train was so late that we didn't arrive until midday."
+  }
+ ],
+ "writing": {
+  "task": "You're organising a barbecue with friends on Saturday. Write a group message of about 100 words explaining the plan and what will happen under which conditions, using falls, sofern, je nachdem, indem and so … dass.",
+  "model": "Hallo zusammen,\n\nam Samstag grillen wir im Stadtpark, sofern das Wetter mitspielt. Falls es regnet, treffen wir uns stattdessen bei mir in der Wohnung. Je nachdem, wie viele Leute kommen, kaufe ich zwei oder drei Kilo Fleisch und Gemüse. Bitte sagt mir deshalb bis Donnerstag Bescheid. Wir können die Kosten niedrig halten, indem jeder etwas mitbringt: einen Salat, Getränke oder Brot. Letztes Jahr hatten wir so viel Essen, dass alle am Ende noch etwas mit nach Hause nehmen konnten. Schreibt also bitte in die Gruppe, was ihr mitbringt. Falls ihr Fragen habt, ruft mich einfach an!\n\nViele Grüße\nClaire"
+ }
+}

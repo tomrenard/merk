@@ -16,10 +16,10 @@ import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
 const GRADES = [
-  { rating: 1, label: "Again", className: "[--c:#d61f1f] [--edge:#a51515]" },
-  { rating: 2, label: "Hard", className: "[--c:#b45f00] [--edge:#8a4800]" },
-  { rating: 3, label: "Good", className: "[--c:#2f7d00] [--edge:#235e00]" },
-  { rating: 4, label: "Easy", className: "[--c:#0077b6] [--edge:#005a8a]" },
+  { rating: 1, label: "Again", className: "[--c:#d63c3c]" },
+  { rating: 2, label: "Hard", className: "[--c:#b45f00]" },
+  { rating: 3, label: "Good", className: "[--c:#1a7a43]" },
+  { rating: 4, label: "Easy", className: "[--c:#0077b6]" },
 ];
 
 /**
@@ -181,7 +181,7 @@ export function Review({ first, total, limit, lesson }: Props) {
   if (item.exercise) {
     return (
       <main className="screen">
-        {header(<span className="chip muted line border-2">🎓 {note.de}</span>)}
+        {header(<span className="chip muted line border">🎓 {note.de}</span>)}
         {/* Right counts as Good, wrong as Again: the exercise is checked, not self-graded. */}
         <Exercise
           key={item.cardId + item.reps}
@@ -204,7 +204,7 @@ export function Review({ first, total, limit, lesson }: Props) {
   return (
     <main className="screen">
       {header(
-        <span className="chip muted line border-2">
+        <span className="chip muted line border">
           {note.cefr} · {item.isNew ? "new" : "review"}
           {/* Only once revealed: the edit form shows the answer. */}
           {revealed && (
@@ -224,9 +224,7 @@ export function Review({ first, total, limit, lesson }: Props) {
           </>
         ) : (
           <>
-            <p className="muted text-sm font-extrabold tracking-wide uppercase">
-              Write this in German
-            </p>
+            <p className="muted text-sm font-extrabold">Write this in German</p>
             <p className="text-3xl font-black">
               {note.en}
               {/* Says a preposition belongs to the answer, without giving it away. */}
@@ -261,9 +259,7 @@ export function Review({ first, total, limit, lesson }: Props) {
         {revealed && (
           <div className="line mt-4 flex w-full flex-col gap-3 border-t-2 pt-4">
             {item.direction === "de_en" ? (
-              <>
-                <p className="text-2xl font-extrabold">{note.en}</p>
-              </>
+              <p className="text-2xl font-extrabold">{note.en}</p>
             ) : (
               <>
                 {message && <p className={`chip mx-auto ${FEEDBACK[result]}`}>{message}</p>}

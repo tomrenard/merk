@@ -1,0 +1,516 @@
+{
+ "id": "b1-t04",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "die Umwelt",
+  "der Umweltschutz",
+  "der Müll",
+  "der Abfall",
+  "die Mülltonne",
+  "die Müllabfuhr",
+  "der Abfalleimer",
+  "(sich) trennen",
+  "wegwerfen",
+  "entsorgen",
+  "das Plastik",
+  "der Kunststoff",
+  "das Metall",
+  "die Flasche",
+  "die Dose",
+  "die Tüte",
+  "die Batterie",
+  "der Sack",
+  "der Strom",
+  "die Energie",
+  "verbrauchen",
+  "das Klima",
+  "die Umweltverschmutzung",
+  "schädlich",
+  "Abgase (Pl.)",
+  "die Natur",
+  "schützen"
+ ],
+ "title": "Environment and recycling",
+ "situation": "Sorting the rubbish right",
+ "canDo": "You can sort your rubbish into the right bins, return bottles with a deposit and talk simply about protecting the environment.",
+ "explanation": "In Germany, rubbish is sorted (**der Müll wird getrennt**), and every building has several bins (**die Tonne, -n**). Colours can change from town to town, but this is the usual system:\n\n| bin | what goes in |\n|---|---|\n| die gelbe Tonne / der gelbe Sack | packaging made of plastic or metal: yoghurt pots, food tins, foil |\n| die blaue Tonne (Papier) | paper, newspapers, clean boxes |\n| die Biotonne (braun) | food waste, fruit and vegetable peel, coffee filters |\n| der Restmüll (grau oder schwarz) | everything else: nappies, vacuum cleaner bags, broken cups |\n| der Glascontainer | bottles and jars without a deposit, sorted by colour |\n\nOther key words:\n- **das Pfand** – deposit: most plastic bottles and cans have 25 cents Pfand. Take them back to the supermarket machine and get the money back.\n- **der Sperrmüll** – bulky waste such as old furniture, picked up on request\n- **die Batterie, -n** – old batteries go in a box in the supermarket, never in the bin\n- **wegwerfen / entsorgen** – to throw away / to dispose of\n- **die Umwelt schützen** – to protect the environment\n- **Strom / Energie sparen** – to save electricity / energy\n\nTips:\n- Bottles with Pfand do **not** go in the gelbe Tonne or the Glascontainer – that's the most common mistake.\n- **der Müll** is the everyday word; **der Abfall** sounds more official.\n- Many towns publish a **Müllkalender** with the collection days.",
+ "french": "Like the old French consigne, the German Pfand means you pay a few cents more for a bottle or can and get the money back when you return it; la poubelle jaune works much like die gelbe Tonne.",
+ "examples": [
+  {
+   "de": "Plastikverpackungen kommen in die gelbe Tonne.",
+   "en": "Plastic packaging goes in the yellow bin."
+  },
+  {
+   "de": "Die Weinflaschen bringe ich zum Glascontainer.",
+   "en": "I take the wine bottles to the bottle bank."
+  },
+  {
+   "de": "Auf diese Flasche gibt es 25 Cent Pfand.",
+   "en": "There's a 25-cent deposit on this bottle."
+  },
+  {
+   "de": "Der Müll muss getrennt werden.",
+   "en": "The rubbish has to be sorted."
+  },
+  {
+   "de": "Die Biotonne wird jeden Freitag geleert.",
+   "en": "The organic waste bin is emptied every Friday."
+  },
+  {
+   "de": "Batterien darf man nicht in den Restmüll werfen.",
+   "en": "You mustn't throw batteries into the general waste."
+  },
+  {
+   "de": "Wenn alle weniger Plastik kaufen würden, hätten wir weniger Müll.",
+   "en": "If everyone bought less plastic, we'd have less rubbish."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t04-01",
+   "type": "cloze",
+   "de": "Joghurtbecher und Konservendosen kommen in die gelbe ___.",
+   "base": "bin",
+   "answers": [
+    "Tonne"
+   ],
+   "en": "Yoghurt pots and food tins go in the yellow bin."
+  },
+  {
+   "id": "b1-t04-02",
+   "type": "choice",
+   "de": "Kartons und Zeitungen gehören in die ___.",
+   "options": [
+    "Papiertonne",
+    "Biotonne",
+    "gelbe Tonne"
+   ],
+   "answer": 0,
+   "why": "Paper and cardboard go in the paper bin (die Papiertonne, often blue).",
+   "en": "Boxes and newspapers belong in the paper bin."
+  },
+  {
+   "id": "b1-t04-03",
+   "type": "cloze",
+   "de": "Bananenschalen kommen in die ___.",
+   "base": "organic waste bin",
+   "answers": [
+    "Biotonne"
+   ],
+   "en": "Banana peel goes in the organic waste bin."
+  },
+  {
+   "id": "b1-t04-04",
+   "type": "choice",
+   "de": "Die leeren Weinflaschen bringe ich zum ___.",
+   "options": [
+    "Supermarkt",
+    "Glascontainer",
+    "Briefkasten"
+   ],
+   "answer": 1,
+   "why": "Wine bottles have no deposit, so they go to the bottle bank (der Glascontainer), sorted by colour.",
+   "en": "I take the empty wine bottles to the bottle bank."
+  },
+  {
+   "id": "b1-t04-05",
+   "type": "cloze",
+   "de": "In Deutschland wird der Müll ___.",
+   "base": "separate, sort",
+   "answers": [
+    "getrennt",
+    "sortiert"
+   ],
+   "en": "In Germany, the rubbish is sorted."
+  },
+  {
+   "id": "b1-t04-06",
+   "type": "order",
+   "tiles": [
+    "Der Müll",
+    "muss",
+    "getrennt",
+    "werden"
+   ],
+   "answers": [
+    "Der Müll muss getrennt werden."
+   ],
+   "en": "The rubbish has to be sorted."
+  },
+  {
+   "id": "b1-t04-07",
+   "type": "choice",
+   "de": "Auf Plastikflaschen und Dosen gibt es 25 Cent ___.",
+   "options": [
+    "Rabatt",
+    "Trinkgeld",
+    "Pfand"
+   ],
+   "answer": 2,
+   "why": "The money you get back for bottles and cans is das Pfand (deposit); Rabatt is a discount and Trinkgeld is a tip.",
+   "en": "There's a 25-cent deposit on plastic bottles and cans."
+  },
+  {
+   "id": "b1-t04-08",
+   "type": "cloze",
+   "de": "Man darf ___ nicht in den Restmüll werfen.",
+   "base": "batteries",
+   "answers": [
+    "Batterien"
+   ],
+   "en": "You mustn't throw batteries into the general waste."
+  },
+  {
+   "id": "b1-t04-09",
+   "type": "choice",
+   "de": "Das alte Sofa passt in keine Tonne. Das ist ___.",
+   "options": [
+    "Sperrmüll",
+    "Restmüll",
+    "Biomüll"
+   ],
+   "answer": 0,
+   "why": "Big things like furniture are Sperrmüll (bulky waste), picked up separately.",
+   "en": "The old sofa doesn't fit in any bin. That's bulky waste."
+  },
+  {
+   "id": "b1-t04-10",
+   "type": "order",
+   "tiles": [
+    "Die Flaschen",
+    "bringe",
+    "ich",
+    "zum Glascontainer"
+   ],
+   "answers": [
+    "Die Flaschen bringe ich zum Glascontainer.",
+    "Ich bringe die Flaschen zum Glascontainer.",
+    "Zum Glascontainer bringe ich die Flaschen."
+   ],
+   "en": "I take the bottles to the bottle bank."
+  },
+  {
+   "id": "b1-t04-11",
+   "type": "cloze",
+   "de": "Bitte nicht so viel Wasser ___, das ist schlecht für die Umwelt.",
+   "base": "use up, consume",
+   "answers": [
+    "verbrauchen",
+    "verschwenden"
+   ],
+   "en": "Please don't use so much water, it's bad for the environment."
+  },
+  {
+   "id": "b1-t04-12",
+   "type": "choice",
+   "de": "Die ___ kommt jeden Dienstag und holt den Restmüll ab.",
+   "options": [
+    "Mülltonne",
+    "Müllabfuhr",
+    "Mülltrennung"
+   ],
+   "answer": 1,
+   "why": "The rubbish collection service is die Müllabfuhr; die Mülltonne is the bin itself and die Mülltrennung is sorting.",
+   "en": "The rubbish collection comes every Tuesday and takes away the general waste."
+  },
+  {
+   "id": "b1-t04-13",
+   "type": "cloze",
+   "de": "Ich bringe immer meine eigene Tasche mit und kaufe keine ___.",
+   "base": "plastic bags",
+   "answers": [
+    "Plastiktüten",
+    "Tüten"
+   ],
+   "en": "I always bring my own bag and don't buy plastic bags."
+  },
+  {
+   "id": "b1-t04-14",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "alle",
+    "weniger Plastik",
+    "kaufen würden,",
+    "hätten",
+    "wir",
+    "weniger Müll"
+   ],
+   "answers": [
+    "Wenn alle weniger Plastik kaufen würden, hätten wir weniger Müll.",
+    "Wir hätten weniger Müll, wenn alle weniger Plastik kaufen würden."
+   ],
+   "en": "If everyone bought less plastic, we'd have less rubbish."
+  },
+  {
+   "id": "b1-t04-15",
+   "type": "cloze",
+   "de": "Mach bitte das Licht aus, das spart ___.",
+   "base": "electricity",
+   "answers": [
+    "Strom",
+    "Energie"
+   ],
+   "en": "Please turn off the light, it saves electricity."
+  },
+  {
+   "id": "b1-t04-16",
+   "type": "choice",
+   "de": "Wo kann ich meine alten Möbel ___?",
+   "options": [
+    "entdecken",
+    "entsorgen",
+    "entlassen"
+   ],
+   "answer": 1,
+   "why": "To get rid of things properly is entsorgen; entdecken means to discover and entlassen means to dismiss someone.",
+   "en": "Where can I get rid of my old furniture?"
+  },
+  {
+   "id": "b1-t04-17",
+   "type": "cloze",
+   "de": "Die Biotonne wird jede Woche ___.",
+   "base": "empty",
+   "answers": [
+    "geleert"
+   ],
+   "en": "The organic waste bin is emptied every week."
+  },
+  {
+   "id": "b1-t04-18",
+   "type": "order",
+   "tiles": [
+    "Wohin",
+    "kommt",
+    "der Joghurtbecher"
+   ],
+   "answers": [
+    "Wohin kommt der Joghurtbecher?"
+   ],
+   "en": "Where does the yoghurt pot go?"
+  },
+  {
+   "id": "b1-t04-19",
+   "type": "choice",
+   "de": "Autos produzieren viele ___ und sind schlecht für das Klima.",
+   "options": [
+    "Abfälle",
+    "Ausgaben",
+    "Abgase"
+   ],
+   "answer": 2,
+   "why": "Exhaust fumes are Abgase; Abfälle is waste and Ausgaben are expenses.",
+   "en": "Cars produce a lot of exhaust fumes and are bad for the climate."
+  },
+  {
+   "id": "b1-t04-20",
+   "type": "cloze",
+   "de": "Wir müssen die ___ besser schützen.",
+   "base": "environment",
+   "answers": [
+    "Umwelt",
+    "Natur"
+   ],
+   "en": "We have to protect the environment better."
+  },
+  {
+   "id": "b1-t04-21",
+   "type": "choice",
+   "de": "Eierschalen und Kaffeefilter gehören in den ___.",
+   "options": [
+    "Biomüll",
+    "gelben Sack",
+    "Glascontainer"
+   ],
+   "answer": 0,
+   "why": "Food waste such as eggshells and coffee filters goes in the organic waste (der Biomüll); the gelbe Sack is for packaging.",
+   "en": "Eggshells and coffee filters belong in the organic waste."
+  },
+  {
+   "id": "b1-t04-22",
+   "type": "cloze",
+   "de": "Viele Leute fahren mit dem Fahrrad, weil es gut für das ___ ist.",
+   "base": "climate",
+   "answers": [
+    "Klima"
+   ],
+   "en": "Many people cycle because it's good for the climate."
+  },
+  {
+   "id": "b1-t04-23",
+   "type": "order",
+   "tiles": [
+    "Der Sperrmüll",
+    "wurde",
+    "gestern",
+    "abgeholt"
+   ],
+   "answers": [
+    "Der Sperrmüll wurde gestern abgeholt.",
+    "Gestern wurde der Sperrmüll abgeholt."
+   ],
+   "en": "The bulky waste was collected yesterday."
+  },
+  {
+   "id": "b1-t04-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "würde",
+    "gern",
+    "weniger Plastik",
+    "kaufen"
+   ],
+   "answers": [
+    "Ich würde gern weniger Plastik kaufen."
+   ],
+   "en": "I'd like to buy less plastic."
+  }
+ ],
+ "listening": {
+  "title": "Wohin mit dem Müll?",
+  "intro": "Hugo has just moved in and meets his neighbour Frau Krüger at the bins in the courtyard.",
+  "lines": [
+   {
+    "speaker": "Frau Krüger",
+    "de": "Hallo! Sie sind der neue Mieter aus dem dritten Stock, oder?",
+    "en": "Hello! You're the new tenant from the third floor, aren't you?"
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Ja, genau, ich bin Hugo. Sagen Sie mal, wohin kommt eigentlich dieser Joghurtbecher?",
+    "en": "Yes, that's right, I'm Hugo. Tell me, where does this yoghurt pot actually go?"
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "In die gelbe Tonne. Da werden alle Verpackungen aus Plastik und Metall gesammelt.",
+    "en": "In the yellow bin. All packaging made of plastic and metal is collected there."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Und die Pizzakartons? Die habe ich gestern in die blaue Tonne geworfen.",
+    "en": "And the pizza boxes? I threw them in the blue bin yesterday."
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "Das ist richtig, aber nur, wenn sie sauber sind. Kartons mit Essensresten kommen in den Restmüll.",
+    "en": "That's right, but only if they're clean. Boxes with leftover food go in the general waste."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Ach so. Und was mache ich mit den Bierflaschen?",
+    "en": "I see. And what do I do with the beer bottles?"
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "Auf die gibt es Pfand. Die bringen Sie in den Supermarkt zurück, dann bekommen Sie das Geld zurück.",
+    "en": "There's a deposit on those. You take them back to the supermarket, and then you get the money back."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Und Weinflaschen?",
+    "en": "And wine bottles?"
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "Die kommen in den Glascontainer an der Ecke. Aber Achtung: Weißglas, Grünglas und Braunglas werden getrennt.",
+    "en": "They go in the bottle bank on the corner. But careful: clear, green and brown glass are separated."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Das ist ja kompliziert! In Frankreich musste ich nicht so viel trennen.",
+    "en": "That's complicated! In France I didn't have to sort so much."
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "Am Anfang ist das für alle schwierig. Letzten Monat wurde unsere Biotonne nicht geleert, weil Plastik drin war.",
+    "en": "At first it's hard for everyone. Last month our organic bin wasn't emptied because there was plastic in it."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Oh je. Wenn ich eine Liste hätte, wäre es einfacher für mich.",
+    "en": "Oh dear. If I had a list, it would be easier for me."
+   },
+   {
+    "speaker": "Frau Krüger",
+    "de": "Ich habe eine Liste von der Stadt. Die bringe ich Ihnen heute Abend vorbei.",
+    "en": "I have a list from the town. I'll drop it round this evening."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Das ist sehr nett von Ihnen, vielen Dank!",
+    "en": "That's very kind of you, thank you very much!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does the yoghurt pot go?",
+    "options": [
+     "In the paper bin",
+     "In the yellow bin",
+     "In the organic bin"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Which pizza boxes go in the general waste?",
+    "options": [
+     "Boxes with leftover food",
+     "All pizza boxes",
+     "Only big boxes"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should Hugo do with the beer bottles?",
+    "options": [
+     "Put them in the bottle bank",
+     "Throw them in the yellow bin",
+     "Take them back to the supermarket"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What will Frau Krüger bring him?",
+    "options": [
+     "A new bin",
+     "A list from the town",
+     "A bag for bottles"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Plastikverpackungen und Konservendosen kommen bei uns in die gelbe Tonne.",
+  "Auf Bierflaschen gibt es Pfand, die bringe ich zurück.",
+  "Die Biotonne wurde nicht geleert, weil Plastik drin war."
+ ],
+ "speaking": [
+  {
+   "de": "Wohin kommt eigentlich dieser Joghurtbecher?",
+   "en": "Where does this yoghurt pot actually go?"
+  },
+  {
+   "de": "Der kommt in die gelbe Tonne.",
+   "en": "It goes in the yellow bin."
+  },
+  {
+   "de": "Auf die Flaschen gibt es Pfand.",
+   "en": "There's a deposit on the bottles."
+  },
+  {
+   "de": "Weißglas, Grünglas und Braunglas werden getrennt.",
+   "en": "Clear, green and brown glass are separated."
+  },
+  {
+   "de": "Wenn ich eine Liste hätte, wäre es einfacher.",
+   "en": "If I had a list, it would be easier."
+  }
+ ],
+ "writing": {
+  "task": "A new neighbour from Spain asks you how the rubbish is sorted in your building. Write an 80–100-word message explaining the bins and the deposit (Pfand).",
+  "model": "Hallo Sofía,\n\nhier eine kleine Erklärung zur Mülltrennung bei uns im Haus. Verpackungen aus Plastik und Metall, zum Beispiel Joghurtbecher oder Konservendosen, kommen in die gelbe Tonne. Papier und Kartons ohne Essensreste gehören in die blaue Tonne. Essensreste und Obst kommen in die braune Biotonne, alles andere in den Restmüll. Die Tonnen stehen im Hof und werden jeden Dienstag geleert. Flaschen mit Pfand musst du in den Supermarkt zurückbringen. Dort bekommst du dein Geld zurück. Weinflaschen kommen in den Glascontainer an der Ecke. Wenn du Fragen hast, klingel einfach bei mir!\n\nLiebe Grüße\nInès"
+ }
+}

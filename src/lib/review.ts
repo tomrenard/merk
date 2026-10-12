@@ -336,7 +336,7 @@ export async function startUnitCards(
 
 /**
  * Gives `userId` a card for every shared word and phrase (and their own words) they don't have
- * yet: both directions, except B1 words, which are for recognition only. Run on sign-up and
+ * yet: both directions, except B1/B2 words, which are for recognition only. Run on sign-up and
  * after each import.
  */
 export async function ensureCards(userId: string) {
@@ -347,7 +347,7 @@ export async function ensureCards(userId: string) {
     -- Shared words, or this person's own; someone's own words are never shared, even before the
     -- claim gives words from before accounts an owner.
     where (n.user_id = ${userId} or (n.user_id is null and n.source <> 'mine')) and n.source <> 'unit'
-      and (d.direction = 'de_en' or n.cefr <> 'B1' or n.source = 'phrase')
+      and (d.direction = 'de_en' or n.cefr not in ('B1', 'B2') or n.source = 'phrase')
     on conflict do nothing`);
   // A new deck adds thousands of rows at once: refresh the planner's statistics now, or it
   // plans for an empty table and the review queue takes seconds until autovacuum catches up.
@@ -408,4 +408,17 @@ export async function learnNow(userId: string, noteId: string) {
     .update(cards)
     .set({ due: new Date() })
     .where(and(eq(cards.userId, userId), eq(cards.noteId, noteId), eq(cards.direction, "de_en")));
+}
+
+/**
+ * A topic lesson's words (deck headwords) that `userId` hasn't started come up next: their
+ * German→English cards are made due now, ahead of the frequency order.
+ */
+export async function learnTopicWords(userId: string, headwords: string[]) {
+  if (!headwords.length) return;
+  await db().execute(sql`
+    update cards set due = now()
+    from notes n
+    where cards.note_id = n.id and n.de in ${headwords} and cards.user_id = ${userId}
+      and cards.direction = 'de_en' and cards.introduced_at is null`);
 }

@@ -1,0 +1,525 @@
+{
+ "id": "b1-t13",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "der Zug",
+  "die Verspätung",
+  "ausfallen",
+  "der Anschluss",
+  "verpassen",
+  "das Gleis",
+  "die Durchsage",
+  "der Streik",
+  "die Fahrkarte",
+  "der Flug",
+  "der Abflug",
+  "die Ankunft",
+  "der Passagier",
+  "das Gepäck",
+  "der Koffer",
+  "verlieren",
+  "das Fundbüro",
+  "der Schalter",
+  "das Formular",
+  "ausfüllen",
+  "der Antrag",
+  "beantragen",
+  "der Beleg",
+  "die Quittung",
+  "die Kosten (Pl.)",
+  "der Schaden",
+  "der Ersatz",
+  "sich beschweren",
+  "ärgerlich"
+ ],
+ "title": "Delays, lost luggage and refunds",
+ "situation": "Claiming compensation",
+ "canDo": "You can deal with a cancelled train, a delayed flight or lost luggage, and ask for your money back.",
+ "explanation": "Trains are late, flights are cancelled, suitcases go missing. These words help you get your money back:\n\n| German | English |\n|---|---|\n| die Verspätung, verspätet | delay, late |\n| ausfallen: *Der Zug fällt aus.* | to be cancelled |\n| den Anschluss verpassen | to miss your connection |\n| der Streik | strike |\n| das Gepäck, der Koffer | luggage, suitcase |\n| die Entschädigung | compensation |\n| die Erstattung, (zurück)erstatten | refund, to refund |\n| der Beleg, die Quittung | receipt |\n| ein Formular ausfüllen | to fill in a form |\n\nYour rights in short:\n- **Train**: from 60 minutes' delay at your destination you get 25 % of the ticket price back, from 120 minutes 50 %. You apply online, in the DB app or with the *Fahrgastrechte-Formular*.\n- **Flight** in the EU: if you arrive three hours late or more, or the flight is cancelled at short notice, you can get 250 to 600 euros *Entschädigung*.\n- **Lost luggage**: report it at the airport before you leave, and keep every receipt for things you have to buy.\n\nUseful phrases:\n- *Mein Zug hatte zwei Stunden Verspätung.*\n- *Ich möchte mich beschweren.* / *Ich hätte gern mein Geld zurück.*\n- *Mein Koffer ist nicht angekommen.*\n\nTip: *die Kosten* is always plural: *Die Kosten **werden** erstattet.*",
+ "french": "« Rembourser » is erstatten, « une indemnisation » is eine Entschädigung, and « la correspondance » is der Anschluss.",
+ "examples": [
+  {
+   "de": "Der Zug nach Köln fällt heute leider aus.",
+   "en": "The train to Cologne is cancelled today, unfortunately."
+  },
+  {
+   "de": "Wegen der Verspätung habe ich meinen Anschluss verpasst.",
+   "en": "Because of the delay I missed my connection."
+  },
+  {
+   "de": "Mein Koffer ist nicht angekommen.",
+   "en": "My suitcase hasn't arrived."
+  },
+  {
+   "de": "Bitte füllen Sie dieses Formular aus.",
+   "en": "Please fill in this form."
+  },
+  {
+   "de": "Heben Sie alle Quittungen auf, die Kosten werden erstattet.",
+   "en": "Keep all the receipts; the costs will be refunded."
+  },
+  {
+   "de": "Ab einer Stunde Verspätung bekommen Sie 25 Prozent zurück.",
+   "en": "From one hour's delay you get 25 per cent back."
+  },
+  {
+   "de": "Ich möchte mich über den Service beschweren.",
+   "en": "I'd like to complain about the service."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t13-01",
+   "type": "choice",
+   "de": "Achtung an Gleis 5: Der ICE nach Hamburg hat heute etwa 30 Minuten ___.",
+   "options": [
+    "Verspätung",
+    "Anschluss",
+    "Ankunft"
+   ],
+   "answer": 0,
+   "why": "When a train is late, it hat Verspätung.",
+   "en": "Attention on platform 5: the ICE to Hamburg is about 30 minutes late today."
+  },
+  {
+   "id": "b1-t13-02",
+   "type": "cloze",
+   "de": "Der Zug fährt heute nicht, er fällt ___.",
+   "base": "is cancelled (particle)",
+   "answers": [
+    "aus"
+   ],
+   "en": "The train isn't running today; it's cancelled."
+  },
+  {
+   "id": "b1-t13-03",
+   "type": "cloze",
+   "de": "Mein ___ ist in Paris geblieben, ich habe nur meine Handtasche.",
+   "base": "suitcase",
+   "answers": [
+    "Koffer"
+   ],
+   "en": "My suitcase stayed in Paris; I only have my handbag."
+  },
+  {
+   "id": "b1-t13-04",
+   "type": "choice",
+   "de": "Wegen der Verspätung habe ich meinen ___ in Frankfurt verpasst.",
+   "options": [
+    "Schalter",
+    "Anschluss",
+    "Ausgang"
+   ],
+   "answer": 1,
+   "why": "The next train or flight you have to catch is your Anschluss (connection).",
+   "en": "Because of the delay I missed my connection in Frankfurt."
+  },
+  {
+   "id": "b1-t13-05",
+   "type": "order",
+   "tiles": [
+    "Mein Koffer",
+    "ist",
+    "nicht",
+    "angekommen"
+   ],
+   "answers": [
+    "Mein Koffer ist nicht angekommen."
+   ],
+   "en": "My suitcase hasn't arrived."
+  },
+  {
+   "id": "b1-t13-06",
+   "type": "cloze",
+   "de": "Bitte füllen Sie dieses ___ aus und unterschreiben Sie unten.",
+   "base": "form",
+   "answers": [
+    "Formular"
+   ],
+   "en": "Please fill in this form and sign at the bottom."
+  },
+  {
+   "id": "b1-t13-07",
+   "type": "choice",
+   "de": "Die Lokführer arbeiten heute nicht: Wegen eines ___ fahren keine S-Bahnen.",
+   "options": [
+    "Schadens",
+    "Streiks",
+    "Passagiers"
+   ],
+   "answer": 1,
+   "why": "When the workers stop working, it's a Streik (strike).",
+   "en": "The train drivers aren't working today: because of a strike, there are no S-Bahn trains."
+  },
+  {
+   "id": "b1-t13-08",
+   "type": "cloze",
+   "de": "Heben Sie bitte alle ___ auf, wir brauchen sie für die Erstattung.",
+   "base": "receipts",
+   "answers": [
+    "Quittungen",
+    "Belege"
+   ],
+   "en": "Please keep all the receipts; we need them for the refund."
+  },
+  {
+   "id": "b1-t13-09",
+   "type": "choice",
+   "de": "Bei mehr als drei Stunden Verspätung können Fluggäste eine ___ bekommen.",
+   "options": [
+    "Kündigung",
+    "Ermäßigung",
+    "Entschädigung"
+   ],
+   "answer": 2,
+   "why": "Money you get for a problem caused by someone else is an Entschädigung (compensation).",
+   "en": "With a delay of more than three hours, air passengers can get compensation."
+  },
+  {
+   "id": "b1-t13-10",
+   "type": "cloze",
+   "de": "Ich habe meinen Regenschirm im Zug liegen lassen. Wo ist hier das ___?",
+   "base": "lost property office",
+   "answers": [
+    "Fundbüro"
+   ],
+   "en": "I left my umbrella on the train. Where's the lost property office here?"
+  },
+  {
+   "id": "b1-t13-11",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "mich",
+    "über die Verspätung",
+    "beschweren"
+   ],
+   "answers": [
+    "Ich möchte mich über die Verspätung beschweren."
+   ],
+   "en": "I'd like to complain about the delay."
+  },
+  {
+   "id": "b1-t13-12",
+   "type": "choice",
+   "de": "Die Kosten für das Hotel ___ von der Bahn erstattet.",
+   "options": [
+    "wird",
+    "werden",
+    "worden"
+   ],
+   "answer": 1,
+   "why": "die Kosten is always plural, so the verb is werden.",
+   "en": "The costs of the hotel are refunded by the railway."
+  },
+  {
+   "id": "b1-t13-13",
+   "type": "cloze",
+   "de": "Achtung, eine ___: Der Zug nach Leipzig fährt heute von Gleis 7.",
+   "base": "announcement",
+   "answers": [
+    "Durchsage"
+   ],
+   "en": "Attention, an announcement: the train to Leipzig leaves from platform 7 today."
+  },
+  {
+   "id": "b1-t13-14",
+   "type": "choice",
+   "de": "Mein Flug wurde gestrichen. An welchem ___ kann ich umbuchen?",
+   "options": [
+    "Gleis",
+    "Fundbüro",
+    "Schalter"
+   ],
+   "answer": 2,
+   "why": "You talk to airline staff at a counter: der Schalter.",
+   "en": "My flight was cancelled. At which counter can I rebook?"
+  },
+  {
+   "id": "b1-t13-15",
+   "type": "cloze",
+   "de": "Die Bahn hat mir 25 Prozent des Ticketpreises ___.",
+   "base": "refunded",
+   "answers": [
+    "erstattet",
+    "zurückerstattet",
+    "zurückgezahlt"
+   ],
+   "en": "The railway refunded me 25 per cent of the ticket price."
+  },
+  {
+   "id": "b1-t13-16",
+   "type": "order",
+   "tiles": [
+    "Der Zug",
+    "nach Köln",
+    "fällt",
+    "heute",
+    "leider",
+    "aus"
+   ],
+   "answers": [
+    "Der Zug nach Köln fällt heute leider aus.",
+    "Der Zug nach Köln fällt leider heute aus.",
+    "Heute fällt der Zug nach Köln leider aus.",
+    "Leider fällt der Zug nach Köln heute aus."
+   ],
+   "en": "The train to Cologne is cancelled today, unfortunately."
+  },
+  {
+   "id": "b1-t13-17",
+   "type": "choice",
+   "de": "Mein Koffer ist kaputt angekommen. Wer bezahlt den ___?",
+   "options": [
+    "Schaden",
+    "Streik",
+    "Beleg"
+   ],
+   "answer": 0,
+   "why": "Damage to your things is a Schaden.",
+   "en": "My suitcase arrived broken. Who pays for the damage?"
+  },
+  {
+   "id": "b1-t13-18",
+   "type": "cloze",
+   "de": "Die Entschädigung kann man online ___.",
+   "base": "apply for",
+   "answers": [
+    "beantragen"
+   ],
+   "en": "You can apply for the compensation online."
+  },
+  {
+   "id": "b1-t13-19",
+   "type": "choice",
+   "de": "Wenn ich den letzten Zug ___, muss ich im Hotel schlafen.",
+   "options": [
+    "verliere",
+    "verpasse",
+    "vergesse"
+   ],
+   "answer": 1,
+   "why": "You miss a train: verpassen. verlieren is for things you can't find.",
+   "en": "If I miss the last train, I'll have to sleep in a hotel."
+  },
+  {
+   "id": "b1-t13-20",
+   "type": "cloze",
+   "de": "Ich habe zwei Stunden am ___ gewartet, und dann fiel der Zug aus.",
+   "base": "platform",
+   "answers": [
+    "Gleis",
+    "Bahnsteig"
+   ],
+   "en": "I waited on the platform for two hours, and then the train was cancelled."
+  },
+  {
+   "id": "b1-t13-21",
+   "type": "order",
+   "tiles": [
+    "Wenn",
+    "der Zug",
+    "pünktlich",
+    "gewesen wäre",
+    "hätte",
+    "ich",
+    "den Anschluss",
+    "bekommen"
+   ],
+   "answers": [
+    "Wenn der Zug pünktlich gewesen wäre, hätte ich den Anschluss bekommen.",
+    "Ich hätte den Anschluss bekommen, wenn der Zug pünktlich gewesen wäre."
+   ],
+   "en": "If the train had been on time, I would have made the connection."
+  },
+  {
+   "id": "b1-t13-22",
+   "type": "choice",
+   "de": "Für die Erstattung brauchen wir Ihre ___ und Ihre Bankverbindung.",
+   "options": [
+    "Durchsage",
+    "Fahrkarte",
+    "Ankunft"
+   ],
+   "answer": 1,
+   "why": "To get money back for a journey, you need your ticket: die Fahrkarte.",
+   "en": "For the refund we need your ticket and your bank details."
+  },
+  {
+   "id": "b1-t13-23",
+   "type": "cloze",
+   "de": "Das ist wirklich ___: Jetzt komme ich zu spät zum Vorstellungsgespräch.",
+   "base": "annoying",
+   "answers": [
+    "ärgerlich",
+    "blöd",
+    "nervig"
+   ],
+   "en": "That's really annoying: now I'll be late for the job interview."
+  },
+  {
+   "id": "b1-t13-24",
+   "type": "order",
+   "tiles": [
+    "Können",
+    "Sie",
+    "mir",
+    "bitte",
+    "eine Bestätigung",
+    "über die Verspätung",
+    "geben"
+   ],
+   "answers": [
+    "Können Sie mir bitte eine Bestätigung über die Verspätung geben?"
+   ],
+   "en": "Could you give me a confirmation of the delay, please?"
+  }
+ ],
+ "listening": {
+  "title": "Am Gepäckschalter",
+  "intro": "Nadia has just landed in Berlin, but her suitcase hasn't arrived, so she goes to the lost luggage counter.",
+  "lines": [
+   {
+    "speaker": "Thomas",
+    "de": "Guten Tag, wie kann ich Ihnen helfen?",
+    "en": "Hello, how can I help you?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Guten Tag. Ich komme gerade aus Lyon, aber mein Koffer ist nicht angekommen. Ich habe eine Stunde am Band gewartet.",
+    "en": "Hello. I've just come from Lyon, but my suitcase hasn't arrived. I waited at the belt for an hour."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Das tut mir leid. Haben Sie Ihren Gepäckschein dabei?",
+    "en": "I'm sorry. Do you have your baggage tag with you?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Ja, hier. Ich musste in Frankfurt umsteigen, und der erste Flug hatte über eine Stunde Verspätung.",
+    "en": "Yes, here. I had to change in Frankfurt, and the first flight was more than an hour late."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Dann ist der Koffer wahrscheinlich noch in Frankfurt. Wie sieht er denn aus?",
+    "en": "Then the suitcase is probably still in Frankfurt. What does it look like?"
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Er ist rot und mittelgroß, mit einem schwarzen Band am Griff.",
+    "en": "It's red and medium-sized, with a black ribbon on the handle."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Gut. Bitte füllen Sie dieses Formular aus. Wir bringen Ihnen den Koffer dann nach Hause, meistens in ein bis zwei Tagen.",
+    "en": "Fine. Please fill in this form. We'll then bring the suitcase to your home, usually in one or two days."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Und was mache ich bis dahin? Ich habe morgen früh einen wichtigen Termin und keine Kleidung dabei.",
+    "en": "And what do I do until then? I have an important appointment tomorrow morning and no clothes with me."
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Sie dürfen das Nötigste kaufen, zum Beispiel eine Zahnbürste und eine Bluse. Heben Sie alle Quittungen auf.",
+    "en": "You may buy what you really need, for example a toothbrush and a blouse. Keep all the receipts."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Und die Kosten werden mir erstattet?",
+    "en": "And the costs will be refunded to me?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Ja, Sie schicken die Belege an die Fluggesellschaft. Normale Kosten werden erstattet, aber keine teure Designerkleidung.",
+    "en": "Yes, you send the receipts to the airline. Normal costs are refunded, but not expensive designer clothes."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Und wegen der Verspätung? Bekomme ich dafür auch eine Entschädigung?",
+    "en": "And what about the delay? Do I get compensation for that too?"
+   },
+   {
+    "speaker": "Thomas",
+    "de": "Leider nein. Sie sind ja nur etwa eine Stunde zu spät angekommen. Dafür müssten es mindestens drei Stunden sein.",
+    "en": "Unfortunately not. You only arrived about an hour late. For that it would have to be at least three hours."
+   },
+   {
+    "speaker": "Nadia",
+    "de": "Schade. Na gut, vielen Dank für Ihre Hilfe.",
+    "en": "Pity. Oh well, thank you for your help."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is Nadia's suitcase probably?",
+    "options": [
+     "In Frankfurt",
+     "In Lyon",
+     "On another flight to Berlin"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does her suitcase look like?",
+    "options": [
+     "Black and big",
+     "Red and medium-sized",
+     "Blue with a red ribbon"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What should Nadia do with the receipts?",
+    "options": [
+     "Give them to Thomas now",
+     "Throw them away",
+     "Keep them and send them to the airline"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why doesn't she get compensation for the delay?",
+    "options": [
+     "She didn't fill in the form",
+     "The delay was only about an hour",
+     "The flight was outside the EU"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Zug nach München fällt heute wegen eines Streiks aus.",
+  "Mein Koffer ist leider nicht mit mir angekommen.",
+  "Bitte heben Sie alle Quittungen auf, die Kosten werden erstattet."
+ ],
+ "speaking": [
+  {
+   "de": "Mein Koffer ist nicht angekommen.",
+   "en": "My suitcase hasn't arrived."
+  },
+  {
+   "de": "Wegen der Verspätung habe ich meinen Anschluss verpasst.",
+   "en": "Because of the delay I missed my connection."
+  },
+  {
+   "de": "Und die Kosten werden mir erstattet?",
+   "en": "And the costs will be refunded to me?"
+  },
+  {
+   "de": "Bekomme ich dafür auch eine Entschädigung?",
+   "en": "Do I get compensation for that too?"
+  },
+  {
+   "de": "Ich möchte mich über die Verspätung beschweren.",
+   "en": "I'd like to complain about the delay."
+  }
+ ],
+ "writing": {
+  "task": "Your train from Berlin to Munich arrived two and a half hours late, and you missed an important appointment. Write an 80–100-word email to the railway's customer service: say what happened and ask for part of the ticket price back.",
+  "model": "Sehr geehrte Damen und Herren,\n\nam 14. März bin ich mit dem ICE um 9:00 Uhr von Berlin nach München gefahren. Der Zug sollte um 13:30 Uhr in München ankommen, aber wegen einer Störung hatte er zweieinhalb Stunden Verspätung. Deshalb habe ich einen wichtigen Termin bei einem Kunden verpasst. Meine Fahrkarte hat 89 Euro gekostet. Ab zwei Stunden Verspätung bekommt man die Hälfte des Preises zurück. Bitte überweisen Sie mir deshalb 44,50 Euro auf mein Konto. Eine Kopie der Fahrkarte und meine Bankverbindung finden Sie im Anhang.\n\nMit freundlichen Grüßen\nNadia Benali"
+ }
+}

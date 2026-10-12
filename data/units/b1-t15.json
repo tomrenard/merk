@@ -1,0 +1,524 @@
+{
+ "id": "b1-t15",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "pünktlich",
+  "die Ordnung",
+  "die Regel",
+  "die Gewohnheit",
+  "gewöhnen",
+  "gewohnt",
+  "der Unterschied",
+  "unterschiedlich",
+  "ähnlich",
+  "vergleichen",
+  "typisch",
+  "die Tradition",
+  "direkt",
+  "ehrlich",
+  "höflich",
+  "duzen",
+  "(sich) siezen",
+  "begrüßen",
+  "der Kuss",
+  "das Bargeld",
+  "die Ruhe",
+  "der Sonntag",
+  "die Heimat",
+  "das Heimweh",
+  "vermissen",
+  "fremd",
+  "das Ausland",
+  "der Eindruck",
+  "überraschen",
+  "seltsam"
+ ],
+ "title": "Life in Germany",
+ "situation": "Comparing France and Germany",
+ "canDo": "You can compare everyday habits in France and Germany and say what surprised you and what you've got used to.",
+ "explanation": "After some time in Germany, everyone has a list of things that surprised them. These words help you talk about it, politely.\n\n| German | English |\n|---|---|\n| die Gewohnheit, gewohnt sein | habit, to be used to |\n| sich gewöhnen an + acc. | to get used to |\n| der Unterschied, unterschiedlich | difference, different |\n| ähnlich, typisch | similar, typical |\n| pünktlich | on time |\n| direkt, ehrlich, höflich | direct, honest, polite |\n| die Ruhe, die Ruhezeit | quiet, quiet hours |\n| das Bargeld | cash |\n| das Heimweh, vermissen | homesickness, to miss |\n\nUseful phrases:\n- *In Frankreich ist das anders.* / *Bei uns macht man das so: …*\n- *Am Anfang fand ich das seltsam, aber ich habe mich daran gewöhnt.*\n- *Was mich überrascht hat: …*\n- *Ich vermisse das französische Brot.*\n\nTypical surprises:\n- **Sunday**: shops are closed, and in many buildings there are quiet hours (no drilling, no loud music).\n- **Greetings**: a handshake or a hug, almost never *la bise*. Many colleagues say *du*, but at offices and with strangers you start with *Sie*.\n- **Directness**: *Das gefällt mir nicht* isn't rude here, just clear.\n- **Cash**: some small shops and bakeries still only take cash.\n\nTips:\n- *Ich bin das gewohnt* = I'm used to it; *Ich gewöhne mich daran* = I'm getting used to it.\n- *komisch* can mean funny or strange; for strange, *seltsam* is clearer.",
+ "french": "« Avoir l'habitude de » is etwas gewohnt sein and « s'habituer à » is sich gewöhnen an; la bise has no real German equivalent, so most people shake hands or hug.",
+ "examples": [
+  {
+   "de": "In Deutschland sind am Sonntag fast alle Geschäfte geschlossen.",
+   "en": "In Germany almost all shops are closed on Sundays."
+  },
+  {
+   "de": "Am Anfang fand ich das seltsam, aber jetzt habe ich mich daran gewöhnt.",
+   "en": "At first I found it strange, but now I've got used to it."
+  },
+  {
+   "de": "In Frankreich gibt man sich zur Begrüßung oft einen Kuss auf die Wange.",
+   "en": "In France people often greet each other with a kiss on the cheek."
+  },
+  {
+   "de": "Meine Kollegen sind sehr direkt, aber nie unhöflich.",
+   "en": "My colleagues are very direct, but never rude."
+  },
+  {
+   "de": "Ich vermisse manchmal das lange Abendessen mit der Familie.",
+   "en": "Sometimes I miss the long dinner with the family."
+  },
+  {
+   "de": "Hier bezahlen viele Leute noch mit Bargeld.",
+   "en": "Here a lot of people still pay in cash."
+  },
+  {
+   "de": "Was hat dich in Deutschland am meisten überrascht?",
+   "en": "What surprised you most in Germany?"
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t15-01",
+   "type": "choice",
+   "de": "Am ___ sind in Deutschland fast alle Geschäfte geschlossen.",
+   "options": [
+    "Samstag",
+    "Sonntag",
+    "Montag"
+   ],
+   "answer": 1,
+   "why": "Shops in Germany are closed on Sunday (Sonntag).",
+   "en": "In Germany almost all shops are closed on Sunday."
+  },
+  {
+   "id": "b1-t15-02",
+   "type": "cloze",
+   "de": "Am Anfang war hier alles ___ für mich, aber jetzt fühle ich mich zu Hause.",
+   "base": "foreign, unfamiliar",
+   "answers": [
+    "fremd"
+   ],
+   "en": "At first everything here was foreign to me, but now I feel at home."
+  },
+  {
+   "id": "b1-t15-03",
+   "type": "cloze",
+   "de": "Der Termin ist um neun. Sei bitte ___!",
+   "base": "on time",
+   "answers": [
+    "pünktlich"
+   ],
+   "en": "The appointment is at nine. Please be on time!"
+  },
+  {
+   "id": "b1-t15-04",
+   "type": "choice",
+   "de": "Ich habe mich an das frühe Abendessen ___.",
+   "options": [
+    "gewohnt",
+    "gewöhnt",
+    "gewöhnlich"
+   ],
+   "answer": 1,
+   "why": "sich gewöhnen an makes its Perfekt with haben: Ich habe mich gewöhnt. gewohnt goes with sein.",
+   "en": "I've got used to the early dinner."
+  },
+  {
+   "id": "b1-t15-05",
+   "type": "order",
+   "tiles": [
+    "In Frankreich",
+    "ist",
+    "das",
+    "anders"
+   ],
+   "answers": [
+    "In Frankreich ist das anders.",
+    "Das ist in Frankreich anders."
+   ],
+   "en": "In France that's different."
+  },
+  {
+   "id": "b1-t15-06",
+   "type": "cloze",
+   "de": "Ich ___ manchmal meine Familie und das französische Essen.",
+   "base": "miss",
+   "answers": [
+    "vermisse"
+   ],
+   "en": "Sometimes I miss my family and French food."
+  },
+  {
+   "id": "b1-t15-07",
+   "type": "choice",
+   "de": "Ich zahle fast immer mit Karte, aber beim Bäcker brauche ich oft ___.",
+   "options": [
+    "Trinkgeld",
+    "Bargeld",
+    "Pfand"
+   ],
+   "answer": 1,
+   "why": "Money in coins and notes is Bargeld (cash).",
+   "en": "I almost always pay by card, but at the bakery I often need cash."
+  },
+  {
+   "id": "b1-t15-08",
+   "type": "cloze",
+   "de": "Zwischen Frankreich und Deutschland gibt es viele kleine ___.",
+   "base": "differences",
+   "answers": [
+    "Unterschiede"
+   ],
+   "en": "There are lots of small differences between France and Germany."
+  },
+  {
+   "id": "b1-t15-09",
+   "type": "choice",
+   "de": "Er sagt immer genau, was er denkt. Er ist sehr ___.",
+   "options": [
+    "pünktlich",
+    "höflich",
+    "direkt"
+   ],
+   "answer": 2,
+   "why": "Someone who says exactly what they think is direkt.",
+   "en": "He always says exactly what he thinks. He's very direct."
+  },
+  {
+   "id": "b1-t15-10",
+   "type": "cloze",
+   "de": "Seit drei Jahren lebe ich jetzt im ___.",
+   "base": "abroad",
+   "answers": [
+    "Ausland"
+   ],
+   "en": "I've been living abroad for three years now."
+  },
+  {
+   "id": "b1-t15-11",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "mich",
+    "daran",
+    "gewöhnt"
+   ],
+   "answers": [
+    "Ich habe mich daran gewöhnt.",
+    "Daran habe ich mich gewöhnt."
+   ],
+   "en": "I've got used to it."
+  },
+  {
+   "id": "b1-t15-12",
+   "type": "choice",
+   "de": "Wir kennen uns doch schon so lange. Wollen wir uns nicht ___?",
+   "options": [
+    "siezen",
+    "duzen",
+    "begrüßen"
+   ],
+   "answer": 1,
+   "why": "People who know each other well switch to du: sich duzen.",
+   "en": "We've known each other for so long. Shall we say du to each other?"
+  },
+  {
+   "id": "b1-t15-13",
+   "type": "cloze",
+   "de": "Am Sonntag und nachts ab 22 Uhr muss im Haus ___ sein.",
+   "base": "quiet (noun)",
+   "answers": [
+    "Ruhe"
+   ],
+   "en": "On Sundays and at night from 10 pm, the building has to be quiet."
+  },
+  {
+   "id": "b1-t15-14",
+   "type": "choice",
+   "de": "In Deutschland ___ man sich meistens mit der Hand, nicht mit einem Kuss.",
+   "options": [
+    "besucht",
+    "begrüßt",
+    "bedankt"
+   ],
+   "answer": 1,
+   "why": "Saying hello with a handshake or a kiss is sich begrüßen.",
+   "en": "In Germany people usually greet each other with a handshake, not with a kiss."
+  },
+  {
+   "id": "b1-t15-15",
+   "type": "cloze",
+   "de": "Was hat dich in Deutschland am meisten ___?",
+   "base": "surprised",
+   "answers": [
+    "überrascht"
+   ],
+   "en": "What surprised you most in Germany?"
+  },
+  {
+   "id": "b1-t15-16",
+   "type": "order",
+   "tiles": [
+    "Am Anfang",
+    "fand",
+    "ich",
+    "das",
+    "seltsam"
+   ],
+   "answers": [
+    "Am Anfang fand ich das seltsam.",
+    "Das fand ich am Anfang seltsam.",
+    "Ich fand das am Anfang seltsam."
+   ],
+   "en": "At first I found that strange."
+  },
+  {
+   "id": "b1-t15-17",
+   "type": "choice",
+   "de": "Mein erster ___ von Berlin war: grau, aber sehr spannend.",
+   "options": [
+    "Ausdruck",
+    "Eindruck",
+    "Druck"
+   ],
+   "answer": 1,
+   "why": "What you think of something at first is your Eindruck (impression).",
+   "en": "My first impression of Berlin was: grey, but very exciting."
+  },
+  {
+   "id": "b1-t15-18",
+   "type": "cloze",
+   "de": "An Weihnachten habe ich immer ein bisschen ___ nach Frankreich.",
+   "base": "homesickness",
+   "answers": [
+    "Heimweh"
+   ],
+   "en": "At Christmas I'm always a bit homesick for France."
+  },
+  {
+   "id": "b1-t15-19",
+   "type": "choice",
+   "de": "Mülltrennung, Hausordnung, Ruhezeiten: Hier gibt es für fast alles eine ___.",
+   "options": [
+    "Gewohnheit",
+    "Regel",
+    "Tradition"
+   ],
+   "answer": 1,
+   "why": "Sorting rubbish, house rules and quiet hours are all rules: eine Regel.",
+   "en": "Sorting rubbish, house rules, quiet hours: here there's a rule for almost everything."
+  },
+  {
+   "id": "b1-t15-20",
+   "type": "cloze",
+   "de": "Das deutsche Schulsystem ist dem französischen gar nicht ___.",
+   "base": "similar",
+   "answers": [
+    "ähnlich"
+   ],
+   "en": "The German school system isn't at all similar to the French one."
+  },
+  {
+   "id": "b1-t15-21",
+   "type": "order",
+   "tiles": [
+    "Je länger",
+    "ich",
+    "hier",
+    "wohne",
+    "desto",
+    "besser",
+    "gefällt",
+    "es mir"
+   ],
+   "answers": [
+    "Je länger ich hier wohne, desto besser gefällt es mir."
+   ],
+   "en": "The longer I live here, the more I like it."
+  },
+  {
+   "id": "b1-t15-22",
+   "type": "choice",
+   "de": "Sie hat mir gesagt, dass ihr mein Kuchen nicht schmeckt. Das war nicht unhöflich, nur ___.",
+   "options": [
+    "lustig",
+    "ehrlich",
+    "gemütlich"
+   ],
+   "answer": 1,
+   "why": "Saying the truth openly is ehrlich (honest).",
+   "en": "She told me she doesn't like my cake. That wasn't rude, just honest."
+  },
+  {
+   "id": "b1-t15-23",
+   "type": "cloze",
+   "de": "Ich finde es interessant, die Gewohnheiten in beiden Ländern zu ___.",
+   "base": "compare",
+   "answers": [
+    "vergleichen"
+   ],
+   "en": "I find it interesting to compare the habits in both countries."
+  },
+  {
+   "id": "b1-t15-24",
+   "type": "order",
+   "tiles": [
+    "Obwohl",
+    "ich",
+    "Deutschland",
+    "mag",
+    "vermisse",
+    "ich",
+    "Frankreich",
+    "manchmal"
+   ],
+   "answers": [
+    "Obwohl ich Deutschland mag, vermisse ich Frankreich manchmal.",
+    "Obwohl ich Deutschland mag, vermisse ich manchmal Frankreich.",
+    "Ich vermisse Frankreich manchmal, obwohl ich Deutschland mag.",
+    "Ich vermisse manchmal Frankreich, obwohl ich Deutschland mag.",
+    "Manchmal vermisse ich Frankreich, obwohl ich Deutschland mag."
+   ],
+   "en": "Although I like Germany, I sometimes miss France."
+  }
+ ],
+ "listening": {
+  "title": "Frankreich und Deutschland",
+  "intro": "In a café, Stefan asks his French friend Camille what she thinks about life in Germany after two years.",
+  "lines": [
+   {
+    "speaker": "Stefan",
+    "de": "Camille, du wohnst jetzt seit zwei Jahren in Leipzig. Was hat dich hier am meisten überrascht?",
+    "en": "Camille, you've been living in Leipzig for two years now. What surprised you most here?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Ganz klar der Sonntag! In meiner ersten Woche wollte ich am Sonntag einkaufen, und alle Läden waren zu.",
+    "en": "Sunday, definitely! In my first week I wanted to go shopping on Sunday, and all the shops were closed."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Ja, Sonntag ist bei uns Ruhetag. In Frankreich ist das anders, oder?",
+    "en": "Yes, Sunday is a day of rest here. It's different in France, isn't it?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "In Paris haben viele Supermärkte am Sonntagvormittag geöffnet. Aber inzwischen habe ich mich daran gewöhnt. Ich finde den ruhigen Sonntag sogar schön.",
+    "en": "In Paris many supermarkets are open on Sunday mornings. But I've got used to it now. I even like the quiet Sunday."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Und was fandest du noch seltsam?",
+    "en": "And what else did you find strange?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Die Begrüßung. Bei uns gibt man sich unter Freunden einen Kuss auf die Wange, die Bise. Hier habe ich am Anfang allen die Hand gegeben, sogar meinen Freunden.",
+    "en": "Greetings. At home, friends give each other a kiss on the cheek, la bise. Here at first I shook hands with everyone, even my friends."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Stimmt, wir umarmen uns eher. Und was gefällt dir hier besonders gut?",
+    "en": "True, we tend to hug. And what do you particularly like here?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Dass alle so pünktlich sind. Wenn man sich um acht verabredet, ist man um acht da. In Frankreich kommt man oft eine Viertelstunde später.",
+    "en": "That everyone is so punctual. If you arrange to meet at eight, you're there at eight. In France people often come a quarter of an hour later."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Und gibt es etwas, was du vermisst?",
+    "en": "And is there anything you miss?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Das lange Abendessen! Bei uns isst man um halb neun und sitzt drei Stunden am Tisch. Hier gibt es oft schon um sechs Abendbrot, mit Brot und Käse.",
+    "en": "The long dinner! At home we eat at half past eight and sit at the table for three hours. Here there's often a cold supper at six already, with bread and cheese."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Ha, das ist typisch deutsch. Findest du die Deutschen eigentlich unfreundlich?",
+    "en": "Ha, that's typically German. Do you actually find Germans unfriendly?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Nein, nur direkter. Meine Kollegin sagt mir ehrlich, wenn ihr etwas nicht gefällt. Am Anfang fand ich das hart, jetzt finde ich es praktisch.",
+    "en": "No, just more direct. My colleague tells me honestly when she doesn't like something. At first I found that harsh, now I find it practical."
+   },
+   {
+    "speaker": "Stefan",
+    "de": "Und hast du manchmal Heimweh?",
+    "en": "And are you sometimes homesick?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Manchmal schon, vor allem nach dem Bäcker an der Ecke. Aber je länger ich hier wohne, desto mehr fühle ich mich zu Hause.",
+    "en": "Sometimes, yes, especially for the bakery on the corner. But the longer I live here, the more at home I feel."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What surprised Camille most at first?",
+    "options": [
+     "That the shops were closed on Sunday",
+     "The cold weather",
+     "The high prices"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How did Camille greet her friends at first in Germany?",
+    "options": [
+     "With a kiss on the cheek",
+     "With a hug",
+     "By shaking hands"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Camille like about Germans?",
+    "options": [
+     "They eat late",
+     "They are punctual",
+     "They talk a lot"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Camille think of her colleague's directness now?",
+    "options": [
+     "She finds it practical",
+     "She finds it rude",
+     "She finds it funny"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Am Sonntag sind in Deutschland fast alle Geschäfte geschlossen.",
+  "Am Anfang fand ich das seltsam, aber jetzt bin ich es gewohnt.",
+  "Ich vermisse manchmal das lange Abendessen mit meiner Familie."
+ ],
+ "speaking": [
+  {
+   "de": "Was hat dich hier am meisten überrascht?",
+   "en": "What surprised you most here?"
+  },
+  {
+   "de": "In Frankreich ist das anders, oder?",
+   "en": "It's different in France, isn't it?"
+  },
+  {
+   "de": "Aber inzwischen habe ich mich daran gewöhnt.",
+   "en": "But I've got used to it now."
+  },
+  {
+   "de": "Nein, nur direkter.",
+   "en": "No, just more direct."
+  },
+  {
+   "de": "Je länger ich hier wohne, desto mehr fühle ich mich zu Hause.",
+   "en": "The longer I live here, the more at home I feel."
+  }
+ ],
+ "writing": {
+  "task": "A French friend is moving to Germany soon and asks you for advice. Write an 80–100-word message: describe three differences between France and Germany, say what surprised you, and give one tip.",
+  "model": "Liebe Inès,\n\ntoll, dass du bald nach Deutschland kommst! Hier ein paar Tipps. Erstens sind am Sonntag fast alle Geschäfte geschlossen, also kauf am Samstag genug ein. Zweitens sind die Deutschen sehr pünktlich. Wenn du um sieben eingeladen bist, komm wirklich um sieben und nicht um Viertel nach. Drittens gibt man sich zur Begrüßung meistens die Hand oder umarmt sich, die Bise macht hier fast niemand. Mich hat am Anfang überrascht, wie direkt die Leute sind, aber sie meinen es nicht böse. Mein Tipp: Hab immer etwas Bargeld dabei!\n\nBis bald und liebe Grüße\nMarie"
+ }
+}

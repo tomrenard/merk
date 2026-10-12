@@ -1,0 +1,492 @@
+{
+ "id": "b2-10",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Building words",
+ "situation": "Understanding new words",
+ "canDo": "You can guess and build new words with -ung, -heit, -keit, -lich, -bar, un- and miss-, and you know their gender.",
+ "explanation": "Long German words look scary, but most are built from parts you already know. Learn the parts and you can guess, and build, hundreds of new words:\n\n| part | what it makes | examples |\n|---|---|---|\n| **-ung** | noun from a verb | wohnen → **die Wohnung**, erfahren → die Erfahrung |\n| **-heit** | noun from an adjective | frei → **die Freiheit**, krank → die Krankheit |\n| **-keit** | noun from an adjective | möglich → **die Möglichkeit**, pünktlich → die Pünktlichkeit |\n| **-lich** | adjective | der Freund → **freundlich**, die Gefahr → gefährlich |\n| **-bar** | adjective: can be done | essen → **essbar**, erreichen → erreichbar |\n| **un-** | the opposite | möglich → **unmöglich**, zufrieden → unzufrieden |\n| **miss-** | wrongly, badly | verstehen → **missverstehen**, der Erfolg → der Misserfolg |\n\nRules worth knowing:\n- Nouns ending in **-ung, -heit, -keit** are **always feminine** and add **-en** in the plural: *die Wohnung**en**, die Möglichkeit**en***.\n- **-keit** comes mostly after *-ig, -lich, -bar, -sam*: *Ehrlichkeit, Einsamkeit*. Otherwise it's **-heit**: *Gesundheit, Schönheit*. A few take **-igkeit**: *müde → Müdigkeit, schnell → Schnelligkeit*.\n- **-lich** often adds an umlaut: *der Tag → täglich, die Natur → natürlich, verstehen → verständlich*.\n- **miss-** verbs are inseparable and have no *ge-*: *Er hat mich **missverstanden**.*\n- **un-** works on adjectives and some nouns: *die Ruhe → die Unruhe*.\n\nWhen you meet a new word, cut it into parts: *un-erreich-bar-keit* = the state of not being reachable.\n\nThe most common mistakes:\n- the wrong article: not ~~der Zeitung~~, ~~das Möglichkeit~~: *-ung, -heit, -keit* = **die**.\n- mixing up *-heit* and *-keit*: not ~~Pünktlichheit~~, but *Pünktlich**keit***.",
+ "french": "These endings often match French ones: -ung ≈ -tion/-ment, -heit/-keit ≈ -té (liberté = Freiheit, possibilité = Möglichkeit), -bar ≈ -able, un- ≈ in- (impossible = unmöglich), miss- ≈ mé-/mal- (malentendu = Missverständnis); and like French -tion and -té words, German -ung/-heit/-keit words are all feminine.",
+ "examples": [
+  {
+   "de": "Die Wohnung hat leider keine gute Heizung.",
+   "en": "Unfortunately, the flat doesn't have good heating."
+  },
+  {
+   "de": "Gesundheit ist wichtiger als Geld.",
+   "en": "Health is more important than money."
+  },
+  {
+   "de": "Gibt es eine Möglichkeit, den Termin zu verschieben?",
+   "en": "Is there a way to move the appointment?"
+  },
+  {
+   "de": "Die Anleitung ist leider völlig unverständlich.",
+   "en": "Unfortunately, the instructions are completely incomprehensible."
+  },
+  {
+   "de": "Diese Pilze sind nicht essbar.",
+   "en": "These mushrooms aren't edible."
+  },
+  {
+   "de": "Das war ein Missverständnis – ich habe dich falsch verstanden.",
+   "en": "That was a misunderstanding – I got you wrong."
+  },
+  {
+   "de": "Pünktlichkeit ist in Deutschland sehr wichtig.",
+   "en": "Punctuality is very important in Germany."
+  },
+  {
+   "de": "Es ist unmöglich, hier am Samstag einen Parkplatz zu finden.",
+   "en": "It's impossible to find a parking space here on a Saturday."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-10-01",
+   "type": "cloze",
+   "de": "Wir suchen eine neue ___ in Leipzig.",
+   "base": "wohnen (noun)",
+   "answers": [
+    "Wohnung"
+   ],
+   "en": "We're looking for a new flat in Leipzig."
+  },
+  {
+   "id": "b2-10-02",
+   "type": "choice",
+   "de": "___ Gesundheit ist das Wichtigste.",
+   "options": [
+    "Der",
+    "Die",
+    "Das"
+   ],
+   "answer": 1,
+   "why": "Nouns ending in -heit are always feminine.",
+   "en": "Health is the most important thing."
+  },
+  {
+   "id": "b2-10-03",
+   "type": "cloze",
+   "de": "Gibt es eine ___, den Termin zu verschieben?",
+   "base": "möglich (noun)",
+   "answers": [
+    "Möglichkeit"
+   ],
+   "en": "Is there a way to move the appointment?"
+  },
+  {
+   "id": "b2-10-04",
+   "type": "order",
+   "tiles": [
+    "Die Anleitung",
+    "ist",
+    "leider",
+    "völlig",
+    "unverständlich"
+   ],
+   "answers": [
+    "Die Anleitung ist leider völlig unverständlich.",
+    "Leider ist die Anleitung völlig unverständlich."
+   ],
+   "en": "Unfortunately, the instructions are completely incomprehensible."
+  },
+  {
+   "id": "b2-10-05",
+   "type": "choice",
+   "de": "Diese Pilze sind nicht ___.",
+   "options": [
+    "essbar",
+    "esslich",
+    "essend"
+   ],
+   "answer": 0,
+   "why": "-bar means 'can be done': essbar = can be eaten.",
+   "en": "These mushrooms aren't edible."
+  },
+  {
+   "id": "b2-10-06",
+   "type": "cloze",
+   "de": "Das war ein ___ – ich habe dich falsch verstanden.",
+   "base": "verstehen (miss- + noun)",
+   "answers": [
+    "Missverständnis"
+   ],
+   "en": "That was a misunderstanding – I got you wrong."
+  },
+  {
+   "id": "b2-10-07",
+   "type": "choice",
+   "de": "In Deutschland ist ___ sehr wichtig.",
+   "options": [
+    "Pünktlichheit",
+    "Pünktlichkeit",
+    "Pünktlichung"
+   ],
+   "answer": 1,
+   "why": "After -lich the noun ending is -keit.",
+   "en": "Punctuality is very important in Germany."
+  },
+  {
+   "id": "b2-10-08",
+   "type": "cloze",
+   "de": "Der Verkäufer war sehr ___. Er hat nicht einmal gegrüßt.",
+   "base": "freundlich (opposite)",
+   "answers": [
+    "unfreundlich"
+   ],
+   "en": "The shop assistant was very unfriendly. He didn't even say hello."
+  },
+  {
+   "id": "b2-10-09",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "ist",
+    "unmöglich",
+    "hier",
+    "einen Parkplatz",
+    "zu finden"
+   ],
+   "answers": [
+    "Es ist unmöglich, hier einen Parkplatz zu finden.",
+    "Hier ist es unmöglich, einen Parkplatz zu finden.",
+    "Es ist hier unmöglich, einen Parkplatz zu finden."
+   ],
+   "en": "It's impossible to find a parking space here."
+  },
+  {
+   "id": "b2-10-10",
+   "type": "cloze",
+   "de": "Das Wasser im Fluss ist sehr ___. Bitte nicht schwimmen!",
+   "base": "die Gefahr (adjective)",
+   "answers": [
+    "gefährlich"
+   ],
+   "en": "The water in the river is very dangerous. Please don't swim!"
+  },
+  {
+   "id": "b2-10-11",
+   "type": "choice",
+   "de": "Ich habe Kopfschmerzen und große ___.",
+   "options": [
+    "Müdheit",
+    "Müdigkeit",
+    "Müdekeit"
+   ],
+   "answer": 1,
+   "why": "müde is one of the adjectives that take -igkeit.",
+   "en": "I have a headache and I'm very tired."
+  },
+  {
+   "id": "b2-10-12",
+   "type": "cloze",
+   "de": "Er hat mich ___. Ich wollte ihn nicht kritisieren.",
+   "base": "verstehen (miss-, Partizip II)",
+   "answers": [
+    "missverstanden"
+   ],
+   "en": "He misunderstood me. I didn't want to criticise him."
+  },
+  {
+   "id": "b2-10-13",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "ist",
+    "mit",
+    "ihrer Wohnung",
+    "sehr",
+    "unzufrieden"
+   ],
+   "answers": [
+    "Sie ist mit ihrer Wohnung sehr unzufrieden.",
+    "Mit ihrer Wohnung ist sie sehr unzufrieden.",
+    "Sie ist sehr unzufrieden mit ihrer Wohnung."
+   ],
+   "en": "She's very unhappy with her flat."
+  },
+  {
+   "id": "b2-10-14",
+   "type": "choice",
+   "de": "Wir danken Ihnen für Ihre ___.",
+   "options": [
+    "Freundlichheit",
+    "Freundlichung",
+    "Freundlichkeit"
+   ],
+   "answer": 2,
+   "why": "After -lich the noun ending is -keit.",
+   "en": "Thank you for your kindness."
+  },
+  {
+   "id": "b2-10-15",
+   "type": "cloze",
+   "de": "Der Arzt ist heute nur per E-Mail ___.",
+   "base": "erreichen (-bar)",
+   "answers": [
+    "erreichbar"
+   ],
+   "en": "The doctor can only be reached by email today."
+  },
+  {
+   "id": "b2-10-16",
+   "type": "choice",
+   "de": "Es gibt viele ___, Deutsch zu lernen.",
+   "options": [
+    "Möglichkeit",
+    "Möglichkeiten",
+    "Möglichkeite"
+   ],
+   "answer": 1,
+   "why": "-keit nouns add -en in the plural.",
+   "en": "There are many ways to learn German."
+  },
+  {
+   "id": "b2-10-17",
+   "type": "cloze",
+   "de": "Ich trinke ___ zwei Liter Wasser.",
+   "base": "der Tag (adjective)",
+   "answers": [
+    "täglich"
+   ],
+   "en": "I drink two litres of water a day."
+  },
+  {
+   "id": "b2-10-18",
+   "type": "order",
+   "tiles": [
+    "Bei",
+    "Krankheit",
+    "müssen",
+    "Sie",
+    "sofort",
+    "anrufen"
+   ],
+   "answers": [
+    "Bei Krankheit müssen Sie sofort anrufen.",
+    "Sie müssen bei Krankheit sofort anrufen."
+   ],
+   "en": "If you're ill, you must call straight away."
+  },
+  {
+   "id": "b2-10-19",
+   "type": "choice",
+   "de": "Das Projekt war leider ein ___.",
+   "options": [
+    "Unerfolg",
+    "Misserfolg",
+    "Nichterfolg"
+   ],
+   "answer": 1,
+   "why": "The opposite of der Erfolg is der Misserfolg.",
+   "en": "Unfortunately, the project was a failure."
+  },
+  {
+   "id": "b2-10-20",
+   "type": "cloze",
+   "de": "Ihre Erklärung war sehr ___. Jetzt verstehe ich es.",
+   "base": "verstehen (-lich)",
+   "answers": [
+    "verständlich"
+   ],
+   "en": "Your explanation was very clear. Now I understand it."
+  },
+  {
+   "id": "b2-10-21",
+   "type": "order",
+   "tiles": [
+    "Die Freiheit",
+    "ist",
+    "für",
+    "mich",
+    "das Wichtigste"
+   ],
+   "answers": [
+    "Die Freiheit ist für mich das Wichtigste.",
+    "Für mich ist die Freiheit das Wichtigste.",
+    "Das Wichtigste ist für mich die Freiheit."
+   ],
+   "en": "Freedom is the most important thing for me."
+  },
+  {
+   "id": "b2-10-22",
+   "type": "choice",
+   "de": "Ich ___ ihm – er hat schon oft gelogen.",
+   "options": [
+    "misstraue",
+    "untraue",
+    "vertraue miss"
+   ],
+   "answer": 0,
+   "why": "miss- verbs are inseparable: ich misstraue.",
+   "en": "I don't trust him – he's often lied before."
+  },
+  {
+   "id": "b2-10-23",
+   "type": "cloze",
+   "de": "Nach drei Wochen ___ an der Ostsee fühle ich mich viel besser.",
+   "base": "sich erholen (noun)",
+   "answers": [
+    "Erholung"
+   ],
+   "en": "After three weeks of rest on the Baltic coast, I feel much better."
+  },
+  {
+   "id": "b2-10-24",
+   "type": "order",
+   "tiles": [
+    "Diese",
+    "Aufgabe",
+    "ist",
+    "in zwei Stunden",
+    "machbar"
+   ],
+   "answers": [
+    "Diese Aufgabe ist in zwei Stunden machbar.",
+    "In zwei Stunden ist diese Aufgabe machbar."
+   ],
+   "en": "This task can be done in two hours."
+  }
+ ],
+ "listening": {
+  "title": "Ein unheimlich langes Wort",
+  "intro": "Amélie, who is French, asks her German colleague Jonas about a long word in an email from their boss.",
+  "lines": [
+   {
+    "speaker": "Amélie",
+    "de": "Jonas, was bedeutet „Unerreichbarkeit“? Das steht in der Mail von unserem Chef.",
+    "en": "Jonas, what does \"Unerreichbarkeit\" mean? It's in the email from our boss."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Klingt kompliziert, ist es aber nicht. Kennst du „erreichen“?",
+    "en": "Sounds complicated, but it isn't. Do you know \"erreichen\"?"
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Ja, das heißt zum Beispiel, dass man jemanden am Telefon bekommt.",
+    "en": "Yes, it means, for example, that you get hold of someone on the phone."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Genau. „Erreichbar“ heißt dann: Man kann dich erreichen. Und mit „un-“ ist es das Gegenteil.",
+    "en": "Exactly. \"Erreichbar\" then means: people can reach you. And with \"un-\" it's the opposite."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Also „unerreichbar“: Man kann mich nicht erreichen. Und „-keit“ macht daraus ein Nomen?",
+    "en": "So \"unerreichbar\": nobody can reach me. And \"-keit\" turns it into a noun?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Richtig, und alle Wörter mit „-keit“ sind feminin: „die Unerreichbarkeit“.",
+    "en": "Right, and all words with \"-keit\" are feminine: \"die Unerreichbarkeit\"."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Und was schreibt der Chef darüber?",
+    "en": "And what does the boss write about it?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ab Oktober gibt es eine Regel zur Unerreichbarkeit nach Feierabend. Nach 19 Uhr musst du keine Mails mehr lesen.",
+    "en": "From October there's a rule about not being reachable after work. After 7 pm you don't have to read emails any more."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Super, das ist mal eine gute Neuigkeit! „Neuigkeit“ kommt von „neu“, oder?",
+    "en": "Great, that's good news for once! \"Neuigkeit\" comes from \"neu\", right?"
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Genau, du lernst schnell. Siehst du? Viele lange Wörter sind eigentlich ganz einfach.",
+    "en": "Exactly, you learn fast. See? Lots of long words are actually quite simple."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Aber gestern hatte ich ein Missverständnis mit einer Kundin. Ich dachte, „unheimlich“ heißt „nicht zu Hause“.",
+    "en": "But yesterday I had a misunderstanding with a customer. I thought \"unheimlich\" meant \"not at home\"."
+   },
+   {
+    "speaker": "Jonas",
+    "de": "Ha, das ist gemein! „Unheimlich“ bedeutet so etwas wie „gruselig“ – oder in der Umgangssprache einfach „sehr“: „unheimlich nett“.",
+    "en": "Ha, that one's mean! \"Unheimlich\" means something like \"creepy\" – or in everyday speech simply \"very\": \"really nice\"."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Siehst du – manche Wörter sind eben doch unberechenbar!",
+    "en": "See – some words are unpredictable after all!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Amélie find the word \"Unerreichbarkeit\"?",
+    "options": [
+     "In a letter from her landlord.",
+     "In an email from her boss.",
+     "On a sign in the office."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is the new rule from October?",
+    "options": [
+     "No need to read emails after 7 pm.",
+     "Working from home on Fridays.",
+     "Answering every email within an hour."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What did Amélie think \"unheimlich\" meant?",
+    "options": [
+     "Very nice.",
+     "Creepy.",
+     "Not at home."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Jonas say about many long words?",
+    "options": [
+     "They're impossible to learn.",
+     "They're actually quite simple.",
+     "They mostly come from English."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Gibt es eine Möglichkeit, den Termin zu verschieben?",
+  "Das war leider ein großes Missverständnis zwischen uns.",
+  "Die Anleitung für die Waschmaschine ist völlig unverständlich."
+ ],
+ "speaking": [
+  {
+   "de": "Was bedeutet dieses Wort?",
+   "en": "What does this word mean?"
+  },
+  {
+   "de": "Und mit „un-“ ist es das Gegenteil.",
+   "en": "And with \"un-\" it's the opposite."
+  },
+  {
+   "de": "Alle Wörter mit „-keit“ sind feminin.",
+   "en": "All words with \"-keit\" are feminine."
+  },
+  {
+   "de": "Das ist mal eine gute Neuigkeit!",
+   "en": "That's good news for once!"
+  },
+  {
+   "de": "Gestern hatte ich ein Missverständnis mit einer Kundin.",
+   "en": "Yesterday I had a misunderstanding with a customer."
+  }
+ ],
+ "writing": {
+  "task": "You spent a week in a holiday flat. Write an online review of about 100 words: what was good and what wasn't. Use words with -ung, -heit, -keit, -lich, -bar, un- and miss-.",
+  "model": "Ferienwohnung „Seeblick“\n\nDie Wohnung liegt direkt am See und ist mit dem Bus gut erreichbar. Die Einrichtung ist modern, und in der Küche gibt es alles, was man braucht. Besonders gefallen hat mir die Ruhe: Abends hört man nur die Vögel. Die Vermieterin war sehr freundlich und hat uns viele Tipps für Ausflüge gegeben. Leider gab es auch ein Missverständnis: Wir dachten, die Reinigung ist im Preis enthalten, aber sie kostete 40 Euro extra. Das fanden wir etwas unfair. Außerdem war das WLAN ziemlich unzuverlässig. Trotzdem kann ich die Wohnung empfehlen, vor allem wegen der Sauberkeit und der schönen Lage."
+ }
+}

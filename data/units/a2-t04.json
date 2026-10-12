@@ -1,0 +1,510 @@
+{
+ "id": "a2-t04",
+ "cefr": "A2",
+ "kind": "topic",
+ "words": [
+  "zurückgeben",
+  "umtauschen",
+  "der Umtausch",
+  "die Quittung",
+  "die Garantie",
+  "sich beschweren",
+  "sich ärgern",
+  "passen",
+  "die Qualität",
+  "das Angebot",
+  "liefern",
+  "kostenlos",
+  "beraten",
+  "der Service",
+  "online",
+  "die Kundin",
+  "der Kunde",
+  "das Paket",
+  "das Kaufhaus",
+  "die Kasse",
+  "die Rechnung",
+  "kaputt",
+  "der Fehler",
+  "das Geld",
+  "die Größe",
+  "der Verkäufer",
+  "bestellen",
+  "die Reparatur",
+  "funktionieren",
+  "das Kleid"
+ ],
+ "title": "Shopping, returns and complaints",
+ "situation": "Returning something",
+ "canDo": "You can return or exchange something in a shop, say what is wrong with it and complain politely.",
+ "explanation": "Something is broken or doesn't fit? In Germany you can often bring it back with the receipt.\n\n| German | English |\n|---|---|\n| zurückgeben | to return (give back) |\n| umtauschen, der Umtausch | to exchange, an exchange |\n| die Quittung, -en / der Kassenbon, -s | receipt |\n| die Garantie, -n | guarantee |\n| kaputt | broken |\n| funktionieren | to work (machines) |\n| passen | to fit |\n| die Größe, -n | size |\n| der Fehler, - | mistake, fault |\n| sich beschweren | to complain |\n\n| Useful phrases | English |\n|---|---|\n| Ich möchte das zurückgeben. | I'd like to return this. |\n| Kann ich das umtauschen? | Can I exchange this? |\n| Die Hose passt mir nicht. | The trousers don't fit me. |\n| Das funktioniert nicht. | It doesn't work. |\n| Bekomme ich mein Geld zurück? | Do I get my money back? |\n\n- **passen** takes the dative: *Das Kleid passt **mir** nicht.* (gefallen = you like it, passen = it fits.)\n- Give the reason with **weil**: *Ich bringe die Jacke zurück, **weil** sie zu klein **ist**.*\n- Online orders can usually be sent back within 14 days. In a shop, an exchange is a favour unless the item is faulty, so ask politely.\n- Common mistake: *Mein Handy geht nicht kaputt* (it isn't breaking). Say **Mein Handy ist kaputt** or **funktioniert nicht**.",
+ "french": "Das Kleid passt mir nicht works like « Cette robe ne me va pas »: the person is an indirect object, mir ≈ me.",
+ "examples": [
+  {
+   "de": "Ich möchte diese Jacke zurückgeben.",
+   "en": "I'd like to return this jacket."
+  },
+  {
+   "de": "Kann ich die Schuhe umtauschen? Sie sind zu klein.",
+   "en": "Can I exchange the shoes? They're too small."
+  },
+  {
+   "de": "Haben Sie die Quittung dabei?",
+   "en": "Do you have the receipt with you?"
+  },
+  {
+   "de": "Die Kaffeemaschine funktioniert nicht.",
+   "en": "The coffee machine doesn't work."
+  },
+  {
+   "de": "Das Kleid passt mir leider nicht.",
+   "en": "Unfortunately the dress doesn't fit me."
+  },
+  {
+   "de": "Bekomme ich mein Geld zurück?",
+   "en": "Do I get my money back?"
+  },
+  {
+   "de": "Ich möchte mich beschweren, weil das Paket kaputt angekommen ist.",
+   "en": "I'd like to complain because the parcel arrived damaged."
+  }
+ ],
+ "items": [
+  {
+   "id": "a2-t04-01",
+   "type": "cloze",
+   "de": "Ich möchte die Hose ___.",
+   "base": "to return (give back)",
+   "answers": [
+    "zurückgeben"
+   ],
+   "en": "I'd like to return the trousers."
+  },
+  {
+   "id": "a2-t04-02",
+   "type": "choice",
+   "de": "Haben Sie die ___ noch?",
+   "options": [
+    "Kasse",
+    "Quittung",
+    "Größe"
+   ],
+   "answer": 1,
+   "why": "To return something you need the receipt, die Quittung.",
+   "en": "Do you still have the receipt?"
+  },
+  {
+   "id": "a2-t04-03",
+   "type": "cloze",
+   "de": "Welche ___ haben Sie? – 40.",
+   "base": "size",
+   "answers": [
+    "Größe"
+   ],
+   "en": "What size are you? – 40."
+  },
+  {
+   "id": "a2-t04-04",
+   "type": "order",
+   "tiles": [
+    "Das Kleid",
+    "passt",
+    "mir",
+    "nicht"
+   ],
+   "answers": [
+    "Das Kleid passt mir nicht.",
+    "Mir passt das Kleid nicht."
+   ],
+   "en": "The dress doesn't fit me."
+  },
+  {
+   "id": "a2-t04-05",
+   "type": "choice",
+   "de": "Mein Handy ___ nicht mehr.",
+   "options": [
+    "passt",
+    "funktioniert",
+    "gefällt"
+   ],
+   "answer": 1,
+   "why": "A device that doesn't work any more funktioniert nicht mehr; passen is for size.",
+   "en": "My phone doesn't work any more."
+  },
+  {
+   "id": "a2-t04-06",
+   "type": "cloze",
+   "de": "Der Fernseher ist ___, er zeigt kein Bild.",
+   "base": "broken",
+   "answers": [
+    "kaputt"
+   ],
+   "en": "The TV is broken, it shows no picture."
+  },
+  {
+   "id": "a2-t04-07",
+   "type": "choice",
+   "de": "Kann ich die Schuhe ___? Ich brauche Größe 42.",
+   "options": [
+    "umziehen",
+    "umsteigen",
+    "umtauschen"
+   ],
+   "answer": 2,
+   "why": "umtauschen means to exchange something in a shop.",
+   "en": "Can I exchange the shoes? I need size 42."
+  },
+  {
+   "id": "a2-t04-08",
+   "type": "cloze",
+   "de": "Das Gerät hat zwei Jahre ___.",
+   "base": "guarantee",
+   "answers": [
+    "Garantie"
+   ],
+   "en": "The device has a two-year guarantee."
+  },
+  {
+   "id": "a2-t04-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "mich",
+    "beschweren"
+   ],
+   "answers": [
+    "Ich möchte mich beschweren."
+   ],
+   "en": "I'd like to make a complaint."
+  },
+  {
+   "id": "a2-t04-10",
+   "type": "choice",
+   "de": "Das Paket ist schon wieder nicht da. Ich ___ mich wirklich.",
+   "options": [
+    "ärgere",
+    "freue",
+    "interessiere"
+   ],
+   "answer": 0,
+   "why": "sich ärgern means to be annoyed.",
+   "en": "The parcel isn't here again. I'm really annoyed."
+  },
+  {
+   "id": "a2-t04-11",
+   "type": "cloze",
+   "de": "Bekomme ich mein ___ zurück?",
+   "base": "money",
+   "answers": [
+    "Geld"
+   ],
+   "en": "Do I get my money back?"
+  },
+  {
+   "id": "a2-t04-12",
+   "type": "cloze",
+   "de": "Ich habe die Schuhe online ___.",
+   "base": "ordered",
+   "answers": [
+    "bestellt"
+   ],
+   "en": "I ordered the shoes online."
+  },
+  {
+   "id": "a2-t04-13",
+   "type": "choice",
+   "de": "Ich bringe die Hose zurück, ___ sie zu lang ist.",
+   "options": [
+    "denn",
+    "weil",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "weil gives the reason and sends the verb to the end; denn would need: denn sie ist zu lang.",
+   "en": "I'm bringing the trousers back because they're too long."
+  },
+  {
+   "id": "a2-t04-14",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "die Quittung",
+    "leider",
+    "nicht",
+    "dabei"
+   ],
+   "answers": [
+    "Ich habe die Quittung leider nicht dabei.",
+    "Ich habe leider die Quittung nicht dabei.",
+    "Leider habe ich die Quittung nicht dabei.",
+    "Die Quittung habe ich leider nicht dabei."
+   ],
+   "en": "Unfortunately I don't have the receipt with me."
+  },
+  {
+   "id": "a2-t04-15",
+   "type": "cloze",
+   "de": "Bitte gehen Sie mit der Quittung zur ___.",
+   "base": "till / checkout",
+   "answers": [
+    "Kasse"
+   ],
+   "en": "Please go to the till with the receipt."
+  },
+  {
+   "id": "a2-t04-16",
+   "type": "choice",
+   "de": "Die Lampe war nach einer Woche kaputt. Die ___ ist wirklich schlecht.",
+   "options": [
+    "Farbe",
+    "Qualität",
+    "Größe"
+   ],
+   "answer": 1,
+   "why": "If something breaks so fast, the Qualität (quality) is bad.",
+   "en": "The lamp broke after one week. The quality is really bad."
+  },
+  {
+   "id": "a2-t04-17",
+   "type": "cloze",
+   "de": "Der Umtausch ist ___, Sie bezahlen nichts.",
+   "base": "free (of charge)",
+   "answers": [
+    "kostenlos",
+    "gratis",
+    "umsonst"
+   ],
+   "en": "The exchange is free, you don't pay anything."
+  },
+  {
+   "id": "a2-t04-18",
+   "type": "order",
+   "tiles": [
+    "Kann",
+    "ich",
+    "das",
+    "umtauschen"
+   ],
+   "answers": [
+    "Kann ich das umtauschen?"
+   ],
+   "en": "Can I exchange this?"
+  },
+  {
+   "id": "a2-t04-19",
+   "type": "choice",
+   "de": "Das Paket ist noch nicht angekommen. Wann ___ Sie es?",
+   "options": [
+    "liefern",
+    "kaufen",
+    "bestellen"
+   ],
+   "answer": 0,
+   "why": "The shop delivers the parcel: liefern.",
+   "en": "The parcel hasn't arrived yet. When will you deliver it?"
+  },
+  {
+   "id": "a2-t04-20",
+   "type": "cloze",
+   "de": "Der ___ hat mich sehr gut beraten.",
+   "base": "shop assistant (man)",
+   "answers": [
+    "Verkäufer"
+   ],
+   "en": "The shop assistant gave me very good advice."
+  },
+  {
+   "id": "a2-t04-21",
+   "type": "choice",
+   "de": "Da ist ein ___ auf der Rechnung: Die Hose kostet 30 Euro, nicht 50.",
+   "options": [
+    "Angebot",
+    "Umtausch",
+    "Fehler"
+   ],
+   "answer": 2,
+   "why": "A mistake is ein Fehler.",
+   "en": "There's a mistake on the bill: the trousers cost 30 euros, not 50."
+  },
+  {
+   "id": "a2-t04-22",
+   "type": "order",
+   "tiles": [
+    "Das T-Shirt",
+    "ist",
+    "heute",
+    "im Angebot"
+   ],
+   "answers": [
+    "Das T-Shirt ist heute im Angebot.",
+    "Heute ist das T-Shirt im Angebot."
+   ],
+   "en": "The T-shirt is on special offer today."
+  },
+  {
+   "id": "a2-t04-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bringe",
+    "die Jacke",
+    "zurück",
+    "weil",
+    "sie",
+    "zu klein ist"
+   ],
+   "answers": [
+    "Ich bringe die Jacke zurück, weil sie zu klein ist.",
+    "Weil sie zu klein ist, bringe ich die Jacke zurück."
+   ],
+   "en": "I'm bringing the jacket back because it's too small."
+  },
+  {
+   "id": "a2-t04-24",
+   "type": "cloze",
+   "de": "Die Kundin ___ sich, weil das Paket zu spät gekommen ist.",
+   "base": "to complain",
+   "answers": [
+    "beschwert"
+   ],
+   "en": "The customer is complaining because the parcel came too late."
+  }
+ ],
+ "listening": {
+  "title": "Die Kaffeemaschine",
+  "intro": "Marc brings a new coffee machine back to the shop.",
+  "lines": [
+   {
+    "speaker": "Sabine",
+    "de": "Guten Tag, kann ich Ihnen helfen?",
+    "en": "Hello, can I help you?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Guten Tag. Ich habe am Samstag diese Kaffeemaschine gekauft, aber sie funktioniert nicht.",
+    "en": "Hello. I bought this coffee machine on Saturday, but it doesn't work."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Oh, das tut mir leid. Was ist denn das Problem?",
+    "en": "Oh, I'm sorry. What's the problem?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Es kommt nur Wasser, kein Kaffee.",
+    "en": "Only water comes out, no coffee."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Haben Sie die Quittung dabei?",
+    "en": "Do you have the receipt with you?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, hier ist sie. Kann ich die Maschine umtauschen?",
+    "en": "Yes, here it is. Can I exchange the machine?"
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Das Modell haben wir leider nicht mehr. Sie können Ihr Geld zurückbekommen oder einen Gutschein nehmen.",
+    "en": "Unfortunately we don't have that model any more. You can get your money back or take a voucher."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Dann möchte ich mein Geld zurück, bitte.",
+    "en": "Then I'd like my money back, please."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Kein Problem. Haben Sie mit Karte bezahlt?",
+    "en": "No problem. Did you pay by card?"
+   },
+   {
+    "speaker": "Marc",
+    "de": "Ja, mit Karte.",
+    "en": "Yes, by card."
+   },
+   {
+    "speaker": "Sabine",
+    "de": "Gut, dann ist das Geld in drei bis fünf Tagen auf Ihrem Konto.",
+    "en": "Good, then the money will be in your account in three to five days."
+   },
+   {
+    "speaker": "Marc",
+    "de": "Danke! Ich habe mich wirklich geärgert, weil ich drei Tage keinen Kaffee hatte.",
+    "en": "Thanks! I was really annoyed because I had no coffee for three days."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is wrong with the coffee machine?",
+    "options": [
+     "It's too loud.",
+     "Only water comes out.",
+     "It's the wrong colour."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why can't Marc exchange the machine?",
+    "options": [
+     "He has no receipt.",
+     "The guarantee is over.",
+     "The shop doesn't have that model any more."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Marc choose?",
+    "options": [
+     "His money back.",
+     "A voucher.",
+     "A different machine."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When will Marc get his money?",
+    "options": [
+     "Today, in cash.",
+     "In three to five days, in his account.",
+     "Next week, by post."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte die Hose bitte zurückgeben.",
+  "Die Kaffeemaschine funktioniert leider nicht mehr.",
+  "Kann ich die Schuhe ohne Quittung umtauschen?"
+ ],
+ "speaking": [
+  {
+   "de": "Ich habe am Samstag diese Kaffeemaschine gekauft, aber sie funktioniert nicht.",
+   "en": "I bought this coffee machine on Saturday, but it doesn't work."
+  },
+  {
+   "de": "Haben Sie die Quittung dabei?",
+   "en": "Do you have the receipt with you?"
+  },
+  {
+   "de": "Kann ich die Maschine umtauschen?",
+   "en": "Can I exchange the machine?"
+  },
+  {
+   "de": "Dann möchte ich mein Geld zurück, bitte.",
+   "en": "Then I'd like my money back, please."
+  },
+  {
+   "de": "Ich habe mich wirklich geärgert.",
+   "en": "I was really annoyed."
+  }
+ ],
+ "writing": {
+  "task": "You ordered shoes online, but they don't fit. Write 5–6 sentences to the shop: what you ordered, what the problem is and what you want.",
+  "model": "Guten Tag, ich habe am Montag bei Ihnen Schuhe in Größe 39 bestellt. Das Paket ist gestern angekommen. Leider passen mir die Schuhe nicht, weil sie zu klein sind. Ich möchte sie gern umtauschen, in Größe 40. Ist der Umtausch kostenlos? Viele Grüße, Claire Dubois"
+ }
+}

@@ -1,0 +1,552 @@
+{
+ "id": "b1-s05",
+ "cefr": "B1",
+ "kind": "story",
+ "title": "A call to the Ausländerbehörde",
+ "situation": "A longer story to understand",
+ "canDo": "You can follow a longer story about calling a German authority, get through a hotline and understand what documents and deadlines matter for a residence permit.",
+ "explanation": "Rafael, Camille's Brazilian boyfriend, has been offered a better job. But his residence permit is only valid for his old job, and it runs out at the end of October. There are no appointments online, so Camille and Rafael try the phone. As an EU citizen Camille doesn't need a permit herself, but her German helps.\n\nListen for **bevor**, **obwohl**, **während**, **seitdem**, **bis**, **damit**, **um … zu** and pairs like **weder … noch**, **sowohl … als auch**, **je … desto**.\n\nKey words before you listen:\n\n| German | English |\n|---|---|\n| die Ausländerbehörde, -n | immigration office |\n| die Aufenthaltserlaubnis, -se | residence permit |\n| ablaufen | to run out, to expire |\n| die Warteschleife, -n | hold queue (on the phone) |\n| Alle Leitungen sind besetzt. | All lines are busy. |\n| der Antrag, Anträge | application |\n| der Arbeitsvertrag, -verträge | employment contract |\n| rechtzeitig | in time |\n| die Fiktionsbescheinigung | temporary certificate while you wait |\n\nTip: always apply **before** your permit runs out. Then your old permit counts as still valid: you may stay and keep working as before until the office decides.",
+ "french": "",
+ "examples": [
+  {
+   "de": "Seine Aufenthaltserlaubnis läuft Ende Oktober ab.",
+   "en": "His residence permit runs out at the end of October."
+  },
+  {
+   "de": "Online gibt es weder im Oktober noch im November einen Termin.",
+   "en": "Online there's no appointment in either October or November."
+  },
+  {
+   "de": "Sie stellte das Handy auf laut, damit Rafael mithören konnte.",
+   "en": "She put the phone on speaker so that Rafael could listen too."
+  },
+  {
+   "de": "Je länger ich diese Musik höre, desto nervöser werde ich.",
+   "en": "The longer I listen to this music, the more nervous I get."
+  },
+  {
+   "de": "Sie müssen den Antrag schicken, bevor die alte Erlaubnis abläuft.",
+   "en": "You have to send the application before the old permit runs out."
+  },
+  {
+   "de": "Schicken Sie sowohl den Arbeitsvertrag als auch eine Kopie von Ihrem Pass.",
+   "en": "Send both the employment contract and a copy of your passport."
+  },
+  {
+   "de": "Damit dürfen Sie bleiben und wie bisher arbeiten, bis wir entschieden haben.",
+   "en": "With it you may stay and keep working as before until we've decided."
+  }
+ ],
+ "items": [
+  {
+   "type": "cloze",
+   "de": "Rafael braucht einen Termin bei der ___.",
+   "base": "immigration office",
+   "answers": [
+    "Ausländerbehörde"
+   ],
+   "en": "Rafael needs an appointment at the immigration office.",
+   "id": "b1-s05-01"
+  },
+  {
+   "type": "choice",
+   "de": "Ab Dezember sollte Rafael als ___ arbeiten.",
+   "options": [
+    "Kellner",
+    "Küchenchef",
+    "Taxifahrer"
+   ],
+   "answer": 1,
+   "why": "He was offered a job as head chef in a big restaurant in the old town.",
+   "en": "From December Rafael was supposed to work as a head chef.",
+   "id": "b1-s05-02"
+  },
+  {
+   "type": "cloze",
+   "de": "Seine ___ galt nur für die alte Stelle.",
+   "base": "residence permit",
+   "answers": [
+    "Aufenthaltserlaubnis"
+   ],
+   "en": "His residence permit was only valid for his old job.",
+   "id": "b1-s05-03"
+  },
+  {
+   "type": "cloze",
+   "de": "Die Erlaubnis ___ Ende Oktober ab.",
+   "base": "ablaufen",
+   "answers": [
+    "läuft"
+   ],
+   "en": "The permit runs out at the end of October.",
+   "id": "b1-s05-04"
+  },
+  {
+   "type": "choice",
+   "de": "Online gab es ___ im Oktober noch im November einen Termin.",
+   "options": [
+    "weder",
+    "entweder",
+    "sowohl"
+   ],
+   "answer": 0,
+   "why": "weder … noch means neither … nor.",
+   "en": "Online there was no appointment in either October or November.",
+   "id": "b1-s05-05"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Entweder",
+    "wir",
+    "einen Termin",
+    "bekommen",
+    "heute,",
+    "oder wir fahren morgen hin"
+   ],
+   "answers": [
+    "Entweder wir bekommen heute einen Termin, oder wir fahren morgen hin.",
+    "Entweder bekommen wir heute einen Termin, oder wir fahren morgen hin."
+   ],
+   "en": "Either we get an appointment today, or we go there tomorrow.",
+   "id": "b1-s05-06"
+  },
+  {
+   "type": "choice",
+   "de": "Camille stellte das Handy auf laut, ___ Rafael mithören konnte.",
+   "options": [
+    "um",
+    "damit",
+    "dass"
+   ],
+   "answer": 1,
+   "why": "Two different subjects (Camille, Rafael), so it's damit, not um … zu.",
+   "en": "Camille put the phone on speaker so that Rafael could listen too.",
+   "id": "b1-s05-07"
+  },
+  {
+   "type": "cloze",
+   "de": "Zurzeit sind alle ___ besetzt.",
+   "base": "lines (phone)",
+   "answers": [
+    "Leitungen"
+   ],
+   "en": "All lines are busy at the moment.",
+   "id": "b1-s05-08"
+  },
+  {
+   "type": "cloze",
+   "de": "Je länger ich diese Musik höre, ___ nervöser werde ich.",
+   "base": "je … desto",
+   "answers": [
+    "desto",
+    "umso"
+   ],
+   "en": "The longer I listen to this music, the more nervous I get.",
+   "id": "b1-s05-09"
+  },
+  {
+   "type": "choice",
+   "de": "Nach fünfunddreißig Minuten ___.",
+   "options": [
+    "meldete sich Frau Yilmaz",
+    "war die Leitung plötzlich tot",
+    "legte Rafael auf"
+   ],
+   "answer": 1,
+   "why": "On the first try the line suddenly went dead after 35 minutes.",
+   "en": "After thirty-five minutes the line suddenly went dead.",
+   "id": "b1-s05-10"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Je länger",
+    "ich",
+    "warte,",
+    "desto",
+    "werde",
+    "ich",
+    "nervöser"
+   ],
+   "answers": [
+    "Je länger ich warte, desto nervöser werde ich."
+   ],
+   "en": "The longer I wait, the more nervous I get.",
+   "id": "b1-s05-11"
+  },
+  {
+   "type": "cloze",
+   "de": "Rafael wollte aufgeben, ___ er den Termin dringend brauchte.",
+   "base": "although",
+   "answers": [
+    "obwohl"
+   ],
+   "en": "Rafael wanted to give up, although he urgently needed the appointment.",
+   "id": "b1-s05-12"
+  },
+  {
+   "type": "choice",
+   "de": "___ ich warte, kannst du schon mal deine Unterlagen suchen.",
+   "options": [
+    "Während",
+    "Bevor",
+    "Bis"
+   ],
+   "answer": 0,
+   "why": "während = while: two things at the same time.",
+   "en": "While I'm waiting, you can look for your documents.",
+   "id": "b1-s05-13"
+  },
+  {
+   "type": "cloze",
+   "de": "Sie müssen den ___ schicken, bevor die alte Erlaubnis abläuft.",
+   "base": "application",
+   "answers": [
+    "Antrag"
+   ],
+   "en": "You have to send the application before the old permit runs out.",
+   "id": "b1-s05-14"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "den Antrag",
+    "müssen",
+    "schicken,",
+    "bevor",
+    "die alte Erlaubnis",
+    "abläuft"
+   ],
+   "answers": [
+    "Sie müssen den Antrag schicken, bevor die alte Erlaubnis abläuft.",
+    "Bevor die alte Erlaubnis abläuft, müssen Sie den Antrag schicken."
+   ],
+   "en": "You have to send the application before the old permit runs out.",
+   "id": "b1-s05-15"
+  },
+  {
+   "type": "choice",
+   "de": "Rafael soll sowohl den Arbeitsvertrag ___ eine Kopie von seinem Pass schicken.",
+   "options": [
+    "als auch",
+    "oder",
+    "noch"
+   ],
+   "answer": 0,
+   "why": "sowohl … als auch means both … and.",
+   "en": "Rafael should send both the employment contract and a copy of his passport.",
+   "id": "b1-s05-16"
+  },
+  {
+   "type": "choice",
+   "de": "Der Termin ist am 15. Oktober um ___.",
+   "options": [
+    "acht Uhr",
+    "halb neun",
+    "halb zehn"
+   ],
+   "answer": 1,
+   "why": "Frau Yilmaz gives him an appointment at half past eight.",
+   "en": "The appointment is on 15 October at half past eight.",
+   "id": "b1-s05-17"
+  },
+  {
+   "type": "cloze",
+   "de": "Mit der ___ darf Rafael weiterarbeiten, bis die Behörde entschieden hat.",
+   "base": "temporary certificate",
+   "answers": [
+    "Fiktionsbescheinigung"
+   ],
+   "en": "With the temporary certificate Rafael may keep working until the office has decided.",
+   "id": "b1-s05-18"
+  },
+  {
+   "type": "choice",
+   "de": "Damit dürfen Sie wie bisher arbeiten, ___ wir entschieden haben.",
+   "options": [
+    "seitdem",
+    "bis",
+    "bevor"
+   ],
+   "answer": 1,
+   "why": "bis = until: he may work until the decision comes.",
+   "en": "With it you may keep working as before until we've decided.",
+   "id": "b1-s05-19"
+  },
+  {
+   "type": "cloze",
+   "de": "Wichtig ist, dass der Antrag ___ da ist.",
+   "base": "in time",
+   "answers": [
+    "rechtzeitig"
+   ],
+   "en": "What matters is that the application arrives in time.",
+   "id": "b1-s05-20"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Seitdem",
+    "er",
+    "in Deutschland",
+    "lebte,",
+    "hatte",
+    "er",
+    "noch nie so lange telefoniert"
+   ],
+   "answers": [
+    "Seitdem er in Deutschland lebte, hatte er noch nie so lange telefoniert."
+   ],
+   "en": "Since he had been living in Germany, he had never spent so long on the phone.",
+   "id": "b1-s05-21"
+  },
+  {
+   "type": "choice",
+   "de": "Um Camille ___ danken, kocht Rafael etwas Besonderes.",
+   "options": [
+    "für",
+    "zu",
+    "damit"
+   ],
+   "answer": 1,
+   "why": "um … zu + infinitive: um … zu danken.",
+   "en": "To thank Camille, Rafael cooks something special.",
+   "id": "b1-s05-22"
+  },
+  {
+   "type": "order",
+   "tiles": [
+    "Zuerst",
+    "du",
+    "schickst",
+    "die E-Mail,",
+    "damit",
+    "wir",
+    "den Termin",
+    "bekommen"
+   ],
+   "answers": [
+    "Zuerst schickst du die E-Mail, damit wir den Termin bekommen.",
+    "Du schickst zuerst die E-Mail, damit wir den Termin bekommen."
+   ],
+   "en": "First you send the email so that we get the appointment.",
+   "id": "b1-s05-23"
+  },
+  {
+   "type": "cloze",
+   "de": "Rafael schickt heute noch die E-Mail, ___ den Termin nicht zu verlieren.",
+   "base": "in order to",
+   "answers": [
+    "um"
+   ],
+   "en": "Rafael sends the email today so as not to lose the appointment.",
+   "id": "b1-s05-24"
+  }
+ ],
+ "listening": {
+  "title": "In der Warteschleife",
+  "intro": "Camille helps her boyfriend Rafael call the immigration office in Cologne about his residence permit.",
+  "lines": [
+   {
+    "speaker": "Erzähler",
+    "de": "Seit dem Hoffest im Juni waren Camille und Rafael ein Paar.",
+    "en": "Since the courtyard party in June, Camille and Rafael had been a couple."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Im September bekam Rafael ein tolles Angebot: Ab Dezember sollte er Küchenchef in einem großen Restaurant in der Altstadt werden.",
+    "en": "In September Rafael got a great offer: from December he was to become head chef in a big restaurant in the old town."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Doch es gab ein Problem. Seine Aufenthaltserlaubnis galt nur für seine alte Stelle, und sie lief Ende Oktober ab.",
+    "en": "But there was a problem. His residence permit was only valid for his old job, and it ran out at the end of October."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Bevor ich die neue Stelle anfangen kann, brauche ich eine neue Erlaubnis. Aber online gibt es keinen einzigen Termin, weder im Oktober noch im November!",
+    "en": "Before I can start the new job, I need a new permit. But online there isn't a single appointment, neither in October nor in November!"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Dann rufen wir eben an. Entweder wir bekommen heute einen Termin, oder wir fahren morgen früh direkt hin.",
+    "en": "Then we'll just call. Either we get an appointment today, or we go straight there tomorrow morning."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Um acht Uhr wählte Camille die Nummer und stellte das Handy auf laut, damit Rafael mithören konnte.",
+    "en": "At eight o'clock Camille dialled the number and put the phone on speaker so that Rafael could listen too."
+   },
+   {
+    "speaker": "Ansage",
+    "de": "Herzlich willkommen bei der Ausländerbehörde der Stadt Köln. Zurzeit sind alle Leitungen besetzt. Bitte haben Sie etwas Geduld.",
+    "en": "Welcome to the immigration office of the city of Cologne. All lines are busy at the moment. Please be patient."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Dann kam Musik. Immer die gleiche Melodie, eine halbe Stunde lang.",
+    "en": "Then came music. Always the same tune, for half an hour."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Je länger ich diese Musik höre, desto nervöser werde ich.",
+    "en": "The longer I listen to this music, the more nervous I get."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Nach fünfunddreißig Minuten war die Leitung plötzlich tot. Rafael wollte aufgeben, obwohl er den Termin dringend brauchte.",
+    "en": "After thirty-five minutes the line suddenly went dead. Rafael wanted to give up, although he urgently needed the appointment."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Auf keinen Fall! Ich versuche es noch einmal. Während ich warte, kannst du schon mal deine Unterlagen suchen.",
+    "en": "No way! I'll try again. While I'm waiting, you can start looking for your documents."
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Beim zweiten Versuch hatten sie Glück. Nach zehn Minuten meldete sich eine Frauenstimme.",
+    "en": "On the second try they were lucky. After ten minutes a woman's voice answered."
+   },
+   {
+    "speaker": "Frau Yilmaz",
+    "de": "Ausländerbehörde, Yilmaz, guten Morgen. Was kann ich für Sie tun?",
+    "en": "Immigration office, Yilmaz speaking, good morning. What can I do for you?"
+   },
+   {
+    "speaker": "Camille",
+    "de": "Guten Morgen. Ich rufe für meinen Freund an, er sitzt neben mir. Er hat eine neue Stelle und braucht eine neue Aufenthaltserlaubnis.",
+    "en": "Good morning. I'm calling for my boyfriend, he's sitting next to me. He has a new job and needs a new residence permit."
+   },
+   {
+    "speaker": "Frau Yilmaz",
+    "de": "Gut. Wann läuft die alte Erlaubnis denn ab?",
+    "en": "All right. When does the old permit run out?"
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Am 31. Oktober. Und die neue Stelle beginnt am ersten Dezember.",
+    "en": "On 31 October. And the new job starts on the first of December."
+   },
+   {
+    "speaker": "Frau Yilmaz",
+    "de": "Wichtig ist: Sie müssen den Antrag schicken, bevor die alte Erlaubnis abläuft.",
+    "en": "The important thing is: you have to send the application before the old permit runs out."
+   },
+   {
+    "speaker": "Frau Yilmaz",
+    "de": "Schicken Sie mir bitte sowohl den neuen Arbeitsvertrag als auch eine Kopie von Ihrem Pass per E-Mail. Dann bekommen Sie einen Termin am 15. Oktober um halb neun.",
+    "en": "Please email me both the new employment contract and a copy of your passport. Then you'll get an appointment on 15 October at half past eight."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Und was passiert, wenn die Entscheidung Ende Oktober noch nicht fertig ist?",
+    "en": "And what happens if the decision isn't ready by the end of October?"
+   },
+   {
+    "speaker": "Frau Yilmaz",
+    "de": "Keine Sorge. Wenn der Antrag rechtzeitig da ist, bekommen Sie beim Termin eine Fiktionsbescheinigung. Damit dürfen Sie bleiben und wie bisher arbeiten, bis wir entschieden haben.",
+    "en": "Don't worry. If the application arrives in time, you'll get a temporary certificate at the appointment. With it you may stay and keep working as before until we've decided."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Vielen Dank, Sie haben uns sehr geholfen!",
+    "en": "Thank you very much, you've helped us a lot!"
+   },
+   {
+    "speaker": "Erzähler",
+    "de": "Rafael legte das Handy auf den Tisch und atmete tief durch. Seitdem er in Deutschland lebte, hatte er noch nie so lange telefoniert.",
+    "en": "Rafael put the phone on the table and took a deep breath. Since he had been living in Germany, he had never spent so long on the phone."
+   },
+   {
+    "speaker": "Rafael",
+    "de": "Ohne dich hätte ich das nie geschafft. Um dir zu danken, koche ich heute Abend etwas Besonderes.",
+    "en": "I'd never have managed that without you. To thank you, I'll cook something special tonight."
+   },
+   {
+    "speaker": "Camille",
+    "de": "Gute Idee. Aber zuerst schickst du die E-Mail, damit wir den Termin auch wirklich bekommen!",
+    "en": "Good idea. But first you send the email, so that we really get the appointment!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Warum braucht Rafael eine neue Aufenthaltserlaubnis?",
+    "options": [
+     "Er will nach Brasilien zurück.",
+     "Er hat eine neue Stelle, und die alte Erlaubnis gilt nur für die alte.",
+     "Er hat seinen Pass verloren."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Warum ruft Camille bei der Ausländerbehörde an?",
+    "options": [
+     "Online gibt es keine Termine.",
+     "Rafael hat kein Internet.",
+     "Die Webseite ist nur auf Deutsch."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Was passierte beim ersten Anruf?",
+    "options": [
+     "Frau Yilmaz war sehr unfreundlich.",
+     "Sie bekamen sofort einen Termin.",
+     "Nach 35 Minuten war die Leitung tot."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Was muss Rafael per E-Mail schicken?",
+    "options": [
+     "Nur ein Foto",
+     "Den Arbeitsvertrag und eine Kopie von seinem Pass",
+     "Seine Meldebescheinigung"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Wozu ist die Fiktionsbescheinigung gut?",
+    "options": [
+     "Rafael darf damit bleiben und weiterarbeiten, bis die Behörde entschieden hat.",
+     "Damit kann er nach Brasilien reisen.",
+     "Damit bekommt er schneller eine Wohnung."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Seine Aufenthaltserlaubnis läuft leider schon Ende Oktober ab.",
+  "Je länger ich in der Warteschleife warte, desto nervöser werde ich.",
+  "Sie müssen den Antrag schicken, bevor die alte Erlaubnis abläuft."
+ ],
+ "speaking": [
+  {
+   "de": "Ich rufe für meinen Freund an, er sitzt neben mir.",
+   "en": "I'm calling for my boyfriend, he's sitting next to me."
+  },
+  {
+   "de": "Er hat eine neue Stelle und braucht eine neue Aufenthaltserlaubnis.",
+   "en": "He has a new job and needs a new residence permit."
+  },
+  {
+   "de": "Wann läuft die alte Erlaubnis denn ab?",
+   "en": "When does the old permit run out?"
+  },
+  {
+   "de": "Und was passiert, wenn die Entscheidung noch nicht fertig ist?",
+   "en": "And what happens if the decision isn't ready yet?"
+  },
+  {
+   "de": "Vielen Dank, Sie haben uns sehr geholfen!",
+   "en": "Thank you very much, you've helped us a lot!"
+  }
+ ],
+ "writing": {
+  "task": "You are Rafael. Write the 80–100-word email to Frau Yilmaz: refer to the phone call, say why you are writing, list the documents you attach and confirm the appointment.",
+  "model": "Sehr geehrte Frau Yilmaz,\n\nvielen Dank für das Telefonat heute Morgen. Wie besprochen schicke ich Ihnen meine Unterlagen, damit Sie meinen Antrag bearbeiten können. Ich beginne am 1. Dezember eine neue Stelle als Küchenchef, und meine Aufenthaltserlaubnis läuft am 31. Oktober ab. Im Anhang finden Sie sowohl meinen neuen Arbeitsvertrag als auch eine Kopie von meinem Pass. Ich komme gern am 15. Oktober um 8:30 Uhr zu meinem Termin. Bitte sagen Sie mir Bescheid, wenn noch etwas fehlt.\n\nMit freundlichen Grüßen\nRafael Oliveira"
+ }
+}

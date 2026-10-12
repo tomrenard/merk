@@ -1,0 +1,521 @@
+{
+ "id": "b1-t07",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "die Miete",
+  "die Kosten (Pl.)",
+  "die Heizung",
+  "heizen",
+  "die Vermieterin",
+  "der Vertrag",
+  "die Kündigung",
+  "die Frist",
+  "die Reparatur",
+  "reparieren",
+  "der Handwerker",
+  "kaputt",
+  "funktionieren",
+  "die Verwaltung",
+  "die Erhöhung",
+  "fällig",
+  "der Umzug",
+  "ausziehen",
+  "einziehen",
+  "renovieren",
+  "der Schlüssel",
+  "die Unterlagen (Pl.)",
+  "die Bestätigung",
+  "das Fenster",
+  "der Mangel",
+  "die Störung"
+ ],
+ "title": "Tenancy: rent, Nebenkosten, repairs, notice",
+ "situation": "Writing to the Hausverwaltung",
+ "canDo": "You can understand the key words of your rental contract and service-charge bill, report a repair, and give notice on a flat.",
+ "explanation": "Many flats in Germany are managed by a **Hausverwaltung** (property management company), not by the landlord. You call or write to them about rent, repairs and notice.\n\n| German | English |\n|---|---|\n| der Mietvertrag, -verträge | rental contract |\n| die Kaltmiete | rent without extras |\n| die Nebenkosten (pl.) | service charges: water, heating, rubbish, caretaker |\n| die Warmmiete | rent including service charges |\n| die Nebenkostenabrechnung | yearly bill for the service charges |\n| die Nachzahlung / das Guthaben | extra payment / money back |\n| die Kaution | deposit (max. three months' Kaltmiete) |\n| der Mangel, Mängel / der Schaden, Schäden | defect / damage |\n| der Handwerker, - | tradesman, repair person |\n| die Kündigung / die Kündigungsfrist | notice / notice period |\n\nUseful phrases:\n- *Seit Montag funktioniert die Heizung nicht.*\n- *Ich möchte einen Schaden melden.* – I'd like to report damage.\n- *Bitte schicken Sie so schnell wie möglich einen Handwerker.*\n- *Hiermit kündige ich meinen Mietvertrag zum 31. Mai.*\n\nTips:\n- Report a defect in writing (email or letter) and keep a copy. Photos help.\n- A tenant's **Kündigungsfrist** is usually three months, and the Kündigung must be on paper with your **signature**: an email is not enough.\n- **kündigen** takes the accusative: *Ich kündige **die Wohnung / den Vertrag***. The most common mistake is forgetting the object.\n- **Nebenkosten** is always plural.",
+ "french": "Kaltmiete ≈ loyer hors charges, Nebenkosten ≈ les charges, Kaution ≈ dépôt de garantie; but the tenant's notice period is usually three months, longer than the one month common in French cities.",
+ "examples": [
+  {
+   "de": "Die Kaltmiete beträgt 750 Euro, dazu kommen 200 Euro Nebenkosten.",
+   "en": "The basic rent is 750 euros, plus 200 euros in service charges."
+  },
+  {
+   "de": "Seit gestern funktioniert die Heizung nicht mehr.",
+   "en": "The heating hasn't worked since yesterday."
+  },
+  {
+   "de": "Wegen der kaputten Heizung ist es in der Wohnung sehr kalt.",
+   "en": "Because of the broken heating, it's very cold in the flat."
+  },
+  {
+   "de": "Wir haben eine Nachzahlung von 300 Euro bekommen.",
+   "en": "We've been asked for an extra payment of 300 euros."
+  },
+  {
+   "de": "Bitte schicken Sie so schnell wie möglich einen Handwerker.",
+   "en": "Please send a repair person as soon as possible."
+  },
+  {
+   "de": "Hiermit kündige ich meinen Mietvertrag zum 31. Mai.",
+   "en": "I hereby give notice on my rental contract for 31 May."
+  },
+  {
+   "de": "Die Kaution bekommen Sie nach dem Auszug zurück.",
+   "en": "You get the deposit back after you move out."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t07-01",
+   "type": "cloze",
+   "de": "Die Miete ohne Nebenkosten heißt ___.",
+   "base": "basic rent (without extras)",
+   "answers": [
+    "Kaltmiete",
+    "Nettokaltmiete"
+   ],
+   "en": "The rent without service charges is called the Kaltmiete."
+  },
+  {
+   "id": "b1-t07-02",
+   "type": "choice",
+   "de": "Wasser, Müllabfuhr und Hausmeister: Das alles sind ___.",
+   "options": [
+    "Nebenkosten",
+    "Nebensachen",
+    "Kaltmieten"
+   ],
+   "answer": 0,
+   "why": "Costs for water, rubbish and the caretaker are Nebenkosten (service charges); Nebensachen are unimportant things.",
+   "en": "Water, rubbish collection and the caretaker: these are all service charges."
+  },
+  {
+   "id": "b1-t07-03",
+   "type": "cloze",
+   "de": "Beim Einzug zahlt man eine ___ von drei Monatsmieten.",
+   "base": "deposit",
+   "answers": [
+    "Kaution",
+    "Mietkaution"
+   ],
+   "en": "When you move in, you pay a deposit of three months' rent."
+  },
+  {
+   "id": "b1-t07-04",
+   "type": "choice",
+   "de": "Die Heizung ist kaputt. Ich schreibe der ___.",
+   "options": [
+    "Hausordnung",
+    "Hausverwaltung",
+    "Hausaufgabe"
+   ],
+   "answer": 1,
+   "why": "Repairs are organised by die Hausverwaltung (property management); die Hausordnung is the house rules.",
+   "en": "The heating is broken. I'm writing to the property management."
+  },
+  {
+   "id": "b1-t07-05",
+   "type": "cloze",
+   "de": "Seit Montag ___ die Heizung nicht.",
+   "base": "work (machine)",
+   "answers": [
+    "funktioniert",
+    "geht",
+    "läuft"
+   ],
+   "en": "The heating hasn't worked since Monday."
+  },
+  {
+   "id": "b1-t07-06",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "kündige",
+    "den Mietvertrag",
+    "zum 31. Mai"
+   ],
+   "answers": [
+    "Ich kündige den Mietvertrag zum 31. Mai.",
+    "Zum 31. Mai kündige ich den Mietvertrag.",
+    "Den Mietvertrag kündige ich zum 31. Mai."
+   ],
+   "en": "I'm giving notice on the rental contract for 31 May."
+  },
+  {
+   "id": "b1-t07-07",
+   "type": "choice",
+   "de": "Einmal im Jahr bekommt man die ___ für Heizung und Wasser.",
+   "options": [
+    "Quittung",
+    "Kündigung",
+    "Nebenkostenabrechnung"
+   ],
+   "answer": 2,
+   "why": "The yearly bill for heating, water and other service charges is die Nebenkostenabrechnung.",
+   "en": "Once a year you get the service-charge bill for heating and water."
+  },
+  {
+   "id": "b1-t07-08",
+   "type": "cloze",
+   "de": "Die Abrechnung ist da: Wir haben eine ___ von 250 Euro.",
+   "base": "additional payment",
+   "answers": [
+    "Nachzahlung"
+   ],
+   "en": "The bill has arrived: we have to pay an extra 250 euros."
+  },
+  {
+   "id": "b1-t07-09",
+   "type": "choice",
+   "de": "Im Bad gibt es ___: Die Wand ist schwarz und feucht.",
+   "options": [
+    "Schimmel",
+    "Staub",
+    "Schmutz"
+   ],
+   "answer": 0,
+   "why": "A black, damp wall means mould: der Schimmel; Staub is dust and Schmutz is dirt.",
+   "en": "There's mould in the bathroom: the wall is black and damp."
+  },
+  {
+   "id": "b1-t07-10",
+   "type": "order",
+   "tiles": [
+    "Wegen",
+    "der kaputten Heizung",
+    "ist",
+    "es",
+    "sehr kalt"
+   ],
+   "answers": [
+    "Wegen der kaputten Heizung ist es sehr kalt.",
+    "Es ist wegen der kaputten Heizung sehr kalt."
+   ],
+   "en": "Because of the broken heating, it's very cold."
+  },
+  {
+   "id": "b1-t07-11",
+   "type": "cloze",
+   "de": "Bitte schicken Sie so schnell wie möglich einen ___.",
+   "base": "tradesman, repair person",
+   "answers": [
+    "Handwerker",
+    "Techniker",
+    "Installateur"
+   ],
+   "en": "Please send a repair person as soon as possible."
+  },
+  {
+   "id": "b1-t07-12",
+   "type": "choice",
+   "de": "Für Mieter ist die ___ meistens drei Monate.",
+   "options": [
+    "Probezeit",
+    "Kündigungsfrist",
+    "Mietzeit"
+   ],
+   "answer": 1,
+   "why": "The notice period is die Kündigungsfrist; die Probezeit is the trial period at a new job.",
+   "en": "For tenants the notice period is usually three months."
+  },
+  {
+   "id": "b1-t07-13",
+   "type": "cloze",
+   "de": "Die Vermieterin möchte die Miete um 50 Euro ___.",
+   "base": "raise, increase",
+   "answers": [
+    "erhöhen"
+   ],
+   "en": "The landlady wants to raise the rent by 50 euros."
+  },
+  {
+   "id": "b1-t07-14",
+   "type": "order",
+   "tiles": [
+    "Seit Montag",
+    "funktioniert",
+    "die Heizung",
+    "nicht"
+   ],
+   "answers": [
+    "Seit Montag funktioniert die Heizung nicht.",
+    "Die Heizung funktioniert seit Montag nicht."
+   ],
+   "en": "The heating hasn't worked since Monday."
+  },
+  {
+   "id": "b1-t07-15",
+   "type": "cloze",
+   "de": "Eine Kündigung per E-Mail ist nicht gültig. Sie braucht Ihre ___.",
+   "base": "signature",
+   "answers": [
+    "Unterschrift"
+   ],
+   "en": "Notice by email isn't valid. It needs your signature."
+  },
+  {
+   "id": "b1-t07-16",
+   "type": "choice",
+   "de": "Ich habe die Miete zu spät bezahlt und eine ___ bekommen.",
+   "options": [
+    "Kaution",
+    "Ermäßigung",
+    "Mahnung"
+   ],
+   "answer": 2,
+   "why": "A letter reminding you to pay is eine Mahnung; die Kaution is the deposit and eine Ermäßigung is a reduction.",
+   "en": "I paid the rent late and got a payment reminder."
+  },
+  {
+   "id": "b1-t07-17",
+   "type": "cloze",
+   "de": "Nach dem ___ bekommen Sie die Kaution zurück.",
+   "base": "moving out",
+   "answers": [
+    "Auszug"
+   ],
+   "en": "After you move out, you get the deposit back."
+  },
+  {
+   "id": "b1-t07-18",
+   "type": "order",
+   "tiles": [
+    "Der Handwerker",
+    "kann",
+    "entweder",
+    "am Montag",
+    "oder",
+    "am Dienstag",
+    "kommen"
+   ],
+   "answers": [
+    "Der Handwerker kann entweder am Montag oder am Dienstag kommen."
+   ],
+   "en": "The repair person can come either on Monday or on Tuesday."
+  },
+  {
+   "id": "b1-t07-19",
+   "type": "choice",
+   "de": "Das Wasser im Waschbecken läuft nicht ab. Der Abfluss ist ___.",
+   "options": [
+    "verstopft",
+    "besetzt",
+    "gesperrt"
+   ],
+   "answer": 0,
+   "why": "A blocked drain is verstopft; besetzt is used for a toilet or a phone line that is in use, and gesperrt for a closed road.",
+   "en": "The water in the basin isn't draining. The drain is blocked."
+  },
+  {
+   "id": "b1-t07-20",
+   "type": "cloze",
+   "de": "Die ___ sind dieses Jahr gestiegen, vor allem für die Heizung.",
+   "base": "service charges",
+   "answers": [
+    "Nebenkosten"
+   ],
+   "en": "The service charges went up this year, especially for heating."
+  },
+  {
+   "id": "b1-t07-21",
+   "type": "choice",
+   "de": "Ich möchte einen Schaden ___: An der Decke im Bad ist Wasser.",
+   "options": [
+    "sagen",
+    "melden",
+    "zeigen"
+   ],
+   "answer": 1,
+   "why": "To report damage is einen Schaden melden.",
+   "en": "I'd like to report damage: there's water on the bathroom ceiling."
+  },
+  {
+   "id": "b1-t07-22",
+   "type": "cloze",
+   "de": "Die Vermieterin muss die Heizung ___, nicht der Mieter.",
+   "base": "repair",
+   "answers": [
+    "reparieren"
+   ],
+   "en": "The landlady has to repair the heating, not the tenant."
+  },
+  {
+   "id": "b1-t07-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bitte",
+    "Sie",
+    "um",
+    "eine schnelle Antwort"
+   ],
+   "answers": [
+    "Ich bitte Sie um eine schnelle Antwort."
+   ],
+   "en": "I'd ask you for a quick reply."
+  },
+  {
+   "id": "b1-t07-24",
+   "type": "order",
+   "tiles": [
+    "Die Kaution",
+    "bekommen",
+    "Sie",
+    "nach dem Auszug",
+    "zurück"
+   ],
+   "answers": [
+    "Die Kaution bekommen Sie nach dem Auszug zurück.",
+    "Sie bekommen die Kaution nach dem Auszug zurück.",
+    "Nach dem Auszug bekommen Sie die Kaution zurück."
+   ],
+   "en": "You get the deposit back after you move out."
+  }
+ ],
+ "listening": {
+  "title": "Die Heizung ist kaputt",
+  "intro": "Antoine calls the Hausverwaltung because the heating in his flat has stopped working.",
+  "lines": [
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Hausverwaltung Meyer, Schmitt am Apparat. Guten Tag.",
+    "en": "Meyer property management, Schmitt speaking. Hello."
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Guten Tag, hier ist Antoine Petit aus der Lindenstraße 12, dritter Stock. Ich rufe wegen der Heizung an.",
+    "en": "Hello, this is Antoine Petit from Lindenstraße 12, third floor. I'm calling about the heating."
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Was ist denn das Problem?",
+    "en": "What's the problem?"
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Seit Freitag funktioniert sie nicht mehr. In der Wohnung sind es nur noch 16 Grad, und wir haben ein kleines Kind.",
+    "en": "It hasn't worked since Friday. It's only 16 degrees in the flat, and we have a small child."
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Oh, das tut mir leid. Haben Sie schon mit dem Hausmeister gesprochen?",
+    "en": "Oh, I'm sorry. Have you already spoken to the caretaker?"
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Ja, aber er kann das nicht reparieren. Dafür braucht man einen Handwerker, sagt er.",
+    "en": "Yes, but he can't repair it. You need a professional for that, he says."
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Gut, dann schicke ich Ihnen einen. Er kann entweder morgen Vormittag oder am Mittwoch kommen.",
+    "en": "OK, then I'll send you one. He can come either tomorrow morning or on Wednesday."
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Morgen Vormittag wäre super. Ich arbeite von zu Hause.",
+    "en": "Tomorrow morning would be great. I work from home."
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "In Ordnung, er kommt zwischen 8 und 12 Uhr. Bitte schicken Sie uns trotzdem noch eine kurze E-Mail mit Fotos.",
+    "en": "All right, he'll come between 8 and 12. But please still send us a short email with photos."
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Mache ich. Und noch eine Frage: Ich habe die Nebenkostenabrechnung bekommen. Ich soll 400 Euro nachzahlen. Ist das richtig?",
+    "en": "I will. And one more question: I've received the service-charge bill. I'm supposed to pay an extra 400 euros. Is that right?"
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Die Heizkosten sind dieses Jahr für alle Mieter gestiegen. Aber ich prüfe Ihre Abrechnung gern noch einmal.",
+    "en": "Heating costs went up for all tenants this year. But I'm happy to check your bill again."
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Danke. Muss ich das Geld sofort zahlen?",
+    "en": "Thanks. Do I have to pay the money straight away?"
+   },
+   {
+    "speaker": "Frau Schmitt",
+    "de": "Nein, Sie haben vier Wochen Zeit. Sie können auch in drei Raten zahlen.",
+    "en": "No, you have four weeks. You can also pay in three instalments."
+   },
+   {
+    "speaker": "Antoine",
+    "de": "Das ist gut. Vielen Dank für Ihre Hilfe!",
+    "en": "That's good. Thank you very much for your help!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Antoine calling?",
+    "options": [
+     "The heating hasn't worked since Friday",
+     "The water is too hot",
+     "He wants to move out"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "When will the repair person come?",
+    "options": [
+     "On Wednesday afternoon",
+     "Tomorrow morning",
+     "Today at 8"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What should Antoine send?",
+    "options": [
+     "His rental contract",
+     "The caretaker's bill",
+     "A short email with photos"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Frau Schmitt say about the extra payment?",
+    "options": [
+     "It's a mistake",
+     "He has four weeks and can pay in instalments",
+     "He must pay it today"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Wegen der kaputten Heizung sind es in der Wohnung nur 16 Grad.",
+  "Der Handwerker kann entweder morgen oder am Mittwoch kommen.",
+  "Hiermit kündige ich meinen Mietvertrag zum 31. Mai."
+ ],
+ "speaking": [
+  {
+   "de": "Ich rufe wegen der Heizung an.",
+   "en": "I'm calling about the heating."
+  },
+  {
+   "de": "Seit Freitag funktioniert sie nicht mehr.",
+   "en": "It hasn't worked since Friday."
+  },
+  {
+   "de": "Morgen Vormittag wäre super.",
+   "en": "Tomorrow morning would be great."
+  },
+  {
+   "de": "Ich habe die Nebenkostenabrechnung bekommen.",
+   "en": "I've received the service-charge bill."
+  },
+  {
+   "de": "Muss ich das Geld sofort zahlen?",
+   "en": "Do I have to pay the money straight away?"
+  }
+ ],
+ "writing": {
+  "task": "The window in your bedroom doesn't close properly and it's cold. Write an 80–100-word email to the Hausverwaltung: describe the problem, say since when, and ask for a repair.",
+  "model": "Betreff: Defektes Fenster, Lindenstraße 12, 3. Stock\n\nSehr geehrte Damen und Herren,\n\nseit zwei Wochen kann man das Fenster in meinem Schlafzimmer nicht mehr richtig schließen. Wegen des kalten Wetters ist es im Zimmer jetzt sehr kalt, und die Heizkosten steigen. Der Hausmeister hat sich das Fenster schon angesehen, aber er kann es nicht reparieren. Bitte schicken Sie so schnell wie möglich einen Handwerker. Ich bin entweder vormittags oder ab 17 Uhr zu Hause. Fotos vom Fenster finden Sie im Anhang. Ich bitte Sie um eine kurze Antwort.\n\nMit freundlichen Grüßen\nAntoine Petit"
+ }
+}

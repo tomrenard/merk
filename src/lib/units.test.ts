@@ -1,7 +1,8 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
+import { Exam, examProblems } from "./exams.ts";
 import { seededShuffle } from "./shuffle.ts";
-import { buildsFrom, Unit, unitProblems } from "./units.ts";
+import { buildsFrom, PARTS_OF_COURSE, SYLLABUS, Unit, unitProblems } from "./units.ts";
 
 describe("buildsFrom", () => {
   it.each([
@@ -31,5 +32,22 @@ describe("seededShuffle", () => {
     expect(seededShuffle(items, "a1-01-02")).toEqual(seededShuffle(items, "a1-01-02"));
     expect(seededShuffle(items, "a1-01-02")).not.toEqual(seededShuffle(items, "a1-01-03"));
     expect([...seededShuffle(items, "x")].sort()).toEqual(items);
+  });
+});
+
+describe("course structure", () => {
+  it("lists every syllabus lesson exactly once", () => {
+    const course = PARTS_OF_COURSE.flatMap((part) => part.lessons as readonly string[]);
+    expect(new Set(course).size).toBe(course.length);
+    expect([...course].sort()).toEqual(SYLLABUS.map((s) => s.id).sort());
+  });
+});
+
+const examDir = new URL("../../data/exams/", import.meta.url).pathname;
+describe.each(readdirSync(examDir).filter((f) => f.endsWith(".json")))("data/exams/%s", (file) => {
+  it("has the right shape and no problems", () => {
+    const exam = Exam.parse(JSON.parse(readFileSync(`${examDir}${file}`, "utf8")));
+    expect(exam.id).toBe(file.replace(".json", ""));
+    expect(examProblems(exam)).toEqual([]);
   });
 });

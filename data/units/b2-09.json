@@ -1,0 +1,489 @@
+{
+ "id": "b2-09",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "als ob and past modal forms",
+ "situation": "Comparing and imagining",
+ "canDo": "You can compare things with unreal situations using als ob / als + Konjunktiv II and say what someone should or could have done (hätte … machen sollen/können).",
+ "explanation": "When you compare reality with something imagined, or look back at what you should have done, you need two more uses of the **Konjunktiv II**.\n\n**1. als ob / als: \"as if\"**\n- *Er tut so, **als ob** er alles **wüsste**.* (He doesn't.) **als ob** sends the verb to the end.\n- Without *ob*, the verb comes **straight after als**: *Er tut so, **als wüsste** er alles.*\n- Past: *Sie sieht aus, **als ob** sie nicht geschlafen **hätte**.* / *…, **als hätte** sie nicht geschlafen.*\n- Typical frames: *so tun, als ob* (to act as if), *aussehen, als ob*, *sich anfühlen, als ob*, *klingen, als ob*, *Es kommt mir vor, als ob…*\n- Useful forms: *wäre, hätte, würde, könnte, wüsste, käme, ginge*. In written texts you'll also see Konjunktiv I: *als **sei** nichts passiert*.\n\n**2. Modal verbs in the past: should have, could have**\n\n| meaning | German |\n|---|---|\n| I should have come earlier. | Ich **hätte** früher **kommen sollen**. |\n| You could have called me. | Du **hättest** mich anrufen **können**. |\n| We wouldn't have had to pay. | Wir **hätten** nicht zahlen **müssen**. |\n\n- Always **hätte** + infinitive + modal **infinitive** (*sollen, können, müssen*), never a participle like ~~gesollt~~.\n- It's **hätte** even with verbs that normally take *sein*: *Ich **hätte** zu Hause **bleiben sollen**.*\n- In a subordinate clause *hätte* comes **before** the two infinitives: *Ich weiß, dass ich mehr **hätte lernen sollen**.*\n\nThe most common mistakes:\n- normal word order after *als ob*: not ~~als ob er weiß alles~~, but *als ob er alles wüsste*.\n- ~~Ich wäre gehen sollen~~ instead of *Ich **hätte** gehen sollen*.\n- ~~Ich hätte kommen gesollt~~ instead of *Ich hätte kommen **sollen***.",
+ "french": "als ob is comme si and, as in French, you use a 'past-looking' form for something unreal (comme s'il savait tout = als ob er alles wüsste); j'aurais dû venir = ich hätte kommen sollen, tu aurais pu m'appeler = du hättest mich anrufen können.",
+ "examples": [
+  {
+   "de": "Er tut so, als ob er alles wüsste.",
+   "en": "He acts as if he knew everything."
+  },
+  {
+   "de": "Du siehst aus, als hättest du die ganze Nacht nicht geschlafen.",
+   "en": "You look as if you hadn't slept all night."
+  },
+  {
+   "de": "Es fühlt sich an, als wäre ich nie weg gewesen.",
+   "en": "It feels as if I'd never been away."
+  },
+  {
+   "de": "Sie spricht Deutsch, als wäre sie hier geboren.",
+   "en": "She speaks German as if she'd been born here."
+  },
+  {
+   "de": "Ich hätte früher losfahren sollen.",
+   "en": "I should have set off earlier."
+  },
+  {
+   "de": "Du hättest mich ruhig anrufen können!",
+   "en": "You could have called me, you know!"
+  },
+  {
+   "de": "Wir hätten nicht so lange warten müssen, wenn wir reserviert hätten.",
+   "en": "We wouldn't have had to wait so long if we'd booked."
+  },
+  {
+   "de": "An deiner Stelle hätte ich das Angebot angenommen.",
+   "en": "In your place, I would have accepted the offer."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-09-01",
+   "type": "cloze",
+   "de": "Er tut so, als ob er alles ___.",
+   "base": "wissen (Konjunktiv II)",
+   "answers": [
+    "wüsste"
+   ],
+   "en": "He acts as if he knew everything."
+  },
+  {
+   "id": "b2-09-02",
+   "type": "choice",
+   "de": "Du siehst aus, als ___ du die ganze Nacht nicht geschlafen.",
+   "options": [
+    "hättest",
+    "hast",
+    "wärst"
+   ],
+   "answer": 0,
+   "why": "After als the verb comes straight away in Konjunktiv II, and schlafen takes haben: hättest.",
+   "en": "You look as if you hadn't slept all night."
+  },
+  {
+   "id": "b2-09-03",
+   "type": "cloze",
+   "de": "Ich ___ früher losfahren sollen.",
+   "base": "haben",
+   "answers": [
+    "hätte"
+   ],
+   "en": "I should have set off earlier."
+  },
+  {
+   "id": "b2-09-04",
+   "type": "order",
+   "tiles": [
+    "Er",
+    "tut",
+    "so",
+    "als ob",
+    "er",
+    "krank",
+    "wäre"
+   ],
+   "answers": [
+    "Er tut so, als ob er krank wäre."
+   ],
+   "en": "He's acting as if he were ill."
+  },
+  {
+   "id": "b2-09-05",
+   "type": "choice",
+   "de": "Sie spricht Deutsch, als ___ sie hier geboren.",
+   "options": [
+    "ist",
+    "wäre",
+    "würde"
+   ],
+   "answer": 1,
+   "why": "als + verb needs Konjunktiv II, and geboren goes with sein: wäre.",
+   "en": "She speaks German as if she'd been born here."
+  },
+  {
+   "id": "b2-09-06",
+   "type": "cloze",
+   "de": "Du ___ mich ruhig anrufen können!",
+   "base": "haben",
+   "answers": [
+    "hättest"
+   ],
+   "en": "You could have called me, you know!"
+  },
+  {
+   "id": "b2-09-07",
+   "type": "choice",
+   "de": "Ich hätte gestern zum Arzt gehen ___.",
+   "options": [
+    "gesollt",
+    "sollen",
+    "soll"
+   ],
+   "answer": 1,
+   "why": "With hätte + infinitive, the modal is also an infinitive: gehen sollen.",
+   "en": "I should have gone to the doctor yesterday."
+  },
+  {
+   "id": "b2-09-08",
+   "type": "cloze",
+   "de": "Es fühlt sich an, als ___ ich nie weg gewesen.",
+   "base": "sein",
+   "answers": [
+    "wäre",
+    "sei"
+   ],
+   "en": "It feels as if I'd never been away."
+  },
+  {
+   "id": "b2-09-09",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "hätten",
+    "früher",
+    "reservieren",
+    "sollen"
+   ],
+   "answers": [
+    "Wir hätten früher reservieren sollen."
+   ],
+   "en": "We should have booked earlier."
+  },
+  {
+   "id": "b2-09-10",
+   "type": "cloze",
+   "de": "Das Essen schmeckt, als ob meine Oma es gekocht ___.",
+   "base": "haben (Konjunktiv II)",
+   "answers": [
+    "hätte"
+   ],
+   "en": "The food tastes as if my grandma had cooked it."
+  },
+  {
+   "id": "b2-09-11",
+   "type": "choice",
+   "de": "Ich ___ gestern nicht so spät nach Hause gehen sollen.",
+   "options": [
+    "wäre",
+    "würde",
+    "hätte"
+   ],
+   "answer": 2,
+   "why": "With a modal verb it's always hätte, even though gehen normally takes sein.",
+   "en": "I shouldn't have gone home so late yesterday."
+  },
+  {
+   "id": "b2-09-12",
+   "type": "cloze",
+   "de": "Mach nicht so ein Gesicht, als ___ die Welt unter!",
+   "base": "gehen",
+   "answers": [
+    "ginge",
+    "gehe"
+   ],
+   "en": "Don't pull such a face, as if the world were ending!"
+  },
+  {
+   "id": "b2-09-13",
+   "type": "order",
+   "tiles": [
+    "Es",
+    "klingt",
+    "als",
+    "hättest",
+    "du",
+    "eine Erkältung"
+   ],
+   "answers": [
+    "Es klingt, als hättest du eine Erkältung."
+   ],
+   "en": "It sounds as if you had a cold."
+  },
+  {
+   "id": "b2-09-14",
+   "type": "choice",
+   "de": "Er tut so, ___ er nichts gehört hätte.",
+   "options": [
+    "wenn",
+    "als ob",
+    "wie"
+   ],
+   "answer": 1,
+   "why": "'As if' is als ob.",
+   "en": "He's acting as if he hadn't heard anything."
+  },
+  {
+   "id": "b2-09-15",
+   "type": "cloze",
+   "de": "Wir ___ das Auto nicht kaufen müssen. Das Fahrrad hätte gereicht.",
+   "base": "haben",
+   "answers": [
+    "hätten"
+   ],
+   "en": "We needn't have bought the car. The bike would have been enough."
+  },
+  {
+   "id": "b2-09-16",
+   "type": "choice",
+   "de": "Sie tut so, als ___ sie keine Zeit.",
+   "options": [
+    "hätte",
+    "hat",
+    "haben"
+   ],
+   "answer": 0,
+   "why": "When als is followed directly by the verb, you can't use the indicative: hätte.",
+   "en": "She acts as if she had no time."
+  },
+  {
+   "id": "b2-09-17",
+   "type": "cloze",
+   "de": "Du hättest mir das früher sagen ___.",
+   "base": "müssen",
+   "answers": [
+    "müssen"
+   ],
+   "en": "You should have told me that earlier."
+  },
+  {
+   "id": "b2-09-18",
+   "type": "order",
+   "tiles": [
+    "An deiner Stelle",
+    "hätte",
+    "ich",
+    "das Angebot",
+    "angenommen"
+   ],
+   "answers": [
+    "An deiner Stelle hätte ich das Angebot angenommen.",
+    "Ich hätte das Angebot an deiner Stelle angenommen."
+   ],
+   "en": "In your place, I would have accepted the offer."
+  },
+  {
+   "id": "b2-09-19",
+   "type": "choice",
+   "de": "Ich weiß, dass ich mehr ___.",
+   "options": [
+    "lernen sollen hätte",
+    "hätte gelernt sollen",
+    "hätte lernen sollen"
+   ],
+   "answer": 2,
+   "why": "In a subordinate clause, hätte comes before the two infinitives.",
+   "en": "I know I should have studied more."
+  },
+  {
+   "id": "b2-09-20",
+   "type": "cloze",
+   "de": "Mir ist, als ob ich ihn schon einmal gesehen ___.",
+   "base": "haben (Konjunktiv II)",
+   "answers": [
+    "hätte"
+   ],
+   "en": "I feel as if I'd seen him before."
+  },
+  {
+   "id": "b2-09-21",
+   "type": "order",
+   "tiles": [
+    "Du",
+    "hättest",
+    "mich",
+    "fragen",
+    "können"
+   ],
+   "answers": [
+    "Du hättest mich fragen können.",
+    "Mich hättest du fragen können."
+   ],
+   "en": "You could have asked me."
+  },
+  {
+   "id": "b2-09-22",
+   "type": "choice",
+   "de": "Er benimmt sich, als ___ ihm das ganze Haus.",
+   "options": [
+    "gehört",
+    "gehörte",
+    "gehören"
+   ],
+   "answer": 1,
+   "why": "als + verb needs Konjunktiv II; for gehören it looks like the Präteritum: gehörte.",
+   "en": "He behaves as if the whole house belonged to him."
+  },
+  {
+   "id": "b2-09-23",
+   "type": "cloze",
+   "de": "Sie hätte den Zug noch erreichen ___, aber sie hat zu lange gewartet.",
+   "base": "können",
+   "answers": [
+    "können"
+   ],
+   "en": "She could still have caught the train, but she waited too long."
+  },
+  {
+   "id": "b2-09-24",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "sieht",
+    "aus",
+    "als ob",
+    "sie",
+    "im Urlaub",
+    "gewesen wäre"
+   ],
+   "answers": [
+    "Sie sieht aus, als ob sie im Urlaub gewesen wäre."
+   ],
+   "en": "She looks as if she'd been on holiday."
+  }
+ ],
+ "listening": {
+  "title": "Zurück aus Lissabon",
+  "intro": "Simon has just come back to Hamburg after a year in Lisbon, and his friend Paula meets him for a coffee.",
+  "lines": [
+   {
+    "speaker": "Paula",
+    "de": "Simon! Du bist zurück! Du siehst aus, als wärst du gerade aus dem Urlaub gekommen.",
+    "en": "Simon! You're back! You look as if you'd just come back from holiday."
+   },
+   {
+    "speaker": "Simon",
+    "de": "So fühlt es sich auch an. Ein Jahr Lissabon war wie ein langer Urlaub.",
+    "en": "That's what it feels like, too. A year in Lisbon was like one long holiday."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Und wie ist es, wieder in Hamburg zu sein?",
+    "en": "And what's it like to be back in Hamburg?"
+   },
+   {
+    "speaker": "Simon",
+    "de": "Komisch. Es kommt mir vor, als wäre ich nie weg gewesen. Alles ist genau wie vorher.",
+    "en": "Strange. It feels as if I'd never been away. Everything is exactly as before."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Vermisst du Portugal?",
+    "en": "Do you miss Portugal?"
+   },
+   {
+    "speaker": "Simon",
+    "de": "Sehr. Ich hätte noch ein Jahr bleiben sollen. Die Firma hätte meinen Vertrag sogar verlängert.",
+    "en": "A lot. I should have stayed another year. The company would even have extended my contract."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Und warum bist du nicht geblieben?",
+    "en": "So why didn't you stay?"
+   },
+   {
+    "speaker": "Simon",
+    "de": "Meine Freundin wollte zurück. Sie hat dort nie richtig Arbeit gefunden.",
+    "en": "My girlfriend wanted to come back. She never really found work there."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Hätte sie nicht Portugiesisch lernen können?",
+    "en": "Couldn't she have learned Portuguese?"
+   },
+   {
+    "speaker": "Simon",
+    "de": "Hat sie ja. Aber die Leute haben immer mit ihr geredet, als ob sie eine Touristin wäre – auf Englisch.",
+    "en": "She did. But people always talked to her as if she were a tourist – in English."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Das kenne ich! Hier tun manche auch so, als würde ich kein Deutsch verstehen, nur wegen meines Akzents.",
+    "en": "I know that feeling! Here some people act as if I didn't understand German, just because of my accent."
+   },
+   {
+    "speaker": "Simon",
+    "de": "Ehrlich gesagt hätten wir beide den Umzug besser planen müssen.",
+    "en": "To be honest, we both should have planned the move better."
+   },
+   {
+    "speaker": "Paula",
+    "de": "Na ja, jetzt bist du hier. Und ich freue mich, als hätte ich Geburtstag!",
+    "en": "Well, now you're here. And I'm as happy as if it were my birthday!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Simon live for a year?",
+    "options": [
+     "In Porto.",
+     "In Lisbon.",
+     "In Hamburg."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Simon regret?",
+    "options": [
+     "Not staying another year.",
+     "Moving to Portugal at all.",
+     "Not learning Portuguese."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why did Simon come back?",
+    "options": [
+     "His contract ended.",
+     "He missed Hamburg.",
+     "His girlfriend wanted to go back."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How did people in Portugal treat his girlfriend?",
+    "options": [
+     "They didn't talk to her.",
+     "They spoke English to her as if she were a tourist.",
+     "They corrected her Portuguese all the time."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Er tut immer so, als ob er alles besser wüsste.",
+  "Ich hätte gestern früher ins Bett gehen sollen.",
+  "Du siehst aus, als hättest du gar nicht geschlafen."
+ ],
+ "speaking": [
+  {
+   "de": "Es kommt mir vor, als wäre ich nie weg gewesen.",
+   "en": "It feels as if I'd never been away."
+  },
+  {
+   "de": "Ich hätte noch ein Jahr bleiben sollen.",
+   "en": "I should have stayed another year."
+  },
+  {
+   "de": "Hätte sie nicht Portugiesisch lernen können?",
+   "en": "Couldn't she have learned Portuguese?"
+  },
+  {
+   "de": "Manche tun so, als würde ich kein Deutsch verstehen.",
+   "en": "Some people act as if I didn't understand German."
+  },
+  {
+   "de": "Wir hätten den Umzug besser planen müssen.",
+   "en": "We should have planned the move better."
+  }
+ ],
+ "writing": {
+  "task": "You moved to a German city a few months ago. Write a message of about 100 words to a friend back home: compare your new life with how you imagined it (als ob / als) and say what you should or could have done differently (hätte … sollen/können/müssen).",
+  "model": "Liebe Sophie,\n\njetzt wohne ich seit drei Monaten in Leipzig, und manchmal kommt es mir vor, als wäre ich schon immer hier gewesen. Die Leute sind freundlich, auch wenn sie oft so tun, als ob sie keine Zeit hätten. Im Vergleich zu Lyon ist alles ruhiger und billiger. Trotzdem hätte ich einiges anders machen sollen. Ich hätte vor dem Umzug mehr Deutsch lernen sollen, dann wären die ersten Wochen leichter gewesen. Und ich hätte mir früher eine Wohnung suchen müssen – die ersten zwei Monate habe ich bei einer Kollegin gewohnt. Du hättest mich übrigens ruhig mal besuchen können! Wann kommst du?\n\nLiebe Grüße\nClaire"
+ }
+}

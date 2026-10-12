@@ -29,6 +29,7 @@ const FILTERS: { key: string; label: string; where: SQL }[] = [
   { key: "A1", label: "A1", where: sql`${notes.cefr} = 'A1'` },
   { key: "A2", label: "A2", where: sql`${notes.cefr} = 'A2'` },
   { key: "B1", label: "B1", where: sql`${notes.cefr} = 'B1'` },
+  { key: "B2", label: "B2", where: sql`${notes.cefr} = 'B2'` },
   { key: "phrases", label: "Phrases", where: sql`${notes.source} = 'phrase'` },
   { key: "mine", label: "Mine", where: sql`${notes.source} = 'mine'` },
 ];
@@ -88,7 +89,7 @@ export default async function WordsPage({
           <Link
             key={f.key}
             href={f.key ? `/words?filter=${f.key}` : "/words"}
-            className={`chip shrink-0 border-2 ${(filter?.key ?? "") === f.key ? "border-[var(--brand)] bg-[var(--brand-soft)] text-[var(--brand)]" : "line muted"}`}
+            className={`chip shrink-0 border ${(filter?.key ?? "") === f.key ? "border-[var(--brand)] bg-[var(--brand-soft)] text-[var(--brand)]" : "line muted"}`}
           >
             {f.label}
           </Link>
@@ -99,7 +100,7 @@ export default async function WordsPage({
           ? `First ${SHOWN}: search to find more`
           : `${words.length} ${q ? "found" : "words"}`}
       </p>
-      <ul className="card flex flex-col divide-y-2 divide-[var(--line)] py-0">
+      <ul className="card flex flex-col divide-y divide-[var(--line)] py-0">
         {words.slice(0, SHOWN).map((word) => (
           <li key={word.id}>
             <Link

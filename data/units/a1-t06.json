@@ -1,0 +1,496 @@
+{
+ "id": "a1-t06",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "die Kleidung",
+  "die Hose",
+  "das Hemd",
+  "die Bluse",
+  "das Kleid",
+  "der Rock",
+  "der Pullover",
+  "die Jacke",
+  "der Mantel",
+  "der Schuh",
+  "das T-Shirt",
+  "die Jeans",
+  "der Anzug",
+  "die Mütze",
+  "die Größe",
+  "die Farbe",
+  "schwarz",
+  "weiß",
+  "rot",
+  "blau",
+  "grün",
+  "grau",
+  "passen",
+  "gefallen",
+  "tragen",
+  "suchen",
+  "bequem",
+  "das Kaufhaus",
+  "der Verkäufer",
+  "die Mode"
+ ],
+ "title": "Clothes and shopping",
+ "situation": "In a clothes shop",
+ "canDo": "I can name clothes and colours, ask for a size or colour, try things on and say if they fit.",
+ "explanation": "In a clothes shop you say what you're looking for, give your size and try things on.\n\n| German | English |\n|---|---|\n| die Hose, -n / die Jeans, - | trousers / jeans |\n| das Hemd, -en / die Bluse, -n | shirt / blouse |\n| das T-Shirt, -s / der Pullover, - | T-shirt / jumper |\n| das Kleid, -er / der Rock, Röcke | dress / skirt |\n| die Jacke, -n / der Mantel, Mäntel | jacket / coat |\n| der Schuh, -e / die Mütze, -n | shoe / woolly hat |\n| schwarz, weiß, grau, rot, blau, grün | black, white, grey, red, blue, green |\n\n| Phrase | English |\n|---|---|\n| Ich suche eine Jacke. | I'm looking for a jacket. |\n| Welche Größe haben Sie? – 38. | What size are you? – 38. |\n| Kann ich das anprobieren? | Can I try it on? |\n| Die Hose passt (nicht). | The trousers fit (don't fit). |\n| Der Rock ist zu kurz / zu groß. | The skirt is too short / too big. |\n| Haben Sie das auch in Blau? | Do you have it in blue too? |\n\nTips:\n- **passen** = the right size; **gefallen** = you like how it looks: *Die Jacke passt, aber sie gefällt mir nicht.*\n- After *sein*, colours have no ending: *Der Rock ist rot.* As a noun, the colour has a capital: *in Blau*.\n- **die Hose** and **die Jeans** are singular: *Die Hose ist zu lang.*\n- Shoe sizes are the same as in France (39, 42), but women's clothes are one size lower: French 40 = German 38.\n- **tragen** (to wear) is irregular: *du trägst, er trägt*.",
+ "french": "Watch the genders: la chemise is das Hemd, la robe is das Kleid, la jupe is der Rock and le pantalon is die Hose.",
+ "examples": [
+  {
+   "de": "Ich suche eine Jacke für den Winter.",
+   "en": "I'm looking for a jacket for the winter."
+  },
+  {
+   "de": "Welche Größe haben Sie? – Größe 40.",
+   "en": "What size are you? – Size 40."
+  },
+  {
+   "de": "Kann ich die Hose anprobieren?",
+   "en": "Can I try the trousers on?"
+  },
+  {
+   "de": "Die Schuhe sind schön, aber sie sind zu klein.",
+   "en": "The shoes are nice, but they're too small."
+  },
+  {
+   "de": "Haben Sie das Kleid auch in Blau?",
+   "en": "Do you have the dress in blue too?"
+  },
+  {
+   "de": "Der Pullover ist sehr bequem.",
+   "en": "The jumper is very comfortable."
+  },
+  {
+   "de": "Im Büro trage ich ein Hemd und eine Hose.",
+   "en": "At the office I wear a shirt and trousers."
+  },
+  {
+   "de": "Die Jeans passt super!",
+   "en": "The jeans fit really well!"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t06-01",
+   "type": "cloze",
+   "de": "Ich suche eine ___ für den Winter.",
+   "base": "jacket",
+   "answers": [
+    "Jacke"
+   ],
+   "en": "I'm looking for a jacket for the winter."
+  },
+  {
+   "id": "a1-t06-02",
+   "type": "cloze",
+   "de": "Im Sommer trage ich oft ein ___.",
+   "base": "dress",
+   "answers": [
+    "Kleid"
+   ],
+   "en": "In summer I often wear a dress."
+  },
+  {
+   "id": "a1-t06-03",
+   "type": "choice",
+   "de": "Welche ___ haben Sie? – 38.",
+   "options": [
+    "Farbe",
+    "Größe",
+    "Mode"
+   ],
+   "answer": 1,
+   "why": "38 is a size: die Größe.",
+   "en": "What size are you? – 38."
+  },
+  {
+   "id": "a1-t06-04",
+   "type": "order",
+   "tiles": [
+    "eine Hose",
+    "suche",
+    "Ich"
+   ],
+   "answers": [
+    "Ich suche eine Hose.",
+    "Eine Hose suche ich."
+   ],
+   "en": "I'm looking for a pair of trousers."
+  },
+  {
+   "id": "a1-t06-05",
+   "type": "cloze",
+   "de": "Die Schuhe sind zu klein. Ich brauche ___ 42.",
+   "base": "size",
+   "answers": [
+    "Größe"
+   ],
+   "en": "The shoes are too small. I need size 42."
+  },
+  {
+   "id": "a1-t06-06",
+   "type": "choice",
+   "de": "Die Hose ist zu groß. Sie ___ nicht.",
+   "options": [
+    "gefällt",
+    "trägt",
+    "passt"
+   ],
+   "answer": 2,
+   "why": "passen = to be the right size; gefallen = to like the look.",
+   "en": "The trousers are too big. They don't fit."
+  },
+  {
+   "id": "a1-t06-07",
+   "type": "cloze",
+   "de": "Kann ich den Pullover ___?",
+   "base": "to try on",
+   "answers": [
+    "anprobieren"
+   ],
+   "en": "Can I try the jumper on?"
+  },
+  {
+   "id": "a1-t06-08",
+   "type": "choice",
+   "de": "Der Rock ist ___.",
+   "options": [
+    "rot",
+    "rote",
+    "roter"
+   ],
+   "answer": 0,
+   "why": "After sein, colours have no ending: Der Rock ist rot.",
+   "en": "The skirt is red."
+  },
+  {
+   "id": "a1-t06-09",
+   "type": "order",
+   "tiles": [
+    "anprobieren",
+    "ich",
+    "Kann",
+    "das"
+   ],
+   "answers": [
+    "Kann ich das anprobieren?"
+   ],
+   "en": "Can I try it on?"
+  },
+  {
+   "id": "a1-t06-10",
+   "type": "cloze",
+   "de": "Im Büro trägt er immer einen ___.",
+   "base": "suit",
+   "answers": [
+    "Anzug"
+   ],
+   "en": "At the office he always wears a suit."
+  },
+  {
+   "id": "a1-t06-11",
+   "type": "choice",
+   "de": "Die Ohren sind kalt. Ich brauche eine ___.",
+   "options": [
+    "Bluse",
+    "Jeans",
+    "Mütze"
+   ],
+   "answer": 2,
+   "why": "A Mütze is a warm hat that covers your ears.",
+   "en": "My ears are cold. I need a woolly hat."
+  },
+  {
+   "id": "a1-t06-12",
+   "type": "cloze",
+   "de": "Der Pullover ist weich und sehr ___.",
+   "base": "comfortable",
+   "answers": [
+    "bequem"
+   ],
+   "en": "The jumper is soft and very comfortable."
+  },
+  {
+   "id": "a1-t06-13",
+   "type": "choice",
+   "de": "Im Sommer trage ich ___ T-Shirt.",
+   "options": [
+    "ein",
+    "einen",
+    "eine"
+   ],
+   "answer": 0,
+   "why": "das T-Shirt is neuter: ein T-Shirt.",
+   "en": "In summer I wear a T-shirt."
+  },
+  {
+   "id": "a1-t06-14",
+   "type": "order",
+   "tiles": [
+    "zu kurz",
+    "Der Rock",
+    "ist",
+    "leider"
+   ],
+   "answers": [
+    "Der Rock ist leider zu kurz.",
+    "Leider ist der Rock zu kurz."
+   ],
+   "en": "Unfortunately the skirt is too short."
+  },
+  {
+   "id": "a1-t06-15",
+   "type": "cloze",
+   "de": "Die Schuhe sind ___ und weiß.",
+   "base": "black",
+   "answers": [
+    "schwarz"
+   ],
+   "en": "The shoes are black and white."
+  },
+  {
+   "id": "a1-t06-16",
+   "type": "choice",
+   "de": "Ich suche ___ für meinen Mann.",
+   "options": [
+    "eine Hemd",
+    "ein Hemd",
+    "einen Hemd"
+   ],
+   "answer": 1,
+   "why": "das Hemd is neuter: ein Hemd.",
+   "en": "I'm looking for a shirt for my husband."
+  },
+  {
+   "id": "a1-t06-17",
+   "type": "cloze",
+   "de": "Der ___ fragt: Kann ich helfen?",
+   "base": "shop assistant (man)",
+   "answers": [
+    "Verkäufer"
+   ],
+   "en": "The shop assistant asks: Can I help?"
+  },
+  {
+   "id": "a1-t06-18",
+   "type": "choice",
+   "de": "Die Jeans ist zu lang. Haben Sie sie auch eine ___ kleiner?",
+   "options": [
+    "Größe",
+    "Farbe",
+    "Mode"
+   ],
+   "answer": 0,
+   "why": "A smaller size is 'eine Größe kleiner'.",
+   "en": "The jeans are too long. Do you have them one size smaller?"
+  },
+  {
+   "id": "a1-t06-19",
+   "type": "order",
+   "tiles": [
+    "die Bluse",
+    "Sie",
+    "in Blau",
+    "Haben",
+    "auch"
+   ],
+   "answers": [
+    "Haben Sie die Bluse auch in Blau?"
+   ],
+   "en": "Do you have the blouse in blue too?"
+  },
+  {
+   "id": "a1-t06-20",
+   "type": "cloze",
+   "de": "Im ___ gibt es Kleidung, Schuhe und Taschen.",
+   "base": "department store",
+   "answers": [
+    "Kaufhaus"
+   ],
+   "en": "In the department store there are clothes, shoes and bags."
+  },
+  {
+   "id": "a1-t06-21",
+   "type": "choice",
+   "de": "Die Hose passt nicht. Ich ___ eine Größe kleiner.",
+   "options": [
+    "bin",
+    "brauche",
+    "passe"
+   ],
+   "answer": 1,
+   "why": "You need a smaller size: Ich brauche eine Größe kleiner.",
+   "en": "The trousers don't fit. I need a size smaller."
+  },
+  {
+   "id": "a1-t06-22",
+   "type": "cloze",
+   "de": "Mein ___ ist warm und bequem.",
+   "base": "jumper",
+   "answers": [
+    "Pullover",
+    "Pulli"
+   ],
+   "en": "My jumper is warm and comfortable."
+  },
+  {
+   "id": "a1-t06-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "muss",
+    "kaufen",
+    "neue Schuhe"
+   ],
+   "answers": [
+    "Ich muss neue Schuhe kaufen.",
+    "Neue Schuhe muss ich kaufen."
+   ],
+   "en": "I have to buy new shoes."
+  },
+  {
+   "id": "a1-t06-24",
+   "type": "order",
+   "tiles": [
+    "anprobieren",
+    "Kann",
+    "die Schuhe",
+    "ich",
+    "in Größe 39"
+   ],
+   "answers": [
+    "Kann ich die Schuhe in Größe 39 anprobieren?"
+   ],
+   "en": "Can I try the shoes on in size 39?"
+  }
+ ],
+ "listening": {
+  "title": "Eine Jacke für den Winter",
+  "intro": "Sophie is looking for a winter jacket and a shop assistant, Jan, helps her.",
+  "lines": [
+   {
+    "speaker": "Jan",
+    "de": "Guten Tag! Kann ich Ihnen helfen?",
+    "en": "Hello! Can I help you?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, bitte. Ich suche eine Jacke für den Winter.",
+    "en": "Yes, please. I'm looking for a jacket for the winter."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Welche Größe haben Sie?",
+    "en": "What size are you?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Größe 38.",
+    "en": "Size 38."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Hier, die Jacke ist sehr warm. Wir haben sie in Schwarz und in Grau.",
+    "en": "Here, this jacket is very warm. We have it in black and in grey."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Schwarz, bitte. Kann ich sie anprobieren?",
+    "en": "Black, please. Can I try it on?"
+   },
+   {
+    "speaker": "Jan",
+    "de": "Natürlich. Die Kabine ist da hinten.",
+    "en": "Of course. The changing room is back there."
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Hm, die Jacke ist schön, aber sie ist zu groß.",
+    "en": "Hm, the jacket is nice, but it's too big."
+   },
+   {
+    "speaker": "Jan",
+    "de": "Hier ist Größe 36. Passt sie?",
+    "en": "Here's size 36. Does it fit?"
+   },
+   {
+    "speaker": "Sophie",
+    "de": "Ja, sie passt super und sie ist bequem. Ich nehme sie!",
+    "en": "Yes, it fits really well and it's comfortable. I'll take it!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Sophie looking for?",
+    "options": [
+     "a coat",
+     "a winter jacket",
+     "a jumper"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Which colours does the jacket come in?",
+    "options": [
+     "black and grey",
+     "black and blue",
+     "grey and white"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What's wrong with the first jacket?",
+    "options": [
+     "It's too small.",
+     "It's too expensive.",
+     "It's too big."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Which size does she take in the end?",
+    "options": [
+     "36",
+     "38",
+     "40"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Ich suche eine Jacke.",
+  "Kann ich die Hose anprobieren?",
+  "Die Schuhe sind zu klein."
+ ],
+ "speaking": [
+  {
+   "de": "Ich suche eine Jacke für den Winter.",
+   "en": "I'm looking for a jacket for the winter."
+  },
+  {
+   "de": "Ich habe Größe 38.",
+   "en": "I'm a size 38."
+  },
+  {
+   "de": "Kann ich sie anprobieren?",
+   "en": "Can I try it on?"
+  },
+  {
+   "de": "Die Jacke ist zu groß.",
+   "en": "The jacket is too big."
+  },
+  {
+   "de": "Sie passt super. Ich nehme sie!",
+   "en": "It fits really well. I'll take it!"
+  }
+ ],
+ "writing": {
+  "task": "You're out shopping. Write a short message (3–4 sentences) to a friend: what you've found, the colour and size, and whether it fits.",
+  "model": "Hallo Mia! Ich bin im Kaufhaus. Ich habe einen Pullover in Grün, Größe M. Er ist sehr bequem und er passt gut. Jetzt suche ich noch Schuhe!"
+ }
+}

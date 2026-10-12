@@ -1,0 +1,500 @@
+{
+ "id": "b2-06",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Nominal style in formal writing",
+ "situation": "Formal letters and reports",
+ "canDo": "You can understand and write formal sentences that use nouns instead of clauses, with aufgrund, infolge, hinsichtlich, bei, nach and während.",
+ "explanation": "Letters from your landlord, bank or the Bürgeramt rarely say *weil es geregnet hat*. Formal German turns clauses into **nouns**:\n\n| everyday | formal |\n|---|---|\n| Weil es stark geregnet hat, … | **Aufgrund des starken Regens** … |\n| Weil es einen Unfall gab, kam es zu Staus. | **Infolge eines Unfalls** kam es zu Staus. |\n| Was die Kosten betrifft, … | **Hinsichtlich der Kosten** … |\n| Wenn Sie Fragen haben, … | **Bei Fragen** … |\n| Nachdem wir Ihre Zahlung erhalten haben, … | **Nach Erhalt Ihrer Zahlung** … |\n| Solange wir renovieren, … | **Während der Renovierung** … |\n\n**Prepositions with the genitive:** **aufgrund** (because of, formal *wegen*), **infolge** (as a result of), **hinsichtlich** (regarding), plus *wegen, trotz, während* from B1. Without an article you use *von* + dative: *aufgrund **von** Bauarbeiten*.\n\n**How to turn a clause into a noun:**\n- verb → noun, often in **-ung**: *anmelden → die Anmeldung, zahlen → die Zahlung, renovieren → die Renovierung*; some are different: *reparieren → die Reparatur, erhalten → der Erhalt*.\n- or the infinitive as a neuter noun: *ausfüllen → **beim Ausfüllen***.\n- the object becomes a **genitive**: *den Vertrag kündigen → die Kündigung **des Vertrags***.\n- an adverb becomes an adjective: *weil es **stark** regnet → aufgrund des **starken** Regens*.\n\nUse this style in formal letters and reports. In conversation it sounds stiff, so there *weil* and *wenn* are still best.\n\nThe most common mistakes:\n- the dative after *aufgrund, infolge, hinsichtlich*: in writing it's always the genitive: not ~~aufgrund dem Wetter~~, but *aufgrund **des** Wetter**s***.\n- forgetting the genitive **-s** on masculine and neuter nouns: *des Vertrag**s**, des Regen**s***.",
+ "french": "Formal French works the same way, so you can often translate almost word for word: en raison de = aufgrund, suite à = infolge, en ce qui concerne = hinsichtlich, après réception de votre paiement = nach Erhalt Ihrer Zahlung.",
+ "examples": [
+  {
+   "de": "Aufgrund des starken Regens fällt das Fest aus.",
+   "en": "Because of the heavy rain, the festival is cancelled."
+  },
+  {
+   "de": "Infolge eines Unfalls kam es zu langen Staus.",
+   "en": "As a result of an accident there were long traffic jams."
+  },
+  {
+   "de": "Hinsichtlich der Kosten haben wir noch eine Frage.",
+   "en": "We still have a question regarding the costs."
+  },
+  {
+   "de": "Bei Fragen stehen wir Ihnen gern zur Verfügung.",
+   "en": "If you have any questions, we are happy to help."
+  },
+  {
+   "de": "Nach Erhalt Ihrer Zahlung schicken wir Ihnen die Ware.",
+   "en": "Once we receive your payment, we will send you the goods."
+  },
+  {
+   "de": "Während der Renovierung bleibt das Büro geschlossen.",
+   "en": "The office stays closed during the renovation."
+  },
+  {
+   "de": "Die Kündigung des Vertrags ist nur schriftlich möglich.",
+   "en": "The contract can only be cancelled in writing."
+  },
+  {
+   "de": "Aufgrund von Bauarbeiten fährt die Linie 5 heute nicht.",
+   "en": "Because of construction work, line 5 isn't running today."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-06-01",
+   "type": "cloze",
+   "de": "Aufgrund ___ Streiks fahren heute keine Züge.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "Because of the strike, there are no trains today."
+  },
+  {
+   "id": "b2-06-02",
+   "type": "choice",
+   "de": "___ Fragen rufen Sie uns bitte an.",
+   "options": [
+    "Bei",
+    "Wenn",
+    "Nach"
+   ],
+   "answer": 0,
+   "why": "bei + noun replaces a wenn clause: bei Fragen = wenn Sie Fragen haben.",
+   "en": "If you have any questions, please call us."
+  },
+  {
+   "id": "b2-06-03",
+   "type": "cloze",
+   "de": "Nach ___ Ihrer Zahlung schicken wir Ihnen die Ware.",
+   "base": "erhalten (noun)",
+   "answers": [
+    "Erhalt"
+   ],
+   "en": "Once we receive your payment, we will send you the goods."
+  },
+  {
+   "id": "b2-06-04",
+   "type": "order",
+   "tiles": [
+    "Während",
+    "der Renovierung",
+    "bleibt",
+    "das Büro",
+    "geschlossen"
+   ],
+   "answers": [
+    "Während der Renovierung bleibt das Büro geschlossen.",
+    "Das Büro bleibt während der Renovierung geschlossen."
+   ],
+   "en": "The office stays closed during the renovation."
+  },
+  {
+   "id": "b2-06-05",
+   "type": "choice",
+   "de": "Infolge ___ Unfalls kam es zu langen Staus.",
+   "options": [
+    "dem",
+    "des",
+    "den"
+   ],
+   "answer": 1,
+   "why": "infolge takes the genitive: des Unfalls.",
+   "en": "As a result of the accident there were long traffic jams."
+  },
+  {
+   "id": "b2-06-06",
+   "type": "cloze",
+   "de": "Die ___ des Vertrags ist nur schriftlich möglich.",
+   "base": "kündigen (noun)",
+   "answers": [
+    "Kündigung"
+   ],
+   "en": "The contract can only be cancelled in writing."
+  },
+  {
+   "id": "b2-06-07",
+   "type": "choice",
+   "de": "___ der Kosten haben wir noch eine Frage.",
+   "options": [
+    "Infolge",
+    "Hinsichtlich",
+    "Während"
+   ],
+   "answer": 1,
+   "why": "hinsichtlich means 'regarding', which fits a question about the costs.",
+   "en": "We still have a question regarding the costs."
+  },
+  {
+   "id": "b2-06-08",
+   "type": "cloze",
+   "de": "Beim ___ des Formulars hilft Ihnen gern unser Team.",
+   "base": "ausfüllen (noun)",
+   "answers": [
+    "Ausfüllen"
+   ],
+   "en": "Our team will be happy to help you fill in the form."
+  },
+  {
+   "id": "b2-06-09",
+   "type": "order",
+   "tiles": [
+    "Aufgrund",
+    "des schlechten Wetters",
+    "fällt",
+    "das Konzert",
+    "aus"
+   ],
+   "answers": [
+    "Aufgrund des schlechten Wetters fällt das Konzert aus.",
+    "Das Konzert fällt aufgrund des schlechten Wetters aus."
+   ],
+   "en": "Because of the bad weather, the concert is cancelled."
+  },
+  {
+   "id": "b2-06-10",
+   "type": "cloze",
+   "de": "Die ___ beim Bürgeramt muss innerhalb von zwei Wochen erfolgen.",
+   "base": "anmelden (noun)",
+   "answers": [
+    "Anmeldung"
+   ],
+   "en": "Registration at the Bürgeramt must take place within two weeks."
+  },
+  {
+   "id": "b2-06-11",
+   "type": "choice",
+   "de": "Weil das Wetter schlecht war, wurde das Spiel abgesagt. = ___ wurde das Spiel abgesagt.",
+   "options": [
+    "Aufgrund dem schlechten Wetter",
+    "Aufgrund des schlechten Wetters",
+    "Aufgrund das schlechte Wetter"
+   ],
+   "answer": 1,
+   "why": "aufgrund takes the genitive: des schlechten Wetters.",
+   "en": "Because of the bad weather, the match was cancelled."
+  },
+  {
+   "id": "b2-06-12",
+   "type": "cloze",
+   "de": "Infolge des starken ___ fiel in der ganzen Stadt der Strom aus.",
+   "base": "der Sturm",
+   "answers": [
+    "Sturms",
+    "Sturmes"
+   ],
+   "en": "As a result of the strong storm, the power went out across the whole town."
+  },
+  {
+   "id": "b2-06-13",
+   "type": "order",
+   "tiles": [
+    "Nach",
+    "Erhalt",
+    "Ihrer Zahlung",
+    "schicken",
+    "wir",
+    "Ihnen",
+    "die Ware"
+   ],
+   "answers": [
+    "Nach Erhalt Ihrer Zahlung schicken wir Ihnen die Ware.",
+    "Wir schicken Ihnen die Ware nach Erhalt Ihrer Zahlung."
+   ],
+   "en": "Once we receive your payment, we'll send you the goods."
+  },
+  {
+   "id": "b2-06-14",
+   "type": "choice",
+   "de": "Vor der Unterzeichnung ___ lesen Sie bitte alle Bedingungen.",
+   "options": [
+    "den Vertrag",
+    "dem Vertrag",
+    "des Vertrags"
+   ],
+   "answer": 2,
+   "why": "The object of the verb (den Vertrag unterzeichnen) becomes a genitive after the noun.",
+   "en": "Before signing the contract, please read all the conditions."
+  },
+  {
+   "id": "b2-06-15",
+   "type": "cloze",
+   "de": "Die ___ der Miete erfolgt immer am Monatsanfang.",
+   "base": "zahlen (noun)",
+   "answers": [
+    "Zahlung"
+   ],
+   "en": "The rent is always paid at the start of the month."
+  },
+  {
+   "id": "b2-06-16",
+   "type": "choice",
+   "de": "Das Schwimmbad bleibt ___ von Bauarbeiten geschlossen.",
+   "options": [
+    "aufgrund",
+    "hinsichtlich",
+    "während"
+   ],
+   "answer": 0,
+   "why": "aufgrund von + dative is used when there is no article; the pool is closed because of the work.",
+   "en": "The swimming pool is closed because of construction work."
+  },
+  {
+   "id": "b2-06-17",
+   "type": "cloze",
+   "de": "Wegen der ___ der Heizung ist es im Büro heute kalt.",
+   "base": "reparieren (noun)",
+   "answers": [
+    "Reparatur"
+   ],
+   "en": "Because of the heating repair, it's cold in the office today."
+  },
+  {
+   "id": "b2-06-18",
+   "type": "order",
+   "tiles": [
+    "Bei",
+    "Rückfragen",
+    "stehen",
+    "wir",
+    "Ihnen",
+    "gern",
+    "zur Verfügung"
+   ],
+   "answers": [
+    "Bei Rückfragen stehen wir Ihnen gern zur Verfügung.",
+    "Wir stehen Ihnen bei Rückfragen gern zur Verfügung.",
+    "Wir stehen Ihnen gern bei Rückfragen zur Verfügung.",
+    "Gern stehen wir Ihnen bei Rückfragen zur Verfügung."
+   ],
+   "en": "If you have any further questions, we are happy to help."
+  },
+  {
+   "id": "b2-06-19",
+   "type": "choice",
+   "de": "Nachdem wir Ihren Antrag geprüft haben, … = Nach ___ Ihres Antrags …",
+   "options": [
+    "Prüfung",
+    "Prüfungen",
+    "geprüft"
+   ],
+   "answer": 0,
+   "why": "prüfen becomes the noun die Prüfung; one application means singular.",
+   "en": "After checking your application …"
+  },
+  {
+   "id": "b2-06-20",
+   "type": "cloze",
+   "de": "Während der ___ ist der Eingang auf der Rückseite des Gebäudes.",
+   "base": "renovieren (noun)",
+   "answers": [
+    "Renovierung"
+   ],
+   "en": "During the renovation, the entrance is at the back of the building."
+  },
+  {
+   "id": "b2-06-21",
+   "type": "order",
+   "tiles": [
+    "Hinsichtlich",
+    "Ihrer Anfrage",
+    "können",
+    "wir",
+    "Ihnen",
+    "Folgendes",
+    "mitteilen"
+   ],
+   "answers": [
+    "Hinsichtlich Ihrer Anfrage können wir Ihnen Folgendes mitteilen.",
+    "Wir können Ihnen hinsichtlich Ihrer Anfrage Folgendes mitteilen."
+   ],
+   "en": "Regarding your enquiry, we can tell you the following."
+  },
+  {
+   "id": "b2-06-22",
+   "type": "choice",
+   "de": "___ der Verspätung erhalten Sie 25 Prozent des Fahrpreises zurück.",
+   "options": [
+    "Trotz",
+    "Während",
+    "Aufgrund"
+   ],
+   "answer": 2,
+   "why": "You get the money back because of the delay, so aufgrund.",
+   "en": "Because of the delay, you'll get 25 per cent of the fare back."
+  },
+  {
+   "id": "b2-06-23",
+   "type": "cloze",
+   "de": "Die Kündigung ___ Mietvertrags muss schriftlich erfolgen.",
+   "base": "der/die/das",
+   "answers": [
+    "des"
+   ],
+   "en": "The tenancy agreement must be terminated in writing."
+  },
+  {
+   "id": "b2-06-24",
+   "type": "order",
+   "tiles": [
+    "Infolge",
+    "des Sturms",
+    "blieben",
+    "viele Schulen",
+    "geschlossen"
+   ],
+   "answers": [
+    "Infolge des Sturms blieben viele Schulen geschlossen.",
+    "Viele Schulen blieben infolge des Sturms geschlossen."
+   ],
+   "en": "As a result of the storm, many schools stayed closed."
+  }
+ ],
+ "listening": {
+  "title": "Ein Brief an die Kunden",
+  "intro": "Ayla has to write to customers about a late delivery, and her colleague Tom helps her make it sound formal.",
+  "lines": [
+   {
+    "speaker": "Ayla",
+    "de": "Tom, hast du kurz Zeit? Ich muss den Kunden schreiben, dass die Lieferung später kommt.",
+    "en": "Tom, have you got a minute? I have to write to the customers that the delivery is coming later."
+   },
+   {
+    "speaker": "Tom",
+    "de": "Klar. Was hast du bis jetzt?",
+    "en": "Sure. What have you got so far?"
+   },
+   {
+    "speaker": "Ayla",
+    "de": "„Weil unsere Maschine kaputt war, können wir nicht pünktlich liefern.“",
+    "en": "\"Because our machine was broken, we can't deliver on time.\""
+   },
+   {
+    "speaker": "Tom",
+    "de": "Das klingt zu einfach. Schreib lieber: „Aufgrund eines technischen Defekts verzögert sich die Lieferung.“",
+    "en": "That sounds too simple. Better write: \"Due to a technical fault, the delivery is delayed.\""
+   },
+   {
+    "speaker": "Ayla",
+    "de": "Gut. Und die Reparatur ist erst am Freitag fertig.",
+    "en": "OK. And the repair won't be finished until Friday."
+   },
+   {
+    "speaker": "Tom",
+    "de": "Dann: „Nach Abschluss der Reparatur am Freitag wird die Ware sofort verschickt.“",
+    "en": "Then: \"Once the repair is completed on Friday, the goods will be sent immediately.\""
+   },
+   {
+    "speaker": "Ayla",
+    "de": "Viele Kunden fragen auch, ob sie dann mehr bezahlen müssen.",
+    "en": "Lots of customers are also asking whether they'll have to pay more."
+   },
+   {
+    "speaker": "Tom",
+    "de": "Schreib: „Hinsichtlich der Kosten ändert sich für Sie nichts.“",
+    "en": "Write: \"Regarding the costs, nothing changes for you.\""
+   },
+   {
+    "speaker": "Ayla",
+    "de": "Super. Und am Ende: „Wenn Sie Fragen haben, rufen Sie an“?",
+    "en": "Great. And at the end: \"If you have questions, give us a call\"?"
+   },
+   {
+    "speaker": "Tom",
+    "de": "Besser: „Bei Fragen stehen wir Ihnen gern zur Verfügung.“",
+    "en": "Better: \"If you have any questions, we are happy to help.\""
+   },
+   {
+    "speaker": "Ayla",
+    "de": "Klingt sehr offiziell. Muss ich mich nicht auch entschuldigen?",
+    "en": "Sounds very official. Don't I have to apologise as well?"
+   },
+   {
+    "speaker": "Tom",
+    "de": "Doch, natürlich: „Für die Verzögerung bitten wir um Entschuldigung.“",
+    "en": "Yes, of course: \"We apologise for the delay.\""
+   },
+   {
+    "speaker": "Ayla",
+    "de": "Perfekt. Kannst du den Brief vor dem Abschicken noch mal lesen?",
+    "en": "Perfect. Can you read the letter again before it goes out?"
+   },
+   {
+    "speaker": "Tom",
+    "de": "Mach ich. Schick ihn mir einfach.",
+    "en": "Will do. Just send it to me."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the delivery late?",
+    "options": [
+     "The drivers are on strike.",
+     "A machine broke down.",
+     "The goods got lost."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When will the repair be finished?",
+    "options": [
+     "On Monday.",
+     "Next week.",
+     "On Friday."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What changes for the customers regarding the costs?",
+    "options": [
+     "Nothing.",
+     "They have to pay a delivery fee.",
+     "They get a discount."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Tom offer to do?",
+    "options": [
+     "Call the customers himself.",
+     "Read the letter before it's sent.",
+     "Repair the machine."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Aufgrund des starken Regens fällt das Fest heute aus.",
+  "Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung.",
+  "Nach Erhalt Ihrer Zahlung schicken wir Ihnen die Ware."
+ ],
+ "speaking": [
+  {
+   "de": "Aufgrund eines technischen Defekts verzögert sich die Lieferung.",
+   "en": "Due to a technical fault, the delivery is delayed."
+  },
+  {
+   "de": "Nach Abschluss der Reparatur wird die Ware sofort verschickt.",
+   "en": "Once the repair is completed, the goods will be sent immediately."
+  },
+  {
+   "de": "Hinsichtlich der Kosten ändert sich für Sie nichts.",
+   "en": "Regarding the costs, nothing changes for you."
+  },
+  {
+   "de": "Bei Fragen stehen wir Ihnen gern zur Verfügung.",
+   "en": "If you have any questions, we are happy to help."
+  },
+  {
+   "de": "Für die Verzögerung bitten wir um Entschuldigung.",
+   "en": "We apologise for the delay."
+  }
+ ],
+ "writing": {
+  "task": "You run a German course at a community college. Because the building is being renovated, the course has to move to another place for a few weeks. Write a formal letter of about 100 words to the participants, using nominal style (aufgrund, während, hinsichtlich, nach, bei).",
+  "model": "Betreff: Neuer Kursort für den Kurs „Deutsch B2“\n\nSehr geehrte Kursteilnehmerinnen und Kursteilnehmer,\n\naufgrund der Renovierung unseres Gebäudes findet der Kurs „Deutsch B2“ ab dem 4. November im Gemeindezentrum in der Bahnhofstraße 8 statt. Während der Bauarbeiten bleiben unsere Räume in der Schillerstraße geschlossen. Hinsichtlich der Uhrzeit und der Kursgebühr ändert sich nichts. Nach Abschluss der Arbeiten im Januar kehren wir in unsere alten Räume zurück. Bei Fragen zur Anfahrt oder zum Parken wenden Sie sich bitte an unser Sekretariat. Für die entstehenden Unannehmlichkeiten bitten wir um Ihr Verständnis.\n\nMit freundlichen Grüßen\nClaire Martin\nKursleitung"
+ }
+}

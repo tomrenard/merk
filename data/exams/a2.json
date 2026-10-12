@@ -1,0 +1,641 @@
+{
+ "id": "a2",
+ "cefr": "A2",
+ "title": "A2 exam (modelled on Goethe-Zertifikat A2)",
+ "hoeren": [
+  {
+   "title": "Im Radio und im Kaufhaus",
+   "intro": "You hear three short texts: an announcement in a department store, a traffic report and a weather forecast.",
+   "lines": [
+    {
+     "speaker": "Durchsage",
+     "de": "Liebe Kundinnen und Kunden, nur heute: Alle Wintermäntel in der zweiten Etage sind 30 Prozent billiger. Und unser Café im Erdgeschoss ist heute bis 20 Uhr für Sie geöffnet.",
+     "en": "Dear customers, today only: all winter coats on the second floor are 30 per cent cheaper. And our café on the ground floor is open for you until 8 pm today."
+    },
+    {
+     "speaker": "Radio",
+     "de": "Und jetzt der Verkehr: Auf der A100 zwischen Neukölln und Treptow gibt es nach einem Unfall fünf Kilometer Stau. Bitte fahren Sie über die Sonnenallee.",
+     "en": "And now the traffic: on the A100 between Neukölln and Treptow there is a five-kilometre jam after an accident. Please take the Sonnenallee."
+    },
+    {
+     "speaker": "Radio",
+     "de": "Das Wetter für morgen: Im Norden bleibt es kühl und es regnet immer wieder. Im Süden scheint den ganzen Tag die Sonne, bei bis zu 22 Grad.",
+     "en": "The weather for tomorrow: in the north it stays cool with repeated rain. In the south the sun shines all day, with up to 22 degrees."
+    }
+   ],
+   "questions": [
+    {
+     "q": "What is cheaper in the department store today?",
+     "options": [
+      "Everything in the café",
+      "Winter coats",
+      "All clothes on the ground floor"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Why is there a traffic jam on the A100?",
+     "options": [
+      "Because of an accident",
+      "Because of roadworks",
+      "Because of the weather"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "What will the weather be like in the south tomorrow?",
+     "options": [
+      "Cool and rainy",
+      "Cloudy, about 12 degrees",
+      "Sunny and warm"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Eine Nachricht von der Hausverwaltung",
+   "intro": "Tom has a message on his phone from his property management company.",
+   "lines": [
+    {
+     "speaker": "Frau Becker",
+     "de": "Guten Tag, Herr Laurent, hier spricht Frau Becker von der Hausverwaltung Grünberg. Es geht um die Heizung in Ihrer Wohnung.",
+     "en": "Hello, Mr Laurent, this is Ms Becker from Grünberg property management. It's about the heating in your flat."
+    },
+    {
+     "speaker": "Frau Becker",
+     "de": "Der Techniker kommt nicht am Dienstag, wie geplant, sondern schon am Montag zwischen 8 und 12 Uhr.",
+     "en": "The technician isn't coming on Tuesday as planned, but already on Monday between 8 and 12."
+    },
+    {
+     "speaker": "Frau Becker",
+     "de": "Wenn Sie nicht zu Hause sind, können Sie den Schlüssel bei Ihrem Nachbarn, Herrn Öztürk, lassen.",
+     "en": "If you're not at home, you can leave the key with your neighbour, Mr Öztürk."
+    },
+    {
+     "speaker": "Frau Becker",
+     "de": "Bitte rufen Sie mich kurz zurück und sagen Sie mir, ob das klappt. Meine Nummer ist 0221 98 76 54. Danke und auf Wiederhören.",
+     "en": "Please call me back briefly and tell me whether that works. My number is 0221 98 76 54. Thank you and goodbye."
+    }
+   ],
+   "questions": [
+    {
+     "q": "What is the message about?",
+     "options": [
+      "The rent",
+      "A new neighbour",
+      "The heating"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "When does the technician come?",
+     "options": [
+      "On Monday morning",
+      "On Tuesday morning",
+      "On Monday afternoon"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "What can Tom do if he is not at home?",
+     "options": [
+      "Call the technician",
+      "Leave the key with his neighbour",
+      "Leave the key under the door mat"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What does Ms Becker want?",
+     "options": [
+      "Tom should write an email.",
+      "Tom should come to the office.",
+      "Tom should call her back."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Wie war dein Wochenende?",
+   "intro": "Tom and his colleague Sophie talk on Monday morning.",
+   "lines": [
+    {
+     "speaker": "Tom",
+     "de": "Hallo Sophie, wie war dein Wochenende?",
+     "en": "Hi Sophie, how was your weekend?"
+    },
+    {
+     "speaker": "Sophie",
+     "de": "Ziemlich anstrengend, aber schön. Am Samstag habe ich meiner Schwester beim Umzug geholfen.",
+     "en": "Quite tiring, but nice. On Saturday I helped my sister move."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Ach so! Wohin ist sie denn gezogen?",
+     "en": "Oh, I see! Where did she move to?"
+    },
+    {
+     "speaker": "Sophie",
+     "de": "Nach Pankow. Die neue Wohnung ist größer und hat einen Balkon. Aber sie liegt im vierten Stock und es gibt keinen Aufzug.",
+     "en": "To Pankow. The new flat is bigger and has a balcony. But it's on the fourth floor and there is no lift."
+    },
+    {
+     "speaker": "Tom",
+     "de": "Oje! Und am Sonntag?",
+     "en": "Oh dear! And on Sunday?"
+    },
+    {
+     "speaker": "Sophie",
+     "de": "Am Sonntag wollte ich eigentlich joggen gehen, aber es hat den ganzen Tag geregnet. Deshalb bin ich zu Hause geblieben und habe einen Film gesehen. Und du?",
+     "en": "On Sunday I actually wanted to go jogging, but it rained all day. So I stayed at home and watched a film. And you?"
+    },
+    {
+     "speaker": "Tom",
+     "de": "Ich war am Samstag auf dem Flohmarkt im Mauerpark und habe eine alte Lampe gekauft. Für nur acht Euro!",
+     "en": "On Saturday I was at the flea market in Mauerpark and bought an old lamp. For only eight euros!"
+    },
+    {
+     "speaker": "Sophie",
+     "de": "Nicht schlecht!",
+     "en": "Not bad!"
+    }
+   ],
+   "questions": [
+    {
+     "q": "What did Sophie do on Saturday?",
+     "options": [
+      "She moved to a new flat.",
+      "She helped her sister move.",
+      "She went jogging."
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What is the problem with the sister's new flat?",
+     "options": [
+      "It is too small.",
+      "It has no balcony.",
+      "There is no lift."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "Why did Sophie stay at home on Sunday?",
+     "options": [
+      "It rained.",
+      "She was tired.",
+      "She was ill."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "What did Tom buy at the flea market?",
+     "options": [
+      "A chair",
+      "A lamp for €18",
+      "A lamp for €8"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Mit dem Rad zur Arbeit",
+   "intro": "You hear an interview on a local radio programme.",
+   "lines": [
+    {
+     "speaker": "Moderator",
+     "de": "Willkommen bei „Stadtleben“. Heute ist Frau Hoffmann bei uns. Frau Hoffmann, Sie fahren seit einem Jahr mit dem Fahrrad zur Arbeit. Warum?",
+     "en": "Welcome to 'City Life'. Today Ms Hoffmann is with us. Ms Hoffmann, you've been cycling to work for a year. Why?"
+    },
+    {
+     "speaker": "Frau Hoffmann",
+     "de": "Früher bin ich mit dem Auto gefahren. Aber ich habe jeden Morgen im Stau gestanden und nie einen Parkplatz gefunden. Das hat mich sehr geärgert.",
+     "en": "I used to drive. But every morning I was stuck in traffic and never found a parking space. That really annoyed me."
+    },
+    {
+     "speaker": "Moderator",
+     "de": "Wie weit ist Ihr Weg?",
+     "en": "How far is your commute?"
+    },
+    {
+     "speaker": "Frau Hoffmann",
+     "de": "Etwa zehn Kilometer. Mit dem Rad brauche ich 35 Minuten. Mit dem Auto waren es oft 45.",
+     "en": "About ten kilometres. By bike I need 35 minutes. By car it was often 45."
+    },
+    {
+     "speaker": "Moderator",
+     "de": "Und im Winter?",
+     "en": "And in winter?"
+    },
+    {
+     "speaker": "Frau Hoffmann",
+     "de": "Wenn es schneit, nehme ich die S-Bahn. Aber bei Regen fahre ich trotzdem – ich habe gute Regenkleidung.",
+     "en": "When it snows, I take the S-Bahn. But when it rains I still cycle – I have good rain gear."
+    },
+    {
+     "speaker": "Moderator",
+     "de": "Und was sagen Ihre Kollegen?",
+     "en": "And what do your colleagues say?"
+    },
+    {
+     "speaker": "Frau Hoffmann",
+     "de": "Am Anfang haben sie gelacht. Jetzt fahren schon drei Kollegen mit dem Rad, und unsere Firma hat neue Fahrradparkplätze gebaut.",
+     "en": "At first they laughed. Now three colleagues already cycle, and our company has built new bike parking."
+    }
+   ],
+   "questions": [
+    {
+     "q": "Why did Ms Hoffmann stop driving to work?",
+     "options": [
+      "Traffic jams and no parking spaces",
+      "Her car was too expensive.",
+      "Her doctor told her to."
+     ],
+     "answer": 0
+    },
+    {
+     "q": "How long does she need by bike?",
+     "options": [
+      "45 minutes",
+      "35 minutes",
+      "10 minutes"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What does she do when it snows?",
+     "options": [
+      "She drives.",
+      "She stays at home.",
+      "She takes the S-Bahn."
+     ],
+     "answer": 2
+    },
+    {
+     "q": "What has her company done?",
+     "options": [
+      "It has bought bikes for everyone.",
+      "It has built new bike parking.",
+      "It pays for S-Bahn tickets."
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ],
+ "lesen": [
+  {
+   "title": "Zeitungsartikel: Bibliothek am Sonntag",
+   "text": "Stadtbibliothek jetzt auch sonntags geöffnet\n\nAb dem 1. Oktober können Leserinnen und Leser die Zentralbibliothek auch am Sonntag besuchen, und zwar von 13 bis 18 Uhr. Am Sonntag arbeiten dort keine Bibliothekarinnen und Bibliothekare. Bücher leiht man an Automaten aus und gibt sie dort auch wieder zurück. Wer Hilfe braucht, kann zu einem Infotisch gehen. Dort sitzen Studierende und beantworten Fragen. Die Stadt testet das neue Angebot zuerst ein Jahr lang. Danach will sie entscheiden, ob die Bibliothek weiter sonntags öffnet.",
+   "questions": [
+    {
+     "q": "When is the library open on Sundays?",
+     "options": [
+      "From 10 am to 6 pm",
+      "From 1 pm to 6 pm",
+      "From 1 pm to 8 pm"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "How do you borrow books on Sundays?",
+     "options": [
+      "At a machine",
+      "From a librarian",
+      "Online only"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Who helps visitors on Sundays?",
+     "options": [
+      "Nobody",
+      "Volunteers from the city",
+      "Students at an information desk"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "What happens after one year?",
+     "options": [
+      "The library closes on Sundays.",
+      "The city decides whether Sunday opening continues.",
+      "The library opens every evening."
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Wegweiser im Rathaus",
+   "text": "Rathaus Mitte – Wegweiser\n\nErdgeschoss: Information, Bürgeramt (Anmeldung, Personalausweise, Reisepässe)\n1. Stock: Standesamt (Heirat, Geburt), Kasse\n2. Stock: Ausländerbehörde (Aufenthaltstitel, Visum)\n3. Stock: Wohngeldstelle, Jobcenter-Sprechstunde (nur dienstags)\n4. Stock: Kantine (Mo–Fr 11:30–14 Uhr)",
+   "questions": [
+    {
+     "q": "You have moved and want to register your new address. Where do you go?",
+     "options": [
+      "Ground floor",
+      "2nd floor",
+      "1st floor"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "You are getting married. Where do you go?",
+     "options": [
+      "Ground floor",
+      "3rd floor",
+      "1st floor"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "You need help paying your rent (Wohngeld). Where do you go?",
+     "options": [
+      "2nd floor",
+      "3rd floor",
+      "4th floor"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "title": "Eine E-Mail vor dem ersten Arbeitstag",
+   "text": "Betreff: Ihr erster Arbeitstag am Montag\n\nLieber Herr Laurent,\n\nwir freuen uns, dass Sie ab Montag in unserem Team arbeiten! Bitte kommen Sie am ersten Tag um 9 Uhr zum Empfang im Erdgeschoss. Dort holt Sie Ihr Kollege Jonas Weber ab.\n\nAm Vormittag bekommen Sie Ihren Laptop und Ihren Mitarbeiterausweis. Bringen Sie bitte Ihre Steuer-ID und Ihre Bankverbindung mit, denn diese brauchen wir für die Lohnabrechnung.\n\nUm 12:30 Uhr gehen wir alle zusammen in die Kantine essen. Am Nachmittag zeigt Ihnen Jonas das Haus und stellt Ihnen die Kolleginnen und Kollegen aus den anderen Abteilungen vor.\n\nBis Montag!\nMit freundlichen Grüßen\nKatrin Vogel, Personalabteilung",
+   "questions": [
+    {
+     "q": "Where should Mr Laurent go on Monday at 9?",
+     "options": [
+      "To the reception",
+      "To the canteen",
+      "To the HR office"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "What must he bring?",
+     "options": [
+      "His laptop",
+      "His tax ID and bank details",
+      "A photo for his ID card"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "What happens in the afternoon?",
+     "options": [
+      "He has the afternoon off.",
+      "He has lunch with the team.",
+      "Jonas shows him the building."
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "title": "Wohnungsanzeigen",
+   "text": "A) Helle 2-Zimmer-Wohnung in Friedrichshain, 55 m², Balkon, 3. OG mit Aufzug, 890 € warm. Keine Haustiere. Frei ab 1.12.\n\nB) Gemütliche 1-Zimmer-Wohnung in Moabit, 32 m², Erdgeschoss, kleiner Garten, 610 € warm. Haustiere erlaubt. Frei ab sofort.\n\nC) Große 3-Zimmer-Wohnung in Spandau, 78 m², neue Küche, 2. OG ohne Aufzug, 1.150 € kalt plus 210 € Nebenkosten. Frei ab 1.1.",
+   "questions": [
+    {
+     "q": "Tom has a cat and wants to move in this month. Which flat fits?",
+     "options": [
+      "Flat A",
+      "Flat B",
+      "Flat C"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Which flat has a lift?",
+     "options": [
+      "Flat C",
+      "Flat B",
+      "Flat A"
+     ],
+     "answer": 2
+    },
+    {
+     "q": "How much is flat C per month with all costs?",
+     "options": [
+      "€1,150",
+      "€1,360",
+      "€1,210"
+     ],
+     "answer": 1
+    }
+   ]
+  }
+ ],
+ "sprachbausteine": [
+  {
+   "de": "Gestern Abend habe ich meine Mutter ___.",
+   "options": [
+    "angerufen",
+    "anrufen",
+    "angeruft"
+   ],
+   "answer": 0,
+   "why": "anrufen is separable: ge- goes between the prefix and the stem, and the participle is irregular: angerufen."
+  },
+  {
+   "de": "Heute Morgen habe ich den Bus ___.",
+   "options": [
+    "geverpasst",
+    "verpasst",
+    "verpassen"
+   ],
+   "answer": 1,
+   "why": "Verbs with an inseparable prefix (ver-, be-, er-…) take no ge- in the participle: verpasst."
+  },
+  {
+   "de": "Als Kind ___ ich keinen eigenen Computer.",
+   "options": [
+    "habe",
+    "hatte",
+    "hätte"
+   ],
+   "answer": 1,
+   "why": "For haben in the past, German uses the Präteritum: ich hatte. hätte is Konjunktiv II (would have)."
+  },
+  {
+   "de": "Zum Abschied schenken wir ___ Kollegen einen Gutschein.",
+   "options": [
+    "den",
+    "die",
+    "der"
+   ],
+   "answer": 0,
+   "why": "schenken takes a dative person; dative plural is den (+ -n on the noun): den Kollegen."
+  },
+  {
+   "de": "Kannst du das Bild bitte an ___ Wand hängen?",
+   "options": [
+    "der",
+    "die",
+    "dem"
+   ],
+   "answer": 1,
+   "why": "an + wohin? (movement to a place) takes the accusative: an die Wand."
+  },
+  {
+   "de": "Jetzt hängt das Bild an ___ Wand neben dem Fenster.",
+   "options": [
+    "die",
+    "dem",
+    "der"
+   ],
+   "answer": 2,
+   "why": "an + wo? (position) takes the dative; die Wand is feminine: an der Wand."
+  },
+  {
+   "de": "Ich ___ die Schlüssel immer auf den Tisch im Flur.",
+   "options": [
+    "lege",
+    "liege",
+    "liegt"
+   ],
+   "answer": 0,
+   "why": "legen = to put down (action, accusative); liegen = to lie (position). Here you put the keys somewhere."
+  },
+  {
+   "de": "Wir treffen ___ um acht vor dem Kino.",
+   "options": [
+    "euch",
+    "sich",
+    "uns"
+   ],
+   "answer": 2,
+   "why": "The reflexive pronoun matches the subject: wir … uns."
+  },
+  {
+   "de": "Ich kann heute nicht zum Training kommen, weil ich ___.",
+   "options": [
+    "krank bin",
+    "bin krank",
+    "krank sein"
+   ],
+   "answer": 0,
+   "why": "weil sends the conjugated verb to the end of the clause: weil ich krank bin."
+  },
+  {
+   "de": "___ ich klein war, haben wir in Lyon gewohnt.",
+   "options": [
+    "Wenn",
+    "Wann",
+    "Als"
+   ],
+   "answer": 2,
+   "why": "als is for one period or event in the past; wenn is for repeated events or the present/future; wann is a question word."
+  },
+  {
+   "de": "Die Wohnung in Pankow ist ___ als die Wohnung in Mitte.",
+   "options": [
+    "billiger",
+    "billigste",
+    "am billigsten"
+   ],
+   "answer": 0,
+   "why": "Comparing two things uses the comparative + als: billiger als."
+  },
+  {
+   "de": "Ich nehme den ___ Pullover, bitte.",
+   "options": [
+    "blaue",
+    "blauen",
+    "blauer"
+   ],
+   "answer": 1,
+   "why": "After den (masculine accusative) the adjective ends in -en: den blauen Pullover."
+  },
+  {
+   "de": "Ich warte schon seit zwanzig Minuten ___ den Bus.",
+   "options": [
+    "für",
+    "an",
+    "auf"
+   ],
+   "answer": 2,
+   "why": "warten always goes with auf + accusative: auf den Bus warten."
+  },
+  {
+   "de": "Freust du dich auf den Urlaub? – Ja, ich freue mich sehr ___.",
+   "options": [
+    "darauf",
+    "davon",
+    "worauf"
+   ],
+   "answer": 0,
+   "why": "sich freuen auf → for a thing you replace auf + noun by da(r) + auf: darauf. worauf is the question word."
+  },
+  {
+   "de": "Mein Fahrrad ist kaputt, ___ fahre ich heute mit dem Bus.",
+   "options": [
+    "trotzdem",
+    "deshalb",
+    "denn"
+   ],
+   "answer": 1,
+   "why": "deshalb introduces a consequence and takes the verb right after it. trotzdem means 'anyway' (contrast); denn would need normal word order (denn ich fahre)."
+  }
+ ],
+ "schreiben": [
+  {
+   "task": "You're meeting your friend Paul at the cinema tonight but you'll be late. Write him a text message (20–30 words): apologise, say why you're late, say when you'll arrive and what he should do.",
+   "model": "Hallo Paul, tut mir leid, ich komme etwa 20 Minuten später. Meine S-Bahn hat Verspätung. Kannst du bitte schon die Karten kaufen? Ich gebe dir das Geld dann zurück. Bis gleich! Tom",
+   "checklist": [
+    "Apologises (tut mir leid / Entschuldigung).",
+    "Gives a reason for being late.",
+    "Says when you'll arrive.",
+    "Asks Paul to do something (Kannst du bitte …?).",
+    "Informal register: du, short greeting and name."
+   ]
+  },
+  {
+   "task": "Write an email (about 40 words) to your German teacher, Frau Schneider. You can't come to class next Tuesday. Say why, ask what homework there is, and ask if you can get the materials.",
+   "model": "Liebe Frau Schneider,\n\nleider kann ich am nächsten Dienstag nicht zum Kurs kommen, weil ich für meine Firma nach München fahren muss. Welche Hausaufgaben haben wir? Könnten Sie mir bitte die Arbeitsblätter per E-Mail schicken?\n\nVielen Dank und viele Grüße\nTom Laurent",
+   "checklist": [
+    "Polite greeting and closing (Liebe Frau Schneider … Viele Grüße).",
+    "Covers all three points: absence and reason, homework, materials.",
+    "Uses Sie consistently and a polite request (Könnten Sie mir bitte …?).",
+    "weil clause with the verb at the end.",
+    "About 40 words; full sentences."
+   ]
+  }
+ ],
+ "sprechen": [
+  {
+   "task": "Get to know your partner. Ask four questions using the cards 'Geburtstag?', 'Wohnort?', 'Beruf?', 'Sprachen?' and answer your partner's questions.",
+   "model": "Wann hast du Geburtstag? – Am 3. Mai.\nWo wohnst du? – In Berlin, im Wedding. Ich wohne seit zwei Jahren dort.\nWas machst du beruflich? – Ich arbeite als Softwareentwickler bei einer kleinen Firma.\nWelche Sprachen sprichst du? – Französisch, Englisch und jetzt auch ein bisschen Deutsch.",
+   "checklist": [
+    "Each question is correct and uses the card's topic (Wann …? Wo …? Was …? Welche …?).",
+    "Verb in second position after the question word.",
+    "Answers give more than one word where possible (seit zwei Jahren, bei einer Firma).",
+    "Dates said correctly (am dritten Mai)."
+   ]
+  },
+  {
+   "task": "Talk about your life for about one minute. Topic: 'What do you do at the weekend?' Say what you usually do, what you did last weekend and what you like or don't like.",
+   "model": "Am Wochenende schlafe ich meistens lange. Samstags gehe ich auf den Markt und kaufe frisches Gemüse ein. Am Sonntag treffe ich oft Freunde oder wir fahren mit dem Fahrrad an einen See. Letztes Wochenende war ich in Leipzig. Ich habe eine Freundin besucht und wir sind durch die Stadt gelaufen. Ich mag ruhige Wochenenden, aber ich putze nicht gern die Wohnung – das mache ich deshalb immer am Freitagabend.",
+   "checklist": [
+    "Speaks about the habit (present), last weekend (Perfekt) and likes/dislikes.",
+    "Perfekt with the right auxiliary (habe besucht, sind gelaufen).",
+    "Time expressions at the start with inversion (Am Sonntag treffe ich …).",
+    "Uses at least one connector (aber, deshalb, und).",
+    "Speaks for about one minute without long pauses."
+   ]
+  },
+  {
+   "task": "Plan something together. Your colleague Martin is leaving and you want to buy him a present with your partner after work this week. Look at your diary, suggest times, react to your partner's suggestions and agree on a time.",
+   "model": "A: Wann hast du diese Woche Zeit? Wir müssen noch ein Geschenk für Martin kaufen.\nB: Am Montag kann ich leider nicht, da habe ich einen Deutschkurs. Wie wäre es mit Dienstag um 18 Uhr?\nA: Dienstag passt mir nicht so gut, ich gehe um sechs zum Zahnarzt. Geht es am Mittwoch nach der Arbeit?\nB: Ja, Mittwoch ist gut. Treffen wir uns um halb sechs vor dem Kaufhaus?\nA: Super, das machen wir. Vielleicht kaufen wir ihm ein Buch?\nB: Gute Idee!",
+   "checklist": [
+    "Makes suggestions (Wie wäre es mit …? Geht es am …? Treffen wir uns …?).",
+    "Reacts to the partner's suggestion and gives reasons for saying no.",
+    "Agrees on a concrete day, time and place.",
+    "Uses correct time expressions (am Mittwoch, um halb sechs)."
+   ]
+  }
+ ]
+}

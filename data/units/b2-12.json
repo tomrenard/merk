@@ -1,0 +1,497 @@
+{
+ "id": "b2-12",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Register and idioms",
+ "situation": "Sounding natural",
+ "canDo": "You can choose between formal and informal German in messages and use common idioms and fixed expressions in the right situations.",
+ "explanation": "Sounding natural means two things: choosing the right **register** and knowing a few **fixed expressions**.\n\n**Register.** German separates formal and informal more strictly than English:\n\n| formal (landlord, offices, boss) | informal (friends, chat) |\n|---|---|\n| Sehr geehrte Damen und Herren, | Hallo / Hey Anna, |\n| Ich habe Ihre Nachricht erhalten. | Hab deine Nachricht gekriegt. |\n| Ich bitte um eine kurze Rückmeldung. | Sag mal Bescheid! |\n| Bei Fragen stehe ich Ihnen gern zur Verfügung. | Meld dich einfach! |\n| Mit freundlichen Grüßen | Liebe Grüße / LG |\n\n*Viele Grüße*, *Können Sie mir Bescheid geben?*, *Halten Sie mich auf dem Laufenden* (keep me posted) and *unter vier Augen* (in private) are safe almost everywhere.\n\n**Idioms** – informal, great with friends and colleagues, never in a letter to an office:\n\n| idiom | meaning |\n|---|---|\n| Ich drücke dir die Daumen. | I'll keep my fingers crossed. |\n| Ich verstehe nur Bahnhof. | It's all Greek to me. |\n| Ich habe die Nase voll (von …). | I'm fed up (with …). |\n| Das ist mir Wurst. | I couldn't care less. |\n| Das ist nicht mein Bier. | That's not my problem. |\n| Schwein haben | to be lucky |\n| Er geht mir auf die Nerven. | He gets on my nerves. |\n| Tomaten auf den Augen haben | to miss the obvious |\n| ins Fettnäpfchen treten | to put your foot in it |\n| Alles in Butter! | Everything's fine! |\n| Hals- und Beinbruch! | Good luck! |\n\nIdioms are fixed: you can't change the words, and you can't translate them from French or English.\n\nThe most common mistakes:\n- mixing registers: *Das geht mir auf die Nerven* in an email to your landlord, or *Sehr geehrter Paul* to a friend.\n- literal translations: not ~~Ich kreuze die Finger~~, but *Ich **drücke** dir **die Daumen***.",
+ "french": "Many idioms exist in both languages with different pictures, so never translate them word for word: croiser les doigts = die Daumen drücken, avoir de la chance = Schwein haben, en avoir marre = die Nase voll haben, c'est du chinois = ich verstehe nur Bahnhof, faire une gaffe = ins Fettnäpfchen treten.",
+ "examples": [
+  {
+   "de": "Sehr geehrte Damen und Herren, ich habe Ihre Nachricht erhalten.",
+   "en": "Dear Sir or Madam, I have received your message."
+  },
+  {
+   "de": "Sag mal Bescheid, wenn du da bist!",
+   "en": "Let me know when you're there!"
+  },
+  {
+   "de": "Ich drücke dir morgen die Daumen!",
+   "en": "I'll keep my fingers crossed for you tomorrow!"
+  },
+  {
+   "de": "Von dem Regen habe ich langsam die Nase voll.",
+   "en": "I'm getting fed up with this rain."
+  },
+  {
+   "de": "In der Besprechung habe ich nur Bahnhof verstanden.",
+   "en": "The meeting was all Greek to me."
+  },
+  {
+   "de": "Wir haben den letzten Zug noch gekriegt – Schwein gehabt!",
+   "en": "We still caught the last train – lucky us!"
+  },
+  {
+   "de": "Können wir kurz unter vier Augen sprechen?",
+   "en": "Can we have a quick word in private?"
+  },
+  {
+   "de": "Bitte halten Sie mich auf dem Laufenden.",
+   "en": "Please keep me posted."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-12-01",
+   "type": "cloze",
+   "de": "Morgen ist deine Prüfung? Ich drücke dir die ___!",
+   "base": "thumbs",
+   "answers": [
+    "Daumen"
+   ],
+   "en": "Your exam is tomorrow? I'll keep my fingers crossed for you!"
+  },
+  {
+   "id": "b2-12-02",
+   "type": "choice",
+   "de": "(Brief an das Finanzamt) ___ Damen und Herren,",
+   "options": [
+    "Liebe",
+    "Hallo",
+    "Sehr geehrte"
+   ],
+   "answer": 2,
+   "why": "A formal letter to an office starts with Sehr geehrte Damen und Herren.",
+   "en": "(Letter to the tax office) Dear Sir or Madam,"
+  },
+  {
+   "id": "b2-12-03",
+   "type": "cloze",
+   "de": "Der Vortrag war so kompliziert, ich habe nur ___ verstanden.",
+   "base": "station",
+   "answers": [
+    "Bahnhof"
+   ],
+   "en": "The talk was so complicated, it was all Greek to me."
+  },
+  {
+   "id": "b2-12-04",
+   "type": "order",
+   "tiles": [
+    "Können",
+    "Sie",
+    "mir",
+    "bitte",
+    "Bescheid",
+    "geben"
+   ],
+   "answers": [
+    "Können Sie mir bitte Bescheid geben?"
+   ],
+   "en": "Could you please let me know?"
+  },
+  {
+   "id": "b2-12-05",
+   "type": "choice",
+   "de": "Von dem ständigen Lärm habe ich ___ voll.",
+   "options": [
+    "den Kopf",
+    "die Nase",
+    "die Hand"
+   ],
+   "answer": 1,
+   "why": "The idiom is die Nase voll haben: to be fed up.",
+   "en": "I'm fed up with the constant noise."
+  },
+  {
+   "id": "b2-12-06",
+   "type": "cloze",
+   "de": "Mit freundlichen ___",
+   "base": "der Gruß",
+   "answers": [
+    "Grüßen"
+   ],
+   "en": "Kind regards"
+  },
+  {
+   "id": "b2-12-07",
+   "type": "choice",
+   "de": "(Nachricht an eine Freundin) Kannst du mir ___ sagen, wann du kommst?",
+   "options": [
+    "Bescheid",
+    "Auskunft",
+    "Mitteilung"
+   ],
+   "answer": 0,
+   "why": "Bescheid sagen is the everyday fixed expression for 'let someone know'.",
+   "en": "(Message to a friend) Can you let me know when you're coming?"
+  },
+  {
+   "id": "b2-12-08",
+   "type": "cloze",
+   "de": "Wir haben den letzten Zug noch gekriegt – da haben wir echt ___ gehabt!",
+   "base": "pig",
+   "answers": [
+    "Schwein"
+   ],
+   "en": "We still caught the last train – we were really lucky!"
+  },
+  {
+   "id": "b2-12-09",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "die Nase",
+    "voll",
+    "vom Regen"
+   ],
+   "answers": [
+    "Ich habe die Nase voll vom Regen.",
+    "Ich habe vom Regen die Nase voll.",
+    "Vom Regen habe ich die Nase voll."
+   ],
+   "en": "I'm fed up with the rain."
+  },
+  {
+   "id": "b2-12-10",
+   "type": "cloze",
+   "de": "Pizza oder Pasta? Das ist mir ___.",
+   "base": "sausage",
+   "answers": [
+    "Wurst",
+    "wurst"
+   ],
+   "en": "Pizza or pasta? I couldn't care less."
+  },
+  {
+   "id": "b2-12-11",
+   "type": "choice",
+   "de": "(E-Mail an die Vermieterin) Ich habe Ihre Nachricht ___.",
+   "options": [
+    "gekriegt",
+    "erhalten",
+    "gecheckt"
+   ],
+   "answer": 1,
+   "why": "kriegen and checken are informal; in a formal email you write erhalten.",
+   "en": "(Email to the landlady) I have received your message."
+  },
+  {
+   "id": "b2-12-12",
+   "type": "cloze",
+   "de": "Ich möchte mit Ihnen gern unter vier ___ sprechen.",
+   "base": "eyes",
+   "answers": [
+    "Augen"
+   ],
+   "en": "I'd like to speak to you in private."
+  },
+  {
+   "id": "b2-12-13",
+   "type": "order",
+   "tiles": [
+    "Halten",
+    "Sie",
+    "mich",
+    "bitte",
+    "auf dem Laufenden"
+   ],
+   "answers": [
+    "Halten Sie mich bitte auf dem Laufenden.",
+    "Bitte halten Sie mich auf dem Laufenden."
+   ],
+   "en": "Please keep me posted."
+  },
+  {
+   "id": "b2-12-14",
+   "type": "choice",
+   "de": "Du hast morgen dein Vorstellungsgespräch? Hals- und ___!",
+   "options": [
+    "Armbruch",
+    "Kopfbruch",
+    "Beinbruch"
+   ],
+   "answer": 2,
+   "why": "The fixed wish for good luck is Hals- und Beinbruch.",
+   "en": "You've got your job interview tomorrow? Good luck!"
+  },
+  {
+   "id": "b2-12-15",
+   "type": "cloze",
+   "de": "Der neue Kollege redet ständig – er geht mir total auf die ___.",
+   "base": "nerves",
+   "answers": [
+    "Nerven"
+   ],
+   "en": "The new colleague talks all the time – he really gets on my nerves."
+  },
+  {
+   "id": "b2-12-16",
+   "type": "choice",
+   "de": "___, kommst du heute Abend mit ins Kino?",
+   "options": [
+    "Sehr geehrter Paul",
+    "Hey Paul",
+    "Mit freundlichen Grüßen, Paul"
+   ],
+   "answer": 1,
+   "why": "An invitation to a friend is informal, so Hey Paul.",
+   "en": "Hey Paul, are you coming to the cinema tonight?"
+  },
+  {
+   "id": "b2-12-17",
+   "type": "cloze",
+   "de": "Hast du ___ auf den Augen? Der Schlüssel liegt doch direkt vor dir!",
+   "base": "tomatoes",
+   "answers": [
+    "Tomaten"
+   ],
+   "en": "Are you blind? The key is right in front of you!"
+  },
+  {
+   "id": "b2-12-18",
+   "type": "order",
+   "tiles": [
+    "Bei Fragen",
+    "stehe",
+    "ich",
+    "Ihnen",
+    "gern",
+    "zur Verfügung"
+   ],
+   "answers": [
+    "Bei Fragen stehe ich Ihnen gern zur Verfügung.",
+    "Ich stehe Ihnen bei Fragen gern zur Verfügung.",
+    "Ich stehe Ihnen gern bei Fragen zur Verfügung.",
+    "Gern stehe ich Ihnen bei Fragen zur Verfügung."
+   ],
+   "en": "If you have any questions, I'm happy to help."
+  },
+  {
+   "id": "b2-12-19",
+   "type": "choice",
+   "de": "Ich habe die Frau meines Chefs für seine Mutter gehalten. Da bin ich voll ins ___ getreten.",
+   "options": [
+    "Fettnäpfchen",
+    "Wasserglas",
+    "Butterfass"
+   ],
+   "answer": 0,
+   "why": "The idiom is ins Fettnäpfchen treten: to put your foot in it.",
+   "en": "I took my boss's wife for his mother. I really put my foot in it."
+  },
+  {
+   "id": "b2-12-20",
+   "type": "cloze",
+   "de": "Wie geht's? – Danke, alles in ___!",
+   "base": "butter",
+   "answers": [
+    "Butter"
+   ],
+   "en": "How are you? – Thanks, everything's fine!"
+  },
+  {
+   "id": "b2-12-21",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "drücke",
+    "dir",
+    "morgen",
+    "die Daumen"
+   ],
+   "answers": [
+    "Ich drücke dir morgen die Daumen.",
+    "Morgen drücke ich dir die Daumen."
+   ],
+   "en": "I'll keep my fingers crossed for you tomorrow."
+  },
+  {
+   "id": "b2-12-22",
+   "type": "choice",
+   "de": "(Formelle E-Mail) Ich ___ um eine kurze Rückmeldung.",
+   "options": [
+    "frage",
+    "bitte",
+    "will"
+   ],
+   "answer": 1,
+   "why": "The formal fixed phrase is um eine Rückmeldung bitten.",
+   "en": "(Formal email) I would appreciate a short reply."
+  },
+  {
+   "id": "b2-12-23",
+   "type": "cloze",
+   "de": "Das ist nicht mein ___. Frag doch den Chef.",
+   "base": "beer",
+   "answers": [
+    "Bier"
+   ],
+   "en": "That's not my problem. Ask the boss."
+  },
+  {
+   "id": "b2-12-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "würde",
+    "mich",
+    "über",
+    "eine Antwort",
+    "freuen"
+   ],
+   "answers": [
+    "Ich würde mich über eine Antwort freuen.",
+    "Über eine Antwort würde ich mich freuen."
+   ],
+   "en": "I would be glad to hear from you."
+  }
+ ],
+ "listening": {
+  "title": "Zu locker für den Vermieter",
+  "intro": "Hugo, who is French, asks his German friend Katja to check an email he has written to his landlord.",
+  "lines": [
+   {
+    "speaker": "Hugo",
+    "de": "Katja, kannst du mal kurz über meine Mail an den Vermieter schauen?",
+    "en": "Katja, can you have a quick look at my email to the landlord?"
+   },
+   {
+    "speaker": "Katja",
+    "de": "Klar. „Hey Herr Schulz, die Heizung ist schon wieder kaputt, das geht mir total auf die Nerven.“ Oje.",
+    "en": "Sure. \"Hey Mr Schulz, the heating is broken again, it really gets on my nerves.\" Oh dear."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Was ist falsch? Grammatisch ist doch alles richtig, oder?",
+    "en": "What's wrong? The grammar's all correct, isn't it?"
+   },
+   {
+    "speaker": "Katja",
+    "de": "Die Grammatik schon, aber das ist viel zu locker. An den Vermieter schreibst du „Sehr geehrter Herr Schulz“.",
+    "en": "The grammar is, but it's far too casual. To your landlord you write \"Sehr geehrter Herr Schulz\"."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Und „geht mir auf die Nerven“?",
+    "en": "And \"gets on my nerves\"?"
+   },
+   {
+    "speaker": "Katja",
+    "de": "Das sagst du deinen Freunden. Hier schreibst du lieber: „Leider ist die Heizung erneut defekt.“",
+    "en": "That's what you say to your friends. Here you'd better write: \"Unfortunately the heating is out of order again.\""
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Verstehe. Und am Ende habe ich „LG Hugo“ geschrieben.",
+    "en": "I see. And at the end I wrote \"LG Hugo\"."
+   },
+   {
+    "speaker": "Katja",
+    "de": "Besser: „Ich bitte um eine kurze Rückmeldung. Mit freundlichen Grüßen.“",
+    "en": "Better: \"I would appreciate a short reply. Kind regards.\""
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Puh, das sind ja zwei verschiedene Sprachen. Bei meiner Chefin bin ich letzte Woche auch ins Fettnäpfchen getreten.",
+    "en": "Phew, it's like two different languages. I put my foot in it with my boss last week, too."
+   },
+   {
+    "speaker": "Katja",
+    "de": "Was ist passiert?",
+    "en": "What happened?"
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Ich habe sie einfach geduzt, und sie hat sofort „Herr Dubois“ zu mir gesagt. Und in der Besprechung danach habe ich nur Bahnhof verstanden.",
+    "en": "I just called her du, and she immediately called me \"Mr Dubois\". And in the meeting afterwards, it was all Greek to me."
+   },
+   {
+    "speaker": "Katja",
+    "de": "Ach, das passiert jedem. Mit der Zeit kriegst du ein Gefühl dafür.",
+    "en": "Oh, that happens to everyone. You'll get a feel for it over time."
+   },
+   {
+    "speaker": "Hugo",
+    "de": "Hoffentlich. Jetzt schicke ich erst mal die Mail. Drück mir die Daumen, dass er schnell antwortet!",
+    "en": "I hope so. Now I'll send the email first. Keep your fingers crossed that he answers quickly!"
+   },
+   {
+    "speaker": "Katja",
+    "de": "Mach ich. Und wenn nicht – dann ist das nicht mehr dein Bier, sondern seins.",
+    "en": "Will do. And if he doesn't – then it's not your problem any more, it's his."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What's wrong with Hugo's email?",
+    "options": [
+     "The grammar has mistakes.",
+     "It's far too informal.",
+     "It's much too long."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How should Hugo start the email?",
+    "options": [
+     "Hey Herr Schulz,",
+     "Lieber Hugo,",
+     "Sehr geehrter Herr Schulz,"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What happened with Hugo's boss?",
+    "options": [
+     "He called her du, and she answered formally.",
+     "He forgot an important meeting.",
+     "He called her by the wrong name."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Hugo ask Katja to do at the end?",
+    "options": [
+     "Write the email for him.",
+     "Keep her fingers crossed.",
+     "Call the landlord."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich drücke dir morgen bei der Prüfung die Daumen.",
+  "Bei Fragen stehe ich Ihnen jederzeit gern zur Verfügung.",
+  "Von dem ständigen Regen habe ich langsam die Nase voll."
+ ],
+ "speaking": [
+  {
+   "de": "Das ist viel zu locker.",
+   "en": "That's far too casual."
+  },
+  {
+   "de": "Leider ist die Heizung erneut defekt.",
+   "en": "Unfortunately the heating is out of order again."
+  },
+  {
+   "de": "Ich bitte um eine kurze Rückmeldung.",
+   "en": "I would appreciate a short reply."
+  },
+  {
+   "de": "In der Besprechung habe ich nur Bahnhof verstanden.",
+   "en": "The meeting was all Greek to me."
+  },
+  {
+   "de": "Drück mir die Daumen!",
+   "en": "Keep your fingers crossed for me!"
+  }
+ ],
+ "writing": {
+  "task": "Your heating is broken. Write two short messages, about 100 words in total: a formal email to your landlord asking for a repair, and an informal message to a friend telling them about it and asking a favour.",
+  "model": "Sehr geehrter Herr Schulz,\n\nleider ist die Heizung in meiner Wohnung seit Montag erneut defekt. In den Zimmern sind es nur noch 15 Grad. Könnten Sie bitte so bald wie möglich einen Handwerker schicken? Ich bin jeden Tag ab 17 Uhr zu Hause. Ich bitte um eine kurze Rückmeldung.\n\nMit freundlichen Grüßen\nClaire Martin\n\nHey Lena,\n\nmeine Heizung ist schon wieder kaputt – ich hab echt die Nase voll! Kann ich heute Abend bei dir duschen? Ich bring auch Pizza mit. Drück mir die Daumen, dass der Vermieter sich schnell meldet!\n\nLG Claire"
+ }
+}

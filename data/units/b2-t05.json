@@ -1,0 +1,515 @@
+{
+ "id": "b2-t05",
+ "cefr": "B2",
+ "kind": "topic",
+ "words": [
+  "die Untersuchung",
+  "untersuchen",
+  "der Patient",
+  "die Krankheit",
+  "die Therapie",
+  "die Operation",
+  "operieren",
+  "das Medikament",
+  "einnehmen",
+  "verschreiben",
+  "die Überweisung",
+  "der Schmerz",
+  "das Schmerzmittel",
+  "das Blut",
+  "das Herz",
+  "der Knochen",
+  "der Muskel",
+  "die Haut",
+  "der Magen",
+  "der Rücken",
+  "die Infektion",
+  "die Verletzung",
+  "sich erholen",
+  "die Erholung",
+  "der Zustand",
+  "leiden",
+  "die Klinik",
+  "die Spritze",
+  "atmen",
+  "die Krankenkasse"
+ ],
+ "title": "Diagnosis and treatment",
+ "situation": "Discussing a diagnosis",
+ "canDo": "You can understand a diagnosis, ask a doctor about treatment and side effects, and explain your health problem in detail.",
+ "explanation": "Your test results are back and the doctor explains what you have. Words you'll hear:\n\n| German | English |\n|---|---|\n| die Diagnose, -n | diagnosis |\n| der Befund, -e | findings, test results |\n| die Blutuntersuchung, -en | blood test |\n| der Blutdruck | blood pressure |\n| die Entzündung, -en | inflammation |\n| chronisch | chronic |\n| die Nebenwirkung, -en | side effect |\n| die Überweisung, -en | referral |\n| der Facharzt, ¨-e | specialist |\n| die Notaufnahme, -n | A&E, emergency department |\n| krankschreiben | to sign off sick |\n\n| ask the doctor | English |\n|---|---|\n| Was bedeutet das genau? | What exactly does that mean? |\n| Ist das gefährlich? | Is it dangerous? |\n| Gibt es eine Alternative zur Operation? | Is there an alternative to surgery? |\n| Wie oft muss ich die Tabletten einnehmen? | How often do I have to take the tablets? |\n\nTips:\n- **leiden an** + dative for an illness: *Sie leidet an Migräne.* (*unter* is also used for things that bother you.)\n- A *positiver Befund* means something was found, so it's usually not good news. *Unauffällig* means everything is normal.\n- **das Rezept** is a prescription (and a recipe); **die Erkältung** is a cold, **die Grippe** real flu.\n- Your sick note (*Krankschreibung*) now goes electronically to the Krankenkasse; your employer gets it from there. You still have to tell your employer on the first day that you're ill.",
+ "french": "Leiden an is souffrir de, das Rezept is l'ordonnance, and a positiver Befund, like un résultat positif, usually means bad news.",
+ "examples": [
+  {
+   "de": "Die Blutuntersuchung hat ergeben, dass mein Eisenwert zu niedrig ist.",
+   "en": "The blood test showed that my iron level is too low."
+  },
+  {
+   "de": "Der Arzt hat mir eine Überweisung zum Orthopäden gegeben.",
+   "en": "The doctor gave me a referral to an orthopaedist."
+  },
+  {
+   "de": "Sie leidet seit Jahren an Migräne.",
+   "en": "She has suffered from migraines for years."
+  },
+  {
+   "de": "Welche Nebenwirkungen hat dieses Medikament?",
+   "en": "What side effects does this medicine have?"
+  },
+  {
+   "de": "Nehmen Sie die Tabletten zweimal täglich nach dem Essen ein.",
+   "en": "Take the tablets twice a day after meals."
+  },
+  {
+   "de": "Hätte ich früher einen Termin gemacht, wäre die Entzündung nicht so schlimm geworden.",
+   "en": "If I'd made an appointment earlier, the inflammation wouldn't have got so bad."
+  },
+  {
+   "de": "Zum Glück ist nichts gebrochen, es ist nur eine Prellung.",
+   "en": "Luckily nothing is broken; it's just a bruise."
+  },
+  {
+   "de": "Vor der Operation möchte ich eine zweite Meinung einholen.",
+   "en": "Before the operation I'd like to get a second opinion."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-t05-01",
+   "type": "choice",
+   "de": "Ich ___ seit Wochen an Rückenschmerzen.",
+   "options": [
+    "leite",
+    "leide",
+    "lebe"
+   ],
+   "answer": 1,
+   "why": "leiden an means to suffer from.",
+   "en": "I've been suffering from back pain for weeks."
+  },
+  {
+   "id": "b2-t05-02",
+   "type": "cloze",
+   "de": "Der Hausarzt hat mir ___ zum Kardiologen gegeben.",
+   "base": "a referral",
+   "answers": [
+    "eine Überweisung"
+   ],
+   "en": "My GP gave me a referral to a cardiologist."
+  },
+  {
+   "id": "b2-t05-03",
+   "type": "cloze",
+   "de": "Welche ___ hat das Medikament? – Manchmal Müdigkeit und Kopfschmerzen.",
+   "base": "side effects",
+   "answers": [
+    "Nebenwirkungen"
+   ],
+   "en": "What side effects does the medicine have? – Sometimes tiredness and headaches."
+  },
+  {
+   "id": "b2-t05-04",
+   "type": "choice",
+   "de": "Nehmen Sie die Tabletten dreimal täglich ___.",
+   "options": [
+    "an",
+    "auf",
+    "ein"
+   ],
+   "answer": 2,
+   "why": "Medicine is taken with einnehmen.",
+   "en": "Take the tablets three times a day."
+  },
+  {
+   "id": "b2-t05-05",
+   "type": "order",
+   "tiles": [
+    "Der Arzt",
+    "hat",
+    "mir",
+    "ein Schmerzmittel",
+    "verschrieben"
+   ],
+   "answers": [
+    "Der Arzt hat mir ein Schmerzmittel verschrieben.",
+    "Mir hat der Arzt ein Schmerzmittel verschrieben.",
+    "Ein Schmerzmittel hat mir der Arzt verschrieben."
+   ],
+   "en": "The doctor prescribed me a painkiller."
+  },
+  {
+   "id": "b2-t05-06",
+   "type": "cloze",
+   "de": "Mein ___ ist zu hoch: 160 zu 100.",
+   "base": "blood pressure",
+   "answers": [
+    "Blutdruck"
+   ],
+   "en": "My blood pressure is too high: 160 over 100."
+  },
+  {
+   "id": "b2-t05-07",
+   "type": "choice",
+   "de": "Das Knie ist nicht gebrochen, es ist nur eine ___.",
+   "options": [
+    "Prüfung",
+    "Prellung",
+    "Pressung"
+   ],
+   "answer": 1,
+   "why": "eine Prellung is a bruise from a knock.",
+   "en": "The knee isn't broken; it's just a bruise."
+  },
+  {
+   "id": "b2-t05-08",
+   "type": "cloze",
+   "de": "Die ___ ist gut verlaufen, Sie können morgen nach Hause.",
+   "base": "operation",
+   "answers": [
+    "Operation",
+    "OP"
+   ],
+   "en": "The operation went well; you can go home tomorrow."
+  },
+  {
+   "id": "b2-t05-09",
+   "type": "choice",
+   "de": "Der Befund ist ___: Es ist alles in Ordnung.",
+   "options": [
+    "positiv",
+    "unauffällig",
+    "auffällig"
+   ],
+   "answer": 1,
+   "why": "unauffällig means nothing abnormal was found; a positiver Befund means something was found.",
+   "en": "The results are normal: everything is fine."
+  },
+  {
+   "id": "b2-t05-10",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hätte",
+    "früher",
+    "zum Arzt",
+    "gehen",
+    "sollen"
+   ],
+   "answers": [
+    "Ich hätte früher zum Arzt gehen sollen."
+   ],
+   "en": "I should have gone to the doctor sooner."
+  },
+  {
+   "id": "b2-t05-11",
+   "type": "cloze",
+   "de": "Die Ärztin hat mich für eine Woche ___.",
+   "base": "signed off sick",
+   "answers": [
+    "krankgeschrieben"
+   ],
+   "en": "The doctor signed me off sick for a week."
+  },
+  {
+   "id": "b2-t05-12",
+   "type": "choice",
+   "de": "Ich habe Schnupfen und Husten, wahrscheinlich ist es nur eine ___.",
+   "options": [
+    "Kälte",
+    "Erkältung",
+    "Kühlung"
+   ],
+   "answer": 1,
+   "why": "die Erkältung is a cold; die Kälte is cold weather.",
+   "en": "I have a runny nose and a cough; it's probably just a cold."
+  },
+  {
+   "id": "b2-t05-13",
+   "type": "cloze",
+   "de": "Sie leidet an einer ___ Krankheit, die nie ganz weggehen wird.",
+   "base": "chronic",
+   "answers": [
+    "chronischen"
+   ],
+   "en": "She suffers from a chronic illness that will never go away completely."
+  },
+  {
+   "id": "b2-t05-14",
+   "type": "choice",
+   "de": "Vor der Operation möchte ich eine zweite ___ einholen.",
+   "options": [
+    "Diagnose",
+    "Ansicht",
+    "Meinung"
+   ],
+   "answer": 2,
+   "why": "eine zweite Meinung einholen means to get a second opinion.",
+   "en": "Before the operation I'd like to get a second opinion."
+  },
+  {
+   "id": "b2-t05-15",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "müssen",
+    "die Tabletten",
+    "nach dem Essen",
+    "einnehmen"
+   ],
+   "answers": [
+    "Sie müssen die Tabletten nach dem Essen einnehmen.",
+    "Nach dem Essen müssen Sie die Tabletten einnehmen.",
+    "Die Tabletten müssen Sie nach dem Essen einnehmen."
+   ],
+   "en": "You have to take the tablets after meals."
+  },
+  {
+   "id": "b2-t05-16",
+   "type": "cloze",
+   "de": "In der Lunge ist eine ___, deshalb haben Sie Fieber.",
+   "base": "inflammation",
+   "answers": [
+    "Entzündung"
+   ],
+   "en": "There's an inflammation in your lungs; that's why you have a fever."
+  },
+  {
+   "id": "b2-t05-17",
+   "type": "choice",
+   "de": "Bei einem Notfall in der Nacht fährt man in die ___.",
+   "options": [
+    "Notaufnahme",
+    "Nothilfe",
+    "Notbremse"
+   ],
+   "answer": 0,
+   "why": "die Notaufnahme is the hospital's emergency department.",
+   "en": "In an emergency at night you go to A&E."
+  },
+  {
+   "id": "b2-t05-18",
+   "type": "cloze",
+   "de": "Nach der Operation brauchen Sie ein paar Wochen, um sich zu ___.",
+   "base": "recover",
+   "answers": [
+    "erholen"
+   ],
+   "en": "After the operation you'll need a few weeks to recover."
+  },
+  {
+   "id": "b2-t05-19",
+   "type": "order",
+   "tiles": [
+    "Die Blutwerte",
+    "sind",
+    "zum Glück",
+    "in Ordnung"
+   ],
+   "answers": [
+    "Die Blutwerte sind zum Glück in Ordnung.",
+    "Zum Glück sind die Blutwerte in Ordnung."
+   ],
+   "en": "Luckily the blood test results are fine."
+  },
+  {
+   "id": "b2-t05-20",
+   "type": "choice",
+   "de": "Die Wunde hat sich ___, sie ist rot und heiß.",
+   "options": [
+    "angezündet",
+    "verbrannt",
+    "entzündet"
+   ],
+   "answer": 2,
+   "why": "sich entzünden means to become inflamed; anzünden is for lighting a fire.",
+   "en": "The wound has become inflamed; it's red and hot."
+  },
+  {
+   "id": "b2-t05-21",
+   "type": "cloze",
+   "de": "Die Krankenkasse übernimmt ___ für die Therapie.",
+   "base": "the costs",
+   "answers": [
+    "die Kosten"
+   ],
+   "en": "The health insurance covers the costs of the therapy."
+  },
+  {
+   "id": "b2-t05-22",
+   "type": "choice",
+   "de": "Atmen Sie bitte tief ___.",
+   "options": [
+    "ein",
+    "an",
+    "zu"
+   ],
+   "answer": 0,
+   "why": "einatmen means to breathe in.",
+   "en": "Please breathe in deeply."
+  },
+  {
+   "id": "b2-t05-23",
+   "type": "cloze",
+   "de": "Bei der Physiotherapie stärke ich die ___ im Rücken.",
+   "base": "muscles",
+   "answers": [
+    "Muskeln"
+   ],
+   "en": "In physiotherapy I strengthen the muscles in my back."
+  },
+  {
+   "id": "b2-t05-24",
+   "type": "order",
+   "tiles": [
+    "Gibt",
+    "es",
+    "eine Alternative",
+    "zur Operation"
+   ],
+   "answers": [
+    "Gibt es eine Alternative zur Operation?"
+   ],
+   "en": "Is there an alternative to surgery?"
+  }
+ ],
+ "listening": {
+  "title": "Die Ergebnisse sind da",
+  "intro": "Lukas has had back and leg pain for months; Dr Elif Yılmaz explains the results of his MRI scan.",
+  "lines": [
+   {
+    "speaker": "Elif",
+    "de": "Herr Becker, die Ergebnisse der MRT sind da. Setzen Sie sich bitte.",
+    "en": "Mr Becker, the MRI results are here. Please sit down."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Und? Ist es etwas Schlimmes?",
+    "en": "And? Is it something serious?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Sie haben einen leichten Bandscheibenvorfall im unteren Rücken. Daher kommen auch die Schmerzen im Bein.",
+    "en": "You have a mild slipped disc in your lower back. That's also where the pain in your leg comes from."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ein Bandscheibenvorfall? Muss ich jetzt operiert werden?",
+    "en": "A slipped disc? Do I need an operation now?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Nein, in den meisten Fällen ist keine Operation nötig. Wir fangen mit Physiotherapie an.",
+    "en": "No, in most cases no operation is needed. We'll start with physiotherapy."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Wie lange dauert es, bis es besser wird?",
+    "en": "How long will it take to get better?"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Meistens sechs bis zwölf Wochen. Wichtig ist, dass Sie in Bewegung bleiben und die Rückenmuskeln stärken.",
+    "en": "Usually six to twelve weeks. It's important that you keep moving and strengthen your back muscles."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Ehrlich gesagt habe ich die Schmerzen schon seit Monaten. Hätte ich bloß früher etwas gemacht!",
+    "en": "To be honest, I've had the pain for months. If only I'd done something sooner!"
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ja, Sie hätten früher kommen sollen. Aber machen Sie sich keine Vorwürfe, das ist gut behandelbar.",
+    "en": "Yes, you should have come sooner. But don't blame yourself; it's very treatable."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Und was mache ich gegen die Schmerzen? Nachts kann ich kaum schlafen.",
+    "en": "And what can I do about the pain? I can hardly sleep at night."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ich verschreibe Ihnen ein Schmerzmittel. Nehmen Sie es aber nur nach dem Essen ein, sonst bekommen Sie Magenprobleme.",
+    "en": "I'll prescribe you a painkiller. But only take it after eating, otherwise you'll get stomach problems."
+   },
+   {
+    "speaker": "Lukas",
+    "de": "Darf ich denn arbeiten? Ich sitze den ganzen Tag am Schreibtisch.",
+    "en": "Am I allowed to work? I sit at a desk all day."
+   },
+   {
+    "speaker": "Elif",
+    "de": "Ich schreibe Sie erst mal für eine Woche krank. Danach sollten Sie öfter aufstehen, und wenn es in sechs Wochen nicht besser ist, kommen Sie wieder.",
+    "en": "I'll sign you off sick for a week for now. After that you should get up more often, and if it isn't better in six weeks, come back."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the diagnosis?",
+    "options": [
+     "A broken bone in his leg.",
+     "A mild slipped disc in his lower back.",
+     "An inflammation in his stomach."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Does Lukas need an operation?",
+    "options": [
+     "Yes, as soon as possible.",
+     "Only if the painkiller doesn't help.",
+     "No, he starts with physiotherapy."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "How should he take the painkiller?",
+    "options": [
+     "Only after eating.",
+     "Only at night.",
+     "Three times a day before meals."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "For how long is Lukas signed off sick?",
+    "options": [
+     "Six weeks.",
+     "One week.",
+     "Twelve weeks."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Der Arzt hat mir eine Überweisung zum Orthopäden gegeben.",
+  "Nehmen Sie die Tabletten dreimal täglich nach dem Essen ein.",
+  "Hätte ich früher einen Termin gemacht, wären die Schmerzen nicht so stark geworden."
+ ],
+ "speaking": [
+  {
+   "de": "Ist es etwas Schlimmes?",
+   "en": "Is it something serious?"
+  },
+  {
+   "de": "Muss ich jetzt operiert werden?",
+   "en": "Do I need an operation now?"
+  },
+  {
+   "de": "Wie lange dauert es, bis es besser wird?",
+   "en": "How long will it take to get better?"
+  },
+  {
+   "de": "Hätte ich bloß früher etwas gemacht!",
+   "en": "If only I'd done something sooner!"
+  },
+  {
+   "de": "Nachts kann ich vor Schmerzen kaum schlafen.",
+   "en": "At night I can hardly sleep because of the pain."
+  }
+ ],
+ "writing": {
+  "task": "A friend asked how your doctor's appointment went. Write a message of 100–130 words: explain the diagnosis, the treatment the doctor suggested and how long you'll be off work, and say what you should have done differently.",
+  "model": "Hallo Jule,\n\ndanke, dass du nachgefragt hast! Heute waren die Ergebnisse der MRT da: Ich habe einen leichten Bandscheibenvorfall im unteren Rücken. Daher kommen also die Schmerzen im Bein.\n\nZum Glück muss ich nicht operiert werden. Die Ärztin hat mir Physiotherapie verschrieben, und ich soll die Rückenmuskeln stärken und mich viel bewegen. Gegen die Schmerzen nehme ich ein Schmerzmittel ein, aber nur nach dem Essen, weil es auf den Magen geht. Für diese Woche hat sie mich krankgeschrieben.\n\nEhrlich gesagt hätte ich viel früher zum Arzt gehen sollen, ich hatte die Schmerzen ja schon seit Monaten. Wenn ich gleich etwas gemacht hätte, wäre es bestimmt nicht so schlimm geworden.\n\nLiebe Grüße\nLukas"
+ }
+}

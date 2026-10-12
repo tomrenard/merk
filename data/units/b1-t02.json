@@ -1,0 +1,519 @@
+{
+ "id": "b1-t02",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "das Konto",
+  "das Girokonto",
+  "die Bank",
+  "die Kreditkarte",
+  "das Bargeld",
+  "abheben",
+  "einzahlen",
+  "überweisen",
+  "die Überweisung",
+  "die Gebühr",
+  "die Zinsen (Pl.)",
+  "der Kredit",
+  "sparen",
+  "die Versicherung",
+  "versichern",
+  "die Rechnung",
+  "der Betrag",
+  "die Zahlung",
+  "die Schulden (Pl.)",
+  "das Einkommen",
+  "die Unterschrift",
+  "unterschreiben",
+  "der Schaden",
+  "die Mahnung",
+  "das Passwort",
+  "die Beratung",
+  "kostenlos"
+ ],
+ "title": "Bank, insurance and money",
+ "situation": "Opening an account and insurance",
+ "canDo": "You can open a bank account, talk about paying, transferring and saving money, and ask about insurance.",
+ "explanation": "When you arrive in Germany, two of the first things you need are a bank account and the right insurance.\n\n| German | English |\n|---|---|\n| das Girokonto, -konten | current account |\n| die Karte, -n / die Kreditkarte, -n | bank card / credit card |\n| das Bargeld | cash |\n| die Überweisung, -en | bank transfer |\n| die Gebühr, -en | fee |\n| die Zinsen (pl.) | interest |\n| der Kredit, -e | loan |\n| die Schulden (pl.) | debts |\n| die Versicherung, -en | insurance |\n| die Haftpflichtversicherung | personal liability insurance |\n| der Schaden, Schäden | damage |\n\nUseful verbs:\n- **ein Konto eröffnen** – to open an account\n- **Geld abheben / einzahlen** – to withdraw / to pay in money\n- **Geld überweisen** – to transfer money\n- **bar zahlen / mit Karte zahlen** – to pay cash / by card\n- **sparen** – to save\n\nTips:\n- Health insurance (**die Krankenversicherung**) is compulsory. The **Haftpflichtversicherung** is not, but almost everyone has one: it pays when you damage someone else's things.\n- Germans still pay cash more often than the French, so keep some Bargeld with you.\n- **die Bank** is also a bench in the park; the plural is different: *die Banken* (banks), *die Bänke* (benches).\n- The most common mistake: \"Geld nehmen\" at the machine. You **heben** Geld **ab**.",
+ "french": "Many words are close to French (das Konto = le compte, der Kredit = le crédit, die Zinsen = les intérêts), but la responsabilité civile, which in France usually comes with your home insurance, is a separate Haftpflichtversicherung in Germany.",
+ "examples": [
+  {
+   "de": "Ich möchte ein Girokonto eröffnen.",
+   "en": "I'd like to open a current account."
+  },
+  {
+   "de": "Kann ich hier Geld abheben?",
+   "en": "Can I withdraw money here?"
+  },
+  {
+   "de": "Die Miete überweise ich immer am Monatsanfang.",
+   "en": "I always transfer the rent at the start of the month."
+  },
+  {
+   "de": "Das Konto kostet keine Gebühren.",
+   "en": "The account has no fees."
+  },
+  {
+   "de": "Ich zahle lieber bar als mit Karte.",
+   "en": "I prefer paying cash to paying by card."
+  },
+  {
+   "de": "Die Haftpflichtversicherung zahlt, wenn du bei anderen Leuten etwas kaputtmachst.",
+   "en": "Liability insurance pays if you break something at other people's homes."
+  },
+  {
+   "de": "Das ist die Versicherung, die ich dir empfohlen habe.",
+   "en": "That's the insurance I recommended to you."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t02-01",
+   "type": "cloze",
+   "de": "Ich möchte gern ein ___ eröffnen.",
+   "base": "current account",
+   "answers": [
+    "Girokonto",
+    "Konto"
+   ],
+   "en": "I'd like to open a current account."
+  },
+  {
+   "id": "b1-t02-02",
+   "type": "choice",
+   "de": "Am Automaten kann man rund um die Uhr Geld ___.",
+   "options": [
+    "abheben",
+    "aufheben",
+    "ausgeben"
+   ],
+   "answer": 0,
+   "why": "Taking money out of an account is Geld abheben; aufheben means to keep or pick up, and ausgeben means to spend.",
+   "en": "You can withdraw money from the machine around the clock."
+  },
+  {
+   "id": "b1-t02-03",
+   "type": "cloze",
+   "de": "Ich ___ die Miete jeden Monat online.",
+   "base": "transfer (money)",
+   "answers": [
+    "überweise"
+   ],
+   "en": "I transfer the rent online every month."
+  },
+  {
+   "id": "b1-t02-04",
+   "type": "choice",
+   "de": "Das Konto ist kostenlos, Sie zahlen keine ___.",
+   "options": [
+    "Zinsen",
+    "Gebühren",
+    "Steuern"
+   ],
+   "answer": 1,
+   "why": "Money you pay for a service is Gebühren (fees); Zinsen is interest and Steuern are taxes.",
+   "en": "The account is free, you don't pay any fees."
+  },
+  {
+   "id": "b1-t02-05",
+   "type": "cloze",
+   "de": "Auf meinem Sparkonto bekomme ich leider kaum ___.",
+   "base": "interest",
+   "answers": [
+    "Zinsen"
+   ],
+   "en": "Unfortunately I get hardly any interest on my savings account."
+  },
+  {
+   "id": "b1-t02-06",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "ein Konto",
+    "eröffnen"
+   ],
+   "answers": [
+    "Ich möchte ein Konto eröffnen."
+   ],
+   "en": "I'd like to open an account."
+  },
+  {
+   "id": "b1-t02-07",
+   "type": "choice",
+   "de": "Bitte ___ Sie hier unten.",
+   "options": [
+    "unterstreichen",
+    "beschreiben",
+    "unterschreiben"
+   ],
+   "answer": 2,
+   "why": "To sign is unterschreiben; unterstreichen means to underline and beschreiben means to describe.",
+   "en": "Please sign down here."
+  },
+  {
+   "id": "b1-t02-08",
+   "type": "cloze",
+   "de": "Zahlen Sie bar oder mit ___?",
+   "base": "card",
+   "answers": [
+    "Karte",
+    "Kreditkarte",
+    "EC-Karte",
+    "Girokarte"
+   ],
+   "en": "Are you paying cash or by card?"
+  },
+  {
+   "id": "b1-t02-09",
+   "type": "choice",
+   "de": "Wenn du bei Freunden etwas kaputtmachst, zahlt die ___.",
+   "options": [
+    "Haftpflichtversicherung",
+    "Krankenkasse",
+    "Bank"
+   ],
+   "answer": 0,
+   "why": "Damage you cause to other people's things is paid by your Haftpflichtversicherung; the Krankenkasse pays for the doctor.",
+   "en": "If you break something at your friends' place, the liability insurance pays."
+  },
+  {
+   "id": "b1-t02-10",
+   "type": "cloze",
+   "de": "Für das Konto brauchen wir Ihren Ausweis und Ihre ___.",
+   "base": "signature",
+   "answers": [
+    "Unterschrift"
+   ],
+   "en": "For the account we need your ID card and your signature."
+  },
+  {
+   "id": "b1-t02-11",
+   "type": "order",
+   "tiles": [
+    "Kann",
+    "ich",
+    "hier",
+    "Geld",
+    "abheben"
+   ],
+   "answers": [
+    "Kann ich hier Geld abheben?"
+   ],
+   "en": "Can I withdraw money here?"
+  },
+  {
+   "id": "b1-t02-12",
+   "type": "choice",
+   "de": "Ich habe kein ___ dabei. Kann ich mit Karte zahlen?",
+   "options": [
+    "Konto",
+    "Bargeld",
+    "Gehalt"
+   ],
+   "answer": 1,
+   "why": "Cash is das Bargeld; you don't carry a Konto or a Gehalt with you.",
+   "en": "I don't have any cash on me. Can I pay by card?"
+  },
+  {
+   "id": "b1-t02-13",
+   "type": "cloze",
+   "de": "Mein ___ kommt immer am Monatsende aufs Konto.",
+   "base": "salary",
+   "answers": [
+    "Gehalt",
+    "Lohn"
+   ],
+   "en": "My salary always comes into my account at the end of the month."
+  },
+  {
+   "id": "b1-t02-14",
+   "type": "order",
+   "tiles": [
+    "Das ist",
+    "die Versicherung,",
+    "die",
+    "ich",
+    "dir",
+    "empfohlen habe"
+   ],
+   "answers": [
+    "Das ist die Versicherung, die ich dir empfohlen habe."
+   ],
+   "en": "That's the insurance I recommended to you."
+  },
+  {
+   "id": "b1-t02-15",
+   "type": "choice",
+   "de": "Ich habe die Rechnung nicht bezahlt. Jetzt habe ich eine ___ bekommen.",
+   "options": [
+    "Mahnung",
+    "Warnung",
+    "Meldung"
+   ],
+   "answer": 0,
+   "why": "A letter that reminds you to pay is eine Mahnung; eine Warnung is a warning about a danger and eine Meldung is a report.",
+   "en": "I didn't pay the bill. Now I've received a payment reminder."
+  },
+  {
+   "id": "b1-t02-16",
+   "type": "cloze",
+   "de": "Die Bank gibt uns einen ___ für die neue Küche.",
+   "base": "loan",
+   "answers": [
+    "Kredit"
+   ],
+   "en": "The bank is giving us a loan for the new kitchen."
+  },
+  {
+   "id": "b1-t02-17",
+   "type": "cloze",
+   "de": "Jeden Monat ___ ich 100 Euro für den Urlaub.",
+   "base": "save",
+   "answers": [
+    "spare"
+   ],
+   "en": "Every month I save 100 euros for the holiday."
+  },
+  {
+   "id": "b1-t02-18",
+   "type": "order",
+   "tiles": [
+    "Die Miete",
+    "überweise",
+    "ich",
+    "am Monatsanfang"
+   ],
+   "answers": [
+    "Die Miete überweise ich am Monatsanfang.",
+    "Ich überweise die Miete am Monatsanfang.",
+    "Am Monatsanfang überweise ich die Miete."
+   ],
+   "en": "I transfer the rent at the start of the month."
+  },
+  {
+   "id": "b1-t02-19",
+   "type": "choice",
+   "de": "Nach dem Unfall zahlt die Versicherung den ___ am Auto.",
+   "options": [
+    "Fehler",
+    "Schaden",
+    "Unfall"
+   ],
+   "answer": 1,
+   "why": "Damage is der Schaden; the insurance pays for the damage to the car.",
+   "en": "After the accident, the insurance pays for the damage to the car."
+  },
+  {
+   "id": "b1-t02-20",
+   "type": "cloze",
+   "de": "Bitte überweisen Sie den ___ bis zum 15. März.",
+   "base": "amount",
+   "answers": [
+    "Betrag",
+    "Rechnungsbetrag"
+   ],
+   "en": "Please transfer the amount by 15 March."
+  },
+  {
+   "id": "b1-t02-21",
+   "type": "choice",
+   "de": "Ich habe zu viel Geld ausgegeben und habe jetzt ___ bei der Bank.",
+   "options": [
+    "Kosten",
+    "Schulden",
+    "Zinsen"
+   ],
+   "answer": 1,
+   "why": "Money you owe is Schulden (plural); Kosten are costs and Zinsen is interest.",
+   "en": "I spent too much money and now I'm in debt to the bank."
+  },
+  {
+   "id": "b1-t02-22",
+   "type": "cloze",
+   "de": "Mein ___ ist zu niedrig für einen Kredit, sagt die Bank.",
+   "base": "income",
+   "answers": [
+    "Einkommen",
+    "Gehalt",
+    "Lohn"
+   ],
+   "en": "My income is too low for a loan, the bank says."
+  },
+  {
+   "id": "b1-t02-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "habe",
+    "kein Bargeld",
+    "dabei"
+   ],
+   "answers": [
+    "Ich habe kein Bargeld dabei."
+   ],
+   "en": "I don't have any cash on me."
+  },
+  {
+   "id": "b1-t02-24",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "brauche",
+    "eine Versicherung,",
+    "die",
+    "auch im Ausland",
+    "zahlt"
+   ],
+   "answers": [
+    "Ich brauche eine Versicherung, die auch im Ausland zahlt."
+   ],
+   "en": "I need insurance that also pays abroad."
+  }
+ ],
+ "listening": {
+  "title": "Ein Konto eröffnen",
+  "intro": "Amélie has just moved to Germany and opens a bank account.",
+  "lines": [
+   {
+    "speaker": "Herr Schulz",
+    "de": "Guten Tag, was kann ich für Sie tun?",
+    "en": "Hello, what can I do for you?"
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Guten Tag. Ich bin neu in Deutschland und möchte ein Girokonto eröffnen.",
+    "en": "Hello. I'm new in Germany and would like to open a current account."
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Gern. Haben Sie Ihren Pass und Ihre Meldebescheinigung dabei?",
+    "en": "Of course. Do you have your passport and your registration certificate with you?"
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Ja, hier. Was kostet das Konto?",
+    "en": "Yes, here. How much does the account cost?"
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Das Konto ist kostenlos, wenn jeden Monat mindestens 700 Euro auf das Konto kommen. Sonst zahlen Sie fünf Euro Gebühr im Monat.",
+    "en": "The account is free if at least 700 euros come into it every month. Otherwise you pay a fee of five euros a month."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Das ist kein Problem. Ab Mai kommt mein Gehalt auf dieses Konto.",
+    "en": "That's no problem. From May my salary will come into this account."
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Prima. Sie bekommen eine Girokarte, mit der Sie überall Geld abheben können. Eine Kreditkarte können Sie auch haben, die kostet aber 30 Euro im Jahr.",
+    "en": "Great. You'll get a bank card that you can use to withdraw money everywhere. You can have a credit card too, but it costs 30 euros a year."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Die brauche ich im Moment nicht. Kann ich auch online Geld überweisen?",
+    "en": "I don't need that at the moment. Can I also transfer money online?"
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Natürlich. Das Passwort für das Online-Banking bekommen Sie per Post.",
+    "en": "Of course. You'll get the password for online banking by post."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Noch eine Frage: Eine Kollegin hat gesagt, dass ich in Deutschland eine Haftpflichtversicherung brauche. Stimmt das?",
+    "en": "One more question: a colleague said that I need liability insurance in Germany. Is that true?"
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Sie ist keine Pflicht, aber fast jeder hat eine. Sie zahlt, wenn Sie bei anderen Leuten etwas kaputtmachen.",
+    "en": "It's not compulsory, but almost everyone has one. It pays if you break something belonging to other people."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Und was kostet so eine Versicherung?",
+    "en": "And how much does insurance like that cost?"
+   },
+   {
+    "speaker": "Herr Schulz",
+    "de": "Ungefähr 60 Euro im Jahr. Ich gebe Ihnen eine Broschüre mit, in der alles steht.",
+    "en": "About 60 euros a year. I'll give you a brochure that explains everything."
+   },
+   {
+    "speaker": "Amélie",
+    "de": "Super, vielen Dank für die Beratung!",
+    "en": "Great, thank you very much for the advice!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is the account free?",
+    "options": [
+     "Always",
+     "If at least 700 euros come in every month",
+     "Only in the first year"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Amélie take the credit card?",
+    "options": [
+     "She doesn't need it at the moment",
+     "She already has one",
+     "The bank doesn't offer one"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does she get the password for online banking?",
+    "options": [
+     "By email",
+     "At the counter",
+     "By post"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does the clerk say about liability insurance?",
+    "options": [
+     "It's compulsory",
+     "It isn't compulsory, but almost everyone has one",
+     "It's only for students"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte gern ein Girokonto bei Ihrer Bank eröffnen.",
+  "Mit der Karte können Sie überall Geld abheben.",
+  "Die Versicherung zahlt, wenn ich bei Freunden etwas kaputtmache."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte ein Girokonto eröffnen.",
+   "en": "I'd like to open a current account."
+  },
+  {
+   "de": "Was kostet das Konto?",
+   "en": "How much does the account cost?"
+  },
+  {
+   "de": "Kann ich auch online Geld überweisen?",
+   "en": "Can I also transfer money online?"
+  },
+  {
+   "de": "Brauche ich in Deutschland eine Haftpflichtversicherung?",
+   "en": "Do I need liability insurance in Germany?"
+  },
+  {
+   "de": "Vielen Dank für die Beratung!",
+   "en": "Thank you very much for the advice!"
+  }
+ ],
+ "writing": {
+  "task": "Your friend Paul is moving to Germany and asks you how to open a bank account and which insurance he needs. Write him an 80–100-word message.",
+  "model": "Hallo Paul,\n\nein Konto eröffnen ist ganz einfach. Geh zu einer Bank und nimm deinen Pass und deine Meldebescheinigung mit. Frag nach einem Girokonto, das keine Gebühren kostet. Mit der Karte kannst du überall Geld abheben, aber in Deutschland zahlen viele Leute noch bar. Dein Gehalt kommt dann direkt auf das Konto. Wichtig: Du musst eine Krankenversicherung haben. Ich empfehle dir auch eine Haftpflichtversicherung. Sie ist nicht teuer und zahlt, wenn du bei anderen etwas kaputtmachst. Ich schicke dir den Link zu meiner Versicherung, mit der ich sehr zufrieden bin.\n\nViele Grüße\nLéa"
+ }
+}

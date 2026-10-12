@@ -1,0 +1,537 @@
+{
+ "id": "b2-t01",
+ "cefr": "B2",
+ "kind": "topic",
+ "words": [
+  "die Besprechung",
+  "besprechen",
+  "die Präsentation",
+  "präsentieren",
+  "der Vortrag",
+  "die Grafik",
+  "der Vorschlag",
+  "vorschlagen",
+  "der Kompromiss",
+  "sich einigen",
+  "zustimmen",
+  "ablehnen",
+  "die Bedingung",
+  "der Vertrag",
+  "das Angebot",
+  "das Gehalt",
+  "die Erhöhung",
+  "der Standpunkt",
+  "die Frist",
+  "zusammenfassen",
+  "die Abteilung",
+  "die Verantwortung",
+  "die Entscheidung",
+  "das Ergebnis",
+  "das Ziel",
+  "das Projekt",
+  "der Kunde",
+  "der Vorteil",
+  "der Nachteil",
+  "(sich) überzeugen"
+ ],
+ "title": "Meetings, negotiation and presenting",
+ "situation": "Presenting at work",
+ "canDo": "You can present a project, make and answer proposals and reach a compromise in a meeting at work.",
+ "explanation": "You present a project, then negotiate price and deadlines:\n\n| German | English |\n|---|---|\n| die Besprechung, -en | meeting |\n| die Tagesordnung, -en | agenda |\n| das Protokoll, -e | minutes |\n| die Präsentation, -en / die Folie, -n | presentation / slide |\n| der Vorschlag, ¨-e | proposal |\n| die Bedingung, -en | condition |\n| der Kompromiss, -e | compromise |\n| die Frist, -en | deadline |\n\n| phrase | English |\n|---|---|\n| Ich möchte Ihnen kurz … vorstellen. | I'd like to briefly present … |\n| Wie Sie auf der Folie sehen, … | As you can see on the slide, … |\n| Zusammenfassend lässt sich sagen, … | To sum up, … |\n| Ich schlage vor, dass … | I suggest that … |\n| Wir können Ihnen beim Preis entgegenkommen. | We can meet you halfway on the price. |\n| Darauf können wir uns einigen. | We can agree on that. |\n\nTips:\n- You **halten** a presentation or a talk: *eine Präsentation / einen Vortrag halten*, not *machen* or *geben*.\n- **zustimmen** takes the dative: *Ich stimme **Ihnen** zu.* **sich einigen** takes *auf* + accusative: *Wir haben uns **auf einen Kompromiss** geeinigt.*\n- **ablehnen** = to turn down an offer or proposal; **absagen** = to cancel an appointment.\n- Soften with Konjunktiv II: *Könnten wir …? Wäre es möglich, …?* Many offices also say *das Meeting* and *die Deadline*.",
+ "french": "Faire une présentation is eine Präsentation halten, and être d'accord avec quelqu'un is jemandem zustimmen (with the dative), not zu jemandem.",
+ "examples": [
+  {
+   "de": "Ich möchte Ihnen heute kurz unser neues Projekt vorstellen.",
+   "en": "I'd like to briefly present our new project to you today."
+  },
+  {
+   "de": "Wie Sie auf dieser Folie sehen, sind die Kosten letztes Jahr gestiegen.",
+   "en": "As you can see on this slide, costs rose last year."
+  },
+  {
+   "de": "Die Tagesordnung ist schon verschickt.",
+   "en": "The agenda has already been sent out."
+  },
+  {
+   "de": "Ich schlage vor, dass wir die Frist um eine Woche verlängern.",
+   "en": "I suggest we extend the deadline by a week."
+  },
+  {
+   "de": "Mit diesem Vorschlag bin ich einverstanden.",
+   "en": "I agree to this proposal."
+  },
+  {
+   "de": "Beim Preis können wir Ihnen etwas entgegenkommen.",
+   "en": "We can meet you halfway a little on the price."
+  },
+  {
+   "de": "Zusammenfassend lässt sich sagen, dass das Projekt ein Erfolg war.",
+   "en": "To sum up, the project was a success."
+  },
+  {
+   "de": "Können wir uns auf einen Kompromiss einigen?",
+   "en": "Can we agree on a compromise?"
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-t01-01",
+   "type": "choice",
+   "de": "Morgen muss ich vor dem ganzen Team einen Vortrag ___.",
+   "options": [
+    "geben",
+    "halten",
+    "sagen"
+   ],
+   "answer": 1,
+   "why": "You halten a talk or presentation; einen Vortrag geben is a translation from English.",
+   "en": "Tomorrow I have to give a talk in front of the whole team."
+  },
+  {
+   "id": "b2-t01-02",
+   "type": "cloze",
+   "de": "Bitte schicken Sie mir vor der Besprechung ___.",
+   "base": "the agenda",
+   "answers": [
+    "die Tagesordnung"
+   ],
+   "en": "Please send me the agenda before the meeting."
+  },
+  {
+   "id": "b2-t01-03",
+   "type": "cloze",
+   "de": "Wie Sie auf dieser ___ sehen, steigen die Kosten.",
+   "base": "slide",
+   "answers": [
+    "Folie"
+   ],
+   "en": "As you can see on this slide, costs are rising."
+  },
+  {
+   "id": "b2-t01-04",
+   "type": "choice",
+   "de": "Da ___ ich Ihnen völlig zu.",
+   "options": [
+    "stimme",
+    "gebe",
+    "stelle"
+   ],
+   "answer": 0,
+   "why": "jemandem zustimmen means to agree with someone.",
+   "en": "I completely agree with you there."
+  },
+  {
+   "id": "b2-t01-05",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schlage",
+    "vor",
+    "dass",
+    "wir",
+    "eine Pause",
+    "machen"
+   ],
+   "answers": [
+    "Ich schlage vor, dass wir eine Pause machen."
+   ],
+   "en": "I suggest we take a break."
+  },
+  {
+   "id": "b2-t01-06",
+   "type": "cloze",
+   "de": "Das Projekt muss bis zum 30. Juni fertig sein – das ist ___.",
+   "base": "the deadline",
+   "answers": [
+    "die Frist",
+    "die Deadline"
+   ],
+   "en": "The project has to be finished by 30 June – that's the deadline."
+  },
+  {
+   "id": "b2-t01-07",
+   "type": "choice",
+   "de": "Leider müssen wir Ihr Angebot ___.",
+   "options": [
+    "absagen",
+    "ablehnen",
+    "abgeben"
+   ],
+   "answer": 1,
+   "why": "You turn down an offer with ablehnen; absagen is for cancelling an appointment or event.",
+   "en": "Unfortunately we have to turn down your offer."
+  },
+  {
+   "id": "b2-t01-08",
+   "type": "cloze",
+   "de": "Mit Ihrem ___ bin ich einverstanden.",
+   "base": "proposal",
+   "answers": [
+    "Vorschlag"
+   ],
+   "en": "I agree to your proposal."
+  },
+  {
+   "id": "b2-t01-09",
+   "type": "choice",
+   "de": "Können wir uns ___ einen Kompromiss einigen?",
+   "options": [
+    "über",
+    "mit",
+    "auf"
+   ],
+   "answer": 2,
+   "why": "sich einigen auf + accusative means to agree on something.",
+   "en": "Can we agree on a compromise?"
+  },
+  {
+   "id": "b2-t01-10",
+   "type": "order",
+   "tiles": [
+    "Zusammenfassend",
+    "lässt sich",
+    "sagen",
+    "dass",
+    "das Projekt",
+    "erfolgreich",
+    "war"
+   ],
+   "answers": [
+    "Zusammenfassend lässt sich sagen, dass das Projekt erfolgreich war."
+   ],
+   "en": "To sum up, the project was successful."
+  },
+  {
+   "id": "b2-t01-11",
+   "type": "cloze",
+   "de": "Wer trägt ___ für das Budget?",
+   "base": "the responsibility",
+   "answers": [
+    "die Verantwortung"
+   ],
+   "en": "Who is responsible for the budget?"
+  },
+  {
+   "id": "b2-t01-12",
+   "type": "choice",
+   "de": "Der Kunde möchte einen Rabatt. Wir können ihm beim Preis ein bisschen ___.",
+   "options": [
+    "entgegenkommen",
+    "zukommen",
+    "nachkommen"
+   ],
+   "answer": 0,
+   "why": "jemandem entgegenkommen means to meet someone halfway.",
+   "en": "The client wants a discount. We can meet him halfway a little on the price."
+  },
+  {
+   "id": "b2-t01-13",
+   "type": "order",
+   "tiles": [
+    "Wie",
+    "Sie",
+    "auf der Grafik",
+    "sehen",
+    "sind",
+    "die Kosten",
+    "gestiegen"
+   ],
+   "answers": [
+    "Wie Sie auf der Grafik sehen, sind die Kosten gestiegen.",
+    "Die Kosten sind gestiegen, wie Sie auf der Grafik sehen.",
+    "Die Kosten sind, wie Sie auf der Grafik sehen, gestiegen."
+   ],
+   "en": "As you can see on the chart, costs have risen."
+  },
+  {
+   "id": "b2-t01-14",
+   "type": "cloze",
+   "de": "Können Sie die Ergebnisse am Ende kurz ___?",
+   "base": "to sum up",
+   "answers": [
+    "zusammenfassen"
+   ],
+   "en": "Can you briefly sum up the results at the end?"
+  },
+  {
+   "id": "b2-t01-15",
+   "type": "choice",
+   "de": "Das ist mein letztes Angebot. Unter dieser ___ unterschreiben wir den Vertrag.",
+   "options": [
+    "Lösung",
+    "Bedingung",
+    "Meinung"
+   ],
+   "answer": 1,
+   "why": "unter einer Bedingung means on a condition.",
+   "en": "That's my final offer. On this condition we'll sign the contract."
+  },
+  {
+   "id": "b2-t01-16",
+   "type": "cloze",
+   "de": "Ich möchte mit Ihnen über eine ___ meines Gehalts sprechen.",
+   "base": "increase",
+   "answers": [
+    "Erhöhung",
+    "Steigerung",
+    "Anhebung"
+   ],
+   "en": "I'd like to talk to you about a raise in my salary."
+  },
+  {
+   "id": "b2-t01-17",
+   "type": "order",
+   "tiles": [
+    "Darauf",
+    "können",
+    "wir",
+    "uns",
+    "einigen"
+   ],
+   "answers": [
+    "Darauf können wir uns einigen.",
+    "Wir können uns darauf einigen."
+   ],
+   "en": "We can agree on that."
+  },
+  {
+   "id": "b2-t01-18",
+   "type": "choice",
+   "de": "Ich sehe das anders. Mein ___ ist, dass wir mehr Personal brauchen.",
+   "options": [
+    "Standort",
+    "Stand",
+    "Standpunkt"
+   ],
+   "answer": 2,
+   "why": "der Standpunkt is your point of view; der Standort is a location.",
+   "en": "I see it differently. My point of view is that we need more staff."
+  },
+  {
+   "id": "b2-t01-19",
+   "type": "cloze",
+   "de": "Nach langer Diskussion haben wir ___ getroffen.",
+   "base": "a decision",
+   "answers": [
+    "eine Entscheidung"
+   ],
+   "en": "After a long discussion we made a decision."
+  },
+  {
+   "id": "b2-t01-20",
+   "type": "choice",
+   "de": "Darf ich Sie kurz ___? – Natürlich, bitte.",
+   "options": [
+    "unterbrechen",
+    "unterhalten",
+    "unterschreiben"
+   ],
+   "answer": 0,
+   "why": "jemanden unterbrechen means to interrupt someone.",
+   "en": "May I interrupt you for a moment? – Of course, go ahead."
+  },
+  {
+   "id": "b2-t01-21",
+   "type": "cloze",
+   "de": "Wer schreibt heute ___?",
+   "base": "the minutes",
+   "answers": [
+    "das Protokoll"
+   ],
+   "en": "Who's taking the minutes today?"
+  },
+  {
+   "id": "b2-t01-22",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "Ihnen",
+    "heute",
+    "unser neues Projekt",
+    "vorstellen"
+   ],
+   "answers": [
+    "Ich möchte Ihnen heute unser neues Projekt vorstellen.",
+    "Heute möchte ich Ihnen unser neues Projekt vorstellen.",
+    "Unser neues Projekt möchte ich Ihnen heute vorstellen.",
+    "Ich möchte Ihnen unser neues Projekt heute vorstellen."
+   ],
+   "en": "Today I'd like to present our new project to you."
+  },
+  {
+   "id": "b2-t01-23",
+   "type": "choice",
+   "de": "Das neue System hat einen großen ___: Es spart viel Zeit.",
+   "options": [
+    "Vorschlag",
+    "Vorteil",
+    "Vertrag"
+   ],
+   "answer": 1,
+   "why": "der Vorteil is an advantage.",
+   "en": "The new system has a big advantage: it saves a lot of time."
+  },
+  {
+   "id": "b2-t01-24",
+   "type": "order",
+   "tiles": [
+    "Mit",
+    "diesem Vorschlag",
+    "bin",
+    "ich",
+    "einverstanden"
+   ],
+   "answers": [
+    "Mit diesem Vorschlag bin ich einverstanden.",
+    "Ich bin mit diesem Vorschlag einverstanden."
+   ],
+   "en": "I agree to this proposal."
+  }
+ ],
+ "listening": {
+  "title": "Das Angebot für die Website",
+  "intro": "Lena, a project manager at a web agency, presents an offer to Markus Brandt, a client, and they negotiate price and deadline.",
+  "lines": [
+   {
+    "speaker": "Lena",
+    "de": "Guten Morgen, Herr Brandt. Schön, dass Sie da sind. Ich möchte Ihnen heute kurz unser Angebot für die neue Website vorstellen.",
+    "en": "Good morning, Mr Brandt. Nice that you're here. Today I'd like to briefly present our offer for the new website."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Gern. Ich habe allerdings nur eine halbe Stunde Zeit.",
+    "en": "Gladly. I only have half an hour, though."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Kein Problem, das schaffen wir. Wie Sie auf der ersten Folie sehen, besteht das Projekt aus drei Phasen: Design, Website und App.",
+    "en": "No problem, we'll manage. As you can see on the first slide, the project has three phases: design, website and app."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Und was kostet das insgesamt?",
+    "en": "And what does it cost altogether?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Für alle drei Phasen rechnen wir mit 24.000 Euro. Die Website wäre Ende Mai fertig.",
+    "en": "For all three phases we estimate 24,000 euros. The website would be ready at the end of May."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Ehrlich gesagt ist das mehr, als wir geplant haben. Unser Budget liegt bei 20.000 Euro.",
+    "en": "To be honest, that's more than we planned. Our budget is 20,000 euros."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Ich verstehe. Ich schlage vor, dass wir die App erst im Herbst machen. Dann kommen wir für dieses Jahr auf 18.000 Euro.",
+    "en": "I understand. I suggest we only do the app in the autumn. Then we'd be at 18,000 euros for this year."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Das klingt interessant. Aber die App ist für uns eigentlich das Wichtigste.",
+    "en": "That sounds interesting. But the app is actually the most important part for us."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Dann könnten wir Ihnen beim Preis entgegenkommen: alle drei Phasen für 21.500 Euro, aber mit einer Frist bis Ende Juni statt Ende Mai.",
+    "en": "Then we could meet you halfway on the price: all three phases for 21,500 euros, but with a deadline at the end of June instead of the end of May."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Ein Monat später ist für uns kein Problem. Allerdings unter einer Bedingung: Die Schulung für unser Team ist im Preis enthalten.",
+    "en": "A month later is no problem for us. But on one condition: the training for our team is included in the price."
+   },
+   {
+    "speaker": "Lena",
+    "de": "Damit bin ich einverstanden. Darauf können wir uns einigen.",
+    "en": "I agree to that. We can agree on that."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Sehr gut. Können Sie die Ergebnisse kurz zusammenfassen und mir schicken?",
+    "en": "Very good. Can you briefly sum up the results and send them to me?"
+   },
+   {
+    "speaker": "Lena",
+    "de": "Natürlich. Sie bekommen das Protokoll und den neuen Vertrag bis Freitag.",
+    "en": "Of course. You'll get the minutes and the new contract by Friday."
+   },
+   {
+    "speaker": "Markus",
+    "de": "Perfekt. Dann freue ich mich auf die Zusammenarbeit.",
+    "en": "Perfect. Then I'm looking forward to working together."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the client's budget?",
+    "options": [
+     "18,000 euros",
+     "20,000 euros",
+     "24,000 euros"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why doesn't Mr Brandt want to do the app later?",
+    "options": [
+     "It's the most important part for his company.",
+     "It would cost more in the autumn.",
+     "His boss wants it in May."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do they agree on in the end?",
+    "options": [
+     "Two phases for 18,000 euros, ready in May.",
+     "All three phases for 24,000 euros, ready in May.",
+     "All three phases for 21,500 euros, ready at the end of June."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What condition does Mr Brandt set?",
+    "options": [
+     "He pays in two parts.",
+     "The training for his team is included in the price.",
+     "The website is finished in May."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte Ihnen heute kurz unser Angebot für die neue Website vorstellen.",
+  "Wie Sie auf der Grafik sehen, sind die Kosten im letzten Jahr gestiegen.",
+  "Mit diesem Vorschlag bin ich einverstanden, aber nur unter einer Bedingung."
+ ],
+ "speaking": [
+  {
+   "de": "Ich möchte Ihnen heute kurz unser Angebot vorstellen.",
+   "en": "Today I'd like to briefly present our offer to you."
+  },
+  {
+   "de": "Wie Sie auf der ersten Folie sehen, besteht das Projekt aus drei Phasen.",
+   "en": "As you can see on the first slide, the project has three phases."
+  },
+  {
+   "de": "Ich schlage vor, dass wir die App erst im Herbst machen.",
+   "en": "I suggest we only do the app in the autumn."
+  },
+  {
+   "de": "Dann könnten wir Ihnen beim Preis entgegenkommen.",
+   "en": "Then we could meet you halfway on the price."
+  },
+  {
+   "de": "Damit bin ich einverstanden. Darauf können wir uns einigen.",
+   "en": "I agree to that. We can agree on that."
+  }
+ ],
+ "writing": {
+  "task": "After the meeting, you write an email of 100–130 words to a client. Thank them for the meeting, sum up what you agreed (price, deadline, one condition) and say what happens next.",
+  "model": "Sehr geehrter Herr Brandt,\n\nvielen Dank für das angenehme Gespräch heute Vormittag. Wie besprochen fasse ich die Ergebnisse kurz zusammen:\n\nWir entwickeln für Sie das Design, die neue Website und die App. Der Gesamtpreis beträgt 21.500 Euro. Die Frist für das ganze Projekt ist der 30. Juni. Wie von Ihnen gewünscht, ist eine Schulung für Ihr Team im Preis enthalten; einen Termin dafür schlage ich Ihnen im Juni vor.\n\nDen neuen Vertrag und das Protokoll der Besprechung schicke ich Ihnen bis Freitag. Wenn Sie noch Fragen oder Änderungswünsche haben, rufen Sie mich gern jederzeit an.\n\nIch freue mich auf die Zusammenarbeit.\n\nMit freundlichen Grüßen\nLena Wagner"
+ }
+}

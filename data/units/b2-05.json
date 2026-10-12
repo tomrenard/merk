@@ -1,0 +1,495 @@
+{
+ "id": "b2-05",
+ "cefr": "B2",
+ "kind": "grammar",
+ "title": "Connectors for arguments",
+ "situation": "Writing an opinion piece",
+ "canDo": "You can link arguments in a written opinion with zwar … aber, außerdem, dennoch, folglich and hingegen, with the right word order.",
+ "explanation": "An opinion piece needs more than *und* and *aber*. These connectors make your argument clear and sound more formal:\n\n| connector | meaning | example |\n|---|---|---|\n| **zwar … aber** | admittedly … but | *Das Auto ist **zwar** praktisch, **aber** teuer.* |\n| **außerdem** | moreover, also | ***Außerdem** ist es schlecht für die Umwelt.* |\n| **dennoch** | nevertheless (= trotzdem) | ***Dennoch** kaufen viele Leute ein Auto.* |\n| **folglich** | consequently (= deshalb) | ***Folglich** steigen die Preise.* |\n| **hingegen** | on the other hand, whereas | *In der Stadt **hingegen** braucht man kein Auto.* |\n\n**Word order** – the main point of this unit:\n- **außerdem, dennoch, folglich** are adverbs, like *deshalb* and *trotzdem*. At the start they take position 1, so the verb comes next and the subject after it: ***Dennoch finde ich** die Idee gut.* They can also go in the middle: *Ich finde die Idee **dennoch** gut.*\n- **zwar** sits in the first clause (*Er ist **zwar** jung* or ***Zwar** ist er jung*); **aber** starts the second clause and changes nothing, like *und*: *…, **aber** er hat viel Erfahrung.*\n- **hingegen** usually comes right after the thing you contrast: *Mein Bruder wohnt gern auf dem Land. **Ich hingegen** brauche die Stadt.*\n\n*dennoch* and *folglich* are a bit more formal than *trotzdem* and *deshalb*, so they're perfect for written opinions, reports and emails.\n\nThe most common mistakes:\n- French or English word order after the adverb: not ~~Dennoch ich finde~~, but ***Dennoch finde ich***.\n- Mixing up **außer** (except) and **außerdem** (moreover): *Alle außer mir* vs *Außerdem ist es billig.*",
+ "french": "zwar … aber ≈ certes … mais, dennoch ≈ néanmoins, folglich ≈ par conséquent, hingegen ≈ en revanche; but unlike in French, the verb jumps in front of the subject after them (Dennoch finde ich…, not Dennoch ich finde…).",
+ "examples": [
+  {
+   "de": "Das Auto ist zwar praktisch, aber in der Stadt braucht man es kaum.",
+   "en": "The car is practical, admittedly, but in the city you hardly need it."
+  },
+  {
+   "de": "Busse sind billig. Außerdem sind sie gut für die Umwelt.",
+   "en": "Buses are cheap. Moreover, they're good for the environment."
+  },
+  {
+   "de": "Die Mieten steigen. Dennoch ziehen immer mehr Menschen nach Berlin.",
+   "en": "Rents are rising. Nevertheless, more and more people are moving to Berlin."
+  },
+  {
+   "de": "Es gab nicht genug Anmeldungen. Folglich wurde der Kurs abgesagt.",
+   "en": "There weren't enough registrations. Consequently, the course was cancelled."
+  },
+  {
+   "de": "In der Stadt gibt es viele Jobs. Auf dem Land hingegen sind die Wohnungen billiger.",
+   "en": "There are lots of jobs in the city. In the countryside, on the other hand, flats are cheaper."
+  },
+  {
+   "de": "Zwar arbeite ich gern im Homeoffice, aber mir fehlen die Kollegen.",
+   "en": "I do like working from home, but I miss my colleagues."
+  },
+  {
+   "de": "Meine Schwester fährt nur Rad. Ich hingegen nehme lieber die Bahn.",
+   "en": "My sister only cycles. I, on the other hand, prefer to take the train."
+  }
+ ],
+ "items": [
+  {
+   "id": "b2-05-01",
+   "type": "cloze",
+   "de": "Die Wohnung ist ___ klein, aber sehr hell.",
+   "base": "zwar … aber",
+   "answers": [
+    "zwar"
+   ],
+   "en": "The flat is small, admittedly, but very bright."
+  },
+  {
+   "id": "b2-05-02",
+   "type": "choice",
+   "de": "Busse sind billig. Außerdem ___ gut für die Umwelt.",
+   "options": [
+    "sie sind",
+    "sind sie",
+    "sind"
+   ],
+   "answer": 1,
+   "why": "After außerdem in position 1, the verb comes next and then the subject.",
+   "en": "Buses are cheap. Moreover, they're good for the environment."
+  },
+  {
+   "id": "b2-05-03",
+   "type": "cloze",
+   "de": "Das Wetter war schlecht. ___ sind wir spazieren gegangen.",
+   "base": "nevertheless",
+   "answers": [
+    "Dennoch",
+    "Trotzdem"
+   ],
+   "en": "The weather was bad. Nevertheless, we went for a walk."
+  },
+  {
+   "id": "b2-05-04",
+   "type": "order",
+   "tiles": [
+    "Dennoch",
+    "finde",
+    "ich",
+    "die Idee",
+    "gut"
+   ],
+   "answers": [
+    "Dennoch finde ich die Idee gut.",
+    "Ich finde die Idee dennoch gut."
+   ],
+   "en": "Nevertheless, I think the idea is good."
+  },
+  {
+   "id": "b2-05-05",
+   "type": "choice",
+   "de": "Es gab nur drei Anmeldungen. ___ wurde der Kurs abgesagt.",
+   "options": [
+    "Folglich",
+    "Dennoch",
+    "Hingegen"
+   ],
+   "answer": 0,
+   "why": "The cancellation is the result of the low numbers, so folglich.",
+   "en": "There were only three registrations. Consequently, the course was cancelled."
+  },
+  {
+   "id": "b2-05-06",
+   "type": "cloze",
+   "de": "Er verdient sehr viel Geld. Seine Frau ___ verdient eher wenig.",
+   "base": "on the other hand",
+   "answers": [
+    "hingegen",
+    "dagegen",
+    "jedoch"
+   ],
+   "en": "He earns a lot of money. His wife, on the other hand, earns rather little."
+  },
+  {
+   "id": "b2-05-07",
+   "type": "choice",
+   "de": "Zwar ist das Hotel teuer, ___ das Frühstück ist sehr gut.",
+   "options": [
+    "dennoch",
+    "aber",
+    "außerdem"
+   ],
+   "answer": 1,
+   "why": "zwar goes with aber, and only aber is followed by normal order (das Frühstück ist).",
+   "en": "The hotel is expensive, admittedly, but the breakfast is very good."
+  },
+  {
+   "id": "b2-05-08",
+   "type": "cloze",
+   "de": "Der Zug war pünktlich. ___ war er sauber und nicht zu voll.",
+   "base": "moreover",
+   "answers": [
+    "Außerdem",
+    "Zudem"
+   ],
+   "en": "The train was on time. Moreover, it was clean and not too full."
+  },
+  {
+   "id": "b2-05-09",
+   "type": "order",
+   "tiles": [
+    "Das Auto",
+    "ist",
+    "zwar",
+    "praktisch",
+    "aber",
+    "teuer"
+   ],
+   "answers": [
+    "Das Auto ist zwar praktisch, aber teuer.",
+    "Zwar ist das Auto praktisch, aber teuer."
+   ],
+   "en": "The car is practical, admittedly, but expensive."
+  },
+  {
+   "id": "b2-05-10",
+   "type": "cloze",
+   "de": "Viele Menschen arbeiten im Homeoffice. ___ brauchen Firmen weniger Büros.",
+   "base": "consequently",
+   "answers": [
+    "Folglich",
+    "Deshalb",
+    "Daher",
+    "Deswegen",
+    "Darum"
+   ],
+   "en": "Many people work from home. Consequently, companies need fewer offices."
+  },
+  {
+   "id": "b2-05-11",
+   "type": "choice",
+   "de": "Ich wohne gern auf dem Land. Mein Bruder ___ braucht die Großstadt.",
+   "options": [
+    "außerdem",
+    "folglich",
+    "hingegen"
+   ],
+   "answer": 2,
+   "why": "You're contrasting two people, so hingegen.",
+   "en": "I like living in the countryside. My brother, on the other hand, needs the big city."
+  },
+  {
+   "id": "b2-05-12",
+   "type": "cloze",
+   "de": "Es gibt zu viele Autos in der Innenstadt. Folglich ___ die Stadt mehr Busse einsetzen.",
+   "base": "müssen",
+   "answers": [
+    "muss"
+   ],
+   "en": "There are too many cars in the city centre. Consequently, the city must use more buses."
+  },
+  {
+   "id": "b2-05-13",
+   "type": "order",
+   "tiles": [
+    "Außerdem",
+    "ist",
+    "die Miete",
+    "viel",
+    "zu hoch"
+   ],
+   "answers": [
+    "Außerdem ist die Miete viel zu hoch.",
+    "Die Miete ist außerdem viel zu hoch."
+   ],
+   "en": "Moreover, the rent is far too high."
+  },
+  {
+   "id": "b2-05-14",
+   "type": "choice",
+   "de": "Die Arbeit macht mir Spaß. Dennoch ___ eine neue Stelle.",
+   "options": [
+    "ich suche",
+    "suche ich",
+    "suchen ich"
+   ],
+   "answer": 1,
+   "why": "After dennoch in position 1, the verb comes next and then the subject.",
+   "en": "I enjoy the work. Nevertheless, I'm looking for a new job."
+  },
+  {
+   "id": "b2-05-15",
+   "type": "cloze",
+   "de": "Das Auto ist zwar alt, ___ es fährt noch gut.",
+   "base": "zwar … aber",
+   "answers": [
+    "aber"
+   ],
+   "en": "The car is old, admittedly, but it still runs well."
+  },
+  {
+   "id": "b2-05-16",
+   "type": "choice",
+   "de": "Ich esse alles ___ Fisch.",
+   "options": [
+    "außerdem",
+    "außer",
+    "außen"
+   ],
+   "answer": 1,
+   "why": "außer means except; außerdem means moreover.",
+   "en": "I eat everything except fish."
+  },
+  {
+   "id": "b2-05-17",
+   "type": "cloze",
+   "de": "Das Angebot ist günstig. Außerdem ___ die Lieferung kostenlos.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "The offer is good value. Moreover, delivery is free."
+  },
+  {
+   "id": "b2-05-18",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "hingegen",
+    "fahre",
+    "lieber",
+    "mit der Bahn"
+   ],
+   "answers": [
+    "Ich hingegen fahre lieber mit der Bahn.",
+    "Ich fahre hingegen lieber mit der Bahn."
+   ],
+   "en": "I, on the other hand, prefer to go by train."
+  },
+  {
+   "id": "b2-05-19",
+   "type": "choice",
+   "de": "Das Projekt war sehr teuer. ___ hat es sich gelohnt.",
+   "options": [
+    "Folglich",
+    "Dennoch",
+    "Außerdem"
+   ],
+   "answer": 1,
+   "why": "Expensive but still worth it: that's a contrast, so dennoch.",
+   "en": "The project was very expensive. Nevertheless, it was worth it."
+  },
+  {
+   "id": "b2-05-20",
+   "type": "cloze",
+   "de": "Im Sommer ist die Stadt voller Touristen; im Winter ___ ist es hier sehr ruhig.",
+   "base": "on the other hand",
+   "answers": [
+    "hingegen",
+    "dagegen",
+    "jedoch"
+   ],
+   "en": "In summer the town is full of tourists; in winter, on the other hand, it's very quiet here."
+  },
+  {
+   "id": "b2-05-21",
+   "type": "order",
+   "tiles": [
+    "Zwar",
+    "arbeite",
+    "ich",
+    "gern",
+    "im Homeoffice",
+    "aber",
+    "mir fehlen die Kollegen"
+   ],
+   "answers": [
+    "Zwar arbeite ich gern im Homeoffice, aber mir fehlen die Kollegen.",
+    "Ich arbeite zwar gern im Homeoffice, aber mir fehlen die Kollegen."
+   ],
+   "en": "I do like working from home, but I miss my colleagues."
+  },
+  {
+   "id": "b2-05-22",
+   "type": "choice",
+   "de": "Die Brücke wird repariert. ___ müssen alle Autos einen Umweg fahren.",
+   "options": [
+    "Hingegen",
+    "Zwar",
+    "Folglich"
+   ],
+   "answer": 2,
+   "why": "The detour is the result of the repair, so folglich.",
+   "en": "The bridge is being repaired. Consequently, all cars have to take a detour."
+  },
+  {
+   "id": "b2-05-23",
+   "type": "cloze",
+   "de": "Es regnete stark. Das Konzert fand ___ statt.",
+   "base": "nevertheless",
+   "answers": [
+    "dennoch",
+    "trotzdem"
+   ],
+   "en": "It was raining heavily. Nevertheless, the concert took place."
+  },
+  {
+   "id": "b2-05-24",
+   "type": "order",
+   "tiles": [
+    "Folglich",
+    "wurde",
+    "der Kurs",
+    "abgesagt"
+   ],
+   "answers": [
+    "Folglich wurde der Kurs abgesagt.",
+    "Der Kurs wurde folglich abgesagt."
+   ],
+   "en": "Consequently, the course was cancelled."
+  }
+ ],
+ "listening": {
+  "title": "Eine autofreie Innenstadt?",
+  "intro": "Jana is writing an opinion piece for the local paper, and her colleague Felix discusses her arguments with her.",
+  "lines": [
+   {
+    "speaker": "Felix",
+    "de": "Na, woran schreibst du gerade?",
+    "en": "So, what are you working on?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "An einem Kommentar für die Stadtzeitung. Das Thema: Soll die Innenstadt autofrei werden?",
+    "en": "An opinion piece for the local paper. The topic: should the city centre become car-free?"
+   },
+   {
+    "speaker": "Felix",
+    "de": "Spannend. Und was ist deine Meinung?",
+    "en": "Interesting. And what's your opinion?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ich bin dafür. Ohne Autos wäre die Luft sauberer. Außerdem hätten Kinder mehr Platz zum Spielen.",
+    "en": "I'm in favour. Without cars the air would be cleaner. Moreover, children would have more room to play."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Das klingt zwar gut, aber was ist mit den Geschäften? Viele Kunden kommen mit dem Auto.",
+    "en": "That sounds good, sure, but what about the shops? Lots of customers come by car."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Das stimmt. Dennoch zeigen Beispiele aus anderen Städten, dass die Läden sogar mehr verkaufen.",
+    "en": "That's true. Nevertheless, examples from other cities show that the shops actually sell more."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Wirklich? Woran liegt das?",
+    "en": "Really? Why is that?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Wenn es ruhig ist, bleiben die Leute länger. Folglich geben sie auch mehr Geld aus.",
+    "en": "When it's quiet, people stay longer. Consequently, they also spend more money."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Und ältere Menschen? Meine Oma kann nicht weit laufen.",
+    "en": "And older people? My grandma can't walk far."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Für sie sollte es kleine Elektrobusse geben, die alle zehn Minuten fahren.",
+    "en": "There should be small electric buses for them that run every ten minutes."
+   },
+   {
+    "speaker": "Felix",
+    "de": "In Kopenhagen funktioniert so etwas gut. Bei uns hingegen fahren die Busse nur jede halbe Stunde.",
+    "en": "That kind of thing works well in Copenhagen. Here, on the other hand, the buses only run every half hour."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Genau das schreibe ich am Schluss: Die Idee ist zwar gut, aber ohne bessere Busse geht es nicht.",
+    "en": "That's exactly what I'm writing at the end: the idea is good, but it won't work without better buses."
+   },
+   {
+    "speaker": "Felix",
+    "de": "Ein guter Schluss. Ich bin gespannt auf die Reaktionen.",
+    "en": "A good ending. I'm curious to see the reactions."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Jana's opinion piece about?",
+    "options": [
+     "A new bus line.",
+     "Making the city centre car-free.",
+     "Shop opening hours."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is Felix worried about?",
+    "options": [
+     "That shops will lose customers.",
+     "That the city will get noisier.",
+     "That parking will get more expensive."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why, according to Jana, do shops sell more in car-free centres?",
+    "options": [
+     "Prices there are lower.",
+     "There are more tourists.",
+     "People stay longer when it's quiet."
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is Jana's conclusion?",
+    "options": [
+     "The idea only works with better buses.",
+     "Cars should stay in the centre.",
+     "Copenhagen is a bad example."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Die Wohnung ist zwar klein, aber sie ist sehr hell.",
+  "Der Kurs hatte nur drei Anmeldungen und wurde folglich abgesagt.",
+  "Das Wetter war schlecht, dennoch sind wir spazieren gegangen."
+ ],
+ "speaking": [
+  {
+   "de": "Ohne Autos wäre die Luft sauberer. Außerdem hätten Kinder mehr Platz.",
+   "en": "Without cars the air would be cleaner. Moreover, children would have more room."
+  },
+  {
+   "de": "Das klingt zwar gut, aber was ist mit den Geschäften?",
+   "en": "That sounds good, sure, but what about the shops?"
+  },
+  {
+   "de": "Dennoch zeigen Beispiele aus anderen Städten das Gegenteil.",
+   "en": "Nevertheless, examples from other cities show the opposite."
+  },
+  {
+   "de": "Folglich geben die Leute auch mehr Geld aus.",
+   "en": "Consequently, people also spend more money."
+  },
+  {
+   "de": "Bei uns hingegen fahren die Busse nur jede halbe Stunde.",
+   "en": "Here, on the other hand, the buses only run every half hour."
+  }
+ ],
+ "writing": {
+  "task": "Your local paper asks readers: \"Should shops be allowed to open on Sundays?\" Write an opinion piece of about 100–120 words. Give arguments for and against and your own view, using zwar … aber, außerdem, dennoch, folglich and hingegen.",
+  "model": "Sollen Geschäfte auch sonntags öffnen?\n\nIn Deutschland sind die meisten Geschäfte am Sonntag geschlossen. Für viele Berufstätige ist das zwar unpraktisch, aber ich finde die Regel richtig. Der Sonntag ist ein Tag für Familie, Freunde und Erholung. Außerdem müssten sonst Tausende Verkäuferinnen und Verkäufer auch am Wochenende arbeiten. Manche sagen, offene Läden würden der Wirtschaft helfen. Erfahrungen aus anderen Ländern zeigen hingegen, dass die Menschen nicht mehr Geld ausgeben – sie kaufen nur an anderen Tagen ein. Folglich hätten kleine Läden höhere Kosten, aber nicht mehr Kunden. Dennoch könnte man über Ausnahmen sprechen, zum Beispiel in Bahnhöfen. Insgesamt bin ich aber klar für den freien Sonntag."
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "id": "a1-t05",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "das Hobby",
+  "die Freizeit",
+  "spielen",
+  "der Fußball",
+  "der Sport",
+  "lesen",
+  "das Buch",
+  "hören",
+  "die Musik",
+  "kochen",
+  "schwimmen",
+  "wandern",
+  "tanzen",
+  "reisen",
+  "fotografieren",
+  "das Kino",
+  "der Film",
+  "fernsehen",
+  "(sich) treffen",
+  "der Verein",
+  "das Wochenende",
+  "gern(e)",
+  "lieber",
+  "joggen",
+  "das Konzert",
+  "singen",
+  "Rad fahren",
+  "das Fahrrad",
+  "die Gitarre",
+  "spazieren gehen"
+ ],
+ "title": "Hobbies and free time",
+ "situation": "Getting to know a colleague",
+ "canDo": "I can say what I like and don't like doing in my free time and ask a colleague about their hobbies.",
+ "explanation": "Over lunch with a new colleague, free time is an easy topic: *Was machst du gern in der Freizeit?*\n\n| German | English |\n|---|---|\n| Fußball / Tennis spielen | to play football / tennis |\n| Gitarre / Klavier spielen | to play the guitar / piano |\n| lesen (du liest) | to read |\n| Musik hören | to listen to music |\n| kochen, schwimmen, tanzen, singen | to cook, swim, dance, sing |\n| wandern / joggen / spazieren gehen | to hike / jog / go for a walk |\n| Rad fahren (du fährst Rad) | to cycle |\n| ins Kino / ins Konzert gehen | to go to the cinema / a concert |\n| Freunde treffen (du triffst) | to meet friends |\n| fernsehen (du siehst fern) | to watch TV |\n\nHow to say what you like:\n- **gern** after the verb = like doing: *Ich koche gern.*\n- **nicht gern** = don't like doing: *Ich tanze nicht gern.*\n- **lieber** = prefer: *Ich lese lieber.*\n- *Was ist dein Hobby?* – *Ich fotografiere.*\n\nTips:\n- Don't translate \"I like cooking\" as *Ich mag kochen*: say **Ich koche gern**.\n- **spielen** goes with games, ball sports and instruments, with no article: *Ich spiele Gitarre.*\n- Watch the irregular verbs: *du liest, du fährst, du triffst, er sieht fern*.\n- A **Verein** (club) is very German: sport, music, a choir. It's a great way to meet people.",
+ "french": "Where French says jouer au foot and jouer de la guitare, German simply says Fußball spielen and Gitarre spielen, with no article and no preposition.",
+ "examples": [
+  {
+   "de": "Was machst du gern in der Freizeit?",
+   "en": "What do you like doing in your free time?"
+  },
+  {
+   "de": "Ich spiele gern Fußball.",
+   "en": "I like playing football."
+  },
+  {
+   "de": "Am Wochenende fahre ich gern Rad.",
+   "en": "At the weekend I like cycling."
+  },
+  {
+   "de": "Liest du gern? – Ja, ich lese viel.",
+   "en": "Do you like reading? – Yes, I read a lot."
+  },
+  {
+   "de": "Ich höre gern Musik, aber ich tanze nicht gern.",
+   "en": "I like listening to music, but I don't like dancing."
+  },
+  {
+   "de": "Kino oder Konzert? – Ich gehe lieber ins Kino.",
+   "en": "Cinema or concert? – I'd rather go to the cinema."
+  },
+  {
+   "de": "Sie spielt Gitarre in einer Band.",
+   "en": "She plays guitar in a band."
+  },
+  {
+   "de": "Am Samstag treffe ich Freunde.",
+   "en": "On Saturday I'm meeting friends."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t05-01",
+   "type": "cloze",
+   "de": "Ich spiele gern ___.",
+   "base": "football",
+   "answers": [
+    "Fußball"
+   ],
+   "en": "I like playing football."
+  },
+  {
+   "id": "a1-t05-02",
+   "type": "cloze",
+   "de": "Ich höre gern ___.",
+   "base": "music",
+   "answers": [
+    "Musik"
+   ],
+   "en": "I like listening to music."
+  },
+  {
+   "id": "a1-t05-03",
+   "type": "choice",
+   "de": "Ich ___ gern Gitarre.",
+   "options": [
+    "mache",
+    "spiele",
+    "tanze"
+   ],
+   "answer": 1,
+   "why": "Instruments go with spielen: Gitarre spielen.",
+   "en": "I like playing the guitar."
+  },
+  {
+   "id": "a1-t05-04",
+   "type": "order",
+   "tiles": [
+    "gern",
+    "Ich",
+    "koche"
+   ],
+   "answers": [
+    "Ich koche gern."
+   ],
+   "en": "I like cooking."
+  },
+  {
+   "id": "a1-t05-05",
+   "type": "cloze",
+   "de": "Am Wochenende ___ ich gern im See.",
+   "base": "to swim",
+   "answers": [
+    "schwimme"
+   ],
+   "en": "At the weekend I like swimming in the lake."
+  },
+  {
+   "id": "a1-t05-06",
+   "type": "choice",
+   "de": "___ du gern? – Ja, vor allem Krimis.",
+   "options": [
+    "Lest",
+    "Liest",
+    "Lesen"
+   ],
+   "answer": 1,
+   "why": "lesen is irregular: du liest.",
+   "en": "Do you like reading? – Yes, especially crime novels."
+  },
+  {
+   "id": "a1-t05-07",
+   "type": "cloze",
+   "de": "Ich gehe gern ins ___.",
+   "base": "cinema",
+   "answers": [
+    "Kino"
+   ],
+   "en": "I like going to the cinema."
+  },
+  {
+   "id": "a1-t05-08",
+   "type": "choice",
+   "de": "Was ist dein ___? – Ich fotografiere.",
+   "options": [
+    "Hobby",
+    "Freizeit",
+    "Wochenende"
+   ],
+   "answer": 0,
+   "why": "A hobby is das Hobby; die Freizeit is free time and das Wochenende the weekend.",
+   "en": "What's your hobby? – I take photos."
+  },
+  {
+   "id": "a1-t05-09",
+   "type": "order",
+   "tiles": [
+    "Rad",
+    "fährst",
+    "Du",
+    "gern"
+   ],
+   "answers": [
+    "Du fährst gern Rad."
+   ],
+   "en": "You like cycling."
+  },
+  {
+   "id": "a1-t05-10",
+   "type": "cloze",
+   "de": "In der ___ lese ich viel.",
+   "base": "free time",
+   "answers": [
+    "Freizeit"
+   ],
+   "en": "In my free time I read a lot."
+  },
+  {
+   "id": "a1-t05-11",
+   "type": "choice",
+   "de": "Was machst du lieber: lesen oder fernsehen? – Ich lese ___.",
+   "options": [
+    "viel",
+    "sehr",
+    "lieber"
+   ],
+   "answer": 2,
+   "why": "To answer a question with lieber (prefer), you use lieber too.",
+   "en": "What do you prefer: reading or watching TV? – I prefer reading."
+  },
+  {
+   "id": "a1-t05-12",
+   "type": "cloze",
+   "de": "Am Samstag ___ ich Freunde.",
+   "base": "to meet",
+   "answers": [
+    "treffe"
+   ],
+   "en": "On Saturday I'm meeting friends."
+  },
+  {
+   "id": "a1-t05-13",
+   "type": "choice",
+   "de": "Anna ___ am Sonntag Rad.",
+   "options": [
+    "fährt",
+    "fahrt",
+    "fahren"
+   ],
+   "answer": 0,
+   "why": "fahren is irregular: sie fährt (with ä).",
+   "en": "Anna cycles on Sundays."
+  },
+  {
+   "id": "a1-t05-14",
+   "type": "order",
+   "tiles": [
+    "machst",
+    "Was",
+    "in der Freizeit",
+    "du",
+    "gern"
+   ],
+   "answers": [
+    "Was machst du gern in der Freizeit?",
+    "Was machst du in der Freizeit gern?"
+   ],
+   "en": "What do you like doing in your free time?"
+  },
+  {
+   "id": "a1-t05-15",
+   "type": "cloze",
+   "de": "Ich gehe gern in die Berge. Ich ___ gern.",
+   "base": "to hike",
+   "answers": [
+    "wandere"
+   ],
+   "en": "I like going to the mountains. I like hiking."
+  },
+  {
+   "id": "a1-t05-16",
+   "type": "choice",
+   "de": "Mein Sohn spielt Fußball im ___.",
+   "options": [
+    "Hobby",
+    "Verein",
+    "Sport"
+   ],
+   "answer": 1,
+   "why": "A sports club is der Verein: im Verein spielen.",
+   "en": "My son plays football in a club."
+  },
+  {
+   "id": "a1-t05-17",
+   "type": "cloze",
+   "de": "Am ___ habe ich Zeit.",
+   "base": "weekend",
+   "answers": [
+    "Wochenende"
+   ],
+   "en": "At the weekend I have time."
+  },
+  {
+   "id": "a1-t05-18",
+   "type": "choice",
+   "de": "Mein Bruder ___ gern Bücher.",
+   "options": [
+    "lest",
+    "lesen",
+    "liest"
+   ],
+   "answer": 2,
+   "why": "lesen changes e to ie: er liest.",
+   "en": "My brother likes reading books."
+  },
+  {
+   "id": "a1-t05-19",
+   "type": "order",
+   "tiles": [
+    "gern",
+    "Wir",
+    "im Park",
+    "joggen"
+   ],
+   "answers": [
+    "Wir joggen gern im Park.",
+    "Im Park joggen wir gern."
+   ],
+   "en": "We like jogging in the park."
+  },
+  {
+   "id": "a1-t05-20",
+   "type": "cloze",
+   "de": "Ich ___ im Chor.",
+   "base": "to sing",
+   "answers": [
+    "singe"
+   ],
+   "en": "I sing in a choir."
+  },
+  {
+   "id": "a1-t05-21",
+   "type": "choice",
+   "de": "Ich ___ nicht gern. Das Wasser ist zu kalt!",
+   "options": [
+    "wandere",
+    "schwimme",
+    "koche"
+   ],
+   "answer": 1,
+   "why": "Cold water is a reason not to swim: schwimmen.",
+   "en": "I don't like swimming. The water's too cold!"
+  },
+  {
+   "id": "a1-t05-22",
+   "type": "cloze",
+   "de": "Am Freitag gehen wir ins ___. Die Band ist super!",
+   "base": "concert",
+   "answers": [
+    "Konzert"
+   ],
+   "en": "On Friday we're going to a concert. The band is great!"
+  },
+  {
+   "id": "a1-t05-23",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "gern",
+    "lese",
+    "aber",
+    "ich",
+    "koche",
+    "nicht gern"
+   ],
+   "answers": [
+    "Ich lese gern, aber ich koche nicht gern.",
+    "Ich koche nicht gern, aber ich lese gern."
+   ],
+   "en": "I like reading, but I don't like cooking."
+  },
+  {
+   "id": "a1-t05-24",
+   "type": "order",
+   "tiles": [
+    "liest",
+    "Was",
+    "gern",
+    "du"
+   ],
+   "answers": [
+    "Was liest du gern?"
+   ],
+   "en": "What do you like reading?"
+  }
+ ],
+ "listening": {
+  "title": "In der Mittagspause",
+  "intro": "Jana and her new colleague Ahmed chat about their free time over lunch.",
+  "lines": [
+   {
+    "speaker": "Jana",
+    "de": "Und, Ahmed, was machst du gern in der Freizeit?",
+    "en": "So, Ahmed, what do you like doing in your free time?"
+   },
+   {
+    "speaker": "Ahmed",
+    "de": "Ich spiele Fußball. Ich bin in einem Verein, jeden Mittwoch.",
+    "en": "I play football. I'm in a club, every Wednesday."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Toll! Ich spiele nicht gern Fußball, aber ich sehe gern Fußball im Fernsehen.",
+    "en": "Great! I don't like playing football, but I like watching football on TV."
+   },
+   {
+    "speaker": "Ahmed",
+    "de": "Und was ist dein Hobby?",
+    "en": "And what's your hobby?"
+   },
+   {
+    "speaker": "Jana",
+    "de": "Ich lese viel und ich wandere gern. Am Wochenende fahre ich oft in die Berge.",
+    "en": "I read a lot and I like hiking. At the weekend I often go to the mountains."
+   },
+   {
+    "speaker": "Ahmed",
+    "de": "Wandern? Das ist nichts für mich. Ich fahre lieber Rad.",
+    "en": "Hiking? That's not for me. I prefer cycling."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Liest du auch gern?",
+    "en": "Do you like reading too?"
+   },
+   {
+    "speaker": "Ahmed",
+    "de": "Nein, nicht so gern. Aber ich höre gern Musik und ich spiele Gitarre.",
+    "en": "No, not really. But I like listening to music and I play the guitar."
+   },
+   {
+    "speaker": "Jana",
+    "de": "Wirklich? Ich singe in einem Chor!",
+    "en": "Really? I sing in a choir!"
+   },
+   {
+    "speaker": "Ahmed",
+    "de": "Super! Dann machen wir mal zusammen Musik.",
+    "en": "Great! Then let's make music together some time."
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does Ahmed play football?",
+    "options": [
+     "every Monday",
+     "every Wednesday",
+     "at the weekend"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Jana often do at the weekend?",
+    "options": [
+     "She goes hiking in the mountains.",
+     "She plays football.",
+     "She goes to the cinema."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Ahmed prefer to hiking?",
+    "options": [
+     "reading",
+     "swimming",
+     "cycling"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What does Jana do besides reading and hiking?",
+    "options": [
+     "She plays the guitar.",
+     "She sings in a choir.",
+     "She dances."
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich spiele gern Fußball.",
+  "Am Wochenende fahre ich Rad.",
+  "Was machst du in der Freizeit?"
+ ],
+ "speaking": [
+  {
+   "de": "Was machst du gern in der Freizeit?",
+   "en": "What do you like doing in your free time?"
+  },
+  {
+   "de": "Ich spiele Fußball in einem Verein.",
+   "en": "I play football in a club."
+  },
+  {
+   "de": "Ich lese viel und ich wandere gern.",
+   "en": "I read a lot and I like hiking."
+  },
+  {
+   "de": "Ich fahre lieber Rad.",
+   "en": "I prefer cycling."
+  },
+  {
+   "de": "Ich höre gern Musik.",
+   "en": "I like listening to music."
+  }
+ ],
+ "writing": {
+  "task": "A new colleague asks about your free time. Write 3–4 sentences: what you like doing, what you don't like doing and what you do at the weekend.",
+  "model": "Ich koche gern und ich lese viel. Ich spiele nicht gern Fußball, aber ich schwimme gern. Am Wochenende fahre ich oft Rad oder ich treffe Freunde. Und du, was machst du gern?"
+ }
+}

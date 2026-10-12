@@ -1,0 +1,521 @@
+{
+ "id": "b1-t06",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "die Schule",
+  "das Studium",
+  "die Universität",
+  "studieren",
+  "der Kurs",
+  "die Fortbildung",
+  "der Intensivkurs",
+  "das Seminar",
+  "die Prüfung",
+  "die Note",
+  "das Fach",
+  "der Unterricht",
+  "unterrichten",
+  "der Kursleiter",
+  "der Teilnehmer",
+  "teilnehmen",
+  "sich anmelden",
+  "die Anmeldung",
+  "das Zertifikat",
+  "das Semester",
+  "die Nachhilfe",
+  "die Klassenarbeit",
+  "das Stipendium",
+  "die Mensa",
+  "die Fremdsprache",
+  "die Muttersprache",
+  "die Erziehung"
+ ],
+ "title": "Education and courses",
+ "situation": "Choosing a course",
+ "canDo": "You can understand the basics of the German school system, talk about schools and marks, and ask about a course and sign up for it.",
+ "explanation": "Whether it's a German course for you or a school for your child, you need the words of the German education system.\n\n| German | English |\n|---|---|\n| die Grundschule | primary school (age 6–10) |\n| das Gymnasium, Gymnasien | secondary school leading to the Abitur |\n| die Realschule / die Gesamtschule | other secondary schools |\n| das Abitur | final school exam, needed for university |\n| die Ausbildung | vocational training (firm + vocational school) |\n| das Studium / studieren | university studies / to study at university |\n| die Volkshochschule (VHS) | adult education centre |\n| der Kurs, -e / der Teilnehmer, - | course / participant |\n| die Kursgebühr, -en | course fee |\n| die Note, -n / das Zeugnis, -se | mark / school report |\n| das Fach, Fächer | subject |\n\nUseful phrases:\n- *Ich möchte mich für den Kurs anmelden.* – I'd like to sign up for the course.\n- *Wie lange dauert der Kurs? Wie viele Teilnehmer sind in einem Kurs?*\n- *Der Kurs findet zweimal pro Woche statt.*\n\nTips:\n- After four years of Grundschule, children go to different schools. The system is a little different in each Bundesland.\n- German marks go from **1 (sehr gut)** to **6 (ungenügend)**: a 1 is the best, the opposite of what you might expect.\n- **studieren** is only for university; for school or a course say **lernen** or **einen Kurs machen**. That's the most common mistake.\n- *eine Klassenarbeit schreiben* = to sit a test at school.",
+ "french": "Le bac is das Abitur and la fac is die Uni, but French marks go up to 20 while German Noten go from 1 (best) to 6 (worst), and there is no single collège: children are split into different schools after the Grundschule.",
+ "examples": [
+  {
+   "de": "Ich möchte mich für einen Deutschkurs an der Volkshochschule anmelden.",
+   "en": "I'd like to sign up for a German course at the adult education centre."
+  },
+  {
+   "de": "Der Kurs findet zweimal pro Woche abends statt.",
+   "en": "The course takes place twice a week in the evening."
+  },
+  {
+   "de": "Meine Tochter geht in die vierte Klasse.",
+   "en": "My daughter is in fourth grade."
+  },
+  {
+   "de": "Nach dem Abitur möchte er Medizin studieren.",
+   "en": "After his Abitur he wants to study medicine."
+  },
+  {
+   "de": "In Mathe hat sie eine Zwei bekommen.",
+   "en": "She got a 2 (good) in maths."
+  },
+  {
+   "de": "Am Ende gibt es eine Prüfung und ein Zertifikat.",
+   "en": "At the end there's an exam and a certificate."
+  },
+  {
+   "de": "Für Berufstätige gibt es auch Online-Kurse am Wochenende.",
+   "en": "For people who work there are also online courses at the weekend."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t06-01",
+   "type": "cloze",
+   "de": "Ich möchte mich für den Deutschkurs ___.",
+   "base": "register, sign up",
+   "answers": [
+    "anmelden",
+    "einschreiben"
+   ],
+   "en": "I'd like to sign up for the German course."
+  },
+  {
+   "id": "b1-t06-02",
+   "type": "choice",
+   "de": "In Deutschland ist eine 1 die ___ Note.",
+   "options": [
+    "beste",
+    "schlechteste",
+    "mittlere"
+   ],
+   "answer": 0,
+   "why": "German marks go from 1 to 6, and 1 (sehr gut) is the best.",
+   "en": "In Germany a 1 is the best mark."
+  },
+  {
+   "id": "b1-t06-03",
+   "type": "cloze",
+   "de": "Nach der Grundschule geht unser Sohn aufs ___.",
+   "base": "grammar school (leads to the Abitur)",
+   "answers": [
+    "Gymnasium"
+   ],
+   "en": "After primary school our son is going to the Gymnasium."
+  },
+  {
+   "id": "b1-t06-04",
+   "type": "choice",
+   "de": "Sie macht eine ___ als Mechanikerin: drei Tage im Betrieb, zwei Tage in der Berufsschule.",
+   "options": [
+    "Bildung",
+    "Ausbildung",
+    "Studium"
+   ],
+   "answer": 1,
+   "why": "Training for a trade, in a firm and at a vocational school, is eine Ausbildung; Bildung is education in general.",
+   "en": "She's training as a mechanic: three days at the firm, two days at vocational school."
+  },
+  {
+   "id": "b1-t06-05",
+   "type": "cloze",
+   "de": "Wie hoch ist die ___ für den Kurs?",
+   "base": "fee",
+   "answers": [
+    "Gebühr",
+    "Kursgebühr"
+   ],
+   "en": "How much is the fee for the course?"
+  },
+  {
+   "id": "b1-t06-06",
+   "type": "order",
+   "tiles": [
+    "Der Kurs",
+    "findet",
+    "zweimal pro Woche",
+    "statt"
+   ],
+   "answers": [
+    "Der Kurs findet zweimal pro Woche statt.",
+    "Zweimal pro Woche findet der Kurs statt."
+   ],
+   "en": "The course takes place twice a week."
+  },
+  {
+   "id": "b1-t06-07",
+   "type": "choice",
+   "de": "Mit dem ___ kann man an der Universität studieren.",
+   "options": [
+    "Führerschein",
+    "Praktikum",
+    "Abitur"
+   ],
+   "answer": 2,
+   "why": "The Abitur is the school exam you need for university.",
+   "en": "With the Abitur you can study at university."
+  },
+  {
+   "id": "b1-t06-08",
+   "type": "cloze",
+   "de": "Nach der Prüfung bekommen alle Teilnehmer ein ___.",
+   "base": "certificate",
+   "answers": [
+    "Zertifikat"
+   ],
+   "en": "After the exam all participants get a certificate."
+  },
+  {
+   "id": "b1-t06-09",
+   "type": "choice",
+   "de": "Mein Sohn hat schlechte Noten in Mathe. Eine Studentin gibt ihm zweimal pro Woche ___.",
+   "options": [
+    "Nachhilfe",
+    "Hausaufgaben",
+    "Klassenarbeiten"
+   ],
+   "answer": 0,
+   "why": "Extra private lessons for a pupil who has problems are Nachhilfe (Nachhilfe geben/bekommen).",
+   "en": "My son has bad marks in maths. A student gives him tutoring twice a week."
+  },
+  {
+   "id": "b1-t06-10",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "bieten",
+    "günstige Kurse",
+    "für Erwachsene",
+    "an"
+   ],
+   "answers": [
+    "Wir bieten günstige Kurse für Erwachsene an.",
+    "Für Erwachsene bieten wir günstige Kurse an."
+   ],
+   "en": "We offer cheap courses for adults."
+  },
+  {
+   "id": "b1-t06-11",
+   "type": "cloze",
+   "de": "Welches ___ magst du in der Schule am liebsten? – Biologie.",
+   "base": "subject",
+   "answers": [
+    "Fach",
+    "Schulfach"
+   ],
+   "en": "Which subject do you like best at school? – Biology."
+  },
+  {
+   "id": "b1-t06-12",
+   "type": "choice",
+   "de": "Der ___ erklärt alles sehr geduldig.",
+   "options": [
+    "Teilnehmer",
+    "Kursleiter",
+    "Lerner"
+   ],
+   "answer": 1,
+   "why": "The person who teaches a course is der Kursleiter; the Teilnehmer are the people who take part.",
+   "en": "The course teacher explains everything very patiently."
+  },
+  {
+   "id": "b1-t06-13",
+   "type": "cloze",
+   "de": "An der Uni ___ sie Informatik.",
+   "base": "study (at university)",
+   "answers": [
+    "studiert"
+   ],
+   "en": "She studies computer science at university."
+  },
+  {
+   "id": "b1-t06-14",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "möchte",
+    "mich",
+    "für den Kurs",
+    "anmelden"
+   ],
+   "answers": [
+    "Ich möchte mich für den Kurs anmelden."
+   ],
+   "en": "I'd like to sign up for the course."
+  },
+  {
+   "id": "b1-t06-15",
+   "type": "cloze",
+   "de": "Ein ___ an der Uni dauert ungefähr sechs Monate.",
+   "base": "semester",
+   "answers": [
+    "Semester"
+   ],
+   "en": "A semester at university lasts about six months."
+  },
+  {
+   "id": "b1-t06-16",
+   "type": "choice",
+   "de": "In der ___ essen die Studenten mittags billig.",
+   "options": [
+    "Kantine",
+    "Mensa",
+    "Kneipe"
+   ],
+   "answer": 1,
+   "why": "A university canteen is die Mensa; die Kantine is the canteen of a company.",
+   "en": "Students eat cheaply at lunchtime in the university canteen."
+  },
+  {
+   "id": "b1-t06-17",
+   "type": "cloze",
+   "de": "Im Kurs sind zwölf ___ aus acht Ländern.",
+   "base": "participants",
+   "answers": [
+    "Teilnehmer",
+    "Teilnehmende",
+    "Teilnehmerinnen"
+   ],
+   "en": "There are twelve participants from eight countries in the course."
+  },
+  {
+   "id": "b1-t06-18",
+   "type": "order",
+   "tiles": [
+    "In Deutschland",
+    "ist",
+    "eine Eins",
+    "die beste Note"
+   ],
+   "answers": [
+    "In Deutschland ist eine Eins die beste Note.",
+    "Eine Eins ist in Deutschland die beste Note.",
+    "Die beste Note ist in Deutschland eine Eins."
+   ],
+   "en": "In Germany a 1 is the best mark."
+  },
+  {
+   "id": "b1-t06-19",
+   "type": "choice",
+   "de": "Sie hat sehr gute ___ und kann studieren, was sie will.",
+   "options": [
+    "Nummern",
+    "Zahlen",
+    "Noten"
+   ],
+   "answer": 2,
+   "why": "Marks at school are Noten; Nummern and Zahlen are just numbers.",
+   "en": "She has very good marks and can study whatever she wants."
+  },
+  {
+   "id": "b1-t06-20",
+   "type": "cloze",
+   "de": "Morgen schreiben wir in Englisch eine ___.",
+   "base": "class test",
+   "answers": [
+    "Klassenarbeit",
+    "Arbeit",
+    "Prüfung",
+    "Klausur"
+   ],
+   "en": "Tomorrow we have a test in English."
+  },
+  {
+   "id": "b1-t06-21",
+   "type": "choice",
+   "de": "Englisch ist meine erste ___; Französisch ist meine Muttersprache.",
+   "options": [
+    "Fremdsprache",
+    "Heimat",
+    "Aussprache"
+   ],
+   "answer": 0,
+   "why": "A language you learn after your mother tongue is eine Fremdsprache; die Aussprache is pronunciation.",
+   "en": "English is my first foreign language; French is my mother tongue."
+  },
+  {
+   "id": "b1-t06-22",
+   "type": "cloze",
+   "de": "Wenn Sie regelmäßig am Kurs ___, bekommen Sie ein Zertifikat.",
+   "base": "take part",
+   "answers": [
+    "teilnehmen"
+   ],
+   "en": "If you take part in the course regularly, you get a certificate."
+  },
+  {
+   "id": "b1-t06-23",
+   "type": "order",
+   "tiles": [
+    "Nach dem Abitur",
+    "möchte",
+    "er",
+    "Medizin",
+    "studieren"
+   ],
+   "answers": [
+    "Nach dem Abitur möchte er Medizin studieren.",
+    "Er möchte nach dem Abitur Medizin studieren."
+   ],
+   "en": "After his Abitur he wants to study medicine."
+  },
+  {
+   "id": "b1-t06-24",
+   "type": "order",
+   "tiles": [
+    "Kleine Gruppen",
+    "und",
+    "erfahrene Lehrer",
+    "sind",
+    "uns wichtig"
+   ],
+   "answers": [
+    "Kleine Gruppen und erfahrene Lehrer sind uns wichtig."
+   ],
+   "en": "Small groups and experienced teachers are important to us."
+  }
+ ],
+ "listening": {
+  "title": "An der Volkshochschule",
+  "intro": "Élodie wants to improve her German and asks about courses at the Volkshochschule.",
+  "lines": [
+   {
+    "speaker": "Herr Wagner",
+    "de": "Guten Tag, was kann ich für Sie tun?",
+    "en": "Hello, what can I do for you?"
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Guten Tag. Ich suche einen Deutschkurs auf B1-Niveau. Ich arbeite Vollzeit, deshalb kann ich nur abends.",
+    "en": "Hello. I'm looking for a German course at B1 level. I work full time, so I can only do evenings."
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Da haben wir zwei Möglichkeiten: einen Abendkurs zweimal pro Woche oder einen Intensivkurs am Samstag.",
+    "en": "We have two options: an evening course twice a week or an intensive course on Saturdays."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Wie lange dauert der Abendkurs?",
+    "en": "How long does the evening course last?"
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Zwölf Wochen, jeweils dienstags und donnerstags von 18 bis 21 Uhr. Am Ende können Sie die B1-Prüfung machen.",
+    "en": "Twelve weeks, on Tuesdays and Thursdays from 6 to 9 p.m. At the end you can take the B1 exam."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Und wie viele Teilnehmer sind in einem Kurs?",
+    "en": "And how many participants are there in a course?"
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Höchstens fünfzehn. Wir arbeiten mit kleinen Gruppen.",
+    "en": "Fifteen at most. We work with small groups."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Gut. Was kostet der Kurs?",
+    "en": "Good. How much does the course cost?"
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Die Kursgebühr ist 240 Euro. Das Buch kostet extra, ungefähr 30 Euro.",
+    "en": "The course fee is 240 euros. The book costs extra, about 30 euros."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Muss ich vorher einen Test machen?",
+    "en": "Do I have to do a test beforehand?"
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Ja, einen kurzen Einstufungstest. Den können Sie online machen. Dann wissen wir, welcher Kurs der richtige für Sie ist.",
+    "en": "Yes, a short placement test. You can do it online. Then we know which course is the right one for you."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Prima. Und wann beginnt der nächste Kurs?",
+    "en": "Great. And when does the next course start?"
+   },
+   {
+    "speaker": "Herr Wagner",
+    "de": "Am 3. März. Die Anmeldung ist bis Ende Februar möglich, aber es gibt nur noch wenige freie Plätze.",
+    "en": "On 3 March. You can register until the end of February, but there are only a few places left."
+   },
+   {
+    "speaker": "Élodie",
+    "de": "Dann melde ich mich gleich heute an.",
+    "en": "Then I'll sign up today."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why can Élodie only do an evening course?",
+    "options": [
+     "She has small children",
+     "She works full time",
+     "She studies during the day"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How long is the evening course?",
+    "options": [
+     "Twelve weeks",
+     "Six weeks",
+     "Six months"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does she have to do before the course?",
+    "options": [
+     "Buy the book",
+     "Bring a certificate",
+     "Take a short placement test online"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why should she sign up quickly?",
+    "options": [
+     "The price goes up in March",
+     "Only a few places are left",
+     "The test is only this week"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Ich möchte mich für den Abendkurs im März anmelden.",
+  "Nach zwölf Wochen können Sie die B1-Prüfung machen.",
+  "Wir arbeiten mit kleinen Gruppen und erfahrenen Lehrern."
+ ],
+ "speaking": [
+  {
+   "de": "Ich suche einen Deutschkurs auf B1-Niveau.",
+   "en": "I'm looking for a German course at B1 level."
+  },
+  {
+   "de": "Wie lange dauert der Abendkurs?",
+   "en": "How long does the evening course last?"
+  },
+  {
+   "de": "Wie viele Teilnehmer sind in einem Kurs?",
+   "en": "How many participants are there in a course?"
+  },
+  {
+   "de": "Muss ich vorher einen Test machen?",
+   "en": "Do I have to do a test beforehand?"
+  },
+  {
+   "de": "Dann melde ich mich gleich heute an.",
+   "en": "Then I'll sign up today."
+  }
+ ],
+ "writing": {
+  "task": "A French colleague is moving to Germany with a ten-year-old child. Write an 80–100-word message explaining briefly how school works in Germany and where adults can take German courses.",
+  "model": "Hallo Julien,\n\nschön, dass ihr nach München kommt! Hier eine kurze Erklärung: Kinder gehen mit sechs Jahren in die Grundschule. Nach der vierten Klasse wechseln sie auf eine andere Schule, zum Beispiel aufs Gymnasium oder auf die Realschule. Das Gymnasium endet mit dem Abitur, damit kann man später studieren. Achtung: Die beste Note ist eine Eins, nicht eine Zwanzig! Für euch gibt es an der Volkshochschule gute Deutschkurse, auch abends und am Wochenende. Die Kurse sind nicht teuer, und man lernt in kleinen Gruppen. Wenn du Fragen hast, ruf mich an!\n\nViele Grüße\nNadia"
+ }
+}

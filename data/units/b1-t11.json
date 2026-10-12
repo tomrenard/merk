@@ -1,0 +1,521 @@
+{
+ "id": "b1-t11",
+ "cefr": "B1",
+ "kind": "topic",
+ "words": [
+  "das Handy",
+  "das Tablet",
+  "der Laptop",
+  "das Gerät",
+  "der Bildschirm",
+  "die Taste",
+  "drücken",
+  "tippen",
+  "klicken",
+  "aufladen",
+  "einschalten",
+  "das Kabel",
+  "das Internet",
+  "das Netz",
+  "online",
+  "digital",
+  "das Passwort",
+  "sich anmelden",
+  "herunterladen",
+  "hochladen",
+  "installieren",
+  "speichern",
+  "löschen",
+  "die Datei",
+  "der Link",
+  "die Webseite",
+  "die E-Mail",
+  "die Nachricht",
+  "die Kamera",
+  "funktionieren"
+ ],
+ "title": "Phones and digital life",
+ "situation": "Helping someone with their phone",
+ "canDo": "You can explain simple steps on a phone or computer: charging it, connecting to the Wi-Fi, installing an app, saving and deleting.",
+ "explanation": "Helping someone with their phone, or asking for help, needs a small set of words.\n\n| German | English |\n|---|---|\n| das Handy, das Tablet, der Laptop | mobile phone, tablet, laptop |\n| der Bildschirm, die Taste | screen, button / key |\n| der Akku, das Ladekabel | battery, charging cable |\n| das WLAN, das Passwort | Wi-Fi, password |\n| die App, das Update | app, update |\n| die Datei, der Link | file, link |\n| die Einstellungen (pl.) | settings |\n\n| verb | example |\n|---|---|\n| aufladen | *Ich muss mein Handy aufladen.* |\n| ein- / ausschalten | *Schalt es aus und wieder ein.* |\n| tippen auf, drücken auf | *Tipp auf „Einstellungen“.* |\n| herunterladen, installieren | *Lade die App herunter.* |\n| speichern, löschen | *Ich habe das Foto gelöscht.* |\n| sich anmelden | *Melde dich mit deinem Passwort an.* |\n\nTips:\n- *Der Akku ist leer* = the battery is flat. For phones and laptops, people say *Akku*, not *Batterie*.\n- *WLAN* is said \"vay-lahn\". You'll hear *Wi-Fi* too, but *WLAN* is what you see on signs: *Gibt es hier WLAN?*\n- *Das Handy* looks English, but it's the German word for a mobile phone.\n- Help on a phone is mostly imperatives: *Geh auf …, tipp auf …, drück lange auf …*\n- *(sich) anmelden* = log in, *(sich) abmelden* = log out.",
+ "french": "French « télécharger », « mot de passe » and « paramètres » are herunterladen, das Passwort and die Einstellungen, and « le portable » is das Handy.",
+ "examples": [
+  {
+   "de": "Mein Akku ist fast leer. Hast du ein Ladekabel?",
+   "en": "My battery is almost flat. Have you got a charging cable?"
+  },
+  {
+   "de": "Wie ist das Passwort für das WLAN?",
+   "en": "What's the Wi-Fi password?"
+  },
+  {
+   "de": "Tipp hier auf „Einstellungen“ und dann auf „WLAN“.",
+   "en": "Tap \"Settings\" here and then \"Wi-Fi\"."
+  },
+  {
+   "de": "Du musst die App zuerst herunterladen und installieren.",
+   "en": "You have to download and install the app first."
+  },
+  {
+   "de": "Ich habe aus Versehen alle Fotos gelöscht!",
+   "en": "I've deleted all the photos by mistake!"
+  },
+  {
+   "de": "Schalt das Handy einfach aus und wieder ein.",
+   "en": "Just switch the phone off and on again."
+  },
+  {
+   "de": "Ich schicke dir den Link per E-Mail.",
+   "en": "I'll send you the link by email."
+  },
+  {
+   "de": "Die Fotos werden automatisch in der Cloud gespeichert.",
+   "en": "The photos are saved in the cloud automatically."
+  }
+ ],
+ "items": [
+  {
+   "id": "b1-t11-01",
+   "type": "cloze",
+   "de": "Mein ___ ist leer, ich muss das Handy aufladen.",
+   "base": "battery",
+   "answers": [
+    "Akku"
+   ],
+   "en": "My battery is flat; I have to charge the phone."
+  },
+  {
+   "id": "b1-t11-02",
+   "type": "choice",
+   "de": "Entschuldigung, wie ist das Passwort für das ___?",
+   "options": [
+    "Kabel",
+    "WLAN",
+    "Bildschirm"
+   ],
+   "answer": 1,
+   "why": "You need a password to connect to the Wi-Fi: das WLAN.",
+   "en": "Excuse me, what's the Wi-Fi password?"
+  },
+  {
+   "id": "b1-t11-03",
+   "type": "cloze",
+   "de": "Kannst du mir das Foto per WhatsApp ___?",
+   "base": "send",
+   "answers": [
+    "schicken",
+    "senden"
+   ],
+   "en": "Can you send me the photo on WhatsApp?"
+  },
+  {
+   "id": "b1-t11-04",
+   "type": "choice",
+   "de": "Das Handy reagiert nicht mehr. ___ es einfach aus und wieder ein!",
+   "options": [
+    "Tipp",
+    "Lad",
+    "Schalt"
+   ],
+   "answer": 2,
+   "why": "You switch a device off and on: ausschalten and einschalten.",
+   "en": "The phone isn't responding any more. Just switch it off and on again!"
+  },
+  {
+   "id": "b1-t11-05",
+   "type": "cloze",
+   "de": "Du musst die App zuerst ___.",
+   "base": "download",
+   "answers": [
+    "herunterladen",
+    "runterladen"
+   ],
+   "en": "You have to download the app first."
+  },
+  {
+   "id": "b1-t11-06",
+   "type": "order",
+   "tiles": [
+    "Tipp",
+    "auf",
+    "das Zahnrad",
+    "oben rechts"
+   ],
+   "answers": [
+    "Tipp auf das Zahnrad oben rechts.",
+    "Tipp oben rechts auf das Zahnrad."
+   ],
+   "en": "Tap the gear icon at the top right."
+  },
+  {
+   "id": "b1-t11-07",
+   "type": "choice",
+   "de": "Ich habe aus Versehen alle Fotos ___. Kann man sie zurückholen?",
+   "options": [
+    "gespeichert",
+    "gelöscht",
+    "geladen"
+   ],
+   "answer": 1,
+   "why": "If you want them back, they're gone: you deleted them (löschen).",
+   "en": "I've deleted all the photos by mistake. Can you get them back?"
+  },
+  {
+   "id": "b1-t11-08",
+   "type": "cloze",
+   "de": "Auf dem kleinen ___ kann ich nichts lesen. Ich brauche ein Tablet.",
+   "base": "screen",
+   "answers": [
+    "Bildschirm",
+    "Display"
+   ],
+   "en": "I can't read anything on the small screen. I need a tablet."
+  },
+  {
+   "id": "b1-t11-09",
+   "type": "choice",
+   "de": "Ich habe mein Passwort vergessen und kann mich nicht ___.",
+   "options": [
+    "anmelden",
+    "einschalten",
+    "speichern"
+   ],
+   "answer": 0,
+   "why": "With a password you log in: sich anmelden.",
+   "en": "I've forgotten my password and can't log in."
+  },
+  {
+   "id": "b1-t11-10",
+   "type": "cloze",
+   "de": "Hast du das Dokument ___? – Ja, es ist im Ordner „Rechnungen“.",
+   "base": "saved",
+   "answers": [
+    "gespeichert"
+   ],
+   "en": "Have you saved the document? – Yes, it's in the \"Bills\" folder."
+  },
+  {
+   "id": "b1-t11-11",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "schicke",
+    "dir",
+    "den Link",
+    "per E-Mail"
+   ],
+   "answers": [
+    "Ich schicke dir den Link per E-Mail.",
+    "Den Link schicke ich dir per E-Mail.",
+    "Per E-Mail schicke ich dir den Link."
+   ],
+   "en": "I'll send you the link by email."
+  },
+  {
+   "id": "b1-t11-12",
+   "type": "choice",
+   "de": "Das Handy ist sehr langsam. Vielleicht brauchst du ein ___.",
+   "options": [
+    "Kabel",
+    "Passwort",
+    "Update"
+   ],
+   "answer": 2,
+   "why": "A slow phone often needs new software: ein Update.",
+   "en": "The phone is very slow. Maybe you need an update."
+  },
+  {
+   "id": "b1-t11-13",
+   "type": "cloze",
+   "de": "Wo ist das ___? Mein Handy hat nur noch fünf Prozent.",
+   "base": "charging cable",
+   "answers": [
+    "Ladekabel",
+    "Kabel"
+   ],
+   "en": "Where's the charging cable? My phone is down to five per cent."
+  },
+  {
+   "id": "b1-t11-14",
+   "type": "choice",
+   "de": "Du musst zweimal auf das Foto ___, dann wird es größer.",
+   "options": [
+    "tippen",
+    "schreiben",
+    "drehen"
+   ],
+   "answer": 0,
+   "why": "On a touchscreen you tap: tippen.",
+   "en": "You have to tap the photo twice, then it gets bigger."
+  },
+  {
+   "id": "b1-t11-15",
+   "type": "cloze",
+   "de": "Die Fotos werden automatisch in die Cloud ___.",
+   "base": "uploaded",
+   "answers": [
+    "hochgeladen"
+   ],
+   "en": "The photos are uploaded to the cloud automatically."
+  },
+  {
+   "id": "b1-t11-16",
+   "type": "order",
+   "tiles": [
+    "Geh",
+    "auf",
+    "Einstellungen",
+    "und dann",
+    "auf WLAN"
+   ],
+   "answers": [
+    "Geh auf Einstellungen und dann auf WLAN."
+   ],
+   "en": "Go to Settings and then to Wi-Fi."
+  },
+  {
+   "id": "b1-t11-17",
+   "type": "choice",
+   "de": "Ich habe dir eine ___ geschickt. Hast du sie nicht gelesen?",
+   "options": [
+    "Taste",
+    "Nachricht",
+    "Kamera"
+   ],
+   "answer": 1,
+   "why": "Something you send and read is a Nachricht (message).",
+   "en": "I sent you a message. Haven't you read it?"
+  },
+  {
+   "id": "b1-t11-18",
+   "type": "cloze",
+   "de": "Ohne Internet kann ich die ___ von der Bank nicht öffnen.",
+   "base": "website",
+   "answers": [
+    "Webseite",
+    "Website",
+    "Internetseite",
+    "Seite"
+   ],
+   "en": "Without internet I can't open the bank's website."
+  },
+  {
+   "id": "b1-t11-19",
+   "type": "choice",
+   "de": "Für das Online-Banking brauchst du eine extra ___ auf dem Handy.",
+   "options": [
+    "Taste",
+    "App",
+    "Kamera"
+   ],
+   "answer": 1,
+   "why": "A program you install on a phone is an App.",
+   "en": "For online banking you need an extra app on your phone."
+  },
+  {
+   "id": "b1-t11-20",
+   "type": "cloze",
+   "de": "Ich kann die App nicht ___, es gibt nicht genug Speicherplatz.",
+   "base": "install",
+   "answers": [
+    "installieren"
+   ],
+   "en": "I can't install the app; there isn't enough storage space."
+  },
+  {
+   "id": "b1-t11-21",
+   "type": "order",
+   "tiles": [
+    "Das Handy",
+    "ist",
+    "nicht",
+    "mit dem WLAN",
+    "verbunden"
+   ],
+   "answers": [
+    "Das Handy ist nicht mit dem WLAN verbunden.",
+    "Mit dem WLAN ist das Handy nicht verbunden."
+   ],
+   "en": "The phone isn't connected to the Wi-Fi."
+  },
+  {
+   "id": "b1-t11-22",
+   "type": "choice",
+   "de": "Der Drucker druckt nicht. Ist das ___ richtig eingesteckt?",
+   "options": [
+    "Kabel",
+    "Passwort",
+    "Update"
+   ],
+   "answer": 0,
+   "why": "Something you plug in is a cable: das Kabel.",
+   "en": "The printer isn't printing. Is the cable plugged in properly?"
+  },
+  {
+   "id": "b1-t11-23",
+   "type": "cloze",
+   "de": "Bitte ___ Sie lange auf die Taste, um das Gerät auszuschalten.",
+   "base": "press",
+   "answers": [
+    "drücken"
+   ],
+   "en": "Please press and hold the button to switch the device off."
+  },
+  {
+   "id": "b1-t11-24",
+   "type": "order",
+   "tiles": [
+    "Du",
+    "musst",
+    "dich",
+    "mit deinem Passwort",
+    "anmelden"
+   ],
+   "answers": [
+    "Du musst dich mit deinem Passwort anmelden.",
+    "Mit deinem Passwort musst du dich anmelden."
+   ],
+   "en": "You have to log in with your password."
+  }
+ ],
+ "listening": {
+  "title": "Das neue Handy",
+  "intro": "Ingrid, an older neighbour, asks Malik for help with her new smartphone.",
+  "lines": [
+   {
+    "speaker": "Ingrid",
+    "de": "Malik, gut, dass du da bist! Mein Enkel hat mir ein neues Handy geschenkt, aber ich komme damit gar nicht zurecht.",
+    "en": "Malik, good that you're here! My grandson gave me a new phone, but I can't cope with it at all."
+   },
+   {
+    "speaker": "Malik",
+    "de": "Kein Problem, Frau Lorenz. Was möchten Sie denn machen?",
+    "en": "No problem, Mrs Lorenz. What would you like to do?"
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Zuerst möchte ich ins Internet. Zu Hause habe ich ja WLAN.",
+    "en": "First I'd like to get on the internet. I have Wi-Fi at home, after all."
+   },
+   {
+    "speaker": "Malik",
+    "de": "Gut. Tippen Sie hier auf „Einstellungen“, dann auf „WLAN“. Sehen Sie Ihr Netz?",
+    "en": "Good. Tap \"Settings\" here, then \"Wi-Fi\". Can you see your network?"
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Ja, hier steht „Lorenz-Home“. Und jetzt?",
+    "en": "Yes, it says \"Lorenz-Home\" here. And now?"
+   },
+   {
+    "speaker": "Malik",
+    "de": "Jetzt brauchen Sie das Passwort. Es steht meistens hinten auf dem Router.",
+    "en": "Now you need the password. It's usually on the back of the router."
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Ach, mein Enkel hat es mir auf einen Zettel geschrieben. Moment … So, verbunden! Und wie kann ich meiner Tochter Fotos schicken?",
+    "en": "Oh, my grandson wrote it on a piece of paper for me. Just a moment … There, connected! And how can I send photos to my daughter?"
+   },
+   {
+    "speaker": "Malik",
+    "de": "Dafür laden wir am besten WhatsApp herunter. Ich installiere Ihnen die App schnell.",
+    "en": "For that, it's best to download WhatsApp. I'll quickly install the app for you."
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Und was mache ich, wenn das Handy plötzlich nicht mehr reagiert?",
+    "en": "And what do I do if the phone suddenly stops responding?"
+   },
+   {
+    "speaker": "Malik",
+    "de": "Dann drücken Sie lange auf diese Taste hier und schalten es aus und wieder ein. Das hilft fast immer.",
+    "en": "Then you press and hold this button here and switch it off and on again. That almost always helps."
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Und der Akku? Bei meinem alten Handy war er immer so schnell leer.",
+    "en": "And the battery? On my old phone it was always flat so quickly."
+   },
+   {
+    "speaker": "Malik",
+    "de": "Laden Sie es einfach jede Nacht auf. Das Kabel kommt hier unten rein.",
+    "en": "Just charge it every night. The cable goes in here at the bottom."
+   },
+   {
+    "speaker": "Ingrid",
+    "de": "Vielen Dank, Malik! Ohne dich hätte ich das nie geschafft.",
+    "en": "Thank you so much, Malik! I'd never have managed it without you."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who gave Ingrid the new phone?",
+    "options": [
+     "Her daughter",
+     "Her grandson",
+     "Malik"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Where does Ingrid find the Wi-Fi password?",
+    "options": [
+     "On the back of the router",
+     "In an email",
+     "On a piece of paper"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "Why does Malik install WhatsApp?",
+    "options": [
+     "So she can send photos to her daughter",
+     "So she can call her grandson",
+     "So she can read the news"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What should Ingrid do if the phone stops responding?",
+    "options": [
+     "Charge it overnight",
+     "Hold a button down and restart it",
+     "Delete some photos"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ "dictation": [
+  "Tippen Sie auf Einstellungen und dann auf WLAN.",
+  "Mein Akku ist leer, hast du vielleicht ein Ladekabel?",
+  "Ich habe aus Versehen alle Fotos auf dem Handy gelöscht."
+ ],
+ "speaking": [
+  {
+   "de": "Tippen Sie hier auf „Einstellungen“, dann auf „WLAN“.",
+   "en": "Tap \"Settings\" here, then \"Wi-Fi\"."
+  },
+  {
+   "de": "Das Passwort steht meistens hinten auf dem Router.",
+   "en": "The password is usually on the back of the router."
+  },
+  {
+   "de": "Ich installiere Ihnen die App schnell.",
+   "en": "I'll quickly install the app for you."
+  },
+  {
+   "de": "Schalten Sie es aus und wieder ein. Das hilft fast immer.",
+   "en": "Switch it off and on again. That almost always helps."
+  },
+  {
+   "de": "Mein Akku ist fast leer. Hast du ein Ladekabel?",
+   "en": "My battery is almost flat. Have you got a charging cable?"
+  }
+ ],
+ "writing": {
+  "task": "You helped an older neighbour with her new phone, and she has asked you to write the steps down. Write an 80–100-word message explaining how to connect to the Wi-Fi and how to send a photo with WhatsApp.",
+  "model": "Liebe Frau Lorenz,\n\nhier noch einmal alles, was wir gestern zusammen gemacht haben. Zuerst verbinden Sie das Handy mit dem WLAN: Tippen Sie auf „Einstellungen“, dann auf „WLAN“, und wählen Sie Ihr Netz. Das Passwort steht auf dem Zettel von Ihrem Enkel. Um ein Foto zu schicken, öffnen Sie WhatsApp und dann den Chat mit Ihrer Tochter. Tippen Sie unten auf die Kamera, machen Sie das Foto und drücken Sie auf den grünen Pfeil. Laden Sie das Handy jede Nacht auf. Wenn etwas nicht funktioniert, klingeln Sie einfach bei mir!\n\nViele Grüße\nMalik"
+ }
+}

@@ -1,0 +1,496 @@
+{
+ "id": "a1-t01",
+ "cefr": "A1",
+ "kind": "topic",
+ "words": [
+  "der Name",
+  "der Vorname",
+  "der Familienname",
+  "die Adresse",
+  "die Straße",
+  "die Postleitzahl",
+  "die Stadt",
+  "das Land",
+  "die Nummer",
+  "das Telefon",
+  "die Vorwahl",
+  "das Handy",
+  "buchstabieren",
+  "der Buchstabe",
+  "das Formular",
+  "ausfüllen",
+  "unterschreiben",
+  "die Unterschrift",
+  "der Geburtsort",
+  "das Geburtsjahr",
+  "geboren",
+  "der Familienstand",
+  "verheiratet",
+  "ledig",
+  "der Ausweis",
+  "der Pass",
+  "null",
+  "die E-Mail",
+  "Frankreich",
+  "Deutschland"
+ ],
+ "title": "Personal details",
+ "situation": "Filling in a form at the Bürgeramt",
+ "canDo": "I can give my name, origin, date and place of birth, address and phone number, spell my name and understand the main words on a form.",
+ "explanation": "At the Bürgeramt, at the doctor's or at the bank you fill in a **Formular** (form) or answer the same questions out loud.\n\n| German | English |\n|---|---|\n| der Vorname, -n | first name |\n| der Familienname, -n | surname |\n| die Adresse, -n | address |\n| die Straße, -n / die Hausnummer, -n | street / house number |\n| die Postleitzahl (PLZ), -en | postcode |\n| der Geburtsort / das Geburtsjahr | place / year of birth |\n| der Familienstand: ledig, verheiratet | marital status: single, married |\n| die Telefonnummer / die Handynummer | phone / mobile number |\n| der Ausweis, -e / der Pass, Pässe | ID card / passport |\n| die Unterschrift, -en | signature |\n\nQuestions you will hear (always with **Sie** at an office):\n- *Wie ist Ihr Name?* – *Mein Name ist Dubois.*\n- *Wie ist Ihre Adresse / Telefonnummer?*\n- *Sind Sie verheiratet?* – *Nein, ich bin ledig.*\n- *Wie schreibt man das?* = How do you spell that?\n\nTips:\n- **Name** on its own often means the surname: *Frau Dubois, Herr Martin*.\n- Spelling: E sounds \"eh\", I sounds \"ih\", J is \"jott\", V is \"fau\", W is \"veh\". French speakers often mix up E and I.\n- Phone numbers are read digit by digit or in pairs, and **0 = null**. On the phone, people often say **zwo** for 2 so it doesn't sound like drei.\n- *Ich bin in Lyon geboren* = I was born in Lyon (with **sein**).",
+ "french": "The form words match French ones: Vorname = prénom, Familienname = nom, geboren = né(e), ledig = célibataire, verheiratet = marié(e).",
+ "examples": [
+  {
+   "de": "Mein Name ist Dubois.",
+   "en": "My name is Dubois."
+  },
+  {
+   "de": "Mein Vorname ist Claire.",
+   "en": "My first name is Claire."
+  },
+  {
+   "de": "Ich bin aus Frankreich, aus Lyon.",
+   "en": "I'm from France, from Lyon."
+  },
+  {
+   "de": "Ich bin 1992 in Lyon geboren.",
+   "en": "I was born in Lyon in 1992."
+  },
+  {
+   "de": "Ich bin ledig.",
+   "en": "I'm single."
+  },
+  {
+   "de": "Meine Adresse ist Lindenstraße 8, 50674 Köln.",
+   "en": "My address is Lindenstraße 8, 50674 Cologne."
+  },
+  {
+   "de": "Wie schreibt man das?",
+   "en": "How do you spell that?"
+  },
+  {
+   "de": "Hier ist mein Pass.",
+   "en": "Here is my passport."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-t01-01",
+   "type": "cloze",
+   "de": "Mein ___ ist Claire.",
+   "base": "first name",
+   "answers": [
+    "Vorname"
+   ],
+   "en": "My first name is Claire."
+  },
+  {
+   "id": "a1-t01-02",
+   "type": "choice",
+   "de": "Wie ist Ihre ___? – Bergstraße 12, Köln.",
+   "options": [
+    "Adresse",
+    "Nummer",
+    "Postleitzahl"
+   ],
+   "answer": 0,
+   "why": "Bergstraße 12, Köln is an address: die Adresse.",
+   "en": "What's your address? – Bergstraße 12, Cologne."
+  },
+  {
+   "id": "a1-t01-03",
+   "type": "cloze",
+   "de": "Sind Sie verheiratet? – Nein, ich bin ___.",
+   "base": "single",
+   "answers": [
+    "ledig"
+   ],
+   "en": "Are you married? – No, I'm single."
+  },
+  {
+   "id": "a1-t01-04",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Mein Name",
+    "Dubois"
+   ],
+   "answers": [
+    "Mein Name ist Dubois.",
+    "Dubois ist mein Name."
+   ],
+   "en": "My name is Dubois."
+  },
+  {
+   "id": "a1-t01-05",
+   "type": "choice",
+   "de": "Ich bin aus ___.",
+   "options": [
+    "Französisch",
+    "Frankreich",
+    "Franzose"
+   ],
+   "answer": 1,
+   "why": "After aus you need the country: aus Frankreich.",
+   "en": "I'm from France."
+  },
+  {
+   "id": "a1-t01-06",
+   "type": "cloze",
+   "de": "Die ___ ist 50667.",
+   "base": "postcode",
+   "answers": [
+    "Postleitzahl",
+    "PLZ"
+   ],
+   "en": "The postcode is 50667."
+  },
+  {
+   "id": "a1-t01-07",
+   "type": "choice",
+   "de": "Wie ist Ihre ___? – 0176 52 38 19.",
+   "options": [
+    "Straße",
+    "Postleitzahl",
+    "Telefonnummer"
+   ],
+   "answer": 2,
+   "why": "0176 … is a (mobile) phone number: die Telefonnummer.",
+   "en": "What's your phone number? – 0176 52 38 19."
+  },
+  {
+   "id": "a1-t01-08",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "verheiratet",
+    "Sind"
+   ],
+   "answers": [
+    "Sind Sie verheiratet?"
+   ],
+   "en": "Are you married?"
+  },
+  {
+   "id": "a1-t01-09",
+   "type": "cloze",
+   "de": "Hier ist meine ___.",
+   "base": "signature",
+   "answers": [
+    "Unterschrift"
+   ],
+   "en": "Here is my signature."
+  },
+  {
+   "id": "a1-t01-10",
+   "type": "choice",
+   "de": "Ich bin in Lyon ___.",
+   "options": [
+    "Geburtsort",
+    "geboren",
+    "Geburtsjahr"
+   ],
+   "answer": 1,
+   "why": "geboren means 'born'; Geburtsort and Geburtsjahr are nouns on the form.",
+   "en": "I was born in Lyon."
+  },
+  {
+   "id": "a1-t01-11",
+   "type": "cloze",
+   "de": "Mein ___ ist Lyon.",
+   "base": "place of birth",
+   "answers": [
+    "Geburtsort"
+   ],
+   "en": "My place of birth is Lyon."
+  },
+  {
+   "id": "a1-t01-12",
+   "type": "choice",
+   "de": "Und Ihr ___? – Martin.",
+   "options": [
+    "Familienname",
+    "Familienstand",
+    "Geburtsjahr"
+   ],
+   "answer": 0,
+   "why": "Martin is a surname: der Familienname; Familienstand means single or married.",
+   "en": "And your surname? – Martin."
+  },
+  {
+   "id": "a1-t01-13",
+   "type": "cloze",
+   "de": "Hier ist mein ___.",
+   "base": "passport",
+   "answers": [
+    "Pass",
+    "Reisepass"
+   ],
+   "en": "Here is my passport."
+  },
+  {
+   "id": "a1-t01-14",
+   "type": "choice",
+   "de": "Meine E-Mail-Adresse ist claire.dubois ___ gmx.de.",
+   "options": [
+    "Punkt",
+    "at",
+    "Strich"
+   ],
+   "answer": 1,
+   "why": "The @ sign is said 'at' in German too; Punkt is the dot.",
+   "en": "My email address is claire.dubois@gmx.de."
+  },
+  {
+   "id": "a1-t01-15",
+   "type": "order",
+   "tiles": [
+    "ist",
+    "Wie",
+    "Ihre Adresse"
+   ],
+   "answers": [
+    "Wie ist Ihre Adresse?"
+   ],
+   "en": "What's your address?"
+  },
+  {
+   "id": "a1-t01-16",
+   "type": "cloze",
+   "de": "Die ___ für Köln ist 0221.",
+   "base": "dialling code",
+   "answers": [
+    "Vorwahl"
+   ],
+   "en": "The dialling code for Cologne is 0221."
+  },
+  {
+   "id": "a1-t01-17",
+   "type": "choice",
+   "de": "Bitte das ___ ausfüllen.",
+   "options": [
+    "Form",
+    "Formel",
+    "Formular"
+   ],
+   "answer": 2,
+   "why": "A form you fill in is das Formular; die Form means shape and die Formel is a formula.",
+   "en": "Please fill in the form."
+  },
+  {
+   "id": "a1-t01-18",
+   "type": "order",
+   "tiles": [
+    "aus Lyon",
+    "Ich",
+    "bin"
+   ],
+   "answers": [
+    "Ich bin aus Lyon.",
+    "Aus Lyon bin ich."
+   ],
+   "en": "I'm from Lyon."
+  },
+  {
+   "id": "a1-t01-19",
+   "type": "cloze",
+   "de": "Ich bin 1990 in Bordeaux ___.",
+   "base": "born",
+   "answers": [
+    "geboren"
+   ],
+   "en": "I was born in Bordeaux in 1990."
+  },
+  {
+   "id": "a1-t01-20",
+   "type": "choice",
+   "de": "Ihren ___, bitte. – Hier, bitte.",
+   "options": [
+    "Ausgang",
+    "Ausweis",
+    "Auskunft"
+   ],
+   "answer": 1,
+   "why": "der Ausweis is your ID card; der Ausgang is the exit, die Auskunft is information.",
+   "en": "Your ID, please. – Here you are."
+  },
+  {
+   "id": "a1-t01-21",
+   "type": "order",
+   "tiles": [
+    "Ihre Telefonnummer",
+    "ist",
+    "Wie"
+   ],
+   "answers": [
+    "Wie ist Ihre Telefonnummer?"
+   ],
+   "en": "What's your phone number?"
+  },
+  {
+   "id": "a1-t01-22",
+   "type": "cloze",
+   "de": "Meine ___ ist dubois@gmx.de.",
+   "base": "email address",
+   "answers": [
+    "E-Mail-Adresse",
+    "E-Mail"
+   ],
+   "en": "My email address is dubois@gmx.de."
+  },
+  {
+   "id": "a1-t01-23",
+   "type": "choice",
+   "de": "Und Ihr ___? – Ich bin verheiratet.",
+   "options": [
+    "Familienname",
+    "Geburtsort",
+    "Familienstand"
+   ],
+   "answer": 2,
+   "why": "Married or single is your marital status: der Familienstand.",
+   "en": "And your marital status? – I'm married."
+  },
+  {
+   "id": "a1-t01-24",
+   "type": "order",
+   "tiles": [
+    "Sind",
+    "verheiratet",
+    "oder",
+    "ledig",
+    "Sie"
+   ],
+   "answers": [
+    "Sind Sie verheiratet oder ledig?",
+    "Sind Sie ledig oder verheiratet?"
+   ],
+   "en": "Are you married or single?"
+  }
+ ],
+ "listening": {
+  "title": "Auf dem Bürgeramt",
+  "intro": "Claire is registering at the Bürgeramt in Cologne and a clerk, Herr Brandt, asks for her details.",
+  "lines": [
+   {
+    "speaker": "Herr Brandt",
+    "de": "Guten Tag. Wie ist Ihr Name, bitte?",
+    "en": "Hello. What's your name, please?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Guten Tag. Mein Name ist Dubois. Mein Vorname ist Claire.",
+    "en": "Hello. My surname is Dubois. My first name is Claire."
+   },
+   {
+    "speaker": "Herr Brandt",
+    "de": "Wie schreibt man Dubois?",
+    "en": "How do you spell Dubois?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "D – U – B – O – I – S. Hier ist auch mein Pass.",
+    "en": "D – U – B – O – I – S. Here's my passport too."
+   },
+   {
+    "speaker": "Herr Brandt",
+    "de": "Danke. Sie sind aus Frankreich?",
+    "en": "Thank you. You're from France?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Ja, ich bin 1992 in Lyon geboren.",
+    "en": "Yes, I was born in Lyon in 1992."
+   },
+   {
+    "speaker": "Herr Brandt",
+    "de": "Sind Sie verheiratet?",
+    "en": "Are you married?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Nein, ich bin ledig.",
+    "en": "No, I'm single."
+   },
+   {
+    "speaker": "Herr Brandt",
+    "de": "Gut. Und wie ist Ihre Adresse hier in Köln?",
+    "en": "Good. And what's your address here in Cologne?"
+   },
+   {
+    "speaker": "Claire",
+    "de": "Lindenstraße 8, 50674 Köln. Meine Handynummer ist 0176 52 38 19.",
+    "en": "Lindenstraße 8, 50674 Cologne. My mobile number is 0176 52 38 19."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Claire's surname?",
+    "options": [
+     "Lyon",
+     "Dubois",
+     "Claire"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "When was she born?",
+    "options": [
+     "in 1982",
+     "in 2002",
+     "in 1992"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "What is her marital status?",
+    "options": [
+     "married",
+     "single",
+     "divorced"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does she give the clerk?",
+    "options": [
+     "her passport",
+     "her phone",
+     "a letter"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "Mein Vorname ist Claire.",
+  "Ich bin in Lyon geboren.",
+  "Wie ist Ihre Adresse, bitte?"
+ ],
+ "speaking": [
+  {
+   "de": "Mein Name ist Dubois.",
+   "en": "My name is Dubois."
+  },
+  {
+   "de": "Mein Vorname ist Claire.",
+   "en": "My first name is Claire."
+  },
+  {
+   "de": "Ich bin 1992 in Lyon geboren.",
+   "en": "I was born in Lyon in 1992."
+  },
+  {
+   "de": "Nein, ich bin ledig.",
+   "en": "No, I'm single."
+  },
+  {
+   "de": "Wie schreibt man das?",
+   "en": "How do you spell that?"
+  }
+ ],
+ "writing": {
+  "task": "You're signing up for a German course. Write 3–4 short sentences with your details: name, where you're from, where and when you were born, marital status and phone number.",
+  "model": "Mein Name ist Martin, mein Vorname ist Lucas. Ich bin aus Frankreich. Ich bin 1995 in Nantes geboren. Ich bin verheiratet. Meine Handynummer ist 0151 23 45 67."
+ }
+}

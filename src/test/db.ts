@@ -19,15 +19,13 @@ export async function seedWords(db: Awaited<ReturnType<typeof testDb>>, words: s
     .values(
       words.map((de, ord) => ({ id: de, source: "test", cefr: "A1", ord, de, en: `en ${de}` })),
     );
-  await db
-    .insert(cards)
-    .values(
-      words.flatMap((de) =>
-        (["de_en", "en_de"] as const).map((direction) => ({
-          id: `${de}:${direction}`,
-          noteId: de,
-          direction,
-        })),
-      ),
-    );
+  await db.insert(cards).values(
+    words.flatMap((de) =>
+      (["de_en", "en_de"] as const).map((direction) => ({
+        id: `${de}:${direction}`,
+        noteId: de,
+        direction,
+      })),
+    ),
+  );
 }

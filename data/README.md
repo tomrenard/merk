@@ -10,3 +10,11 @@ A2 and B1 are not stored here: their sources state no licence, so `scripts/impor
 fetches them into `data/.cache/` at import time:
 - A2: https://github.com/langfield/A2_Wortliste_Goethe
 - B1: https://github.com/kennethsible/goethe-wortliste (English and examples generated with Claude)
+
+`core-words.tsv`: hand-written for merk (numbers, days, months, seasons, time words, countries
+and languages, pronoun forms, ander-/all-/eigen-/beid-). The Goethe lists keep these in topic
+groups that the sources above leave out. Same licence as the repo.
+
+Teaching order uses the DeReWo frequency list (Institut für Deutsche Sprache, CC BY-NC,
+https://www.ids-mannheim.de/derewo). It is fetched into `data/.cache/` at import time and never
+committed; only the resulting order is stored in the database.

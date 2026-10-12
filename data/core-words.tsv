@@ -1,0 +1,91 @@
+core:null	null	Die Nummer beginnt mit null.	zero	The number starts with zero.	
+core:eins	eins	Eins plus eins ist zwei.	one	One plus one is two.	
+core:zwei	zwei	Ich habe zwei Kinder.	two	I have two children.	
+core:drei	drei	Wir bleiben drei Tage.	three	We're staying three days.	
+core:vier	vier	Der Tisch hat vier Beine.	four	The table has four legs.	
+core:fuenf	fünf	Es ist fünf Uhr.	five	It's five o'clock.	
+core:sechs	sechs	Der Bus kommt in sechs Minuten.	six	The bus comes in six minutes.	
+core:sieben	sieben	Die Woche hat sieben Tage.	seven	The week has seven days.	
+core:acht	acht	Ich arbeite acht Stunden.	eight	I work eight hours.	
+core:neun	neun	Das Kind ist neun Jahre alt.	nine	The child is nine years old.	
+core:zehn	zehn	Das kostet zehn Euro.	ten	That costs ten euros.	
+core:elf	elf	Der Zug fährt um elf Uhr.	eleven	The train leaves at eleven.	
+core:zwoelf	zwölf	Um zwölf essen wir.	twelve	We eat at twelve.	
+core:dreizehn	dreizehn	Sie ist dreizehn.	thirteen	She is thirteen.	
+core:sechzehn	sechzehn	Ich wohne in Nummer sechzehn.	sixteen	I live at number sixteen.	not: sechszehn
+core:siebzehn	siebzehn	Er ist siebzehn Jahre alt.	seventeen	He is seventeen years old.	not: siebenzehn
+core:zwanzig	zwanzig	Das Ticket kostet zwanzig Euro.	twenty	The ticket costs twenty euros.	
+core:einundzwanzig	einundzwanzig	Ich bin einundzwanzig.	twenty-one	I'm twenty-one.	units first: ein-und-zwanzig
+core:dreissig	dreißig	Der Monat hat dreißig Tage.	thirty	The month has thirty days.	
+core:vierzig	vierzig	Er ist vierzig geworden.	forty	He turned forty.	
+core:fuenfzig	fünfzig	Fünfzig Euro, bitte.	fifty	Fifty euros, please.	
+core:sechzig	sechzig	Meine Mutter ist sechzig.	sixty	My mother is sixty.	
+core:siebzig	siebzig	Hier darf man siebzig fahren.	seventy	You can drive seventy here.	
+core:achtzig	achtzig	Mein Opa ist achtzig.	eighty	My grandpa is eighty.	
+core:neunzig	neunzig	Das dauert neunzig Minuten.	ninety	That takes ninety minutes.	
+core:hundert	hundert	Das kostet hundert Euro.	hundred	That costs a hundred euros.	
+core:tausend	tausend	Die Stadt hat zehntausend Einwohner.	thousand	The town has ten thousand inhabitants.	
+core:million	die Million, -en	Eine Million Menschen wohnen hier.	million	A million people live here.	
+core:erste	erst-	Ich wohne im ersten Stock.	first	I live on the first floor.	der erste, am ersten Mai
+core:zweite	zweit-	Das ist mein zweiter Kurs.	second	This is my second course.	
+core:dritte	dritt-	Nehmen Sie die dritte Straße links.	third	Take the third street on the left.	
+core:montag	der Montag, -e	Am Montag arbeite ich.	Monday	I work on Monday.	am Montag = on Monday
+core:dienstag	der Dienstag, -e	Am Dienstag habe ich Deutschkurs.	Tuesday	On Tuesday I have German class.	
+core:mittwoch	der Mittwoch, -e	Am Mittwoch gehe ich schwimmen.	Wednesday	On Wednesday I go swimming.	
+core:donnerstag	der Donnerstag, -e	Der Termin ist am Donnerstag.	Thursday	The appointment is on Thursday.	
+core:freitag	der Freitag, -e	Freitags gehe ich früh nach Hause.	Friday	On Fridays I go home early.	
+core:samstag	der Samstag, -e	Am Samstag kaufe ich ein.	Saturday	On Saturday I go shopping.	
+core:sonntag	der Sonntag, -e	Am Sonntag sind die Geschäfte zu.	Sunday	On Sunday the shops are closed.	
+core:januar	der Januar	Im Januar ist es kalt.	January	It's cold in January.	im Januar = in January
+core:februar	der Februar	Mein Geburtstag ist im Februar.	February	My birthday is in February.	
+core:maerz	der März	Im März beginnt der Frühling.	March	Spring starts in March.	
+core:april	der April	Im April regnet es oft.	April	It often rains in April.	
+core:mai	der Mai	Am ersten Mai ist Feiertag.	May	The first of May is a holiday.	
+core:juni	der Juni	Im Juni fahren wir weg.	June	We're going away in June.	
+core:juli	der Juli	Im Juli ist es heiß.	July	It's hot in July.	
+core:august	der August	Im August habe ich Urlaub.	August	I'm on holiday in August.	
+core:september	der September	Der Kurs beginnt im September.	September	The course starts in September.	
+core:oktober	der Oktober	Im Oktober ist das Oktoberfest.	October	Oktoberfest is in October.	
+core:november	der November	Im November ist es oft grau.	November	It's often grey in November.	
+core:dezember	der Dezember	Im Dezember ist Weihnachten.	December	Christmas is in December.	
+core:jahreszeit	die Jahreszeit, -en	Der Herbst ist meine Lieblingsjahreszeit.	season	Autumn is my favourite season.	
+core:fruehling	der Frühling, -e	Im Frühling blühen die Bäume.	spring	The trees blossom in spring.	
+core:sommer	der Sommer, -	Im Sommer fahren wir ans Meer.	summer	In summer we go to the sea.	
+core:herbst	der Herbst, -e	Im Herbst fallen die Blätter.	autumn	The leaves fall in autumn.	
+core:winter	der Winter, -	Im Winter schneit es manchmal.	winter	It sometimes snows in winter.	
+core:jahr	das Jahr, -e	Ich lebe seit einem Jahr in Berlin.	year	I've been living in Berlin for a year.	
+core:monat	der Monat, -e	Die Miete zahle ich jeden Monat.	month	I pay the rent every month.	
+core:woche	die Woche, -n	Nächste Woche habe ich frei.	week	I'm off next week.	
+core:tag	der Tag, -e	Guten Tag! Wie geht es Ihnen?	day	Hello! How are you?	Guten Tag! = hello (formal)
+core:minute	die Minute, -n	Warte bitte fünf Minuten.	minute	Please wait five minutes.	
+core:sekunde	die Sekunde, -n	Einen Moment, nur eine Sekunde!	second (time)	One moment, just a second!	
+core:der-morgen	der Morgen, -	Guten Morgen! Gut geschlafen?	morning	Good morning! Did you sleep well?	morgen (lower case) = tomorrow
+core:vormittag	der Vormittag, -e	Am Vormittag bin ich im Büro.	late morning	In the morning I'm at the office.	
+core:mittag	der Mittag, -e	Zu Mittag esse ich in der Kantine.	noon, midday	At lunchtime I eat in the canteen.	
+core:nachmittag	der Nachmittag, -e	Am Nachmittag gehe ich spazieren.	afternoon	In the afternoon I go for a walk.	
+core:abend	der Abend, -e	Guten Abend! Schön, Sie zu sehen.	evening	Good evening! Nice to see you.	
+core:nacht	die Nacht, -̈e	Gute Nacht! Schlaf gut.	night	Good night! Sleep well.	
+core:wochenende	das Wochenende, -n	Schönes Wochenende!	weekend	Have a nice weekend!	
+core:viertel	das Viertel, -	Es ist Viertel nach drei.	quarter; neighbourhood	It's a quarter past three.	Viertel nach / vor = quarter past / to
+core:deutschland	Deutschland	Ich wohne seit zwei Jahren in Deutschland.	Germany	I've been living in Germany for two years.	
+core:frankreich	Frankreich	Ich komme aus Frankreich.	France	I come from France.	
+core:oesterreich	Österreich	Wien ist in Österreich.	Austria	Vienna is in Austria.	
+core:schweiz	die Schweiz	Sie wohnt in der Schweiz.	Switzerland	She lives in Switzerland.	always with article: in der Schweiz
+core:europa	Europa	Deutschland liegt in der Mitte von Europa.	Europe	Germany is in the middle of Europe.	
+core:deutsch	deutsch	Sprechen Sie Deutsch?	German	Do you speak German?	the language: Deutsch (capital)
+core:franzoesisch	französisch	Ich spreche Französisch und ein bisschen Deutsch.	French	I speak French and a little German.	
+core:englisch	englisch	Können wir Englisch sprechen?	English	Can we speak English?	
+core:der-deutsche	der/die Deutsche, -n	Mein Nachbar ist Deutscher.	German (person)	My neighbour is German.	ein Deutscher, eine Deutsche
+core:franzose	der Franzose, -n	Ich bin Franzose.	Frenchman	I'm French.	woman: die Französin
+core:franzoesin	die Französin, -nen	Sie ist Französin.	Frenchwoman	She is French.	
+core:du	du	Kommst du heute Abend?	you (informal)	Are you coming tonight?	Sie = you (formal)
+core:mich	mich	Kannst du mich anrufen?	me (accusative)	Can you call me?	
+core:mir	mir	Kannst du mir helfen?	me, to me (dative)	Can you help me?	
+core:uns	uns	Besuch uns doch mal!	us, to us	Come and visit us!	
+core:euch	euch	Wie geht es euch?	you, to you (plural, informal)	How are you all?	
+core:ihm	ihm	Ich gebe ihm das Buch.	him, to him (dative)	I give him the book.	
+core:ihnen	ihnen	Ich helfe ihnen gern.	them, to them (dative)	I'm happy to help them.	Ihnen (capital) = to you (formal)
+core:ander	ander-	Haben Sie eine andere Farbe?	other, different	Do you have another colour?	der andere, eine andere
+core:all	all-	Alle Kinder spielen draußen.	all	All the children are playing outside.	alle, alles
+core:eigen	eigen-	Ich habe eine eigene Wohnung.	own	I have my own flat.	
+core:beid	beid-	Beide Kinder sind krank.	both	Both children are ill.	

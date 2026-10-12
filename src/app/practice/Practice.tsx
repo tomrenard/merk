@@ -72,6 +72,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           value={typed}
           onChange={(event) => setTyped(event.target.value)}
           readOnly={checked}
+          onKeyDown={(event) => event.repeat && event.preventDefault()}
           // biome-ignore lint/a11y/noAutofocus: the input is the whole screen
           autoFocus
           lang="de"
@@ -83,7 +84,12 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           aria-label="Your answer in German"
           className="field w-full text-center text-xl"
         />
-        <button type="submit" className="btn btn-primary mt-4 w-full">
+        {/* Keeps focus in the input, so the phone keyboard stays open between words. */}
+        <button
+          type="submit"
+          onMouseDown={(event) => event.preventDefault()}
+          className="btn btn-primary mt-4 w-full"
+        >
           {checked ? "Next" : "Check"}
         </button>
       </form>

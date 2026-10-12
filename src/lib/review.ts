@@ -141,7 +141,7 @@ export async function activity() {
 
 /**
  * `remembered`: % of reviews of already-learned cards in the last 30 days not graded Again
- * (null before there are any). `known`: words whose next German→English review is a week+ away.
+ * (null before there are any). `known`: words whose German→English card was last scheduled a week+ out.
  */
 export async function progress() {
   const [[row], known] = await Promise.all([

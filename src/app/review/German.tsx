@@ -33,6 +33,10 @@ export function germanVoices(): SpeechSynthesisVoice[] {
     .sort((a, b) => quality(a) - quality(b));
 }
 
+export function storedVoice(): string | null {
+  return stored(VOICE);
+}
+
 export function setVoice(voiceURI: string) {
   try {
     localStorage.setItem(VOICE, voiceURI);

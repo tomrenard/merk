@@ -1,0 +1,334 @@
+{
+ "id": "a1-03",
+ "cefr": "A1",
+ "title": "W-questions and verb-second word order",
+ "situation": "Asking someone about themselves",
+ "canDo": "You can ask someone about their name, origin, home, job and free time, with the verb in second position.",
+ "explanation": "When you meet someone at work, in a course or at a party, you ask: *Wie heißt du? Woher kommst du? Wo wohnst du?*\n\n**The rule:** the question word comes first. The conjugated verb comes **second**. Then comes the subject.\n\n| 1 | 2 (verb) | 3 (subject …) |\n|---|---|---|\n| Wie | heißt | du? |\n| Woher | kommen | Sie? |\n| Was | machst | du am Wochenende? |\n\nIf *wer* is the subject, the verb comes right after it: *Wer kommt?*\n\n**Question words:** wer (who), was (what), wie (how), wo (where), woher (where from), wann (when), warum (why), welche (which), wie viele (how many), wie lange (how long).\n\n**Watch out:**\n- *wo* asks where someone is: Wo wohnst du? – In Köln.\n- *woher* asks where someone comes from: Woher kommst du? – Aus Frankreich.\n- You ask for a name with *wie*: Wie heißen Sie?\n\n**The verb is second in statements too.** In a normal German sentence the verb is always in position 2. If you start with something other than the subject, such as *heute* or *am Sonntag*, the subject moves behind the verb:\n- Ich arbeite heute nicht. → Heute arbeite ich nicht.\n\nThe verb ending still matches the subject: du heißt, Sie heißen, er arbeitet, ihr macht. Some verbs change their vowel with du and er: sprechen → du sprichst, lesen → du liest.\n\n**Du or Sie?** Use *du* with friends, classmates and young people. Use *Sie* with strangers, in offices and with your boss.",
+ "french": "French often skips inversion (« Tu viens d'où ? », « D'où tu viens ? »), but German questions always work like « D'où viens-tu ? »: the verb comes straight after the question word, as in Woher kommst du?",
+ "examples": [
+  {
+   "de": "Wie heißen Sie? – Ich heiße Claire Martin.",
+   "en": "What's your name? – My name is Claire Martin."
+  },
+  {
+   "de": "Woher kommst du? – Aus Frankreich, aus Lyon.",
+   "en": "Where are you from? – From France, from Lyon."
+  },
+  {
+   "de": "Wo wohnen Sie? – In Köln.",
+   "en": "Where do you live? – In Cologne."
+  },
+  {
+   "de": "Was sind Sie von Beruf? – Ich bin Lehrerin.",
+   "en": "What do you do for a living? – I'm a teacher."
+  },
+  {
+   "de": "Welche Sprachen sprichst du? – Französisch und Deutsch.",
+   "en": "Which languages do you speak? – French and German."
+  },
+  {
+   "de": "Was machst du am Wochenende?",
+   "en": "What are you doing at the weekend?"
+  },
+  {
+   "de": "Wie lange wohnst du schon hier? – Seit zwei Jahren.",
+   "en": "How long have you been living here? – For two years."
+  },
+  {
+   "de": "Heute arbeite ich nicht.",
+   "en": "I'm not working today."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-03-01",
+   "type": "cloze",
+   "de": "Wie ___ du?",
+   "base": "heißen",
+   "answers": [
+    "heißt"
+   ],
+   "en": "What's your name?"
+  },
+  {
+   "id": "a1-03-02",
+   "type": "choice",
+   "de": "___ heißen Sie?",
+   "options": [
+    "Was",
+    "Wie",
+    "Wer"
+   ],
+   "answer": 1,
+   "why": "German asks for a name with wie ('how are you called'), like French « comment ».",
+   "en": "What's your name?"
+  },
+  {
+   "id": "a1-03-03",
+   "type": "cloze",
+   "de": "Woher ___ Sie?",
+   "base": "kommen",
+   "answers": [
+    "kommen"
+   ],
+   "en": "Where are you from?"
+  },
+  {
+   "id": "a1-03-04",
+   "type": "choice",
+   "de": "___ kommst du? – Aus Frankreich.",
+   "options": [
+    "Wo",
+    "Woher",
+    "Wohin"
+   ],
+   "answer": 1,
+   "why": "Woher asks where someone comes from, and the answer starts with aus.",
+   "en": "Where are you from? – From France."
+  },
+  {
+   "id": "a1-03-05",
+   "type": "order",
+   "tiles": [
+    "Woher",
+    "kommst",
+    "du"
+   ],
+   "answers": [
+    "Woher kommst du?"
+   ],
+   "en": "Where are you from?"
+  },
+  {
+   "id": "a1-03-06",
+   "type": "cloze",
+   "de": "Wo ___ du?",
+   "base": "wohnen",
+   "answers": [
+    "wohnst"
+   ],
+   "en": "Where do you live?"
+  },
+  {
+   "id": "a1-03-07",
+   "type": "choice",
+   "de": "___ wohnen Sie? – In Köln.",
+   "options": [
+    "Wo",
+    "Woher",
+    "Wann"
+   ],
+   "answer": 0,
+   "why": "Wo asks where someone is or lives, and the answer starts with in.",
+   "en": "Where do you live? – In Cologne."
+  },
+  {
+   "id": "a1-03-08",
+   "type": "choice",
+   "de": "___ ist das? – Das ist meine Schwester.",
+   "options": [
+    "Was",
+    "Wie",
+    "Wer"
+   ],
+   "answer": 2,
+   "why": "Wer asks about a person.",
+   "en": "Who is that? – That's my sister."
+  },
+  {
+   "id": "a1-03-09",
+   "type": "cloze",
+   "de": "Was ___ du von Beruf?",
+   "base": "sein",
+   "answers": [
+    "bist"
+   ],
+   "en": "What do you do for a living?"
+  },
+  {
+   "id": "a1-03-10",
+   "type": "order",
+   "tiles": [
+    "Wo",
+    "arbeiten",
+    "Sie",
+    "jetzt"
+   ],
+   "answers": [
+    "Wo arbeiten Sie jetzt?"
+   ],
+   "en": "Where do you work now?"
+  },
+  {
+   "id": "a1-03-11",
+   "type": "cloze",
+   "de": "Wo ___ dein Mann?",
+   "base": "arbeiten",
+   "answers": [
+    "arbeitet"
+   ],
+   "en": "Where does your husband work?"
+  },
+  {
+   "id": "a1-03-12",
+   "type": "choice",
+   "de": "___ lernen Sie Deutsch? – Für die Arbeit.",
+   "options": [
+    "Wann",
+    "Warum",
+    "Was"
+   ],
+   "answer": 1,
+   "why": "Warum asks for a reason, and the answer gives the reason.",
+   "en": "Why are you learning German? – For work."
+  },
+  {
+   "id": "a1-03-13",
+   "type": "order",
+   "tiles": [
+    "Wann",
+    "hast",
+    "du",
+    "Geburtstag"
+   ],
+   "answers": [
+    "Wann hast du Geburtstag?"
+   ],
+   "en": "When is your birthday?"
+  },
+  {
+   "id": "a1-03-14",
+   "type": "choice",
+   "de": "Wo ___ jetzt?",
+   "options": [
+    "du wohnst",
+    "wohnst du",
+    "wohnen du"
+   ],
+   "answer": 1,
+   "why": "After the question word the verb comes second, before the subject, and it has the du ending -st.",
+   "en": "Where do you live now?"
+  },
+  {
+   "id": "a1-03-15",
+   "type": "cloze",
+   "de": "Woher ___ deine Eltern?",
+   "base": "kommen",
+   "answers": [
+    "kommen"
+   ],
+   "en": "Where are your parents from?"
+  },
+  {
+   "id": "a1-03-16",
+   "type": "cloze",
+   "de": "Wie viele Sprachen ___ du?",
+   "base": "sprechen",
+   "answers": [
+    "sprichst"
+   ],
+   "en": "How many languages do you speak?"
+  },
+  {
+   "id": "a1-03-17",
+   "type": "order",
+   "tiles": [
+    "Welche Sprachen",
+    "sprechen",
+    "Sie"
+   ],
+   "answers": [
+    "Welche Sprachen sprechen Sie?"
+   ],
+   "en": "Which languages do you speak?"
+  },
+  {
+   "id": "a1-03-18",
+   "type": "choice",
+   "de": "Was ___ Sie von Beruf?",
+   "options": [
+    "ist",
+    "sind",
+    "seid"
+   ],
+   "answer": 1,
+   "why": "With formal Sie the verb has the same form as with sie (they), so it is sind.",
+   "en": "What do you do for a living?"
+  },
+  {
+   "id": "a1-03-19",
+   "type": "cloze",
+   "de": "Was ___ du gern?",
+   "base": "lesen",
+   "answers": [
+    "liest"
+   ],
+   "en": "What do you like to read?"
+  },
+  {
+   "id": "a1-03-20",
+   "type": "choice",
+   "de": "Heute ___ nicht.",
+   "options": [
+    "ich arbeite",
+    "arbeite ich",
+    "arbeitet ich"
+   ],
+   "answer": 1,
+   "why": "When heute is in first position, the verb stays second, so ich comes after the verb.",
+   "en": "I'm not working today."
+  },
+  {
+   "id": "a1-03-21",
+   "type": "cloze",
+   "de": "Am Sonntag ___ ich oft Fußball.",
+   "base": "spielen",
+   "answers": [
+    "spiele"
+   ],
+   "en": "On Sundays I often play football."
+  },
+  {
+   "id": "a1-03-22",
+   "type": "order",
+   "tiles": [
+    "Wie lange",
+    "wohnst",
+    "du",
+    "schon",
+    "in Berlin"
+   ],
+   "answers": [
+    "Wie lange wohnst du schon in Berlin?"
+   ],
+   "en": "How long have you been living in Berlin?"
+  },
+  {
+   "id": "a1-03-23",
+   "type": "cloze",
+   "de": "Was ___ ihr am Wochenende?",
+   "base": "machen",
+   "answers": [
+    "macht"
+   ],
+   "en": "What are you all doing at the weekend?"
+  },
+  {
+   "id": "a1-03-24",
+   "type": "order",
+   "tiles": [
+    "Was",
+    "machst",
+    "du",
+    "gern",
+    "am Wochenende"
+   ],
+   "answers": [
+    "Was machst du am Wochenende gern?",
+    "Was machst du gern am Wochenende?"
+   ],
+   "en": "What do you like doing at the weekend?"
+  }
+ ]
+}

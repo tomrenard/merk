@@ -3,16 +3,13 @@
  * A1/core/A2 get both card directions, B1 only German→English (recognition). Within a level, new
  * words come in frequency order (DeReWo, fetched into the cache). Safe to re-run: notes update in
  * place, started cards and their history are never removed.
- * Sources and licences: data/README.md. B1 English comes from Claude via AI Gateway once
- * (AI_GATEWAY_API_KEY or VERCEL_OIDC_TOKEN from `vercel env pull .env.vercel`), then from cache.
+ * Sources and licences: data/README.md. B1 English/examples, verb info and phrases were written
+ * by Claude once and are committed in data/.
  */
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import Anthropic from "@anthropic-ai/sdk";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { and, eq, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
-import { z } from "zod";
+import { existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
+import { and, inArray, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
 import { connect } from "../src/db/client.ts";
 import { cards, notes } from "../src/db/schema.ts";
 import { lemmaKeys } from "../src/lib/german.ts";
@@ -95,23 +92,29 @@ function coreNotes(): Note[] {
     .filter((note) => isNewWord(note.de));
 }
 
-/** Everyday phrases by situation (data/phrases.json, from scripts/generate-phrases.ts). */
+/** Everyday phrases by situation (data/phrases.json). */
 function phraseNotes(): Note[] {
   const list: { de: string; en: string; cefr: string; note: string }[] = JSON.parse(
     readFileSync(`${DATA}phrases.json`, "utf8"),
   );
   const seen = new Set<string>();
-  return list
-    .filter((p) => !seen.has(p.de) && seen.add(p.de))
-    .map((p) => ({
-      id: `phrase:${createHash("sha1").update(p.de).digest("hex").slice(0, 12)}`,
-      source: "phrase",
-      cefr: p.cefr,
-      ord: 0,
-      de: p.de,
-      en: p.en,
-      hint: p.note || null,
-    }));
+  return (
+    list
+      // "Kein Problem!" and "Kein Problem." are one phrase.
+      .filter((p) => {
+        const key = p.de.toLowerCase().replace(/[.!?…]+$/, "");
+        return !seen.has(key) && Boolean(seen.add(key));
+      })
+      .map((p) => ({
+        id: `phrase:${createHash("sha1").update(p.de).digest("hex").slice(0, 12)}`,
+        source: "phrase",
+        cefr: p.cefr,
+        ord: 0,
+        de: p.de,
+        en: p.en,
+        hint: p.note || null,
+      }))
+  );
 }
 
 /** DeReWo corpus frequency ranks (CC BY-NC, fetched, never committed): key → rank. */
@@ -158,107 +161,27 @@ function a2Notes(): Note[] {
     .filter((note) => isNewWord(note.de));
 }
 
-/** Claude through Vercel AI Gateway (AI_GATEWAY_API_KEY, or VERCEL_OIDC_TOKEN from .env.vercel). */
-const claude = () =>
-  new Anthropic({
-    baseURL: "https://ai-gateway.vercel.sh",
-    apiKey: process.env.AI_GATEWAY_API_KEY ?? process.env.VERCEL_OIDC_TOKEN,
-  });
-
-const Translation = z.object({
-  items: z.array(
-    z.object({ de: z.string(), en: z.string(), example_de: z.string(), example_en: z.string() }),
-  ),
-});
-type Translated = z.infer<typeof Translation>["items"][number];
-
-/** English and one example per headword, from Claude, cached so a re-run costs nothing. */
-async function translate(headwords: string[]): Promise<Record<string, Translated>> {
-  const cacheFile = `${CACHE}b1-translations.json`;
-  const cached: Record<string, Translated> = existsSync(cacheFile)
-    ? JSON.parse(readFileSync(cacheFile, "utf8"))
-    : {};
-  const missing = headwords.filter((de) => !cached[de]);
-  if (!missing.length) return cached;
-  const client = claude();
-  for (let i = 0; i < missing.length; i += 100) {
-    const batch = missing.slice(i, i + 100);
-    const response = await client.messages.parse({
-      model: "anthropic/claude-opus-5.5",
-      max_tokens: 16000,
-      output_config: { effort: "low", format: zodOutputFormat(Translation) },
-      messages: [
-        {
-          role: "user",
-          content: `These are German headwords from the Goethe B1 word list, for a flashcard app. For each one, return:
-- de: the headword exactly as given
-- en: a short English gloss (the most common meanings, comma-separated, verbs as "to …")
-- example_de: one short, natural B1-level German sentence using it
-- example_en: its English translation
-
-${batch.join("\n")}`,
-        },
-      ],
-    });
-    for (const item of response.parsed_output?.items ?? []) cached[item.de] = item;
-    writeFileSync(cacheFile, JSON.stringify(cached, null, 1));
-    console.log(`translated ${Math.min(i + 100, missing.length)}/${missing.length}`);
-  }
-  return cached;
-}
-
-const VerbInfo = z.object({
-  items: z.array(
-    z.object({
-      de: z.string(),
-      forms: z.string(),
-      governs: z.string(),
-    }),
-  ),
-});
-type Verb = z.infer<typeof VerbInfo>["items"][number];
+type Translated = { de: string; en: string; example_de: string; example_en: string };
+type Verb = { de: string; forms: string; governs: string };
 
 /**
- * Forms and the case/preposition each A1/A2 verb takes, from Claude once. Committed in
- * data/verbs.json (it is ours to share), so re-runs and other machines cost nothing.
+ * Content written once by Claude and committed: B1 English + examples, verb forms and the case
+ * or preposition each verb takes. A word missing here stops the import with its name, so it can
+ * be added by hand.
  */
-async function verbInfo(headwords: string[]): Promise<Record<string, Verb>> {
-  const file = `${DATA}verbs.json`;
-  const known: Record<string, Verb> = existsSync(file)
-    ? JSON.parse(readFileSync(file, "utf8"))
-    : {};
+function written<T>(file: string, headwords: string[]): Record<string, T> {
+  const known: Record<string, T> = JSON.parse(readFileSync(`${DATA}${file}`, "utf8"));
   const missing = headwords.filter((de) => !known[de]);
-  if (!missing.length) return known;
-  const client = claude();
-  for (let i = 0; i < missing.length; i += 80) {
-    const batch = missing.slice(i, i + 80);
-    const response = await client.messages.parse({
-      model: "anthropic/claude-opus-5.5",
-      max_tokens: 16000,
-      output_config: { effort: "medium", format: zodOutputFormat(VerbInfo) },
-      messages: [
-        {
-          role: "user",
-          content: `These are German verbs from the Goethe A1/A2 word lists, for a flashcard app for an English-speaking learner. For each one, return:
-- de: the headword exactly as given
-- forms: third person singular present, Präteritum (3rd sg) and Perfekt with its auxiliary, separated by " · ", e.g. "fährt · fuhr · ist gefahren" (for a reflexive verb include sich: "freut sich · freute sich · hat sich gefreut")
-- governs: the preposition with its case that the verb typically takes in everyday use, e.g. "auf + Akk." for warten, "mit + Dat." for telefonieren; or "+ Dat." for verbs whose object is dative (helfen, gefallen, gehören); empty string if none. Only list a preposition when it is a fixed pairing a learner must memorise, not a free location or time phrase.
-
-${batch.join("\n")}`,
-        },
-      ],
-    });
-    for (const item of response.parsed_output?.items ?? []) known[item.de] = item;
-    writeFileSync(file, `${JSON.stringify(known, null, 1)}\n`);
-    console.log(`verbs ${Math.min(i + 80, missing.length)}/${missing.length}`);
-  }
+  if (missing.length) throw new Error(`Add to data/${file}: ${missing.join(", ")}`);
   return known;
 }
 
 /** Adds forms (A1 and core words have none) and the governed case/preposition to verbs. */
-async function withVerbInfo(list: Note[]): Promise<Note[]> {
+function withVerbInfo(list: Note[]): Note[] {
   const isVerb = (note: Note) => note.cefr !== "B1" && /^to /.test(note.en);
-  const verbs = await verbInfo([...new Set(list.filter(isVerb).map((note) => note.de))]);
+  const verbs = written<Verb>("verbs.json", [
+    ...new Set(list.filter(isVerb).map((note) => note.de)),
+  ]);
   return list.map((note) => {
     const verb = isVerb(note) ? verbs[note.de] : undefined;
     if (!verb) return note;
@@ -271,7 +194,7 @@ async function withVerbInfo(list: Note[]): Promise<Note[]> {
   });
 }
 
-async function b1Notes(): Promise<Note[]> {
+function b1Notes(): Note[] {
   const dir = fetchRepo("b1", "https://github.com/kennethsible/goethe-wortliste.git");
   // Verbs come with their forms ("retten, rettet, rettete, hat gerettet"): word first, forms as hint.
   const fresh = readFileSync(`${dir}/sorted.txt`, "utf8")
@@ -280,7 +203,10 @@ async function b1Notes(): Promise<Note[]> {
       const entry = parseB1Line(line);
       return entry && isNewWord(entry.de) ? [{ ...entry, rank }] : [];
     });
-  const translations = await translate(fresh.map((entry) => entry.de));
+  const translations = written<Translated>(
+    "b1-translations.json",
+    fresh.map((entry) => entry.de),
+  );
   return fresh.flatMap(({ de, hint, rank }) => {
     const t = translations[de];
     if (!t) return [];
@@ -308,10 +234,10 @@ const phrases = phraseNotes();
 const level = (cefr: string) => phrases.filter((p) => p.cefr === cefr);
 const numbered = (list: Note[], base: number) =>
   list.map((note, i) => ({ ...note, ord: base + i }));
-const words = await withVerbInfo([
+const words = withVerbInfo([
   ...numbered(interleave(frequencyOrder(a1, ranks), level("A1"), 4), 0),
   ...numbered(interleave(frequencyOrder(a2Notes(), ranks), level("A2"), 4), 100_000),
-  ...numbered(interleave(await b1Notes(), level("B1"), 4), 200_000),
+  ...numbered(interleave(b1Notes(), level("B1"), 4), 200_000),
 ]);
 /** B1 words are for recognition: no English→German card. Phrases get both at every level. */
 const directions = (note: Note) =>
@@ -345,17 +271,21 @@ const dropped = await db.transaction(async (tx) => {
       sql`, `,
     )}) as v(id, ord) where ${notes.id} = v.id`,
   );
-  // A1 rows dropped as duplicates go, with their cards; edited ones stay. Only A1: the other
-  // lists come from upstream repos, and a change there must not wipe your history.
-  const a1Ids = words.filter((w) => w.source === "goethe-a1").map((w) => w.id);
-  if (!a1Ids.length) throw new Error("No A1 words loaded");
+  // A1 rows and phrases dropped as duplicates go, with their cards; edited ones stay. Only our
+  // own files: the other lists come from upstream repos, and a change there must not wipe history.
+  const ownIds = words
+    .filter((w) => w.source === "goethe-a1" || w.source === "phrase")
+    .map((w) => w.id);
+  if (!words.some((w) => w.source === "goethe-a1") || !words.some((w) => w.source === "phrase")) {
+    throw new Error("A1 words or phrases missing");
+  }
   // Never a note you have started learning: its review history would go with it.
   const removed = await tx
     .delete(notes)
     .where(
       and(
-        eq(notes.source, "goethe-a1"),
-        notInArray(notes.id, a1Ids),
+        inArray(notes.source, ["goethe-a1", "phrase"]),
+        notInArray(notes.id, ownIds),
         isNull(notes.editedAt),
         sql`not exists (select 1 from ${cards} where ${cards.noteId} = ${notes.id} and ${cards.introducedAt} is not null)`,
       ),

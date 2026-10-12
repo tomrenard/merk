@@ -17,7 +17,7 @@ pnpm install
 vercel link && vercel integration add neon   # or set DATABASE_URL yourself
 cp .env.example .env.local                    # fill APP_PASSWORD and SESSION_SECRET
 pnpm db:migrate
-vercel env pull .env.vercel && pnpm import:words   # A1 → B1; translates B1 once via AI Gateway
+pnpm import:words   # A1 → B1 + phrases, from data/ (backs up first)
 pnpm dev
 ```
 

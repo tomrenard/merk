@@ -63,7 +63,7 @@ export function spokenTime(hour: number, minute: number): string {
   const next = (hour % 12) + 1;
   const h = UNITS[hour] ?? String(hour);
   const n = UNITS[next] ?? String(next);
-  if (minute === 0) return `${h} Uhr`;
+  if (minute === 0) return `${hour === 1 ? "ein" : h} Uhr`;
   if (minute === 15) return `Viertel nach ${h}`;
   if (minute === 30) return `halb ${n}`;
   if (minute === 45) return `Viertel vor ${n}`;
@@ -78,7 +78,11 @@ function time(random: Random): Drill {
   return {
     kind: "Time",
     say: spokenTime(hour, minute),
-    answers: [`${hour}:${mm}`, `${hour + 12}:${mm}`, `${String(hour).padStart(2, "0")}:${mm}`],
+    answers: [
+      `${hour}:${mm}`,
+      `${(hour + 12) % 24}:${mm}`,
+      `${String(hour).padStart(2, "0")}:${mm}`,
+    ],
     shown: `${hour}:${mm}`,
   };
 }
@@ -172,6 +176,8 @@ export function isRightDrill(input: string, drill: Drill): boolean {
       .replace(/ä/g, "ae")
       .replace(/ö/g, "oe")
       .replace(/ü/g, "ue")
-      .replace(/ß/g, "ss");
+      .replace(/ß/g, "ss")
+      // The iPhone number pad has no colon: 3.15 and 3,15 mean 3:15 (and 3,49 € works either way).
+      .replace(/[.,]/g, ":");
   return drill.answers.some((answer) => clean(answer) === clean(input));
 }

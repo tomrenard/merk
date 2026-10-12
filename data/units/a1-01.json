@@ -1,0 +1,338 @@
+{
+ "id": "a1-01",
+ "cefr": "A1",
+ "title": "sein and personal pronouns",
+ "situation": "Introducing yourself",
+ "canDo": "You can say who you are, where you are from and what you do, and ask other people the same, using du or Sie correctly.",
+ "explanation": "To introduce yourself, you need the verb **sein** (to be) and the personal pronouns (I, you, he…). *sein* is irregular, so learn it by heart:\n\n| pronoun | sein | pronoun | sein |\n|---|---|---|---|\n| ich | bin | wir | sind |\n| du | bist | ihr | seid |\n| er / sie / es | ist | sie / Sie | sind |\n\n- **du** = one person you know well (friends, family, children, classmates). **ihr** = du in the plural.\n- **Sie** (capital S) = polite 'you' for adults you don't know, at work, in offices. It has the same form for one or several people, always with *sind*.\n- **sie** (small s) = she (with *ist*) or they (with *sind*). The verb tells you which one.\n- **er / sie / es** follow the grammatical gender of the noun, even for things: die Wohnung → sie, der Kaffee → er, das Kind → es.\n- No article with jobs and nationalities: *Ich bin Lehrer. Sie ist Französin.*\n- **Das ist…** presents one person, **Das sind…** several: *Das sind Paul und Léa.*\n- Don't mix up **seid** (you are, plural) and **seit** (since).\n- In yes/no questions the verb comes first: *Sind Sie Herr Weber?* With a question word it comes second: *Woher sind Sie?*",
+ "french": "Like être, sein is irregular and, as in French, jobs take no article (je suis professeur = ich bin Lehrer); Sie works like vous but uses the same verb form as sie 'they' (Sie sind / sie sind).",
+ "examples": [
+  {
+   "de": "Hallo, ich bin Claire.",
+   "en": "Hi, I'm Claire."
+  },
+  {
+   "de": "Ich bin Französin und wohne in Berlin.",
+   "en": "I'm French and I live in Berlin."
+  },
+  {
+   "de": "Sind Sie Herr Weber? – Ja, das bin ich.",
+   "en": "Are you Mr Weber? – Yes, that's me."
+  },
+  {
+   "de": "Das ist Marc. Er ist mein Mann.",
+   "en": "This is Marc. He's my husband."
+  },
+  {
+   "de": "Bist du auch neu hier?",
+   "en": "Are you new here too?"
+  },
+  {
+   "de": "Das sind Paul und Léa. Sie sind aus Frankreich.",
+   "en": "These are Paul and Léa. They're from France."
+  },
+  {
+   "de": "Seid ihr Kollegen?",
+   "en": "Are you (two) colleagues?"
+  },
+  {
+   "de": "Das ist meine Wohnung. Sie ist klein.",
+   "en": "This is my flat. It's small."
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-01-01",
+   "type": "cloze",
+   "de": "Hallo, ich ___ Claire.",
+   "base": "sein",
+   "answers": [
+    "bin"
+   ],
+   "en": "Hi, I'm Claire."
+  },
+  {
+   "id": "a1-01-02",
+   "type": "choice",
+   "de": "Du ___ Marc, oder?",
+   "options": [
+    "bist",
+    "bin",
+    "ist"
+   ],
+   "answer": 0,
+   "why": "With du, the form of sein is bist.",
+   "en": "You're Marc, right?"
+  },
+  {
+   "id": "a1-01-03",
+   "type": "cloze",
+   "de": "Das ___ Herr Weber.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "This is Mr Weber."
+  },
+  {
+   "id": "a1-01-04",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "Französin"
+   ],
+   "answers": [
+    "Ich bin Französin.",
+    "Französin bin ich."
+   ],
+   "en": "I'm French."
+  },
+  {
+   "id": "a1-01-05",
+   "type": "cloze",
+   "de": "Wir ___ aus Frankreich.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "We're from France."
+  },
+  {
+   "id": "a1-01-06",
+   "type": "choice",
+   "de": "Das ist Marc. ___ ist mein Freund.",
+   "options": [
+    "Er",
+    "Sie",
+    "Es"
+   ],
+   "answer": 0,
+   "why": "Marc is a man, so the pronoun is er.",
+   "en": "This is Marc. He's my friend."
+  },
+  {
+   "id": "a1-01-07",
+   "type": "cloze",
+   "de": "___ du Paul?",
+   "base": "sein",
+   "answers": [
+    "Bist"
+   ],
+   "en": "Are you Paul?"
+  },
+  {
+   "id": "a1-01-08",
+   "type": "choice",
+   "de": "Guten Tag! ___ Sie Frau Schmidt?",
+   "options": [
+    "Sind",
+    "Ist",
+    "Bist"
+   ],
+   "answer": 0,
+   "why": "Polite Sie always takes sind, even for one person.",
+   "en": "Hello! Are you Ms Schmidt?"
+  },
+  {
+   "id": "a1-01-09",
+   "type": "cloze",
+   "de": "Anna ___ Lehrerin.",
+   "base": "sein",
+   "answers": [
+    "ist"
+   ],
+   "en": "Anna is a teacher."
+  },
+  {
+   "id": "a1-01-10",
+   "type": "order",
+   "tiles": [
+    "Sind",
+    "Sie",
+    "Herr Weber"
+   ],
+   "answers": [
+    "Sind Sie Herr Weber?"
+   ],
+   "en": "Are you Mr Weber?"
+  },
+  {
+   "id": "a1-01-11",
+   "type": "choice",
+   "de": "Woher ___ ihr?",
+   "options": [
+    "seid",
+    "sind",
+    "seit"
+   ],
+   "answer": 0,
+   "why": "With ihr the form is seid; seit means 'since' and is a different word.",
+   "en": "Where are you (all) from?"
+  },
+  {
+   "id": "a1-01-12",
+   "type": "cloze",
+   "de": "Ich bin Marie und das ___ Paul und Léa.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "I'm Marie and these are Paul and Léa."
+  },
+  {
+   "id": "a1-01-13",
+   "type": "choice",
+   "de": "Das ist Lisa. ___ ist Studentin.",
+   "options": [
+    "Sie",
+    "Er",
+    "Es"
+   ],
+   "answer": 0,
+   "why": "Lisa is a woman, so the pronoun is sie with ist.",
+   "en": "This is Lisa. She's a student."
+  },
+  {
+   "id": "a1-01-14",
+   "type": "order",
+   "tiles": [
+    "Woher",
+    "sind",
+    "Sie"
+   ],
+   "answers": [
+    "Woher sind Sie?"
+   ],
+   "en": "Where are you from?"
+  },
+  {
+   "id": "a1-01-15",
+   "type": "cloze",
+   "de": "Paul und ich ___ Kollegen.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "Paul and I are colleagues."
+  },
+  {
+   "id": "a1-01-16",
+   "type": "choice",
+   "de": "Frau Weber, woher kommen ___?",
+   "options": [
+    "Sie",
+    "sie",
+    "du"
+   ],
+   "answer": 0,
+   "why": "Speaking politely to Ms Weber, 'you' is Sie with a capital S.",
+   "en": "Ms Weber, where are you from?"
+  },
+  {
+   "id": "a1-01-17",
+   "type": "cloze",
+   "de": "Bist du müde? – Nein, ich ___ nicht müde.",
+   "base": "sein",
+   "answers": [
+    "bin"
+   ],
+   "en": "Are you tired? – No, I'm not tired."
+  },
+  {
+   "id": "a1-01-18",
+   "type": "order",
+   "tiles": [
+    "Ich",
+    "bin",
+    "heute",
+    "müde"
+   ],
+   "answers": [
+    "Ich bin heute müde.",
+    "Heute bin ich müde.",
+    "Müde bin ich heute."
+   ],
+   "en": "I'm tired today."
+  },
+  {
+   "id": "a1-01-19",
+   "type": "choice",
+   "de": "Das ist meine Wohnung. ___ ist klein.",
+   "options": [
+    "Sie",
+    "Er",
+    "Es"
+   ],
+   "answer": 0,
+   "why": "die Wohnung is feminine, so it becomes sie, even though it is a thing.",
+   "en": "This is my flat. It's small."
+  },
+  {
+   "id": "a1-01-20",
+   "type": "cloze",
+   "de": "Seid ihr auch neu hier? – Ja, wir ___ auch neu.",
+   "base": "sein",
+   "answers": [
+    "sind"
+   ],
+   "en": "Are you new here too? – Yes, we're new too."
+  },
+  {
+   "id": "a1-01-21",
+   "type": "order",
+   "tiles": [
+    "Wir",
+    "sind",
+    "jetzt",
+    "in Berlin"
+   ],
+   "answers": [
+    "Wir sind jetzt in Berlin.",
+    "Jetzt sind wir in Berlin.",
+    "In Berlin sind wir jetzt."
+   ],
+   "en": "We're in Berlin now."
+  },
+  {
+   "id": "a1-01-22",
+   "type": "choice",
+   "de": "Herr und Frau Weber, ___ Sie aus Berlin?",
+   "options": [
+    "sind",
+    "ist",
+    "seid"
+   ],
+   "answer": 0,
+   "why": "Polite Sie takes sind, also when you speak to two people.",
+   "en": "Mr and Mrs Weber, are you from Berlin?"
+  },
+  {
+   "id": "a1-01-23",
+   "type": "cloze",
+   "de": "Du und Paul, ihr ___ Kollegen, oder?",
+   "base": "sein",
+   "answers": [
+    "seid"
+   ],
+   "en": "You and Paul, you're colleagues, right?"
+  },
+  {
+   "id": "a1-01-24",
+   "type": "order",
+   "tiles": [
+    "Mein Name",
+    "ist",
+    "Claire",
+    "und",
+    "ich",
+    "bin",
+    "Französin"
+   ],
+   "answers": [
+    "Mein Name ist Claire und ich bin Französin."
+   ],
+   "en": "My name is Claire and I'm French."
+  }
+ ]
+}

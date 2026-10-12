@@ -16,12 +16,19 @@ export function articleColor(headword: string): string {
 }
 
 /**
+ * A whole sentence ("Danke, gut. Und Ihnen?"): capital start, end punctuation. Not a headword
+ * with a plural note after a comma, nor "zum Beispiel/z. B.".
+ */
+const isSentence = (text: string) => /^[A-ZÄÖÜ„"].*[.!?…]$/.test(text.trim());
+
+/**
  * Splits a headword into words and plural notes, for display: "der Professor, -en die
  * Professorin, -nen" → words "der Professor", " die Professorin", notes ", -en", ", -nen".
  * The lists mark umlaut plurals with a combining diaeresis on the hyphen, which fonts draw on
  * the next letter ("-ë"), so it becomes a standalone "¨".
  */
 export function splitPlural(headword: string): { text: string; plural: boolean }[] {
+  if (isSentence(headword)) return [{ text: headword, plural: false }];
   return headword
     .replace(/-\u0308/g, "-¨")
     .split(/(, [^,]*?(?= (?:der|die|das) |$))/)
@@ -34,6 +41,7 @@ export function splitPlural(headword: string): { text: string; plural: boolean }
  * "die Bank", "(sich) anziehen" → "sich anziehen", "dein-" → "dein".
  */
 export function spokenForm(headword: string): string {
+  if (isSentence(headword)) return headword;
   return (headword.split(",")[0] ?? headword)
     .replace(/\s\([^)]*\)$/, "")
     .replace(/[()]/g, "")
@@ -58,6 +66,7 @@ function normalize(text: string): string {
 
 /** The answers that count as right for a headword: plural, "(pl.)" and optional parts dropped. */
 function acceptedAnswers(headword: string): string[] {
+  if (isSentence(headword)) return [headword];
   const base = (headword.split(",")[0] ?? headword).replace("(pl.)", "").trim();
   const optionalKept = base.replace(/[()]/g, "");
   const optionalDropped = base.replace(/\([^)]*\)[\s-]*/g, "");

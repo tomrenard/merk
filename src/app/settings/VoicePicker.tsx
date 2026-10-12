@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { germanVoices, setVoice, speak } from "../review/German";
+import { germanVoices, setVoice, speak, storedVoice } from "../review/German";
 
 /** Pick the German voice; the list fills in once the device has loaded its voices. */
 export function VoicePicker() {
@@ -12,9 +12,7 @@ export function VoicePicker() {
     const load = () => {
       const list = germanVoices();
       setVoices(list);
-      try {
-        setCurrent(localStorage.getItem("merk-voice") ?? list[0]?.voiceURI ?? "");
-      } catch {}
+      setCurrent(storedVoice() ?? list[0]?.voiceURI ?? "");
     };
     load();
     speechSynthesis.addEventListener("voiceschanged", load);

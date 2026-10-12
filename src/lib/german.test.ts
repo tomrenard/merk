@@ -128,3 +128,13 @@ describe("governedPrepositions", () => {
     expect(governedPrepositions(governs)).toEqual(preps);
   });
 });
+
+describe("sentences", () => {
+  it("are spoken, shown and checked whole", () => {
+    expect(spokenForm("Danke, gut. Und Ihnen?")).toBe("Danke, gut. Und Ihnen?");
+    expect(splitPlural("Noch einmal, bitte.")).toEqual([
+      { text: "Noch einmal, bitte.", plural: false },
+    ]);
+    expect(checkTyped("Noch einmal bitte", "Noch einmal, bitte.")).toBe("right");
+  });
+});

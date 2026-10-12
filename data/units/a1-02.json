@@ -1,0 +1,340 @@
+{
+ "id": "a1-02",
+ "cefr": "A1",
+ "title": "Present tense of regular verbs: wohnen, arbeiten, lernen, heißen",
+ "situation": "Talking about yourself",
+ "canDo": "I can say my name, where I live, where I work and what I am learning, and ask other people the same questions.",
+ "explanation": "When you introduce yourself, you say your name, where you live and what you do: *Ich heiße…, ich wohne…, ich arbeite…, ich lerne Deutsch.* These verbs are regular. Take the infinitive, remove **-en** to get the stem (wohn-, lern-), then add the ending that matches the person.\n\n| | wohnen | arbeiten | heißen |\n|---|---|---|---|\n| ich | wohn**e** | arbeit**e** | heiß**e** |\n| du | wohn**st** | arbeit**est** | heiß**t** |\n| er/sie/es | wohn**t** | arbeit**et** | heiß**t** |\n| wir | wohn**en** | arbeit**en** | heiß**en** |\n| ihr | wohn**t** | arbeit**et** | heiß**t** |\n| sie/Sie | wohn**en** | arbeit**en** | heiß**en** |\n\nTwo small rules:\n- Stem ends in **-t** or **-d** (arbeit-): add an extra **-e-** before -st and -t, so you can pronounce it: du arbeit**e**st, er arbeit**e**t.\n- Stem ends in **-s**, **-ß** or **-z** (heiß-): du only adds **-t**: du heißt (not heißst).\n\n**wir**, **sie** (they) and **Sie** (polite you) always look like the infinitive: wir wohnen, Sie wohnen. Use Sie with strangers and at work, du with friends and children.\n\nIn a statement the verb is in second place: *Ich wohne in Köln.* In a question with wo, wie, woher, the verb comes right after the question word: *Wo wohnen Sie?*",
+ "french": "It works like French -er verbs (j'habite, tu habites, nous habitons): one stem plus personal endings, but in German you hear every ending: ich wohne, du wohnst, er wohnt.",
+ "examples": [
+  {
+   "de": "Ich heiße Marie.",
+   "en": "My name is Marie."
+  },
+  {
+   "de": "Ich komme aus Frankreich.",
+   "en": "I come from France."
+  },
+  {
+   "de": "Ich wohne jetzt in Köln.",
+   "en": "I live in Cologne now."
+  },
+  {
+   "de": "Ich arbeite bei einer Firma.",
+   "en": "I work for a company."
+  },
+  {
+   "de": "Mein Mann arbeitet in Bonn.",
+   "en": "My husband works in Bonn."
+  },
+  {
+   "de": "Wir lernen Deutsch.",
+   "en": "We are learning German."
+  },
+  {
+   "de": "Wie heißt du?",
+   "en": "What's your name?"
+  },
+  {
+   "de": "Wo wohnen Sie?",
+   "en": "Where do you live? (polite)"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-02-01",
+   "type": "cloze",
+   "de": "Ich ___ Marie.",
+   "base": "heißen",
+   "answers": [
+    "heiße"
+   ],
+   "en": "My name is Marie."
+  },
+  {
+   "id": "a1-02-02",
+   "type": "cloze",
+   "de": "Ich ___ in Berlin.",
+   "base": "wohnen",
+   "answers": [
+    "wohne"
+   ],
+   "en": "I live in Berlin."
+  },
+  {
+   "id": "a1-02-03",
+   "type": "order",
+   "tiles": [
+    "heiße",
+    "Ich",
+    "Paul"
+   ],
+   "answers": [
+    "Ich heiße Paul."
+   ],
+   "en": "My name is Paul."
+  },
+  {
+   "id": "a1-02-04",
+   "type": "choice",
+   "de": "Du ___ in Frankreich.",
+   "options": [
+    "wohnst",
+    "wohnt",
+    "wohne",
+    "wohnen"
+   ],
+   "answer": 0,
+   "why": "With du the ending is -st: du wohnst.",
+   "en": "You live in France."
+  },
+  {
+   "id": "a1-02-05",
+   "type": "cloze",
+   "de": "Wir ___ Deutsch.",
+   "base": "lernen",
+   "answers": [
+    "lernen"
+   ],
+   "en": "We are learning German."
+  },
+  {
+   "id": "a1-02-06",
+   "type": "cloze",
+   "de": "Wo ___ du?",
+   "base": "wohnen",
+   "answers": [
+    "wohnst"
+   ],
+   "en": "Where do you live?"
+  },
+  {
+   "id": "a1-02-07",
+   "type": "choice",
+   "de": "Woher ___ du?",
+   "options": [
+    "kommt",
+    "kommst",
+    "kommen",
+    "komme"
+   ],
+   "answer": 1,
+   "why": "With du, regular verbs like kommen take the ending -st: du kommst.",
+   "en": "Where are you from?"
+  },
+  {
+   "id": "a1-02-08",
+   "type": "order",
+   "tiles": [
+    "du",
+    "wohnst",
+    "Wo"
+   ],
+   "answers": [
+    "Wo wohnst du?"
+   ],
+   "en": "Where do you live?"
+  },
+  {
+   "id": "a1-02-09",
+   "type": "cloze",
+   "de": "Wie ___ du?",
+   "base": "heißen",
+   "answers": [
+    "heißt"
+   ],
+   "en": "What's your name?"
+  },
+  {
+   "id": "a1-02-10",
+   "type": "choice",
+   "de": "Wo ___ Sie?",
+   "options": [
+    "wohnst",
+    "wohne",
+    "wohnen",
+    "wohnt"
+   ],
+   "answer": 2,
+   "why": "Polite Sie takes -en, just like the infinitive.",
+   "en": "Where do you live? (polite)"
+  },
+  {
+   "id": "a1-02-11",
+   "type": "cloze",
+   "de": "Er ___ in Hamburg.",
+   "base": "arbeiten",
+   "answers": [
+    "arbeitet"
+   ],
+   "en": "He works in Hamburg."
+  },
+  {
+   "id": "a1-02-12",
+   "type": "choice",
+   "de": "Marie und Paul ___ Deutsch.",
+   "options": [
+    "lernt",
+    "lernen",
+    "lernst",
+    "lerne"
+   ],
+   "answer": 1,
+   "why": "Marie und Paul means 'they' (sie), which takes -en.",
+   "en": "Marie and Paul are learning German."
+  },
+  {
+   "id": "a1-02-13",
+   "type": "order",
+   "tiles": [
+    "in München",
+    "arbeitet",
+    "Mein Bruder"
+   ],
+   "answers": [
+    "Mein Bruder arbeitet in München."
+   ],
+   "en": "My brother works in Munich."
+  },
+  {
+   "id": "a1-02-14",
+   "type": "cloze",
+   "de": "Du ___ schnell!",
+   "base": "lernen",
+   "answers": [
+    "lernst"
+   ],
+   "en": "You learn fast!"
+  },
+  {
+   "id": "a1-02-15",
+   "type": "choice",
+   "de": "Du ___ Paul, oder?",
+   "options": [
+    "heißst",
+    "heißen",
+    "heißt",
+    "heiße"
+   ],
+   "answer": 2,
+   "why": "The stem heiß- already ends in ß, so du only adds -t: du heißt.",
+   "en": "Your name is Paul, right?"
+  },
+  {
+   "id": "a1-02-16",
+   "type": "cloze",
+   "de": "Was ___ Sie am Wochenende?",
+   "base": "machen",
+   "answers": [
+    "machen"
+   ],
+   "en": "What do you do at the weekend? (polite)"
+  },
+  {
+   "id": "a1-02-17",
+   "type": "order",
+   "tiles": [
+    "kommen",
+    "Sie",
+    "Woher"
+   ],
+   "answers": [
+    "Woher kommen Sie?"
+   ],
+   "en": "Where are you from? (polite)"
+  },
+  {
+   "id": "a1-02-18",
+   "type": "choice",
+   "de": "Du ___ in Berlin.",
+   "options": [
+    "arbeitst",
+    "arbeitest",
+    "arbeitet",
+    "arbeiten"
+   ],
+   "answer": 1,
+   "why": "The stem arbeit- ends in -t, so du adds -est.",
+   "en": "You work in Berlin."
+  },
+  {
+   "id": "a1-02-19",
+   "type": "cloze",
+   "de": "Ihr ___ in Köln, oder?",
+   "base": "wohnen",
+   "answers": [
+    "wohnt"
+   ],
+   "en": "You (all) live in Cologne, right?"
+  },
+  {
+   "id": "a1-02-20",
+   "type": "choice",
+   "de": "Meine Tochter ___ in Paris.",
+   "options": [
+    "studieren",
+    "studierst",
+    "studiere",
+    "studiert"
+   ],
+   "answer": 3,
+   "why": "Meine Tochter means 'she' (sie), which takes -t.",
+   "en": "My daughter studies in Paris."
+  },
+  {
+   "id": "a1-02-21",
+   "type": "cloze",
+   "de": "Meine Frau ___ bei einer Firma.",
+   "base": "arbeiten",
+   "answers": [
+    "arbeitet"
+   ],
+   "en": "My wife works for a company."
+  },
+  {
+   "id": "a1-02-22",
+   "type": "order",
+   "tiles": [
+    "wohnen",
+    "in Hamburg",
+    "Meine Eltern",
+    "jetzt"
+   ],
+   "answers": [
+    "Meine Eltern wohnen jetzt in Hamburg."
+   ],
+   "en": "My parents live in Hamburg now."
+  },
+  {
+   "id": "a1-02-23",
+   "type": "choice",
+   "de": "Ihr ___ zusammen, oder?",
+   "options": [
+    "arbeitet",
+    "arbeitt",
+    "arbeiten",
+    "arbeitest"
+   ],
+   "answer": 0,
+   "why": "ihr takes -t, and after the -t of arbeit- you add an extra -e-: ihr arbeitet.",
+   "en": "You (all) work together, right?"
+  },
+  {
+   "id": "a1-02-24",
+   "type": "order",
+   "tiles": [
+    "wohnst",
+    "Woher",
+    "du",
+    "und",
+    "wo",
+    "kommst",
+    "du"
+   ],
+   "answers": [
+    "Woher kommst du und wo wohnst du?"
+   ],
+   "en": "Where are you from and where do you live?"
+  }
+ ]
+}

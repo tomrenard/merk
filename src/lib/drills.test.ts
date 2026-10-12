@@ -4,6 +4,7 @@ import { drills, isRightDrill, spokenTime } from "./drills.ts";
 describe("spokenTime", () => {
   it.each([
     [3, 0, "drei Uhr"],
+    [1, 0, "ein Uhr"],
     [3, 15, "Viertel nach drei"],
     [3, 30, "halb vier"],
     [3, 45, "Viertel vor vier"],
@@ -33,6 +34,7 @@ describe("drills", () => {
     };
     expect(isRightDrill("15:30", time)).toBe(true);
     expect(isRightDrill("4:30", time)).toBe(false);
+    expect(isRightDrill("3.30", time)).toBe(true);
     const price = { kind: "Price", say: "3 Euro 49", answers: ["3,49", "3.49"], shown: "3,49 €" };
     expect(isRightDrill("3,49 €", price)).toBe(true);
     const name = { kind: "Spelled name", say: "Emm, Ü", answers: ["Müller"], shown: "Müller" };

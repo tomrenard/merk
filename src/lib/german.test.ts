@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, isCorrect } from "./german.ts";
+import { articleOf, isCorrect, lemmaKey } from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -32,4 +32,14 @@ describe("isCorrect", () => {
     ["das Ansage", "die Ansage, -n"],
     ["", "antworten"],
   ])("rejects %s for %s", (input, word) => expect(isCorrect(input, word)).toBe(false));
+});
+
+describe("lemmaKey", () => {
+  it.each([
+    ["die Ansage, -n", "ansage"],
+    ["der/die Bekannte, -n", "bekannte"],
+    ["(sich) anziehen", "anziehen"],
+    ["die Eltern (pl.)", "eltern"],
+    ["Straße", "strasse"],
+  ])("%s → %s", (word, key) => expect(lemmaKey(word)).toBe(key));
 });

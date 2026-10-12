@@ -6,8 +6,7 @@ One user, one password, installable on your phone as a PWA.
 - FSRS scheduling ([ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs))
 - der/die/das colours, German text-to-speech in the browser
 - Type-the-German cards that accept `ae/oe/ue/ss` for `ä/ö/ü/ß`
-- Translations and explanations in English, French or both
-- Starts with the Goethe-Institut A1 word list (813 words, both directions)
+- Goethe-Institut word lists A1 → B1 (~3,000 words, both directions, in level order)
 
 Stack: Next.js, Neon Postgres, Drizzle, Vercel.
 
@@ -19,6 +18,7 @@ vercel link && vercel integration add neon   # or set DATABASE_URL yourself
 cp .env.example .env.local                    # fill APP_PASSWORD and SESSION_SECRET
 pnpm db:migrate
 pnpm import:a1
+vercel env pull .env.vercel && pnpm import:levels   # A2 + B1, translates B1 once via AI Gateway
 pnpm dev
 ```
 

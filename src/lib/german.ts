@@ -32,3 +32,9 @@ function acceptedAnswers(headword: string): string[] {
 export function isCorrect(input: string, headword: string): boolean {
   return acceptedAnswers(headword).includes(normalize(input));
 }
+
+/** The bare word, to spot the same entry across level lists: "die Ansage, -n" → "ansage". */
+export function lemmaKey(headword: string): string {
+  const base = (headword.split(",")[0] ?? headword).replace(/\([^)]*\)/g, "");
+  return normalize(base.replace(/^(der\/die|der|die|das) /, ""));
+}

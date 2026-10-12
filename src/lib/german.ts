@@ -66,15 +66,32 @@ function acceptedAnswers(headword: string): string[] {
   const pair = base.match(/^der\/die (.+)$/);
   if (pair) forms.push(`der ${pair[1]}`, `die ${pair[1]}`);
   else if (!articleOf(base)) forms.push(...base.split("/"));
-  return [...new Set(forms.map(normalize))];
+  return [...new Set(forms)];
 }
 
 /** Answer comparison also ignores commas, quotes and long dashes. */
 const answerKey = (text: string) => normalize(text.replace(/[,"'„“”‚‘’«»–—]/g, " "));
 
-/** Umlauts and ß reduced to their base letter: "schön" and "schon" look alike here. */
-const vowelBase = (key: string) =>
-  key.replace(/ae/g, "a").replace(/oe/g, "o").replace(/ue/g, "u").replace(/ss/g, "s");
+/** Umlaut marks and ß dropped, nothing else: "schön" and "schon" look alike here, "Feuer" stays. */
+const withoutMarks = (text: string) =>
+  answerKey(
+    text.toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "s"),
+  );
+
+/**
+ * Prepositions in a `governs` note: "auf + Akk." → ["auf"]; "mit + Dat.; über + Akk." → both;
+ * "sich bei + Dat.; für + Akk." → bei, für; "+ Dat." (only a case) → none.
+ */
+export function governedPrepositions(governs?: string | null): string[] {
+  return [...(governs ?? "").matchAll(/(?:^|[;,/]\s*)(?:sich\s+)?(\p{Ll}+)\s*\+/gu)].flatMap(
+    (match) => (match[1] ? [match[1]] : []),
+  );
+}
+
+/** "+ Dat." as written; "auf + Akk." gets a leading "+ " to read as an addition to the verb. */
+export function governsLabel(governs: string): string {
+  return governs.startsWith("+") ? governs : `+ ${governs}`;
+}
 
 const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
 
@@ -106,22 +123,27 @@ export type TypedResult = "right" | "article" | "almost" | "wrong" | "blank";
 export function checkTyped(input: string, headword: string, governs?: string | null): TypedResult {
   const given = answerKey(input);
   if (!given) return "blank";
-  const answers = acceptedAnswers(headword).map(answerKey);
-  // "auf + Akk." names a preposition; "+ Dat." only a case, nothing to type.
-  const prep = governs?.match(/^\p{Ll}+/u)?.[0];
-  if (prep) answers.push(...answers.map((answer) => `${answer} ${answerKey(prep)}`));
+  const forms = acceptedAnswers(headword);
+  for (const prep of governedPrepositions(governs)) {
+    forms.push(...acceptedAnswers(headword).map((form) => `${form} ${prep}`));
+  }
+  const answers = forms.map(answerKey);
   if (answers.includes(given)) return "right";
   if (articleOf(headword) && answers.some((a) => withoutArticle(a) === withoutArticle(given))) {
     return "article";
   }
-  const almost = answers.some(
-    (a) => a.length >= 4 && distance(a, given) === 1 && vowelBase(a) !== vowelBase(given),
+  // One letter off, unless the only difference is an umlaut mark or ß (schon/schön).
+  const almost = forms.some(
+    (form) =>
+      answerKey(form).length >= 4 &&
+      distance(answerKey(form), given) === 1 &&
+      withoutMarks(form) !== withoutMarks(input),
   );
   return almost ? "almost" : "wrong";
 }
 
-export function isCorrect(input: string, headword: string): boolean {
-  return checkTyped(input, headword) === "right";
+export function isCorrect(input: string, headword: string, governs?: string | null): boolean {
+  return checkTyped(input, headword, governs) === "right";
 }
 
 /**

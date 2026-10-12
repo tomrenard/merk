@@ -138,6 +138,13 @@ function a2Notes(): Note[] {
     .filter((note) => isNewWord(note.de));
 }
 
+/** Claude through Vercel AI Gateway (AI_GATEWAY_API_KEY, or VERCEL_OIDC_TOKEN from .env.vercel). */
+const claude = () =>
+  new Anthropic({
+    baseURL: "https://ai-gateway.vercel.sh",
+    apiKey: process.env.AI_GATEWAY_API_KEY ?? process.env.VERCEL_OIDC_TOKEN,
+  });
+
 const Translation = z.object({
   items: z.array(
     z.object({ de: z.string(), en: z.string(), example_de: z.string(), example_en: z.string() }),
@@ -153,10 +160,7 @@ async function translate(headwords: string[]): Promise<Record<string, Translated
     : {};
   const missing = headwords.filter((de) => !cached[de]);
   if (!missing.length) return cached;
-  const client = new Anthropic({
-    baseURL: "https://ai-gateway.vercel.sh",
-    apiKey: process.env.AI_GATEWAY_API_KEY ?? process.env.VERCEL_OIDC_TOKEN,
-  });
+  const client = claude();
   for (let i = 0; i < missing.length; i += 100) {
     const batch = missing.slice(i, i + 100);
     const response = await client.messages.parse({
@@ -205,10 +209,7 @@ async function verbInfo(headwords: string[]): Promise<Record<string, Verb>> {
     : {};
   const missing = headwords.filter((de) => !known[de]);
   if (!missing.length) return known;
-  const client = new Anthropic({
-    baseURL: "https://ai-gateway.vercel.sh",
-    apiKey: process.env.AI_GATEWAY_API_KEY ?? process.env.VERCEL_OIDC_TOKEN,
-  });
+  const client = claude();
   for (let i = 0; i < missing.length; i += 80) {
     const batch = missing.slice(i, i + 80);
     const response = await client.messages.parse({

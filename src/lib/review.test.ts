@@ -52,15 +52,20 @@ describe("new words", () => {
     expect((await nextCard())?.cardId).toBe("eins:en_de");
   });
 
-  it("pauses new words while the backlog is high", async () => {
+  it("pauses new words on a heavy review day, done or still waiting", async () => {
     await seedWords(
       db,
       Array.from({ length: 121 }, (_, i) => `w${i}`),
     );
     await db.execute(
-      sql`update cards set due = now() - interval '1 hour', introduced_at = now() - interval '3 days' where id like 'w%:de_en'`,
+      sql`insert into review_logs (card_id, rating, state) select id, 3, 2 from cards where id like 'w%:de_en' and id < 'w6'`,
     );
-    expect((await counts()).newLeft).toBe(0);
+    await db.execute(
+      sql`update cards set due = now() - interval '1 hour', introduced_at = now() - interval '3 days' where id like 'w%:de_en' and id >= 'w6'`,
+    );
+    const { due, newLeft } = await counts();
+    expect(due).toBeLessThan(121);
+    expect(newLeft).toBe(0);
   });
 });
 
@@ -75,6 +80,19 @@ describe("siblings", () => {
     await grade(first?.cardId ?? "", 3, 1000, first?.reps ?? 0);
     expect((await nextCard())?.cardId).not.toMatch(/^eins:/);
     expect((await counts()).due).toBe(0);
+  });
+
+  it("keeps a new English→German card for tomorrow if its German→English card was reviewed today", async () => {
+    await db
+      .update(cards)
+      .set({ fsrs: null, due: null, introducedAt: null })
+      .where(eq(cards.id, "eins:en_de"));
+    await db.insert(reviewLogs).values({ cardId: "eins:de_en", rating: 3, state: 2 });
+    await db
+      .update(cards)
+      .set({ due: new Date(Date.now() + DAY) })
+      .where(eq(cards.id, "eins:de_en"));
+    expect((await counts()).followUps).toBe(0);
   });
 
   it("still shows a card that is being relearned", async () => {

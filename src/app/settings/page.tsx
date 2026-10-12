@@ -34,8 +34,8 @@ export default async function SettingsPage() {
           className="field"
         />
         <span className="muted text-sm">
-          7 is about 15 minutes of reviews a day once things settle. New words pause by themselves
-          when more than 120 reviews are waiting.
+          7 is about 15 minutes of reviews a day once things settle. On days with more than 120
+          reviews, new words pause by themselves.
         </span>
       </label>
       <button type="submit" className="btn btn-primary">

@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { articleOf, checkTyped, isCorrect, lemmaKeys, splitPlural, spokenForm } from "./german.ts";
+import {
+  articleOf,
+  checkTyped,
+  governedPrepositions,
+  isCorrect,
+  lemmaKeys,
+  splitPlural,
+  spokenForm,
+} from "./german.ts";
 
 describe("articleOf", () => {
   it.each([
@@ -97,7 +105,26 @@ describe("checkTyped", () => {
     ["warten auf", "warten", "auf + Akk.", "right"],
     ["auf", "auf", undefined, "right"],
     ["helfen", "helfen", "+ Dat.", "right"],
+    ["das Feur", "das Feuer, -", undefined, "almost"],
+    ["die Klase", "die Klasse, -n", undefined, "almost"],
+    ["schön", "schon", undefined, "wrong"],
+    ["sprechen über", "sprechen", "mit + Dat.; über + Akk.", "right"],
+    ["gratulieren zu", "gratulieren", "+ Dat.; zu + Dat.", "right"],
+    ["entschuldigen bei", "sich entschuldigen", "sich bei + Dat.; für + Akk.", "wrong"],
+    ["sich entschuldigen bei", "sich entschuldigen", "sich bei + Dat.; für + Akk.", "right"],
   ])("%j for %j → %s", (input, headword, governs, result) => {
     expect(checkTyped(input, headword, governs)).toBe(result);
+  });
+});
+
+describe("governedPrepositions", () => {
+  it.each([
+    ["auf + Akk.", ["auf"]],
+    ["+ Dat.", []],
+    ["+ Dat.; zu + Dat.", ["zu"]],
+    ["auf + Akk. / über + Akk.", ["auf", "über"]],
+    ["sich bei + Dat.; für + Akk.", ["bei", "für"]],
+  ])("%s → %j", (governs, preps) => {
+    expect(governedPrepositions(governs)).toEqual(preps);
   });
 });

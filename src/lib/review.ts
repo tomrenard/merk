@@ -8,7 +8,7 @@ import { streakLength } from "@/lib/streak";
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.
 const scheduler = fsrs({ enable_fuzz: true });
 
-/** No new words while this many reviews are waiting: catch up first. */
+/** No new words on a day with more reviews than this: catch up first. */
 const BACKLOG = 120;
 
 /** Cards due within this window are shown now rather than making you wait (as Anki does). */
@@ -20,7 +20,6 @@ const DAY_START = sql`((date_trunc('day', (now() at time zone 'Europe/Berlin') -
 /** The de_en card of the same note, to hold back en_de until it was seen on an earlier day. */
 const sibling = alias(cards, "sibling");
 const siblingJoin = and(eq(sibling.noteId, cards.noteId), eq(sibling.direction, "de_en"));
-const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START})`;
 
 /**
  * A card waits until tomorrow if the other direction of its word was reviewed today, so one
@@ -30,6 +29,9 @@ const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} 
 const SIBLING_FREE = sql`(coalesce(${cards.fsrs}->>'state', '0') in ('1', '3') or not exists (
   select 1 from review_logs rl join cards s on s.id = rl.card_id
   where s.note_id = ${cards.noteId} and s.id <> ${cards.id} and rl.reviewed_at >= ${DAY_START}))`;
+
+/** New cards that may start now: a new word, or the English→German card of a word started on an earlier day and not reviewed today. */
+const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START}) and ${SIBLING_FREE}`;
 
 /** The study day a timestamp belongs to, as a date, with the same 4:00 Berlin rollover. */
 const studyDay = (at: SQL | typeof reviewLogs.reviewedAt) =>
@@ -64,13 +66,16 @@ export async function counts() {
         newWords: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'de_en')::int`,
         followUps: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'en_de')::int`,
         startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
+        // Reviews of already-learned cards done today: with `due`, the day's review load.
+        reviewedToday: sql<number>`(select count(distinct card_id) from review_logs where state <> 0 and reviewed_at >= ${DAY_START})::int`,
       })
       .from(cards)
       .leftJoin(sibling, siblingJoin),
     getSettings(),
   ]);
-  const { due = 0, newWords = 0, followUps = 0, startedToday = 0 } = row ?? {};
-  const budget = due > BACKLOG ? 0 : Math.max(newPerDay - startedToday, 0);
+  const { due = 0, newWords = 0, followUps = 0, startedToday = 0, reviewedToday = 0 } = row ?? {};
+  // A heavy review day (done or waiting) gets no new words, so the backlog can shrink.
+  const budget = due + reviewedToday > BACKLOG ? 0 : Math.max(newPerDay - startedToday, 0);
   return { due, newLeft: Math.min(budget, newWords), followUps };
 }
 

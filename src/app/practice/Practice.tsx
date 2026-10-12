@@ -73,7 +73,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
     );
   }
 
-  const right = isCorrect(typed, note.de);
+  const right = isCorrect(typed, note.de, note.governs);
   const state = !checked ? "idle" : right ? "right" : "wrong";
 
   function submit() {

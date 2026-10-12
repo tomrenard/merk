@@ -2,7 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { articleOf, checkTyped, spokenForm, type TypedResult } from "@/lib/german";
+import {
+  articleOf,
+  checkTyped,
+  governedPrepositions,
+  governsLabel,
+  spokenForm,
+  type TypedResult,
+} from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak } from "./German";
@@ -81,8 +88,15 @@ export function Review({ first }: Props) {
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         reveal();
-      } else if (revealed && RATINGS[typedResult(item, typed)].includes(Number(event.key))) {
-        answer(Number(event.key));
+      } else if (revealed) {
+        const result = typedResult(item, typed);
+        // 3 on a wrong answer is the "I was right" button.
+        if (
+          RATINGS[result].includes(Number(event.key)) ||
+          (result === "wrong" && event.key === "3")
+        ) {
+          answer(Number(event.key));
+        }
       }
     }
     window.addEventListener("keydown", onKey);
@@ -141,7 +155,7 @@ export function Review({ first }: Props) {
         {item.direction === "de_en" ? (
           <>
             <German word={note.de} />
-            {note.governs && <p className="muted font-bold">+ {note.governs}</p>}
+            {note.governs && <p className="muted font-bold">{governsLabel(note.governs)}</p>}
           </>
         ) : (
           <>
@@ -151,7 +165,7 @@ export function Review({ first }: Props) {
             <p className="text-3xl font-black">
               {note.en}
               {/* Says a preposition belongs to the answer, without giving it away. */}
-              {/^\p{Ll}/u.test(note.governs ?? "") && (
+              {governedPrepositions(note.governs).length > 0 && (
                 <span className="muted text-lg"> · + prep.</span>
               )}
             </p>
@@ -189,7 +203,7 @@ export function Review({ first }: Props) {
               <>
                 {message && <p className={`chip mx-auto ${FEEDBACK[result]}`}>{message}</p>}
                 <German word={note.de} />
-                {note.governs && <p className="muted font-bold">+ {note.governs}</p>}
+                {note.governs && <p className="muted font-bold">{governsLabel(note.governs)}</p>}
               </>
             )}
             {note.exampleDe && (

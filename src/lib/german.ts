@@ -151,6 +151,11 @@ export function checkTyped(input: string, headword: string, governs?: string | n
   return almost ? "almost" : "wrong";
 }
 
+/** Same answer, ignoring case, punctuation and ae/oe/ue/ss spellings. */
+export function sameAnswer(input: string, answer: string): boolean {
+  return answerKey(input) === answerKey(answer);
+}
+
 export function isCorrect(input: string, headword: string, governs?: string | null): boolean {
   return checkTyped(input, headword, governs) === "right";
 }

@@ -41,7 +41,8 @@ export const cards = pgTable(
     noteId: text("note_id")
       .notNull()
       .references(() => notes.id, { onDelete: "cascade" }),
-    direction: text("direction", { enum: ["de_en", "en_de"] }).notNull(),
+    /** de_en shows German; en_de asks for it; unit reviews a grammar unit with one of its exercises. */
+    direction: text("direction", { enum: ["de_en", "en_de", "unit"] }).notNull(),
     fsrs: jsonb("fsrs").$type<CardInput>(),
     due: timestamp("due", { withTimezone: true }),
     introducedAt: timestamp("introduced_at", { withTimezone: true }),
@@ -62,6 +63,20 @@ export const reviewLogs = pgTable(
     reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("review_logs_card_idx").on(t.cardId, t.reviewedAt)],
+);
+
+/** Things you did outside flashcards: a grammar unit finished (kind "unit", ref = unit id). */
+export const activityLogs = pgTable(
+  "activity_logs",
+  {
+    id: serial("id").primaryKey(),
+    kind: text("kind").notNull(),
+    ref: text("ref").notNull(),
+    score: integer("score"),
+    total: integer("total"),
+    at: timestamp("at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("activity_logs_kind_idx").on(t.kind, t.ref)],
 );
 
 /** A single row: there is one user. */

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { lessonDoneToday, nextUnit, unitScores } from "@/lib/course";
 import { activity, counts, progress } from "@/lib/review";
 import { TabBar } from "./TabBar";
 
@@ -17,15 +18,26 @@ function Stat({ icon, tint, label, value }: StatProps) {
 }
 
 export default async function Home() {
-  const [{ due, newLeft, followUps }, { reviewsToday, streak }, { remembered, known }] =
-    await Promise.all([counts(), activity(), progress()]);
+  const [
+    { due, newLeft, followUps },
+    { reviewsToday, streak },
+    { remembered, known },
+    scores,
+    lessonDone,
+  ] = await Promise.all([counts(), activity(), progress(), unitScores(), lessonDoneToday()]);
   const todo = due + newLeft + followUps;
+  const unit = nextUnit(scores);
   return (
     <main className="screen with-tabs">
       <header className="topbar">
         <h1 className="text-3xl font-black tracking-tight text-[var(--brand)]">merk</h1>
-        <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
-          🔥 {streak}
+        <span className="flex items-center gap-2">
+          <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
+            🔥 {streak}
+          </span>
+          <Link href="/settings" className="chip line border-2" aria-label="Settings">
+            ⚙️
+          </Link>
         </span>
       </header>
 
@@ -47,6 +59,23 @@ export default async function Home() {
           {todo > 0 ? "Start" : "Review anyway"}
         </Link>
       </section>
+
+      {unit && (
+        <Link href={`/learn/${unit.id}`} className="card flex items-center gap-3">
+          <span
+            className={`icon ${lessonDone ? "bg-green-100 dark:bg-green-950" : "bg-sky-100 dark:bg-sky-950"}`}
+          >
+            {lessonDone ? "✓" : "🎓"}
+          </span>
+          <span className="flex-1">
+            <span className="muted block text-sm font-extrabold tracking-wide uppercase">
+              {lessonDone ? "Lesson done today · next" : "Today's lesson"}
+            </span>
+            <span className="block font-extrabold">{unit.title}</span>
+          </span>
+          <span className="muted text-2xl font-black">›</span>
+        </Link>
+      )}
 
       <section>
         <h2 className="muted mb-2 text-sm font-extrabold tracking-wide uppercase">Your progress</h2>

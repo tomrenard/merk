@@ -1,6 +1,7 @@
 "use server";
 
 import type { Grade } from "ts-fsrs";
+import { withExercise } from "@/lib/course";
 import { grade, nextCard } from "@/lib/review";
 import { requireSession } from "@/lib/session";
 
@@ -15,5 +16,5 @@ export async function gradeAndNext(
     throw new Error("Bad grade");
   }
   await grade(cardId, rating as Grade, Number(durationMs) || 0, seenReps);
-  return nextCard();
+  return withExercise(await nextCard());
 }

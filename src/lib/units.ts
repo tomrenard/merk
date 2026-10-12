@@ -153,7 +153,12 @@ export function unitProblems(unit: Unit): string[] {
   return problems;
 }
 
-const bare = (text: string) => text.replace(/[.!?,]/g, "").trim();
+/** Tiles are compared without punctuation or capitals: "Ich" can come second in a sentence. */
+const bare = (text: string) =>
+  text
+    .replace(/[.!?,]/g, "")
+    .trim()
+    .toLowerCase();
 
 /** True if `sentence` is exactly all `tiles`, each used once, in some order, joined by spaces. */
 export function buildsFrom(sentence: string, tiles: readonly string[]): boolean {

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, useTransition } from "react";
+import type { ReviewCard as ReviewItem } from "@/lib/course";
 import {
   articleOf,
   checkTyped,
@@ -10,7 +11,7 @@ import {
   spokenForm,
   type TypedResult,
 } from "@/lib/german";
-import type { ReviewItem } from "@/lib/review";
+import { Exercise } from "../learn/Exercise";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
@@ -85,7 +86,8 @@ export function Review({ first }: Props) {
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
-      if (event.target instanceof HTMLInputElement) return;
+      // Inputs and unit exercises handle their own keys.
+      if (event.target instanceof HTMLInputElement || item?.exercise) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
@@ -124,6 +126,25 @@ export function Review({ first }: Props) {
   }
 
   const { note } = item;
+  if (item.exercise) {
+    return (
+      <main className="screen">
+        <header className="topbar">
+          <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
+            ✕
+          </Link>
+          <span className="chip muted line border-2">🎓 {note.de}</span>
+          <SoundToggle />
+        </header>
+        {/* Right counts as Good, wrong as Again: the exercise is checked, not self-graded. */}
+        <Exercise
+          key={item.cardId + item.reps}
+          item={item.exercise}
+          onDone={(right) => answer(right ? 3 : 1)}
+        />
+      </main>
+    );
+  }
   const result = typedResult(item, typed);
   const ratings = RATINGS[result];
   const message = {

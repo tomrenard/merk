@@ -1,6 +1,6 @@
 import { and, asc, eq, gte, lte, type SQL, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
-import { createEmptyCard, fsrs, type Grade, State, TypeConvert } from "ts-fsrs";
+import { createEmptyCard, fsrs, type Grade, Rating, State, TypeConvert } from "ts-fsrs";
 import { db } from "@/db/client";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { streakLength } from "@/lib/streak";
@@ -15,7 +15,7 @@ const BACKLOG = 120;
 const LEARN_AHEAD = sql`now() + interval '20 minutes'`;
 
 /** The study day starts at 4:00 Berlin time, so a late-night session counts for that day. */
-const DAY_START = sql`((date_trunc('day', (now() at time zone 'Europe/Berlin') - interval '4 hours') + interval '4 hours') at time zone 'Europe/Berlin')`;
+export const DAY_START = sql`((date_trunc('day', (now() at time zone 'Europe/Berlin') - interval '4 hours') + interval '4 hours') at time zone 'Europe/Berlin')`;
 
 /** The de_en card of the same note, to hold back en_de until it was seen on an earlier day. */
 const sibling = alias(cards, "sibling");
@@ -40,7 +40,7 @@ const studyDay = (at: SQL | typeof reviewLogs.reviewedAt) =>
 export type Settings = typeof settings.$inferSelect;
 export type ReviewItem = {
   cardId: string;
-  direction: "de_en" | "en_de";
+  direction: "de_en" | "en_de" | "unit";
   reps: number;
   lapses: number;
   isNew: boolean;
@@ -209,7 +209,46 @@ export async function practiceWords(scope: PracticeScope) {
   return db()
     .select()
     .from(notes)
-    .where(and(studied, sql`${notes.source} <> 'phrase'`))
+    .where(and(studied, sql`${notes.source} not in ('phrase', 'unit')`))
     .orderBy(sql`random()`)
     .limit(20);
+}
+
+/**
+ * After a grammar unit is first done, it gets one review card: each review shows one of its
+ * exercises, so the rule (not one sentence) is spaced. Starts as if answered Good today.
+ */
+export async function startUnitCard(unit: {
+  id: string;
+  cefr: string;
+  title: string;
+  canDo: string;
+}) {
+  const noteId = `unit:${unit.id}`;
+  const now = new Date();
+  const { card } = scheduler.next(createEmptyCard(now), now, Rating.Good);
+  await db().transaction(async (tx) => {
+    await tx
+      .insert(notes)
+      .values({
+        id: noteId,
+        source: "unit",
+        cefr: unit.cefr,
+        ord: 0,
+        de: unit.title,
+        en: unit.canDo,
+      })
+      .onConflictDoNothing();
+    await tx
+      .insert(cards)
+      .values({
+        id: `${noteId}:unit`,
+        noteId,
+        direction: "unit",
+        fsrs: card,
+        due: card.due,
+        introducedAt: now,
+      })
+      .onConflictDoNothing();
+  });
 }

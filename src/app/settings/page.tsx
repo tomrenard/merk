@@ -1,9 +1,9 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { settings } from "@/db/schema";
 import { getSettings } from "@/lib/review";
 import { requireSession } from "@/lib/session";
-import { TabBar } from "../TabBar";
 import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
@@ -22,8 +22,13 @@ async function save(form: FormData) {
 export default async function SettingsPage() {
   const current = await getSettings();
   return (
-    <form action={save} className="screen with-tabs">
-      <h1 className="text-3xl font-black">Settings</h1>
+    <form action={save} className="screen">
+      <header className="topbar">
+        <h1 className="text-3xl font-black">Settings</h1>
+        <Link href="/" className="muted text-2xl font-black" aria-label="Close settings">
+          ✕
+        </Link>
+      </header>
       <label className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">New words per day</span>
         <input
@@ -43,7 +48,6 @@ export default async function SettingsPage() {
         Save
       </button>
       <VoicePicker />
-      <TabBar active="/settings" />
     </form>
   );
 }

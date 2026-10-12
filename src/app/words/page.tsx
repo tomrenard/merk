@@ -1,4 +1,4 @@
-import { and, asc, eq, ilike, or, sql } from "drizzle-orm";
+import { and, asc, eq, ilike, ne, or, sql } from "drizzle-orm";
 import Link from "next/link";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
@@ -26,6 +26,7 @@ export default async function WordsPage({
       and(
         q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined,
         known ? KNOWN : undefined,
+        ne(notes.source, "unit"),
       ),
     )
     .orderBy(asc(notes.ord));

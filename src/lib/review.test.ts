@@ -105,3 +105,28 @@ describe("siblings", () => {
     expect((await nextCard())?.cardId).toBe("eins:en_de");
   });
 });
+
+describe("unit review cards", () => {
+  it("starts a unit card due later, never offered as a new word", async () => {
+    const { startUnitCard } = await import("./review");
+    await startUnitCard({ id: "a1-01", cefr: "A1", title: "sein", canDo: "Say who you are" });
+    await startUnitCard({ id: "a1-01", cefr: "A1", title: "sein", canDo: "Say who you are" });
+    const [card] = await db.select().from(cards).where(eq(cards.id, "unit:a1-01:unit"));
+    expect(card?.due?.getTime()).toBeGreaterThan(Date.now());
+    expect(card?.introducedAt).not.toBeNull();
+    expect((await counts()).newLeft).toBe(3);
+  });
+
+  it("shows one of the unit's exercises when due", async () => {
+    const { startUnitCard } = await import("./review");
+    const { withExercise } = await import("./course");
+    await startUnitCard({ id: "a1-01", cefr: "A1", title: "sein", canDo: "Say who you are" });
+    await db
+      .update(cards)
+      .set({ due: new Date(Date.now() - 1000) })
+      .where(eq(cards.id, "unit:a1-01:unit"));
+    const item = withExercise(await nextCard());
+    expect(item?.direction).toBe("unit");
+    expect(item?.exercise?.id).toMatch(/^a1-01-/);
+  });
+});

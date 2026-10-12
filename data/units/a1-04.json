@@ -1,0 +1,333 @@
+{
+ "id": "a1-04",
+ "cefr": "A1",
+ "title": "Yes/no questions and nicht",
+ "situation": "At the café",
+ "canDo": "You can ask yes/no questions, answer with ja, nein or doch, and say what you don't want with nicht.",
+ "explanation": "At the café you ask and answer simple questions: *Haben Sie Kuchen? Ist der Platz frei?* For a yes/no question, put the **verb first**:\n\n| statement | question |\n|---|---|\n| Der Platz ist frei. | **Ist** der Platz frei? |\n| Sie haben Milch. | **Haben** Sie Milch? |\n| Du trinkst Kaffee. | **Trinkst** du Kaffee? |\n\nAnswer with **ja** or **nein**. After a negative question, say **doch** for \"yes\": *Trinkst du keinen Kaffee? – Doch!*\n\nTo say no, use **nicht**. It usually goes:\n- at the end, after the verb and its object: *Ich trinke heute nicht.* *Ich mag das nicht.*\n- before an adjective or place: *Der Kaffee ist nicht heiß. Ich wohne nicht hier.*\n- before the word you want to stress: *Nicht ich, er bezahlt.*\n\nQuestions with a modal verb or a separable verb keep the second part at the end: *Kann ich hier sitzen?*\n\nAt the café you mostly use **Sie**: *Möchten Sie bestellen? – Ja, gern.*",
+ "french": "French often asks with intonation (« Tu viens ? »), but German always puts the verb first; nicht is like « ne… pas », but in one place, usually late in the sentence.",
+ "examples": [
+  {
+   "de": "Ist der Platz hier frei? – Ja, bitte.",
+   "en": "Is this seat free? – Yes, please."
+  },
+  {
+   "de": "Haben Sie Apfelkuchen? – Nein, leider nicht.",
+   "en": "Do you have apple cake? – No, unfortunately not."
+  },
+  {
+   "de": "Möchten Sie bestellen?",
+   "en": "Would you like to order?"
+  },
+  {
+   "de": "Der Kaffee ist nicht heiß.",
+   "en": "The coffee isn't hot."
+  },
+  {
+   "de": "Trinkst du Tee? – Nein, ich trinke keinen Tee, ich trinke Kaffee.",
+   "en": "Do you drink tea? – No, I don't drink tea, I drink coffee."
+  },
+  {
+   "de": "Kommst du nicht mit? – Doch, ich komme!",
+   "en": "Aren't you coming? – Yes, I am!"
+  },
+  {
+   "de": "Ich esse heute nicht.",
+   "en": "I'm not eating today."
+  },
+  {
+   "de": "Können wir bezahlen?",
+   "en": "Can we pay?"
+  }
+ ],
+ "items": [
+  {
+   "id": "a1-04-01",
+   "type": "cloze",
+   "de": "___ der Platz frei?",
+   "base": "sein",
+   "answers": [
+    "Ist"
+   ],
+   "en": "Is the seat free?"
+  },
+  {
+   "id": "a1-04-02",
+   "type": "cloze",
+   "de": "___ Sie Milch?",
+   "base": "haben",
+   "answers": [
+    "Haben"
+   ],
+   "en": "Do you have milk?"
+  },
+  {
+   "id": "a1-04-03",
+   "type": "choice",
+   "de": "___ du Kaffee?",
+   "options": [
+    "Trinkst",
+    "Du trinkst",
+    "Trinkt"
+   ],
+   "answer": 0,
+   "why": "In a yes/no question the verb comes first, with the du ending -st.",
+   "en": "Do you drink coffee?"
+  },
+  {
+   "id": "a1-04-04",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "Haben",
+    "Kuchen"
+   ],
+   "answers": [
+    "Haben Sie Kuchen?"
+   ],
+   "en": "Do you have cake?"
+  },
+  {
+   "id": "a1-04-05",
+   "type": "cloze",
+   "de": "Der Kaffee ist ___ heiß.",
+   "base": "nicht",
+   "answers": [
+    "nicht"
+   ],
+   "en": "The coffee isn't hot."
+  },
+  {
+   "id": "a1-04-06",
+   "type": "choice",
+   "de": "Ich wohne ___ hier.",
+   "options": [
+    "nicht",
+    "kein",
+    "nein"
+   ],
+   "answer": 0,
+   "why": "nicht comes before a place: nicht hier.",
+   "en": "I don't live here."
+  },
+  {
+   "id": "a1-04-07",
+   "type": "cloze",
+   "de": "___ Sie bestellen?",
+   "base": "möchten",
+   "answers": [
+    "Möchten",
+    "Moechten"
+   ],
+   "en": "Would you like to order?"
+  },
+  {
+   "id": "a1-04-08",
+   "type": "order",
+   "tiles": [
+    "frei",
+    "der Platz",
+    "Ist",
+    "hier"
+   ],
+   "answers": [
+    "Ist der Platz hier frei?"
+   ],
+   "en": "Is this seat free?"
+  },
+  {
+   "id": "a1-04-09",
+   "type": "choice",
+   "de": "Kommst du nicht mit? – ___, ich komme!",
+   "options": [
+    "Doch",
+    "Ja",
+    "Nein"
+   ],
+   "answer": 0,
+   "why": "After a negative question, yes is doch.",
+   "en": "Aren't you coming? – Yes, I am!"
+  },
+  {
+   "id": "a1-04-10",
+   "type": "cloze",
+   "de": "Ich mag Tee ___.",
+   "base": "nicht",
+   "answers": [
+    "nicht"
+   ],
+   "en": "I don't like tea."
+  },
+  {
+   "id": "a1-04-11",
+   "type": "choice",
+   "de": "___ wir bezahlen?",
+   "options": [
+    "Können",
+    "Wir können",
+    "Kann"
+   ],
+   "answer": 0,
+   "why": "The verb comes first in a yes/no question, and wir takes können.",
+   "en": "Can we pay?"
+  },
+  {
+   "id": "a1-04-12",
+   "type": "order",
+   "tiles": [
+    "nicht",
+    "Ich",
+    "heute",
+    "trinke"
+   ],
+   "answers": [
+    "Ich trinke heute nicht."
+   ],
+   "en": "I'm not drinking today."
+  },
+  {
+   "id": "a1-04-13",
+   "type": "cloze",
+   "de": "___ du auch einen Kuchen?",
+   "base": "möchten",
+   "answers": [
+    "Möchtest",
+    "Moechtest"
+   ],
+   "en": "Would you like a cake too?"
+  },
+  {
+   "id": "a1-04-14",
+   "type": "choice",
+   "de": "Ist das Wasser kalt? – Nein, es ist ___ kalt.",
+   "options": [
+    "nicht",
+    "kein",
+    "nein"
+   ],
+   "answer": 0,
+   "why": "nicht comes before an adjective: nicht kalt.",
+   "en": "Is the water cold? – No, it isn't cold."
+  },
+  {
+   "id": "a1-04-15",
+   "type": "cloze",
+   "de": "___ das Ihr Kaffee?",
+   "base": "sein",
+   "answers": [
+    "Ist"
+   ],
+   "en": "Is that your coffee?"
+  },
+  {
+   "id": "a1-04-16",
+   "type": "order",
+   "tiles": [
+    "mit Karte",
+    "Kann",
+    "ich",
+    "bezahlen"
+   ],
+   "answers": [
+    "Kann ich mit Karte bezahlen?"
+   ],
+   "en": "Can I pay by card?"
+  },
+  {
+   "id": "a1-04-17",
+   "type": "choice",
+   "de": "Haben Sie Apfelkuchen? – Nein, leider ___.",
+   "options": [
+    "nicht",
+    "nein",
+    "kein"
+   ],
+   "answer": 0,
+   "why": "nicht stands alone at the end of a short answer: leider nicht.",
+   "en": "Do you have apple cake? – No, unfortunately not."
+  },
+  {
+   "id": "a1-04-18",
+   "type": "cloze",
+   "de": "___ ihr zusammen?",
+   "base": "bezahlen",
+   "answers": [
+    "Bezahlt"
+   ],
+   "en": "Are you paying together?"
+  },
+  {
+   "id": "a1-04-19",
+   "type": "choice",
+   "de": "Wohnen Sie nicht in Köln? – ___, in Bonn.",
+   "options": [
+    "Nein",
+    "Doch",
+    "Ja"
+   ],
+   "answer": 0,
+   "why": "Nein agrees with the negative question: no, I don't live in Köln.",
+   "en": "Don't you live in Cologne? – No, in Bonn."
+  },
+  {
+   "id": "a1-04-20",
+   "type": "order",
+   "tiles": [
+    "nicht",
+    "Das",
+    "schmeckt",
+    "gut"
+   ],
+   "answers": [
+    "Das schmeckt nicht gut."
+   ],
+   "en": "That doesn't taste good."
+  },
+  {
+   "id": "a1-04-21",
+   "type": "cloze",
+   "de": "___ du heute Zeit?",
+   "base": "haben",
+   "answers": [
+    "Hast"
+   ],
+   "en": "Do you have time today?"
+  },
+  {
+   "id": "a1-04-22",
+   "type": "choice",
+   "de": "Ich verstehe das ___.",
+   "options": [
+    "nicht",
+    "kein",
+    "nein"
+   ],
+   "answer": 0,
+   "why": "nicht goes at the end, after the verb and its object.",
+   "en": "I don't understand that."
+  },
+  {
+   "id": "a1-04-23",
+   "type": "order",
+   "tiles": [
+    "Sie",
+    "Sprechen",
+    "Englisch"
+   ],
+   "answers": [
+    "Sprechen Sie Englisch?"
+   ],
+   "en": "Do you speak English?"
+  },
+  {
+   "id": "a1-04-24",
+   "type": "cloze",
+   "de": "Ich esse ___ gern Fisch.",
+   "base": "nicht",
+   "answers": [
+    "nicht"
+   ],
+   "en": "I don't like eating fish."
+  }
+ ]
+}

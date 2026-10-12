@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const TABS = [
-  { href: "/", icon: "🏠", label: "Learn" },
+  { href: "/", icon: "🏠", label: "Today" },
+  { href: "/learn", icon: "🎓", label: "Course" },
   { href: "/practice", icon: "🎯", label: "Practice" },
   { href: "/words", icon: "📚", label: "Words" },
-  { href: "/settings", icon: "⚙️", label: "Settings" },
 ] as const;
 
 /** Bottom navigation of the main screens; `active` is the current tab's href. */

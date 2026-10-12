@@ -99,9 +99,7 @@ export function Listen({
   if (step === "hear") {
     return (
       <PartShell unitId={unit.id} progress={progress}>
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">
-          Listen first, no text
-        </p>
+        <p className="muted text-sm font-extrabold">Listen first, no text</p>
         <h1 className="text-2xl font-black">{unit.listening.title}</h1>
         <p className="font-semibold">{unit.listening.intro}</p>
         <button
@@ -132,7 +130,7 @@ export function Listen({
     const correct = answer === question.answer;
     return (
       <PartShell unitId={unit.id} progress={progress + (index / questions.length) * 0.25}>
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">
+        <p className="muted text-sm font-extrabold">
           Question {index + 1}/{questions.length}
         </p>
         <p className="text-2xl font-black">{question.q}</p>
@@ -173,10 +171,8 @@ export function Listen({
     return (
       <PartShell unitId={unit.id} progress={progress}>
         <div className="topbar">
-          <p className="muted text-sm font-extrabold tracking-wide uppercase">
-            Now read it · tap a line
-          </p>
-          <button type="button" onClick={() => setEnglish(!english)} className="chip line border-2">
+          <p className="muted text-sm font-extrabold">Now read it · tap a line</p>
+          <button type="button" onClick={() => setEnglish(!english)} className="chip line border">
             {english ? "Hide English" : "Show English"}
           </button>
         </div>
@@ -188,7 +184,7 @@ export function Listen({
                 onClick={() => say(line.de, speakers.indexOf(line.speaker) % 2 === 1)}
                 className="text-left"
               >
-                <span className="muted block text-xs font-extrabold uppercase">{line.speaker}</span>
+                <span className="muted block text-xs font-extrabold">{line.speaker}</span>
                 <span className="font-bold">{line.de}</span>
                 {english && <span className="muted block text-sm">{line.en}</span>}
               </button>
@@ -207,7 +203,7 @@ export function Listen({
   const correct = sameAnswer(typed, sentence);
   return (
     <PartShell unitId={unit.id} progress={progress + (index / unit.dictation.length) * 0.25}>
-      <p className="muted text-sm font-extrabold tracking-wide uppercase">
+      <p className="muted text-sm font-extrabold">
         Dictation {index + 1}/{unit.dictation.length}: type what you hear
       </p>
       <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">

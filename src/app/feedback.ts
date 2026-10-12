@@ -6,7 +6,7 @@ export const PANEL = {
 
 /** For a `btn btn-solid` button: brand before checking, then green or red. */
 export const SOLID = {
-  idle: "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]",
-  right: "[--c:#2f7d00] [--edge:#235e00]",
-  wrong: "[--c:#d61f1f] [--edge:#a51515]",
+  idle: "[--c:var(--brand-fill)]",
+  right: "[--c:#1a7a43]",
+  wrong: "[--c:#d63c3c]",
 };

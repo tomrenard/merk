@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "merk",
@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={nunito.variable}>
+    <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

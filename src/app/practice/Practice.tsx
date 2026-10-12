@@ -36,10 +36,8 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         </section>
         {missed.length > 0 && (
           <section className="text-left">
-            <h2 className="muted mb-2 text-sm font-extrabold tracking-wide uppercase">
-              To revisit
-            </h2>
-            <ul className="card divide-y-2 divide-[var(--line)] py-0">
+            <h2 className="muted mb-2 text-sm font-extrabold">To revisit</h2>
+            <ul className="card divide-y divide-[var(--line)] py-0">
               {missed.map((m) => (
                 <li key={m.id}>
                   <Link
@@ -106,9 +104,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         }}
       >
         <div className="pt-6">
-          <p className="muted text-sm font-extrabold tracking-wide uppercase">
-            Write this in German
-          </p>
+          <p className="muted text-sm font-extrabold">Write this in German</p>
           <p className="mt-2 text-3xl font-black">{note.en}</p>
         </div>
         <input

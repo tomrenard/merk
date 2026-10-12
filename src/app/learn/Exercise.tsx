@@ -71,7 +71,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
         else if (ready) check();
       }}
     >
-      <p className="muted text-sm font-extrabold tracking-wide uppercase">
+      <p className="muted text-sm font-extrabold">
         {item.type === "cloze"
           ? `Fill the gap (${item.base})`
           : item.type === "choice"
@@ -91,14 +91,14 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           {after}
         </p>
       ) : (
-        <p className="line min-h-16 rounded-2xl border-2 border-dashed p-3 text-xl font-bold">
+        <p className="line min-h-16 rounded-2xl border border-dashed p-3 text-xl font-bold">
           {placed.map((i, n) => (
             <button
               key={i}
               type="button"
               disabled={result !== null}
               onClick={() => setPlaced((p) => p.filter((_, m) => m !== n))}
-              className="chip line mr-2 mb-2 border-2 text-lg"
+              className="chip line mr-2 mb-2 border text-lg"
             >
               {item.tiles[i]}
             </button>

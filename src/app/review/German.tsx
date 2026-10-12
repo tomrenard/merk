@@ -95,7 +95,7 @@ export function SoundToggle() {
     <button
       type="button"
       onClick={toggle}
-      className="chip line border-2 text-base"
+      className="chip line border text-base"
       aria-label={muted ? "Unmute" : "Mute"}
     >
       {muted ? "🔇" : "🔊"}

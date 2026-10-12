@@ -33,7 +33,7 @@ export function Write({
 
   return (
     <PartShell unitId={unit.id} progress={shown ? 0.5 : 0}>
-      <p className="muted text-sm font-extrabold tracking-wide uppercase">Write it yourself</p>
+      <p className="muted text-sm font-extrabold">Write it yourself</p>
       <p className="text-xl font-black leading-snug">{unit.writing.task}</p>
       <textarea
         value={text}
@@ -57,7 +57,7 @@ export function Write({
       ) : (
         <>
           <div className="card flex flex-col gap-2">
-            <p className="muted text-sm font-extrabold tracking-wide uppercase">A model answer</p>
+            <p className="muted text-sm font-extrabold">A model answer</p>
             <button
               type="button"
               onClick={() => speak(unit.writing.model)}

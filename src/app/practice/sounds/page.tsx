@@ -74,9 +74,7 @@ export default function SoundsPage() {
         </div>
         <SoundToggle />
       </header>
-      <p className="muted pt-6 text-sm font-extrabold tracking-wide uppercase">
-        {item?.pair.focus ?? "…"}: which word?
-      </p>
+      <p className="muted pt-6 text-sm font-extrabold">{item?.pair.focus ?? "…"}: which word?</p>
       <button
         type="button"
         onClick={() => item && speak(item.pair.words[item.said])}
@@ -108,7 +106,7 @@ export default function SoundsPage() {
                 key={word}
                 type="button"
                 onClick={() => speak(word)}
-                className="chip line border-2"
+                className="chip line border"
               >
                 🔊 {word}
               </button>

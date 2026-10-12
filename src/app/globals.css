@@ -1,35 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-nunito), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  /* Calmer type: the pages use font-black/extrabold for emphasis; these keep it clean. */
+  --font-weight-black: 750;
+  --font-weight-extrabold: 650;
 }
 
-/* Flat and calm: white surfaces, one grey line colour, colour only where it means something. */
+/* Clean and light: a soft grey page, white cards with a faint shadow, one blue accent. */
 :root {
   color-scheme: light dark;
-  --bg: #ffffff;
-  --ink: #3c3c3c;
-  --muted: #6b6b6b;
-  --line: #e5e5e5;
-  --field: #f7f7f7;
-  --brand: #7c4dff;
-  --brand-edge: #5a2fd9;
-  --brand-soft: #efe9ff;
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --ink: #1d2433;
+  --muted: #677085;
+  --line: #e3e7ee;
+  --field: #f4f6fa;
+  --brand: #2459e0;
+  --brand-soft: #e9f0ff;
   /* Button fill: dark enough for white text in both modes. */
-  --brand-fill: #7c4dff;
+  --brand-fill: #2f6bff;
+  --shadow: 0 1px 2px rgb(16 24 40 / 0.04), 0 2px 8px rgb(16 24 40 / 0.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #131f24;
-    --ink: #f1f7fb;
-    --muted: #9fb0b9;
-    --line: #37464f;
-    --field: #202f36;
-    --brand: #9b7bff;
-    --brand-edge: #6f4ee6;
-    --brand-soft: #2a2550;
-    --brand-fill: #6a3df0;
+    --bg: #0e141c;
+    --surface: #18212d;
+    --ink: #eef2f8;
+    --muted: #97a2b5;
+    --line: #2a3546;
+    --field: #111923;
+    --brand: #6b97ff;
+    --brand-soft: #1b2a4a;
+    --brand-fill: #2f6bff;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3);
   }
 }
 
@@ -41,42 +46,43 @@ body {
 }
 
 @layer components {
+  /* A white card on the grey page; a coloured border (e.g. border-[var(--brand)]) marks it. */
   .card {
-    @apply rounded-2xl border-2 border-b-4 p-4;
-    border-color: var(--line);
+    @apply rounded-2xl border p-4;
+    background: var(--surface);
+    border-color: transparent;
+    box-shadow: var(--shadow);
   }
 
-  /* Duolingo-style button: a thick bottom edge that the press pushes in. */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-b-4 px-5 py-3 text-center text-[15px] font-extrabold tracking-wide uppercase transition-[translate,border-bottom-width] duration-75 select-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border px-5 py-3.5 text-center text-base font-bold transition-[scale,background-color] duration-100 select-none;
+    background: var(--surface);
     border-color: var(--line);
     color: var(--brand);
   }
   .btn:focus-visible,
   .field:focus-visible,
-  a:focus-visible {
+  a:focus-visible,
+  summary:focus-visible {
     outline: 3px solid var(--brand);
     outline-offset: 2px;
   }
-  /* The margin keeps the box height, so nothing below jumps on press. */
   .btn:active:not(:disabled) {
-    @apply mb-0.5 translate-y-0.5 border-b-2;
+    @apply scale-[0.98];
   }
-  /* Solid button: set --c (fill) and --edge (bottom edge), or use .btn-primary. */
+  /* Solid button: set --c (fill), or use .btn-primary. */
   .btn-solid,
   .btn-primary {
     background: var(--c);
     border-color: var(--c);
-    border-bottom-color: var(--edge);
     color: white;
   }
   .btn-primary {
     --c: var(--brand-fill);
-    --edge: var(--brand-edge);
   }
 
   .field {
-    @apply rounded-2xl border-2 px-4 py-3 outline-none;
+    @apply rounded-xl border px-4 py-3 outline-none;
     background: var(--field);
     border-color: var(--line);
   }
@@ -93,7 +99,7 @@ body {
   }
 
   .chip {
-    @apply inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-extrabold;
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-bold;
   }
 
   .muted {

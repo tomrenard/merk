@@ -83,9 +83,7 @@ export default function NumbersPage() {
           submit();
         }}
       >
-        <p className="muted text-sm font-extrabold tracking-wide uppercase">
-          {drill?.kind ?? "…"}: type what you hear
-        </p>
+        <p className="muted text-sm font-extrabold">{drill?.kind ?? "…"}: type what you hear</p>
         {/* Speech needs a tap on iPhone, so each item is played from a button. */}
         <button
           type="button"

@@ -75,11 +75,11 @@ export function Lesson({
           >
             ✕
           </Link>
-          <span className="chip muted line border-2">{unit.cefr}</span>
+          <span className="chip muted line border">{unit.cefr}</span>
           <SoundToggle />
         </header>
         <div>
-          <p className="muted text-sm font-extrabold tracking-wide uppercase">{unit.situation}</p>
+          <p className="muted text-sm font-extrabold">{unit.situation}</p>
           <h1 className="text-3xl font-black">{unit.title}</h1>
           <p className="muted mt-1 font-semibold">{unit.canDo}</p>
         </div>
@@ -91,7 +91,7 @@ export function Lesson({
             🇫🇷 {unit.french}
           </p>
         )}
-        <section className="card flex flex-col divide-y-2 divide-[var(--line)] py-0">
+        <section className="card flex flex-col divide-y divide-[var(--line)] py-0">
           {unit.examples.map((example) => (
             <button
               key={example.de}

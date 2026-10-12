@@ -1,14 +1,16 @@
 /** Saves every table to backups/<time>.json (git-ignored). Run before each migrate or import. */
 import { mkdirSync, writeFileSync } from "node:fs";
+import { sql } from "drizzle-orm";
 import { connect } from "../src/db/client.ts";
-import { cards, notes, reviewLogs, settings } from "../src/db/schema.ts";
 
 const db = connect();
+// select *, not the schema: the backup runs before a migration, when the two can differ.
+const table = (name: string) => db.execute(sql`select * from ${sql.identifier(name)}`);
 const dump = {
-  notes: await db.select().from(notes),
-  cards: await db.select().from(cards),
-  reviewLogs: await db.select().from(reviewLogs),
-  settings: await db.select().from(settings),
+  notes: await table("notes"),
+  cards: await table("cards"),
+  reviewLogs: await table("review_logs"),
+  settings: await table("settings"),
 };
 const dir = new URL("../backups/", import.meta.url).pathname;
 mkdirSync(dir, { recursive: true });

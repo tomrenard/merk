@@ -9,6 +9,19 @@ import { German, Headword, SoundToggle, speak } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
 
+/** Colours of the answer panel and button. Sits right under the input, above the iPhone keyboard. */
+const FEEDBACK = {
+  idle: { panel: "", button: "[--c:var(--brand-fill)] [--edge:var(--brand-edge)]" },
+  right: {
+    panel: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
+    button: "[--c:#2f7d00] [--edge:#235e00]",
+  },
+  wrong: {
+    panel: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300",
+    button: "[--c:#d61f1f] [--edge:#a51515]",
+  },
+};
+
 /** English → typed German over a fixed set, scored at the end. Nothing is saved. */
 export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
   const [index, setIndex] = useState(0);
@@ -61,6 +74,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   }
 
   const right = isCorrect(typed, note.de);
+  const state = !checked ? "idle" : right ? "right" : "wrong";
 
   function submit() {
     if (!note) return;
@@ -120,37 +134,23 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           className="field w-full text-xl font-bold"
         />
 
-        <div
-          className={`-mx-4 mt-auto -mb-6 flex flex-col gap-3 rounded-t-3xl px-4 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] ${
-            checked
-              ? right
-                ? "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400"
-                : "bg-red-100 text-red-600 dark:bg-red-950 dark:text-red-400"
-              : ""
-          }`}
-        >
-          {checked && (
-            <div className="flex flex-col items-start gap-1">
-              <p className="text-xl font-black">{right ? "✓ Richtig!" : "✗ Correct answer:"}</p>
-              <German word={note.de} />
-              {note.exampleDe && <p className="font-semibold">{note.exampleDe}</p>}
-            </div>
-          )}
-          {/* Keeps focus in the input, so the phone keyboard stays open between words. */}
-          <button
-            type="submit"
-            onMouseDown={(event) => event.preventDefault()}
-            className={`btn btn-solid w-full ${
-              !checked
-                ? "[--c:var(--brand)] [--edge:var(--brand-edge)]"
-                : right
-                  ? "[--c:#58cc02] [--edge:#58a700]"
-                  : "[--c:#ff4b4b] [--edge:#ea2b2b]"
-            }`}
+        {checked && (
+          <div
+            className={`flex flex-col items-start gap-1 rounded-2xl p-4 ${FEEDBACK[state].panel}`}
           >
-            {checked ? "Continue" : "Check"}
-          </button>
-        </div>
+            <p className="text-xl font-black">{right ? "✓ Richtig!" : "✗ Correct answer:"}</p>
+            <German word={note.de} />
+            {note.exampleDe && <p className="font-semibold">{note.exampleDe}</p>}
+          </div>
+        )}
+        {/* Keeps focus in the input, so the phone keyboard stays open between words. */}
+        <button
+          type="submit"
+          onMouseDown={(event) => event.preventDefault()}
+          className={`btn btn-solid w-full ${FEEDBACK[state].button}`}
+        >
+          {checked ? "Continue" : "Check"}
+        </button>
       </form>
     </main>
   );

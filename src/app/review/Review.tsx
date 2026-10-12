@@ -8,10 +8,10 @@ import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak } from "./German";
 
 const GRADES = [
-  { rating: 1, label: "Again", className: "[--c:#ff4b4b] [--edge:#ea2b2b]" },
-  { rating: 2, label: "Hard", className: "[--c:#ff9600] [--edge:#e08600]" },
-  { rating: 3, label: "Good", className: "[--c:#58cc02] [--edge:#58a700]" },
-  { rating: 4, label: "Easy", className: "[--c:#1cb0f6] [--edge:#1899d6]" },
+  { rating: 1, label: "Again", className: "[--c:#d61f1f] [--edge:#a51515]" },
+  { rating: 2, label: "Hard", className: "[--c:#b45f00] [--edge:#8a4800]" },
+  { rating: 3, label: "Good", className: "[--c:#2f7d00] [--edge:#235e00]" },
+  { rating: 4, label: "Easy", className: "[--c:#0077b6] [--edge:#005a8a]" },
 ];
 
 type Props = { first: ReviewItem | null };

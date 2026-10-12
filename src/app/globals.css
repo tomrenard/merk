@@ -9,12 +9,14 @@
   color-scheme: light dark;
   --bg: #ffffff;
   --ink: #3c3c3c;
-  --muted: #777777;
+  --muted: #6b6b6b;
   --line: #e5e5e5;
   --field: #f7f7f7;
   --brand: #7c4dff;
   --brand-edge: #5a2fd9;
   --brand-soft: #efe9ff;
+  /* Button fill: dark enough for white text in both modes. */
+  --brand-fill: #7c4dff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +29,7 @@
     --brand: #9b7bff;
     --brand-edge: #6f4ee6;
     --brand-soft: #2a2550;
+    --brand-fill: #6a3df0;
   }
 }
 
@@ -49,23 +52,21 @@ body {
     border-color: var(--line);
     color: var(--brand);
   }
+  /* The margin keeps the box height, so nothing below jumps on press. */
   .btn:active:not(:disabled) {
-    @apply translate-y-0.5 border-b-2;
+    @apply mb-0.5 translate-y-0.5 border-b-2;
   }
   /* Solid button: set --c (fill) and --edge (bottom edge), or use .btn-primary. */
-  .btn-solid {
+  .btn-solid,
+  .btn-primary {
     background: var(--c);
     border-color: var(--c);
     border-bottom-color: var(--edge);
     color: white;
   }
   .btn-primary {
-    --c: var(--brand);
+    --c: var(--brand-fill);
     --edge: var(--brand-edge);
-    background: var(--c);
-    border-color: var(--c);
-    border-bottom-color: var(--edge);
-    color: white;
   }
 
   .field {

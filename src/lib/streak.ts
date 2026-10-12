@@ -1,6 +1,5 @@
 /** Consecutive days ending today, or yesterday when today has no review yet. Days are YYYY-MM-DD, newest first. */
-export function streakLength(days: string[], today: string | undefined): number {
-  if (!today) return 0;
+export function streakLength(days: string[], today: string): number {
   const shift = (day: string, by: number) =>
     new Date(Date.parse(`${day}T00:00:00Z`) + by * 86_400_000).toISOString().slice(0, 10);
   let expected = days[0] === today ? today : shift(today, -1);

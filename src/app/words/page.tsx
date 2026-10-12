@@ -11,12 +11,14 @@ export default async function WordsPage({
 }: {
   searchParams: Promise<{ q?: string }>;
 }) {
-  const q = (await searchParams).q?.trim() ?? "";
+  const q = (await searchParams).q?.trim().slice(0, 100) ?? "";
+  // Matched literally: % and _ would otherwise be ILIKE wildcards.
+  const pattern = `%${q.replace(/[\\%_]/g, "\\$&")}%`;
   const words = await db()
     .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr, due: cards.due })
     .from(notes)
     .leftJoin(cards, eq(cards.id, sql`${notes.id} || ':de_en'`))
-    .where(q ? or(ilike(notes.de, `%${q}%`), ilike(notes.en, `%${q}%`)) : undefined)
+    .where(q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined)
     .orderBy(asc(notes.ord))
     .limit(100);
   return (

@@ -100,8 +100,14 @@ export function Review({ first }: Props) {
       <header className="flex justify-between text-sm opacity-60">
         <Link href="/">← merk</Link>
         <span>
-          {note.cefr} · {item.isNew ? "new" : "review"} ·{" "}
-          <Link href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Link>
+          {note.cefr} · {item.isNew ? "new" : "review"}
+          {/* Only once revealed: the edit form shows the answer. */}
+          {revealed && (
+            <>
+              {" · "}
+              <Link href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Link>
+            </>
+          )}
         </span>
       </header>
 

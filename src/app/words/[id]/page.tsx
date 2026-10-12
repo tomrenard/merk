@@ -22,16 +22,22 @@ async function save(form: FormData) {
   "use server";
   await requireSession();
   const id = String(form.get("id"));
-  const values = Object.fromEntries(
-    FIELDS.map(({ name, required }) => {
-      const value = String(form.get(name) ?? "").trim();
-      if ((required && !value) || value.length > 500) throw new Error(`Invalid ${name}`);
-      return [name, value || null];
-    }),
-  ) as Record<(typeof FIELDS)[number]["name"], string | null>;
+  const field = (name: (typeof FIELDS)[number]["name"]) => {
+    const value = String(form.get(name) ?? "").trim();
+    const required = FIELDS.find((f) => f.name === name)?.required;
+    if ((required && !value) || value.length > 500) throw new Error(`Invalid ${name}`);
+    return value;
+  };
   await db()
     .update(notes)
-    .set({ ...values, de: values.de ?? "", en: values.en ?? "", editedAt: sql`now()` })
+    .set({
+      de: field("de"),
+      en: field("en"),
+      exampleDe: field("exampleDe") || null,
+      exampleEn: field("exampleEn") || null,
+      hint: field("hint") || null,
+      editedAt: sql`now()`,
+    })
     .where(eq(notes.id, id));
   const back = String(form.get("back"));
   redirect(Object.hasOwn(BACK, back) ? BACK[back as keyof typeof BACK] : BACK.words);
@@ -44,7 +50,12 @@ export default async function EditWordPage({
   params: Promise<{ id: string }>;
   searchParams: Promise<{ back?: string }>;
 }) {
-  const id = decodeURIComponent((await params).id);
+  let id: string;
+  try {
+    id = decodeURIComponent((await params).id);
+  } catch {
+    notFound();
+  }
   const [note] = await db().select().from(notes).where(eq(notes.id, id));
   if (!note) notFound();
   const back = (await searchParams).back === "review" ? "review" : "words";

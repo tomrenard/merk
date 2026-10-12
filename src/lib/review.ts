@@ -119,22 +119,22 @@ export async function grade(cardId: string, rating: Grade, durationMs: number, s
 /** Reviews done today, and how many study days in a row (today or yesterday counts as current). */
 export async function activity() {
   const days = await db()
-    .selectDistinct({ day: sql<string>`${studyDay(reviewLogs.reviewedAt)}::text` })
-    .from(reviewLogs)
-    .orderBy(sql`1 desc`)
-    .limit(1000);
-  const [today] = await db()
     .select({
-      day: sql<string>`${studyDay(sql`now()`)}::text`,
+      day: sql<string>`${studyDay(reviewLogs.reviewedAt)}::text`,
       reviews: sql<number>`count(*)::int`,
+      today: sql<string>`${studyDay(sql`now()`)}::text`,
     })
     .from(reviewLogs)
-    .where(sql`${reviewLogs.reviewedAt} >= ${DAY_START}`);
+    .groupBy(sql`1`)
+    .orderBy(sql`1 desc`)
+    .limit(1000);
+  const [latest] = days;
+  if (!latest) return { reviewsToday: 0, streak: 0 };
   return {
-    reviewsToday: today?.reviews ?? 0,
+    reviewsToday: latest.day === latest.today ? latest.reviews : 0,
     streak: streakLength(
       days.map((d) => d.day),
-      today?.day,
+      latest.today,
     ),
   };
 }

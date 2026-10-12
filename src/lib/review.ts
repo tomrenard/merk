@@ -139,9 +139,12 @@ export async function activity() {
   };
 }
 
+/** A word counts as known once its German→English card was last scheduled a week+ out. */
+export const KNOWN = sql`(${cards.fsrs}->>'scheduled_days')::int >= 7`;
+
 /**
  * `remembered`: % of reviews of already-learned cards in the last 30 days not graded Again
- * (null before there are any). `known`: words whose German→English card was last scheduled a week+ out.
+ * (null before there are any). `known`: how many words are KNOWN.
  */
 export async function progress() {
   const [[row], known] = await Promise.all([
@@ -158,10 +161,7 @@ export async function progress() {
           gte(reviewLogs.reviewedAt, sql`now() - interval '30 days'`),
         ),
       ),
-    db().$count(
-      cards,
-      and(eq(cards.direction, "de_en"), sql`(${cards.fsrs}->>'scheduled_days')::int >= 7`),
-    ),
+    db().$count(cards, and(eq(cards.direction, "de_en"), KNOWN)),
   ]);
   return { remembered: row?.remembered ?? null, known };
 }

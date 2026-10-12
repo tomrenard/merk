@@ -85,6 +85,9 @@ body::before {
   .field:focus {
     border-color: #a855f7;
   }
+  .field:focus::placeholder {
+    color: transparent;
+  }
 
   .gradient-text {
     @apply bg-gradient-to-r from-violet-600 via-fuchsia-500 to-orange-500 bg-clip-text text-transparent;

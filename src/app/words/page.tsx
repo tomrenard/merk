@@ -1,7 +1,8 @@
-import { asc, eq, ilike, or, sql } from "drizzle-orm";
+import { and, asc, eq, ilike, or, sql } from "drizzle-orm";
 import Link from "next/link";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
+import { KNOWN } from "@/lib/review";
 import { Headword } from "../review/German";
 
 export const dynamic = "force-dynamic";
@@ -9,16 +10,23 @@ export const dynamic = "force-dynamic";
 export default async function WordsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; known?: string }>;
 }) {
-  const q = (await searchParams).q?.trim().slice(0, 100) ?? "";
+  const params = await searchParams;
+  const q = params.q?.trim().slice(0, 100) ?? "";
+  const known = params.known === "1";
   // Matched literally: % and _ would otherwise be ILIKE wildcards.
   const pattern = `%${q.replace(/[\\%_]/g, "\\$&")}%`;
   const words = await db()
     .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr, due: cards.due })
     .from(notes)
     .leftJoin(cards, eq(cards.id, sql`${notes.id} || ':de_en'`))
-    .where(q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined)
+    .where(
+      and(
+        q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined,
+        known ? KNOWN : undefined,
+      ),
+    )
     .orderBy(asc(notes.ord));
   return (
     <main className="screen">
@@ -27,7 +35,7 @@ export default async function WordsPage({
           ← merk
         </Link>
         <span className="pill">
-          {words.length} {q ? "found" : "words"}
+          {words.length} {q ? "found" : known ? "known" : "words"}
         </span>
       </header>
       <form>

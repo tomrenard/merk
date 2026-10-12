@@ -3,12 +3,15 @@ import { activity, counts, progress } from "@/lib/review";
 
 export const dynamic = "force-dynamic";
 
-function Tile({ label, value, tone }: { label: string; value: string | number; tone: string }) {
+type TileProps = { label: string; value: string | number; tone: string; href?: string };
+
+function Tile({ label, value, tone, href }: TileProps) {
+  const Box = href ? Link : "div";
   return (
-    <div className={`rounded-3xl p-4 text-left text-white shadow-lg ${tone}`}>
+    <Box href={href ?? ""} className={`rounded-3xl p-4 text-left text-white shadow-lg ${tone}`}>
       <p className="text-4xl font-extrabold tracking-tight">{value}</p>
       <p className="text-sm font-semibold opacity-90">{label}</p>
-    </div>
+    </Box>
   );
 }
 
@@ -40,7 +43,8 @@ export default async function Home() {
           tone="bg-gradient-to-br from-pink-600 to-rose-700"
         />
         <Tile
-          label="Words known"
+          label="Words known →"
+          href="/words?known=1"
           value={known}
           tone="bg-gradient-to-br from-orange-600 to-red-700"
         />

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { ReviewItem } from "@/lib/review";
 import { gradeAndNext } from "./actions";
-import { German, speak } from "./German";
+import { German, SoundToggle, speak } from "./German";
 
 const GRADES = [
   { rating: 1, label: "Again", className: "bg-rose-600 [--edge:#881337]" },
@@ -84,6 +84,7 @@ export function Review({ first }: Props) {
         <Link href="/" className="pill">
           ← merk
         </Link>
+        <SoundToggle />
         <span className="pill">
           {note.cefr} · {item.isNew ? "new" : "review"}
           {/* Only once revealed: the edit form shows the answer. */}

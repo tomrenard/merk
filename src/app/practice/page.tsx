@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { type PracticeScope, practiceWords } from "@/lib/review";
+import { SoundToggle } from "../review/German";
 import { Practice } from "./Practice";
 
 export const dynamic = "force-dynamic";
@@ -17,6 +18,7 @@ export default async function PracticePage({
         <Link href="/" className="pill">
           ← merk
         </Link>
+        <SoundToggle />
         <nav className="flex gap-1 rounded-full p-1" style={{ background: "var(--glass)" }}>
           {(["today", "all"] as const).map((s) => (
             <a

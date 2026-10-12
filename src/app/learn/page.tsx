@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { CHECK_SIZE, nextUnit, PASS, UNITS, unitScores } from "@/lib/course";
+import { requireUser } from "@/lib/session";
 import { TabBar } from "../TabBar";
 
 export const dynamic = "force-dynamic";
 
 export default async function CoursePage() {
-  const scores = await unitScores();
+  const scores = await unitScores(await requireUser());
   const next = nextUnit(scores);
   return (
     <main className="screen with-tabs">

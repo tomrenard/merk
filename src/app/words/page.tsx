@@ -1,8 +1,9 @@
-import { and, asc, eq, ilike, ne, or, sql } from "drizzle-orm";
+import { and, asc, eq, ilike, isNull, ne, or } from "drizzle-orm";
 import Link from "next/link";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
 import { KNOWN } from "@/lib/review";
+import { requireUser } from "@/lib/session";
 import { Headword } from "../review/German";
 import { TabBar } from "../TabBar";
 
@@ -13,6 +14,7 @@ export default async function WordsPage({
 }: {
   searchParams: Promise<{ q?: string; known?: string }>;
 }) {
+  const userId = await requireUser();
   const params = await searchParams;
   const q = params.q?.trim().slice(0, 100) ?? "";
   const known = params.known === "1";
@@ -21,12 +23,17 @@ export default async function WordsPage({
   const words = await db()
     .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr, due: cards.due })
     .from(notes)
-    .leftJoin(cards, eq(cards.id, sql`${notes.id} || ':de_en'`))
+    .leftJoin(
+      cards,
+      and(eq(cards.noteId, notes.id), eq(cards.userId, userId), eq(cards.direction, "de_en")),
+    )
     .where(
       and(
         q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined,
         known ? KNOWN : undefined,
         ne(notes.source, "unit"),
+        // Shared words, plus your own (not someone else's).
+        or(isNull(notes.userId), eq(notes.userId, userId)),
       ),
     )
     .orderBy(asc(notes.ord));

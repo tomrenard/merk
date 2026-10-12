@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { lessonDoneToday, nextUnit, unitScores } from "@/lib/course";
 import { activity, counts, progress } from "@/lib/review";
+import { requireUser } from "@/lib/session";
 import { TabBar } from "./TabBar";
 
 export const dynamic = "force-dynamic";
@@ -18,13 +19,20 @@ function Stat({ icon, tint, label, value }: StatProps) {
 }
 
 export default async function Home() {
+  const userId = await requireUser();
   const [
     { due, newLeft, followUps },
     { reviewsToday, streak },
     { remembered, known },
     scores,
     lessonDone,
-  ] = await Promise.all([counts(), activity(), progress(), unitScores(), lessonDoneToday()]);
+  ] = await Promise.all([
+    counts(userId),
+    activity(userId),
+    progress(userId),
+    unitScores(userId),
+    lessonDoneToday(userId),
+  ]);
   const todo = due + newLeft + followUps;
   const unit = nextUnit(scores);
   return (

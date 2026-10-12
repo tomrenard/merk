@@ -1,6 +1,5 @@
-import { sql } from "drizzle-orm";
 import {
-  check,
+  boolean,
   index,
   integer,
   jsonb,
@@ -9,12 +8,66 @@ import {
   smallint,
   text,
   timestamp,
+  uniqueIndex,
 } from "drizzle-orm/pg-core";
 import type { CardInput } from "ts-fsrs";
+
+/* Better Auth's tables (email + password accounts). Field names are Better Auth's. */
+export const user = pgTable("user", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  email: text("email").notNull().unique(),
+  emailVerified: boolean("email_verified").notNull().default(false),
+  image: text("image"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const session = pgTable("session", {
+  id: text("id").primaryKey(),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  token: text("token").notNull().unique(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  ipAddress: text("ip_address"),
+  userAgent: text("user_agent"),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+});
+
+export const account = pgTable("account", {
+  id: text("id").primaryKey(),
+  accountId: text("account_id").notNull(),
+  providerId: text("provider_id").notNull(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  accessToken: text("access_token"),
+  refreshToken: text("refresh_token"),
+  idToken: text("id_token"),
+  accessTokenExpiresAt: timestamp("access_token_expires_at", { withTimezone: true }),
+  refreshTokenExpiresAt: timestamp("refresh_token_expires_at", { withTimezone: true }),
+  scope: text("scope"),
+  password: text("password"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const verification = pgTable("verification", {
+  id: text("id").primaryKey(),
+  identifier: text("identifier").notNull(),
+  value: text("value").notNull(),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+});
 
 /** One word or phrase. Its id comes from the source deck, so re-imports update in place. */
 export const notes = pgTable("notes", {
   id: text("id").primaryKey(),
+  /** Set only on words someone added themselves; list words, phrases and units are shared. */
+  userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
   source: text("source").notNull(),
   cefr: text("cefr").notNull(),
   ord: integer("ord").notNull(),
@@ -41,13 +94,19 @@ export const cards = pgTable(
     noteId: text("note_id")
       .notNull()
       .references(() => notes.id, { onDelete: "cascade" }),
+    /** Whose card this is. Null only for cards made before accounts, until claimed. */
+    userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
     /** de_en shows German; en_de asks for it; unit reviews a grammar unit with one of its exercises. */
     direction: text("direction", { enum: ["de_en", "en_de", "unit"] }).notNull(),
     fsrs: jsonb("fsrs").$type<CardInput>(),
     due: timestamp("due", { withTimezone: true }),
     introducedAt: timestamp("introduced_at", { withTimezone: true }),
   },
-  (t) => [index("cards_due_idx").on(t.due), index("cards_note_idx").on(t.noteId)],
+  (t) => [
+    index("cards_due_idx").on(t.userId, t.due),
+    index("cards_note_idx").on(t.noteId),
+    uniqueIndex("cards_user_note_direction").on(t.userId, t.noteId, t.direction),
+  ],
 );
 
 export const reviewLogs = pgTable(
@@ -57,12 +116,16 @@ export const reviewLogs = pgTable(
     cardId: text("card_id")
       .notNull()
       .references(() => cards.id, { onDelete: "cascade" }),
+    userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
     rating: smallint("rating").notNull(),
     state: smallint("state").notNull(),
     durationMs: integer("duration_ms"),
     reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [index("review_logs_card_idx").on(t.cardId, t.reviewedAt)],
+  (t) => [
+    index("review_logs_card_idx").on(t.cardId, t.reviewedAt),
+    index("review_logs_user_idx").on(t.userId, t.reviewedAt),
+  ],
 );
 
 /** Things you did outside flashcards: a grammar unit finished (kind "unit", ref = unit id). */
@@ -70,25 +133,21 @@ export const activityLogs = pgTable(
   "activity_logs",
   {
     id: serial("id").primaryKey(),
+    userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
     kind: text("kind").notNull(),
     ref: text("ref").notNull(),
     score: integer("score"),
     total: integer("total"),
     at: timestamp("at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [index("activity_logs_kind_idx").on(t.kind, t.ref)],
+  (t) => [index("activity_logs_kind_idx").on(t.userId, t.kind, t.ref)],
 );
 
-/** A single row: there is one user. */
-export const settings = pgTable(
-  "settings",
-  {
-    id: smallint("id").primaryKey().default(1),
-    explainLang: text("explain_lang", { enum: ["en", "fr", "both"] })
-      .notNull()
-      .default("both"),
-    /** New words (German→English cards) per day; their English→German cards follow a day later. */
-    newPerDay: smallint("new_per_day").notNull().default(7),
-  },
-  (t) => [check("settings_single_row", sql`${t.id} = 1`)],
-);
+/** Per person; a missing row means the defaults. */
+export const settings = pgTable("user_settings", {
+  userId: text("user_id")
+    .primaryKey()
+    .references(() => user.id, { onDelete: "cascade" }),
+  /** New words (German→English cards) per day; their English→German cards follow a day later. */
+  newPerDay: smallint("new_per_day").notNull().default(7),
+});

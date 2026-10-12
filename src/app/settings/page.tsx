@@ -1,26 +1,32 @@
+import { headers } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { db } from "@/db/client";
-import { settings } from "@/db/schema";
-import { getSettings } from "@/lib/review";
-import { requireSession } from "@/lib/session";
+import { auth } from "@/lib/auth";
+import { getSettings, saveSettings } from "@/lib/review";
+import { requireUser } from "@/lib/session";
 import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
 
 async function save(form: FormData) {
   "use server";
-  await requireSession();
+  const userId = await requireUser();
   const newPerDay = Number(form.get("newPerDay"));
   if (!Number.isInteger(newPerDay) || newPerDay < 0 || newPerDay > 50) {
     throw new Error("Invalid settings");
   }
-  await db().update(settings).set({ newPerDay });
+  await saveSettings(userId, { newPerDay });
   redirect("/");
 }
 
+async function logout() {
+  "use server";
+  await auth.api.signOut({ headers: await headers() });
+  redirect("/login");
+}
+
 export default async function SettingsPage() {
-  const current = await getSettings();
+  const current = await getSettings(await requireUser());
   return (
     <form action={save} className="screen">
       <header className="topbar">
@@ -48,6 +54,9 @@ export default async function SettingsPage() {
         Save
       </button>
       <VoicePicker />
+      <button type="submit" formAction={logout} formNoValidate className="btn mt-4">
+        Log out
+      </button>
     </form>
   );
 }

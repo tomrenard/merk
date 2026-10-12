@@ -1,9 +1,9 @@
-import { eq, sql } from "drizzle-orm";
+import { and, eq, isNull, or, sql } from "drizzle-orm";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
-import { requireSession } from "@/lib/session";
+import { requireUser } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
@@ -20,7 +20,7 @@ const BACK = { review: "/review", words: "/words" } as const;
 
 async function save(form: FormData) {
   "use server";
-  await requireSession();
+  const userId = await requireUser();
   const id = String(form.get("id"));
   const field = (name: (typeof FIELDS)[number]["name"]) => {
     const value = String(form.get(name) ?? "").trim();
@@ -38,7 +38,8 @@ async function save(form: FormData) {
       hint: field("hint") || null,
       editedAt: sql`now()`,
     })
-    .where(eq(notes.id, id));
+    // A shared word (a fix helps everyone) or your own; never someone else's.
+    .where(and(eq(notes.id, id), or(isNull(notes.userId), eq(notes.userId, userId))));
   const back = String(form.get("back"));
   redirect(Object.hasOwn(BACK, back) ? BACK[back as keyof typeof BACK] : BACK.words);
 }
@@ -56,7 +57,11 @@ export default async function EditWordPage({
   } catch {
     notFound();
   }
-  const [note] = await db().select().from(notes).where(eq(notes.id, id));
+  const userId = await requireUser();
+  const [note] = await db()
+    .select()
+    .from(notes)
+    .where(and(eq(notes.id, id), or(isNull(notes.userId), eq(notes.userId, userId))));
   if (!note) notFound();
   const back = (await searchParams).back === "review" ? "review" : "words";
   return (

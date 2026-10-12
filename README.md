@@ -15,7 +15,7 @@ Stack: Next.js, Neon Postgres, Drizzle, Vercel.
 ```sh
 pnpm install
 vercel link && vercel integration add neon   # or set DATABASE_URL yourself
-cp .env.example .env.local                    # fill APP_PASSWORD and SESSION_SECRET
+cp .env.example .env.local                    # fill BETTER_AUTH_SECRET and ALLOWED_EMAILS
 pnpm db:migrate
 pnpm import:words   # A1 → B1 + phrases, from data/ (backs up first)
 pnpm dev

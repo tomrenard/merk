@@ -3,7 +3,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
-import { requireSession } from "@/lib/session";
+import { cardId } from "@/lib/review";
+import { requireUser } from "@/lib/session";
 
 const FIELDS = [
   { name: "de", label: "German (with der/die/das for nouns)", required: true },
@@ -15,7 +16,7 @@ const FIELDS = [
 /** A word or phrase from your own life. It is offered as the next new word, both directions. */
 async function add(form: FormData) {
   "use server";
-  await requireSession();
+  const userId = await requireUser();
   const field = (name: (typeof FIELDS)[number]["name"]) => {
     const value = String(form.get(name) ?? "").trim();
     const required = FIELDS.find((f) => f.name === name)?.required;
@@ -28,6 +29,7 @@ async function add(form: FormData) {
     await tx.insert(notes).values({
       id,
       source: "mine",
+      userId,
       cefr: "Mine",
       // Before every list word, so it comes up next.
       ord: -1,
@@ -39,8 +41,9 @@ async function add(form: FormData) {
     });
     await tx.insert(cards).values(
       (["de_en", "en_de"] as const).map((direction) => ({
-        id: `${id}:${direction}`,
+        id: cardId(userId, id, direction),
         noteId: id,
+        userId,
         direction,
       })),
     );

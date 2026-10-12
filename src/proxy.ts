@@ -1,11 +1,14 @@
+import { getSessionCookie } from "better-auth/cookies";
 import { type NextRequest, NextResponse } from "next/server";
-import { isValidSession, SESSION_COOKIE } from "@/lib/session";
 
 export const config = {
-  matcher: ["/((?!(?:login|manifest\\.webmanifest|icon\\.svg|apple-icon)$|_next/static/).*)"],
+  matcher: [
+    "/((?!(?:login|signup|manifest\\.webmanifest|icon\\.svg|apple-icon)$|api/auth/|_next/static/).*)",
+  ],
 };
 
-export async function proxy(request: NextRequest) {
-  if (await isValidSession(request.cookies.get(SESSION_COOKIE)?.value)) return NextResponse.next();
+/** Sends visitors without a session cookie to the login page. Pages check the session itself. */
+export function proxy(request: NextRequest) {
+  if (getSessionCookie(request)) return NextResponse.next();
   return NextResponse.redirect(new URL("/login", request.url));
 }

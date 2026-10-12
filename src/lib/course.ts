@@ -21,11 +21,11 @@ export function unitById(id: string): Unit | undefined {
 }
 
 /** Best check score per unit tried so far. */
-export async function unitScores(): Promise<Map<string, number>> {
+export async function unitScores(userId: string): Promise<Map<string, number>> {
   const rows = await db()
     .select({ ref: activityLogs.ref, best: max(activityLogs.score) })
     .from(activityLogs)
-    .where(eq(activityLogs.kind, "unit"))
+    .where(and(eq(activityLogs.userId, userId), eq(activityLogs.kind, "unit")))
     .groupBy(activityLogs.ref);
   return new Map(rows.map((row) => [row.ref, row.best ?? 0]));
 }
@@ -44,11 +44,17 @@ export function nextUnit(scores: Map<string, number>): Unit | null {
 }
 
 /** True if a unit check was done today (the lesson step of the daily path). */
-export async function lessonDoneToday(): Promise<boolean> {
+export async function lessonDoneToday(userId: string): Promise<boolean> {
   const [row] = await db()
     .select({ n: sql<number>`count(*)::int` })
     .from(activityLogs)
-    .where(and(eq(activityLogs.kind, "unit"), gte(activityLogs.at, DAY_START)));
+    .where(
+      and(
+        eq(activityLogs.userId, userId),
+        eq(activityLogs.kind, "unit"),
+        gte(activityLogs.at, DAY_START),
+      ),
+    );
   return (row?.n ?? 0) > 0;
 }
 

@@ -1,4 +1,5 @@
 import { type PracticeScope, practiceWords } from "@/lib/review";
+import { requireUser } from "@/lib/session";
 import { TabBar } from "../TabBar";
 import { Practice } from "./Practice";
 
@@ -29,7 +30,7 @@ export default async function PracticePage({
 }) {
   const raw = (await searchParams).scope;
   const scope: PracticeScope | null = raw === "all" || raw === "today" ? raw : null;
-  const words = scope ? await practiceWords(scope) : [];
+  const words = scope ? await practiceWords(await requireUser(), scope) : [];
   if (scope && words.length) return <Practice words={words} scope={scope} />;
   return (
     <main className="screen with-tabs">

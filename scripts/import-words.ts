@@ -11,8 +11,9 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
 import { and, inArray, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
 import { connect } from "../src/db/client.ts";
-import { cards, notes } from "../src/db/schema.ts";
+import { cards, notes, user } from "../src/db/schema.ts";
 import { lemmaKeys } from "../src/lib/german.ts";
+import { ensureCards } from "../src/lib/review.ts";
 import { frequencyOrder, interleave, parseB1Line, parseRanks } from "../src/lib/wordlists.ts";
 
 type Note = typeof notes.$inferInsert;
@@ -239,11 +240,6 @@ const words = withVerbInfo([
   ...numbered(interleave(frequencyOrder(a2Notes(), ranks), level("A2"), 4), 100_000),
   ...numbered(interleave(b1Notes(), level("B1"), 4), 200_000),
 ]);
-/** B1 words are for recognition: no English→German card. Phrases get both at every level. */
-const directions = (note: Note) =>
-  note.cefr === "B1" && note.source !== "phrase"
-    ? (["de_en"] as const)
-    : (["de_en", "en_de"] as const);
 const db = connect();
 const before = await db.$count(notes);
 const introducedBefore = await db.$count(cards, isNotNull(cards.introducedAt));
@@ -291,18 +287,6 @@ const dropped = await db.transaction(async (tx) => {
       ),
     )
     .returning({ id: notes.id });
-  await tx
-    .insert(cards)
-    .values(
-      words.flatMap((note) =>
-        directions(note).map((direction) => ({
-          id: `${note.id}:${direction}`,
-          noteId: note.id,
-          direction,
-        })),
-      ),
-    )
-    .onConflictDoNothing();
   // English→German cards of B1 words you have not started yet (B1 is recognition only).
   await tx.execute(
     sql`delete from ${cards} using ${notes} where ${cards.noteId} = ${notes.id} and ${notes.cefr} = 'B1' and ${notes.source} <> 'phrase' and ${cards.direction} = 'en_de' and ${cards.introducedAt} is null`,
@@ -311,6 +295,8 @@ const dropped = await db.transaction(async (tx) => {
     throw new Error("Started cards changed: import rolled back");
   return removed;
 });
+// Everyone gets cards for the new words (B1: recognition only; see ensureCards).
+for (const { id } of await db.select({ id: user.id }).from(user)) await ensureCards(id);
 const perLevel = ["A1", "A2", "B1"].map((l) => `${l}: ${words.filter((w) => w.cefr === l).length}`);
 perLevel.push(`phrases: ${phrases.length}`);
 const added = (await db.$count(notes)) - before + dropped.length;

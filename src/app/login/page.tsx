@@ -1,28 +1,24 @@
-import { createHash, timingSafeEqual } from "node:crypto";
-import { cookies } from "next/headers";
+import { headers } from "next/headers";
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { SESSION_COOKIE, SESSION_MAX_AGE, signSession } from "@/lib/session";
-
-const digest = (value: string) => createHash("sha256").update(value).digest();
+import { auth } from "@/lib/auth";
 
 async function login(form: FormData) {
   "use server";
-  const expected = process.env.APP_PASSWORD;
-  const given = String(form.get("password") ?? "");
-  // Fails closed: the URL is public, so a short password would be guessable.
-  if (!expected || expected.length < 16 || !timingSafeEqual(digest(given), digest(expected))) {
-    // Slows guessing; there is one user, so no per-IP bookkeeping.
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    redirect("/login?error=1");
+  let ok = false;
+  try {
+    await auth.api.signInEmail({
+      body: {
+        email: String(form.get("email") ?? ""),
+        password: String(form.get("password") ?? ""),
+      },
+      headers: await headers(),
+    });
+    ok = true;
+  } catch {
+    // Wrong email or password, or too many tries: the same message for all.
   }
-  (await cookies()).set(SESSION_COOKIE, await signSession(), {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-    maxAge: SESSION_MAX_AGE,
-    path: "/",
-  });
-  redirect("/");
+  redirect(ok ? "/" : "/login?error=1");
 }
 
 export default async function LoginPage({
@@ -39,6 +35,15 @@ export default async function LoginPage({
         Deutsch, ein Kärtchen nach dem anderen.
       </p>
       <input
+        name="email"
+        type="email"
+        autoComplete="email"
+        aria-label="Email"
+        placeholder="Email"
+        required
+        className="field"
+      />
+      <input
         name="password"
         type="password"
         autoComplete="current-password"
@@ -48,11 +53,16 @@ export default async function LoginPage({
         className="field"
       />
       {error && (
-        <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">Wrong password.</p>
+        <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">
+          Wrong email or password.
+        </p>
       )}
       <button type="submit" className="btn btn-primary">
         Log in
       </button>
+      <Link href="/signup" className="muted text-center text-sm font-bold">
+        Invited? Create your account
+      </Link>
     </form>
   );
 }

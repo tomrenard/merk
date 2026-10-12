@@ -31,7 +31,7 @@ export function SoundToggle() {
     try {
       localStorage.setItem(MUTED, next ? "1" : "0");
     } catch {}
-    if (next) speechSynthesis.cancel();
+    if (next && "speechSynthesis" in window) speechSynthesis.cancel();
   }
   return (
     <button type="button" onClick={toggle} className="pill" aria-label={muted ? "Unmute" : "Mute"}>

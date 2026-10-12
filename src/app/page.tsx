@@ -3,15 +3,12 @@ import { activity, counts, progress } from "@/lib/review";
 
 export const dynamic = "force-dynamic";
 
-type TileProps = { label: string; value: string | number; tone: string; href?: string };
-
-function Tile({ label, value, tone, href }: TileProps) {
-  const Box = href ? Link : "div";
+function Tile({ label, value, tone }: { label: string; value: string | number; tone: string }) {
   return (
-    <Box href={href ?? ""} className={`rounded-3xl p-4 text-left text-white shadow-lg ${tone}`}>
+    <div className={`rounded-3xl p-4 text-left text-white shadow-lg ${tone}`}>
       <p className="text-4xl font-extrabold tracking-tight">{value}</p>
       <p className="text-sm font-semibold opacity-90">{label}</p>
-    </Box>
+    </div>
   );
 }
 
@@ -42,12 +39,13 @@ export default async function Home() {
           value={remembered === null ? "–" : `${remembered}%`}
           tone="bg-gradient-to-br from-pink-600 to-rose-700"
         />
-        <Tile
-          label="Words known →"
-          href="/words?known=1"
-          value={known}
-          tone="bg-gradient-to-br from-orange-600 to-red-700"
-        />
+        <Link href="/words?known=1">
+          <Tile
+            label="Words known →"
+            value={known}
+            tone="bg-gradient-to-br from-orange-600 to-red-700"
+          />
+        </Link>
       </div>
 
       <p className="muted text-center text-sm font-medium">

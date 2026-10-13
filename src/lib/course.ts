@@ -101,12 +101,26 @@ export const LEVEL_NAME: Record<string, string> = {
   B2: "Upper intermediate",
 };
 
-/** Per level, lessons behind you: done, or skipped by the placement test. */
+/**
+ * Per level: lessons done, lessons skipped by the placement test (and not done since), and
+ * whether the level exam is passed.
+ */
 export function levelProgress(progress: Progress) {
   return [...new Set(COURSE.map((part) => part.level))].map((level) => {
-    const units = COURSE.filter((part) => part.level === level).flatMap((part) => part.units);
-    const behind = units.filter((unit) => unitDone(progress, unit) || isSkipped(progress, unit.id));
-    return { level, behind: behind.length, total: units.length };
+    const parts = COURSE.filter((part) => part.level === level);
+    const units = parts.flatMap((part) => part.units);
+    const done = units.filter((unit) => unitDone(progress, unit)).length;
+    const skipped = units.filter(
+      (unit) => !unitDone(progress, unit) && isSkipped(progress, unit.id),
+    ).length;
+    const exam = parts.flatMap((part) => part.exams).find((e) => e.type === "level");
+    return {
+      level,
+      done,
+      skipped,
+      total: units.length,
+      passed: !!exam && examPassed(progress, exam),
+    };
   });
 }
 

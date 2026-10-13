@@ -4,6 +4,7 @@ import {
   type CourseExam,
   currentPart,
   examPassed,
+  levelProgress,
   nextStep,
   PARTS,
   PASS,
@@ -137,5 +138,22 @@ describe("skippedBy", () => {
       UNITS.length,
     );
     expect(skippedBy([{ kind: "placement", ref: "a1-01", at: at(1) }])).toEqual(new Set(["a1-01"]));
+  });
+});
+
+describe("levelProgress", () => {
+  it("keeps done and skipped apart, and ticks a level only for its passed exam", () => {
+    const [part] = COURSE;
+    const [done, ...rest] = part?.units ?? [];
+    const progress: Progress = new Map([[done?.id ?? "", all()]]);
+    progress.skipped = new Set([...(part?.units ?? []).map((unit) => unit.id), "exam:A1"]);
+    expect(levelProgress(progress)[0]).toMatchObject({
+      level: "A1",
+      done: 1,
+      skipped: rest.length,
+      passed: false,
+    });
+    progress.set("exam:A1", new Map([["unit", 80]]));
+    expect(levelProgress(progress)[0]?.passed).toBe(true);
   });
 });

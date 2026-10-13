@@ -45,6 +45,7 @@ function LevelCard({
 }) {
   const level = part?.level ?? levels.at(-1)?.level ?? "A1";
   const pct = (n: number, of: number) => (of ? Math.round((100 * n) / of) : 0);
+  const here = levels.find((l) => l.level === level);
   return (
     <Link href={part ? `/learn#${part.id}` : "/learn"} className="card flex flex-col gap-3">
       <span className="flex items-baseline justify-between">
@@ -56,21 +57,29 @@ function LevelCard({
       <span className="grid grid-cols-4 gap-1.5">
         {levels.map((l) => (
           <span key={l.level} className="flex flex-col gap-1">
-            <span className="block h-2.5 overflow-hidden rounded-full bg-[var(--line)]">
+            {/* Done solid, then skipped by the placement test faded. */}
+            <span className="flex h-2.5 overflow-hidden rounded-full bg-[var(--line)]">
+              <span className="bg-[var(--brand)]" style={{ width: `${pct(l.done, l.total)}%` }} />
               <span
-                className="block h-full rounded-full bg-[var(--brand)]"
-                style={{ width: `${pct(l.behind, l.total)}%` }}
+                className="bg-[var(--brand)] opacity-35"
+                style={{ width: `${pct(l.skipped, l.total)}%` }}
               />
             </span>
             <span
               className={`text-xs font-extrabold ${l.level === level ? "text-[var(--brand)]" : "muted"}`}
             >
               {l.level}
-              {l.behind === l.total && " ✓"}
+              {l.passed && " ✓"}
             </span>
           </span>
         ))}
       </span>
+      {here && (
+        <span className="muted text-sm font-semibold">
+          {here.level}: {here.done} of {here.total} lessons done
+          {here.skipped > 0 && ` · ${here.skipped} skipped by the placement test`}
+        </span>
+      )}
       {words.length > 0 && (
         <span className="muted text-sm font-semibold">
           Words: {words.map((w) => `${w.level} ${pct(w.started, w.total)}%`).join(" · ")}

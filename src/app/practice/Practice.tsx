@@ -5,7 +5,7 @@ import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
 import { PANEL, SOLID } from "../feedback";
-import { Back, Push } from "../Nav";
+import { Go } from "../Nav";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
@@ -40,13 +40,13 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
             <ul className="card divide-y divide-[var(--line)] py-0">
               {missed.map((m) => (
                 <li key={m.id}>
-                  <Push
+                  <Go
                     href={`/words/${encodeURIComponent(m.id)}?back=practice`}
                     className="block py-3"
                   >
                     <Headword de={m.de} className="font-extrabold" />{" "}
                     <span className="muted">{m.en}</span>
-                  </Push>
+                  </Go>
                 </li>
               ))}
             </ul>
@@ -57,9 +57,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           <a href={`/practice?scope=${scope}`} className="btn btn-primary">
             Practice again
           </a>
-          <Back href="/practice" className="btn">
+          <Go href="/practice" className="btn">
             Done
-          </Back>
+          </Go>
         </div>
       </main>
     );
@@ -84,9 +84,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   return (
     <main className="screen">
       <header className="topbar">
-        <Back href="/practice" className="muted text-2xl font-black" aria-label="Stop practising">
+        <Go href="/practice" className="muted text-2xl font-black" aria-label="Stop practising">
           ✕
-        </Back>
+        </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"

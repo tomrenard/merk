@@ -13,7 +13,7 @@ import {
 } from "@/lib/german";
 import type { SessionLeft } from "@/lib/review";
 import { Exercise } from "../learn/Exercise";
-import { Back, Push } from "../Nav";
+import { Go } from "../Nav";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
@@ -161,9 +161,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
         </p>
         <div className="flex w-full flex-col gap-3">
           {lesson ? (
-            <Push href={lesson.href} className="btn btn-primary">
+            <Go href={lesson.href} className="btn btn-primary">
               Today's lesson: {lesson.label}
-            </Push>
+            </Go>
           ) : item ? (
             <a href="/review" className="btn btn-primary">
               Keep going
@@ -173,9 +173,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
               Practise more
             </a>
           )}
-          <Back href="/" className="btn">
+          <Go href="/" className="btn">
             Done for now
-          </Back>
+          </Go>
         </div>
       </main>
     );
@@ -191,9 +191,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const header = (chip: React.ReactNode) => (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Back href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
+        <Go href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
           ✕
-        </Back>
+        </Go>
         <div
           role="progressbar"
           aria-label="Session progress"
@@ -254,7 +254,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
           {revealed && (
             <>
               {" · "}
-              <Push href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Push>
+              <Go href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Go>
             </>
           )}
         </span>,
@@ -323,12 +323,12 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
             {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}
             {note.hint && <p className="muted text-sm">{note.hint}</p>}
             {item.lapses >= TRICKY && (
-              <Push
+              <Go
                 href={`/words/${encodeURIComponent(note.id)}?back=review`}
                 className="chip mx-auto bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
               >
                 🧠 Tricky word: add a memory hook
-              </Push>
+              </Go>
             )}
           </div>
         )}

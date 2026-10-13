@@ -5,7 +5,7 @@ import { cards, notes } from "@/db/schema";
 import { freshPages } from "@/lib/fresh";
 import { cardId } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { Back } from "../../Nav";
+import { Go } from "../../Nav";
 
 const FIELDS = [
   { name: "de", label: "German (with der/die/das for nouns)", required: true },
@@ -58,9 +58,9 @@ export default function NewWordPage() {
     <form action={add} className="screen">
       <header className="topbar">
         <h1 className="text-3xl font-black">Add a word</h1>
-        <Back href="/words" className="muted text-2xl font-black" aria-label="Cancel">
+        <Go href="/words" className="muted text-2xl font-black" aria-label="Cancel">
           ✕
-        </Back>
+        </Go>
       </header>
       <p className="muted font-semibold">
         Something you heard or read today? It becomes your next new word.

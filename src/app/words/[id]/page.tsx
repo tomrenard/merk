@@ -5,7 +5,7 @@ import { notes } from "@/db/schema";
 import { freshPages } from "@/lib/fresh";
 import { learnNow, markKnown } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { Back } from "../../Nav";
+import { Go } from "../../Nav";
 
 export const dynamic = "force-dynamic";
 
@@ -99,9 +99,9 @@ export default async function EditWordPage({
   return (
     <form action={save} className="screen">
       <header className="topbar">
-        <Back href={BACK[back]} className="muted text-lg font-black">
+        <Go href={BACK[back]} className="muted text-lg font-black">
           ‹ Back
-        </Back>
+        </Go>
       </header>
       <h1 className="text-3xl font-extrabold">Edit word</h1>
       <p className="muted text-sm font-semibold">

@@ -4,7 +4,7 @@ import { auth } from "@/lib/auth";
 import { freshPages } from "@/lib/fresh";
 import { getSettings, saveSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { Back, Push } from "../Nav";
+import { Go } from "../Nav";
 import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
@@ -33,9 +33,9 @@ export default async function SettingsPage() {
     <form action={save} className="screen">
       <header className="topbar">
         <h1 className="text-3xl font-black">Settings</h1>
-        <Back href="/" className="muted text-2xl font-black" aria-label="Close settings">
+        <Go href="/" className="muted text-2xl font-black" aria-label="Close settings">
           ✕
-        </Back>
+        </Go>
       </header>
       <label className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">New words per day</span>
@@ -56,9 +56,9 @@ export default async function SettingsPage() {
         Save
       </button>
       <VoicePicker />
-      <Push href="/placement" className="btn">
+      <Go href="/placement" className="btn">
         🧭 Retake the placement test
-      </Push>
+      </Go>
       <button type="submit" formAction={logout} formNoValidate className="btn mt-4">
         Log out
       </button>

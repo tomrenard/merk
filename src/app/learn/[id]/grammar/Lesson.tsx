@@ -3,7 +3,7 @@
 import { useEffect, useState, useTransition } from "react";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit, UnitItem } from "@/lib/units";
-import { Back, Push } from "../../../Nav";
+import { Go } from "../../../Nav";
 import { SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
 import { recordUnit } from "../../actions";
 import { Exercise } from "../../Exercise";
@@ -68,13 +68,13 @@ export function Lesson({
     return (
       <main className="screen">
         <header className="topbar">
-          <Back
+          <Go
             href={`/learn/${unit.id}`}
             className="muted text-2xl font-black"
             aria-label="Back to the unit"
           >
             ✕
-          </Back>
+          </Go>
           <span className="chip muted line border">{unit.cefr}</span>
           <SoundToggle />
         </header>
@@ -140,16 +140,16 @@ export function Lesson({
           </button>
         )}
         {!saveFailed && next && (
-          <Push
+          <Go
             href={testOut ? (passed ? "/learn" : `/learn/${unit.id}/grammar`) : next.href}
             className="btn btn-primary"
           >
             {testOut ? (passed ? "Back to the course" : "Learn this unit") : next.label}
-          </Push>
+          </Go>
         )}
-        <Back href="/" className="btn">
+        <Go href="/" className="btn">
           Home
-        </Back>
+        </Go>
       </main>
     );
   }
@@ -157,13 +157,13 @@ export function Lesson({
   return (
     <main className="screen">
       <header className="topbar">
-        <Back
+        <Go
           href={`/learn/${unit.id}`}
           className="muted text-2xl font-black"
           aria-label="Stop the lesson"
         >
           ✕
-        </Back>
+        </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"

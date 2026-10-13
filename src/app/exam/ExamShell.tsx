@@ -2,7 +2,7 @@
 
 import { type ReactNode, useState, useTransition } from "react";
 import type { CourseExam } from "@/lib/course";
-import { Back } from "../Nav";
+import { Go } from "../Nav";
 import { recordExam } from "./actions";
 
 /** Top bar of an exam: ✕ (leaving loses the attempt), progress, section name. */
@@ -10,9 +10,9 @@ export function ExamBar({ progress, section }: { progress: number; section: stri
   return (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Back href="/learn" className="muted text-2xl font-black" aria-label="Leave the exam">
+        <Go href="/learn" className="muted text-2xl font-black" aria-label="Leave the exam">
           ✕
-        </Back>
+        </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
@@ -42,9 +42,9 @@ export function ExamIntro({
   return (
     <main className="screen">
       <header className="topbar">
-        <Back href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
+        <Go href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
           ✕
-        </Back>
+        </Go>
       </header>
       <span aria-hidden="true" className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">
         {exam.type === "level" ? "🏆" : "📝"}
@@ -150,17 +150,17 @@ export function ExamResult({
           Couldn't save: retry
         </button>
       ) : state === "saved" ? (
-        <Back href="/" className="btn btn-primary">
+        <Go href="/" className="btn btn-primary">
           Continue
-        </Back>
+        </Go>
       ) : (
         <button type="button" disabled className="btn btn-primary opacity-50">
           Saving…
         </button>
       )}
-      <Back href="/learn" className="btn">
+      <Go href="/learn" className="btn">
         Course
-      </Back>
+      </Go>
     </main>
   );
 }

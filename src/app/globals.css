@@ -123,7 +123,7 @@ body {
   }
 }
 
-/* Loading feedback for Push/Back links (Nav.tsx): appears after 150 ms, so fast taps show none. */
+/* Loading feedback for Go links (Nav.tsx): appears after 150 ms, so fast taps show none. */
 .pending-bar {
   position: fixed;
   inset: 0 0 auto;
@@ -148,57 +148,5 @@ body {
   }
   to {
     transform: scaleX(0.9);
-  }
-}
-
-/* Only screens slide: the page itself never fades (the browser's default) on a tab switch. */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-}
-
-/* Screen slides (Screens.tsx), like iOS: a new screen comes in from the right while the old one
- * drifts left; going back reverses it. Tabs don't animate. */
-::view-transition-new(.slide-in) {
-  animation: 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both from-right;
-}
-::view-transition-old(.slide-out) {
-  animation: 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both to-left;
-}
-::view-transition-new(.slide-back-in) {
-  animation: 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both from-left;
-}
-::view-transition-old(.slide-back-out) {
-  animation: 280ms cubic-bezier(0.2, 0.8, 0.2, 1) both to-right;
-  z-index: 1;
-}
-@keyframes from-right {
-  from {
-    transform: translateX(100%);
-  }
-}
-@keyframes to-left {
-  to {
-    transform: translateX(-25%);
-    opacity: 0.7;
-  }
-}
-@keyframes from-left {
-  from {
-    transform: translateX(-25%);
-    opacity: 0.7;
-  }
-}
-@keyframes to-right {
-  to {
-    transform: translateX(100%);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    /* biome-ignore lint/complexity/noImportantStyles: must beat every slide animation */
-    animation: none !important;
   }
 }

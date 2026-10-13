@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { type Drill, drills, isRightDrill } from "@/lib/drills";
 import { PANEL, SOLID } from "../../feedback";
-import { Back } from "../../Nav";
+import { Go } from "../../Nav";
 import { SoundToggle, speak } from "../../review/German";
 
 const ROUND = 10;
@@ -39,9 +39,9 @@ export default function NumbersPage() {
         >
           Again
         </button>
-        <Back href="/practice" className="btn">
+        <Go href="/practice" className="btn">
           Done
-        </Back>
+        </Go>
       </main>
     );
   }
@@ -65,9 +65,9 @@ export default function NumbersPage() {
   return (
     <main className="screen">
       <header className="topbar">
-        <Back href="/practice" className="muted text-2xl font-black" aria-label="Stop">
+        <Go href="/practice" className="muted text-2xl font-black" aria-label="Stop">
           ✕
-        </Back>
+        </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"

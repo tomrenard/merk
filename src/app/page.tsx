@@ -9,7 +9,7 @@ import {
 } from "@/lib/course";
 import { activity, counts, progress } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { Push } from "./Nav";
+import { Go } from "./Nav";
 import { moreNewWords } from "./review/actions";
 import { TabBar } from "./TabBar";
 
@@ -44,7 +44,7 @@ function PlanRow({
   href: string;
 }) {
   return (
-    <Push href={href} className="flex items-center gap-3 py-3">
+    <Go href={href} className="flex items-center gap-3 py-3">
       <span
         aria-hidden="true"
         className={`icon ${done ? "bg-green-100 dark:bg-green-950" : "bg-[var(--field)]"}`}
@@ -58,7 +58,7 @@ function PlanRow({
       <span aria-hidden="true" className="muted text-2xl font-black">
         ›
       </span>
-    </Push>
+    </Go>
   );
 }
 
@@ -99,14 +99,14 @@ export default async function Home() {
           <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
             🔥 {streak}
           </span>
-          <Push href="/settings" className="chip line border" aria-label="Settings">
+          <Go href="/settings" className="chip line border" aria-label="Settings">
             ⚙️
-          </Push>
+          </Go>
         </span>
       </header>
 
       {course.size === 0 && known === 0 && remembered === null && reviewsToday === 0 && (
-        <Push href="/placement" className="card flex items-center gap-3 border-[var(--brand)]">
+        <Go href="/placement" className="card flex items-center gap-3 border-[var(--brand)]">
           <span aria-hidden="true" className="icon bg-[var(--brand-soft)]">
             🧭
           </span>
@@ -119,7 +119,7 @@ export default async function Home() {
           <span aria-hidden="true" className="muted text-2xl font-black">
             ›
           </span>
-        </Push>
+        </Go>
       )}
 
       <section className="card flex flex-col gap-1 pt-4 pb-2">
@@ -161,16 +161,16 @@ export default async function Home() {
         </div>
         {!allDone && (
           <div className="flex flex-col gap-2 pt-2 pb-2">
-            <Push href={cards ? "/review" : lessonHref} className="btn btn-primary">
+            <Go href={cards ? "/review" : lessonHref} className="btn btn-primary">
               Continue
-            </Push>
+            </Go>
             {cards > 15 && (
               <div className="flex items-center justify-center gap-2 text-sm font-bold">
                 <span className="muted">Short on time?</span>
                 {[10, 30].map((limit) => (
-                  <Push key={limit} href={`/review?limit=${limit}`} className="chip line border">
+                  <Go key={limit} href={`/review?limit=${limit}`} className="chip line border">
                     {minutes(limit)} min
-                  </Push>
+                  </Go>
                 ))}
               </div>
             )}
@@ -186,13 +186,13 @@ export default async function Home() {
               🌱 +5 new words today
             </button>
           </form>
-          <Push href="/practice?scope=tricky" className="btn">
+          <Go href="/practice?scope=tricky" className="btn">
             🧠 Tricky words
-          </Push>
+          </Go>
           {step && (
-            <Push href={lessonHref} className="btn">
+            <Go href={lessonHref} className="btn">
               {step.icon} {step.label}
-            </Push>
+            </Go>
           )}
         </section>
       )}

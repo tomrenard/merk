@@ -10,7 +10,7 @@ import {
   unitById,
 } from "@/lib/course";
 import { requireUser } from "@/lib/session";
-import { Back, Push } from "../../Nav";
+import { Go } from "../../Nav";
 import { TabBar } from "../../TabBar";
 import { learnWords } from "../actions";
 
@@ -25,9 +25,9 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
   return (
     <main className="screen with-tabs">
       <header className="topbar">
-        <Back href="/learn" className="muted text-lg font-black" aria-label="Back to the course">
+        <Go href="/learn" className="muted text-lg font-black" aria-label="Back to the course">
           ‹ Course
-        </Back>
+        </Go>
         <span className="chip muted line border">
           {COURSE.find((c) => c.units.includes(unit))?.id ?? unit.cefr}
         </span>
@@ -43,7 +43,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
           const retry = part.kind === "unit" && score !== undefined && score < PASS;
           return (
             <li key={part.kind}>
-              <Push
+              <Go
                 href={`/learn/${unit.id}/${part.path}`}
                 className={`card flex items-center gap-3 ${part === next ? "border-[var(--brand)]" : ""}`}
               >
@@ -61,7 +61,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
                   )}
                 </span>
                 <span className="muted text-2xl font-black">›</span>
-              </Push>
+              </Go>
             </li>
           );
         })}
@@ -70,9 +70,9 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
         One part a day is plenty. Redo any part any time.
       </p>
       {(done.get("unit") ?? 0) < PASS && (
-        <Push href={`/learn/${unit.id}/grammar?test=1`} className="btn">
+        <Go href={`/learn/${unit.id}/grammar?test=1`} className="btn">
           Already know this? Take the check
-        </Push>
+        </Go>
       )}
       {unit.words?.length ? (
         <form action={learnWords}>

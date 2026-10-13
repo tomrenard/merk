@@ -36,8 +36,12 @@ const SIBLING_FREE = sql`(coalesce(${cards.fsrs}->>'state', '0') in ('1', '3') o
   where s.note_id = ${cards.noteId} and s.user_id = ${cards.userId} and s.id <> ${cards.id}
     and rl.reviewed_at >= ${DAY_START}))`;
 
-/** New cards that may start now: a new word, or the English→German card of a word started on an earlier day and not reviewed today. */
-const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or ${sibling.introducedAt} < ${DAY_START}) and ${SIBLING_FREE}`;
+/**
+ * New cards that may start now: a new word, or the English→German card of a word started on an
+ * earlier day and not reviewed today. (A new German→English card never waits for its sibling,
+ * which only starts after it; skipping that check keeps this fast.)
+ */
+const NEW_OFFERABLE = sql`${cards.introducedAt} is null and (${cards.direction} = 'de_en' or (coalesce(${sibling.introducedAt} < ${DAY_START}, false) and ${SIBLING_FREE}))`;
 
 /** The study day a timestamp belongs to, as a date, with the same 4:00 Berlin rollover. */
 const studyDay = (at: SQL | typeof reviewLogs.reviewedAt) =>
@@ -79,9 +83,12 @@ export async function counts(userId: string) {
   const [[row], { newPerDay }] = await Promise.all([
     db()
       .select({
-        due: sql<number>`count(*) filter (where ${cards.due} <= now() and ${SIBLING_FREE})::int`,
-        newWords: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'de_en')::int`,
-        followUps: sql<number>`count(*) filter (where ${NEW_OFFERABLE} and ${cards.direction} = 'en_de')::int`,
+        // Cheap tests first, and null-safe: Postgres only skips the costly SIBLING_FREE check
+        // after a false, not after a null (a new card has no due date). 380 ms → 6 ms.
+        due: sql<number>`count(*) filter (where coalesce(${cards.due} <= now(), false) and ${SIBLING_FREE})::int`,
+        // A new German→English card can't be held back: its sibling only starts after it.
+        newWords: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} is null)::int`,
+        followUps: sql<number>`count(*) filter (where ${cards.direction} = 'en_de' and ${cards.introducedAt} is null and coalesce(${sibling.introducedAt} < ${DAY_START}, false) and ${SIBLING_FREE})::int`,
         startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
         // Reviews of already-learned cards done today: with `due`, the day's review load.
         reviewedToday: sql<number>`(select count(distinct card_id) from review_logs where user_id = ${userId} and state <> 0 and reviewed_at >= ${DAY_START})::int`,

@@ -76,7 +76,7 @@ const exams = readdirSync("data/exams").map((f) => json<Exam>(`data/exams/${f}`)
 // One voice per sentence: a dialogue line gets its character's voice; everything else is read
 // by the first voice. First assignment wins (a sentence is one file).
 const wanted = new Map<string, { text: string; voice: string }>();
-function add(text: string, voice = FIRST) {
+function add(text: string, voice: string = FIRST) {
   const clean = normalize(text);
   if (clean && !wanted.has(audioKey(clean))) wanted.set(audioKey(clean), { text: clean, voice });
 }

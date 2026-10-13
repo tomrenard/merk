@@ -23,8 +23,43 @@ import type { Exam } from "../src/lib/exams.ts";
 import type { Unit, UnitItem } from "../src/lib/units.ts";
 
 const MODEL = "google/gemini-3.8-flash-lite-tts";
-const FIRST = "Kore";
-const SECOND = "Charon";
+/** Kore reads everything outside dialogues. In a dialogue each character gets a voice of their
+ * gender: women Kore, Aoede, Leda; men Charon, Puck, Orus, Fenrir (a story can have a narrator and three men). */
+const VOICES = { f: ["Kore", "Aoede", "Leda"], m: ["Charon", "Puck", "Orus", "Fenrir"] } as const;
+const FIRST = VOICES.f[0];
+
+/** Every character's gender (titles and role words decide the rest). A new name stops the run. */
+const WOMEN =
+  "Camille Sophie Jana Lena Anna Julia Elif Petra Mia Nadia Clara Katrin Amélie Sabine Claire Sandra Nina Élodie Mira Lea Amira Emma Marie Sarah Léa Miriam Mathilde Ingrid Leonie Ayla Paula Katja Sofia Laura Lisa Sara Nora Julie Monika Hanna Kerstin Mila Erna";
+const MEN =
+  "Jonas Paul Marc Lukas Ben Felix Stefan Max Thomas Tom Jan Hugo Markus David Karim Tim Rafael Tobias Uwe Leon Daniel Frank Julien Lucas Antoine Gerd Mehmet Malik Erik Simon Ahmed Luca Malte Heinz";
+const ROLES: Record<string, "f" | "m"> = {
+  Erzähler: "m",
+  Moderator: "m",
+  Moderatorin: "f",
+  Mitarbeiter: "m",
+  Verkäuferin: "f",
+  Arzthelferin: "f",
+  "Dr. Wagner": "m",
+  "Katja Lorenz": "f",
+  // Recorded announcements and voicemails: a woman; radio and news: a man.
+  Durchsage: "f",
+  Ansage: "f",
+  Praxis: "f",
+  Anrufbeantworter: "f",
+  Radio: "m",
+  Nachrichten: "m",
+};
+const RECORDINGS = ["Durchsage", "Ansage", "Praxis", "Anrufbeantworter", "Radio", "Nachrichten"];
+function gender(speaker: string): "f" | "m" {
+  if (speaker.startsWith("Frau ")) return "f";
+  if (speaker.startsWith("Herr ")) return "m";
+  if (WOMEN.split(" ").includes(speaker)) return "f";
+  if (MEN.split(" ").includes(speaker)) return "m";
+  const role = ROLES[speaker];
+  if (!role) throw new Error(`Unknown speaker "${speaker}": add them to WOMEN, MEN or ROLES`);
+  return role;
+}
 const STYLE = "Read in natural standard German from Germany, at a calm everyday pace.";
 const dry = process.argv.includes("--dry");
 const limitAt = process.argv.indexOf("--limit");
@@ -38,16 +73,25 @@ const json = <T>(file: string): T => JSON.parse(readFileSync(file, "utf8"));
 const units = readdirSync("data/units").map((f) => json<Unit>(`data/units/${f}`));
 const exams = readdirSync("data/exams").map((f) => json<Exam>(`data/exams/${f}`));
 
-// One voice per sentence: a dialogue line keeps its speaker's voice (the app's second speaker
-// is the other voice); everything else is read by the first voice. First assignment wins.
+// One voice per sentence: a dialogue line gets its character's voice; everything else is read
+// by the first voice. First assignment wins (a sentence is one file).
 const wanted = new Map<string, { text: string; voice: string }>();
 function add(text: string, voice = FIRST) {
   const clean = normalize(text);
   if (clean && !wanted.has(audioKey(clean))) wanted.set(audioKey(clean), { text: clean, voice });
 }
 function dialogue(lines: { speaker: string; de: string }[]) {
-  const speakers = [...new Set(lines.map((l) => l.speaker))];
-  for (const line of lines) add(line.de, speakers.indexOf(line.speaker) % 2 ? SECOND : FIRST);
+  const seen = { f: 0, m: 0 };
+  const voice = new Map<string, string>();
+  // People who talk to each other get different voices first; recordings take what is left.
+  const speakers = [...new Set(lines.map((l) => l.speaker))].sort(
+    (a, b) => Number(RECORDINGS.includes(a)) - Number(RECORDINGS.includes(b)),
+  );
+  for (const speaker of speakers) {
+    const g = gender(speaker);
+    voice.set(speaker, VOICES[g][seen[g]++ % VOICES[g].length] ?? FIRST);
+  }
+  for (const line of lines) add(line.de, voice.get(line.speaker));
 }
 for (const unit of units) dialogue(unit.listening.lines);
 for (const exam of exams) for (const task of exam.hoeren) dialogue(task.lines);
@@ -67,8 +111,17 @@ for (const exam of exams) {
 }
 
 const stored = new Set(readdirSync(out).map((f) => f.replace(/\.m4a$/, "")));
+// Which voice each stored file has: a sentence whose voice changed is recorded again.
+const manifestFile = join(out, "..", "voices.json");
+const manifest: Record<string, string> = existsSync(manifestFile)
+  ? JSON.parse(readFileSync(manifestFile, "utf8"))
+  : {};
+const saveManifest = () =>
+  writeFileSync(manifestFile, `${JSON.stringify(manifest, Object.keys(manifest).sort(), 0)}\n`);
 
-const todo = [...wanted].filter(([key]) => !stored.has(key)).slice(0, limit);
+const todo = [...wanted]
+  .filter(([key, { voice }]) => !stored.has(key) || manifest[key] !== voice)
+  .slice(0, limit);
 const chars = todo.reduce((sum, [, s]) => sum + s.text.length, 0);
 console.log(
   `${wanted.size} sentences, ${stored.size} stored, ${todo.length} to record (${chars} chars)`,
@@ -104,6 +157,7 @@ async function record(key: string, { text, voice }: { text: string; voice: strin
         wav,
         join(out, `${key}.m4a`),
       ]);
+      manifest[key] = voice;
       return;
     }
     // A spent budget (402) or a bad request won't get better by retrying.
@@ -132,5 +186,6 @@ async function worker() {
   }
 }
 await Promise.all(Array.from({ length: 16 }, worker));
+saveManifest();
 console.log(`recorded ${done - failed.length}, failed ${failed.length}`);
 for (const f of failed.slice(0, 10)) console.log(f);

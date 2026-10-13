@@ -10,9 +10,18 @@ import { recordingForm, useRecorder } from "../../../ai/useRecorder";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
+/** Lower-case words without punctuation, to compare what was said with the line. */
+const words = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+
 /**
- * For each line: hear it, say it while recording, then see what was heard (speech-to-text on
- * the server) and play yourself back next to the model.
+ * Repeat each line: hear it, record yourself (it stops by itself after about the line's length),
+ * then see which words came through (speech-to-text on the server, no AI teacher needed) and
+ * play yourself back.
  */
 export function Speak({
   unit,
@@ -27,7 +36,9 @@ export function Speak({
   const [heard, setHeard] = useState<string | null>(null);
   const [failure, setFailure] = useState<Failure | null>(null);
   const [listening, setListening] = useState(false);
-  const { recording, clip, error, start, stop, reset } = useRecorder(20);
+  // Enough time for the line said slowly, then it stops and checks by itself.
+  const seconds = Math.min(20, 3 + Math.ceil((lines[index]?.de.split(" ").length ?? 5) * 0.7));
+  const { recording, clip, error, start, stop, reset } = useRecorder(seconds);
   const { finished, failed, saving, save, retry } = usePartSave(unit.id, "speak");
   const line = lines[index];
 
@@ -75,7 +86,7 @@ export function Speak({
   return (
     <PartShell unitId={unit.id} progress={index / lines.length}>
       <p className="muted text-sm font-extrabold">
-        Say it {index + 1}/{lines.length}: listen, record, compare
+        Say it {index + 1}/{lines.length}: listen, then repeat
       </p>
       <div className="card flex flex-col gap-2">
         <p className="text-2xl font-black">{line.de}</p>
@@ -89,28 +100,47 @@ export function Speak({
         onClick={recording ? stop : start}
         className={`btn btn-solid py-5 text-lg ${recording ? "[--c:#d63c3c]" : "[--c:var(--brand-fill)]"}`}
       >
-        {recording ? "⏹ Stop" : clip ? "🎙 Record again" : "🎙 Record yourself"}
+        {recording ? "⏹ Done" : clip ? "🎙 Try again" : "🎙 Say it"}
       </button>
+      <p className="muted text-sm">
+        {recording
+          ? `Say the sentence now. It stops by itself after ${seconds} seconds.`
+          : "Tap, say the sentence, and we check which words came through."}
+      </p>
       {error && <p className="font-semibold text-rose-600 dark:text-rose-400">{error}</p>}
-      {clip && !recording && (
-        <div className="grid grid-cols-2 gap-2">
-          <button type="button" onClick={() => new Audio(clip.url).play()} className="btn">
-            ▶ Me
-          </button>
-          <button type="button" onClick={() => speak(line.de, { recorded: true })} className="btn">
-            ▶ Model
-          </button>
-        </div>
-      )}
       {listening && (
         <p role="status" className="muted font-semibold">
-          Listening to your recording…
+          Checking what you said…
         </p>
       )}
       {heard !== null && (
-        <p className="rounded-2xl bg-[var(--field)] p-3 font-semibold">
-          {sameAnswer(heard, line.de) ? "✓ " : ""}Heard: „{heard || "…"}“
-        </p>
+        <div role="status" className="card flex flex-col gap-2">
+          <p className="font-extrabold">
+            {sameAnswer(heard, line.de)
+              ? "✓ Perfect, every word came through."
+              : "Almost: the marked words didn't come through."}
+          </p>
+          <p className="text-lg font-semibold" lang="de">
+            {line.de.split(" ").map((word, i) => {
+              const missed = words(word).some((w) => !words(heard).includes(w));
+              return (
+                // biome-ignore lint/suspicious/noArrayIndexKey: words of a fixed sentence
+                <span
+                  key={i}
+                  className={missed ? "text-rose-600 underline dark:text-rose-400" : ""}
+                >
+                  {word}{" "}
+                </span>
+              );
+            })}
+          </p>
+          <p className="muted text-sm">We heard: „{heard || "…"}“</p>
+        </div>
+      )}
+      {clip && !recording && (
+        <button type="button" onClick={() => new Audio(clip.url).play()} className="btn">
+          ▶ Hear yourself
+        </button>
       )}
       {failure && <AiFailure failure={failure} />}
       {clip && (

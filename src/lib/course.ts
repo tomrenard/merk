@@ -94,6 +94,22 @@ export const COURSE = PARTS_OF_COURSE.map((part, i) => {
   };
 }).filter((part) => part.units.length > 0);
 
+export const LEVEL_NAME: Record<string, string> = {
+  A1: "Beginner",
+  A2: "Elementary",
+  B1: "Intermediate",
+  B2: "Upper intermediate",
+};
+
+/** Per level, lessons behind you: done, or skipped by the placement test. */
+export function levelProgress(progress: Progress) {
+  return [...new Set(COURSE.map((part) => part.level))].map((level) => {
+    const units = COURSE.filter((part) => part.level === level).flatMap((part) => part.units);
+    const behind = units.filter((unit) => unitDone(progress, unit) || isSkipped(progress, unit.id));
+    return { level, behind: behind.length, total: units.length };
+  });
+}
+
 export function examById(id: string): CourseExam | undefined {
   return COURSE.flatMap((part) => part.exams).find((exam) => exam.id === id);
 }

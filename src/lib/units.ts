@@ -62,6 +62,8 @@ export const Unit = z.object({
   /** Topic lessons: the deck's headwords for the theme (exactly as in the word list). */
   words: z.array(z.string()).max(40).optional(),
   title: z.string(),
+  /** One emoji for the lesson's situation, shown in the course list. */
+  icon: z.string(),
   situation: z.string(),
   canDo: z.string().describe("what you can do after this unit, one English sentence"),
   explanation: z

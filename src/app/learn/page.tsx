@@ -7,11 +7,13 @@ import {
   examPassed,
   examScore,
   isSkipped,
+  LEVEL_NAME,
   lastUnitId,
   nextStep,
   PARTS,
   type Progress,
   partIcon,
+  partLabel,
   partProgress,
   UNITS,
   unitDone,
@@ -30,13 +32,6 @@ const VIEWS = [
     icon: p.icon,
   })),
 ];
-
-const LEVEL_NAME: Record<string, string> = {
-  A1: "Beginner",
-  A2: "Elementary",
-  B1: "Intermediate",
-  B2: "Upper intermediate",
-};
 
 function ExamCard({
   exam,
@@ -189,11 +184,15 @@ export default async function CoursePage({
                                 : "bg-[var(--field)]"
                           }`}
                         >
-                          {isDone ? "✓" : partIcon(unit, part ?? PARTS[0])}
+                          {part ? (isDone ? "✓" : partIcon(unit, part)) : unit.icon}
                         </span>
                         <span className="flex-1">
-                          <span className="block font-extrabold">{unit.title}</span>
+                          <span className="block font-extrabold">
+                            {unit.title}
+                            {!part && isDone && " ✓"}
+                          </span>
                           <span className="muted text-sm font-semibold">
+                            {!part && `${partLabel(unit, PARTS[0])} · `}
                             {unit.situation}
                             {!part &&
                               done.size > 0 &&

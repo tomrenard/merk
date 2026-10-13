@@ -2,6 +2,7 @@
  "id": "a1-08",
  "cefr": "A1",
  "title": "kein or nicht",
+ "icon": "🛒",
  "situation": "At the supermarket",
  "canDo": "You can say what a shop doesn't have and what you don't need, choosing correctly between kein and nicht.",
  "explanation": "At the supermarket you often say what isn't there: *Wir haben keine Milch.* German has two words for 'not': **kein** and **nicht**.\n\n**kein** means 'no, not a, not any'. Use it for nouns with **ein** or with **no article**:\n- *Das ist ein Apfel.* → *Das ist **kein** Apfel.*\n- *Ich habe Zeit.* → *Ich habe **keine** Zeit.*\n\nkein has the same endings as ein, plus a plural:\n\n| | subject | object (after haben, brauchen…) |\n|---|---|---|\n| masculine | kein Käse | **keinen** Käse |\n| feminine | keine Tüte | keine Tüte |\n| neuter | kein Brot | kein Brot |\n| plural | keine Eier | keine Eier |\n\n**nicht** negates everything else:\n- verbs: *Ich komme nicht.*\n- adjectives: *Die Bananen sind nicht teuer.*\n- nouns with **der/die/das**: *Ich finde den Käse nicht.*\n- places: *Die Milch ist nicht hier.*\n\nQuick test: does the positive sentence have *ein* or no article? → **kein**. Does it have *der/die/das*? → **nicht**.\n\nThe most common mistake is *nicht* before a noun without an article: not *Ich habe nicht Zeit*, but *Ich habe **keine** Zeit*; not *Ich esse nicht Fleisch*, but *Ich esse **kein** Fleisch*.\n\nAfter a negative question, *doch* means yes: *Haben Sie keine Sojamilch? – Doch!*",

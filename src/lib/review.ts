@@ -283,6 +283,27 @@ export async function progress(userId: string) {
   return { remembered: row?.remembered ?? null, known };
 }
 
+/** Per level, how many of the shared list's words you have started (known ones included). */
+export async function wordLevels(userId: string) {
+  return db()
+    .select({
+      level: notes.cefr,
+      started: sql<number>`count(*) filter (where ${cards.introducedAt} is not null)::int`,
+      total: sql<number>`count(*)::int`,
+    })
+    .from(cards)
+    .innerJoin(notes, eq(notes.id, cards.noteId))
+    .where(
+      and(
+        eq(cards.userId, userId),
+        eq(cards.direction, "de_en"),
+        sql`${notes.source} not in ('phrase', 'unit', 'mine')`,
+      ),
+    )
+    .groupBy(notes.cefr)
+    .orderBy(notes.cefr);
+}
+
 export type PracticeScope = "today" | "all" | "tricky";
 
 /** Up to 20 random words to practise: ones studied today, or any seen so far. */
@@ -441,6 +462,27 @@ export async function learnNow(userId: string, noteId: string) {
     .where(and(eq(cards.userId, userId), eq(cards.noteId, noteId), eq(cards.direction, "de_en")));
 }
 
+/** Topic lessons list headwords without the plural note: "der Name" for "der Name, -n". */
+const HEAD = sql`split_part(${notes.de}, ',', 1)`;
+const headOf = (de: string) => de.split(",")[0] ?? de;
+
+/** A topic lesson's words in the lesson's order, with whether you have started each one. */
+export async function topicWords(userId: string, headwords: string[]) {
+  const rows = await db()
+    .select({
+      de: notes.de,
+      en: notes.en,
+      started: sql<boolean>`${cards.introducedAt} is not null`,
+    })
+    .from(notes)
+    .leftJoin(
+      cards,
+      and(eq(cards.noteId, notes.id), eq(cards.userId, userId), eq(cards.direction, "de_en")),
+    )
+    .where(and(sql`${HEAD} in ${headwords}`, sql`${notes.userId} is null`));
+  return headwords.flatMap((de) => rows.filter((row) => headOf(row.de) === de));
+}
+
 /**
  * A topic lesson's words (deck headwords) that `userId` hasn't started come up next: their
  * German→English cards are made due now, ahead of the frequency order.
@@ -450,6 +492,6 @@ export async function learnTopicWords(userId: string, headwords: string[]) {
   await db().execute(sql`
     update cards set due = now()
     from notes n
-    where cards.note_id = n.id and n.de in ${headwords} and cards.user_id = ${userId}
+    where cards.note_id = n.id and split_part(n.de, ',', 1) in ${headwords} and cards.user_id = ${userId}
       and cards.direction = 'de_en' and cards.introduced_at is null`);
 }

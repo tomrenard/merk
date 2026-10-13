@@ -104,7 +104,18 @@ export function vocabResult(scores: ReturnType<typeof bandScores>) {
     levels,
     unreliable: falseYes > MAX_FALSE_YES,
     knownBands:
-      falseYes > MAX_FALSE_YES ? [] : scores.filter((s) => s.p >= KNOWN_BAND).map((s) => s.id),
+      falseYes > MAX_FALSE_YES
+        ? []
+        : // Bands run from frequent to rare: knowing a rarer one means knowing the frequent ones,
+          // unless the frequent one's own score says otherwise.
+          scores
+            .filter(
+              (s) =>
+                s.p >= KNOWN_BAND ||
+                (s.p >= IN_PROGRESS &&
+                  scores.some((t) => t.level === s.level && t.id > s.id && t.p >= KNOWN_BAND)),
+            )
+            .map((s) => s.id),
   };
 }
 

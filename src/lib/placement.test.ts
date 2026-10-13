@@ -41,6 +41,22 @@ describe("vocabulary", () => {
     expect(guessing.unreliable).toBe(true);
     expect(guessing.knownBands).toEqual([]);
   });
+
+  it("counts a level's frequent bands as known when a rarer one is", () => {
+    const three: Band[] = [
+      { id: 0, level: "A1", size: 300 },
+      { id: 1, level: "A1", size: 300 },
+      { id: 2, level: "A2", size: 300 },
+    ];
+    // A weak sample of the most frequent band, a clean score in the next one.
+    const scores = bandScores(three, [...yes(0, 6, 8), ...yes(1, 8, 8), ...yes(2, 4, 8)], []);
+    expect(vocabResult(scores).knownBands).toEqual([0, 1]);
+    // Not across levels, and not when the frequent band's own score is low.
+    const a2 = bandScores(three, [...yes(0, 6, 8), ...yes(1, 2, 8), ...yes(2, 8, 8)], []);
+    expect(vocabResult(a2).knownBands).toEqual([2]);
+    const low = bandScores(three, [...yes(0, 2, 8), ...yes(1, 8, 8)], []);
+    expect(vocabResult(low).knownBands).toEqual([1]);
+  });
 });
 
 describe("grammar search", () => {

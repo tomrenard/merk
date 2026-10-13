@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState, useTransition } from "react";
+import { spokenForm } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit, UnitItem } from "@/lib/units";
 import { Go } from "../../../Nav";
-import { SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
-import { recordUnit } from "../../actions";
+import { Headword, SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
+import { learnWords, recordUnit } from "../../actions";
 import { Exercise } from "../../Exercise";
 import { Prose } from "../../Prose";
 
@@ -16,12 +17,15 @@ type Step = "learn" | "drill" | "check" | "done";
 /** Explanation → 12 practice exercises → a 6-exercise check on items not practised. */
 export function Lesson({
   unit,
+  words,
   checkSize,
   pass,
   next,
   testOut,
 }: {
   unit: Unit;
+  /** Topic lessons: the theme's words, shown first. */
+  words: { de: string; en: string; started: boolean }[];
   checkSize: number;
   pass: number;
   /** Where to go after the unit's grammar. */
@@ -83,9 +87,48 @@ export function Lesson({
           <h1 className="text-3xl font-black">{unit.title}</h1>
           <p className="muted mt-1 font-semibold">{unit.canDo}</p>
         </div>
-        <section className="card">
-          <Prose text={unit.explanation} />
-        </section>
+        {words.length > 0 && (
+          <>
+            <section className="card flex flex-col divide-y divide-[var(--line)] py-0">
+              {words.map((word) => (
+                <button
+                  key={`${word.de}|${word.en}`}
+                  type="button"
+                  onClick={() => speak(spokenForm(word.de))}
+                  className="flex items-center gap-3 py-3 text-left"
+                >
+                  <span className="flex-1">
+                    <Headword de={word.de} className="block font-bold" />
+                    <span className="muted text-sm">{word.en}</span>
+                  </span>
+                  <span aria-hidden="true" className="text-sm opacity-50">
+                    {word.started ? "✓" : "🔊"}
+                  </span>
+                </button>
+              ))}
+            </section>
+            {words.some((word) => !word.started) && (
+              <form action={learnWords}>
+                <input type="hidden" name="unit" value={unit.id} />
+                <button type="submit" className="btn w-full">
+                  🌱 Learn the {words.filter((word) => !word.started).length} new ones in my reviews
+                </button>
+              </form>
+            )}
+          </>
+        )}
+        {words.length > 0 ? (
+          <details className="card">
+            <summary className="cursor-pointer font-extrabold">About this topic</summary>
+            <div className="mt-3">
+              <Prose text={unit.explanation} />
+            </div>
+          </details>
+        ) : (
+          <section className="card">
+            <Prose text={unit.explanation} />
+          </section>
+        )}
         {unit.french && (
           <p className="chip bg-sky-100 py-3 font-semibold text-sky-900 dark:bg-sky-950 dark:text-sky-200">
             🇫🇷 {unit.french}

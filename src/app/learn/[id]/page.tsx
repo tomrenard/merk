@@ -34,7 +34,9 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
       </header>
       <div>
         <p className="muted text-sm font-extrabold">{unit.situation}</p>
-        <h1 className="text-3xl font-black">{unit.title}</h1>
+        <h1 className="text-3xl font-black">
+          <span aria-hidden="true">{unit.icon}</span> {unit.title}
+        </h1>
         <p className="muted mt-1 font-semibold">{unit.canDo}</p>
       </div>
       <ol className="flex flex-col gap-3">

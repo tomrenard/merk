@@ -2,12 +2,13 @@ import Link from "next/link";
 import {
   courseProgress,
   currentPart,
+  LEVEL_NAME,
   lastUnitId,
   lessonDoneToday,
+  levelProgress,
   nextStep,
-  partProgress,
 } from "@/lib/course";
-import { activity, counts, progress } from "@/lib/review";
+import { activity, counts, progress, wordLevels } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "./Nav";
 import { moreNewWords } from "./review/actions";
@@ -26,6 +27,56 @@ function Stat({ icon, tint, label, value }: StatProps) {
       <span className="flex-1 font-bold">{label}</span>
       <span className="text-xl font-black">{value}</span>
     </div>
+  );
+}
+
+/**
+ * Where you are from A1 to B2: one bar per level (lessons done or skipped), the part you are in,
+ * and the share of each level's words started.
+ */
+function LevelCard({
+  part,
+  levels,
+  words,
+}: {
+  part: { id: string; level: string } | undefined;
+  levels: ReturnType<typeof levelProgress>;
+  words: Awaited<ReturnType<typeof wordLevels>>;
+}) {
+  const level = part?.level ?? levels.at(-1)?.level ?? "A1";
+  const pct = (n: number, of: number) => (of ? Math.round((100 * n) / of) : 0);
+  return (
+    <Link href={part ? `/learn#${part.id}` : "/learn"} className="card flex flex-col gap-3">
+      <span className="flex items-baseline justify-between">
+        <span className="text-2xl font-black">
+          {level} <span className="muted text-base font-bold">{LEVEL_NAME[level]}</span>
+        </span>
+        <span className="muted text-sm font-bold">{part ? `${part.id} ›` : "All done ›"}</span>
+      </span>
+      <span className="grid grid-cols-4 gap-1.5">
+        {levels.map((l) => (
+          <span key={l.level} className="flex flex-col gap-1">
+            <span className="block h-2.5 overflow-hidden rounded-full bg-[var(--line)]">
+              <span
+                className="block h-full rounded-full bg-[var(--brand)]"
+                style={{ width: `${pct(l.behind, l.total)}%` }}
+              />
+            </span>
+            <span
+              className={`text-xs font-extrabold ${l.level === level ? "text-[var(--brand)]" : "muted"}`}
+            >
+              {l.level}
+              {l.behind === l.total && " ✓"}
+            </span>
+          </span>
+        ))}
+      </span>
+      {words.length > 0 && (
+        <span className="muted text-sm font-semibold">
+          Words: {words.map((w) => `${w.level} ${pct(w.started, w.total)}%`).join(" · ")}
+        </span>
+      )}
+    </Link>
   );
 }
 
@@ -75,6 +126,7 @@ export default async function Home() {
     course,
     last,
     lessonDone,
+    words,
   ] = await Promise.all([
     counts(userId),
     activity(userId),
@@ -82,6 +134,7 @@ export default async function Home() {
     courseProgress(userId),
     lastUnitId(userId),
     lessonDoneToday(userId),
+    wordLevels(userId),
   ]);
   // Reviews include missed words coming back within minutes: the session shows them now.
   const due = dueNow + repeats;
@@ -90,7 +143,6 @@ export default async function Home() {
   const lessonHref = step?.href ?? "/learn";
   const allDone = cards === 0 && (lessonDone || !step);
   const part = currentPart(course);
-  const partDone = part && partProgress(course, part);
   return (
     <main className="screen with-tabs">
       <header className="topbar">
@@ -203,17 +255,10 @@ export default async function Home() {
 
       <section>
         <h2 className="muted mb-2 text-sm font-extrabold">Your progress</h2>
+        <div className="mb-3">
+          <LevelCard part={part} levels={levelProgress(course)} words={words} />
+        </div>
         <div className="card divide-y divide-[var(--line)] py-0">
-          {part && partDone && (
-            <Link href={`/learn#${part.id}`} className="block">
-              <Stat
-                icon="🧭"
-                tint="bg-[var(--brand-soft)]"
-                label={`Course · ${part.id} ›`}
-                value={`${partDone.done}/${partDone.total}`}
-              />
-            </Link>
-          )}
           <Stat
             icon="✅"
             tint="bg-green-100 dark:bg-green-950"

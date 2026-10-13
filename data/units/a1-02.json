@@ -2,6 +2,7 @@
  "id": "a1-02",
  "cefr": "A1",
  "title": "Present tense of regular verbs: wohnen, arbeiten, lernen, heißen",
+ "icon": "🏡",
  "situation": "Talking about yourself",
  "canDo": "I can say my name, where I live, where I work and what I am learning, and ask other people the same questions.",
  "explanation": "When you introduce yourself, you say your name, where you live and what you do: *Ich heiße…, ich wohne…, ich arbeite…, ich lerne Deutsch.* These verbs are regular. Take the infinitive, remove **-en** to get the stem (wohn-, lern-), then add the ending that matches the person.\n\n| | wohnen | arbeiten | heißen |\n|---|---|---|---|\n| ich | wohn**e** | arbeit**e** | heiß**e** |\n| du | wohn**st** | arbeit**est** | heiß**t** |\n| er/sie/es | wohn**t** | arbeit**et** | heiß**t** |\n| wir | wohn**en** | arbeit**en** | heiß**en** |\n| ihr | wohn**t** | arbeit**et** | heiß**t** |\n| sie/Sie | wohn**en** | arbeit**en** | heiß**en** |\n\nTwo small rules:\n- Stem ends in **-t** or **-d** (arbeit-): add an extra **-e-** before -st and -t, so you can pronounce it: du arbeit**e**st, er arbeit**e**t.\n- Stem ends in **-s**, **-ß** or **-z** (heiß-): du only adds **-t**: du heißt (not heißst).\n\n**wir**, **sie** (they) and **Sie** (polite you) always look like the infinitive: wir wohnen, Sie wohnen. Use Sie with strangers and at work, du with friends and children.\n\nIn a statement the verb is in second place: *Ich wohne in Köln.* In a question with wo, wie, woher, the verb comes right after the question word: *Wo wohnen Sie?*",

@@ -142,7 +142,6 @@ export function Lesson({
         {!saveFailed && next && (
           <Push
             href={testOut ? (passed ? "/learn" : `/learn/${unit.id}/grammar`) : next.href}
-            transitionTypes={testOut && passed ? ["back"] : ["push"]}
             className="btn btn-primary"
           >
             {testOut ? (passed ? "Back to the course" : "Learn this unit") : next.label}

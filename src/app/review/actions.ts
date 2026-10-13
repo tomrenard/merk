@@ -6,7 +6,7 @@ import type { Grade } from "ts-fsrs";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { withExercise } from "@/lib/course";
-import { DAY_START, grade, nextCard } from "@/lib/review";
+import { counts, DAY_START, grade, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
 export async function gradeAndNext(
@@ -20,7 +20,8 @@ export async function gradeAndNext(
     throw new Error("Bad grade");
   }
   await grade(userId, cardId, rating as Grade, Number(durationMs) || 0, seenReps);
-  return withExercise(await nextCard(userId));
+  const [next, left] = await Promise.all([nextCard(userId), counts(userId)]);
+  return { item: withExercise(next), left: sessionLeft(left) };
 }
 
 /** At most this many extra new words a day, however often "+5" is tapped. */

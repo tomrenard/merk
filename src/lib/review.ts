@@ -7,7 +7,13 @@ import { cards, notes, reviewLogs, settings } from "../db/schema.ts";
 import { streakLength } from "./streak.ts";
 
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.
-const scheduler = fsrs({ enable_fuzz: true });
+/**
+ * A word you get right is done for the day; a missed one comes back once, 10 minutes later
+ * (instead of 1 then 10 minutes). With FSRS the later intervals do the remembering, and extra
+ * same-day steps mostly cost time. The session shows repeats up to LEARN_AHEAD early, so it
+ * ends in one go.
+ */
+const scheduler = fsrs({ enable_fuzz: true, learning_steps: ["10m"], relearning_steps: ["10m"] });
 
 /** No new words on a day with more reviews than this: catch up first. */
 const BACKLOG = 120;
@@ -89,6 +95,8 @@ export async function counts(userId: string) {
         // A new German→English card can't be held back: its sibling only starts after it.
         newWords: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} is null)::int`,
         followUps: sql<number>`count(*) filter (where ${cards.direction} = 'en_de' and ${cards.introducedAt} is null and coalesce(${sibling.introducedAt} < ${DAY_START}, false) and ${SIBLING_FREE})::int`,
+        // Words waiting for their short repeat: the session shows them soon.
+        repeats: sql<number>`count(*) filter (where ${cards.introducedAt} is not null and coalesce(${cards.due} > now() and ${cards.due} <= ${LEARN_AHEAD}, false) and ${SIBLING_FREE})::int`,
         startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
         // Reviews of already-learned cards done today: with `due`, the day's review load.
         reviewedToday: sql<number>`(select count(distinct card_id) from review_logs where user_id = ${userId} and state <> 0 and reviewed_at >= ${DAY_START})::int`,
@@ -104,6 +112,7 @@ export async function counts(userId: string) {
     due = 0,
     newWords = 0,
     followUps = 0,
+    repeats = 0,
     startedToday = 0,
     reviewedToday = 0,
     extra = 0,
@@ -111,8 +120,23 @@ export async function counts(userId: string) {
   // A heavy review day (done or waiting) gets no new words, so the backlog can shrink.
   const paused = due + reviewedToday > BACKLOG;
   const budget = paused ? 0 : Math.max(newPerDay + extra - startedToday, 0);
-  return { due, newLeft: Math.min(budget, newWords), followUps, paused, backlog: BACKLOG };
+  return {
+    due,
+    newLeft: Math.min(budget, newWords),
+    followUps,
+    repeats,
+    paused,
+    backlog: BACKLOG,
+  };
 }
+
+/** What is left of today's session, for its counter: reviews, new words, short repeats. */
+export type SessionLeft = { reviews: number; fresh: number; repeats: number };
+export const sessionLeft = (c: Awaited<ReturnType<typeof counts>>): SessionLeft => ({
+  reviews: c.due,
+  fresh: c.newLeft + c.followUps,
+  repeats: c.repeats,
+});
 
 const ITEM = {
   cardId: cards.id,

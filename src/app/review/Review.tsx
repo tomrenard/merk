@@ -11,6 +11,7 @@ import {
   spokenForm,
   type TypedResult,
 } from "@/lib/german";
+import type { SessionLeft } from "@/lib/review";
 import { Exercise } from "../learn/Exercise";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
@@ -54,16 +55,17 @@ const TRICKY = 8;
 
 type Props = {
   first: ReviewItem | null;
-  /** Cards in this session, as far as known at the start (new learning steps may add some). */
-  total: number;
+  /** What is left of today's session when it starts; the server updates it after each answer. */
+  left: SessionLeft;
   limit: number | null;
   /** Today's lesson part, if not done yet: where the end screen leads. */
   lesson: { href: string; label: string } | null;
 };
 
-export function Review({ first, total, limit, lesson }: Props) {
+export function Review({ first, left: initial, limit, lesson }: Props) {
   const [item, setItem] = useState(first);
   const [done, setDone] = useState(0);
+  const [left, setLeft] = useState(initial);
   const [remembered, setRemembered] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [typed, setTyped] = useState("");
@@ -93,7 +95,8 @@ export function Review({ first, total, limit, lesson }: Props) {
       setRevealed(false);
       setTyped("");
       shownAt.current = Date.now();
-      setItem(next);
+      setItem(next.item);
+      setLeft(next.left);
     });
   }
 
@@ -120,8 +123,15 @@ export function Review({ first, total, limit, lesson }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   });
 
+  // Cards still to see; a missed one adds a repeat, so the count can grow by one on "Again".
+  const toGo = Math.min(
+    left.reviews + left.repeats + left.fresh,
+    limit === null ? Number.POSITIVE_INFINITY : Math.max(limit - done, 0),
+  );
+  const rate = done ? Math.round((100 * remembered) / done) : null;
+  const toLater = left.reviews + left.repeats + left.fresh;
+
   if (!item || ended) {
-    const rate = done ? Math.round((100 * remembered) / done) : null;
     return (
       <main className="screen justify-center text-center">
         <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
@@ -129,8 +139,12 @@ export function Review({ first, total, limit, lesson }: Props) {
         </span>
         <p className="text-3xl font-black">{item ? "Session done!" : "Fertig für heute!"}</p>
         <p className="muted font-semibold">
-          {done ? `${done} cards · ${rate}% remembered` : "Nothing was due."}
-          {item ? " The rest waits for your next session." : ""}
+          {done ? `${done} answers · ${rate}% remembered. ` : ""}
+          {item
+            ? `${toLater} ${toLater === 1 ? "card is" : "cards are"} left for another session.`
+            : done
+              ? "Nothing else is due right now. New words come tomorrow."
+              : "Nothing is due right now. New words come tomorrow."}
         </p>
         <div className="flex w-full flex-col gap-3">
           {lesson ? (
@@ -154,25 +168,42 @@ export function Review({ first, total, limit, lesson }: Props) {
     );
   }
 
-  /** ✕, progress through the session, cards left, sound switch. */
-  const left = Math.max(total - done, 0);
+  /** What the counter says: the parts that are left, e.g. "3 new · 5 reviews · 2 repeats". */
+  const parts = [
+    left.fresh && `${left.fresh} new`,
+    left.reviews && `${left.reviews} review${left.reviews === 1 ? "" : "s"}`,
+    left.repeats && `${left.repeats} repeat${left.repeats === 1 ? "" : "s"}`,
+  ].filter(Boolean);
+  /** ✕, progress through the session, what is left, sound switch. */
   const header = (chip: React.ReactNode) => (
     <header className="flex flex-col gap-2">
       <div className="topbar">
         <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
           ✕
         </Link>
-        <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
+        <div
+          role="progressbar"
+          aria-label="Session progress"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={Math.round((100 * done) / (done + toGo || 1))}
+          className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]"
+        >
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
-            style={{ width: `${total ? Math.min(100, (100 * done) / total) : 0}%` }}
+            style={{ width: `${(100 * done) / (done + toGo || 1)}%` }}
           />
         </div>
         <SoundToggle />
       </div>
       <div className="flex items-center justify-between gap-2 text-sm">
         {chip}
-        <span className="muted font-bold">{left ? `${left} left` : "almost done"}</span>
+        <span className="muted text-right font-bold">
+          {toGo <= 1 ? "Last card" : `${toGo} to go`}
+          {parts.length > 1 && (
+            <span className="block text-xs font-semibold">{parts.join(" · ")}</span>
+          )}
+        </span>
       </div>
     </header>
   );
@@ -309,6 +340,11 @@ export function Review({ first, total, limit, lesson }: Props) {
                 </button>
               ))}
             </div>
+            {ratings.includes(1) && (
+              <p className="muted text-center text-xs font-semibold">
+                {ratings.length === 1 ? "It" : "Again:"} comes back in about 10 minutes.
+              </p>
+            )}
             {result === "wrong" && (
               <button type="button" disabled={pending} onClick={() => answer(3)} className="btn">
                 I was right

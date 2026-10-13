@@ -202,3 +202,46 @@ describe("two people", () => {
     expect(await nextCard(U)).toBeNull();
   });
 });
+
+describe("a session ends", () => {
+  it("shows each new word once, a missed one once more, then is done", async () => {
+    // beforeEach seeds three words; all new today.
+    expect(await counts(U)).toMatchObject({ due: 0, newLeft: 3, repeats: 0 });
+    const seen: string[] = [];
+    for (let card = await nextCard(U); card; card = await nextCard(U)) {
+      // The first word is missed the first time.
+      const missed = seen.length === 0;
+      seen.push(card.cardId);
+      await grade(U, card.cardId, missed ? 1 : 3, 1000, card.reps);
+      if (seen.length > 20) throw new Error("session never ends");
+    }
+    expect(seen).toHaveLength(4);
+    expect(seen.filter((id) => id === seen[0])).toHaveLength(2);
+    expect(await counts(U)).toMatchObject({ due: 0, newLeft: 0, repeats: 0 });
+  });
+
+  it("counts a missed word as a repeat about 10 minutes away", async () => {
+    const card = await nextCard(U);
+    if (!card) throw new Error("no card");
+    await grade(U, card.cardId, 1, 1000, card.reps);
+    const [row] = await db.select({ due: cards.due }).from(cards).where(eq(cards.id, card.cardId));
+    const minutes = ((row?.due?.getTime() ?? 0) - Date.now()) / 60_000;
+    expect(minutes).toBeGreaterThan(8);
+    expect(minutes).toBeLessThan(12);
+    expect((await counts(U)).repeats).toBe(1);
+  });
+});
+
+describe("repeats", () => {
+  it("leaves out a card held back because its other direction was reviewed today", async () => {
+    // eins:de_en reviewed today; eins:en_de (a review card) due in 5 minutes is held until tomorrow.
+    await started("eins:de_en", State.Review);
+    await grade(U, "eins:de_en", 3, 1000, 3);
+    await started("eins:en_de", State.Review);
+    await db
+      .update(cards)
+      .set({ due: new Date(Date.now() + 5 * 60_000) })
+      .where(eq(cards.id, "eins:en_de"));
+    expect((await counts(U)).repeats).toBe(0);
+  });
+});

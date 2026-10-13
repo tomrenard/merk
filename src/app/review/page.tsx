@@ -1,5 +1,5 @@
 import { courseProgress, lastUnitId, lessonDoneToday, nextStep, withExercise } from "@/lib/course";
-import { counts, nextCard } from "@/lib/review";
+import { counts, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Review } from "./Review";
 
@@ -14,7 +14,7 @@ export default async function ReviewPage({
   const userId = await requireUser();
   const asked = (await searchParams).limit;
   const limit = [10, 30, 60].find((n) => String(n) === asked) ?? null;
-  const [first, { due, newLeft, followUps }, progress, last, lessonDone] = await Promise.all([
+  const [first, left, progress, last, lessonDone] = await Promise.all([
     nextCard(userId),
     counts(userId),
     courseProgress(userId),
@@ -22,11 +22,10 @@ export default async function ReviewPage({
     lessonDoneToday(userId),
   ]);
   const step = lessonDone ? null : nextStep(progress, last);
-  const total = Math.min(due + newLeft + followUps, limit ?? Number.POSITIVE_INFINITY);
   return (
     <Review
       first={withExercise(first)}
-      total={total}
+      left={sessionLeft(left)}
       limit={limit}
       lesson={step && { href: step.href, label: step.label }}
     />

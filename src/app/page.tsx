@@ -68,7 +68,7 @@ const minutes = (cards: number) => Math.max(1, Math.round((cards * 8) / 60));
 export default async function Home() {
   const userId = await requireUser();
   const [
-    { due, newLeft, followUps, paused, backlog },
+    { due: dueNow, repeats, newLeft, followUps, paused, backlog },
     { reviewsToday, streak },
     { remembered, known },
     course,
@@ -82,6 +82,8 @@ export default async function Home() {
     lastUnitId(userId),
     lessonDoneToday(userId),
   ]);
+  // Reviews include missed words coming back within minutes: the session shows them now.
+  const due = dueNow + repeats;
   const cards = due + newLeft + followUps;
   const step = nextStep(course, last);
   const lessonHref = step?.href ?? "/learn";

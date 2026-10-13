@@ -2,9 +2,10 @@ import type { UnitItem } from "./units";
 
 /**
  * Lesson and exam sentences have a recorded voice (generated once by scripts/gen-audio.ts),
- * stored as a/<key>.m4a on the public Blob store. Anything else uses the phone's voice.
+ * stored as a/<key>.m4a in the public tomrenard/merk-audio repo and served by GitHub Pages
+ * (free, no request limits that matter here). Anything else uses the phone's voice.
  */
-export const AUDIO_BASE = "https://kaxaeswegr2oz4a9.public.blob.vercel-storage.com";
+export const AUDIO_BASE = "https://tomrenard.github.io/merk-audio";
 
 export const normalize = (text: string) => text.replace(/\s+/g, " ").trim();
 

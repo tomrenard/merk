@@ -1,16 +1,23 @@
 /**
  * Records every lesson and exam sentence once with Gemini's German voices (Kore; Charon for the
- * second speaker of a dialogue) through AI Gateway, and stores them on the public Blob store as
- * a/<audioKey>.m4a. Sentences already stored are skipped, so re-runs cost nothing.
+ * second speaker of a dialogue) through AI Gateway, as a/<audioKey>.m4a in a clone of the public
+ * tomrenard/merk-audio repo (GitHub Pages serves it: see AUDIO_BASE). Sentences already there
+ * are skipped, so re-runs cost nothing; commit and push the new files afterwards.
  *
- * Needs AI_GATEWAY_API_KEY (a capped one-off key) and BLOB_READ_WRITE_TOKEN. macOS only
- * (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N.
+ * Needs AI_GATEWAY_API_KEY (a capped one-off key). AUDIO_DIR: the clone (default ../merk-audio).
+ * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N.
  */
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { list, put } from "@vercel/blob";
 import { audioKey, normalize, solved } from "../src/lib/audio.ts";
 import type { Exam } from "../src/lib/exams.ts";
 import type { Unit, UnitItem } from "../src/lib/units.ts";
@@ -23,8 +30,9 @@ const dry = process.argv.includes("--dry");
 const limitAt = process.argv.indexOf("--limit");
 const limit = limitAt > 0 ? Number(process.argv[limitAt + 1]) : Number.POSITIVE_INFINITY;
 
-if (!process.env.AI_GATEWAY_API_KEY || !process.env.BLOB_READ_WRITE_TOKEN)
-  throw new Error("Needs AI_GATEWAY_API_KEY and BLOB_READ_WRITE_TOKEN");
+const out = join(process.env.AUDIO_DIR ?? "../merk-audio", "a");
+if (!existsSync(join(out, ".."))) throw new Error(`No audio repo clone at ${join(out, "..")}`);
+mkdirSync(out, { recursive: true });
 
 const json = <T>(file: string): T => JSON.parse(readFileSync(file, "utf8"));
 const units = readdirSync("data/units").map((f) => json<Unit>(`data/units/${f}`));
@@ -58,13 +66,7 @@ for (const exam of exams) {
   for (const task of [...exam.schreiben, ...exam.sprechen]) add(task.model);
 }
 
-const stored = new Set<string>();
-let cursor: string | undefined;
-do {
-  const page = await list({ prefix: "a/", cursor, limit: 1000 });
-  for (const blob of page.blobs) stored.add(blob.pathname.slice(2, -4));
-  cursor = page.hasMore ? page.cursor : undefined;
-} while (cursor);
+const stored = new Set(readdirSync(out).map((f) => f.replace(/\.m4a$/, "")));
 
 const todo = [...wanted].filter(([key]) => !stored.has(key)).slice(0, limit);
 const chars = todo.reduce((sum, [, s]) => sum + s.text.length, 0);
@@ -72,6 +74,7 @@ console.log(
   `${wanted.size} sentences, ${stored.size} stored, ${todo.length} to record (${chars} chars)`,
 );
 if (dry) process.exit(0);
+if (!process.env.AI_GATEWAY_API_KEY) throw new Error("Needs AI_GATEWAY_API_KEY");
 
 const dir = mkdtempSync(join(tmpdir(), "merk-audio-"));
 async function record(key: string, { text, voice }: { text: string; voice: string }) {
@@ -90,16 +93,17 @@ async function record(key: string, { text, voice }: { text: string; voice: strin
     const body = (await res.json().catch(() => ({}))) as { audio?: string };
     if (res.ok && body.audio) {
       const wav = join(dir, `${key}.wav`);
-      const m4a = join(dir, `${key}.m4a`);
       writeFileSync(wav, Buffer.from(body.audio, "base64"));
-      execFileSync("afconvert", ["-f", "m4af", "-d", "aac", "-b", "32000", wav, m4a]);
-      await put(`a/${key}.m4a`, readFileSync(m4a), {
-        access: "public",
-        addRandomSuffix: false,
-        allowOverwrite: true,
-        contentType: "audio/mp4",
-        cacheControlMaxAge: 31_536_000,
-      });
+      execFileSync("afconvert", [
+        "-f",
+        "m4af",
+        "-d",
+        "aac",
+        "-b",
+        "32000",
+        wav,
+        join(out, `${key}.m4a`),
+      ]);
       return;
     }
     // A spent budget (402) or a bad request won't get better by retrying.

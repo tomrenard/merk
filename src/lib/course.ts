@@ -144,6 +144,25 @@ export function currentPart(progress: Progress): CoursePart | undefined {
   );
 }
 
+/**
+ * What the placement test put behind you. The latest "placed" row wins (a retaken test can move
+ * you back) and replaces the per-lesson "placement" rows from before it existed.
+ */
+export function skippedBy(rows: { kind: string; ref: string; at: Date | null }[]): Set<string> {
+  const placed = rows
+    .filter((row) => row.kind === "placed")
+    .sort((a, b) => (b.at?.getTime() ?? 0) - (a.at?.getTime() ?? 0))[0];
+  if (!placed) return new Set(rows.filter((row) => row.kind === "placement").map((row) => row.ref));
+  // ponytail: a start lesson no longer in the course skips nothing; keep lesson ids stable.
+  const start = placed.ref === "end" ? UNITS.length : UNITS.findIndex((u) => u.id === placed.ref);
+  const behind = UNITS.slice(0, Math.max(start, 0));
+  const skipped = new Set(behind.map((unit) => unit.id));
+  for (const part of COURSE)
+    if (part.units.every((unit) => behind.includes(unit)))
+      for (const exam of part.exams) skipped.add(`exam:${exam.id}`);
+  return skipped;
+}
+
 export async function courseProgress(userId: string): Promise<Progress> {
   const rows = await db()
     .select({
@@ -156,25 +175,9 @@ export async function courseProgress(userId: string): Promise<Progress> {
     .where(and(eq(activityLogs.userId, userId), inArray(activityLogs.kind, KINDS)))
     .groupBy(activityLogs.ref, activityLogs.kind);
   const progress: Progress = new Map();
-  progress.skipped = new Set();
-  // The latest placement wins, so a retaken test can also move you back.
-  const placed = rows
-    .filter((row) => row.kind === "placed")
-    .sort((a, b) => (b.at?.getTime() ?? 0) - (a.at?.getTime() ?? 0))[0];
-  if (placed) {
-    const start = placed.ref === "end" ? UNITS.length : UNITS.findIndex((u) => u.id === placed.ref);
-    const behind = UNITS.slice(0, Math.max(start, 0));
-    for (const unit of behind) progress.skipped.add(unit.id);
-    for (const part of COURSE)
-      if (part.units.every((unit) => behind.includes(unit)))
-        for (const exam of part.exams) progress.skipped.add(`exam:${exam.id}`);
-  }
+  progress.skipped = skippedBy(rows);
   for (const row of rows) {
-    if (row.kind === "placed") continue;
-    if (row.kind === "placement") {
-      progress.skipped.add(row.ref);
-      continue;
-    }
+    if (row.kind === "placed" || row.kind === "placement") continue;
     const parts = progress.get(row.ref) ?? new Map();
     if (row.ref.startsWith("exam:")) {
       parts.set("unit", Math.max(parts.get("unit") ?? 0, row.best ?? 0));
@@ -227,9 +230,8 @@ export function nextStep(progress: Progress, lastUnitId?: string | null): Step |
   if (last && lastPart) return lessonStep(last, lastPart);
   for (const part of COURSE) {
     for (const unit of part.units) {
-      if (!lessonDue(progress, unit)) continue;
-      const undone = PARTS.find((p) => !progress.get(unit.id)?.has(p.kind));
-      if (undone) return lessonStep(unit, undone);
+      if (lessonDue(progress, unit))
+        return lessonStep(unit, PARTS.find((p) => !progress.get(unit.id)?.has(p.kind)) ?? PARTS[0]);
     }
     const exam = part.exams.find((e) => examDue(progress, e));
     if (exam) return examStep(exam);

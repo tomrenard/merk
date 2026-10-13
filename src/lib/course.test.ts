@@ -8,6 +8,7 @@ import {
   PARTS,
   PASS,
   type Progress,
+  skippedBy,
   UNITS,
   unitDone,
 } from "./course";
@@ -103,5 +104,38 @@ describe("skipped by the placement test", () => {
     expect(currentPart(progress)?.id).toBe(after?.id);
     expect(part && unitDone(progress, part.units[0] as Unit)).toBe(false);
     expect(part && examPassed(progress, part.exams[0] as CourseExam)).toBe(false);
+  });
+});
+
+describe("skippedBy", () => {
+  const at = (day: number) => new Date(2026, 9, day);
+  const [first, second] = COURSE;
+  const startOf = (part: typeof first) => part?.units[0]?.id ?? "";
+
+  it("skips lessons before the start lesson, and exams of parts wholly before it", () => {
+    const skipped = skippedBy([{ kind: "placed", ref: startOf(second), at: at(1) }]);
+    expect(first?.units.every((unit) => skipped.has(unit.id))).toBe(true);
+    expect(first?.exams.every((exam) => skipped.has(`exam:${exam.id}`))).toBe(true);
+    expect(skipped.has(startOf(second))).toBe(false);
+    expect(second?.exams.some((exam) => skipped.has(`exam:${exam.id}`))).toBe(false);
+  });
+
+  it("keeps a part's exams due when it starts mid-part", () => {
+    const skipped = skippedBy([{ kind: "placed", ref: first?.units[1]?.id ?? "", at: at(1) }]);
+    expect(skipped.has(startOf(first))).toBe(true);
+    expect(first?.exams.some((exam) => skipped.has(`exam:${exam.id}`))).toBe(false);
+  });
+
+  it("lets the latest placement win over older ones and per-lesson rows", () => {
+    const rows = [
+      { kind: "placement", ref: startOf(second), at: at(1) },
+      { kind: "placed", ref: startOf(second), at: at(2) },
+      { kind: "placed", ref: startOf(first), at: at(3) },
+    ];
+    expect(skippedBy(rows).size).toBe(0);
+    expect(skippedBy([{ kind: "placed", ref: "end", at: at(1) }]).size).toBeGreaterThan(
+      UNITS.length,
+    );
+    expect(skippedBy([{ kind: "placement", ref: "a1-01", at: at(1) }])).toEqual(new Set(["a1-01"]));
   });
 });

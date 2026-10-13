@@ -37,15 +37,22 @@ export const partLabel = (unit: Unit, part: Part): string =>
 export const partIcon = (unit: Unit, part: Part): string =>
   part.kind === "unit" ? FIRST[kindOf(unit)].icon : part.icon;
 
-/** Whole lessons marked done without doing the parts: a passed test-out, or the placement test. */
-const SKIPPED = ["tested", "placement"];
-const KINDS = [...PARTS.map((part) => part.kind), ...SKIPPED, "exam"];
+/**
+ * "tested": a passed test-out, which counts the whole lesson as done. "placed": the placement
+ * test's start lesson (ref), so everything before it in today's course order is skipped, lessons
+ * added later included. "placement": one row per skipped lesson or exam, from before "placed".
+ */
+const KINDS = [...PARTS.map((part) => part.kind), "tested", "placed", "placement", "exam"];
 
 /**
  * Per lesson, the best score of each part done (main lesson: the check; other parts: 1). Exams
- * are in the same map under "exam:<id>" with their best percentage as "unit".
+ * are in the same map under "exam:<id>" with their best percentage as "unit". `skipped` holds
+ * the lessons and "exam:<id>"s the placement test put behind you: not done, but the path and
+ * exams don't wait for them.
  */
-export type Progress = Map<string, Map<PartKind, number>>;
+export type Progress = Map<string, Map<PartKind, number>> & { skipped?: Set<string> };
+
+export const isSkipped = (progress: Progress, ref: string) => progress.skipped?.has(ref) ?? false;
 
 /** Right answers out of CHECK_SIZE needed to count a lesson's check as passed. */
 export const CHECK_SIZE = 6;
@@ -102,6 +109,14 @@ export function examScore(progress: Progress, exam: CourseExam): number | undefi
 export const examPassed = (progress: Progress, exam: CourseExam) =>
   (examScore(progress, exam) ?? 0) >= exam.pass;
 
+/** An exam the path waits at: not passed, and not skipped by the placement test. */
+const examDue = (progress: Progress, exam: CourseExam) =>
+  !examPassed(progress, exam) && !isSkipped(progress, `exam:${exam.id}`);
+
+/** A lesson the path still asks for: a part left, unless the placement test skipped it. */
+const lessonDue = (progress: Progress, unit: Unit) =>
+  !isSkipped(progress, unit.id) && (progress.get(unit.id)?.size ?? 0) < PARTS.length;
+
 /** A lesson with all four parts done and its check passed. */
 export const unitDone = (progress: Progress, unit: Unit) => {
   const done = progress.get(unit.id);
@@ -124,25 +139,46 @@ export function partProgress(progress: Progress, part: CoursePart) {
 export function currentPart(progress: Progress): CoursePart | undefined {
   return COURSE.find(
     (part) =>
-      part.units.some((unit) => (progress.get(unit.id)?.size ?? 0) < PARTS.length) ||
-      !partProgress(progress, part).passed,
+      part.units.some((unit) => lessonDue(progress, unit)) ||
+      part.exams.some((exam) => examDue(progress, exam)),
   );
 }
 
 export async function courseProgress(userId: string): Promise<Progress> {
   const rows = await db()
-    .select({ ref: activityLogs.ref, kind: activityLogs.kind, best: max(activityLogs.score) })
+    .select({
+      ref: activityLogs.ref,
+      kind: activityLogs.kind,
+      best: max(activityLogs.score),
+      at: max(activityLogs.at),
+    })
     .from(activityLogs)
     .where(and(eq(activityLogs.userId, userId), inArray(activityLogs.kind, KINDS)))
     .groupBy(activityLogs.ref, activityLogs.kind);
   const progress: Progress = new Map();
+  progress.skipped = new Set();
+  // The latest placement wins, so a retaken test can also move you back.
+  const placed = rows
+    .filter((row) => row.kind === "placed")
+    .sort((a, b) => (b.at?.getTime() ?? 0) - (a.at?.getTime() ?? 0))[0];
+  if (placed) {
+    const start = placed.ref === "end" ? UNITS.length : UNITS.findIndex((u) => u.id === placed.ref);
+    const behind = UNITS.slice(0, Math.max(start, 0));
+    for (const unit of behind) progress.skipped.add(unit.id);
+    for (const part of COURSE)
+      if (part.units.every((unit) => behind.includes(unit)))
+        for (const exam of part.exams) progress.skipped.add(`exam:${exam.id}`);
+  }
   for (const row of rows) {
+    if (row.kind === "placed") continue;
+    if (row.kind === "placement") {
+      progress.skipped.add(row.ref);
+      continue;
+    }
     const parts = progress.get(row.ref) ?? new Map();
     if (row.ref.startsWith("exam:")) {
-      // An exam skipped by the placement test counts as passed.
-      const score = SKIPPED.includes(row.kind) ? 100 : (row.best ?? 0);
-      parts.set("unit", Math.max(parts.get("unit") ?? 0, score));
-    } else if (SKIPPED.includes(row.kind)) {
+      parts.set("unit", Math.max(parts.get("unit") ?? 0, row.best ?? 0));
+    } else if (row.kind === "tested") {
       for (const part of PARTS) {
         parts.set(part.kind, Math.max(parts.get(part.kind) ?? 0, part.kind === "unit" ? PASS : 1));
       }
@@ -185,18 +221,22 @@ const examStep = (exam: CourseExam): Step => ({
  * order is finished first. Then failed lesson checks come back. Null when all is done.
  */
 export function nextStep(progress: Progress, lastUnitId?: string | null): Step | null {
-  const last = UNITS.find((unit) => unit.id === lastUnitId);
+  // A skipped lesson you only looked into doesn't take over the path.
+  const last = UNITS.find((unit) => unit.id === lastUnitId && !isSkipped(progress, unit.id));
   const lastPart = last && PARTS.find((p) => !progress.get(last.id)?.has(p.kind));
   if (last && lastPart) return lessonStep(last, lastPart);
   for (const part of COURSE) {
     for (const unit of part.units) {
+      if (!lessonDue(progress, unit)) continue;
       const undone = PARTS.find((p) => !progress.get(unit.id)?.has(p.kind));
       if (undone) return lessonStep(unit, undone);
     }
-    const exam = part.exams.find((e) => !examPassed(progress, e));
+    const exam = part.exams.find((e) => examDue(progress, e));
     if (exam) return examStep(exam);
   }
-  const retry = UNITS.find((unit) => (progress.get(unit.id)?.get("unit") ?? 0) < PASS);
+  const retry = UNITS.find(
+    (unit) => !isSkipped(progress, unit.id) && (progress.get(unit.id)?.get("unit") ?? 0) < PASS,
+  );
   return retry ? lessonStep(retry, PARTS[0]) : null;
 }
 

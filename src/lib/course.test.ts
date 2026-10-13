@@ -1,5 +1,17 @@
 import { describe, expect, it } from "vitest";
-import { COURSE, currentPart, nextStep, PARTS, PASS, type Progress, UNITS } from "./course";
+import {
+  COURSE,
+  type CourseExam,
+  currentPart,
+  examPassed,
+  nextStep,
+  PARTS,
+  PASS,
+  type Progress,
+  UNITS,
+  unitDone,
+} from "./course";
+import type { Unit } from "./units";
 
 const all = (score = PASS) =>
   new Map(PARTS.map((part) => [part.kind, part.kind === "unit" ? score : 1]));
@@ -74,5 +86,22 @@ describe("currentPart after a failed check", () => {
     const progress: Progress = new Map(part?.units.map((unit) => [unit.id, all(0)]));
     for (const [ref, score] of exams(100)) progress.set(ref, score);
     expect(currentPart(progress)?.id).toBe(after?.id);
+  });
+});
+
+describe("skipped by the placement test", () => {
+  it("walks past skipped lessons and exams without counting them as done", () => {
+    const [part, after] = COURSE;
+    const progress: Progress = new Map();
+    progress.skipped = new Set([
+      ...(part?.units.map((unit) => unit.id) ?? []),
+      ...(part?.exams.map((exam) => `exam:${exam.id}`) ?? []),
+    ]);
+    expect(nextStep(progress, part?.units[0]?.id)).toMatchObject({
+      unit: { id: after?.units[0]?.id },
+    });
+    expect(currentPart(progress)?.id).toBe(after?.id);
+    expect(part && unitDone(progress, part.units[0] as Unit)).toBe(false);
+    expect(part && examPassed(progress, part.exams[0] as CourseExam)).toBe(false);
   });
 });

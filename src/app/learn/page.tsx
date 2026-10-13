@@ -6,6 +6,7 @@ import {
   currentPart,
   examPassed,
   examScore,
+  isSkipped,
   lastUnitId,
   nextStep,
   PARTS,
@@ -48,6 +49,7 @@ function ExamCard({
 }) {
   const score = examScore(progress, exam);
   const passed = examPassed(progress, exam);
+  const skipped = !passed && isSkipped(progress, `exam:${exam.id}`);
   return (
     <Go
       href={`/exam/${exam.id}`}
@@ -66,9 +68,11 @@ function ExamCard({
         <span className="muted text-sm font-semibold">
           {passed
             ? `Passed · best ${score}%`
-            : score !== undefined
-              ? `Best ${score}% · ${exam.pass}% to pass`
-              : `${exam.pass}% to pass`}
+            : skipped
+              ? "Skipped by your placement test"
+              : score !== undefined
+                ? `Best ${score}% · ${exam.pass}% to pass`
+                : `${exam.pass}% to pass`}
         </span>
       </span>
       <span aria-hidden="true" className="muted text-2xl font-black">
@@ -118,6 +122,9 @@ export default async function CoursePage({
           ? section.units.filter((unit) => progress.get(unit.id)?.has(part.kind)).length
           : partProgress(progress, section).done;
         const passed = partProgress(progress, section).passed;
+        const skipped = section.units.filter(
+          (unit) => isSkipped(progress, unit.id) && !unitDone(progress, unit),
+        ).length;
         const newLevel = COURSE[i - 1]?.level !== section.level;
         return (
           <section key={section.id} id={section.id} className="flex flex-col gap-3">
@@ -150,6 +157,7 @@ export default async function CoursePage({
                 </span>
                 <span className="muted text-sm font-bold">
                   {finished}/{section.units.length}
+                  {skipped > 0 && !part && ` · ${skipped} skipped`}
                 </span>
                 <span
                   aria-hidden="true"
@@ -191,6 +199,7 @@ export default async function CoursePage({
                               done.size > 0 &&
                               !isDone &&
                               ` · ${done.size}/${PARTS.length} parts`}
+                            {!isDone && isSkipped(progress, unit.id) && " · Skipped"}
                           </span>
                         </span>
                         <span aria-hidden="true" className="muted text-2xl font-black">

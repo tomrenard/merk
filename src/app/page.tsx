@@ -105,22 +105,26 @@ export default async function Home() {
         </span>
       </header>
 
-      {course.size === 0 && known === 0 && remembered === null && reviewsToday === 0 && (
-        <Go href="/placement" className="card flex items-center gap-3 border-[var(--brand)]">
-          <span aria-hidden="true" className="icon bg-[var(--brand-soft)]">
-            🧭
-          </span>
-          <span className="flex-1">
-            <span className="block font-extrabold">Find your level</span>
-            <span className="muted text-sm font-semibold">
-              10 minutes, so you don't start too easy
+      {course.size === 0 &&
+        !course.skipped?.size &&
+        known === 0 &&
+        remembered === null &&
+        reviewsToday === 0 && (
+          <Go href="/placement" className="card flex items-center gap-3 border-[var(--brand)]">
+            <span aria-hidden="true" className="icon bg-[var(--brand-soft)]">
+              🧭
             </span>
-          </span>
-          <span aria-hidden="true" className="muted text-2xl font-black">
-            ›
-          </span>
-        </Go>
-      )}
+            <span className="flex-1">
+              <span className="block font-extrabold">Find your level</span>
+              <span className="muted text-sm font-semibold">
+                10 minutes, so you don't start too easy
+              </span>
+            </span>
+            <span aria-hidden="true" className="muted text-2xl font-black">
+              ›
+            </span>
+          </Go>
+        )}
 
       <section className="card flex flex-col gap-1 pt-4 pb-2">
         <h2 className="text-2xl font-black">

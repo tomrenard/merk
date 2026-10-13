@@ -3,16 +3,16 @@
 import { and, eq, gte, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { COURSE, UNITS } from "@/lib/course";
+import { UNITS } from "@/lib/course";
 import { freshPages } from "@/lib/fresh";
 import { markKnown, startUnitCards } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { wordBands } from "./data";
 
 /**
- * Applies a placement result: lessons before `startUnit` (course order) count as done (kind
- * "placement", each with a review card so gaps show up), and so do the exams of parts skipped
- * whole. If asked, known words are scheduled weeks out:
+ * Applies a placement result: one "placed" row with the start lesson, so lessons before it (and
+ * exams of parts before it) count as skipped, even ones added to the course later. Each skipped
+ * lesson gets a review card so gaps show up. If asked, known words are scheduled weeks out:
  * whole bands the test is confident about plus each word confirmed by a meaning check.
  */
 export async function applyPlacement(input: {
@@ -44,29 +44,10 @@ export async function applyPlacement(input: {
   const confirmed = (Array.isArray(input.confirmedWords) ? input.confirmedWords : [])
     .filter((id): id is string => typeof id === "string" && id.length <= 80)
     .slice(0, 200);
-  const done = UNITS.slice(0, start);
-  if (done.length) {
-    await db()
-      .insert(activityLogs)
-      .values(
-        done.map((unit) => ({ userId, kind: "placement", ref: unit.id, score: 1, total: 1 })),
-      );
-    await startUnitCards(userId, done, 27);
-    const skipped = COURSE.filter((part) => part.units.every((u) => done.includes(u)));
-    const exams = skipped.flatMap((part) => part.exams);
-    if (exams.length)
-      await db()
-        .insert(activityLogs)
-        .values(
-          exams.map((exam) => ({
-            userId,
-            kind: "placement",
-            ref: `exam:${exam.id}`,
-            score: 1,
-            total: 1,
-          })),
-        );
-  }
+  await db()
+    .insert(activityLogs)
+    .values({ userId, kind: "placed", ref: UNITS[start]?.id ?? "end" });
+  await startUnitCards(userId, UNITS.slice(0, start), 27);
   if (input.markWords) {
     const bands = await wordBands();
     const ids = new Set(confirmed);

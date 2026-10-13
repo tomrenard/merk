@@ -2,21 +2,13 @@
 
 import { useEffect, useState } from "react";
 import type { Failure } from "@/lib/ai";
-import { sameAnswer } from "@/lib/german";
+import { spokenWords } from "@/lib/german";
 import type { Unit } from "@/lib/units";
 import { transcribeRecording } from "../../../ai/actions";
 import { AiFailure } from "../../../ai/Feedback";
 import { recordingForm, useRecorder } from "../../../ai/useRecorder";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
-
-/** Lower-case words without punctuation, to compare what was said with the line. */
-const words = (text: string) =>
-  text
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s]/gu, " ")
-    .split(/\s+/)
-    .filter(Boolean);
 
 /**
  * Repeat each line: hear it, record yourself (it stops by itself after about the line's length),
@@ -36,11 +28,11 @@ export function Speak({
   const [heard, setHeard] = useState<string | null>(null);
   const [failure, setFailure] = useState<Failure | null>(null);
   const [listening, setListening] = useState(false);
+  const line = lines[index];
   // Enough time for the line said slowly, then it stops and checks by itself.
-  const seconds = Math.min(20, 3 + Math.ceil((lines[index]?.de.split(" ").length ?? 5) * 0.7));
+  const seconds = Math.min(20, 3 + Math.ceil((line?.de.split(" ").length ?? 5) * 0.7));
   const { recording, clip, error, start, stop, reset } = useRecorder(seconds);
   const { finished, failed, saving, save, retry } = usePartSave(unit.id, "speak");
-  const line = lines[index];
 
   // Each new recording is written down once.
   useEffect(() => {
@@ -83,6 +75,14 @@ export function Speak({
     );
   }
 
+  // Which words of the line didn't come through (order, fillers and repeats don't matter).
+  const said = new Set(spokenWords(heard ?? ""));
+  const shown = line.de.split(" ").map((word) => ({
+    word,
+    missed: spokenWords(word).some((w) => !said.has(w)),
+  }));
+  const missed = shown.filter((w) => w.missed).map((w) => w.word.replace(/[.,!?;:]/g, ""));
+
   return (
     <PartShell unitId={unit.id} progress={index / lines.length}>
       <p className="muted text-sm font-extrabold">
@@ -116,23 +116,17 @@ export function Speak({
       {heard !== null && (
         <div role="status" className="card flex flex-col gap-2">
           <p className="font-extrabold">
-            {sameAnswer(heard, line.de)
-              ? "✓ Perfect, every word came through."
-              : "Almost: the marked words didn't come through."}
+            {missed.length
+              ? `Didn't come through: ${missed.join(", ")}`
+              : "✓ Perfect, every word came through."}
           </p>
           <p className="text-lg font-semibold" lang="de">
-            {line.de.split(" ").map((word, i) => {
-              const missed = words(word).some((w) => !words(heard).includes(w));
-              return (
-                // biome-ignore lint/suspicious/noArrayIndexKey: words of a fixed sentence
-                <span
-                  key={i}
-                  className={missed ? "text-rose-600 underline dark:text-rose-400" : ""}
-                >
-                  {word}{" "}
-                </span>
-              );
-            })}
+            {shown.map(({ word, missed }, i) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey: words of a fixed sentence
+              <span key={i} className={missed ? "text-rose-600 underline dark:text-rose-400" : ""}>
+                {word}{" "}
+              </span>
+            ))}
           </p>
           <p className="muted text-sm">We heard: „{heard || "…"}“</p>
         </div>

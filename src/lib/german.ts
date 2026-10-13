@@ -156,6 +156,14 @@ export function sameAnswer(input: string, answer: string): boolean {
   return answerKey(input) === answerKey(answer);
 }
 
+/** The words of a sentence, spelled like answers are compared (case, umlauts, ß, punctuation). */
+export function spokenWords(text: string): string[] {
+  return normalize(text)
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
 export function isCorrect(input: string, headword: string, governs?: string | null): boolean {
   return checkTyped(input, headword, governs) === "right";
 }

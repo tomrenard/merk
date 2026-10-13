@@ -7,6 +7,7 @@ import {
   lemmaKeys,
   splitPlural,
   spokenForm,
+  spokenWords,
 } from "./german.ts";
 
 describe("articleOf", () => {
@@ -136,5 +137,19 @@ describe("sentences", () => {
       { text: "Noch einmal, bitte.", plural: false },
     ]);
     expect(checkTyped("Noch einmal bitte", "Noch einmal, bitte.")).toBe("right");
+  });
+});
+
+describe("spokenWords", () => {
+  it("compares spoken words like answers: case, punctuation, umlauts and ß", () => {
+    expect(spokenWords("Ich wohne in der Straße, oder?")).toEqual([
+      "ich",
+      "wohne",
+      "in",
+      "der",
+      "strasse",
+      "oder",
+    ]);
+    expect(spokenWords("Größe")).toEqual(spokenWords("groesse"));
   });
 });

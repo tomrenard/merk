@@ -1,9 +1,11 @@
 import {
   boolean,
+  date,
   index,
   integer,
   jsonb,
   pgTable,
+  primaryKey,
   serial,
   smallint,
   text,
@@ -151,3 +153,36 @@ export const settings = pgTable("user_settings", {
   /** New words (German→English cards) per day; their English→German cards follow a day later. */
   newPerDay: smallint("new_per_day").notNull().default(7),
 });
+
+/** AI results per person (feedback, transcripts), kept so the same input never costs twice. */
+export const aiResults = pgTable(
+  "ai_results",
+  {
+    id: serial("id").primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    kind: text("kind").notNull(),
+    key: text("key").notNull(),
+    result: jsonb("result").notNull(),
+    at: timestamp("at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [uniqueIndex("ai_results_key_idx").on(t.userId, t.kind, t.key)],
+);
+
+/**
+ * AI calls per person and day, counted before each call (one atomic statement), so parallel
+ * requests and failed calls count against the daily limit too.
+ */
+export const aiUsage = pgTable(
+  "ai_usage",
+  {
+    userId: text("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    day: date("day").notNull(),
+    kind: text("kind").notNull(),
+    n: integer("n").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.day, t.kind] })],
+);

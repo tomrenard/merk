@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition } from "react";
+import type { Failure, Feedback } from "@/lib/ai";
 import type { Unit } from "@/lib/units";
+import { checkWriting } from "../../../ai/actions";
+import { AiFailure, FeedbackCard } from "../../../ai/Feedback";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
-/** Write a few sentences, then compare with a model answer and judge yourself. */
+/**
+ * Write a few sentences, get the AI teacher's feedback, then see a model answer. Without AI
+ * (daily limit, budget, offline) you compare with the model and judge yourself.
+ */
 export function Write({
   unit,
   after,
@@ -16,6 +22,21 @@ export function Write({
   useSpeechUnlock();
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
+  const [marked, setMarked] = useState<Feedback | null>(null);
+  const [failure, setFailure] = useState<Failure | null>(null);
+  const [checking, startChecking] = useTransition();
+
+  function check() {
+    startChecking(async () => {
+      const result = await checkWriting({ unit: unit.id }, text).catch(
+        (): Failure => ({ ok: false, reason: "error" }),
+      );
+      setFailure(result.ok ? null : result);
+      if (result.ok) setMarked(result.result);
+      // After a passing error the button stays, to try again; otherwise go on without AI.
+      if (result.ok || result.reason !== "error") setShown(true);
+    });
+  }
   const { finished, failed, saving, save, retry } = usePartSave(unit.id, "write");
 
   if (finished) {
@@ -38,6 +59,8 @@ export function Write({
       <textarea
         value={text}
         onChange={(event) => setText(event.target.value)}
+        readOnly={shown || checking}
+        maxLength={1500}
         rows={6}
         lang="de"
         autoCapitalize="sentences"
@@ -48,35 +71,51 @@ export function Write({
       {!shown ? (
         <button
           type="button"
-          disabled={!text.trim()}
-          onClick={() => setShown(true)}
+          disabled={!text.trim() || checking}
+          onClick={check}
           className="btn btn-primary disabled:opacity-50"
         >
-          Compare with a model
+          {checking ? "Checking…" : failure ? "Try again" : "Check my text"}
         </button>
-      ) : (
+      ) : null}
+      {!shown && failure && <AiFailure failure={failure} />}
+      {shown && (
         <>
+          {marked && <FeedbackCard feedback={marked} />}
+          {failure && <AiFailure failure={failure} />}
           <div className="card flex flex-col gap-2">
             <p className="muted text-sm font-extrabold">A model answer</p>
             <button
               type="button"
-              onClick={() => speak(unit.writing.model)}
+              onClick={() => speak(unit.writing.model, { recorded: true })}
               className="text-left font-semibold leading-relaxed"
             >
               {unit.writing.model} 🔊
             </button>
           </div>
-          <p className="muted text-sm font-semibold">
-            Yours can be different and still right. Did you use this unit's grammar correctly?
-          </p>
-          <div className="grid grid-cols-2 gap-2">
-            <button type="button" onClick={() => save(0, 1)} className="btn">
-              Not yet
+          {marked ? (
+            <button
+              type="button"
+              onClick={() => save(marked.score >= 60 ? 1 : 0, 1)}
+              className="btn btn-primary"
+            >
+              Finish
             </button>
-            <button type="button" onClick={() => save(1, 1)} className="btn btn-primary">
-              Yes
-            </button>
-          </div>
+          ) : (
+            <>
+              <p className="muted text-sm font-semibold">
+                Yours can be different and still right. Did you use this unit's grammar correctly?
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <button type="button" onClick={() => save(0, 1)} className="btn">
+                  Not yet
+                </button>
+                <button type="button" onClick={() => save(1, 1)} className="btn btn-primary">
+                  Yes
+                </button>
+              </div>
+            </>
+          )}
         </>
       )}
     </PartShell>

@@ -1,12 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
+import type { Failure, Feedback } from "@/lib/ai";
 import type { CourseExam } from "@/lib/course";
 import { examPercent, type Section } from "@/lib/exam-score";
 import type { Exam } from "@/lib/exams";
 import { seededShuffle } from "@/lib/shuffle";
+import { checkSpeaking, checkWriting } from "../ai/actions";
+import { AiFailure, FeedbackCard } from "../ai/Feedback";
+import { recordingForm, useRecorder } from "../ai/useRecorder";
 import { Exercise } from "../learn/Exercise";
-import { speak, useSpeechUnlock } from "../review/German";
+import { speak, stopSpeaking, useSpeechUnlock } from "../review/German";
 import { ExamBar, ExamIntro, ExamResult, useExamSave } from "./ExamShell";
 
 type Question = { q: string; options: string[]; answer: number };
@@ -20,7 +24,13 @@ type Step =
     }
   | { kind: "question"; section: Section; question: Question; text?: string; title?: string }
   | { kind: "item"; section: Section; item: Exam["sprachbausteine"][number]; n: number }
-  | { kind: "perform"; section: Section; task: Exam["schreiben"][number]; write: boolean };
+  | {
+      kind: "perform";
+      section: Section;
+      task: Exam["schreiben"][number];
+      write: boolean;
+      n: number;
+    };
 
 /** Options in a fixed shuffled order per question (same on server and phone), answer remapped. */
 function mixed(question: Question): Question {
@@ -57,10 +67,10 @@ function steps(content: Exam): Step[] {
       (item, n): Step => ({ kind: "item", section: "Sprachbausteine", item, n }),
     ),
     ...content.schreiben.map(
-      (task): Step => ({ kind: "perform", section: "Schreiben", task, write: true }),
+      (task, n): Step => ({ kind: "perform", section: "Schreiben", task, write: true, n }),
     ),
     ...content.sprechen.map(
-      (task): Step => ({ kind: "perform", section: "Sprechen", task, write: false }),
+      (task, n): Step => ({ kind: "perform", section: "Sprechen", task, write: false, n }),
     ),
   ];
 }
@@ -93,13 +103,18 @@ export function LevelExam({
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
   const [ticks, setTicks] = useState<boolean[]>([]);
+  // Writing and speaking: marked by the AI teacher; without it, ticked by yourself.
+  const [marked, setMarked] = useState<(Feedback & { heard?: string }) | null>(null);
+  const [failure, setFailure] = useState<Failure | null>(null);
+  const [checking, startChecking] = useTransition();
+  const recorder = useRecorder(60);
   const [playing, setPlaying] = useState<number | null>(null);
   const run = useRef(0);
   const { state, percent, save, retry } = useExamSave(exam);
   useEffect(
     () => () => {
       run.current++;
-      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      stopSpeaking();
     },
     [],
   );
@@ -114,6 +129,9 @@ export function LevelExam({
     setText("");
     setShown(false);
     setTicks([]);
+    setMarked(null);
+    setFailure(null);
+    recorder.reset();
     stopPlaying();
     if (index + 1 < all.length) return setIndex(index + 1);
     setIndex(all.length);
@@ -123,7 +141,7 @@ export function LevelExam({
   function stopPlaying() {
     run.current++;
     setPlaying(null);
-    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    stopSpeaking();
   }
 
   function play(lines: { speaker: string; de: string }[], from = 0, id = ++run.current) {
@@ -132,6 +150,7 @@ export function LevelExam({
     const speakers = [...new Set(lines.map((l) => l.speaker))];
     setPlaying(from);
     speak(line.de, {
+      recorded: true,
       second: speakers.indexOf(line.speaker) % 2 === 1,
       onEnd: () => {
         if (id === run.current) play(lines, from + 1, id);
@@ -266,6 +285,30 @@ export function LevelExam({
   }
 
   const checks = step.task.checklist;
+  const ref = {
+    exam: exam.level,
+    part: step.write ? "schreiben" : "sprechen",
+    index: step.n,
+  } as const;
+  const mark = () =>
+    startChecking(async () => {
+      const clip = recorder.clip;
+      const result = await (step.write || !clip
+        ? checkWriting(ref, text)
+        : checkSpeaking(recordingForm(clip.blob, { ref: JSON.stringify(ref) }))
+      ).catch((): Failure => ({ ok: false, reason: "error" }));
+      setFailure(result.ok ? null : result);
+      if (result.ok) {
+        setMarked({
+          ...result.result,
+          heard: "heard" in result ? String(result.heard) : undefined,
+        });
+        setTicks(checks.map((_, i) => result.result.checklist[i] ?? false));
+      }
+      // After a passing error the button stays, to try again; otherwise mark it yourself.
+      if (result.ok || result.reason !== "error") setShown(true);
+    });
+  const ready = step.write ? Boolean(text.trim()) : Boolean(recorder.clip);
   return (
     <main className="screen">
       {bar}
@@ -274,7 +317,8 @@ export function LevelExam({
         <textarea
           value={text}
           onChange={(event) => setText(event.target.value)}
-          readOnly={shown}
+          readOnly={shown || checking}
+          maxLength={1500}
           rows={7}
           lang="de"
           autoCapitalize="sentences"
@@ -282,37 +326,65 @@ export function LevelExam({
           className="field text-lg"
         />
       ) : (
-        <p className="muted font-semibold">
-          Say your answer out loud (about a minute), then compare.
-        </p>
+        !shown && (
+          <>
+            <p className="muted font-semibold">Record your answer (up to a minute).</p>
+            <button
+              type="button"
+              onClick={recorder.recording ? recorder.stop : recorder.start}
+              className={`btn btn-solid py-5 text-lg ${recorder.recording ? "[--c:#d63c3c]" : "[--c:var(--brand-fill)]"}`}
+            >
+              {recorder.recording ? "⏹ Stop" : recorder.clip ? "🎙 Record again" : "🎙 Record"}
+            </button>
+            {recorder.error && (
+              <p className="font-semibold text-rose-600 dark:text-rose-400">{recorder.error}</p>
+            )}
+            {recorder.clip && !recorder.recording && (
+              <button
+                type="button"
+                onClick={() => recorder.clip && new Audio(recorder.clip.url).play()}
+                className="btn"
+              >
+                ▶ Listen to yourself
+              </button>
+            )}
+          </>
+        )
       )}
       {!shown ? (
         <button
           type="button"
-          disabled={step.write && !text.trim()}
-          onClick={() => setShown(true)}
+          disabled={!ready || checking || recorder.recording}
+          onClick={mark}
           className="btn btn-primary disabled:opacity-50"
         >
-          Compare
+          {checking ? "Checking…" : failure ? "Try again" : "Check my answer"}
         </button>
-      ) : (
+      ) : null}
+      {!shown && failure && <AiFailure failure={failure} />}
+      {shown && (
         <>
+          {marked && <FeedbackCard feedback={marked} heard={marked.heard} />}
+          {failure && <AiFailure failure={failure} />}
           <div className="card flex flex-col gap-2">
             <p className="muted text-sm font-extrabold">A model answer</p>
             <button
               type="button"
-              onClick={() => speak(step.task.model)}
+              onClick={() => speak(step.task.model, { recorded: true })}
               className="text-left font-semibold leading-relaxed"
             >
               {step.task.model} 🔊
             </button>
           </div>
-          <p className="font-bold">Tick what your answer did:</p>
+          <p className="font-bold">
+            {marked ? "What your answer did:" : "Tick what your answer did:"}
+          </p>
           {checks.map((check, i) => (
             <label key={check} className="flex items-start gap-3 font-semibold">
               <input
                 type="checkbox"
                 checked={ticks[i] ?? false}
+                disabled={Boolean(marked)}
                 onChange={(event) =>
                   setTicks((t) => Object.assign([...t], { [i]: event.target.checked }))
                 }

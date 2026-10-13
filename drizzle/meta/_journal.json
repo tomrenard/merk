@@ -57,6 +57,13 @@
       "when": 1791827126499,
       "tag": "0007_fantastic_the_twelve",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791879004906,
+      "tag": "0008_icy_celestials",
+      "breakpoints": true
     }
   ]
 }

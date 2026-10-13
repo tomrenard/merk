@@ -98,7 +98,7 @@ export function PartExam({
         {bar("Listening")}
         <button
           type="button"
-          onClick={() => speak(line.de)}
+          onClick={() => speak(line.de, { recorded: true })}
           className="btn btn-primary py-5 text-xl"
         >
           🔊 Play
@@ -134,7 +134,11 @@ export function PartExam({
   return (
     <main className="screen">
       {bar("Dictation")}
-      <button type="button" onClick={() => speak(sentence)} className="btn self-start text-2xl">
+      <button
+        type="button"
+        onClick={() => speak(sentence, { recorded: true })}
+        className="btn self-start text-2xl"
+      >
         🔊 Play
       </button>
       <textarea

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { audioUrl } from "@/lib/audio";
 import { articleColor, splitPlural, spokenForm } from "@/lib/german";
 
 const MUTED = "merk-muted";
@@ -43,19 +44,27 @@ export function setVoice(voiceURI: string) {
   } catch {}
 }
 
-/**
- * Says `text` in German. `second` picks another German voice if the device has one (the other
- * speaker in a dialogue); `onEnd` runs when it finishes (or straight away when muted).
- */
-export function speak(
-  text: string,
-  { second = false, onEnd }: { second?: boolean; onEnd?: () => void } = {},
-) {
-  if (!("speechSynthesis" in window) || isMuted()) {
+/** One audio element for recorded sentences: iOS lets it play again once a tap has started it. */
+let player: HTMLAudioElement | null = null;
+const getPlayer = () => {
+  player ??= new Audio();
+  return player;
+};
+/** Bumped on every new sentence or stop, so late events of an old one are ignored. */
+let turn = 0;
+
+/** Stops whatever is being said, recorded or by the phone. */
+export function stopSpeaking() {
+  turn++;
+  player?.pause();
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+
+function deviceSpeak(text: string, second: boolean, onEnd?: () => void) {
+  if (!("speechSynthesis" in window)) {
     onEnd?.();
     return;
   }
-  speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "de-DE";
   const voices = germanVoices();
@@ -67,13 +76,61 @@ export function speak(
 }
 
 /**
- * iOS only speaks once a tap has started speech; until then automatic speech is silent. The
- * first tap anywhere speaks an empty utterance, so later automatic speech works.
+ * Says `text` in German. `recorded` plays the recorded voice of a lesson or exam sentence
+ * (falling back to the phone's voice when there is none); otherwise the phone speaks, with
+ * `second` picking another voice for the other speaker of a dialogue. `onEnd` runs when it
+ * finishes (or straight away when muted).
+ */
+export function speak(
+  text: string,
+  {
+    second = false,
+    recorded = false,
+    onEnd,
+  }: { second?: boolean; recorded?: boolean; onEnd?: () => void } = {},
+) {
+  stopSpeaking();
+  if (isMuted()) {
+    onEnd?.();
+    return;
+  }
+  if (!recorded) return deviceSpeak(text, second, onEnd);
+  const mine = turn;
+  const audio = getPlayer();
+  // A missing file both fires "error" and rejects play(): speak once, and only for this turn.
+  const fallback = () => {
+    if (mine !== turn) return;
+    const now = ++turn;
+    deviceSpeak(text, second, () => {
+      if (now === turn) onEnd?.();
+    });
+  };
+  audio.onended = () => {
+    if (mine === turn) onEnd?.();
+  };
+  audio.onerror = fallback;
+  audio.src = audioUrl(text);
+  audio.play().catch(fallback);
+}
+
+/** A silent sound, played on the first tap so iOS allows later automatic playback. */
+const SILENCE =
+  "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
+
+/**
+ * iOS only plays sound once a tap has started it; until then automatic speech is silent. The
+ * first tap anywhere starts both the phone's voice and the recorded-audio player.
  */
 export function useSpeechUnlock() {
   useEffect(() => {
-    if (!("speechSynthesis" in window)) return;
-    const unlock = () => speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+    const unlock = () => {
+      if ("speechSynthesis" in window) speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+      if (getPlayer().src) return;
+      getPlayer().src = SILENCE;
+      getPlayer()
+        .play()
+        .catch(() => {});
+    };
     window.addEventListener("pointerdown", unlock, { once: true });
     return () => window.removeEventListener("pointerdown", unlock);
   }, []);
@@ -89,7 +146,7 @@ export function SoundToggle() {
     try {
       localStorage.setItem(MUTED, next ? "1" : "0");
     } catch {}
-    if (next && "speechSynthesis" in window) speechSynthesis.cancel();
+    if (next) stopSpeaking();
   }
   return (
     <button

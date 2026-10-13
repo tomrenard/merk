@@ -5,7 +5,7 @@ import { sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
 import { PANEL, SOLID } from "../../../feedback";
-import { speak, useSpeechUnlock } from "../../../review/German";
+import { speak, stopSpeaking, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
 type Step = "hear" | "questions" | "read" | "dictation";
@@ -40,7 +40,7 @@ export function Listen({
   useEffect(
     () => () => {
       run.current++;
-      if ("speechSynthesis" in window) speechSynthesis.cancel();
+      stopSpeaking();
     },
     [],
   );
@@ -50,6 +50,7 @@ export function Listen({
     if (!line || id !== run.current) return setPlaying(null);
     setPlaying(from);
     speak(line.de, {
+      recorded: true,
       second: speakers.indexOf(line.speaker) % 2 === 1,
       onEnd: () => {
         if (id === run.current) play(from + 1, id);
@@ -60,14 +61,14 @@ export function Listen({
   function stop() {
     run.current++;
     setPlaying(null);
-    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    stopSpeaking();
   }
 
   /** A single line or sentence; stops the dialogue first. */
   function say(text: string, second = false) {
     run.current++;
     setPlaying(null);
-    speak(text, { second });
+    speak(text, { second, recorded: true });
   }
 
   function next(correct: boolean, count: number) {

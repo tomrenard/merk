@@ -322,7 +322,7 @@ export function Placement({ packet }: { packet: Packet }) {
         </p>
         <button
           type="button"
-          onClick={() => speak(item.de)}
+          onClick={() => speak(item.de, { recorded: true })}
           className="btn btn-primary py-5 text-xl"
         >
           🔊 Play

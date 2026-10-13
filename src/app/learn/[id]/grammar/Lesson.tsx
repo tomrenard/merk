@@ -96,7 +96,7 @@ export function Lesson({
             <button
               key={example.de}
               type="button"
-              onClick={() => speak(example.de)}
+              onClick={() => speak(example.de, { recorded: true })}
               className="py-3 text-left"
             >
               <span className="block font-bold">{example.de} 🔊</span>

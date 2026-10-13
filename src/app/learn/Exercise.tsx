@@ -1,18 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { solved } from "@/lib/audio";
 import { sameAnswer } from "@/lib/german";
 import { seededShuffle } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";
 import { PANEL, SOLID } from "../feedback";
 import { speak } from "../review/German";
-
-/** The sentence with the gap filled in, for feedback and speech. */
-function solved(item: UnitItem): string {
-  if (item.type === "order") return item.answers[0] ?? "";
-  const answer = item.type === "cloze" ? item.answers[0] : item.options[item.answer];
-  return item.de.replace("___", answer ?? "");
-}
 
 /**
  * One exercise: gap to type (with the base form), pick one of a few options, or tap words into
@@ -57,7 +51,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           ? picked === item.answer
           : item.answers.some((answer) => sameAnswer(built, answer));
     setResult(right ? "right" : "wrong");
-    speak(solved(item));
+    speak(solved(item), { recorded: true });
   }
 
   const [before, after] = item.type === "order" ? ["", ""] : item.de.split("___");
@@ -163,7 +157,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           </p>
           <button
             type="button"
-            onClick={() => speak(solved(item))}
+            onClick={() => speak(solved(item), { recorded: true })}
             className="text-left text-lg font-bold"
           >
             {solved(item)} 🔊

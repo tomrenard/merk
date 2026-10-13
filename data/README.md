@@ -19,6 +19,12 @@ Teaching order uses the DeReWo frequency list (Institut für Deutsche Sprache, C
 https://www.ids-mannheim.de/derewo). It is fetched into `data/.cache/` at import time and never
 committed; only the resulting order is stored in the database.
 
-Written by Claude for merk and committed (same licence as the repo): `b1-translations.json`
-(B1 English and examples), `verbs.json` (verb forms and the case/preposition each verb takes),
-`phrases.json` (everyday phrases by situation), `units/` (grammar units).
+Written by Claude for merk, checked by separate review passes, and committed (same licence as
+the repo): `b1-translations.json` (B1 English and examples), `b2-words.json` (~1,000 B2 words
+picked from DeReWo frequency ranks after B1, with English and examples), `verbs.json` (verb
+forms and the case/preposition each verb takes), `phrases.json` (everyday phrases by
+situation), `units/` (125 lessons: grammar, topic and story lessons, A1 → B2), `exams/`
+(Goethe-style level exams A1 → B2; not official Goethe material).
+
+Recorded audio for lesson and exam sentences was generated with Google Gemini TTS and lives in
+the separate [merk-audio](https://github.com/tomrenard/merk-audio) repo.

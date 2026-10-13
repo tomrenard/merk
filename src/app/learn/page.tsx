@@ -16,6 +16,7 @@ import {
   unitDone,
 } from "@/lib/course";
 import { requireUser } from "@/lib/session";
+import { Push } from "../Nav";
 import { TabBar } from "../TabBar";
 
 export const dynamic = "force-dynamic";
@@ -48,7 +49,7 @@ function ExamCard({
   const score = examScore(progress, exam);
   const passed = examPassed(progress, exam);
   return (
-    <Link
+    <Push
       href={`/exam/${exam.id}`}
       className={`card flex items-center gap-3 ${isNext ? "border-[var(--brand)]" : ""} ${exam.type === "level" ? "bg-[var(--brand-soft)]" : ""}`}
     >
@@ -73,7 +74,7 @@ function ExamCard({
       <span aria-hidden="true" className="muted text-2xl font-black">
         ›
       </span>
-    </Link>
+    </Push>
   );
 }
 
@@ -97,9 +98,9 @@ export default async function CoursePage({
         <p className="muted font-semibold">
           A1 → B2 for everyday life. Follow the path or pick anything.
         </p>
-        <Link href="/placement" className="text-sm font-bold text-[var(--brand)]">
+        <Push href="/placement" className="text-sm font-bold text-[var(--brand)]">
           Not sure where to start? Find your level ›
-        </Link>
+        </Push>
       </header>
       <nav className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1" aria-label="Course views">
         {VIEWS.map((v) => (
@@ -166,7 +167,7 @@ export default async function CoursePage({
                   const href = part ? `/learn/${unit.id}/${part.path}` : `/learn/${unit.id}`;
                   return (
                     <li key={unit.id}>
-                      <Link
+                      <Push
                         href={href}
                         className={`card flex items-center gap-3 ${isNext ? "border-[var(--brand)]" : ""}`}
                       >
@@ -195,7 +196,7 @@ export default async function CoursePage({
                         <span aria-hidden="true" className="muted text-2xl font-black">
                           ›
                         </span>
-                      </Link>
+                      </Push>
                     </li>
                   );
                 })}

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
 import type { ReviewCard as ReviewItem } from "@/lib/course";
 import {
@@ -13,6 +13,7 @@ import {
 } from "@/lib/german";
 import type { SessionLeft } from "@/lib/review";
 import { Exercise } from "../learn/Exercise";
+import { Back, Push } from "../Nav";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
@@ -74,6 +75,18 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   useSpeechUnlock();
 
   const ended = limit !== null && done >= limit;
+  const router = useRouter();
+  // Answers aren't revalidated one by one (that would slow each card): pages kept in the
+  // browser (Today's counts, this session's first card) are dropped once you leave the session,
+  // whichever way: ✕, Done, Edit, the browser's back.
+  const answered = useRef(0);
+  answered.current = done;
+  useEffect(
+    () => () => {
+      if (answered.current > 0) router.refresh();
+    },
+    [router],
+  );
   useEffect(() => {
     // Not behind the end-of-session screen.
     if (item?.direction === "de_en" && !ended) speak(spokenForm(item.note.de));
@@ -148,9 +161,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
         </p>
         <div className="flex w-full flex-col gap-3">
           {lesson ? (
-            <Link href={lesson.href} className="btn btn-primary">
+            <Push href={lesson.href} className="btn btn-primary">
               Today's lesson: {lesson.label}
-            </Link>
+            </Push>
           ) : item ? (
             <a href="/review" className="btn btn-primary">
               Keep going
@@ -160,9 +173,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
               Practise more
             </a>
           )}
-          <Link href="/" className="btn">
+          <Back href="/" className="btn">
             Done for now
-          </Link>
+          </Back>
         </div>
       </main>
     );
@@ -178,9 +191,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const header = (chip: React.ReactNode) => (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Link href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
+        <Back href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
           ✕
-        </Link>
+        </Back>
         <div
           role="progressbar"
           aria-label="Session progress"
@@ -241,7 +254,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
           {revealed && (
             <>
               {" · "}
-              <Link href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Link>
+              <Push href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Push>
             </>
           )}
         </span>,
@@ -310,12 +323,12 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
             {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}
             {note.hint && <p className="muted text-sm">{note.hint}</p>}
             {item.lapses >= TRICKY && (
-              <Link
+              <Push
                 href={`/words/${encodeURIComponent(note.id)}?back=review`}
                 className="chip mx-auto bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
               >
                 🧠 Tricky word: add a memory hook
-              </Link>
+              </Push>
             )}
           </div>
         )}

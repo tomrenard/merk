@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { CHECK_SIZE, PASS, type PartKind, unitById } from "@/lib/course";
+import { freshPages } from "@/lib/fresh";
 import { learnTopicWords, startUnitCard } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
@@ -23,6 +24,7 @@ export async function recordUnit(unitId: string, score: number, testOut = false)
       .values({ userId, kind: "tested", ref: unit.id, score, total: CHECK_SIZE });
   }
   await startUnitCard(userId, unit);
+  freshPages();
 }
 
 /** Saves a finished listen, speak or write part (score: right answers, or 1 for done). */
@@ -40,6 +42,7 @@ export async function recordPart(unitId: string, kind: PartKind, score: number, 
     score <= total;
   if (!valid) throw new Error("Bad part result");
   await db().insert(activityLogs).values({ userId, kind, ref: unit.id, score, total });
+  freshPages();
 }
 
 /** A topic lesson's words, not started yet, come up in the next review session. */
@@ -48,5 +51,6 @@ export async function learnWords(form: FormData) {
   const unit = unitById(String(form.get("unit")));
   if (!unit?.words?.length) throw new Error("No words for this lesson");
   await learnTopicWords(userId, unit.words);
+  freshPages();
   redirect("/review");
 }

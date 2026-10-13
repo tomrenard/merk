@@ -1,9 +1,10 @@
 import { headers } from "next/headers";
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
+import { freshPages } from "@/lib/fresh";
 import { getSettings, saveSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
+import { Back, Push } from "../Nav";
 import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
@@ -16,6 +17,7 @@ async function save(form: FormData) {
     throw new Error("Invalid settings");
   }
   await saveSettings(userId, { newPerDay });
+  freshPages();
   redirect("/");
 }
 
@@ -31,9 +33,9 @@ export default async function SettingsPage() {
     <form action={save} className="screen">
       <header className="topbar">
         <h1 className="text-3xl font-black">Settings</h1>
-        <Link href="/" className="muted text-2xl font-black" aria-label="Close settings">
+        <Back href="/" className="muted text-2xl font-black" aria-label="Close settings">
           ✕
-        </Link>
+        </Back>
       </header>
       <label className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">New words per day</span>
@@ -54,9 +56,9 @@ export default async function SettingsPage() {
         Save
       </button>
       <VoicePicker />
-      <Link href="/placement" className="btn">
+      <Push href="/placement" className="btn">
         🧭 Retake the placement test
-      </Link>
+      </Push>
       <button type="submit" formAction={logout} formNoValidate className="btn mt-4">
         Log out
       </button>

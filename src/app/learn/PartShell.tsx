@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { type ReactNode, useState, useTransition } from "react";
 import type { PartKind } from "@/lib/course";
+import { Back, Push } from "../Nav";
 import { SoundToggle } from "../review/German";
 import { recordPart } from "./actions";
 
@@ -19,13 +19,13 @@ export function PartShell({
   return (
     <main className="screen">
       <header className="topbar">
-        <Link
+        <Back
           href={`/learn/${unitId}`}
           className="muted text-2xl font-black"
           aria-label="Back to the unit"
         >
           ✕
-        </Link>
+        </Back>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
@@ -73,14 +73,14 @@ export function PartDone({
         </button>
       ) : (
         next && (
-          <Link href={next.href} className="btn btn-primary">
+          <Push href={next.href} className="btn btn-primary">
             {next.label}
-          </Link>
+          </Push>
         )
       )}
-      <Link href="/" className="btn">
+      <Back href="/" className="btn">
         Done for today
-      </Link>
+      </Back>
     </main>
   );
 }

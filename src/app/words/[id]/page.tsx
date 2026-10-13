@@ -1,10 +1,11 @@
 import { and, eq, isNull, ne, or, sql } from "drizzle-orm";
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
+import { freshPages } from "@/lib/fresh";
 import { learnNow, markKnown } from "@/lib/review";
 import { requireUser } from "@/lib/session";
+import { Back } from "../../Nav";
 
 export const dynamic = "force-dynamic";
 
@@ -18,14 +19,15 @@ const FIELDS = [
 
 /** Where to go after saving: only these, never a URL from the request. */
 const BACK = { review: "/review", words: "/words", practice: "/practice" } as const;
-type Back = keyof typeof BACK;
-const backTo = (value: unknown): Back =>
-  Object.hasOwn(BACK, String(value)) ? (String(value) as Back) : "words";
+type BackTo = keyof typeof BACK;
+const backTo = (value: unknown): BackTo =>
+  Object.hasOwn(BACK, String(value)) ? (String(value) as BackTo) : "words";
 
 /** "I know this": the word is scheduled weeks out, for a quick check later. */
 async function known(form: FormData) {
   "use server";
   await markKnown(await requireUser(), [String(form.get("id"))]);
+  freshPages();
   redirect(BACK[backTo(form.get("back"))]);
 }
 
@@ -33,6 +35,7 @@ async function known(form: FormData) {
 async function now(form: FormData) {
   "use server";
   await learnNow(await requireUser(), String(form.get("id")));
+  freshPages();
   redirect("/review");
 }
 
@@ -64,6 +67,7 @@ async function save(form: FormData) {
       ),
     );
   const back = String(form.get("back"));
+  freshPages();
   redirect(Object.hasOwn(BACK, back) ? BACK[back as keyof typeof BACK] : BACK.words);
 }
 
@@ -95,9 +99,9 @@ export default async function EditWordPage({
   return (
     <form action={save} className="screen">
       <header className="topbar">
-        <Link href={BACK[back]} className="muted text-lg font-black">
+        <Back href={BACK[back]} className="muted text-lg font-black">
           ‹ Back
-        </Link>
+        </Back>
       </header>
       <h1 className="text-3xl font-extrabold">Edit word</h1>
       <p className="muted text-sm font-semibold">

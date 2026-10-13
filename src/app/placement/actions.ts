@@ -4,6 +4,7 @@ import { and, eq, gte, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { COURSE, UNITS } from "@/lib/course";
+import { freshPages } from "@/lib/fresh";
 import { markKnown, startUnitCards } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { wordBands } from "./data";
@@ -78,5 +79,6 @@ export async function applyPlacement(input: {
   await db()
     .insert(activityLogs)
     .values({ userId, kind: "placement-test", ref: String(input.summary).slice(0, 2000) });
+  freshPages();
   return { ok: true as const };
 }

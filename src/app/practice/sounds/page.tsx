@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { shuffled } from "@/lib/shuffle";
 import { PAIRS, type Pair } from "@/lib/sounds";
 import { PANEL } from "../../feedback";
+import { Back } from "../../Nav";
 import { SoundToggle, speak, useSpeechUnlock } from "../../review/German";
 
 const ROUND = 12;
@@ -47,9 +47,9 @@ export default function SoundsPage() {
         >
           Again
         </button>
-        <Link href="/practice" className="btn">
+        <Back href="/practice" className="btn">
           Done
-        </Link>
+        </Back>
       </main>
     );
   }
@@ -63,9 +63,9 @@ export default function SoundsPage() {
   return (
     <main className="screen">
       <header className="topbar">
-        <Link href="/practice" className="muted text-2xl font-black" aria-label="Stop">
+        <Back href="/practice" className="muted text-2xl font-black" aria-label="Stop">
           ✕
-        </Link>
+        </Back>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"

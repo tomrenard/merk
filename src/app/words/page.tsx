@@ -4,6 +4,7 @@ import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
 import { KNOWN, TRICKY } from "@/lib/review";
 import { requireUser } from "@/lib/session";
+import { Push } from "../Nav";
 import { Headword } from "../review/German";
 import { TabBar } from "../TabBar";
 
@@ -67,9 +68,9 @@ export default async function WordsPage({
     <main className="screen with-tabs">
       <header className="topbar">
         <h1 className="text-3xl font-black">Words</h1>
-        <Link href="/words/new" className="chip bg-[var(--brand-soft)] text-[var(--brand)]">
+        <Push href="/words/new" className="chip bg-[var(--brand-soft)] text-[var(--brand)]">
           + Add
-        </Link>
+        </Push>
       </header>
       <form>
         {filter && <input type="hidden" name="filter" value={filter.key} />}
@@ -103,7 +104,7 @@ export default async function WordsPage({
       <ul className="card flex flex-col divide-y divide-[var(--line)] py-0">
         {words.slice(0, SHOWN).map((word) => (
           <li key={word.id}>
-            <Link
+            <Push
               href={`/words/${encodeURIComponent(word.id)}`}
               className="flex items-baseline justify-between gap-3 py-3"
             >
@@ -114,7 +115,7 @@ export default async function WordsPage({
               <span className="muted shrink-0 text-xs font-bold">
                 {word.cefr} · {word.due ? word.due.toLocaleDateString("de-DE") : "new"}
               </span>
-            </Link>
+            </Push>
           </li>
         ))}
       </ul>

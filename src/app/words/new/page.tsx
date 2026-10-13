@@ -1,10 +1,11 @@
 import { randomUUID } from "node:crypto";
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
+import { freshPages } from "@/lib/fresh";
 import { cardId } from "@/lib/review";
 import { requireUser } from "@/lib/session";
+import { Back } from "../../Nav";
 
 const FIELDS = [
   { name: "de", label: "German (with der/die/das for nouns)", required: true },
@@ -48,6 +49,7 @@ async function add(form: FormData) {
       })),
     );
   });
+  freshPages();
   redirect(`/words?q=${encodeURIComponent(de)}`);
 }
 
@@ -56,9 +58,9 @@ export default function NewWordPage() {
     <form action={add} className="screen">
       <header className="topbar">
         <h1 className="text-3xl font-black">Add a word</h1>
-        <Link href="/words" className="muted text-2xl font-black" aria-label="Cancel">
+        <Back href="/words" className="muted text-2xl font-black" aria-label="Cancel">
           ✕
-        </Link>
+        </Back>
       </header>
       <p className="muted font-semibold">
         Something you heard or read today? It becomes your next new word.

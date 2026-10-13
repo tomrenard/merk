@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import {
@@ -17,6 +16,7 @@ import {
 } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
 import { Exercise } from "../learn/Exercise";
+import { Back } from "../Nav";
 import { speak, useSpeechUnlock } from "../review/German";
 import { applyPlacement } from "./actions";
 import type { Packet, VocabWord } from "./data";
@@ -183,9 +183,9 @@ export function Placement({ packet }: { packet: Packet }) {
   }[step];
   const bar = (
     <div className="topbar">
-      <Link href="/" className="muted text-2xl font-black" aria-label="Stop the test">
+      <Back href="/" className="muted text-2xl font-black" aria-label="Stop the test">
         ✕
-      </Link>
+      </Back>
       <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
         <div
           className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
@@ -211,9 +211,9 @@ export function Placement({ packet }: { packet: Packet }) {
         <button type="button" onClick={() => setStep("self")} className="btn btn-primary">
           Start
         </button>
-        <Link href="/" className="btn">
+        <Back href="/" className="btn">
           Not now
-        </Link>
+        </Back>
       </main>
     );
   }

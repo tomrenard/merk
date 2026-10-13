@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { type ReactNode, useState, useTransition } from "react";
 import type { CourseExam } from "@/lib/course";
+import { Back } from "../Nav";
 import { recordExam } from "./actions";
 
 /** Top bar of an exam: ✕ (leaving loses the attempt), progress, section name. */
@@ -10,9 +10,9 @@ export function ExamBar({ progress, section }: { progress: number; section: stri
   return (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Link href="/learn" className="muted text-2xl font-black" aria-label="Leave the exam">
+        <Back href="/learn" className="muted text-2xl font-black" aria-label="Leave the exam">
           ✕
-        </Link>
+        </Back>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"
@@ -42,9 +42,9 @@ export function ExamIntro({
   return (
     <main className="screen">
       <header className="topbar">
-        <Link href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
+        <Back href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
           ✕
-        </Link>
+        </Back>
       </header>
       <span aria-hidden="true" className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">
         {exam.type === "level" ? "🏆" : "📝"}
@@ -150,17 +150,17 @@ export function ExamResult({
           Couldn't save: retry
         </button>
       ) : state === "saved" ? (
-        <Link href="/" className="btn btn-primary">
+        <Back href="/" className="btn btn-primary">
           Continue
-        </Link>
+        </Back>
       ) : (
         <button type="button" disabled className="btn btn-primary opacity-50">
           Saving…
         </button>
       )}
-      <Link href="/learn" className="btn">
+      <Back href="/learn" className="btn">
         Course
-      </Link>
+      </Back>
     </main>
   );
 }

@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
 import { PANEL, SOLID } from "../feedback";
+import { Back, Push } from "../Nav";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
 type Note = typeof notes.$inferSelect;
@@ -40,13 +40,13 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
             <ul className="card divide-y divide-[var(--line)] py-0">
               {missed.map((m) => (
                 <li key={m.id}>
-                  <Link
+                  <Push
                     href={`/words/${encodeURIComponent(m.id)}?back=practice`}
                     className="block py-3"
                   >
                     <Headword de={m.de} className="font-extrabold" />{" "}
                     <span className="muted">{m.en}</span>
-                  </Link>
+                  </Push>
                 </li>
               ))}
             </ul>
@@ -57,9 +57,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           <a href={`/practice?scope=${scope}`} className="btn btn-primary">
             Practice again
           </a>
-          <Link href="/practice" className="btn">
+          <Back href="/practice" className="btn">
             Done
-          </Link>
+          </Back>
         </div>
       </main>
     );
@@ -84,9 +84,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   return (
     <main className="screen">
       <header className="topbar">
-        <Link href="/practice" className="muted text-2xl font-black" aria-label="Stop practising">
+        <Back href="/practice" className="muted text-2xl font-black" aria-label="Stop practising">
           ✕
-        </Link>
+        </Back>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
           <div
             className="h-full rounded-full bg-[var(--brand)] transition-[width] duration-300"

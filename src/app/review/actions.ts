@@ -6,6 +6,7 @@ import type { Grade } from "ts-fsrs";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { withExercise } from "@/lib/course";
+import { freshPages } from "@/lib/fresh";
 import { counts, DAY_START, grade, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
@@ -43,5 +44,6 @@ export async function moreNewWords() {
   if ((row?.extra ?? 0) < MAX_EXTRA) {
     await db().insert(activityLogs).values({ userId, kind: "extra_new", ref: "today", score: 5 });
   }
+  freshPages();
   redirect("/review");
 }

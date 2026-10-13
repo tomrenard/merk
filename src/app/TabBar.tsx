@@ -28,6 +28,8 @@ export function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
           <li key={tab.href}>
             <Link
               href={tab.href}
+              // Loads the whole tab in the background, so tapping it shows it at once.
+              prefetch
               aria-current={tab.href === active ? "page" : undefined}
               className={`flex flex-col items-center gap-0.5 py-1 text-xs font-semibold ${
                 tab.href === active ? "text-[var(--brand)]" : "muted"

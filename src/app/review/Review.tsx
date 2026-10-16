@@ -41,10 +41,11 @@ const RATINGS: Record<TypedResult, number[]> = {
 };
 
 /**
- * Quiet mode cards are picked, not typed: right counts as Hard (recognising is easier than
- * recalling, so the word comes back sooner), wrong as Again.
+ * Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. Not Hard: Hard
+ * keeps a new or missed card in learning (back in 15 minutes, inside the learn-ahead window), so
+ * a word picked right every time came back forever.
  */
-const PICKED: Record<"right" | "wrong", number[]> = { right: [2], wrong: [1] };
+const PICKED: Record<"right" | "wrong", number[]> = { right: [3], wrong: [1] };
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
   // A phrase can be said many ways: compare yourself, then grade.

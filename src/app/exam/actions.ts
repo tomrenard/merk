@@ -14,6 +14,14 @@ export async function recordExam(examId: string, percent: number) {
     throw new Error("Bad exam result");
   await db()
     .insert(activityLogs)
-    .values({ userId, kind: "exam", ref: `exam:${exam.id}`, score: percent, total: 100 });
+    .values({
+      userId,
+      course: exam.course,
+      kind: "exam",
+      ref: `exam:${exam.id}`,
+      score: percent,
+      total: 100,
+    });
+
   freshPages();
 }

@@ -12,6 +12,12 @@ type Vars = Record<string, string | number>;
 export type T = (text: string, vars?: Vars) => string;
 
 const FR: Record<string, string> = {
+  "A1 for everyday life. Follow the path or pick anything.":
+    "Le niveau A1 pour la vie de tous les jours. Suis le parcours ou choisis ce que tu veux.",
+  "You're learning": "Tu apprends",
+  "Each language keeps its own lessons, words and progress.":
+    "Chaque langue garde ses propres leçons, mots et progrès.",
+  "Moroccan Darija": "Darija marocaine",
   "+ prep.": "+ prép.",
   "+5 new words today": "+5 nouveaux mots aujourd’hui",
   "10 minutes, so you don't start too easy": "10 minutes, pour ne pas commencer trop facile",

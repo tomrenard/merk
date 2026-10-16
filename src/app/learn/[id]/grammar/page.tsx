@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { CHECK_SIZE, PASS, partAfter, unitById } from "@/lib/course";
+import { CHECK_SIZE, courseOfUnit, PASS, partAfter, unitById } from "@/lib/course";
 import { getT } from "@/lib/locale";
 import { topicWords } from "@/lib/review";
 import { requireUser } from "@/lib/session";
@@ -14,7 +14,10 @@ export default async function LessonPage({
 }) {
   const unit = unitById((await params).id);
   if (!unit) notFound();
-  const words = unit.words?.length ? await topicWords(await requireUser(), unit.words) : [];
+  const words = unit.words?.length
+    ? await topicWords(await requireUser(), unit.words, courseOfUnit(unit))
+    : [];
+
   return (
     <Lesson
       unit={unit}

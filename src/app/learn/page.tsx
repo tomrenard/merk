@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  COURSE,
   type CourseExam,
   courseProgress,
   currentPart,
@@ -15,12 +14,13 @@ import {
   partIcon,
   partLabel,
   partProgress,
-  UNITS,
+  partsOf,
   unitDone,
 } from "@/lib/course";
+import { COURSES } from "@/lib/courses";
 import { examTitle, type T } from "@/lib/i18n";
 
-import { getT } from "@/lib/locale";
+import { getCourse, getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../Nav";
 import { TabBar } from "../TabBar";
@@ -91,23 +91,32 @@ export default async function CoursePage({
   searchParams: Promise<{ view?: string }>;
 }) {
   const userId = await requireUser();
-  const t = await getT();
-  const [progress, last] = await Promise.all([courseProgress(userId), lastUnitId(userId)]);
+  const [t, courseId] = await Promise.all([getT(), getCourse()]);
+  const [progress, last] = await Promise.all([
+    courseProgress(userId, courseId),
+    lastUnitId(userId, courseId),
+  ]);
+  const COURSE = partsOf(courseId);
+  const { placement, levelExams } = COURSES[courseId];
   const asked = (await searchParams).view;
   const view = VIEWS.find((v) => v.key === asked)?.key ?? "path";
   const part = PARTS.find((p) => p.path === view);
-  const next = nextStep(progress, last, t);
-  const current = currentPart(progress);
+  const next = nextStep(progress, last, t, courseId);
+  const current = currentPart(progress, courseId);
   return (
     <main className="screen with-tabs">
       <header>
         <h1 className="text-3xl font-black">{t("Course")}</h1>
         <p className="muted font-semibold">
-          {t("A1 → B2 for everyday life. Follow the path or pick anything.")}
+          {levelExams
+            ? t("A1 → B2 for everyday life. Follow the path or pick anything.")
+            : t("A1 for everyday life. Follow the path or pick anything.")}
         </p>
-        <Go href="/placement" className="text-sm font-bold text-[var(--brand)]">
-          {t("Not sure where to start? Find your level")} ›
-        </Go>
+        {placement && (
+          <Go href="/placement" className="text-sm font-bold text-[var(--brand)]">
+            {t("Not sure where to start? Find your level")} ›
+          </Go>
+        )}
       </header>
       <nav className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1" aria-label={t("Course views")}>
         {VIEWS.map((v) => (
@@ -232,7 +241,7 @@ export default async function CoursePage({
           </section>
         );
       })}
-      {UNITS.length === 0 && <p className="card text-center font-bold">{t("No lessons yet.")}</p>}
+      {COURSE.length === 0 && <p className="card text-center font-bold">{t("No lessons yet.")}</p>}
 
       <TabBar active="/learn" />
     </main>

@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import {
-  COURSE,
   type CourseExam,
   currentPart,
   examPassed,
@@ -9,11 +8,16 @@ import {
   PARTS,
   PASS,
   type Progress,
+  partsOf,
   skippedBy,
-  UNITS,
   unitDone,
+  unitsOf,
 } from "./course";
 import type { Unit } from "./units";
+
+// The German course: these tests use its real lessons and parts.
+const UNITS = unitsOf("de");
+const COURSE = partsOf("de");
 
 const all = (score = PASS) =>
   new Map(PARTS.map((part) => [part.kind, part.kind === "unit" ? score : 1]));

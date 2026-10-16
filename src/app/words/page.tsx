@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getT } from "@/lib/locale";
+import { getCourse, getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { countWords, FILTERS, findWords, PAGE } from "@/lib/words";
 import { Go } from "../Nav";
@@ -14,13 +14,13 @@ export default async function WordsPage({
   searchParams: Promise<{ q?: string; filter?: string }>;
 }) {
   const userId = await requireUser();
-  const t = await getT();
+  const [t, course] = await Promise.all([getT(), getCourse()]);
   const params = await searchParams;
   const q = params.q?.trim().slice(0, 100) ?? "";
   const filter = FILTERS.find((f) => f.key === params.filter);
   const [words, total] = await Promise.all([
-    findWords(userId, q, filter?.key ?? "", 0),
-    countWords(userId, q, filter?.key ?? ""),
+    findWords(userId, course, q, filter?.key ?? "", 0),
+    countWords(userId, course, q, filter?.key ?? ""),
   ]);
   return (
     <main className="screen with-tabs">

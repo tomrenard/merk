@@ -1,6 +1,7 @@
 import { and, asc, count, eq, ilike, isNull, ne, or, type SQL, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
+import type { CourseId } from "@/lib/courses";
 import { KNOWN, TRICKY } from "@/lib/review";
 
 /** Words per page; the list loads the next page as you scroll to its end. */
@@ -31,12 +32,13 @@ const yourCard = (userId: string) =>
   and(eq(cards.noteId, notes.id), eq(cards.userId, userId), eq(cards.direction, "de_en"));
 
 /** Shared words plus your own (not someone else's), searched and filtered. */
-function wordsWhere(userId: string, q: string, filterKey: string) {
+function wordsWhere(userId: string, course: CourseId, q: string, filterKey: string) {
   // Matched literally: % and _ would otherwise be ILIKE wildcards.
   const pattern = `%${q.replace(/[\\%_]/g, "\\$&")}%`;
   return and(
     q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined,
     FILTERS.find((f) => f.key === filterKey)?.where,
+    eq(notes.course, course),
     ne(notes.source, "unit"),
     or(eq(notes.userId, userId), and(isNull(notes.userId), ne(notes.source, "mine"))),
   );
@@ -45,6 +47,7 @@ function wordsWhere(userId: string, q: string, filterKey: string) {
 /** One page of the word list, from `offset`, in teaching order. */
 export async function findWords(
   userId: string,
+  course: CourseId,
   q: string,
   filterKey: string,
   offset: number,
@@ -53,17 +56,18 @@ export async function findWords(
     .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr, due: cards.due })
     .from(notes)
     .leftJoin(cards, yourCard(userId))
-    .where(wordsWhere(userId, q, filterKey))
+    .where(wordsWhere(userId, course, q, filterKey))
     .orderBy(asc(notes.ord), asc(notes.id))
     .limit(PAGE)
     .offset(offset);
 }
 
-export async function countWords(userId: string, q: string, filterKey: string) {
+export async function countWords(userId: string, course: CourseId, q: string, filterKey: string) {
   const [row] = await db()
     .select({ n: count() })
     .from(notes)
     .leftJoin(cards, yourCard(userId))
-    .where(wordsWhere(userId, q, filterKey));
+    .where(wordsWhere(userId, course, q, filterKey));
+
   return row?.n ?? 0;
 }

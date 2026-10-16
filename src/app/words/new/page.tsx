@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
 import { freshPages } from "@/lib/fresh";
-import { getT } from "@/lib/locale";
+import { getCourse, getT } from "@/lib/locale";
 import { cardId } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
@@ -27,10 +27,12 @@ async function add(form: FormData) {
   };
   const id = `mine:${randomUUID()}`;
   const de = field("de") ?? "";
+  const course = await getCourse();
   await db().transaction(async (tx) => {
     await tx.insert(notes).values({
       id,
       source: "mine",
+      course,
       userId,
       cefr: "Mine",
       // Before every list word, so it comes up next.
@@ -46,6 +48,7 @@ async function add(form: FormData) {
         id: cardId(userId, id, direction),
         noteId: id,
         userId,
+        course,
         direction,
       })),
     );

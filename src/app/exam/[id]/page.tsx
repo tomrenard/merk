@@ -11,7 +11,8 @@ export default async function ExamPage({ params }: { params: Promise<{ id: strin
   const userId = await requireUser();
   const exam = examById((await params).id);
   if (!exam) notFound();
-  const best = examScore(await courseProgress(userId), exam);
+  const best = examScore(await courseProgress(userId, exam.course), exam);
+
   if (exam.type === "level") {
     const content = LEVEL_EXAMS[exam.level];
     if (!content) notFound();

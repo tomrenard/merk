@@ -4,6 +4,7 @@ import { createEmptyCard, fsrs, type Grade, Rating, State, TypeConvert } from "t
 // Relative imports: the import script (plain node) uses ensureCards too.
 import { db } from "../db/client.ts";
 import { cards, notes, reviewLogs, settings } from "../db/schema.ts";
+import type { CourseId } from "./courses.ts";
 import { streakLength } from "./streak.ts";
 
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.
@@ -85,7 +86,7 @@ export async function saveSettings(userId: string, values: Settings) {
  * is high). `followUps`: English→German cards of words started on an earlier day; they don't
  * count against the daily new words.
  */
-export async function counts(userId: string) {
+export async function counts(userId: string, course: CourseId = "de") {
   const [[row], { newPerDay }] = await Promise.all([
     db()
       .select({
@@ -99,13 +100,13 @@ export async function counts(userId: string) {
         repeats: sql<number>`count(*) filter (where ${cards.introducedAt} is not null and coalesce(${cards.due} > now() and ${cards.due} <= ${LEARN_AHEAD}, false) and ${SIBLING_FREE})::int`,
         startedToday: sql<number>`count(*) filter (where ${cards.direction} = 'de_en' and ${cards.introducedAt} >= ${DAY_START})::int`,
         // Reviews of already-learned cards done today: with `due`, the day's review load.
-        reviewedToday: sql<number>`(select count(distinct card_id) from review_logs where user_id = ${userId} and state <> 0 and reviewed_at >= ${DAY_START})::int`,
+        reviewedToday: sql<number>`(select count(distinct rl.card_id) from review_logs rl join cards rc on rc.id = rl.card_id where rl.user_id = ${userId} and rc.course = ${course} and rl.state <> 0 and rl.reviewed_at >= ${DAY_START})::int`,
         // "+5 new words today" taps.
-        extra: sql<number>`(select coalesce(sum(score), 0) from activity_logs where user_id = ${userId} and kind = 'extra_new' and at >= ${DAY_START})::int`,
+        extra: sql<number>`(select coalesce(sum(score), 0) from activity_logs where user_id = ${userId} and course = ${course} and kind = 'extra_new' and at >= ${DAY_START})::int`,
       })
       .from(cards)
       .leftJoin(sibling, siblingJoin)
-      .where(eq(cards.userId, userId)),
+      .where(and(eq(cards.userId, userId), eq(cards.course, course))),
     getSettings(userId),
   ]);
   const {
@@ -147,20 +148,26 @@ const ITEM = {
 };
 
 /** Cards due by `by`: reviewed ones, plus new ones put up front by "Learn now" (fsrs still empty). */
-async function firstSeenDueBy(userId: string, by: SQL): Promise<ReviewItem | null> {
+async function firstSeenDueBy(
+  userId: string,
+  course: CourseId,
+  by: SQL,
+): Promise<ReviewItem | null> {
   const [row] = await db()
     .select(ITEM)
     .from(cards)
     .innerJoin(notes, eq(notes.id, cards.noteId))
-    .where(and(eq(cards.userId, userId), lte(cards.due, by), SIBLING_FREE))
+    .where(
+      and(eq(cards.userId, userId), eq(cards.course, course), lte(cards.due, by), SIBLING_FREE),
+    )
     .orderBy(asc(cards.due))
     .limit(1);
   return row ? { ...row, isNew: row.reps === 0 } : null;
 }
 
 /** Follow-ups always; a new word only while today's budget lasts. */
-async function firstNew(userId: string): Promise<ReviewItem | null> {
-  const { newLeft, followUps } = await counts(userId);
+async function firstNew(userId: string, course: CourseId): Promise<ReviewItem | null> {
+  const { newLeft, followUps } = await counts(userId, course);
   if (newLeft === 0 && followUps === 0) return null;
   const [row] = await db()
     .select(ITEM)
@@ -170,6 +177,7 @@ async function firstNew(userId: string): Promise<ReviewItem | null> {
     .where(
       and(
         eq(cards.userId, userId),
+        eq(cards.course, course),
         newLeft > 0 ? NEW_OFFERABLE : and(NEW_OFFERABLE, eq(cards.direction, "en_de")),
       ),
     )
@@ -179,11 +187,14 @@ async function firstNew(userId: string): Promise<ReviewItem | null> {
 }
 
 /** Due cards, then new ones, then learning cards a little early so the session can finish. */
-export async function nextCard(userId: string): Promise<ReviewItem | null> {
+export async function nextCard(
+  userId: string,
+  course: CourseId = "de",
+): Promise<ReviewItem | null> {
   return (
-    (await firstSeenDueBy(userId, sql`now()`)) ??
-    (await firstNew(userId)) ??
-    (await firstSeenDueBy(userId, LEARN_AHEAD))
+    (await firstSeenDueBy(userId, course, sql`now()`)) ??
+    (await firstNew(userId, course)) ??
+    (await firstSeenDueBy(userId, course, LEARN_AHEAD))
   );
 }
 
@@ -262,7 +273,7 @@ export const KNOWN = sql`(${cards.fsrs}->>'scheduled_days')::int >= 7`;
  * `remembered`: % of reviews of already-learned cards in the last 30 days not graded Again
  * (null before there are any). `known`: how many words are KNOWN.
  */
-export async function progress(userId: string) {
+export async function progress(userId: string, course: CourseId = "de") {
   const [[row], known] = await Promise.all([
     db()
       .select({
@@ -271,20 +282,25 @@ export async function progress(userId: string) {
         >`round(100.0 * count(*) filter (where ${reviewLogs.rating} > 1) / nullif(count(*), 0))::int`,
       })
       .from(reviewLogs)
+      .innerJoin(cards, eq(cards.id, reviewLogs.cardId))
       .where(
         and(
           eq(reviewLogs.userId, userId),
+          eq(cards.course, course),
           eq(reviewLogs.state, State.Review),
           gte(reviewLogs.reviewedAt, sql`now() - interval '30 days'`),
         ),
       ),
-    db().$count(cards, and(eq(cards.userId, userId), eq(cards.direction, "de_en"), KNOWN)),
+    db().$count(
+      cards,
+      and(eq(cards.userId, userId), eq(cards.course, course), eq(cards.direction, "de_en"), KNOWN),
+    ),
   ]);
   return { remembered: row?.remembered ?? null, known };
 }
 
 /** Per level, how many of the shared list's words you have started (known ones included). */
-export async function wordLevels(userId: string) {
+export async function wordLevels(userId: string, course: CourseId = "de") {
   return db()
     .select({
       level: notes.cefr,
@@ -296,6 +312,7 @@ export async function wordLevels(userId: string) {
     .where(
       and(
         eq(cards.userId, userId),
+        eq(cards.course, course),
         eq(cards.direction, "de_en"),
         sql`${notes.source} not in ('phrase', 'unit', 'mine')`,
       ),
@@ -307,7 +324,7 @@ export async function wordLevels(userId: string) {
 export type PracticeScope = "today" | "all" | "tricky";
 
 /** Up to 20 random words to practise: ones studied today, or any seen so far. */
-export async function practiceWords(userId: string, scope: PracticeScope) {
+export async function practiceWords(userId: string, scope: PracticeScope, course: CourseId = "de") {
   const studied =
     scope === "today"
       ? sql`exists (select 1 from ${reviewLogs} join ${cards} on ${cards.id} = ${reviewLogs.cardId} where ${cards.noteId} = ${notes.id} and ${cards.userId} = ${userId} and ${reviewLogs.reviewedAt} >= ${DAY_START})`
@@ -318,7 +335,7 @@ export async function practiceWords(userId: string, scope: PracticeScope) {
   return db()
     .select()
     .from(notes)
-    .where(and(studied, sql`${notes.source} not in ('phrase', 'unit')`))
+    .where(and(studied, eq(notes.course, course), sql`${notes.source} not in ('phrase', 'unit')`))
     .orderBy(sql`random()`)
     .limit(20);
 }
@@ -331,8 +348,9 @@ export async function practiceWords(userId: string, scope: PracticeScope) {
 export async function startUnitCard(
   userId: string,
   unit: { id: string; cefr: string; title: string; canDo: string },
+  course: CourseId = "de",
 ) {
-  await startUnitCards(userId, [unit]);
+  await startUnitCards(userId, [unit], 0, course);
 }
 
 /** startUnitCard for several units in two statements (the placement test marks many at once). */
@@ -341,6 +359,7 @@ export async function startUnitCards(
   units: { id: string; cefr: string; title: string; canDo: string }[],
   /** Spread first reviews over this many days (placement marks many units at once). */
   spreadDays = 0,
+  course: CourseId = "de",
 ) {
   if (!units.length) return;
   const now = new Date();
@@ -352,6 +371,7 @@ export async function startUnitCards(
       .values(
         units.map((unit) => ({
           id: `unit:${unit.id}`,
+          course,
           source: "unit",
           cefr: unit.cefr,
           ord: 0,
@@ -375,6 +395,7 @@ export async function startUnitCards(
             id: cardId(userId, noteId, "unit"),
             noteId,
             userId,
+            course,
             direction: "unit" as const,
             fsrs: card,
             due: card.due,
@@ -393,8 +414,8 @@ export async function startUnitCards(
  */
 export async function ensureCards(userId: string) {
   await db().execute(sql`
-    insert into cards (id, note_id, direction, user_id)
-    select ${userId} || '/' || n.id || ':' || d.direction, n.id, d.direction, ${userId}
+    insert into cards (id, note_id, direction, user_id, course)
+    select ${userId} || '/' || n.id || ':' || d.direction, n.id, d.direction, ${userId}, n.course
     from notes n cross join (values ('de_en'), ('en_de')) as d(direction)
     -- Shared words, or this person's own; someone's own words are never shared, even before the
     -- claim gives words from before accounts an owner.
@@ -467,7 +488,7 @@ const HEAD = sql`split_part(${notes.de}, ',', 1)`;
 const headOf = (de: string) => de.split(",")[0] ?? de;
 
 /** A topic lesson's words in the lesson's order, with whether you have started each one. */
-export async function topicWords(userId: string, headwords: string[]) {
+export async function topicWords(userId: string, headwords: string[], course: CourseId = "de") {
   const rows = await db()
     .select({
       de: notes.de,
@@ -479,7 +500,9 @@ export async function topicWords(userId: string, headwords: string[]) {
       cards,
       and(eq(cards.noteId, notes.id), eq(cards.userId, userId), eq(cards.direction, "de_en")),
     )
-    .where(and(sql`${HEAD} in ${headwords}`, sql`${notes.userId} is null`));
+    .where(
+      and(sql`${HEAD} in ${headwords}`, sql`${notes.userId} is null`, eq(notes.course, course)),
+    );
   return headwords.flatMap((de) => rows.filter((row) => headOf(row.de) === de));
 }
 
@@ -487,11 +510,17 @@ export async function topicWords(userId: string, headwords: string[]) {
  * A topic lesson's words (deck headwords) that `userId` hasn't started come up next: their
  * German→English cards are made due now, ahead of the frequency order.
  */
-export async function learnTopicWords(userId: string, headwords: string[]) {
+export async function learnTopicWords(
+  userId: string,
+  headwords: string[],
+  course: CourseId = "de",
+) {
   if (!headwords.length) return;
   await db().execute(sql`
     update cards set due = now()
     from notes n
     where cards.note_id = n.id and split_part(n.de, ',', 1) in ${headwords} and cards.user_id = ${userId}
+      and cards.course = ${course}
+
       and cards.direction = 'de_en' and cards.introduced_at is null`);
 }

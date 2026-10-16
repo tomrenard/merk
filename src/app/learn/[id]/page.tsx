@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import {
   CHECK_SIZE,
   COURSE,
+  courseOfUnit,
   courseProgress,
   PARTS,
   PASS,
@@ -21,7 +22,8 @@ export const dynamic = "force-dynamic";
 export default async function UnitPage({ params }: { params: Promise<{ id: string }> }) {
   const unit = unitById((await params).id);
   if (!unit) notFound();
-  const done = (await courseProgress(await requireUser())).get(unit.id) ?? new Map();
+  const done =
+    (await courseProgress(await requireUser(), courseOfUnit(unit))).get(unit.id) ?? new Map();
   const next = PARTS.find((part) => !done.has(part.kind));
   const t = await getT();
   return (

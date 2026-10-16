@@ -1,12 +1,13 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
+import { COURSES } from "@/lib/courses";
 import { freshPages } from "@/lib/fresh";
 import { translator } from "@/lib/i18n";
-import { getLocale } from "@/lib/locale";
+import { getCourse, getLocale } from "@/lib/locale";
 import { getSettings, saveSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { LanguageSwitch } from "../language";
+import { CourseSwitch, LanguageSwitch } from "../language";
 import { Go } from "../Nav";
 import { VoicePicker } from "./VoicePicker";
 
@@ -32,7 +33,7 @@ async function logout() {
 
 export default async function SettingsPage() {
   const current = await getSettings(await requireUser());
-  const locale = await getLocale();
+  const [locale, course] = await Promise.all([getLocale(), getCourse()]);
   const t = translator(locale);
   return (
     <main className="screen">
@@ -63,14 +64,28 @@ export default async function SettingsPage() {
           {t("Save")}
         </button>
       </form>
+      <section id="course" className="card flex flex-col gap-2">
+        <span className="muted text-sm font-semibold">{t("You're learning")}</span>
+        <CourseSwitch
+          current={course}
+          label={t("You're learning")}
+          name={(id) => t(COURSES[id].name)}
+        />
+        <span className="muted text-sm">
+          {t("Each language keeps its own lessons, words and progress.")}
+        </span>
+      </section>
       <section className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">{t("App language")}</span>
         <LanguageSwitch current={locale} label={t("App language")} />
       </section>
       <VoicePicker />
-      <Go href="/placement" className="btn">
-        🧭 {t("Retake the placement test")}
-      </Go>
+      {COURSES[course].placement && (
+        <Go href="/placement" className="btn">
+          🧭 {t("Retake the placement test")}
+        </Go>
+      )}
+
       <form action={logout} className="mt-4 flex flex-col">
         <button type="submit" className="btn">
           {t("Log out")}

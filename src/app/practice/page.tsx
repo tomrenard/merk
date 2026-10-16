@@ -1,4 +1,5 @@
-import { getT } from "@/lib/locale";
+import { COURSES } from "@/lib/courses";
+import { getCourse, getT } from "@/lib/locale";
 import { type PracticeScope, practiceWords } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { TabBar } from "../TabBar";
@@ -39,9 +40,12 @@ export default async function PracticePage({
   const raw = (await searchParams).scope;
   const scope: PracticeScope | null =
     raw === "all" || raw === "today" || raw === "tricky" ? raw : null;
-  const words = scope ? await practiceWords(await requireUser(), scope) : [];
+  const course = await getCourse();
+  const words = scope ? await practiceWords(await requireUser(), scope, course) : [];
   if (scope && words.length) return <Practice words={words} scope={scope} />;
   const t = await getT();
+  const { germanTools } = COURSES[course];
+
   return (
     <main className="screen with-tabs">
       <header>
@@ -73,30 +77,34 @@ export default async function PracticePage({
             </a>
           </li>
         ))}
-        <li>
-          <a href="/practice/sounds" className="card flex items-center gap-3">
-            <span className="icon bg-pink-100 dark:bg-pink-950">👂</span>
-            <span className="flex-1">
-              <span className="block font-extrabold">{t("Sounds that look alike")}</span>
-              <span className="muted text-sm font-semibold">
-                {t("Kiste or Küste? Miete or Mitte?")}
-              </span>
-            </span>
-            <span className="muted text-2xl font-black">›</span>
-          </a>
-        </li>
-        <li>
-          <a href="/practice/numbers" className="card flex items-center gap-3">
-            <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
-            <span className="flex-1">
-              <span className="block font-extrabold">{t("Numbers & time by ear")}</span>
-              <span className="muted text-sm font-semibold">
-                {t("Prices, times, phone numbers, spelled names")}
-              </span>
-            </span>
-            <span className="muted text-2xl font-black">›</span>
-          </a>
-        </li>
+        {germanTools && (
+          <>
+            <li>
+              <a href="/practice/sounds" className="card flex items-center gap-3">
+                <span className="icon bg-pink-100 dark:bg-pink-950">👂</span>
+                <span className="flex-1">
+                  <span className="block font-extrabold">{t("Sounds that look alike")}</span>
+                  <span className="muted text-sm font-semibold">
+                    {t("Kiste or Küste? Miete or Mitte?")}
+                  </span>
+                </span>
+                <span className="muted text-2xl font-black">›</span>
+              </a>
+            </li>
+            <li>
+              <a href="/practice/numbers" className="card flex items-center gap-3">
+                <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
+                <span className="flex-1">
+                  <span className="block font-extrabold">{t("Numbers & time by ear")}</span>
+                  <span className="muted text-sm font-semibold">
+                    {t("Prices, times, phone numbers, spelled names")}
+                  </span>
+                </span>
+                <span className="muted text-2xl font-black">›</span>
+              </a>
+            </li>
+          </>
+        )}
       </ul>
       <TabBar active="/practice" />
     </main>

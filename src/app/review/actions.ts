@@ -7,6 +7,7 @@ import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { withExercise } from "@/lib/course";
 import { freshPages } from "@/lib/fresh";
+import { getCourse } from "@/lib/locale";
 import { counts, DAY_START, grade, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
@@ -21,7 +22,8 @@ export async function gradeAndNext(
     throw new Error("Bad grade");
   }
   await grade(userId, cardId, rating as Grade, Number(durationMs) || 0, seenReps);
-  const [next, left] = await Promise.all([nextCard(userId), counts(userId)]);
+  const course = await getCourse();
+  const [next, left] = await Promise.all([nextCard(userId, course), counts(userId, course)]);
   return { item: withExercise(next), left: sessionLeft(left) };
 }
 
@@ -31,18 +33,22 @@ const MAX_EXTRA = 20;
 /** "+5 new words today": raises today's new-word budget (up to MAX_EXTRA), then starts a session. */
 export async function moreNewWords() {
   const userId = await requireUser();
+  const course = await getCourse();
   const [row] = await db()
     .select({ extra: sql<number>`coalesce(sum(${activityLogs.score}), 0)::int` })
     .from(activityLogs)
     .where(
       and(
         eq(activityLogs.userId, userId),
+        eq(activityLogs.course, course),
         eq(activityLogs.kind, "extra_new"),
         gte(activityLogs.at, DAY_START),
       ),
     );
   if ((row?.extra ?? 0) < MAX_EXTRA) {
-    await db().insert(activityLogs).values({ userId, kind: "extra_new", ref: "today", score: 5 });
+    await db()
+      .insert(activityLogs)
+      .values({ userId, course, kind: "extra_new", ref: "today", score: 5 });
   }
   freshPages();
   redirect("/review");

@@ -1,4 +1,5 @@
 import { courseProgress, lastUnitId, lessonDoneToday, nextStep, withExercise } from "@/lib/course";
+import { getCourse, getT } from "@/lib/locale";
 import { counts, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Review } from "./Review";
@@ -12,16 +13,18 @@ export default async function ReviewPage({
   searchParams: Promise<{ limit?: string }>;
 }) {
   const userId = await requireUser();
+  const [t, course] = await Promise.all([getT(), getCourse()]);
   const asked = (await searchParams).limit;
   const limit = [10, 30, 60].find((n) => String(n) === asked) ?? null;
   const [first, left, progress, last, lessonDone] = await Promise.all([
-    nextCard(userId),
-    counts(userId),
-    courseProgress(userId),
-    lastUnitId(userId),
-    lessonDoneToday(userId),
+    nextCard(userId, course),
+    counts(userId, course),
+    courseProgress(userId, course),
+    lastUnitId(userId, course),
+    lessonDoneToday(userId, course),
   ]);
-  const step = lessonDone ? null : nextStep(progress, last);
+  const step = lessonDone ? null : nextStep(progress, last, t, course);
+
   return (
     <Review
       first={withExercise(first)}

@@ -1,15 +1,28 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
+import { COURSE_IDS, COURSES, type CourseId } from "./courses";
 import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem } from "./review";
-import { PARTS_OF_COURSE, type Unit, type UnitItem } from "./units";
+import type { Unit, UnitItem } from "./units";
 import { UNITS as WRITTEN } from "./units-index";
 
-/** The written lessons in course order (A1.1 … B2.2). */
-export const UNITS: Unit[] = PARTS_OF_COURSE.flatMap((part) =>
-  (part.lessons as readonly string[]).flatMap((id) => WRITTEN.filter((unit) => unit.id === id)),
-);
+const lessonsOf = (course: CourseId) =>
+  COURSES[course].parts.flatMap((part) => part.lessons as readonly string[]);
+
+/** The written lessons among `ids`, in that order. */
+const written = (ids: readonly string[]): Unit[] =>
+  ids.flatMap((id) => WRITTEN.filter((unit) => unit.id === id));
+
+/** A course's written lessons in course order (German: A1.1 … B2.2). */
+export const unitsOf = (course: CourseId): Unit[] => written(lessonsOf(course));
+
+/** Every course's written lessons; ids are unique across courses. */
+const UNITS: Unit[] = COURSE_IDS.flatMap(unitsOf);
+
+/** The course a lesson belongs to. */
+export const courseOfUnit = (unit: Unit): CourseId =>
+  COURSE_IDS.find((course) => lessonsOf(course).includes(unit.id)) ?? "de";
 
 /** Grammar unit, topic lesson (a theme's words) or story (a longer text). Old files have no kind. */
 export const kindOf = (unit: Unit) => unit.kind ?? "grammar";
@@ -65,38 +78,51 @@ export const PASS = 5;
 /** An exam at the end of a part (A1.1…) or of a level (A1…, modelled on the Goethe exams). */
 export type CourseExam = {
   id: string;
+  course: CourseId;
   level: string;
   type: "part" | "level";
   title: string;
   pass: number;
 };
 
-const partExam = (id: string): CourseExam => ({
+const partExam = (course: CourseId, id: string, level: string): CourseExam => ({
   id,
-  level: id.slice(0, 2),
+  course,
+  level,
   type: "part",
   title: `${id} exam`,
   pass: 70,
 });
-const levelExam = (level: string): CourseExam => ({
+const levelExam = (course: CourseId, level: string): CourseExam => ({
   id: level,
+  course,
   level,
   type: "level",
   title: `${level} exam`,
   pass: 60,
 });
 
-/** The course's parts with their written lessons and the exams that close them. */
-export const COURSE = PARTS_OF_COURSE.map((part, i) => {
-  const level = part.id.slice(0, 2);
-  const lastOfLevel = PARTS_OF_COURSE[i + 1]?.id.slice(0, 2) !== level;
-  return {
-    id: part.id,
-    level,
-    units: UNITS.filter((unit) => (part.lessons as readonly string[]).includes(unit.id)),
-    exams: [partExam(part.id), ...(lastOfLevel ? [levelExam(level)] : [])],
-  };
+/** Every course's parts with their written lessons and the exams that close them. */
+export const COURSE = COURSE_IDS.flatMap((course) => {
+  const { parts, levelExams } = COURSES[course];
+  return parts.map((part, i) => {
+    const lastOfLevel = parts[i + 1]?.level !== part.level;
+    return {
+      id: part.id,
+      course,
+      level: part.level,
+      units: written(part.lessons),
+
+      exams: [
+        partExam(course, part.id, part.level),
+        ...(levelExams && lastOfLevel ? [levelExam(course, part.level)] : []),
+      ],
+    };
+  });
 }).filter((part) => part.units.length > 0);
+
+/** One course's parts, in order. */
+export const partsOf = (course: CourseId) => COURSE.filter((part) => part.course === course);
 
 export const levelName = (level: string, t: T = EN) => t(LEVEL_NAME[level] ?? "");
 
@@ -111,9 +137,10 @@ export const LEVEL_NAME: Record<string, string> = {
  * Per level: lessons done, lessons skipped by the placement test (and not done since), and
  * whether the level exam is passed.
  */
-export function levelProgress(progress: Progress) {
-  return [...new Set(COURSE.map((part) => part.level))].map((level) => {
-    const parts = COURSE.filter((part) => part.level === level);
+export function levelProgress(progress: Progress, course: CourseId = "de") {
+  const all = partsOf(course);
+  return [...new Set(all.map((part) => part.level))].map((level) => {
+    const parts = all.filter((part) => part.level === level);
     const units = parts.flatMap((part) => part.units);
     const done = units.filter((unit) => unitDone(progress, unit)).length;
     const skipped = units.filter(
@@ -172,8 +199,8 @@ export function partProgress(progress: Progress, part: CoursePart) {
  * The part you are in, by the same rule as nextStep: the first one with a lesson part left or
  * an exam not passed (a failed check doesn't hold you back; it comes back at the end).
  */
-export function currentPart(progress: Progress): CoursePart | undefined {
-  return COURSE.find(
+export function currentPart(progress: Progress, course: CourseId = "de"): CoursePart | undefined {
+  return partsOf(course).find(
     (part) =>
       part.units.some((unit) => lessonDue(progress, unit)) ||
       part.exams.some((exam) => examDue(progress, exam)),
@@ -184,7 +211,11 @@ export function currentPart(progress: Progress): CoursePart | undefined {
  * What the placement test put behind you. The latest "placed" row wins (a retaken test can move
  * you back) and replaces the per-lesson "placement" rows from before it existed.
  */
-export function skippedBy(rows: { kind: string; ref: string; at: Date | null }[]): Set<string> {
+export function skippedBy(
+  rows: { kind: string; ref: string; at: Date | null }[],
+  course: CourseId = "de",
+): Set<string> {
+  const UNITS = unitsOf(course);
   const placed = rows
     .filter((row) => row.kind === "placed")
     .sort((a, b) => (b.at?.getTime() ?? 0) - (a.at?.getTime() ?? 0))[0];
@@ -193,13 +224,13 @@ export function skippedBy(rows: { kind: string; ref: string; at: Date | null }[]
   const start = placed.ref === "end" ? UNITS.length : UNITS.findIndex((u) => u.id === placed.ref);
   const behind = UNITS.slice(0, Math.max(start, 0));
   const skipped = new Set(behind.map((unit) => unit.id));
-  for (const part of COURSE)
+  for (const part of partsOf(course))
     if (part.units.every((unit) => behind.includes(unit)))
       for (const exam of part.exams) skipped.add(`exam:${exam.id}`);
   return skipped;
 }
 
-export async function courseProgress(userId: string): Promise<Progress> {
+export async function courseProgress(userId: string, course: CourseId = "de"): Promise<Progress> {
   const rows = await db()
     .select({
       ref: activityLogs.ref,
@@ -208,10 +239,16 @@ export async function courseProgress(userId: string): Promise<Progress> {
       at: max(activityLogs.at),
     })
     .from(activityLogs)
-    .where(and(eq(activityLogs.userId, userId), inArray(activityLogs.kind, KINDS)))
+    .where(
+      and(
+        eq(activityLogs.userId, userId),
+        eq(activityLogs.course, course),
+        inArray(activityLogs.kind, KINDS),
+      ),
+    )
     .groupBy(activityLogs.ref, activityLogs.kind);
   const progress: Progress = new Map();
-  progress.skipped = skippedBy(rows);
+  progress.skipped = skippedBy(rows, course);
   for (const row of rows) {
     if (row.kind === "placed" || row.kind === "placement") continue;
     const parts = progress.get(row.ref) ?? new Map();
@@ -262,12 +299,18 @@ const examStep = (exam: CourseExam, t: T): Step => ({
  * exam until it is passed (every lesson stays open for free choice). A lesson started out of
  * order is finished first. Then failed lesson checks come back. Null when all is done.
  */
-export function nextStep(progress: Progress, lastUnitId?: string | null, t: T = EN): Step | null {
+export function nextStep(
+  progress: Progress,
+  lastUnitId?: string | null,
+  t: T = EN,
+  course: CourseId = "de",
+): Step | null {
+  const UNITS = unitsOf(course);
   // A skipped lesson you only looked into doesn't take over the path.
   const last = UNITS.find((unit) => unit.id === lastUnitId && !isSkipped(progress, unit.id));
   const lastPart = last && PARTS.find((p) => !progress.get(last.id)?.has(p.kind));
   if (last && lastPart) return lessonStep(last, lastPart, t);
-  for (const part of COURSE) {
+  for (const part of partsOf(course)) {
     for (const unit of part.units) {
       if (lessonDue(progress, unit))
         return lessonStep(
@@ -286,13 +329,14 @@ export function nextStep(progress: Progress, lastUnitId?: string | null, t: T = 
 }
 
 /** True if a lesson part was done today (the lesson step of the daily path). */
-export async function lessonDoneToday(userId: string): Promise<boolean> {
+export async function lessonDoneToday(userId: string, course: CourseId = "de"): Promise<boolean> {
   const [row] = await db()
     .select({ n: sql<number>`count(*)::int` })
     .from(activityLogs)
     .where(
       and(
         eq(activityLogs.userId, userId),
+        eq(activityLogs.course, course),
         // Lessons, test-outs and exams; a placement is not today's lesson.
         inArray(activityLogs.kind, [...PARTS.map((p) => p.kind), "tested", "exam"]),
         gte(activityLogs.at, DAY_START),
@@ -311,13 +355,15 @@ export function withExercise(item: ReviewItem | null): ReviewCard | null {
 }
 
 /** The lesson with the most recent activity, to resume it. */
-export async function lastUnitId(userId: string): Promise<string | null> {
+export async function lastUnitId(userId: string, course: CourseId = "de"): Promise<string | null> {
   const [row] = await db()
     .select({ ref: activityLogs.ref })
     .from(activityLogs)
     .where(
       and(
         eq(activityLogs.userId, userId),
+        eq(activityLogs.course, course),
+
         inArray(
           activityLogs.kind,
           PARTS.map((p) => p.kind),

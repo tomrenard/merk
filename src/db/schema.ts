@@ -70,6 +70,8 @@ export const notes = pgTable("notes", {
   id: text("id").primaryKey(),
   /** Set only on words someone added themselves; list words, phrases and units are shared. */
   userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
+  /** Which language it belongs to (see src/lib/courses.ts). */
+  course: text("course").notNull().default("de"),
   source: text("source").notNull(),
   cefr: text("cefr").notNull(),
   ord: integer("ord").notNull(),
@@ -98,6 +100,8 @@ export const cards = pgTable(
       .references(() => notes.id, { onDelete: "cascade" }),
     /** Whose card this is. Null only for cards made before accounts, until claimed. */
     userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
+    /** Its note's course, copied here so the review queue needs no join. */
+    course: text("course").notNull().default("de"),
     /** de_en shows German; en_de asks for it; unit reviews a grammar unit with one of its exercises. */
     direction: text("direction", { enum: ["de_en", "en_de", "unit"] }).notNull(),
     fsrs: jsonb("fsrs").$type<CardInput>(),
@@ -136,7 +140,10 @@ export const activityLogs = pgTable(
   {
     id: serial("id").primaryKey(),
     userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
+    /** The course the lesson, exam or placement belongs to. */
+    course: text("course").notNull().default("de"),
     kind: text("kind").notNull(),
+
     ref: text("ref").notNull(),
     score: integer("score"),
     total: integer("total"),

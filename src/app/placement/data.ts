@@ -1,11 +1,13 @@
-import { and, asc, isNull, notInArray } from "drizzle-orm";
+import { and, asc, eq, isNull, notInArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
-import { COURSE, kindOf, UNITS } from "@/lib/course";
+import { kindOf, partsOf, unitsOf } from "@/lib/course";
 import type { Band, Level } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";
 
+/** Placement exists for German only (see src/lib/courses.ts). */
+const UNITS = unitsOf("de");
 const BAND_SIZE = 320;
 export const LEVELS: Level[] = ["A1", "A2", "B1", "B2"];
 /** The grammar search runs over the grammar lessons only; topics and stories sit between them. */
@@ -16,7 +18,13 @@ export async function wordBands() {
   const words = await db()
     .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr })
     .from(notes)
-    .where(and(isNull(notes.userId), notInArray(notes.source, ["phrase", "unit", "mine"])))
+    .where(
+      and(
+        isNull(notes.userId),
+        eq(notes.course, "de"),
+        notInArray(notes.source, ["phrase", "unit", "mine"]),
+      ),
+    )
     .orderBy(asc(notes.ord));
   let id = 0;
   return LEVELS.flatMap((level) => {
@@ -85,7 +93,7 @@ export async function placementPacket() {
     units: GRAMMAR.map((u) => ({ id: u.id, title: u.title, cefr: u.cefr })),
     // Where each grammar lesson sits in the whole course, to turn the search into a start lesson.
     grammarAt: GRAMMAR.map((u) => UNITS.indexOf(u)),
-    course: COURSE.map((part) => ({
+    course: partsOf("de").map((part) => ({
       id: part.id,
       lessons: part.units.map((u) => ({ index: UNITS.indexOf(u), title: u.title })),
     })),

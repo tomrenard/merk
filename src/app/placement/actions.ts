@@ -3,11 +3,15 @@
 import { and, eq, gte, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { UNITS } from "@/lib/course";
+import { unitsOf } from "@/lib/course";
+
 import { freshPages } from "@/lib/fresh";
 import { markKnown, startUnitCards } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { wordBands } from "./data";
+
+/** Placement exists for German only (see src/lib/courses.ts). */
+const UNITS = unitsOf("de");
 
 /**
  * Applies a placement result: one "placed" row with the start lesson, so lessons before it (and

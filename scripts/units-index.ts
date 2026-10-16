@@ -5,7 +5,7 @@ const ids = readdirSync(new URL("../data/units/", import.meta.url))
   .filter((file) => file.endsWith(".json"))
   .map((file) => file.replace(".json", ""))
   .sort();
-const name = (id: string) => `u${id.replace("-", "_")}`;
+const name = (id: string) => `u${id.replaceAll("-", "_")}`;
 writeFileSync(
   new URL("../src/lib/units-index.ts", import.meta.url),
   [

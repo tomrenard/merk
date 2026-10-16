@@ -8,8 +8,9 @@ import {
   levelProgress,
   nextStep,
 } from "@/lib/course";
+import { COURSES } from "@/lib/courses";
 import type { T } from "@/lib/i18n";
-import { getT } from "@/lib/locale";
+import { getCourse, getT } from "@/lib/locale";
 import { activity, counts, progress, wordLevels } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "./Nav";
@@ -60,7 +61,10 @@ function LevelCard({
           {part ? `${part.id} ›` : `${t("All done")} ›`}
         </span>
       </span>
-      <span className="grid grid-cols-4 gap-1.5">
+      <span
+        className="grid gap-1.5"
+        style={{ gridTemplateColumns: `repeat(${Math.max(levels.length, 1)}, 1fr)` }}
+      >
         {levels.map((l) => (
           <span key={l.level} className="flex flex-col gap-1">
             {/* Done solid, then skipped by the placement test faded. */}
@@ -138,7 +142,8 @@ const minutes = (cards: number) => Math.max(1, Math.round((cards * 8) / 60));
 /** Today: a plan (reviews, new words, a lesson part) with one Continue, never a gate. */
 export default async function Home() {
   const userId = await requireUser();
-  const t = await getT();
+  const [t, courseId] = await Promise.all([getT(), getCourse()]);
+  const { flag, name, placement } = COURSES[courseId];
   const [
     { due: dueNow, repeats, newLeft, followUps, paused, backlog },
     { reviewsToday, streak },
@@ -148,26 +153,29 @@ export default async function Home() {
     lessonDone,
     words,
   ] = await Promise.all([
-    counts(userId),
+    counts(userId, courseId),
     activity(userId),
-    progress(userId),
-    courseProgress(userId),
-    lastUnitId(userId),
-    lessonDoneToday(userId),
-    wordLevels(userId),
+    progress(userId, courseId),
+    courseProgress(userId, courseId),
+    lastUnitId(userId, courseId),
+    lessonDoneToday(userId, courseId),
+    wordLevels(userId, courseId),
   ]);
   // Reviews include missed words coming back within minutes: the session shows them now.
   const due = dueNow + repeats;
   const cards = due + newLeft + followUps;
-  const step = nextStep(course, last, t);
+  const step = nextStep(course, last, t, courseId);
   const lessonHref = step?.href ?? "/learn";
   const allDone = cards === 0 && (lessonDone || !step);
-  const part = currentPart(course);
+  const part = currentPart(course, courseId);
   return (
     <main className="screen with-tabs">
       <header className="topbar">
         <h1 className="text-3xl font-black tracking-tight text-[var(--brand)]">merk</h1>
         <span className="flex items-center gap-2">
+          <Go href="/settings#course" className="chip line border" aria-label={t(name)}>
+            {flag}
+          </Go>
           <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
             🔥 {streak}
           </span>
@@ -177,7 +185,8 @@ export default async function Home() {
         </span>
       </header>
 
-      {course.size === 0 &&
+      {placement &&
+        course.size === 0 &&
         !course.skipped?.size &&
         known === 0 &&
         remembered === null &&
@@ -284,7 +293,7 @@ export default async function Home() {
       <section>
         <h2 className="muted mb-2 text-sm font-extrabold">{t("Your progress")}</h2>
         <div className="mb-3">
-          <LevelCard part={part} levels={levelProgress(course)} words={words} t={t} />
+          <LevelCard part={part} levels={levelProgress(course, courseId)} words={words} t={t} />
         </div>
         <div className="card divide-y divide-[var(--line)] py-0">
           <Stat

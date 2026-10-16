@@ -64,6 +64,13 @@
       "when": 1791879004906,
       "tag": "0008_icy_celestials",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1792149237128,
+      "tag": "0009_courses",
+      "breakpoints": true
     }
   ]
 }

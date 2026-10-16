@@ -98,6 +98,8 @@ export const COURSE = PARTS_OF_COURSE.map((part, i) => {
   };
 }).filter((part) => part.units.length > 0);
 
+export const levelName = (level: string, t: T = EN) => t(LEVEL_NAME[level] ?? "");
+
 export const LEVEL_NAME: Record<string, string> = {
   A1: "Beginner",
   A2: "Elementary",
@@ -109,10 +111,6 @@ export const LEVEL_NAME: Record<string, string> = {
  * Per level: lessons done, lessons skipped by the placement test (and not done since), and
  * whether the level exam is passed.
  */
-export const levelName = (level: string, t: T = EN) => t(LEVEL_NAME[level] ?? "");
-
-export { examTitle };
-
 export function levelProgress(progress: Progress) {
   return [...new Set(COURSE.map((part) => part.level))].map((level) => {
     const parts = COURSE.filter((part) => part.level === level);

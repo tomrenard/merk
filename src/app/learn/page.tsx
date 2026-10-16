@@ -6,7 +6,6 @@ import {
   currentPart,
   examPassed,
   examScore,
-  examTitle,
   isSkipped,
   lastUnitId,
   levelName,
@@ -19,7 +18,8 @@ import {
   UNITS,
   unitDone,
 } from "@/lib/course";
-import type { T } from "@/lib/i18n";
+import { examTitle, type T } from "@/lib/i18n";
+
 import { getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../Nav";

@@ -11,10 +11,11 @@ const files = (dir: string): string[] =>
         ? [join(dir, e.name)]
         : [],
   );
+/** All source, minus the FR dictionary itself (its keys don't count as using them). */
 const source = files("src")
-  .filter((f) => !f.endsWith("i18n.ts"))
   .map((f) => readFileSync(f, "utf8"))
-  .join("\n");
+  .join("\n")
+  .replace(/const FR: Record<string, string> = \{[\s\S]*?\n\};/, "");
 
 /** Literal keys in t("…") calls, including t(cond ? "a" : "b"). */
 const used = new Set(
@@ -27,19 +28,19 @@ const used = new Set(
 
 describe("French UI", () => {
   it("translates every literal t() key", () => {
-    const fr = new Set(FR_KEYS());
+    const fr = new Set(FR_KEYS);
     expect([...used].filter((k) => !fr.has(k))).toEqual([]);
   });
 
   it("has no key that the code no longer uses (as a string anywhere)", () => {
     // Keys passed indirectly (labels in arrays) still appear as a quoted string.
-    const stale = FR_KEYS().filter((k) => !source.includes(`"${k}"`));
+    const stale = FR_KEYS.filter((k) => !source.includes(`"${k}"`));
     expect(stale).toEqual([]);
   });
 
   it("keeps placeholders and fills them", () => {
     const fr = translator("fr");
-    for (const key of FR_KEYS()) {
+    for (const key of FR_KEYS) {
       const holes = (s: string) => (s.match(/\{\w+\}/g) ?? []).sort().join();
       expect(holes(fr(key)), key).toBe(holes(key));
     }

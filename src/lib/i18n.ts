@@ -8,7 +8,7 @@ export const LOCALE_COOKIE = "merk-lang";
 
 export const isLocale = (value: unknown): value is Locale => LOCALES.includes(value as Locale);
 
-export type Vars = Record<string, string | number>;
+type Vars = Record<string, string | number>;
 export type T = (text: string, vars?: Vars) => string;
 
 const FR: Record<string, string> = {
@@ -115,7 +115,7 @@ const FR: Record<string, string> = {
   "Grammar & words": "Grammaire et vocabulaire",
   Hard: "Difficile",
   "Hear it again": "Réécouter",
-  "Hear yourself": "T’écouter",
+  "Hear yourself": "Écoute-toi",
   "Heard:": "Entendu :",
   "Hide English": "Masquer l’anglais",
   Hint: "Indice",
@@ -130,7 +130,7 @@ const FR: Record<string, string> = {
     "Je peux parler de ma journée, de mon dernier week-end et de mes projets.",
   "I know this": "Je connais",
   "I was right": "J’avais bon",
-  "I'm not sure after all": "Finalement, je ne suis pas sûr",
+  "I'm not sure after all": "Finalement, je ne sais pas",
   Intermediate: "Intermédiaire",
   "Invited? Create your account": "Invité ? Crée ton compte",
   "It comes back in about 10 minutes.": "Il revient dans 10 minutes environ.",
@@ -159,7 +159,7 @@ const FR: Record<string, string> = {
   Listen: "Écouter",
   "Listen & read": "Écouter et lire",
   "Listen first, no text": "D’abord écouter, sans texte",
-  "Listen to yourself": "T’écouter",
+  "Listen to yourself": "Écoute-toi",
   "Listen twice if you like. Then answer a few questions.":
     "Écoute deux fois si tu veux. Ensuite, réponds à quelques questions.",
   Listening: "Écoute",
@@ -387,7 +387,7 @@ const FR: Record<string, string> = {
   "{n} words": "{n} mots",
   "{pass}% to pass": "{pass} % pour réussir",
   "{right}/{total} right. Try the dialogue again any time.":
-    "{right}/{total} juste. Refais le dialogue quand tu veux.",
+    "{right}/{total} bonnes réponses. Refais le dialogue quand tu veux.",
   "⭐ Known": "⭐ Connus",
   "🧠 Tricky": "🧠 Difficiles",
 };
@@ -407,4 +407,4 @@ export const examTitle = (exam: { id: string }, t: T = translator("en")) =>
 export const dateLocale = (locale: Locale) => (locale === "fr" ? "fr-FR" : "en-GB");
 
 /** Every English key in FR, for the test that finds texts left untranslated. */
-export const FR_KEYS = () => Object.keys(FR);
+export const FR_KEYS = Object.keys(FR);

@@ -67,12 +67,12 @@ export default async function SettingsPage() {
         <span className="muted text-sm font-semibold">{t("App language")}</span>
         <LanguageSwitch current={locale} label={t("App language")} />
       </section>
-      <form action={save} className="flex flex-col gap-5">
-        <VoicePicker />
-        <Go href="/placement" className="btn">
-          🧭 {t("Retake the placement test")}
-        </Go>
-        <button type="submit" formAction={logout} formNoValidate className="btn mt-4">
+      <VoicePicker />
+      <Go href="/placement" className="btn">
+        🧭 {t("Retake the placement test")}
+      </Go>
+      <form action={logout} className="mt-4 flex flex-col">
+        <button type="submit" className="btn">
           {t("Log out")}
         </button>
       </form>

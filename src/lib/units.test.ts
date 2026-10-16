@@ -4,6 +4,7 @@ import { Exam, examProblems } from "./exams.ts";
 import { PARTS_OF_COURSE } from "./parts.ts";
 import { seededShuffle } from "./shuffle.ts";
 import { buildsFrom, SYLLABUS, Unit, unitProblems } from "./units.ts";
+import { UNITS } from "./units-index.ts";
 
 describe("buildsFrom", () => {
   it.each([
@@ -50,5 +51,12 @@ describe.each(readdirSync(examDir).filter((f) => f.endsWith(".json")))("data/exa
     const exam = Exam.parse(JSON.parse(readFileSync(`${examDir}${file}`, "utf8")));
     expect(exam.id).toBe(file.replace(".json", ""));
     expect(examProblems(exam)).toEqual([]);
+  });
+});
+
+describe("units-index", () => {
+  it("lists every lesson file (run `pnpm units:index` after adding one)", () => {
+    const files = readdirSync(dir).filter((f) => f.endsWith(".json"));
+    expect(UNITS.map((u) => u.id).sort()).toEqual(files.map((f) => f.replace(".json", "")).sort());
   });
 });

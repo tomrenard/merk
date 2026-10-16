@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import { sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
 import { PANEL, SOLID } from "../../../feedback";
-import { useT } from "../../../Locale";
+import { useQuiet, useT } from "../../../Locale";
 import { speak, stopSpeaking, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
+import { Pick } from "../../Pick";
 
 type Step = "hear" | "questions" | "read" | "dictation";
 
@@ -24,6 +26,8 @@ export function Listen({
 }) {
   const t = useT();
   const cheer = CHEERS[courseOfId(unit.id)];
+  const quiet = useQuiet();
+
   useSpeechUnlock();
   const { lines, questions } = unit.listening;
   const [step, setStep] = useState<Step>("hear");
@@ -213,14 +217,35 @@ export function Listen({
   // Darija: heard in Arabic, typed and checked in Latin.
   const sentenceTr = unit.dictationTr?.[index];
   const typed = typeof answer === "string" ? answer : "";
-  const correct = sentenceTr ? sameDarija(typed, sentenceTr) : sameAnswer(typed, sentence);
+  // Quiet mode: pick the sentence you heard among the lesson's others.
+  const choices = quiet
+    ? withOthers(
+        { de: sentence, tr: sentenceTr },
+        [
+          ...unit.dictation.map((de, i) => ({ de, tr: unit.dictationTr?.[i] })),
+          ...unit.listening.lines,
+        ],
+        `${unit.id}:dictation:${index}`,
+        { others: 2 },
+      )
+    : null;
+  const correct = choices
+    ? answer === choices.answer
+    : sentenceTr
+      ? sameDarija(typed, sentenceTr)
+      : sameAnswer(typed, sentence);
   return (
     <PartShell unitId={unit.id} progress={progress + (index / unit.dictation.length) * 0.25}>
       <p className="muted text-sm font-extrabold">
-        {t("Dictation {n}/{total}: type what you hear", {
-          n: index + 1,
-          total: unit.dictation.length,
-        })}
+        {t(
+          choices
+            ? "Dictation {n}/{total}: which sentence do you hear?"
+            : "Dictation {n}/{total}: type what you hear",
+          {
+            n: index + 1,
+            total: unit.dictation.length,
+          },
+        )}
       </p>
       <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">
         🔊 {t("Play")}
@@ -230,22 +255,32 @@ export function Listen({
         onSubmit={(event) => {
           event.preventDefault();
           if (checked) next(correct, unit.dictation.length);
-          else if (typed.trim()) setChecked(true);
+          else if (choices ? answer !== null : typed.trim()) setChecked(true);
         }}
       >
-        <textarea
-          value={typed}
-          onChange={(event) => setAnswer(event.target.value)}
-          readOnly={checked}
-          rows={2}
-          lang={sentenceTr ? "fr" : "de"}
-          autoCapitalize={sentenceTr ? "off" : "sentences"}
-          autoComplete="off"
-          autoCorrect="off"
-          spellCheck={false}
-          aria-label={t("What you heard")}
-          className="field text-lg font-bold"
-        />
+        {choices ? (
+          <Pick
+            options={choices.options}
+            picked={typeof answer === "number" ? answer : null}
+            onPick={setAnswer}
+            checked={checked}
+          />
+        ) : (
+          <textarea
+            value={typed}
+            onChange={(event) => setAnswer(event.target.value)}
+            readOnly={checked}
+            rows={2}
+            lang={sentenceTr ? "fr" : "de"}
+            autoCapitalize={sentenceTr ? "off" : "sentences"}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            aria-label={t("What you heard")}
+            className="field text-lg font-bold"
+          />
+        )}
+
         {checked && (
           <div className={`rounded-2xl p-4 ${PANEL[correct ? "right" : "wrong"]}`}>
             <p className="text-xl font-black">

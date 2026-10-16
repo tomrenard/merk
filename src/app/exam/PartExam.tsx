@@ -9,6 +9,8 @@ import { examTitle } from "@/lib/i18n";
 import { PANEL, SOLID } from "../feedback";
 import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
+import { Pick } from "../learn/Pick";
+
 import { speak, useSpeechUnlock } from "../review/German";
 import { Say } from "../Say";
 import type { PartExamPacket } from "./data";
@@ -143,8 +145,18 @@ export function PartExam({
     );
   }
 
-  const { de: sentence, tr } = packet.dictation[l - packet.listening.length] ?? { de: "" };
-  const right = tr ? sameDarija(typed, tr) : sameAnswer(typed, sentence);
+  const {
+    de: sentence,
+    tr,
+    choices,
+  } = packet.dictation[l - packet.listening.length] ?? {
+    de: "",
+  };
+  const right = choices
+    ? picked === choices.answer
+    : tr
+      ? sameDarija(typed, tr)
+      : sameAnswer(typed, sentence);
   return (
     <main className="screen">
       {bar(t("Dictation"))}
@@ -155,19 +167,24 @@ export function PartExam({
       >
         🔊 {t("Play")}
       </button>
-      <textarea
-        value={typed}
-        onChange={(event) => setTyped(event.target.value)}
-        readOnly={checked}
-        rows={2}
-        lang={tr ? "fr" : "de"}
-        autoCapitalize={tr ? "off" : "sentences"}
-        autoComplete="off"
-        autoCorrect="off"
-        spellCheck={false}
-        aria-label={t("What you heard")}
-        className="field text-lg font-bold"
-      />
+      {choices ? (
+        <Pick options={choices.options} picked={picked} onPick={setPicked} checked={checked} />
+      ) : (
+        <textarea
+          value={typed}
+          onChange={(event) => setTyped(event.target.value)}
+          readOnly={checked}
+          rows={2}
+          lang={tr ? "fr" : "de"}
+          autoCapitalize={tr ? "off" : "sentences"}
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck={false}
+          aria-label={t("What you heard")}
+          className="field text-lg font-bold"
+        />
+      )}
+
       {checked && (
         <div className={`rounded-2xl p-4 ${PANEL[right ? "right" : "wrong"]}`}>
           <p className="text-xl font-black">
@@ -178,7 +195,7 @@ export function PartExam({
       )}
       <button
         type="button"
-        disabled={!typed.trim()}
+        disabled={choices ? picked === null : !typed.trim()}
         onClick={() => (checked ? next("dictation", right) : setChecked(true))}
         className={`btn btn-solid disabled:opacity-50 ${SOLID[checked ? (right ? "right" : "wrong") : "idle"]}`}
       >

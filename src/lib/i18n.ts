@@ -14,6 +14,12 @@ type Vars = Record<string, string | number>;
 export type T = (text: string, vars?: Vars) => string;
 
 const FR: Record<string, string> = {
+  "Dictation {n}/{total}: which sentence do you hear?":
+    "Dictée {n}/{total} : quelle phrase entends-tu ?",
+  "Listen {n}/{total}: what does it mean?": "Écoute {n}/{total} : qu’est-ce que ça veut dire ?",
+  "Read a good answer": "Lis une bonne réponse",
+  "Notice how it uses this lesson's grammar; you can write your own later.":
+    "Remarque comment elle utilise la grammaire de la leçon ; tu pourras écrire la tienne plus tard.",
   "Quiet mode": "Mode discret",
   On: "Activé",
   Off: "Désactivé",

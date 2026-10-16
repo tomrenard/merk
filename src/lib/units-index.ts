@@ -61,6 +61,25 @@ import ua2_t08 from "../../data/units/a2-t08.json";
 import ua2_t09 from "../../data/units/a2-t09.json";
 import ua2_t10 from "../../data/units/a2-t10.json";
 import uary_a1_01 from "../../data/units/ary-a1-01.json";
+import uary_a1_02 from "../../data/units/ary-a1-02.json";
+import uary_a1_03 from "../../data/units/ary-a1-03.json";
+import uary_a1_04 from "../../data/units/ary-a1-04.json";
+import uary_a1_05 from "../../data/units/ary-a1-05.json";
+import uary_a1_06 from "../../data/units/ary-a1-06.json";
+import uary_a1_07 from "../../data/units/ary-a1-07.json";
+import uary_a1_08 from "../../data/units/ary-a1-08.json";
+import uary_a1_09 from "../../data/units/ary-a1-09.json";
+import uary_a1_10 from "../../data/units/ary-a1-10.json";
+import uary_a1_11 from "../../data/units/ary-a1-11.json";
+import uary_a1_12 from "../../data/units/ary-a1-12.json";
+import uary_a1_13 from "../../data/units/ary-a1-13.json";
+import uary_a1_14 from "../../data/units/ary-a1-14.json";
+import uary_a1_15 from "../../data/units/ary-a1-15.json";
+import uary_a1_16 from "../../data/units/ary-a1-16.json";
+import uary_a1_17 from "../../data/units/ary-a1-17.json";
+import uary_a1_18 from "../../data/units/ary-a1-18.json";
+import uary_a1_19 from "../../data/units/ary-a1-19.json";
+import uary_a1_20 from "../../data/units/ary-a1-20.json";
 import ub1_01 from "../../data/units/b1-01.json";
 import ub1_02 from "../../data/units/b1-02.json";
 import ub1_03 from "../../data/units/b1-03.json";
@@ -190,6 +209,25 @@ export const UNITS = [
   ua2_t09,
   ua2_t10,
   uary_a1_01,
+  uary_a1_02,
+  uary_a1_03,
+  uary_a1_04,
+  uary_a1_05,
+  uary_a1_06,
+  uary_a1_07,
+  uary_a1_08,
+  uary_a1_09,
+  uary_a1_10,
+  uary_a1_11,
+  uary_a1_12,
+  uary_a1_13,
+  uary_a1_14,
+  uary_a1_15,
+  uary_a1_16,
+  uary_a1_17,
+  uary_a1_18,
+  uary_a1_19,
+  uary_a1_20,
   ub1_01,
   ub1_02,
   ub1_03,

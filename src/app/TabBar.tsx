@@ -17,12 +17,16 @@ const TABS = [
   { href: "/words", label: "Words" },
 ] as const;
 
-/** Bottom navigation of the main screens; `active` is the current tab's href. */
+/**
+ * Bottom navigation of the main screens; `active` is the current tab's href. Sticky at the end
+ * of the screen, not fixed: iOS misplaces fixed bars while a page's height changes as you scroll
+ * (the course list opening its parts left it floating mid-screen).
+ */
 export async function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
   const t = await getT();
   return (
     <nav
-      className="line fixed inset-x-0 bottom-0 z-10 border-t pb-[env(safe-area-inset-bottom)]"
+      className="line sticky bottom-0 z-10 -mx-4 mt-auto border-t pb-[env(safe-area-inset-bottom)]"
       style={{ background: "var(--surface)" }}
     >
       <ul className="mx-auto grid max-w-md grid-cols-4 px-3 pt-2 pb-1">

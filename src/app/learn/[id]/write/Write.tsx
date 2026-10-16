@@ -6,7 +6,7 @@ import { CHEERS, courseOfId } from "@/lib/courses";
 import type { Unit } from "@/lib/units";
 import { checkWriting } from "../../../ai/actions";
 import { AiFailure, FeedbackCard } from "../../../ai/Feedback";
-import { useT } from "../../../Locale";
+import { useQuiet, useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
@@ -25,6 +25,8 @@ export function Write({
   useSpeechUnlock();
   const t = useT();
   const course = courseOfId(unit.id);
+  const quiet = useQuiet();
+
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
   const [marked, setMarked] = useState<Feedback | null>(null);
@@ -54,6 +56,29 @@ export function Write({
         onRetry={retry}
         saving={saving}
       />
+    );
+  }
+
+  // Quiet mode: no writing; you read and hear a good answer to the task.
+  if (quiet) {
+    return (
+      <PartShell unitId={unit.id} progress={0.5}>
+        <p className="muted text-sm font-extrabold">{t("Read a good answer")}</p>
+        <p className="text-xl font-black leading-snug">{unit.writing.task}</p>
+        <button
+          type="button"
+          onClick={() => speak(unit.writing.model, { recorded: true })}
+          className="card text-left font-semibold leading-relaxed"
+        >
+          <Say de={unit.writing.model} tr={unit.writing.modelTr} /> 🔊
+        </button>
+        <p className="muted text-sm font-semibold">
+          {t("Notice how it uses this lesson's grammar; you can write your own later.")}
+        </p>
+        <button type="button" onClick={() => save(1, 1)} className="btn btn-primary mt-auto">
+          {t("Finish")}
+        </button>
+      </PartShell>
     );
   }
 

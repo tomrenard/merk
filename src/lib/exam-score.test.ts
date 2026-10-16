@@ -20,3 +20,16 @@ describe("examPercent", () => {
     expect(examPercent(scores(5, 9, 9, 10))).toBe(50);
   });
 });
+
+describe("examPercent in Quiet mode", () => {
+  it("leaves out sections with nothing in them", () => {
+    const quiet: Scores = {
+      Hören: [8, 10],
+      Lesen: [8, 10],
+      Sprachbausteine: [8, 10],
+      Schreiben: [0, 0],
+      Sprechen: [0, 0],
+    };
+    expect(examPercent(quiet)).toBe(80);
+  });
+});

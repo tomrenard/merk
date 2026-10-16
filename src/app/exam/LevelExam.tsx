@@ -10,7 +10,8 @@ import { seededShuffle } from "@/lib/shuffle";
 import { checkSpeaking, checkWriting } from "../ai/actions";
 import { AiFailure, FeedbackCard } from "../ai/Feedback";
 import { recordingForm, useRecorder } from "../ai/useRecorder";
-import { useT } from "../Locale";
+import { useQuiet, useT } from "../Locale";
+
 import { Exercise } from "../learn/Exercise";
 import { speak, stopSpeaking, useSpeechUnlock } from "../review/German";
 import { ExamBar, ExamIntro, ExamResult, useExamSave } from "./ExamShell";
@@ -93,7 +94,9 @@ export function LevelExam({
   useSpeechUnlock();
   const t = useT();
   const [started, setStarted] = useState(false);
-  const [all] = useState(() => steps(content));
+  const quiet = useQuiet();
+  // Quiet mode skips writing and speaking; the score then counts the other sections.
+  const [all] = useState(() => steps(content).filter((step) => !quiet || step.kind !== "perform"));
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState<Record<Section, [number, number]>>({
     Hören: [0, 0],
@@ -185,16 +188,20 @@ export function LevelExam({
             name: `Sprachbausteine · ${t("grammar")}`,
             detail: count(content.sprachbausteine.length, "{n} gap", "{n} gaps"),
           },
-          {
-            icon: "✍️",
-            name: `Schreiben · ${t("writing")}`,
-            detail: `${count(content.schreiben.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
-          },
-          {
-            icon: "🎙️",
-            name: `Sprechen · ${t("speaking")}`,
-            detail: `${count(content.sprechen.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
-          },
+          ...(quiet
+            ? []
+            : [
+                {
+                  icon: "✍️",
+                  name: `Schreiben · ${t("writing")}`,
+                  detail: `${count(content.schreiben.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
+                },
+                {
+                  icon: "🎙️",
+                  name: `Sprechen · ${t("speaking")}`,
+                  detail: `${count(content.sprechen.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
+                },
+              ]),
         ]}
       />
     );
@@ -207,9 +214,9 @@ export function LevelExam({
         percent={percent}
         state={state}
         onRetry={retry}
-        sections={(Object.entries(score) as [Section, [number, number]][]).map(
-          ([name, [s, of]]) => ({ name, score: s, total: of }),
-        )}
+        sections={(Object.entries(score) as [Section, [number, number]][])
+          .filter(([, [, of]]) => of > 0)
+          .map(([name, [s, of]]) => ({ name, score: s, total: of }))}
       />
     );
   }

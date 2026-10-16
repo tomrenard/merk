@@ -1,9 +1,11 @@
 import { and, asc, eq, isNull, notInArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
+import { quietItem } from "@/lib/choices";
 import { kindOf, partsOf, unitsOf } from "@/lib/course";
 import type { Band, Level } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
+
 import type { UnitItem } from "@/lib/units";
 
 /** Placement exists for German only (see src/lib/courses.ts). */
@@ -47,7 +49,7 @@ export type VocabWord = {
 };
 
 /** Everything the test needs, picked at random on the server; the phone runs the adaptive part. */
-export async function placementPacket() {
+export async function placementPacket(quiet = false) {
   const bands = await wordBands();
   const vocab = bands.map(({ band, words }) => {
     const picked = shuffled(words).slice(0, 10);
@@ -74,7 +76,8 @@ export async function placementPacket() {
     const items = byType.filter((item): item is UnitItem => Boolean(item));
     return [...items, ...shuffled(unit.items)]
       .filter((item, i, all) => all.indexOf(item) === i)
-      .slice(0, 3);
+      .slice(0, 3)
+      .map((item) => (quiet ? quietItem(unit, item) : item));
   });
   const listening = LEVELS.map((level) => {
     const lines = shuffled(

@@ -2,16 +2,20 @@
 
 import { useEffect, useState } from "react";
 import type { Failure } from "@/lib/ai";
+import { withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
+
 import { spokenWords } from "@/lib/german";
 import type { Unit } from "@/lib/units";
 import { transcribeRecording } from "../../../ai/actions";
 import { AiFailure } from "../../../ai/Feedback";
 import { recordingForm, useRecorder } from "../../../ai/useRecorder";
-import { useT } from "../../../Locale";
+import { PANEL } from "../../../feedback";
+import { useQuiet, useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
+import { Pick } from "../../Pick";
 
 /**
  * Repeat each line: hear it, record yourself (it stops by itself after about the line's length),
@@ -35,6 +39,9 @@ export function Speak({
   const [heard, setHeard] = useState<string | null>(null);
   const [failure, setFailure] = useState<Failure | null>(null);
   const [listening, setListening] = useState(false);
+  const quiet = useQuiet();
+  // Quiet mode: no recording; you hear the line and pick what it means.
+  const [meaning, setMeaning] = useState<number | null>(null);
   const line = lines[index];
   // Enough time for the line said slowly, then it stops and checks by itself.
   const seconds = Math.min(20, 3 + Math.ceil((line?.de.split(" ").length ?? 5) * 0.7));
@@ -65,6 +72,7 @@ export function Speak({
     reset();
     setHeard(null);
     setFailure(null);
+    setMeaning(null);
     if (index + 1 < lines.length) setIndex(index + 1);
     else save(lines.length, lines.length);
   }
@@ -89,6 +97,48 @@ export function Speak({
     missed: spokenWords(word).some((w) => !said.has(w)),
   }));
   const missed = shown.filter((w) => w.missed).map((w) => w.word.replace(/[.,!?;:]/g, ""));
+
+  if (quiet) {
+    const meanings = withOthers(
+      { de: line.en },
+      lines.map((l) => ({ de: l.en })),
+      `${unit.id}:speak:${index}`,
+      { others: 2 },
+    );
+    const right = meaning === meanings.answer;
+    return (
+      <PartShell unitId={unit.id} progress={index / lines.length}>
+        <p className="muted text-sm font-extrabold">
+          {t("Listen {n}/{total}: what does it mean?", { n: index + 1, total: lines.length })}
+        </p>
+        <div className="card">
+          <Say de={line.de} tr={line.tr} className="text-2xl font-black" />
+        </div>
+        <button type="button" onClick={() => speak(line.de, { recorded: true })} className="btn">
+          🔊 {t("Listen")}
+        </button>
+        <Pick
+          options={meanings.options}
+          picked={meaning}
+          onPick={setMeaning}
+          checked={meaning !== null}
+        />
+        {meaning !== null && (
+          <p className={`rounded-2xl p-4 text-xl font-black ${PANEL[right ? "right" : "wrong"]}`}>
+            {right ? `✓ ${CHEERS[course].right}` : `✗ ${line.en}`}
+          </p>
+        )}
+        <button
+          type="button"
+          disabled={meaning === null}
+          onClick={next}
+          className="btn btn-primary mt-auto disabled:opacity-50"
+        >
+          {index + 1 < lines.length ? t("Next line") : t("Finish")}
+        </button>
+      </PartShell>
+    );
+  }
 
   return (
     <PartShell unitId={unit.id} progress={index / lines.length}>

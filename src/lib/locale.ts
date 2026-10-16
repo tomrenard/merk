@@ -18,3 +18,9 @@ export async function getCourse(): Promise<CourseId> {
   const value = (await cookies()).get(COURSE_COOKIE)?.value;
   return isCourseId(value) ? value : "de";
 }
+
+/** Quiet mode on this device: every typing or speaking step becomes a tap. */
+export const QUIET_COOKIE = "merk-quiet";
+export async function getQuiet(): Promise<boolean> {
+  return (await cookies()).get(QUIET_COOKIE)?.value === "1";
+}

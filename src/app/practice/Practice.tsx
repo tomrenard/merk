@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { notes } from "@/db/schema";
+import type { Choice } from "@/lib/choices";
 import { CHEERS } from "@/lib/courses";
 import { checkWord } from "@/lib/darija";
 import { spokenForm } from "@/lib/german";
@@ -14,13 +15,25 @@ import { Say } from "../Say";
 
 type Note = typeof notes.$inferSelect;
 
-/** English → typed German over a fixed set, scored at the end. Doesn't change the schedule. */
-export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
+/**
+ * English → typed German over a fixed set, scored at the end. Doesn't change the schedule. In
+ * Quiet mode `choices` (one per word) replaces typing.
+ */
+export function Practice({
+  words,
+  scope,
+  choices,
+}: {
+  words: Note[];
+  scope: PracticeScope;
+  choices?: { options: Choice[]; answer: number }[];
+}) {
   const t = useT();
   const course = useCourse();
   const cheer = CHEERS[course];
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState("");
+  const [picked, setPicked] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [missed, setMissed] = useState<Note[]>([]);
   const note = words[index];
@@ -72,7 +85,8 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
     );
   }
 
-  const right = checkWord(typed, note) === "right";
+  const choice = choices?.[index];
+  const right = choice ? picked === choice.answer : checkWord(typed, note) === "right";
   const state = !checked ? "idle" : right ? "right" : "wrong";
 
   function submit() {
@@ -85,6 +99,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
     }
     setChecked(false);
     setTyped("");
+    setPicked(null);
     setIndex((i) => i + 1);
   }
 
@@ -120,22 +135,38 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           </p>
           <p className="mt-2 text-3xl font-black">{note.en}</p>
         </div>
-        <input
-          value={typed}
-          onChange={(event) => setTyped(event.target.value)}
-          readOnly={checked}
-          onKeyDown={(event) => event.repeat && event.preventDefault()}
-          // biome-ignore lint/a11y/noAutofocus: the input is the whole screen
-          autoFocus
-          lang={course === "ary" ? "fr" : "de"}
-          autoCapitalize="off"
-          autoComplete="off"
-          autoCorrect="off"
-          spellCheck={false}
-          placeholder={cheer.type}
-          aria-label={t("Your answer in German")}
-          className="field w-full text-xl font-bold"
-        />
+        {choice ? (
+          <div className="grid grid-cols-2 gap-2">
+            {choice.options.map((option, i) => (
+              <button
+                key={option.de}
+                type="button"
+                disabled={checked}
+                onClick={() => setPicked(i)}
+                className={`btn normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
+              >
+                <Headword de={option.de} tr={option.tr} />
+              </button>
+            ))}
+          </div>
+        ) : (
+          <input
+            value={typed}
+            onChange={(event) => setTyped(event.target.value)}
+            readOnly={checked}
+            onKeyDown={(event) => event.repeat && event.preventDefault()}
+            // biome-ignore lint/a11y/noAutofocus: the input is the whole screen
+            autoFocus
+            lang={course === "ary" ? "fr" : "de"}
+            autoCapitalize="off"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            placeholder={cheer.type}
+            aria-label={t("Your answer in German")}
+            className="field w-full text-xl font-bold"
+          />
+        )}
 
         {checked && (
           <div
@@ -153,8 +184,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         {/* Keeps focus in the input, so the phone keyboard stays open between words. */}
         <button
           type="submit"
+          disabled={Boolean(choice) && picked === null}
           onMouseDown={(event) => event.preventDefault()}
-          className={`btn btn-solid w-full ${SOLID[state]}`}
+          className={`btn btn-solid w-full disabled:opacity-50 ${SOLID[state]}`}
         >
           {checked ? t("Continue") : t("Check")}
         </button>

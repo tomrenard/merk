@@ -197,7 +197,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
             <Say de={solved(item)} tr={solvedTr(item)} /> 🔊
           </button>
 
-          {item.type === "choice" && <p className="font-semibold">{item.why}</p>}
+          {item.type === "choice" && item.why && <p className="font-semibold">{item.why}</p>}
         </div>
       )}
       <button

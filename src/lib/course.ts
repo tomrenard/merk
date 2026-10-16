@@ -1,9 +1,13 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
+import { type Choice, quietItem } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId } from "./courses";
+
 import { examTitle, type T, translator } from "./i18n";
-import { DAY_START, type ReviewItem } from "./review";
+
+import { DAY_START, type ReviewItem, wordChoices } from "./review";
+
 import type { Unit, UnitItem } from "./units";
 import { UNITS as WRITTEN } from "./units-index";
 
@@ -340,13 +344,25 @@ export async function lessonDoneToday(userId: string, course: CourseId = "de"): 
   return (row?.n ?? 0) > 0;
 }
 
-export type ReviewCard = ReviewItem & { exercise?: UnitItem };
+export type ReviewCard = ReviewItem & {
+  exercise?: UnitItem;
+  /** Quiet mode, a card that asks for the word: pick it among these. */
+  choices?: { options: Choice[]; answer: number };
+};
 
 /** A lesson review card shows one random exercise of its lesson. */
-export function withExercise(item: ReviewItem | null): ReviewCard | null {
+export function withExercise(item: ReviewItem | null, quiet = false): ReviewCard | null {
   if (item?.direction !== "unit") return item;
-  const items = unitById(item.note.id.replace(/^unit:/, ""))?.items ?? [];
-  return { ...item, exercise: items[Math.floor(Math.random() * items.length)] };
+  const unit = unitById(item.note.id.replace(/^unit:/, ""));
+  const exercise = unit?.items[Math.floor(Math.random() * unit.items.length)];
+  return { ...item, exercise: unit && exercise && quiet ? quietItem(unit, exercise) : exercise };
+}
+
+/** A card as the review screen shows it; Quiet mode adds options to pick the word from. */
+export async function reviewCard(item: ReviewItem | null, quiet: boolean) {
+  const card = withExercise(item, quiet);
+  if (!quiet || card?.direction !== "en_de" || card.note.source.endsWith("phrase")) return card;
+  return { ...card, choices: await wordChoices(card.note, card.cardId) };
 }
 
 /** The lesson with the most recent activity, to resume it. */

@@ -5,9 +5,9 @@ import { redirect } from "next/navigation";
 import type { Grade } from "ts-fsrs";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { withExercise } from "@/lib/course";
+import { reviewCard } from "@/lib/course";
 import { freshPages } from "@/lib/fresh";
-import { getCourse } from "@/lib/locale";
+import { getCourse, getQuiet } from "@/lib/locale";
 import { counts, DAY_START, grade, nextCard, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 
@@ -24,7 +24,7 @@ export async function gradeAndNext(
   await grade(userId, cardId, rating as Grade, Number(durationMs) || 0, seenReps);
   const course = await getCourse();
   const [next, left] = await Promise.all([nextCard(userId, course), counts(userId, course)]);
-  return { item: withExercise(next), left: sessionLeft(left) };
+  return { item: await reviewCard(next, await getQuiet()), left: sessionLeft(left) };
 }
 
 /** At most this many extra new words a day, however often "+5" is tapped. */

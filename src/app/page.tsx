@@ -10,7 +10,7 @@ import {
 } from "@/lib/course";
 import { COURSES, shownId } from "@/lib/courses";
 import type { T } from "@/lib/i18n";
-import { getCourse, getT } from "@/lib/locale";
+import { getCourse, getQuiet, getT } from "@/lib/locale";
 import { activity, counts, progress, wordLevels } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "./Nav";
@@ -142,7 +142,7 @@ const minutes = (cards: number) => Math.max(1, Math.round((cards * 8) / 60));
 /** Today: a plan (reviews, new words, a lesson part) with one Continue, never a gate. */
 export default async function Home() {
   const userId = await requireUser();
-  const [t, courseId] = await Promise.all([getT(), getCourse()]);
+  const [t, courseId, quiet] = await Promise.all([getT(), getCourse(), getQuiet()]);
   const { flag, name, placement } = COURSES[courseId];
   const [
     { due: dueNow, repeats, newLeft, followUps, paused, backlog },
@@ -173,6 +173,11 @@ export default async function Home() {
       <header className="topbar">
         <h1 className="text-3xl font-black tracking-tight text-[var(--brand)]">merk</h1>
         <span className="flex items-center gap-2">
+          {quiet && (
+            <Go href="/settings#quiet" className="chip line border" aria-label={t("Quiet mode")}>
+              🤫
+            </Go>
+          )}
           <Go href="/settings#course" className="chip line border" aria-label={t(name)}>
             {flag}
           </Go>

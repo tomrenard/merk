@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState, useTransition } from "react";
+import { quietItem } from "@/lib/choices";
 import { spokenForm } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
+
 import type { Unit, UnitItem } from "@/lib/units";
-import { useT } from "../../../Locale";
+import { useQuiet, useT } from "../../../Locale";
 import { Go } from "../../../Nav";
 import { Headword, SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
@@ -40,7 +42,11 @@ export function Lesson({
   const [step, setStep] = useState<Step>(testOut ? "check" : "learn");
   // Shuffled in the browser only: a different order on the server would break hydration.
   const [order, setOrder] = useState<UnitItem[]>([]);
-  useEffect(() => setOrder(shuffled(unit.items)), [unit]);
+  const quiet = useQuiet();
+  useEffect(
+    () => setOrder(shuffled(quiet ? unit.items.map((item) => quietItem(unit, item)) : unit.items)),
+    [unit, quiet],
+  );
   const [saveFailed, setSaveFailed] = useState(false);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);

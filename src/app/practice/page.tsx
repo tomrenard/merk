@@ -1,6 +1,6 @@
 import { COURSES } from "@/lib/courses";
-import { getCourse, getT } from "@/lib/locale";
-import { type PracticeScope, practiceWords } from "@/lib/review";
+import { getCourse, getQuiet, getT } from "@/lib/locale";
+import { type PracticeScope, practiceWords, wordChoices } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { TabBar } from "../TabBar";
 import { Practice } from "./Practice";
@@ -42,7 +42,13 @@ export default async function PracticePage({
     raw === "all" || raw === "today" || raw === "tricky" ? raw : null;
   const course = await getCourse();
   const words = scope ? await practiceWords(await requireUser(), scope, course) : [];
-  if (scope && words.length) return <Practice words={words} scope={scope} />;
+  const quiet = await getQuiet();
+  if (scope && words.length) {
+    const choices = quiet
+      ? await Promise.all(words.map((word) => wordChoices(word, word.id)))
+      : undefined;
+    return <Practice words={words} scope={scope} choices={choices} />;
+  }
   const t = await getT();
   const { germanTools } = COURSES[course];
 
@@ -91,18 +97,20 @@ export default async function PracticePage({
                 <span className="muted text-2xl font-black">›</span>
               </a>
             </li>
-            <li>
-              <a href="/practice/numbers" className="card flex items-center gap-3">
-                <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
-                <span className="flex-1">
-                  <span className="block font-extrabold">{t("Numbers & time by ear")}</span>
-                  <span className="muted text-sm font-semibold">
-                    {t("Prices, times, phone numbers, spelled names")}
+            {!quiet && (
+              <li>
+                <a href="/practice/numbers" className="card flex items-center gap-3">
+                  <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
+                  <span className="flex-1">
+                    <span className="block font-extrabold">{t("Numbers & time by ear")}</span>
+                    <span className="muted text-sm font-semibold">
+                      {t("Prices, times, phone numbers, spelled names")}
+                    </span>
                   </span>
-                </span>
-                <span className="muted text-2xl font-black">›</span>
-              </a>
-            </li>
+                  <span className="muted text-2xl font-black">›</span>
+                </a>
+              </li>
+            )}
           </>
         )}
       </ul>

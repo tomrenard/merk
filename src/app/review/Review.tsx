@@ -18,7 +18,7 @@ import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
 import { Say } from "../Say";
 import { gradeAndNext } from "./actions";
-import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
+import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "./German";
 
 const GRADES = [
   { rating: 1, label: "Again", className: "[--c:#d63c3c]" },
@@ -39,6 +39,12 @@ const RATINGS: Record<TypedResult, number[]> = {
   wrong: [1],
   blank: [1, 2, 3, 4],
 };
+
+/**
+ * Quiet mode cards are picked, not typed: right counts as Hard (recognising is easier than
+ * recalling, so the word comes back sooner), wrong as Again.
+ */
+const PICKED: Record<"right" | "wrong", number[]> = { right: [2], wrong: [1] };
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
   // A phrase can be said many ways: compare yourself, then grade.
@@ -73,6 +79,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const [remembered, setRemembered] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [typed, setTyped] = useState("");
+  const [picked, setPicked] = useState<number | null>(null);
   const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
@@ -113,6 +120,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
       // Reset in the same update as the new card, so its answer never flashes for a frame.
       setRevealed(false);
       setTyped("");
+      setPicked(null);
       shownAt.current = Date.now();
       setItem(next.item);
       setLeft(next.left);
@@ -121,8 +129,8 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
-      // Inputs and unit exercises handle their own keys.
-      if (event.target instanceof HTMLInputElement || item?.exercise) return;
+      // Inputs, unit exercises and Quiet mode options handle their own keys.
+      if (event.target instanceof HTMLInputElement || item?.exercise || item?.choices) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
@@ -246,13 +254,17 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
       </main>
     );
   }
-  const result = typedResult(item, typed);
-  const ratings = RATINGS[result];
+  const { choices } = item;
+  const pick = picked === null ? undefined : choices?.options[picked];
+  const pickedResult = pick && (picked === choices?.answer ? "right" : "wrong");
+  const result = pickedResult ?? typedResult(item, typed);
+  const ratings = pickedResult ? PICKED[pickedResult] : RATINGS[result];
+
   const message = {
     right: `✓ ${cheer.right}`,
     almost: `≈ ${t("Almost: check the spelling")}`,
     article: `✗ ${t("Article:")} ${articleOf(note.de)}`,
-    wrong: `✗ ${typed}`,
+    wrong: `✗ ${pick ? (pick.tr ?? pick.de) : typed}`,
     blank: typed.trim() ? `${t("You wrote:")} ${typed.trim()}` : "",
   }[result];
 
@@ -289,27 +301,46 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 <span className="muted text-lg"> · {t("+ prep.")}</span>
               )}
             </p>
-            <form
-              className="mt-4 w-full"
-              onSubmit={(event) => {
-                event.preventDefault();
-                reveal();
-              }}
-            >
-              <input
-                value={typed}
-                onChange={(event) => setTyped(event.target.value)}
-                disabled={revealed}
-                lang={course === "ary" ? "fr" : "de"}
-                autoCapitalize="off"
-                autoComplete="off"
-                autoCorrect="off"
-                spellCheck={false}
-                placeholder={cheer.type}
-                aria-label={t("Your answer in German")}
-                className="field w-full text-center text-xl font-bold"
-              />
-            </form>
+            {choices ? (
+              <div className="mt-4 grid w-full grid-cols-2 gap-2">
+                {choices.options.map((option, i) => (
+                  <button
+                    key={option.de}
+                    type="button"
+                    disabled={revealed}
+                    onClick={() => {
+                      setPicked(i);
+                      reveal();
+                    }}
+                    className={`btn normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
+                  >
+                    <Headword de={option.de} tr={option.tr} />
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <form
+                className="mt-4 w-full"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  reveal();
+                }}
+              >
+                <input
+                  value={typed}
+                  onChange={(event) => setTyped(event.target.value)}
+                  disabled={revealed}
+                  lang={course === "ary" ? "fr" : "de"}
+                  autoCapitalize="off"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  placeholder={cheer.type}
+                  aria-label={t("Your answer in German")}
+                  className="field w-full text-center text-xl font-bold"
+                />
+              </form>
+            )}
           </>
         )}
 
@@ -373,13 +404,13 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                   : t("Again: comes back in about 10 minutes.")}
               </p>
             )}
-            {result === "wrong" && (
+            {result === "wrong" && !choices && (
               <button type="button" disabled={pending} onClick={() => answer(3)} className="btn">
                 {t("I was right")}
               </button>
             )}
           </div>
-        ) : (
+        ) : choices ? null : (
           <button type="button" onClick={reveal} className="btn btn-primary w-full">
             {t("Show answer")}
           </button>

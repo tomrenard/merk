@@ -14,6 +14,11 @@ type Vars = Record<string, string | number>;
 export type T = (text: string, vars?: Vars) => string;
 
 const FR: Record<string, string> = {
+  "Quiet mode": "Mode discret",
+  On: "Activé",
+  Off: "Désactivé",
+  "Tap only: no typing, no speaking. Gaps, dictations and word cards become choices; you read the model answer instead of writing.":
+    "Seulement toucher : rien à écrire, rien à dire. Les trous, les dictées et les cartes deviennent des choix ; tu lis la réponse modèle au lieu d’écrire.",
   "Write this in Darija": "Écris ça en darija",
   "Tap, say the sentence, then compare what we heard with it.":
     "Touche, dis la phrase, puis compare-la avec ce qu’on a entendu.",

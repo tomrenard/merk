@@ -4,10 +4,10 @@ import { auth } from "@/lib/auth";
 import { COURSES } from "@/lib/courses";
 import { freshPages } from "@/lib/fresh";
 import { translator } from "@/lib/i18n";
-import { getCourse, getLocale } from "@/lib/locale";
+import { getCourse, getLocale, getQuiet } from "@/lib/locale";
 import { getSettings, saveSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import { CourseSwitch, LanguageSwitch } from "../language";
+import { CourseSwitch, LanguageSwitch, QuietSwitch } from "../language";
 import { Go } from "../Nav";
 import { VoicePicker } from "./VoicePicker";
 
@@ -33,7 +33,7 @@ async function logout() {
 
 export default async function SettingsPage() {
   const current = await getSettings(await requireUser());
-  const [locale, course] = await Promise.all([getLocale(), getCourse()]);
+  const [locale, course, quiet] = await Promise.all([getLocale(), getCourse(), getQuiet()]);
   const t = translator(locale);
   return (
     <main className="screen">
@@ -75,8 +75,18 @@ export default async function SettingsPage() {
           {t("Each language keeps its own lessons, words and progress.")}
         </span>
       </section>
+      <section id="quiet" className="card flex flex-col gap-2">
+        <span className="muted text-sm font-semibold">🤫 {t("Quiet mode")}</span>
+        <QuietSwitch current={quiet} label={t("Quiet mode")} on={t("On")} off={t("Off")} />
+        <span className="muted text-sm">
+          {t(
+            "Tap only: no typing, no speaking. Gaps, dictations and word cards become choices; you read the model answer instead of writing.",
+          )}
+        </span>
+      </section>
       <section className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">{t("App language")}</span>
+
         <LanguageSwitch current={locale} label={t("App language")} />
       </section>
       <VoicePicker />

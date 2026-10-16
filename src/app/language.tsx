@@ -2,6 +2,7 @@ import { cookies } from "next/headers";
 import { COURSE_COOKIE, COURSE_IDS, COURSES, type CourseId, isCourseId } from "@/lib/courses";
 import { freshPages } from "@/lib/fresh";
 import { isLocale, LOCALE_COOKIE, LOCALES, type Locale } from "@/lib/i18n";
+import { QUIET_COOKIE } from "@/lib/locale";
 
 const NAMES: Record<Locale, string> = { en: "English", fr: "Français" };
 
@@ -9,6 +10,7 @@ const NAMES: Record<Locale, string> = { en: "English", fr: "Français" };
 const CHOICES = {
   [LOCALE_COOKIE]: isLocale,
   [COURSE_COOKIE]: isCourseId,
+  [QUIET_COOKIE]: (value) => value === "0" || value === "1",
 } as Record<string, (value: unknown) => boolean>;
 
 async function choose(form: FormData) {
@@ -61,7 +63,29 @@ export function LanguageSwitch({ current, label }: { current: Locale; label: str
   return <Switch name={LOCALE_COOKIE} options={options} current={current} label={label} />;
 }
 
+/** Quiet mode on / off; `on` and `off` are the labels in the UI language. */
+export function QuietSwitch({
+  current,
+  label,
+  on,
+  off,
+}: {
+  current: boolean;
+  label: string;
+  on: string;
+  off: string;
+}) {
+  const options = [
+    { value: "0", text: off },
+    { value: "1", text: on },
+  ];
+  return (
+    <Switch name={QUIET_COOKIE} options={options} current={current ? "1" : "0"} label={label} />
+  );
+}
+
 /** German / Darija; `name` gives a course's name in the UI language. */
+
 export function CourseSwitch({
   current,
   label,

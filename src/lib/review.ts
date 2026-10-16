@@ -4,7 +4,9 @@ import { createEmptyCard, fsrs, type Grade, Rating, State, TypeConvert } from "t
 // Relative imports: the import script (plain node) uses ensureCards too.
 import { db } from "../db/client.ts";
 import { cards, notes, reviewLogs, settings } from "../db/schema.ts";
+import { withOthers } from "./choices.ts";
 import type { CourseId } from "./courses.ts";
+
 import { streakLength } from "./streak.ts";
 
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.
@@ -522,4 +524,32 @@ export async function learnTopicWords(
     where cards.note_id = n.id and split_part(n.de, ',', 1) in ${headwords} and cards.user_id = ${userId}
       and cards.course = ${course}
       and cards.direction = 'de_en' and cards.introduced_at is null`);
+}
+
+/**
+ * Quiet mode: the word plus 3 others to pick from, of the same course, level and kind (German
+ * nouns with nouns, so the article doesn't give it away), in a fixed order per card.
+ */
+export async function wordChoices(note: typeof notes.$inferSelect, seed: string) {
+  const noun = /^(der|die|das|der\/die) /.test(note.de);
+  const others = await db()
+    .select({ de: notes.de, tr: notes.tr })
+    .from(notes)
+    .where(
+      and(
+        eq(notes.course, note.course),
+        eq(notes.cefr, note.cefr),
+        sql`${notes.id} <> ${note.id} and ${notes.userId} is null`,
+        sql`${notes.source} not in ('unit', 'mine')`,
+        sql`(${notes.source} like '%phrase') = ${note.source.endsWith("phrase")}`,
+        note.course === "de" ? sql`(${notes.de} ~ '^(der|die|das|der/die) ') = ${noun}` : undefined,
+      ),
+    )
+    .orderBy(sql`random()`)
+    .limit(6);
+  return withOthers(
+    { de: note.de, tr: note.tr ?? undefined },
+    others.map((o) => ({ de: o.de, tr: o.tr ?? undefined })),
+    seed,
+  );
 }

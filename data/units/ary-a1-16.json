@@ -6,7 +6,7 @@
  "icon": "🍲",
  "situation": "Au restaurant",
  "canDo": "Tu peux commander un plat et une boisson, dire ce que tu manges ou ne manges pas, et demander l’addition.",
- "explanation": "Deux verbes essentiels : **kla** (manger) et **chreb** (boire). Ils suivent les règles que tu connais : *ka-* au présent, *-it / -t* au passé, *ghadi* au futur.\n\n| | manger | boire |\n|---|---|---|\n| je (présent) | kanakol | kanchrob |\n| tu, elle (présent) | katakol | katchrob |\n| je (passé) | klit | chrebt |\n| tu (passé) | kliti | chrebti |\n| il (passé) | kla | chreb |\n| nous (passé) | klina | chrebna |\n| je (futur) | ghadi nakol | ghadi nchrob |\n\n- Au présent, *kla* devient **-akol** : *kanakol*, *katakol*.\n- Après **bghit** ou **ghadi**, pas de *ka-* : *bghit nchrob*, *ghadi nakol*.\n- Négation : **ma kanakolch l7em** = je ne mange pas de viande.\n- Plats : **tajin**, **kesksou** (couscous), **l7rira** (soupe), **chlada** (salade), **l7out** (poisson), **djaj** (poulet), **l7em** (viande), **lkhobz** (pain).\n- À boire : **atay** (thé), **lma** (eau), **3asir** (jus), **l9hwa** (café).\n- **Chno kayn lyoum?** = qu’est-ce qu’il y a aujourd’hui ? **Lmakla bnina!** = c’est délicieux ! **L7sab 3afak** = l’addition, s’il te plaît.\n\nLe couscous se mange traditionnellement le vendredi, après la prière.",
+ "explanation": "Deux verbes essentiels : **kla** (manger) et **chreb** (boire). Ils suivent les règles que tu connais : *ka-* au présent, *-it / -t* au passé, *ghadi* au futur.\n\n| | manger | boire |\n|---|---|---|\n| je (présent) | kanakol | kanchreb |\n| tu, elle (présent) | katakol | katchreb |\n| je (passé) | klit | chrebt |\n| tu (passé) | kliti | chrebti |\n| il (passé) | kla | chreb |\n| nous (passé) | klina | chrebna |\n| je (futur) | ghadi nakol | ghadi nchreb |\n\n- Au présent, *kla* devient **-akol** : *kanakol*, *katakol*.\n- Après **bghit** ou **ghadi**, pas de *ka-* : *bghit nchreb*, *ghadi nakol*.\n- Négation : **makanakolch l7em** = je ne mange pas de viande.\n- Plats : **tajin**, **lkesksou** (couscous), **l7rira** (soupe), **chlada** (salade), **l7out** (poisson), **ddjaj** (poulet), **l7em** (viande), **lkhobz** (pain).\n- À boire : **atay** (thé), **lma** (eau), **3asir** (jus), **l9hwa** (café).\n- **Chno kayn lyoum?** = qu’est-ce qu’il y a aujourd’hui ? **Lmakla bnina!** = c’est délicieux ! **L7sab 3afak** = l’addition, s’il te plaît.\n\nLe couscous se mange traditionnellement le vendredi, après la prière.",
  "french": "Le darija n’a pas d’article partitif comme « du » ou « de la » : kanakol l7out = je mange du poisson.",
  "examples": [
   {
@@ -16,17 +16,17 @@
   },
   {
    "de": "بغيت طاجين ديال الدجاج.",
-   "tr": "bghit tajin dyal djaj.",
+   "tr": "bghit tajin dyal ddjaj.",
    "en": "Je voudrais un tajine au poulet."
   },
   {
    "de": "كناكل الكسكسو نهار الجمعة.",
-   "tr": "kanakol kesksou nhar jem3a.",
+   "tr": "kanakol lkesksou nhar ljem3a.",
    "en": "Je mange du couscous le vendredi."
   },
   {
    "de": "شنو بغيتي تشرب؟",
-   "tr": "chno bghiti tchrob?",
+   "tr": "chno bghiti tchreb?",
    "en": "Qu’est-ce que tu veux boire ?"
   },
   {
@@ -35,8 +35,8 @@
    "en": "J’ai beaucoup mangé !"
   },
   {
-   "de": "ما كنشربش القهوة.",
-   "tr": "ma kanchrobch l9hwa.",
+   "de": "ماكنشربش القهوة.",
+   "tr": "makanchrebch l9hwa.",
    "en": "Je ne bois pas de café."
   },
   {
@@ -55,7 +55,7 @@
    "id": "ary-a1-16-01",
    "type": "cloze",
    "de": "أنا ___ الكسكسو نهار الجمعة.",
-   "tr": "ana ___ kesksou nhar jem3a.",
+   "tr": "ana ___ lkesksou nhar ljem3a.",
    "base": "manger (présent, je)",
    "answers": [
     "كناكل"
@@ -89,6 +89,7 @@
     "تشرب"
    ],
    "answersTr": [
+    "tchreb",
     "tchrob"
    ],
    "en": "Qu’est-ce que tu veux boire ?"
@@ -103,6 +104,7 @@
     "كنشرب"
    ],
    "answersTr": [
+    "kanchreb",
     "kanchrob"
    ],
    "en": "Je bois beaucoup de thé."
@@ -203,7 +205,7 @@
    "id": "ary-a1-16-11",
    "type": "choice",
    "de": "بغيت طاجين ___ الدجاج.",
-   "tr": "bghit tajin ___ djaj.",
+   "tr": "bghit tajin ___ ddjaj.",
    "options": [
     "ديال",
     "ف",
@@ -215,7 +217,7 @@
     "men"
    ],
    "answer": 0,
-   "why": "Tajin dyal djaj = un tajine de poulet.",
+   "why": "Tajin dyal ddjaj = un tajine de poulet.",
    "en": "Je voudrais un tajine au poulet."
   },
   {
@@ -259,18 +261,18 @@
   {
    "id": "ary-a1-16-14",
    "type": "choice",
-   "de": "ما ___ القهوة.",
-   "tr": "ma ___ l9hwa.",
+   "de": "___ القهوة.",
+   "tr": "___ l9hwa.",
    "options": [
-    "كنشربش",
-    "كنشرب"
+    "ماكنشربش",
+    "ماكنشرب"
    ],
    "optionsTr": [
-    "kanchrobch",
-    "kanchrob"
+    "makanchrebch",
+    "makanchreb"
    ],
    "answer": 0,
-   "why": "La négation entoure le verbe : ma … ch.",
+   "why": "La négation entoure le verbe, en un seul mot : ma + kanchreb + ch.",
    "en": "Je ne bois pas de café."
   },
   {
@@ -300,11 +302,11 @@
     "كنشرب"
    ],
    "optionsTr": [
-    "nchrob",
-    "kanchrob"
+    "nchreb",
+    "kanchreb"
    ],
    "answer": 0,
-   "why": "Après ghadi, le verbe n’a pas de ka- : ghadi nchrob.",
+   "why": "Après ghadi, le verbe n’a pas de ka- : ghadi nchreb.",
    "en": "Je vais boire du thé."
   },
   {
@@ -314,10 +316,10 @@
     "bghit",
     "tajin",
     "dyal",
-    "djaj"
+    "ddjaj"
    ],
    "answers": [
-    "bghit tajin dyal djaj"
+    "bghit tajin dyal ddjaj"
    ],
    "de": "بغيت طاجين ديال الدجاج.",
    "en": "Je voudrais un tajine au poulet."
@@ -328,10 +330,10 @@
    "tiles": [
     "chno",
     "bghiti",
-    "tchrob"
+    "tchreb"
    ],
    "answers": [
-    "chno bghiti tchrob"
+    "chno bghiti tchreb"
    ],
    "de": "شنو بغيتي تشرب؟",
    "en": "Qu’est-ce que tu veux boire ?"
@@ -340,14 +342,14 @@
    "id": "ary-a1-16-19",
    "type": "order",
    "tiles": [
-    "ma",
-    "kanakolch",
+    "ana",
+    "makanakolch",
     "l7em"
    ],
    "answers": [
-    "ma kanakolch l7em"
+    "ana makanakolch l7em"
    ],
-   "de": "ما كناكلش اللحم.",
+   "de": "أنا ماكناكلش اللحم.",
    "en": "Je ne mange pas de viande."
   },
   {
@@ -389,19 +391,19 @@
    {
     "speaker": "Driss",
     "de": "كاين طاجين ديال الدجاج، الكسكسو و الحريرة.",
-    "tr": "kayn tajin dyal djaj, kesksou w l7rira.",
+    "tr": "kayn tajin dyal ddjaj, lkesksou w l7rira.",
     "en": "Il y a un tajine au poulet, du couscous et de la harira."
    },
    {
     "speaker": "Salma",
     "de": "بغيت الكسكسو عافاك.",
-    "tr": "bghit kesksou 3afak.",
+    "tr": "bghit lkesksou 3afak.",
     "en": "Je voudrais le couscous, s’il te plaît."
    },
    {
     "speaker": "Omar",
     "de": "و أنا بغيت طاجين ديال الدجاج.",
-    "tr": "w ana bghit tajin dyal djaj.",
+    "tr": "w ana bghit tajin dyal ddjaj.",
     "en": "Et moi, je voudrais un tajine au poulet."
    },
    {
@@ -438,7 +440,7 @@
     "speaker": "Driss",
     "de": "بصحتكم!",
     "tr": "bsse7tkom!",
-    "en": "Bonne santé ! (se dit après le repas, à plusieurs)"
+    "en": "À votre santé ! (se dit à qui mange ou boit, ici à plusieurs)"
    }
   ],
   "questions": [
@@ -478,7 +480,7 @@
  ],
  "dictationTr": [
   "klit bzzaf.",
-  "kanchrob atay.",
+  "kanchreb atay.",
   "lmakla bnina."
  ],
  "speaking": [
@@ -489,12 +491,12 @@
   },
   {
    "de": "بغيت الكسكسو عافاك.",
-   "tr": "bghit kesksou 3afak.",
+   "tr": "bghit lkesksou 3afak.",
    "en": "Je voudrais le couscous, s’il te plaît."
   },
   {
-   "de": "ما كناكلش اللحم.",
-   "tr": "ma kanakolch l7em.",
+   "de": "ماكناكلش اللحم.",
+   "tr": "makanakolch l7em.",
    "en": "Je ne mange pas de viande."
   },
   {
@@ -510,7 +512,7 @@
  ],
  "writing": {
   "task": "Tu es au restaurant. Écris 2 à 4 phrases : commande un plat et une boisson, dis ce que tu ne manges pas, et demande l’addition. Écris en lettres latines.",
-  "model": "بغيت طاجين ديال الحوت و الما عافاك. ما كناكلش اللحم. الماكلة بنينة! الحساب عافاك.",
-  "modelTr": "bghit tajin dyal l7out w lma 3afak. ma kanakolch l7em. lmakla bnina! l7sab 3afak."
+  "model": "بغيت طاجين ديال الحوت و الما عافاك. ماكناكلش اللحم. الماكلة بنينة! الحساب عافاك.",
+  "modelTr": "bghit tajin dyal l7out w lma 3afak. makanakolch l7em. lmakla bnina! l7sab 3afak."
  }
 }

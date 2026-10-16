@@ -50,6 +50,9 @@ be left out (mezyan = mzyan, enta = nta). One letter off is "almost".
   tlettach, rb3tach, khmstach, settach, sb3tach, tmentach, ts3tach, 3chrin; in compounds 2 is
   tnin (tnin w 3chrin). After 3–10 the noun is plural (tlata drahem), after 11+ singular
   (3chrin dirham).
+- ج is a moon letter (ljem3a, ljouj); د, ش, ت, ر, س, ص, ز, ن… are sun letters (ddwa, cchta,
+  ttbib, rrbat).
+- Rain and sun are feminine: kayna cchta, kayna cchems; clouds and cold: kayn ss7ab, kayn lberd.
 - Excuse me: sme7 liya / sm7i liya (to a woman).
 - Present with ka- (كن، كت، كي): kanskon, katskon, kayskon; to a woman katskni.
 - Future: ghadi / ghadya / ghadyin + verb.

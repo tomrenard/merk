@@ -6,7 +6,7 @@
  "icon": "📞",
  "situation": "Au téléphone",
  "canDo": "Tu peux répondre au téléphone, demander à parler à quelqu’un, fixer un rendez-vous et dire que tu rappelleras.",
- "explanation": "Au téléphone, quelques mots reviennent tout le temps :\n\n| darija | français |\n|---|---|\n| alo | allô |\n| chkoun m3aya? | qui est à l’appareil ? |\n| wakha | d’accord |\n| safi | c’est bon, ça marche |\n| n3ayet lik | je t’appelle |\n| 3ayet liya | appelle-moi |\n| ma sme3tekch | je ne t’ai pas entendu |\n| 3awed 3afak | répète, s’il te plaît |\n\n- **N3ayet lik** = le verbe *3ayet* (appeler) + **lik** (à toi). Comme pour *kayder liya* : **liya** (à moi), **lik** (à toi), **lih** (à lui), **liha** (à elle).\n- Futur : **ghadi n3ayet lik ghedda** = je t’appellerai demain.\n- Impératif : **3ayet liya** (à un homme), **3ayti liya** (à une femme).\n- **Wach n9der nhder m3a…?** = est-ce que je peux parler avec… ? Réponse possible : **makaynch / makaynach daba** = il / elle n’est pas là maintenant.\n- Rendez-vous : **fin ntla9aw?** = où on se retrouve ? **Ntla9aw f l3achra** = on se retrouve à dix heures.\n- **Safi** sert aussi à finir l’appel : *safi, bslama!*\n\nAu Maroc, on envoie souvent un message vocal plutôt que d’appeler : les mêmes mots marchent !",
+ "explanation": "Au téléphone, quelques mots reviennent tout le temps :\n\n| darija | français |\n|---|---|\n| alo | allô |\n| chkoun m3aya? | qui est à l’appareil ? |\n| wakha | d’accord |\n| safi | c’est bon, ça marche |\n| n3ayet lik | je t’appelle |\n| 3ayet liya | appelle-moi |\n| masme3tekch | je ne t’ai pas entendu |\n| 3awed 3afak | répète, s’il te plaît |\n\n- **N3ayet lik** = le verbe *3ayet* (appeler) + **lik** (à toi). Comme pour *kayder liya* : **liya** (à moi), **lik** (à toi), **lih** (à lui), **liha** (à elle).\n- Futur : **ghadi n3ayet lik ghedda** = je t’appellerai demain.\n- Impératif : **3ayet liya** (à un homme), **3ayti liya** (à une femme).\n- **Wach n9der nhder m3a…?** = est-ce que je peux parler avec… ? Réponse possible : **makaynch / makaynach daba** = il / elle n’est pas là maintenant.\n- Rendez-vous : **fin ntla9aw?** = où on se retrouve ? **Ntla9aw f l3achra** = on se retrouve à dix heures.\n- **Safi** sert aussi à finir l’appel : *safi, bslama!*\n\nAu Maroc, on envoie souvent un message vocal plutôt que d’appeler : les mêmes mots marchent !",
  "french": "Comme « d’accord » et « bon » en français, wakha et safi servent à dire oui et à clore une conversation.",
  "examples": [
   {
@@ -35,8 +35,8 @@
    "en": "Appelle-moi demain à dix heures."
   },
   {
-   "de": "ما سمعتكش، عاود عافاك.",
-   "tr": "ma sme3tekch, 3awed 3afak.",
+   "de": "ماسمعتكش، عاود عافاك.",
+   "tr": "masme3tekch, 3awed 3afak.",
    "en": "Je ne t’ai pas entendu, répète s’il te plaît."
   },
   {
@@ -96,8 +96,8 @@
   {
    "id": "ary-a1-20-04",
    "type": "cloze",
-   "de": "ما سمعتكش، ___ عافاك.",
-   "tr": "ma sme3tekch, ___ 3afak.",
+   "de": "ماسمعتكش، ___ عافاك.",
+   "tr": "masme3tekch, ___ 3afak.",
    "base": "répète",
    "answers": [
     "عاود"
@@ -251,18 +251,18 @@
   {
    "id": "ary-a1-20-14",
    "type": "choice",
-   "de": "ما ___، عاود عافاك.",
-   "tr": "ma ___, 3awed 3afak.",
+   "de": "___، عاود عافاك.",
+   "tr": "___, 3awed 3afak.",
    "options": [
-    "سمعتكش",
-    "سمعتك"
+    "ماسمعتكش",
+    "ماسمعتك"
    ],
    "optionsTr": [
-    "sme3tekch",
-    "sme3tek"
+    "masme3tekch",
+    "masme3tek"
    ],
    "answer": 0,
-   "why": "La négation entoure le verbe : ma … ch.",
+   "why": "La négation entoure le verbe, en un seul mot : ma + sme3tek + ch.",
    "en": "Je ne t’ai pas entendu, répète s’il te plaît."
   },
   {
@@ -389,8 +389,8 @@
    },
    {
     "speaker": "Mehdi",
-    "de": "ما سمعتكش، عاود عافاك.",
-    "tr": "ma sme3tekch, 3awed 3afak.",
+    "de": "ماسمعتكش، عاود عافاك.",
+    "tr": "masme3tekch, 3awed 3afak.",
     "en": "Je ne t’ai pas entendue, répète s’il te plaît."
    },
    {
@@ -482,8 +482,8 @@
    "en": "Est-ce que je peux parler avec Amina ?"
   },
   {
-   "de": "ما سمعتكش، عاود عافاك.",
-   "tr": "ma sme3tekch, 3awed 3afak.",
+   "de": "ماسمعتكش، عاود عافاك.",
+   "tr": "masme3tekch, 3awed 3afak.",
    "en": "Je ne t’ai pas entendu, répète s’il te plaît."
   },
   {

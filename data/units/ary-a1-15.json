@@ -6,7 +6,7 @@
  "icon": "🚕",
  "situation": "En taxi",
  "canDo": "Tu peux dire au chauffeur de taxi où tu vas, lui indiquer le chemin et lui demander de s’arrêter.",
- "explanation": "En taxi, trois mots suffisent pour le chemin : **3la limen** (à droite), **3la lisser** (à gauche) et **nichan** (tout droit).\n\nPour donner une indication, on utilise **l’impératif** : la forme courte du verbe, sans pronom. À une femme, on ajoute **-i**.\n\n| français | à un homme | à une femme |\n|---|---|---|\n| tourne | dour | douri |\n| va | sir | siri |\n| continue | kemmel | kemmli |\n| arrête-toi | 7bes | 7bsi |\n\n- **Fin ghadi?** = où vas-tu ? (à une femme : *fin ghadya?*). Tu réponds **bghit nmchi l…** = je veux aller à… : *bghit nmchi l lmdina*.\n- **Hna** = ici, **temma** = là-bas, **9rib** = près, **b3id** = loin.\n- **F zan9a lewla / tanya** = dans la première / la deuxième rue.\n- **Men ba3d** = ensuite, après.\n- **3afak** rend l’ordre poli : *7bes hna 3afak* = arrête-toi ici, s’il te plaît.\n\nÀ Casablanca, les petits taxis rouges vont partout en ville : on dit le quartier, puis on guide le chauffeur au dernier moment.",
+ "explanation": "En taxi, trois mots suffisent pour le chemin : **3la limen** (à droite), **3la lisser** (à gauche) et **nichan** (tout droit).\n\nPour donner une indication, on utilise **l’impératif** : la forme courte du verbe, sans pronom. À une femme, on ajoute **-i**.\n\n| français | à un homme | à une femme |\n|---|---|---|\n| tourne | dour | douri |\n| va | sir | siri |\n| continue | kemmel | kemmli |\n| arrête-toi | 7bes | 7bsi |\n\n- **Fin ghadi?** = où vas-tu ? (à une femme : *fin ghadya?*). Tu réponds **bghit nmchi l…** = je veux aller à… : *bghit nmchi l lmdina*.\n- **Hna** = ici, **temma** = là-bas, **9rib** = près, **b3id** = loin.\n- **F zzan9a llewla / ttanya** = dans la première / la deuxième rue.\n- **Men ba3d** = ensuite, après.\n- **3afak** rend l’ordre poli : *7bes hna 3afak* = arrête-toi ici, s’il te plaît.\n\nÀ Casablanca, les petits taxis rouges vont partout en ville : on dit le quartier, puis on guide le chauffeur au dernier moment.",
  "french": "Comme en français, l’impératif se passe de pronom : dour = tourne, sans « tu ».",
  "examples": [
   {
@@ -36,7 +36,7 @@
   },
   {
    "de": "دوري ف الزنقة التانية.",
-   "tr": "douri f zan9a tanya.",
+   "tr": "douri f zzan9a ttanya.",
    "en": "Tourne dans la deuxième rue. (à une femme)"
   },
   {
@@ -220,17 +220,17 @@
    "id": "ary-a1-15-12",
    "type": "choice",
    "de": "دور ف الزنقة ___.",
-   "tr": "dour f zan9a ___.",
+   "tr": "dour f zzan9a ___.",
    "options": [
     "التانية",
     "اللولة"
    ],
    "optionsTr": [
-    "tanya",
-    "lewla"
+    "ttanya",
+    "llewla"
    ],
    "answer": 0,
-   "why": "Tanya = deuxième ; lewla = première.",
+   "why": "Ttanya = deuxième ; llewla = première.",
    "en": "Tourne dans la deuxième rue."
   },
   {
@@ -256,17 +256,17 @@
    "id": "ary-a1-15-14",
    "type": "choice",
    "de": "شحال؟ — ___ درهم.",
-   "tr": "ch7al? — ___ derham.",
+   "tr": "ch7al? — ___ dirham.",
    "options": [
     "عشرين",
     "خمسة"
    ],
    "optionsTr": [
-    "3echrin",
+    "3chrin",
     "khamsa"
    ],
    "answer": 0,
-   "why": "3echrin = vingt ; khamsa = cinq.",
+   "why": "3chrin = vingt ; khamsa = cinq.",
    "en": "Combien ? — Vingt dirhams."
   },
   {
@@ -408,7 +408,7 @@
    {
     "speaker": "Hajar",
     "de": "لا، ف الزنقة التانية. واش بعيد؟",
-    "tr": "la, f zan9a tanya. wach b3id?",
+    "tr": "la, f zzan9a ttanya. wach b3id?",
     "en": "Non, dans la deuxième rue. C’est loin ?"
    },
    {
@@ -426,7 +426,7 @@
    {
     "speaker": "Rachid",
     "de": "عشرين درهم.",
-    "tr": "3echrin derham.",
+    "tr": "3chrin dirham.",
     "en": "Vingt dirhams."
    },
    {

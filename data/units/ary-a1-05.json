@@ -11,7 +11,7 @@
  "examples": [
   {"de": "هادا خويا يوسف.", "tr": "hada khoya youssef.", "en": "Voici mon frère Youssef."},
   {"de": "هادي ختي، سميتها ليلى.", "tr": "hadi khti, smitha layla.", "en": "Voici ma sœur, elle s’appelle Layla."},
-  {"de": "بابا من كازا و ماما من الرباط.", "tr": "baba men kaza w mama men rbat.", "en": "Papa est de Casa et maman est de Rabat."},
+  {"de": "بابا من كازا و ماما من الرباط.", "tr": "baba men kaza w mama men rrbat.", "en": "Papa est de Casa et maman est de Rabat."},
   {"de": "عندي جوج د الولاد.", "tr": "3ndi jouj d lwlad.", "en": "J’ai deux enfants."},
   {"de": "ولدي عندو طناش العام.", "tr": "wldi 3ndo tnach l3am.", "en": "Mon fils a douze ans."},
   {"de": "شنو سميت راجلك؟", "tr": "chno smit rajlek?", "en": "Comment s’appelle ton mari ?"},
@@ -53,7 +53,7 @@
    {"speaker": "Rachid", "de": "بنتك؟ شحال ف عمرها؟", "tr": "bntek? ch7al f 3mrha?", "en": "Ta fille ? Quel âge a-t-elle ?"},
    {"speaker": "Nadia", "de": "عندها طناش العام.", "tr": "3ndha tnach l3am.", "en": "Elle a douze ans."},
    {"speaker": "Rachid", "de": "و راجلك؟", "tr": "w rajlek?", "en": "Et ton mari ?"},
-   {"speaker": "Nadia", "de": "راجلي هو هادا، سميتو حميد.", "tr": "rajli howa hada, smito 7amid.", "en": "Mon mari, c’est lui, il s’appelle Hamid."}
+   {"speaker": "Nadia", "de": "و هادا راجلي، سميتو حميد.", "tr": "w hada rajli, smito 7amid.", "en": "Et voici mon mari, il s’appelle Hamid."}
   ],
   "questions": [
    {"q": "Comment s’appelle le frère de Nadia ?", "options": ["Mehdi", "Hamid", "Rachid"], "answer": 0},

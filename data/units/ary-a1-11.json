@@ -6,7 +6,7 @@
  "icon": "🌙",
  "situation": "Raconter sa journée d’hier",
  "canDo": "Tu peux raconter ce que tu as fait hier : où tu es allé, ce que tu as mangé et bu, et demander la même chose à quelqu’un.",
- "explanation": "Au passé, **pas de ka-** : on ajoute une terminaison à la fin du verbe. La forme « il » est la base : *chreb* = il a bu.\n\n| | boire | aller | manger |\n|---|---|---|---|\n| je | chrebt | mchit | klit |\n| tu | chrebti | mchiti | kliti |\n| il | chreb | mcha | kla |\n| elle | chrbat | mchat | klat |\n| nous | chrebna | mchina | klina |\n| vous | chrebtou | mchitou | klitou |\n| ils / elles | chrbou | mchaw | klaw |\n\n- Les verbes comme *chreb*, *khdem* (travailler), *n3es* (dormir) prennent **-t, -ti, rien, -at, -na, -tou, -ou** : *khdemt* = j’ai travaillé.\n- Les verbes qui finissent par une voyelle, comme *mcha* et *kla*, prennent **-it, -iti, -a, -at, -ina, -itou, -aw**.\n- **Lbare7** = hier. *F ssba7* = le matin, *f l3chiya* = l’après-midi, *f llil* = la nuit.\n- **Chno derti lbare7?** = qu’est-ce que tu as fait hier ?\n- Négation avec **ma…ch** autour du verbe : *maklitch* = je n’ai pas mangé, *machrebtch* = je n’ai pas bu.",
+ "explanation": "Au passé, **pas de ka-** : on ajoute une terminaison à la fin du verbe. La forme « il » est la base : *chreb* = il a bu.\n\n| | boire | aller | manger |\n|---|---|---|---|\n| je | chrebt | mchit | klit |\n| tu | chrebti | mchiti | kliti |\n| il | chreb | mcha | kla |\n| elle | chrbat | mchat | klat |\n| nous | chrebna | mchina | klina |\n| vous | chrebtou | mchitou | klitou |\n| ils / elles | chrbou | mchaw | klaw |\n\n- Les verbes comme *chreb*, *khdem* (travailler), *n3es* (dormir) prennent **-t, -ti, rien, -at, -na, -tou, -ou** : *khdemt* = j’ai travaillé. Devant **-at** et **-ou**, le *e* de la base tombe : *chreb* → *chrbat*, *chrbou* ; *n3es* → *n3sat*.\n- Les verbes qui finissent par une voyelle, comme *mcha* et *kla*, prennent **-it, -iti, -a, -at, -ina, -itou, -aw**.\n- **Lbare7** = hier. *F ssba7* = le matin, *f l3chiya* = l’après-midi, *f llil* = le soir, la nuit.\n- **Chno derti lbare7?** = qu’est-ce que tu as fait hier ?\n- Négation avec **ma…ch** autour du verbe : *maklitch* = je n’ai pas mangé, *machrebtch* = je n’ai pas bu.",
  "french": "Le passé darija sert comme le passé composé à raconter ce qui est fini, mais en un seul mot : chrebt = j’ai bu.",
  "examples": [
   {
@@ -284,16 +284,16 @@
    "tr": "___ mchit l ssou9.",
    "options": [
     "البارح",
-    "دابا",
+    "غدا",
     "كل نهار"
    ],
    "optionsTr": [
     "lbare7",
-    "daba",
+    "ghedda",
     "koll nhar"
    ],
    "answer": 0,
-   "why": "Mchit est au passé : lbare7 (hier).",
+   "why": "Mchit est au passé : lbare7 (hier). Ghedda (demain) et koll nhar (chaque jour) ne vont pas avec un passé.",
    "en": "Hier, je suis allé au marché."
   },
   {

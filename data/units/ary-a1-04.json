@@ -6,7 +6,7 @@
  "icon": "🙅",
  "situation": "Dire oui, non, pas du tout",
  "canDo": "Tu peux poser une question oui/non avec wach, répondre ah ou la, et dire le contraire avec machi ou ma…ch.",
- "explanation": "**Wach** au début d’une phrase = « est-ce que » : *wach nta mghribi?* = est-ce que tu es marocain ? On répond **ah** (oui) ou **la** (non).\n\nIl y a deux façons de dire « ne… pas » :\n\n| quand | oui | non |\n|---|---|---|\n| sans verbe (pronom + nom, origine…) | ana fransawi | ana **machi** fransawi |\n| avec 3ndi, 3ndek… | 3ndi 3chrin 3am | **ma**3ndi**ch** 3chrin 3am |\n\n- **Machi** se met devant ce qu’on nie : *howa machi men kaza* = il n’est pas de Casa.\n- **Ma…ch** entoure le mot, comme « ne… pas » entoure le verbe : *3ndi* → *ma3ndich*, *3ndek* → *ma3ndekch*, *3ndo* → *ma3ndouch*, *3ndha* → *ma3ndhach*.\n- Trois phrases toutes faites très utiles : **ma3reftch** (je ne sais pas), **mafhemtch** (je n’ai pas compris), **machi mochkil** (pas de problème).\n- **Walo** = rien ; *la, walo!* = non, pas du tout !\n\nLe **ch** final de *ma…ch* est court, mais il faut bien l’entendre : sans lui, la phrase n’est plus négative.",
+ "explanation": "**Wach** au début d’une phrase = « est-ce que » : *wach nta mghribi?* = est-ce que tu es marocain ? On répond **ah** (oui) ou **la** (non).\n\nIl y a deux façons de dire « ne… pas » :\n\n| quand | oui | non |\n|---|---|---|\n| sans verbe (pronom + nom, origine…) | ana fransawi | ana **machi** fransawi |\n| avec 3ndi, 3ndek… | 3ndi 3chrin 3am | **ma**3ndi**ch** 3chrin 3am |\n\n- **Machi** se met devant ce qu’on nie : *howa machi men kaza* = il n’est pas de Casa.\n- **Ma…ch** entoure le mot, comme « ne… pas » entoure le verbe : *3ndi* → *ma3ndich*, *3ndek* → *ma3ndekch*, *3ndo* → *ma3ndouch*, *3ndha* → *ma3ndhach*.\n- Trois phrases toutes faites très utiles : **ma3reftch** (je ne sais pas), **mafhemtch** (je n’ai pas compris), **machi mochkil** (pas de problème).\n- **La, abadan!** = non, pas du tout ! (**walo** = rien.)\n\nLe **ch** final de *ma…ch* est court, mais il faut bien l’entendre : sans lui, la phrase n’est plus négative.",
  "french": "Comme « ne… pas » entoure le verbe, ma…ch entoure le mot : ma3ndich = je n’ai pas.",
  "examples": [
   {"de": "واش نتا مغربي؟", "tr": "wach nta mghribi?", "en": "Est-ce que tu es marocain ?"},
@@ -21,11 +21,11 @@
  "items": [
   {"id": "ary-a1-04-01", "type": "cloze", "de": "___ نتا مغربي؟", "tr": "___ nta mghribi?", "base": "est-ce que", "answers": ["واش"], "answersTr": ["wach"], "en": "Est-ce que tu es marocain ?"},
   {"id": "ary-a1-04-02", "type": "cloze", "de": "أنا ___ فرانساوية.", "tr": "ana ___ fransawiya.", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Je ne suis pas française."},
-  {"id": "ary-a1-04-03", "type": "cloze", "de": "هو ___ من الرباط.", "tr": "howa ___ men rbat.", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Il n’est pas de Rabat."},
+  {"id": "ary-a1-04-03", "type": "cloze", "de": "هو ___ من الرباط.", "tr": "howa ___ men rrbat.", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Il n’est pas de Rabat."},
   {"id": "ary-a1-04-04", "type": "cloze", "de": "___ عشرين عام.", "tr": "___ 3chrin 3am.", "base": "je n’ai pas", "answers": ["ماعنديش"], "answersTr": ["ma3ndich", "ma3andich"], "en": "Je n’ai pas vingt ans."},
-  {"id": "ary-a1-04-05", "type": "cloze", "de": "سمح ليا، ___.", "tr": "sme7 liya, ___.", "base": "je ne sais pas", "answers": ["ماعرفتش"], "answersTr": ["ma3reftch", "ma3rftch"], "en": "Pardon, je ne sais pas."},
+  {"id": "ary-a1-04-05", "type": "cloze", "de": "سمح ليا، ___.", "tr": "sme7 liya, ___.", "base": "je ne sais pas", "answers": ["ماعرفتش"], "answersTr": ["ma3reftch", "ma3arftch"], "en": "Pardon, je ne sais pas."},
   {"id": "ary-a1-04-06", "type": "cloze", "de": "___ مشكل!", "tr": "___ mochkil!", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Pas de problème !"},
-  {"id": "ary-a1-04-07", "type": "cloze", "de": "___، عافاك.", "tr": "___, 3afak.", "base": "je n’ai pas compris", "answers": ["مافهمتش"], "answersTr": ["mafhemtch", "mafhmtch"], "en": "Je n’ai pas compris, s’il te plaît."},
+  {"id": "ary-a1-04-07", "type": "cloze", "de": "___، عافاك.", "tr": "___, 3afak.", "base": "je n’ai pas compris", "answers": ["مافهمتش"], "answersTr": ["mafhemtch", "mafhamtch"], "en": "Je n’ai pas compris, s’il te plaît."},
   {"id": "ary-a1-04-08", "type": "cloze", "de": "واش هي من فرانسا؟ ___، هي من كازا.", "tr": "wach hiya men fransa? ___, hiya men kaza.", "base": "non", "answers": ["لا"], "answersTr": ["la"], "en": "Est-ce qu’elle est de France ? Non, elle est de Casa."},
   {"id": "ary-a1-04-09", "type": "choice", "de": "أنا ___ مغربي.", "tr": "ana ___ mghribi.", "options": ["ماشي", "ماعنديش"], "optionsTr": ["machi", "ma3ndich"], "answer": 0, "why": "Il n’y a pas de verbe ici : machi devant mghribi.", "en": "Je ne suis pas marocain."},
   {"id": "ary-a1-04-10", "type": "choice", "de": "___ عشرين عام.", "tr": "___ 3chrin 3am.", "options": ["ماعنديش", "ماشي عندي"], "optionsTr": ["ma3ndich", "machi 3ndi"], "answer": 0, "why": "3ndi se met au négatif avec ma…ch : ma3ndich.", "en": "Je n’ai pas vingt ans."},
@@ -51,7 +51,7 @@
    {"speaker": "Meryem", "de": "و واش ساكن ف كازا؟", "tr": "w wach saken f kaza?", "en": "Et est-ce que tu habites à Casa ?"},
    {"speaker": "Karim", "de": "آه، ساكن ف كازا دابا.", "tr": "ah, saken f kaza daba.", "en": "Oui, j’habite à Casa maintenant."},
    {"speaker": "Meryem", "de": "واش عندك عشرين عام؟", "tr": "wach 3ndek 3chrin 3am?", "en": "Est-ce que tu as vingt ans ?"},
-   {"speaker": "Karim", "de": "لا، والو! عندي تمنطاش العام.", "tr": "la, walo! 3ndi tmentach l3am.", "en": "Non, pas du tout ! J’ai dix-huit ans."},
+   {"speaker": "Karim", "de": "لا، أبدا! عندي تمنطاش العام.", "tr": "la, abadan! 3ndi tmentach l3am.", "en": "Non, pas du tout ! J’ai dix-huit ans."},
    {"speaker": "Meryem", "de": "سمح ليا!", "tr": "sme7 liya!", "en": "Pardon !"},
    {"speaker": "Karim", "de": "ماشي مشكل!", "tr": "machi mochkil!", "en": "Pas de problème !"}
   ],

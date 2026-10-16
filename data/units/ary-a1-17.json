@@ -6,7 +6,7 @@
  "icon": "💊",
  "situation": "À la pharmacie",
  "canDo": "Tu peux dire que tu es malade, où tu as mal, et demander un médicament à la pharmacie.",
- "explanation": "Pour dire où tu as mal, on dit **kayder liya** + la partie du corps avec *-i* (mon, ma). Mot à mot : « (elle) fait mal à moi, ma tête ».\n\n| français | darija |\n|---|---|\n| je suis malade | ana mrid / mrida |\n| j’ai mal à la tête | kayder liya rassi |\n| j’ai mal au dos | kayder liya dahri |\n| j’ai mal à la gorge | kayder liya 7el9i |\n| j’ai de la fièvre | fiya skhana |\n| j’ai pris froid | fiya lberd |\n\n- **Liya** = à moi, **lik** = à toi : *wach kayder lik rassek?* = tu as mal à la tête ?\n- **Fiya** = en moi : on l’utilise pour la fièvre et le rhume.\n- **Mrid** pour un homme, **mrida** pour une femme.\n- À la pharmacie : **wach 3endek chi dwa l ras?** = tu as un médicament pour la tête ?\n- Le pharmacien dit : **chreb had dwa merrtayn f nhar, men ba3d lmakla** = prends ce médicament deux fois par jour, après le repas. En darija, on « boit » (*chreb*) un médicament.\n- **Lah ychafik!** = que Dieu te guérisse, bon rétablissement !\n\nAu Maroc, on va souvent d’abord à la pharmacie : le pharmacien conseille beaucoup.",
+ "explanation": "Pour dire où tu as mal, on dit **kayder liya** + la partie du corps avec *-i* (mon, ma). Mot à mot : « il fait mal à moi, ma tête » (*ras*, *dahr* et *7el9* sont masculins).\n\n| français | darija |\n|---|---|\n| je suis malade | ana mrid / mrida |\n| j’ai mal à la tête | kayder liya rassi |\n| j’ai mal au dos | kayder liya dahri |\n| j’ai mal à la gorge | kayder liya 7el9i |\n| j’ai de la fièvre | fiya sskhana |\n| j’ai pris froid | fiya lberd |\n\n- **Liya** = à moi, **lik** = à toi : *wach kayder lik rassek?* = tu as mal à la tête ?\n- **Fiya** = en moi : on l’utilise pour la fièvre et le rhume.\n- **Mrid** pour un homme, **mrida** pour une femme.\n- À la pharmacie : **wach 3endek chi dwa l rras?** = tu as un médicament pour la tête ?\n- Le pharmacien dit : **chreb had ddwa merrtayn f nnhar, men ba3d lmakla** = prends ce médicament deux fois par jour, après le repas. En darija, on « boit » (*chreb*) un médicament.\n- **Lah ychafik!** = que Dieu te guérisse, bon rétablissement !\n\nAu Maroc, on va souvent d’abord à la pharmacie : le pharmacien conseille beaucoup.",
  "french": "En français on dit « j’ai mal à la tête » ; en darija c’est la tête qui fait mal : kayder liya rassi.",
  "examples": [
   {
@@ -21,7 +21,7 @@
   },
   {
    "de": "فيا السخانة.",
-   "tr": "fiya skhana.",
+   "tr": "fiya sskhana.",
    "en": "J’ai de la fièvre."
   },
   {
@@ -31,17 +31,17 @@
   },
   {
    "de": "واش عندك شي دوا للراس؟",
-   "tr": "wach 3endek chi dwa l ras?",
+   "tr": "wach 3endek chi dwa l rras?",
    "en": "Tu as un médicament pour la tête ?"
   },
   {
    "de": "شرب هاد الدوا مرتين ف النهار.",
-   "tr": "chreb had dwa merrtayn f nhar.",
+   "tr": "chreb had ddwa merrtayn f nnhar.",
    "en": "Prends ce médicament deux fois par jour."
   },
   {
    "de": "شربي الدوا من بعد الماكلة.",
-   "tr": "chrbi dwa men ba3d lmakla.",
+   "tr": "chrbi ddwa men ba3d lmakla.",
    "en": "Prends le médicament après le repas. (à une femme)"
   },
   {
@@ -97,7 +97,7 @@
    "id": "ary-a1-17-04",
    "type": "cloze",
    "de": "___ السخانة.",
-   "tr": "___ skhana.",
+   "tr": "___ sskhana.",
    "base": "en moi",
    "answers": [
     "فيا"
@@ -111,7 +111,7 @@
    "id": "ary-a1-17-05",
    "type": "cloze",
    "de": "واش ___ شي دوا للراس؟",
-   "tr": "wach ___ chi dwa l ras?",
+   "tr": "wach ___ chi dwa l rras?",
    "base": "tu as",
    "answers": [
     "عندك"
@@ -125,7 +125,7 @@
    "id": "ary-a1-17-06",
    "type": "cloze",
    "de": "شرب هاد الدوا ___ ف النهار.",
-   "tr": "chreb had dwa ___ f nhar.",
+   "tr": "chreb had ddwa ___ f nnhar.",
    "base": "deux fois",
    "answers": [
     "مرتين"
@@ -218,17 +218,17 @@
    "id": "ary-a1-17-12",
    "type": "choice",
    "de": "شرب الدوا من بعد ___.",
-   "tr": "chreb dwa men ba3d ___.",
+   "tr": "chreb ddwa men ba3d ___.",
    "options": [
     "الماكلة",
     "السخانة"
    ],
    "optionsTr": [
     "lmakla",
-    "skhana"
+    "sskhana"
    ],
    "answer": 0,
-   "why": "Lmakla = le repas ; skhana = la fièvre.",
+   "why": "Lmakla = le repas ; sskhana = la fièvre.",
    "en": "Prends le médicament après le repas."
   },
   {
@@ -252,7 +252,7 @@
    "id": "ary-a1-17-14",
    "type": "choice",
    "de": "___ الدوا من بعد الماكلة.",
-   "tr": "___ dwa men ba3d lmakla.",
+   "tr": "___ ddwa men ba3d lmakla.",
    "options": [
     "شربي",
     "شرب"
@@ -269,7 +269,7 @@
    "id": "ary-a1-17-15",
    "type": "choice",
    "de": "البارح ___ عند الطبيب.",
-   "tr": "lbare7 ___ 3end tbib.",
+   "tr": "lbare7 ___ 3end ttbib.",
    "options": [
     "مشيت",
     "كنمشي",
@@ -288,7 +288,7 @@
    "id": "ary-a1-17-16",
    "type": "choice",
    "de": "___ هاد الدوا؟",
-   "tr": "___ had dwa?",
+   "tr": "___ had ddwa?",
    "options": [
     "بشحال",
     "فين",
@@ -327,10 +327,10 @@
     "chi",
     "dwa",
     "l",
-    "ras"
+    "rras"
    ],
    "answers": [
-    "wach 3endek chi dwa l ras"
+    "wach 3endek chi dwa l rras"
    ],
    "de": "واش عندك شي دوا للراس؟",
    "en": "Tu as un médicament pour la tête ?"
@@ -343,10 +343,10 @@
     "mrid",
     "w",
     "fiya",
-    "skhana"
+    "sskhana"
    ],
    "answers": [
-    "ana mrid w fiya skhana"
+    "ana mrid w fiya sskhana"
    ],
    "de": "أنا مريض و فيا السخانة.",
    "en": "Je suis malade et j’ai de la fièvre."
@@ -357,13 +357,13 @@
    "tiles": [
     "chreb",
     "had",
-    "dwa",
+    "ddwa",
     "merrtayn",
     "f",
-    "nhar"
+    "nnhar"
    ],
    "answers": [
-    "chreb had dwa merrtayn f nhar"
+    "chreb had ddwa merrtayn f nnhar"
    ],
    "de": "شرب هاد الدوا مرتين ف النهار.",
    "en": "Prends ce médicament deux fois par jour."
@@ -400,7 +400,7 @@
    {
     "speaker": "Hicham",
     "de": "واش فيك السخانة؟",
-    "tr": "wach fik skhana?",
+    "tr": "wach fik sskhana?",
     "en": "Tu as de la fièvre ?"
    },
    {
@@ -412,7 +412,7 @@
    {
     "speaker": "Hicham",
     "de": "شربي هاد الدوا مرتين ف النهار، من بعد الماكلة.",
-    "tr": "chrbi had dwa merrtayn f nhar, men ba3d lmakla.",
+    "tr": "chrbi had ddwa merrtayn f nnhar, men ba3d lmakla.",
     "en": "Prends ce médicament deux fois par jour, après le repas."
    },
    {
@@ -424,7 +424,7 @@
    {
     "speaker": "Hicham",
     "de": "خمسين درهم.",
-    "tr": "khamsin derham.",
+    "tr": "khamsin dirham.",
     "en": "Cinquante dirhams."
    },
    {
@@ -478,7 +478,7 @@
  "dictationTr": [
   "ana mrid.",
   "kayder liya rassi.",
-  "fiya skhana."
+  "fiya sskhana."
  ],
  "speaking": [
   {
@@ -488,17 +488,17 @@
   },
   {
    "de": "فيا السخانة.",
-   "tr": "fiya skhana.",
+   "tr": "fiya sskhana.",
    "en": "J’ai de la fièvre."
   },
   {
    "de": "واش عندك شي دوا للراس؟",
-   "tr": "wach 3endek chi dwa l ras?",
+   "tr": "wach 3endek chi dwa l rras?",
    "en": "Tu as un médicament pour la tête ?"
   },
   {
    "de": "بشحال هاد الدوا؟",
-   "tr": "b ch7al had dwa?",
+   "tr": "b ch7al had ddwa?",
    "en": "Combien coûte ce médicament ?"
   },
   {
@@ -510,6 +510,6 @@
  "writing": {
   "task": "Tu es malade et tu vas à la pharmacie. Écris 2 à 4 phrases : dis où tu as mal, si tu as de la fièvre, et demande un médicament. Écris en lettres latines.",
   "model": "سلام. أنا مريض، كيضر ليا راسي و فيا السخانة. واش عندك شي دوا للراس؟ شكرا!",
-  "modelTr": "salam. ana mrid, kayder liya rassi w fiya skhana. wach 3endek chi dwa l ras? chokran!"
+  "modelTr": "salam. ana mrid, kayder liya rassi w fiya sskhana. wach 3endek chi dwa l rras? chokran!"
  }
 }

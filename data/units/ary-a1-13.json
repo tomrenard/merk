@@ -6,12 +6,12 @@
  "icon": "🕒",
  "situation": "Prendre rendez-vous",
  "canDo": "Tu peux demander et dire l’heure, nommer les jours de la semaine et fixer un rendez-vous.",
- "explanation": "**Ch7al f sa3a?** = quelle heure est-il ? On répond avec **hadi** + l’heure, avec l’article : *hadi ttlata* = il est trois heures.\n\n| heure | darija | minutes | darija |\n|---|---|---|---|\n| 1 h | lwa7da | et quart | w rbe3 |\n| 2 h | ljouj | et demie | w nouss |\n| 3 h | ttlata | moins le quart | 9el rbe3 |\n| 10 h | l3achra | et vingt | w tlt |\n\n- **À** telle heure : **f** : *f l3achra* = à dix heures. **F ch7al?** = à quelle heure ?\n- Les jours commencent par **nhar** (le jour de) : *nhar letnin* (lundi), *nhar tlat* (mardi), *nhar larb3* (mercredi), *nhar lkhmis* (jeudi), *nhar ljem3a* (vendredi), *nhar ssebt* (samedi), *nhar l7ed* (dimanche).\n- **Lyoum** = aujourd’hui, **ghedda** = demain, **lbare7** = hier.\n- *F ssba7* (le matin), *f l3chiya* (l’après-midi), *f llil* (le soir, la nuit). *L3achra d ssba7* = dix heures du matin.\n- Pour fixer un rendez-vous (**maw3id**) : *wach t9der nhar lkhmis?* = tu peux jeudi ? On répond **wakha** (d’accord) ou *man9derch* (je ne peux pas).",
- "french": "Comme « le lundi » en français, nhar letnin dit le jour ; et f l3achra se dit comme « à dix heures », avec l’article devant le nombre.",
+ "explanation": "**Ch7al f ssa3a?** = quelle heure est-il ? On répond avec **hadi** + l’heure, avec l’article : *hadi ttlata* = il est trois heures.\n\n| heure | darija | minutes | darija |\n|---|---|---|---|\n| 1 h | lwa7da | et quart | w rbe3 |\n| 2 h | ljouj | et demie | w nouss |\n| 3 h | ttlata | moins le quart | 9el rbe3 |\n| 10 h | l3achra | et vingt | w tlt |\n\n- **À** telle heure : **f** : *f l3achra* = à dix heures. **F ch7al?** = à quelle heure ?\n- Les jours commencent par **nhar** (le jour de) : *nhar letnin* (lundi), *nhar ttlat* (mardi), *nhar larb3* (mercredi), *nhar lkhmis* (jeudi), *nhar ljem3a* (vendredi), *nhar ssebt* (samedi), *nhar l7ed* (dimanche).\n- **Lyoum** = aujourd’hui, **ghedda** = demain, **lbare7** = hier.\n- *F ssba7* (le matin), *f l3chiya* (l’après-midi), *f llil* (le soir, la nuit). *L3achra d ssba7* = dix heures du matin.\n- Pour fixer un rendez-vous (**maw3id**) : *wach t9der nhar lkhmis?* = tu peux jeudi ? On répond **wakha** (d’accord) ou *man9derch* (je ne peux pas).",
+ "french": "Comme « à dix heures », on dit f l3achra, mais avec l’article devant le nombre, mot à mot « à la dix ».",
  "examples": [
   {
    "de": "شحال ف الساعة؟",
-   "tr": "ch7al f sa3a?",
+   "tr": "ch7al f ssa3a?",
    "en": "Quelle heure est-il ?"
   },
   {
@@ -56,7 +56,6 @@
     "الساعة"
    ],
    "answersTr": [
-    "sa3a",
     "ssa3a"
    ],
    "en": "Quelle heure est-il ?"
@@ -224,7 +223,7 @@
    "id": "ary-a1-13-12",
    "type": "choice",
    "de": "نتلاقاو ___ الستة.",
-   "tr": "ntla9aw ___ ssetta.",
+   "tr": "ntla9aw ___ sstta.",
    "options": [
     "ف",
     "و",
@@ -243,7 +242,7 @@
    "id": "ary-a1-13-13",
    "type": "choice",
    "de": "___ ف الساعة؟ — هادي الخمسة.",
-   "tr": "___ f sa3a? — hadi lkhamsa.",
+   "tr": "___ f ssa3a? — hadi lkhamsa.",
    "options": [
     "شحال",
     "فين",
@@ -255,7 +254,7 @@
     "chkoun"
    ],
    "answer": 0,
-   "why": "Pour l’heure : ch7al f sa3a ?",
+   "why": "Pour l’heure : ch7al f ssa3a ?",
    "en": "Quelle heure est-il ? — Il est cinq heures."
   },
   {
@@ -321,10 +320,10 @@
    "tiles": [
     "ch7al",
     "f",
-    "sa3a"
+    "ssa3a"
    ],
    "answers": [
-    "ch7al f sa3a"
+    "ch7al f ssa3a"
    ],
    "de": "شحال ف الساعة؟",
    "en": "Quelle heure est-il ?"
@@ -477,14 +476,14 @@
   "نهار الخميس ف العشرة."
  ],
  "dictationTr": [
-  "ch7al f sa3a?",
+  "ch7al f ssa3a?",
   "hadi ttlata w nouss.",
   "nhar lkhmis f l3achra."
  ],
  "speaking": [
   {
    "de": "شحال ف الساعة؟",
-   "tr": "ch7al f sa3a?",
+   "tr": "ch7al f ssa3a?",
    "en": "Quelle heure est-il ?"
   },
   {

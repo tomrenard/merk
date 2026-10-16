@@ -6,7 +6,7 @@
  "icon": "🍅",
  "situation": "Au marché",
  "canDo": "Tu peux demander un prix, comprendre les nombres de 20 à 100 et acheter des fruits et légumes au marché.",
- "explanation": "Les dizaines se font avec l’unité + **-in** : *tlata* (3) → *tlatin* (30).\n\n| | | | |\n|---|---|---|---|\n| 20 | 3chrin | 60 | settin |\n| 30 | tlatin | 70 | sb3in |\n| 40 | rb3in | 80 | tmanin |\n| 50 | khamsin | 90 | tes3in |\n| 100 | mya | | |\n\n- Entre deux dizaines, on dit **l’unité, puis w (et), puis la dizaine** : *khamsa w 3chrin* = 25, mot à mot « cinq et vingt ».\n- Pour 22, 32, 42… on dit **tnin**, pas *jouj* : *tnin w tlatin* = 32.\n- Après 20, 30, 40… le nom reste **au singulier** : *tlatin dirham* (30 dirhams).\n- **B ch7al?** = c’est combien ? (mot à mot : pour combien ?). *B ch7al lkilo?* = combien le kilo ? On répond aussi avec **b** : *b 3chrin dirham*.\n- **Ghali** = cher, **rkhis** = pas cher. *Ghali bzzaf!* = trop cher !\n- Pour négocier : **n9es liya chwiya 3afak** = baisse un peu, s’il te plaît. **Safi** = c’est bon, d’accord. **Hak** = tiens, voilà.\n- Beaucoup de vendeurs comptent aussi en **ryal** (20 ryal = 1 dirham) : si un prix te semble énorme, demande *b ddrahem?* (en dirhams ?).",
+ "explanation": "Les dizaines se font avec l’unité + **-in** : *tlata* (3) → *tlatin* (30). Seul 20 est à part : *3chrin*.\n\n| | | | |\n|---|---|---|---|\n| 20 | 3chrin | 60 | settin |\n| 30 | tlatin | 70 | sb3in |\n| 40 | rb3in | 80 | tmanin |\n| 50 | khamsin | 90 | tes3in |\n| 100 | mya | | |\n\n- Entre deux dizaines, on dit **l’unité, puis w (et), puis la dizaine** : *khamsa w 3chrin* = 25, mot à mot « cinq et vingt ».\n- Pour 22, 32, 42… on dit **tnin**, pas *jouj* : *tnin w tlatin* = 32.\n- De 3 à 10, le nom est **au pluriel** : *stta drahem* (6 dirhams). À partir de 11, il reste **au singulier** : *tlatin dirham* (30 dirhams).\n- **B ch7al?** = c’est combien ? (mot à mot : pour combien ?). *B ch7al lkilo?* = combien le kilo ? On répond aussi avec **b** : *b 3chrin dirham*.\n- **Ghali** = cher, **rkhis** = pas cher. *Ghali bzzaf!* = trop cher !\n- Pour négocier : **n99es liya chwiya 3afak** = baisse un peu, s’il te plaît. **Safi** = c’est bon, d’accord. **Hak** = tiens, voilà.\n- Beaucoup de vendeurs comptent aussi en **ryal** (20 ryal = 1 dirham) : si un prix te semble énorme, demande *b ddrahem?* (en dirhams ?).",
  "french": "En français on dit la dizaine d’abord (« vingt-cinq »), en darija l’unité d’abord : khamsa w 3chrin, « cinq et vingt ».",
  "examples": [
   {
@@ -31,7 +31,7 @@
   },
   {
    "de": "نقص ليا شوية عافاك.",
-   "tr": "n9es liya chwiya 3afak.",
+   "tr": "n99es liya chwiya 3afak.",
    "en": "Baisse un peu le prix, s’il te plaît."
   },
   {
@@ -72,7 +72,8 @@
     "بشحال"
    ],
    "answersTr": [
-    "b ch7al"
+    "b ch7al",
+    "b chhal"
    ],
    "en": "Combien coûte le kilo de pommes de terre ?"
   },
@@ -130,8 +131,8 @@
     "نقص"
    ],
    "answersTr": [
-    "n9es",
-    "n9ess"
+    "n99es",
+    "n9es"
    ],
    "en": "Baisse un peu le prix, s’il te plaît."
   },
@@ -237,7 +238,7 @@
     "tes3in"
    ],
    "answer": 0,
-   "why": "Tmenya (8) → tmanin (80).",
+   "why": "Tmnya (8) → tmanin (80).",
    "en": "Quatre-vingts dirhams."
   },
   {
@@ -311,7 +312,7 @@
     "drahem"
    ],
    "answer": 0,
-   "why": "Après 20, 30, 40… le nom reste au singulier : tlatin dirham.",
+   "why": "À partir de 11, le nom reste au singulier : tlatin dirham.",
    "en": "Trente dirhams."
   },
   {
@@ -348,14 +349,14 @@
    "id": "ary-a1-10-19",
    "type": "order",
    "tiles": [
-    "n9es",
+    "n99es",
     "liya",
     "chwiya",
     "3afak"
    ],
    "answers": [
-    "n9es liya chwiya 3afak",
-    "3afak n9es liya chwiya"
+    "n99es liya chwiya 3afak",
+    "3afak n99es liya chwiya"
    ],
    "de": "نقص ليا شوية عافاك.",
    "en": "Baisse un peu le prix, s’il te plaît."
@@ -390,7 +391,7 @@
    {
     "speaker": "Rachid",
     "de": "الماطيشة بستة دراهم الكيلو.",
-    "tr": "lmaticha b setta drahem lkilo.",
+    "tr": "lmaticha b stta drahem lkilo.",
     "en": "Les tomates sont à six dirhams le kilo."
    },
    {
@@ -408,7 +409,7 @@
    {
     "speaker": "Khadija",
     "de": "عشرة؟ غالي بزاف! نقص ليا شوية عافاك.",
-    "tr": "3achra? ghali bzzaf! n9es liya chwiya 3afak.",
+    "tr": "3achra? ghali bzzaf! n99es liya chwiya 3afak.",
     "en": "Dix ? C’est trop cher ! Baisse un peu, s’il te plaît."
    },
    {
@@ -426,7 +427,7 @@
    {
     "speaker": "Rachid",
     "de": "كلشي بستة و تلاتين درهم.",
-    "tr": "kolchi b setta w tlatin dirham.",
+    "tr": "kolchi b stta w tlatin dirham.",
     "en": "Tout ça fait trente-six dirhams."
    },
    {
@@ -501,7 +502,7 @@
   },
   {
    "de": "نقص ليا شوية عافاك.",
-   "tr": "n9es liya chwiya 3afak.",
+   "tr": "n99es liya chwiya 3afak.",
    "en": "Baisse un peu le prix, s’il te plaît."
   },
   {
@@ -518,6 +519,6 @@
  "writing": {
   "task": "Tu fais tes courses au marché. Écris 2 à 4 phrases : demande le prix d’un fruit ou d’un légume, dis que c’est cher, négocie, puis achète. Écris en lettres latines.",
   "model": "سلام! بشحال الكيلو د التفاح؟ خمسة و عشرين درهم؟ غالي بزاف! نقص ليا شوية عافاك. صافي، عطيني جوج كيلو.",
-  "modelTr": "salam! b ch7al lkilo d tteffa7? khamsa w 3chrin dirham? ghali bzzaf! n9es liya chwiya 3afak. safi, 3tini jouj kilo."
+  "modelTr": "salam! b ch7al lkilo d tteffa7? khamsa w 3chrin dirham? ghali bzzaf! n99es liya chwiya 3afak. safi, 3tini jouj kilo."
  }
 }

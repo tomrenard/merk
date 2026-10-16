@@ -6,7 +6,7 @@
  "icon": "☕",
  "situation": "Au café",
  "canDo": "Tu peux commander à boire et à manger au café, dire ce que tu veux ou ne veux pas, et demander si tu peux faire quelque chose.",
- "explanation": "Pour dire ce que tu veux : **bghit** (je veux). Pour ce que tu peux : **n9der** (je peux). Le deuxième verbe vient juste après, **sans ka-** : *bghit nchreb* = je veux boire.\n\n| | vouloir | pouvoir |\n|---|---|---|\n| je | bghit | n9der |\n| tu | bghiti | t9der |\n| il / elle | bgha / bghat | y9der / t9der |\n| nous | bghina | n9derou |\n| vous | bghitou | t9derou |\n| ils / elles | bghaw | y9derou |\n\n- Le deuxième verbe se met **à la même personne** : *bghiti tchreb?* = tu veux boire ? *bghina nchrbou* = nous voulons boire.\n- Pour commander, **bghit + le nom** suffit : *bghit 9hwa* = je veux un café.\n- **3tini … 3afak** = donne-moi … s’il te plaît. *3afak* sert aussi à appeler le serveur.\n- **Wach n9der …?** = est-ce que je peux … ? *Wach n9der nkhelles?* = je peux payer ?\n- Pour refuser : **mabghitch** (je ne veux pas), **man9derch** (je ne peux pas).\n- Au café : *9hwa* (café), *nouss nouss* (moitié café, moitié lait), *atay* (thé à la menthe), *lma* (eau), *bla sokkar* (sans sucre), *l7sab* (l’addition).",
+ "explanation": "Pour dire ce que tu veux : **bghit** (je veux). Pour ce que tu peux : **n9der** (je peux). Le deuxième verbe vient juste après, **sans ka-** : *bghit nchreb* = je veux boire.\n\n| | vouloir | pouvoir |\n|---|---|---|\n| je | bghit | n9der |\n| tu | bghiti | t9der |\n| il / elle | bgha / bghat | y9der / t9der |\n| nous | bghina | n9drou |\n| vous | bghitou | t9drou |\n| ils / elles | bghaw | y9drou |\n\n- Le deuxième verbe se met **à la même personne** : *bghiti tchreb?* = tu veux boire ? *bghina nchrbou* = nous voulons boire.\n- Pour commander, **bghit + le nom** suffit : *bghit 9hwa* = je veux un café.\n- **3tini … 3afak** = donne-moi … s’il te plaît. *3afak* sert aussi à appeler le serveur.\n- **Wach n9der …?** = est-ce que je peux … ? *Wach n9der nkhelles?* = je peux payer ?\n- Pour refuser : **mabghitch** (je ne veux pas), **man9derch** (je ne peux pas).\n- Au café : *9hwa* (café), *nouss nouss* (moitié café, moitié lait), *atay* (thé à la menthe), *lma* (eau), *bla sokkar* (sans sucre), *l7sab* (l’addition).",
  "french": "En français le deuxième verbe reste à l’infinitif (« je veux boire »), en darija il se conjugue aussi : bghit nchreb, mot à mot « je veux je bois ».",
  "examples": [
   {
@@ -258,7 +258,7 @@
    "id": "ary-a1-08-14",
    "type": "choice",
    "de": "شنو ___ تاكلو؟",
-   "tr": "chno ___ takolou?",
+   "tr": "chno ___ taklou?",
    "options": [
     "بغيتو",
     "بغيتي",
@@ -270,7 +270,7 @@
     "bghina"
    ],
    "answer": 0,
-   "why": "Vous (plusieurs personnes) : bghitou, avec takolou.",
+   "why": "Vous (plusieurs personnes) : bghitou, avec taklou.",
    "en": "Qu’est-ce que vous voulez manger ?"
   },
   {
@@ -379,7 +379,7 @@
    {
     "speaker": "Hamid",
     "de": "مرحبا، شنو بغيتو؟",
-    "tr": "mar7ba, chno bghitou?",
+    "tr": "mer7ba, chno bghitou?",
     "en": "Bienvenue, qu’est-ce que vous voulez ?"
    },
    {
@@ -433,7 +433,7 @@
    {
     "speaker": "Hamid",
     "de": "آه، مرحبا.",
-    "tr": "ah, mar7ba.",
+    "tr": "ah, mer7ba.",
     "en": "Oui, avec plaisir."
    },
    {

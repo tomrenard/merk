@@ -6,7 +6,7 @@
  "icon": "🧳",
  "situation": "Faire des projets",
  "canDo": "Tu peux dire ce que tu vas faire demain ou ce week-end, et demander à quelqu’un ses projets.",
- "explanation": "Pour le futur, on met **ghadi** devant le verbe, **sans ka-** : *ghadi nmchi* = je vais aller. C’est comme « aller + verbe » en français.\n\n| | ghadi | verbe |\n|---|---|---|\n| je | ghadi / ghadya | nmchi |\n| tu | ghadi / ghadya | tmchi |\n| il / elle | ghadi / ghadya | ymchi / tmchi |\n| nous | ghadyin | nmchiw |\n| vous | ghadyin | tmchiw |\n| ils / elles | ghadyin | ymchiw |\n\n- **Ghadi** s’accorde : *ghadi* pour un homme, *ghadya* pour une femme, *ghadyin* au pluriel. *Hiya ghadya tsafer.*\n- À l’oral, on raccourcit souvent en **gha** : *gha nmchi* = je vais aller.\n- Tout seul, **ghadi** veut dire « je vais (quelque part) » : *fin ghadi?* = où tu vas ?\n- Mots utiles : **ghedda** (demain), **had lwikand** (ce week-end), **men ba3d** (après), **m3a** (avec).\n- Après un projet, on ajoute souvent **inchallah** (si Dieu le veut).\n- Négation : **maghadich** + verbe : *maghadich nkhdem ghedda* = je ne vais pas travailler demain.",
+ "explanation": "Pour le futur, on met **ghadi** devant le verbe, **sans ka-** : *ghadi nmchi* = je vais aller. C’est comme « aller + verbe » en français.\n\n| | ghadi | verbe |\n|---|---|---|\n| je | ghadi / ghadya | nmchi |\n| tu | ghadi / ghadya | tmchi |\n| il / elle | ghadi / ghadya | ymchi / tmchi |\n| nous | ghadyin | nmchiw |\n| vous | ghadyin | tmchiw |\n| ils / elles | ghadyin | ymchiw |\n\n- **Ghadi** s’accorde : *ghadi* pour un homme, *ghadya* pour une femme, *ghadyin* au pluriel. *Hiya ghadya tsafer.*\n- À l’oral, on raccourcit souvent en **gha** : *gha nmchi* = je vais aller.\n- Tout seul, **ghadi** veut dire « je vais (quelque part) » : *fin ghadi?* = où tu vas ?\n- Mots utiles : **ghedda** (demain), **had lwikand** (ce week-end), **men ba3d** (après), **m3a** (avec).\n- Avec **nous**, **vous**, **ils**, le verbe prend **-ou** (**-w** après une voyelle) : *naklou*, *tdirou*, *ychoufou*, mais *nmchiw*.\n- Après un projet, on ajoute souvent **inchallah** (si Dieu le veut).\n- Négation : **maghadich** + verbe : *maghadich nkhdem ghedda* = je ne vais pas travailler demain.",
  "french": "Comme le futur proche « je vais partir », ghadi + verbe dit ce qu’on va faire : ghadi nmchi = je vais aller.",
  "examples": [
   {
@@ -162,7 +162,8 @@
    ],
    "answersTr": [
     "inchallah",
-    "incha allah"
+    "incha allah",
+    "nchallah"
    ],
    "en": "Je vais aller à Chefchaouen, si Dieu le veut."
   },
@@ -215,12 +216,12 @@
     "كلينا"
    ],
    "optionsTr": [
-    "nakolou",
+    "naklou",
     "nakol",
     "klina"
    ],
    "answer": 0,
-   "why": "Nous : nakolou, avec -ou à la fin.",
+   "why": "Nous : naklou, avec -ou à la fin.",
    "en": "Nous allons manger un tajine."
   },
   {
@@ -250,15 +251,15 @@
    "options": [
     "البارح",
     "غدا",
-    "دابا"
+    "كل نهار"
    ],
    "optionsTr": [
     "lbare7",
     "ghedda",
-    "daba"
+    "koll nhar"
    ],
    "answer": 0,
-   "why": "Mchit est au passé : lbare7 (hier).",
+   "why": "Mchit est au passé : lbare7 (hier). Ghedda (demain) et koll nhar (chaque jour) ne vont pas avec un passé.",
    "en": "Hier je suis allé à la plage, et demain je vais aller à Marrakech."
   },
   {
@@ -421,7 +422,7 @@
    {
     "speaker": "Hajar",
     "de": "غاديين نمشيو للبحر و ناكلو الحوت.",
-    "tr": "ghadyin nmchiw l lb7er w nakolou l7out.",
+    "tr": "ghadyin nmchiw l lb7er w naklou l7out.",
     "en": "Nous allons aller à la plage et manger du poisson."
    },
    {
@@ -519,6 +520,6 @@
  "writing": {
   "task": "Écris 2 à 4 phrases sur tes projets pour ce week-end : où tu vas aller, avec qui, et ce que tu vas faire. Écris en lettres latines.",
   "model": "هاد الويكاند غادي نمشي للبحر مع صحابي. غاديين ناكلو الحوت و نشربو أتاي. و من بعد غادي نشوف ختي، إن شاء الله.",
-  "modelTr": "had lwikand ghadi nmchi l lb7er m3a s7abi. ghadyin nakolou l7out w nchrbou atay. w men ba3d ghadi nchouf khti, inchallah."
+  "modelTr": "had lwikand ghadi nmchi l lb7er m3a s7abi. ghadyin naklou l7out w nchrbou atay. w men ba3d ghadi nchouf khti, inchallah."
  }
 }

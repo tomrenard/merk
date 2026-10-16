@@ -6,7 +6,7 @@
  "icon": "⛅",
  "situation": "Parler de la météo",
  "canDo": "Tu peux dire quel temps il fait aujourd’hui, hier et demain, et parler des saisons.",
- "explanation": "Pour la météo, le darija n’a pas de « il fait ». On utilise **kayn** (il y a) ou **l7al** (le temps) + un adjectif.\n\n| darija | français |\n|---|---|\n| kayn chta | il pleut (il y a de la pluie) |\n| kayn s7ab | c’est nuageux |\n| kayna chems | il y a du soleil |\n| kayn lberd | il fait froid |\n| l7al skhoun | il fait chaud |\n| l7al bared | il fait froid |\n\n- **Chems** (soleil) est féminin : on dit **kayna** chems.\n- Négation : **makaynch chta** = il ne pleut pas.\n- **Kifach ljaw lyoum?** = quel temps fait-il aujourd’hui ?\n- Passé : **lbare7 kan l7al bared** = hier, il faisait froid (*kan* = était).\n- Futur : **ghedda ghadi tchta** = demain, il va pleuvoir.\n- **Chta** veut dire « pluie » et aussi « hiver ». Les saisons : **rbi3** (printemps), **sif** (été), **lkhrif** (automne), **chta** (hiver). *F sif* = en été.\n\nÀ Casablanca, l’hiver est doux mais humide : quand il pleut, tout le monde en parle !",
+ "explanation": "Pour la météo, le darija n’a pas de « il fait ». On utilise **kayn / kayna** (il y a) ou **l7al** (le temps) + un adjectif.\n\n| darija | français |\n|---|---|\n| kayna cchta | il pleut (il y a de la pluie) |\n| kayn ss7ab | c’est nuageux |\n| kayna cchems | il y a du soleil |\n| kayn lberd | il fait froid |\n| l7al skhoun | il fait chaud |\n| l7al bared | il fait froid |\n\n- **Cchta** (la pluie) et **cchems** (le soleil) sont féminins : on dit **kayna**. Au masculin : *kayn ss7ab*, *kayn lberd*.\n- Négation : **makaynach cchta** = il ne pleut pas (au masculin : *makaynch ss7ab*).\n- **Kifach ljaw lyoum?** = quel temps fait-il aujourd’hui ?\n- Passé : **lbare7 kan l7al bared** = hier, il faisait froid (*kan* = était).\n- Futur : **ghedda ghadi tchta** = demain, il va pleuvoir.\n- **Cchta** veut dire « pluie » et aussi « hiver ». Les saisons : **rrbi3** (printemps), **ssif** (été), **lkhrif** (automne), **cchta** (hiver). *F ssif* = en été.\n\nÀ Casablanca, l’hiver est doux mais humide : quand il pleut, tout le monde en parle !",
  "french": "Là où le français dit « il fait chaud », le darija dit « le temps (est) chaud » : l7al skhoun, sans verbe.",
  "examples": [
   {
@@ -15,8 +15,8 @@
    "en": "Quel temps fait-il aujourd’hui ?"
   },
   {
-   "de": "اليوم كاين الشتا.",
-   "tr": "lyoum kayn chta.",
+   "de": "اليوم كاينة الشتا.",
+   "tr": "lyoum kayna cchta.",
    "en": "Aujourd’hui, il pleut."
   },
   {
@@ -25,13 +25,13 @@
    "en": "Il fait très chaud."
   },
   {
-   "de": "ماكاينش الشتا، كاينة الشمس.",
-   "tr": "makaynch chta, kayna chems.",
+   "de": "ماكايناش الشتا، كاينة الشمس.",
+   "tr": "makaynach cchta, kayna cchems.",
    "en": "Il ne pleut pas, il y a du soleil."
   },
   {
    "de": "ف الشتا الحال بارد.",
-   "tr": "f chta l7al bared.",
+   "tr": "f cchta l7al bared.",
    "en": "En hiver, il fait froid."
   },
   {
@@ -46,7 +46,7 @@
   },
   {
    "de": "ف الصيف كنمشي للبحر.",
-   "tr": "f sif kanmchi l lb7er.",
+   "tr": "f ssif kanmchi l lb7er.",
    "en": "En été, je vais à la mer."
   }
  ],
@@ -55,13 +55,13 @@
    "id": "ary-a1-18-01",
    "type": "cloze",
    "de": "اليوم ___ الشتا.",
-   "tr": "lyoum ___ chta.",
+   "tr": "lyoum ___ cchta.",
    "base": "il y a",
    "answers": [
-    "كاين"
+    "كاينة"
    ],
    "answersTr": [
-    "kayn"
+    "kayna"
    ],
    "en": "Aujourd’hui, il pleut."
   },
@@ -103,7 +103,7 @@
     "الشتا"
    ],
    "answersTr": [
-    "chta"
+    "cchta"
    ],
    "en": "En hiver, il fait froid."
   },
@@ -145,7 +145,7 @@
     "السحاب"
    ],
    "answersTr": [
-    "s7ab"
+    "ss7ab"
    ],
    "en": "C’est nuageux aujourd’hui."
   },
@@ -153,13 +153,13 @@
    "id": "ary-a1-18-08",
    "type": "cloze",
    "de": "___ الشتا اليوم.",
-   "tr": "___ chta lyoum.",
+   "tr": "___ cchta lyoum.",
    "base": "il n’y a pas",
    "answers": [
-    "ماكاينش"
+    "ماكايناش"
    ],
    "answersTr": [
-    "makaynch"
+    "makaynach"
    ],
    "en": "Il ne pleut pas aujourd’hui."
   },
@@ -167,7 +167,7 @@
    "id": "ary-a1-18-09",
    "type": "choice",
    "de": "اليوم ___ الشمس.",
-   "tr": "lyoum ___ chems.",
+   "tr": "lyoum ___ cchems.",
    "options": [
     "كاينة",
     "كاين"
@@ -177,7 +177,7 @@
     "kayn"
    ],
    "answer": 0,
-   "why": "Chems est féminin : kayna chems.",
+   "why": "Cchems est féminin : kayna cchems.",
    "en": "Aujourd’hui, il y a du soleil."
   },
   {
@@ -190,11 +190,11 @@
     "الشتا"
    ],
    "optionsTr": [
-    "sif",
-    "chta"
+    "ssif",
+    "cchta"
    ],
    "answer": 0,
-   "why": "Sif = l’été ; chta = l’hiver.",
+   "why": "Ssif = l’été ; cchta = l’hiver.",
    "en": "En été, il fait chaud."
   },
   {
@@ -254,17 +254,17 @@
    "id": "ary-a1-18-14",
    "type": "choice",
    "de": "الربيع، الصيف، الخريف و ___.",
-   "tr": "rbi3, sif, lkhrif w ___.",
+   "tr": "rrbi3, ssif, lkhrif w ___.",
    "options": [
     "الشتا",
     "السحاب"
    ],
    "optionsTr": [
-    "chta",
-    "s7ab"
+    "cchta",
+    "ss7ab"
    ],
    "answer": 0,
-   "why": "Chta est aussi le nom de l’hiver.",
+   "why": "Cchta est aussi le nom de l’hiver.",
    "en": "Le printemps, l’été, l’automne et l’hiver."
   },
   {
@@ -280,7 +280,7 @@
    "optionsTr": [
     "ljaw",
     "lmakla",
-    "dwa"
+    "ddwa"
    ],
    "answer": 0,
    "why": "Ljaw = le temps, la météo.",
@@ -290,7 +290,7 @@
    "id": "ary-a1-18-16",
    "type": "choice",
    "de": "ف الصيف ___ للبحر.",
-   "tr": "f sif ___ l lb7er.",
+   "tr": "f ssif ___ l lb7er.",
    "options": [
     "كنمشي",
     "مشيت"
@@ -308,14 +308,14 @@
    "type": "order",
    "tiles": [
     "lyoum",
-    "kayn",
-    "chta"
+    "kayna",
+    "cchta"
    ],
    "answers": [
-    "lyoum kayn chta",
-    "kayn chta lyoum"
+    "lyoum kayna cchta",
+    "kayna cchta lyoum"
    ],
-   "de": "اليوم كاين الشتا.",
+   "de": "اليوم كاينة الشتا.",
    "en": "Aujourd’hui, il pleut."
   },
   {
@@ -337,14 +337,14 @@
    "type": "order",
    "tiles": [
     "f",
-    "sif",
+    "ssif",
     "l7al",
     "skhoun",
     "bzzaf"
    ],
    "answers": [
-    "f sif l7al skhoun bzzaf",
-    "l7al skhoun bzzaf f sif"
+    "f ssif l7al skhoun bzzaf",
+    "l7al skhoun bzzaf f ssif"
    ],
    "de": "ف الصيف الحال سخون بزاف.",
    "en": "En été, il fait très chaud."
@@ -378,7 +378,7 @@
    {
     "speaker": "Nadia",
     "de": "اليوم كاين السحاب و الشتا.",
-    "tr": "lyoum kayn s7ab w chta.",
+    "tr": "lyoum kayn ss7ab w cchta.",
     "en": "Aujourd’hui, il y a des nuages et il pleut."
    },
    {
@@ -390,13 +390,13 @@
    {
     "speaker": "Nadia",
     "de": "آه، بارد شوية. و ف مراكش؟",
-    "tr": "ah, bared chwiya. w f mrrakech?",
+    "tr": "ah, bared chwiya. w f mrrakch?",
     "en": "Oui, un peu froid. Et à Marrakech ?"
    },
    {
     "speaker": "Karim",
     "de": "هنا كاينة الشمس. الحال سخون بزاف!",
-    "tr": "hna kayna chems. l7al skhoun bzzaf!",
+    "tr": "hna kayna cchems. l7al skhoun bzzaf!",
     "en": "Ici, il y a du soleil. Il fait très chaud !"
    },
    {
@@ -413,20 +413,20 @@
    },
    {
     "speaker": "Nadia",
-    "de": "البارح ماكانش الشتا، كان الحال مزيان.",
-    "tr": "lbare7 makanch chta, kan l7al mzyan.",
+    "de": "البارح ماكانتش الشتا، كان الحال مزيان.",
+    "tr": "lbare7 makanetch cchta, kan l7al mzyan.",
     "en": "Hier, il n’a pas plu, il faisait beau."
    },
    {
     "speaker": "Karim",
     "de": "ف الصيف غادي نجي لكازا.",
-    "tr": "f sif ghadi nji l kaza.",
+    "tr": "f ssif ghadi nji l kaza.",
     "en": "En été, je vais venir à Casa."
    },
    {
     "speaker": "Nadia",
     "de": "مزيان! ف الصيف كنمشيو للبحر.",
-    "tr": "mzyan! f sif kanmchiw l lb7er.",
+    "tr": "mzyan! f ssif kanmchiw l lb7er.",
     "en": "Très bien ! En été, on va à la mer."
    }
   ],
@@ -461,12 +461,12 @@
   ]
  },
  "dictation": [
-  "اليوم كاين الشتا.",
+  "اليوم كاينة الشتا.",
   "الحال سخون.",
   "كيفاش الجو؟"
  ],
  "dictationTr": [
-  "lyoum kayn chta.",
+  "lyoum kayna cchta.",
   "l7al skhoun.",
   "kifach ljaw?"
  ],
@@ -478,7 +478,7 @@
   },
   {
    "de": "كاين السحاب.",
-   "tr": "kayn s7ab.",
+   "tr": "kayn ss7ab.",
    "en": "C’est nuageux."
   },
   {
@@ -493,13 +493,13 @@
   },
   {
    "de": "ف الصيف الحال سخون.",
-   "tr": "f sif l7al skhoun.",
+   "tr": "f ssif l7al skhoun.",
    "en": "En été, il fait chaud."
   }
  ],
  "writing": {
   "task": "Un ami te demande quel temps il fait chez toi. Écris 2 à 4 phrases : le temps aujourd’hui, hier et demain. Écris en lettres latines.",
   "model": "اليوم كاين السحاب و الحال بارد. البارح كان الحال مزيان. غدا غادي تشتا.",
-  "modelTr": "lyoum kayn s7ab w l7al bared. lbare7 kan l7al mzyan. ghedda ghadi tchta."
+  "modelTr": "lyoum kayn ss7ab w l7al bared. lbare7 kan l7al mzyan. ghedda ghadi tchta."
  }
 }

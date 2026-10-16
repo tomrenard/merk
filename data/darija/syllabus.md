@@ -7,7 +7,7 @@ explanations and glosses, Arabic script in `de`, Latin in `tr` (README.md in thi
 | id | topic | situation |
 |---|---|---|
 | ary-a1-01 | pronoms, se présenter (pas de verbe être) | Faire connaissance |
-| ary-a1-02 | saluer, remercier, s'excuser (sba7 lkhir, 3afak, chokran, smeh liya, bslama) | Dire bonjour et au revoir |
+| ary-a1-02 | saluer, remercier, s'excuser (sba7 lkhir, 3afak, chokran, sme7 liya, bslama) | Dire bonjour et au revoir |
 | ary-a1-03 | nombres 1–20, l'âge (ch7al f 3mrek?) | Parler de son âge |
 | ary-a1-04 | négation ma…ch et machi, questions oui/non avec wach | Dire oui, non, pas du tout |
 | ary-a1-05 | possessifs (suffixes -i, -ek, -o… et dyal), la famille | Présenter sa famille |
@@ -23,6 +23,6 @@ explanations and glosses, Arabic script in `de`, Latin in `tr` (README.md in thi
 | ary-a1-15 | directions (3la limen, 3la lisser, nichan) | En taxi |
 | ary-a1-16 | manger et boire (kla, chreb), plats | Au restaurant |
 | ary-a1-17 | la santé (mrid, kayder liya rassi) | À la pharmacie |
-| ary-a1-18 | le temps et les saisons (kayn chta, s7ab) | Parler de la météo |
+| ary-a1-18 | le temps et les saisons (kayna cchta, kayn ss7ab) | Parler de la météo |
 | ary-a1-19 | goûts et loisirs (kanbghi / kan7eb + verbe) | Le week-end |
 | ary-a1-20 | téléphone et rendez-vous (wakha, safi, n3ayet lik) | Au téléphone |

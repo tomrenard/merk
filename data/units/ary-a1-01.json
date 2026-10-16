@@ -128,7 +128,8 @@
    "answersTr": [
     "l7amdoulillah",
     "l7amdolilah",
-    "lhamdolilah"
+    "lhamdolilah",
+    "7amdoulillah"
    ],
    "en": "Ça va, Dieu merci."
   },
@@ -164,7 +165,7 @@
    "id": "ary-a1-01-09",
    "type": "choice",
    "de": "ليلى ___ من الرباط.",
-   "tr": "layla ___ men rbat.",
+   "tr": "layla ___ men rrbat.",
    "options": [
     "هي",
     "هو",
@@ -362,7 +363,8 @@
     "mtcherfin"
    ],
    "answers": [
-    "mtcherfin 7na men kaza"
+    "mtcherfin 7na men kaza",
+    "7na men kaza mtcherfin"
    ],
    "de": "متشرفين، حنا من كازا.",
    "en": "Enchantés, nous sommes de Casa."

@@ -27,7 +27,7 @@
   {
    "de": "علاش كتقرا الدارجة؟",
    "tr": "3lach kat9ra ddarija?",
-   "en": "Pourquoi tu apprends la darija ?"
+   "en": "Pourquoi tu étudies la darija ?"
   },
   {
    "de": "حيت كنبغي المغرب.",
@@ -105,7 +105,7 @@
    "answersTr": [
     "3lach"
    ],
-   "en": "Pourquoi tu apprends la darija ?"
+   "en": "Pourquoi tu étudies la darija ?"
   },
   {
    "id": "ary-a1-09-05",
@@ -133,7 +133,8 @@
     "شحال"
    ],
    "answersTr": [
-    "ch7al"
+    "ch7al",
+    "chhal"
    ],
    "en": "Quel âge as-tu ?"
   },
@@ -161,9 +162,10 @@
     "حيت"
    ],
    "answersTr": [
-    "7it"
+    "7it",
+    "hit"
    ],
-   "en": "Pourquoi tu apprends la darija ? Parce que j’aime le Maroc."
+   "en": "Pourquoi tu étudies la darija ? Parce que j’aime le Maroc."
   },
   {
    "id": "ary-a1-09-09",
@@ -277,13 +279,13 @@
    ],
    "answer": 0,
    "why": "La réponse commence par 7it (parce que) : la question est 3lach.",
-   "en": "Pourquoi tu apprends la darija ? — Parce que mon mari est marocain."
+   "en": "Pourquoi tu étudies la darija ? — Parce que mon mari est marocain."
   },
   {
    "id": "ary-a1-09-15",
    "type": "choice",
    "de": "___ من خت عندك؟ — جوج.",
-   "tr": "___ men kht 3ndek? — jouj.",
+   "tr": "___ men khet 3ndek? — jouj.",
    "options": [
     "شحال",
     "شنو",
@@ -330,7 +332,7 @@
     "nta fin katskon"
    ],
    "de": "فين كتسكن نتا؟",
-   "en": "Et toi, où habites-tu ?"
+   "en": "Où habites-tu, toi ?"
   },
   {
    "id": "ary-a1-09-18",
@@ -344,7 +346,7 @@
     "3lach kat9ra ddarija"
    ],
    "de": "علاش كتقرا الدارجة؟",
-   "en": "Pourquoi tu apprends la darija ?"
+   "en": "Pourquoi tu étudies la darija ?"
   },
   {
    "id": "ary-a1-09-19",
@@ -412,9 +414,9 @@
    },
    {
     "speaker": "Sara",
-    "de": "كنخدم ف واحد الشركة ف المعاريف.",
-    "tr": "kankhdem f wa7ed ccharika f lma3arif.",
-    "en": "Je travaille dans une entreprise au Maârif."
+    "de": "كنخدم ف واحد البانكة ف المعاريف.",
+    "tr": "kankhdem f wa7ed lbanka f lma3arif.",
+    "en": "Je travaille dans une banque au Maârif."
    },
    {
     "speaker": "Fatima",

@@ -124,7 +124,7 @@
    "id": "ary-a1-14-06",
    "type": "cloze",
    "de": "هاد الصباط ___.",
-   "tr": "had sbbat ___.",
+   "tr": "had ssbbat ___.",
    "base": "jdid (neuf)",
    "answers": [
     "جديد"
@@ -264,7 +264,7 @@
    "optionsTr": [
     "lloun",
     "ddar",
-    "sa3a"
+    "ssa3a"
    ],
    "answer": 0,
    "why": "Khder (vert) est une couleur : chno lloun dyalo ?",
@@ -373,7 +373,7 @@
    {
     "speaker": "Hicham",
     "de": "مرحبا، شنو بغيتي؟",
-    "tr": "mar7ba, chno bghiti?",
+    "tr": "mer7ba, chno bghiti?",
     "en": "Bienvenue, qu’est-ce que tu veux ?"
    },
    {

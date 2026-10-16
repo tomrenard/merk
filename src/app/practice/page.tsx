@@ -1,3 +1,4 @@
+import { getT } from "@/lib/locale";
 import { type PracticeScope, practiceWords } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { TabBar } from "../TabBar";
@@ -40,19 +41,22 @@ export default async function PracticePage({
     raw === "all" || raw === "today" || raw === "tricky" ? raw : null;
   const words = scope ? await practiceWords(await requireUser(), scope) : [];
   if (scope && words.length) return <Practice words={words} scope={scope} />;
+  const t = await getT();
   return (
     <main className="screen with-tabs">
       <header>
-        <h1 className="text-3xl font-black">Practice</h1>
-        <p className="muted font-semibold">Extra practice: it doesn't change your schedule.</p>
+        <h1 className="text-3xl font-black">{t("Practice")}</h1>
+        <p className="muted font-semibold">
+          {t("Extra practice: it doesn't change your schedule.")}
+        </p>
       </header>
       {scope && (
         <p className="card text-center font-bold">
           {scope === "today"
-            ? "Nothing studied today yet: try all your words."
+            ? t("Nothing studied today yet: try all your words.")
             : scope === "tricky"
-              ? "No tricky words: nice!"
-              : "No words studied yet."}
+              ? t("No tricky words: nice!")
+              : t("No words studied yet.")}
         </p>
       )}
       <ul className="flex flex-col gap-3">
@@ -62,8 +66,8 @@ export default async function PracticePage({
             <a href={`/practice?scope=${s.scope}`} className="card flex items-center gap-3">
               <span className={`icon ${s.tint}`}>{s.icon}</span>
               <span className="flex-1">
-                <span className="block font-extrabold">{s.title}</span>
-                <span className="muted text-sm font-semibold">{s.text}</span>
+                <span className="block font-extrabold">{t(s.title)}</span>
+                <span className="muted text-sm font-semibold">{t(s.text)}</span>
               </span>
               <span className="muted text-2xl font-black">›</span>
             </a>
@@ -73,8 +77,10 @@ export default async function PracticePage({
           <a href="/practice/sounds" className="card flex items-center gap-3">
             <span className="icon bg-pink-100 dark:bg-pink-950">👂</span>
             <span className="flex-1">
-              <span className="block font-extrabold">Sounds that look alike</span>
-              <span className="muted text-sm font-semibold">Kiste or Küste? Miete or Mitte?</span>
+              <span className="block font-extrabold">{t("Sounds that look alike")}</span>
+              <span className="muted text-sm font-semibold">
+                {t("Kiste or Küste? Miete or Mitte?")}
+              </span>
             </span>
             <span className="muted text-2xl font-black">›</span>
           </a>
@@ -83,9 +89,9 @@ export default async function PracticePage({
           <a href="/practice/numbers" className="card flex items-center gap-3">
             <span className="icon bg-green-100 dark:bg-green-950">🔢</span>
             <span className="flex-1">
-              <span className="block font-extrabold">Numbers & time by ear</span>
+              <span className="block font-extrabold">{t("Numbers & time by ear")}</span>
               <span className="muted text-sm font-semibold">
-                Prices, times, phone numbers, spelled names
+                {t("Prices, times, phone numbers, spelled names")}
               </span>
             </span>
             <span className="muted text-2xl font-black">›</span>

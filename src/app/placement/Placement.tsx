@@ -15,6 +15,7 @@ import {
   vocabResult,
 } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
+import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
 import { speak, useSpeechUnlock } from "../review/German";
@@ -35,6 +36,7 @@ const ORDER: Level[] = ["A1", "A2", "B1", "B2"];
 /** About 10 minutes: words (yes/no, with made-up words mixed in), grammar, then listening. */
 export function Placement({ packet }: { packet: Packet }) {
   useSpeechUnlock();
+  const t = useT();
   const router = useRouter();
   const [step, setStep] = useState<Step>("intro");
   const [ticked, setTicked] = useState<Level[]>([]);
@@ -183,7 +185,7 @@ export function Placement({ packet }: { packet: Packet }) {
   }[step];
   const bar = (
     <div className="topbar">
-      <Go href="/" className="muted text-2xl font-black" aria-label="Stop the test">
+      <Go href="/" className="muted text-2xl font-black" aria-label={t("Stop the test")}>
         ✕
       </Go>
       <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
@@ -201,18 +203,20 @@ export function Placement({ packet }: { packet: Packet }) {
         <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
           🧭
         </span>
-        <h1 className="text-3xl font-black">Find your level</h1>
+        <h1 className="text-3xl font-black">{t("Find your level")}</h1>
         <p className="font-semibold">
-          About 10 minutes: words, then grammar, then a little listening.
+          {t("About 10 minutes: words, then grammar, then a little listening.")}
         </p>
         <p className="muted font-semibold">
-          Not knowing is fine: say No rather than guess. Some words are made up, to catch guessing.
+          {t(
+            "Not knowing is fine: say No rather than guess. Some words are made up, to catch guessing.",
+          )}
         </p>
         <button type="button" onClick={() => setStep("self")} className="btn btn-primary">
-          Start
+          {t("Start")}
         </button>
         <Go href="/" className="btn">
-          Not now
+          {t("Not now")}
         </Go>
       </main>
     );
@@ -222,8 +226,8 @@ export function Placement({ packet }: { packet: Packet }) {
     return (
       <main className="screen">
         {bar}
-        <h1 className="text-2xl font-black">What can you already do in German?</h1>
-        <p className="muted font-semibold">Tick everything that is true.</p>
+        <h1 className="text-2xl font-black">{t("What can you already do in German?")}</h1>
+        <p className="muted font-semibold">{t("Tick everything that is true.")}</p>
         {CAN_DO.map(({ level, text }) => {
           const on = ticked.includes(level);
           return (
@@ -234,12 +238,12 @@ export function Placement({ packet }: { packet: Packet }) {
               onClick={() => setTicked(on ? ticked.filter((l) => l !== level) : [...ticked, level])}
               className={`card text-left font-bold ${on ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
             >
-              {on ? "☑️" : "⬜️"} {text}
+              {on ? "☑️" : "⬜️"} {t(text)}
             </button>
           );
         })}
         <button type="button" onClick={() => setStep("vocab")} className="btn btn-primary mt-auto">
-          Continue
+          {t("Continue")}
         </button>
       </main>
     );
@@ -251,7 +255,7 @@ export function Placement({ packet }: { packet: Packet }) {
       return (
         <main className="screen">
           {bar}
-          <p className="muted text-sm font-extrabold">Quick check: what does it mean?</p>
+          <p className="muted text-sm font-extrabold">{t("Quick check: what does it mean?")}</p>
           <p className="text-3xl font-black">{checking.de}</p>
           <div className="flex flex-col gap-2">
             {checking.options.map((option, i) => (
@@ -265,7 +269,7 @@ export function Placement({ packet }: { packet: Packet }) {
               </button>
             ))}
             <button type="button" onClick={() => answerMeaning(-1)} className="btn normal-case">
-              I'm not sure after all
+              {t("I'm not sure after all")}
             </button>
           </div>
         </main>
@@ -274,7 +278,7 @@ export function Placement({ packet }: { packet: Packet }) {
     return (
       <main className="screen">
         {bar}
-        <p className="muted text-sm font-extrabold">Do you know what it means?</p>
+        <p className="muted text-sm font-extrabold">{t("Do you know what it means?")}</p>
         <p className="py-10 text-center text-4xl font-black">
           {card ? ("word" in card ? card.word.de : card.pseudo) : ""}
         </p>
@@ -284,14 +288,14 @@ export function Placement({ packet }: { packet: Packet }) {
             onClick={() => answerCard(false)}
             className="btn btn-solid py-5 text-lg [--c:#d63c3c]"
           >
-            No
+            {t("No")}
           </button>
           <button
             type="button"
             onClick={() => answerCard(true)}
             className="btn btn-solid py-5 text-lg [--c:#1a7a43]"
           >
-            Yes
+            {t("Yes")}
           </button>
         </div>
       </main>
@@ -304,7 +308,7 @@ export function Placement({ packet }: { packet: Packet }) {
       <main className="screen">
         {bar}
         <p className="chip self-start bg-[var(--brand-soft)] text-[var(--brand)]">
-          Grammar · {levelOf(search.next)}
+          {t("Grammar")} · {levelOf(search.next)}
         </p>
         {item && <Exercise key={`${search.probes}-${probeItem}`} item={item} onDone={probeDone} />}
       </main>
@@ -318,16 +322,16 @@ export function Placement({ packet }: { packet: Packet }) {
       <main className="screen">
         {bar}
         <p className="muted text-sm font-extrabold">
-          Listening · {ORDER[listenLevel]} · {listenItem + 1}/3
+          {t("Listening")} · {ORDER[listenLevel]} · {listenItem + 1}/3
         </p>
         <button
           type="button"
           onClick={() => speak(item.de, { recorded: true })}
           className="btn btn-primary py-5 text-xl"
         >
-          🔊 Play
+          🔊 {t("Play")}
         </button>
-        <p className="font-bold">What did you hear?</p>
+        <p className="font-bold">{t("What did you hear?")}</p>
         <div className="flex flex-col gap-2">
           {item.options.map((option, i) => (
             <button
@@ -347,10 +351,10 @@ export function Placement({ packet }: { packet: Packet }) {
           onClick={() => listenDone(picked === item.answer)}
           className="btn btn-primary mt-auto disabled:opacity-50"
         >
-          Continue
+          {t("Continue")}
         </button>
         <button type="button" onClick={() => setStep("result")} className="btn">
-          Skip listening
+          {t("Skip listening")}
         </button>
       </main>
     );
@@ -358,43 +362,54 @@ export function Placement({ packet }: { packet: Packet }) {
 
   const markCount =
     vocab.knownBands.reduce((sum, id) => sum + (packet.bands[id]?.size ?? 0), 0) + confirmed.length;
-  const grammarLevel = search.lo ? levelOf(search.lo) : "beginner";
+  const grammarLevel = search.lo ? levelOf(search.lo) : t("beginner");
   return (
     <main className="screen">
-      <h1 className="text-3xl font-black">Your level</h1>
+      <h1 className="text-3xl font-black">{t("Your level")}</h1>
       <section className="card flex flex-col gap-2">
-        <p className="font-extrabold">📚 Words</p>
+        <p className="font-extrabold">📚 {t("Words")}</p>
         {vocab.unreliable ? (
           <p className="font-semibold">
-            Too many made-up words got a Yes, so this part can't be trusted. Nothing will be marked.
+            {t(
+              "Too many made-up words got a Yes, so this part can't be trusted. Nothing will be marked.",
+            )}
           </p>
         ) : (
           <>
             <p className="font-semibold">
-              About {vocab.size} words ({vocab.low}–{vocab.high})
+              {t("About {n} words ({low}–{high})", {
+                n: vocab.size,
+                low: vocab.low,
+                high: vocab.high,
+              })}
             </p>
             <p className="muted text-sm font-semibold">
-              {vocab.levels.map((l) => `${l.level}: ${l.state}`).join(" · ")}
+              {vocab.levels.map((l) => `${l.level}: ${t(l.state)}`).join(" · ")}
             </p>
           </>
         )}
       </section>
       <section className="card flex flex-col gap-2">
-        <p className="font-extrabold">🧩 Grammar</p>
+        <p className="font-extrabold">🧩 {t("Grammar")}</p>
         <p className="font-semibold">
           {search.lo
-            ? `${grammarLevel}: you know the grammar up to about “${packet.units[search.lo - 1]?.title}”.`
-            : "Start from the beginning."}
+            ? t("{level}: you know the grammar up to about “{title}”.", {
+                level: grammarLevel,
+                title: packet.units[search.lo - 1]?.title ?? "",
+              })
+            : t("Start from the beginning.")}
         </p>
       </section>
       <section className="card flex flex-col gap-2">
-        <p className="font-extrabold">🎧 Listening</p>
+        <p className="font-extrabold">🎧 {t("Listening")}</p>
         <p className="font-semibold">
-          {listenPassed >= 0 ? `${ORDER[listenPassed]} understood` : "Start at A1"}
+          {listenPassed >= 0
+            ? t("{level} understood", { level: ORDER[listenPassed] ?? "" })
+            : t("Start at A1")}
         </p>
       </section>
       <label className="flex flex-col gap-1">
-        <span className="muted text-sm font-bold">Start the course at</span>
+        <span className="muted text-sm font-bold">{t("Start the course at")}</span>
         <select
           value={startUnit}
           onChange={(event) => setStartUnit(Number(event.target.value))}
@@ -411,8 +426,9 @@ export function Placement({ packet }: { packet: Packet }) {
           ))}
         </select>
         <span className="muted text-sm">
-          Lessons and exams before it count as done; each lesson still comes back once in your
-          reviews.
+          {t(
+            "Lessons and exams before it count as done; each lesson still comes back once in your reviews.",
+          )}
         </span>
       </label>
       {!vocab.unreliable && markCount > 0 && (
@@ -423,17 +439,20 @@ export function Placement({ packet }: { packet: Packet }) {
             onChange={(event) => setMarkWords(event.target.checked)}
             className="size-5"
           />
-          Mark {markCount} words as known. They come back for a quick check over the next 2 months.
+          {t("Mark {n} words as known. They come back for a quick check over the next 2 months.", {
+            n: markCount,
+          })}
         </label>
       )}
       {failed && (
         <p className="font-semibold text-rose-600 dark:text-rose-400">
-          Couldn't save. A placement saved in the last 10 minutes blocks a new one; otherwise try
-          again.
+          {t(
+            "Couldn't save. A placement saved in the last 10 minutes blocks a new one; otherwise try again.",
+          )}
         </p>
       )}
       <button type="button" disabled={saving} onClick={apply} className="btn btn-primary">
-        {saving ? "Saving…" : "Start learning"}
+        {saving ? t("Saving…") : t("Start learning")}
       </button>
     </main>
   );

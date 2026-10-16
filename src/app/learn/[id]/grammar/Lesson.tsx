@@ -4,6 +4,7 @@ import { useEffect, useState, useTransition } from "react";
 import { spokenForm } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit, UnitItem } from "@/lib/units";
+import { useT } from "../../../Locale";
 import { Go } from "../../../Nav";
 import { Headword, SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
 import { learnWords, recordUnit } from "../../actions";
@@ -34,6 +35,7 @@ export function Lesson({
   testOut: boolean;
 }) {
   useSpeechUnlock();
+  const t = useT();
   const [step, setStep] = useState<Step>(testOut ? "check" : "learn");
   // Shuffled in the browser only: a different order on the server would break hydration.
   const [order, setOrder] = useState<UnitItem[]>([]);
@@ -75,7 +77,7 @@ export function Lesson({
           <Go
             href={`/learn/${unit.id}`}
             className="muted text-2xl font-black"
-            aria-label="Back to the unit"
+            aria-label={t("Back to the unit")}
           >
             ✕
           </Go>
@@ -111,7 +113,10 @@ export function Lesson({
               <form action={learnWords}>
                 <input type="hidden" name="unit" value={unit.id} />
                 <button type="submit" className="btn w-full">
-                  🌱 Learn the {words.filter((word) => !word.started).length} new ones in my reviews
+                  🌱{" "}
+                  {t("Learn the {n} new ones in my reviews", {
+                    n: words.filter((word) => !word.started).length,
+                  })}
                 </button>
               </form>
             )}
@@ -119,7 +124,7 @@ export function Lesson({
         )}
         {words.length > 0 ? (
           <details className="card">
-            <summary className="cursor-pointer font-extrabold">About this topic</summary>
+            <summary className="cursor-pointer font-extrabold">{t("About this topic")}</summary>
             <div className="mt-3">
               <Prose text={unit.explanation} />
             </div>
@@ -148,7 +153,7 @@ export function Lesson({
           ))}
         </section>
         <button type="button" onClick={() => setStep("drill")} className="btn btn-primary">
-          Practise
+          {t("Practise")}
         </button>
       </main>
     );
@@ -162,15 +167,18 @@ export function Lesson({
           {passed ? "🎉" : "💪"}
         </span>
         <p className="text-3xl font-black">
-          {passed ? (testOut ? "You know this unit!" : "Unit done!") : "Almost there"}
+          {passed ? (testOut ? t("You know this unit!") : t("Unit done!")) : t("Almost there")}
         </p>
         <p className="text-5xl font-black text-[var(--brand)]">
           {score}/{checkSize}
         </p>
         <p className="muted font-semibold">
           {passed
-            ? "It will come back in your reviews, so it sticks."
-            : `You need ${pass} to pass. Try the check again another day; the rest of the course stays open.`}
+            ? t("It will come back in your reviews, so it sticks.")
+            : t(
+                "You need {pass} to pass. Try the check again another day; the rest of the course stays open.",
+                { pass },
+              )}
         </p>
         {saveFailed && (
           <button
@@ -179,7 +187,7 @@ export function Lesson({
             onClick={() => save(score)}
             className="btn btn-primary"
           >
-            Couldn't save: retry
+            {t("Couldn't save: retry")}
           </button>
         )}
         {!saveFailed && next && (
@@ -187,11 +195,11 @@ export function Lesson({
             href={testOut ? (passed ? "/learn" : `/learn/${unit.id}/grammar`) : next.href}
             className="btn btn-primary"
           >
-            {testOut ? (passed ? "Back to the course" : "Learn this unit") : next.label}
+            {testOut ? (passed ? t("Back to the course") : t("Learn this unit")) : next.label}
           </Go>
         )}
         <Go href="/" className="btn">
-          Home
+          {t("Home")}
         </Go>
       </main>
     );
@@ -203,7 +211,7 @@ export function Lesson({
         <Go
           href={`/learn/${unit.id}`}
           className="muted text-2xl font-black"
-          aria-label="Stop the lesson"
+          aria-label={t("Stop the lesson")}
         >
           ✕
         </Go>
@@ -218,7 +226,9 @@ export function Lesson({
         <SoundToggle />
       </header>
       <p className="chip self-start bg-[var(--brand-soft)] text-[var(--brand)]">
-        {step === "drill" ? `Practice ${index + 1}/${DRILL}` : `Check ${index + 1}/${checkSize}`}
+        {step === "drill"
+          ? t("Practice {n}/{total}", { n: index + 1, total: DRILL })
+          : t("Check {n}/{total}", { n: index + 1, total: checkSize })}
       </p>
       {item && !saving && <Exercise key={`${step}-${item.id}`} item={item} onDone={done} />}
     </main>

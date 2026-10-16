@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getT } from "@/lib/locale";
 
 /** Line icons (24px, stroke = currentColor), so the active tab simply turns blue. */
 const ICONS = {
@@ -17,7 +18,8 @@ const TABS = [
 ] as const;
 
 /** Bottom navigation of the main screens; `active` is the current tab's href. */
-export function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
+export async function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
+  const t = await getT();
   return (
     <nav
       className="line fixed inset-x-0 bottom-0 z-10 border-t pb-[env(safe-area-inset-bottom)]"
@@ -47,7 +49,7 @@ export function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
               >
                 <path d={ICONS[tab.href]} />
               </svg>
-              {tab.label}
+              {t(tab.label)}
             </Link>
           </li>
         ))}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { type Drill, drills, isRightDrill } from "@/lib/drills";
 import { PANEL, SOLID } from "../../feedback";
+import { useT } from "../../Locale";
 import { Go } from "../../Nav";
 import { SoundToggle, speak } from "../../review/German";
 
@@ -10,6 +11,7 @@ const ROUND = 10;
 
 /** Hear a number, price, time, phone number or spelled name; type what you heard. */
 export default function NumbersPage() {
+  const t = useT();
   // Made after mount: random items would differ between the server and the browser.
   const [items, setItems] = useState<Drill[]>([]);
   const [index, setIndex] = useState(0);
@@ -37,10 +39,10 @@ export default function NumbersPage() {
           }}
           className="btn btn-primary"
         >
-          Again
+          {t("Again")}
         </button>
         <Go href="/practice" className="btn">
-          Done
+          {t("Done")}
         </Go>
       </main>
     );
@@ -65,7 +67,7 @@ export default function NumbersPage() {
   return (
     <main className="screen">
       <header className="topbar">
-        <Go href="/practice" className="muted text-2xl font-black" aria-label="Stop">
+        <Go href="/practice" className="muted text-2xl font-black" aria-label={t("Stop")}>
           ✕
         </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
@@ -83,14 +85,16 @@ export default function NumbersPage() {
           submit();
         }}
       >
-        <p className="muted text-sm font-extrabold">{drill?.kind ?? "…"}: type what you hear</p>
+        <p className="muted text-sm font-extrabold">
+          {drill ? t(drill.kind) : "…"}: {t("type what you hear")}
+        </p>
         {/* Speech needs a tap on iPhone, so each item is played from a button. */}
         <button
           type="button"
           onClick={() => drill && speak(drill.say)}
           className="btn self-start text-2xl"
         >
-          🔊 Play
+          🔊 {t("Play")}
         </button>
         <input
           value={typed}
@@ -102,16 +106,22 @@ export default function NumbersPage() {
           autoCorrect="off"
           spellCheck={false}
           placeholder={
-            drill?.kind === "Time" ? "e.g. 3:15" : drill?.kind === "Price" ? "e.g. 3,49" : ""
+            drill?.kind === "Time"
+              ? t("e.g. {x}", { x: "3:15" })
+              : drill?.kind === "Price"
+                ? t("e.g. {x}", { x: "3,49" })
+                : ""
           }
-          aria-label="What you heard"
+          aria-label={t("What you heard")}
           className="field w-full text-xl font-bold"
         />
         {checked && drill && (
           <div
             className={`flex flex-col gap-1 rounded-2xl p-4 ${PANEL[right ? "right" : "wrong"]}`}
           >
-            <p className="text-xl font-black">{right ? "✓ Richtig!" : `✗ It was ${drill.shown}`}</p>
+            <p className="text-xl font-black">
+              {right ? "✓ Richtig!" : `✗ ${t("It was")} ${drill.shown}`}
+            </p>
             <p className="font-semibold">„{drill.say}"</p>
           </div>
         )}
@@ -120,7 +130,7 @@ export default function NumbersPage() {
           onMouseDown={(event) => event.preventDefault()}
           className={`btn btn-solid w-full ${SOLID[!checked ? "idle" : right ? "right" : "wrong"]}`}
         >
-          {checked ? "Continue" : "Check"}
+          {checked ? t("Continue") : t("Check")}
         </button>
       </form>
     </main>

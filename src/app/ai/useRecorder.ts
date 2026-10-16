@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useT } from "../Locale";
 
 /**
  * Records from the microphone, at most `maxSeconds`; the mic is released when recording stops
  * or the screen closes. `clip` is the last recording.
  */
 export function useRecorder(maxSeconds = 60) {
+  const t = useT();
+
   const [recording, setRecording] = useState(false);
   const [clip, setClip] = useState<{ blob: Blob; url: string } | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -59,7 +62,7 @@ export function useRecorder(maxSeconds = 60) {
       setRecording(true);
       timer.current = setTimeout(stop, maxSeconds * 1000);
     } catch {
-      setError("No microphone: allow it for this app in your phone's settings.");
+      setError(t("No microphone: allow it for this app in your phone's settings."));
     } finally {
       starting.current = false;
     }

@@ -2,6 +2,7 @@
 
 import { type ReactNode, useState, useTransition } from "react";
 import type { PartKind } from "@/lib/course";
+import { useT } from "../Locale";
 import { Go } from "../Nav";
 import { SoundToggle } from "../review/German";
 import { recordPart } from "./actions";
@@ -16,13 +17,14 @@ export function PartShell({
   progress: number;
   children: ReactNode;
 }) {
+  const t = useT();
   return (
     <main className="screen">
       <header className="topbar">
         <Go
           href={`/learn/${unitId}`}
           className="muted text-2xl font-black"
-          aria-label="Back to the unit"
+          aria-label={t("Back to the unit")}
         >
           ✕
         </Go>
@@ -55,6 +57,7 @@ export function PartDone({
   saving?: boolean;
   next: { href: string; label: string } | null;
 }) {
+  const t = useT();
   return (
     <main className="screen justify-center text-center">
       <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
@@ -69,7 +72,7 @@ export function PartDone({
           onClick={onRetry}
           className="btn btn-primary disabled:opacity-50"
         >
-          Couldn't save: retry
+          {t("Couldn't save: retry")}
         </button>
       ) : (
         next && (
@@ -79,7 +82,7 @@ export function PartDone({
         )
       )}
       <Go href="/" className="btn">
-        Done for today
+        {t("Done for today")}
       </Go>
     </main>
   );

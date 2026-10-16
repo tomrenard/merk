@@ -6,9 +6,10 @@ import {
   currentPart,
   examPassed,
   examScore,
+  examTitle,
   isSkipped,
-  LEVEL_NAME,
   lastUnitId,
+  levelName,
   nextStep,
   PARTS,
   type Progress,
@@ -18,6 +19,8 @@ import {
   UNITS,
   unitDone,
 } from "@/lib/course";
+import type { T } from "@/lib/i18n";
+import { getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../Nav";
 import { TabBar } from "../TabBar";
@@ -37,10 +40,12 @@ function ExamCard({
   exam,
   progress,
   isNext,
+  t,
 }: {
   exam: CourseExam;
   progress: Progress;
   isNext: boolean;
+  t: T;
 }) {
   const score = examScore(progress, exam);
   const passed = examPassed(progress, exam);
@@ -58,16 +63,18 @@ function ExamCard({
       </span>
       <span className="flex-1">
         <span className="block font-extrabold">
-          {exam.type === "level" ? `${exam.level} exam (like the Goethe exam)` : `${exam.id} exam`}
+          {exam.type === "level"
+            ? t("{exam} (like the Goethe exam)", { exam: examTitle(exam, t) })
+            : examTitle(exam, t)}
         </span>
         <span className="muted text-sm font-semibold">
           {passed
-            ? `Passed · best ${score}%`
+            ? t("Passed · best {score}%", { score: score ?? 0 })
             : skipped
-              ? "Skipped by your placement test"
+              ? t("Skipped by your placement test")
               : score !== undefined
-                ? `Best ${score}% · ${exam.pass}% to pass`
-                : `${exam.pass}% to pass`}
+                ? t("Best {score}% · {pass}% to pass", { score, pass: exam.pass })
+                : t("{pass}% to pass", { pass: exam.pass })}
         </span>
       </span>
       <span aria-hidden="true" className="muted text-2xl font-black">
@@ -84,31 +91,32 @@ export default async function CoursePage({
   searchParams: Promise<{ view?: string }>;
 }) {
   const userId = await requireUser();
+  const t = await getT();
   const [progress, last] = await Promise.all([courseProgress(userId), lastUnitId(userId)]);
   const asked = (await searchParams).view;
   const view = VIEWS.find((v) => v.key === asked)?.key ?? "path";
   const part = PARTS.find((p) => p.path === view);
-  const next = nextStep(progress, last);
+  const next = nextStep(progress, last, t);
   const current = currentPart(progress);
   return (
     <main className="screen with-tabs">
       <header>
-        <h1 className="text-3xl font-black">Course</h1>
+        <h1 className="text-3xl font-black">{t("Course")}</h1>
         <p className="muted font-semibold">
-          A1 → B2 for everyday life. Follow the path or pick anything.
+          {t("A1 → B2 for everyday life. Follow the path or pick anything.")}
         </p>
         <Go href="/placement" className="text-sm font-bold text-[var(--brand)]">
-          Not sure where to start? Find your level ›
+          {t("Not sure where to start? Find your level")} ›
         </Go>
       </header>
-      <nav className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1" aria-label="Course views">
+      <nav className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1" aria-label={t("Course views")}>
         {VIEWS.map((v) => (
           <Link
             key={v.key}
             href={v.key === "path" ? "/learn" : `/learn?view=${v.key}`}
             className={`chip shrink-0 border ${v.key === view ? "border-[var(--brand)] bg-[var(--brand-soft)] text-[var(--brand)]" : "line muted"}`}
           >
-            <span aria-hidden="true">{v.icon}</span> {v.label}
+            <span aria-hidden="true">{v.icon}</span> {t(v.label)}
           </Link>
         ))}
       </nav>
@@ -126,7 +134,7 @@ export default async function CoursePage({
             {newLevel && (
               <h2 className="mt-2 text-2xl font-black">
                 {section.level}{" "}
-                <span className="muted text-base font-bold">{LEVEL_NAME[section.level]}</span>
+                <span className="muted text-base font-bold">{levelName(section.level, t)}</span>
               </h2>
             )}
             {/* Only the part you are in is open; the others fold to one line. */}
@@ -152,7 +160,7 @@ export default async function CoursePage({
                 </span>
                 <span className="muted text-sm font-bold">
                   {finished}/{section.units.length}
-                  {skipped > 0 && !part && ` · ${skipped} skipped`}
+                  {skipped > 0 && !part && ` · ${t("{n} skipped", { n: skipped })}`}
                 </span>
                 <span
                   aria-hidden="true"
@@ -192,13 +200,13 @@ export default async function CoursePage({
                             {!part && isDone && " ✓"}
                           </span>
                           <span className="muted text-sm font-semibold">
-                            {!part && `${partLabel(unit, PARTS[0])} · `}
+                            {!part && `${partLabel(unit, PARTS[0], t)} · `}
                             {unit.situation}
                             {!part &&
                               done.size > 0 &&
                               !isDone &&
-                              ` · ${done.size}/${PARTS.length} parts`}
-                            {!isDone && isSkipped(progress, unit.id) && " · Skipped"}
+                              ` · ${t("{done}/{total} parts", { done: done.size, total: PARTS.length })}`}
+                            {!isDone && isSkipped(progress, unit.id) && ` · ${t("Skipped")}`}
                           </span>
                         </span>
                         <span aria-hidden="true" className="muted text-2xl font-black">
@@ -215,6 +223,7 @@ export default async function CoursePage({
                         exam={exam}
                         progress={progress}
                         isNext={next?.type === "exam" && next.exam.id === exam.id}
+                        t={t}
                       />
                     </li>
                   ))}
@@ -223,7 +232,8 @@ export default async function CoursePage({
           </section>
         );
       })}
-      {UNITS.length === 0 && <p className="card text-center font-bold">No lessons yet.</p>}
+      {UNITS.length === 0 && <p className="card text-center font-bold">{t("No lessons yet.")}</p>}
+
       <TabBar active="/learn" />
     </main>
   );

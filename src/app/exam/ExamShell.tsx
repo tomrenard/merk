@@ -2,15 +2,18 @@
 
 import { type ReactNode, useState, useTransition } from "react";
 import type { CourseExam } from "@/lib/course";
+import { examTitle } from "@/lib/i18n";
+import { useT } from "../Locale";
 import { Go } from "../Nav";
 import { recordExam } from "./actions";
 
 /** Top bar of an exam: ✕ (leaving loses the attempt), progress, section name. */
 export function ExamBar({ progress, section }: { progress: number; section: string }) {
+  const t = useT();
   return (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Go href="/learn" className="muted text-2xl font-black" aria-label="Leave the exam">
+        <Go href="/learn" className="muted text-2xl font-black" aria-label={t("Leave the exam")}>
           ✕
         </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
@@ -39,10 +42,15 @@ export function ExamIntro({
   minutes: number;
   onStart: () => void;
 }) {
+  const t = useT();
   return (
     <main className="screen">
       <header className="topbar">
-        <Go href="/learn" className="muted text-2xl font-black" aria-label="Back to the course">
+        <Go
+          href="/learn"
+          className="muted text-2xl font-black"
+          aria-label={t("Back to the course")}
+        >
           ✕
         </Go>
       </header>
@@ -50,11 +58,11 @@ export function ExamIntro({
         {exam.type === "level" ? "🏆" : "📝"}
       </span>
       <div className="text-center">
-        <h1 className="text-3xl font-black">{exam.title}</h1>
+        <h1 className="text-3xl font-black">{examTitle(exam, t)}</h1>
         <p className="muted font-semibold">
           {exam.type === "level"
-            ? `Everything from ${exam.level}, built like the Goethe exam.`
-            : `A check on the lessons of ${exam.id}.`}
+            ? t("Everything from {level}, built like the Goethe exam.", { level: exam.level })
+            : t("A check on the lessons of {id}.", { id: exam.id })}
         </p>
       </div>
       <ul className="card flex flex-col divide-y divide-[var(--line)] py-0">
@@ -71,16 +79,18 @@ export function ExamIntro({
         ))}
       </ul>
       <p className="muted text-center text-sm font-semibold">
-        About {minutes} min · {exam.pass}% to pass
-        {best !== undefined && ` · your best: ${best}%`}
+        {t("About {min} min · {pass}% to pass", { min: minutes, pass: exam.pass })}
+        {best !== undefined && ` · ${t("your best: {best}%", { best })}`}
         <br />
         {exam.type === "level"
-          ? "Each section counts the same; listening, reading and grammar must each reach the mark too. "
-          : "Each try has new questions. "}
-        Leaving midway doesn't count.
+          ? t(
+              "Each section counts the same; listening, reading and grammar must each reach the mark too.",
+            )
+          : t("Each try has new questions.")}{" "}
+        {t("Leaving midway doesn't count.")}
       </p>
       <button type="button" onClick={onStart} className="btn btn-primary mt-auto">
-        {best === undefined ? "Start" : "Try again"}
+        {best === undefined ? t("Start") : t("Try again")}
       </button>
     </main>
   );
@@ -121,19 +131,23 @@ export function ExamResult({
   onRetry: () => void;
 }): ReactNode {
   const passed = percent >= exam.pass;
+  const t = useT();
   return (
     <main className="screen justify-center text-center">
       <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
         {passed ? (exam.type === "level" ? "🏆" : "🎉") : "💪"}
       </span>
-      <p className="text-3xl font-black">{passed ? `${exam.id} bestanden!` : "Not yet"}</p>
+      <p className="text-3xl font-black">{passed ? `${exam.id} bestanden!` : t("Not yet")}</p>
       <p className="text-5xl font-black text-[var(--brand)]">{percent}%</p>
       <p className="muted font-semibold">
         {passed
           ? exam.type === "level"
-            ? `You passed the ${exam.level} exam. Time for the next level.`
-            : `${exam.id} is done. On to the next part.`
-          : `You need ${exam.pass}%. Review the lessons it showed you were unsure about, then try again; every attempt has new questions.`}
+            ? t("You passed the {level} exam. Time for the next level.", { level: exam.level })
+            : t("{id} is done. On to the next part.", { id: exam.id })
+          : t(
+              "You need {pass}%. Review the lessons it showed you were unsure about, then try again; every attempt has new questions.",
+              { pass: exam.pass },
+            )}
       </p>
       <ul className="card flex flex-col divide-y divide-[var(--line)] py-0 text-left">
         {sections.map((s) => (
@@ -147,19 +161,19 @@ export function ExamResult({
       </ul>
       {state === "failed" ? (
         <button type="button" onClick={onRetry} className="btn btn-primary">
-          Couldn't save: retry
+          {t("Couldn't save: retry")}
         </button>
       ) : state === "saved" ? (
         <Go href="/" className="btn btn-primary">
-          Continue
+          {t("Continue")}
         </Go>
       ) : (
         <button type="button" disabled className="btn btn-primary opacity-50">
-          Saving…
+          {t("Saving…")}
         </button>
       )}
       <Go href="/learn" className="btn">
-        Course
+        {t("Course")}
       </Go>
     </main>
   );

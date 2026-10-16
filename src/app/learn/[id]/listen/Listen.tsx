@@ -5,6 +5,7 @@ import { sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
 import { PANEL, SOLID } from "../../../feedback";
+import { useT } from "../../../Locale";
 import { speak, stopSpeaking, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
@@ -18,6 +19,7 @@ export function Listen({
   unit: Unit;
   after: { href: string; label: string } | null;
 }) {
+  const t = useT();
   useSpeechUnlock();
   const { lines, questions } = unit.listening;
   const [step, setStep] = useState<Step>("hear");
@@ -87,7 +89,7 @@ export function Listen({
       <PartDone
         next={after}
         title="Gut gehört!"
-        detail={`${right}/${total} right. Try the dialogue again any time.`}
+        detail={t("{right}/{total} right. Try the dialogue again any time.", { right, total })}
         saveFailed={failed}
         onRetry={retry}
         saving={saving}
@@ -100,7 +102,7 @@ export function Listen({
   if (step === "hear") {
     return (
       <PartShell unitId={unit.id} progress={progress}>
-        <p className="muted text-sm font-extrabold">Listen first, no text</p>
+        <p className="muted text-sm font-extrabold">{t("Listen first, no text")}</p>
         <h1 className="text-2xl font-black">{unit.listening.title}</h1>
         <p className="font-semibold">{unit.listening.intro}</p>
         <button
@@ -108,9 +110,13 @@ export function Listen({
           onClick={() => (playing === null ? play() : stop())}
           className="btn btn-primary py-5 text-xl"
         >
-          {playing === null ? "▶ Play the dialogue" : `⏹ Line ${playing + 1}/${lines.length}`}
+          {playing === null
+            ? `▶ ${t("Play the dialogue")}`
+            : `⏹ ${t("Line {n}/{total}", { n: playing + 1, total: lines.length })}`}
         </button>
-        <p className="muted text-sm">Listen twice if you like. Then answer a few questions.</p>
+        <p className="muted text-sm">
+          {t("Listen twice if you like. Then answer a few questions.")}
+        </p>
         <button
           type="button"
           onClick={() => {
@@ -119,7 +125,7 @@ export function Listen({
           }}
           className="btn mt-auto"
         >
-          Questions
+          {t("Questions")}
         </button>
       </PartShell>
     );
@@ -132,7 +138,7 @@ export function Listen({
     return (
       <PartShell unitId={unit.id} progress={progress + (index / questions.length) * 0.25}>
         <p className="muted text-sm font-extrabold">
-          Question {index + 1}/{questions.length}
+          {t("Question {n}/{total}", { n: index + 1, total: questions.length })}
         </p>
         <p className="text-2xl font-black">{question.q}</p>
         <div className="flex flex-col gap-2">
@@ -149,7 +155,7 @@ export function Listen({
           ))}
         </div>
         <button type="button" onClick={() => (playing === null ? play() : stop())} className="btn">
-          {playing === null ? "🔊 Hear it again" : "⏹ Stop"}
+          {playing === null ? `🔊 ${t("Hear it again")}` : `⏹ ${t("Stop")}`}
         </button>
         {checked && (
           <p className={`rounded-2xl p-4 text-xl font-black ${PANEL[correct ? "right" : "wrong"]}`}>
@@ -162,7 +168,7 @@ export function Listen({
           onClick={() => (checked ? next(correct, questions.length) : setChecked(true))}
           className={`btn btn-solid mt-auto disabled:opacity-50 ${SOLID[checked ? (correct ? "right" : "wrong") : "idle"]}`}
         >
-          {checked ? "Continue" : "Check"}
+          {checked ? t("Continue") : t("Check")}
         </button>
       </PartShell>
     );
@@ -172,9 +178,9 @@ export function Listen({
     return (
       <PartShell unitId={unit.id} progress={progress}>
         <div className="topbar">
-          <p className="muted text-sm font-extrabold">Now read it · tap a line</p>
+          <p className="muted text-sm font-extrabold">{t("Now read it · tap a line")}</p>
           <button type="button" onClick={() => setEnglish(!english)} className="chip line border">
-            {english ? "Hide English" : "Show English"}
+            {english ? t("Hide English") : t("Show English")}
           </button>
         </div>
         <ol className="card flex flex-col gap-3">
@@ -193,7 +199,7 @@ export function Listen({
           ))}
         </ol>
         <button type="button" onClick={() => setStep("dictation")} className="btn btn-primary">
-          Dictation
+          {t("Dictation")}
         </button>
       </PartShell>
     );
@@ -205,10 +211,13 @@ export function Listen({
   return (
     <PartShell unitId={unit.id} progress={progress + (index / unit.dictation.length) * 0.25}>
       <p className="muted text-sm font-extrabold">
-        Dictation {index + 1}/{unit.dictation.length}: type what you hear
+        {t("Dictation {n}/{total}: type what you hear", {
+          n: index + 1,
+          total: unit.dictation.length,
+        })}
       </p>
       <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">
-        🔊 Play
+        🔊 {t("Play")}
       </button>
       <form
         className="flex flex-col gap-4"
@@ -228,12 +237,12 @@ export function Listen({
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
-          aria-label="What you heard"
+          aria-label={t("What you heard")}
           className="field text-lg font-bold"
         />
         {checked && (
           <div className={`rounded-2xl p-4 ${PANEL[correct ? "right" : "wrong"]}`}>
-            <p className="text-xl font-black">{correct ? "✓ Richtig!" : "✗ It was:"}</p>
+            <p className="text-xl font-black">{correct ? "✓ Richtig!" : `✗ ${t("It was:")}`}</p>
             <p className="font-bold">{sentence}</p>
           </div>
         )}
@@ -242,7 +251,7 @@ export function Listen({
           onMouseDown={(event) => event.preventDefault()}
           className={`btn btn-solid ${SOLID[checked ? (correct ? "right" : "wrong") : "idle"]}`}
         >
-          {checked ? "Continue" : "Check"}
+          {checked ? t("Continue") : t("Check")}
         </button>
       </form>
     </PartShell>

@@ -6,6 +6,7 @@ import { sameAnswer } from "@/lib/german";
 import { seededShuffle } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";
 import { PANEL, SOLID } from "../feedback";
+import { useT } from "../Locale";
 import { speak } from "../review/German";
 
 /**
@@ -13,6 +14,7 @@ import { speak } from "../review/German";
  * order. Checked on the spot; `onDone(right)` after Continue.
  */
 export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boolean) => void }) {
+  const t = useT();
   const [typed, setTyped] = useState("");
   const [picked, setPicked] = useState<number | null>(null);
   const [pool] = useState(() =>
@@ -67,10 +69,10 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
     >
       <p className="muted text-sm font-extrabold">
         {item.type === "cloze"
-          ? `Fill the gap (${item.base})`
+          ? t("Fill the gap ({base})", { base: item.base })
           : item.type === "choice"
-            ? "Pick the right word"
-            : "Put the words in order"}
+            ? t("Pick the right word")
+            : t("Put the words in order")}
       </p>
       {item.type !== "order" ? (
         <p className="text-2xl font-black leading-snug">
@@ -113,8 +115,8 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
-          placeholder="Type the missing word"
-          aria-label="Missing word"
+          placeholder={t("Type the missing word")}
+          aria-label={t("Missing word")}
           className="field w-full text-xl font-bold"
         />
       )}
@@ -153,7 +155,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
       {result && (
         <div className={`flex flex-col gap-1 rounded-2xl p-4 ${PANEL[result]}`}>
           <p className="text-xl font-black">
-            {result === "right" ? "✓ Richtig!" : "✗ Correct answer:"}
+            {result === "right" ? "✓ Richtig!" : `✗ ${t("Correct answer:")}`}
           </p>
           <button
             type="button"
@@ -171,7 +173,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
         onMouseDown={(event) => event.preventDefault()}
         className={`btn btn-solid w-full disabled:opacity-50 ${SOLID[result ?? "idle"]}`}
       >
-        {result ? "Continue" : "Check"}
+        {result ? t("Continue") : t("Check")}
       </button>
     </form>
   );

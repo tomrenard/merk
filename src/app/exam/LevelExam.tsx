@@ -5,10 +5,12 @@ import type { Failure, Feedback } from "@/lib/ai";
 import type { CourseExam } from "@/lib/course";
 import { examPercent, type Section } from "@/lib/exam-score";
 import type { Exam } from "@/lib/exams";
+import { examTitle } from "@/lib/i18n";
 import { seededShuffle } from "@/lib/shuffle";
 import { checkSpeaking, checkWriting } from "../ai/actions";
 import { AiFailure, FeedbackCard } from "../ai/Feedback";
 import { recordingForm, useRecorder } from "../ai/useRecorder";
+import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { speak, stopSpeaking, useSpeechUnlock } from "../review/German";
 import { ExamBar, ExamIntro, ExamResult, useExamSave } from "./ExamShell";
@@ -89,6 +91,7 @@ export function LevelExam({
   best?: number;
 }) {
   useSpeechUnlock();
+  const t = useT();
   const [started, setStarted] = useState(false);
   const [all] = useState(() => steps(content));
   const [index, setIndex] = useState(0);
@@ -159,7 +162,7 @@ export function LevelExam({
   }
 
   if (!started) {
-    const count = (n: number, one: string) => `${n} ${one}${n === 1 ? "" : "s"}`;
+    const count = (n: number, one: string, many: string) => t(n === 1 ? one : many, { n });
     return (
       <ExamIntro
         exam={exam}
@@ -169,24 +172,28 @@ export function LevelExam({
         sections={[
           {
             icon: "🎧",
-            name: "Hören · listening",
-            detail: count(content.hoeren.length, "recording"),
+            name: `Hören · ${t("listening")}`,
+            detail: count(content.hoeren.length, "{n} recording", "{n} recordings"),
           },
-          { icon: "📖", name: "Lesen · reading", detail: count(content.lesen.length, "text") },
+          {
+            icon: "📖",
+            name: `Lesen · ${t("reading")}`,
+            detail: count(content.lesen.length, "{n} text", "{n} texts"),
+          },
           {
             icon: "🧩",
-            name: "Sprachbausteine · grammar",
-            detail: count(content.sprachbausteine.length, "gap"),
+            name: `Sprachbausteine · ${t("grammar")}`,
+            detail: count(content.sprachbausteine.length, "{n} gap", "{n} gaps"),
           },
           {
             icon: "✍️",
-            name: "Schreiben · writing",
-            detail: `${count(content.schreiben.length, "task")}, you mark it with a checklist`,
+            name: `Schreiben · ${t("writing")}`,
+            detail: `${count(content.schreiben.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
           },
           {
             icon: "🎙️",
-            name: "Sprechen · speaking",
-            detail: `${count(content.sprechen.length, "task")}, you mark it with a checklist`,
+            name: `Sprechen · ${t("speaking")}`,
+            detail: `${count(content.sprechen.length, "{n} task", "{n} tasks")}, ${t("you mark it with a checklist")}`,
           },
         ]}
       />
@@ -201,7 +208,7 @@ export function LevelExam({
         state={state}
         onRetry={retry}
         sections={(Object.entries(score) as [Section, [number, number]][]).map(
-          ([name, [s, t]]) => ({ name, score: s, total: t }),
+          ([name, [s, of]]) => ({ name, score: s, total: of }),
         )}
       />
     );
@@ -209,7 +216,9 @@ export function LevelExam({
 
   const step = all[index];
   if (!step) return null;
-  const bar = <ExamBar progress={index / all.length} section={`${exam.title} · ${step.section}`} />;
+  const bar = (
+    <ExamBar progress={index / all.length} section={`${examTitle(exam, t)} · ${step.section}`} />
+  );
 
   if (step.kind === "hear") {
     return (
@@ -222,13 +231,13 @@ export function LevelExam({
           onClick={() => (playing === null ? play(step.lines) : stopPlaying())}
           className="btn btn-primary py-5 text-xl"
         >
-          {playing === null ? "▶ Play" : `⏹ ${playing + 1}/${step.lines.length}`}
+          {playing === null ? `▶ ${t("Play")}` : `⏹ ${playing + 1}/${step.lines.length}`}
         </button>
         <p className="muted text-sm">
-          As in the real exam, you can listen twice. Then answer the questions.
+          {t("As in the real exam, you can listen twice. Then answer the questions.")}
         </p>
         <button type="button" onClick={() => next("Hören", 0, 0)} className="btn mt-auto">
-          Questions
+          {t("Questions")}
         </button>
       </main>
     );
@@ -264,7 +273,7 @@ export function LevelExam({
           onClick={() => next(step.section, picked === step.question.answer ? 1 : 0, 1)}
           className="btn btn-primary mt-auto disabled:opacity-50"
         >
-          Continue
+          {t("Continue")}
         </button>
       </main>
     );
@@ -322,19 +331,23 @@ export function LevelExam({
           rows={7}
           lang="de"
           autoCapitalize="sentences"
-          aria-label="Your answer"
+          aria-label={t("Your answer")}
           className="field text-lg"
         />
       ) : (
         !shown && (
           <>
-            <p className="muted font-semibold">Record your answer (up to a minute).</p>
+            <p className="muted font-semibold">{t("Record your answer (up to a minute).")}</p>
             <button
               type="button"
               onClick={recorder.recording ? recorder.stop : recorder.start}
               className={`btn btn-solid py-5 text-lg ${recorder.recording ? "[--c:#d63c3c]" : "[--c:var(--brand-fill)]"}`}
             >
-              {recorder.recording ? "⏹ Stop" : recorder.clip ? "🎙 Record again" : "🎙 Record"}
+              {recorder.recording
+                ? `⏹ ${t("Stop")}`
+                : recorder.clip
+                  ? `🎙 ${t("Record again")}`
+                  : `🎙 ${t("Record")}`}
             </button>
             {recorder.error && (
               <p className="font-semibold text-rose-600 dark:text-rose-400">{recorder.error}</p>
@@ -345,7 +358,7 @@ export function LevelExam({
                 onClick={() => recorder.clip && new Audio(recorder.clip.url).play()}
                 className="btn"
               >
-                ▶ Listen to yourself
+                ▶ {t("Listen to yourself")}
               </button>
             )}
           </>
@@ -358,7 +371,7 @@ export function LevelExam({
           onClick={mark}
           className="btn btn-primary disabled:opacity-50"
         >
-          {checking ? "Checking…" : failure ? "Try again" : "Check my answer"}
+          {checking ? t("Checking…") : failure ? t("Try again") : t("Check my answer")}
         </button>
       ) : null}
       {!shown && failure && <AiFailure failure={failure} />}
@@ -367,7 +380,7 @@ export function LevelExam({
           {marked && <FeedbackCard feedback={marked} heard={marked.heard} />}
           {failure && <AiFailure failure={failure} />}
           <div className="card flex flex-col gap-2">
-            <p className="muted text-sm font-extrabold">A model answer</p>
+            <p className="muted text-sm font-extrabold">{t("A model answer")}</p>
             <button
               type="button"
               onClick={() => speak(step.task.model, { recorded: true })}
@@ -377,7 +390,7 @@ export function LevelExam({
             </button>
           </div>
           <p className="font-bold">
-            {marked ? "What your answer did:" : "Tick what your answer did:"}
+            {marked ? t("What your answer did:") : t("Tick what your answer did:")}
           </p>
           {checks.map((check, i) => (
             <label key={check} className="flex items-start gap-3 font-semibold">
@@ -386,7 +399,7 @@ export function LevelExam({
                 checked={ticks[i] ?? false}
                 disabled={Boolean(marked)}
                 onChange={(event) =>
-                  setTicks((t) => Object.assign([...t], { [i]: event.target.checked }))
+                  setTicks((old) => Object.assign([...old], { [i]: event.target.checked }))
                 }
                 className="mt-1 size-5"
               />
@@ -398,7 +411,7 @@ export function LevelExam({
             onClick={() => next(step.section, ticks.filter(Boolean).length, checks.length)}
             className="btn btn-primary"
           >
-            Continue
+            {t("Continue")}
           </button>
         </>
       )}

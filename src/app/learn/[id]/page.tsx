@@ -9,6 +9,7 @@ import {
   partLabel,
   unitById,
 } from "@/lib/course";
+import { getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
 import { TabBar } from "../../TabBar";
@@ -22,11 +23,12 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
   if (!unit) notFound();
   const done = (await courseProgress(await requireUser())).get(unit.id) ?? new Map();
   const next = PARTS.find((part) => !done.has(part.kind));
+  const t = await getT();
   return (
     <main className="screen with-tabs">
       <header className="topbar">
-        <Go href="/learn" className="muted text-lg font-black" aria-label="Back to the course">
-          ‹ Course
+        <Go href="/learn" className="muted text-lg font-black" aria-label={t("Back to the course")}>
+          ‹ {t("Course")}
         </Go>
         <span className="chip muted line border">
           {COURSE.find((c) => c.units.includes(unit))?.id ?? unit.cefr}
@@ -55,10 +57,10 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
                   {score !== undefined && !retry ? "✓" : partIcon(unit, part)}
                 </span>
                 <span className="flex-1 font-extrabold">
-                  {partLabel(unit, part)}
+                  {partLabel(unit, part, t)}
                   {retry && (
                     <span className="muted block text-sm font-semibold">
-                      Check again: {score}/{CHECK_SIZE}
+                      {t("Check again: {score}/{size}", { score, size: CHECK_SIZE })}
                     </span>
                   )}
                 </span>
@@ -69,18 +71,18 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
         })}
       </ol>
       <p className="muted text-center text-sm font-semibold">
-        One part a day is plenty. Redo any part any time.
+        {t("One part a day is plenty. Redo any part any time.")}
       </p>
       {(done.get("unit") ?? 0) < PASS && (
         <Go href={`/learn/${unit.id}/grammar?test=1`} className="btn">
-          Already know this? Take the check
+          {t("Already know this? Take the check")}
         </Go>
       )}
       {unit.words?.length ? (
         <form action={learnWords}>
           <input type="hidden" name="unit" value={unit.id} />
           <button type="submit" className="btn w-full">
-            🌱 Learn this topic's {unit.words.length} words next
+            🌱 {t("Learn this topic's {n} words next", { n: unit.words.length })}
           </button>
         </form>
       ) : null}

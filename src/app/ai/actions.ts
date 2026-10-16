@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import { feedback, MAX_AUDIO, MAX_TEXT, type Task, transcript } from "@/lib/ai";
 import { unitById } from "@/lib/course";
+import { getLocale } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { LEVEL_EXAMS } from "../exam/data";
 
@@ -38,7 +39,7 @@ export async function checkWriting(ref: TaskRef, text: string) {
   const task = taskOf(ref);
   if (!task || typeof text !== "string" || !text.trim() || text.length > MAX_TEXT)
     throw new Error("Bad writing check");
-  return feedback(userId, task, text);
+  return feedback(userId, task, text, false, await getLocale());
 }
 
 async function recording(form: FormData) {
@@ -68,6 +69,13 @@ export async function checkSpeaking(form: FormData) {
   const audio = await recording(form);
   const heard = await transcript(userId, audio.bytes, audio.key);
   if (!heard.ok) return heard;
-  const marked = await feedback(userId, task, heard.result || "(nothing said)", true);
+  const marked = await feedback(
+    userId,
+    task,
+    heard.result || "(nothing said)",
+    true,
+    await getLocale(),
+  );
+
   return marked.ok ? { ...marked, heard: heard.result } : marked;
 }

@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { notes } from "@/db/schema";
 import { freshPages } from "@/lib/fresh";
+import { getT } from "@/lib/locale";
 import { learnNow, markKnown } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
@@ -96,23 +97,24 @@ export default async function EditWordPage({
     );
   if (!note) notFound();
   const back = backTo((await searchParams).back);
+  const t = await getT();
   return (
     <form action={save} className="screen">
       <header className="topbar">
         <Go href={BACK[back]} className="muted text-lg font-black">
-          ‹ Back
+          ‹ {t("Back")}
         </Go>
       </header>
-      <h1 className="text-3xl font-extrabold">Edit word</h1>
+      <h1 className="text-3xl font-extrabold">{t("Edit word")}</h1>
       <p className="muted text-sm font-semibold">
         {note.cefr} · {note.source}
-        {note.editedAt && " · edited"}
+        {note.editedAt && ` · ${t("edited")}`}
       </p>
       <input type="hidden" name="id" value={note.id} />
       <input type="hidden" name="back" value={back} />
       {FIELDS.map(({ name, label, required }) => (
         <label key={name} className="flex flex-col gap-1">
-          <span className="muted text-sm font-semibold">{label}</span>
+          <span className="muted text-sm font-semibold">{t(label)}</span>
           <textarea
             name={name}
             defaultValue={note[name] ?? ""}
@@ -125,14 +127,14 @@ export default async function EditWordPage({
         </label>
       ))}
       <button type="submit" className="btn btn-primary">
-        Save
+        {t("Save")}
       </button>
       <div className="grid grid-cols-2 gap-2">
         <button type="submit" formAction={known} formNoValidate className="btn normal-case">
-          ⭐ I know this
+          ⭐ {t("I know this")}
         </button>
         <button type="submit" formAction={now} formNoValidate className="btn normal-case">
-          🌱 Learn now
+          🌱 {t("Learn now")}
         </button>
       </div>
     </form>

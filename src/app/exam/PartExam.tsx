@@ -3,7 +3,9 @@
 import { useState } from "react";
 import type { CourseExam } from "@/lib/course";
 import { sameAnswer } from "@/lib/german";
+import { examTitle } from "@/lib/i18n";
 import { PANEL, SOLID } from "../feedback";
+import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { speak, useSpeechUnlock } from "../review/German";
 import type { PartExamPacket } from "./data";
@@ -28,6 +30,7 @@ export function PartExam({
   const [typed, setTyped] = useState("");
   const [checked, setChecked] = useState(false);
   const { state, percent, save, retry } = useExamSave(exam);
+  const t = useT();
 
   function next(section: keyof typeof scores, right: boolean) {
     const updated = { ...scores, [section]: scores[section] + (right ? 1 : 0) };
@@ -50,11 +53,19 @@ export function PartExam({
         sections={[
           {
             icon: "🧩",
-            name: "Grammar & words",
-            detail: `${packet.items.length} exercises from the part's lessons`,
+            name: t("Grammar & words"),
+            detail: t("{n} exercises from the part's lessons", { n: packet.items.length }),
           },
-          { icon: "🎧", name: "Listening", detail: `${packet.listening.length} lines by ear` },
-          { icon: "✍️", name: "Dictation", detail: `${packet.dictation.length} sentences to write` },
+          {
+            icon: "🎧",
+            name: t("Listening"),
+            detail: t("{n} lines by ear", { n: packet.listening.length }),
+          },
+          {
+            icon: "✍️",
+            name: t("Dictation"),
+            detail: t("{n} sentences to write", { n: packet.dictation.length }),
+          },
         ]}
       />
     );
@@ -68,16 +79,16 @@ export function PartExam({
         state={state}
         onRetry={retry}
         sections={[
-          { name: "Grammar & words", score: scores.items, total: packet.items.length },
-          { name: "Listening", score: scores.listening, total: packet.listening.length },
-          { name: "Dictation", score: scores.dictation, total: packet.dictation.length },
+          { name: t("Grammar & words"), score: scores.items, total: packet.items.length },
+          { name: t("Listening"), score: scores.listening, total: packet.listening.length },
+          { name: t("Dictation"), score: scores.dictation, total: packet.dictation.length },
         ]}
       />
     );
   }
 
   const bar = (section: string) => (
-    <ExamBar progress={step / total} section={`${exam.title} · ${section}`} />
+    <ExamBar progress={step / total} section={`${examTitle(exam, t)} · ${section}`} />
   );
 
   const item = packet.items[step];
@@ -95,15 +106,15 @@ export function PartExam({
   if (line) {
     return (
       <main className="screen">
-        {bar("Listening")}
+        {bar(t("Listening"))}
         <button
           type="button"
           onClick={() => speak(line.de, { recorded: true })}
           className="btn btn-primary py-5 text-xl"
         >
-          🔊 Play
+          🔊 {t("Play")}
         </button>
-        <p className="font-bold">What did you hear?</p>
+        <p className="font-bold">{t("What did you hear?")}</p>
         <div className="flex flex-col gap-2">
           {line.options.map((option, i) => (
             <button
@@ -123,7 +134,7 @@ export function PartExam({
           onClick={() => next("listening", picked === line.answer)}
           className="btn btn-primary mt-auto disabled:opacity-50"
         >
-          Continue
+          {t("Continue")}
         </button>
       </main>
     );
@@ -133,13 +144,13 @@ export function PartExam({
   const right = sameAnswer(typed, sentence);
   return (
     <main className="screen">
-      {bar("Dictation")}
+      {bar(t("Dictation"))}
       <button
         type="button"
         onClick={() => speak(sentence, { recorded: true })}
         className="btn self-start text-2xl"
       >
-        🔊 Play
+        🔊 {t("Play")}
       </button>
       <textarea
         value={typed}
@@ -151,12 +162,12 @@ export function PartExam({
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
-        aria-label="What you heard"
+        aria-label={t("What you heard")}
         className="field text-lg font-bold"
       />
       {checked && (
         <div className={`rounded-2xl p-4 ${PANEL[right ? "right" : "wrong"]}`}>
-          <p className="text-xl font-black">{right ? "✓ Richtig!" : "✗ It was:"}</p>
+          <p className="text-xl font-black">{right ? "✓ Richtig!" : `✗ ${t("It was:")}`}</p>
           <p className="font-bold">{sentence}</p>
         </div>
       )}
@@ -166,7 +177,7 @@ export function PartExam({
         onClick={() => (checked ? next("dictation", right) : setChecked(true))}
         className={`btn btn-solid disabled:opacity-50 ${SOLID[checked ? (right ? "right" : "wrong") : "idle"]}`}
       >
-        {checked ? "Continue" : "Check"}
+        {checked ? t("Continue") : t("Check")}
       </button>
     </main>
   );

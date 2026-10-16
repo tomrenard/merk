@@ -1,6 +1,7 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
+import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem } from "./review";
 import { PARTS_OF_COURSE, type Unit, type UnitItem } from "./units";
 import { UNITS as WRITTEN } from "./units-index";
@@ -32,8 +33,11 @@ const FIRST = {
   topic: { label: "Words & phrases", icon: "💬" },
   story: { label: "Story", icon: "📖" },
 } as const;
-export const partLabel = (unit: Unit, part: Part): string =>
-  part.kind === "unit" ? FIRST[kindOf(unit)].label : part.label;
+/** English unless a `t()` is passed (as for every label built here). */
+const EN = translator("en");
+
+export const partLabel = (unit: Unit, part: Part, t: T = EN): string =>
+  t(part.kind === "unit" ? FIRST[kindOf(unit)].label : part.label);
 export const partIcon = (unit: Unit, part: Part): string =>
   part.kind === "unit" ? FIRST[kindOf(unit)].icon : part.icon;
 
@@ -105,6 +109,10 @@ export const LEVEL_NAME: Record<string, string> = {
  * Per level: lessons done, lessons skipped by the placement test (and not done since), and
  * whether the level exam is passed.
  */
+export const levelName = (level: string, t: T = EN) => t(LEVEL_NAME[level] ?? "");
+
+export { examTitle };
+
 export function levelProgress(progress: Progress) {
   return [...new Set(COURSE.map((part) => part.level))].map((level) => {
     const parts = COURSE.filter((part) => part.level === level);
@@ -230,20 +238,23 @@ export type Step =
   | { type: "lesson"; unit: Unit; part: Part; href: string; label: string; icon: string }
   | { type: "exam"; exam: CourseExam; href: string; label: string; icon: string };
 
-const lessonStep = (unit: Unit, part: Part): Step => ({
+const lessonStep = (unit: Unit, part: Part, t: T): Step => ({
   type: "lesson",
   unit,
   part,
   href: `/learn/${unit.id}/${part.path}`,
-  label: `${unit.title} · ${partLabel(unit, part)}`,
+  label: `${unit.title} · ${partLabel(unit, part, t)}`,
   icon: partIcon(unit, part),
 });
 
-const examStep = (exam: CourseExam): Step => ({
+const examStep = (exam: CourseExam, t: T): Step => ({
   type: "exam",
   exam,
   href: `/exam/${exam.id}`,
-  label: exam.type === "level" ? `${exam.title} (like the Goethe exam)` : exam.title,
+  label:
+    exam.type === "level"
+      ? t("{exam} (like the Goethe exam)", { exam: examTitle(exam, t) })
+      : examTitle(exam, t),
   icon: exam.type === "level" ? "🏆" : "📝",
 });
 
@@ -253,23 +264,27 @@ const examStep = (exam: CourseExam): Step => ({
  * exam until it is passed (every lesson stays open for free choice). A lesson started out of
  * order is finished first. Then failed lesson checks come back. Null when all is done.
  */
-export function nextStep(progress: Progress, lastUnitId?: string | null): Step | null {
+export function nextStep(progress: Progress, lastUnitId?: string | null, t: T = EN): Step | null {
   // A skipped lesson you only looked into doesn't take over the path.
   const last = UNITS.find((unit) => unit.id === lastUnitId && !isSkipped(progress, unit.id));
   const lastPart = last && PARTS.find((p) => !progress.get(last.id)?.has(p.kind));
-  if (last && lastPart) return lessonStep(last, lastPart);
+  if (last && lastPart) return lessonStep(last, lastPart, t);
   for (const part of COURSE) {
     for (const unit of part.units) {
       if (lessonDue(progress, unit))
-        return lessonStep(unit, PARTS.find((p) => !progress.get(unit.id)?.has(p.kind)) ?? PARTS[0]);
+        return lessonStep(
+          unit,
+          PARTS.find((p) => !progress.get(unit.id)?.has(p.kind)) ?? PARTS[0],
+          t,
+        );
     }
     const exam = part.exams.find((e) => examDue(progress, e));
-    if (exam) return examStep(exam);
+    if (exam) return examStep(exam, t);
   }
   const retry = UNITS.find(
     (unit) => !isSkipped(progress, unit.id) && (progress.get(unit.id)?.get("unit") ?? 0) < PASS,
   );
-  return retry ? lessonStep(retry, PARTS[0]) : null;
+  return retry ? lessonStep(retry, PARTS[0], t) : null;
 }
 
 /** True if a lesson part was done today (the lesson step of the daily path). */
@@ -317,14 +332,24 @@ export async function lastUnitId(userId: string): Promise<string | null> {
 }
 
 /** Where a finished part leads: the lesson's next part, or the next lesson (or its part's exam). */
-export function partAfter(unitId: string, kind: PartKind): { href: string; label: string } | null {
+export function partAfter(
+  unitId: string,
+  kind: PartKind,
+  t: T = EN,
+): { href: string; label: string } | null {
   const unit = unitById(unitId);
   const part = PARTS[PARTS.findIndex((p) => p.kind === kind) + 1];
   if (unit && part)
-    return { href: `/learn/${unitId}/${part.path}`, label: `Next: ${partLabel(unit, part)}` };
+    return {
+      href: `/learn/${unitId}/${part.path}`,
+      label: t("Next: {what}", { what: partLabel(unit, part, t) }),
+    };
   const course = COURSE.find((c) => c.units.some((u) => u.id === unitId));
   const next = course?.units[course.units.findIndex((u) => u.id === unitId) + 1];
-  if (next) return { href: `/learn/${next.id}/grammar`, label: `Next: ${next.title}` };
+  if (next)
+    return { href: `/learn/${next.id}/grammar`, label: t("Next: {what}", { what: next.title }) };
   const exam = course?.exams[0];
-  return exam ? { href: `/exam/${exam.id}`, label: `Next: ${exam.title}` } : null;
+  return exam
+    ? { href: `/exam/${exam.id}`, label: t("Next: {what}", { what: examTitle(exam, t) }) }
+    : null;
 }

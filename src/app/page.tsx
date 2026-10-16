@@ -2,12 +2,14 @@ import Link from "next/link";
 import {
   courseProgress,
   currentPart,
-  LEVEL_NAME,
   lastUnitId,
   lessonDoneToday,
+  levelName,
   levelProgress,
   nextStep,
 } from "@/lib/course";
+import type { T } from "@/lib/i18n";
+import { getT } from "@/lib/locale";
 import { activity, counts, progress, wordLevels } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "./Nav";
@@ -38,10 +40,12 @@ function LevelCard({
   part,
   levels,
   words,
+  t,
 }: {
   part: { id: string; level: string } | undefined;
   levels: ReturnType<typeof levelProgress>;
   words: Awaited<ReturnType<typeof wordLevels>>;
+  t: T;
 }) {
   const level = part?.level ?? levels.at(-1)?.level ?? "A1";
   const pct = (n: number, of: number) => (of ? Math.round((100 * n) / of) : 0);
@@ -50,9 +54,11 @@ function LevelCard({
     <Link href={part ? `/learn#${part.id}` : "/learn"} className="card flex flex-col gap-3">
       <span className="flex items-baseline justify-between">
         <span className="text-2xl font-black">
-          {level} <span className="muted text-base font-bold">{LEVEL_NAME[level]}</span>
+          {level} <span className="muted text-base font-bold">{levelName(level, t)}</span>
         </span>
-        <span className="muted text-sm font-bold">{part ? `${part.id} ›` : "All done ›"}</span>
+        <span className="muted text-sm font-bold">
+          {part ? `${part.id} ›` : `${t("All done")} ›`}
+        </span>
       </span>
       <span className="grid grid-cols-4 gap-1.5">
         {levels.map((l) => (
@@ -76,13 +82,17 @@ function LevelCard({
       </span>
       {here && (
         <span className="muted text-sm font-semibold">
-          {here.level}: {here.done} of {here.total} lessons done
-          {here.skipped > 0 && ` · ${here.skipped} skipped by the placement test`}
+          {t("{level}: {done} of {total} lessons done", {
+            level: here.level,
+            done: here.done,
+            total: here.total,
+          })}
+          {here.skipped > 0 && ` · ${t("{n} skipped by the placement test", { n: here.skipped })}`}
         </span>
       )}
       {words.length > 0 && (
         <span className="muted text-sm font-semibold">
-          Words: {words.map((w) => `${w.level} ${pct(w.started, w.total)}%`).join(" · ")}
+          {t("Words")}: {words.map((w) => `${w.level} ${pct(w.started, w.total)}%`).join(" · ")}
         </span>
       )}
     </Link>
@@ -128,6 +138,7 @@ const minutes = (cards: number) => Math.max(1, Math.round((cards * 8) / 60));
 /** Today: a plan (reviews, new words, a lesson part) with one Continue, never a gate. */
 export default async function Home() {
   const userId = await requireUser();
+  const t = await getT();
   const [
     { due: dueNow, repeats, newLeft, followUps, paused, backlog },
     { reviewsToday, streak },
@@ -148,7 +159,7 @@ export default async function Home() {
   // Reviews include missed words coming back within minutes: the session shows them now.
   const due = dueNow + repeats;
   const cards = due + newLeft + followUps;
-  const step = nextStep(course, last);
+  const step = nextStep(course, last, t);
   const lessonHref = step?.href ?? "/learn";
   const allDone = cards === 0 && (lessonDone || !step);
   const part = currentPart(course);
@@ -160,7 +171,7 @@ export default async function Home() {
           <span className="chip bg-orange-100 text-orange-600 dark:bg-orange-950 dark:text-orange-400">
             🔥 {streak}
           </span>
-          <Go href="/settings" className="chip line border" aria-label="Settings">
+          <Go href="/settings" className="chip line border" aria-label={t("Settings")}>
             ⚙️
           </Go>
         </span>
@@ -176,9 +187,9 @@ export default async function Home() {
               🧭
             </span>
             <span className="flex-1">
-              <span className="block font-extrabold">Find your level</span>
+              <span className="block font-extrabold">{t("Find your level")}</span>
               <span className="muted text-sm font-semibold">
-                10 minutes, so you don't start too easy
+                {t("10 minutes, so you don't start too easy")}
               </span>
             </span>
             <span aria-hidden="true" className="muted text-2xl font-black">
@@ -189,26 +200,30 @@ export default async function Home() {
 
       <section className="card flex flex-col gap-1 pt-4 pb-2">
         <h2 className="text-2xl font-black">
-          {allDone ? "All done for today 🎉" : "Today's plan"}
+          {allDone ? `${t("All done for today")} 🎉` : t("Today's plan")}
         </h2>
         <div className="divide-y divide-[var(--line)]">
           <PlanRow
             done={due === 0}
             icon="🔁"
-            title="Reviews"
-            detail={due ? `${due} waiting · about ${minutes(due)} min` : "Nothing waiting"}
+            title={t("Reviews")}
+            detail={
+              due
+                ? t("{n} waiting · about {min} min", { n: due, min: minutes(due) })
+                : t("Nothing waiting")
+            }
             href="/review"
           />
           <PlanRow
             done={newLeft + followUps === 0}
             icon="🌱"
-            title="New words"
+            title={t("New words")}
             detail={
               paused
-                ? `Paused while more than ${backlog} reviews pile up: reviews first`
+                ? t("Paused while more than {n} reviews pile up: reviews first", { n: backlog })
                 : newLeft + followUps
-                  ? `${newLeft} new${followUps ? ` · ${followUps} to write` : ""}`
-                  : "Today's new words are done"
+                  ? `${t("{n} new", { n: newLeft })}${followUps ? ` · ${t("{n} to write", { n: followUps })}` : ""}`
+                  : t("Today's new words are done")
             }
             href="/review"
           />
@@ -217,7 +232,11 @@ export default async function Home() {
               done={lessonDone}
               icon={step.icon}
               title={
-                lessonDone ? "Lesson done · next up" : step.type === "exam" ? "Exam" : "Lesson"
+                lessonDone
+                  ? t("Lesson done · next up")
+                  : step.type === "exam"
+                    ? t("Exam")
+                    : t("Lesson")
               }
               detail={step.label}
               href={lessonHref}
@@ -227,11 +246,11 @@ export default async function Home() {
         {!allDone && (
           <div className="flex flex-col gap-2 pt-2 pb-2">
             <Go href={cards ? "/review" : lessonHref} className="btn btn-primary">
-              Continue
+              {t("Continue")}
             </Go>
             {cards > 15 && (
               <div className="flex items-center justify-center gap-2 text-sm font-bold">
-                <span className="muted">Short on time?</span>
+                <span className="muted">{t("Short on time?")}</span>
                 {[10, 30].map((limit) => (
                   <Go key={limit} href={`/review?limit=${limit}`} className="chip line border">
                     {minutes(limit)} min
@@ -245,14 +264,14 @@ export default async function Home() {
 
       {allDone && (
         <section className="flex flex-col gap-2">
-          <h2 className="muted text-sm font-extrabold">Want more?</h2>
+          <h2 className="muted text-sm font-extrabold">{t("Want more?")}</h2>
           <form action={moreNewWords}>
             <button type="submit" className="btn w-full">
-              🌱 +5 new words today
+              🌱 {t("+5 new words today")}
             </button>
           </form>
           <Go href="/practice?scope=tricky" className="btn">
-            🧠 Tricky words
+            🧠 {t("Tricky words")}
           </Go>
           {step && (
             <Go href={lessonHref} className="btn">
@@ -263,22 +282,22 @@ export default async function Home() {
       )}
 
       <section>
-        <h2 className="muted mb-2 text-sm font-extrabold">Your progress</h2>
+        <h2 className="muted mb-2 text-sm font-extrabold">{t("Your progress")}</h2>
         <div className="mb-3">
-          <LevelCard part={part} levels={levelProgress(course)} words={words} />
+          <LevelCard part={part} levels={levelProgress(course)} words={words} t={t} />
         </div>
         <div className="card divide-y divide-[var(--line)] py-0">
           <Stat
             icon="✅"
             tint="bg-green-100 dark:bg-green-950"
-            label="Reviews today"
+            label={t("Reviews today")}
             value={reviewsToday}
           />
           {remembered !== null && (
             <Stat
               icon="🎯"
               tint="bg-sky-100 dark:bg-sky-950"
-              label="Remembered · 30 days"
+              label={t("Remembered · 30 days")}
               value={`${remembered}%`}
             />
           )}
@@ -286,7 +305,7 @@ export default async function Home() {
             <Stat
               icon="⭐"
               tint="bg-amber-100 dark:bg-amber-950"
-              label="Words known ›"
+              label={`${t("Words known")} ›`}
               value={known}
             />
           </Link>

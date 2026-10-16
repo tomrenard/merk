@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { dateLocale, translator } from "@/lib/i18n";
 import type { WordRow } from "@/lib/words";
+import { useLocale } from "../Locale";
 import { Go } from "../Nav";
 import { Headword } from "../review/German";
 import { moreWords } from "./actions";
@@ -21,6 +23,8 @@ export function WordList({
   q: string;
   filter: string;
 }) {
+  const locale = useLocale();
+  const t = translator(locale);
   const [words, setWords] = useState(first);
   const [loading, setLoading] = useState(false);
   const [ended, setEnded] = useState(first.length < page);
@@ -68,7 +72,8 @@ export function WordList({
               <span className="muted">{word.en}</span>
             </span>
             <span className="muted shrink-0 text-xs font-bold">
-              {word.cefr} · {word.due ? new Date(word.due).toLocaleDateString("de-DE") : "new"}
+              {word.cefr} ·{" "}
+              {word.due ? new Date(word.due).toLocaleDateString(dateLocale(locale)) : t("new")}
             </span>
           </Go>
         </li>
@@ -77,12 +82,12 @@ export function WordList({
         <li ref={end} className="muted py-3 text-center text-sm font-bold">
           {failed ? (
             <button type="button" onClick={load} className="w-full">
-              Couldn't load more · tap to retry
+              {t("Couldn't load more · tap to retry")}
             </button>
           ) : loading ? (
-            "Loading…"
+            t("Loading…")
           ) : (
-            `${total - words.length} more`
+            t("{n} more", { n: total - words.length })
           )}
         </li>
       )}

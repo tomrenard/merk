@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { cards, notes } from "@/db/schema";
 import { freshPages } from "@/lib/fresh";
+import { getT } from "@/lib/locale";
 import { cardId } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
@@ -53,21 +54,22 @@ async function add(form: FormData) {
   redirect(`/words?q=${encodeURIComponent(de)}`);
 }
 
-export default function NewWordPage() {
+export default async function NewWordPage() {
+  const t = await getT();
   return (
     <form action={add} className="screen">
       <header className="topbar">
-        <h1 className="text-3xl font-black">Add a word</h1>
-        <Go href="/words" className="muted text-2xl font-black" aria-label="Cancel">
+        <h1 className="text-3xl font-black">{t("Add a word")}</h1>
+        <Go href="/words" className="muted text-2xl font-black" aria-label={t("Cancel")}>
           ✕
         </Go>
       </header>
       <p className="muted font-semibold">
-        Something you heard or read today? It becomes your next new word.
+        {t("Something you heard or read today? It becomes your next new word.")}
       </p>
       {FIELDS.map(({ name, label, required }) => (
         <label key={name} className="flex flex-col gap-1">
-          <span className="muted text-sm font-bold">{label}</span>
+          <span className="muted text-sm font-bold">{t(label)}</span>
           <input
             name={name}
             required={required}
@@ -79,7 +81,7 @@ export default function NewWordPage() {
         </label>
       ))}
       <button type="submit" className="btn btn-primary">
-        Add
+        {t("Add")}
       </button>
     </form>
   );

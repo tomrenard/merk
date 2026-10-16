@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
+import { getT } from "@/lib/locale";
 
 const ERRORS: Record<string, string> = {
   invite: "This email isn't invited. Ask Tom to add it.",
@@ -42,15 +43,16 @@ export default async function SignupPage({
   searchParams: Promise<{ error?: string }>;
 }) {
   const { error } = await searchParams;
+  const t = await getT();
   return (
     <form action={signup} className="screen max-w-xs justify-center gap-3">
       <span className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">👋</span>
-      <h1 className="text-center text-3xl font-black">Create your account</h1>
+      <h1 className="text-center text-3xl font-black">{t("Create your account")}</h1>
       <input
         name="name"
         autoComplete="given-name"
-        aria-label="Your first name"
-        placeholder="First name"
+        aria-label={t("Your first name")}
+        placeholder={t("First name")}
         required
         maxLength={60}
         className="field"
@@ -59,8 +61,8 @@ export default async function SignupPage({
         name="email"
         type="email"
         autoComplete="email"
-        aria-label="Email"
-        placeholder="Email"
+        aria-label={t("Email")}
+        placeholder={t("Email")}
         required
         className="field"
       />
@@ -68,22 +70,22 @@ export default async function SignupPage({
         name="password"
         type="password"
         autoComplete="new-password"
-        aria-label="Password"
-        placeholder="Password (10+ characters)"
+        aria-label={t("Password")}
+        placeholder={t("Password (10+ characters)")}
         minLength={10}
         required
         className="field"
       />
       {error && (
         <p className="text-sm font-semibold text-rose-600 dark:text-rose-400">
-          {ERRORS[error] ?? ERRORS.other}
+          {t(ERRORS[error] ?? ERRORS.other ?? "")}
         </p>
       )}
       <button type="submit" className="btn btn-primary">
-        Create account
+        {t("Create account")}
       </button>
       <Link href="/login" className="muted text-center text-sm font-bold">
-        Already have one? Log in
+        {t("Already have one? Log in")}
       </Link>
     </form>
   );

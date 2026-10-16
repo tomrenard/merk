@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { audioUrl } from "@/lib/audio";
 import { articleColor, splitPlural, spokenForm } from "@/lib/german";
+import { useT } from "../Locale";
 
 const MUTED = "merk-muted";
 const VOICE = "merk-voice";
@@ -138,6 +139,7 @@ export function useSpeechUnlock() {
 
 /** 🔊/🔇 switch for the voice, remembered on this device. */
 export function SoundToggle() {
+  const t = useT();
   const [muted, setMuted] = useState(false);
   useEffect(() => setMuted(isMuted()), []);
   function toggle() {
@@ -153,7 +155,7 @@ export function SoundToggle() {
       type="button"
       onClick={toggle}
       className="chip line border text-base"
-      aria-label={muted ? "Unmute" : "Mute"}
+      aria-label={muted ? t("Unmute") : t("Mute")}
     >
       {muted ? "🔇" : "🔊"}
     </button>
@@ -179,12 +181,13 @@ export function Headword({ de, className = "" }: { de: string; className?: strin
 }
 
 export function German({ word }: { word: string }) {
+  const t = useT();
   return (
     <button
       type="button"
       onClick={() => speak(spokenForm(word))}
       className="text-4xl font-black tracking-tight"
-      title="Listen"
+      title={t("Listen")}
     >
       <Headword de={word} />{" "}
       <span aria-hidden="true" className="text-xl opacity-50">

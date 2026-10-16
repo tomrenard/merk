@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import { partAfter, unitById } from "@/lib/course";
+import { getT } from "@/lib/locale";
 import { Listen } from "./Listen";
 
 export default async function ListenPage({ params }: { params: Promise<{ id: string }> }) {
   const unit = unitById((await params).id);
   if (!unit) notFound();
-  return <Listen unit={unit} after={partAfter(unit.id, "listen")} />;
+  return <Listen unit={unit} after={partAfter(unit.id, "listen", await getT())} />;
 }

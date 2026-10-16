@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { CHECK_SIZE, PASS, partAfter, unitById } from "@/lib/course";
+import { getT } from "@/lib/locale";
 import { topicWords } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Lesson } from "./Lesson";
@@ -20,7 +21,7 @@ export default async function LessonPage({
       words={words}
       checkSize={CHECK_SIZE}
       pass={PASS}
-      next={partAfter(unit.id, "unit")}
+      next={partAfter(unit.id, "unit", await getT())}
       testOut={(await searchParams).test === "1"}
     />
   );

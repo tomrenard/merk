@@ -5,6 +5,7 @@ import type { notes } from "@/db/schema";
 import { isCorrect, spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
 import { PANEL, SOLID } from "../feedback";
+import { useT } from "../Locale";
 import { Go } from "../Nav";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
@@ -12,6 +13,7 @@ type Note = typeof notes.$inferSelect;
 
 /** English → typed German over a fixed set, scored at the end. Doesn't change the schedule. */
 export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
+  const t = useT();
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState("");
   const [checked, setChecked] = useState(false);
@@ -36,7 +38,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         </section>
         {missed.length > 0 && (
           <section className="text-left">
-            <h2 className="muted mb-2 text-sm font-extrabold">To revisit</h2>
+            <h2 className="muted mb-2 text-sm font-extrabold">{t("To revisit")}</h2>
             <ul className="card divide-y divide-[var(--line)] py-0">
               {missed.map((m) => (
                 <li key={m.id}>
@@ -55,10 +57,10 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         <div className="mt-auto flex flex-col gap-3">
           {/* A full load, so the server picks a fresh random set. */}
           <a href={`/practice?scope=${scope}`} className="btn btn-primary">
-            Practice again
+            {t("Practice again")}
           </a>
           <Go href="/practice" className="btn">
-            Done
+            {t("Done")}
           </Go>
         </div>
       </main>
@@ -84,7 +86,11 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
   return (
     <main className="screen">
       <header className="topbar">
-        <Go href="/practice" className="muted text-2xl font-black" aria-label="Stop practising">
+        <Go
+          href="/practice"
+          className="muted text-2xl font-black"
+          aria-label={t("Stop practising")}
+        >
           ✕
         </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
@@ -104,7 +110,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         }}
       >
         <div className="pt-6">
-          <p className="muted text-sm font-extrabold">Write this in German</p>
+          <p className="muted text-sm font-extrabold">{t("Write this in German")}</p>
           <p className="mt-2 text-3xl font-black">{note.en}</p>
         </div>
         <input
@@ -120,7 +126,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           autoCorrect="off"
           spellCheck={false}
           placeholder="Auf Deutsch… (ae, oe, ue, ss ok)"
-          aria-label="Your answer in German"
+          aria-label={t("Your answer in German")}
           className="field w-full text-xl font-bold"
         />
 
@@ -128,7 +134,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           <div
             className={`flex flex-col items-start gap-1 rounded-2xl p-4 ${state === "idle" ? "" : PANEL[state]}`}
           >
-            <p className="text-xl font-black">{right ? "✓ Richtig!" : "✗ Correct answer:"}</p>
+            <p className="text-xl font-black">
+              {right ? "✓ Richtig!" : `✗ ${t("Correct answer:")}`}
+            </p>
             <German word={note.de} />
             {note.exampleDe && <p className="font-semibold">{note.exampleDe}</p>}
           </div>
@@ -139,7 +147,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           onMouseDown={(event) => event.preventDefault()}
           className={`btn btn-solid w-full ${SOLID[state]}`}
         >
-          {checked ? "Continue" : "Check"}
+          {checked ? t("Continue") : t("Check")}
         </button>
       </form>
     </main>

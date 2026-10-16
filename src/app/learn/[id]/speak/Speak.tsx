@@ -7,6 +7,7 @@ import type { Unit } from "@/lib/units";
 import { transcribeRecording } from "../../../ai/actions";
 import { AiFailure } from "../../../ai/Feedback";
 import { recordingForm, useRecorder } from "../../../ai/useRecorder";
+import { useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
@@ -23,6 +24,7 @@ export function Speak({
   after: { href: string; label: string } | null;
 }) {
   useSpeechUnlock();
+  const t = useT();
   const lines = unit.speaking;
   const [index, setIndex] = useState(0);
   const [heard, setHeard] = useState<string | null>(null);
@@ -67,7 +69,7 @@ export function Speak({
       <PartDone
         next={after}
         title="Toll gesprochen!"
-        detail="Saying it out loud is what makes it come out in real conversations."
+        detail={t("Saying it out loud is what makes it come out in real conversations.")}
         saveFailed={failed}
         onRetry={retry}
         saving={saving}
@@ -86,39 +88,39 @@ export function Speak({
   return (
     <PartShell unitId={unit.id} progress={index / lines.length}>
       <p className="muted text-sm font-extrabold">
-        Say it {index + 1}/{lines.length}: listen, then repeat
+        {t("Say it {n}/{total}: listen, then repeat", { n: index + 1, total: lines.length })}
       </p>
       <div className="card flex flex-col gap-2">
         <p className="text-2xl font-black">{line.de}</p>
         <p className="muted font-semibold">{line.en}</p>
       </div>
       <button type="button" onClick={() => speak(line.de, { recorded: true })} className="btn">
-        🔊 Listen
+        🔊 {t("Listen")}
       </button>
       <button
         type="button"
         onClick={recording ? stop : start}
         className={`btn btn-solid py-5 text-lg ${recording ? "[--c:#d63c3c]" : "[--c:var(--brand-fill)]"}`}
       >
-        {recording ? "⏹ Done" : clip ? "🎙 Try again" : "🎙 Say it"}
+        {recording ? `⏹ ${t("Done")}` : clip ? `🎙 ${t("Try again")}` : `🎙 ${t("Say it")}`}
       </button>
       <p className="muted text-sm">
         {recording
-          ? `Say the sentence now. It stops by itself after ${seconds} seconds.`
-          : "Tap, say the sentence, and we check which words came through."}
+          ? t("Say the sentence now. It stops by itself after {n} seconds.", { n: seconds })
+          : t("Tap, say the sentence, and we check which words came through.")}
       </p>
       {error && <p className="font-semibold text-rose-600 dark:text-rose-400">{error}</p>}
       {listening && (
         <p role="status" className="muted font-semibold">
-          Checking what you said…
+          {t("Checking what you said…")}
         </p>
       )}
       {heard !== null && (
         <div role="status" className="card flex flex-col gap-2">
           <p className="font-extrabold">
             {missed.length
-              ? `Didn't come through: ${missed.join(", ")}`
-              : "✓ Perfect, every word came through."}
+              ? t("Didn't come through: {words}", { words: missed.join(", ") })
+              : `✓ ${t("Perfect, every word came through.")}`}
           </p>
           <p className="text-lg font-semibold" lang="de">
             {shown.map(({ word, missed }, i) => (
@@ -128,22 +130,26 @@ export function Speak({
               </span>
             ))}
           </p>
-          <p className="muted text-sm">We heard: „{heard || "…"}“</p>
+          <p className="muted text-sm">
+            {t("We heard:")} „{heard || "…"}“
+          </p>
         </div>
       )}
       {clip && !recording && (
         <button type="button" onClick={() => new Audio(clip.url).play()} className="btn">
-          ▶ Hear yourself
+          ▶ {t("Hear yourself")}
         </button>
       )}
       {failure && <AiFailure failure={failure} />}
       {clip && (
         <p className="muted text-xs">
-          Your recording is sent once for speech-to-text and not stored; only the text is kept.
+          {t(
+            "Your recording is sent once for speech-to-text and not stored; only the text is kept.",
+          )}
         </p>
       )}
       <button type="button" onClick={next} className="btn mt-auto">
-        {index + 1 < lines.length ? "Next line" : "Finish"}
+        {index + 1 < lines.length ? t("Next line") : t("Finish")}
       </button>
     </PartShell>
   );

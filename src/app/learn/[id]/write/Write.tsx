@@ -5,6 +5,7 @@ import type { Failure, Feedback } from "@/lib/ai";
 import type { Unit } from "@/lib/units";
 import { checkWriting } from "../../../ai/actions";
 import { AiFailure, FeedbackCard } from "../../../ai/Feedback";
+import { useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
@@ -20,6 +21,7 @@ export function Write({
   after: { href: string; label: string } | null;
 }) {
   useSpeechUnlock();
+  const t = useT();
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
   const [marked, setMarked] = useState<Feedback | null>(null);
@@ -44,7 +46,7 @@ export function Write({
       <PartDone
         next={after}
         title="Gut geschrieben!"
-        detail="Copying good phrases from the model into your own texts is how writing grows."
+        detail={t("Copying good phrases from the model into your own texts is how writing grows.")}
         saveFailed={failed}
         onRetry={retry}
         saving={saving}
@@ -54,7 +56,7 @@ export function Write({
 
   return (
     <PartShell unitId={unit.id} progress={shown ? 0.5 : 0}>
-      <p className="muted text-sm font-extrabold">Write it yourself</p>
+      <p className="muted text-sm font-extrabold">{t("Write it yourself")}</p>
       <p className="text-xl font-black leading-snug">{unit.writing.task}</p>
       <textarea
         value={text}
@@ -65,7 +67,7 @@ export function Write({
         lang="de"
         autoCapitalize="sentences"
         placeholder="Auf Deutsch…"
-        aria-label="Your text"
+        aria-label={t("Your text")}
         className="field text-lg"
       />
       {!shown ? (
@@ -75,7 +77,7 @@ export function Write({
           onClick={check}
           className="btn btn-primary disabled:opacity-50"
         >
-          {checking ? "Checking…" : failure ? "Try again" : "Check my text"}
+          {checking ? t("Checking…") : failure ? t("Try again") : t("Check my text")}
         </button>
       ) : null}
       {!shown && failure && <AiFailure failure={failure} />}
@@ -84,7 +86,7 @@ export function Write({
           {marked && <FeedbackCard feedback={marked} />}
           {failure && <AiFailure failure={failure} />}
           <div className="card flex flex-col gap-2">
-            <p className="muted text-sm font-extrabold">A model answer</p>
+            <p className="muted text-sm font-extrabold">{t("A model answer")}</p>
             <button
               type="button"
               onClick={() => speak(unit.writing.model, { recorded: true })}
@@ -99,19 +101,21 @@ export function Write({
               onClick={() => save(marked.score >= 60 ? 1 : 0, 1)}
               className="btn btn-primary"
             >
-              Finish
+              {t("Finish")}
             </button>
           ) : (
             <>
               <p className="muted text-sm font-semibold">
-                Yours can be different and still right. Did you use this unit's grammar correctly?
+                {t(
+                  "Yours can be different and still right. Did you use this unit's grammar correctly?",
+                )}
               </p>
               <div className="grid grid-cols-2 gap-2">
                 <button type="button" onClick={() => save(0, 1)} className="btn">
-                  Not yet
+                  {t("Not yet")}
                 </button>
                 <button type="button" onClick={() => save(1, 1)} className="btn btn-primary">
-                  Yes
+                  {t("Yes")}
                 </button>
               </div>
             </>

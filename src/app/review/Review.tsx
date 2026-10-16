@@ -12,6 +12,7 @@ import {
   type TypedResult,
 } from "@/lib/german";
 import type { SessionLeft } from "@/lib/review";
+import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
 import { gradeAndNext } from "./actions";
@@ -73,6 +74,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
+  const t = useT();
 
   const ended = limit !== null && done >= limit;
   const router = useRouter();
@@ -150,31 +152,36 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
         <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
           {item ? "☕" : "🎉"}
         </span>
-        <p className="text-3xl font-black">{item ? "Session done!" : "Fertig für heute!"}</p>
+        <p className="text-3xl font-black">{item ? t("Session done!") : "Fertig für heute!"}</p>
         <p className="muted font-semibold">
-          {done ? `${done} answers · ${rate}% remembered. ` : ""}
+          {done ? `${t("{n} answers · {rate}% remembered.", { n: done, rate: rate ?? 0 })} ` : ""}
           {item
-            ? `${toLater} ${toLater === 1 ? "card is" : "cards are"} left for another session.`
+            ? t(
+                toLater === 1
+                  ? "{n} card is left for another session."
+                  : "{n} cards are left for another session.",
+                { n: toLater },
+              )
             : done
-              ? "Nothing else is due right now. New words come tomorrow."
-              : "Nothing is due right now. New words come tomorrow."}
+              ? t("Nothing else is due right now. New words come tomorrow.")
+              : t("Nothing is due right now. New words come tomorrow.")}
         </p>
         <div className="flex w-full flex-col gap-3">
           {lesson ? (
             <Go href={lesson.href} className="btn btn-primary">
-              Today's lesson: {lesson.label}
+              {t("Today's lesson:")} {lesson.label}
             </Go>
           ) : item ? (
             <a href="/review" className="btn btn-primary">
-              Keep going
+              {t("Keep going")}
             </a>
           ) : (
             <a href="/practice" className="btn btn-primary">
-              Practise more
+              {t("Practise more")}
             </a>
           )}
           <Go href="/" className="btn">
-            Done for now
+            {t("Done for now")}
           </Go>
         </div>
       </main>
@@ -183,20 +190,20 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
 
   /** What the counter says: the parts that are left, e.g. "3 new · 5 reviews · 2 repeats". */
   const parts = [
-    left.fresh && `${left.fresh} new`,
-    left.reviews && `${left.reviews} review${left.reviews === 1 ? "" : "s"}`,
-    left.repeats && `${left.repeats} repeat${left.repeats === 1 ? "" : "s"}`,
+    left.fresh && t("{n} new", { n: left.fresh }),
+    left.reviews && t(left.reviews === 1 ? "{n} review" : "{n} reviews", { n: left.reviews }),
+    left.repeats && t(left.repeats === 1 ? "{n} repeat" : "{n} repeats", { n: left.repeats }),
   ].filter(Boolean);
   /** ✕, progress through the session, what is left, sound switch. */
   const header = (chip: React.ReactNode) => (
     <header className="flex flex-col gap-2">
       <div className="topbar">
-        <Go href="/" className="muted text-2xl font-black" aria-label="Stop reviewing">
+        <Go href="/" className="muted text-2xl font-black" aria-label={t("Stop reviewing")}>
           ✕
         </Go>
         <div
           role="progressbar"
-          aria-label="Session progress"
+          aria-label={t("Session progress")}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={Math.round((100 * done) / (done + toGo || 1))}
@@ -212,7 +219,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
       <div className="flex items-center justify-between gap-2 text-sm">
         {chip}
         <span className="muted text-right font-bold">
-          {toGo <= 1 ? "Last card" : `${toGo} to go`}
+          {toGo <= 1 ? t("Last card") : t("{n} to go", { n: toGo })}
           {parts.length > 1 && (
             <span className="block text-xs font-semibold">{parts.join(" · ")}</span>
           )}
@@ -239,22 +246,22 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const ratings = RATINGS[result];
   const message = {
     right: "✓ Richtig!",
-    almost: "≈ Almost: check the spelling",
-    article: `✗ Article: ${articleOf(note.de)}`,
+    almost: `≈ ${t("Almost: check the spelling")}`,
+    article: `✗ ${t("Article:")} ${articleOf(note.de)}`,
     wrong: `✗ ${typed}`,
-    blank: typed.trim() ? `You wrote: ${typed.trim()}` : "",
+    blank: typed.trim() ? `${t("You wrote:")} ${typed.trim()}` : "",
   }[result];
 
   return (
     <main className="screen">
       {header(
         <span className="chip muted line border">
-          {note.cefr} · {item.isNew ? "new" : "review"}
+          {note.cefr} · {item.isNew ? t("new") : t("review")}
           {/* Only once revealed: the edit form shows the answer. */}
           {revealed && (
             <>
               {" · "}
-              <Go href={`/words/${encodeURIComponent(note.id)}?back=review`}>Edit</Go>
+              <Go href={`/words/${encodeURIComponent(note.id)}?back=review`}>{t("Edit")}</Go>
             </>
           )}
         </span>,
@@ -268,12 +275,12 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
           </>
         ) : (
           <>
-            <p className="muted text-sm font-extrabold">Write this in German</p>
+            <p className="muted text-sm font-extrabold">{t("Write this in German")}</p>
             <p className="text-3xl font-black">
               {note.en}
               {/* Says a preposition belongs to the answer, without giving it away. */}
               {governedPrepositions(note.governs).length > 0 && (
-                <span className="muted text-lg"> · + prep.</span>
+                <span className="muted text-lg"> · {t("+ prep.")}</span>
               )}
             </p>
             <form
@@ -293,7 +300,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 autoCorrect="off"
                 spellCheck={false}
                 placeholder="Auf Deutsch… (ae, oe, ue, ss ok)"
-                aria-label="Your answer in German"
+                aria-label={t("Your answer in German")}
                 className="field w-full text-center text-xl font-bold"
               />
             </form>
@@ -327,7 +334,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 href={`/words/${encodeURIComponent(note.id)}?back=review`}
                 className="chip mx-auto bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
               >
-                🧠 Tricky word: add a memory hook
+                🧠 {t("Tricky word: add a memory hook")}
               </Go>
             )}
           </div>
@@ -349,24 +356,26 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                   onClick={() => answer(g.rating)}
                   className={`btn btn-solid px-1 text-sm ${g.className} disabled:opacity-50`}
                 >
-                  {ratings.length === 1 ? "Continue" : g.label}
+                  {ratings.length === 1 ? t("Continue") : t(g.label)}
                 </button>
               ))}
             </div>
             {ratings.includes(1) && (
               <p className="muted text-center text-xs font-semibold">
-                {ratings.length === 1 ? "It" : "Again:"} comes back in about 10 minutes.
+                {ratings.length === 1
+                  ? t("It comes back in about 10 minutes.")
+                  : t("Again: comes back in about 10 minutes.")}
               </p>
             )}
             {result === "wrong" && (
               <button type="button" disabled={pending} onClick={() => answer(3)} className="btn">
-                I was right
+                {t("I was right")}
               </button>
             )}
           </div>
         ) : (
           <button type="button" onClick={reveal} className="btn btn-primary w-full">
-            Show answer
+            {t("Show answer")}
           </button>
         )}
       </footer>

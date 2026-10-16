@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { shuffled } from "@/lib/shuffle";
 import { PAIRS, type Pair } from "@/lib/sounds";
 import { PANEL } from "../../feedback";
+import { useT } from "../../Locale";
 import { Go } from "../../Nav";
 import { SoundToggle, speak, useSpeechUnlock } from "../../review/German";
 
@@ -19,6 +20,7 @@ const fresh = (): Item[] =>
 /** Hear one word of a pair that sounds alike to a French ear, and tap which one it was. */
 export default function SoundsPage() {
   useSpeechUnlock();
+  const t = useT();
   // Made after mount: random items would differ between the server and the browser.
   const [items, setItems] = useState<Item[]>([]);
   useEffect(() => setItems(fresh()), []);
@@ -45,10 +47,10 @@ export default function SoundsPage() {
           }}
           className="btn btn-primary"
         >
-          Again
+          {t("Again")}
         </button>
         <Go href="/practice" className="btn">
-          Done
+          {t("Done")}
         </Go>
       </main>
     );
@@ -63,7 +65,7 @@ export default function SoundsPage() {
   return (
     <main className="screen">
       <header className="topbar">
-        <Go href="/practice" className="muted text-2xl font-black" aria-label="Stop">
+        <Go href="/practice" className="muted text-2xl font-black" aria-label={t("Stop")}>
           ✕
         </Go>
         <div className="h-4 flex-1 overflow-hidden rounded-full bg-[var(--line)]">
@@ -74,13 +76,15 @@ export default function SoundsPage() {
         </div>
         <SoundToggle />
       </header>
-      <p className="muted pt-6 text-sm font-extrabold">{item?.pair.focus ?? "…"}: which word?</p>
+      <p className="muted pt-6 text-sm font-extrabold">
+        {item?.pair.focus ?? "…"}: {t("which word?")}
+      </p>
       <button
         type="button"
         onClick={() => item && speak(item.pair.words[item.said])}
         className="btn btn-primary py-5 text-xl"
       >
-        🔊 Play
+        🔊 {t("Play")}
       </button>
       <div className="grid grid-cols-2 gap-3">
         {item?.pair.words.map((word, i) => (
@@ -98,7 +102,7 @@ export default function SoundsPage() {
       {item && picked !== null && (
         <div className={`rounded-2xl p-4 ${PANEL[picked === item.said ? "right" : "wrong"]}`}>
           <p className="text-xl font-black">
-            {picked === item.said ? "✓ Richtig!" : `✗ It was ${item.pair.words[item.said]}`}
+            {picked === item.said ? "✓ Richtig!" : `✗ ${t("It was")} ${item.pair.words[item.said]}`}
           </p>
           <div className="mt-2 flex gap-2">
             {item.pair.words.map((word) => (
@@ -123,7 +127,7 @@ export default function SoundsPage() {
         }}
         className="btn mt-auto disabled:opacity-50"
       >
-        Continue
+        {t("Continue")}
       </button>
     </main>
   );

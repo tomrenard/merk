@@ -4,6 +4,7 @@ import { z } from "zod";
 import { db } from "@/db/client";
 import { aiResults, aiUsage } from "@/db/schema";
 import { audioKey } from "./audio";
+import type { Locale } from "./i18n";
 
 /**
  * AI help through Vercel AI Gateway (the deployment's OIDC token; the merk project has a monthly
@@ -89,14 +90,18 @@ const Feedback = z.object({
 });
 export type Feedback = z.infer<typeof Feedback>;
 
-// Short and fixed, so every call pays for as few tokens as possible.
-const SYSTEM = `You are a strict, kind German teacher. The learner is a French native speaker.
+// Short and fixed, so every call pays for as few tokens as possible. `why` and `tip` are in the
+// learner's UI language.
+const system = (
+  lang: string,
+) => `You are a strict, kind German teacher. The learner is a French native speaker.
 Mark their answer to the task at the given CEFR level.
 - score: 0-100 for task done + correct, natural German at that level.
-- corrections: only real mistakes (max 6, none if it is correct), wrong -> right, why in at most 12 English words.
+- corrections: only real mistakes (max 6, none if it is correct), wrong -> right, why in at most 12 ${lang} words.
 - better: their answer corrected and made natural, keeping their ideas and length.
-- tip: one short English sentence, the most useful next step.
+- tip: one short ${lang} sentence, the most useful next step.
 - checklist: one true/false per checklist point, in order; empty if none.`;
+const LANGUAGE: Record<Locale, string> = { en: "English", fr: "French" };
 
 export type Task = { task: string; level: string; checklist?: string[] };
 
@@ -108,16 +113,25 @@ function prompt({ task, level, checklist }: Task, answer: string, spoken: boolea
 }
 
 /** Feedback on a written or spoken (transcribed) answer to a task. */
-export function feedback(userId: string, task: Task, answer: string, spoken = false) {
+export function feedback(
+  userId: string,
+  task: Task,
+  answer: string,
+  spoken = false,
+  locale: Locale = "en",
+) {
   const text = answer.slice(0, MAX_TEXT).trim();
+  // English keeps the old v1 keys, so its cached results still count.
+  const lang = locale === "en" ? "" : `${locale}|`;
   return gated(
     userId,
     "feedback",
-    audioKey(`v1|${spoken}|${task.level}|${task.task}|${text}`),
+    audioKey(`v1|${lang}${spoken}|${task.level}|${task.task}|${text}`),
     async () => {
       const { output } = await generateText({
         model: FEEDBACK_MODEL,
-        system: SYSTEM,
+        system: system(LANGUAGE[locale]),
+
         prompt: prompt(task, text, spoken),
         output: Output.object({ schema: Feedback }),
         maxOutputTokens: 700,

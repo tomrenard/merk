@@ -146,7 +146,6 @@ async function record(key: string, { text, voice }: { text: string; voice: strin
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ text, voice, instructions: styleOf(text), outputFormat: "wav" }),
-
     });
     const body = (await res.json().catch(() => ({}))) as { audio?: string };
     if (res.ok && body.audio) {

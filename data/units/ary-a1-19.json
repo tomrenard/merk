@@ -1,0 +1,509 @@
+{
+ "id": "ary-a1-19",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Goûts et loisirs",
+ "icon": "⚽",
+ "situation": "Le week-end",
+ "canDo": "Tu peux dire ce que tu aimes ou n’aimes pas faire le week-end, et poser la question à quelqu’un.",
+ "explanation": "Pour dire ce que tu aimes faire : **kanbghi** ou **kan7eb** + un deuxième verbe **conjugué**, sans *ka-*. *Kanbghi nchouf aflam* = j’aime regarder des films (mot à mot : j’aime je-regarde).\n\n| | aimer | + verbe |\n|---|---|---|\n| je | kanbghi / kan7eb | nchouf, nl3eb, n9ra |\n| tu (homme) | katbghi / kat7eb | tchouf, tl3eb, t9ra |\n| il | kaybghi / kay7eb | ychouf, yl3eb, y9ra |\n| elle | katbghi / kat7eb | tchouf, tl3eb, t9ra |\n\n- **Bghit** = je veux (maintenant) ; **kanbghi** = j’aime (en général).\n- Négation : **ma kanbghich** = je n’aime pas.\n- On peut aussi aimer une chose : *kanbghi sif* = j’aime l’été.\n- Loisirs : **nl3eb lkoura** (jouer au foot), **nchouf aflam** (regarder des films), **n9ra** (lire), **nsme3 lmousi9a** (écouter de la musique), **ntsara** (me promener), **ntiyeb** (cuisiner), **nkhrej m3a s7abi** (sortir avec mes amis).\n- **F lwikand** = le week-end ; **nhar sebt** = samedi ; **nhar l7ed** = dimanche.\n- **Chno katbghi tdir?** = qu’est-ce que tu aimes faire ? (à une femme : *tdiri*).\n\nLe dimanche, beaucoup de Casablancais vont se promener sur la corniche d’Aïn Diab.",
+ "french": "Comme dans « j’aime lire », on met deux verbes à la suite, mais en darija le deuxième est conjugué aussi : kanbghi n9ra.",
+ "examples": [
+  {
+   "de": "شنو كتبغي تدير ف الويكاند؟",
+   "tr": "chno katbghi tdir f lwikand?",
+   "en": "Qu’est-ce que tu aimes faire le week-end ?"
+  },
+  {
+   "de": "كنبغي نشوف أفلام.",
+   "tr": "kanbghi nchouf aflam.",
+   "en": "J’aime regarder des films."
+  },
+  {
+   "de": "يوسف كيحب يلعب الكورة.",
+   "tr": "youssef kay7eb yl3eb lkoura.",
+   "en": "Youssef aime jouer au foot."
+  },
+  {
+   "de": "ما كنبغيش نطيب.",
+   "tr": "ma kanbghich ntiyeb.",
+   "en": "Je n’aime pas cuisiner."
+  },
+  {
+   "de": "نهار السبت كنخرج مع صحابي.",
+   "tr": "nhar sebt kankhrej m3a s7abi.",
+   "en": "Le samedi, je sors avec mes amis."
+  },
+  {
+   "de": "نهار الحد كنتسارا ف الكورنيش.",
+   "tr": "nhar l7ed kantsara f lkornich.",
+   "en": "Le dimanche, je me promène sur la corniche."
+  },
+  {
+   "de": "واش كتبغي تقرا؟",
+   "tr": "wach katbghi t9ra?",
+   "en": "Tu aimes lire ?"
+  },
+  {
+   "de": "هي كتحب تسمع الموسيقى.",
+   "tr": "hiya kat7eb tsme3 lmousi9a.",
+   "en": "Elle aime écouter de la musique."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-19-01",
+   "type": "cloze",
+   "de": "أنا ___ نشوف أفلام.",
+   "tr": "ana ___ nchouf aflam.",
+   "base": "aimer (je)",
+   "answers": [
+    "كنبغي",
+    "كنحب"
+   ],
+   "answersTr": [
+    "kanbghi",
+    "kan7eb"
+   ],
+   "en": "J’aime regarder des films."
+  },
+  {
+   "id": "ary-a1-19-02",
+   "type": "cloze",
+   "de": "شنو كتبغي ___ ف الويكاند؟",
+   "tr": "chno katbghi ___ f lwikand?",
+   "base": "faire (tu, à un homme)",
+   "answers": [
+    "تدير"
+   ],
+   "answersTr": [
+    "tdir"
+   ],
+   "en": "Qu’est-ce que tu aimes faire le week-end ?"
+  },
+  {
+   "id": "ary-a1-19-03",
+   "type": "cloze",
+   "de": "يوسف كيحب ___ الكورة.",
+   "tr": "youssef kay7eb ___ lkoura.",
+   "base": "jouer (il)",
+   "answers": [
+    "يلعب"
+   ],
+   "answersTr": [
+    "yl3eb"
+   ],
+   "en": "Youssef aime jouer au foot."
+  },
+  {
+   "id": "ary-a1-19-04",
+   "type": "cloze",
+   "de": "ما ___ نطيب.",
+   "tr": "ma ___ ntiyeb.",
+   "base": "aimer (je, négation)",
+   "answers": [
+    "كنبغيش",
+    "كنحبش"
+   ],
+   "answersTr": [
+    "kanbghich",
+    "kan7ebch"
+   ],
+   "en": "Je n’aime pas cuisiner."
+  },
+  {
+   "id": "ary-a1-19-05",
+   "type": "cloze",
+   "de": "نهار ___ كنخرج مع صحابي.",
+   "tr": "nhar ___ kankhrej m3a s7abi.",
+   "base": "samedi",
+   "answers": [
+    "السبت"
+   ],
+   "answersTr": [
+    "sebt"
+   ],
+   "en": "Le samedi, je sors avec mes amis."
+  },
+  {
+   "id": "ary-a1-19-06",
+   "type": "cloze",
+   "de": "هي كتحب ___ الموسيقى.",
+   "tr": "hiya kat7eb ___ lmousi9a.",
+   "base": "écouter (elle)",
+   "answers": [
+    "تسمع"
+   ],
+   "answersTr": [
+    "tsme3"
+   ],
+   "en": "Elle aime écouter de la musique."
+  },
+  {
+   "id": "ary-a1-19-07",
+   "type": "cloze",
+   "de": "واش كتبغي ___؟",
+   "tr": "wach katbghi ___?",
+   "base": "lire (tu)",
+   "answers": [
+    "تقرا"
+   ],
+   "answersTr": [
+    "t9ra"
+   ],
+   "en": "Tu aimes lire ?"
+  },
+  {
+   "id": "ary-a1-19-08",
+   "type": "cloze",
+   "de": "كنبغي ___ ف الكورنيش.",
+   "tr": "kanbghi ___ f lkornich.",
+   "base": "me promener (je)",
+   "answers": [
+    "نتسارا"
+   ],
+   "answersTr": [
+    "ntsara"
+   ],
+   "en": "J’aime me promener sur la corniche."
+  },
+  {
+   "id": "ary-a1-19-09",
+   "type": "choice",
+   "de": "كنبغي ___ أفلام.",
+   "tr": "kanbghi ___ aflam.",
+   "options": [
+    "نشوف",
+    "كنشوف"
+   ],
+   "optionsTr": [
+    "nchouf",
+    "kanchouf"
+   ],
+   "answer": 0,
+   "why": "Après kanbghi, le deuxième verbe n’a pas de ka- : nchouf.",
+   "en": "J’aime regarder des films."
+  },
+  {
+   "id": "ary-a1-19-10",
+   "type": "choice",
+   "de": "سلمى ___ تقرا.",
+   "tr": "salma ___ t9ra.",
+   "options": [
+    "كتبغي",
+    "كنبغي",
+    "كيبغي"
+   ],
+   "optionsTr": [
+    "katbghi",
+    "kanbghi",
+    "kaybghi"
+   ],
+   "answer": 0,
+   "why": "Pour « elle », kat- : katbghi.",
+   "en": "Salma aime lire."
+  },
+  {
+   "id": "ary-a1-19-11",
+   "type": "choice",
+   "de": "كريم كيبغي ___ الكورة.",
+   "tr": "karim kaybghi ___ lkoura.",
+   "options": [
+    "يلعب",
+    "نلعب"
+   ],
+   "optionsTr": [
+    "yl3eb",
+    "nl3eb"
+   ],
+   "answer": 0,
+   "why": "Pour « il », le deuxième verbe prend y- aussi : yl3eb.",
+   "en": "Karim aime jouer au foot."
+  },
+  {
+   "id": "ary-a1-19-12",
+   "type": "choice",
+   "de": "___ نتسارا ف الويكاند.",
+   "tr": "___ ntsara f lwikand.",
+   "options": [
+    "كنبغي",
+    "بغيت"
+   ],
+   "optionsTr": [
+    "kanbghi",
+    "bghit"
+   ],
+   "answer": 0,
+   "why": "Kanbghi = j’aime (en général) ; bghit = je veux (maintenant).",
+   "en": "J’aime me promener le week-end."
+  },
+  {
+   "id": "ary-a1-19-13",
+   "type": "choice",
+   "de": "ما كنبغيش ___.",
+   "tr": "ma kanbghich ___.",
+   "options": [
+    "نطيب",
+    "كنطيب"
+   ],
+   "optionsTr": [
+    "ntiyeb",
+    "kantiyeb"
+   ],
+   "answer": 0,
+   "why": "Même à la négation, le deuxième verbe n’a pas de ka-.",
+   "en": "Je n’aime pas cuisiner."
+  },
+  {
+   "id": "ary-a1-19-14",
+   "type": "choice",
+   "de": "نهار ___ كنشوف أفلام.",
+   "tr": "nhar ___ kanchouf aflam.",
+   "options": [
+    "الحد",
+    "السبت"
+   ],
+   "optionsTr": [
+    "l7ed",
+    "sebt"
+   ],
+   "answer": 0,
+   "why": "L7ed = dimanche ; sebt = samedi.",
+   "en": "Le dimanche, je regarde des films."
+  },
+  {
+   "id": "ary-a1-19-15",
+   "type": "choice",
+   "de": "واش كتبغي تخرج ___ صحابك؟",
+   "tr": "wach katbghi tkhrej ___ s7abek?",
+   "options": [
+    "مع",
+    "ف"
+   ],
+   "optionsTr": [
+    "m3a",
+    "f"
+   ],
+   "answer": 0,
+   "why": "M3a = avec ; f = dans, à.",
+   "en": "Tu aimes sortir avec tes amis ?"
+  },
+  {
+   "id": "ary-a1-19-16",
+   "type": "choice",
+   "de": "___ كنبغيش الشتا.",
+   "tr": "___ kanbghich chta.",
+   "options": [
+    "ما",
+    "لا"
+   ],
+   "optionsTr": [
+    "ma",
+    "la"
+   ],
+   "answer": 0,
+   "why": "La négation d’un verbe est ma … ch.",
+   "en": "Je n’aime pas la pluie."
+  },
+  {
+   "id": "ary-a1-19-17",
+   "type": "order",
+   "tiles": [
+    "kanbghi",
+    "nchouf",
+    "aflam"
+   ],
+   "answers": [
+    "kanbghi nchouf aflam"
+   ],
+   "de": "كنبغي نشوف أفلام.",
+   "en": "J’aime regarder des films."
+  },
+  {
+   "id": "ary-a1-19-18",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "katbghi",
+    "tdir",
+    "f",
+    "lwikand"
+   ],
+   "answers": [
+    "chno katbghi tdir f lwikand",
+    "f lwikand chno katbghi tdir"
+   ],
+   "de": "شنو كتبغي تدير ف الويكاند؟",
+   "en": "Qu’est-ce que tu aimes faire le week-end ?"
+  },
+  {
+   "id": "ary-a1-19-19",
+   "type": "order",
+   "tiles": [
+    "ma",
+    "kanbghich",
+    "nl3eb",
+    "lkoura"
+   ],
+   "answers": [
+    "ma kanbghich nl3eb lkoura"
+   ],
+   "de": "ما كنبغيش نلعب الكورة.",
+   "en": "Je n’aime pas jouer au foot."
+  },
+  {
+   "id": "ary-a1-19-20",
+   "type": "order",
+   "tiles": [
+    "nhar",
+    "sebt",
+    "kankhrej",
+    "m3a",
+    "s7abi"
+   ],
+   "answers": [
+    "nhar sebt kankhrej m3a s7abi",
+    "kankhrej m3a s7abi nhar sebt"
+   ],
+   "de": "نهار السبت كنخرج مع صحابي.",
+   "en": "Le samedi, je sors avec mes amis."
+  }
+ ],
+ "listening": {
+  "title": "Le week-end",
+  "intro": "Le vendredi au bureau, Anas demande à sa collègue Zineb ce qu’elle aime faire le week-end.",
+  "lines": [
+   {
+    "speaker": "Anas",
+    "de": "زينب، شنو كتبغي تديري ف الويكاند؟",
+    "tr": "zineb, chno katbghi tdiri f lwikand?",
+    "en": "Zineb, qu’est-ce que tu aimes faire le week-end ?"
+   },
+   {
+    "speaker": "Zineb",
+    "de": "كنبغي نقرا و نسمع الموسيقى. و نتا؟",
+    "tr": "kanbghi n9ra w nsme3 lmousi9a. w nta?",
+    "en": "J’aime lire et écouter de la musique. Et toi ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "أنا كنحب نلعب الكورة مع صحابي.",
+    "tr": "ana kan7eb nl3eb lkoura m3a s7abi.",
+    "en": "Moi, j’aime jouer au foot avec mes amis."
+   },
+   {
+    "speaker": "Zineb",
+    "de": "فين كتلعبو؟",
+    "tr": "fin katl3bou?",
+    "en": "Où est-ce que vous jouez ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "ف عين الدياب، نهار السبت.",
+    "tr": "f 3in diab, nhar sebt.",
+    "en": "À Aïn Diab, le samedi."
+   },
+   {
+    "speaker": "Zineb",
+    "de": "واش كتبغي تشوف أفلام؟",
+    "tr": "wach katbghi tchouf aflam?",
+    "en": "Tu aimes regarder des films ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "لا، ما كنبغيش أفلام بزاف.",
+    "tr": "la, ma kanbghich aflam bzzaf.",
+    "en": "Non, je n’aime pas trop les films."
+   },
+   {
+    "speaker": "Zineb",
+    "de": "أنا كنحب نتسارا ف الكورنيش نهار الحد.",
+    "tr": "ana kan7eb ntsara f lkornich nhar l7ed.",
+    "en": "Moi, j’aime me promener sur la corniche le dimanche."
+   },
+   {
+    "speaker": "Anas",
+    "de": "زوين! نمشيو مع بعض؟",
+    "tr": "zwin! nmchiw m3a ba3d?",
+    "en": "Super ! On y va ensemble ?"
+   },
+   {
+    "speaker": "Zineb",
+    "de": "واخا، نهار الحد!",
+    "tr": "wakha, nhar l7ed!",
+    "en": "D’accord, dimanche !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qu’est-ce que Zineb aime faire ?",
+    "options": [
+     "Lire et écouter de la musique",
+     "Jouer au foot",
+     "Cuisiner"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Quand Anas joue-t-il au foot ?",
+    "options": [
+     "Le samedi",
+     "Le dimanche",
+     "Le vendredi"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Qu’est-ce qu’ils vont faire dimanche ?",
+    "options": [
+     "Se promener sur la corniche",
+     "Regarder un film",
+     "Jouer au foot"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "كنبغي نقرا.",
+  "ما كنبغيش نطيب.",
+  "شنو كتبغي تدير؟"
+ ],
+ "dictationTr": [
+  "kanbghi n9ra.",
+  "ma kanbghich ntiyeb.",
+  "chno katbghi tdir?"
+ ],
+ "speaking": [
+  {
+   "de": "شنو كتبغي تدير ف الويكاند؟",
+   "tr": "chno katbghi tdir f lwikand?",
+   "en": "Qu’est-ce que tu aimes faire le week-end ?"
+  },
+  {
+   "de": "كنبغي نشوف أفلام.",
+   "tr": "kanbghi nchouf aflam.",
+   "en": "J’aime regarder des films."
+  },
+  {
+   "de": "كنحب نلعب الكورة.",
+   "tr": "kan7eb nl3eb lkoura.",
+   "en": "J’aime jouer au foot."
+  },
+  {
+   "de": "ما كنبغيش نطيب.",
+   "tr": "ma kanbghich ntiyeb.",
+   "en": "Je n’aime pas cuisiner."
+  },
+  {
+   "de": "نهار الحد كنتسارا ف الكورنيش.",
+   "tr": "nhar l7ed kantsara f lkornich.",
+   "en": "Le dimanche, je me promène sur la corniche."
+  }
+ ],
+ "writing": {
+  "task": "Écris 2 à 4 phrases sur ton week-end : ce que tu aimes faire, ce que tu n’aimes pas, et avec qui tu sors. Écris en lettres latines.",
+  "model": "ف الويكاند كنبغي نقرا و نسمع الموسيقى. نهار السبت كنخرج مع صحابي. ما كنبغيش نطيب.",
+  "modelTr": "f lwikand kanbghi n9ra w nsme3 lmousi9a. nhar sebt kankhrej m3a s7abi. ma kanbghich ntiyeb."
+ }
+}

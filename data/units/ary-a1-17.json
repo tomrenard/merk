@@ -1,0 +1,515 @@
+{
+ "id": "ary-a1-17",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "La santé",
+ "icon": "💊",
+ "situation": "À la pharmacie",
+ "canDo": "Tu peux dire que tu es malade, où tu as mal, et demander un médicament à la pharmacie.",
+ "explanation": "Pour dire où tu as mal, on dit **kayder liya** + la partie du corps avec *-i* (mon, ma). Mot à mot : « (elle) fait mal à moi, ma tête ».\n\n| français | darija |\n|---|---|\n| je suis malade | ana mrid / mrida |\n| j’ai mal à la tête | kayder liya rassi |\n| j’ai mal au dos | kayder liya dahri |\n| j’ai mal à la gorge | kayder liya 7el9i |\n| j’ai de la fièvre | fiya skhana |\n| j’ai pris froid | fiya lberd |\n\n- **Liya** = à moi, **lik** = à toi : *wach kayder lik rassek?* = tu as mal à la tête ?\n- **Fiya** = en moi : on l’utilise pour la fièvre et le rhume.\n- **Mrid** pour un homme, **mrida** pour une femme.\n- À la pharmacie : **wach 3endek chi dwa l ras?** = tu as un médicament pour la tête ?\n- Le pharmacien dit : **chreb had dwa merrtayn f nhar, men ba3d lmakla** = prends ce médicament deux fois par jour, après le repas. En darija, on « boit » (*chreb*) un médicament.\n- **Lah ychafik!** = que Dieu te guérisse, bon rétablissement !\n\nAu Maroc, on va souvent d’abord à la pharmacie : le pharmacien conseille beaucoup.",
+ "french": "En français on dit « j’ai mal à la tête » ; en darija c’est la tête qui fait mal : kayder liya rassi.",
+ "examples": [
+  {
+   "de": "أنا مريض.",
+   "tr": "ana mrid.",
+   "en": "Je suis malade. (un homme)"
+  },
+  {
+   "de": "كيضر ليا راسي.",
+   "tr": "kayder liya rassi.",
+   "en": "J’ai mal à la tête."
+  },
+  {
+   "de": "فيا السخانة.",
+   "tr": "fiya skhana.",
+   "en": "J’ai de la fièvre."
+  },
+  {
+   "de": "فيا البرد، كيضر ليا حلقي.",
+   "tr": "fiya lberd, kayder liya 7el9i.",
+   "en": "J’ai pris froid, j’ai mal à la gorge."
+  },
+  {
+   "de": "واش عندك شي دوا للراس؟",
+   "tr": "wach 3endek chi dwa l ras?",
+   "en": "Tu as un médicament pour la tête ?"
+  },
+  {
+   "de": "شرب هاد الدوا مرتين ف النهار.",
+   "tr": "chreb had dwa merrtayn f nhar.",
+   "en": "Prends ce médicament deux fois par jour."
+  },
+  {
+   "de": "شربي الدوا من بعد الماكلة.",
+   "tr": "chrbi dwa men ba3d lmakla.",
+   "en": "Prends le médicament après le repas. (à une femme)"
+  },
+  {
+   "de": "الله يشافيك!",
+   "tr": "lah ychafik!",
+   "en": "Bon rétablissement !"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-17-01",
+   "type": "cloze",
+   "de": "كيضر ليا ___.",
+   "tr": "kayder liya ___.",
+   "base": "ma tête",
+   "answers": [
+    "راسي"
+   ],
+   "answersTr": [
+    "rassi"
+   ],
+   "en": "J’ai mal à la tête."
+  },
+  {
+   "id": "ary-a1-17-02",
+   "type": "cloze",
+   "de": "___ ليا ضهري.",
+   "tr": "___ liya dahri.",
+   "base": "fait mal",
+   "answers": [
+    "كيضر"
+   ],
+   "answersTr": [
+    "kayder"
+   ],
+   "en": "J’ai mal au dos."
+  },
+  {
+   "id": "ary-a1-17-03",
+   "type": "cloze",
+   "de": "أنا ___.",
+   "tr": "ana ___.",
+   "base": "malade (une femme)",
+   "answers": [
+    "مريضة"
+   ],
+   "answersTr": [
+    "mrida"
+   ],
+   "en": "Je suis malade. (une femme)"
+  },
+  {
+   "id": "ary-a1-17-04",
+   "type": "cloze",
+   "de": "___ السخانة.",
+   "tr": "___ skhana.",
+   "base": "en moi",
+   "answers": [
+    "فيا"
+   ],
+   "answersTr": [
+    "fiya"
+   ],
+   "en": "J’ai de la fièvre."
+  },
+  {
+   "id": "ary-a1-17-05",
+   "type": "cloze",
+   "de": "واش ___ شي دوا للراس؟",
+   "tr": "wach ___ chi dwa l ras?",
+   "base": "tu as",
+   "answers": [
+    "عندك"
+   ],
+   "answersTr": [
+    "3endek"
+   ],
+   "en": "Tu as un médicament pour la tête ?"
+  },
+  {
+   "id": "ary-a1-17-06",
+   "type": "cloze",
+   "de": "شرب هاد الدوا ___ ف النهار.",
+   "tr": "chreb had dwa ___ f nhar.",
+   "base": "deux fois",
+   "answers": [
+    "مرتين"
+   ],
+   "answersTr": [
+    "merrtayn"
+   ],
+   "en": "Prends ce médicament deux fois par jour."
+  },
+  {
+   "id": "ary-a1-17-07",
+   "type": "cloze",
+   "de": "الله ___!",
+   "tr": "lah ___!",
+   "base": "te guérisse",
+   "answers": [
+    "يشافيك"
+   ],
+   "answersTr": [
+    "ychafik"
+   ],
+   "en": "Bon rétablissement ! (que Dieu te guérisse)"
+  },
+  {
+   "id": "ary-a1-17-08",
+   "type": "cloze",
+   "de": "كيضر ليا ___.",
+   "tr": "kayder liya ___.",
+   "base": "ma gorge",
+   "answers": [
+    "حلقي"
+   ],
+   "answersTr": [
+    "7el9i"
+   ],
+   "en": "J’ai mal à la gorge."
+  },
+  {
+   "id": "ary-a1-17-09",
+   "type": "choice",
+   "de": "أنا ___.",
+   "tr": "ana ___.",
+   "options": [
+    "مريض",
+    "مريضة"
+   ],
+   "optionsTr": [
+    "mrid",
+    "mrida"
+   ],
+   "answer": 0,
+   "why": "Un homme dit mrid ; une femme dit mrida.",
+   "en": "Je suis malade. (un homme)"
+  },
+  {
+   "id": "ary-a1-17-10",
+   "type": "choice",
+   "de": "كيضر ___ راسي.",
+   "tr": "kayder ___ rassi.",
+   "options": [
+    "ليا",
+    "ليك"
+   ],
+   "optionsTr": [
+    "liya",
+    "lik"
+   ],
+   "answer": 0,
+   "why": "Liya = à moi ; lik = à toi.",
+   "en": "J’ai mal à la tête."
+  },
+  {
+   "id": "ary-a1-17-11",
+   "type": "choice",
+   "de": "واش كيضر ___ راسك؟",
+   "tr": "wach kayder ___ rassek?",
+   "options": [
+    "ليك",
+    "ليا"
+   ],
+   "optionsTr": [
+    "lik",
+    "liya"
+   ],
+   "answer": 0,
+   "why": "On parle de toi : lik (à toi) et rassek (ta tête).",
+   "en": "Tu as mal à la tête ?"
+  },
+  {
+   "id": "ary-a1-17-12",
+   "type": "choice",
+   "de": "شرب الدوا من بعد ___.",
+   "tr": "chreb dwa men ba3d ___.",
+   "options": [
+    "الماكلة",
+    "السخانة"
+   ],
+   "optionsTr": [
+    "lmakla",
+    "skhana"
+   ],
+   "answer": 0,
+   "why": "Lmakla = le repas ; skhana = la fièvre.",
+   "en": "Prends le médicament après le repas."
+  },
+  {
+   "id": "ary-a1-17-13",
+   "type": "choice",
+   "de": "فيا ___، كيضر ليا حلقي.",
+   "tr": "fiya ___, kayder liya 7el9i.",
+   "options": [
+    "البرد",
+    "الحوت"
+   ],
+   "optionsTr": [
+    "lberd",
+    "l7out"
+   ],
+   "answer": 0,
+   "why": "Fiya lberd = j’ai pris froid.",
+   "en": "J’ai pris froid, j’ai mal à la gorge."
+  },
+  {
+   "id": "ary-a1-17-14",
+   "type": "choice",
+   "de": "___ الدوا من بعد الماكلة.",
+   "tr": "___ dwa men ba3d lmakla.",
+   "options": [
+    "شربي",
+    "شرب"
+   ],
+   "optionsTr": [
+    "chrbi",
+    "chreb"
+   ],
+   "answer": 0,
+   "why": "À une femme, l’impératif prend -i : chrbi.",
+   "en": "Prends le médicament après le repas. (à une femme)"
+  },
+  {
+   "id": "ary-a1-17-15",
+   "type": "choice",
+   "de": "البارح ___ عند الطبيب.",
+   "tr": "lbare7 ___ 3end tbib.",
+   "options": [
+    "مشيت",
+    "كنمشي",
+    "غادي نمشي"
+   ],
+   "optionsTr": [
+    "mchit",
+    "kanmchi",
+    "ghadi nmchi"
+   ],
+   "answer": 0,
+   "why": "Lbare7 (hier) demande le passé : mchit.",
+   "en": "Hier, je suis allé chez le médecin."
+  },
+  {
+   "id": "ary-a1-17-16",
+   "type": "choice",
+   "de": "___ هاد الدوا؟",
+   "tr": "___ had dwa?",
+   "options": [
+    "بشحال",
+    "فين",
+    "شكون"
+   ],
+   "optionsTr": [
+    "b ch7al",
+    "fin",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "B ch7al ? = à combien, pour demander un prix.",
+   "en": "Combien coûte ce médicament ?"
+  },
+  {
+   "id": "ary-a1-17-17",
+   "type": "order",
+   "tiles": [
+    "kayder",
+    "liya",
+    "rassi",
+    "bzzaf"
+   ],
+   "answers": [
+    "kayder liya rassi bzzaf"
+   ],
+   "de": "كيضر ليا راسي بزاف.",
+   "en": "J’ai très mal à la tête."
+  },
+  {
+   "id": "ary-a1-17-18",
+   "type": "order",
+   "tiles": [
+    "wach",
+    "3endek",
+    "chi",
+    "dwa",
+    "l",
+    "ras"
+   ],
+   "answers": [
+    "wach 3endek chi dwa l ras"
+   ],
+   "de": "واش عندك شي دوا للراس؟",
+   "en": "Tu as un médicament pour la tête ?"
+  },
+  {
+   "id": "ary-a1-17-19",
+   "type": "order",
+   "tiles": [
+    "ana",
+    "mrid",
+    "w",
+    "fiya",
+    "skhana"
+   ],
+   "answers": [
+    "ana mrid w fiya skhana"
+   ],
+   "de": "أنا مريض و فيا السخانة.",
+   "en": "Je suis malade et j’ai de la fièvre."
+  },
+  {
+   "id": "ary-a1-17-20",
+   "type": "order",
+   "tiles": [
+    "chreb",
+    "had",
+    "dwa",
+    "merrtayn",
+    "f",
+    "nhar"
+   ],
+   "answers": [
+    "chreb had dwa merrtayn f nhar"
+   ],
+   "de": "شرب هاد الدوا مرتين ف النهار.",
+   "en": "Prends ce médicament deux fois par jour."
+  }
+ ],
+ "listening": {
+  "title": "À la pharmacie",
+  "intro": "Meryem ne se sent pas bien. Elle entre dans une pharmacie, où Hicham est pharmacien.",
+  "lines": [
+   {
+    "speaker": "Hicham",
+    "de": "صباح الخير، مرحبا.",
+    "tr": "sba7 lkhir, mer7ba.",
+    "en": "Bonjour, bienvenue."
+   },
+   {
+    "speaker": "Meryem",
+    "de": "صباح الخير. أنا مريضة شوية.",
+    "tr": "sba7 lkhir. ana mrida chwiya.",
+    "en": "Bonjour. Je suis un peu malade."
+   },
+   {
+    "speaker": "Hicham",
+    "de": "شنو عندك؟",
+    "tr": "chno 3endek?",
+    "en": "Qu’est-ce que tu as ?"
+   },
+   {
+    "speaker": "Meryem",
+    "de": "كيضر ليا راسي و حلقي.",
+    "tr": "kayder liya rassi w 7el9i.",
+    "en": "J’ai mal à la tête et à la gorge."
+   },
+   {
+    "speaker": "Hicham",
+    "de": "واش فيك السخانة؟",
+    "tr": "wach fik skhana?",
+    "en": "Tu as de la fièvre ?"
+   },
+   {
+    "speaker": "Meryem",
+    "de": "آه، شوية. و فيا البرد.",
+    "tr": "ah, chwiya. w fiya lberd.",
+    "en": "Oui, un peu. Et j’ai pris froid."
+   },
+   {
+    "speaker": "Hicham",
+    "de": "شربي هاد الدوا مرتين ف النهار، من بعد الماكلة.",
+    "tr": "chrbi had dwa merrtayn f nhar, men ba3d lmakla.",
+    "en": "Prends ce médicament deux fois par jour, après le repas."
+   },
+   {
+    "speaker": "Meryem",
+    "de": "واخا. بشحال؟",
+    "tr": "wakha. b ch7al?",
+    "en": "D’accord. C’est combien ?"
+   },
+   {
+    "speaker": "Hicham",
+    "de": "خمسين درهم.",
+    "tr": "khamsin derham.",
+    "en": "Cinquante dirhams."
+   },
+   {
+    "speaker": "Meryem",
+    "de": "تفضل. شكرا!",
+    "tr": "tfeddel. chokran!",
+    "en": "Tiens. Merci !"
+   },
+   {
+    "speaker": "Hicham",
+    "de": "الله يشافيك!",
+    "tr": "lah ychafik!",
+    "en": "Bon rétablissement !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Où Meryem a-t-elle mal ?",
+    "options": [
+     "À la tête et à la gorge",
+     "Au ventre",
+     "Au dos"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Combien de fois par jour doit-elle prendre le médicament ?",
+    "options": [
+     "Deux fois",
+     "Une fois",
+     "Trois fois"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Combien coûte le médicament ?",
+    "options": [
+     "50 dirhams",
+     "15 dirhams",
+     "20 dirhams"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "أنا مريض.",
+  "كيضر ليا راسي.",
+  "فيا السخانة."
+ ],
+ "dictationTr": [
+  "ana mrid.",
+  "kayder liya rassi.",
+  "fiya skhana."
+ ],
+ "speaking": [
+  {
+   "de": "كيضر ليا راسي.",
+   "tr": "kayder liya rassi.",
+   "en": "J’ai mal à la tête."
+  },
+  {
+   "de": "فيا السخانة.",
+   "tr": "fiya skhana.",
+   "en": "J’ai de la fièvre."
+  },
+  {
+   "de": "واش عندك شي دوا للراس؟",
+   "tr": "wach 3endek chi dwa l ras?",
+   "en": "Tu as un médicament pour la tête ?"
+  },
+  {
+   "de": "بشحال هاد الدوا؟",
+   "tr": "b ch7al had dwa?",
+   "en": "Combien coûte ce médicament ?"
+  },
+  {
+   "de": "الله يشافيك!",
+   "tr": "lah ychafik!",
+   "en": "Bon rétablissement !"
+  }
+ ],
+ "writing": {
+  "task": "Tu es malade et tu vas à la pharmacie. Écris 2 à 4 phrases : dis où tu as mal, si tu as de la fièvre, et demande un médicament. Écris en lettres latines.",
+  "model": "سلام. أنا مريض، كيضر ليا راسي و فيا السخانة. واش عندك شي دوا للراس؟ شكرا!",
+  "modelTr": "salam. ana mrid, kayder liya rassi w fiya skhana. wach 3endek chi dwa l ras? chokran!"
+ }
+}

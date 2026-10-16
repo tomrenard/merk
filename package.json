@@ -12,6 +12,7 @@
     "db:migrate": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/migrate.ts",
     "import:words": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/import-words.ts",
     "db:backup": "node --env-file=.env.local --experimental-strip-types scripts/backup.ts",
+    "import:darija": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/import-darija.ts",
     "claim": "pnpm db:backup && node --env-file=.env.local --experimental-strip-types scripts/claim.ts",
     "units:index": "node --experimental-strip-types scripts/units-index.ts && biome check --write src/lib/units-index.ts"
   },

@@ -1,0 +1,78 @@
+{
+ "id": "ary-a1-04",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Dire non : ma…ch, machi et wach",
+ "icon": "🙅",
+ "situation": "Dire oui, non, pas du tout",
+ "canDo": "Tu peux poser une question oui/non avec wach, répondre ah ou la, et dire le contraire avec machi ou ma…ch.",
+ "explanation": "**Wach** au début d’une phrase = « est-ce que » : *wach nta mghribi?* = est-ce que tu es marocain ? On répond **ah** (oui) ou **la** (non).\n\nIl y a deux façons de dire « ne… pas » :\n\n| quand | oui | non |\n|---|---|---|\n| sans verbe (pronom + nom, origine…) | ana fransawi | ana **machi** fransawi |\n| avec 3ndi, 3ndek… | 3ndi 3chrin 3am | **ma**3ndi**ch** 3chrin 3am |\n\n- **Machi** se met devant ce qu’on nie : *howa machi men kaza* = il n’est pas de Casa.\n- **Ma…ch** entoure le mot, comme « ne… pas » entoure le verbe : *3ndi* → *ma3ndich*, *3ndek* → *ma3ndekch*, *3ndo* → *ma3ndouch*, *3ndha* → *ma3ndhach*.\n- Trois phrases toutes faites très utiles : **ma3reftch** (je ne sais pas), **mafhemtch** (je n’ai pas compris), **machi mochkil** (pas de problème).\n- **Walo** = rien ; *la, walo!* = non, pas du tout !\n\nLe **ch** final de *ma…ch* est court, mais il faut bien l’entendre : sans lui, la phrase n’est plus négative.",
+ "french": "Comme « ne… pas » entoure le verbe, ma…ch entoure le mot : ma3ndich = je n’ai pas.",
+ "examples": [
+  {"de": "واش نتا مغربي؟", "tr": "wach nta mghribi?", "en": "Est-ce que tu es marocain ?"},
+  {"de": "لا، أنا ماشي مغربي، أنا فرانساوي.", "tr": "la, ana machi mghribi, ana fransawi.", "en": "Non, je ne suis pas marocain, je suis français."},
+  {"de": "واش نتي من كازا؟", "tr": "wach nti men kaza?", "en": "Est-ce que tu es de Casa ? (à une femme)"},
+  {"de": "آه، أنا من كازا.", "tr": "ah, ana men kaza.", "en": "Oui, je suis de Casa."},
+  {"de": "ماعنديش عشرين عام.", "tr": "ma3ndich 3chrin 3am.", "en": "Je n’ai pas vingt ans."},
+  {"de": "سمح ليا، ماعرفتش.", "tr": "sme7 liya, ma3reftch.", "en": "Pardon, je ne sais pas."},
+  {"de": "مافهمتش، عافاك.", "tr": "mafhemtch, 3afak.", "en": "Je n’ai pas compris, s’il te plaît."},
+  {"de": "ماشي مشكل!", "tr": "machi mochkil!", "en": "Pas de problème !"}
+ ],
+ "items": [
+  {"id": "ary-a1-04-01", "type": "cloze", "de": "___ نتا مغربي؟", "tr": "___ nta mghribi?", "base": "est-ce que", "answers": ["واش"], "answersTr": ["wach"], "en": "Est-ce que tu es marocain ?"},
+  {"id": "ary-a1-04-02", "type": "cloze", "de": "أنا ___ فرانساوية.", "tr": "ana ___ fransawiya.", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Je ne suis pas française."},
+  {"id": "ary-a1-04-03", "type": "cloze", "de": "هو ___ من الرباط.", "tr": "howa ___ men rbat.", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Il n’est pas de Rabat."},
+  {"id": "ary-a1-04-04", "type": "cloze", "de": "___ عشرين عام.", "tr": "___ 3chrin 3am.", "base": "je n’ai pas", "answers": ["ماعنديش"], "answersTr": ["ma3ndich", "ma3andich"], "en": "Je n’ai pas vingt ans."},
+  {"id": "ary-a1-04-05", "type": "cloze", "de": "سمح ليا، ___.", "tr": "sme7 liya, ___.", "base": "je ne sais pas", "answers": ["ماعرفتش"], "answersTr": ["ma3reftch", "ma3rftch"], "en": "Pardon, je ne sais pas."},
+  {"id": "ary-a1-04-06", "type": "cloze", "de": "___ مشكل!", "tr": "___ mochkil!", "base": "pas", "answers": ["ماشي"], "answersTr": ["machi"], "en": "Pas de problème !"},
+  {"id": "ary-a1-04-07", "type": "cloze", "de": "___، عافاك.", "tr": "___, 3afak.", "base": "je n’ai pas compris", "answers": ["مافهمتش"], "answersTr": ["mafhemtch", "mafhmtch"], "en": "Je n’ai pas compris, s’il te plaît."},
+  {"id": "ary-a1-04-08", "type": "cloze", "de": "واش هي من فرانسا؟ ___، هي من كازا.", "tr": "wach hiya men fransa? ___, hiya men kaza.", "base": "non", "answers": ["لا"], "answersTr": ["la"], "en": "Est-ce qu’elle est de France ? Non, elle est de Casa."},
+  {"id": "ary-a1-04-09", "type": "choice", "de": "أنا ___ مغربي.", "tr": "ana ___ mghribi.", "options": ["ماشي", "ماعنديش"], "optionsTr": ["machi", "ma3ndich"], "answer": 0, "why": "Il n’y a pas de verbe ici : machi devant mghribi.", "en": "Je ne suis pas marocain."},
+  {"id": "ary-a1-04-10", "type": "choice", "de": "___ عشرين عام.", "tr": "___ 3chrin 3am.", "options": ["ماعنديش", "ماشي عندي"], "optionsTr": ["ma3ndich", "machi 3ndi"], "answer": 0, "why": "3ndi se met au négatif avec ma…ch : ma3ndich.", "en": "Je n’ai pas vingt ans."},
+  {"id": "ary-a1-04-11", "type": "choice", "de": "___ نتي فرانساوية؟", "tr": "___ nti fransawiya?", "options": ["واش", "شحال", "منين"], "optionsTr": ["wach", "ch7al", "mnin"], "answer": 0, "why": "Wach pose une question à laquelle on répond oui ou non.", "en": "Est-ce que tu es française ?"},
+  {"id": "ary-a1-04-12", "type": "choice", "de": "واش نتا من ليون؟ — ___، أنا من ليون.", "tr": "wach nta men lyon? — ___, ana men lyon.", "options": ["آه", "لا"], "optionsTr": ["ah", "la"], "answer": 0, "why": "Il dit qu’il est de Lyon : ah (oui).", "en": "Tu es de Lyon ? — Oui, je suis de Lyon."},
+  {"id": "ary-a1-04-13", "type": "choice", "de": "واش عندك تمنطاش العام؟ — ___، عندي عشرين عام.", "tr": "wach 3ndek tmentach l3am? — ___, 3ndi 3chrin 3am.", "options": ["لا", "آه"], "optionsTr": ["la", "ah"], "answer": 0, "why": "Il a vingt ans, pas dix-huit : la (non).", "en": "Tu as dix-huit ans ? — Non, j’ai vingt ans."},
+  {"id": "ary-a1-04-14", "type": "choice", "de": "مهدي ___ طناش العام.", "tr": "mehdi ___ tnach l3am.", "options": ["ماعندوش", "ماعنديش"], "optionsTr": ["ma3ndouch", "ma3ndich"], "answer": 0, "why": "Il (Mehdi) : 3ndo → ma3ndouch.", "en": "Mehdi n’a pas douze ans."},
+  {"id": "ary-a1-04-15", "type": "choice", "de": "سلمى ___ من كازا.", "tr": "salma ___ men kaza.", "options": ["ماشي", "ماعندهاش"], "optionsTr": ["machi", "ma3ndhach"], "answer": 0, "why": "Pas de verbe ici : machi.", "en": "Salma n’est pas de Casa."},
+  {"id": "ary-a1-04-16", "type": "choice", "de": "سمح ليا! — ___.", "tr": "sme7 liya! — ___.", "options": ["ماشي مشكل", "ماعرفتش", "مافهمتش"], "optionsTr": ["machi mochkil", "ma3reftch", "mafhemtch"], "answer": 0, "why": "À une excuse, on répond machi mochkil (pas de problème).", "en": "Pardon ! — Pas de problème."},
+  {"id": "ary-a1-04-17", "type": "order", "tiles": ["wach", "nta", "men", "fransa"], "answers": ["wach nta men fransa"], "de": "واش نتا من فرانسا؟", "en": "Est-ce que tu es de France ? (à un homme)"},
+  {"id": "ary-a1-04-18", "type": "order", "tiles": ["la", "ana", "machi", "mghribi"], "answers": ["la ana machi mghribi"], "de": "لا، أنا ماشي مغربي.", "en": "Non, je ne suis pas marocain."},
+  {"id": "ary-a1-04-19", "type": "order", "tiles": ["sme7", "liya", "ma3reftch"], "answers": ["sme7 liya ma3reftch"], "de": "سمح ليا، ماعرفتش.", "en": "Pardon, je ne sais pas."},
+  {"id": "ary-a1-04-20", "type": "order", "tiles": ["howa", "ma3ndouch", "3chrin", "3am"], "answers": ["howa ma3ndouch 3chrin 3am"], "de": "هو ماعندوش عشرين عام.", "en": "Il n’a pas vingt ans."}
+ ],
+ "listening": {
+  "title": "Les questions de Meryem",
+  "intro": "À une soirée à Casablanca, Meryem pose des questions à Karim, mais elle se trompe souvent.",
+  "lines": [
+   {"speaker": "Meryem", "de": "سلام، واش نتا مغربي؟", "tr": "salam, wach nta mghribi?", "en": "Salut, est-ce que tu es marocain ?"},
+   {"speaker": "Karim", "de": "لا، أنا ماشي مغربي. أنا فرانساوي.", "tr": "la, ana machi mghribi. ana fransawi.", "en": "Non, je ne suis pas marocain. Je suis français."},
+   {"speaker": "Meryem", "de": "واش نتا من ليون؟", "tr": "wach nta men lyon?", "en": "Est-ce que tu es de Lyon ?"},
+   {"speaker": "Karim", "de": "لا، ماشي من ليون. أنا من مارسيليا.", "tr": "la, machi men lyon. ana men marsilya.", "en": "Non, pas de Lyon. Je suis de Marseille."},
+   {"speaker": "Meryem", "de": "و واش ساكن ف كازا؟", "tr": "w wach saken f kaza?", "en": "Et est-ce que tu habites à Casa ?"},
+   {"speaker": "Karim", "de": "آه، ساكن ف كازا دابا.", "tr": "ah, saken f kaza daba.", "en": "Oui, j’habite à Casa maintenant."},
+   {"speaker": "Meryem", "de": "واش عندك عشرين عام؟", "tr": "wach 3ndek 3chrin 3am?", "en": "Est-ce que tu as vingt ans ?"},
+   {"speaker": "Karim", "de": "لا، والو! عندي تمنطاش العام.", "tr": "la, walo! 3ndi tmentach l3am.", "en": "Non, pas du tout ! J’ai dix-huit ans."},
+   {"speaker": "Meryem", "de": "سمح ليا!", "tr": "sme7 liya!", "en": "Pardon !"},
+   {"speaker": "Karim", "de": "ماشي مشكل!", "tr": "machi mochkil!", "en": "Pas de problème !"}
+  ],
+  "questions": [
+   {"q": "Karim est-il marocain ?", "options": ["Non, il est français", "Oui, il est marocain", "Il ne sait pas"], "answer": 0},
+   {"q": "D’où vient Karim ?", "options": ["De Marseille", "De Lyon", "De Casa"], "answer": 0},
+   {"q": "Quel âge a Karim ?", "options": ["18 ans", "20 ans", "12 ans"], "answer": 0}
+  ]
+ },
+ "dictation": ["واش نتا مغربي؟", "أنا ماشي مغربي.", "ماعرفتش."],
+ "dictationTr": ["wach nta mghribi?", "ana machi mghribi.", "ma3reftch."],
+ "speaking": [
+  {"de": "واش نتي من كازا؟", "tr": "wach nti men kaza?", "en": "Est-ce que tu es de Casa ? (à une femme)"},
+  {"de": "لا، أنا ماشي من كازا.", "tr": "la, ana machi men kaza.", "en": "Non, je ne suis pas de Casa."},
+  {"de": "ماعرفتش.", "tr": "ma3reftch.", "en": "Je ne sais pas."},
+  {"de": "مافهمتش، عافاك.", "tr": "mafhemtch, 3afak.", "en": "Je n’ai pas compris, s’il te plaît."},
+  {"de": "ماشي مشكل!", "tr": "machi mochkil!", "en": "Pas de problème !"}
+ ],
+ "writing": {
+  "task": "Réponds à ces deux questions : wach nta / nti mghribi ? wach 3ndek 3chrin 3am ? Dis non, puis donne la bonne réponse. Écris en lettres latines.",
+  "model": "لا، أنا ماشي مغربية، أنا فرانساوية. ماعنديش عشرين عام، عندي تمنطاش العام.",
+  "modelTr": "la, ana machi mghribiya, ana fransawiya. ma3ndich 3chrin 3am, 3ndi tmentach l3am."
+ }
+}

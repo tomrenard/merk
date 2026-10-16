@@ -1,0 +1,523 @@
+{
+ "id": "ary-a1-10",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les nombres jusqu’à 100 et les prix",
+ "icon": "🍅",
+ "situation": "Au marché",
+ "canDo": "Tu peux demander un prix, comprendre les nombres de 20 à 100 et acheter des fruits et légumes au marché.",
+ "explanation": "Les dizaines se font avec l’unité + **-in** : *tlata* (3) → *tlatin* (30).\n\n| | | | |\n|---|---|---|---|\n| 20 | 3chrin | 60 | settin |\n| 30 | tlatin | 70 | sb3in |\n| 40 | rb3in | 80 | tmanin |\n| 50 | khamsin | 90 | tes3in |\n| 100 | mya | | |\n\n- Entre deux dizaines, on dit **l’unité, puis w (et), puis la dizaine** : *khamsa w 3chrin* = 25, mot à mot « cinq et vingt ».\n- Pour 22, 32, 42… on dit **tnin**, pas *jouj* : *tnin w tlatin* = 32.\n- Après 20, 30, 40… le nom reste **au singulier** : *tlatin dirham* (30 dirhams).\n- **B ch7al?** = c’est combien ? (mot à mot : pour combien ?). *B ch7al lkilo?* = combien le kilo ? On répond aussi avec **b** : *b 3chrin dirham*.\n- **Ghali** = cher, **rkhis** = pas cher. *Ghali bzzaf!* = trop cher !\n- Pour négocier : **n9es liya chwiya 3afak** = baisse un peu, s’il te plaît. **Safi** = c’est bon, d’accord. **Hak** = tiens, voilà.\n- Beaucoup de vendeurs comptent aussi en **ryal** (20 ryal = 1 dirham) : si un prix te semble énorme, demande *b ddrahem?* (en dirhams ?).",
+ "french": "En français on dit la dizaine d’abord (« vingt-cinq »), en darija l’unité d’abord : khamsa w 3chrin, « cinq et vingt ».",
+ "examples": [
+  {
+   "de": "بشحال الكيلو د الماطيشة؟",
+   "tr": "b ch7al lkilo d lmaticha?",
+   "en": "Combien coûte le kilo de tomates ?"
+  },
+  {
+   "de": "بعشرين درهم.",
+   "tr": "b 3chrin dirham.",
+   "en": "Vingt dirhams."
+  },
+  {
+   "de": "عطيني جوج كيلو د الليمون.",
+   "tr": "3tini jouj kilo d llimoun.",
+   "en": "Donne-moi deux kilos d’oranges."
+  },
+  {
+   "de": "هادا غالي بزاف!",
+   "tr": "hada ghali bzzaf!",
+   "en": "C’est trop cher !"
+  },
+  {
+   "de": "نقص ليا شوية عافاك.",
+   "tr": "n9es liya chwiya 3afak.",
+   "en": "Baisse un peu le prix, s’il te plaît."
+  },
+  {
+   "de": "خمسة و تلاتين درهم.",
+   "tr": "khamsa w tlatin dirham.",
+   "en": "Trente-cinq dirhams."
+  },
+  {
+   "de": "صافي، هاك مية درهم.",
+   "tr": "safi, hak mya dirham.",
+   "en": "C’est bon, voilà cent dirhams."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-10-01",
+   "type": "cloze",
+   "de": "___ درهم.",
+   "tr": "___ dirham.",
+   "base": "40",
+   "answers": [
+    "ربعين"
+   ],
+   "answersTr": [
+    "rb3in",
+    "rba3in",
+    "rb3ine"
+   ],
+   "en": "Quarante dirhams."
+  },
+  {
+   "id": "ary-a1-10-02",
+   "type": "cloze",
+   "de": "___ الكيلو د البطاطا؟",
+   "tr": "___ lkilo d lbtata?",
+   "base": "c’est combien",
+   "answers": [
+    "بشحال"
+   ],
+   "answersTr": [
+    "b ch7al"
+   ],
+   "en": "Combien coûte le kilo de pommes de terre ?"
+  },
+  {
+   "id": "ary-a1-10-03",
+   "type": "cloze",
+   "de": "خمسة و ___ درهم.",
+   "tr": "khamsa w ___ dirham.",
+   "base": "20",
+   "answers": [
+    "عشرين"
+   ],
+   "answersTr": [
+    "3chrin",
+    "3ichrin"
+   ],
+   "en": "Vingt-cinq dirhams."
+  },
+  {
+   "id": "ary-a1-10-04",
+   "type": "cloze",
+   "de": "هادا ___ بزاف!",
+   "tr": "hada ___ bzzaf!",
+   "base": "cher",
+   "answers": [
+    "غالي"
+   ],
+   "answersTr": [
+    "ghali"
+   ],
+   "en": "C’est trop cher !"
+  },
+  {
+   "id": "ary-a1-10-05",
+   "type": "cloze",
+   "de": "___ و خمسين درهم.",
+   "tr": "___ w khamsin dirham.",
+   "base": "2 (dans 52)",
+   "answers": [
+    "تنين"
+   ],
+   "answersTr": [
+    "tnin",
+    "tnine"
+   ],
+   "en": "Cinquante-deux dirhams."
+  },
+  {
+   "id": "ary-a1-10-06",
+   "type": "cloze",
+   "de": "___ ليا شوية عافاك.",
+   "tr": "___ liya chwiya 3afak.",
+   "base": "baisser (le prix)",
+   "answers": [
+    "نقص"
+   ],
+   "answersTr": [
+    "n9es",
+    "n9ess"
+   ],
+   "en": "Baisse un peu le prix, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-10-07",
+   "type": "cloze",
+   "de": "هاك ___ درهم.",
+   "tr": "hak ___ dirham.",
+   "base": "100",
+   "answers": [
+    "مية"
+   ],
+   "answersTr": [
+    "mya",
+    "miya"
+   ],
+   "en": "Tiens, cent dirhams."
+  },
+  {
+   "id": "ary-a1-10-08",
+   "type": "cloze",
+   "de": "___ كيلو د الليمون عافاك.",
+   "tr": "___ kilo d llimoun 3afak.",
+   "base": "donne-moi",
+   "answers": [
+    "عطيني"
+   ],
+   "answersTr": [
+    "3tini"
+   ],
+   "en": "Donne-moi un kilo d’oranges, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-10-09",
+   "type": "choice",
+   "de": "___ درهم.",
+   "tr": "___ dirham.",
+   "options": [
+    "تلاتين",
+    "تلاتة",
+    "ستين"
+   ],
+   "optionsTr": [
+    "tlatin",
+    "tlata",
+    "settin"
+   ],
+   "answer": 0,
+   "why": "-in marque la dizaine : tlata (3) → tlatin (30).",
+   "en": "Trente dirhams."
+  },
+  {
+   "id": "ary-a1-10-10",
+   "type": "choice",
+   "de": "___ و ربعين درهم.",
+   "tr": "___ w rb3in dirham.",
+   "options": [
+    "خمسة",
+    "ربعة",
+    "خمسين"
+   ],
+   "optionsTr": [
+    "khamsa",
+    "rb3a",
+    "khamsin"
+   ],
+   "answer": 0,
+   "why": "L’unité vient d’abord : khamsa (5) w rb3in (40).",
+   "en": "Quarante-cinq dirhams."
+  },
+  {
+   "id": "ary-a1-10-11",
+   "type": "choice",
+   "de": "___ و عشرين درهم.",
+   "tr": "___ w 3chrin dirham.",
+   "options": [
+    "تنين",
+    "جوج",
+    "واحد"
+   ],
+   "optionsTr": [
+    "tnin",
+    "jouj",
+    "wa7ed"
+   ],
+   "answer": 0,
+   "why": "Dans les nombres composés, 2 se dit tnin, pas jouj.",
+   "en": "Vingt-deux dirhams."
+  },
+  {
+   "id": "ary-a1-10-12",
+   "type": "choice",
+   "de": "___ درهم.",
+   "tr": "___ dirham.",
+   "options": [
+    "تمانين",
+    "تمنية",
+    "تسعين"
+   ],
+   "optionsTr": [
+    "tmanin",
+    "tmnya",
+    "tes3in"
+   ],
+   "answer": 0,
+   "why": "Tmenya (8) → tmanin (80).",
+   "en": "Quatre-vingts dirhams."
+  },
+  {
+   "id": "ary-a1-10-13",
+   "type": "choice",
+   "de": "___ هادا؟ — بعشرين درهم.",
+   "tr": "___ hada? — b 3chrin dirham.",
+   "options": [
+    "بشحال",
+    "فين",
+    "شكون"
+   ],
+   "optionsTr": [
+    "b ch7al",
+    "fin",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "On répond par un prix : la question est b ch7al.",
+   "en": "Combien ça coûte ? — Vingt dirhams."
+  },
+  {
+   "id": "ary-a1-10-14",
+   "type": "choice",
+   "de": "مية درهم؟ ___ بزاف!",
+   "tr": "mya dirham? ___ bzzaf!",
+   "options": [
+    "غالي",
+    "رخيص",
+    "صافي"
+   ],
+   "optionsTr": [
+    "ghali",
+    "rkhis",
+    "safi"
+   ],
+   "answer": 0,
+   "why": "Cent dirhams pour ça, c’est cher : ghali.",
+   "en": "Cent dirhams ? C’est trop cher !"
+  },
+  {
+   "id": "ary-a1-10-15",
+   "type": "choice",
+   "de": "___، عطيني جوج كيلو.",
+   "tr": "___, 3tini jouj kilo.",
+   "options": [
+    "صافي",
+    "غالي",
+    "بشحال"
+   ],
+   "optionsTr": [
+    "safi",
+    "ghali",
+    "b ch7al"
+   ],
+   "answer": 0,
+   "why": "Safi = c’est bon, d’accord : on accepte le prix.",
+   "en": "C’est bon, donne-moi deux kilos."
+  },
+  {
+   "id": "ary-a1-10-16",
+   "type": "choice",
+   "de": "تلاتين ___.",
+   "tr": "tlatin ___.",
+   "options": [
+    "درهم",
+    "دراهم"
+   ],
+   "optionsTr": [
+    "dirham",
+    "drahem"
+   ],
+   "answer": 0,
+   "why": "Après 20, 30, 40… le nom reste au singulier : tlatin dirham.",
+   "en": "Trente dirhams."
+  },
+  {
+   "id": "ary-a1-10-17",
+   "type": "order",
+   "tiles": [
+    "b ch7al",
+    "lkilo",
+    "d",
+    "lmaticha"
+   ],
+   "answers": [
+    "b ch7al lkilo d lmaticha"
+   ],
+   "de": "بشحال الكيلو د الماطيشة؟",
+   "en": "Combien coûte le kilo de tomates ?"
+  },
+  {
+   "id": "ary-a1-10-18",
+   "type": "order",
+   "tiles": [
+    "khamsa",
+    "w",
+    "tlatin",
+    "dirham"
+   ],
+   "answers": [
+    "khamsa w tlatin dirham"
+   ],
+   "de": "خمسة و تلاتين درهم.",
+   "en": "Trente-cinq dirhams."
+  },
+  {
+   "id": "ary-a1-10-19",
+   "type": "order",
+   "tiles": [
+    "n9es",
+    "liya",
+    "chwiya",
+    "3afak"
+   ],
+   "answers": [
+    "n9es liya chwiya 3afak",
+    "3afak n9es liya chwiya"
+   ],
+   "de": "نقص ليا شوية عافاك.",
+   "en": "Baisse un peu le prix, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-10-20",
+   "type": "order",
+   "tiles": [
+    "3tini",
+    "jouj",
+    "kilo",
+    "d",
+    "llimoun"
+   ],
+   "answers": [
+    "3tini jouj kilo d llimoun"
+   ],
+   "de": "عطيني جوج كيلو د الليمون.",
+   "en": "Donne-moi deux kilos d’oranges."
+  }
+ ],
+ "listening": {
+  "title": "Au marché central",
+  "intro": "Khadija achète des fruits et légumes au marché central de Casablanca. Le vendeur s’appelle Rachid.",
+  "lines": [
+   {
+    "speaker": "Khadija",
+    "de": "سلام، بشحال الكيلو د الماطيشة؟",
+    "tr": "salam, b ch7al lkilo d lmaticha?",
+    "en": "Bonjour, combien coûte le kilo de tomates ?"
+   },
+   {
+    "speaker": "Rachid",
+    "de": "الماطيشة بستة دراهم الكيلو.",
+    "tr": "lmaticha b setta drahem lkilo.",
+    "en": "Les tomates sont à six dirhams le kilo."
+   },
+   {
+    "speaker": "Khadija",
+    "de": "عطيني جوج كيلو. و الليمون؟",
+    "tr": "3tini jouj kilo. w llimoun?",
+    "en": "Donne-m’en deux kilos. Et les oranges ?"
+   },
+   {
+    "speaker": "Rachid",
+    "de": "الليمون بعشرة دراهم.",
+    "tr": "llimoun b 3achra drahem.",
+    "en": "Les oranges sont à dix dirhams."
+   },
+   {
+    "speaker": "Khadija",
+    "de": "عشرة؟ غالي بزاف! نقص ليا شوية عافاك.",
+    "tr": "3achra? ghali bzzaf! n9es liya chwiya 3afak.",
+    "en": "Dix ? C’est trop cher ! Baisse un peu, s’il te plaît."
+   },
+   {
+    "speaker": "Rachid",
+    "de": "صافي، بتمنية دراهم.",
+    "tr": "safi, b tmnya drahem.",
+    "en": "Bon, à huit dirhams."
+   },
+   {
+    "speaker": "Khadija",
+    "de": "واخا، عطيني تلاتة كيلو.",
+    "tr": "wakha, 3tini tlata kilo.",
+    "en": "D’accord, donne-m’en trois kilos."
+   },
+   {
+    "speaker": "Rachid",
+    "de": "كلشي بستة و تلاتين درهم.",
+    "tr": "kolchi b setta w tlatin dirham.",
+    "en": "Tout ça fait trente-six dirhams."
+   },
+   {
+    "speaker": "Khadija",
+    "de": "هاك ربعين درهم.",
+    "tr": "hak rb3in dirham.",
+    "en": "Tiens, quarante dirhams."
+   },
+   {
+    "speaker": "Rachid",
+    "de": "و هاك ربعة دراهم. بسلامة!",
+    "tr": "w hak rb3a drahem. bslama!",
+    "en": "Et voilà quatre dirhams. Au revoir !"
+   },
+   {
+    "speaker": "Khadija",
+    "de": "شكرا، بسلامة.",
+    "tr": "chokran, bslama.",
+    "en": "Merci, au revoir."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Combien coûte le kilo de tomates ?",
+    "options": [
+     "6 dirhams",
+     "8 dirhams",
+     "10 dirhams"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Quel prix Khadija obtient-elle pour les oranges ?",
+    "options": [
+     "8 dirhams le kilo",
+     "10 dirhams le kilo",
+     "6 dirhams le kilo"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Combien paie-t-elle en tout ?",
+    "options": [
+     "36 dirhams",
+     "40 dirhams",
+     "4 dirhams"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "بشحال هادا؟",
+  "غالي بزاف!",
+  "خمسة و عشرين درهم."
+ ],
+ "dictationTr": [
+  "b ch7al hada?",
+  "ghali bzzaf!",
+  "khamsa w 3chrin dirham."
+ ],
+ "speaking": [
+  {
+   "de": "بشحال الكيلو؟",
+   "tr": "b ch7al lkilo?",
+   "en": "Combien le kilo ?"
+  },
+  {
+   "de": "غالي بزاف!",
+   "tr": "ghali bzzaf!",
+   "en": "C’est trop cher !"
+  },
+  {
+   "de": "نقص ليا شوية عافاك.",
+   "tr": "n9es liya chwiya 3afak.",
+   "en": "Baisse un peu le prix, s’il te plaît."
+  },
+  {
+   "de": "عطيني جوج كيلو د الماطيشة.",
+   "tr": "3tini jouj kilo d lmaticha.",
+   "en": "Donne-moi deux kilos de tomates."
+  },
+  {
+   "de": "صافي، هاك خمسين درهم.",
+   "tr": "safi, hak khamsin dirham.",
+   "en": "C’est bon, voilà cinquante dirhams."
+  }
+ ],
+ "writing": {
+  "task": "Tu fais tes courses au marché. Écris 2 à 4 phrases : demande le prix d’un fruit ou d’un légume, dis que c’est cher, négocie, puis achète. Écris en lettres latines.",
+  "model": "سلام! بشحال الكيلو د التفاح؟ خمسة و عشرين درهم؟ غالي بزاف! نقص ليا شوية عافاك. صافي، عطيني جوج كيلو.",
+  "modelTr": "salam! b ch7al lkilo d tteffa7? khamsa w 3chrin dirham? ghali bzzaf! n9es liya chwiya 3afak. safi, 3tini jouj kilo."
+ }
+}

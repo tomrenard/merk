@@ -1,0 +1,515 @@
+{
+ "id": "ary-a1-11",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Le passé : raconter sa journée",
+ "icon": "🌙",
+ "situation": "Raconter sa journée d’hier",
+ "canDo": "Tu peux raconter ce que tu as fait hier : où tu es allé, ce que tu as mangé et bu, et demander la même chose à quelqu’un.",
+ "explanation": "Au passé, **pas de ka-** : on ajoute une terminaison à la fin du verbe. La forme « il » est la base : *chreb* = il a bu.\n\n| | boire | aller | manger |\n|---|---|---|---|\n| je | chrebt | mchit | klit |\n| tu | chrebti | mchiti | kliti |\n| il | chreb | mcha | kla |\n| elle | chrbat | mchat | klat |\n| nous | chrebna | mchina | klina |\n| vous | chrebtou | mchitou | klitou |\n| ils / elles | chrbou | mchaw | klaw |\n\n- Les verbes comme *chreb*, *khdem* (travailler), *n3es* (dormir) prennent **-t, -ti, rien, -at, -na, -tou, -ou** : *khdemt* = j’ai travaillé.\n- Les verbes qui finissent par une voyelle, comme *mcha* et *kla*, prennent **-it, -iti, -a, -at, -ina, -itou, -aw**.\n- **Lbare7** = hier. *F ssba7* = le matin, *f l3chiya* = l’après-midi, *f llil* = la nuit.\n- **Chno derti lbare7?** = qu’est-ce que tu as fait hier ?\n- Négation avec **ma…ch** autour du verbe : *maklitch* = je n’ai pas mangé, *machrebtch* = je n’ai pas bu.",
+ "french": "Le passé darija sert comme le passé composé à raconter ce qui est fini, mais en un seul mot : chrebt = j’ai bu.",
+ "examples": [
+  {
+   "de": "البارح مشيت للخدمة.",
+   "tr": "lbare7 mchit l lkhedma.",
+   "en": "Hier, je suis allé au travail."
+  },
+  {
+   "de": "شنو درتي البارح؟",
+   "tr": "chno derti lbare7?",
+   "en": "Qu’est-ce que tu as fait hier ?"
+  },
+  {
+   "de": "كليت الطاجين مع صحابي.",
+   "tr": "klit ttajine m3a s7abi.",
+   "en": "J’ai mangé un tajine avec mes amis."
+  },
+  {
+   "de": "شربت أتاي ف الصباح.",
+   "tr": "chrebt atay f ssba7.",
+   "en": "J’ai bu du thé le matin."
+  },
+  {
+   "de": "هي مشات للبحر.",
+   "tr": "hiya mchat l lb7er.",
+   "en": "Elle est allée à la plage."
+  },
+  {
+   "de": "خدمنا حتى للعشية.",
+   "tr": "khdemna 7tta l l3chiya.",
+   "en": "Nous avons travaillé jusqu’à l’après-midi."
+  },
+  {
+   "de": "ماكليتش ف الليل.",
+   "tr": "maklitch f llil.",
+   "en": "Je n’ai pas mangé le soir."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-11-01",
+   "type": "cloze",
+   "de": "البارح ___ للخدمة.",
+   "tr": "lbare7 ___ l lkhedma.",
+   "base": "aller (je)",
+   "answers": [
+    "مشيت"
+   ],
+   "answersTr": [
+    "mchit"
+   ],
+   "en": "Hier, je suis allé au travail."
+  },
+  {
+   "id": "ary-a1-11-02",
+   "type": "cloze",
+   "de": "___ أتاي ف الصباح.",
+   "tr": "___ atay f ssba7.",
+   "base": "boire (je)",
+   "answers": [
+    "شربت"
+   ],
+   "answersTr": [
+    "chrebt",
+    "chrbt"
+   ],
+   "en": "J’ai bu du thé le matin."
+  },
+  {
+   "id": "ary-a1-11-03",
+   "type": "cloze",
+   "de": "شنو ___ البارح؟",
+   "tr": "chno ___ lbare7?",
+   "base": "manger (tu)",
+   "answers": [
+    "كليتي"
+   ],
+   "answersTr": [
+    "kliti"
+   ],
+   "en": "Qu’est-ce que tu as mangé hier ?"
+  },
+  {
+   "id": "ary-a1-11-04",
+   "type": "cloze",
+   "de": "سلمى ___ للسوق.",
+   "tr": "salma ___ l ssou9.",
+   "base": "aller (elle)",
+   "answers": [
+    "مشات"
+   ],
+   "answersTr": [
+    "mchat"
+   ],
+   "en": "Salma est allée au marché."
+  },
+  {
+   "id": "ary-a1-11-05",
+   "type": "cloze",
+   "de": "حنا ___ الطاجين.",
+   "tr": "7na ___ ttajine.",
+   "base": "manger (nous)",
+   "answers": [
+    "كلينا"
+   ],
+   "answersTr": [
+    "klina"
+   ],
+   "en": "Nous avons mangé un tajine."
+  },
+  {
+   "id": "ary-a1-11-06",
+   "type": "cloze",
+   "de": "البارح ___ حتى للعشية.",
+   "tr": "lbare7 ___ 7tta l l3chiya.",
+   "base": "travailler (je)",
+   "answers": [
+    "خدمت"
+   ],
+   "answersTr": [
+    "khdemt",
+    "khdmt"
+   ],
+   "en": "Hier, j’ai travaillé jusqu’à l’après-midi."
+  },
+  {
+   "id": "ary-a1-11-07",
+   "type": "cloze",
+   "de": "هوما ___ القهوة.",
+   "tr": "homa ___ l9hwa.",
+   "base": "boire (ils)",
+   "answers": [
+    "شربو"
+   ],
+   "answersTr": [
+    "chrbou",
+    "chorbou",
+    "chrebou"
+   ],
+   "en": "Ils ont bu du café."
+  },
+  {
+   "id": "ary-a1-11-08",
+   "type": "cloze",
+   "de": "أنا ___ القهوة البارح.",
+   "tr": "ana ___ l9hwa lbare7.",
+   "base": "ne pas boire (je)",
+   "answers": [
+    "ماشربتش"
+   ],
+   "answersTr": [
+    "machrebtch",
+    "ma chrebtch"
+   ],
+   "en": "Je n’ai pas bu de café hier."
+  },
+  {
+   "id": "ary-a1-11-09",
+   "type": "choice",
+   "de": "يوسف ___ للخدمة.",
+   "tr": "youssef ___ l lkhedma.",
+   "options": [
+    "مشا",
+    "مشات",
+    "مشيت"
+   ],
+   "optionsTr": [
+    "mcha",
+    "mchat",
+    "mchit"
+   ],
+   "answer": 0,
+   "why": "Youssef = il : mcha.",
+   "en": "Youssef est allé au travail."
+  },
+  {
+   "id": "ary-a1-11-10",
+   "type": "choice",
+   "de": "نتي ___ أتاي؟",
+   "tr": "nti ___ atay?",
+   "options": [
+    "شربتي",
+    "شربت",
+    "شربنا"
+   ],
+   "optionsTr": [
+    "chrebti",
+    "chrebt",
+    "chrebna"
+   ],
+   "answer": 0,
+   "why": "Tu : -ti, chrebti.",
+   "en": "Tu as bu du thé ? (à une femme)"
+  },
+  {
+   "id": "ary-a1-11-11",
+   "type": "choice",
+   "de": "البارح ___ الطاجين مع صحابي.",
+   "tr": "lbare7 ___ ttajine m3a s7abi.",
+   "options": [
+    "كليت",
+    "كناكل",
+    "كلا"
+   ],
+   "optionsTr": [
+    "klit",
+    "kanakol",
+    "kla"
+   ],
+   "answer": 0,
+   "why": "Hier, c’est fini : passé sans ka-, et je → klit.",
+   "en": "Hier, j’ai mangé un tajine avec mes amis."
+  },
+  {
+   "id": "ary-a1-11-12",
+   "type": "choice",
+   "de": "حنا ___ للبحر.",
+   "tr": "7na ___ l lb7er.",
+   "options": [
+    "مشينا",
+    "مشاو",
+    "مشيتو"
+   ],
+   "optionsTr": [
+    "mchina",
+    "mchaw",
+    "mchitou"
+   ],
+   "answer": 0,
+   "why": "Nous : -ina, mchina.",
+   "en": "Nous sommes allés à la plage."
+  },
+  {
+   "id": "ary-a1-11-13",
+   "type": "choice",
+   "de": "___ درتي البارح؟",
+   "tr": "___ derti lbare7?",
+   "options": [
+    "شنو",
+    "شكون",
+    "شحال"
+   ],
+   "optionsTr": [
+    "chno",
+    "chkoun",
+    "ch7al"
+   ],
+   "answer": 0,
+   "why": "On demande quoi : chno.",
+   "en": "Qu’est-ce que tu as fait hier ?"
+  },
+  {
+   "id": "ary-a1-11-14",
+   "type": "choice",
+   "de": "مريم و هاجر ___ القهوة.",
+   "tr": "meryem w hajar ___ l9hwa.",
+   "options": [
+    "شربو",
+    "شربات",
+    "شرب"
+   ],
+   "optionsTr": [
+    "chrbou",
+    "chrbat",
+    "chreb"
+   ],
+   "answer": 0,
+   "why": "Deux personnes = ils / elles : chrbou.",
+   "en": "Meryem et Hajar ont bu du café."
+  },
+  {
+   "id": "ary-a1-11-15",
+   "type": "choice",
+   "de": "___ مشيت للسوق.",
+   "tr": "___ mchit l ssou9.",
+   "options": [
+    "البارح",
+    "دابا",
+    "كل نهار"
+   ],
+   "optionsTr": [
+    "lbare7",
+    "daba",
+    "koll nhar"
+   ],
+   "answer": 0,
+   "why": "Mchit est au passé : lbare7 (hier).",
+   "en": "Hier, je suis allé au marché."
+  },
+  {
+   "id": "ary-a1-11-16",
+   "type": "choice",
+   "de": "سارة ___ مزيان البارح.",
+   "tr": "sara ___ mzyan lbare7.",
+   "options": [
+    "نعسات",
+    "نعست",
+    "نعسو"
+   ],
+   "optionsTr": [
+    "n3sat",
+    "n3est",
+    "n3sou"
+   ],
+   "answer": 0,
+   "why": "Sara = elle : -at, n3sat.",
+   "en": "Sara a bien dormi hier."
+  },
+  {
+   "id": "ary-a1-11-17",
+   "type": "order",
+   "tiles": [
+    "lbare7",
+    "mchit",
+    "l lkhedma"
+   ],
+   "answers": [
+    "lbare7 mchit l lkhedma",
+    "mchit l lkhedma lbare7"
+   ],
+   "de": "البارح مشيت للخدمة.",
+   "en": "Hier, je suis allé au travail."
+  },
+  {
+   "id": "ary-a1-11-18",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "derti",
+    "lbare7"
+   ],
+   "answers": [
+    "chno derti lbare7"
+   ],
+   "de": "شنو درتي البارح؟",
+   "en": "Qu’est-ce que tu as fait hier ?"
+  },
+  {
+   "id": "ary-a1-11-19",
+   "type": "order",
+   "tiles": [
+    "klit",
+    "ttajine",
+    "m3a",
+    "s7abi"
+   ],
+   "answers": [
+    "klit ttajine m3a s7abi"
+   ],
+   "de": "كليت الطاجين مع صحابي.",
+   "en": "J’ai mangé un tajine avec mes amis."
+  },
+  {
+   "id": "ary-a1-11-20",
+   "type": "order",
+   "tiles": [
+    "chrebt",
+    "atay",
+    "f ssba7"
+   ],
+   "answers": [
+    "chrebt atay f ssba7",
+    "f ssba7 chrebt atay"
+   ],
+   "de": "شربت أتاي ف الصباح.",
+   "en": "J’ai bu du thé le matin."
+  }
+ ],
+ "listening": {
+  "title": "Le dimanche d’Omar",
+  "intro": "Lundi matin, Amina et Omar, deux collègues, parlent de leur dimanche pendant la pause café.",
+  "lines": [
+   {
+    "speaker": "Amina",
+    "de": "صباح الخير عمر! شنو درتي البارح؟",
+    "tr": "sba7 lkhir omar! chno derti lbare7?",
+    "en": "Bonjour Omar ! Qu’est-ce que tu as fait hier ?"
+   },
+   {
+    "speaker": "Omar",
+    "de": "صباح النور. مشيت للبحر مع صحابي.",
+    "tr": "sba7 nnour. mchit l lb7er m3a s7abi.",
+    "en": "Bonjour. Je suis allé à la plage avec mes amis."
+   },
+   {
+    "speaker": "Amina",
+    "de": "مزيان! و فين كليتو؟",
+    "tr": "mzyan! w fin klitou?",
+    "en": "Super ! Et où avez-vous mangé ?"
+   },
+   {
+    "speaker": "Omar",
+    "de": "كلينا الحوت ف عين الدياب.",
+    "tr": "klina l7out f 3in ddiab.",
+    "en": "Nous avons mangé du poisson à Aïn Diab."
+   },
+   {
+    "speaker": "Amina",
+    "de": "و من بعد؟",
+    "tr": "w men ba3d?",
+    "en": "Et après ?"
+   },
+   {
+    "speaker": "Omar",
+    "de": "شربنا أتاي و رجعنا ف الليل. و نتي؟",
+    "tr": "chrebna atay w rje3na f llil. w nti?",
+    "en": "Nous avons bu du thé et nous sommes rentrés le soir. Et toi ?"
+   },
+   {
+    "speaker": "Amina",
+    "de": "أنا ماخرجتش.",
+    "tr": "ana makhrejtch.",
+    "en": "Moi, je ne suis pas sortie."
+   },
+   {
+    "speaker": "Amina",
+    "de": "خدمت ف الدار و نعست بكري.",
+    "tr": "khdemt f ddar w n3est bekri.",
+    "en": "J’ai travaillé à la maison et je me suis couchée tôt."
+   },
+   {
+    "speaker": "Omar",
+    "de": "مسكينة!",
+    "tr": "meskina!",
+    "en": "Ma pauvre !"
+   },
+   {
+    "speaker": "Amina",
+    "de": "لا، مزيان، نعست بزاف!",
+    "tr": "la, mzyan, n3est bzzaf!",
+    "en": "Non, c’est bien, j’ai beaucoup dormi !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Où Omar est-il allé hier ?",
+    "options": [
+     "À la plage",
+     "Au travail",
+     "Au marché"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Qu’est-ce qu’il a mangé ?",
+    "options": [
+     "Du poisson",
+     "Un tajine",
+     "Un msemmen"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Qu’a fait Amina ?",
+    "options": [
+     "Elle a travaillé à la maison et dormi tôt",
+     "Elle est allée à la plage",
+     "Elle a mangé avec des amis"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "مشيت للخدمة.",
+  "شربت أتاي.",
+  "شنو درتي البارح؟"
+ ],
+ "dictationTr": [
+  "mchit l lkhedma.",
+  "chrebt atay.",
+  "chno derti lbare7?"
+ ],
+ "speaking": [
+  {
+   "de": "شنو درتي البارح؟",
+   "tr": "chno derti lbare7?",
+   "en": "Qu’est-ce que tu as fait hier ?"
+  },
+  {
+   "de": "البارح مشيت للخدمة.",
+   "tr": "lbare7 mchit l lkhedma.",
+   "en": "Hier, je suis allé au travail."
+  },
+  {
+   "de": "كليت الطاجين مع صحابي.",
+   "tr": "klit ttajine m3a s7abi.",
+   "en": "J’ai mangé un tajine avec mes amis."
+  },
+  {
+   "de": "شربت أتاي ف الصباح.",
+   "tr": "chrebt atay f ssba7.",
+   "en": "J’ai bu du thé le matin."
+  },
+  {
+   "de": "ماكليتش ف الليل.",
+   "tr": "maklitch f llil.",
+   "en": "Je n’ai pas mangé le soir."
+  }
+ ],
+ "writing": {
+  "task": "Raconte ta journée d’hier en 2 à 4 phrases : où tu es allé, ce que tu as mangé et bu. Écris en lettres latines.",
+  "model": "البارح مشيت للخدمة ف الصباح. كليت مع صحابي و شربت أتاي. ف الليل نعست بكري.",
+  "modelTr": "lbare7 mchit l lkhedma f ssba7. klit m3a s7abi w chrebt atay. f llil n3est bekri."
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "ary-a1-05",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les possessifs et la famille",
+ "icon": "👪",
+ "situation": "Présenter sa famille",
+ "canDo": "Tu peux présenter les membres de ta famille et dire « mon, ton, son… » avec les suffixes ou avec dyal.",
+ "explanation": "En darija, « mon, ton, son » **se collent à la fin du nom**. Tu connais déjà *smit-i* (mon nom) et *smit-ek* (ton nom).\n\n| | suffixe | wld (fils) | avec dyal |\n|---|---|---|---|\n| mon | -i | wldi | dyali |\n| ton | -ek | wldek | dyalek |\n| son (à lui) | -o | wldo | dyalo |\n| son (à elle) | -ha | wldha | dyalha |\n| notre | -na | wldna | dyalna |\n| votre | -kom | wldkom | dyalkom |\n| leur | -hom | wldhom | dyalhom |\n\n- **Dyal** = « de, à » : *lfamilya dyali* = ma famille (mot à mot : la famille à moi). Pour la famille proche, on utilise surtout le suffixe : *khti*, *wldi*.\n- La famille : **baba** (papa), **mama** (maman), **khoya** (mon frère), **khti** (ma sœur), **rajli** (mon mari), **mrati** (ma femme), **wldi** (mon fils), **bnti** (ma fille), **lwlad** (les enfants).\n- *Khoya* est irrégulier : *khouk* = ton frère.\n- **Hada** (homme) / **hadi** (femme) = voici, c’est : *hada khoya*, *hadi khti*.\n- **3ndi jouj d lwlad** = j’ai deux enfants.\n\nDans *khti* et *bnti*, les consonnes s’enchaînent sans voyelle : dis-les d’un seul souffle.",
+ "french": "En français, « mon » se met devant le nom ; en darija, il se colle derrière : khti = ma sœur.",
+ "examples": [
+  {"de": "هادا خويا يوسف.", "tr": "hada khoya youssef.", "en": "Voici mon frère Youssef."},
+  {"de": "هادي ختي، سميتها ليلى.", "tr": "hadi khti, smitha layla.", "en": "Voici ma sœur, elle s’appelle Layla."},
+  {"de": "بابا من كازا و ماما من الرباط.", "tr": "baba men kaza w mama men rbat.", "en": "Papa est de Casa et maman est de Rabat."},
+  {"de": "عندي جوج د الولاد.", "tr": "3ndi jouj d lwlad.", "en": "J’ai deux enfants."},
+  {"de": "ولدي عندو طناش العام.", "tr": "wldi 3ndo tnach l3am.", "en": "Mon fils a douze ans."},
+  {"de": "شنو سميت راجلك؟", "tr": "chno smit rajlek?", "en": "Comment s’appelle ton mari ?"},
+  {"de": "هادي الفاميلة ديالي.", "tr": "hadi lfamilya dyali.", "en": "Voici ma famille."},
+  {"de": "مراتي فرانساوية.", "tr": "mrati fransawiya.", "en": "Ma femme est française."}
+ ],
+ "items": [
+  {"id": "ary-a1-05-01", "type": "cloze", "de": "هادا ___ يوسف.", "tr": "hada ___ youssef.", "base": "mon frère", "answers": ["خويا"], "answersTr": ["khoya", "khouya"], "en": "Voici mon frère Youssef."},
+  {"id": "ary-a1-05-02", "type": "cloze", "de": "هادي ___ ليلى.", "tr": "hadi ___ layla.", "base": "ma sœur", "answers": ["ختي"], "answersTr": ["khti"], "en": "Voici ma sœur Layla."},
+  {"id": "ary-a1-05-03", "type": "cloze", "de": "___ عندو عشرين عام.", "tr": "___ 3ndo 3chrin 3am.", "base": "mon fils", "answers": ["ولدي"], "answersTr": ["wldi", "weldi"], "en": "Mon fils a vingt ans."},
+  {"id": "ary-a1-05-04", "type": "cloze", "de": "___ عندها سطاش العام.", "tr": "___ 3ndha settach l3am.", "base": "ma fille", "answers": ["بنتي"], "answersTr": ["bnti", "benti"], "en": "Ma fille a seize ans."},
+  {"id": "ary-a1-05-05", "type": "cloze", "de": "___ من فرانسا.", "tr": "___ men fransa.", "base": "ma femme", "answers": ["مراتي"], "answersTr": ["mrati"], "en": "Ma femme est de France."},
+  {"id": "ary-a1-05-06", "type": "cloze", "de": "___ من كازا.", "tr": "___ men kaza.", "base": "mon mari", "answers": ["راجلي"], "answersTr": ["rajli"], "en": "Mon mari est de Casa."},
+  {"id": "ary-a1-05-07", "type": "cloze", "de": "هادي الفاميلة ___.", "tr": "hadi lfamilya ___.", "base": "à nous (dyal)", "answers": ["ديالنا"], "answersTr": ["dyalna", "dialna"], "en": "Voici notre famille."},
+  {"id": "ary-a1-05-08", "type": "cloze", "de": "عندي جوج د ___.", "tr": "3ndi jouj d ___.", "base": "les enfants", "answers": ["الولاد"], "answersTr": ["lwlad"], "en": "J’ai deux enfants."},
+  {"id": "ary-a1-05-09", "type": "choice", "de": "شنو سميت ___؟", "tr": "chno smit ___?", "options": ["ولدك", "ولدي"], "optionsTr": ["wldek", "wldi"], "answer": 0, "why": "Ton = -ek : wldek.", "en": "Comment s’appelle ton fils ?"},
+  {"id": "ary-a1-05-10", "type": "choice", "de": "هادي الدار ___.", "tr": "hadi ddar ___.", "options": ["ديالي", "ديالو"], "optionsTr": ["dyali", "dyalo"], "answer": 0, "why": "Ma = dyali ; dyalo = à lui.", "en": "Voici ma maison."},
+  {"id": "ary-a1-05-11", "type": "choice", "de": "سارة و ___ من ليون.", "tr": "sara w ___ men lyon.", "options": ["راجلها", "راجلو", "راجلي"], "optionsTr": ["rajlha", "rajlo", "rajli"], "answer": 0, "why": "Son (à elle) = -ha : rajlha.", "en": "Sara et son mari sont de Lyon."},
+  {"id": "ary-a1-05-12", "type": "choice", "de": "يوسف و ___ من كازا.", "tr": "youssef w ___ men kaza.", "options": ["مراتو", "مراتها"], "optionsTr": ["mrato", "mratha"], "answer": 0, "why": "Sa (à lui) = -o : mrato.", "en": "Youssef et sa femme sont de Casa."},
+  {"id": "ary-a1-05-13", "type": "choice", "de": "هادا ___، سميتو مهدي.", "tr": "hada ___, smito mehdi.", "options": ["خويا", "ختي"], "optionsTr": ["khoya", "khti"], "answer": 0, "why": "Hada et smito : c’est un homme, donc khoya.", "en": "Voici mon frère, il s’appelle Mehdi."},
+  {"id": "ary-a1-05-14", "type": "choice", "de": "هادي الفاميلة ___؟", "tr": "hadi lfamilya ___?", "options": ["ديالكم", "ديالهم", "ديالنا"], "optionsTr": ["dyalkom", "dyalhom", "dyalna"], "answer": 0, "why": "Votre (à plusieurs) = dyalkom.", "en": "C’est votre famille ? (à plusieurs)"},
+  {"id": "ary-a1-05-15", "type": "choice", "de": "سميت ___ ليلى.", "tr": "smit ___ layla.", "options": ["بنتها", "بنتو", "بنتي"], "optionsTr": ["bntha", "bnto", "bnti"], "answer": 0, "why": "Sa (à elle) = -ha : bntha.", "en": "Sa fille (à elle) s’appelle Layla."},
+  {"id": "ary-a1-05-16", "type": "choice", "de": "___ ماما.", "tr": "___ mama.", "options": ["هادي", "هادا"], "optionsTr": ["hadi", "hada"], "answer": 0, "why": "Mama est une femme : hadi.", "en": "Voici maman."},
+  {"id": "ary-a1-05-17", "type": "order", "tiles": ["hada", "khoya", "youssef"], "answers": ["hada khoya youssef"], "de": "هادا خويا يوسف.", "en": "Voici mon frère Youssef."},
+  {"id": "ary-a1-05-18", "type": "order", "tiles": ["hadi", "lfamilya", "dyali"], "answers": ["hadi lfamilya dyali"], "de": "هادي الفاميلة ديالي.", "en": "Voici ma famille."},
+  {"id": "ary-a1-05-19", "type": "order", "tiles": ["3ndi", "jouj", "d", "lwlad"], "answers": ["3ndi jouj d lwlad"], "de": "عندي جوج د الولاد.", "en": "J’ai deux enfants."},
+  {"id": "ary-a1-05-20", "type": "order", "tiles": ["khti", "3ndha", "3chrin", "3am"], "answers": ["khti 3ndha 3chrin 3am"], "de": "ختي عندها عشرين عام.", "en": "Ma sœur a vingt ans."}
+ ],
+ "listening": {
+  "title": "Les photos de famille",
+  "intro": "Nadia montre des photos de sa famille à son collègue Rachid.",
+  "lines": [
+   {"speaker": "Rachid", "de": "هادي الفاميلة ديالك؟", "tr": "hadi lfamilya dyalek?", "en": "C’est ta famille ?"},
+   {"speaker": "Nadia", "de": "آه، هادي الفاميلة ديالي. هادا بابا و هادي ماما.", "tr": "ah, hadi lfamilya dyali. hada baba w hadi mama.", "en": "Oui, c’est ma famille. Voici papa et voici maman."},
+   {"speaker": "Rachid", "de": "و هادا؟", "tr": "w hada?", "en": "Et lui ?"},
+   {"speaker": "Nadia", "de": "هادا خويا مهدي. عندو سطاش العام.", "tr": "hada khoya mehdi. 3ndo settach l3am.", "en": "C’est mon frère Mehdi. Il a seize ans."},
+   {"speaker": "Rachid", "de": "و هادي ختك؟", "tr": "w hadi khtek?", "en": "Et elle, c’est ta sœur ?"},
+   {"speaker": "Nadia", "de": "لا، ماشي ختي. هادي بنتي، سميتها سلمى.", "tr": "la, machi khti. hadi bnti, smitha salma.", "en": "Non, ce n’est pas ma sœur. C’est ma fille, elle s’appelle Salma."},
+   {"speaker": "Rachid", "de": "بنتك؟ شحال ف عمرها؟", "tr": "bntek? ch7al f 3mrha?", "en": "Ta fille ? Quel âge a-t-elle ?"},
+   {"speaker": "Nadia", "de": "عندها طناش العام.", "tr": "3ndha tnach l3am.", "en": "Elle a douze ans."},
+   {"speaker": "Rachid", "de": "و راجلك؟", "tr": "w rajlek?", "en": "Et ton mari ?"},
+   {"speaker": "Nadia", "de": "راجلي هو هادا، سميتو حميد.", "tr": "rajli howa hada, smito 7amid.", "en": "Mon mari, c’est lui, il s’appelle Hamid."}
+  ],
+  "questions": [
+   {"q": "Comment s’appelle le frère de Nadia ?", "options": ["Mehdi", "Hamid", "Rachid"], "answer": 0},
+   {"q": "Qui est Salma ?", "options": ["La fille de Nadia", "La sœur de Nadia", "La mère de Nadia"], "answer": 0},
+   {"q": "Quel âge a Salma ?", "options": ["12 ans", "16 ans", "20 ans"], "answer": 0}
+  ]
+ },
+ "dictation": ["هادا خويا.", "هادي ختي.", "هادي الفاميلة ديالي."],
+ "dictationTr": ["hada khoya.", "hadi khti.", "hadi lfamilya dyali."],
+ "speaking": [
+  {"de": "هادي الفاميلة ديالي.", "tr": "hadi lfamilya dyali.", "en": "Voici ma famille."},
+  {"de": "هادا بابا و هادي ماما.", "tr": "hada baba w hadi mama.", "en": "Voici papa et voici maman."},
+  {"de": "خويا سميتو يوسف.", "tr": "khoya smito youssef.", "en": "Mon frère s’appelle Youssef."},
+  {"de": "شنو سميت ختك؟", "tr": "chno smit khtek?", "en": "Comment s’appelle ta sœur ?"},
+  {"de": "ولدي عندو طناش العام.", "tr": "wldi 3ndo tnach l3am.", "en": "Mon fils a douze ans."}
+ ],
+ "writing": {
+  "task": "Présente trois personnes de ta famille : qui elles sont pour toi, leur nom et leur âge. Écris en lettres latines.",
+  "model": "هادي الفاميلة ديالي. هادا بابا، من ليون. هادي ختي، سميتها سارة، عندها عشرين عام. و هادا خويا، عندو طناش العام.",
+  "modelTr": "hadi lfamilya dyali. hada baba, men lyon. hadi khti, smitha sara, 3ndha 3chrin 3am. w hada khoya, 3ndo tnach l3am."
+ }
+}

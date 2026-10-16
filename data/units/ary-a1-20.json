@@ -1,0 +1,505 @@
+{
+ "id": "ary-a1-20",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Au téléphone",
+ "icon": "📞",
+ "situation": "Au téléphone",
+ "canDo": "Tu peux répondre au téléphone, demander à parler à quelqu’un, fixer un rendez-vous et dire que tu rappelleras.",
+ "explanation": "Au téléphone, quelques mots reviennent tout le temps :\n\n| darija | français |\n|---|---|\n| alo | allô |\n| chkoun m3aya? | qui est à l’appareil ? |\n| wakha | d’accord |\n| safi | c’est bon, ça marche |\n| n3ayet lik | je t’appelle |\n| 3ayet liya | appelle-moi |\n| ma sme3tekch | je ne t’ai pas entendu |\n| 3awed 3afak | répète, s’il te plaît |\n\n- **N3ayet lik** = le verbe *3ayet* (appeler) + **lik** (à toi). Comme pour *kayder liya* : **liya** (à moi), **lik** (à toi), **lih** (à lui), **liha** (à elle).\n- Futur : **ghadi n3ayet lik ghedda** = je t’appellerai demain.\n- Impératif : **3ayet liya** (à un homme), **3ayti liya** (à une femme).\n- **Wach n9der nhder m3a…?** = est-ce que je peux parler avec… ? Réponse possible : **makaynch / makaynach daba** = il / elle n’est pas là maintenant.\n- Rendez-vous : **fin ntla9aw?** = où on se retrouve ? **Ntla9aw f l3achra** = on se retrouve à dix heures.\n- **Safi** sert aussi à finir l’appel : *safi, bslama!*\n\nAu Maroc, on envoie souvent un message vocal plutôt que d’appeler : les mêmes mots marchent !",
+ "french": "Comme « d’accord » et « bon » en français, wakha et safi servent à dire oui et à clore une conversation.",
+ "examples": [
+  {
+   "de": "ألو، شكون معايا؟",
+   "tr": "alo, chkoun m3aya?",
+   "en": "Allô, qui est à l’appareil ?"
+  },
+  {
+   "de": "أنا عمر. واش نقدر نهضر مع سلمى؟",
+   "tr": "ana omar. wach n9der nhder m3a salma?",
+   "en": "C’est Omar. Est-ce que je peux parler avec Salma ?"
+  },
+  {
+   "de": "ماكايناش دابا.",
+   "tr": "makaynach daba.",
+   "en": "Elle n’est pas là maintenant."
+  },
+  {
+   "de": "واخا، غادي نعيط ليها من بعد.",
+   "tr": "wakha, ghadi n3ayet liha men ba3d.",
+   "en": "D’accord, je l’appellerai plus tard."
+  },
+  {
+   "de": "عيط ليا غدا ف العشرة.",
+   "tr": "3ayet liya ghedda f l3achra.",
+   "en": "Appelle-moi demain à dix heures."
+  },
+  {
+   "de": "ما سمعتكش، عاود عافاك.",
+   "tr": "ma sme3tekch, 3awed 3afak.",
+   "en": "Je ne t’ai pas entendu, répète s’il te plaît."
+  },
+  {
+   "de": "فين نتلاقاو؟",
+   "tr": "fin ntla9aw?",
+   "en": "Où est-ce qu’on se retrouve ?"
+  },
+  {
+   "de": "صافي، بسلامة!",
+   "tr": "safi, bslama!",
+   "en": "C’est bon, au revoir !"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-20-01",
+   "type": "cloze",
+   "de": "ألو، ___ معايا؟",
+   "tr": "alo, ___ m3aya?",
+   "base": "qui",
+   "answers": [
+    "شكون"
+   ],
+   "answersTr": [
+    "chkoun"
+   ],
+   "en": "Allô, qui est à l’appareil ?"
+  },
+  {
+   "id": "ary-a1-20-02",
+   "type": "cloze",
+   "de": "غادي ___ ليك غدا.",
+   "tr": "ghadi ___ lik ghedda.",
+   "base": "appeler (je)",
+   "answers": [
+    "نعيط"
+   ],
+   "answersTr": [
+    "n3ayet"
+   ],
+   "en": "Je t’appellerai demain."
+  },
+  {
+   "id": "ary-a1-20-03",
+   "type": "cloze",
+   "de": "___ ليا ف العشرة.",
+   "tr": "___ liya f l3achra.",
+   "base": "appelle (à un homme)",
+   "answers": [
+    "عيط"
+   ],
+   "answersTr": [
+    "3ayet"
+   ],
+   "en": "Appelle-moi à dix heures."
+  },
+  {
+   "id": "ary-a1-20-04",
+   "type": "cloze",
+   "de": "ما سمعتكش، ___ عافاك.",
+   "tr": "ma sme3tekch, ___ 3afak.",
+   "base": "répète",
+   "answers": [
+    "عاود"
+   ],
+   "answersTr": [
+    "3awed"
+   ],
+   "en": "Je ne t’ai pas entendu, répète s’il te plaît."
+  },
+  {
+   "id": "ary-a1-20-05",
+   "type": "cloze",
+   "de": "___، بسلامة!",
+   "tr": "___, bslama!",
+   "base": "c’est bon",
+   "answers": [
+    "صافي"
+   ],
+   "answersTr": [
+    "safi"
+   ],
+   "en": "C’est bon, au revoir !"
+  },
+  {
+   "id": "ary-a1-20-06",
+   "type": "cloze",
+   "de": "واش نقدر ___ مع كريم؟",
+   "tr": "wach n9der ___ m3a karim?",
+   "base": "parler (je)",
+   "answers": [
+    "نهضر"
+   ],
+   "answersTr": [
+    "nhder"
+   ],
+   "en": "Est-ce que je peux parler avec Karim ?"
+  },
+  {
+   "id": "ary-a1-20-07",
+   "type": "cloze",
+   "de": "___ نتلاقاو؟",
+   "tr": "___ ntla9aw?",
+   "base": "où",
+   "answers": [
+    "فين"
+   ],
+   "answersTr": [
+    "fin"
+   ],
+   "en": "Où est-ce qu’on se retrouve ?"
+  },
+  {
+   "id": "ary-a1-20-08",
+   "type": "cloze",
+   "de": "غادي نعيط ___ من بعد.",
+   "tr": "ghadi n3ayet ___ men ba3d.",
+   "base": "à elle",
+   "answers": [
+    "ليها"
+   ],
+   "answersTr": [
+    "liha"
+   ],
+   "en": "Je l’appellerai plus tard. (elle)"
+  },
+  {
+   "id": "ary-a1-20-09",
+   "type": "choice",
+   "de": "نتلاقاو ف العشرة؟ — ___!",
+   "tr": "ntla9aw f l3achra? — ___!",
+   "options": [
+    "واخا",
+    "شكون"
+   ],
+   "optionsTr": [
+    "wakha",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "Wakha = d’accord ; chkoun = qui.",
+   "en": "On se retrouve à dix heures ? — D’accord !"
+  },
+  {
+   "id": "ary-a1-20-10",
+   "type": "choice",
+   "de": "عيط ___ غدا.",
+   "tr": "3ayet ___ ghedda.",
+   "options": [
+    "ليا",
+    "فيا"
+   ],
+   "optionsTr": [
+    "liya",
+    "fiya"
+   ],
+   "answer": 0,
+   "why": "3ayet liya = appelle-moi (à moi) ; fiya = en moi.",
+   "en": "Appelle-moi demain."
+  },
+  {
+   "id": "ary-a1-20-11",
+   "type": "choice",
+   "de": "___ ليا غدا.",
+   "tr": "___ liya ghedda.",
+   "options": [
+    "عيطي",
+    "عيط"
+   ],
+   "optionsTr": [
+    "3ayti",
+    "3ayet"
+   ],
+   "answer": 0,
+   "why": "À une femme, l’impératif prend -i : 3ayti.",
+   "en": "Appelle-moi demain. (à une femme)"
+  },
+  {
+   "id": "ary-a1-20-12",
+   "type": "choice",
+   "de": "سلمى ___ دابا.",
+   "tr": "salma ___ daba.",
+   "options": [
+    "ماكايناش",
+    "ماكاينش"
+   ],
+   "optionsTr": [
+    "makaynach",
+    "makaynch"
+   ],
+   "answer": 0,
+   "why": "Salma est une femme : makaynach.",
+   "en": "Salma n’est pas là maintenant."
+  },
+  {
+   "id": "ary-a1-20-13",
+   "type": "choice",
+   "de": "غدا ___ نعيط ليك.",
+   "tr": "ghedda ___ n3ayet lik.",
+   "options": [
+    "غادي",
+    "كان"
+   ],
+   "optionsTr": [
+    "ghadi",
+    "kan"
+   ],
+   "answer": 0,
+   "why": "Pour le futur : ghadi + verbe.",
+   "en": "Demain, je t’appellerai."
+  },
+  {
+   "id": "ary-a1-20-14",
+   "type": "choice",
+   "de": "ما ___، عاود عافاك.",
+   "tr": "ma ___, 3awed 3afak.",
+   "options": [
+    "سمعتكش",
+    "سمعتك"
+   ],
+   "optionsTr": [
+    "sme3tekch",
+    "sme3tek"
+   ],
+   "answer": 0,
+   "why": "La négation entoure le verbe : ma … ch.",
+   "en": "Je ne t’ai pas entendu, répète s’il te plaît."
+  },
+  {
+   "id": "ary-a1-20-15",
+   "type": "choice",
+   "de": "واش ___ نهضر مع مهدي؟",
+   "tr": "wach ___ nhder m3a mehdi?",
+   "options": [
+    "نقدر",
+    "فين",
+    "شكون"
+   ],
+   "optionsTr": [
+    "n9der",
+    "fin",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "N9der + verbe = je peux…",
+   "en": "Est-ce que je peux parler avec Mehdi ?"
+  },
+  {
+   "id": "ary-a1-20-16",
+   "type": "choice",
+   "de": "___ معايا؟ — أنا خديجة.",
+   "tr": "___ m3aya? — ana khadija.",
+   "options": [
+    "شكون",
+    "شنو",
+    "فين"
+   ],
+   "optionsTr": [
+    "chkoun",
+    "chno",
+    "fin"
+   ],
+   "answer": 0,
+   "why": "Pour une personne, on demande chkoun (qui).",
+   "en": "Qui est à l’appareil ? — C’est Khadija."
+  },
+  {
+   "id": "ary-a1-20-17",
+   "type": "order",
+   "tiles": [
+    "ghadi",
+    "n3ayet",
+    "lik",
+    "ghedda"
+   ],
+   "answers": [
+    "ghadi n3ayet lik ghedda",
+    "ghedda ghadi n3ayet lik"
+   ],
+   "de": "غادي نعيط ليك غدا.",
+   "en": "Je t’appellerai demain."
+  },
+  {
+   "id": "ary-a1-20-18",
+   "type": "order",
+   "tiles": [
+    "alo",
+    "chkoun",
+    "m3aya"
+   ],
+   "answers": [
+    "alo chkoun m3aya"
+   ],
+   "de": "ألو، شكون معايا؟",
+   "en": "Allô, qui est à l’appareil ?"
+  },
+  {
+   "id": "ary-a1-20-19",
+   "type": "order",
+   "tiles": [
+    "wach",
+    "n9der",
+    "nhder",
+    "m3a",
+    "nadia"
+   ],
+   "answers": [
+    "wach n9der nhder m3a nadia"
+   ],
+   "de": "واش نقدر نهضر مع نادية؟",
+   "en": "Est-ce que je peux parler avec Nadia ?"
+  },
+  {
+   "id": "ary-a1-20-20",
+   "type": "order",
+   "tiles": [
+    "safi",
+    "ntla9aw",
+    "f",
+    "l3achra"
+   ],
+   "answers": [
+    "safi ntla9aw f l3achra"
+   ],
+   "de": "صافي، نتلاقاو ف العشرة.",
+   "en": "C’est bon, on se retrouve à dix heures."
+  }
+ ],
+ "listening": {
+  "title": "Un coup de fil",
+  "intro": "Mehdi appelle son amie Amina. C’est sa sœur Fatima qui répond. Plus tard, Mehdi rappelle.",
+  "lines": [
+   {
+    "speaker": "Fatima",
+    "de": "ألو، شكون معايا؟",
+    "tr": "alo, chkoun m3aya?",
+    "en": "Allô, qui est à l’appareil ?"
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "أنا مهدي. واش نقدر نهضر مع أمينة؟",
+    "tr": "ana mehdi. wach n9der nhder m3a amina?",
+    "en": "C’est Mehdi. Est-ce que je peux parler avec Amina ?"
+   },
+   {
+    "speaker": "Fatima",
+    "de": "ماكايناش دابا، خرجات.",
+    "tr": "makaynach daba, khrjat.",
+    "en": "Elle n’est pas là maintenant, elle est sortie."
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "ما سمعتكش، عاود عافاك.",
+    "tr": "ma sme3tekch, 3awed 3afak.",
+    "en": "Je ne t’ai pas entendue, répète s’il te plaît."
+   },
+   {
+    "speaker": "Fatima",
+    "de": "أمينة ماكايناش. عيط ليها ف العشرة.",
+    "tr": "amina makaynach. 3ayet liha f l3achra.",
+    "en": "Amina n’est pas là. Appelle-la à dix heures."
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "واخا، غادي نعيط ليها ف العشرة. شكرا، بسلامة!",
+    "tr": "wakha, ghadi n3ayet liha f l3achra. chokran, bslama!",
+    "en": "D’accord, je l’appellerai à dix heures. Merci, au revoir !"
+   },
+   {
+    "speaker": "Amina",
+    "de": "ألو مهدي، كي داير؟",
+    "tr": "alo mehdi, ki dayr?",
+    "en": "Allô Mehdi, comment tu vas ?"
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "لاباس. فين نتلاقاو غدا؟",
+    "tr": "labas. fin ntla9aw ghedda?",
+    "en": "Ça va. Où est-ce qu’on se retrouve demain ?"
+   },
+   {
+    "speaker": "Amina",
+    "de": "ف القهوة ف المعاريف، ف الخمسة.",
+    "tr": "f l9hwa f lma3arif, f lkhamsa.",
+    "en": "Au café, au Maârif, à cinq heures."
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "صافي، واخا. بسلامة!",
+    "tr": "safi, wakha. bslama!",
+    "en": "C’est bon, d’accord. Au revoir !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qui répond au premier appel ?",
+    "options": [
+     "Fatima",
+     "Amina",
+     "Khadija"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "À quelle heure Mehdi rappelle-t-il ?",
+    "options": [
+     "À dix heures",
+     "À cinq heures",
+     "Demain matin"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Où vont-ils se retrouver ?",
+    "options": [
+     "Dans un café au Maârif",
+     "Sur la corniche",
+     "À la médina"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "شكون معايا؟",
+  "غادي نعيط ليك.",
+  "صافي، بسلامة!"
+ ],
+ "dictationTr": [
+  "chkoun m3aya?",
+  "ghadi n3ayet lik.",
+  "safi, bslama!"
+ ],
+ "speaking": [
+  {
+   "de": "ألو، شكون معايا؟",
+   "tr": "alo, chkoun m3aya?",
+   "en": "Allô, qui est à l’appareil ?"
+  },
+  {
+   "de": "واش نقدر نهضر مع أمينة؟",
+   "tr": "wach n9der nhder m3a amina?",
+   "en": "Est-ce que je peux parler avec Amina ?"
+  },
+  {
+   "de": "ما سمعتكش، عاود عافاك.",
+   "tr": "ma sme3tekch, 3awed 3afak.",
+   "en": "Je ne t’ai pas entendu, répète s’il te plaît."
+  },
+  {
+   "de": "غادي نعيط ليك غدا.",
+   "tr": "ghadi n3ayet lik ghedda.",
+   "en": "Je t’appellerai demain."
+  },
+  {
+   "de": "واخا، صافي، بسلامة!",
+   "tr": "wakha, safi, bslama!",
+   "en": "D’accord, c’est bon, au revoir !"
+  }
+ ],
+ "writing": {
+  "task": "Tu laisses un message à un ami au téléphone. Écris 2 à 4 phrases : dis qui tu es, propose un rendez-vous (où et à quelle heure) et demande-lui de te rappeler. Écris en lettres latines.",
+  "model": "ألو، أنا عمر. نتلاقاو غدا ف القهوة ف الخمسة؟ عيط ليا عافاك. بسلامة!",
+  "modelTr": "alo, ana omar. ntla9aw ghedda f l9hwa f lkhamsa? 3ayet liya 3afak. bslama!"
+ }
+}

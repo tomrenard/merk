@@ -38,3 +38,18 @@ q = 9; ou, o, u and w are one sound (houwa = howa, ou nta = w nta), and so are y
 (dair = dayr); doubled letters = single (bzaf = bzzaf); a written `e` next to a consonant may
 be left out (mezyan = mzyan, enta = nta). One letter off is "almost".
 
+
+## Decisions taken while writing A1
+
+- The article in Latin shows how it is said: `l` before moon letters (lbare7, lmdina,
+  l9hwa), doubled first letter before sun letters (ssalam, ddar, ttobis, ssa3a). Arabic always
+  writes ال.
+- Negation is one word in both scripts: ماعنديش ma3ndich, ماكاينش makaynch, مابغيتش mabghitch.
+  The answers also accept it split (ma bghitch), since spaces don't count.
+- Numbers: wa7ed, jouj, tlata, rb3a, khamsa, stta, sb3a, tmnya, ts3a, 3achra; 7dach, tnach,
+  tlettach, rb3tach, khmstach, settach, sb3tach, tmentach, ts3tach, 3chrin; in compounds 2 is
+  tnin (tnin w 3chrin). After 3–10 the noun is plural (tlata drahem), after 11+ singular
+  (3chrin dirham).
+- Excuse me: sme7 liya / sm7i liya (to a woman).
+- Present with ka- (كن، كت، كي): kanskon, katskon, kayskon; to a woman katskni.
+- Future: ghadi / ghadya / ghadyin + verb.

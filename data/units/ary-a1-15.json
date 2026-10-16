@@ -1,0 +1,511 @@
+{
+ "id": "ary-a1-15",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les directions",
+ "icon": "🚕",
+ "situation": "En taxi",
+ "canDo": "Tu peux dire au chauffeur de taxi où tu vas, lui indiquer le chemin et lui demander de s’arrêter.",
+ "explanation": "En taxi, trois mots suffisent pour le chemin : **3la limen** (à droite), **3la lisser** (à gauche) et **nichan** (tout droit).\n\nPour donner une indication, on utilise **l’impératif** : la forme courte du verbe, sans pronom. À une femme, on ajoute **-i**.\n\n| français | à un homme | à une femme |\n|---|---|---|\n| tourne | dour | douri |\n| va | sir | siri |\n| continue | kemmel | kemmli |\n| arrête-toi | 7bes | 7bsi |\n\n- **Fin ghadi?** = où vas-tu ? (à une femme : *fin ghadya?*). Tu réponds **bghit nmchi l…** = je veux aller à… : *bghit nmchi l lmdina*.\n- **Hna** = ici, **temma** = là-bas, **9rib** = près, **b3id** = loin.\n- **F zan9a lewla / tanya** = dans la première / la deuxième rue.\n- **Men ba3d** = ensuite, après.\n- **3afak** rend l’ordre poli : *7bes hna 3afak* = arrête-toi ici, s’il te plaît.\n\nÀ Casablanca, les petits taxis rouges vont partout en ville : on dit le quartier, puis on guide le chauffeur au dernier moment.",
+ "french": "Comme en français, l’impératif se passe de pronom : dour = tourne, sans « tu ».",
+ "examples": [
+  {
+   "de": "فين غادي؟",
+   "tr": "fin ghadi?",
+   "en": "Où vas-tu ?"
+  },
+  {
+   "de": "بغيت نمشي للمدينة القديمة.",
+   "tr": "bghit nmchi l lmdina l9dima.",
+   "en": "Je veux aller à l’ancienne médina."
+  },
+  {
+   "de": "دور على ليمن.",
+   "tr": "dour 3la limen.",
+   "en": "Tourne à droite."
+  },
+  {
+   "de": "سير نيشان.",
+   "tr": "sir nichan.",
+   "en": "Va tout droit."
+  },
+  {
+   "de": "كمل نيشان، من بعد دور على ليسر.",
+   "tr": "kemmel nichan, men ba3d dour 3la lisser.",
+   "en": "Continue tout droit, ensuite tourne à gauche."
+  },
+  {
+   "de": "دوري ف الزنقة التانية.",
+   "tr": "douri f zan9a tanya.",
+   "en": "Tourne dans la deuxième rue. (à une femme)"
+  },
+  {
+   "de": "حبس هنا عافاك.",
+   "tr": "7bes hna 3afak.",
+   "en": "Arrête-toi ici, s’il te plaît."
+  },
+  {
+   "de": "واش بعيد؟ لا، قريب.",
+   "tr": "wach b3id? la, 9rib.",
+   "en": "C’est loin ? Non, c’est près."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-15-01",
+   "type": "cloze",
+   "de": "دور ___ ليمن.",
+   "tr": "dour ___ limen.",
+   "base": "sur (à)",
+   "answers": [
+    "على"
+   ],
+   "answersTr": [
+    "3la"
+   ],
+   "en": "Tourne à droite."
+  },
+  {
+   "id": "ary-a1-15-02",
+   "type": "cloze",
+   "de": "سير ___.",
+   "tr": "sir ___.",
+   "base": "tout droit",
+   "answers": [
+    "نيشان"
+   ],
+   "answersTr": [
+    "nichan"
+   ],
+   "en": "Va tout droit."
+  },
+  {
+   "id": "ary-a1-15-03",
+   "type": "cloze",
+   "de": "___ هنا عافاك.",
+   "tr": "___ hna 3afak.",
+   "base": "arrête-toi (à un homme)",
+   "answers": [
+    "حبس"
+   ],
+   "answersTr": [
+    "7bes"
+   ],
+   "en": "Arrête-toi ici, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-15-04",
+   "type": "cloze",
+   "de": "___ على ليسر.",
+   "tr": "___ 3la lisser.",
+   "base": "tourne (à une femme)",
+   "answers": [
+    "دوري"
+   ],
+   "answersTr": [
+    "douri"
+   ],
+   "en": "Tourne à gauche. (à une femme)"
+  },
+  {
+   "id": "ary-a1-15-05",
+   "type": "cloze",
+   "de": "___ غادي؟",
+   "tr": "___ ghadi?",
+   "base": "où",
+   "answers": [
+    "فين"
+   ],
+   "answersTr": [
+    "fin"
+   ],
+   "en": "Où vas-tu ?"
+  },
+  {
+   "id": "ary-a1-15-06",
+   "type": "cloze",
+   "de": "بغيت ___ للمدينة.",
+   "tr": "bghit ___ l lmdina.",
+   "base": "aller (je)",
+   "answers": [
+    "نمشي"
+   ],
+   "answersTr": [
+    "nmchi"
+   ],
+   "en": "Je veux aller à la médina."
+  },
+  {
+   "id": "ary-a1-15-07",
+   "type": "cloze",
+   "de": "واش بعيد؟ لا، ___.",
+   "tr": "wach b3id? la, ___.",
+   "base": "près",
+   "answers": [
+    "قريب"
+   ],
+   "answersTr": [
+    "9rib"
+   ],
+   "en": "C’est loin ? Non, c’est près."
+  },
+  {
+   "id": "ary-a1-15-08",
+   "type": "cloze",
+   "de": "كمل نيشان، ___ دور على ليمن.",
+   "tr": "kemmel nichan, ___ dour 3la limen.",
+   "base": "ensuite",
+   "answers": [
+    "من بعد"
+   ],
+   "answersTr": [
+    "men ba3d"
+   ],
+   "en": "Continue tout droit, ensuite tourne à droite."
+  },
+  {
+   "id": "ary-a1-15-09",
+   "type": "choice",
+   "de": "___ على ليمن.",
+   "tr": "___ 3la limen.",
+   "options": [
+    "دور",
+    "دوري"
+   ],
+   "optionsTr": [
+    "dour",
+    "douri"
+   ],
+   "answer": 0,
+   "why": "À un homme : dour ; à une femme : douri.",
+   "en": "Tourne à droite. (à un homme)"
+  },
+  {
+   "id": "ary-a1-15-10",
+   "type": "choice",
+   "de": "___ نيشان.",
+   "tr": "___ nichan.",
+   "options": [
+    "سيري",
+    "سير"
+   ],
+   "optionsTr": [
+    "siri",
+    "sir"
+   ],
+   "answer": 0,
+   "why": "À une femme, l’impératif prend -i : siri.",
+   "en": "Va tout droit. (à une femme)"
+  },
+  {
+   "id": "ary-a1-15-11",
+   "type": "choice",
+   "de": "حبس ___ عافاك.",
+   "tr": "7bes ___ 3afak.",
+   "options": [
+    "هنا",
+    "فين",
+    "بزاف"
+   ],
+   "optionsTr": [
+    "hna",
+    "fin",
+    "bzzaf"
+   ],
+   "answer": 0,
+   "why": "Hna = ici. Fin, c’est « où ? ».",
+   "en": "Arrête-toi ici, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-15-12",
+   "type": "choice",
+   "de": "دور ف الزنقة ___.",
+   "tr": "dour f zan9a ___.",
+   "options": [
+    "التانية",
+    "اللولة"
+   ],
+   "optionsTr": [
+    "tanya",
+    "lewla"
+   ],
+   "answer": 0,
+   "why": "Tanya = deuxième ; lewla = première.",
+   "en": "Tourne dans la deuxième rue."
+  },
+  {
+   "id": "ary-a1-15-13",
+   "type": "choice",
+   "de": "___ قريب ولا بعيد؟",
+   "tr": "___ 9rib wla b3id?",
+   "options": [
+    "واش",
+    "شنو",
+    "فين"
+   ],
+   "optionsTr": [
+    "wach",
+    "chno",
+    "fin"
+   ],
+   "answer": 0,
+   "why": "Wach ouvre une question oui/non.",
+   "en": "C’est près ou loin ?"
+  },
+  {
+   "id": "ary-a1-15-14",
+   "type": "choice",
+   "de": "شحال؟ — ___ درهم.",
+   "tr": "ch7al? — ___ derham.",
+   "options": [
+    "عشرين",
+    "خمسة"
+   ],
+   "optionsTr": [
+    "3echrin",
+    "khamsa"
+   ],
+   "answer": 0,
+   "why": "3echrin = vingt ; khamsa = cinq.",
+   "en": "Combien ? — Vingt dirhams."
+  },
+  {
+   "id": "ary-a1-15-15",
+   "type": "choice",
+   "de": "دور على ___.",
+   "tr": "dour 3la ___.",
+   "options": [
+    "ليسر",
+    "ليمن"
+   ],
+   "optionsTr": [
+    "lisser",
+    "limen"
+   ],
+   "answer": 0,
+   "why": "Lisser = la gauche ; limen = la droite.",
+   "en": "Tourne à gauche."
+  },
+  {
+   "id": "ary-a1-15-16",
+   "type": "choice",
+   "de": "فين ___ أ لالة؟",
+   "tr": "fin ___ a lalla?",
+   "options": [
+    "غادية",
+    "غادي"
+   ],
+   "optionsTr": [
+    "ghadya",
+    "ghadi"
+   ],
+   "answer": 0,
+   "why": "À une femme : ghadya ; à un homme : ghadi.",
+   "en": "Où allez-vous, madame ?"
+  },
+  {
+   "id": "ary-a1-15-17",
+   "type": "order",
+   "tiles": [
+    "dour",
+    "3la",
+    "limen",
+    "3afak"
+   ],
+   "answers": [
+    "dour 3la limen 3afak",
+    "3afak dour 3la limen"
+   ],
+   "de": "دور على ليمن عافاك.",
+   "en": "Tourne à droite, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-15-18",
+   "type": "order",
+   "tiles": [
+    "bghit",
+    "nmchi",
+    "l",
+    "lmdina"
+   ],
+   "answers": [
+    "bghit nmchi l lmdina"
+   ],
+   "de": "بغيت نمشي للمدينة.",
+   "en": "Je veux aller à la médina."
+  },
+  {
+   "id": "ary-a1-15-19",
+   "type": "order",
+   "tiles": [
+    "kemmel",
+    "nichan",
+    "men ba3d",
+    "7bes",
+    "hna"
+   ],
+   "answers": [
+    "kemmel nichan men ba3d 7bes hna"
+   ],
+   "de": "كمل نيشان، من بعد حبس هنا.",
+   "en": "Continue tout droit, puis arrête-toi ici."
+  },
+  {
+   "id": "ary-a1-15-20",
+   "type": "order",
+   "tiles": [
+    "wach",
+    "lmdina",
+    "b3ida"
+   ],
+   "answers": [
+    "wach lmdina b3ida"
+   ],
+   "de": "واش المدينة بعيدة؟",
+   "en": "Est-ce que la médina est loin ?"
+  }
+ ],
+ "listening": {
+  "title": "En petit taxi",
+  "intro": "Hajar arrête un petit taxi rouge à Casablanca. Le chauffeur s’appelle Rachid.",
+  "lines": [
+   {
+    "speaker": "Hajar",
+    "de": "سلام، واش خاوي؟",
+    "tr": "salam, wach khawi?",
+    "en": "Bonjour, il est libre ?"
+   },
+   {
+    "speaker": "Rachid",
+    "de": "آه، مرحبا. فين غادية؟",
+    "tr": "ah, mer7ba. fin ghadya?",
+    "en": "Oui, bienvenue. Où vas-tu ?"
+   },
+   {
+    "speaker": "Hajar",
+    "de": "بغيت نمشي للمعاريف عافاك.",
+    "tr": "bghit nmchi l lma3arif 3afak.",
+    "en": "Je veux aller au Maârif, s’il te plaît."
+   },
+   {
+    "speaker": "Rachid",
+    "de": "واخا.",
+    "tr": "wakha.",
+    "en": "D’accord."
+   },
+   {
+    "speaker": "Hajar",
+    "de": "كمل نيشان، من بعد دور على ليمن.",
+    "tr": "kemmel nichan, men ba3d dour 3la limen.",
+    "en": "Continue tout droit, ensuite tourne à droite."
+   },
+   {
+    "speaker": "Rachid",
+    "de": "هنا؟",
+    "tr": "hna?",
+    "en": "Ici ?"
+   },
+   {
+    "speaker": "Hajar",
+    "de": "لا، ف الزنقة التانية. واش بعيد؟",
+    "tr": "la, f zan9a tanya. wach b3id?",
+    "en": "Non, dans la deuxième rue. C’est loin ?"
+   },
+   {
+    "speaker": "Rachid",
+    "de": "لا، قريب. خمسة دقايق.",
+    "tr": "la, 9rib. khamsa d9aye9.",
+    "en": "Non, c’est près. Cinq minutes."
+   },
+   {
+    "speaker": "Hajar",
+    "de": "حبس هنا عافاك. شحال؟",
+    "tr": "7bes hna 3afak. ch7al?",
+    "en": "Arrête-toi ici, s’il te plaît. Combien ?"
+   },
+   {
+    "speaker": "Rachid",
+    "de": "عشرين درهم.",
+    "tr": "3echrin derham.",
+    "en": "Vingt dirhams."
+   },
+   {
+    "speaker": "Hajar",
+    "de": "تفضل. شكرا، بسلامة!",
+    "tr": "tfeddel. chokran, bslama!",
+    "en": "Tiens. Merci, au revoir !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Où va Hajar ?",
+    "options": [
+     "Au Maârif",
+     "À la médina",
+     "À Rabat"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Où le chauffeur doit-il tourner ?",
+    "options": [
+     "Dans la deuxième rue à droite",
+     "Dans la première rue à gauche",
+     "Nulle part, c’est tout droit"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Combien coûte la course ?",
+    "options": [
+     "20 dirhams",
+     "5 dirhams",
+     "50 dirhams"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "دور على ليمن.",
+  "سير نيشان.",
+  "حبس هنا عافاك."
+ ],
+ "dictationTr": [
+  "dour 3la limen.",
+  "sir nichan.",
+  "7bes hna 3afak."
+ ],
+ "speaking": [
+  {
+   "de": "بغيت نمشي للمدينة.",
+   "tr": "bghit nmchi l lmdina.",
+   "en": "Je veux aller à la médina."
+  },
+  {
+   "de": "دور على ليسر.",
+   "tr": "dour 3la lisser.",
+   "en": "Tourne à gauche."
+  },
+  {
+   "de": "كمل نيشان.",
+   "tr": "kemmel nichan.",
+   "en": "Continue tout droit."
+  },
+  {
+   "de": "حبس هنا عافاك.",
+   "tr": "7bes hna 3afak.",
+   "en": "Arrête-toi ici, s’il te plaît."
+  },
+  {
+   "de": "شحال عافاك؟",
+   "tr": "ch7al 3afak?",
+   "en": "C’est combien, s’il te plaît ?"
+  }
+ ],
+ "writing": {
+  "task": "Tu prends un petit taxi. Écris 2 à 4 phrases au chauffeur : où tu vas, le chemin (droite, gauche, tout droit) et où il doit s’arrêter. Écris en lettres latines.",
+  "model": "بغيت نمشي للمعاريف عافاك. كمل نيشان، من بعد دور على ليسر. حبس هنا. شكرا!",
+  "modelTr": "bghit nmchi l lma3arif 3afak. kemmel nichan, men ba3d dour 3la lisser. 7bes hna. chokran!"
+ }
+}

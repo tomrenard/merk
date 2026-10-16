@@ -1,0 +1,516 @@
+{
+ "id": "ary-a1-16",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Manger et boire",
+ "icon": "🍲",
+ "situation": "Au restaurant",
+ "canDo": "Tu peux commander un plat et une boisson, dire ce que tu manges ou ne manges pas, et demander l’addition.",
+ "explanation": "Deux verbes essentiels : **kla** (manger) et **chreb** (boire). Ils suivent les règles que tu connais : *ka-* au présent, *-it / -t* au passé, *ghadi* au futur.\n\n| | manger | boire |\n|---|---|---|\n| je (présent) | kanakol | kanchrob |\n| tu, elle (présent) | katakol | katchrob |\n| je (passé) | klit | chrebt |\n| tu (passé) | kliti | chrebti |\n| il (passé) | kla | chreb |\n| nous (passé) | klina | chrebna |\n| je (futur) | ghadi nakol | ghadi nchrob |\n\n- Au présent, *kla* devient **-akol** : *kanakol*, *katakol*.\n- Après **bghit** ou **ghadi**, pas de *ka-* : *bghit nchrob*, *ghadi nakol*.\n- Négation : **ma kanakolch l7em** = je ne mange pas de viande.\n- Plats : **tajin**, **kesksou** (couscous), **l7rira** (soupe), **chlada** (salade), **l7out** (poisson), **djaj** (poulet), **l7em** (viande), **lkhobz** (pain).\n- À boire : **atay** (thé), **lma** (eau), **3asir** (jus), **l9hwa** (café).\n- **Chno kayn lyoum?** = qu’est-ce qu’il y a aujourd’hui ? **Lmakla bnina!** = c’est délicieux ! **L7sab 3afak** = l’addition, s’il te plaît.\n\nLe couscous se mange traditionnellement le vendredi, après la prière.",
+ "french": "Le darija n’a pas d’article partitif comme « du » ou « de la » : kanakol l7out = je mange du poisson.",
+ "examples": [
+  {
+   "de": "شنو كاين اليوم؟",
+   "tr": "chno kayn lyoum?",
+   "en": "Qu’est-ce qu’il y a aujourd’hui ?"
+  },
+  {
+   "de": "بغيت طاجين ديال الدجاج.",
+   "tr": "bghit tajin dyal djaj.",
+   "en": "Je voudrais un tajine au poulet."
+  },
+  {
+   "de": "كناكل الكسكسو نهار الجمعة.",
+   "tr": "kanakol kesksou nhar jem3a.",
+   "en": "Je mange du couscous le vendredi."
+  },
+  {
+   "de": "شنو بغيتي تشرب؟",
+   "tr": "chno bghiti tchrob?",
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "de": "كليت بزاف!",
+   "tr": "klit bzzaf!",
+   "en": "J’ai beaucoup mangé !"
+  },
+  {
+   "de": "ما كنشربش القهوة.",
+   "tr": "ma kanchrobch l9hwa.",
+   "en": "Je ne bois pas de café."
+  },
+  {
+   "de": "الماكلة بنينة!",
+   "tr": "lmakla bnina!",
+   "en": "C’est délicieux ! (la nourriture est bonne)"
+  },
+  {
+   "de": "الحساب عافاك.",
+   "tr": "l7sab 3afak.",
+   "en": "L’addition, s’il te plaît."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-16-01",
+   "type": "cloze",
+   "de": "أنا ___ الكسكسو نهار الجمعة.",
+   "tr": "ana ___ kesksou nhar jem3a.",
+   "base": "manger (présent, je)",
+   "answers": [
+    "كناكل"
+   ],
+   "answersTr": [
+    "kanakol"
+   ],
+   "en": "Je mange du couscous le vendredi."
+  },
+  {
+   "id": "ary-a1-16-02",
+   "type": "cloze",
+   "de": "البارح ___ طاجين.",
+   "tr": "lbare7 ___ tajin.",
+   "base": "manger (passé, je)",
+   "answers": [
+    "كليت"
+   ],
+   "answersTr": [
+    "klit"
+   ],
+   "en": "Hier, j’ai mangé un tajine."
+  },
+  {
+   "id": "ary-a1-16-03",
+   "type": "cloze",
+   "de": "شنو بغيتي ___؟",
+   "tr": "chno bghiti ___?",
+   "base": "boire (tu)",
+   "answers": [
+    "تشرب"
+   ],
+   "answersTr": [
+    "tchrob"
+   ],
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "id": "ary-a1-16-04",
+   "type": "cloze",
+   "de": "أنا ___ أتاي بزاف.",
+   "tr": "ana ___ atay bzzaf.",
+   "base": "boire (présent, je)",
+   "answers": [
+    "كنشرب"
+   ],
+   "answersTr": [
+    "kanchrob"
+   ],
+   "en": "Je bois beaucoup de thé."
+  },
+  {
+   "id": "ary-a1-16-05",
+   "type": "cloze",
+   "de": "الماكلة ___!",
+   "tr": "lmakla ___!",
+   "base": "délicieuse",
+   "answers": [
+    "بنينة"
+   ],
+   "answersTr": [
+    "bnina"
+   ],
+   "en": "C’est délicieux !"
+  },
+  {
+   "id": "ary-a1-16-06",
+   "type": "cloze",
+   "de": "___ عافاك.",
+   "tr": "___ 3afak.",
+   "base": "l’addition",
+   "answers": [
+    "الحساب"
+   ],
+   "answersTr": [
+    "l7sab"
+   ],
+   "en": "L’addition, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-16-07",
+   "type": "cloze",
+   "de": "غادي ___ الحريرة.",
+   "tr": "ghadi ___ l7rira.",
+   "base": "manger (futur, je)",
+   "answers": [
+    "ناكل"
+   ],
+   "answersTr": [
+    "nakol"
+   ],
+   "en": "Je vais manger de la harira."
+  },
+  {
+   "id": "ary-a1-16-08",
+   "type": "cloze",
+   "de": "واش ___ الما؟",
+   "tr": "wach ___ lma?",
+   "base": "boire (passé, tu)",
+   "answers": [
+    "شربتي"
+   ],
+   "answersTr": [
+    "chrebti"
+   ],
+   "en": "Tu as bu de l’eau ?"
+  },
+  {
+   "id": "ary-a1-16-09",
+   "type": "choice",
+   "de": "هي ___ الحوت.",
+   "tr": "hiya ___ l7out.",
+   "options": [
+    "كتاكل",
+    "كناكل"
+   ],
+   "optionsTr": [
+    "katakol",
+    "kanakol"
+   ],
+   "answer": 0,
+   "why": "Pour « elle », le présent prend kat- : katakol.",
+   "en": "Elle mange du poisson."
+  },
+  {
+   "id": "ary-a1-16-10",
+   "type": "choice",
+   "de": "حنا ___ أتاي.",
+   "tr": "7na ___ atay.",
+   "options": [
+    "شربنا",
+    "شربت",
+    "شربتي"
+   ],
+   "optionsTr": [
+    "chrebna",
+    "chrebt",
+    "chrebti"
+   ],
+   "answer": 0,
+   "why": "Pour « nous », le passé prend -na : chrebna.",
+   "en": "Nous avons bu du thé."
+  },
+  {
+   "id": "ary-a1-16-11",
+   "type": "choice",
+   "de": "بغيت طاجين ___ الدجاج.",
+   "tr": "bghit tajin ___ djaj.",
+   "options": [
+    "ديال",
+    "ف",
+    "من"
+   ],
+   "optionsTr": [
+    "dyal",
+    "f",
+    "men"
+   ],
+   "answer": 0,
+   "why": "Tajin dyal djaj = un tajine de poulet.",
+   "en": "Je voudrais un tajine au poulet."
+  },
+  {
+   "id": "ary-a1-16-12",
+   "type": "choice",
+   "de": "___ كاين اليوم؟",
+   "tr": "___ kayn lyoum?",
+   "options": [
+    "شنو",
+    "فين",
+    "شكون"
+   ],
+   "optionsTr": [
+    "chno",
+    "fin",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "Chno = quoi ; fin = où ; chkoun = qui.",
+   "en": "Qu’est-ce qu’il y a aujourd’hui ?"
+  },
+  {
+   "id": "ary-a1-16-13",
+   "type": "choice",
+   "de": "يوسف ___ بزاف.",
+   "tr": "youssef ___ bzzaf.",
+   "options": [
+    "كلا",
+    "كليت",
+    "كلات"
+   ],
+   "optionsTr": [
+    "kla",
+    "klit",
+    "klat"
+   ],
+   "answer": 0,
+   "why": "Pour « il », le passé est la forme de base : kla.",
+   "en": "Youssef a beaucoup mangé."
+  },
+  {
+   "id": "ary-a1-16-14",
+   "type": "choice",
+   "de": "ما ___ القهوة.",
+   "tr": "ma ___ l9hwa.",
+   "options": [
+    "كنشربش",
+    "كنشرب"
+   ],
+   "optionsTr": [
+    "kanchrobch",
+    "kanchrob"
+   ],
+   "answer": 0,
+   "why": "La négation entoure le verbe : ma … ch.",
+   "en": "Je ne bois pas de café."
+  },
+  {
+   "id": "ary-a1-16-15",
+   "type": "choice",
+   "de": "بغيتي ___ ولا عصير؟",
+   "tr": "bghiti ___ wla 3asir?",
+   "options": [
+    "الما",
+    "الخبز"
+   ],
+   "optionsTr": [
+    "lma",
+    "lkhobz"
+   ],
+   "answer": 0,
+   "why": "On boit de l’eau (lma) ; lkhobz, c’est le pain.",
+   "en": "Tu veux de l’eau ou un jus ?"
+  },
+  {
+   "id": "ary-a1-16-16",
+   "type": "choice",
+   "de": "غادي ___ أتاي.",
+   "tr": "ghadi ___ atay.",
+   "options": [
+    "نشرب",
+    "كنشرب"
+   ],
+   "optionsTr": [
+    "nchrob",
+    "kanchrob"
+   ],
+   "answer": 0,
+   "why": "Après ghadi, le verbe n’a pas de ka- : ghadi nchrob.",
+   "en": "Je vais boire du thé."
+  },
+  {
+   "id": "ary-a1-16-17",
+   "type": "order",
+   "tiles": [
+    "bghit",
+    "tajin",
+    "dyal",
+    "djaj"
+   ],
+   "answers": [
+    "bghit tajin dyal djaj"
+   ],
+   "de": "بغيت طاجين ديال الدجاج.",
+   "en": "Je voudrais un tajine au poulet."
+  },
+  {
+   "id": "ary-a1-16-18",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "bghiti",
+    "tchrob"
+   ],
+   "answers": [
+    "chno bghiti tchrob"
+   ],
+   "de": "شنو بغيتي تشرب؟",
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "id": "ary-a1-16-19",
+   "type": "order",
+   "tiles": [
+    "ma",
+    "kanakolch",
+    "l7em"
+   ],
+   "answers": [
+    "ma kanakolch l7em"
+   ],
+   "de": "ما كناكلش اللحم.",
+   "en": "Je ne mange pas de viande."
+  },
+  {
+   "id": "ary-a1-16-20",
+   "type": "order",
+   "tiles": [
+    "lbare7",
+    "klit",
+    "tajin",
+    "w",
+    "chrebt",
+    "atay"
+   ],
+   "answers": [
+    "lbare7 klit tajin w chrebt atay",
+    "lbare7 chrebt atay w klit tajin",
+    "klit tajin w chrebt atay lbare7"
+   ],
+   "de": "البارح كليت طاجين و شربت أتاي.",
+   "en": "Hier, j’ai mangé un tajine et j’ai bu du thé."
+  }
+ ],
+ "listening": {
+  "title": "Au restaurant",
+  "intro": "Salma et Omar déjeunent dans un petit restaurant de Casablanca. Le serveur s’appelle Driss.",
+  "lines": [
+   {
+    "speaker": "Driss",
+    "de": "مرحبا! شنو بغيتو؟",
+    "tr": "mer7ba! chno bghitou?",
+    "en": "Bienvenue ! Qu’est-ce que vous voulez ?"
+   },
+   {
+    "speaker": "Salma",
+    "de": "شنو كاين اليوم؟",
+    "tr": "chno kayn lyoum?",
+    "en": "Qu’est-ce qu’il y a aujourd’hui ?"
+   },
+   {
+    "speaker": "Driss",
+    "de": "كاين طاجين ديال الدجاج، الكسكسو و الحريرة.",
+    "tr": "kayn tajin dyal djaj, kesksou w l7rira.",
+    "en": "Il y a un tajine au poulet, du couscous et de la harira."
+   },
+   {
+    "speaker": "Salma",
+    "de": "بغيت الكسكسو عافاك.",
+    "tr": "bghit kesksou 3afak.",
+    "en": "Je voudrais le couscous, s’il te plaît."
+   },
+   {
+    "speaker": "Omar",
+    "de": "و أنا بغيت طاجين ديال الدجاج.",
+    "tr": "w ana bghit tajin dyal djaj.",
+    "en": "Et moi, je voudrais un tajine au poulet."
+   },
+   {
+    "speaker": "Driss",
+    "de": "واخا. و شنو بغيتو تشربو؟",
+    "tr": "wakha. w chno bghitou tchrbou?",
+    "en": "D’accord. Et qu’est-ce que vous voulez boire ?"
+   },
+   {
+    "speaker": "Omar",
+    "de": "أتاي و الما عافاك.",
+    "tr": "atay w lma 3afak.",
+    "en": "Du thé et de l’eau, s’il te plaît."
+   },
+   {
+    "speaker": "Driss",
+    "de": "واش الماكلة مزيانة؟",
+    "tr": "wach lmakla mzyana?",
+    "en": "Le repas est bon ?"
+   },
+   {
+    "speaker": "Salma",
+    "de": "بنينة بزاف! كليت بزاف.",
+    "tr": "bnina bzzaf! klit bzzaf.",
+    "en": "Très bon ! J’ai beaucoup mangé."
+   },
+   {
+    "speaker": "Omar",
+    "de": "الحساب عافاك.",
+    "tr": "l7sab 3afak.",
+    "en": "L’addition, s’il te plaît."
+   },
+   {
+    "speaker": "Driss",
+    "de": "بصحتكم!",
+    "tr": "bsse7tkom!",
+    "en": "Bonne santé ! (se dit après le repas, à plusieurs)"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qu’est-ce que Salma commande ?",
+    "options": [
+     "Du couscous",
+     "Un tajine au poulet",
+     "De la harira"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Qu’est-ce qu’ils boivent ?",
+    "options": [
+     "Du thé et de l’eau",
+     "Du café",
+     "Du jus"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Comment Salma trouve-t-elle le repas ?",
+    "options": [
+     "Très bon",
+     "Trop salé",
+     "Froid"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "كليت بزاف.",
+  "كنشرب أتاي.",
+  "الماكلة بنينة."
+ ],
+ "dictationTr": [
+  "klit bzzaf.",
+  "kanchrob atay.",
+  "lmakla bnina."
+ ],
+ "speaking": [
+  {
+   "de": "شنو كاين اليوم؟",
+   "tr": "chno kayn lyoum?",
+   "en": "Qu’est-ce qu’il y a aujourd’hui ?"
+  },
+  {
+   "de": "بغيت الكسكسو عافاك.",
+   "tr": "bghit kesksou 3afak.",
+   "en": "Je voudrais le couscous, s’il te plaît."
+  },
+  {
+   "de": "ما كناكلش اللحم.",
+   "tr": "ma kanakolch l7em.",
+   "en": "Je ne mange pas de viande."
+  },
+  {
+   "de": "الماكلة بنينة!",
+   "tr": "lmakla bnina!",
+   "en": "C’est délicieux !"
+  },
+  {
+   "de": "الحساب عافاك.",
+   "tr": "l7sab 3afak.",
+   "en": "L’addition, s’il te plaît."
+  }
+ ],
+ "writing": {
+  "task": "Tu es au restaurant. Écris 2 à 4 phrases : commande un plat et une boisson, dis ce que tu ne manges pas, et demande l’addition. Écris en lettres latines.",
+  "model": "بغيت طاجين ديال الحوت و الما عافاك. ما كناكلش اللحم. الماكلة بنينة! الحساب عافاك.",
+  "modelTr": "bghit tajin dyal l7out w lma 3afak. ma kanakolch l7em. lmakla bnina! l7sab 3afak."
+ }
+}

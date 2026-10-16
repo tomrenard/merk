@@ -1,0 +1,518 @@
+{
+ "id": "ary-a1-08",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Vouloir, pouvoir et commander",
+ "icon": "☕",
+ "situation": "Au café",
+ "canDo": "Tu peux commander à boire et à manger au café, dire ce que tu veux ou ne veux pas, et demander si tu peux faire quelque chose.",
+ "explanation": "Pour dire ce que tu veux : **bghit** (je veux). Pour ce que tu peux : **n9der** (je peux). Le deuxième verbe vient juste après, **sans ka-** : *bghit nchreb* = je veux boire.\n\n| | vouloir | pouvoir |\n|---|---|---|\n| je | bghit | n9der |\n| tu | bghiti | t9der |\n| il / elle | bgha / bghat | y9der / t9der |\n| nous | bghina | n9derou |\n| vous | bghitou | t9derou |\n| ils / elles | bghaw | y9derou |\n\n- Le deuxième verbe se met **à la même personne** : *bghiti tchreb?* = tu veux boire ? *bghina nchrbou* = nous voulons boire.\n- Pour commander, **bghit + le nom** suffit : *bghit 9hwa* = je veux un café.\n- **3tini … 3afak** = donne-moi … s’il te plaît. *3afak* sert aussi à appeler le serveur.\n- **Wach n9der …?** = est-ce que je peux … ? *Wach n9der nkhelles?* = je peux payer ?\n- Pour refuser : **mabghitch** (je ne veux pas), **man9derch** (je ne peux pas).\n- Au café : *9hwa* (café), *nouss nouss* (moitié café, moitié lait), *atay* (thé à la menthe), *lma* (eau), *bla sokkar* (sans sucre), *l7sab* (l’addition).",
+ "french": "En français le deuxième verbe reste à l’infinitif (« je veux boire »), en darija il se conjugue aussi : bghit nchreb, mot à mot « je veux je bois ».",
+ "examples": [
+  {
+   "de": "بغيت قهوة عافاك.",
+   "tr": "bghit 9hwa 3afak.",
+   "en": "Je veux un café, s’il te plaît."
+  },
+  {
+   "de": "شنو بغيتي تشرب؟",
+   "tr": "chno bghiti tchreb?",
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "de": "عطيني واحد نص نص بلا سكر.",
+   "tr": "3tini wa7ed nouss nouss bla sokkar.",
+   "en": "Donne-moi un nouss nouss sans sucre."
+  },
+  {
+   "de": "بغينا أتاي و الما.",
+   "tr": "bghina atay w lma.",
+   "en": "Nous voulons du thé et de l’eau."
+  },
+  {
+   "de": "واش نقدر نخلص؟",
+   "tr": "wach n9der nkhelles?",
+   "en": "Est-ce que je peux payer ?"
+  },
+  {
+   "de": "مابغيتش السكر.",
+   "tr": "mabghitch ssokkar.",
+   "en": "Je ne veux pas de sucre."
+  },
+  {
+   "de": "هي بغات تاكل مسمن.",
+   "tr": "hiya bghat takol msemmen.",
+   "en": "Elle veut manger un msemmen."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-08-01",
+   "type": "cloze",
+   "de": "___ قهوة عافاك.",
+   "tr": "___ 9hwa 3afak.",
+   "base": "vouloir (je)",
+   "answers": [
+    "بغيت"
+   ],
+   "answersTr": [
+    "bghit"
+   ],
+   "en": "Je veux un café, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-08-02",
+   "type": "cloze",
+   "de": "شنو ___ تشرب؟",
+   "tr": "chno ___ tchreb?",
+   "base": "vouloir (tu)",
+   "answers": [
+    "بغيتي"
+   ],
+   "answersTr": [
+    "bghiti"
+   ],
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "id": "ary-a1-08-03",
+   "type": "cloze",
+   "de": "واش ___ نخلص؟",
+   "tr": "wach ___ nkhelles?",
+   "base": "pouvoir (je)",
+   "answers": [
+    "نقدر"
+   ],
+   "answersTr": [
+    "n9der"
+   ],
+   "en": "Est-ce que je peux payer ?"
+  },
+  {
+   "id": "ary-a1-08-04",
+   "type": "cloze",
+   "de": "بغيت ___ أتاي.",
+   "tr": "bghit ___ atay.",
+   "base": "boire (je)",
+   "answers": [
+    "نشرب"
+   ],
+   "answersTr": [
+    "nchreb"
+   ],
+   "en": "Je veux boire du thé."
+  },
+  {
+   "id": "ary-a1-08-05",
+   "type": "cloze",
+   "de": "سارة ___ تاكل حرشة.",
+   "tr": "sara ___ takol 7archa.",
+   "base": "vouloir (elle)",
+   "answers": [
+    "بغات"
+   ],
+   "answersTr": [
+    "bghat"
+   ],
+   "en": "Sara veut manger une harcha."
+  },
+  {
+   "id": "ary-a1-08-06",
+   "type": "cloze",
+   "de": "واش ___ تجيب ليا الما؟",
+   "tr": "wach ___ tjib liya lma?",
+   "base": "pouvoir (tu)",
+   "answers": [
+    "تقدر"
+   ],
+   "answersTr": [
+    "t9der"
+   ],
+   "en": "Est-ce que tu peux m’apporter de l’eau ?"
+  },
+  {
+   "id": "ary-a1-08-07",
+   "type": "cloze",
+   "de": "___ نص نص بلا سكر.",
+   "tr": "___ nouss nouss bla sokkar.",
+   "base": "donne-moi",
+   "answers": [
+    "عطيني"
+   ],
+   "answersTr": [
+    "3tini"
+   ],
+   "en": "Donne-moi un nouss nouss sans sucre."
+  },
+  {
+   "id": "ary-a1-08-08",
+   "type": "cloze",
+   "de": "___ القهوة، بغيت أتاي.",
+   "tr": "___ l9hwa, bghit atay.",
+   "base": "ne pas vouloir (je)",
+   "answers": [
+    "مابغيتش"
+   ],
+   "answersTr": [
+    "mabghitch",
+    "ma bghitch"
+   ],
+   "en": "Je ne veux pas de café, je veux du thé."
+  },
+  {
+   "id": "ary-a1-08-09",
+   "type": "choice",
+   "de": "حنا ___ نشربو أتاي.",
+   "tr": "7na ___ nchrbou atay.",
+   "options": [
+    "بغينا",
+    "بغيت",
+    "بغاو"
+   ],
+   "optionsTr": [
+    "bghina",
+    "bghit",
+    "bghaw"
+   ],
+   "answer": 0,
+   "why": "Avec 7na (nous) : bghina, et le verbe suivant aussi au « nous » : nchrbou.",
+   "en": "Nous voulons boire du thé."
+  },
+  {
+   "id": "ary-a1-08-10",
+   "type": "choice",
+   "de": "بغيت ___ مسمن.",
+   "tr": "bghit ___ msemmen.",
+   "options": [
+    "ناكل",
+    "كناكل",
+    "تاكل"
+   ],
+   "optionsTr": [
+    "nakol",
+    "kanakol",
+    "takol"
+   ],
+   "answer": 0,
+   "why": "Après bghit, le verbe va sans ka- et à la même personne : nakol.",
+   "en": "Je veux manger un msemmen."
+  },
+  {
+   "id": "ary-a1-08-11",
+   "type": "choice",
+   "de": "واش ___ تخلص دابا؟",
+   "tr": "wach ___ tkhelles daba?",
+   "options": [
+    "تقدر",
+    "نقدر",
+    "يقدر"
+   ],
+   "optionsTr": [
+    "t9der",
+    "n9der",
+    "y9der"
+   ],
+   "answer": 0,
+   "why": "Tu : t9der, comme tkhelles.",
+   "en": "Est-ce que tu peux payer maintenant ?"
+  },
+  {
+   "id": "ary-a1-08-12",
+   "type": "choice",
+   "de": "يوسف ___ يشرب الما.",
+   "tr": "youssef ___ ychreb lma.",
+   "options": [
+    "بغا",
+    "بغات",
+    "بغيتي"
+   ],
+   "optionsTr": [
+    "bgha",
+    "bghat",
+    "bghiti"
+   ],
+   "answer": 0,
+   "why": "Youssef est un homme : bgha (il veut).",
+   "en": "Youssef veut boire de l’eau."
+  },
+  {
+   "id": "ary-a1-08-13",
+   "type": "choice",
+   "de": "___، عطيني الحساب.",
+   "tr": "___, 3tini l7sab.",
+   "options": [
+    "عافاك",
+    "بسلامة",
+    "متشرفين"
+   ],
+   "optionsTr": [
+    "3afak",
+    "bslama",
+    "mtcherfin"
+   ],
+   "answer": 0,
+   "why": "3afak = s’il te plaît, pour demander quelque chose.",
+   "en": "S’il te plaît, donne-moi l’addition."
+  },
+  {
+   "id": "ary-a1-08-14",
+   "type": "choice",
+   "de": "شنو ___ تاكلو؟",
+   "tr": "chno ___ takolou?",
+   "options": [
+    "بغيتو",
+    "بغيتي",
+    "بغينا"
+   ],
+   "optionsTr": [
+    "bghitou",
+    "bghiti",
+    "bghina"
+   ],
+   "answer": 0,
+   "why": "Vous (plusieurs personnes) : bghitou, avec takolou.",
+   "en": "Qu’est-ce que vous voulez manger ?"
+  },
+  {
+   "id": "ary-a1-08-15",
+   "type": "choice",
+   "de": "هوما ___ يشربو عصير.",
+   "tr": "homa ___ ychrbou 3asir.",
+   "options": [
+    "بغاو",
+    "بغا",
+    "بغيتو"
+   ],
+   "optionsTr": [
+    "bghaw",
+    "bgha",
+    "bghitou"
+   ],
+   "answer": 0,
+   "why": "Homa (ils) : bghaw.",
+   "en": "Ils veulent boire un jus."
+  },
+  {
+   "id": "ary-a1-08-16",
+   "type": "choice",
+   "de": "بغيت أتاي ___ سكر.",
+   "tr": "bghit atay ___ sokkar.",
+   "options": [
+    "بلا",
+    "بزاف",
+    "واش"
+   ],
+   "optionsTr": [
+    "bla",
+    "bzzaf",
+    "wach"
+   ],
+   "answer": 0,
+   "why": "Bla = sans.",
+   "en": "Je veux un thé sans sucre."
+  },
+  {
+   "id": "ary-a1-08-17",
+   "type": "order",
+   "tiles": [
+    "bghit",
+    "nchreb",
+    "atay",
+    "3afak"
+   ],
+   "answers": [
+    "bghit nchreb atay 3afak",
+    "3afak bghit nchreb atay"
+   ],
+   "de": "بغيت نشرب أتاي عافاك.",
+   "en": "Je veux boire du thé, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-08-18",
+   "type": "order",
+   "tiles": [
+    "wach",
+    "n9der",
+    "nkhelles",
+    "daba"
+   ],
+   "answers": [
+    "wach n9der nkhelles daba"
+   ],
+   "de": "واش نقدر نخلص دابا؟",
+   "en": "Est-ce que je peux payer maintenant ?"
+  },
+  {
+   "id": "ary-a1-08-19",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "bghiti",
+    "takol"
+   ],
+   "answers": [
+    "chno bghiti takol"
+   ],
+   "de": "شنو بغيتي تاكل؟",
+   "en": "Qu’est-ce que tu veux manger ?"
+  },
+  {
+   "id": "ary-a1-08-20",
+   "type": "order",
+   "tiles": [
+    "3tini",
+    "nouss nouss",
+    "bla",
+    "sokkar"
+   ],
+   "answers": [
+    "3tini nouss nouss bla sokkar"
+   ],
+   "de": "عطيني نص نص بلا سكر.",
+   "en": "Donne-moi un nouss nouss sans sucre."
+  }
+ ],
+ "listening": {
+  "title": "Une commande au café",
+  "intro": "Sara et Mehdi s’assoient à la terrasse d’un café de Casablanca. Le serveur s’appelle Hamid.",
+  "lines": [
+   {
+    "speaker": "Hamid",
+    "de": "مرحبا، شنو بغيتو؟",
+    "tr": "mar7ba, chno bghitou?",
+    "en": "Bienvenue, qu’est-ce que vous voulez ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "أنا بغيت نص نص بلا سكر.",
+    "tr": "ana bghit nouss nouss bla sokkar.",
+    "en": "Moi, je veux un nouss nouss sans sucre."
+   },
+   {
+    "speaker": "Hamid",
+    "de": "و نتا؟",
+    "tr": "w nta?",
+    "en": "Et toi ?"
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "بغيت أتاي و مسمن.",
+    "tr": "bghit atay w msemmen.",
+    "en": "Je veux un thé et un msemmen."
+   },
+   {
+    "speaker": "Hamid",
+    "de": "ماكاينش المسمن دابا، كاينة الحرشة.",
+    "tr": "makaynch lmsemmen daba, kayna l7archa.",
+    "en": "Il n’y a pas de msemmen maintenant, il y a de la harcha."
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "واخا، عطيني حرشة.",
+    "tr": "wakha, 3tini 7archa.",
+    "en": "D’accord, donne-moi une harcha."
+   },
+   {
+    "speaker": "Sara",
+    "de": "و واش تقدر تجيب لينا الما عافاك؟",
+    "tr": "w wach t9der tjib lina lma 3afak?",
+    "en": "Et est-ce que tu peux nous apporter de l’eau, s’il te plaît ?"
+   },
+   {
+    "speaker": "Hamid",
+    "de": "واخا، دابا.",
+    "tr": "wakha, daba.",
+    "en": "D’accord, tout de suite."
+   },
+   {
+    "speaker": "Mehdi",
+    "de": "عافاك، واش نقدر نخلص؟",
+    "tr": "3afak, wach n9der nkhelles?",
+    "en": "S’il te plaît, est-ce que je peux payer ?"
+   },
+   {
+    "speaker": "Hamid",
+    "de": "آه، مرحبا.",
+    "tr": "ah, mar7ba.",
+    "en": "Oui, avec plaisir."
+   },
+   {
+    "speaker": "Sara",
+    "de": "شكرا!",
+    "tr": "chokran!",
+    "en": "Merci !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qu’est-ce que Sara commande ?",
+    "options": [
+     "Un nouss nouss sans sucre",
+     "Un thé à la menthe",
+     "Un jus"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Pourquoi Mehdi prend-il une harcha ?",
+    "options": [
+     "Il n’y a pas de msemmen",
+     "Il n’aime pas le msemmen",
+     "C’est moins cher"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Que demande Sara au serveur ?",
+    "options": [
+     "De l’eau",
+     "L’addition",
+     "Du sucre"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "بغيت قهوة.",
+  "واش نقدر نخلص؟",
+  "عطيني أتاي عافاك."
+ ],
+ "dictationTr": [
+  "bghit 9hwa.",
+  "wach n9der nkhelles?",
+  "3tini atay 3afak."
+ ],
+ "speaking": [
+  {
+   "de": "بغيت قهوة عافاك.",
+   "tr": "bghit 9hwa 3afak.",
+   "en": "Je veux un café, s’il te plaît."
+  },
+  {
+   "de": "عطيني نص نص بلا سكر.",
+   "tr": "3tini nouss nouss bla sokkar.",
+   "en": "Donne-moi un nouss nouss sans sucre."
+  },
+  {
+   "de": "شنو بغيتي تشرب؟",
+   "tr": "chno bghiti tchreb?",
+   "en": "Qu’est-ce que tu veux boire ?"
+  },
+  {
+   "de": "واش تقدر تجيب ليا الما؟",
+   "tr": "wach t9der tjib liya lma?",
+   "en": "Est-ce que tu peux m’apporter de l’eau ?"
+  },
+  {
+   "de": "واش نقدر نخلص؟",
+   "tr": "wach n9der nkhelles?",
+   "en": "Est-ce que je peux payer ?"
+  }
+ ],
+ "writing": {
+  "task": "Tu es au café avec un ami. Écris 2 à 4 phrases : commande à boire et à manger, demande quelque chose au serveur, puis demande si tu peux payer. Écris en lettres latines.",
+  "model": "سلام! بغيت نص نص بلا سكر و مسمن. عافاك، واش تقدر تجيب ليا الما؟ واش نقدر نخلص؟",
+  "modelTr": "salam! bghit nouss nouss bla sokkar w msemmen. 3afak, wach t9der tjib liya lma? wach n9der nkhelles?"
+ }
+}

@@ -1,0 +1,524 @@
+{
+ "id": "ary-a1-12",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Le futur avec ghadi",
+ "icon": "🧳",
+ "situation": "Faire des projets",
+ "canDo": "Tu peux dire ce que tu vas faire demain ou ce week-end, et demander à quelqu’un ses projets.",
+ "explanation": "Pour le futur, on met **ghadi** devant le verbe, **sans ka-** : *ghadi nmchi* = je vais aller. C’est comme « aller + verbe » en français.\n\n| | ghadi | verbe |\n|---|---|---|\n| je | ghadi / ghadya | nmchi |\n| tu | ghadi / ghadya | tmchi |\n| il / elle | ghadi / ghadya | ymchi / tmchi |\n| nous | ghadyin | nmchiw |\n| vous | ghadyin | tmchiw |\n| ils / elles | ghadyin | ymchiw |\n\n- **Ghadi** s’accorde : *ghadi* pour un homme, *ghadya* pour une femme, *ghadyin* au pluriel. *Hiya ghadya tsafer.*\n- À l’oral, on raccourcit souvent en **gha** : *gha nmchi* = je vais aller.\n- Tout seul, **ghadi** veut dire « je vais (quelque part) » : *fin ghadi?* = où tu vas ?\n- Mots utiles : **ghedda** (demain), **had lwikand** (ce week-end), **men ba3d** (après), **m3a** (avec).\n- Après un projet, on ajoute souvent **inchallah** (si Dieu le veut).\n- Négation : **maghadich** + verbe : *maghadich nkhdem ghedda* = je ne vais pas travailler demain.",
+ "french": "Comme le futur proche « je vais partir », ghadi + verbe dit ce qu’on va faire : ghadi nmchi = je vais aller.",
+ "examples": [
+  {
+   "de": "غدا غادي نمشي لمراكش.",
+   "tr": "ghedda ghadi nmchi l mrrakch.",
+   "en": "Demain, je vais aller à Marrakech."
+  },
+  {
+   "de": "شنو غادي تدير هاد الويكاند؟",
+   "tr": "chno ghadi tdir had lwikand?",
+   "en": "Qu’est-ce que tu vas faire ce week-end ?"
+  },
+  {
+   "de": "غادي نشوف صحابي ف كازا.",
+   "tr": "ghadi nchouf s7abi f kaza.",
+   "en": "Je vais voir mes amis à Casa."
+  },
+  {
+   "de": "حنا غاديين نمشيو للبحر.",
+   "tr": "7na ghadyin nmchiw l lb7er.",
+   "en": "Nous allons aller à la plage."
+  },
+  {
+   "de": "هي غادية تسافر لفرانسا.",
+   "tr": "hiya ghadya tsafer l fransa.",
+   "en": "Elle va partir en voyage en France."
+  },
+  {
+   "de": "ماغاديش نخدم غدا.",
+   "tr": "maghadich nkhdem ghedda.",
+   "en": "Je ne vais pas travailler demain."
+  },
+  {
+   "de": "إن شاء الله!",
+   "tr": "inchallah!",
+   "en": "Si Dieu le veut !"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-12-01",
+   "type": "cloze",
+   "de": "غدا ___ نمشي لمراكش.",
+   "tr": "ghedda ___ nmchi l mrrakch.",
+   "base": "futur",
+   "answers": [
+    "غادي",
+    "غا"
+   ],
+   "answersTr": [
+    "ghadi",
+    "gha"
+   ],
+   "en": "Demain, je vais aller à Marrakech."
+  },
+  {
+   "id": "ary-a1-12-02",
+   "type": "cloze",
+   "de": "ليلى ___ تسافر لفرانسا.",
+   "tr": "layla ___ tsafer l fransa.",
+   "base": "futur (elle)",
+   "answers": [
+    "غادية"
+   ],
+   "answersTr": [
+    "ghadya",
+    "ghadia"
+   ],
+   "en": "Layla va partir en voyage en France."
+  },
+  {
+   "id": "ary-a1-12-03",
+   "type": "cloze",
+   "de": "حنا ___ نمشيو للبحر.",
+   "tr": "7na ___ nmchiw l lb7er.",
+   "base": "futur (nous)",
+   "answers": [
+    "غاديين"
+   ],
+   "answersTr": [
+    "ghadyin",
+    "ghadiyin"
+   ],
+   "en": "Nous allons aller à la plage."
+  },
+  {
+   "id": "ary-a1-12-04",
+   "type": "cloze",
+   "de": "غادي ___ صحابي.",
+   "tr": "ghadi ___ s7abi.",
+   "base": "voir (je)",
+   "answers": [
+    "نشوف"
+   ],
+   "answersTr": [
+    "nchouf"
+   ],
+   "en": "Je vais voir mes amis."
+  },
+  {
+   "id": "ary-a1-12-05",
+   "type": "cloze",
+   "de": "شنو غادي ___ هاد الويكاند؟",
+   "tr": "chno ghadi ___ had lwikand?",
+   "base": "faire (tu)",
+   "answers": [
+    "تدير"
+   ],
+   "answersTr": [
+    "tdir"
+   ],
+   "en": "Qu’est-ce que tu vas faire ce week-end ?"
+  },
+  {
+   "id": "ary-a1-12-06",
+   "type": "cloze",
+   "de": "___ غادي نخدم.",
+   "tr": "___ ghadi nkhdem.",
+   "base": "demain",
+   "answers": [
+    "غدا"
+   ],
+   "answersTr": [
+    "ghedda",
+    "ghda",
+    "ghadda"
+   ],
+   "en": "Demain, je vais travailler."
+  },
+  {
+   "id": "ary-a1-12-07",
+   "type": "cloze",
+   "de": "___ نخدم غدا.",
+   "tr": "___ nkhdem ghedda.",
+   "base": "ne pas (futur)",
+   "answers": [
+    "ماغاديش"
+   ],
+   "answersTr": [
+    "maghadich",
+    "ma ghadich"
+   ],
+   "en": "Je ne vais pas travailler demain."
+  },
+  {
+   "id": "ary-a1-12-08",
+   "type": "cloze",
+   "de": "غادي نمشي لشفشاون، ___.",
+   "tr": "ghadi nmchi l chefchaouen, ___.",
+   "base": "si Dieu le veut",
+   "answers": [
+    "إن شاء الله"
+   ],
+   "answersTr": [
+    "inchallah",
+    "incha allah"
+   ],
+   "en": "Je vais aller à Chefchaouen, si Dieu le veut."
+  },
+  {
+   "id": "ary-a1-12-09",
+   "type": "choice",
+   "de": "هي ___ تمشي للسوق.",
+   "tr": "hiya ___ tmchi l ssou9.",
+   "options": [
+    "غادية",
+    "غادي",
+    "غاديين"
+   ],
+   "optionsTr": [
+    "ghadya",
+    "ghadi",
+    "ghadyin"
+   ],
+   "answer": 0,
+   "why": "Hiya (elle) : ghadya.",
+   "en": "Elle va aller au marché."
+  },
+  {
+   "id": "ary-a1-12-10",
+   "type": "choice",
+   "de": "غدا غادي ___ للخدمة.",
+   "tr": "ghedda ghadi ___ l lkhedma.",
+   "options": [
+    "نمشي",
+    "مشيت",
+    "كنمشي"
+   ],
+   "optionsTr": [
+    "nmchi",
+    "mchit",
+    "kanmchi"
+   ],
+   "answer": 0,
+   "why": "Après ghadi, le verbe va sans ka- : nmchi.",
+   "en": "Demain, je vais aller au travail."
+  },
+  {
+   "id": "ary-a1-12-11",
+   "type": "choice",
+   "de": "حنا غاديين ___ الطاجين.",
+   "tr": "7na ghadyin ___ ttajine.",
+   "options": [
+    "ناكلو",
+    "ناكل",
+    "كلينا"
+   ],
+   "optionsTr": [
+    "nakolou",
+    "nakol",
+    "klina"
+   ],
+   "answer": 0,
+   "why": "Nous : nakolou, avec -ou à la fin.",
+   "en": "Nous allons manger un tajine."
+  },
+  {
+   "id": "ary-a1-12-12",
+   "type": "choice",
+   "de": "___ غادي تدير غدا؟",
+   "tr": "___ ghadi tdir ghedda?",
+   "options": [
+    "شنو",
+    "شكون",
+    "شحال"
+   ],
+   "optionsTr": [
+    "chno",
+    "chkoun",
+    "ch7al"
+   ],
+   "answer": 0,
+   "why": "Qu’est-ce que : chno.",
+   "en": "Qu’est-ce que tu vas faire demain ?"
+  },
+  {
+   "id": "ary-a1-12-13",
+   "type": "choice",
+   "de": "___ مشيت للبحر، و غدا غادي نمشي لمراكش.",
+   "tr": "___ mchit l lb7er, w ghedda ghadi nmchi l mrrakch.",
+   "options": [
+    "البارح",
+    "غدا",
+    "دابا"
+   ],
+   "optionsTr": [
+    "lbare7",
+    "ghedda",
+    "daba"
+   ],
+   "answer": 0,
+   "why": "Mchit est au passé : lbare7 (hier).",
+   "en": "Hier je suis allé à la plage, et demain je vais aller à Marrakech."
+  },
+  {
+   "id": "ary-a1-12-14",
+   "type": "choice",
+   "de": "كريم و مهدي ___ يشوفو الماتش.",
+   "tr": "karim w mehdi ___ ychoufou lmatch.",
+   "options": [
+    "غاديين",
+    "غادي",
+    "غادية"
+   ],
+   "optionsTr": [
+    "ghadyin",
+    "ghadi",
+    "ghadya"
+   ],
+   "answer": 0,
+   "why": "Deux personnes : ghadyin, et le verbe en -ou : ychoufou.",
+   "en": "Karim et Mehdi vont regarder le match."
+  },
+  {
+   "id": "ary-a1-12-15",
+   "type": "choice",
+   "de": "فين ___؟ — غادي للحانوت.",
+   "tr": "fin ___? — ghadi l l7anout.",
+   "options": [
+    "غادي",
+    "كتسكن",
+    "شنو"
+   ],
+   "optionsTr": [
+    "ghadi",
+    "katskon",
+    "chno"
+   ],
+   "answer": 0,
+   "why": "Fin ghadi? = où tu vas ? On répond aussi avec ghadi.",
+   "en": "Où tu vas ? — Je vais à l’épicerie."
+  },
+  {
+   "id": "ary-a1-12-16",
+   "type": "choice",
+   "de": "غادي نسافر ___، إن شاء الله.",
+   "tr": "ghadi nsafer ___, inchallah.",
+   "options": [
+    "هاد الويكاند",
+    "البارح"
+   ],
+   "optionsTr": [
+    "had lwikand",
+    "lbare7"
+   ],
+   "answer": 0,
+   "why": "Avec ghadi (futur), on parle d’un moment à venir : had lwikand.",
+   "en": "Je vais partir en voyage ce week-end, si Dieu le veut."
+  },
+  {
+   "id": "ary-a1-12-17",
+   "type": "order",
+   "tiles": [
+    "ghedda",
+    "ghadi",
+    "nmchi",
+    "l mrrakch"
+   ],
+   "answers": [
+    "ghedda ghadi nmchi l mrrakch",
+    "ghadi nmchi l mrrakch ghedda"
+   ],
+   "de": "غدا غادي نمشي لمراكش.",
+   "en": "Demain, je vais aller à Marrakech."
+  },
+  {
+   "id": "ary-a1-12-18",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "ghadi",
+    "tdir",
+    "had lwikand"
+   ],
+   "answers": [
+    "chno ghadi tdir had lwikand"
+   ],
+   "de": "شنو غادي تدير هاد الويكاند؟",
+   "en": "Qu’est-ce que tu vas faire ce week-end ?"
+  },
+  {
+   "id": "ary-a1-12-19",
+   "type": "order",
+   "tiles": [
+    "7na",
+    "ghadyin",
+    "nmchiw",
+    "l lb7er"
+   ],
+   "answers": [
+    "7na ghadyin nmchiw l lb7er"
+   ],
+   "de": "حنا غاديين نمشيو للبحر.",
+   "en": "Nous allons aller à la plage."
+  },
+  {
+   "id": "ary-a1-12-20",
+   "type": "order",
+   "tiles": [
+    "hiya",
+    "ghadya",
+    "tsafer",
+    "l fransa"
+   ],
+   "answers": [
+    "hiya ghadya tsafer l fransa"
+   ],
+   "de": "هي غادية تسافر لفرانسا.",
+   "en": "Elle va partir en voyage en France."
+  }
+ ],
+ "listening": {
+  "title": "Les projets du week-end",
+  "intro": "Vendredi, à la sortie du travail, Hajar et Anas parlent de leur week-end.",
+  "lines": [
+   {
+    "speaker": "Hajar",
+    "de": "أنس، شنو غادي تدير هاد الويكاند؟",
+    "tr": "anas, chno ghadi tdir had lwikand?",
+    "en": "Anas, qu’est-ce que tu vas faire ce week-end ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "غادي نمشي لمراكش مع خويا.",
+    "tr": "ghadi nmchi l mrrakch m3a khoya.",
+    "en": "Je vais aller à Marrakech avec mon frère."
+   },
+   {
+    "speaker": "Hajar",
+    "de": "مزيان! و إمتى غاديين تمشيو؟",
+    "tr": "mzyan! w imta ghadyin tmchiw?",
+    "en": "Super ! Et quand est-ce que vous partez ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "غدا ف الصباح، ف التران. و نتي، غادية تبقاي ف كازا؟",
+    "tr": "ghedda f ssba7, f ttran. w nti, ghadya tb9ay f kaza?",
+    "en": "Demain matin, en train. Et toi, tu vas rester à Casa ?"
+   },
+   {
+    "speaker": "Hajar",
+    "de": "آه، غادية نشوف ختي.",
+    "tr": "ah, ghadya nchouf khti.",
+    "en": "Oui, je vais voir ma sœur."
+   },
+   {
+    "speaker": "Anas",
+    "de": "و شنو غاديين تديرو؟",
+    "tr": "w chno ghadyin tdirou?",
+    "en": "Et qu’est-ce que vous allez faire ?"
+   },
+   {
+    "speaker": "Hajar",
+    "de": "غاديين نمشيو للبحر و ناكلو الحوت.",
+    "tr": "ghadyin nmchiw l lb7er w nakolou l7out.",
+    "en": "Nous allons aller à la plage et manger du poisson."
+   },
+   {
+    "speaker": "Anas",
+    "de": "زوين!",
+    "tr": "zwin!",
+    "en": "Chouette !"
+   },
+   {
+    "speaker": "Hajar",
+    "de": "و فين غادي تسكن ف مراكش؟",
+    "tr": "w fin ghadi tskon f mrrakch?",
+    "en": "Et où vas-tu loger à Marrakech ?"
+   },
+   {
+    "speaker": "Anas",
+    "de": "عند صاحبي.",
+    "tr": "3nd sa7bi.",
+    "en": "Chez un ami."
+   },
+   {
+    "speaker": "Hajar",
+    "de": "مزيان. طريق السلامة!",
+    "tr": "mzyan. tri9 ssalama!",
+    "en": "Très bien. Bon voyage !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Où va Anas ce week-end ?",
+    "options": [
+     "À Marrakech",
+     "À la plage",
+     "À Chefchaouen"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Quand part-il ?",
+    "options": [
+     "Demain matin",
+     "Ce soir",
+     "Dimanche"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Que va faire Hajar avec sa sœur ?",
+    "options": [
+     "Aller à la plage et manger du poisson",
+     "Aller à Marrakech",
+     "Rester à la maison"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "غادي نمشي لمراكش.",
+  "غدا غادي نخدم.",
+  "شنو غادي تدير؟"
+ ],
+ "dictationTr": [
+  "ghadi nmchi l mrrakch.",
+  "ghedda ghadi nkhdem.",
+  "chno ghadi tdir?"
+ ],
+ "speaking": [
+  {
+   "de": "شنو غادي تدير هاد الويكاند؟",
+   "tr": "chno ghadi tdir had lwikand?",
+   "en": "Qu’est-ce que tu vas faire ce week-end ?"
+  },
+  {
+   "de": "غدا غادي نمشي لمراكش.",
+   "tr": "ghedda ghadi nmchi l mrrakch.",
+   "en": "Demain, je vais aller à Marrakech."
+  },
+  {
+   "de": "حنا غاديين نمشيو للبحر.",
+   "tr": "7na ghadyin nmchiw l lb7er.",
+   "en": "Nous allons aller à la plage."
+  },
+  {
+   "de": "ماغاديش نخدم غدا.",
+   "tr": "maghadich nkhdem ghedda.",
+   "en": "Je ne vais pas travailler demain."
+  },
+  {
+   "de": "طريق السلامة!",
+   "tr": "tri9 ssalama!",
+   "en": "Bon voyage !"
+  }
+ ],
+ "writing": {
+  "task": "Écris 2 à 4 phrases sur tes projets pour ce week-end : où tu vas aller, avec qui, et ce que tu vas faire. Écris en lettres latines.",
+  "model": "هاد الويكاند غادي نمشي للبحر مع صحابي. غاديين ناكلو الحوت و نشربو أتاي. و من بعد غادي نشوف ختي، إن شاء الله.",
+  "modelTr": "had lwikand ghadi nmchi l lb7er m3a s7abi. ghadyin nakolou l7out w nchrbou atay. w men ba3d ghadi nchouf khti, inchallah."
+ }
+}

@@ -1,0 +1,522 @@
+{
+ "id": "ary-a1-09",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Poser des questions",
+ "icon": "❓",
+ "situation": "Poser des questions",
+ "canDo": "Tu peux poser les questions de base (quoi, où, quand, combien, pourquoi, qui, comment) et comprendre les réponses simples.",
+ "explanation": "Le mot interrogatif se met **au début** de la phrase, et le reste ne change pas.\n\n| darija | français | exemple |\n|---|---|---|\n| chno | quoi, quel | chno katkhdem? |\n| fin | où | fin katskon? |\n| mnin | d’où | mnin nta? |\n| imta | quand | imta katmchi l lkhedma? |\n| ch7al | combien | ch7al f 3mrek? |\n| 3lach | pourquoi | 3lach kat9ra ddarija? |\n| chkoun | qui | chkoun hada? |\n| kifach | comment | kifach katgoul hadi? |\n\n- Avec un verbe au présent, garde le **ka-** : *fin katskon?* = où habites-tu ?\n- À **3lach**, on répond avec **7it** (parce que) : *7it kanbghi lmghrib*.\n- **Chkoun hada?** = qui est-ce ? (un homme), **chkoun hadi?** (une femme). Pour une chose : **chno hada?**\n- **Ch7al men…** = combien de… : *ch7al men kho 3ndek?* = combien de frères as-tu ?\n- **Kifach katgoul hadi b ddarija?** = comment on dit ça en darija ? Une phrase très utile !\n- Ajoute *3afak* pour être poli : *fin kayn ttobis 3afak?*",
+ "french": "Comme en français parlé (« tu habites où ? »), on ne fait pas d’inversion : on met juste le mot interrogatif devant, fin katskon?",
+ "examples": [
+  {
+   "de": "فين كتسكن؟",
+   "tr": "fin katskon?",
+   "en": "Où habites-tu ?"
+  },
+  {
+   "de": "شنو كتخدم؟",
+   "tr": "chno katkhdem?",
+   "en": "Qu’est-ce que tu fais comme travail ?"
+  },
+  {
+   "de": "إمتى كتمشي للخدمة؟",
+   "tr": "imta katmchi l lkhedma?",
+   "en": "Quand vas-tu au travail ?"
+  },
+  {
+   "de": "علاش كتقرا الدارجة؟",
+   "tr": "3lach kat9ra ddarija?",
+   "en": "Pourquoi tu apprends la darija ?"
+  },
+  {
+   "de": "حيت كنبغي المغرب.",
+   "tr": "7it kanbghi lmghrib.",
+   "en": "Parce que j’aime le Maroc."
+  },
+  {
+   "de": "شكون هادا؟",
+   "tr": "chkoun hada?",
+   "en": "Qui est-ce ? (un homme)"
+  },
+  {
+   "de": "كيفاش كتقول هادي بالدارجة؟",
+   "tr": "kifach katgoul hadi b ddarija?",
+   "en": "Comment on dit ça en darija ?"
+  },
+  {
+   "de": "شحال من خو عندك؟",
+   "tr": "ch7al men kho 3ndek?",
+   "en": "Combien de frères as-tu ?"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-09-01",
+   "type": "cloze",
+   "de": "___ كتسكن؟",
+   "tr": "___ katskon?",
+   "base": "où",
+   "answers": [
+    "فين"
+   ],
+   "answersTr": [
+    "fin"
+   ],
+   "en": "Où habites-tu ?"
+  },
+  {
+   "id": "ary-a1-09-02",
+   "type": "cloze",
+   "de": "___ كتخدم؟",
+   "tr": "___ katkhdem?",
+   "base": "quoi",
+   "answers": [
+    "شنو"
+   ],
+   "answersTr": [
+    "chno"
+   ],
+   "en": "Qu’est-ce que tu fais comme travail ?"
+  },
+  {
+   "id": "ary-a1-09-03",
+   "type": "cloze",
+   "de": "___ هادي؟",
+   "tr": "___ hadi?",
+   "base": "qui",
+   "answers": [
+    "شكون"
+   ],
+   "answersTr": [
+    "chkoun"
+   ],
+   "en": "Qui est-ce ? (une femme)"
+  },
+  {
+   "id": "ary-a1-09-04",
+   "type": "cloze",
+   "de": "___ كتقرا الدارجة؟",
+   "tr": "___ kat9ra ddarija?",
+   "base": "pourquoi",
+   "answers": [
+    "علاش"
+   ],
+   "answersTr": [
+    "3lach"
+   ],
+   "en": "Pourquoi tu apprends la darija ?"
+  },
+  {
+   "id": "ary-a1-09-05",
+   "type": "cloze",
+   "de": "___ كتمشي للخدمة؟",
+   "tr": "___ katmchi l lkhedma?",
+   "base": "quand",
+   "answers": [
+    "إمتى",
+    "امتى"
+   ],
+   "answersTr": [
+    "imta",
+    "emta"
+   ],
+   "en": "Quand vas-tu au travail ?"
+  },
+  {
+   "id": "ary-a1-09-06",
+   "type": "cloze",
+   "de": "___ ف عمرك؟",
+   "tr": "___ f 3mrek?",
+   "base": "combien",
+   "answers": [
+    "شحال"
+   ],
+   "answersTr": [
+    "ch7al"
+   ],
+   "en": "Quel âge as-tu ?"
+  },
+  {
+   "id": "ary-a1-09-07",
+   "type": "cloze",
+   "de": "___ كتقول هادي بالدارجة؟",
+   "tr": "___ katgoul hadi b ddarija?",
+   "base": "comment",
+   "answers": [
+    "كيفاش"
+   ],
+   "answersTr": [
+    "kifach"
+   ],
+   "en": "Comment on dit ça en darija ?"
+  },
+  {
+   "id": "ary-a1-09-08",
+   "type": "cloze",
+   "de": "علاش كتقرا الدارجة؟ ___ كنبغي المغرب.",
+   "tr": "3lach kat9ra ddarija? ___ kanbghi lmghrib.",
+   "base": "parce que",
+   "answers": [
+    "حيت"
+   ],
+   "answersTr": [
+    "7it"
+   ],
+   "en": "Pourquoi tu apprends la darija ? Parce que j’aime le Maroc."
+  },
+  {
+   "id": "ary-a1-09-09",
+   "type": "choice",
+   "de": "___ كاين بيت الما؟",
+   "tr": "___ kayn bit lma?",
+   "options": [
+    "فين",
+    "شكون",
+    "إمتى"
+   ],
+   "optionsTr": [
+    "fin",
+    "chkoun",
+    "imta"
+   ],
+   "answer": 0,
+   "why": "On cherche un lieu : fin (où).",
+   "en": "Où sont les toilettes ?"
+  },
+  {
+   "id": "ary-a1-09-10",
+   "type": "choice",
+   "de": "___ نتي؟ — أنا من ليون.",
+   "tr": "___ nti? — ana men lyon.",
+   "options": [
+    "منين",
+    "فين",
+    "كيفاش"
+   ],
+   "optionsTr": [
+    "mnin",
+    "fin",
+    "kifach"
+   ],
+   "answer": 0,
+   "why": "La réponse est une ville d’origine : mnin (d’où).",
+   "en": "D’où es-tu ? — Je suis de Lyon."
+  },
+  {
+   "id": "ary-a1-09-11",
+   "type": "choice",
+   "de": "___ هادا؟ — هادا خويا كريم.",
+   "tr": "___ hada? — hada khoya karim.",
+   "options": [
+    "شكون",
+    "شنو",
+    "شحال"
+   ],
+   "optionsTr": [
+    "chkoun",
+    "chno",
+    "ch7al"
+   ],
+   "answer": 0,
+   "why": "On parle d’une personne : chkoun (qui).",
+   "en": "Qui est-ce ? — C’est mon frère Karim."
+  },
+  {
+   "id": "ary-a1-09-12",
+   "type": "choice",
+   "de": "___ هادا؟ — هادا أتاي.",
+   "tr": "___ hada? — hada atay.",
+   "options": [
+    "شنو",
+    "شكون",
+    "فين"
+   ],
+   "optionsTr": [
+    "chno",
+    "chkoun",
+    "fin"
+   ],
+   "answer": 0,
+   "why": "On parle d’une chose : chno (quoi).",
+   "en": "Qu’est-ce que c’est ? — C’est du thé."
+  },
+  {
+   "id": "ary-a1-09-13",
+   "type": "choice",
+   "de": "___ كتمشي للخدمة؟ — ف الصباح.",
+   "tr": "___ katmchi l lkhedma? — f ssba7.",
+   "options": [
+    "إمتى",
+    "فين",
+    "علاش"
+   ],
+   "optionsTr": [
+    "imta",
+    "fin",
+    "3lach"
+   ],
+   "answer": 0,
+   "why": "La réponse est un moment : imta (quand).",
+   "en": "Quand vas-tu au travail ? — Le matin."
+  },
+  {
+   "id": "ary-a1-09-14",
+   "type": "choice",
+   "de": "___ كتقرا الدارجة؟ — حيت راجلي مغربي.",
+   "tr": "___ kat9ra ddarija? — 7it rajli mghribi.",
+   "options": [
+    "علاش",
+    "إمتى",
+    "كيفاش"
+   ],
+   "optionsTr": [
+    "3lach",
+    "imta",
+    "kifach"
+   ],
+   "answer": 0,
+   "why": "La réponse commence par 7it (parce que) : la question est 3lach.",
+   "en": "Pourquoi tu apprends la darija ? — Parce que mon mari est marocain."
+  },
+  {
+   "id": "ary-a1-09-15",
+   "type": "choice",
+   "de": "___ من خت عندك؟ — جوج.",
+   "tr": "___ men kht 3ndek? — jouj.",
+   "options": [
+    "شحال",
+    "شنو",
+    "شكون"
+   ],
+   "optionsTr": [
+    "ch7al",
+    "chno",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "La réponse est un nombre : ch7al (combien).",
+   "en": "Combien de sœurs as-tu ? — Deux."
+  },
+  {
+   "id": "ary-a1-09-16",
+   "type": "choice",
+   "de": "___ كتمشي للخدمة؟ — ف الطوبيس.",
+   "tr": "___ katmchi l lkhedma? — f ttobis.",
+   "options": [
+    "كيفاش",
+    "إمتى",
+    "شكون"
+   ],
+   "optionsTr": [
+    "kifach",
+    "imta",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "La réponse dit le moyen : kifach (comment).",
+   "en": "Comment vas-tu au travail ? — En bus."
+  },
+  {
+   "id": "ary-a1-09-17",
+   "type": "order",
+   "tiles": [
+    "fin",
+    "katskon",
+    "nta"
+   ],
+   "answers": [
+    "fin katskon nta",
+    "nta fin katskon"
+   ],
+   "de": "فين كتسكن نتا؟",
+   "en": "Et toi, où habites-tu ?"
+  },
+  {
+   "id": "ary-a1-09-18",
+   "type": "order",
+   "tiles": [
+    "3lach",
+    "kat9ra",
+    "ddarija"
+   ],
+   "answers": [
+    "3lach kat9ra ddarija"
+   ],
+   "de": "علاش كتقرا الدارجة؟",
+   "en": "Pourquoi tu apprends la darija ?"
+  },
+  {
+   "id": "ary-a1-09-19",
+   "type": "order",
+   "tiles": [
+    "kifach",
+    "katgoul",
+    "hadi",
+    "b ddarija"
+   ],
+   "answers": [
+    "kifach katgoul hadi b ddarija"
+   ],
+   "de": "كيفاش كتقول هادي بالدارجة؟",
+   "en": "Comment on dit ça en darija ?"
+  },
+  {
+   "id": "ary-a1-09-20",
+   "type": "order",
+   "tiles": [
+    "imta",
+    "katmchi",
+    "l lkhedma"
+   ],
+   "answers": [
+    "imta katmchi l lkhedma"
+   ],
+   "de": "إمتى كتمشي للخدمة؟",
+   "en": "Quand vas-tu au travail ?"
+  }
+ ],
+ "listening": {
+  "title": "Une nouvelle voisine",
+  "intro": "Dans l’escalier de son immeuble, Fatima rencontre Sara, une Française qui vient d’arriver.",
+  "lines": [
+   {
+    "speaker": "Fatima",
+    "de": "سلام! نتي ساكنة هنا؟",
+    "tr": "salam! nti sakna hna?",
+    "en": "Salut ! Tu habites ici ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "آه، أنا سارة. و نتي، شنو سميتك؟",
+    "tr": "ah, ana sara. w nti, chno smitek?",
+    "en": "Oui, je suis Sara. Et toi, comment tu t’appelles ?"
+   },
+   {
+    "speaker": "Fatima",
+    "de": "سميتي فاطمة. منين نتي؟",
+    "tr": "smiti fatima. mnin nti?",
+    "en": "Je m’appelle Fatima. D’où es-tu ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "من فرانسا.",
+    "tr": "men fransa.",
+    "en": "De France."
+   },
+   {
+    "speaker": "Fatima",
+    "de": "و شنو كتديري ف كازا؟",
+    "tr": "w chno katdiri f kaza?",
+    "en": "Et qu’est-ce que tu fais à Casa ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "كنخدم ف واحد الشركة ف المعاريف.",
+    "tr": "kankhdem f wa7ed ccharika f lma3arif.",
+    "en": "Je travaille dans une entreprise au Maârif."
+   },
+   {
+    "speaker": "Fatima",
+    "de": "و إمتى كتمشي للخدمة؟",
+    "tr": "w imta katmchi l lkhedma?",
+    "en": "Et quand vas-tu au travail ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "كل نهار ف الصباح.",
+    "tr": "koll nhar f ssba7.",
+    "en": "Tous les jours, le matin."
+   },
+   {
+    "speaker": "Fatima",
+    "de": "و كيفاش كتمشي؟",
+    "tr": "w kifach katmchi?",
+    "en": "Et comment tu y vas ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "ف الطوبيس. فين كاينة المحطة عافاك؟",
+    "tr": "f ttobis. fin kayna lm7atta 3afak?",
+    "en": "En bus. Où est l’arrêt, s’il te plaît ?"
+   },
+   {
+    "speaker": "Fatima",
+    "de": "قريبة، حدا الحانوت.",
+    "tr": "9riba, 7da l7anout.",
+    "en": "Tout près, à côté de l’épicerie."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Où travaille Sara ?",
+    "options": [
+     "Au Maârif",
+     "À Rabat",
+     "Dans une épicerie"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Comment va-t-elle au travail ?",
+    "options": [
+     "En bus",
+     "En taxi",
+     "À pied"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Où est l’arrêt de bus ?",
+    "options": [
+     "À côté de l’épicerie",
+     "Loin d’ici",
+     "Devant le café"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "فين كتسكن؟",
+  "شكون هادا؟",
+  "علاش كتقرا الدارجة؟"
+ ],
+ "dictationTr": [
+  "fin katskon?",
+  "chkoun hada?",
+  "3lach kat9ra ddarija?"
+ ],
+ "speaking": [
+  {
+   "de": "كيفاش كتقول هادي بالدارجة؟",
+   "tr": "kifach katgoul hadi b ddarija?",
+   "en": "Comment on dit ça en darija ?"
+  },
+  {
+   "de": "فين كتسكن؟",
+   "tr": "fin katskon?",
+   "en": "Où habites-tu ?"
+  },
+  {
+   "de": "شنو كتخدم؟",
+   "tr": "chno katkhdem?",
+   "en": "Qu’est-ce que tu fais comme travail ?"
+  },
+  {
+   "de": "إمتى كتمشي للخدمة؟",
+   "tr": "imta katmchi l lkhedma?",
+   "en": "Quand vas-tu au travail ?"
+  },
+  {
+   "de": "حيت كنبغي المغرب.",
+   "tr": "7it kanbghi lmghrib.",
+   "en": "Parce que j’aime le Maroc."
+  }
+ ],
+ "writing": {
+  "task": "Tu rencontres un nouveau collègue. Écris 2 à 4 questions pour faire connaissance, avec au moins trois mots interrogatifs différents. Écris en lettres latines.",
+  "model": "سلام! شنو سميتك؟ منين نتا؟ فين كتسكن؟ و علاش كتقرا الفرانساوية؟",
+  "modelTr": "salam! chno smitek? mnin nta? fin katskon? w 3lach kat9ra lfransawiya?"
+ }
+}

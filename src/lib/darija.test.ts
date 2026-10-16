@@ -1,5 +1,7 @@
+import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { arabiziKey, checkDarija, sameDarija } from "./darija";
+import { DarijaWord, wordProblems } from "./darija-words";
 
 describe("typed Darija", () => {
   it("accepts the usual Arabizi variants", () => {
@@ -47,5 +49,14 @@ describe("typed Darija", () => {
     expect(arabiziKey("bzaf")).toBe("bzaf");
 
     expect(arabiziKey("labas")).toBe("labas");
+  });
+});
+
+describe("data/darija/words.json", () => {
+  it("parses and has no problems", () => {
+    const file = new URL("../../data/darija/words.json", import.meta.url);
+    if (!existsSync(file)) return;
+    const words = DarijaWord.array().parse(JSON.parse(readFileSync(file, "utf8")));
+    expect(wordProblems(words)).toEqual([]);
   });
 });

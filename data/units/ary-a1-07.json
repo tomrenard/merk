@@ -1,0 +1,78 @@
+{
+ "id": "ary-a1-07",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Le présent avec ka-",
+ "icon": "💼",
+ "situation": "Parler de sa vie",
+ "canDo": "Tu peux dire où tu habites, où tu travailles ou étudies, quelle langue tu parles, et poser ces questions.",
+ "explanation": "Pour le présent, on met **ka-** devant le verbe avec la marque de la personne : **kan-** (je), **kat-** (tu, elle), **kay-** (il). Au pluriel, on ajoute **-o** à la fin.\n\n| | khdem (travailler) | skon (habiter) |\n|---|---|---|\n| ana | kankhdem | kanskon |\n| nta | katkhdem | katskon |\n| nti | katkhdmi | katskni |\n| howa | kaykhdem | kayskon |\n| hiya | katkhdem | katskon |\n| 7na | kankhdmo | kanskno |\n| ntouma | katkhdmo | katskno |\n| homa | kaykhdmo | kayskno |\n\n- À une femme, on ajoute **-i** : *katkhdmi*, comme *nti*.\n- *Kat-* sert à la fois pour « tu » et pour « elle » : le pronom ou la situation fait la différence.\n- Deux autres verbes : **9ra** (étudier, lire) → *kan9ra, kat9ra, kat9ray* (à une femme) ; **hder** (parler) → *kanhder ddarija* (je parle darija).\n- **Fin?** = où ? *Fin katskon?* = où habites-tu ?\n- La négation entoure le verbe : *makankhdemch* = je ne travaille pas.\n\nLe **kh** de *khdem* est la jota espagnole ; le **9** de *9ra* se dit au fond de la gorge, plus bas que le k.",
+ "french": "Comme en français la fin du verbe change avec la personne (je travaille, nous travaillons), en darija c’est surtout le début qui change : kankhdem, katkhdem, kaykhdem.",
+ "examples": [
+  {"de": "كنسكن ف كازا.", "tr": "kanskon f kaza.", "en": "J’habite à Casa."},
+  {"de": "فين كتسكني؟", "tr": "fin katskni?", "en": "Où habites-tu ? (à une femme)"},
+  {"de": "كنخدم ف البانكة.", "tr": "kankhdem f lbanka.", "en": "Je travaille à la banque."},
+  {"de": "هي كتقرا ف الجامعة.", "tr": "hiya kat9ra f ljami3a.", "en": "Elle étudie à l’université."},
+  {"de": "واش كتهضر الدارجة؟", "tr": "wach kathder ddarija?", "en": "Est-ce que tu parles darija ? (à un homme)"},
+  {"de": "آه، كنهضر شوية.", "tr": "ah, kanhder chwiya.", "en": "Oui, je parle un peu."},
+  {"de": "حنا كنسكنو ف المعاريف.", "tr": "7na kanskno f lma3arif.", "en": "Nous habitons au Maârif."},
+  {"de": "هوما كيخدمو ف الرباط.", "tr": "homa kaykhdmo f rbat.", "en": "Ils travaillent à Rabat."}
+ ],
+ "items": [
+  {"id": "ary-a1-07-01", "type": "cloze", "de": "أنا ___ ف كازا.", "tr": "ana ___ f kaza.", "base": "skon (habiter)", "answers": ["كنسكن"], "answersTr": ["kanskon", "kanskn"], "en": "J’habite à Casa."},
+  {"id": "ary-a1-07-02", "type": "cloze", "de": "فين ___؟", "tr": "fin ___?", "base": "khdem (tu, à un homme)", "answers": ["كتخدم"], "answersTr": ["katkhdem", "katkhdm"], "en": "Où travailles-tu ? (à un homme)"},
+  {"id": "ary-a1-07-03", "type": "cloze", "de": "فين ___؟", "tr": "fin ___?", "base": "skon (tu, à une femme)", "answers": ["كتسكني"], "answersTr": ["katskni", "katskoni"], "en": "Où habites-tu ? (à une femme)"},
+  {"id": "ary-a1-07-04", "type": "cloze", "de": "هو ___ ف البانكة.", "tr": "howa ___ f lbanka.", "base": "khdem", "answers": ["كيخدم"], "answersTr": ["kaykhdem", "kaykhdm"], "en": "Il travaille à la banque."},
+  {"id": "ary-a1-07-05", "type": "cloze", "de": "هي ___ ف الجامعة.", "tr": "hiya ___ f ljami3a.", "base": "9ra (étudier)", "answers": ["كتقرا"], "answersTr": ["kat9ra"], "en": "Elle étudie à l’université."},
+  {"id": "ary-a1-07-06", "type": "cloze", "de": "حنا ___ ف المعاريف.", "tr": "7na ___ f lma3arif.", "base": "skon", "answers": ["كنسكنو"], "answersTr": ["kanskno", "kansknou"], "en": "Nous habitons au Maârif."},
+  {"id": "ary-a1-07-07", "type": "cloze", "de": "هوما ___ ف الرباط.", "tr": "homa ___ f rbat.", "base": "khdem", "answers": ["كيخدمو"], "answersTr": ["kaykhdmo", "kaykhedmo"], "en": "Ils travaillent à Rabat."},
+  {"id": "ary-a1-07-08", "type": "cloze", "de": "___ الدارجة شوية.", "tr": "___ ddarija chwiya.", "base": "hder (je)", "answers": ["كنهضر"], "answersTr": ["kanhder", "kanhdr"], "en": "Je parle un peu darija."},
+  {"id": "ary-a1-07-09", "type": "choice", "de": "نتي ___ ف كازا؟", "tr": "nti ___ f kaza?", "options": ["كتسكني", "كتسكن"], "optionsTr": ["katskni", "katskon"], "answer": 0, "why": "À une femme, -i à la fin : katskni.", "en": "Tu habites à Casa ? (à une femme)"},
+  {"id": "ary-a1-07-10", "type": "choice", "de": "أنا ___ ف البانكة.", "tr": "ana ___ f lbanka.", "options": ["كنخدم", "كتخدم", "كيخدم"], "optionsTr": ["kankhdem", "katkhdem", "kaykhdem"], "answer": 0, "why": "Je = kan- : kankhdem.", "en": "Je travaille à la banque."},
+  {"id": "ary-a1-07-11", "type": "choice", "de": "يوسف ___ ف الرباط.", "tr": "youssef ___ f rbat.", "options": ["كيسكن", "كنسكن", "كتسكن"], "optionsTr": ["kayskon", "kanskon", "katskon"], "answer": 0, "why": "Il = kay- : kayskon.", "en": "Youssef habite à Rabat."},
+  {"id": "ary-a1-07-12", "type": "choice", "de": "سلمى ___ ف الجامعة.", "tr": "salma ___ f ljami3a.", "options": ["كتقرا", "كيقرا"], "optionsTr": ["kat9ra", "kay9ra"], "answer": 0, "why": "Elle = kat-, comme tu : kat9ra.", "en": "Salma étudie à l’université."},
+  {"id": "ary-a1-07-13", "type": "choice", "de": "حنا ___ ف كازا.", "tr": "7na ___ f kaza.", "options": ["كنخدمو", "كنخدم"], "optionsTr": ["kankhdmo", "kankhdem"], "answer": 0, "why": "Nous = kan- + -o : kankhdmo.", "en": "Nous travaillons à Casa."},
+  {"id": "ary-a1-07-14", "type": "choice", "de": "نتوما ___ ف المعاريف؟", "tr": "ntouma ___ f lma3arif?", "options": ["كتسكنو", "كيسكنو", "كنسكنو"], "optionsTr": ["katskno", "kayskno", "kanskno"], "answer": 0, "why": "Vous = kat- + -o : katskno.", "en": "Vous habitez au Maârif ?"},
+  {"id": "ary-a1-07-15", "type": "choice", "de": "واش ___ الدارجة؟ — آه، شوية.", "tr": "wach ___ ddarija? — ah, chwiya.", "options": ["كتهضر", "كنهضر"], "optionsTr": ["kathder", "kanhder"], "answer": 0, "why": "La question s’adresse à « tu » : kathder.", "en": "Tu parles darija ? — Oui, un peu."},
+  {"id": "ary-a1-07-16", "type": "choice", "de": "خديجة و أمينة ___ ف كازا.", "tr": "khadija w amina ___ f kaza.", "options": ["كيسكنو", "كتسكن", "كنسكنو"], "optionsTr": ["kayskno", "katskon", "kanskno"], "answer": 0, "why": "Elles (plusieurs) = homa : kay- + -o.", "en": "Khadija et Amina habitent à Casa."},
+  {"id": "ary-a1-07-17", "type": "order", "tiles": ["ana", "kanskon", "f", "kaza"], "answers": ["ana kanskon f kaza"], "de": "أنا كنسكن ف كازا.", "en": "J’habite à Casa."},
+  {"id": "ary-a1-07-18", "type": "order", "tiles": ["fin", "katkhdem", "nta"], "answers": ["fin katkhdem nta", "nta fin katkhdem"], "de": "فين كتخدم نتا؟", "en": "Et toi, où travailles-tu ?"},
+  {"id": "ary-a1-07-19", "type": "order", "tiles": ["wach", "kathder", "ddarija"], "answers": ["wach kathder ddarija"], "de": "واش كتهضر الدارجة؟", "en": "Est-ce que tu parles darija ?"},
+  {"id": "ary-a1-07-20", "type": "order", "tiles": ["hiya", "kat9ra", "f", "ljami3a"], "answers": ["hiya kat9ra f ljami3a"], "de": "هي كتقرا ف الجامعة.", "en": "Elle étudie à l’université."}
+ ],
+ "listening": {
+  "title": "Un échange de langues",
+  "intro": "Malik et Amina se retrouvent pour un échange de langues dans un café de Casablanca.",
+  "lines": [
+   {"speaker": "Malik", "de": "سلام أمينة، فين كتسكني دابا؟", "tr": "salam amina, fin katskni daba?", "en": "Salut Amina, où habites-tu maintenant ?"},
+   {"speaker": "Amina", "de": "كنسكن ف المعاريف. و نتا؟", "tr": "kanskon f lma3arif. w nta?", "en": "J’habite au Maârif. Et toi ?"},
+   {"speaker": "Malik", "de": "أنا كنسكن ف عين الدياب.", "tr": "ana kanskon f 3in ddiab.", "en": "Moi, j’habite à Aïn Diab."},
+   {"speaker": "Amina", "de": "و فين كتخدم؟", "tr": "w fin katkhdem?", "en": "Et où travailles-tu ?"},
+   {"speaker": "Malik", "de": "كنخدم ف البانكة. و نتي، كتخدمي؟", "tr": "kankhdem f lbanka. w nti, katkhdmi?", "en": "Je travaille à la banque. Et toi, tu travailles ?"},
+   {"speaker": "Amina", "de": "لا، ماكنخدمش. كنقرا ف الجامعة.", "tr": "la, makankhdemch. kan9ra f ljami3a.", "en": "Non, je ne travaille pas. J’étudie à l’université."},
+   {"speaker": "Malik", "de": "مزيان! واش كتهضري الفرنساوية؟", "tr": "mzyan! wach kathdri lfransawiya?", "en": "Très bien ! Est-ce que tu parles français ?"},
+   {"speaker": "Amina", "de": "آه، كنهضر الفرنساوية و الدارجة.", "tr": "ah, kanhder lfransawiya w ddarija.", "en": "Oui, je parle français et darija."},
+   {"speaker": "Malik", "de": "و ختك؟", "tr": "w khtek?", "en": "Et ta sœur ?"},
+   {"speaker": "Amina", "de": "ختي كتخدم ف الرباط.", "tr": "khti katkhdem f rbat.", "en": "Ma sœur travaille à Rabat."}
+  ],
+  "questions": [
+   {"q": "Où habite Amina ?", "options": ["Au Maârif", "À Aïn Diab", "À Rabat"], "answer": 0},
+   {"q": "Que fait Amina ?", "options": ["Elle étudie à l’université", "Elle travaille à la banque", "Elle travaille à Rabat"], "answer": 0},
+   {"q": "Où travaille Malik ?", "options": ["À la banque", "À l’université", "À Rabat"], "answer": 0}
+  ]
+ },
+ "dictation": ["كنسكن ف كازا.", "فين كتخدم؟", "كنهضر شوية."],
+ "dictationTr": ["kanskon f kaza.", "fin katkhdem?", "kanhder chwiya."],
+ "speaking": [
+  {"de": "فين كتسكن؟", "tr": "fin katskon?", "en": "Où habites-tu ? (à un homme)"},
+  {"de": "كنسكن ف كازا.", "tr": "kanskon f kaza.", "en": "J’habite à Casa."},
+  {"de": "كنخدم ف البانكة.", "tr": "kankhdem f lbanka.", "en": "Je travaille à la banque."},
+  {"de": "واش كتهضر الدارجة؟", "tr": "wach kathder ddarija?", "en": "Est-ce que tu parles darija ?"},
+  {"de": "آه، كنهضر شوية.", "tr": "ah, kanhder chwiya.", "en": "Oui, je parle un peu."}
+ ],
+ "writing": {
+  "task": "Parle de ta vie en 2 à 4 phrases : où tu habites, où tu travailles ou étudies, quelles langues tu parles. Écris en lettres latines.",
+  "model": "أنا كنسكن ف كازا، ف المعاريف. كنخدم ف البانكة. كنهضر الفرنساوية و الدارجة شوية.",
+  "modelTr": "ana kanskon f kaza, f lma3arif. kankhdem f lbanka. kanhder lfransawiya w ddarija chwiya."
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "ary-a1-02",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Saluer, remercier, s’excuser",
+ "icon": "🙏",
+ "situation": "Dire bonjour et au revoir",
+ "canDo": "Tu peux dire bonjour selon le moment de la journée, remercier, t’excuser, demander poliment et dire au revoir.",
+ "explanation": "Au Maroc, on salue beaucoup, et **chaque salutation a sa réponse fixe** : on ne répète pas la même phrase, on répond avec la formule qui va avec.\n\n| quand | on dit | on répond |\n|---|---|---|\n| à tout moment | salam / salam 3alikom | w 3alikom ssalam |\n| le matin | sba7 lkhir | sba7 nnour |\n| l’après-midi, le soir | msa lkhir | msa nnour |\n| pour remercier | chokran (bzzaf) | bla jmil |\n| en partant | bslama | bslama |\n\n- **3afak** = s’il te plaît, au début ou à la fin de la phrase : *3afak, 9hwa* (un café, s’il te plaît).\n- **Sme7 liya** = pardon, excuse-moi (à un homme) ; **sm7i liya** à une femme. Comme *nta / nti*, on ajoute **-i** pour une femme.\n- **Mer7ba** = bienvenue, avec plaisir. *Mer7ba bik* (à un homme), *mer7ba biki* (à une femme).\n- **Tsba7 3la khir** = bonne nuit (à un homme), *tsba7i 3la khir* (à une femme). **Nharek sa3id** = bonne journée.\n\nLe **kh** de *lkhir* se dit comme la jota espagnole : un léger raclement au fond de la gorge. Le **7** de *sba7* est un h soufflé fort, comme quand tu embues une vitre.",
+ "french": "Comme « bonjour » et « bonsoir », la salutation change avec l’heure, mais en darija chaque formule a sa réponse fixe : sba7 lkhir, sba7 nnour.",
+ "examples": [
+  {"de": "صباح الخير، لاباس؟", "tr": "sba7 lkhir, labas?", "en": "Bonjour, ça va ?"},
+  {"de": "صباح النور، الحمد لله.", "tr": "sba7 nnour, l7amdoulillah.", "en": "Bonjour, ça va, Dieu merci."},
+  {"de": "شكرا بزاف!", "tr": "chokran bzzaf!", "en": "Merci beaucoup !"},
+  {"de": "بلا جميل.", "tr": "bla jmil.", "en": "De rien."},
+  {"de": "سمح ليا، شنو سميتك؟", "tr": "sme7 liya, chno smitek?", "en": "Pardon, comment tu t’appelles ? (à un homme)"},
+  {"de": "سمحي ليا، نتي سارة؟", "tr": "sm7i liya, nti sara?", "en": "Pardon, tu es Sara ? (à une femme)"},
+  {"de": "مسا الخير، مرحبا بيك!", "tr": "msa lkhir, mer7ba bik!", "en": "Bonsoir, bienvenue ! (à un homme)"},
+  {"de": "بسلامة، تصبح على خير!", "tr": "bslama, tsba7 3la khir!", "en": "Au revoir, bonne nuit ! (à un homme)"}
+ ],
+ "items": [
+  {"id": "ary-a1-02-01", "type": "cloze", "de": "___ الخير.", "tr": "___ lkhir.", "base": "matin", "answers": ["صباح"], "answersTr": ["sba7", "sbah"], "en": "Bonjour. (le matin)"},
+  {"id": "ary-a1-02-02", "type": "cloze", "de": "صباح ___.", "tr": "sba7 ___.", "base": "lumière (la réponse)", "answers": ["النور"], "answersTr": ["nnour"], "en": "Bonjour. (réponse à sba7 lkhir)"},
+  {"id": "ary-a1-02-03", "type": "cloze", "de": "___ الخير.", "tr": "___ lkhir.", "base": "soir", "answers": ["مسا"], "answersTr": ["msa"], "en": "Bonsoir."},
+  {"id": "ary-a1-02-04", "type": "cloze", "de": "شكرا ___!", "tr": "chokran ___!", "base": "beaucoup", "answers": ["بزاف"], "answersTr": ["bzzaf"], "en": "Merci beaucoup !"},
+  {"id": "ary-a1-02-05", "type": "cloze", "de": "___ ليا.", "tr": "___ liya.", "base": "pardonne (à un homme)", "answers": ["سمح"], "answersTr": ["sme7", "smeh", "sma7"], "en": "Pardon, excuse-moi. (à un homme)"},
+  {"id": "ary-a1-02-06", "type": "cloze", "de": "___ ليا.", "tr": "___ liya.", "base": "pardonne (à une femme)", "answers": ["سمحي"], "answersTr": ["sm7i", "sem7i", "smhi"], "en": "Pardon, excuse-moi. (à une femme)"},
+  {"id": "ary-a1-02-07", "type": "cloze", "de": "و عليكم ___.", "tr": "w 3alikom ___.", "base": "la paix", "answers": ["السلام"], "answersTr": ["ssalam"], "en": "Et sur vous la paix. (réponse à salam 3alikom)"},
+  {"id": "ary-a1-02-08", "type": "cloze", "de": "تصبح على ___.", "tr": "tsba7 3la ___.", "base": "bien", "answers": ["خير"], "answersTr": ["khir"], "en": "Bonne nuit. (à un homme)"},
+  {"id": "ary-a1-02-09", "type": "choice", "de": "شكرا! — ___.", "tr": "chokran! — ___.", "options": ["بلا جميل", "بسلامة", "صباح النور"], "optionsTr": ["bla jmil", "bslama", "sba7 nnour"], "answer": 0, "why": "Bla jmil = de rien, la réponse à chokran.", "en": "Merci ! — De rien."},
+  {"id": "ary-a1-02-10", "type": "choice", "de": "صباح الخير! — ___.", "tr": "sba7 lkhir! — ___.", "options": ["صباح النور", "مسا النور", "بلا جميل"], "optionsTr": ["sba7 nnour", "msa nnour", "bla jmil"], "answer": 0, "why": "À sba7 lkhir, on répond sba7 nnour.", "en": "Bonjour ! — Bonjour !"},
+  {"id": "ary-a1-02-11", "type": "choice", "de": "مسا الخير! — ___.", "tr": "msa lkhir! — ___.", "options": ["مسا النور", "صباح النور"], "optionsTr": ["msa nnour", "sba7 nnour"], "answer": 0, "why": "Le soir, msa lkhir, et on répond msa nnour.", "en": "Bonsoir ! — Bonsoir !"},
+  {"id": "ary-a1-02-12", "type": "choice", "de": "___، تصبح على خير!", "tr": "___, tsba7 3la khir!", "options": ["بسلامة", "مرحبا", "عافاك"], "optionsTr": ["bslama", "mer7ba", "3afak"], "answer": 0, "why": "Bslama = au revoir, quand on part.", "en": "Au revoir, bonne nuit !"},
+  {"id": "ary-a1-02-13", "type": "choice", "de": "___ على خير!", "tr": "___ 3la khir!", "options": ["تصبحي", "تصبح"], "optionsTr": ["tsba7i", "tsba7"], "answer": 0, "why": "À une femme, on ajoute -i : tsba7i, comme nti.", "en": "Bonne nuit ! (à une femme)"},
+  {"id": "ary-a1-02-14", "type": "choice", "de": "___، منين نتا؟", "tr": "___, mnin nta?", "options": ["سمح ليا", "سمحي ليا"], "optionsTr": ["sme7 liya", "sm7i liya"], "answer": 0, "why": "À un homme : sme7 liya ; à une femme : sm7i liya.", "en": "Pardon, d’où es-tu ? (à un homme)"},
+  {"id": "ary-a1-02-15", "type": "choice", "de": "سلام عليكم! — ___.", "tr": "salam 3alikom! — ___.", "options": ["و عليكم السلام", "بلا جميل", "مسا الخير"], "optionsTr": ["w 3alikom ssalam", "bla jmil", "msa lkhir"], "answer": 0, "why": "La réponse fixe à salam 3alikom : w 3alikom ssalam.", "en": "La paix sur vous ! — Et sur vous la paix."},
+  {"id": "ary-a1-02-16", "type": "choice", "de": "___ بزاف!", "tr": "___ bzzaf!", "options": ["شكرا", "عافاك", "بسلامة"], "optionsTr": ["chokran", "3afak", "bslama"], "answer": 0, "why": "Chokran bzzaf = merci beaucoup.", "en": "Merci beaucoup !"},
+  {"id": "ary-a1-02-17", "type": "order", "tiles": ["sba7", "lkhir", "labas"], "answers": ["sba7 lkhir labas"], "de": "صباح الخير، لاباس؟", "en": "Bonjour, ça va ?"},
+  {"id": "ary-a1-02-18", "type": "order", "tiles": ["chokran", "bzzaf", "bslama"], "answers": ["chokran bzzaf bslama"], "de": "شكرا بزاف، بسلامة!", "en": "Merci beaucoup, au revoir !"},
+  {"id": "ary-a1-02-19", "type": "order", "tiles": ["sme7", "liya", "chno", "smitek"], "answers": ["sme7 liya chno smitek"], "de": "سمح ليا، شنو سميتك؟", "en": "Pardon, comment tu t’appelles ? (à un homme)"},
+  {"id": "ary-a1-02-20", "type": "order", "tiles": ["msa", "lkhir", "mer7ba", "bik"], "answers": ["msa lkhir mer7ba bik", "mer7ba bik msa lkhir"], "de": "مسا الخير، مرحبا بيك!", "en": "Bonsoir, bienvenue ! (à un homme)"}
+ ],
+ "listening": {
+  "title": "Un café le matin",
+  "intro": "Sara entre dans un café de Casablanca le matin ; Omar, le serveur, l’accueille.",
+  "lines": [
+   {"speaker": "Omar", "de": "صباح الخير، مرحبا بيكي!", "tr": "sba7 lkhir, mer7ba biki!", "en": "Bonjour, bienvenue !"},
+   {"speaker": "Sara", "de": "صباح النور. لاباس؟", "tr": "sba7 nnour. labas?", "en": "Bonjour. Ça va ?"},
+   {"speaker": "Omar", "de": "لاباس، الحمد لله. و نتي؟", "tr": "labas, l7amdoulillah. w nti?", "en": "Ça va, Dieu merci. Et toi ?"},
+   {"speaker": "Sara", "de": "لاباس. عافاك، قهوة.", "tr": "labas. 3afak, 9hwa.", "en": "Ça va. Un café, s’il te plaît."},
+   {"speaker": "Omar", "de": "مرحبا. ها القهوة.", "tr": "mer7ba. ha l9hwa.", "en": "Avec plaisir. Voilà le café."},
+   {"speaker": "Sara", "de": "شكرا بزاف!", "tr": "chokran bzzaf!", "en": "Merci beaucoup !"},
+   {"speaker": "Omar", "de": "بلا جميل. منين نتي؟", "tr": "bla jmil. mnin nti?", "en": "De rien. D’où es-tu ?"},
+   {"speaker": "Sara", "de": "أنا من فرانسا. سمح ليا، شنو سميتك؟", "tr": "ana men fransa. sme7 liya, chno smitek?", "en": "Je suis de France. Pardon, comment tu t’appelles ?"},
+   {"speaker": "Omar", "de": "سميتي عمر. متشرفين!", "tr": "smiti 3omar. mtcherfin!", "en": "Je m’appelle Omar. Enchanté !"},
+   {"speaker": "Sara", "de": "متشرفين. بسلامة!", "tr": "mtcherfin. bslama!", "en": "Enchantée. Au revoir !"},
+   {"speaker": "Omar", "de": "بسلامة، نهارك سعيد!", "tr": "bslama, nharek sa3id!", "en": "Au revoir, bonne journée !"}
+  ],
+  "questions": [
+   {"q": "À quel moment de la journée se passe la scène ?", "options": ["Le matin", "Le soir", "La nuit"], "answer": 0},
+   {"q": "Que demande Sara ?", "options": ["Un café", "Un thé", "De l’eau"], "answer": 0},
+   {"q": "Que dit Omar à la fin ?", "options": ["Bonne journée", "Bonne nuit", "Bienvenue"], "answer": 0}
+  ]
+ },
+ "dictation": ["صباح الخير.", "شكرا بزاف.", "سمح ليا."],
+ "dictationTr": ["sba7 lkhir.", "chokran bzzaf.", "sme7 liya."],
+ "speaking": [
+  {"de": "صباح الخير، لاباس؟", "tr": "sba7 lkhir, labas?", "en": "Bonjour, ça va ?"},
+  {"de": "عافاك، قهوة.", "tr": "3afak, 9hwa.", "en": "Un café, s’il te plaît."},
+  {"de": "شكرا بزاف!", "tr": "chokran bzzaf!", "en": "Merci beaucoup !"},
+  {"de": "سمح ليا.", "tr": "sme7 liya.", "en": "Pardon. (à un homme)"},
+  {"de": "بسلامة، نهارك سعيد!", "tr": "bslama, nharek sa3id!", "en": "Au revoir, bonne journée !"}
+ ],
+ "writing": {
+  "task": "Écris un petit échange avec un serveur le matin : dis bonjour, demande un café poliment, remercie et dis au revoir. Écris en lettres latines.",
+  "model": "صباح الخير! عافاك، قهوة. شكرا بزاف. بسلامة، نهارك سعيد!",
+  "modelTr": "sba7 lkhir! 3afak, 9hwa. chokran bzzaf. bslama, nharek sa3id!"
+ }
+}

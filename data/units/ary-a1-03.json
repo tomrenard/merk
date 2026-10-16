@@ -1,0 +1,78 @@
+{
+ "id": "ary-a1-03",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les nombres de 1 à 20 et l’âge",
+ "icon": "🎂",
+ "situation": "Parler de son âge",
+ "canDo": "Tu peux compter jusqu’à 20, demander l’âge de quelqu’un et dire le tien.",
+ "explanation": "Voici les nombres de 1 à 20 :\n\n| 1 à 5 | 6 à 10 | 11 à 15 | 16 à 20 |\n|---|---|---|---|\n| 1 wa7ed | 6 stta | 11 7dach | 16 settach |\n| 2 jouj | 7 sb3a | 12 tnach | 17 sb3tach |\n| 3 tlata | 8 tmnya | 13 tlettach | 18 tmentach |\n| 4 rb3a | 9 ts3a | 14 rb3tach | 19 ts3tach |\n| 5 khamsa | 10 3achra | 15 khmstach | 20 3chrin |\n\n- De 11 à 19, on reconnaît le petit nombre + **-tach** (comme « -ze » dans onze, douze) : *rb3a* → *rb3tach*.\n- **Ch7al f 3mrek?** = quel âge as-tu ? (mot à mot : combien dans ta vie ?). La même question marche pour un homme et une femme.\n- On répond **3ndi … 3am** = j’ai … ans : *3ndi 3chrin 3am*. De 11 à 19, on dit **l3am** : *3ndi tmentach l3am*. On entend aussi *f 3mri…* (dans ma vie…).\n- **3ndi** = j’ai, **3ndek** = tu as, **3ndo** = il a, **3ndha** = elle a.\n\nLe **t** de *tnach* et de *-tach* s’écrit ط : c’est un t lourd, dit avec la langue bien à plat. Le **3** de *3am* et *3chrin* serre le fond de la gorge.",
+ "french": "Comme en français, on « a » son âge : 3ndi 3chrin 3am = j’ai vingt ans.",
+ "examples": [
+  {"de": "شحال ف عمرك؟", "tr": "ch7al f 3mrek?", "en": "Quel âge as-tu ?"},
+  {"de": "عندي عشرين عام.", "tr": "3ndi 3chrin 3am.", "en": "J’ai vingt ans."},
+  {"de": "عندي تمنطاش العام.", "tr": "3ndi tmentach l3am.", "en": "J’ai dix-huit ans."},
+  {"de": "و نتي، شحال ف عمرك؟", "tr": "w nti, ch7al f 3mrek?", "en": "Et toi, quel âge as-tu ? (à une femme)"},
+  {"de": "مهدي عندو طناش العام.", "tr": "mehdi 3ndo tnach l3am.", "en": "Mehdi a douze ans."},
+  {"de": "سلمى عندها سبعطاش العام.", "tr": "salma 3ndha sb3tach l3am.", "en": "Salma a dix-sept ans."},
+  {"de": "ف عمري تسعطاش العام.", "tr": "f 3mri ts3tach l3am.", "en": "J’ai dix-neuf ans."},
+  {"de": "واحد، جوج، تلاتة!", "tr": "wa7ed, jouj, tlata!", "en": "Un, deux, trois !"}
+ ],
+ "items": [
+  {"id": "ary-a1-03-01", "type": "cloze", "de": "___ ف عمرك؟", "tr": "___ f 3mrek?", "base": "combien", "answers": ["شحال"], "answersTr": ["ch7al", "chhal"], "en": "Quel âge as-tu ?"},
+  {"id": "ary-a1-03-02", "type": "cloze", "de": "شحال ف ___؟", "tr": "ch7al f ___?", "base": "ta vie", "answers": ["عمرك"], "answersTr": ["3mrek", "3omrek"], "en": "Quel âge as-tu ?"},
+  {"id": "ary-a1-03-03", "type": "cloze", "de": "___ عشرين عام.", "tr": "___ 3chrin 3am.", "base": "j’ai", "answers": ["عندي"], "answersTr": ["3ndi", "3andi"], "en": "J’ai vingt ans."},
+  {"id": "ary-a1-03-04", "type": "cloze", "de": "عندي ___ عام.", "tr": "3ndi ___ 3am.", "base": "20", "answers": ["عشرين"], "answersTr": ["3chrin", "3ichrin"], "en": "J’ai vingt ans."},
+  {"id": "ary-a1-03-05", "type": "cloze", "de": "مهدي ___ طناش العام.", "tr": "mehdi ___ tnach l3am.", "base": "il a", "answers": ["عندو"], "answersTr": ["3ndo", "3ando"], "en": "Mehdi a douze ans."},
+  {"id": "ary-a1-03-06", "type": "cloze", "de": "زينب ___ خمسطاش العام.", "tr": "zineb ___ khmstach l3am.", "base": "elle a", "answers": ["عندها"], "answersTr": ["3ndha", "3andha"], "en": "Zineb a quinze ans."},
+  {"id": "ary-a1-03-07", "type": "cloze", "de": "واحد، جوج، ___.", "tr": "wa7ed, jouj, ___.", "base": "3", "answers": ["تلاتة"], "answersTr": ["tlata"], "en": "Un, deux, trois."},
+  {"id": "ary-a1-03-08", "type": "cloze", "de": "عندي ___ العام.", "tr": "3ndi ___ l3am.", "base": "11", "answers": ["حداش"], "answersTr": ["7dach", "hdach"], "en": "J’ai onze ans."},
+  {"id": "ary-a1-03-09", "type": "choice", "de": "خمسة و خمسة: ___", "tr": "khamsa w khamsa: ___", "options": ["عشرة", "ستة", "سبعة"], "optionsTr": ["3achra", "stta", "sb3a"], "answer": 0, "why": "5 + 5 = 10 : 3achra.", "en": "Cinq et cinq : dix."},
+  {"id": "ary-a1-03-10", "type": "choice", "de": "عندي ___ العام.", "tr": "3ndi ___ l3am.", "options": ["تمنطاش", "تمنية"], "optionsTr": ["tmentach", "tmnya"], "answer": 0, "why": "18 = tmentach ; tmnya = 8.", "en": "J’ai dix-huit ans."},
+  {"id": "ary-a1-03-11", "type": "choice", "de": "سارة عندها ___ عام.", "tr": "sara 3ndha ___ 3am.", "options": ["عشرين", "جوج"], "optionsTr": ["3chrin", "jouj"], "answer": 0, "why": "20 = 3chrin ; jouj = 2.", "en": "Sara a vingt ans."},
+  {"id": "ary-a1-03-12", "type": "choice", "de": "___ ف عمرك؟", "tr": "___ f 3mrek?", "options": ["شحال", "شنو", "منين"], "optionsTr": ["ch7al", "chno", "mnin"], "answer": 0, "why": "Ch7al = combien : ch7al f 3mrek ? = quel âge as-tu ?", "en": "Quel âge as-tu ?"},
+  {"id": "ary-a1-03-13", "type": "choice", "de": "يوسف ___ سطاش العام.", "tr": "youssef ___ settach l3am.", "options": ["عندو", "عندها"], "optionsTr": ["3ndo", "3ndha"], "answer": 0, "why": "Youssef est un homme : 3ndo (il a).", "en": "Youssef a seize ans."},
+  {"id": "ary-a1-03-14", "type": "choice", "de": "ليلى ___ تلطاش العام.", "tr": "layla ___ tlettach l3am.", "options": ["عندها", "عندو"], "optionsTr": ["3ndha", "3ndo"], "answer": 0, "why": "Layla est une femme : 3ndha (elle a).", "en": "Layla a treize ans."},
+  {"id": "ary-a1-03-15", "type": "choice", "de": "جوج و جوج: ___", "tr": "jouj w jouj: ___", "options": ["ربعة", "تلاتة", "خمسة"], "optionsTr": ["rb3a", "tlata", "khamsa"], "answer": 0, "why": "2 + 2 = 4 : rb3a.", "en": "Deux et deux : quatre."},
+  {"id": "ary-a1-03-16", "type": "choice", "de": "عشرة و عشرة: ___", "tr": "3achra w 3achra: ___", "options": ["عشرين", "حداش", "طناش"], "optionsTr": ["3chrin", "7dach", "tnach"], "answer": 0, "why": "10 + 10 = 20 : 3chrin.", "en": "Dix et dix : vingt."},
+  {"id": "ary-a1-03-17", "type": "order", "tiles": ["ch7al", "f", "3mrek"], "answers": ["ch7al f 3mrek"], "de": "شحال ف عمرك؟", "en": "Quel âge as-tu ?"},
+  {"id": "ary-a1-03-18", "type": "order", "tiles": ["ana", "3ndi", "3chrin", "3am"], "answers": ["ana 3ndi 3chrin 3am"], "de": "أنا عندي عشرين عام.", "en": "Moi, j’ai vingt ans."},
+  {"id": "ary-a1-03-19", "type": "order", "tiles": ["w", "nta", "ch7al", "f", "3mrek"], "answers": ["w nta ch7al f 3mrek"], "de": "و نتا، شحال ف عمرك؟", "en": "Et toi, quel âge as-tu ? (à un homme)"},
+  {"id": "ary-a1-03-20", "type": "order", "tiles": ["hiya", "3ndha", "tmentach", "l3am"], "answers": ["hiya 3ndha tmentach l3am"], "de": "هي عندها تمنطاش العام.", "en": "Elle a dix-huit ans."}
+ ],
+ "listening": {
+  "title": "À l’anniversaire",
+  "intro": "Hajar et Anas font connaissance à l’anniversaire de Salma et parlent de l’âge de chacun.",
+  "lines": [
+   {"speaker": "Anas", "de": "سلام، أنا أنس. شنو سميتك؟", "tr": "salam, ana anas. chno smitek?", "en": "Salut, je suis Anas. Comment tu t’appelles ?"},
+   {"speaker": "Hajar", "de": "سميتي هاجر. متشرفين!", "tr": "smiti hajar. mtcherfin!", "en": "Je m’appelle Hajar. Enchantée !"},
+   {"speaker": "Anas", "de": "متشرفين. شحال ف عمرك، هاجر؟", "tr": "mtcherfin. ch7al f 3mrek, hajar?", "en": "Enchanté. Quel âge as-tu, Hajar ?"},
+   {"speaker": "Hajar", "de": "عندي تسعطاش العام. و نتا؟", "tr": "3ndi ts3tach l3am. w nta?", "en": "J’ai dix-neuf ans. Et toi ?"},
+   {"speaker": "Anas", "de": "أنا عندي عشرين عام.", "tr": "ana 3ndi 3chrin 3am.", "en": "Moi, j’ai vingt ans."},
+   {"speaker": "Hajar", "de": "و سلمى؟", "tr": "w salma?", "en": "Et Salma ?"},
+   {"speaker": "Anas", "de": "سلمى عندها سبعطاش العام.", "tr": "salma 3ndha sb3tach l3am.", "en": "Salma a dix-sept ans."},
+   {"speaker": "Hajar", "de": "و مهدي؟", "tr": "w mehdi?", "en": "Et Mehdi ?"},
+   {"speaker": "Anas", "de": "مهدي عندو طناش العام.", "tr": "mehdi 3ndo tnach l3am.", "en": "Mehdi a douze ans."},
+   {"speaker": "Hajar", "de": "آه، مزيان!", "tr": "ah, mzyan!", "en": "Ah, très bien !"}
+  ],
+  "questions": [
+   {"q": "Quel âge a Hajar ?", "options": ["19 ans", "18 ans", "20 ans"], "answer": 0},
+   {"q": "Quel âge a Anas ?", "options": ["20 ans", "19 ans", "12 ans"], "answer": 0},
+   {"q": "Qui a douze ans ?", "options": ["Mehdi", "Salma", "Anas"], "answer": 0}
+  ]
+ },
+ "dictation": ["عندي عشرين عام.", "شحال ف عمرك؟", "واحد، جوج، تلاتة."],
+ "dictationTr": ["3ndi 3chrin 3am.", "ch7al f 3mrek?", "wa7ed, jouj, tlata."],
+ "speaking": [
+  {"de": "شحال ف عمرك؟", "tr": "ch7al f 3mrek?", "en": "Quel âge as-tu ?"},
+  {"de": "عندي عشرين عام.", "tr": "3ndi 3chrin 3am.", "en": "J’ai vingt ans."},
+  {"de": "و نتي، شحال ف عمرك؟", "tr": "w nti, ch7al f 3mrek?", "en": "Et toi, quel âge as-tu ? (à une femme)"},
+  {"de": "عندي تمنطاش العام.", "tr": "3ndi tmentach l3am.", "en": "J’ai dix-huit ans."},
+  {"de": "واحد، جوج، تلاتة، ربعة، خمسة.", "tr": "wa7ed, jouj, tlata, rb3a, khamsa.", "en": "Un, deux, trois, quatre, cinq."}
+ ],
+ "writing": {
+  "task": "Dis ton âge et celui de deux personnes (un homme et une femme), puis demande l’âge de l’autre. Écris en lettres latines.",
+  "model": "أنا عندي عشرين عام. يوسف عندو تمنطاش العام و سلمى عندها سبعطاش العام. و نتا، شحال ف عمرك؟",
+  "modelTr": "ana 3ndi 3chrin 3am. youssef 3ndo tmentach l3am w salma 3ndha sb3tach l3am. w nta, ch7al f 3mrek?"
+ }
+}

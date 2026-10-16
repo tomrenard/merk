@@ -1,0 +1,78 @@
+{
+ "id": "ary-a1-06",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Il y a : kayn et makaynch",
+ "icon": "🏠",
+ "situation": "Ce qu’il y a dans la maison",
+ "canDo": "Tu peux dire ce qu’il y a, ou ce qu’il n’y a pas, dans ta maison et ton quartier, et le demander avec wach kayn ?",
+ "explanation": "**Kayn** = il y a. **Makaynch** = il n’y a pas (c’est ma…ch de la leçon 4). La question : **wach kayn…?**\n\n- Devant un nom féminin (souvent en -a), on dit **kayna** : *kayna lkouzina*.\n- **F** = dans, à : *f ddar* (dans la maison), *f l7ouma* (dans le quartier).\n- **Wa7ed** + nom avec l- = un, une : *kayn wa7ed l7anout* (il y a une épicerie).\n- **Chi** = un (dans une question) : *wach kayn chi 7anout?*\n- **9rib** = près, **b3id** = loin.\n\n| la maison | | le quartier | |\n|---|---|---|---|\n| ddar | la maison | l7ouma | le quartier |\n| lbit | la chambre | l7anout | l’épicerie |\n| ssalon | le salon | ljame3 | la mosquée |\n| lkouzina | la cuisine | lmdrasa | l’école |\n| l7emmam | la salle de bain | ttobis | le bus |\n| ttlaja | le frigo | l9hwa | le café |\n\nDevant d, t, s, n…, le **l** de l’article devient la même lettre : *ddar*, *ssalon*, *ttlaja*. Le **9** de *9rib* se dit tout au fond de la gorge, plus bas que le k.",
+ "french": "Kayn joue le rôle de « il y a » et, comme « ne… pas », ma…ch l’entoure : makaynch = il n’y a pas.",
+ "examples": [
+  {"de": "ف الدار ديالي كاين الصالون و الكوزينة.", "tr": "f ddar dyali kayn ssalon w lkouzina.", "en": "Dans ma maison, il y a le salon et la cuisine."},
+  {"de": "واش كاين الحمام؟", "tr": "wach kayn l7emmam?", "en": "Est-ce qu’il y a une salle de bain ?"},
+  {"de": "آه، كاين.", "tr": "ah, kayn.", "en": "Oui, il y en a une."},
+  {"de": "ف الكوزينة كاينة التلاجة.", "tr": "f lkouzina kayna ttlaja.", "en": "Dans la cuisine, il y a le frigo."},
+  {"de": "ف الحومة كاين واحد الحانوت قريب.", "tr": "f l7ouma kayn wa7ed l7anout 9rib.", "en": "Dans le quartier, il y a une épicerie tout près."},
+  {"de": "واش كاين شي جامع قريب؟", "tr": "wach kayn chi jame3 9rib?", "en": "Est-ce qu’il y a une mosquée près d’ici ?"},
+  {"de": "لا، ماكاينش.", "tr": "la, makaynch.", "en": "Non, il n’y en a pas."},
+  {"de": "ماكاينش الطوبيس ف الحومة.", "tr": "makaynch ttobis f l7ouma.", "en": "Il n’y a pas de bus dans le quartier."}
+ ],
+ "items": [
+  {"id": "ary-a1-06-01", "type": "cloze", "de": "ف الكوزينة ___ التلاجة.", "tr": "f lkouzina ___ ttlaja.", "base": "il y a (féminin)", "answers": ["كاينة"], "answersTr": ["kayna", "kaina"], "en": "Dans la cuisine, il y a le frigo."},
+  {"id": "ary-a1-06-02", "type": "cloze", "de": "ف الدار ___ الصالون.", "tr": "f ddar ___ ssalon.", "base": "il y a", "answers": ["كاين"], "answersTr": ["kayn", "kain"], "en": "Dans la maison, il y a le salon."},
+  {"id": "ary-a1-06-03", "type": "cloze", "de": "لا، ___.", "tr": "la, ___.", "base": "il n’y en a pas", "answers": ["ماكاينش"], "answersTr": ["makaynch", "makainch"], "en": "Non, il n’y en a pas."},
+  {"id": "ary-a1-06-04", "type": "cloze", "de": "___ كاين شي حانوت قريب؟", "tr": "___ kayn chi 7anout 9rib?", "base": "est-ce que", "answers": ["واش"], "answersTr": ["wach"], "en": "Est-ce qu’il y a une épicerie près d’ici ?"},
+  {"id": "ary-a1-06-05", "type": "cloze", "de": "كاين واحد الحانوت ___.", "tr": "kayn wa7ed l7anout ___.", "base": "près", "answers": ["قريب"], "answersTr": ["9rib"], "en": "Il y a une épicerie tout près."},
+  {"id": "ary-a1-06-06", "type": "cloze", "de": "ف الحومة كاين ___ الحانوت.", "tr": "f l7ouma kayn ___ l7anout.", "base": "un", "answers": ["واحد"], "answersTr": ["wa7ed", "wahed"], "en": "Dans le quartier, il y a une épicerie."},
+  {"id": "ary-a1-06-07", "type": "cloze", "de": "واش كاين شي ___ قريب؟", "tr": "wach kayn chi ___ 9rib?", "base": "épicerie", "answers": ["حانوت"], "answersTr": ["7anout", "hanout"], "en": "Est-ce qu’il y a une épicerie près d’ici ?"},
+  {"id": "ary-a1-06-08", "type": "cloze", "de": "___ الدار كاين الصالون.", "tr": "___ ddar kayn ssalon.", "base": "dans", "answers": ["ف"], "answersTr": ["f"], "en": "Dans la maison, il y a le salon."},
+  {"id": "ary-a1-06-09", "type": "choice", "de": "ف الدار ___ الكوزينة.", "tr": "f ddar ___ lkouzina.", "options": ["كاينة", "كاين"], "optionsTr": ["kayna", "kayn"], "answer": 0, "why": "Lkouzina est féminin : kayna.", "en": "Dans la maison, il y a la cuisine."},
+  {"id": "ary-a1-06-10", "type": "choice", "de": "ف الحومة ___ الجامع.", "tr": "f l7ouma ___ ljame3.", "options": ["كاين", "كاينة"], "optionsTr": ["kayn", "kayna"], "answer": 0, "why": "Ljame3 est masculin : kayn.", "en": "Dans le quartier, il y a la mosquée."},
+  {"id": "ary-a1-06-11", "type": "choice", "de": "واش كاين الطوبيس؟ — لا، ___.", "tr": "wach kayn ttobis? — la, ___.", "options": ["ماكاينش", "كاين", "ماشي"], "optionsTr": ["makaynch", "kayn", "machi"], "answer": 0, "why": "Pour dire « il n’y en a pas » : makaynch.", "en": "Il y a un bus ? — Non, il n’y en a pas."},
+  {"id": "ary-a1-06-12", "type": "choice", "de": "واش كاين الحمام؟ — آه، ___.", "tr": "wach kayn l7emmam? — ah, ___.", "options": ["كاين", "ماكاينش"], "optionsTr": ["kayn", "makaynch"], "answer": 0, "why": "Ah (oui), donc kayn.", "en": "Il y a une salle de bain ? — Oui, il y en a une."},
+  {"id": "ary-a1-06-13", "type": "choice", "de": "___ كاين شي حانوت؟", "tr": "___ kayn chi 7anout?", "options": ["واش", "شحال", "شنو"], "optionsTr": ["wach", "ch7al", "chno"], "answer": 0, "why": "Wach pour une question oui/non.", "en": "Est-ce qu’il y a une épicerie ?"},
+  {"id": "ary-a1-06-14", "type": "choice", "de": "ف الكوزينة كاينة ___.", "tr": "f lkouzina kayna ___.", "options": ["التلاجة", "الحومة", "الجامع"], "optionsTr": ["ttlaja", "l7ouma", "ljame3"], "answer": 0, "why": "Dans la cuisine, il y a le frigo : ttlaja.", "en": "Dans la cuisine, il y a le frigo."},
+  {"id": "ary-a1-06-15", "type": "choice", "de": "الحانوت ___، ماشي بعيد.", "tr": "l7anout ___, machi b3id.", "options": ["قريب", "بعيد"], "optionsTr": ["9rib", "b3id"], "answer": 0, "why": "Machi b3id = pas loin, donc 9rib (près).", "en": "L’épicerie est près, pas loin."},
+  {"id": "ary-a1-06-16", "type": "choice", "de": "ف الدار ___ الحمام.", "tr": "f ddar ___ l7emmam.", "options": ["ماكاينش", "ماشي"], "optionsTr": ["makaynch", "machi"], "answer": 0, "why": "« Il n’y a pas » se dit makaynch, pas machi.", "en": "Dans la maison, il n’y a pas de salle de bain."},
+  {"id": "ary-a1-06-17", "type": "order", "tiles": ["f", "ddar", "kayn", "ssalon"], "answers": ["f ddar kayn ssalon", "kayn ssalon f ddar"], "de": "ف الدار كاين الصالون.", "en": "Dans la maison, il y a le salon."},
+  {"id": "ary-a1-06-18", "type": "order", "tiles": ["wach", "kayn", "chi", "7anout", "9rib"], "answers": ["wach kayn chi 7anout 9rib"], "de": "واش كاين شي حانوت قريب؟", "en": "Est-ce qu’il y a une épicerie près d’ici ?"},
+  {"id": "ary-a1-06-19", "type": "order", "tiles": ["la", "makaynch", "ttobis"], "answers": ["la makaynch ttobis"], "de": "لا، ماكاينش الطوبيس.", "en": "Non, il n’y a pas de bus."},
+  {"id": "ary-a1-06-20", "type": "order", "tiles": ["f", "lkouzina", "kayna", "ttlaja"], "answers": ["f lkouzina kayna ttlaja", "kayna ttlaja f lkouzina"], "de": "ف الكوزينة كاينة التلاجة.", "en": "Dans la cuisine, il y a le frigo."}
+ ],
+ "listening": {
+  "title": "La nouvelle maison",
+  "intro": "Driss montre sa nouvelle maison à son amie Fatima.",
+  "lines": [
+   {"speaker": "Driss", "de": "مرحبا بيكي! هادي الدار ديالي.", "tr": "mer7ba biki! hadi ddar dyali.", "en": "Bienvenue ! Voici ma maison."},
+   {"speaker": "Fatima", "de": "شكرا! شنو كاين ف الدار؟", "tr": "chokran! chno kayn f ddar?", "en": "Merci ! Qu’est-ce qu’il y a dans la maison ?"},
+   {"speaker": "Driss", "de": "كاين الصالون، الكوزينة و جوج د البيوت.", "tr": "kayn ssalon, lkouzina w jouj d lbyout.", "en": "Il y a le salon, la cuisine et deux chambres."},
+   {"speaker": "Fatima", "de": "و الحمام؟", "tr": "w l7emmam?", "en": "Et la salle de bain ?"},
+   {"speaker": "Driss", "de": "آه، كاين الحمام.", "tr": "ah, kayn l7emmam.", "en": "Oui, il y a une salle de bain."},
+   {"speaker": "Fatima", "de": "و ف الحومة؟ واش كاين شي حانوت قريب؟", "tr": "w f l7ouma? wach kayn chi 7anout 9rib?", "en": "Et dans le quartier ? Est-ce qu’il y a une épicerie près d’ici ?"},
+   {"speaker": "Driss", "de": "آه، كاين واحد الحانوت قريب بزاف.", "tr": "ah, kayn wa7ed l7anout 9rib bzzaf.", "en": "Oui, il y a une épicerie tout près."},
+   {"speaker": "Fatima", "de": "و الطوبيس؟", "tr": "w ttobis?", "en": "Et le bus ?"},
+   {"speaker": "Driss", "de": "لا، ماكاينش الطوبيس ف الحومة.", "tr": "la, makaynch ttobis f l7ouma.", "en": "Non, il n’y a pas de bus dans le quartier."},
+   {"speaker": "Fatima", "de": "ماشي مشكل!", "tr": "machi mochkil!", "en": "Pas de problème !"}
+  ],
+  "questions": [
+   {"q": "Combien de chambres y a-t-il dans la maison ?", "options": ["Deux", "Une", "Trois"], "answer": 0},
+   {"q": "Où est l’épicerie ?", "options": ["Tout près", "Loin", "Il n’y en a pas"], "answer": 0},
+   {"q": "Qu’est-ce qu’il n’y a pas dans le quartier ?", "options": ["Le bus", "L’épicerie", "La mosquée"], "answer": 0}
+  ]
+ },
+ "dictation": ["كاين الصالون.", "ماكاينش الطوبيس.", "واش كاين شي حانوت؟"],
+ "dictationTr": ["kayn ssalon.", "makaynch ttobis.", "wach kayn chi 7anout?"],
+ "speaking": [
+  {"de": "واش كاين شي حانوت قريب؟", "tr": "wach kayn chi 7anout 9rib?", "en": "Est-ce qu’il y a une épicerie près d’ici ?"},
+  {"de": "آه، كاين.", "tr": "ah, kayn.", "en": "Oui, il y en a."},
+  {"de": "لا، ماكاينش.", "tr": "la, makaynch.", "en": "Non, il n’y en a pas."},
+  {"de": "ف الدار كاين الصالون و الكوزينة.", "tr": "f ddar kayn ssalon w lkouzina.", "en": "Dans la maison, il y a le salon et la cuisine."},
+  {"de": "ف الكوزينة كاينة التلاجة.", "tr": "f lkouzina kayna ttlaja.", "en": "Dans la cuisine, il y a le frigo."}
+ ],
+ "writing": {
+  "task": "Décris ta maison et ton quartier en 2 à 4 phrases : ce qu’il y a et ce qu’il n’y a pas. Écris en lettres latines.",
+  "model": "ف الدار ديالي كاين الصالون و الكوزينة. ف الكوزينة كاينة التلاجة. ف الحومة كاين واحد الحانوت قريب، و ماكاينش الطوبيس.",
+  "modelTr": "f ddar dyali kayn ssalon w lkouzina. f lkouzina kayna ttlaja. f l7ouma kayn wa7ed l7anout 9rib, w makaynch ttobis."
+ }
+}

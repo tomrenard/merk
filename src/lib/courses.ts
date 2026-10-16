@@ -18,10 +18,41 @@ export const COURSES = {
   ary: {
     name: "Moroccan Darija",
     flag: "🇲🇦",
-    // Lesson ids start with "ary-", so they never clash with German ones.
+    // Lesson ids start with "ary-", so they never clash with German ones; data/darija/syllabus.md.
+    // Only lessons with a file in data/units show up.
     parts: [
-      { id: "ary-A1.1", level: "A1", lessons: ["ary-a1-01"] as string[] },
-      { id: "ary-A1.2", level: "A1", lessons: [] as string[] },
+      {
+        id: "ary-A1.1",
+        level: "A1",
+        lessons: [
+          "ary-a1-01",
+          "ary-a1-02",
+          "ary-a1-03",
+          "ary-a1-04",
+          "ary-a1-05",
+          "ary-a1-06",
+          "ary-a1-07",
+          "ary-a1-08",
+          "ary-a1-09",
+          "ary-a1-10",
+        ] as string[],
+      },
+      {
+        id: "ary-A1.2",
+        level: "A1",
+        lessons: [
+          "ary-a1-11",
+          "ary-a1-12",
+          "ary-a1-13",
+          "ary-a1-14",
+          "ary-a1-15",
+          "ary-a1-16",
+          "ary-a1-17",
+          "ary-a1-18",
+          "ary-a1-19",
+          "ary-a1-20",
+        ] as string[],
+      },
     ],
     levelExams: false,
     placement: false,

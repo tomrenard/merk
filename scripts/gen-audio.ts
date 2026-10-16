@@ -1,8 +1,9 @@
 /**
- * Records every lesson and exam sentence once with Gemini's German voices (Kore; Charon for the
- * second speaker of a dialogue) through AI Gateway, as a/<audioKey>.m4a in a clone of the public
- * tomrenard/merk-audio repo (GitHub Pages serves it: see AUDIO_BASE). Sentences already there
- * are skipped, so re-runs cost nothing; commit and push the new files afterwards.
+ * Records every lesson and exam sentence, and every Darija word, once with Gemini's voices
+ * (Kore; Charon for the second speaker of a dialogue) through AI Gateway, as a/<audioKey>.m4a
+ * in a clone of the public tomrenard/merk-audio repo (GitHub Pages serves it: see AUDIO_BASE).
+ * Sentences already there are skipped, so re-runs cost nothing; commit and push the new files
+ * afterwards.
  *
  * Needs AI_GATEWAY_API_KEY (a capped one-off key). AUDIO_DIR: the clone (default ../merk-audio).
  * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N.
@@ -113,6 +114,11 @@ for (const exam of exams) {
   for (const item of exam.sprachbausteine) add(solved({ ...item, type: "choice" } as UnitItem));
   for (const task of [...exam.schreiben, ...exam.sprechen]) add(task.model);
 }
+// Darija words too: phones have no Darija voice, so a word card is silent without a recording.
+const darijaWords = "data/darija/words.json";
+if (existsSync(darijaWords))
+  for (const w of json<{ de: string; exampleDe?: string }[]>(darijaWords))
+    for (const text of [w.de, w.exampleDe ?? ""]) add(text);
 
 const stored = new Set(readdirSync(out).map((f) => f.replace(/\.m4a$/, "")));
 // Which voice each stored file has: a sentence whose voice changed is recorded again.

@@ -1,0 +1,516 @@
+{
+ "id": "ary-a1-13",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "L’heure et les jours",
+ "icon": "🕒",
+ "situation": "Prendre rendez-vous",
+ "canDo": "Tu peux demander et dire l’heure, nommer les jours de la semaine et fixer un rendez-vous.",
+ "explanation": "**Ch7al f sa3a?** = quelle heure est-il ? On répond avec **hadi** + l’heure, avec l’article : *hadi ttlata* = il est trois heures.\n\n| heure | darija | minutes | darija |\n|---|---|---|---|\n| 1 h | lwa7da | et quart | w rbe3 |\n| 2 h | ljouj | et demie | w nouss |\n| 3 h | ttlata | moins le quart | 9el rbe3 |\n| 10 h | l3achra | et vingt | w tlt |\n\n- **À** telle heure : **f** : *f l3achra* = à dix heures. **F ch7al?** = à quelle heure ?\n- Les jours commencent par **nhar** (le jour de) : *nhar letnin* (lundi), *nhar tlat* (mardi), *nhar larb3* (mercredi), *nhar lkhmis* (jeudi), *nhar ljem3a* (vendredi), *nhar ssebt* (samedi), *nhar l7ed* (dimanche).\n- **Lyoum** = aujourd’hui, **ghedda** = demain, **lbare7** = hier.\n- *F ssba7* (le matin), *f l3chiya* (l’après-midi), *f llil* (le soir, la nuit). *L3achra d ssba7* = dix heures du matin.\n- Pour fixer un rendez-vous (**maw3id**) : *wach t9der nhar lkhmis?* = tu peux jeudi ? On répond **wakha** (d’accord) ou *man9derch* (je ne peux pas).",
+ "french": "Comme « le lundi » en français, nhar letnin dit le jour ; et f l3achra se dit comme « à dix heures », avec l’article devant le nombre.",
+ "examples": [
+  {
+   "de": "شحال ف الساعة؟",
+   "tr": "ch7al f sa3a?",
+   "en": "Quelle heure est-il ?"
+  },
+  {
+   "de": "هادي التلاتة و نص.",
+   "tr": "hadi ttlata w nouss.",
+   "en": "Il est trois heures et demie."
+  },
+  {
+   "de": "هادي العشرة قل ربع.",
+   "tr": "hadi l3achra 9el rbe3.",
+   "en": "Il est dix heures moins le quart."
+  },
+  {
+   "de": "واش تقدر نهار الخميس؟",
+   "tr": "wach t9der nhar lkhmis?",
+   "en": "Tu peux jeudi ?"
+  },
+  {
+   "de": "ف شحال؟ — ف الجوج و ربع.",
+   "tr": "f ch7al? — f ljouj w rbe3.",
+   "en": "À quelle heure ? — À deux heures et quart."
+  },
+  {
+   "de": "بغيت ناخد موعد مع الطبيب.",
+   "tr": "bghit nakhod maw3id m3a ttbib.",
+   "en": "Je veux prendre rendez-vous avec le médecin."
+  },
+  {
+   "de": "نهار السبت ف الصباح، واخا؟",
+   "tr": "nhar ssebt f ssba7, wakha?",
+   "en": "Samedi matin, d’accord ?"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-13-01",
+   "type": "cloze",
+   "de": "شحال ف ___؟",
+   "tr": "ch7al f ___?",
+   "base": "l’heure",
+   "answers": [
+    "الساعة"
+   ],
+   "answersTr": [
+    "sa3a",
+    "ssa3a"
+   ],
+   "en": "Quelle heure est-il ?"
+  },
+  {
+   "id": "ary-a1-13-02",
+   "type": "cloze",
+   "de": "___ التلاتة و نص.",
+   "tr": "___ ttlata w nouss.",
+   "base": "c’est (il est)",
+   "answers": [
+    "هادي"
+   ],
+   "answersTr": [
+    "hadi"
+   ],
+   "en": "Il est trois heures et demie."
+  },
+  {
+   "id": "ary-a1-13-03",
+   "type": "cloze",
+   "de": "هادي العشرة و ___.",
+   "tr": "hadi l3achra w ___.",
+   "base": "demie",
+   "answers": [
+    "نص"
+   ],
+   "answersTr": [
+    "nouss",
+    "nss"
+   ],
+   "en": "Il est dix heures et demie."
+  },
+  {
+   "id": "ary-a1-13-04",
+   "type": "cloze",
+   "de": "هادي الجوج و ___.",
+   "tr": "hadi ljouj w ___.",
+   "base": "quart",
+   "answers": [
+    "ربع"
+   ],
+   "answersTr": [
+    "rbe3",
+    "rob3",
+    "rba3"
+   ],
+   "en": "Il est deux heures et quart."
+  },
+  {
+   "id": "ary-a1-13-05",
+   "type": "cloze",
+   "de": "واش تقدر ___ الخميس؟",
+   "tr": "wach t9der ___ lkhmis?",
+   "base": "le jour de",
+   "answers": [
+    "نهار"
+   ],
+   "answersTr": [
+    "nhar"
+   ],
+   "en": "Tu peux jeudi ?"
+  },
+  {
+   "id": "ary-a1-13-06",
+   "type": "cloze",
+   "de": "___ شحال؟ — ف الخمسة.",
+   "tr": "___ ch7al? — f lkhamsa.",
+   "base": "à",
+   "answers": [
+    "ف"
+   ],
+   "answersTr": [
+    "f",
+    "fi"
+   ],
+   "en": "À quelle heure ? — À cinq heures."
+  },
+  {
+   "id": "ary-a1-13-07",
+   "type": "cloze",
+   "de": "___ مانقدرش، غدا واخا.",
+   "tr": "___ man9derch, ghedda wakha.",
+   "base": "aujourd’hui",
+   "answers": [
+    "اليوم"
+   ],
+   "answersTr": [
+    "lyoum",
+    "lyom"
+   ],
+   "en": "Aujourd’hui je ne peux pas, demain c’est d’accord."
+  },
+  {
+   "id": "ary-a1-13-08",
+   "type": "cloze",
+   "de": "نهار ___ و نهار الحد ماكنخدمش.",
+   "tr": "nhar ___ w nhar l7ed makankhdemch.",
+   "base": "samedi",
+   "answers": [
+    "السبت"
+   ],
+   "answersTr": [
+    "ssebt",
+    "sebt"
+   ],
+   "en": "Le samedi et le dimanche, je ne travaille pas."
+  },
+  {
+   "id": "ary-a1-13-09",
+   "type": "choice",
+   "de": "هادي ___ و نص.",
+   "tr": "hadi ___ w nouss.",
+   "options": [
+    "الوحدة",
+    "واحد",
+    "الجوج"
+   ],
+   "optionsTr": [
+    "lwa7da",
+    "wa7ed",
+    "ljouj"
+   ],
+   "answer": 0,
+   "why": "Pour l’heure, on dit lwa7da, avec l’article.",
+   "en": "Il est une heure et demie."
+  },
+  {
+   "id": "ary-a1-13-10",
+   "type": "choice",
+   "de": "هادي التمنية ___ ربع.",
+   "tr": "hadi ttmnya ___ rbe3.",
+   "options": [
+    "قل",
+    "و"
+   ],
+   "optionsTr": [
+    "9el",
+    "w"
+   ],
+   "answer": 0,
+   "why": "Moins le quart : 9el rbe3 ; w rbe3 = et quart.",
+   "en": "Il est huit heures moins le quart."
+  },
+  {
+   "id": "ary-a1-13-11",
+   "type": "choice",
+   "de": "كنخدم نهار ___.",
+   "tr": "kankhdem nhar ___.",
+   "options": [
+    "الاتنين",
+    "الحد",
+    "السبت"
+   ],
+   "optionsTr": [
+    "letnin",
+    "l7ed",
+    "ssebt"
+   ],
+   "answer": 0,
+   "why": "Lundi = nhar letnin ; l7ed = dimanche, ssebt = samedi.",
+   "en": "Je travaille le lundi."
+  },
+  {
+   "id": "ary-a1-13-12",
+   "type": "choice",
+   "de": "نتلاقاو ___ الستة.",
+   "tr": "ntla9aw ___ ssetta.",
+   "options": [
+    "ف",
+    "و",
+    "من"
+   ],
+   "optionsTr": [
+    "f",
+    "w",
+    "men"
+   ],
+   "answer": 0,
+   "why": "À + heure : f.",
+   "en": "On se retrouve à six heures."
+  },
+  {
+   "id": "ary-a1-13-13",
+   "type": "choice",
+   "de": "___ ف الساعة؟ — هادي الخمسة.",
+   "tr": "___ f sa3a? — hadi lkhamsa.",
+   "options": [
+    "شحال",
+    "فين",
+    "شكون"
+   ],
+   "optionsTr": [
+    "ch7al",
+    "fin",
+    "chkoun"
+   ],
+   "answer": 0,
+   "why": "Pour l’heure : ch7al f sa3a ?",
+   "en": "Quelle heure est-il ? — Il est cinq heures."
+  },
+  {
+   "id": "ary-a1-13-14",
+   "type": "choice",
+   "de": "واش تقدر غدا؟ — ___، ف العشرة.",
+   "tr": "wach t9der ghedda? — ___, f l3achra.",
+   "options": [
+    "واخا",
+    "مانقدرش",
+    "لاباس"
+   ],
+   "optionsTr": [
+    "wakha",
+    "man9derch",
+    "labas"
+   ],
+   "answer": 0,
+   "why": "On donne une heure, donc on accepte : wakha (d’accord).",
+   "en": "Tu peux demain ? — D’accord, à dix heures."
+  },
+  {
+   "id": "ary-a1-13-15",
+   "type": "choice",
+   "de": "ف الصباح، ف ___ و ف الليل.",
+   "tr": "f ssba7, f ___ w f llil.",
+   "options": [
+    "العشية",
+    "البارح",
+    "السبت"
+   ],
+   "optionsTr": [
+    "l3chiya",
+    "lbare7",
+    "ssebt"
+   ],
+   "answer": 0,
+   "why": "Le matin, l’après-midi (f l3chiya) et le soir.",
+   "en": "Le matin, l’après-midi et le soir."
+  },
+  {
+   "id": "ary-a1-13-16",
+   "type": "choice",
+   "de": "الموعد ديالك نهار ___ ف التلاتة.",
+   "tr": "lmaw3id dyalek nhar ___ f ttlata.",
+   "options": [
+    "الخميس",
+    "البارح",
+    "دابا"
+   ],
+   "optionsTr": [
+    "lkhmis",
+    "lbare7",
+    "daba"
+   ],
+   "answer": 0,
+   "why": "Après nhar vient un jour : lkhmis (jeudi).",
+   "en": "Ton rendez-vous est jeudi à trois heures."
+  },
+  {
+   "id": "ary-a1-13-17",
+   "type": "order",
+   "tiles": [
+    "ch7al",
+    "f",
+    "sa3a"
+   ],
+   "answers": [
+    "ch7al f sa3a"
+   ],
+   "de": "شحال ف الساعة؟",
+   "en": "Quelle heure est-il ?"
+  },
+  {
+   "id": "ary-a1-13-18",
+   "type": "order",
+   "tiles": [
+    "hadi",
+    "ttlata",
+    "w",
+    "nouss"
+   ],
+   "answers": [
+    "hadi ttlata w nouss"
+   ],
+   "de": "هادي التلاتة و نص.",
+   "en": "Il est trois heures et demie."
+  },
+  {
+   "id": "ary-a1-13-19",
+   "type": "order",
+   "tiles": [
+    "wach",
+    "t9der",
+    "nhar",
+    "lkhmis"
+   ],
+   "answers": [
+    "wach t9der nhar lkhmis"
+   ],
+   "de": "واش تقدر نهار الخميس؟",
+   "en": "Tu peux jeudi ?"
+  },
+  {
+   "id": "ary-a1-13-20",
+   "type": "order",
+   "tiles": [
+    "bghit",
+    "nakhod",
+    "maw3id",
+    "nhar ssebt"
+   ],
+   "answers": [
+    "bghit nakhod maw3id nhar ssebt",
+    "nhar ssebt bghit nakhod maw3id"
+   ],
+   "de": "بغيت ناخد موعد نهار السبت.",
+   "en": "Je veux prendre rendez-vous samedi."
+  }
+ ],
+ "listening": {
+  "title": "Au cabinet du médecin",
+  "intro": "Zineb passe au cabinet du médecin pour prendre rendez-vous. À l’accueil, il y a Driss.",
+  "lines": [
+   {
+    "speaker": "Zineb",
+    "de": "صباح الخير، بغيت ناخد موعد مع الطبيب.",
+    "tr": "sba7 lkhir, bghit nakhod maw3id m3a ttbib.",
+    "en": "Bonjour, je veux prendre rendez-vous avec le médecin."
+   },
+   {
+    "speaker": "Driss",
+    "de": "صباح النور. واش اليوم؟",
+    "tr": "sba7 nnour. wach lyoum?",
+    "en": "Bonjour. Aujourd’hui ?"
+   },
+   {
+    "speaker": "Zineb",
+    "de": "لا، اليوم مانقدرش. واش كاين نهار الخميس؟",
+    "tr": "la, lyoum man9derch. wach kayn nhar lkhmis?",
+    "en": "Non, aujourd’hui je ne peux pas. Il y a de la place jeudi ?"
+   },
+   {
+    "speaker": "Driss",
+    "de": "نهار الخميس كاين ف العشرة د الصباح.",
+    "tr": "nhar lkhmis kayn f l3achra d ssba7.",
+    "en": "Jeudi, il y a de la place à dix heures du matin."
+   },
+   {
+    "speaker": "Zineb",
+    "de": "ف العشرة مانقدرش، كنخدم. واش كاين ف العشية؟",
+    "tr": "f l3achra man9derch, kankhdem. wach kayn f l3chiya?",
+    "en": "À dix heures je ne peux pas, je travaille. Il y a quelque chose l’après-midi ?"
+   },
+   {
+    "speaker": "Driss",
+    "de": "كاين ف الخمسة و نص.",
+    "tr": "kayn f lkhamsa w nouss.",
+    "en": "Il y a de la place à cinq heures et demie."
+   },
+   {
+    "speaker": "Zineb",
+    "de": "واخا، مزيان.",
+    "tr": "wakha, mzyan.",
+    "en": "D’accord, très bien."
+   },
+   {
+    "speaker": "Driss",
+    "de": "شنو سميتك؟",
+    "tr": "chno smitek?",
+    "en": "Comment vous appelez-vous ?"
+   },
+   {
+    "speaker": "Zineb",
+    "de": "سميتي زينب.",
+    "tr": "smiti zineb.",
+    "en": "Je m’appelle Zineb."
+   },
+   {
+    "speaker": "Driss",
+    "de": "صافي، نهار الخميس ف الخمسة و نص. بسلامة!",
+    "tr": "safi, nhar lkhmis f lkhamsa w nouss. bslama!",
+    "en": "C’est noté, jeudi à cinq heures et demie. Au revoir !"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Pourquoi Zineb ne prend-elle pas le rendez-vous de 10 h ?",
+    "options": [
+     "Elle travaille",
+     "Elle est malade",
+     "Elle est en voyage"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Quel jour est le rendez-vous ?",
+    "options": [
+     "Jeudi",
+     "Aujourd’hui",
+     "Samedi"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "À quelle heure ?",
+    "options": [
+     "À 17 h 30",
+     "À 10 h",
+     "À 15 h"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "شحال ف الساعة؟",
+  "هادي التلاتة و نص.",
+  "نهار الخميس ف العشرة."
+ ],
+ "dictationTr": [
+  "ch7al f sa3a?",
+  "hadi ttlata w nouss.",
+  "nhar lkhmis f l3achra."
+ ],
+ "speaking": [
+  {
+   "de": "شحال ف الساعة؟",
+   "tr": "ch7al f sa3a?",
+   "en": "Quelle heure est-il ?"
+  },
+  {
+   "de": "هادي العشرة و ربع.",
+   "tr": "hadi l3achra w rbe3.",
+   "en": "Il est dix heures et quart."
+  },
+  {
+   "de": "بغيت ناخد موعد.",
+   "tr": "bghit nakhod maw3id.",
+   "en": "Je veux prendre rendez-vous."
+  },
+  {
+   "de": "واش تقدر نهار السبت؟",
+   "tr": "wach t9der nhar ssebt?",
+   "en": "Tu peux samedi ?"
+  },
+  {
+   "de": "واخا، ف الخمسة و نص.",
+   "tr": "wakha, f lkhamsa w nouss.",
+   "en": "D’accord, à cinq heures et demie."
+  }
+ ],
+ "writing": {
+  "task": "Tu proposes un rendez-vous à un ami. Écris 2 à 4 phrases : propose un jour et une heure, et un autre jour s’il ne peut pas. Écris en lettres latines.",
+  "model": "سلام! واش تقدر نهار السبت؟ نتلاقاو ف الخمسة و نص ف القهوة. ولا نهار الحد ف الصباح؟",
+  "modelTr": "salam! wach t9der nhar ssebt? ntla9aw f lkhamsa w nouss f l9hwa. wla nhar l7ed f ssba7?"
+ }
+}

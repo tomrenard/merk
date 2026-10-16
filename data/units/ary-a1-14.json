@@ -1,0 +1,506 @@
+{
+ "id": "ary-a1-14",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les adjectifs et les couleurs",
+ "icon": "🎨",
+ "situation": "Décrire des choses",
+ "canDo": "Tu peux décrire une chose ou une personne (grand, petit, neuf, beau…), dire sa couleur et accorder l’adjectif.",
+ "explanation": "L’adjectif se met **après le nom** et s’accorde : féminin en **-a**, et un pluriel à apprendre avec le mot.\n\n| masculin | féminin | pluriel | français |\n|---|---|---|---|\n| kbir | kbira | kbar | grand |\n| sghir | sghira | sghar | petit |\n| jdid | jdida | jdad | neuf |\n| 9dim | 9dima | 9dam | vieux, ancien |\n| zwin | zwina | zwinin | beau |\n\n- **Pas de verbe être** : *ddar kbira* = la maison est grande. Avec l’article aussi sur l’adjectif, c’est « la grande maison » : *ddar lkbira*.\n- Sans article, c’est « un / une » : *dar kbira* = une grande maison.\n- Les couleurs changent au féminin : *7mer / 7amra* (rouge), *k7el / k7la* (noir), *byed / bayda* (blanc), *zre9 / zar9a* (bleu), *khder / khadra* (vert), *sfer / safra* (jaune).\n- **Bzzaf** après l’adjectif = très : *zwina bzzaf*. **Chwiya** = un peu.\n- **Chno lloun dyalo?** = c’est de quelle couleur ? (*dyalha* pour un mot féminin).\n- Attention au genre : *dar*, *tomobil* (voiture), *tabla* (table) sont féminins ; *sak* (sac), *kursi* (chaise), *lbit* (la chambre) sont masculins.",
+ "french": "Comme en français, l’adjectif se met souvent après le nom et s’accorde (grand / grande) : dar kbira = une grande maison.",
+ "examples": [
+  {
+   "de": "الدار كبيرة.",
+   "tr": "ddar kbira.",
+   "en": "La maison est grande."
+  },
+  {
+   "de": "الدار الكبيرة ديال خويا.",
+   "tr": "ddar lkbira dyal khoya.",
+   "en": "La grande maison est à mon frère."
+  },
+  {
+   "de": "عندي طوموبيل حمرا.",
+   "tr": "3ndi tomobil 7amra.",
+   "en": "J’ai une voiture rouge."
+  },
+  {
+   "de": "هاد الصاك زوين بزاف.",
+   "tr": "had ssak zwin bzzaf.",
+   "en": "Ce sac est très beau."
+  },
+  {
+   "de": "الدراري صغار.",
+   "tr": "ddrari sghar.",
+   "en": "Les enfants sont petits."
+  },
+  {
+   "de": "بغيت قميجة زرقا.",
+   "tr": "bghit 9amija zar9a.",
+   "en": "Je veux une chemise bleue."
+  },
+  {
+   "de": "شنو اللون ديالو؟ — كحل.",
+   "tr": "chno lloun dyalo? — k7el.",
+   "en": "Il est de quelle couleur ? — Noir."
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-14-01",
+   "type": "cloze",
+   "de": "الدار ___.",
+   "tr": "ddar ___.",
+   "base": "kbir (grand)",
+   "answers": [
+    "كبيرة"
+   ],
+   "answersTr": [
+    "kbira"
+   ],
+   "en": "La maison est grande."
+  },
+  {
+   "id": "ary-a1-14-02",
+   "type": "cloze",
+   "de": "الصاك ___.",
+   "tr": "ssak ___.",
+   "base": "sghir (petit)",
+   "answers": [
+    "صغير"
+   ],
+   "answersTr": [
+    "sghir"
+   ],
+   "en": "Le sac est petit."
+  },
+  {
+   "id": "ary-a1-14-03",
+   "type": "cloze",
+   "de": "الدراري ___.",
+   "tr": "ddrari ___.",
+   "base": "sghir (petit)",
+   "answers": [
+    "صغار"
+   ],
+   "answersTr": [
+    "sghar"
+   ],
+   "en": "Les enfants sont petits."
+  },
+  {
+   "id": "ary-a1-14-04",
+   "type": "cloze",
+   "de": "عندي طوموبيل ___.",
+   "tr": "3ndi tomobil ___.",
+   "base": "7mer (rouge)",
+   "answers": [
+    "حمرا"
+   ],
+   "answersTr": [
+    "7amra",
+    "7mra",
+    "7emra"
+   ],
+   "en": "J’ai une voiture rouge."
+  },
+  {
+   "id": "ary-a1-14-05",
+   "type": "cloze",
+   "de": "بغيت قميجة ___.",
+   "tr": "bghit 9amija ___.",
+   "base": "zre9 (bleu)",
+   "answers": [
+    "زرقا"
+   ],
+   "answersTr": [
+    "zar9a",
+    "zr9a",
+    "zer9a"
+   ],
+   "en": "Je veux une chemise bleue."
+  },
+  {
+   "id": "ary-a1-14-06",
+   "type": "cloze",
+   "de": "هاد الصباط ___.",
+   "tr": "had sbbat ___.",
+   "base": "jdid (neuf)",
+   "answers": [
+    "جديد"
+   ],
+   "answersTr": [
+    "jdid"
+   ],
+   "en": "Ces chaussures sont neuves."
+  },
+  {
+   "id": "ary-a1-14-07",
+   "type": "cloze",
+   "de": "المدينة ___ بزاف.",
+   "tr": "lmdina ___ bzzaf.",
+   "base": "9dim (ancien)",
+   "answers": [
+    "قديمة"
+   ],
+   "answersTr": [
+    "9dima"
+   ],
+   "en": "La médina est très ancienne."
+  },
+  {
+   "id": "ary-a1-14-08",
+   "type": "cloze",
+   "de": "هاد الصاك زوين ___.",
+   "tr": "had ssak zwin ___.",
+   "base": "très",
+   "answers": [
+    "بزاف"
+   ],
+   "answersTr": [
+    "bzzaf"
+   ],
+   "en": "Ce sac est très beau."
+  },
+  {
+   "id": "ary-a1-14-09",
+   "type": "choice",
+   "de": "ختي ___.",
+   "tr": "khti ___.",
+   "options": [
+    "كبيرة",
+    "كبير",
+    "كبار"
+   ],
+   "optionsTr": [
+    "kbira",
+    "kbir",
+    "kbar"
+   ],
+   "answer": 0,
+   "why": "Khti (ma sœur) est féminin : kbira.",
+   "en": "Ma sœur est grande."
+  },
+  {
+   "id": "ary-a1-14-10",
+   "type": "choice",
+   "de": "الطوموبيل ___.",
+   "tr": "ttomobil ___.",
+   "options": [
+    "كحلة",
+    "كحل"
+   ],
+   "optionsTr": [
+    "k7la",
+    "k7el"
+   ],
+   "answer": 0,
+   "why": "Tomobil est féminin : k7la.",
+   "en": "La voiture est noire."
+  },
+  {
+   "id": "ary-a1-14-11",
+   "type": "choice",
+   "de": "الدراري ___.",
+   "tr": "ddrari ___.",
+   "options": [
+    "زوينين",
+    "زوينة",
+    "زوين"
+   ],
+   "optionsTr": [
+    "zwinin",
+    "zwina",
+    "zwin"
+   ],
+   "answer": 0,
+   "why": "Ddrari (les enfants) est un pluriel : zwinin.",
+   "en": "Les enfants sont beaux."
+  },
+  {
+   "id": "ary-a1-14-12",
+   "type": "choice",
+   "de": "بغيت صاك ___.",
+   "tr": "bghit sak ___.",
+   "options": [
+    "بيض",
+    "بيضا"
+   ],
+   "optionsTr": [
+    "byed",
+    "bayda"
+   ],
+   "answer": 0,
+   "why": "Sak est masculin : byed.",
+   "en": "Je veux un sac blanc."
+  },
+  {
+   "id": "ary-a1-14-13",
+   "type": "choice",
+   "de": "___ الكبيرة ديال خويا.",
+   "tr": "___ lkbira dyal khoya.",
+   "options": [
+    "الدار",
+    "دار"
+   ],
+   "optionsTr": [
+    "ddar",
+    "dar"
+   ],
+   "answer": 0,
+   "why": "Pour « la grande maison », l’article va sur le nom et sur l’adjectif : ddar lkbira.",
+   "en": "La grande maison est à mon frère."
+  },
+  {
+   "id": "ary-a1-14-14",
+   "type": "choice",
+   "de": "شنو ___ ديالو؟ — خضر.",
+   "tr": "chno ___ dyalo? — khder.",
+   "options": [
+    "اللون",
+    "الدار",
+    "الساعة"
+   ],
+   "optionsTr": [
+    "lloun",
+    "ddar",
+    "sa3a"
+   ],
+   "answer": 0,
+   "why": "Khder (vert) est une couleur : chno lloun dyalo ?",
+   "en": "Il est de quelle couleur ? — Vert."
+  },
+  {
+   "id": "ary-a1-14-15",
+   "type": "choice",
+   "de": "البنانة ___.",
+   "tr": "lbanana ___.",
+   "options": [
+    "صفرا",
+    "صفر",
+    "حمرا"
+   ],
+   "optionsTr": [
+    "safra",
+    "sfer",
+    "7amra"
+   ],
+   "answer": 0,
+   "why": "Une banane est jaune, et banana est féminin : safra.",
+   "en": "La banane est jaune."
+  },
+  {
+   "id": "ary-a1-14-16",
+   "type": "choice",
+   "de": "هاد الدار ___ بزاف، بغيت شي دار صغيرة.",
+   "tr": "had ddar ___ bzzaf, bghit chi dar sghira.",
+   "options": [
+    "كبيرة",
+    "صغيرة"
+   ],
+   "optionsTr": [
+    "kbira",
+    "sghira"
+   ],
+   "answer": 0,
+   "why": "Je cherche plus petit : celle-ci est trop grande, kbira.",
+   "en": "Cette maison est trop grande, je veux une petite maison."
+  },
+  {
+   "id": "ary-a1-14-17",
+   "type": "order",
+   "tiles": [
+    "ddar",
+    "kbira",
+    "bzzaf"
+   ],
+   "answers": [
+    "ddar kbira bzzaf"
+   ],
+   "de": "الدار كبيرة بزاف.",
+   "en": "La maison est très grande."
+  },
+  {
+   "id": "ary-a1-14-18",
+   "type": "order",
+   "tiles": [
+    "3ndi",
+    "tomobil",
+    "7amra"
+   ],
+   "answers": [
+    "3ndi tomobil 7amra"
+   ],
+   "de": "عندي طوموبيل حمرا.",
+   "en": "J’ai une voiture rouge."
+  },
+  {
+   "id": "ary-a1-14-19",
+   "type": "order",
+   "tiles": [
+    "bghit",
+    "9amija",
+    "zar9a",
+    "3afak"
+   ],
+   "answers": [
+    "bghit 9amija zar9a 3afak",
+    "3afak bghit 9amija zar9a"
+   ],
+   "de": "بغيت قميجة زرقا عافاك.",
+   "en": "Je veux une chemise bleue, s’il te plaît."
+  },
+  {
+   "id": "ary-a1-14-20",
+   "type": "order",
+   "tiles": [
+    "had",
+    "ssak",
+    "zwin",
+    "bzzaf"
+   ],
+   "answers": [
+    "had ssak zwin bzzaf"
+   ],
+   "de": "هاد الصاك زوين بزاف.",
+   "en": "Ce sac est très beau."
+  }
+ ],
+ "listening": {
+  "title": "Le sac de Layla",
+  "intro": "Layla cherche un sac dans une boutique du Maârif. Le vendeur s’appelle Hicham.",
+  "lines": [
+   {
+    "speaker": "Hicham",
+    "de": "مرحبا، شنو بغيتي؟",
+    "tr": "mar7ba, chno bghiti?",
+    "en": "Bienvenue, qu’est-ce que tu veux ?"
+   },
+   {
+    "speaker": "Layla",
+    "de": "بغيت صاك كحل، ماشي كبير.",
+    "tr": "bghit sak k7el, machi kbir.",
+    "en": "Je veux un sac noir, pas grand."
+   },
+   {
+    "speaker": "Hicham",
+    "de": "هاد الصاك زوين و جديد.",
+    "tr": "had ssak zwin w jdid.",
+    "en": "Ce sac est beau et neuf."
+   },
+   {
+    "speaker": "Layla",
+    "de": "آه، زوين، ولكن كبير بزاف.",
+    "tr": "ah, zwin, walakin kbir bzzaf.",
+    "en": "Oui, il est beau, mais il est trop grand."
+   },
+   {
+    "speaker": "Hicham",
+    "de": "كاين واحد صغير، ولكن حمر.",
+    "tr": "kayn wa7ed sghir, walakin 7mer.",
+    "en": "Il y en a un petit, mais il est rouge."
+   },
+   {
+    "speaker": "Layla",
+    "de": "حمر؟ لا، مابغيتش الحمر. واش كاين صغير و كحل؟",
+    "tr": "7mer? la, mabghitch l7mer. wach kayn sghir w k7el?",
+    "en": "Rouge ? Non, je ne veux pas de rouge. Il y en a un petit et noir ?"
+   },
+   {
+    "speaker": "Hicham",
+    "de": "لا، ولكن كاين واحد صغير زرق.",
+    "tr": "la, walakin kayn wa7ed sghir zre9.",
+    "en": "Non, mais il y en a un petit bleu."
+   },
+   {
+    "speaker": "Layla",
+    "de": "زرق؟ مزيان! بشحال؟",
+    "tr": "zre9? mzyan! b ch7al?",
+    "en": "Bleu ? Très bien ! Combien ?"
+   },
+   {
+    "speaker": "Hicham",
+    "de": "بتمانين درهم.",
+    "tr": "b tmanin dirham.",
+    "en": "Quatre-vingts dirhams."
+   },
+   {
+    "speaker": "Layla",
+    "de": "صافي، عطيني الصاك الزرق.",
+    "tr": "safi, 3tini ssak zzre9.",
+    "en": "C’est bon, donne-moi le sac bleu."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Quel sac cherche Layla ?",
+    "options": [
+     "Un sac noir, pas grand",
+     "Un grand sac rouge",
+     "Un sac blanc"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Pourquoi ne prend-elle pas le premier sac ?",
+    "options": [
+     "Il est trop grand",
+     "Il est trop cher",
+     "Il est vieux"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Quel sac achète-t-elle ?",
+    "options": [
+     "Un petit sac bleu",
+     "Un petit sac rouge",
+     "Un grand sac noir"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "الدار كبيرة.",
+  "بغيت صاك كحل.",
+  "هاد الطوموبيل زوينة بزاف."
+ ],
+ "dictationTr": [
+  "ddar kbira.",
+  "bghit sak k7el.",
+  "had ttomobil zwina bzzaf."
+ ],
+ "speaking": [
+  {
+   "de": "الدار كبيرة بزاف.",
+   "tr": "ddar kbira bzzaf.",
+   "en": "La maison est très grande."
+  },
+  {
+   "de": "شنو اللون ديالو؟",
+   "tr": "chno lloun dyalo?",
+   "en": "Il est de quelle couleur ?"
+  },
+  {
+   "de": "بغيت قميجة زرقا عافاك.",
+   "tr": "bghit 9amija zar9a 3afak.",
+   "en": "Je veux une chemise bleue, s’il te plaît."
+  },
+  {
+   "de": "عندي طوموبيل حمرا.",
+   "tr": "3ndi tomobil 7amra.",
+   "en": "J’ai une voiture rouge."
+  },
+  {
+   "de": "هاد الصاك زوين و جديد.",
+   "tr": "had ssak zwin w jdid.",
+   "en": "Ce sac est beau et neuf."
+  }
+ ],
+ "writing": {
+  "task": "Décris ta maison ou ta chambre en 2 à 4 phrases : est-elle grande ou petite, neuve ou vieille, et de quelle couleur sont les choses dedans. Écris en lettres latines.",
+  "model": "الدار ديالي صغيرة ولكن زوينة. البيت ديالي كبير. عندي تابلة بيضا و كرسي زرق.",
+  "modelTr": "ddar dyali sghira walakin zwina. lbit dyali kbir. 3ndi tabla bayda w kursi zre9."
+ }
+}

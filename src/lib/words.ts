@@ -46,7 +46,6 @@ function wordsWhere(userId: string, course: CourseId, q: string, filterKey: stri
     q
       ? or(ilike(notes.de, pattern), ilike(notes.tr, pattern), ilike(notes.en, pattern))
       : undefined,
-
     FILTERS.find((f) => f.key === filterKey)?.where,
     eq(notes.course, course),
     ne(notes.source, "unit"),

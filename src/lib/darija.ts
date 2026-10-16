@@ -2,21 +2,25 @@ import { checkTyped, distance, type TypedResult } from "./german";
 
 /**
  * Typed Darija (Latin, see data/darija/README.md) reduced to what matters: lowercase, no
- * punctuation or spaces, one spelling per sound (sh→ch, 5→kh, q→9, ou→u), no doubled letters,
- * no `e` between consonants (mezyan = mzyan).
+ * punctuation, one spelling per sound (sh→ch, 5→kh, q→9; ou, o and w → u; y → i), no doubled
+ * letters, no `e` next to a consonant at a word's edge or between consonants (mezyan = mzyan,
+ * enta = nta, mziane = mzyan). The `e` goes before spaces do, so word starts still count.
  */
 export function arabiziKey(text: string): string {
   return text
     .toLowerCase()
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
-    .replace(/[^a-z0-9]/g, "")
+    .replace(/[^a-z0-9 ]/g, " ")
     .replace(/sh/g, "ch")
     .replace(/5/g, "kh")
     .replace(/q/g, "9")
-    .replace(/ou/g, "u")
-    .replace(/(.)\1+/g, "$1")
-    .replace(/([^aeiu])e(?=[^aeiu]|$)/g, "$1");
+    .replace(/ou|o|w/g, "u")
+    .replace(/y/g, "i")
+    .replace(/(^| )e(?=[^aeiu ])/g, "$1")
+    .replace(/([^aeiu ])e(?=[^aeiu]|$| )/g, "$1")
+    .replace(/ /g, "")
+    .replace(/(.)\1+/g, "$1");
 }
 
 /** right, almost (one letter off in a longer word), wrong or blank, against any accepted form. */

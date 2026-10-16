@@ -34,5 +34,7 @@ There is no official spelling, so lessons follow this one and every review pass 
 ## What typed answers accept
 
 Checked in `src/lib/darija.ts`: case, punctuation and spaces don't count; sh = ch, 5 = kh,
-q = 9, u = ou, doubled letters = single (bzaf = bzzaf), and a written `e` between consonants
-may be left out (mezyan = mzyan). One letter off is "almost".
+q = 9; ou, o, u and w are one sound (houwa = howa, ou nta = w nta), and so are y and i
+(dair = dayr); doubled letters = single (bzaf = bzzaf); a written `e` next to a consonant may
+be left out (mezyan = mzyan, enta = nta). One letter off is "almost".
+

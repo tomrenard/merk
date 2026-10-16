@@ -143,7 +143,6 @@ export function feedback(
       const { output } = await generateText({
         model: FEEDBACK_MODEL,
         system: system(LANGUAGE[locale], task.course ?? "de"),
-
         prompt: prompt(task, text, spoken),
         output: Output.object({ schema: Feedback }),
         maxOutputTokens: 700,

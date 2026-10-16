@@ -1,4 +1,4 @@
-import { PARTS_OF_COURSE } from "./units";
+import { PARTS_OF_COURSE } from "./parts";
 
 /**
  * The languages you can learn. Each has its own lessons, cards and progress; the streak and the
@@ -6,7 +6,6 @@ import { PARTS_OF_COURSE } from "./units";
  */
 export const COURSES = {
   de: {
-    id: "de",
     name: "German",
     flag: "🇩🇪",
     parts: PARTS_OF_COURSE.map((part) => ({ ...part, level: part.id.slice(0, 2) })),
@@ -17,7 +16,6 @@ export const COURSES = {
     germanTools: true,
   },
   ary: {
-    id: "ary",
     name: "Moroccan Darija",
     flag: "🇲🇦",
     // Lesson ids start with "ary-", so they never clash with German ones.

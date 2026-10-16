@@ -12,6 +12,16 @@ describe("typed Darija", () => {
       ["nuss", "nouss"],
       ["3afak!", "3afak"],
       ["wach nta  mzyan ?", "wach nta mzyan?"],
+      // How French speakers often write it.
+      ["houwa", "howa"],
+      ["chnou", "chno"],
+      ["choukran", "chokran"],
+      ["ntoma", "ntouma"],
+      ["mziane", "mzyan"],
+      ["dair", "dayr"],
+      ["ou nta", "w nta"],
+      ["enta", "nta"],
+      ["w enta", "w nta"],
     ] as const) {
       expect(sameDarija(typed, answer), `${typed} = ${answer}`).toBe(true);
     }
@@ -34,6 +44,8 @@ describe("typed Darija", () => {
 
   it("drops accents and keeps the vowels a, i, u", () => {
     expect(arabiziKey("Bezzâf")).toBe("bzaf");
+    expect(arabiziKey("bzaf")).toBe("bzaf");
+
     expect(arabiziKey("labas")).toBe("labas");
   });
 });

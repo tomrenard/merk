@@ -36,7 +36,7 @@
   },
   {
    "de": "هو مغربي و هي فرانساوية.",
-   "tr": "howa maghribi w hiya fransawiya.",
+   "tr": "howa mghribi w hiya fransawiya.",
    "en": "Il est marocain et elle est française."
   },
   {
@@ -244,14 +244,14 @@
     "fransawi"
    ],
    "answer": 0,
-   "why": "Au féminin on ajoute -a : fransawiya.",
+   "why": "Au féminin, -i devient -iya : fransawiya.",
    "en": "Je suis française. (une femme)"
   },
   {
    "id": "ary-a1-01-14",
    "type": "choice",
-   "de": "___ من فين؟",
-   "tr": "___ men fin?",
+   "de": "منين ___؟",
+   "tr": "mnin ___?",
    "options": [
     "نتوما",
     "نتا",

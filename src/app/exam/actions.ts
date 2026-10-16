@@ -22,6 +22,5 @@ export async function recordExam(examId: string, percent: number) {
       score: percent,
       total: 100,
     });
-
   freshPages();
 }

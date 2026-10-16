@@ -1,8 +1,9 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { Exam, examProblems } from "./exams.ts";
+import { PARTS_OF_COURSE } from "./parts.ts";
 import { seededShuffle } from "./shuffle.ts";
-import { buildsFrom, PARTS_OF_COURSE, SYLLABUS, Unit, unitProblems } from "./units.ts";
+import { buildsFrom, SYLLABUS, Unit, unitProblems } from "./units.ts";
 
 describe("buildsFrom", () => {
   it.each([

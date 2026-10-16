@@ -10,6 +10,7 @@ import { PANEL, SOLID } from "../feedback";
 import { useCourse, useT } from "../Locale";
 import { Go } from "../Nav";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
+import { Say } from "../Say";
 
 type Note = typeof notes.$inferSelect;
 
@@ -144,8 +145,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
               {right ? `✓ ${cheer.right}` : `✗ ${t("Correct answer:")}`}
             </p>
             <German word={note.de} tr={note.tr} />
-
-            {note.exampleDe && <p className="font-semibold">{note.exampleDe}</p>}
+            {note.exampleDe && (
+              <Say de={note.exampleDe} tr={note.exampleTr ?? undefined} className="font-semibold" />
+            )}
           </div>
         )}
         {/* Keeps focus in the input, so the phone keyboard stays open between words. */}

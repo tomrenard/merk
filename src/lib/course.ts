@@ -108,7 +108,6 @@ export const COURSE = COURSE_IDS.flatMap((course) => {
       course,
       level: part.level,
       units: written(part.lessons),
-
       exams: [
         partExam(course, part.id, part.level),
         ...(levelExams && lastOfLevel ? [levelExam(course, part.level)] : []),
@@ -359,7 +358,6 @@ export async function lastUnitId(userId: string, course: CourseId = "de"): Promi
       and(
         eq(activityLogs.userId, userId),
         eq(activityLogs.course, course),
-
         inArray(
           activityLogs.kind,
           PARTS.map((p) => p.kind),

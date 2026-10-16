@@ -86,7 +86,8 @@ export function Write({
       {!shown && failure && <AiFailure failure={failure} />}
       {shown && (
         <>
-          {marked && <FeedbackCard feedback={marked} />}
+          {marked && <FeedbackCard feedback={marked} course={course} />}
+
           {failure && <AiFailure failure={failure} />}
           <div className="card flex flex-col gap-2">
             <p className="muted text-sm font-extrabold">{t("A model answer")}</p>

@@ -521,6 +521,5 @@ export async function learnTopicWords(
     from notes n
     where cards.note_id = n.id and split_part(n.de, ',', 1) in ${headwords} and cards.user_id = ${userId}
       and cards.course = ${course}
-
       and cards.direction = 'de_en' and cards.introduced_at is null`);
 }

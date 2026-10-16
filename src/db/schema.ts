@@ -80,7 +80,6 @@ export const notes = pgTable("notes", {
   tr: text("tr"),
   exampleDe: text("example_de"),
   exampleTr: text("example_tr"),
-
   en: text("en").notNull(),
   exampleEn: text("example_en"),
   fr: text("fr"),
@@ -147,7 +146,6 @@ export const activityLogs = pgTable(
     /** The course the lesson, exam or placement belongs to. */
     course: text("course").notNull().default("de"),
     kind: text("kind").notNull(),
-
     ref: text("ref").notNull(),
     score: integer("score"),
     total: integer("total"),

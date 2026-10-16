@@ -1,8 +1,8 @@
 "use client";
 
 import type { Failure, Feedback } from "@/lib/ai";
-import { CHEERS } from "@/lib/courses";
-import { useCourse, useT } from "../Locale";
+import { CHEERS, type CourseId } from "@/lib/courses";
+import { useT } from "../Locale";
 
 const WHY = {
   limit: "You've used today's AI checks. They come back tomorrow.",
@@ -21,9 +21,17 @@ export function AiFailure({ failure }: { failure: Failure }) {
 }
 
 /** The teacher's feedback: score, corrections, a better version and one tip. */
-export function FeedbackCard({ feedback, heard }: { feedback: Feedback; heard?: string }) {
+export function FeedbackCard({
+  feedback,
+  heard,
+  course = "de",
+}: {
+  feedback: Feedback;
+  heard?: string;
+  /** The task's course (a lesson's comes from its id). */
+  course?: CourseId;
+}) {
   const t = useT();
-  const course = useCourse();
   return (
     <section className="card flex flex-col gap-3" aria-label={t("AI feedback")}>
       <div className="flex items-center justify-between">

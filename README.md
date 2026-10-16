@@ -1,8 +1,11 @@
 # merk
 
-A German course and flashcard app for adults living in Germany, from A1 to B2. Invite-only
-accounts, installable on your phone as a web app. Explanations are in English.
+A language course and flashcard app for adults, installable on your phone as a web app, with
+invite-only accounts. Two courses, each with its own lessons, words and progress: **German**
+A1 → B2 (for life in Germany) and **Moroccan Darija** A1 (Casablanca). The app itself is in
+English or French; German is explained in English, Darija in French.
 
+## German
 - **Course:** 125 lessons in parts A1.1 → B2.2: grammar, topic lessons (a theme's words) and
   stories. Each lesson has four parts: the lesson itself, listen & read, speak, write.
 - **Exams:** a short exam closes each part (70% to pass); a Goethe-style exam closes each level
@@ -19,6 +22,19 @@ accounts, installable on your phone as a web app. Explanations are in English.
   from [merk-audio](https://github.com/tomrenard/merk-audio) on GitHub Pages; anything else
   uses the phone's German voice.
 
+## Darija
+
+- **Course:** 20 lessons in two parts (A1.1, A1.2), each with the same four parts and a part
+  exam; no placement test or level exam yet. Syllabus in
+  [data/darija/syllabus.md](data/darija/syllabus.md).
+- **Two scripts:** every Darija text is shown in Arabic script with its Latin spelling
+  (Arabizi: 3, 7, 9, ch, kh, gh) under it; you type answers in Latin, and common spelling
+  variants are accepted. Spelling rules: [data/darija/README.md](data/darija/README.md).
+- **Flashcards:** 608 words and phrases with French glosses (`pnpm import:darija`).
+- **Voices and AI:** everything is recorded (phones have no Darija voice); speech-to-text and
+  the AI teacher know Darija and answer in French.
+- Lessons and words were written and reviewed by Claude, not yet by a native speaker.
+
 Stack: Next.js, React, Neon Postgres, Drizzle, Better Auth, Vercel (AI Gateway).
 
 ## Run your own
@@ -28,7 +44,8 @@ pnpm install
 vercel link && vercel integration add neon   # or set DATABASE_URL yourself
 cp .env.example .env.local                    # fill BETTER_AUTH_SECRET and ALLOWED_EMAILS
 pnpm db:migrate
-pnpm import:words   # A1 → B2 + phrases, from data/ (backs up first)
+pnpm import:words   # German A1 → B2 + phrases, from data/ (backs up first)
+pnpm import:darija  # Darija A1 words and phrases
 pnpm dev
 ```
 

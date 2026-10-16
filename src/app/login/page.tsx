@@ -5,8 +5,9 @@ import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { auth } from "@/lib/auth";
+import { COURSES } from "@/lib/courses";
 import { translator } from "@/lib/i18n";
-import { getLocale } from "@/lib/locale";
+import { getCourse, getLocale } from "@/lib/locale";
 import { LanguageSwitch } from "../language";
 
 /** After this many wrong passwords for one email in 15 minutes, logging in waits. */
@@ -52,12 +53,15 @@ export default async function LoginPage({
   searchParams: Promise<{ error?: string }>;
 }) {
   const { error } = await searchParams;
-  const locale = await getLocale();
+  const [locale, course] = await Promise.all([getLocale(), getCourse()]);
   const t = translator(locale);
   return (
     <main className="screen max-w-xs justify-center gap-3">
       <form action={login} className="flex flex-col gap-3">
-        <span className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">🇩🇪</span>
+        <span className="icon mx-auto size-20 bg-[var(--brand-soft)] text-5xl">
+          {COURSES[course].flag}
+        </span>
+
         <h1 className="text-center text-4xl font-black text-[var(--brand)]">merk</h1>
         <p className="muted mb-2 text-center text-sm font-semibold">
           {t("Learn a language, one card at a time.")}

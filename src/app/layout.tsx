@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Naskh_Arabic } from "next/font/google";
-import { getCourse, getLocale } from "@/lib/locale";
+import { getCourse, getLocale, getT } from "@/lib/locale";
 import "./globals.css";
 import { LocaleProvider } from "./Locale";
 
@@ -8,11 +8,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 /** Darija in Arabic script; only loaded where Arabic text shows up. */
 const naskh = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-naskh", preload: false });
 
-export const metadata: Metadata = {
-  title: "merk",
-  description: "Deutsch lernen, ein Kärtchen nach dem anderen.",
-  appleWebApp: { capable: true, title: "merk", statusBarStyle: "default" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getT();
+  return {
+    title: "merk",
+    description: t("Learn a language, one card at a time."),
+    appleWebApp: { capable: true, title: "merk", statusBarStyle: "default" },
+  };
+}
 
 export const viewport: Viewport = {
   viewportFit: "cover",

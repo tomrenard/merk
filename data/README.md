@@ -28,3 +28,9 @@ situation), `units/` (125 lessons: grammar, topic and story lessons, A1 → B2),
 
 Recorded audio for lesson and exam sentences was generated with Google Gemini TTS and lives in
 the separate [merk-audio](https://github.com/tomrenard/merk-audio) repo.
+
+## Darija
+
+`darija/` (spelling guide, syllabus, `words.json`) and `units/ary-*.json` (20 A1 lessons) were
+written by Claude for merk and checked by separate review passes (same licence as the repo).
+Their recorded audio is in merk-audio too, made the same way as the German.

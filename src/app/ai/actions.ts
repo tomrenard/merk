@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import { feedback, MAX_AUDIO, MAX_TEXT, type Task, transcript } from "@/lib/ai";
 import { unitById } from "@/lib/course";
+import { courseOfId, isCourseId } from "@/lib/courses";
 import { getLocale } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { LEVEL_EXAMS } from "../exam/data";
@@ -26,11 +27,13 @@ function taskOf(input: unknown): Task | null {
   const ref = parsed.data;
   if ("unit" in ref) {
     const unit = unitById(String(ref.unit));
-    return unit ? { task: unit.writing.task, level: unit.cefr } : null;
+    return unit ? { task: unit.writing.task, level: unit.cefr, course: courseOfId(unit.id) } : null;
   }
   const exam = Object.hasOwn(LEVEL_EXAMS, ref.exam) ? LEVEL_EXAMS[ref.exam] : undefined;
   const task = exam?.[ref.part][ref.index];
-  return exam && task ? { task: task.task, level: exam.cefr, checklist: task.checklist } : null;
+  return exam && task
+    ? { task: task.task, level: exam.cefr, checklist: task.checklist, course: "de" }
+    : null;
 }
 
 /** Feedback on a written answer. */
@@ -54,7 +57,8 @@ async function recording(form: FormData) {
 export async function transcribeRecording(form: FormData) {
   const userId = await requireUser();
   const audio = await recording(form);
-  return transcript(userId, audio.bytes, audio.key);
+  const course = form.get("course");
+  return transcript(userId, audio.bytes, audio.key, isCourseId(course) ? course : "de");
 }
 
 /** A spoken answer to an exam task: what was heard, then feedback on it. */
@@ -67,7 +71,8 @@ export async function checkSpeaking(form: FormData) {
   const task = taskOf(ref);
   if (!task) throw new Error("Bad speaking check");
   const audio = await recording(form);
-  const heard = await transcript(userId, audio.bytes, audio.key);
+  const heard = await transcript(userId, audio.bytes, audio.key, task.course);
+
   if (!heard.ok) return heard;
   const marked = await feedback(
     userId,

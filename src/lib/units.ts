@@ -3,7 +3,12 @@ import { z } from "zod";
 /**
  * A grammar unit: a short explanation tied to an everyday situation, examples, and a pool of
  * auto-checked exercises. Content lives in data/units/<id>.json (generated once, committed).
+ *
+ * `de` is the target language as written (German, or Darija in Arabic script). Darija lessons
+ * add `tr`, the same text in Latin (data/darija/README.md): it is shown under the Arabic and is
+ * what typed answers are checked against. Their glosses (`en`) are in French.
  */
+const tr = z.string().optional().describe("Darija only: the same text in Latin (Arabizi)");
 const Item = z.discriminatedUnion("type", [
   // One gap, with the base form given, so there is one right answer: "Ich ___ (sein) müde."
   z.object({
@@ -12,6 +17,9 @@ const Item = z.discriminatedUnion("type", [
     de: z.string().describe('German sentence with exactly one "___" gap'),
     base: z.string().describe("the base form to put in the gap, e.g. sein"),
     answers: z.array(z.string()).min(1),
+    tr,
+    /** Darija only: accepted answers in Latin, checked instead of `answers`. */
+    answersTr: z.array(z.string()).min(1).optional(),
     en: z.string(),
   }),
   z.object({
@@ -21,14 +29,19 @@ const Item = z.discriminatedUnion("type", [
     options: z.array(z.string()).min(2).max(4),
     answer: z.number().int().describe("index of the right option"),
     why: z.string().describe("one short English sentence explaining the answer"),
+    tr,
+    /** Darija only: the options in Latin, in the same order. */
+    optionsTr: z.array(z.string()).optional(),
     en: z.string(),
   }),
-  // Tap the words into order; every accepted order is listed.
+  // Tap the words into order; every accepted order is listed. Darija tiles are in Latin.
   z.object({
     id: z.string(),
     type: z.literal("order"),
     tiles: z.array(z.string()).min(3).max(8),
     answers: z.array(z.string()).min(1).describe("full sentences, tiles joined by spaces"),
+    /** Darija only: the sentence in Arabic script, shown and heard once solved. */
+    de: z.string().optional(),
     en: z.string(),
   }),
 ]);
@@ -39,7 +52,7 @@ const Listening = z.object({
   title: z.string(),
   intro: z.string().describe("one English sentence setting the scene"),
   lines: z
-    .array(z.object({ speaker: z.string(), de: z.string(), en: z.string() }))
+    .array(z.object({ speaker: z.string(), de: z.string(), tr, en: z.string() }))
     .min(6)
     .max(30),
   questions: z
@@ -71,20 +84,23 @@ export const Unit = z.object({
     .describe("at most 250 words, plain English, may contain a markdown table"),
   french: z.string().describe("one sentence comparing with French, or empty"),
   examples: z
-    .array(z.object({ de: z.string(), en: z.string() }))
+    .array(z.object({ de: z.string(), tr, en: z.string() }))
     .min(4)
     .max(10),
   items: z.array(Item).min(18),
   listening: Listening,
   dictation: z.array(z.string()).min(3).max(5).describe("short sentences to hear and type"),
+  /** Darija only: the dictation sentences in Latin, in the same order (what you type). */
+  dictationTr: z.array(z.string()).optional(),
   speaking: z
-    .array(z.object({ de: z.string(), en: z.string() }))
+    .array(z.object({ de: z.string(), tr, en: z.string() }))
     .min(4)
     .max(6)
     .describe("useful lines to listen to, repeat and record"),
   writing: z.object({
     task: z.string().describe("a short everyday writing task in English, 2–4 sentences to write"),
     model: z.string().describe("a model answer in German at the unit's level"),
+    modelTr: tr,
   }),
 });
 export type Unit = z.infer<typeof Unit>;
@@ -602,6 +618,41 @@ export function unitProblems(unit: Unit): string[] {
   }
   for (const [i, question] of unit.listening.questions.entries()) {
     if (!question.options[question.answer]) problems.push(`question ${i + 1}: answer out of range`);
+  }
+  if (unit.id.startsWith("ary-")) problems.push(...latinProblems(unit));
+  return problems;
+}
+
+/** A Darija lesson needs the Latin of every Darija text, since typed answers use it. */
+function latinProblems(unit: Unit): string[] {
+  const problems: string[] = [];
+  const texts = [
+    ...unit.examples.map((e, i) => [`example ${i + 1}`, e.tr] as const),
+    ...unit.listening.lines.map((l, i) => [`line ${i + 1}`, l.tr] as const),
+    ...unit.speaking.map((s, i) => [`speaking ${i + 1}`, s.tr] as const),
+    ["writing model", unit.writing.modelTr] as const,
+  ];
+  for (const [where, latin] of texts) if (!latin) problems.push(`${where}: needs tr`);
+  // Arabic script only: a French hint inside it would read right to left (put it in `en`).
+  const arabic = [
+    ...unit.examples.map((e) => e.de),
+    ...unit.listening.lines.map((l) => l.de),
+    ...unit.speaking.map((s) => s.de),
+    ...unit.dictation,
+    unit.writing.model,
+    ...unit.items.flatMap((item) => (item.type === "order" ? [item.de ?? ""] : [item.de])),
+  ];
+  for (const text of arabic)
+    if (/[a-zà-ÿ]/i.test(text)) problems.push(`"${text}": Latin letters in the Arabic text`);
+
+  if (unit.dictationTr?.length !== unit.dictation.length)
+    problems.push("dictationTr: one per dictation sentence");
+  for (const item of unit.items) {
+    if (item.type === "cloze" && (!item.tr || !item.answersTr))
+      problems.push(`${item.id}: needs tr and answersTr`);
+    if (item.type === "choice" && (!item.tr || item.optionsTr?.length !== item.options.length))
+      problems.push(`${item.id}: needs tr and one optionsTr per option`);
+    if (item.type === "order" && !item.de) problems.push(`${item.id}: needs de (Arabic)`);
   }
   return problems;
 }

@@ -25,7 +25,14 @@ export const FILTERS: { key: string; label: string; where: SQL }[] = [
   { key: "mine", label: "Mine", where: sql`${notes.source} = 'mine'` },
 ];
 
-export type WordRow = { id: string; de: string; en: string; cefr: string; due: Date | null };
+export type WordRow = {
+  id: string;
+  de: string;
+  tr: string | null;
+  en: string;
+  cefr: string;
+  due: Date | null;
+};
 
 /** `userId`'s de_en card for each note, so filters can look at where you are with a word. */
 const yourCard = (userId: string) =>
@@ -36,7 +43,10 @@ function wordsWhere(userId: string, course: CourseId, q: string, filterKey: stri
   // Matched literally: % and _ would otherwise be ILIKE wildcards.
   const pattern = `%${q.replace(/[\\%_]/g, "\\$&")}%`;
   return and(
-    q ? or(ilike(notes.de, pattern), ilike(notes.en, pattern)) : undefined,
+    q
+      ? or(ilike(notes.de, pattern), ilike(notes.tr, pattern), ilike(notes.en, pattern))
+      : undefined,
+
     FILTERS.find((f) => f.key === filterKey)?.where,
     eq(notes.course, course),
     ne(notes.source, "unit"),
@@ -53,7 +63,14 @@ export async function findWords(
   offset: number,
 ): Promise<WordRow[]> {
   return db()
-    .select({ id: notes.id, de: notes.de, en: notes.en, cefr: notes.cefr, due: cards.due })
+    .select({
+      id: notes.id,
+      de: notes.de,
+      tr: notes.tr,
+      en: notes.en,
+      cefr: notes.cefr,
+      due: cards.due,
+    })
     .from(notes)
     .leftJoin(cards, yourCard(userId))
     .where(wordsWhere(userId, course, q, filterKey))

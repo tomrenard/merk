@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import {
   CHECK_SIZE,
   COURSE,
-  courseOfUnit,
   courseProgress,
   PARTS,
   PASS,
@@ -10,6 +9,7 @@ import {
   partLabel,
   unitById,
 } from "@/lib/course";
+import { courseOfId, shownId } from "@/lib/courses";
 import { getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
@@ -23,7 +23,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
   const unit = unitById((await params).id);
   if (!unit) notFound();
   const done =
-    (await courseProgress(await requireUser(), courseOfUnit(unit))).get(unit.id) ?? new Map();
+    (await courseProgress(await requireUser(), courseOfId(unit.id))).get(unit.id) ?? new Map();
   const next = PARTS.find((part) => !done.has(part.kind));
   const t = await getT();
   return (
@@ -33,7 +33,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
           ‹ {t("Course")}
         </Go>
         <span className="chip muted line border">
-          {COURSE.find((c) => c.units.includes(unit))?.id ?? unit.cefr}
+          {shownId(COURSE.find((c) => c.units.includes(unit))?.id ?? unit.cefr)}
         </span>
       </header>
       <div>

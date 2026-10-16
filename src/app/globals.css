@@ -2,6 +2,8 @@
 
 @theme {
   --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-arabic: var(--font-naskh), "Geeza Pro", serif;
+
   /* Calmer type: the pages use font-black/extrabold for emphasis; these keep it clean. */
   --font-weight-black: 750;
   --font-weight-extrabold: 650;
@@ -158,4 +160,11 @@ body {
   to {
     transform: scaleX(0.9);
   }
+}
+
+/* Darija in Arabic script: its own font, a little larger and roomier than Latin text. */
+[lang="ar-MA"] {
+  font-family: var(--font-arabic);
+  font-size: 1.15em;
+  line-height: 1.6;
 }

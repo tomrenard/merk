@@ -7,6 +7,7 @@ import type { Unit, UnitItem } from "@/lib/units";
 import { useT } from "../../../Locale";
 import { Go } from "../../../Nav";
 import { Headword, SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
+import { Say } from "../../../Say";
 import { learnWords, recordUnit } from "../../actions";
 import { Exercise } from "../../Exercise";
 import { Prose } from "../../Prose";
@@ -147,7 +148,10 @@ export function Lesson({
               onClick={() => speak(example.de, { recorded: true })}
               className="py-3 text-left"
             >
-              <span className="block font-bold">{example.de} 🔊</span>
+              <span className="block font-bold">
+                <Say de={example.de} tr={example.tr} /> 🔊
+              </span>
+
               <span className="muted text-sm">{example.en}</span>
             </button>
           ))}

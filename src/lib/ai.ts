@@ -4,6 +4,7 @@ import { z } from "zod";
 import { db } from "@/db/client";
 import { aiResults, aiUsage } from "@/db/schema";
 import { audioKey } from "./audio";
+import type { CourseId } from "./courses";
 import type { Locale } from "./i18n";
 
 /**
@@ -18,7 +19,11 @@ export const MAX_TEXT = 1500;
 export const MAX_AUDIO = 600_000;
 
 const FEEDBACK_MODEL = "anthropic/claude-haiku-5.5";
-const TRANSCRIBE_MODEL = "openai/gpt-4o-mini-transcribe";
+/** Darija needs the full model: the mini one turns it into Modern Standard Arabic. */
+const TRANSCRIBE: Record<CourseId, { model: string; language: string }> = {
+  de: { model: "openai/gpt-4o-mini-transcribe", language: "de" },
+  ary: { model: "openai/gpt-4o-transcribe", language: "ar" },
+};
 
 export type Failure = { ok: false; reason: "limit" | "budget" | "error" };
 type Kind = keyof typeof LIMITS;
@@ -92,18 +97,24 @@ export type Feedback = z.infer<typeof Feedback>;
 
 // Short and fixed, so every call pays for as few tokens as possible. `why` and `tip` are in the
 // learner's UI language.
+/** What is being marked, per course. Darija has no fixed spelling: only real mistakes count. */
+const SUBJECT: Record<CourseId, string> = {
+  de: "German",
+  ary: `Moroccan Darija (Casablanca). The answer is in Latin letters (Arabizi: 3=ع, 7=ح, 9=ق, ch, kh, gh) or Arabic script; never correct a spelling variant, only real mistakes, and write corrections and better in Latin letters`,
+};
 const system = (
   lang: string,
-) => `You are a strict, kind German teacher. The learner is a French native speaker.
+  course: CourseId,
+) => `You are a strict, kind teacher of ${SUBJECT[course]}. The learner is a French native speaker.
 Mark their answer to the task at the given CEFR level.
-- score: 0-100 for task done + correct, natural German at that level.
+- score: 0-100 for task done + correct, natural language at that level.
 - corrections: only real mistakes (max 6, none if it is correct), wrong -> right, why in at most 12 ${lang} words.
 - better: their answer corrected and made natural, keeping their ideas and length.
 - tip: one short ${lang} sentence, the most useful next step.
 - checklist: one true/false per checklist point, in order; empty if none.`;
 const LANGUAGE: Record<Locale, string> = { en: "English", fr: "French" };
 
-export type Task = { task: string; level: string; checklist?: string[] };
+export type Task = { task: string; level: string; checklist?: string[]; course?: CourseId };
 
 function prompt({ task, level, checklist }: Task, answer: string, spoken: boolean) {
   const points = checklist?.length
@@ -122,7 +133,8 @@ export function feedback(
 ) {
   const text = answer.slice(0, MAX_TEXT).trim();
   // English keeps the old v1 keys, so its cached results still count.
-  const lang = locale === "en" ? "" : `${locale}|`;
+  // German keeps its old keys; Darija adds its course.
+  const lang = `${locale === "en" ? "" : `${locale}|`}${task.course === "ary" ? "ary|" : ""}`;
   return gated(
     userId,
     "feedback",
@@ -130,7 +142,7 @@ export function feedback(
     async () => {
       const { output } = await generateText({
         model: FEEDBACK_MODEL,
-        system: system(LANGUAGE[locale]),
+        system: system(LANGUAGE[locale], task.course ?? "de"),
 
         prompt: prompt(task, text, spoken),
         output: Output.object({ schema: Feedback }),
@@ -142,14 +154,21 @@ export function feedback(
   );
 }
 
-/** What was said in a German recording. */
-export function transcript(userId: string, audio: Uint8Array, key: string) {
-  return gated(userId, "transcript", key, async () => {
+/** What was said in a recording, in the course's language. */
+export function transcript(
+  userId: string,
+  audio: Uint8Array,
+  key: string,
+  course: CourseId = "de",
+) {
+  const { model, language } = TRANSCRIBE[course];
+  return gated(userId, "transcript", course === "de" ? key : `${course}|${key}`, async () => {
     const { text } = await transcribe({
-      model: gateway.transcriptionModel(TRANSCRIBE_MODEL),
+      model: gateway.transcriptionModel(model),
       audio,
-      providerOptions: { openai: { language: "de" } },
+      providerOptions: { openai: { language } },
     });
+
     return text.trim();
   });
 }

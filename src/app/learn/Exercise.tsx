@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { solved } from "@/lib/audio";
+import { solved, solvedTr } from "@/lib/audio";
+import { CHEERS, courseOfId } from "@/lib/courses";
+import { checkDarija, sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
 import { seededShuffle } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";
 import { PANEL, SOLID } from "../feedback";
 import { useT } from "../Locale";
 import { speak } from "../review/German";
+import { Say } from "../Say";
 
 /**
  * One exercise: gap to type (with the base form), pick one of a few options, or tap words into
@@ -15,6 +18,9 @@ import { speak } from "../review/German";
  */
 export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boolean) => void }) {
   const t = useT();
+  const course = courseOfId(item.id);
+  // Darija: answers are typed in Latin and checked against the Latin spellings.
+  const same = course === "ary" ? sameDarija : sameAnswer;
   const [typed, setTyped] = useState("");
   const [picked, setPicked] = useState<number | null>(null);
   const [pool] = useState(() =>
@@ -48,15 +54,23 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
   function check() {
     const right =
       item.type === "cloze"
-        ? item.answers.some((answer) => sameAnswer(typed, answer))
+        ? course === "ary"
+          ? checkDarija(typed, item.answersTr ?? item.answers) === "right"
+          : item.answers.some((answer) => same(typed, answer))
         : item.type === "choice"
           ? picked === item.answer
-          : item.answers.some((answer) => sameAnswer(built, answer));
+          : item.answers.some((answer) => same(built, answer));
     setResult(right ? "right" : "wrong");
     speak(solved(item), { recorded: true });
   }
 
   const [before, after] = item.type === "order" ? ["", ""] : item.de.split("___");
+  const [beforeTr, afterTr] = (item.type !== "order" && item.tr?.split("___")) || [];
+  const gap = (text: string | null | undefined) => (
+    <span className="rounded-lg bg-[var(--brand-soft)] px-2 text-[var(--brand)]">
+      {text || "___"}
+    </span>
+  );
 
   return (
     <form
@@ -75,17 +89,35 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
             : t("Put the words in order")}
       </p>
       {item.type !== "order" ? (
-        <p className="text-2xl font-black leading-snug">
-          {before}
-          <span className="rounded-lg bg-[var(--brand-soft)] px-2 text-[var(--brand)]">
-            {item.type === "choice" && picked !== null
-              ? item.options[picked]
-              : item.type === "cloze" && typed
-                ? typed
-                : "___"}
-          </span>
-          {after}
-        </p>
+        <div className="flex flex-col gap-1">
+          <p
+            className="text-2xl font-black leading-snug"
+            {...(item.tr && { dir: "rtl", lang: "ar-MA" })}
+          >
+            {before}
+            {gap(
+              item.type === "choice" && picked !== null
+                ? item.options[picked]
+                : item.type === "cloze" && !item.tr
+                  ? typed
+                  : null,
+            )}
+            {after}
+          </p>
+          {item.tr && (
+            <p className="text-lg font-bold opacity-75">
+              {beforeTr}
+              {gap(
+                item.type === "choice" && picked !== null
+                  ? item.optionsTr?.[picked]
+                  : item.type === "cloze"
+                    ? typed
+                    : null,
+              )}
+              {afterTr}
+            </p>
+          )}
+        </div>
       ) : (
         <p className="line min-h-16 rounded-2xl border border-dashed p-3 text-xl font-bold">
           {placed.map((i, n) => (
@@ -110,7 +142,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           readOnly={result !== null}
           // biome-ignore lint/a11y/noAutofocus: the input is the exercise
           autoFocus
-          lang="de"
+          lang={course === "ary" ? "fr" : "de"}
           autoCapitalize="off"
           autoComplete="off"
           autoCorrect="off"
@@ -130,7 +162,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
               onClick={() => setPicked(i)}
               className={`btn normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
             >
-              {option}
+              <Say de={option} tr={item.optionsTr?.[i]} />
             </button>
           ))}
         </div>
@@ -155,15 +187,16 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
       {result && (
         <div className={`flex flex-col gap-1 rounded-2xl p-4 ${PANEL[result]}`}>
           <p className="text-xl font-black">
-            {result === "right" ? "✓ Richtig!" : `✗ ${t("Correct answer:")}`}
+            {result === "right" ? `✓ ${CHEERS[course].right}` : `✗ ${t("Correct answer:")}`}
           </p>
           <button
             type="button"
             onClick={() => speak(solved(item), { recorded: true })}
             className="text-left text-lg font-bold"
           >
-            {solved(item)} 🔊
+            <Say de={solved(item)} tr={solvedTr(item)} /> 🔊
           </button>
+
           {item.type === "choice" && <p className="font-semibold">{item.why}</p>}
         </div>
       )}

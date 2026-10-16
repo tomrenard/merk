@@ -2,11 +2,13 @@
 
 import { useState, useTransition } from "react";
 import type { Failure, Feedback } from "@/lib/ai";
+import { CHEERS, courseOfId } from "@/lib/courses";
 import type { Unit } from "@/lib/units";
 import { checkWriting } from "../../../ai/actions";
 import { AiFailure, FeedbackCard } from "../../../ai/Feedback";
 import { useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
+import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
 /**
@@ -22,6 +24,7 @@ export function Write({
 }) {
   useSpeechUnlock();
   const t = useT();
+  const course = courseOfId(unit.id);
   const [text, setText] = useState("");
   const [shown, setShown] = useState(false);
   const [marked, setMarked] = useState<Feedback | null>(null);
@@ -45,7 +48,7 @@ export function Write({
     return (
       <PartDone
         next={after}
-        title="Gut geschrieben!"
+        title={CHEERS[course].wrote}
         detail={t("Copying good phrases from the model into your own texts is how writing grows.")}
         saveFailed={failed}
         onRetry={retry}
@@ -64,9 +67,9 @@ export function Write({
         readOnly={shown || checking}
         maxLength={1500}
         rows={6}
-        lang="de"
+        lang={course === "ary" ? "fr" : "de"}
         autoCapitalize="sentences"
-        placeholder="Auf Deutsch…"
+        placeholder={CHEERS[course].write}
         aria-label={t("Your text")}
         className="field text-lg"
       />
@@ -92,7 +95,7 @@ export function Write({
               onClick={() => speak(unit.writing.model, { recorded: true })}
               className="text-left font-semibold leading-relaxed"
             >
-              {unit.writing.model} 🔊
+              <Say de={unit.writing.model} tr={unit.writing.modelTr} /> 🔊
             </button>
           </div>
           {marked ? (

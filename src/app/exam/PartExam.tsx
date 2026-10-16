@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import type { CourseExam } from "@/lib/course";
+import { CHEERS } from "@/lib/courses";
+import { sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
 import { examTitle } from "@/lib/i18n";
 import { PANEL, SOLID } from "../feedback";
 import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { speak, useSpeechUnlock } from "../review/German";
+import { Say } from "../Say";
 import type { PartExamPacket } from "./data";
 import { ExamBar, ExamIntro, ExamResult, useExamSave } from "./ExamShell";
 
@@ -140,8 +143,8 @@ export function PartExam({
     );
   }
 
-  const sentence = packet.dictation[l - packet.listening.length] ?? "";
-  const right = sameAnswer(typed, sentence);
+  const { de: sentence, tr } = packet.dictation[l - packet.listening.length] ?? { de: "" };
+  const right = tr ? sameDarija(typed, tr) : sameAnswer(typed, sentence);
   return (
     <main className="screen">
       {bar(t("Dictation"))}
@@ -157,8 +160,8 @@ export function PartExam({
         onChange={(event) => setTyped(event.target.value)}
         readOnly={checked}
         rows={2}
-        lang="de"
-        autoCapitalize="sentences"
+        lang={tr ? "fr" : "de"}
+        autoCapitalize={tr ? "off" : "sentences"}
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
@@ -167,8 +170,10 @@ export function PartExam({
       />
       {checked && (
         <div className={`rounded-2xl p-4 ${PANEL[right ? "right" : "wrong"]}`}>
-          <p className="text-xl font-black">{right ? "✓ Richtig!" : `✗ ${t("It was:")}`}</p>
-          <p className="font-bold">{sentence}</p>
+          <p className="text-xl font-black">
+            {right ? `✓ ${CHEERS[exam.course].right}` : `✗ ${t("It was:")}`}
+          </p>
+          <Say de={sentence} tr={tr} className="font-bold" />
         </div>
       )}
       <button

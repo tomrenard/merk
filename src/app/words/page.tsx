@@ -36,9 +36,11 @@ export default async function WordsPage({
           name="q"
           type="search"
           defaultValue={q}
-          lang="de"
+          lang={course === "ary" ? "fr" : "de"}
           autoCapitalize="off"
-          placeholder={t("Search German or English…")}
+          placeholder={
+            course === "ary" ? t("Search Darija or French…") : t("Search German or English…")
+          }
           aria-label={t("Search words")}
           className="field w-full"
         />

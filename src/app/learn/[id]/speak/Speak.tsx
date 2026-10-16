@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Failure } from "@/lib/ai";
+import { CHEERS, courseOfId } from "@/lib/courses";
 import { spokenWords } from "@/lib/german";
 import type { Unit } from "@/lib/units";
 import { transcribeRecording } from "../../../ai/actions";
@@ -9,6 +10,7 @@ import { AiFailure } from "../../../ai/Feedback";
 import { recordingForm, useRecorder } from "../../../ai/useRecorder";
 import { useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
+import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
 /**
@@ -25,6 +27,9 @@ export function Speak({
 }) {
   useSpeechUnlock();
   const t = useT();
+  const course = courseOfId(unit.id);
+  // Darija has no fixed spelling, so a transcript can't be matched word by word: you compare.
+  const matchWords = course === "de";
   const lines = unit.speaking;
   const [index, setIndex] = useState(0);
   const [heard, setHeard] = useState<string | null>(null);
@@ -43,7 +48,7 @@ export function Speak({
     setHeard(null);
     setFailure(null);
     setListening(true);
-    transcribeRecording(recordingForm(clip.blob))
+    transcribeRecording(recordingForm(clip.blob, { course }))
       .catch((): Failure => ({ ok: false, reason: "error" }))
       .then((result) => {
         if (!current) return;
@@ -54,7 +59,7 @@ export function Speak({
     return () => {
       current = false;
     };
-  }, [clip]);
+  }, [clip, course]);
 
   function next() {
     reset();
@@ -68,7 +73,7 @@ export function Speak({
     return (
       <PartDone
         next={after}
-        title="Toll gesprochen!"
+        title={CHEERS[course].spoke}
         detail={t("Saying it out loud is what makes it come out in real conversations.")}
         saveFailed={failed}
         onRetry={retry}
@@ -91,7 +96,7 @@ export function Speak({
         {t("Say it {n}/{total}: listen, then repeat", { n: index + 1, total: lines.length })}
       </p>
       <div className="card flex flex-col gap-2">
-        <p className="text-2xl font-black">{line.de}</p>
+        <Say de={line.de} tr={line.tr} className="text-2xl font-black" />
         <p className="muted font-semibold">{line.en}</p>
       </div>
       <button type="button" onClick={() => speak(line.de, { recorded: true })} className="btn">
@@ -107,7 +112,9 @@ export function Speak({
       <p className="muted text-sm">
         {recording
           ? t("Say the sentence now. It stops by itself after {n} seconds.", { n: seconds })
-          : t("Tap, say the sentence, and we check which words came through.")}
+          : matchWords
+            ? t("Tap, say the sentence, and we check which words came through.")
+            : t("Tap, say the sentence, then compare what we heard with it.")}
       </p>
       {error && <p className="font-semibold text-rose-600 dark:text-rose-400">{error}</p>}
       {listening && (
@@ -115,7 +122,15 @@ export function Speak({
           {t("Checking what you said…")}
         </p>
       )}
-      {heard !== null && (
+      {heard !== null && !matchWords && (
+        <div role="status" className="card flex flex-col gap-2">
+          <p className="muted text-sm">{t("We heard:")}</p>
+          <p className="text-lg font-semibold" dir="rtl" lang="ar-MA">
+            {heard || "…"}
+          </p>
+        </div>
+      )}
+      {heard !== null && matchWords && (
         <div role="status" className="card flex flex-col gap-2">
           <p className="font-extrabold">
             {missed.length

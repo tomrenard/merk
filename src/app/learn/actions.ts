@@ -3,7 +3,8 @@
 import { redirect } from "next/navigation";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { CHECK_SIZE, courseOfUnit, PASS, type PartKind, unitById } from "@/lib/course";
+import { CHECK_SIZE, PASS, type PartKind, unitById } from "@/lib/course";
+import { courseOfId } from "@/lib/courses";
 import { freshPages } from "@/lib/fresh";
 import { learnTopicWords, startUnitCard } from "@/lib/review";
 import { requireUser } from "@/lib/session";
@@ -14,7 +15,7 @@ export async function recordUnit(unitId: string, score: number, testOut = false)
   const unit = unitById(String(unitId));
   if (!unit || !Number.isInteger(score) || score < 0 || score > CHECK_SIZE)
     throw new Error("Bad unit result");
-  const course = courseOfUnit(unit);
+  const course = courseOfId(unit.id);
   await db()
     .insert(activityLogs)
     .values({ userId, course, kind: "unit", ref: unit.id, score, total: CHECK_SIZE });
@@ -44,7 +45,7 @@ export async function recordPart(unitId: string, kind: PartKind, score: number, 
   if (!valid) throw new Error("Bad part result");
   await db()
     .insert(activityLogs)
-    .values({ userId, course: courseOfUnit(unit), kind, ref: unit.id, score, total });
+    .values({ userId, course: courseOfId(unit.id), kind, ref: unit.id, score, total });
   freshPages();
 }
 
@@ -53,7 +54,7 @@ export async function learnWords(form: FormData) {
   const userId = await requireUser();
   const unit = unitById(String(form.get("unit")));
   if (!unit?.words?.length) throw new Error("No words for this lesson");
-  await learnTopicWords(userId, unit.words, courseOfUnit(unit));
+  await learnTopicWords(userId, unit.words, courseOfId(unit.id));
 
   freshPages();
   redirect("/review");

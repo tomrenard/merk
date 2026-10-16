@@ -18,7 +18,7 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { audioKey, normalize, solved } from "../src/lib/audio.ts";
+import { audioKey, isArabic, normalize, solved } from "../src/lib/audio.ts";
 import type { Exam } from "../src/lib/exams.ts";
 import type { Unit, UnitItem } from "../src/lib/units.ts";
 
@@ -30,9 +30,9 @@ const FIRST = VOICES.f[0];
 
 /** Every character's gender (titles and role words decide the rest). A new name stops the run. */
 const WOMEN =
-  "Camille Sophie Jana Lena Anna Julia Elif Petra Mia Nadia Clara Katrin Amélie Sabine Claire Sandra Nina Élodie Mira Lea Amira Emma Marie Sarah Léa Miriam Mathilde Ingrid Leonie Ayla Paula Katja Sofia Laura Lisa Sara Nora Julie Monika Hanna Kerstin Mila Erna";
+  "Camille Sophie Jana Lena Anna Julia Elif Petra Mia Nadia Clara Katrin Amélie Sabine Claire Sandra Nina Élodie Mira Lea Amira Emma Marie Sarah Léa Miriam Mathilde Ingrid Leonie Ayla Paula Katja Sofia Laura Lisa Sara Nora Julie Monika Hanna Kerstin Mila Erna Layla Fatima Khadija Amina Salma Zineb Meryem Hajar";
 const MEN =
-  "Jonas Paul Marc Lukas Ben Felix Stefan Max Thomas Tom Jan Hugo Markus David Karim Tim Rafael Tobias Uwe Leon Daniel Frank Julien Lucas Antoine Gerd Mehmet Malik Erik Simon Ahmed Luca Malte Heinz";
+  "Jonas Paul Marc Lukas Ben Felix Stefan Max Thomas Tom Jan Hugo Markus David Karim Tim Rafael Tobias Uwe Leon Daniel Frank Julien Lucas Antoine Gerd Mehmet Malik Erik Simon Ahmed Luca Malte Heinz Youssef Hamid Mehdi Omar Rachid Hicham Anas Driss";
 const ROLES: Record<string, "f" | "m"> = {
   Erzähler: "m",
   Moderator: "m",
@@ -61,6 +61,10 @@ function gender(speaker: string): "f" | "m" {
   return role;
 }
 const STYLE = "Read in natural standard German from Germany, at a calm everyday pace.";
+/** Darija lessons are in Arabic script; the spike showed this keeps Gemini off MSA. */
+const DARIJA =
+  "Read in natural Moroccan Darija (Moroccan Arabic, as spoken in Casablanca), not Modern Standard Arabic, at a calm everyday pace.";
+const styleOf = (text: string) => (isArabic(text) ? DARIJA : STYLE);
 const dry = process.argv.includes("--dry");
 const limitAt = process.argv.indexOf("--limit");
 const limit = limitAt > 0 ? Number(process.argv[limitAt + 1]) : Number.POSITIVE_INFINITY;
@@ -141,7 +145,8 @@ async function record(key: string, { text, voice }: { text: string; voice: strin
         "ai-model-id": MODEL,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ text, voice, instructions: STYLE, outputFormat: "wav" }),
+      body: JSON.stringify({ text, voice, instructions: styleOf(text), outputFormat: "wav" }),
+
     });
     const body = (await res.json().catch(() => ({}))) as { audio?: string };
     if (res.ok && body.audio) {

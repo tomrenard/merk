@@ -17,7 +17,7 @@ import {
   partsOf,
   unitDone,
 } from "@/lib/course";
-import { COURSES } from "@/lib/courses";
+import { COURSES, shownId } from "@/lib/courses";
 import { examTitle, type T } from "@/lib/i18n";
 
 import { getCourse, getT } from "@/lib/locale";
@@ -157,7 +157,7 @@ export default async function CoursePage({
               <summary className="card flex cursor-pointer list-none items-center gap-3 [&::-webkit-details-marker]:hidden">
                 <span className="flex-1">
                   <span className="block font-extrabold">
-                    {section.id}
+                    {shownId(section.id)}
                     {passed && !part && " ✓"}
                   </span>
                   <span className="mt-1 block h-2 overflow-hidden rounded-full bg-[var(--line)]">

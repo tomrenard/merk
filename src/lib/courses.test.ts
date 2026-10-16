@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import { activityLogs, notes } from "@/db/schema";
 import { seedWords, testDb } from "@/test/db";
 import { COURSE, courseProgress } from "./course";
+import { COURSE_IDS, COURSES, courseOfId } from "./courses";
 import { counts, ensureCards, nextCard, practiceWords, progress, wordLevels } from "./review";
 import { countWords, findWords } from "./words";
 
@@ -63,6 +64,12 @@ describe("courses stay apart", () => {
     ]);
     expect(await practiceWords(U, "all", "ary")).toEqual([]);
     expect([...(await courseProgress(U, "ary")).keys()]).toEqual(["ary-a1-01"]);
+  });
+
+  it("tells each lesson and part exam's course from its id", () => {
+    for (const course of COURSE_IDS)
+      for (const part of COURSES[course].parts)
+        for (const id of [part.id, ...part.lessons]) expect(courseOfId(id), id).toBe(course);
   });
 
   it("gives every exam a unique id across courses (results are logged by id)", () => {

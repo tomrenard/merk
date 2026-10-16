@@ -1,0 +1,496 @@
+{
+ "id": "ary-a1-01",
+ "cefr": "A1",
+ "kind": "grammar",
+ "title": "Les pronoms et se présenter",
+ "icon": "👋",
+ "situation": "Faire connaissance",
+ "canDo": "Tu peux dire bonjour, dire comment tu t’appelles et d’où tu viens, et poser les mêmes questions.",
+ "explanation": "En darija, **il n’y a pas de verbe « être » au présent** : on met simplement le pronom devant. *Ana men fransa* = je (suis) de France.\n\n| pronom | darija | pronom | darija |\n|---|---|---|---|\n| je | ana | nous | 7na |\n| tu (homme) | nta | vous | ntouma |\n| tu (femme) | nti | ils / elles | homa |\n| il / elle | howa / hiya | | |\n\n- **Tu** change selon la personne : *nta* à un homme, *nti* à une femme.\n- **Smiti…** = mon nom (est)… ; **chno smitek?** = comment tu t’appelles ?\n- **Mnin nta / nti?** = d’où es-tu ? On répond **ana men…** (je suis de…).\n- Les nationalités ont un masculin en *-i* et un féminin en *-iya* : *fransawi / fransawiya*.\n- **Labas?** = ça va ? On répond *labas, l7amdoulillah*. **Ki dayr / ki dayra?** = comment tu vas (homme / femme) ?\n- **Mtcherfin** = enchanté(e).\n\nLe 7 se dit comme un h soufflé du fond de la gorge ; le 3 est un son de gorge qui n’existe pas en français.",
+ "french": "Comme dans « moi, de Lyon », le darija se passe du verbe être : ana men lyon.",
+ "examples": [
+  {
+   "de": "سلام، لاباس؟",
+   "tr": "salam, labas?",
+   "en": "Salut, ça va ?"
+  },
+  {
+   "de": "لاباس، الحمد لله. و نتا؟",
+   "tr": "labas, l7amdoulillah. w nta?",
+   "en": "Ça va, Dieu merci. Et toi ?"
+  },
+  {
+   "de": "سميتي سارة، أنا من فرانسا.",
+   "tr": "smiti sara, ana men fransa.",
+   "en": "Je m’appelle Sara, je suis de France."
+  },
+  {
+   "de": "شنو سميتك؟",
+   "tr": "chno smitek?",
+   "en": "Comment tu t’appelles ?"
+  },
+  {
+   "de": "منين نتي؟",
+   "tr": "mnin nti?",
+   "en": "D’où es-tu ? (à une femme)"
+  },
+  {
+   "de": "هو مغربي و هي فرانساوية.",
+   "tr": "howa maghribi w hiya fransawiya.",
+   "en": "Il est marocain et elle est française."
+  },
+  {
+   "de": "متشرفين!",
+   "tr": "mtcherfin!",
+   "en": "Enchanté(e) !"
+  }
+ ],
+ "items": [
+  {
+   "id": "ary-a1-01-01",
+   "type": "cloze",
+   "de": "___ من فرانسا.",
+   "tr": "___ men fransa.",
+   "base": "je",
+   "answers": [
+    "أنا"
+   ],
+   "answersTr": [
+    "ana"
+   ],
+   "en": "Je suis de France."
+  },
+  {
+   "id": "ary-a1-01-02",
+   "type": "cloze",
+   "de": "___ سميتك؟",
+   "tr": "___ smitek?",
+   "base": "quoi",
+   "answers": [
+    "شنو"
+   ],
+   "answersTr": [
+    "chno"
+   ],
+   "en": "Comment tu t’appelles ?"
+  },
+  {
+   "id": "ary-a1-01-03",
+   "type": "cloze",
+   "de": "منين ___؟",
+   "tr": "mnin ___?",
+   "base": "tu",
+   "answers": [
+    "نتا"
+   ],
+   "answersTr": [
+    "nta"
+   ],
+   "en": "D’où es-tu ? (à un homme)"
+  },
+  {
+   "id": "ary-a1-01-04",
+   "type": "cloze",
+   "de": "منين ___؟",
+   "tr": "mnin ___?",
+   "base": "tu",
+   "answers": [
+    "نتي"
+   ],
+   "answersTr": [
+    "nti"
+   ],
+   "en": "D’où es-tu ? (à une femme)"
+  },
+  {
+   "id": "ary-a1-01-05",
+   "type": "cloze",
+   "de": "___ سارة.",
+   "tr": "___ sara.",
+   "base": "mon nom",
+   "answers": [
+    "سميتي"
+   ],
+   "answersTr": [
+    "smiti"
+   ],
+   "en": "Je m’appelle Sara."
+  },
+  {
+   "id": "ary-a1-01-06",
+   "type": "cloze",
+   "de": "لاباس، ___.",
+   "tr": "labas, ___.",
+   "base": "Dieu merci",
+   "answers": [
+    "الحمد لله"
+   ],
+   "answersTr": [
+    "l7amdoulillah",
+    "l7amdolilah",
+    "lhamdolilah"
+   ],
+   "en": "Ça va, Dieu merci."
+  },
+  {
+   "id": "ary-a1-01-07",
+   "type": "cloze",
+   "de": "___ من كازا.",
+   "tr": "___ men kaza.",
+   "base": "nous",
+   "answers": [
+    "حنا"
+   ],
+   "answersTr": [
+    "7na"
+   ],
+   "en": "Nous sommes de Casa."
+  },
+  {
+   "id": "ary-a1-01-08",
+   "type": "cloze",
+   "de": "مارك ___ من ليون.",
+   "tr": "mark ___ men lyon.",
+   "base": "il",
+   "answers": [
+    "هو"
+   ],
+   "answersTr": [
+    "howa"
+   ],
+   "en": "Marc, il est de Lyon."
+  },
+  {
+   "id": "ary-a1-01-09",
+   "type": "choice",
+   "de": "ليلى ___ من الرباط.",
+   "tr": "layla ___ men rbat.",
+   "options": [
+    "هي",
+    "هو",
+    "حنا"
+   ],
+   "optionsTr": [
+    "hiya",
+    "howa",
+    "7na"
+   ],
+   "answer": 0,
+   "why": "Layla est une femme : hiya (elle).",
+   "en": "Layla est de Rabat."
+  },
+  {
+   "id": "ary-a1-01-10",
+   "type": "choice",
+   "de": "كي ___؟",
+   "tr": "ki ___?",
+   "options": [
+    "دايرة",
+    "داير"
+   ],
+   "optionsTr": [
+    "dayra",
+    "dayr"
+   ],
+   "answer": 0,
+   "why": "À une femme : dayra ; à un homme : dayr.",
+   "en": "Comment vas-tu ? (à une femme)"
+  },
+  {
+   "id": "ary-a1-01-11",
+   "type": "choice",
+   "de": "كي ___؟",
+   "tr": "ki ___?",
+   "options": [
+    "داير",
+    "دايرة"
+   ],
+   "optionsTr": [
+    "dayr",
+    "dayra"
+   ],
+   "answer": 0,
+   "why": "À un homme : dayr ; à une femme : dayra.",
+   "en": "Comment vas-tu ? (à un homme)"
+  },
+  {
+   "id": "ary-a1-01-12",
+   "type": "choice",
+   "de": "أنا ___",
+   "tr": "ana ___",
+   "options": [
+    "فرانساوي",
+    "فرانساوية"
+   ],
+   "optionsTr": [
+    "fransawi",
+    "fransawiya"
+   ],
+   "answer": 0,
+   "why": "Au masculin -i, au féminin -iya.",
+   "en": "Je suis français. (un homme)"
+  },
+  {
+   "id": "ary-a1-01-13",
+   "type": "choice",
+   "de": "أنا ___",
+   "tr": "ana ___",
+   "options": [
+    "فرانساوية",
+    "فرانساوي"
+   ],
+   "optionsTr": [
+    "fransawiya",
+    "fransawi"
+   ],
+   "answer": 0,
+   "why": "Au féminin on ajoute -a : fransawiya.",
+   "en": "Je suis française. (une femme)"
+  },
+  {
+   "id": "ary-a1-01-14",
+   "type": "choice",
+   "de": "___ من فين؟",
+   "tr": "___ men fin?",
+   "options": [
+    "نتوما",
+    "نتا",
+    "هوما"
+   ],
+   "optionsTr": [
+    "ntouma",
+    "nta",
+    "homa"
+   ],
+   "answer": 0,
+   "why": "Vous (plusieurs personnes) : ntouma.",
+   "en": "Vous êtes d’où ? (à plusieurs)"
+  },
+  {
+   "id": "ary-a1-01-15",
+   "type": "choice",
+   "de": "سلام! ___؟",
+   "tr": "salam! ___?",
+   "options": [
+    "لاباس",
+    "شكرا",
+    "بزاف"
+   ],
+   "optionsTr": [
+    "labas",
+    "chokran",
+    "bzzaf"
+   ],
+   "answer": 0,
+   "why": "Labas ? = ça va ? On répond aussi labas.",
+   "en": "Salut ! Ça va ?"
+  },
+  {
+   "id": "ary-a1-01-16",
+   "type": "choice",
+   "de": "___، أنا يوسف.",
+   "tr": "___, ana youssef.",
+   "options": [
+    "متشرفين",
+    "بسلامة",
+    "عافاك"
+   ],
+   "optionsTr": [
+    "mtcherfin",
+    "bslama",
+    "3afak"
+   ],
+   "answer": 0,
+   "why": "Mtcherfin = enchanté(e), quand on fait connaissance.",
+   "en": "Enchanté, je suis Youssef."
+  },
+  {
+   "id": "ary-a1-01-17",
+   "type": "order",
+   "tiles": [
+    "smiti",
+    "sara",
+    "w",
+    "ana",
+    "men",
+    "fransa"
+   ],
+   "answers": [
+    "smiti sara w ana men fransa"
+   ],
+   "de": "سميتي سارة و أنا من فرانسا.",
+   "en": "Je m’appelle Sara et je suis de France."
+  },
+  {
+   "id": "ary-a1-01-18",
+   "type": "order",
+   "tiles": [
+    "chno",
+    "smitek",
+    "nta"
+   ],
+   "answers": [
+    "chno smitek nta",
+    "nta chno smitek"
+   ],
+   "de": "شنو سميتك نتا؟",
+   "en": "Et toi, comment tu t’appelles ?"
+  },
+  {
+   "id": "ary-a1-01-19",
+   "type": "order",
+   "tiles": [
+    "ana",
+    "men",
+    "lyon",
+    "w",
+    "nta"
+   ],
+   "answers": [
+    "ana men lyon w nta"
+   ],
+   "de": "أنا من ليون، و نتا؟",
+   "en": "Je suis de Lyon, et toi ?"
+  },
+  {
+   "id": "ary-a1-01-20",
+   "type": "order",
+   "tiles": [
+    "7na",
+    "men",
+    "kaza",
+    "mtcherfin"
+   ],
+   "answers": [
+    "mtcherfin 7na men kaza"
+   ],
+   "de": "متشرفين، حنا من كازا.",
+   "en": "Enchantés, nous sommes de Casa."
+  }
+ ],
+ "listening": {
+  "title": "Au café",
+  "intro": "Sara rencontre Youssef à une terrasse de café à Casablanca.",
+  "lines": [
+   {
+    "speaker": "Youssef",
+    "de": "سلام، لاباس؟",
+    "tr": "salam, labas?",
+    "en": "Salut, ça va ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "لاباس، الحمد لله. و نتا؟",
+    "tr": "labas, l7amdoulillah. w nta?",
+    "en": "Ça va, Dieu merci. Et toi ?"
+   },
+   {
+    "speaker": "Youssef",
+    "de": "لاباس. شنو سميتك؟",
+    "tr": "labas. chno smitek?",
+    "en": "Ça va. Comment tu t’appelles ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "سميتي سارة. و نتا؟",
+    "tr": "smiti sara. w nta?",
+    "en": "Je m’appelle Sara. Et toi ?"
+   },
+   {
+    "speaker": "Youssef",
+    "de": "أنا يوسف. متشرفين! منين نتي؟",
+    "tr": "ana youssef. mtcherfin! mnin nti?",
+    "en": "Moi, c’est Youssef. Enchanté ! D’où es-tu ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "أنا من فرانسا، من ليون.",
+    "tr": "ana men fransa, men lyon.",
+    "en": "Je suis de France, de Lyon."
+   },
+   {
+    "speaker": "Youssef",
+    "de": "و دابا ساكنة ف كازا؟",
+    "tr": "w daba sakna f kaza?",
+    "en": "Et maintenant tu habites à Casa ?"
+   },
+   {
+    "speaker": "Sara",
+    "de": "آه، ساكنة ف المعاريف.",
+    "tr": "ah, sakna f lma3arif.",
+    "en": "Oui, j’habite au Maârif."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Comment s’appelle la femme ?",
+    "options": [
+     "Sara",
+     "Layla",
+     "Youssef"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "D’où vient-elle ?",
+    "options": [
+     "De Lyon",
+     "De Rabat",
+     "De Paris"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Où habite-t-elle maintenant ?",
+    "options": [
+     "Au Maârif, à Casa",
+     "À Lyon",
+     "À Rabat"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "dictation": [
+  "سميتي سارة.",
+  "أنا من فرانسا.",
+  "شنو سميتك؟"
+ ],
+ "dictationTr": [
+  "smiti sara.",
+  "ana men fransa.",
+  "chno smitek?"
+ ],
+ "speaking": [
+  {
+   "de": "سلام، لاباس؟",
+   "tr": "salam, labas?",
+   "en": "Salut, ça va ?"
+  },
+  {
+   "de": "سميتي سارة.",
+   "tr": "smiti sara.",
+   "en": "Je m’appelle Sara."
+  },
+  {
+   "de": "أنا من فرانسا.",
+   "tr": "ana men fransa.",
+   "en": "Je suis de France."
+  },
+  {
+   "de": "منين نتا؟",
+   "tr": "mnin nta?",
+   "en": "D’où es-tu ? (à un homme)"
+  },
+  {
+   "de": "متشرفين!",
+   "tr": "mtcherfin!",
+   "en": "Enchanté(e) !"
+  }
+ ],
+ "writing": {
+  "task": "Présente-toi en 2 à 4 phrases : ton nom, d’où tu viens, et pose une question à l’autre personne. Écris en lettres latines.",
+  "model": "سلام! سميتي سارة. أنا فرانساوية، من ليون. و نتا، شنو سميتك؟",
+  "modelTr": "salam! smiti sara. ana fransawiya, men lyon. w nta, chno smitek?"
+ }
+}

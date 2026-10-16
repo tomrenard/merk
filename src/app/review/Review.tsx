@@ -3,18 +3,20 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
 import type { ReviewCard as ReviewItem } from "@/lib/course";
+import { CHEERS } from "@/lib/courses";
+import { checkWord } from "@/lib/darija";
 import {
   articleOf,
-  checkTyped,
   governedPrepositions,
   governsLabel,
   spokenForm,
   type TypedResult,
 } from "@/lib/german";
 import type { SessionLeft } from "@/lib/review";
-import { useT } from "../Locale";
+import { useCourse, useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
+import { Say } from "../Say";
 import { gradeAndNext } from "./actions";
 import { German, SoundToggle, speak, useSpeechUnlock } from "./German";
 
@@ -40,8 +42,8 @@ const RATINGS: Record<TypedResult, number[]> = {
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
   // A phrase can be said many ways: compare yourself, then grade.
-  if (item?.direction !== "en_de" || item.note.source === "phrase") return "blank";
-  return checkTyped(typed, item.note.de, item.note.governs);
+  if (item?.direction !== "en_de" || item.note.source.endsWith("phrase")) return "blank";
+  return checkWord(typed, item.note);
 }
 
 const FEEDBACK: Record<TypedResult, string> = {
@@ -75,6 +77,8 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
   const t = useT();
+  const course = useCourse();
+  const cheer = CHEERS[course];
 
   const ended = limit !== null && done >= limit;
   const router = useRouter();
@@ -152,7 +156,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
         <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
           {item ? "☕" : "🎉"}
         </span>
-        <p className="text-3xl font-black">{item ? t("Session done!") : "Fertig für heute!"}</p>
+        <p className="text-3xl font-black">{item ? t("Session done!") : cheer.doneToday}</p>
         <p className="muted font-semibold">
           {done ? `${t("{n} answers · {rate}% remembered.", { n: done, rate: rate ?? 0 })} ` : ""}
           {item
@@ -245,7 +249,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const result = typedResult(item, typed);
   const ratings = RATINGS[result];
   const message = {
-    right: "✓ Richtig!",
+    right: `✓ ${cheer.right}`,
     almost: `≈ ${t("Almost: check the spelling")}`,
     article: `✗ ${t("Article:")} ${articleOf(note.de)}`,
     wrong: `✗ ${typed}`,
@@ -270,12 +274,14 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
       <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
         {item.direction === "de_en" ? (
           <>
-            <German word={note.de} />
+            <German word={note.de} tr={note.tr} />
             {note.governs && <p className="muted font-bold">{governsLabel(note.governs)}</p>}
           </>
         ) : (
           <>
-            <p className="muted text-sm font-extrabold">{t("Write this in German")}</p>
+            <p className="muted text-sm font-extrabold">
+              {course === "ary" ? t("Write this in Darija") : t("Write this in German")}
+            </p>
             <p className="text-3xl font-black">
               {note.en}
               {/* Says a preposition belongs to the answer, without giving it away. */}
@@ -294,12 +300,12 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 value={typed}
                 onChange={(event) => setTyped(event.target.value)}
                 disabled={revealed}
-                lang="de"
+                lang={course === "ary" ? "fr" : "de"}
                 autoCapitalize="off"
                 autoComplete="off"
                 autoCorrect="off"
                 spellCheck={false}
-                placeholder="Auf Deutsch… (ae, oe, ue, ss ok)"
+                placeholder={cheer.type}
                 aria-label={t("Your answer in German")}
                 className="field w-full text-center text-xl font-bold"
               />
@@ -314,7 +320,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
             ) : (
               <>
                 {message && <p className={`chip mx-auto ${FEEDBACK[result]}`}>{message}</p>}
-                <German word={note.de} />
+                <German word={note.de} tr={note.tr} />
                 {note.governs && <p className="muted font-bold">{governsLabel(note.governs)}</p>}
               </>
             )}
@@ -324,7 +330,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 onClick={() => speak(note.exampleDe ?? "")}
                 className="font-semibold"
               >
-                {note.exampleDe}
+                <Say de={note.exampleDe} tr={note.exampleTr ?? undefined} />
               </button>
             )}
             {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}

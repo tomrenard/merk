@@ -1,7 +1,8 @@
 "use client";
 
 import type { Failure, Feedback } from "@/lib/ai";
-import { useT } from "../Locale";
+import { CHEERS } from "@/lib/courses";
+import { useCourse, useT } from "../Locale";
 
 const WHY = {
   limit: "You've used today's AI checks. They come back tomorrow.",
@@ -22,6 +23,7 @@ export function AiFailure({ failure }: { failure: Failure }) {
 /** The teacher's feedback: score, corrections, a better version and one tip. */
 export function FeedbackCard({ feedback, heard }: { feedback: Feedback; heard?: string }) {
   const t = useT();
+  const course = useCourse();
   return (
     <section className="card flex flex-col gap-3" aria-label={t("AI feedback")}>
       <div className="flex items-center justify-between">
@@ -47,13 +49,13 @@ export function FeedbackCard({ feedback, heard }: { feedback: Feedback; heard?: 
         </ul>
       ) : (
         <p className="font-semibold text-green-700 dark:text-green-400">
-          {t("No mistakes.")} Sehr gut!
+          {t("No mistakes.")} {CHEERS[course].veryGood}
         </p>
       )}
       <div>
         <p className="muted text-sm font-extrabold">{t("Better")}</p>
 
-        <p className="font-semibold leading-relaxed" lang="de">
+        <p className="font-semibold leading-relaxed" lang={course === "ary" ? "fr" : "de"}>
           {feedback.better}
         </p>
       </div>

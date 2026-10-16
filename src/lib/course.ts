@@ -20,10 +20,6 @@ export const unitsOf = (course: CourseId): Unit[] => written(lessonsOf(course));
 /** Every course's written lessons; ids are unique across courses. */
 const UNITS: Unit[] = COURSE_IDS.flatMap(unitsOf);
 
-/** The course a lesson belongs to. */
-export const courseOfUnit = (unit: Unit): CourseId =>
-  COURSE_IDS.find((course) => lessonsOf(course).includes(unit.id)) ?? "de";
-
 /** Grammar unit, topic lesson (a theme's words) or story (a longer text). Old files have no kind. */
 export const kindOf = (unit: Unit) => unit.kind ?? "grammar";
 

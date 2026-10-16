@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { CHEERS, courseOfId } from "@/lib/courses";
+import { sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
 import { PANEL, SOLID } from "../../../feedback";
 import { useT } from "../../../Locale";
 import { speak, stopSpeaking, useSpeechUnlock } from "../../../review/German";
+import { Say } from "../../../Say";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
 type Step = "hear" | "questions" | "read" | "dictation";
@@ -20,6 +23,7 @@ export function Listen({
   after: { href: string; label: string } | null;
 }) {
   const t = useT();
+  const cheer = CHEERS[courseOfId(unit.id)];
   useSpeechUnlock();
   const { lines, questions } = unit.listening;
   const [step, setStep] = useState<Step>("hear");
@@ -88,7 +92,7 @@ export function Listen({
     return (
       <PartDone
         next={after}
-        title="Gut gehört!"
+        title={cheer.heard}
         detail={t("{right}/{total} right. Try the dialogue again any time.", { right, total })}
         saveFailed={failed}
         onRetry={retry}
@@ -159,7 +163,7 @@ export function Listen({
         </button>
         {checked && (
           <p className={`rounded-2xl p-4 text-xl font-black ${PANEL[correct ? "right" : "wrong"]}`}>
-            {correct ? "✓ Richtig!" : `✗ ${question.options[question.answer]}`}
+            {correct ? `✓ ${cheer.right}` : `✗ ${question.options[question.answer]}`}
           </p>
         )}
         <button
@@ -180,7 +184,7 @@ export function Listen({
         <div className="topbar">
           <p className="muted text-sm font-extrabold">{t("Now read it · tap a line")}</p>
           <button type="button" onClick={() => setEnglish(!english)} className="chip line border">
-            {english ? t("Hide English") : t("Show English")}
+            {english ? t("Hide translation") : t("Show translation")}
           </button>
         </div>
         <ol className="card flex flex-col gap-3">
@@ -192,7 +196,7 @@ export function Listen({
                 className="text-left"
               >
                 <span className="muted block text-xs font-extrabold">{line.speaker}</span>
-                <span className="font-bold">{line.de}</span>
+                <Say de={line.de} tr={line.tr} className="font-bold" />
                 {english && <span className="muted block text-sm">{line.en}</span>}
               </button>
             </li>
@@ -206,8 +210,10 @@ export function Listen({
   }
 
   const sentence = unit.dictation[index] ?? "";
+  // Darija: heard in Arabic, typed and checked in Latin.
+  const sentenceTr = unit.dictationTr?.[index];
   const typed = typeof answer === "string" ? answer : "";
-  const correct = sameAnswer(typed, sentence);
+  const correct = sentenceTr ? sameDarija(typed, sentenceTr) : sameAnswer(typed, sentence);
   return (
     <PartShell unitId={unit.id} progress={progress + (index / unit.dictation.length) * 0.25}>
       <p className="muted text-sm font-extrabold">
@@ -232,8 +238,8 @@ export function Listen({
           onChange={(event) => setAnswer(event.target.value)}
           readOnly={checked}
           rows={2}
-          lang="de"
-          autoCapitalize="sentences"
+          lang={sentenceTr ? "fr" : "de"}
+          autoCapitalize={sentenceTr ? "off" : "sentences"}
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
@@ -242,8 +248,10 @@ export function Listen({
         />
         {checked && (
           <div className={`rounded-2xl p-4 ${PANEL[correct ? "right" : "wrong"]}`}>
-            <p className="text-xl font-black">{correct ? "✓ Richtig!" : `✗ ${t("It was:")}`}</p>
-            <p className="font-bold">{sentence}</p>
+            <p className="text-xl font-black">
+              {correct ? `✓ ${cheer.right}` : `✗ ${t("It was:")}`}
+            </p>
+            <Say de={sentence} tr={sentenceTr} className="font-bold" />
           </div>
         )}
         <button

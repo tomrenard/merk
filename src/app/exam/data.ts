@@ -13,7 +13,8 @@ export const LEVEL_EXAMS = { A1: a1, A2: a2, B1: b1, B2: b2 } as Record<string, 
 export type PartExamPacket = {
   items: UnitItem[];
   listening: { de: string; options: string[]; answer: number }[];
-  dictation: string[];
+  /** `tr`: Darija only, the Latin you type. */
+  dictation: { de: string; tr?: string }[];
 };
 
 /**
@@ -31,6 +32,11 @@ export function partExamPacket(partId: string): PartExamPacket | null {
     const options = shuffled([line.en, ...lines.slice(2 + i * 3, 5 + i * 3).map((l) => l.en)]);
     return { de: line.de, options, answer: options.indexOf(line.en) };
   });
-  const dictation = shuffled(part.units.flatMap((unit) => unit.dictation)).slice(0, 2);
+  const dictation = shuffled(
+    part.units.flatMap((unit) =>
+      unit.dictation.map((de, i) => ({ de, tr: unit.dictationTr?.[i] })),
+    ),
+  ).slice(0, 2);
+
   return { items, listening, dictation };
 }

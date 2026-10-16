@@ -2,6 +2,8 @@
  * UI language. The English text is the key: `t("Save")`; FR maps it to French, and anything
  * missing stays English. `{name}` placeholders are filled from `vars`.
  */
+import { shownId } from "./courses";
+
 export const LOCALES = ["en", "fr"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const LOCALE_COOKIE = "merk-lang";
@@ -12,6 +14,10 @@ type Vars = Record<string, string | number>;
 export type T = (text: string, vars?: Vars) => string;
 
 const FR: Record<string, string> = {
+  "Write this in Darija": "Écris ça en darija",
+  "Tap, say the sentence, then compare what we heard with it.":
+    "Touche, dis la phrase, puis compare-la avec ce qu’on a entendu.",
+  "Search Darija or French…": "Chercher en darija ou en français…",
   "A1 for everyday life. Follow the path or pick anything.":
     "Le niveau A1 pour la vie de tous les jours. Suis le parcours ou choisis ce que tu veux.",
   "You're learning": "Tu apprends",
@@ -123,7 +129,7 @@ const FR: Record<string, string> = {
   "Hear it again": "Réécouter",
   "Hear yourself": "Écoute-toi",
   "Heard:": "Entendu :",
-  "Hide English": "Masquer l’anglais",
+  "Hide translation": "Masquer la traduction",
   Hint: "Indice",
   Home: "Accueil",
   "I can follow the news, discuss pros and cons and write a formal letter.":
@@ -251,7 +257,7 @@ const FR: Record<string, string> = {
   "Session progress": "Avancement de la session",
   Settings: "Réglages",
   "Short on time?": "Pas beaucoup de temps ?",
-  "Show English": "Afficher l’anglais",
+  "Show translation": "Afficher la traduction",
   "Show answer": "Voir la réponse",
   "Skip listening": "Passer l’écoute",
   Skipped: "Passée",
@@ -407,7 +413,7 @@ export function translator(locale: Locale): T {
 
 /** "A1.1 exam" (here, not in course.ts, so client screens can use it without the database). */
 export const examTitle = (exam: { id: string }, t: T = translator("en")) =>
-  t("{id} exam", { id: exam.id });
+  t("{id} exam", { id: shownId(exam.id) });
 
 /** For dates and numbers: French formats in FR, British ones in EN. */
 export const dateLocale = (locale: Locale) => (locale === "fr" ? "fr-FR" : "en-GB");

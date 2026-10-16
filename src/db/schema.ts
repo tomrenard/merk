@@ -76,7 +76,11 @@ export const notes = pgTable("notes", {
   cefr: text("cefr").notNull(),
   ord: integer("ord").notNull(),
   de: text("de").notNull(),
+  /** Darija only: `de` in Latin (Arabizi), what typed answers are checked against. */
+  tr: text("tr"),
   exampleDe: text("example_de"),
+  exampleTr: text("example_tr"),
+
   en: text("en").notNull(),
   exampleEn: text("example_en"),
   fr: text("fr"),

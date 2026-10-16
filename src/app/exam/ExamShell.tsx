@@ -2,6 +2,7 @@
 
 import { type ReactNode, useState, useTransition } from "react";
 import type { CourseExam } from "@/lib/course";
+import { CHEERS, shownId } from "@/lib/courses";
 import { examTitle } from "@/lib/i18n";
 import { useT } from "../Locale";
 import { Go } from "../Nav";
@@ -62,7 +63,7 @@ export function ExamIntro({
         <p className="muted font-semibold">
           {exam.type === "level"
             ? t("Everything from {level}, built like the Goethe exam.", { level: exam.level })
-            : t("A check on the lessons of {id}.", { id: exam.id })}
+            : t("A check on the lessons of {id}.", { id: shownId(exam.id) })}
         </p>
       </div>
       <ul className="card flex flex-col divide-y divide-[var(--line)] py-0">
@@ -137,13 +138,15 @@ export function ExamResult({
       <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
         {passed ? (exam.type === "level" ? "🏆" : "🎉") : "💪"}
       </span>
-      <p className="text-3xl font-black">{passed ? `${exam.id} bestanden!` : t("Not yet")}</p>
+      <p className="text-3xl font-black">
+        {passed ? `${shownId(exam.id)} ${CHEERS[exam.course].passed}` : t("Not yet")}
+      </p>
       <p className="text-5xl font-black text-[var(--brand)]">{percent}%</p>
       <p className="muted font-semibold">
         {passed
           ? exam.type === "level"
             ? t("You passed the {level} exam. Time for the next level.", { level: exam.level })
-            : t("{id} is done. On to the next part.", { id: exam.id })
+            : t("{id} is done. On to the next part.", { id: shownId(exam.id) })
           : t(
               "You need {pass}%. Review the lessons it showed you were unsure about, then try again; every attempt has new questions.",
               { pass: exam.pass },

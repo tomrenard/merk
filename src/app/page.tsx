@@ -8,7 +8,7 @@ import {
   levelProgress,
   nextStep,
 } from "@/lib/course";
-import { COURSES } from "@/lib/courses";
+import { COURSES, shownId } from "@/lib/courses";
 import type { T } from "@/lib/i18n";
 import { getCourse, getT } from "@/lib/locale";
 import { activity, counts, progress, wordLevels } from "@/lib/review";
@@ -58,7 +58,7 @@ function LevelCard({
           {level} <span className="muted text-base font-bold">{levelName(level, t)}</span>
         </span>
         <span className="muted text-sm font-bold">
-          {part ? `${part.id} ›` : `${t("All done")} ›`}
+          {part ? `${shownId(part.id)} ›` : `${t("All done")} ›`}
         </span>
       </span>
       <span

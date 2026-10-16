@@ -60,6 +60,7 @@ import ua2_t07 from "../../data/units/a2-t07.json";
 import ua2_t08 from "../../data/units/a2-t08.json";
 import ua2_t09 from "../../data/units/a2-t09.json";
 import ua2_t10 from "../../data/units/a2-t10.json";
+import uary_a1_01 from "../../data/units/ary-a1-01.json";
 import ub1_01 from "../../data/units/b1-01.json";
 import ub1_02 from "../../data/units/b1-02.json";
 import ub1_03 from "../../data/units/b1-03.json";
@@ -188,6 +189,7 @@ export const UNITS = [
   ua2_t08,
   ua2_t09,
   ua2_t10,
+  uary_a1_01,
   ub1_01,
   ub1_02,
   ub1_03,

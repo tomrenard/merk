@@ -105,7 +105,7 @@ export function governsLabel(governs: string): string {
 const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
 
 /** Edit distance (insert, delete, replace one letter). */
-function distance(a: string, b: string): number {
+export function distance(a: string, b: string): number {
   let row = Array.from({ length: b.length + 1 }, (_, i) => i);
   for (let i = 1; i <= a.length; i++) {
     const next = [i];

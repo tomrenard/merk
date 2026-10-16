@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import type { notes } from "@/db/schema";
-import { isCorrect, spokenForm } from "@/lib/german";
+import { CHEERS } from "@/lib/courses";
+import { checkWord } from "@/lib/darija";
+import { spokenForm } from "@/lib/german";
 import type { PracticeScope } from "@/lib/review";
 import { PANEL, SOLID } from "../feedback";
-import { useT } from "../Locale";
+import { useCourse, useT } from "../Locale";
 import { Go } from "../Nav";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "../review/German";
 
@@ -14,6 +16,8 @@ type Note = typeof notes.$inferSelect;
 /** English → typed German over a fixed set, scored at the end. Doesn't change the schedule. */
 export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope }) {
   const t = useT();
+  const course = useCourse();
+  const cheer = CHEERS[course];
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState("");
   const [checked, setChecked] = useState(false);
@@ -30,7 +34,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
             {missed.length === 0 ? "🏆" : missed.length <= words.length / 4 ? "💪" : "📖"}
           </span>
           <h1 className="text-3xl font-black">
-            {missed.length === 0 ? "Perfekt!" : "Gut gemacht!"}
+            {missed.length === 0 ? cheer.perfect : cheer.good}
           </h1>
           <p className="text-5xl font-black text-[var(--brand)]">
             {score}/{words.length}
@@ -46,7 +50,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
                     href={`/words/${encodeURIComponent(m.id)}?back=practice`}
                     className="block py-3"
                   >
-                    <Headword de={m.de} className="font-extrabold" />{" "}
+                    <Headword de={m.de} tr={m.tr} className="font-extrabold" />{" "}
                     <span className="muted">{m.en}</span>
                   </Go>
                 </li>
@@ -67,7 +71,7 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
     );
   }
 
-  const right = isCorrect(typed, note.de, note.governs);
+  const right = checkWord(typed, note) === "right";
   const state = !checked ? "idle" : right ? "right" : "wrong";
 
   function submit() {
@@ -110,7 +114,9 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
         }}
       >
         <div className="pt-6">
-          <p className="muted text-sm font-extrabold">{t("Write this in German")}</p>
+          <p className="muted text-sm font-extrabold">
+            {course === "ary" ? t("Write this in Darija") : t("Write this in German")}
+          </p>
           <p className="mt-2 text-3xl font-black">{note.en}</p>
         </div>
         <input
@@ -120,12 +126,12 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
           onKeyDown={(event) => event.repeat && event.preventDefault()}
           // biome-ignore lint/a11y/noAutofocus: the input is the whole screen
           autoFocus
-          lang="de"
+          lang={course === "ary" ? "fr" : "de"}
           autoCapitalize="off"
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
-          placeholder="Auf Deutsch… (ae, oe, ue, ss ok)"
+          placeholder={cheer.type}
           aria-label={t("Your answer in German")}
           className="field w-full text-xl font-bold"
         />
@@ -135,9 +141,10 @@ export function Practice({ words, scope }: { words: Note[]; scope: PracticeScope
             className={`flex flex-col items-start gap-1 rounded-2xl p-4 ${state === "idle" ? "" : PANEL[state]}`}
           >
             <p className="text-xl font-black">
-              {right ? "✓ Richtig!" : `✗ ${t("Correct answer:")}`}
+              {right ? `✓ ${cheer.right}` : `✗ ${t("Correct answer:")}`}
             </p>
-            <German word={note.de} />
+            <German word={note.de} tr={note.tr} />
+
             {note.exampleDe && <p className="font-semibold">{note.exampleDe}</p>}
           </div>
         )}

@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { audioUrl } from "@/lib/audio";
+import { audioUrl, isArabic } from "@/lib/audio";
 import { articleColor, splitPlural, spokenForm } from "@/lib/german";
 import { useT } from "../Locale";
+import { Say } from "../Say";
 
 const MUTED = "merk-muted";
 const VOICE = "merk-voice";
@@ -95,12 +96,16 @@ export function speak(
     onEnd?.();
     return;
   }
-  if (!recorded) return deviceSpeak(text, second, onEnd);
+  // Darija: always the recorded voice; a German phone voice reading Arabic would be nonsense.
+  const arabic = isArabic(text);
+  if (!recorded && !arabic) return deviceSpeak(text, second, onEnd);
   const mine = turn;
   const audio = getPlayer();
   // A missing file both fires "error" and rejects play(): speak once, and only for this turn.
   const fallback = () => {
     if (mine !== turn) return;
+    if (arabic) return onEnd?.();
+
     const now = ++turn;
     deviceSpeak(text, second, () => {
       if (now === turn) onEnd?.();
@@ -162,8 +167,17 @@ export function SoundToggle() {
   );
 }
 
-/** A headword with its plural note set smaller, in the word's gender colour. */
-export function Headword({ de, className = "" }: { de: string; className?: string }) {
+/** A headword with its plural note set smaller, in the word's gender colour (Darija: both scripts). */
+export function Headword({
+  de,
+  tr,
+  className = "",
+}: {
+  de: string;
+  tr?: string | null;
+  className?: string;
+}) {
+  if (tr) return <Say de={de} tr={tr} className={className} />;
   return (
     <span className={`${articleColor(de)} ${className}`}>
       {splitPlural(de).map(({ text, plural }, i) =>
@@ -180,7 +194,8 @@ export function Headword({ de, className = "" }: { de: string; className?: strin
   );
 }
 
-export function German({ word }: { word: string }) {
+/** The word of a card, big, tap to hear it. */
+export function German({ word, tr }: { word: string; tr?: string | null }) {
   const t = useT();
   return (
     <button
@@ -189,7 +204,7 @@ export function German({ word }: { word: string }) {
       className="text-4xl font-black tracking-tight"
       title={t("Listen")}
     >
-      <Headword de={word} />{" "}
+      <Headword de={word} tr={tr} />{" "}
       <span aria-hidden="true" className="text-xl opacity-50">
         🔊
       </span>

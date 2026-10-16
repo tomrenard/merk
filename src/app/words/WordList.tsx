@@ -68,7 +68,7 @@ export function WordList({
             className="flex items-baseline justify-between gap-3 py-3"
           >
             <span>
-              <Headword de={word.de} className="font-extrabold" />{" "}
+              <Headword de={word.de} tr={word.tr} className="font-extrabold" />{" "}
               <span className="muted">{word.en}</span>
             </span>
             <span className="muted shrink-0 text-xs font-bold">

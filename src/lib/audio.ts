@@ -26,9 +26,19 @@ export function audioKey(text: string): string {
 
 export const audioUrl = (text: string) => `${AUDIO_BASE}/a/${audioKey(text)}.m4a`;
 
-/** An exercise's sentence with the gap filled in, for feedback and speech. */
+/** An exercise's sentence with the gap filled in, for feedback and speech (Darija: Arabic). */
 export function solved(item: UnitItem): string {
-  if (item.type === "order") return item.answers[0] ?? "";
+  if (item.type === "order") return item.de ?? item.answers[0] ?? "";
   const answer = item.type === "cloze" ? item.answers[0] : item.options[item.answer];
   return item.de.replace("___", answer ?? "");
 }
+
+/** Darija only: the solved sentence in Latin; undefined for German. */
+export function solvedTr(item: UnitItem): string | undefined {
+  if (item.type === "order") return item.de ? item.answers[0] : undefined;
+  const answer = item.type === "cloze" ? item.answersTr?.[0] : item.optionsTr?.[item.answer];
+  return item.tr?.replace("___", answer ?? "");
+}
+
+/** Darija in Arabic script: only recorded voices can say it (phones have no Darija voice). */
+export const isArabic = (text: string) => /\p{Script=Arabic}/u.test(text);

@@ -1,0 +1,4676 @@
+[
+ {
+  "id": "ana",
+  "de": "أنا",
+  "tr": "ana",
+  "en": "je, moi",
+  "exampleDe": "أنا من فرانسا.",
+  "exampleTr": "ana men fransa.",
+  "exampleEn": "Je suis de France."
+ },
+ {
+  "id": "nta",
+  "de": "نتا",
+  "tr": "nta",
+  "en": "tu, toi (à un homme)",
+  "exampleDe": "منين نتا؟",
+  "exampleTr": "mnin nta?",
+  "exampleEn": "D’où es-tu ? (à un homme)"
+ },
+ {
+  "id": "nti",
+  "de": "نتي",
+  "tr": "nti",
+  "en": "tu, toi (à une femme)",
+  "exampleDe": "منين نتي؟",
+  "exampleTr": "mnin nti?",
+  "exampleEn": "D’où es-tu ? (à une femme)"
+ },
+ {
+  "id": "howa",
+  "de": "هو",
+  "tr": "howa",
+  "en": "il, lui",
+  "exampleDe": "هو مغربي.",
+  "exampleTr": "howa mghribi.",
+  "exampleEn": "Il est marocain."
+ },
+ {
+  "id": "hiya",
+  "de": "هي",
+  "tr": "hiya",
+  "en": "elle",
+  "exampleDe": "هي فرانساوية.",
+  "exampleTr": "hiya fransawiya.",
+  "exampleEn": "Elle est française."
+ },
+ {
+  "id": "7na",
+  "de": "حنا",
+  "tr": "7na",
+  "en": "nous",
+  "exampleDe": "حنا من كازا.",
+  "exampleTr": "7na men kaza.",
+  "exampleEn": "Nous sommes de Casa."
+ },
+ {
+  "id": "ntouma",
+  "de": "نتوما",
+  "tr": "ntouma",
+  "en": "vous (à plusieurs)",
+  "exampleDe": "منين نتوما؟",
+  "exampleTr": "mnin ntouma?",
+  "exampleEn": "Vous êtes d’où ?"
+ },
+ {
+  "id": "homa",
+  "de": "هوما",
+  "tr": "homa",
+  "en": "ils, elles",
+  "exampleDe": "هوما كيخدمو ف الرباط.",
+  "exampleTr": "homa kaykhdmou f rrbat.",
+  "exampleEn": "Ils travaillent à Rabat."
+ },
+ {
+  "id": "salam",
+  "de": "سلام",
+  "tr": "salam",
+  "en": "salut, bonjour",
+  "phrase": true,
+  "exampleDe": "سلام، لاباس؟",
+  "exampleTr": "salam, labas?",
+  "exampleEn": "Salut, ça va ?"
+ },
+ {
+  "id": "labas",
+  "de": "لاباس",
+  "tr": "labas",
+  "en": "ça va ? / ça va",
+  "phrase": true,
+  "exampleDe": "لاباس، الحمد لله.",
+  "exampleTr": "labas, l7amdoulillah.",
+  "exampleEn": "Ça va, Dieu merci."
+ },
+ {
+  "id": "l7amdoulillah",
+  "de": "الحمد لله",
+  "tr": "l7amdoulillah",
+  "en": "Dieu merci (réponse à labas)",
+  "phrase": true
+ },
+ {
+  "id": "w",
+  "de": "و",
+  "tr": "w",
+  "en": "et",
+  "exampleDe": "و نتا؟",
+  "exampleTr": "w nta?",
+  "exampleEn": "Et toi ?"
+ },
+ {
+  "id": "ki-dayr",
+  "de": "كي داير؟",
+  "tr": "ki dayr?",
+  "en": "comment tu vas ? (à un homme)",
+  "phrase": true,
+  "exampleDe": "ألو مهدي، كي داير؟",
+  "exampleTr": "alo mehdi, ki dayr?",
+  "exampleEn": "Allô Mehdi, comment tu vas ?"
+ },
+ {
+  "id": "ki-dayra",
+  "de": "كي دايرة؟",
+  "tr": "ki dayra?",
+  "en": "comment tu vas ? (à une femme)",
+  "phrase": true
+ },
+ {
+  "id": "smiti",
+  "de": "سميتي",
+  "tr": "smiti",
+  "en": "mon nom (est), je m’appelle",
+  "exampleDe": "سميتي سارة.",
+  "exampleTr": "smiti sara.",
+  "exampleEn": "Je m’appelle Sara."
+ },
+ {
+  "id": "chno-smitek",
+  "de": "شنو سميتك؟",
+  "tr": "chno smitek?",
+  "en": "comment tu t’appelles ?",
+  "phrase": true,
+  "exampleDe": "سمح ليا، شنو سميتك؟",
+  "exampleTr": "sme7 liya, chno smitek?",
+  "exampleEn": "Pardon, comment tu t’appelles ? (à un homme)"
+ },
+ {
+  "id": "chno",
+  "de": "شنو",
+  "tr": "chno",
+  "en": "quoi, quel, qu’est-ce que",
+  "exampleDe": "شنو هادا؟ — هادا أتاي.",
+  "exampleTr": "chno hada? — hada atay.",
+  "exampleEn": "Qu’est-ce que c’est ? — C’est du thé."
+ },
+ {
+  "id": "men",
+  "de": "من",
+  "tr": "men",
+  "en": "de (origine)",
+  "exampleDe": "أنا من ليون.",
+  "exampleTr": "ana men lyon.",
+  "exampleEn": "Je suis de Lyon."
+ },
+ {
+  "id": "mnin",
+  "de": "منين",
+  "tr": "mnin",
+  "en": "d’où",
+  "exampleDe": "منين نتي؟ — من فرانسا.",
+  "exampleTr": "mnin nti? — men fransa.",
+  "exampleEn": "D’où es-tu ? — De France."
+ },
+ {
+  "id": "fransa",
+  "de": "فرانسا",
+  "tr": "fransa",
+  "en": "la France"
+ },
+ {
+  "id": "fransawi",
+  "de": "فرانساوي",
+  "tr": "fransawi",
+  "en": "français (un homme)",
+  "exampleDe": "أنا فرانساوي.",
+  "exampleTr": "ana fransawi.",
+  "exampleEn": "Je suis français."
+ },
+ {
+  "id": "fransawiya",
+  "de": "فرانساوية",
+  "tr": "fransawiya",
+  "en": "française (une femme) ; lfransawiya : le français (la langue)",
+  "exampleDe": "كنهضر الفرانساوية و الدارجة.",
+  "exampleTr": "kanhder lfransawiya w ddarija.",
+  "exampleEn": "Je parle français et darija."
+ },
+ {
+  "id": "mghribi",
+  "de": "مغربي",
+  "tr": "mghribi",
+  "en": "marocain (un homme)",
+  "exampleDe": "واش نتا مغربي؟",
+  "exampleTr": "wach nta mghribi?",
+  "exampleEn": "Est-ce que tu es marocain ?"
+ },
+ {
+  "id": "mghribiya",
+  "de": "مغربية",
+  "tr": "mghribiya",
+  "en": "marocaine (une femme)"
+ },
+ {
+  "id": "mtcherfin",
+  "de": "متشرفين",
+  "tr": "mtcherfin",
+  "en": "enchanté(e)",
+  "phrase": true,
+  "exampleDe": "متشرفين، أنا يوسف.",
+  "exampleTr": "mtcherfin, ana youssef.",
+  "exampleEn": "Enchanté, je suis Youssef."
+ },
+ {
+  "id": "kaza",
+  "de": "كازا",
+  "tr": "kaza",
+  "en": "Casa (Casablanca)"
+ },
+ {
+  "id": "daba",
+  "de": "دابا",
+  "tr": "daba",
+  "en": "maintenant ; tout de suite",
+  "exampleDe": "أنا ساكن ف كازا دابا.",
+  "exampleTr": "ana saken f kaza daba.",
+  "exampleEn": "J’habite à Casa maintenant."
+ },
+ {
+  "id": "f",
+  "de": "ف",
+  "tr": "f",
+  "en": "dans, à, en",
+  "exampleDe": "حنا ف الدار.",
+  "exampleTr": "7na f ddar.",
+  "exampleEn": "Nous sommes à la maison."
+ },
+ {
+  "id": "saken",
+  "de": "ساكن",
+  "tr": "saken",
+  "en": "qui habite (masc.) : ana saken = j’habite",
+  "exampleDe": "واش ساكن ف كازا؟",
+  "exampleTr": "wach saken f kaza?",
+  "exampleEn": "Est-ce que tu habites à Casa ?"
+ },
+ {
+  "id": "sakna",
+  "de": "ساكنة",
+  "tr": "sakna",
+  "en": "qui habite (fém.) : ana sakna = j’habite",
+  "exampleDe": "آه، ساكنة ف المعاريف.",
+  "exampleTr": "ah, sakna f lma3arif.",
+  "exampleEn": "Oui, j’habite au Maârif."
+ },
+ {
+  "id": "ah",
+  "de": "آه",
+  "tr": "ah",
+  "en": "oui"
+ },
+ {
+  "id": "salam-3alikom",
+  "de": "سلام عليكم",
+  "tr": "salam 3alikom",
+  "en": "la paix sur vous (bonjour)",
+  "phrase": true
+ },
+ {
+  "id": "w-3alikom-ssalam",
+  "de": "و عليكم السلام",
+  "tr": "w 3alikom ssalam",
+  "en": "et sur vous la paix (réponse à salam 3alikom)",
+  "phrase": true
+ },
+ {
+  "id": "sba7-lkhir",
+  "de": "صباح الخير",
+  "tr": "sba7 lkhir",
+  "en": "bonjour (le matin)",
+  "phrase": true,
+  "exampleDe": "صباح الخير، لاباس؟",
+  "exampleTr": "sba7 lkhir, labas?",
+  "exampleEn": "Bonjour, ça va ?"
+ },
+ {
+  "id": "sba7-nnour",
+  "de": "صباح النور",
+  "tr": "sba7 nnour",
+  "en": "bonjour (réponse à sba7 lkhir)",
+  "phrase": true
+ },
+ {
+  "id": "msa-lkhir",
+  "de": "مسا الخير",
+  "tr": "msa lkhir",
+  "en": "bonsoir (l’après-midi, le soir)",
+  "phrase": true,
+  "exampleDe": "مسا الخير، مرحبا بيك!",
+  "exampleTr": "msa lkhir, mer7ba bik!",
+  "exampleEn": "Bonsoir, bienvenue ! (à un homme)"
+ },
+ {
+  "id": "msa-nnour",
+  "de": "مسا النور",
+  "tr": "msa nnour",
+  "en": "bonsoir (réponse à msa lkhir)",
+  "phrase": true
+ },
+ {
+  "id": "chokran",
+  "de": "شكرا",
+  "tr": "chokran",
+  "en": "merci",
+  "phrase": true,
+  "exampleDe": "شكرا بزاف!",
+  "exampleTr": "chokran bzzaf!",
+  "exampleEn": "Merci beaucoup !"
+ },
+ {
+  "id": "bzzaf",
+  "de": "بزاف",
+  "tr": "bzzaf",
+  "en": "beaucoup ; très ; trop",
+  "exampleDe": "هادا غالي بزاف!",
+  "exampleTr": "hada ghali bzzaf!",
+  "exampleEn": "C’est trop cher !"
+ },
+ {
+  "id": "bla-jmil",
+  "de": "بلا جميل",
+  "tr": "bla jmil",
+  "en": "de rien",
+  "phrase": true
+ },
+ {
+  "id": "3afak",
+  "de": "عافاك",
+  "tr": "3afak",
+  "en": "s’il te plaît",
+  "phrase": true,
+  "exampleDe": "عافاك، قهوة.",
+  "exampleTr": "3afak, 9hwa.",
+  "exampleEn": "Un café, s’il te plaît."
+ },
+ {
+  "id": "sme7-liya",
+  "de": "سمح ليا",
+  "tr": "sme7 liya",
+  "en": "pardon, excuse-moi (à un homme)",
+  "phrase": true,
+  "exampleDe": "سمح ليا، ماعرفتش.",
+  "exampleTr": "sme7 liya, ma3reftch.",
+  "exampleEn": "Pardon, je ne sais pas."
+ },
+ {
+  "id": "sm7i-liya",
+  "de": "سمحي ليا",
+  "tr": "sm7i liya",
+  "en": "pardon, excuse-moi (à une femme)",
+  "phrase": true,
+  "exampleDe": "سمحي ليا، نتي سارة؟",
+  "exampleTr": "sm7i liya, nti sara?",
+  "exampleEn": "Pardon, tu es Sara ?"
+ },
+ {
+  "id": "mer7ba",
+  "de": "مرحبا",
+  "tr": "mer7ba",
+  "en": "bienvenue ; avec plaisir",
+  "phrase": true
+ },
+ {
+  "id": "mer7ba-bik",
+  "de": "مرحبا بيك",
+  "tr": "mer7ba bik",
+  "en": "bienvenue (à un homme)",
+  "phrase": true
+ },
+ {
+  "id": "mer7ba-biki",
+  "de": "مرحبا بيكي",
+  "tr": "mer7ba biki",
+  "en": "bienvenue (à une femme)",
+  "phrase": true,
+  "exampleDe": "صباح الخير، مرحبا بيكي!",
+  "exampleTr": "sba7 lkhir, mer7ba biki!",
+  "exampleEn": "Bonjour, bienvenue !"
+ },
+ {
+  "id": "bslama",
+  "de": "بسلامة",
+  "tr": "bslama",
+  "en": "au revoir",
+  "phrase": true,
+  "exampleDe": "بسلامة، نهارك سعيد!",
+  "exampleTr": "bslama, nharek sa3id!",
+  "exampleEn": "Au revoir, bonne journée !"
+ },
+ {
+  "id": "tsba7-3la-khir",
+  "de": "تصبح على خير",
+  "tr": "tsba7 3la khir",
+  "en": "bonne nuit (à un homme)",
+  "phrase": true
+ },
+ {
+  "id": "tsba7i-3la-khir",
+  "de": "تصبحي على خير",
+  "tr": "tsba7i 3la khir",
+  "en": "bonne nuit (à une femme)",
+  "phrase": true
+ },
+ {
+  "id": "nharek-sa3id",
+  "de": "نهارك سعيد",
+  "tr": "nharek sa3id",
+  "en": "bonne journée",
+  "phrase": true
+ },
+ {
+  "id": "9hwa",
+  "de": "قهوة",
+  "tr": "9hwa",
+  "en": "un café (la boisson)",
+  "exampleDe": "بغيت قهوة عافاك.",
+  "exampleTr": "bghit 9hwa 3afak.",
+  "exampleEn": "Je veux un café, s’il te plaît."
+ },
+ {
+  "id": "ha",
+  "de": "ها",
+  "tr": "ha",
+  "en": "voici, voilà",
+  "exampleDe": "ها القهوة.",
+  "exampleTr": "ha l9hwa.",
+  "exampleEn": "Voilà le café."
+ },
+ {
+  "id": "wa7ed",
+  "de": "واحد",
+  "tr": "wa7ed",
+  "en": "un (1) ; wa7ed l- : un, une",
+  "exampleDe": "كاين واحد الحانوت قريب.",
+  "exampleTr": "kayn wa7ed l7anout 9rib.",
+  "exampleEn": "Il y a une épicerie tout près."
+ },
+ {
+  "id": "jouj",
+  "de": "جوج",
+  "tr": "jouj",
+  "en": "deux (2)",
+  "exampleDe": "عندي جوج د الولاد.",
+  "exampleTr": "3ndi jouj d lwlad.",
+  "exampleEn": "J’ai deux enfants."
+ },
+ {
+  "id": "tlata",
+  "de": "تلاتة",
+  "tr": "tlata",
+  "en": "trois (3)",
+  "exampleDe": "واحد، جوج، تلاتة!",
+  "exampleTr": "wa7ed, jouj, tlata!",
+  "exampleEn": "Un, deux, trois !"
+ },
+ {
+  "id": "rb3a",
+  "de": "ربعة",
+  "tr": "rb3a",
+  "en": "quatre (4)",
+  "exampleDe": "جوج و جوج: ربعة.",
+  "exampleTr": "jouj w jouj: rb3a.",
+  "exampleEn": "Deux et deux : quatre."
+ },
+ {
+  "id": "khamsa",
+  "de": "خمسة",
+  "tr": "khamsa",
+  "en": "cinq (5)",
+  "exampleDe": "خمسة و خمسة: عشرة.",
+  "exampleTr": "khamsa w khamsa: 3achra.",
+  "exampleEn": "Cinq et cinq : dix."
+ },
+ {
+  "id": "stta",
+  "de": "ستة",
+  "tr": "stta",
+  "en": "six (6)",
+  "exampleDe": "ستة دراهم.",
+  "exampleTr": "stta drahem.",
+  "exampleEn": "Six dirhams."
+ },
+ {
+  "id": "sb3a",
+  "de": "سبعة",
+  "tr": "sb3a",
+  "en": "sept (7)"
+ },
+ {
+  "id": "tmnya",
+  "de": "تمنية",
+  "tr": "tmnya",
+  "en": "huit (8)",
+  "exampleDe": "صافي، بتمنية دراهم.",
+  "exampleTr": "safi, b tmnya drahem.",
+  "exampleEn": "Bon, à huit dirhams."
+ },
+ {
+  "id": "ts3a",
+  "de": "تسعة",
+  "tr": "ts3a",
+  "en": "neuf (9)"
+ },
+ {
+  "id": "3achra",
+  "de": "عشرة",
+  "tr": "3achra",
+  "en": "dix (10)",
+  "exampleDe": "الليمون بعشرة دراهم.",
+  "exampleTr": "llimoun b 3achra drahem.",
+  "exampleEn": "Les oranges sont à dix dirhams."
+ },
+ {
+  "id": "7dach",
+  "de": "حداش",
+  "tr": "7dach",
+  "en": "onze (11)",
+  "exampleDe": "عندي حداش العام.",
+  "exampleTr": "3ndi 7dach l3am.",
+  "exampleEn": "J’ai onze ans."
+ },
+ {
+  "id": "tnach",
+  "de": "طناش",
+  "tr": "tnach",
+  "en": "douze (12)",
+  "exampleDe": "مهدي عندو طناش العام.",
+  "exampleTr": "mehdi 3ndo tnach l3am.",
+  "exampleEn": "Mehdi a douze ans."
+ },
+ {
+  "id": "tlettach",
+  "de": "تلطاش",
+  "tr": "tlettach",
+  "en": "treize (13)"
+ },
+ {
+  "id": "rb3tach",
+  "de": "ربعطاش",
+  "tr": "rb3tach",
+  "en": "quatorze (14)"
+ },
+ {
+  "id": "khmstach",
+  "de": "خمسطاش",
+  "tr": "khmstach",
+  "en": "quinze (15)",
+  "exampleDe": "زينب عندها خمسطاش العام.",
+  "exampleTr": "zineb 3ndha khmstach l3am.",
+  "exampleEn": "Zineb a quinze ans."
+ },
+ {
+  "id": "settach",
+  "de": "سطاش",
+  "tr": "settach",
+  "en": "seize (16)"
+ },
+ {
+  "id": "sb3tach",
+  "de": "سبعطاش",
+  "tr": "sb3tach",
+  "en": "dix-sept (17)"
+ },
+ {
+  "id": "tmentach",
+  "de": "تمنطاش",
+  "tr": "tmentach",
+  "en": "dix-huit (18)",
+  "exampleDe": "عندي تمنطاش العام.",
+  "exampleTr": "3ndi tmentach l3am.",
+  "exampleEn": "J’ai dix-huit ans."
+ },
+ {
+  "id": "ts3tach",
+  "de": "تسعطاش",
+  "tr": "ts3tach",
+  "en": "dix-neuf (19)"
+ },
+ {
+  "id": "3chrin",
+  "de": "عشرين",
+  "tr": "3chrin",
+  "en": "vingt (20)",
+  "exampleDe": "عندي عشرين عام.",
+  "exampleTr": "3ndi 3chrin 3am.",
+  "exampleEn": "J’ai vingt ans."
+ },
+ {
+  "id": "ch7al",
+  "de": "شحال",
+  "tr": "ch7al",
+  "en": "combien",
+  "exampleDe": "شحال؟ — عشرين درهم.",
+  "exampleTr": "ch7al? — 3chrin dirham.",
+  "exampleEn": "Combien ? — Vingt dirhams."
+ },
+ {
+  "id": "ch7al-f-3mrek",
+  "de": "شحال ف عمرك؟",
+  "tr": "ch7al f 3mrek?",
+  "en": "quel âge as-tu ?",
+  "phrase": true,
+  "exampleDe": "و نتي، شحال ف عمرك؟",
+  "exampleTr": "w nti, ch7al f 3mrek?",
+  "exampleEn": "Et toi, quel âge as-tu ?"
+ },
+ {
+  "id": "3ndi",
+  "de": "عندي",
+  "tr": "3ndi",
+  "en": "j’ai",
+  "exampleDe": "أنا عندي عشرين عام.",
+  "exampleTr": "ana 3ndi 3chrin 3am.",
+  "exampleEn": "Moi, j’ai vingt ans."
+ },
+ {
+  "id": "3ndek",
+  "de": "عندك",
+  "tr": "3ndek",
+  "en": "tu as",
+  "exampleDe": "شحال من خو عندك؟",
+  "exampleTr": "ch7al men kho 3ndek?",
+  "exampleEn": "Combien de frères as-tu ?"
+ },
+ {
+  "id": "3ndo",
+  "de": "عندو",
+  "tr": "3ndo",
+  "en": "il a",
+  "exampleDe": "يوسف عندو سطاش العام.",
+  "exampleTr": "youssef 3ndo settach l3am.",
+  "exampleEn": "Youssef a seize ans."
+ },
+ {
+  "id": "3ndha",
+  "de": "عندها",
+  "tr": "3ndha",
+  "en": "elle a",
+  "exampleDe": "سلمى عندها سبعطاش العام.",
+  "exampleTr": "salma 3ndha sb3tach l3am.",
+  "exampleEn": "Salma a dix-sept ans."
+ },
+ {
+  "id": "3am",
+  "de": "عام",
+  "tr": "3am",
+  "en": "an, année (l3am de 11 à 19 ans)"
+ },
+ {
+  "id": "snin",
+  "de": "سنين",
+  "tr": "snin",
+  "en": "ans (de 3 à 10 ans)",
+  "exampleDe": "عندو خمسة سنين.",
+  "exampleTr": "3ndo khamsa snin.",
+  "exampleEn": "Il a cinq ans."
+ },
+ {
+  "id": "mzyan",
+  "de": "مزيان",
+  "tr": "mzyan",
+  "en": "bien, bon ; très bien !",
+  "exampleDe": "آه، مزيان!",
+  "exampleTr": "ah, mzyan!",
+  "exampleEn": "Ah, très bien !"
+ },
+ {
+  "id": "wach",
+  "de": "واش",
+  "tr": "wach",
+  "en": "est-ce que",
+  "exampleDe": "واش نتي من كازا؟",
+  "exampleTr": "wach nti men kaza?",
+  "exampleEn": "Est-ce que tu es de Casa ?"
+ },
+ {
+  "id": "la",
+  "de": "لا",
+  "tr": "la",
+  "en": "non",
+  "exampleDe": "لا، أنا ماشي من كازا.",
+  "exampleTr": "la, ana machi men kaza.",
+  "exampleEn": "Non, je ne suis pas de Casa."
+ },
+ {
+  "id": "machi",
+  "de": "ماشي",
+  "tr": "machi",
+  "en": "pas, ne… pas (sans verbe)",
+  "exampleDe": "أنا ماشي مغربي.",
+  "exampleTr": "ana machi mghribi.",
+  "exampleEn": "Je ne suis pas marocain."
+ },
+ {
+  "id": "ma3ndich",
+  "de": "ماعنديش",
+  "tr": "ma3ndich",
+  "en": "je n’ai pas",
+  "exampleDe": "ماعنديش عشرين عام.",
+  "exampleTr": "ma3ndich 3chrin 3am.",
+  "exampleEn": "Je n’ai pas vingt ans."
+ },
+ {
+  "id": "ma3ndekch",
+  "de": "ماعندكش",
+  "tr": "ma3ndekch",
+  "en": "tu n’as pas"
+ },
+ {
+  "id": "ma3ndouch",
+  "de": "ماعندوش",
+  "tr": "ma3ndouch",
+  "en": "il n’a pas",
+  "exampleDe": "هو ماعندوش عشرين عام.",
+  "exampleTr": "howa ma3ndouch 3chrin 3am.",
+  "exampleEn": "Il n’a pas vingt ans."
+ },
+ {
+  "id": "ma3ndhach",
+  "de": "ماعندهاش",
+  "tr": "ma3ndhach",
+  "en": "elle n’a pas"
+ },
+ {
+  "id": "ma3reftch",
+  "de": "ماعرفتش",
+  "tr": "ma3reftch",
+  "en": "je ne sais pas",
+  "phrase": true
+ },
+ {
+  "id": "mafhemtch",
+  "de": "مافهمتش",
+  "tr": "mafhemtch",
+  "en": "je n’ai pas compris",
+  "phrase": true,
+  "exampleDe": "مافهمتش، عافاك.",
+  "exampleTr": "mafhemtch, 3afak.",
+  "exampleEn": "Je n’ai pas compris, s’il te plaît."
+ },
+ {
+  "id": "machi-mochkil",
+  "de": "ماشي مشكل",
+  "tr": "machi mochkil",
+  "en": "pas de problème",
+  "phrase": true
+ },
+ {
+  "id": "mochkil",
+  "de": "مشكل",
+  "tr": "mochkil",
+  "en": "problème"
+ },
+ {
+  "id": "abadan",
+  "de": "أبدا",
+  "tr": "abadan",
+  "en": "pas du tout ; jamais",
+  "exampleDe": "لا، أبدا!",
+  "exampleTr": "la, abadan!",
+  "exampleEn": "Non, pas du tout !"
+ },
+ {
+  "id": "walo",
+  "de": "والو",
+  "tr": "walo",
+  "en": "rien"
+ },
+ {
+  "id": "dyal",
+  "de": "ديال",
+  "tr": "dyal",
+  "en": "de, à (appartenance)",
+  "exampleDe": "الدار ديال خويا.",
+  "exampleTr": "ddar dyal khoya.",
+  "exampleEn": "La maison de mon frère."
+ },
+ {
+  "id": "dyali",
+  "de": "ديالي",
+  "tr": "dyali",
+  "en": "mon, ma, à moi",
+  "exampleDe": "هادي الفاميلة ديالي.",
+  "exampleTr": "hadi lfamilya dyali.",
+  "exampleEn": "Voici ma famille."
+ },
+ {
+  "id": "dyalek",
+  "de": "ديالك",
+  "tr": "dyalek",
+  "en": "ton, ta, à toi",
+  "exampleDe": "هادي الفاميلة ديالك؟",
+  "exampleTr": "hadi lfamilya dyalek?",
+  "exampleEn": "C’est ta famille ?"
+ },
+ {
+  "id": "dyalo",
+  "de": "ديالو",
+  "tr": "dyalo",
+  "en": "son, sa, à lui"
+ },
+ {
+  "id": "dyalha",
+  "de": "ديالها",
+  "tr": "dyalha",
+  "en": "son, sa, à elle"
+ },
+ {
+  "id": "dyalna",
+  "de": "ديالنا",
+  "tr": "dyalna",
+  "en": "notre, à nous"
+ },
+ {
+  "id": "dyalkom",
+  "de": "ديالكم",
+  "tr": "dyalkom",
+  "en": "votre, à vous"
+ },
+ {
+  "id": "dyalhom",
+  "de": "ديالهم",
+  "tr": "dyalhom",
+  "en": "leur, à eux"
+ },
+ {
+  "id": "lfamilya",
+  "de": "الفاميلة",
+  "tr": "lfamilya",
+  "en": "la famille"
+ },
+ {
+  "id": "baba",
+  "de": "بابا",
+  "tr": "baba",
+  "en": "papa, mon père",
+  "exampleDe": "بابا من كازا و ماما من الرباط.",
+  "exampleTr": "baba men kaza w mama men rrbat.",
+  "exampleEn": "Papa est de Casa et maman est de Rabat."
+ },
+ {
+  "id": "mama",
+  "de": "ماما",
+  "tr": "mama",
+  "en": "maman, ma mère"
+ },
+ {
+  "id": "khoya",
+  "de": "خويا",
+  "tr": "khoya",
+  "en": "mon frère",
+  "exampleDe": "هادا خويا يوسف.",
+  "exampleTr": "hada khoya youssef.",
+  "exampleEn": "Voici mon frère Youssef."
+ },
+ {
+  "id": "khouk",
+  "de": "خوك",
+  "tr": "khouk",
+  "en": "ton frère"
+ },
+ {
+  "id": "khti",
+  "de": "ختي",
+  "tr": "khti",
+  "en": "ma sœur",
+  "exampleDe": "هادي ختي، سميتها ليلى.",
+  "exampleTr": "hadi khti, smitha layla.",
+  "exampleEn": "Voici ma sœur, elle s’appelle Layla."
+ },
+ {
+  "id": "khtek",
+  "de": "ختك",
+  "tr": "khtek",
+  "en": "ta sœur",
+  "exampleDe": "شنو سميت ختك؟",
+  "exampleTr": "chno smit khtek?",
+  "exampleEn": "Comment s’appelle ta sœur ?"
+ },
+ {
+  "id": "rajli",
+  "de": "راجلي",
+  "tr": "rajli",
+  "en": "mon mari",
+  "exampleDe": "راجلي مغربي.",
+  "exampleTr": "rajli mghribi.",
+  "exampleEn": "Mon mari est marocain."
+ },
+ {
+  "id": "mrati",
+  "de": "مراتي",
+  "tr": "mrati",
+  "en": "ma femme (épouse)",
+  "exampleDe": "مراتي فرانساوية.",
+  "exampleTr": "mrati fransawiya.",
+  "exampleEn": "Ma femme est française."
+ },
+ {
+  "id": "wldi",
+  "de": "ولدي",
+  "tr": "wldi",
+  "en": "mon fils",
+  "exampleDe": "ولدي عندو طناش العام.",
+  "exampleTr": "wldi 3ndo tnach l3am.",
+  "exampleEn": "Mon fils a douze ans."
+ },
+ {
+  "id": "bnti",
+  "de": "بنتي",
+  "tr": "bnti",
+  "en": "ma fille",
+  "exampleDe": "بنتي عندها سطاش العام.",
+  "exampleTr": "bnti 3ndha settach l3am.",
+  "exampleEn": "Ma fille a seize ans."
+ },
+ {
+  "id": "lwlad",
+  "de": "الولاد",
+  "tr": "lwlad",
+  "en": "les enfants"
+ },
+ {
+  "id": "hada",
+  "de": "هادا",
+  "tr": "hada",
+  "en": "voici, c’est ; celui-ci (masc.)",
+  "exampleDe": "هادا بابا.",
+  "exampleTr": "hada baba.",
+  "exampleEn": "Voici papa."
+ },
+ {
+  "id": "hadi",
+  "de": "هادي",
+  "tr": "hadi",
+  "en": "voici, c’est ; celle-ci (fém.) ; ça"
+ },
+ {
+  "id": "smito",
+  "de": "سميتو",
+  "tr": "smito",
+  "en": "son nom (à lui), il s’appelle",
+  "exampleDe": "خويا سميتو يوسف.",
+  "exampleTr": "khoya smito youssef.",
+  "exampleEn": "Mon frère s’appelle Youssef."
+ },
+ {
+  "id": "smitha",
+  "de": "سميتها",
+  "tr": "smitha",
+  "en": "son nom (à elle), elle s’appelle"
+ },
+ {
+  "id": "d",
+  "de": "د",
+  "tr": "d",
+  "en": "de (jouj d lwlad, lkilo d…)"
+ },
+ {
+  "id": "kayn",
+  "de": "كاين",
+  "tr": "kayn",
+  "en": "il y a (masc.)",
+  "exampleDe": "ف الدار كاين الصالون.",
+  "exampleTr": "f ddar kayn ssalon.",
+  "exampleEn": "Dans la maison, il y a le salon."
+ },
+ {
+  "id": "kayna",
+  "de": "كاينة",
+  "tr": "kayna",
+  "en": "il y a (fém.)",
+  "exampleDe": "ف الكوزينة كاينة التلاجة.",
+  "exampleTr": "f lkouzina kayna ttlaja.",
+  "exampleEn": "Dans la cuisine, il y a le frigo."
+ },
+ {
+  "id": "makaynch",
+  "de": "ماكاينش",
+  "tr": "makaynch",
+  "en": "il n’y a pas ; il n’est pas là",
+  "exampleDe": "لا، ماكاينش.",
+  "exampleTr": "la, makaynch.",
+  "exampleEn": "Non, il n’y en a pas."
+ },
+ {
+  "id": "chi",
+  "de": "شي",
+  "tr": "chi",
+  "en": "un, une, quelque (dans une question)",
+  "exampleDe": "واش كاين شي حانوت قريب؟",
+  "exampleTr": "wach kayn chi 7anout 9rib?",
+  "exampleEn": "Est-ce qu’il y a une épicerie près d’ici ?"
+ },
+ {
+  "id": "9rib",
+  "de": "قريب",
+  "tr": "9rib",
+  "en": "près",
+  "exampleDe": "لا، قريب. خمسة دقايق.",
+  "exampleTr": "la, 9rib. khamsa d9aye9.",
+  "exampleEn": "Non, c’est près. Cinq minutes."
+ },
+ {
+  "id": "b3id",
+  "de": "بعيد",
+  "tr": "b3id",
+  "en": "loin",
+  "exampleDe": "واش بعيد؟",
+  "exampleTr": "wach b3id?",
+  "exampleEn": "C’est loin ?"
+ },
+ {
+  "id": "ddar",
+  "de": "الدار",
+  "tr": "ddar",
+  "en": "la maison (fém.)",
+  "exampleDe": "الدار كبيرة.",
+  "exampleTr": "ddar kbira.",
+  "exampleEn": "La maison est grande."
+ },
+ {
+  "id": "lbit",
+  "de": "البيت",
+  "tr": "lbit",
+  "en": "la chambre, la pièce (masc.)",
+  "exampleDe": "البيت ديالي كبير.",
+  "exampleTr": "lbit dyali kbir.",
+  "exampleEn": "Ma chambre est grande."
+ },
+ {
+  "id": "ssalon",
+  "de": "الصالون",
+  "tr": "ssalon",
+  "en": "le salon"
+ },
+ {
+  "id": "lkouzina",
+  "de": "الكوزينة",
+  "tr": "lkouzina",
+  "en": "la cuisine"
+ },
+ {
+  "id": "l7emmam",
+  "de": "الحمام",
+  "tr": "l7emmam",
+  "en": "la salle de bain ; le hammam",
+  "exampleDe": "واش كاين الحمام؟",
+  "exampleTr": "wach kayn l7emmam?",
+  "exampleEn": "Est-ce qu’il y a une salle de bain ?"
+ },
+ {
+  "id": "ttlaja",
+  "de": "التلاجة",
+  "tr": "ttlaja",
+  "en": "le frigo"
+ },
+ {
+  "id": "l7ouma",
+  "de": "الحومة",
+  "tr": "l7ouma",
+  "en": "le quartier",
+  "exampleDe": "ماكاينش الطوبيس ف الحومة.",
+  "exampleTr": "makaynch ttobis f l7ouma.",
+  "exampleEn": "Il n’y a pas de bus dans le quartier."
+ },
+ {
+  "id": "l7anout",
+  "de": "الحانوت",
+  "tr": "l7anout",
+  "en": "l’épicerie, la petite boutique"
+ },
+ {
+  "id": "ljame3",
+  "de": "الجامع",
+  "tr": "ljame3",
+  "en": "la mosquée"
+ },
+ {
+  "id": "lmdrasa",
+  "de": "المدرسة",
+  "tr": "lmdrasa",
+  "en": "l’école"
+ },
+ {
+  "id": "ttobis",
+  "de": "الطوبيس",
+  "tr": "ttobis",
+  "en": "le bus",
+  "exampleDe": "كنمشي للخدمة ف الطوبيس.",
+  "exampleTr": "kanmchi l lkhedma f ttobis.",
+  "exampleEn": "Je vais au travail en bus."
+ },
+ {
+  "id": "l9hwa",
+  "de": "القهوة",
+  "tr": "l9hwa",
+  "en": "le café (la boisson ; le lieu)",
+  "exampleDe": "نتلاقاو ف القهوة.",
+  "exampleTr": "ntla9aw f l9hwa.",
+  "exampleEn": "On se retrouve au café."
+ },
+ {
+  "id": "kanskon",
+  "de": "كنسكن",
+  "tr": "kanskon",
+  "en": "j’habite",
+  "exampleDe": "كنسكن ف كازا.",
+  "exampleTr": "kanskon f kaza.",
+  "exampleEn": "J’habite à Casa."
+ },
+ {
+  "id": "katskon",
+  "de": "كتسكن",
+  "tr": "katskon",
+  "en": "tu habites ; elle habite",
+  "exampleDe": "فين كتسكن؟",
+  "exampleTr": "fin katskon?",
+  "exampleEn": "Où habites-tu ?"
+ },
+ {
+  "id": "katskni",
+  "de": "كتسكني",
+  "tr": "katskni",
+  "en": "tu habites (à une femme)",
+  "exampleDe": "فين كتسكني دابا؟",
+  "exampleTr": "fin katskni daba?",
+  "exampleEn": "Où habites-tu maintenant ?"
+ },
+ {
+  "id": "kayskon",
+  "de": "كيسكن",
+  "tr": "kayskon",
+  "en": "il habite"
+ },
+ {
+  "id": "kansknou",
+  "de": "كنسكنو",
+  "tr": "kansknou",
+  "en": "nous habitons",
+  "exampleDe": "حنا كنسكنو ف المعاريف.",
+  "exampleTr": "7na kansknou f lma3arif.",
+  "exampleEn": "Nous habitons au Maârif."
+ },
+ {
+  "id": "kankhdem",
+  "de": "كنخدم",
+  "tr": "kankhdem",
+  "en": "je travaille",
+  "exampleDe": "كنخدم ف البانكة.",
+  "exampleTr": "kankhdem f lbanka.",
+  "exampleEn": "Je travaille à la banque."
+ },
+ {
+  "id": "katkhdem",
+  "de": "كتخدم",
+  "tr": "katkhdem",
+  "en": "tu travailles ; elle travaille",
+  "exampleDe": "شنو كتخدم؟",
+  "exampleTr": "chno katkhdem?",
+  "exampleEn": "Qu’est-ce que tu fais comme travail ?"
+ },
+ {
+  "id": "katkhdmi",
+  "de": "كتخدمي",
+  "tr": "katkhdmi",
+  "en": "tu travailles (à une femme)"
+ },
+ {
+  "id": "kaykhdem",
+  "de": "كيخدم",
+  "tr": "kaykhdem",
+  "en": "il travaille"
+ },
+ {
+  "id": "kaykhdmou",
+  "de": "كيخدمو",
+  "tr": "kaykhdmou",
+  "en": "ils, elles travaillent"
+ },
+ {
+  "id": "makankhdemch",
+  "de": "ماكنخدمش",
+  "tr": "makankhdemch",
+  "en": "je ne travaille pas",
+  "exampleDe": "نهار الحد ماكنخدمش.",
+  "exampleTr": "nhar l7ed makankhdemch.",
+  "exampleEn": "Le dimanche, je ne travaille pas."
+ },
+ {
+  "id": "kan9ra",
+  "de": "كنقرا",
+  "tr": "kan9ra",
+  "en": "j’étudie ; je lis",
+  "exampleDe": "كنقرا ف الجامعة.",
+  "exampleTr": "kan9ra f ljami3a.",
+  "exampleEn": "J’étudie à l’université."
+ },
+ {
+  "id": "kat9ra",
+  "de": "كتقرا",
+  "tr": "kat9ra",
+  "en": "tu étudies ; elle étudie"
+ },
+ {
+  "id": "kanhder",
+  "de": "كنهضر",
+  "tr": "kanhder",
+  "en": "je parle",
+  "exampleDe": "كنهضر الدارجة شوية.",
+  "exampleTr": "kanhder ddarija chwiya.",
+  "exampleEn": "Je parle un peu darija."
+ },
+ {
+  "id": "kathder",
+  "de": "كتهضر",
+  "tr": "kathder",
+  "en": "tu parles ; elle parle",
+  "exampleDe": "واش كتهضر الدارجة؟",
+  "exampleTr": "wach kathder ddarija?",
+  "exampleEn": "Est-ce que tu parles darija ?"
+ },
+ {
+  "id": "ddarija",
+  "de": "الدارجة",
+  "tr": "ddarija",
+  "en": "la darija (l’arabe marocain)"
+ },
+ {
+  "id": "chwiya",
+  "de": "شوية",
+  "tr": "chwiya",
+  "en": "un peu",
+  "exampleDe": "أنا مريضة شوية.",
+  "exampleTr": "ana mrida chwiya.",
+  "exampleEn": "Je suis un peu malade."
+ },
+ {
+  "id": "fin",
+  "de": "فين",
+  "tr": "fin",
+  "en": "où",
+  "exampleDe": "فين كاين الطوبيس عافاك؟",
+  "exampleTr": "fin kayn ttobis 3afak?",
+  "exampleEn": "Où est le bus, s’il te plaît ?"
+ },
+ {
+  "id": "lbanka",
+  "de": "البانكة",
+  "tr": "lbanka",
+  "en": "la banque"
+ },
+ {
+  "id": "ljami3a",
+  "de": "الجامعة",
+  "tr": "ljami3a",
+  "en": "l’université"
+ },
+ {
+  "id": "bghit",
+  "de": "بغيت",
+  "tr": "bghit",
+  "en": "je veux, je voudrais",
+  "exampleDe": "بغيت أتاي و مسمن.",
+  "exampleTr": "bghit atay w msemmen.",
+  "exampleEn": "Je veux un thé et un msemmen."
+ },
+ {
+  "id": "bghiti",
+  "de": "بغيتي",
+  "tr": "bghiti",
+  "en": "tu veux",
+  "exampleDe": "شنو بغيتي تشرب؟",
+  "exampleTr": "chno bghiti tchreb?",
+  "exampleEn": "Qu’est-ce que tu veux boire ?"
+ },
+ {
+  "id": "bgha",
+  "de": "بغا",
+  "tr": "bgha",
+  "en": "il veut",
+  "exampleDe": "يوسف بغا يشرب الما.",
+  "exampleTr": "youssef bgha ychreb lma.",
+  "exampleEn": "Youssef veut boire de l’eau."
+ },
+ {
+  "id": "bghat",
+  "de": "بغات",
+  "tr": "bghat",
+  "en": "elle veut",
+  "exampleDe": "هي بغات تاكل مسمن.",
+  "exampleTr": "hiya bghat takol msemmen.",
+  "exampleEn": "Elle veut manger un msemmen."
+ },
+ {
+  "id": "bghina",
+  "de": "بغينا",
+  "tr": "bghina",
+  "en": "nous voulons",
+  "exampleDe": "بغينا أتاي و الما.",
+  "exampleTr": "bghina atay w lma.",
+  "exampleEn": "Nous voulons du thé et de l’eau."
+ },
+ {
+  "id": "bghitou",
+  "de": "بغيتو",
+  "tr": "bghitou",
+  "en": "vous voulez",
+  "exampleDe": "مرحبا، شنو بغيتو؟",
+  "exampleTr": "mer7ba, chno bghitou?",
+  "exampleEn": "Bienvenue, qu’est-ce que vous voulez ?"
+ },
+ {
+  "id": "bghaw",
+  "de": "بغاو",
+  "tr": "bghaw",
+  "en": "ils, elles veulent"
+ },
+ {
+  "id": "mabghitch",
+  "de": "مابغيتش",
+  "tr": "mabghitch",
+  "en": "je ne veux pas",
+  "exampleDe": "مابغيتش السكر.",
+  "exampleTr": "mabghitch ssokkar.",
+  "exampleEn": "Je ne veux pas de sucre."
+ },
+ {
+  "id": "n9der",
+  "de": "نقدر",
+  "tr": "n9der",
+  "en": "je peux",
+  "exampleDe": "واش نقدر نخلص؟",
+  "exampleTr": "wach n9der nkhelles?",
+  "exampleEn": "Est-ce que je peux payer ?"
+ },
+ {
+  "id": "t9der",
+  "de": "تقدر",
+  "tr": "t9der",
+  "en": "tu peux ; elle peut",
+  "exampleDe": "واش تقدر نهار الخميس؟",
+  "exampleTr": "wach t9der nhar lkhmis?",
+  "exampleEn": "Tu peux jeudi ?"
+ },
+ {
+  "id": "y9der",
+  "de": "يقدر",
+  "tr": "y9der",
+  "en": "il peut"
+ },
+ {
+  "id": "man9derch",
+  "de": "مانقدرش",
+  "tr": "man9derch",
+  "en": "je ne peux pas",
+  "exampleDe": "اليوم مانقدرش.",
+  "exampleTr": "lyoum man9derch.",
+  "exampleEn": "Aujourd’hui, je ne peux pas."
+ },
+ {
+  "id": "nchreb",
+  "de": "نشرب",
+  "tr": "nchreb",
+  "en": "(je) boire : bghit nchreb, ghadi nchreb",
+  "exampleDe": "بغيت نشرب أتاي.",
+  "exampleTr": "bghit nchreb atay.",
+  "exampleEn": "Je veux boire du thé."
+ },
+ {
+  "id": "nakol",
+  "de": "ناكل",
+  "tr": "nakol",
+  "en": "(je) manger : bghit nakol, ghadi nakol",
+  "exampleDe": "بغيت ناكل مسمن.",
+  "exampleTr": "bghit nakol msemmen.",
+  "exampleEn": "Je veux manger un msemmen."
+ },
+ {
+  "id": "nkhelles",
+  "de": "نخلص",
+  "tr": "nkhelles",
+  "en": "(je) payer : wach n9der nkhelles ?"
+ },
+ {
+  "id": "3tini",
+  "de": "عطيني",
+  "tr": "3tini",
+  "en": "donne-moi",
+  "exampleDe": "عطيني الحساب عافاك.",
+  "exampleTr": "3tini l7sab 3afak.",
+  "exampleEn": "Donne-moi l’addition, s’il te plaît."
+ },
+ {
+  "id": "liya",
+  "de": "ليا",
+  "tr": "liya",
+  "en": "à moi, pour moi",
+  "exampleDe": "واش تقدر تجيب ليا الما؟",
+  "exampleTr": "wach t9der tjib liya lma?",
+  "exampleEn": "Est-ce que tu peux m’apporter de l’eau ?"
+ },
+ {
+  "id": "nouss-nouss",
+  "de": "نص نص",
+  "tr": "nouss nouss",
+  "en": "nouss nouss (moitié café, moitié lait)",
+  "exampleDe": "عطيني واحد نص نص بلا سكر.",
+  "exampleTr": "3tini wa7ed nouss nouss bla sokkar.",
+  "exampleEn": "Donne-moi un nouss nouss sans sucre."
+ },
+ {
+  "id": "atay",
+  "de": "أتاي",
+  "tr": "atay",
+  "en": "thé (à la menthe)",
+  "exampleDe": "شربت أتاي ف الصباح.",
+  "exampleTr": "chrebt atay f ssba7.",
+  "exampleEn": "J’ai bu du thé le matin."
+ },
+ {
+  "id": "lma",
+  "de": "الما",
+  "tr": "lma",
+  "en": "l’eau",
+  "exampleDe": "بغيتي الما ولا عصير؟",
+  "exampleTr": "bghiti lma wla 3asir?",
+  "exampleEn": "Tu veux de l’eau ou un jus ?"
+ },
+ {
+  "id": "bla",
+  "de": "بلا",
+  "tr": "bla",
+  "en": "sans",
+  "exampleDe": "بغيت أتاي بلا سكر.",
+  "exampleTr": "bghit atay bla sokkar.",
+  "exampleEn": "Je veux un thé sans sucre."
+ },
+ {
+  "id": "sokkar",
+  "de": "سكر",
+  "tr": "sokkar",
+  "en": "sucre"
+ },
+ {
+  "id": "l7sab",
+  "de": "الحساب",
+  "tr": "l7sab",
+  "en": "l’addition",
+  "exampleDe": "الحساب عافاك.",
+  "exampleTr": "l7sab 3afak.",
+  "exampleEn": "L’addition, s’il te plaît."
+ },
+ {
+  "id": "msemmen",
+  "de": "مسمن",
+  "tr": "msemmen",
+  "en": "msemmen (crêpe feuilletée)"
+ },
+ {
+  "id": "7archa",
+  "de": "حرشة",
+  "tr": "7archa",
+  "en": "harcha (galette de semoule)"
+ },
+ {
+  "id": "3asir",
+  "de": "عصير",
+  "tr": "3asir",
+  "en": "jus",
+  "exampleDe": "هوما بغاو يشربو عصير.",
+  "exampleTr": "homa bghaw ychrbou 3asir.",
+  "exampleEn": "Ils veulent boire un jus."
+ },
+ {
+  "id": "wakha",
+  "de": "واخا",
+  "tr": "wakha",
+  "en": "d’accord",
+  "exampleDe": "واخا، عطيني حرشة.",
+  "exampleTr": "wakha, 3tini 7archa.",
+  "exampleEn": "D’accord, donne-moi une harcha."
+ },
+ {
+  "id": "imta",
+  "de": "إمتى",
+  "tr": "imta",
+  "en": "quand",
+  "exampleDe": "إمتى كتمشي للخدمة؟",
+  "exampleTr": "imta katmchi l lkhedma?",
+  "exampleEn": "Quand vas-tu au travail ?"
+ },
+ {
+  "id": "3lach",
+  "de": "علاش",
+  "tr": "3lach",
+  "en": "pourquoi",
+  "exampleDe": "علاش كتقرا الدارجة؟",
+  "exampleTr": "3lach kat9ra ddarija?",
+  "exampleEn": "Pourquoi tu étudies la darija ?"
+ },
+ {
+  "id": "7it",
+  "de": "حيت",
+  "tr": "7it",
+  "en": "parce que",
+  "exampleDe": "حيت كنبغي المغرب.",
+  "exampleTr": "7it kanbghi lmghrib.",
+  "exampleEn": "Parce que j’aime le Maroc."
+ },
+ {
+  "id": "chkoun",
+  "de": "شكون",
+  "tr": "chkoun",
+  "en": "qui",
+  "exampleDe": "شكون هادا؟",
+  "exampleTr": "chkoun hada?",
+  "exampleEn": "Qui est-ce ?"
+ },
+ {
+  "id": "kifach",
+  "de": "كيفاش",
+  "tr": "kifach",
+  "en": "comment",
+  "exampleDe": "كيفاش كتمشي للخدمة؟",
+  "exampleTr": "kifach katmchi l lkhedma?",
+  "exampleEn": "Comment vas-tu au travail ?"
+ },
+ {
+  "id": "kifach-katgoul-hadi-b-ddarija",
+  "de": "كيفاش كتقول هادي بالدارجة؟",
+  "tr": "kifach katgoul hadi b ddarija?",
+  "en": "comment on dit ça en darija ?",
+  "phrase": true
+ },
+ {
+  "id": "ch7al-men",
+  "de": "شحال من",
+  "tr": "ch7al men",
+  "en": "combien de",
+  "exampleDe": "شحال من خت عندك؟ — جوج.",
+  "exampleTr": "ch7al men khet 3ndek? — jouj.",
+  "exampleEn": "Combien de sœurs as-tu ? — Deux."
+ },
+ {
+  "id": "kho",
+  "de": "خو",
+  "tr": "kho",
+  "en": "frère"
+ },
+ {
+  "id": "khet",
+  "de": "خت",
+  "tr": "khet",
+  "en": "sœur"
+ },
+ {
+  "id": "lkhedma",
+  "de": "الخدمة",
+  "tr": "lkhedma",
+  "en": "le travail",
+  "exampleDe": "البارح مشيت للخدمة.",
+  "exampleTr": "lbare7 mchit l lkhedma.",
+  "exampleEn": "Hier, je suis allé au travail."
+ },
+ {
+  "id": "kanbghi",
+  "de": "كنبغي",
+  "tr": "kanbghi",
+  "en": "j’aime",
+  "exampleDe": "كنبغي نشوف أفلام.",
+  "exampleTr": "kanbghi nchouf aflam.",
+  "exampleEn": "J’aime regarder des films."
+ },
+ {
+  "id": "lmghrib",
+  "de": "المغرب",
+  "tr": "lmghrib",
+  "en": "le Maroc"
+ },
+ {
+  "id": "bit-lma",
+  "de": "بيت الما",
+  "tr": "bit lma",
+  "en": "les toilettes",
+  "exampleDe": "فين كاين بيت الما؟",
+  "exampleTr": "fin kayn bit lma?",
+  "exampleEn": "Où sont les toilettes ?"
+ },
+ {
+  "id": "hna",
+  "de": "هنا",
+  "tr": "hna",
+  "en": "ici",
+  "exampleDe": "نتي ساكنة هنا؟",
+  "exampleTr": "nti sakna hna?",
+  "exampleEn": "Tu habites ici ?"
+ },
+ {
+  "id": "koll-nhar",
+  "de": "كل نهار",
+  "tr": "koll nhar",
+  "en": "tous les jours",
+  "exampleDe": "كل نهار ف الصباح.",
+  "exampleTr": "koll nhar f ssba7.",
+  "exampleEn": "Tous les jours, le matin."
+ },
+ {
+  "id": "ssba7",
+  "de": "الصباح",
+  "tr": "ssba7",
+  "en": "le matin (f ssba7)"
+ },
+ {
+  "id": "lm7atta",
+  "de": "المحطة",
+  "tr": "lm7atta",
+  "en": "l’arrêt (de bus), la station",
+  "exampleDe": "فين كاينة المحطة عافاك؟",
+  "exampleTr": "fin kayna lm7atta 3afak?",
+  "exampleEn": "Où est l’arrêt, s’il te plaît ?"
+ },
+ {
+  "id": "7da",
+  "de": "حدا",
+  "tr": "7da",
+  "en": "à côté de",
+  "exampleDe": "قريبة، حدا الحانوت.",
+  "exampleTr": "9riba, 7da l7anout.",
+  "exampleEn": "Tout près, à côté de l’épicerie."
+ },
+ {
+  "id": "b",
+  "de": "ب",
+  "tr": "b",
+  "en": "en, avec ; pour (un prix)"
+ },
+ {
+  "id": "l",
+  "de": "ل",
+  "tr": "l",
+  "en": "à, vers (l lkhedma, l kaza)"
+ },
+ {
+  "id": "tlatin",
+  "de": "تلاتين",
+  "tr": "tlatin",
+  "en": "trente (30)",
+  "exampleDe": "تلاتين درهم.",
+  "exampleTr": "tlatin dirham.",
+  "exampleEn": "Trente dirhams."
+ },
+ {
+  "id": "rb3in",
+  "de": "ربعين",
+  "tr": "rb3in",
+  "en": "quarante (40)",
+  "exampleDe": "هاك ربعين درهم.",
+  "exampleTr": "hak rb3in dirham.",
+  "exampleEn": "Tiens, quarante dirhams."
+ },
+ {
+  "id": "khamsin",
+  "de": "خمسين",
+  "tr": "khamsin",
+  "en": "cinquante (50)"
+ },
+ {
+  "id": "settin",
+  "de": "ستين",
+  "tr": "settin",
+  "en": "soixante (60)"
+ },
+ {
+  "id": "sb3in",
+  "de": "سبعين",
+  "tr": "sb3in",
+  "en": "soixante-dix (70)"
+ },
+ {
+  "id": "tmanin",
+  "de": "تمانين",
+  "tr": "tmanin",
+  "en": "quatre-vingts (80)",
+  "exampleDe": "بتمانين درهم.",
+  "exampleTr": "b tmanin dirham.",
+  "exampleEn": "Quatre-vingts dirhams."
+ },
+ {
+  "id": "tes3in",
+  "de": "تسعين",
+  "tr": "tes3in",
+  "en": "quatre-vingt-dix (90)"
+ },
+ {
+  "id": "mya",
+  "de": "مية",
+  "tr": "mya",
+  "en": "cent (100)",
+  "exampleDe": "صافي، هاك مية درهم.",
+  "exampleTr": "safi, hak mya dirham.",
+  "exampleEn": "C’est bon, voilà cent dirhams."
+ },
+ {
+  "id": "tnin",
+  "de": "تنين",
+  "tr": "tnin",
+  "en": "deux (dans 22, 32… : tnin w 3chrin)",
+  "exampleDe": "تنين و خمسين درهم.",
+  "exampleTr": "tnin w khamsin dirham.",
+  "exampleEn": "Cinquante-deux dirhams."
+ },
+ {
+  "id": "b-ch7al",
+  "de": "بشحال؟",
+  "tr": "b ch7al?",
+  "en": "c’est combien ?",
+  "phrase": true,
+  "exampleDe": "بشحال الكيلو د الماطيشة؟",
+  "exampleTr": "b ch7al lkilo d lmaticha?",
+  "exampleEn": "Combien coûte le kilo de tomates ?"
+ },
+ {
+  "id": "lkilo",
+  "de": "الكيلو",
+  "tr": "lkilo",
+  "en": "le kilo"
+ },
+ {
+  "id": "dirham",
+  "de": "درهم",
+  "tr": "dirham",
+  "en": "dirham (après 11 et plus)",
+  "exampleDe": "بعشرين درهم.",
+  "exampleTr": "b 3chrin dirham.",
+  "exampleEn": "Vingt dirhams."
+ },
+ {
+  "id": "drahem",
+  "de": "دراهم",
+  "tr": "drahem",
+  "en": "dirhams (de 3 à 10) ; l’argent"
+ },
+ {
+  "id": "ghali",
+  "de": "غالي",
+  "tr": "ghali",
+  "en": "cher",
+  "exampleDe": "عشرة؟ غالي بزاف!",
+  "exampleTr": "3achra? ghali bzzaf!",
+  "exampleEn": "Dix ? C’est trop cher !"
+ },
+ {
+  "id": "rkhis",
+  "de": "رخيص",
+  "tr": "rkhis",
+  "en": "pas cher, bon marché"
+ },
+ {
+  "id": "n99es-liya-chwiya",
+  "de": "نقص ليا شوية",
+  "tr": "n99es liya chwiya",
+  "en": "baisse un peu (le prix)",
+  "phrase": true,
+  "exampleDe": "نقص ليا شوية عافاك.",
+  "exampleTr": "n99es liya chwiya 3afak.",
+  "exampleEn": "Baisse un peu le prix, s’il te plaît."
+ },
+ {
+  "id": "safi",
+  "de": "صافي",
+  "tr": "safi",
+  "en": "c’est bon, d’accord ; ça suffit",
+  "exampleDe": "صافي، بسلامة!",
+  "exampleTr": "safi, bslama!",
+  "exampleEn": "C’est bon, au revoir !"
+ },
+ {
+  "id": "hak",
+  "de": "هاك",
+  "tr": "hak",
+  "en": "tiens, voilà (en donnant)"
+ },
+ {
+  "id": "ryal",
+  "de": "ريال",
+  "tr": "ryal",
+  "en": "ryal (20 ryal = 1 dirham)"
+ },
+ {
+  "id": "lmaticha",
+  "de": "الماطيشة",
+  "tr": "lmaticha",
+  "en": "les tomates",
+  "exampleDe": "الماطيشة بستة دراهم الكيلو.",
+  "exampleTr": "lmaticha b stta drahem lkilo.",
+  "exampleEn": "Les tomates sont à six dirhams le kilo."
+ },
+ {
+  "id": "llimoun",
+  "de": "الليمون",
+  "tr": "llimoun",
+  "en": "les oranges",
+  "exampleDe": "عطيني جوج كيلو د الليمون.",
+  "exampleTr": "3tini jouj kilo d llimoun.",
+  "exampleEn": "Donne-moi deux kilos d’oranges."
+ },
+ {
+  "id": "lbtata",
+  "de": "البطاطا",
+  "tr": "lbtata",
+  "en": "les pommes de terre"
+ },
+ {
+  "id": "tteffa7",
+  "de": "التفاح",
+  "tr": "tteffa7",
+  "en": "les pommes"
+ },
+ {
+  "id": "kolchi",
+  "de": "كلشي",
+  "tr": "kolchi",
+  "en": "tout ; tout le monde",
+  "exampleDe": "كلشي بستة و تلاتين درهم.",
+  "exampleTr": "kolchi b stta w tlatin dirham.",
+  "exampleEn": "Tout fait trente-six dirhams."
+ },
+ {
+  "id": "mchit",
+  "de": "مشيت",
+  "tr": "mchit",
+  "en": "je suis allé(e)",
+  "exampleDe": "البارح مشيت للسوق.",
+  "exampleTr": "lbare7 mchit l ssou9.",
+  "exampleEn": "Hier, je suis allé au marché."
+ },
+ {
+  "id": "mchiti",
+  "de": "مشيتي",
+  "tr": "mchiti",
+  "en": "tu es allé(e)"
+ },
+ {
+  "id": "mcha",
+  "de": "مشا",
+  "tr": "mcha",
+  "en": "il est allé ; aller",
+  "exampleDe": "يوسف مشا للخدمة.",
+  "exampleTr": "youssef mcha l lkhedma.",
+  "exampleEn": "Youssef est allé au travail."
+ },
+ {
+  "id": "mchat",
+  "de": "مشات",
+  "tr": "mchat",
+  "en": "elle est allée",
+  "exampleDe": "هي مشات للبحر.",
+  "exampleTr": "hiya mchat l lb7er.",
+  "exampleEn": "Elle est allée à la plage."
+ },
+ {
+  "id": "mchina",
+  "de": "مشينا",
+  "tr": "mchina",
+  "en": "nous sommes allé(e)s",
+  "exampleDe": "حنا مشينا للبحر.",
+  "exampleTr": "7na mchina l lb7er.",
+  "exampleEn": "Nous sommes allés à la plage."
+ },
+ {
+  "id": "mchaw",
+  "de": "مشاو",
+  "tr": "mchaw",
+  "en": "ils, elles sont allé(e)s"
+ },
+ {
+  "id": "klit",
+  "de": "كليت",
+  "tr": "klit",
+  "en": "j’ai mangé",
+  "exampleDe": "كليت بزاف!",
+  "exampleTr": "klit bzzaf!",
+  "exampleEn": "J’ai beaucoup mangé !"
+ },
+ {
+  "id": "kliti",
+  "de": "كليتي",
+  "tr": "kliti",
+  "en": "tu as mangé",
+  "exampleDe": "شنو كليتي البارح؟",
+  "exampleTr": "chno kliti lbare7?",
+  "exampleEn": "Qu’est-ce que tu as mangé hier ?"
+ },
+ {
+  "id": "kla",
+  "de": "كلا",
+  "tr": "kla",
+  "en": "il a mangé ; manger"
+ },
+ {
+  "id": "klat",
+  "de": "كلات",
+  "tr": "klat",
+  "en": "elle a mangé"
+ },
+ {
+  "id": "klina",
+  "de": "كلينا",
+  "tr": "klina",
+  "en": "nous avons mangé",
+  "exampleDe": "كلينا الحوت ف عين الدياب.",
+  "exampleTr": "klina l7out f 3in ddiab.",
+  "exampleEn": "Nous avons mangé du poisson à Aïn Diab."
+ },
+ {
+  "id": "chrebt",
+  "de": "شربت",
+  "tr": "chrebt",
+  "en": "j’ai bu",
+  "exampleDe": "شربت أتاي ف الصباح.",
+  "exampleTr": "chrebt atay f ssba7.",
+  "exampleEn": "J’ai bu du thé le matin."
+ },
+ {
+  "id": "chrebti",
+  "de": "شربتي",
+  "tr": "chrebti",
+  "en": "tu as bu",
+  "exampleDe": "واش شربتي الما؟",
+  "exampleTr": "wach chrebti lma?",
+  "exampleEn": "Tu as bu de l’eau ?"
+ },
+ {
+  "id": "chreb",
+  "de": "شرب",
+  "tr": "chreb",
+  "en": "il a bu ; boire ; bois ! prends ! (un médicament, à un homme)",
+  "exampleDe": "شرب هاد الدوا مرتين ف النهار.",
+  "exampleTr": "chreb had ddwa merrtayn f nnhar.",
+  "exampleEn": "Prends ce médicament deux fois par jour."
+ },
+ {
+  "id": "chrbat",
+  "de": "شربات",
+  "tr": "chrbat",
+  "en": "elle a bu"
+ },
+ {
+  "id": "chrebna",
+  "de": "شربنا",
+  "tr": "chrebna",
+  "en": "nous avons bu",
+  "exampleDe": "شربنا أتاي.",
+  "exampleTr": "chrebna atay.",
+  "exampleEn": "Nous avons bu du thé."
+ },
+ {
+  "id": "chrbou",
+  "de": "شربو",
+  "tr": "chrbou",
+  "en": "ils, elles ont bu",
+  "exampleDe": "هوما شربو القهوة.",
+  "exampleTr": "homa chrbou l9hwa.",
+  "exampleEn": "Ils ont bu du café."
+ },
+ {
+  "id": "khdemt",
+  "de": "خدمت",
+  "tr": "khdemt",
+  "en": "j’ai travaillé",
+  "exampleDe": "خدمت ف الدار.",
+  "exampleTr": "khdemt f ddar.",
+  "exampleEn": "J’ai travaillé à la maison."
+ },
+ {
+  "id": "n3est",
+  "de": "نعست",
+  "tr": "n3est",
+  "en": "j’ai dormi ; je me suis couché(e)",
+  "exampleDe": "نعست بكري.",
+  "exampleTr": "n3est bekri.",
+  "exampleEn": "Je me suis couché tôt."
+ },
+ {
+  "id": "chno-derti-lbare7",
+  "de": "شنو درتي البارح؟",
+  "tr": "chno derti lbare7?",
+  "en": "qu’est-ce que tu as fait hier ?",
+  "phrase": true
+ },
+ {
+  "id": "lbare7",
+  "de": "البارح",
+  "tr": "lbare7",
+  "en": "hier"
+ },
+ {
+  "id": "l3chiya",
+  "de": "العشية",
+  "tr": "l3chiya",
+  "en": "l’après-midi (f l3chiya)",
+  "exampleDe": "خدمنا حتى للعشية.",
+  "exampleTr": "khdemna 7tta l l3chiya.",
+  "exampleEn": "Nous avons travaillé jusqu’à l’après-midi."
+ },
+ {
+  "id": "llil",
+  "de": "الليل",
+  "tr": "llil",
+  "en": "le soir, la nuit (f llil)",
+  "exampleDe": "ماكليتش ف الليل.",
+  "exampleTr": "maklitch f llil.",
+  "exampleEn": "Je n’ai pas mangé le soir."
+ },
+ {
+  "id": "maklitch",
+  "de": "ماكليتش",
+  "tr": "maklitch",
+  "en": "je n’ai pas mangé"
+ },
+ {
+  "id": "machrebtch",
+  "de": "ماشربتش",
+  "tr": "machrebtch",
+  "en": "je n’ai pas bu",
+  "exampleDe": "ماشربتش القهوة البارح.",
+  "exampleTr": "machrebtch l9hwa lbare7.",
+  "exampleEn": "Je n’ai pas bu de café hier."
+ },
+ {
+  "id": "m3a",
+  "de": "مع",
+  "tr": "m3a",
+  "en": "avec",
+  "exampleDe": "واش كتبغي تخرج مع صحابك؟",
+  "exampleTr": "wach katbghi tkhrej m3a s7abek?",
+  "exampleEn": "Tu aimes sortir avec tes amis ?"
+ },
+ {
+  "id": "s7abi",
+  "de": "صحابي",
+  "tr": "s7abi",
+  "en": "mes amis",
+  "exampleDe": "كليت الطاجين مع صحابي.",
+  "exampleTr": "klit ttajine m3a s7abi.",
+  "exampleEn": "J’ai mangé un tajine avec mes amis."
+ },
+ {
+  "id": "ttajine",
+  "de": "الطاجين",
+  "tr": "ttajine",
+  "en": "le tajine"
+ },
+ {
+  "id": "lb7er",
+  "de": "البحر",
+  "tr": "lb7er",
+  "en": "la mer, la plage"
+ },
+ {
+  "id": "ssou9",
+  "de": "السوق",
+  "tr": "ssou9",
+  "en": "le marché"
+ },
+ {
+  "id": "7tta",
+  "de": "حتى",
+  "tr": "7tta",
+  "en": "jusqu’à"
+ },
+ {
+  "id": "l7out",
+  "de": "الحوت",
+  "tr": "l7out",
+  "en": "le poisson"
+ },
+ {
+  "id": "bekri",
+  "de": "بكري",
+  "tr": "bekri",
+  "en": "tôt"
+ },
+ {
+  "id": "meskin",
+  "de": "مسكين",
+  "tr": "meskin",
+  "en": "le pauvre ! (meskina pour une femme)"
+ },
+ {
+  "id": "men-ba3d",
+  "de": "من بعد",
+  "tr": "men ba3d",
+  "en": "après, ensuite ; plus tard",
+  "exampleDe": "كمل نيشان، من بعد دور على ليسر.",
+  "exampleTr": "kemmel nichan, men ba3d dour 3la lisser.",
+  "exampleEn": "Continue tout droit, ensuite tourne à gauche."
+ },
+ {
+  "id": "ghadi",
+  "de": "غادي",
+  "tr": "ghadi",
+  "en": "va (futur, un homme) ; je vais (quelque part)",
+  "exampleDe": "غدا غادي نمشي لمراكش.",
+  "exampleTr": "ghedda ghadi nmchi l mrrakch.",
+  "exampleEn": "Demain, je vais aller à Marrakech."
+ },
+ {
+  "id": "ghadya",
+  "de": "غادية",
+  "tr": "ghadya",
+  "en": "va (futur, une femme)",
+  "exampleDe": "هي غادية تسافر لفرانسا.",
+  "exampleTr": "hiya ghadya tsafer l fransa.",
+  "exampleEn": "Elle va partir en voyage en France."
+ },
+ {
+  "id": "ghadyin",
+  "de": "غاديين",
+  "tr": "ghadyin",
+  "en": "allons, allez, vont (futur, pluriel)",
+  "exampleDe": "حنا غاديين نمشيو للبحر.",
+  "exampleTr": "7na ghadyin nmchiw l lb7er.",
+  "exampleEn": "Nous allons aller à la plage."
+ },
+ {
+  "id": "gha",
+  "de": "غا",
+  "tr": "gha",
+  "en": "va (futur, forme courte de ghadi)"
+ },
+ {
+  "id": "maghadich",
+  "de": "ماغاديش",
+  "tr": "maghadich",
+  "en": "je ne vais pas (futur)",
+  "exampleDe": "ماغاديش نخدم غدا.",
+  "exampleTr": "maghadich nkhdem ghedda.",
+  "exampleEn": "Je ne vais pas travailler demain."
+ },
+ {
+  "id": "ghedda",
+  "de": "غدا",
+  "tr": "ghedda",
+  "en": "demain",
+  "exampleDe": "غدا غادي تشتا.",
+  "exampleTr": "ghedda ghadi tchta.",
+  "exampleEn": "Demain, il va pleuvoir."
+ },
+ {
+  "id": "had-lwikand",
+  "de": "هاد الويكاند",
+  "tr": "had lwikand",
+  "en": "ce week-end",
+  "exampleDe": "شنو غادي تدير هاد الويكاند؟",
+  "exampleTr": "chno ghadi tdir had lwikand?",
+  "exampleEn": "Qu’est-ce que tu vas faire ce week-end ?"
+ },
+ {
+  "id": "lwikand",
+  "de": "الويكاند",
+  "tr": "lwikand",
+  "en": "le week-end"
+ },
+ {
+  "id": "had",
+  "de": "هاد",
+  "tr": "had",
+  "en": "ce, cette, ces",
+  "exampleDe": "هاد الصاك زوين بزاف.",
+  "exampleTr": "had ssak zwin bzzaf.",
+  "exampleEn": "Ce sac est très beau."
+ },
+ {
+  "id": "inchallah",
+  "de": "إن شاء الله",
+  "tr": "inchallah",
+  "en": "si Dieu le veut",
+  "phrase": true
+ },
+ {
+  "id": "nmchi",
+  "de": "نمشي",
+  "tr": "nmchi",
+  "en": "(je) aller : bghit nmchi, ghadi nmchi",
+  "exampleDe": "بغيت نمشي للمدينة القديمة.",
+  "exampleTr": "bghit nmchi l lmdina l9dima.",
+  "exampleEn": "Je veux aller à l’ancienne médina."
+ },
+ {
+  "id": "nmchiw",
+  "de": "نمشيو",
+  "tr": "nmchiw",
+  "en": "(nous) aller ; on y va ?",
+  "exampleDe": "زوين! نمشيو مع بعض؟",
+  "exampleTr": "zwin! nmchiw m3a ba3d?",
+  "exampleEn": "Super ! On y va ensemble ?"
+ },
+ {
+  "id": "nchouf",
+  "de": "نشوف",
+  "tr": "nchouf",
+  "en": "(je) voir, regarder",
+  "exampleDe": "غادي نشوف صحابي ف كازا.",
+  "exampleTr": "ghadi nchouf s7abi f kaza.",
+  "exampleEn": "Je vais voir mes amis à Casa."
+ },
+ {
+  "id": "tdir",
+  "de": "تدير",
+  "tr": "tdir",
+  "en": "(tu) faire",
+  "exampleDe": "شنو غادي تدير غدا؟",
+  "exampleTr": "chno ghadi tdir ghedda?",
+  "exampleEn": "Qu’est-ce que tu vas faire demain ?"
+ },
+ {
+  "id": "nsafer",
+  "de": "نسافر",
+  "tr": "nsafer",
+  "en": "(je) voyager"
+ },
+ {
+  "id": "ttran",
+  "de": "التران",
+  "tr": "ttran",
+  "en": "le train"
+ },
+ {
+  "id": "zwin",
+  "de": "زوين",
+  "tr": "zwin",
+  "en": "beau, joli ; chouette !",
+  "exampleDe": "هاد الصاك زوين و جديد.",
+  "exampleTr": "had ssak zwin w jdid.",
+  "exampleEn": "Ce sac est beau et neuf."
+ },
+ {
+  "id": "tri9-ssalama",
+  "de": "طريق السلامة",
+  "tr": "tri9 ssalama",
+  "en": "bon voyage",
+  "phrase": true
+ },
+ {
+  "id": "3nd",
+  "de": "عند",
+  "tr": "3nd",
+  "en": "chez",
+  "exampleDe": "عند صاحبي.",
+  "exampleTr": "3nd sa7bi.",
+  "exampleEn": "Chez un ami."
+ },
+ {
+  "id": "sa7bi",
+  "de": "صاحبي",
+  "tr": "sa7bi",
+  "en": "mon ami"
+ },
+ {
+  "id": "lmatch",
+  "de": "الماتش",
+  "tr": "lmatch",
+  "en": "le match"
+ },
+ {
+  "id": "ssa3a",
+  "de": "الساعة",
+  "tr": "ssa3a",
+  "en": "l’heure ; la montre"
+ },
+ {
+  "id": "ch7al-f-ssa3a",
+  "de": "شحال ف الساعة؟",
+  "tr": "ch7al f ssa3a?",
+  "en": "quelle heure est-il ?",
+  "phrase": true,
+  "exampleDe": "شحال ف الساعة؟ — هادي الخمسة.",
+  "exampleTr": "ch7al f ssa3a? — hadi lkhamsa.",
+  "exampleEn": "Quelle heure est-il ? — Il est cinq heures."
+ },
+ {
+  "id": "lwa7da",
+  "de": "الوحدة",
+  "tr": "lwa7da",
+  "en": "une heure (hadi lwa7da : il est une heure)",
+  "exampleDe": "هادي الوحدة و نص.",
+  "exampleTr": "hadi lwa7da w nouss.",
+  "exampleEn": "Il est une heure et demie."
+ },
+ {
+  "id": "w-rbe3",
+  "de": "و ربع",
+  "tr": "w rbe3",
+  "en": "et quart",
+  "exampleDe": "هادي الجوج و ربع.",
+  "exampleTr": "hadi ljouj w rbe3.",
+  "exampleEn": "Il est deux heures et quart."
+ },
+ {
+  "id": "w-nouss",
+  "de": "و نص",
+  "tr": "w nouss",
+  "en": "et demie",
+  "exampleDe": "هادي التلاتة و نص.",
+  "exampleTr": "hadi ttlata w nouss.",
+  "exampleEn": "Il est trois heures et demie."
+ },
+ {
+  "id": "9el-rbe3",
+  "de": "قل ربع",
+  "tr": "9el rbe3",
+  "en": "moins le quart",
+  "exampleDe": "هادي العشرة قل ربع.",
+  "exampleTr": "hadi l3achra 9el rbe3.",
+  "exampleEn": "Il est dix heures moins le quart."
+ },
+ {
+  "id": "w-tlt",
+  "de": "و تلت",
+  "tr": "w tlt",
+  "en": "et vingt (minutes)"
+ },
+ {
+  "id": "nouss",
+  "de": "نص",
+  "tr": "nouss",
+  "en": "la moitié, demi"
+ },
+ {
+  "id": "f-ch7al",
+  "de": "ف شحال؟",
+  "tr": "f ch7al?",
+  "en": "à quelle heure ?",
+  "phrase": true,
+  "exampleDe": "ف شحال؟ — ف الجوج و ربع.",
+  "exampleTr": "f ch7al? — f ljouj w rbe3.",
+  "exampleEn": "À quelle heure ? — À deux heures et quart."
+ },
+ {
+  "id": "nhar",
+  "de": "نهار",
+  "tr": "nhar",
+  "en": "le jour (nhar + jour de la semaine)"
+ },
+ {
+  "id": "nhar-letnin",
+  "de": "نهار الاتنين",
+  "tr": "nhar letnin",
+  "en": "lundi",
+  "exampleDe": "كنخدم نهار الاتنين.",
+  "exampleTr": "kankhdem nhar letnin.",
+  "exampleEn": "Je travaille le lundi."
+ },
+ {
+  "id": "nhar-ttlat",
+  "de": "نهار التلات",
+  "tr": "nhar ttlat",
+  "en": "mardi"
+ },
+ {
+  "id": "nhar-larb3",
+  "de": "نهار الاربع",
+  "tr": "nhar larb3",
+  "en": "mercredi"
+ },
+ {
+  "id": "nhar-lkhmis",
+  "de": "نهار الخميس",
+  "tr": "nhar lkhmis",
+  "en": "jeudi"
+ },
+ {
+  "id": "nhar-ljem3a",
+  "de": "نهار الجمعة",
+  "tr": "nhar ljem3a",
+  "en": "vendredi",
+  "exampleDe": "كناكل الكسكسو نهار الجمعة.",
+  "exampleTr": "kanakol lkesksou nhar ljem3a.",
+  "exampleEn": "Je mange du couscous le vendredi."
+ },
+ {
+  "id": "nhar-ssebt",
+  "de": "نهار السبت",
+  "tr": "nhar ssebt",
+  "en": "samedi",
+  "exampleDe": "نهار السبت كنخرج مع صحابي.",
+  "exampleTr": "nhar ssebt kankhrej m3a s7abi.",
+  "exampleEn": "Le samedi, je sors avec mes amis."
+ },
+ {
+  "id": "nhar-l7ed",
+  "de": "نهار الحد",
+  "tr": "nhar l7ed",
+  "en": "dimanche"
+ },
+ {
+  "id": "lyoum",
+  "de": "اليوم",
+  "tr": "lyoum",
+  "en": "aujourd’hui",
+  "exampleDe": "شنو كاين اليوم؟",
+  "exampleTr": "chno kayn lyoum?",
+  "exampleEn": "Qu’est-ce qu’il y a aujourd’hui ?"
+ },
+ {
+  "id": "maw3id",
+  "de": "موعد",
+  "tr": "maw3id",
+  "en": "le rendez-vous",
+  "exampleDe": "بغيت ناخد موعد مع الطبيب.",
+  "exampleTr": "bghit nakhod maw3id m3a ttbib.",
+  "exampleEn": "Je veux prendre rendez-vous avec le médecin."
+ },
+ {
+  "id": "ttbib",
+  "de": "الطبيب",
+  "tr": "ttbib",
+  "en": "le médecin",
+  "exampleDe": "البارح مشيت عند الطبيب.",
+  "exampleTr": "lbare7 mchit 3nd ttbib.",
+  "exampleEn": "Hier, je suis allé chez le médecin."
+ },
+ {
+  "id": "nakhod",
+  "de": "ناخد",
+  "tr": "nakhod",
+  "en": "(je) prendre"
+ },
+ {
+  "id": "ntla9aw",
+  "de": "نتلاقاو",
+  "tr": "ntla9aw",
+  "en": "on se retrouve",
+  "exampleDe": "نتلاقاو ف العشرة.",
+  "exampleTr": "ntla9aw f l3achra.",
+  "exampleEn": "On se retrouve à dix heures."
+ },
+ {
+  "id": "wla",
+  "de": "ولا",
+  "tr": "wla",
+  "en": "ou, ou bien",
+  "exampleDe": "واش قريب ولا بعيد؟",
+  "exampleTr": "wach 9rib wla b3id?",
+  "exampleEn": "C’est près ou loin ?"
+ },
+ {
+  "id": "kbir",
+  "de": "كبير",
+  "tr": "kbir",
+  "en": "grand ; âgé",
+  "exampleDe": "زوين، ولكن كبير بزاف.",
+  "exampleTr": "zwin, walakin kbir bzzaf.",
+  "exampleEn": "Il est beau, mais il est trop grand."
+ },
+ {
+  "id": "kbira",
+  "de": "كبيرة",
+  "tr": "kbira",
+  "en": "grande",
+  "exampleDe": "ختي كبيرة.",
+  "exampleTr": "khti kbira.",
+  "exampleEn": "Ma sœur est grande."
+ },
+ {
+  "id": "kbar",
+  "de": "كبار",
+  "tr": "kbar",
+  "en": "grands (pluriel)"
+ },
+ {
+  "id": "sghir",
+  "de": "صغير",
+  "tr": "sghir",
+  "en": "petit",
+  "exampleDe": "الصاك صغير.",
+  "exampleTr": "ssak sghir.",
+  "exampleEn": "Le sac est petit."
+ },
+ {
+  "id": "sghira",
+  "de": "صغيرة",
+  "tr": "sghira",
+  "en": "petite",
+  "exampleDe": "بغيت شي دار صغيرة.",
+  "exampleTr": "bghit chi dar sghira.",
+  "exampleEn": "Je veux une petite maison."
+ },
+ {
+  "id": "sghar",
+  "de": "صغار",
+  "tr": "sghar",
+  "en": "petits (pluriel)",
+  "exampleDe": "الدراري صغار.",
+  "exampleTr": "ddrari sghar.",
+  "exampleEn": "Les enfants sont petits."
+ },
+ {
+  "id": "jdid",
+  "de": "جديد",
+  "tr": "jdid",
+  "en": "neuf, nouveau",
+  "exampleDe": "هاد الصباط جديد.",
+  "exampleTr": "had ssbbat jdid.",
+  "exampleEn": "Ces chaussures sont neuves."
+ },
+ {
+  "id": "jdida",
+  "de": "جديدة",
+  "tr": "jdida",
+  "en": "neuve, nouvelle"
+ },
+ {
+  "id": "jdad",
+  "de": "جداد",
+  "tr": "jdad",
+  "en": "neufs (pluriel)"
+ },
+ {
+  "id": "9dim",
+  "de": "قديم",
+  "tr": "9dim",
+  "en": "vieux, ancien"
+ },
+ {
+  "id": "9dima",
+  "de": "قديمة",
+  "tr": "9dima",
+  "en": "vieille, ancienne",
+  "exampleDe": "المدينة قديمة بزاف.",
+  "exampleTr": "lmdina 9dima bzzaf.",
+  "exampleEn": "La médina est très ancienne."
+ },
+ {
+  "id": "9dam",
+  "de": "قدام",
+  "tr": "9dam",
+  "en": "vieux, anciens (pluriel)"
+ },
+ {
+  "id": "zwina",
+  "de": "زوينة",
+  "tr": "zwina",
+  "en": "belle, jolie",
+  "exampleDe": "الدار ديالي صغيرة ولكن زوينة.",
+  "exampleTr": "ddar dyali sghira walakin zwina.",
+  "exampleEn": "Ma maison est petite mais jolie."
+ },
+ {
+  "id": "zwinin",
+  "de": "زوينين",
+  "tr": "zwinin",
+  "en": "beaux (pluriel)"
+ },
+ {
+  "id": "7mer",
+  "de": "حمر",
+  "tr": "7mer",
+  "en": "rouge",
+  "exampleDe": "حمر؟ لا، مابغيتش الحمر.",
+  "exampleTr": "7mer? la, mabghitch l7mer.",
+  "exampleEn": "Rouge ? Non, je ne veux pas de rouge."
+ },
+ {
+  "id": "7amra",
+  "de": "حمرا",
+  "tr": "7amra",
+  "en": "rouge (fém.)",
+  "exampleDe": "عندي طوموبيل حمرا.",
+  "exampleTr": "3ndi tomobil 7amra.",
+  "exampleEn": "J’ai une voiture rouge."
+ },
+ {
+  "id": "k7el",
+  "de": "كحل",
+  "tr": "k7el",
+  "en": "noir",
+  "exampleDe": "بغيت صاك كحل.",
+  "exampleTr": "bghit sak k7el.",
+  "exampleEn": "Je veux un sac noir."
+ },
+ {
+  "id": "k7la",
+  "de": "كحلة",
+  "tr": "k7la",
+  "en": "noire",
+  "exampleDe": "الطوموبيل كحلة.",
+  "exampleTr": "ttomobil k7la.",
+  "exampleEn": "La voiture est noire."
+ },
+ {
+  "id": "byed",
+  "de": "بيض",
+  "tr": "byed",
+  "en": "blanc"
+ },
+ {
+  "id": "bayda",
+  "de": "بيضا",
+  "tr": "bayda",
+  "en": "blanche",
+  "exampleDe": "عندي طابلة بيضا.",
+  "exampleTr": "3ndi tabla bayda.",
+  "exampleEn": "J’ai une table blanche."
+ },
+ {
+  "id": "zre9",
+  "de": "زرق",
+  "tr": "zre9",
+  "en": "bleu",
+  "exampleDe": "صافي، عطيني الصاك الزرق.",
+  "exampleTr": "safi, 3tini ssak zzre9.",
+  "exampleEn": "C’est bon, donne-moi le sac bleu."
+ },
+ {
+  "id": "zar9a",
+  "de": "زرقا",
+  "tr": "zar9a",
+  "en": "bleue",
+  "exampleDe": "بغيت قميجة زرقا.",
+  "exampleTr": "bghit 9amija zar9a.",
+  "exampleEn": "Je veux une chemise bleue."
+ },
+ {
+  "id": "khder",
+  "de": "خضر",
+  "tr": "khder",
+  "en": "vert"
+ },
+ {
+  "id": "khadra",
+  "de": "خضرا",
+  "tr": "khadra",
+  "en": "verte"
+ },
+ {
+  "id": "sfer",
+  "de": "صفر",
+  "tr": "sfer",
+  "en": "jaune"
+ },
+ {
+  "id": "safra",
+  "de": "صفرا",
+  "tr": "safra",
+  "en": "jaune (fém.)",
+  "exampleDe": "البنانة صفرا.",
+  "exampleTr": "lbanana safra.",
+  "exampleEn": "La banane est jaune."
+ },
+ {
+  "id": "lloun",
+  "de": "اللون",
+  "tr": "lloun",
+  "en": "la couleur",
+  "exampleDe": "شنو اللون ديالو؟ — كحل.",
+  "exampleTr": "chno lloun dyalo? — k7el.",
+  "exampleEn": "Il est de quelle couleur ? — Noir."
+ },
+ {
+  "id": "tomobil",
+  "de": "طوموبيل",
+  "tr": "tomobil",
+  "en": "voiture (fém.)"
+ },
+ {
+  "id": "tabla",
+  "de": "طابلة",
+  "tr": "tabla",
+  "en": "table (fém.)"
+ },
+ {
+  "id": "sak",
+  "de": "صاك",
+  "tr": "sak",
+  "en": "sac (masc.)"
+ },
+ {
+  "id": "kursi",
+  "de": "كرسي",
+  "tr": "kursi",
+  "en": "chaise (masc.)"
+ },
+ {
+  "id": "ddrari",
+  "de": "الدراري",
+  "tr": "ddrari",
+  "en": "les enfants"
+ },
+ {
+  "id": "9amija",
+  "de": "قميجة",
+  "tr": "9amija",
+  "en": "chemise (fém.)"
+ },
+ {
+  "id": "ssbbat",
+  "de": "الصباط",
+  "tr": "ssbbat",
+  "en": "les chaussures"
+ },
+ {
+  "id": "lmdina",
+  "de": "المدينة",
+  "tr": "lmdina",
+  "en": "la médina ; la ville"
+ },
+ {
+  "id": "lbanana",
+  "de": "البنانة",
+  "tr": "lbanana",
+  "en": "la banane"
+ },
+ {
+  "id": "walakin",
+  "de": "ولكن",
+  "tr": "walakin",
+  "en": "mais"
+ },
+ {
+  "id": "3la-limen",
+  "de": "على ليمن",
+  "tr": "3la limen",
+  "en": "à droite",
+  "exampleDe": "دور على ليمن.",
+  "exampleTr": "dour 3la limen.",
+  "exampleEn": "Tourne à droite."
+ },
+ {
+  "id": "3la-lisser",
+  "de": "على ليسر",
+  "tr": "3la lisser",
+  "en": "à gauche"
+ },
+ {
+  "id": "nichan",
+  "de": "نيشان",
+  "tr": "nichan",
+  "en": "tout droit",
+  "exampleDe": "سير نيشان.",
+  "exampleTr": "sir nichan.",
+  "exampleEn": "Va tout droit."
+ },
+ {
+  "id": "3la",
+  "de": "على",
+  "tr": "3la",
+  "en": "sur ; à"
+ },
+ {
+  "id": "dour",
+  "de": "دور",
+  "tr": "dour",
+  "en": "tourne ! (à un homme)"
+ },
+ {
+  "id": "douri",
+  "de": "دوري",
+  "tr": "douri",
+  "en": "tourne ! (à une femme)",
+  "exampleDe": "دوري ف الزنقة التانية.",
+  "exampleTr": "douri f zzan9a ttanya.",
+  "exampleEn": "Tourne dans la deuxième rue."
+ },
+ {
+  "id": "sir",
+  "de": "سير",
+  "tr": "sir",
+  "en": "va ! (à un homme)"
+ },
+ {
+  "id": "siri",
+  "de": "سيري",
+  "tr": "siri",
+  "en": "va ! (à une femme)"
+ },
+ {
+  "id": "kemmel",
+  "de": "كمل",
+  "tr": "kemmel",
+  "en": "continue ! (à un homme)",
+  "exampleDe": "كمل نيشان.",
+  "exampleTr": "kemmel nichan.",
+  "exampleEn": "Continue tout droit."
+ },
+ {
+  "id": "kemmli",
+  "de": "كملي",
+  "tr": "kemmli",
+  "en": "continue ! (à une femme)"
+ },
+ {
+  "id": "7bes",
+  "de": "حبس",
+  "tr": "7bes",
+  "en": "arrête-toi ! (à un homme)",
+  "exampleDe": "حبس هنا عافاك.",
+  "exampleTr": "7bes hna 3afak.",
+  "exampleEn": "Arrête-toi ici, s’il te plaît."
+ },
+ {
+  "id": "7bsi",
+  "de": "حبسي",
+  "tr": "7bsi",
+  "en": "arrête-toi ! (à une femme)"
+ },
+ {
+  "id": "fin-ghadi",
+  "de": "فين غادي؟",
+  "tr": "fin ghadi?",
+  "en": "où vas-tu ? (à un homme)",
+  "phrase": true
+ },
+ {
+  "id": "fin-ghadya",
+  "de": "فين غادية؟",
+  "tr": "fin ghadya?",
+  "en": "où vas-tu ? (à une femme)",
+  "phrase": true,
+  "exampleDe": "آه، مرحبا. فين غادية؟",
+  "exampleTr": "ah, mer7ba. fin ghadya?",
+  "exampleEn": "Oui, bienvenue. Où vas-tu ?"
+ },
+ {
+  "id": "temma",
+  "de": "تما",
+  "tr": "temma",
+  "en": "là-bas"
+ },
+ {
+  "id": "zzan9a",
+  "de": "الزنقة",
+  "tr": "zzan9a",
+  "en": "la rue"
+ },
+ {
+  "id": "llewla",
+  "de": "اللولة",
+  "tr": "llewla",
+  "en": "la première",
+  "exampleDe": "دور ف الزنقة اللولة.",
+  "exampleTr": "dour f zzan9a llewla.",
+  "exampleEn": "Tourne dans la première rue."
+ },
+ {
+  "id": "ttanya",
+  "de": "التانية",
+  "tr": "ttanya",
+  "en": "la deuxième"
+ },
+ {
+  "id": "khawi",
+  "de": "خاوي",
+  "tr": "khawi",
+  "en": "libre, vide",
+  "exampleDe": "سلام، واش خاوي؟",
+  "exampleTr": "salam, wach khawi?",
+  "exampleEn": "Bonjour, il est libre ?"
+ },
+ {
+  "id": "d9aye9",
+  "de": "دقايق",
+  "tr": "d9aye9",
+  "en": "minutes"
+ },
+ {
+  "id": "tfeddel",
+  "de": "تفضل",
+  "tr": "tfeddel",
+  "en": "tiens ; je t’en prie (en donnant)",
+  "phrase": true,
+  "exampleDe": "تفضل. شكرا، بسلامة!",
+  "exampleTr": "tfeddel. chokran, bslama!",
+  "exampleEn": "Tiens. Merci, au revoir !"
+ },
+ {
+  "id": "a-lalla",
+  "de": "أ لالة",
+  "tr": "a lalla",
+  "en": "madame (pour appeler)",
+  "phrase": true,
+  "exampleDe": "فين غادية أ لالة؟",
+  "exampleTr": "fin ghadya a lalla?",
+  "exampleEn": "Où allez-vous, madame ?"
+ },
+ {
+  "id": "kanakol",
+  "de": "كناكل",
+  "tr": "kanakol",
+  "en": "je mange"
+ },
+ {
+  "id": "katakol",
+  "de": "كتاكل",
+  "tr": "katakol",
+  "en": "tu manges ; elle mange",
+  "exampleDe": "هي كتاكل الحوت.",
+  "exampleTr": "hiya katakol l7out.",
+  "exampleEn": "Elle mange du poisson."
+ },
+ {
+  "id": "kanchreb",
+  "de": "كنشرب",
+  "tr": "kanchreb",
+  "en": "je bois",
+  "exampleDe": "كنشرب أتاي بزاف.",
+  "exampleTr": "kanchreb atay bzzaf.",
+  "exampleEn": "Je bois beaucoup de thé."
+ },
+ {
+  "id": "katchreb",
+  "de": "كتشرب",
+  "tr": "katchreb",
+  "en": "tu bois ; elle boit"
+ },
+ {
+  "id": "makanchrebch",
+  "de": "ماكنشربش",
+  "tr": "makanchrebch",
+  "en": "je ne bois pas",
+  "exampleDe": "ماكنشربش القهوة.",
+  "exampleTr": "makanchrebch l9hwa.",
+  "exampleEn": "Je ne bois pas de café."
+ },
+ {
+  "id": "makanakolch",
+  "de": "ماكناكلش",
+  "tr": "makanakolch",
+  "en": "je ne mange pas",
+  "exampleDe": "ماكناكلش اللحم.",
+  "exampleTr": "makanakolch l7em.",
+  "exampleEn": "Je ne mange pas de viande."
+ },
+ {
+  "id": "lkesksou",
+  "de": "الكسكسو",
+  "tr": "lkesksou",
+  "en": "le couscous"
+ },
+ {
+  "id": "l7rira",
+  "de": "الحريرة",
+  "tr": "l7rira",
+  "en": "la harira (soupe)",
+  "exampleDe": "غادي ناكل الحريرة.",
+  "exampleTr": "ghadi nakol l7rira.",
+  "exampleEn": "Je vais manger de la harira."
+ },
+ {
+  "id": "chlada",
+  "de": "شلادة",
+  "tr": "chlada",
+  "en": "salade"
+ },
+ {
+  "id": "ddjaj",
+  "de": "الدجاج",
+  "tr": "ddjaj",
+  "en": "le poulet"
+ },
+ {
+  "id": "l7em",
+  "de": "اللحم",
+  "tr": "l7em",
+  "en": "la viande"
+ },
+ {
+  "id": "lkhobz",
+  "de": "الخبز",
+  "tr": "lkhobz",
+  "en": "le pain"
+ },
+ {
+  "id": "lmakla",
+  "de": "الماكلة",
+  "tr": "lmakla",
+  "en": "la nourriture, le repas",
+  "exampleDe": "واش الماكلة مزيانة؟",
+  "exampleTr": "wach lmakla mzyana?",
+  "exampleEn": "Le repas est bon ?"
+ },
+ {
+  "id": "bnina",
+  "de": "بنينة",
+  "tr": "bnina",
+  "en": "délicieuse (lmakla bnina)",
+  "exampleDe": "الماكلة بنينة!",
+  "exampleTr": "lmakla bnina!",
+  "exampleEn": "C’est délicieux !"
+ },
+ {
+  "id": "bsse7tkom",
+  "de": "بصحتكم",
+  "tr": "bsse7tkom",
+  "en": "bon appétit, à votre santé (à plusieurs)",
+  "phrase": true
+ },
+ {
+  "id": "mrid",
+  "de": "مريض",
+  "tr": "mrid",
+  "en": "malade (un homme)",
+  "exampleDe": "أنا مريض.",
+  "exampleTr": "ana mrid.",
+  "exampleEn": "Je suis malade."
+ },
+ {
+  "id": "mrida",
+  "de": "مريضة",
+  "tr": "mrida",
+  "en": "malade (une femme)"
+ },
+ {
+  "id": "kayder-liya",
+  "de": "كيضر ليا",
+  "tr": "kayder liya",
+  "en": "j’ai mal (à…)",
+  "phrase": true,
+  "exampleDe": "كيضر ليا راسي.",
+  "exampleTr": "kayder liya rassi.",
+  "exampleEn": "J’ai mal à la tête."
+ },
+ {
+  "id": "rras",
+  "de": "الراس",
+  "tr": "rras",
+  "en": "la tête (rassi : ma tête)"
+ },
+ {
+  "id": "dahr",
+  "de": "ضهر",
+  "tr": "dahr",
+  "en": "le dos (dahri : mon dos)",
+  "exampleDe": "كيضر ليا ضهري.",
+  "exampleTr": "kayder liya dahri.",
+  "exampleEn": "J’ai mal au dos."
+ },
+ {
+  "id": "7el9",
+  "de": "حلق",
+  "tr": "7el9",
+  "en": "la gorge (7el9i : ma gorge)",
+  "exampleDe": "فيا البرد، كيضر ليا حلقي.",
+  "exampleTr": "fiya lberd, kayder liya 7el9i.",
+  "exampleEn": "J’ai pris froid, j’ai mal à la gorge."
+ },
+ {
+  "id": "fiya",
+  "de": "فيا",
+  "tr": "fiya",
+  "en": "en moi : j’ai (de la fièvre, un rhume)",
+  "exampleDe": "فيا السخانة.",
+  "exampleTr": "fiya sskhana.",
+  "exampleEn": "J’ai de la fièvre."
+ },
+ {
+  "id": "sskhana",
+  "de": "السخانة",
+  "tr": "sskhana",
+  "en": "la fièvre"
+ },
+ {
+  "id": "lberd",
+  "de": "البرد",
+  "tr": "lberd",
+  "en": "le froid ; le rhume",
+  "exampleDe": "كاين البرد اليوم.",
+  "exampleTr": "kayn lberd lyoum.",
+  "exampleEn": "Il fait froid aujourd’hui."
+ },
+ {
+  "id": "lik",
+  "de": "ليك",
+  "tr": "lik",
+  "en": "à toi",
+  "exampleDe": "واش كيضر ليك راسك؟",
+  "exampleTr": "wach kayder lik rassek?",
+  "exampleEn": "Tu as mal à la tête ?"
+ },
+ {
+  "id": "ddwa",
+  "de": "الدوا",
+  "tr": "ddwa",
+  "en": "le médicament",
+  "exampleDe": "بشحال هاد الدوا؟",
+  "exampleTr": "b ch7al had ddwa?",
+  "exampleEn": "Combien coûte ce médicament ?"
+ },
+ {
+  "id": "merrtayn",
+  "de": "مرتين",
+  "tr": "merrtayn",
+  "en": "deux fois"
+ },
+ {
+  "id": "nnhar",
+  "de": "النهار",
+  "tr": "nnhar",
+  "en": "la journée (f nnhar : par jour)"
+ },
+ {
+  "id": "lah-ychafik",
+  "de": "الله يشافيك",
+  "tr": "lah ychafik",
+  "en": "bon rétablissement (que Dieu te guérisse)",
+  "phrase": true
+ },
+ {
+  "id": "chrbi",
+  "de": "شربي",
+  "tr": "chrbi",
+  "en": "bois ! prends ! (à une femme)",
+  "exampleDe": "شربي الدوا من بعد الماكلة.",
+  "exampleTr": "chrbi ddwa men ba3d lmakla.",
+  "exampleEn": "Prends le médicament après le repas."
+ },
+ {
+  "id": "ljaw",
+  "de": "الجو",
+  "tr": "ljaw",
+  "en": "le temps (la météo)"
+ },
+ {
+  "id": "kifach-ljaw-lyoum",
+  "de": "كيفاش الجو اليوم؟",
+  "tr": "kifach ljaw lyoum?",
+  "en": "quel temps fait-il aujourd’hui ?",
+  "phrase": true
+ },
+ {
+  "id": "cchta",
+  "de": "الشتا",
+  "tr": "cchta",
+  "en": "la pluie ; l’hiver (fém.)",
+  "exampleDe": "اليوم كاينة الشتا.",
+  "exampleTr": "lyoum kayna cchta.",
+  "exampleEn": "Aujourd’hui, il pleut."
+ },
+ {
+  "id": "ss7ab",
+  "de": "السحاب",
+  "tr": "ss7ab",
+  "en": "les nuages (masc.)",
+  "exampleDe": "كاين السحاب اليوم.",
+  "exampleTr": "kayn ss7ab lyoum.",
+  "exampleEn": "C’est nuageux aujourd’hui."
+ },
+ {
+  "id": "cchems",
+  "de": "الشمس",
+  "tr": "cchems",
+  "en": "le soleil (fém.)",
+  "exampleDe": "هنا كاينة الشمس.",
+  "exampleTr": "hna kayna cchems.",
+  "exampleEn": "Ici, il y a du soleil."
+ },
+ {
+  "id": "l7al",
+  "de": "الحال",
+  "tr": "l7al",
+  "en": "le temps (l7al skhoun : il fait chaud)"
+ },
+ {
+  "id": "skhoun",
+  "de": "سخون",
+  "tr": "skhoun",
+  "en": "chaud",
+  "exampleDe": "الحال سخون بزاف.",
+  "exampleTr": "l7al skhoun bzzaf.",
+  "exampleEn": "Il fait très chaud."
+ },
+ {
+  "id": "bared",
+  "de": "بارد",
+  "tr": "bared",
+  "en": "froid",
+  "exampleDe": "ف الشتا الحال بارد.",
+  "exampleTr": "f cchta l7al bared.",
+  "exampleEn": "En hiver, il fait froid."
+ },
+ {
+  "id": "makaynach",
+  "de": "ماكايناش",
+  "tr": "makaynach",
+  "en": "il n’y a pas (fém.) ; elle n’est pas là",
+  "exampleDe": "ماكايناش دابا.",
+  "exampleTr": "makaynach daba.",
+  "exampleEn": "Elle n’est pas là maintenant."
+ },
+ {
+  "id": "kan",
+  "de": "كان",
+  "tr": "kan",
+  "en": "était (passé de kayn)",
+  "exampleDe": "البارح كان الحال بارد.",
+  "exampleTr": "lbare7 kan l7al bared.",
+  "exampleEn": "Hier, il faisait froid."
+ },
+ {
+  "id": "tchta",
+  "de": "تشتا",
+  "tr": "tchta",
+  "en": "pleuvoir (ghadi tchta : il va pleuvoir)"
+ },
+ {
+  "id": "rrbi3",
+  "de": "الربيع",
+  "tr": "rrbi3",
+  "en": "le printemps"
+ },
+ {
+  "id": "ssif",
+  "de": "الصيف",
+  "tr": "ssif",
+  "en": "l’été",
+  "exampleDe": "ف الصيف كنمشي للبحر.",
+  "exampleTr": "f ssif kanmchi l lb7er.",
+  "exampleEn": "En été, je vais à la mer."
+ },
+ {
+  "id": "lkhrif",
+  "de": "الخريف",
+  "tr": "lkhrif",
+  "en": "l’automne"
+ },
+ {
+  "id": "kanmchi",
+  "de": "كنمشي",
+  "tr": "kanmchi",
+  "en": "je vais"
+ },
+ {
+  "id": "nji",
+  "de": "نجي",
+  "tr": "nji",
+  "en": "(je) venir",
+  "exampleDe": "ف الصيف غادي نجي لكازا.",
+  "exampleTr": "f ssif ghadi nji l kaza.",
+  "exampleEn": "En été, je vais venir à Casa."
+ },
+ {
+  "id": "kan7eb",
+  "de": "كنحب",
+  "tr": "kan7eb",
+  "en": "j’aime",
+  "exampleDe": "أنا كنحب نلعب الكورة.",
+  "exampleTr": "ana kan7eb nl3eb lkoura.",
+  "exampleEn": "Moi, j’aime jouer au foot."
+ },
+ {
+  "id": "katbghi",
+  "de": "كتبغي",
+  "tr": "katbghi",
+  "en": "tu aimes ; elle aime",
+  "exampleDe": "شنو كتبغي تدير ف الويكاند؟",
+  "exampleTr": "chno katbghi tdir f lwikand?",
+  "exampleEn": "Qu’est-ce que tu aimes faire le week-end ?"
+ },
+ {
+  "id": "kaybghi",
+  "de": "كيبغي",
+  "tr": "kaybghi",
+  "en": "il aime"
+ },
+ {
+  "id": "kat7eb",
+  "de": "كتحب",
+  "tr": "kat7eb",
+  "en": "tu aimes ; elle aime",
+  "exampleDe": "هي كتحب تسمع الموسيقى.",
+  "exampleTr": "hiya kat7eb tsme3 lmousi9a.",
+  "exampleEn": "Elle aime écouter de la musique."
+ },
+ {
+  "id": "kay7eb",
+  "de": "كيحب",
+  "tr": "kay7eb",
+  "en": "il aime",
+  "exampleDe": "يوسف كيحب يلعب الكورة.",
+  "exampleTr": "youssef kay7eb yl3eb lkoura.",
+  "exampleEn": "Youssef aime jouer au foot."
+ },
+ {
+  "id": "makanbghich",
+  "de": "ماكنبغيش",
+  "tr": "makanbghich",
+  "en": "je n’aime pas",
+  "exampleDe": "ماكنبغيش نطيب.",
+  "exampleTr": "makanbghich ntiyeb.",
+  "exampleEn": "Je n’aime pas cuisiner."
+ },
+ {
+  "id": "nl3eb",
+  "de": "نلعب",
+  "tr": "nl3eb",
+  "en": "(je) jouer"
+ },
+ {
+  "id": "lkoura",
+  "de": "الكورة",
+  "tr": "lkoura",
+  "en": "le foot ; le ballon"
+ },
+ {
+  "id": "aflam",
+  "de": "أفلام",
+  "tr": "aflam",
+  "en": "des films"
+ },
+ {
+  "id": "n9ra",
+  "de": "نقرا",
+  "tr": "n9ra",
+  "en": "(je) lire, étudier",
+  "exampleDe": "كنبغي نقرا.",
+  "exampleTr": "kanbghi n9ra.",
+  "exampleEn": "J’aime lire."
+ },
+ {
+  "id": "nsme3",
+  "de": "نسمع",
+  "tr": "nsme3",
+  "en": "(j’) écouter, entendre"
+ },
+ {
+  "id": "lmousi9a",
+  "de": "الموسيقى",
+  "tr": "lmousi9a",
+  "en": "la musique"
+ },
+ {
+  "id": "ntsara",
+  "de": "نتسارا",
+  "tr": "ntsara",
+  "en": "(je) me promener",
+  "exampleDe": "كنبغي نتسارا ف الكورنيش.",
+  "exampleTr": "kanbghi ntsara f lkornich.",
+  "exampleEn": "J’aime me promener sur la corniche."
+ },
+ {
+  "id": "ntiyeb",
+  "de": "نطيب",
+  "tr": "ntiyeb",
+  "en": "(je) cuisiner"
+ },
+ {
+  "id": "nkhrej",
+  "de": "نخرج",
+  "tr": "nkhrej",
+  "en": "(je) sortir"
+ },
+ {
+  "id": "lkornich",
+  "de": "الكورنيش",
+  "tr": "lkornich",
+  "en": "la corniche"
+ },
+ {
+  "id": "m3a-ba3d",
+  "de": "مع بعض",
+  "tr": "m3a ba3d",
+  "en": "ensemble"
+ },
+ {
+  "id": "alo",
+  "de": "ألو",
+  "tr": "alo",
+  "en": "allô",
+  "phrase": true
+ },
+ {
+  "id": "chkoun-m3aya",
+  "de": "شكون معايا؟",
+  "tr": "chkoun m3aya?",
+  "en": "qui est à l’appareil ?",
+  "phrase": true,
+  "exampleDe": "ألو، شكون معايا؟",
+  "exampleTr": "alo, chkoun m3aya?",
+  "exampleEn": "Allô, qui est à l’appareil ?"
+ },
+ {
+  "id": "m3aya",
+  "de": "معايا",
+  "tr": "m3aya",
+  "en": "avec moi"
+ },
+ {
+  "id": "n3ayet-lik",
+  "de": "نعيط ليك",
+  "tr": "n3ayet lik",
+  "en": "je t’appelle",
+  "phrase": true,
+  "exampleDe": "غادي نعيط ليك غدا.",
+  "exampleTr": "ghadi n3ayet lik ghedda.",
+  "exampleEn": "Je t’appellerai demain."
+ },
+ {
+  "id": "3ayet-liya",
+  "de": "عيط ليا",
+  "tr": "3ayet liya",
+  "en": "appelle-moi (à un homme)",
+  "phrase": true,
+  "exampleDe": "عيط ليا غدا ف العشرة.",
+  "exampleTr": "3ayet liya ghedda f l3achra.",
+  "exampleEn": "Appelle-moi demain à dix heures."
+ },
+ {
+  "id": "3ayti-liya",
+  "de": "عيطي ليا",
+  "tr": "3ayti liya",
+  "en": "appelle-moi (à une femme)",
+  "phrase": true
+ },
+ {
+  "id": "masme3tekch",
+  "de": "ماسمعتكش",
+  "tr": "masme3tekch",
+  "en": "je ne t’ai pas entendu(e)",
+  "exampleDe": "ماسمعتكش، عاود عافاك.",
+  "exampleTr": "masme3tekch, 3awed 3afak.",
+  "exampleEn": "Je ne t’ai pas entendu, répète s’il te plaît."
+ },
+ {
+  "id": "3awed",
+  "de": "عاود",
+  "tr": "3awed",
+  "en": "répète ! recommence ! (à un homme)"
+ },
+ {
+  "id": "lih",
+  "de": "ليه",
+  "tr": "lih",
+  "en": "à lui"
+ },
+ {
+  "id": "liha",
+  "de": "ليها",
+  "tr": "liha",
+  "en": "à elle",
+  "exampleDe": "واخا، غادي نعيط ليها من بعد.",
+  "exampleTr": "wakha, ghadi n3ayet liha men ba3d.",
+  "exampleEn": "D’accord, je l’appellerai plus tard."
+ },
+ {
+  "id": "nhder",
+  "de": "نهضر",
+  "tr": "nhder",
+  "en": "(je) parler",
+  "exampleDe": "واش نقدر نهضر مع سلمى؟",
+  "exampleTr": "wach n9der nhder m3a salma?",
+  "exampleEn": "Est-ce que je peux parler avec Salma ?"
+ },
+ {
+  "id": "fin-ntla9aw",
+  "de": "فين نتلاقاو؟",
+  "tr": "fin ntla9aw?",
+  "en": "où est-ce qu’on se retrouve ?",
+  "phrase": true
+ },
+ {
+  "id": "ach",
+  "de": "أش",
+  "tr": "ach",
+  "en": "quoi (comme chno)",
+  "exampleDe": "أش بغيتي؟",
+  "exampleTr": "ach bghiti?",
+  "exampleEn": "Qu’est-ce que tu veux ?"
+ },
+ {
+  "id": "chno-katdir",
+  "de": "شنو كتدير؟",
+  "tr": "chno katdir?",
+  "en": "qu’est-ce que tu fais ? ; comment ça va ? (à un homme)",
+  "phrase": true
+ },
+ {
+  "id": "chno-akhbar",
+  "de": "شنو أخبارك؟",
+  "tr": "chno akhbarek?",
+  "en": "quoi de neuf ? (comment vas-tu ?)",
+  "phrase": true
+ },
+ {
+  "id": "kolchi-mzyan",
+  "de": "كلشي مزيان",
+  "tr": "kolchi mzyan",
+  "en": "tout va bien",
+  "phrase": true
+ },
+ {
+  "id": "makayn-bas",
+  "de": "ماكاين باس",
+  "tr": "makayn bas",
+  "en": "pas de souci, tout va bien",
+  "phrase": true
+ },
+ {
+  "id": "ma3lich",
+  "de": "معليش",
+  "tr": "ma3lich",
+  "en": "ce n’est pas grave",
+  "phrase": true
+ },
+ {
+  "id": "lah-ykhallik",
+  "de": "الله يخليك",
+  "tr": "lah ykhallik",
+  "en": "s’il te plaît (je t’en prie)",
+  "phrase": true
+ },
+ {
+  "id": "baraka-llahou-fik",
+  "de": "بارك الله فيك",
+  "tr": "barak lah fik",
+  "en": "merci (que Dieu te bénisse)",
+  "phrase": true
+ },
+ {
+  "id": "lah-yr7em-lwalidin",
+  "de": "الله يرحم الواليدين",
+  "tr": "lah yr7em lwalidin",
+  "en": "merci beaucoup (litt. que Dieu fasse miséricorde à tes parents)",
+  "phrase": true
+ },
+ {
+  "id": "lah-y3awnek",
+  "de": "الله يعاونك",
+  "tr": "lah y3awnek",
+  "en": "bon courage",
+  "phrase": true
+ },
+ {
+  "id": "mabrouk",
+  "de": "مبروك",
+  "tr": "mabrouk",
+  "en": "félicitations",
+  "phrase": true
+ },
+ {
+  "id": "3id-mbarek",
+  "de": "عيد مبارك",
+  "tr": "3id mbarek",
+  "en": "bonne fête (pour l’Aïd)",
+  "phrase": true
+ },
+ {
+  "id": "bsse7tek",
+  "de": "بصحتك",
+  "tr": "bsse7tek",
+  "en": "bon appétit, à ta santé (à une personne)",
+  "phrase": true
+ },
+ {
+  "id": "tbarkellah",
+  "de": "تبارك الله",
+  "tr": "tbarkellah",
+  "en": "bravo ; c’est magnifique",
+  "phrase": true
+ },
+ {
+  "id": "yallah",
+  "de": "يالله",
+  "tr": "yallah",
+  "en": "allez, on y va",
+  "phrase": true,
+  "exampleDe": "يالله نمشيو!",
+  "exampleTr": "yallah nmchiw!",
+  "exampleEn": "Allez, on y va !"
+ },
+ {
+  "id": "baraka",
+  "de": "باركا",
+  "tr": "baraka",
+  "en": "ça suffit, assez",
+  "phrase": true
+ },
+ {
+  "id": "iwa",
+  "de": "إيوا",
+  "tr": "iwa",
+  "en": "eh bien, alors",
+  "phrase": true
+ },
+ {
+  "id": "nchoufek-men-ba3d",
+  "de": "نشوفك من بعد",
+  "tr": "nchoufek men ba3d",
+  "en": "à plus tard",
+  "phrase": true
+ },
+ {
+  "id": "3la-slamtek",
+  "de": "على سلامتك",
+  "tr": "3la slamtek",
+  "en": "content que tu sois bien arrivé (à un homme)",
+  "phrase": true
+ },
+ {
+  "id": "3ndak",
+  "de": "عنداك",
+  "tr": "3ndak",
+  "en": "attention !",
+  "phrase": true
+ },
+ {
+  "id": "a-sidi",
+  "de": "أ سيدي",
+  "tr": "a sidi",
+  "en": "monsieur (pour appeler)",
+  "phrase": true
+ },
+ {
+  "id": "chwiya-b-chwiya",
+  "de": "شوية بشوية",
+  "tr": "chwiya b chwiya",
+  "en": "petit à petit, doucement",
+  "phrase": true
+ },
+ {
+  "id": "lbid",
+  "de": "البيض",
+  "tr": "lbid",
+  "en": "les œufs",
+  "exampleDe": "بغيت البيض و الخبز.",
+  "exampleTr": "bghit lbid w lkhobz.",
+  "exampleEn": "Je veux des œufs et du pain."
+ },
+ {
+  "id": "lfromaj",
+  "de": "الفرماج",
+  "tr": "lfromaj",
+  "en": "le fromage"
+ },
+ {
+  "id": "l3sel",
+  "de": "العسل",
+  "tr": "l3sel",
+  "en": "le miel",
+  "exampleDe": "مسمن بالعسل عافاك.",
+  "exampleTr": "msemmen b l3sel 3afak.",
+  "exampleEn": "Un msemmen au miel, s’il te plaît."
+ },
+ {
+  "id": "l7lib",
+  "de": "الحليب",
+  "tr": "l7lib",
+  "en": "le lait",
+  "exampleDe": "بغيت قهوة بالحليب.",
+  "exampleTr": "bghit 9hwa b l7lib.",
+  "exampleEn": "Je veux un café au lait."
+ },
+ {
+  "id": "zzit",
+  "de": "الزيت",
+  "tr": "zzit",
+  "en": "l’huile"
+ },
+ {
+  "id": "lmel7",
+  "de": "الملح",
+  "tr": "lmel7",
+  "en": "le sel"
+ },
+ {
+  "id": "lbsel",
+  "de": "البصل",
+  "tr": "lbsel",
+  "en": "les oignons"
+ },
+ {
+  "id": "lkhodra",
+  "de": "الخضرة",
+  "tr": "lkhodra",
+  "en": "les légumes",
+  "exampleDe": "شريت الخضرة ف السوق.",
+  "exampleTr": "chrit lkhodra f ssou9.",
+  "exampleEn": "J’ai acheté les légumes au marché."
+ },
+ {
+  "id": "lfakya",
+  "de": "الفاكية",
+  "tr": "lfakya",
+  "en": "les fruits"
+ },
+ {
+  "id": "zzitoun",
+  "de": "الزيتون",
+  "tr": "zzitoun",
+  "en": "les olives"
+ },
+ {
+  "id": "lkhizzou",
+  "de": "الخيزو",
+  "tr": "lkhizzou",
+  "en": "les carottes"
+ },
+ {
+  "id": "rrouz",
+  "de": "الروز",
+  "tr": "rrouz",
+  "en": "le riz"
+ },
+ {
+  "id": "lkefta",
+  "de": "الكفتة",
+  "tr": "lkefta",
+  "en": "la viande hachée (kefta)"
+ },
+ {
+  "id": "sfenj",
+  "de": "سفنج",
+  "tr": "sfenj",
+  "en": "beignet (sfenj)"
+ },
+ {
+  "id": "nna3na3",
+  "de": "النعناع",
+  "tr": "nna3na3",
+  "en": "la menthe",
+  "exampleDe": "أتاي بالنعناع.",
+  "exampleTr": "atay b nna3na3.",
+  "exampleEn": "Du thé à la menthe."
+ },
+ {
+  "id": "lkas",
+  "de": "الكاس",
+  "tr": "lkas",
+  "en": "le verre",
+  "exampleDe": "عطيني واحد الكاس د الما.",
+  "exampleTr": "3tini wa7ed lkas d lma.",
+  "exampleEn": "Donne-moi un verre d’eau."
+ },
+ {
+  "id": "lftour",
+  "de": "الفطور",
+  "tr": "lftour",
+  "en": "le petit-déjeuner",
+  "exampleDe": "شنو كليتي ف الفطور؟",
+  "exampleTr": "chno kliti f lftour?",
+  "exampleEn": "Qu’est-ce que tu as mangé au petit-déjeuner ?"
+ },
+ {
+  "id": "lghda",
+  "de": "الغدا",
+  "tr": "lghda",
+  "en": "le déjeuner"
+ },
+ {
+  "id": "l3cha",
+  "de": "العشا",
+  "tr": "l3cha",
+  "en": "le dîner"
+ },
+ {
+  "id": "ji3an",
+  "de": "جيعان",
+  "tr": "ji3an",
+  "en": "affamé : j’ai faim (un homme)",
+  "exampleDe": "أنا جيعان بزاف.",
+  "exampleTr": "ana ji3an bzzaf.",
+  "exampleEn": "J’ai très faim."
+ },
+ {
+  "id": "3tchan",
+  "de": "عطشان",
+  "tr": "3tchan",
+  "en": "assoiffé : j’ai soif (un homme)"
+ },
+ {
+  "id": "chb3an",
+  "de": "شبعان",
+  "tr": "chb3an",
+  "en": "rassasié",
+  "exampleDe": "لا، شكرا، أنا شبعان.",
+  "exampleTr": "la, chokran, ana chb3an.",
+  "exampleEn": "Non merci, je n’ai plus faim."
+ },
+ {
+  "id": "7arr",
+  "de": "حار",
+  "tr": "7arr",
+  "en": "piquant, épicé",
+  "exampleDe": "هاد الطاجين حار بزاف.",
+  "exampleTr": "had ttajine 7arr bzzaf.",
+  "exampleEn": "Ce tajine est très piquant."
+ },
+ {
+  "id": "lbab",
+  "de": "الباب",
+  "tr": "lbab",
+  "en": "la porte",
+  "exampleDe": "سد الباب عافاك.",
+  "exampleTr": "sedd lbab 3afak.",
+  "exampleEn": "Ferme la porte, s’il te plaît."
+ },
+ {
+  "id": "ssrjem",
+  "de": "السرجم",
+  "tr": "sserjem",
+  "en": "la fenêtre"
+ },
+ {
+  "id": "nnamousiya",
+  "de": "الناموسية",
+  "tr": "nnamousiya",
+  "en": "le lit"
+ },
+ {
+  "id": "ttelfaza",
+  "de": "التلفازة",
+  "tr": "ttelfaza",
+  "en": "la télé"
+ },
+ {
+  "id": "ddouch",
+  "de": "الدوش",
+  "tr": "ddouch",
+  "en": "la douche"
+ },
+ {
+  "id": "ssarout",
+  "de": "الساروت",
+  "tr": "ssarout",
+  "en": "la clé",
+  "exampleDe": "فين الساروت؟",
+  "exampleTr": "fin ssarout?",
+  "exampleEn": "Où est la clé ?"
+ },
+ {
+  "id": "lkra",
+  "de": "الكرا",
+  "tr": "lkra",
+  "en": "le loyer",
+  "exampleDe": "شحال الكرا؟",
+  "exampleTr": "ch7al lkra?",
+  "exampleEn": "C’est combien le loyer ?"
+ },
+ {
+  "id": "ljar",
+  "de": "الجار",
+  "tr": "ljar",
+  "en": "le voisin"
+ },
+ {
+  "id": "ttilifoun",
+  "de": "التيليفون",
+  "tr": "ttilifoun",
+  "en": "le téléphone",
+  "exampleDe": "فين التيليفون ديالي؟",
+  "exampleTr": "fin ttilifoun dyali?",
+  "exampleEn": "Où est mon téléphone ?"
+ },
+ {
+  "id": "nnimero",
+  "de": "النيميرو",
+  "tr": "nnimero",
+  "en": "le numéro (de téléphone)",
+  "exampleDe": "عطيني النيميرو ديالك.",
+  "exampleTr": "3tini nnimero dyalek.",
+  "exampleEn": "Donne-moi ton numéro."
+ },
+ {
+  "id": "ttaksi",
+  "de": "الطاكسي",
+  "tr": "ttaksi",
+  "en": "le taxi",
+  "exampleDe": "خديت الطاكسي للمطار.",
+  "exampleTr": "khdit ttaksi l lmatar.",
+  "exampleEn": "J’ai pris le taxi pour l’aéroport."
+ },
+ {
+  "id": "ttramway",
+  "de": "الطرامواي",
+  "tr": "ttramway",
+  "en": "le tram"
+ },
+ {
+  "id": "lagar",
+  "de": "لاكار",
+  "tr": "lagar",
+  "en": "la gare"
+ },
+ {
+  "id": "lmatar",
+  "de": "المطار",
+  "tr": "lmatar",
+  "en": "l’aéroport"
+ },
+ {
+  "id": "sbitar",
+  "de": "السبيطار",
+  "tr": "ssbitar",
+  "en": "l’hôpital"
+ },
+ {
+  "id": "lfarmasyan",
+  "de": "الفرماسيان",
+  "tr": "lfarmasyan",
+  "en": "la pharmacie ; le pharmacien",
+  "exampleDe": "فين كاين الفرماسيان؟",
+  "exampleTr": "fin kayn lfarmasyan?",
+  "exampleEn": "Où est la pharmacie ?"
+ },
+ {
+  "id": "lblad",
+  "de": "البلاد",
+  "tr": "lblad",
+  "en": "le pays ; la ville d’origine"
+ },
+ {
+  "id": "lflous",
+  "de": "الفلوس",
+  "tr": "lflous",
+  "en": "l’argent",
+  "exampleDe": "ماعنديش الفلوس.",
+  "exampleTr": "ma3ndich lflous.",
+  "exampleEn": "Je n’ai pas d’argent."
+ },
+ {
+  "id": "ssarf",
+  "de": "الصرف",
+  "tr": "ssarf",
+  "en": "la monnaie (petite)",
+  "exampleDe": "واش عندك الصرف؟",
+  "exampleTr": "wach 3ndek ssarf?",
+  "exampleEn": "Tu as de la monnaie ?"
+ },
+ {
+  "id": "lwalidin",
+  "de": "الواليدين",
+  "tr": "lwalidin",
+  "en": "les parents"
+ },
+ {
+  "id": "jeddi",
+  "de": "جدي",
+  "tr": "jeddi",
+  "en": "mon grand-père"
+ },
+ {
+  "id": "jeddti",
+  "de": "جدتي",
+  "tr": "jeddti",
+  "en": "ma grand-mère"
+ },
+ {
+  "id": "3ammi",
+  "de": "عمي",
+  "tr": "3ammi",
+  "en": "mon oncle (frère du père)"
+ },
+ {
+  "id": "3ammti",
+  "de": "عمتي",
+  "tr": "3ammti",
+  "en": "ma tante (sœur du père)"
+ },
+ {
+  "id": "khali",
+  "de": "خالي",
+  "tr": "khali",
+  "en": "mon oncle (frère de la mère)"
+ },
+ {
+  "id": "khalti",
+  "de": "خالتي",
+  "tr": "khalti",
+  "en": "ma tante (sœur de la mère)",
+  "exampleDe": "خالتي ساكنة ف الرباط.",
+  "exampleTr": "khalti sakna f rrbat.",
+  "exampleEn": "Ma tante habite à Rabat."
+ },
+ {
+  "id": "rrajel",
+  "de": "الراجل",
+  "tr": "rrajel",
+  "en": "l’homme"
+ },
+ {
+  "id": "lmra",
+  "de": "المرا",
+  "tr": "lmra",
+  "en": "la femme"
+ },
+ {
+  "id": "khouti",
+  "de": "خوتي",
+  "tr": "khouti",
+  "en": "mes frères et sœurs",
+  "exampleDe": "عندي تلاتة د خوتي.",
+  "exampleTr": "3ndi tlata d khouti.",
+  "exampleEn": "J’ai trois frères et sœurs."
+ },
+ {
+  "id": "sa7bti",
+  "de": "صاحبتي",
+  "tr": "sa7bti",
+  "en": "mon amie"
+ },
+ {
+  "id": "mzowwej",
+  "de": "مزوج",
+  "tr": "mzowwej",
+  "en": "marié",
+  "exampleDe": "واش نتا مزوج؟",
+  "exampleTr": "wach nta mzowwej?",
+  "exampleEn": "Tu es marié ?"
+ },
+ {
+  "id": "nnas",
+  "de": "الناس",
+  "tr": "nnas",
+  "en": "les gens"
+ },
+ {
+  "id": "chi-wa7ed",
+  "de": "شي واحد",
+  "tr": "chi wa7ed",
+  "en": "quelqu’un"
+ },
+ {
+  "id": "lostad",
+  "de": "الأستاذ",
+  "tr": "lostad",
+  "en": "le professeur"
+ },
+ {
+  "id": "ssimana",
+  "de": "السيمانة",
+  "tr": "ssimana",
+  "en": "la semaine"
+ },
+ {
+  "id": "ssimana-jayya",
+  "de": "السيمانة الجاية",
+  "tr": "ssimana jjayya",
+  "en": "la semaine prochaine",
+  "exampleDe": "غادي نسافر السيمانة الجاية.",
+  "exampleTr": "ghadi nsafer ssimana jjayya.",
+  "exampleEn": "Je vais partir en voyage la semaine prochaine."
+ },
+ {
+  "id": "cchher",
+  "de": "الشهر",
+  "tr": "cchher",
+  "en": "le mois"
+ },
+ {
+  "id": "merra",
+  "de": "مرة",
+  "tr": "merra",
+  "en": "une fois"
+ },
+ {
+  "id": "dima",
+  "de": "ديما",
+  "tr": "dima",
+  "en": "toujours",
+  "exampleDe": "ديما كنشرب أتاي.",
+  "exampleTr": "dima kanchreb atay.",
+  "exampleEn": "Je bois toujours du thé."
+ },
+ {
+  "id": "ba9i",
+  "de": "باقي",
+  "tr": "ba9i",
+  "en": "encore ; il reste"
+ },
+ {
+  "id": "mazal",
+  "de": "مازال",
+  "tr": "mazal",
+  "en": "encore ; pas encore"
+ },
+ {
+  "id": "deghya",
+  "de": "دغيا",
+  "tr": "deghya",
+  "en": "vite ; tout de suite",
+  "exampleDe": "أجي دغيا!",
+  "exampleTr": "aji deghya!",
+  "exampleEn": "Viens vite !"
+ },
+ {
+  "id": "bchwiya",
+  "de": "بشوية",
+  "tr": "bchwiya",
+  "en": "doucement, lentement",
+  "exampleDe": "هضر بشوية عافاك.",
+  "exampleTr": "hder bchwiya 3afak.",
+  "exampleEn": "Parle lentement, s’il te plaît."
+ },
+ {
+  "id": "m3ettel",
+  "de": "معطل",
+  "tr": "m3ettel",
+  "en": "en retard"
+ },
+ {
+  "id": "9bel",
+  "de": "قبل",
+  "tr": "9bel",
+  "en": "avant"
+ },
+ {
+  "id": "ba3d-ghedda",
+  "de": "بعد غدا",
+  "tr": "ba3d ghedda",
+  "en": "après-demain"
+ },
+ {
+  "id": "had-ssba7",
+  "de": "هاد الصباح",
+  "tr": "had ssba7",
+  "en": "ce matin"
+ },
+ {
+  "id": "lkerch",
+  "de": "الكرش",
+  "tr": "lkerch",
+  "en": "le ventre",
+  "exampleDe": "كيضر ليا كرشي.",
+  "exampleTr": "kayder liya kerchi.",
+  "exampleEn": "J’ai mal au ventre."
+ },
+ {
+  "id": "ssnan",
+  "de": "السنان",
+  "tr": "ssnan",
+  "en": "les dents"
+ },
+ {
+  "id": "l3in",
+  "de": "العين",
+  "tr": "l3in",
+  "en": "l’œil"
+ },
+ {
+  "id": "lyedd",
+  "de": "اليد",
+  "tr": "lyedd",
+  "en": "la main"
+ },
+ {
+  "id": "rrjel",
+  "de": "الرجل",
+  "tr": "rrjel",
+  "en": "le pied, la jambe"
+ },
+ {
+  "id": "lwden",
+  "de": "الودن",
+  "tr": "lwden",
+  "en": "l’oreille"
+ },
+ {
+  "id": "3iyan",
+  "de": "عيان",
+  "tr": "3iyan",
+  "en": "fatigué",
+  "exampleDe": "أنا عيان بزاف اليوم.",
+  "exampleTr": "ana 3iyan bzzaf lyoum.",
+  "exampleEn": "Je suis très fatigué aujourd’hui."
+ },
+ {
+  "id": "3iyana",
+  "de": "عيانة",
+  "tr": "3iyana",
+  "en": "fatiguée"
+ },
+ {
+  "id": "jit",
+  "de": "جيت",
+  "tr": "jit",
+  "en": "je suis venu(e)",
+  "exampleDe": "جيت من فرانسا.",
+  "exampleTr": "jit men fransa.",
+  "exampleEn": "Je suis venu de France."
+ },
+ {
+  "id": "chft",
+  "de": "شفت",
+  "tr": "chft",
+  "en": "j’ai vu",
+  "exampleDe": "شفت الماتش البارح.",
+  "exampleTr": "chft lmatch lbare7.",
+  "exampleEn": "J’ai vu le match hier."
+ },
+ {
+  "id": "dert",
+  "de": "درت",
+  "tr": "dert",
+  "en": "j’ai fait"
+ },
+ {
+  "id": "khrejt",
+  "de": "خرجت",
+  "tr": "khrejt",
+  "en": "je suis sorti(e)",
+  "exampleDe": "خرجت مع صحابي ف الليل.",
+  "exampleTr": "khrejt m3a s7abi f llil.",
+  "exampleEn": "Je suis sorti avec mes amis le soir."
+ },
+ {
+  "id": "rje3t",
+  "de": "رجعت",
+  "tr": "rje3t",
+  "en": "je suis rentré(e), revenu(e)",
+  "exampleDe": "رجعت للدار ف الليل.",
+  "exampleTr": "rje3t l ddar f llil.",
+  "exampleEn": "Je suis rentré à la maison le soir."
+ },
+ {
+  "id": "fe9t",
+  "de": "فقت",
+  "tr": "fe9t",
+  "en": "je me suis réveillé(e)",
+  "exampleDe": "فقت بكري.",
+  "exampleTr": "fe9t bekri.",
+  "exampleEn": "Je me suis réveillé tôt."
+ },
+ {
+  "id": "9rit",
+  "de": "قريت",
+  "tr": "9rit",
+  "en": "j’ai étudié ; j’ai lu"
+ },
+ {
+  "id": "sme3t",
+  "de": "سمعت",
+  "tr": "sme3t",
+  "en": "j’ai entendu ; j’ai écouté"
+ },
+ {
+  "id": "fhemt",
+  "de": "فهمت",
+  "tr": "fhemt",
+  "en": "j’ai compris",
+  "exampleDe": "فهمت، شكرا.",
+  "exampleTr": "fhemt, chokran.",
+  "exampleEn": "J’ai compris, merci."
+ },
+ {
+  "id": "3reft",
+  "de": "عرفت",
+  "tr": "3reft",
+  "en": "je sais ; j’ai appris (une nouvelle)"
+ },
+ {
+  "id": "chrit",
+  "de": "شريت",
+  "tr": "chrit",
+  "en": "j’ai acheté",
+  "exampleDe": "شريت الخبز ف الحانوت.",
+  "exampleTr": "chrit lkhobz f l7anout.",
+  "exampleEn": "J’ai acheté du pain à l’épicerie."
+ },
+ {
+  "id": "khellest",
+  "de": "خلصت",
+  "tr": "khellest",
+  "en": "j’ai payé"
+ },
+ {
+  "id": "khdit",
+  "de": "خديت",
+  "tr": "khdit",
+  "en": "j’ai pris"
+ },
+ {
+  "id": "tiyebt",
+  "de": "طيبت",
+  "tr": "tiyebt",
+  "en": "j’ai cuisiné",
+  "exampleDe": "طيبت الطاجين البارح.",
+  "exampleTr": "tiyebt ttajine lbare7.",
+  "exampleEn": "J’ai cuisiné un tajine hier."
+ },
+ {
+  "id": "safert",
+  "de": "سافرت",
+  "tr": "safert",
+  "en": "j’ai voyagé"
+ },
+ {
+  "id": "3ayett",
+  "de": "عيطت",
+  "tr": "3ayett",
+  "en": "j’ai appelé (téléphoné)",
+  "exampleDe": "عيطت ليك البارح.",
+  "exampleTr": "3ayett lik lbare7.",
+  "exampleEn": "Je t’ai appelé hier."
+ },
+ {
+  "id": "nsit",
+  "de": "نسيت",
+  "tr": "nsit",
+  "en": "j’ai oublié",
+  "exampleDe": "نسيت الساروت.",
+  "exampleTr": "nsit ssarout.",
+  "exampleEn": "J’ai oublié la clé."
+ },
+ {
+  "id": "wselt",
+  "de": "وصلت",
+  "tr": "wselt",
+  "en": "je suis arrivé(e)",
+  "exampleDe": "وصلت لكازا البارح.",
+  "exampleTr": "wselt l kaza lbare7.",
+  "exampleEn": "Je suis arrivé à Casa hier."
+ },
+ {
+  "id": "hdert",
+  "de": "هضرت",
+  "tr": "hdert",
+  "en": "j’ai parlé"
+ },
+ {
+  "id": "kanfhem",
+  "de": "كنفهم",
+  "tr": "kanfhem",
+  "en": "je comprends",
+  "exampleDe": "كنفهم شوية.",
+  "exampleTr": "kanfhem chwiya.",
+  "exampleEn": "Je comprends un peu."
+ },
+ {
+  "id": "kan3ref",
+  "de": "كنعرف",
+  "tr": "kan3ref",
+  "en": "je sais ; je connais"
+ },
+ {
+  "id": "kandir",
+  "de": "كندير",
+  "tr": "kandir",
+  "en": "je fais"
+ },
+ {
+  "id": "kanchouf",
+  "de": "كنشوف",
+  "tr": "kanchouf",
+  "en": "je vois, je regarde"
+ },
+ {
+  "id": "khassni",
+  "de": "خاصني",
+  "tr": "khassni",
+  "en": "il me faut, je dois",
+  "exampleDe": "خاصني نمشي دابا.",
+  "exampleTr": "khassni nmchi daba.",
+  "exampleEn": "Je dois partir maintenant."
+ },
+ {
+  "id": "khassek",
+  "de": "خاصك",
+  "tr": "khassek",
+  "en": "il te faut, tu dois"
+ },
+ {
+  "id": "aji",
+  "de": "أجي",
+  "tr": "aji",
+  "en": "viens ! (à un homme)",
+  "exampleDe": "أجي هنا عافاك.",
+  "exampleTr": "aji hna 3afak.",
+  "exampleEn": "Viens ici, s’il te plaît."
+ },
+ {
+  "id": "chouf",
+  "de": "شوف",
+  "tr": "chouf",
+  "en": "regarde ! (à un homme)"
+ },
+ {
+  "id": "goul",
+  "de": "قول",
+  "tr": "goul",
+  "en": "dis ! (à un homme)",
+  "exampleDe": "قول ليا.",
+  "exampleTr": "goul liya.",
+  "exampleEn": "Dis-moi."
+ },
+ {
+  "id": "jib",
+  "de": "جيب",
+  "tr": "jib",
+  "en": "apporte ! (à un homme)",
+  "exampleDe": "جيب ليا الما عافاك.",
+  "exampleTr": "jib liya lma 3afak.",
+  "exampleEn": "Apporte-moi de l’eau, s’il te plaît."
+ },
+ {
+  "id": "tsenna",
+  "de": "تسنى",
+  "tr": "tsenna",
+  "en": "attends ! (à un homme)",
+  "exampleDe": "تسنى شوية.",
+  "exampleTr": "tsenna chwiya.",
+  "exampleEn": "Attends un peu."
+ },
+ {
+  "id": "sedd",
+  "de": "سد",
+  "tr": "sedd",
+  "en": "ferme ! (à un homme)"
+ },
+ {
+  "id": "hder",
+  "de": "هضر",
+  "tr": "hder",
+  "en": "parle ! (à un homme)"
+ },
+ {
+  "id": "mzyana",
+  "de": "مزيانة",
+  "tr": "mzyana",
+  "en": "bien, bonne (fém.)"
+ },
+ {
+  "id": "khayb",
+  "de": "خايب",
+  "tr": "khayb",
+  "en": "mauvais ; laid"
+ },
+ {
+  "id": "twil",
+  "de": "طويل",
+  "tr": "twil",
+  "en": "grand (de taille), long"
+ },
+ {
+  "id": "9sir",
+  "de": "قصير",
+  "tr": "9sir",
+  "en": "petit (de taille), court"
+ },
+ {
+  "id": "fer7an",
+  "de": "فرحان",
+  "tr": "fer7an",
+  "en": "content, heureux",
+  "exampleDe": "أنا فرحان بزاف.",
+  "exampleTr": "ana fer7an bzzaf.",
+  "exampleEn": "Je suis très content."
+ },
+ {
+  "id": "mchghoul",
+  "de": "مشغول",
+  "tr": "mchghoul",
+  "en": "occupé",
+  "exampleDe": "أنا مشغول دابا.",
+  "exampleTr": "ana mchghoul daba.",
+  "exampleEn": "Je suis occupé maintenant."
+ },
+ {
+  "id": "s3ib",
+  "de": "صعيب",
+  "tr": "s3ib",
+  "en": "difficile"
+ },
+ {
+  "id": "sahel",
+  "de": "ساهل",
+  "tr": "sahel",
+  "en": "facile"
+ },
+ {
+  "id": "zerban",
+  "de": "زربان",
+  "tr": "zerban",
+  "en": "pressé",
+  "exampleDe": "سمح ليا، أنا زربان.",
+  "exampleTr": "sme7 liya, ana zerban.",
+  "exampleEn": "Pardon, je suis pressé."
+ },
+ {
+  "id": "wa3er",
+  "de": "واعر",
+  "tr": "wa3er",
+  "en": "génial, super ; dur, difficile"
+ },
+ {
+  "id": "mitin",
+  "de": "ميتين",
+  "tr": "mitin",
+  "en": "deux cents (200)"
+ },
+ {
+  "id": "alf",
+  "de": "ألف",
+  "tr": "alf",
+  "en": "mille (1000)"
+ },
+ {
+  "id": "alfin",
+  "de": "ألفين",
+  "tr": "alfin",
+  "en": "deux mille (2000)"
+ },
+ {
+  "id": "ttalt",
+  "de": "التالت",
+  "tr": "ttalt",
+  "en": "le troisième"
+ },
+ {
+  "id": "nouss-sa3a",
+  "de": "نص ساعة",
+  "tr": "nouss sa3a",
+  "en": "une demi-heure",
+  "exampleDe": "تسنيت نص ساعة.",
+  "exampleTr": "tsennit nouss sa3a.",
+  "exampleEn": "J’ai attendu une demi-heure."
+ },
+ {
+  "id": "fo9",
+  "de": "فوق",
+  "tr": "fo9",
+  "en": "sur, au-dessus de"
+ },
+ {
+  "id": "ta7t",
+  "de": "تحت",
+  "tr": "ta7t",
+  "en": "sous"
+ },
+ {
+  "id": "9eddam",
+  "de": "قدام",
+  "tr": "9eddam",
+  "en": "devant",
+  "exampleDe": "نتلاقاو قدام البانكة.",
+  "exampleTr": "ntla9aw 9eddam lbanka.",
+  "exampleEn": "On se retrouve devant la banque."
+ },
+ {
+  "id": "lor",
+  "de": "لور",
+  "tr": "lor",
+  "en": "derrière"
+ },
+ {
+  "id": "ila",
+  "de": "إلا",
+  "tr": "ila",
+  "en": "si",
+  "exampleDe": "إلا بغيتي، نتلاقاو غدا.",
+  "exampleTr": "ila bghiti, ntla9aw ghedda.",
+  "exampleEn": "Si tu veux, on se retrouve demain."
+ },
+ {
+  "id": "ghir",
+  "de": "غير",
+  "tr": "ghir",
+  "en": "seulement ; juste",
+  "exampleDe": "غير شوية.",
+  "exampleTr": "ghir chwiya.",
+  "exampleEn": "Juste un peu."
+ },
+ {
+  "id": "b7al",
+  "de": "بحال",
+  "tr": "b7al",
+  "en": "comme, pareil que",
+  "exampleDe": "بحال بحال.",
+  "exampleTr": "b7al b7al.",
+  "exampleEn": "C’est pareil."
+ },
+ {
+  "id": "hadak",
+  "de": "هاداك",
+  "tr": "hadak",
+  "en": "celui-là"
+ },
+ {
+  "id": "hadchi",
+  "de": "هادشي",
+  "tr": "hadchi",
+  "en": "ça, cela",
+  "exampleDe": "شنو هادشي؟",
+  "exampleTr": "chno hadchi?",
+  "exampleEn": "Qu’est-ce que c’est que ça ?"
+ },
+ {
+  "id": "7aja",
+  "de": "حاجة",
+  "tr": "7aja",
+  "en": "une chose",
+  "exampleDe": "بغيت شي حاجة.",
+  "exampleTr": "bghit chi 7aja.",
+  "exampleEn": "Je veux quelque chose."
+ },
+ {
+  "id": "l7wayej",
+  "de": "الحوايج",
+  "tr": "l7wayej",
+  "en": "les vêtements"
+ },
+ {
+  "id": "sserwal",
+  "de": "السروال",
+  "tr": "sserwal",
+  "en": "le pantalon"
+ },
+ {
+  "id": "ljellaba",
+  "de": "الجلابة",
+  "tr": "ljellaba",
+  "en": "la djellaba"
+ },
+ {
+  "id": "ttriko",
+  "de": "التريكو",
+  "tr": "ttriko",
+  "en": "le t-shirt, le pull"
+ },
+ {
+  "id": "lkbbout",
+  "de": "الكبوط",
+  "tr": "lkbbout",
+  "en": "le manteau"
+ },
+ {
+  "id": "lktab",
+  "de": "الكتاب",
+  "tr": "lktab",
+  "en": "le livre"
+ },
+ {
+  "id": "sstilou",
+  "de": "الستيلو",
+  "tr": "sstilou",
+  "en": "le stylo"
+ },
+ {
+  "id": "rri7",
+  "de": "الريح",
+  "tr": "rri7",
+  "en": "le vent",
+  "exampleDe": "كاين الريح بزاف اليوم.",
+  "exampleTr": "kayn rri7 bzzaf lyoum.",
+  "exampleEn": "Il y a beaucoup de vent aujourd’hui."
+ },
+ {
+  "id": "lmech",
+  "de": "المش",
+  "tr": "lmech",
+  "en": "le chat"
+ },
+ {
+  "id": "lkelb",
+  "de": "الكلب",
+  "tr": "lkelb",
+  "en": "le chien"
+ }
+]

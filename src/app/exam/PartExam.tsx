@@ -10,7 +10,6 @@ import { PANEL, SOLID } from "../feedback";
 import { useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Pick } from "../learn/Pick";
-
 import { speak, useSpeechUnlock } from "../review/German";
 import { Say } from "../Say";
 import type { PartExamPacket } from "./data";

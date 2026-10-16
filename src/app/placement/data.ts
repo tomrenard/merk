@@ -5,7 +5,6 @@ import { quietItem } from "@/lib/choices";
 import { kindOf, partsOf, unitsOf } from "@/lib/course";
 import type { Band, Level } from "@/lib/placement";
 import { shuffled } from "@/lib/shuffle";
-
 import type { UnitItem } from "@/lib/units";
 
 /** Placement exists for German only (see src/lib/courses.ts). */

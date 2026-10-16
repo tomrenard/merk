@@ -20,7 +20,6 @@ export default async function ExamPage({ params }: { params: Promise<{ id: strin
     return <LevelExam exam={exam} content={content} best={best} />;
   }
   const packet = partExamPacket(exam.id, await getQuiet());
-
   if (!packet) notFound();
   return <PartExam exam={exam} packet={packet} best={best} />;
 }

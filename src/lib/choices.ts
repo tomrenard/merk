@@ -33,7 +33,11 @@ const clozeAnswer = (item: Extract<UnitItem, { type: "cloze" }>): Choice => ({
  * A gap to type becomes a choice: wrong options are the lesson's other answers, first those of
  * gaps with the same hint (sein → bin, bist, ist).
  */
-export function clozeChoices(unit: Unit, item: Extract<UnitItem, { type: "cloze" }>) {
+export function clozeChoices(
+  unit: Unit,
+  item: Extract<UnitItem, { type: "cloze" }>,
+  seed = item.id,
+) {
   const best = unit.items.flatMap((other) =>
     other.type === "cloze" && other.base === item.base ? [clozeAnswer(other)] : [],
   );
@@ -46,13 +50,17 @@ export function clozeChoices(unit: Unit, item: Extract<UnitItem, { type: "cloze"
   );
   // Never offer another accepted answer as a "wrong" one.
   const wrong = (c: Choice) => !item.answers.includes(c.de);
-  return withOthers(clozeAnswer(item), pool.filter(wrong), item.id, { best: best.filter(wrong) });
+  return withOthers(clozeAnswer(item), pool.filter(wrong), seed, { best: best.filter(wrong) });
 }
 
-/** Quiet mode's version of an exercise: a gap to type becomes a choice; the rest stays. */
-export function quietItem(unit: Unit, item: UnitItem): UnitItem {
+/**
+ * Quiet mode's version of an exercise: a gap to type becomes a choice; the rest stays. A review
+ * passes a `seed` that changes each time, so the right answer isn't always the same button.
+ */
+export function quietItem(unit: Unit, item: UnitItem, seed?: string): UnitItem {
   if (item.type !== "cloze") return item;
-  const { options, answer } = clozeChoices(unit, item);
+  const { options, answer } = clozeChoices(unit, item, seed);
+
   if (options.length < 2) return item;
   return {
     id: item.id,

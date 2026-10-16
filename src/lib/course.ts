@@ -3,11 +3,8 @@ import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
 import { type Choice, quietItem } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId } from "./courses";
-
 import { examTitle, type T, translator } from "./i18n";
-
 import { DAY_START, type ReviewItem, wordChoices } from "./review";
-
 import type { Unit, UnitItem } from "./units";
 import { UNITS as WRITTEN } from "./units-index";
 
@@ -355,14 +352,18 @@ export function withExercise(item: ReviewItem | null, quiet = false): ReviewCard
   if (item?.direction !== "unit") return item;
   const unit = unitById(item.note.id.replace(/^unit:/, ""));
   const exercise = unit?.items[Math.floor(Math.random() * unit.items.length)];
-  return { ...item, exercise: unit && exercise && quiet ? quietItem(unit, exercise) : exercise };
+  const seed = `${item.cardId}:${item.reps}`;
+  return {
+    ...item,
+    exercise: unit && exercise && quiet ? quietItem(unit, exercise, seed) : exercise,
+  };
 }
 
 /** A card as the review screen shows it; Quiet mode adds options to pick the word from. */
 export async function reviewCard(item: ReviewItem | null, quiet: boolean) {
   const card = withExercise(item, quiet);
   if (!quiet || card?.direction !== "en_de" || card.note.source.endsWith("phrase")) return card;
-  return { ...card, choices: await wordChoices(card.note, card.cardId) };
+  return { ...card, choices: await wordChoices(card.note, `${card.cardId}:${card.reps}`) };
 }
 
 /** The lesson with the most recent activity, to resume it. */

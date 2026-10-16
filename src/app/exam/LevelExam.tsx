@@ -11,7 +11,6 @@ import { checkSpeaking, checkWriting } from "../ai/actions";
 import { AiFailure, FeedbackCard } from "../ai/Feedback";
 import { recordingForm, useRecorder } from "../ai/useRecorder";
 import { useQuiet, useT } from "../Locale";
-
 import { Exercise } from "../learn/Exercise";
 import { speak, stopSpeaking, useSpeechUnlock } from "../review/German";
 import { ExamBar, ExamIntro, ExamResult, useExamSave } from "./ExamShell";

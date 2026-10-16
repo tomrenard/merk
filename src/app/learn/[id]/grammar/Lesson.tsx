@@ -4,7 +4,6 @@ import { useEffect, useState, useTransition } from "react";
 import { quietItem } from "@/lib/choices";
 import { spokenForm } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
-
 import type { Unit, UnitItem } from "@/lib/units";
 import { useQuiet, useT } from "../../../Locale";
 import { Go } from "../../../Nav";

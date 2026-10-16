@@ -6,7 +6,6 @@ import { db } from "../db/client.ts";
 import { cards, notes, reviewLogs, settings } from "../db/schema.ts";
 import { withOthers } from "./choices.ts";
 import type { CourseId } from "./courses.ts";
-
 import { streakLength } from "./streak.ts";
 
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.

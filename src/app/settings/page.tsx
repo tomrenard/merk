@@ -86,7 +86,6 @@ export default async function SettingsPage() {
       </section>
       <section className="card flex flex-col gap-2">
         <span className="muted text-sm font-semibold">{t("App language")}</span>
-
         <LanguageSwitch current={locale} label={t("App language")} />
       </section>
       <VoicePicker />
@@ -95,7 +94,6 @@ export default async function SettingsPage() {
           🧭 {t("Retake the placement test")}
         </Go>
       )}
-
       <form action={logout} className="mt-4 flex flex-col">
         <button type="submit" className="btn">
           {t("Log out")}

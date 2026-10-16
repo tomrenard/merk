@@ -85,7 +85,6 @@ export function QuietSwitch({
 }
 
 /** German / Darija; `name` gives a course's name in the UI language. */
-
 export function CourseSwitch({
   current,
   label,

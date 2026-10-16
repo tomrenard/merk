@@ -35,7 +35,6 @@ export const useCourse = () => useContext(LocaleContext).course;
 export const useQuiet = () => useContext(LocaleContext).quiet;
 
 /** `t()` for client components. */
-
 export function useT() {
   const locale = useLocale();
   return useMemo(() => translator(locale), [locale]);

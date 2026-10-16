@@ -1,6 +1,5 @@
 import { type Choice, quietItem, withOthers } from "@/lib/choices";
 import { COURSE } from "@/lib/course";
-
 import type { Exam } from "@/lib/exams";
 import { shuffled } from "@/lib/shuffle";
 import type { UnitItem } from "@/lib/units";

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import type { Failure } from "@/lib/ai";
 import { withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
-
 import { spokenWords } from "@/lib/german";
 import type { Unit } from "@/lib/units";
 import { transcribeRecording } from "../../../ai/actions";

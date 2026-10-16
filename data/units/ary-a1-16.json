@@ -6,7 +6,7 @@
  "icon": "🍲",
  "situation": "Au restaurant",
  "canDo": "Tu peux commander un plat et une boisson, dire ce que tu manges ou ne manges pas, et demander l’addition.",
- "explanation": "Deux verbes essentiels : **kla** (manger) et **chreb** (boire). Ils suivent les règles que tu connais : *ka-* au présent, *-it / -t* au passé, *ghadi* au futur.\n\n| | manger | boire |\n|---|---|---|\n| je (présent) | kanakol | kanchreb |\n| tu, elle (présent) | katakol | katchreb |\n| je (passé) | klit | chrebt |\n| tu (passé) | kliti | chrebti |\n| il (passé) | kla | chreb |\n| nous (passé) | klina | chrebna |\n| je (futur) | ghadi nakol | ghadi nchreb |\n\n- Au présent, *kla* devient **-akol** : *kanakol*, *katakol*.\n- Après **bghit** ou **ghadi**, pas de *ka-* : *bghit nchreb*, *ghadi nakol*.\n- Négation : **makanakolch l7em** = je ne mange pas de viande.\n- Plats : **tajin**, **lkesksou** (couscous), **l7rira** (soupe), **chlada** (salade), **l7out** (poisson), **ddjaj** (poulet), **l7em** (viande), **lkhobz** (pain).\n- À boire : **atay** (thé), **lma** (eau), **3asir** (jus), **l9hwa** (café).\n- **Chno kayn lyoum?** = qu’est-ce qu’il y a aujourd’hui ? **Lmakla bnina!** = c’est délicieux ! **L7sab 3afak** = l’addition, s’il te plaît.\n\nLe couscous se mange traditionnellement le vendredi, après la prière.",
+ "explanation": "Deux verbes essentiels : **kla** (manger) et **chreb** (boire). Ils suivent les règles que tu connais : *ka-* au présent, *-it / -t* au passé, *ghadi* au futur.\n\n| | manger | boire |\n|---|---|---|\n| je (présent) | kanakol | kanchreb |\n| tu, elle (présent) | katakol | katchreb |\n| je (passé) | klit | chrebt |\n| tu (passé) | kliti | chrebti |\n| il (passé) | kla | chreb |\n| nous (passé) | klina | chrebna |\n| je (futur) | ghadi nakol | ghadi nchreb |\n\n- Au présent, *kla* devient **-akol** : *kanakol*, *katakol*.\n- Après **bghit** ou **ghadi**, pas de *ka-* : *bghit nchreb*, *ghadi nakol*.\n- Négation : **makanakolch l7em** = je ne mange pas de viande.\n- Plats : **tajine**, **lkesksou** (couscous), **l7rira** (soupe), **chlada** (salade), **l7out** (poisson), **ddjaj** (poulet), **l7em** (viande), **lkhobz** (pain).\n- À boire : **atay** (thé), **lma** (eau), **3asir** (jus), **l9hwa** (café).\n- **Chno kayn lyoum?** = qu’est-ce qu’il y a aujourd’hui ? **Lmakla bnina!** = c’est délicieux ! **L7sab 3afak** = l’addition, s’il te plaît.\n\nLe couscous se mange traditionnellement le vendredi, après la prière.",
  "french": "Le darija n’a pas d’article partitif comme « du » ou « de la » : kanakol l7out = je mange du poisson.",
  "examples": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "de": "بغيت طاجين ديال الدجاج.",
-   "tr": "bghit tajin dyal ddjaj.",
+   "tr": "bghit tajine dyal ddjaj.",
    "en": "Je voudrais un tajine au poulet."
   },
   {
@@ -69,7 +69,7 @@
    "id": "ary-a1-16-02",
    "type": "cloze",
    "de": "البارح ___ طاجين.",
-   "tr": "lbare7 ___ tajin.",
+   "tr": "lbare7 ___ tajine.",
    "base": "manger (passé, je)",
    "answers": [
     "كليت"
@@ -205,7 +205,7 @@
    "id": "ary-a1-16-11",
    "type": "choice",
    "de": "بغيت طاجين ___ الدجاج.",
-   "tr": "bghit tajin ___ ddjaj.",
+   "tr": "bghit tajine ___ ddjaj.",
    "options": [
     "ديال",
     "ف",
@@ -314,12 +314,12 @@
    "type": "order",
    "tiles": [
     "bghit",
-    "tajin",
+    "tajine",
     "dyal",
     "ddjaj"
    ],
    "answers": [
-    "bghit tajin dyal ddjaj"
+    "bghit tajine dyal ddjaj"
    ],
    "de": "بغيت طاجين ديال الدجاج.",
    "en": "Je voudrais un tajine au poulet."
@@ -358,15 +358,15 @@
    "tiles": [
     "lbare7",
     "klit",
-    "tajin",
+    "tajine",
     "w",
     "chrebt",
     "atay"
    ],
    "answers": [
-    "lbare7 klit tajin w chrebt atay",
-    "lbare7 chrebt atay w klit tajin",
-    "klit tajin w chrebt atay lbare7"
+    "lbare7 klit tajine w chrebt atay",
+    "lbare7 chrebt atay w klit tajine",
+    "klit tajine w chrebt atay lbare7"
    ],
    "de": "البارح كليت طاجين و شربت أتاي.",
    "en": "Hier, j’ai mangé un tajine et j’ai bu du thé."
@@ -391,7 +391,7 @@
    {
     "speaker": "Driss",
     "de": "كاين طاجين ديال الدجاج، الكسكسو و الحريرة.",
-    "tr": "kayn tajin dyal ddjaj, lkesksou w l7rira.",
+    "tr": "kayn tajine dyal ddjaj, lkesksou w l7rira.",
     "en": "Il y a un tajine au poulet, du couscous et de la harira."
    },
    {
@@ -403,7 +403,7 @@
    {
     "speaker": "Omar",
     "de": "و أنا بغيت طاجين ديال الدجاج.",
-    "tr": "w ana bghit tajin dyal ddjaj.",
+    "tr": "w ana bghit tajine dyal ddjaj.",
     "en": "Et moi, je voudrais un tajine au poulet."
    },
    {
@@ -513,6 +513,6 @@
  "writing": {
   "task": "Tu es au restaurant. Écris 2 à 4 phrases : commande un plat et une boisson, dis ce que tu ne manges pas, et demande l’addition. Écris en lettres latines.",
   "model": "بغيت طاجين ديال الحوت و الما عافاك. ماكناكلش اللحم. الماكلة بنينة! الحساب عافاك.",
-  "modelTr": "bghit tajin dyal l7out w lma 3afak. makanakolch l7em. lmakla bnina! l7sab 3afak."
+  "modelTr": "bghit tajine dyal l7out w lma 3afak. makanakolch l7em. lmakla bnina! l7sab 3afak."
  }
 }

@@ -6,7 +6,7 @@
  "icon": "💊",
  "situation": "À la pharmacie",
  "canDo": "Tu peux dire que tu es malade, où tu as mal, et demander un médicament à la pharmacie.",
- "explanation": "Pour dire où tu as mal, on dit **kayder liya** + la partie du corps avec *-i* (mon, ma). Mot à mot : « il fait mal à moi, ma tête » (*ras*, *dahr* et *7el9* sont masculins).\n\n| français | darija |\n|---|---|\n| je suis malade | ana mrid / mrida |\n| j’ai mal à la tête | kayder liya rassi |\n| j’ai mal au dos | kayder liya dahri |\n| j’ai mal à la gorge | kayder liya 7el9i |\n| j’ai de la fièvre | fiya sskhana |\n| j’ai pris froid | fiya lberd |\n\n- **Liya** = à moi, **lik** = à toi : *wach kayder lik rassek?* = tu as mal à la tête ?\n- **Fiya** = en moi : on l’utilise pour la fièvre et le rhume.\n- **Mrid** pour un homme, **mrida** pour une femme.\n- À la pharmacie : **wach 3endek chi dwa l rras?** = tu as un médicament pour la tête ?\n- Le pharmacien dit : **chreb had ddwa merrtayn f nnhar, men ba3d lmakla** = prends ce médicament deux fois par jour, après le repas. En darija, on « boit » (*chreb*) un médicament.\n- **Lah ychafik!** = que Dieu te guérisse, bon rétablissement !\n\nAu Maroc, on va souvent d’abord à la pharmacie : le pharmacien conseille beaucoup.",
+ "explanation": "Pour dire où tu as mal, on dit **kayder liya** + la partie du corps avec *-i* (mon, ma). Mot à mot : « il fait mal à moi, ma tête » (*ras*, *dahr* et *7el9* sont masculins).\n\n| français | darija |\n|---|---|\n| je suis malade | ana mrid / mrida |\n| j’ai mal à la tête | kayder liya rassi |\n| j’ai mal au dos | kayder liya dahri |\n| j’ai mal à la gorge | kayder liya 7el9i |\n| j’ai de la fièvre | fiya sskhana |\n| j’ai pris froid | fiya lberd |\n\n- **Liya** = à moi, **lik** = à toi : *wach kayder lik rassek?* = tu as mal à la tête ?\n- **Fiya** = en moi : on l’utilise pour la fièvre et le rhume.\n- **Mrid** pour un homme, **mrida** pour une femme.\n- À la pharmacie : **wach 3ndek chi dwa l rras?** = tu as un médicament pour la tête ?\n- Le pharmacien dit : **chreb had ddwa merrtayn f nnhar, men ba3d lmakla** = prends ce médicament deux fois par jour, après le repas. En darija, on « boit » (*chreb*) un médicament.\n- **Lah ychafik!** = que Dieu te guérisse, bon rétablissement !\n\nAu Maroc, on va souvent d’abord à la pharmacie : le pharmacien conseille beaucoup.",
  "french": "En français on dit « j’ai mal à la tête » ; en darija c’est la tête qui fait mal : kayder liya rassi.",
  "examples": [
   {
@@ -31,7 +31,7 @@
   },
   {
    "de": "واش عندك شي دوا للراس؟",
-   "tr": "wach 3endek chi dwa l rras?",
+   "tr": "wach 3ndek chi dwa l rras?",
    "en": "Tu as un médicament pour la tête ?"
   },
   {
@@ -117,7 +117,7 @@
     "عندك"
    ],
    "answersTr": [
-    "3endek"
+    "3ndek"
    ],
    "en": "Tu as un médicament pour la tête ?"
   },
@@ -269,7 +269,7 @@
    "id": "ary-a1-17-15",
    "type": "choice",
    "de": "البارح ___ عند الطبيب.",
-   "tr": "lbare7 ___ 3end ttbib.",
+   "tr": "lbare7 ___ 3nd ttbib.",
    "options": [
     "مشيت",
     "كنمشي",
@@ -323,14 +323,14 @@
    "type": "order",
    "tiles": [
     "wach",
-    "3endek",
+    "3ndek",
     "chi",
     "dwa",
     "l",
     "rras"
    ],
    "answers": [
-    "wach 3endek chi dwa l rras"
+    "wach 3ndek chi dwa l rras"
    ],
    "de": "واش عندك شي دوا للراس؟",
    "en": "Tu as un médicament pour la tête ?"
@@ -388,7 +388,7 @@
    {
     "speaker": "Hicham",
     "de": "شنو عندك؟",
-    "tr": "chno 3endek?",
+    "tr": "chno 3ndek?",
     "en": "Qu’est-ce que tu as ?"
    },
    {
@@ -493,7 +493,7 @@
   },
   {
    "de": "واش عندك شي دوا للراس؟",
-   "tr": "wach 3endek chi dwa l rras?",
+   "tr": "wach 3ndek chi dwa l rras?",
    "en": "Tu as un médicament pour la tête ?"
   },
   {
@@ -510,6 +510,6 @@
  "writing": {
   "task": "Tu es malade et tu vas à la pharmacie. Écris 2 à 4 phrases : dis où tu as mal, si tu as de la fièvre, et demande un médicament. Écris en lettres latines.",
   "model": "سلام. أنا مريض، كيضر ليا راسي و فيا السخانة. واش عندك شي دوا للراس؟ شكرا!",
-  "modelTr": "salam. ana mrid, kayder liya rassi w fiya sskhana. wach 3endek chi dwa l rras? chokran!"
+  "modelTr": "salam. ana mrid, kayder liya rassi w fiya sskhana. wach 3ndek chi dwa l rras? chokran!"
  }
 }

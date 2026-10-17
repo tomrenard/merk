@@ -6,7 +6,8 @@
  * Sentences already there are skipped, so re-runs cost nothing; commit and push the new files
  * afterwards.
  *
- * Needs AI_GATEWAY_API_KEY (a capped one-off key) and DATABASE_URL (run with --env-file=.env.local). AUDIO_DIR: the clone (default ../merk-audio).
+ * Needs AI_GATEWAY_API_KEY (a capped one-off key) and DATABASE_URL (run with
+ * --env-file=.env.local). AUDIO_DIR: the clone (default ../merk-audio).
  * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N,
  * --max-usd N (stop once the audio recorded would cost this much; default 8).
  */
@@ -17,6 +18,7 @@ import {
   mkdtempSync,
   readdirSync,
   readFileSync,
+  renameSync,
   writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
@@ -75,6 +77,7 @@ const limitAt = process.argv.indexOf("--limit");
 const limit = limitAt > 0 ? Number(process.argv[limitAt + 1]) : Number.POSITIVE_INFINITY;
 const maxAt = process.argv.indexOf("--max-usd");
 const maxUsd = maxAt > 0 ? Number(process.argv[maxAt + 1]) : 8;
+if (!(maxUsd > 0)) throw new Error("--max-usd needs a positive number");
 /** Flash-Lite TTS: $6 per million audio tokens, 25 tokens a second (doubles on 2027-01-01). */
 const USD_PER_SECOND = (6 * 25) / 1e6;
 let spent = 0;
@@ -144,8 +147,14 @@ const manifestFile = join(out, "..", "voices.json");
 const manifest: Record<string, string> = existsSync(manifestFile)
   ? JSON.parse(readFileSync(manifestFile, "utf8"))
   : {};
-const saveManifest = () =>
-  writeFileSync(manifestFile, `${JSON.stringify(manifest, Object.keys(manifest).sort(), 0)}\n`);
+// Written aside, then renamed: a run stopped mid-write can't leave half a file.
+const saveManifest = () => {
+  writeFileSync(
+    `${manifestFile}.tmp`,
+    `${JSON.stringify(manifest, Object.keys(manifest).sort(), 0)}\n`,
+  );
+  renameSync(`${manifestFile}.tmp`, manifestFile);
+};
 
 const todo = [...wanted]
   .filter(([key, { voice }]) => !stored.has(key) || manifest[key] !== voice)

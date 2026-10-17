@@ -7,7 +7,8 @@
  * afterwards.
  *
  * Needs AI_GATEWAY_API_KEY (a capped one-off key) and DATABASE_URL (run with --env-file=.env.local). AUDIO_DIR: the clone (default ../merk-audio).
- * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N.
+ * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N,
+ * --max-usd N (stop once the audio recorded would cost this much; default 8).
  */
 import { execFileSync } from "node:child_process";
 import {
@@ -72,6 +73,11 @@ const styleOf = (text: string) => (isArabic(text) ? DARIJA : STYLE);
 const dry = process.argv.includes("--dry");
 const limitAt = process.argv.indexOf("--limit");
 const limit = limitAt > 0 ? Number(process.argv[limitAt + 1]) : Number.POSITIVE_INFINITY;
+const maxAt = process.argv.indexOf("--max-usd");
+const maxUsd = maxAt > 0 ? Number(process.argv[maxAt + 1]) : 8;
+/** Flash-Lite TTS: $6 per million audio tokens, 25 tokens a second (doubles on 2027-01-01). */
+const USD_PER_SECOND = (6 * 25) / 1e6;
+let spent = 0;
 
 const out = join(process.env.AUDIO_DIR ?? "../merk-audio", "a");
 if (!existsSync(join(out, ".."))) throw new Error(`No audio repo clone at ${join(out, "..")}`);
@@ -170,7 +176,10 @@ async function record(key: string, { text, voice }: { text: string; voice: strin
     const body = (await res.json().catch(() => ({}))) as { audio?: string };
     if (res.ok && body.audio) {
       const wav = join(dir, `${key}.wav`);
-      writeFileSync(wav, Buffer.from(body.audio, "base64"));
+      const bytes = Buffer.from(body.audio, "base64");
+      // Header bytes 28-31: bytes per second of audio.
+      spent += ((bytes.length - 44) / bytes.readUInt32LE(28)) * USD_PER_SECOND;
+      writeFileSync(wav, bytes);
       execFileSync("afconvert", [
         "-f",
         "m4af",
@@ -198,7 +207,7 @@ let done = 0;
 let next = 0;
 const failed: string[] = [];
 async function worker() {
-  while (next < todo.length) {
+  while (next < todo.length && spent < maxUsd) {
     const [key, sentence] = todo[next++] as [string, { text: string; voice: string }];
     try {
       await record(key, sentence);
@@ -206,10 +215,15 @@ async function worker() {
       failed.push(String(error));
       if (String(error).startsWith("Error: 402")) next = todo.length;
     }
-    if (++done % 100 === 0) console.log(`${done}/${todo.length}`);
+    // Saved as it goes, so a stopped run doesn't record the same sentences again.
+    if (++done % 100 === 0) {
+      saveManifest();
+      console.log(`${done}/${todo.length} ~$${spent.toFixed(2)}`);
+    }
   }
 }
 await Promise.all(Array.from({ length: 16 }, worker));
 saveManifest();
-console.log(`recorded ${done - failed.length}, failed ${failed.length}`);
+console.log(`recorded ${done - failed.length}, failed ${failed.length}, ~$${spent.toFixed(2)}`);
+if (spent >= maxUsd) console.log(`Stopped at the --max-usd ${maxUsd} cap.`);
 for (const f of failed.slice(0, 10)) console.log(f);

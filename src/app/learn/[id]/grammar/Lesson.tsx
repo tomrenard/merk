@@ -102,7 +102,7 @@ export function Lesson({
                 <button
                   key={`${word.de}|${word.en}`}
                   type="button"
-                  onClick={() => speak(spokenForm(word.de))}
+                  onClick={() => speak(spokenForm(word.de), { recorded: true })}
                   className="flex items-center gap-3 py-3 text-left"
                 >
                   <span className="flex-1">

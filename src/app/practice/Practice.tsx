@@ -94,7 +94,7 @@ export function Practice({
     if (!checked) {
       setChecked(true);
       if (!right) setMissed((m) => [...m, note]);
-      speak(spokenForm(note.de));
+      speak(spokenForm(note.de), { recorded: true });
       return;
     }
     setChecked(false);

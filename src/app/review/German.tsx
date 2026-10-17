@@ -78,7 +78,7 @@ function deviceSpeak(text: string, second: boolean, onEnd?: () => void) {
 }
 
 /**
- * Says `text` in German. `recorded` plays the recorded voice of a lesson or exam sentence
+ * Says `text` in German. `recorded` plays the recorded voice of a lesson or exam sentence or a word
  * (falling back to the phone's voice when there is none); otherwise the phone speaks, with
  * `second` picking another voice for the other speaker of a dialogue. `onEnd` runs when it
  * finishes (or straight away when muted).
@@ -200,7 +200,7 @@ export function German({ word, tr }: { word: string; tr?: string | null }) {
   return (
     <button
       type="button"
-      onClick={() => speak(spokenForm(word))}
+      onClick={() => speak(spokenForm(word), { recorded: true })}
       className="text-4xl font-black tracking-tight"
       title={t("Listen")}
     >

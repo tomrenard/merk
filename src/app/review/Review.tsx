@@ -103,12 +103,12 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   );
   useEffect(() => {
     // Not behind the end-of-session screen.
-    if (item?.direction === "de_en" && !ended) speak(spokenForm(item.note.de));
+    if (item?.direction === "de_en" && !ended) speak(spokenForm(item.note.de), { recorded: true });
   }, [item, ended]);
 
   function reveal() {
     setRevealed(true);
-    if (item?.direction === "en_de") speak(spokenForm(item.note.de));
+    if (item?.direction === "en_de") speak(spokenForm(item.note.de), { recorded: true });
   }
 
   function answer(rating: number) {
@@ -359,7 +359,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
             {note.exampleDe && (
               <button
                 type="button"
-                onClick={() => speak(note.exampleDe ?? "")}
+                onClick={() => speak(note.exampleDe ?? "", { recorded: true })}
                 className="font-semibold"
               >
                 <Say de={note.exampleDe} tr={note.exampleTr ?? undefined} />

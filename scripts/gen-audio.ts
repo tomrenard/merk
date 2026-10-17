@@ -1,11 +1,12 @@
 /**
- * Records every lesson and exam sentence, and every Darija word, once with Gemini's voices
+ * Records every lesson and exam sentence, every Darija word, and every German word, example and
+ * phrase of the shared word list (read from the database), once with Gemini's voices
  * (Kore; Charon for the second speaker of a dialogue) through AI Gateway, as a/<audioKey>.m4a
  * in a clone of the public tomrenard/merk-audio repo (GitHub Pages serves it: see AUDIO_BASE).
  * Sentences already there are skipped, so re-runs cost nothing; commit and push the new files
  * afterwards.
  *
- * Needs AI_GATEWAY_API_KEY (a capped one-off key). AUDIO_DIR: the clone (default ../merk-audio).
+ * Needs AI_GATEWAY_API_KEY (a capped one-off key) and DATABASE_URL (run with --env-file=.env.local). AUDIO_DIR: the clone (default ../merk-audio).
  * macOS only (afconvert turns the WAV into small AAC). Flags: --dry (count only), --limit N.
  */
 import { execFileSync } from "node:child_process";
@@ -19,8 +20,10 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import postgres from "postgres";
 import { audioKey, isArabic, normalize, solved } from "../src/lib/audio.ts";
 import type { Exam } from "../src/lib/exams.ts";
+import { spokenForm } from "../src/lib/german.ts";
 import type { Unit, UnitItem } from "../src/lib/units.ts";
 
 const MODEL = "google/gemini-3.8-flash-lite-tts";
@@ -119,6 +122,15 @@ const darijaWords = "data/darija/words.json";
 if (existsSync(darijaWords))
   for (const w of json<{ de: string; exampleDe?: string }[]>(darijaWords))
     for (const text of [w.de, w.exampleDe ?? ""]) add(text);
+// German words as the app says them (spokenForm), their examples, and phrases.
+if (!process.env.DATABASE_URL)
+  throw new Error("Needs DATABASE_URL: run with --env-file=.env.local");
+const sql = postgres(process.env.DATABASE_URL, { max: 1 });
+const germanWords = await sql<{ de: string; example_de: string | null }[]>`
+  select de, example_de from notes
+  where course = 'de' and user_id is null and source not in ('unit', 'mine') order by ord`;
+await sql.end();
+for (const w of germanWords) for (const text of [spokenForm(w.de), w.example_de ?? ""]) add(text);
 
 const stored = new Set(readdirSync(out).map((f) => f.replace(/\.m4a$/, "")));
 // Which voice each stored file has: a sentence whose voice changed is recorded again.
@@ -137,7 +149,9 @@ console.log(
   `${wanted.size} sentences, ${stored.size} stored, ${todo.length} to record (${chars} chars)`,
 );
 if (dry) process.exit(0);
-if (!process.env.AI_GATEWAY_API_KEY) throw new Error("Needs AI_GATEWAY_API_KEY");
+// Printable ASCII only: a pasted placeholder (…) otherwise fails every request in the header.
+if (!/^[\x21-\x7e]+$/.test(process.env.AI_GATEWAY_API_KEY ?? ""))
+  throw new Error("Needs AI_GATEWAY_API_KEY (the real key, not a placeholder)");
 
 const dir = mkdtempSync(join(tmpdir(), "merk-audio-"));
 async function record(key: string, { text, voice }: { text: string; voice: string }) {

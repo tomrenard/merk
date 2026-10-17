@@ -1,7 +1,8 @@
 import type { UnitItem } from "./units";
 
 /**
- * Lesson and exam sentences have a recorded voice (generated once by scripts/gen-audio.ts),
+ * Lesson and exam sentences, and the shared word list (words, examples, phrases), have a
+ * recorded voice (generated once by scripts/gen-audio.ts),
  * stored as a/<key>.m4a in the public tomrenard/merk-audio repo and served by GitHub Pages
  * (free, no request limits that matter here). Anything else uses the phone's voice.
  */

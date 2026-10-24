@@ -471,6 +471,7 @@
  ],
  "writing": {
   "task": "A friend is staying in your flat while you are away. Write a note (5–6 sentences) with the most important house rules.",
-  "model": "Hallo Paul, willkommen in meiner Wohnung! Im Haus darf man nicht rauchen. Den Müll muss man trennen, die Tonnen stehen im Hof. Ab 22 Uhr müssen alle leise sein. Im Treppenhaus darf nichts stehen, auch kein Fahrrad. Wenn etwas kaputt ist, ruf mich bitte an. Viele Grüße, Nora"
+  "model": "Hallo Paul, willkommen in meiner Wohnung! Im Haus darf man nicht rauchen. Den Müll muss man trennen, die Tonnen stehen im Hof. Ab 22 Uhr müssen alle leise sein. Im Treppenhaus darf nichts stehen, auch kein Fahrrad. Wenn etwas kaputt ist, ruf mich bitte an. Viele Grüße, Nora",
+  "modelEn": "Hello Paul, welcome to my apartment! You are not allowed to smoke in the building. You have to separate the trash, the bins are in the yard. From 10 p.m. everyone has to be quiet. Nothing may stand in the stairwell, not even a bike. If something is broken, please call me. Kind regards, Nora"
  }
 }

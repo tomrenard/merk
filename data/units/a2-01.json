@@ -463,6 +463,7 @@
  ],
  "writing": {
   "task": "A colleague was off sick today. Write a message of 5–6 sentences telling them what happened at work.",
-  "model": "Hallo Tim, hier ist alles okay. Heute Morgen hat Frau Schulz angerufen und den Termin am Freitag abgesagt. Um zehn hat das Meeting angefangen. Wir haben das Projekt für Berlin besprochen. Herr Bauer hat alles gut erklärt, und ich habe dir die Notizen geschickt. Gute Besserung! Anna"
+  "model": "Hallo Tim, hier ist alles okay. Heute Morgen hat Frau Schulz angerufen und den Termin am Freitag abgesagt. Um zehn hat das Meeting angefangen. Wir haben das Projekt für Berlin besprochen. Herr Bauer hat alles gut erklärt, und ich habe dir die Notizen geschickt. Gute Besserung! Anna",
+  "modelEn": "Hello Tim, everything is okay here. This morning Ms. Schulz called and cancelled the appointment on Friday. The meeting started at ten. We discussed the project for Berlin. Mr. Bauer explained everything well, and I sent you the notes. Get well soon! Anna"
  }
 }

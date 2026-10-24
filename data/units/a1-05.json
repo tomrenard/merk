@@ -448,6 +448,7 @@
  ],
  "writing": {
   "task": "Write to a friend about your new flat (3–4 sentences): name a few rooms or things and say what they are like.",
-  "model": "Hallo Nina, ich habe eine Wohnung! Die Küche ist klein, aber sie ist neu. Das Wohnzimmer ist hell und da ist ein Balkon. Das Bett ist leider alt."
+  "model": "Hallo Nina, ich habe eine Wohnung! Die Küche ist klein, aber sie ist neu. Das Wohnzimmer ist hell und da ist ein Balkon. Das Bett ist leider alt.",
+  "modelEn": "Hello Nina, I have an apartment! The kitchen is small, but it is new. The living room is bright and there is a balcony. The bed is old, unfortunately."
  }
 }

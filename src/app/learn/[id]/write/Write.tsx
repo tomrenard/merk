@@ -71,6 +71,11 @@ export function Write({
           className="card text-left font-semibold leading-relaxed"
         >
           <Say de={unit.writing.model} tr={unit.writing.modelTr} /> 🔊
+          {unit.writing.modelEn && (
+            <span className="muted mt-3 block border-t pt-3 text-base font-medium line">
+              {unit.writing.modelEn}
+            </span>
+          )}
         </button>
         <p className="muted text-sm font-semibold">
           {t("Notice how it uses this lesson's grammar; you can write your own later.")}

@@ -461,6 +461,7 @@
  ],
  "writing": {
   "task": "A friend wants to meet today. Write 3–4 short sentences: say you can't, say what you have to do, and ask if they can tomorrow.",
-  "model": "Hallo Sara, heute kann ich leider nicht. Ich muss lange arbeiten. Dann muss ich noch einkaufen. Kannst du morgen?"
+  "model": "Hallo Sara, heute kann ich leider nicht. Ich muss lange arbeiten. Dann muss ich noch einkaufen. Kannst du morgen?",
+  "modelEn": "Hello Sara, I can't today, unfortunately. I have to work late. Then I still have to go shopping. Can you do tomorrow?"
  }
 }

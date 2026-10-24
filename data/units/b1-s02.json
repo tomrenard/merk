@@ -532,6 +532,7 @@
  ],
  "writing": {
   "task": "You are Camille. Write an 80–100-word email to Frau Schmitz: thank her for the flat, say what you like about it and ask one practical question about moving in.",
-  "model": "Liebe Frau Schmitz,\n\nvielen herzlichen Dank für Ihren Anruf! Ich freue mich sehr, dass ich die Wohnung bekommen habe. Am besten gefällt mir der Balkon, der nach Süden geht, aber auch die Küche, die letztes Jahr renoviert wurde, finde ich toll. Ich habe noch eine Frage zum Einzug: Am ersten Mai ist ein Feiertag. Darf ich trotzdem schon morgens kommen, oder ist das für die Nachbarn zu laut? Meine Möbel werden von zwei Freunden gebracht. Ich freue mich, Sie bald wiederzusehen!\n\nViele Grüße\nCamille Durand"
+  "model": "Liebe Frau Schmitz,\n\nvielen herzlichen Dank für Ihren Anruf! Ich freue mich sehr, dass ich die Wohnung bekommen habe. Am besten gefällt mir der Balkon, der nach Süden geht, aber auch die Küche, die letztes Jahr renoviert wurde, finde ich toll. Ich habe noch eine Frage zum Einzug: Am ersten Mai ist ein Feiertag. Darf ich trotzdem schon morgens kommen, oder ist das für die Nachbarn zu laut? Meine Möbel werden von zwei Freunden gebracht. Ich freue mich, Sie bald wiederzusehen!\n\nViele Grüße\nCamille Durand",
+  "modelEn": "Dear Ms. Schmitz,\n\nthank you very much for your call! I'm very happy that I got the apartment. What I like best is the balcony, which faces south, but I also think the kitchen, which was renovated last year, is great. I have one more question about moving in: the first of May is a holiday. May I still come in the morning, or is that too loud for the neighbors? My furniture will be brought by two friends. I look forward to seeing you again soon!\n\nKind regards\nCamille Durand"
  }
 }

@@ -494,6 +494,7 @@
  ],
  "writing": {
   "task": "You have just viewed a flat. Write 5–6 sentences to a friend: describe the flat, say how much the rent is and when you can move in, and ask for help with the move.",
-  "model": "Hallo Lea, heute habe ich eine Wohnung in Köln besichtigt! Sie hat zwei Zimmer, eine Küche, ein Bad und einen Balkon. Die Wohnung ist im zweiten Stock und sehr hell. Die Miete ist 850 Euro warm. Ich kann am ersten Juli einziehen. Hilfst du mir beim Umzug? Liebe Grüße, Julien"
+  "model": "Hallo Lea, heute habe ich eine Wohnung in Köln besichtigt! Sie hat zwei Zimmer, eine Küche, ein Bad und einen Balkon. Die Wohnung ist im zweiten Stock und sehr hell. Die Miete ist 850 Euro warm. Ich kann am ersten Juli einziehen. Hilfst du mir beim Umzug? Liebe Grüße, Julien",
+  "modelEn": "Hello Lea, today I viewed an apartment in Cologne! It has two rooms, a kitchen, a bathroom and a balcony. The apartment is on the second floor and very bright. The rent is 850 euros including utilities. I can move in on the first of July. Will you help me with the move? Kind regards, Julien"
  }
 }

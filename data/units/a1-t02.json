@@ -497,6 +497,7 @@
  ],
  "writing": {
   "task": "Write a short message (3–4 sentences) to a friend about your breakfast: what you eat and drink and what tastes good.",
-  "model": "Hallo Anna! Ich frühstücke gerade. Ich esse Brot mit Butter und Marmelade. Ich trinke Kaffee mit Milch. Das schmeckt super! Was frühstückst du?"
+  "model": "Hallo Anna! Ich frühstücke gerade. Ich esse Brot mit Butter und Marmelade. Ich trinke Kaffee mit Milch. Das schmeckt super! Was frühstückst du?",
+  "modelEn": "Hello Anna! I'm having breakfast right now. I'm eating bread with butter and jam. I'm drinking coffee with milk. It tastes great! What are you having for breakfast?"
  }
 }

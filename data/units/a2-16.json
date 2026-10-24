@@ -474,6 +474,7 @@
  ],
  "writing": {
   "task": "Your train is late. Write a message to a colleague (5–6 sentences): what happened, what the consequences are, and what you will do anyway.",
-  "model": "Hallo Jan, mein Zug hat heute eine Stunde Verspätung. Deshalb komme ich erst um zehn ins Büro. Das Meeting um neun schaffe ich leider nicht, denn ich sitze dann noch im Zug. Meine Präsentation ist aber fertig, deshalb kannst du schon ohne mich anfangen. Ich bin sehr müde, trotzdem mache ich heute den Bericht fertig. Bis später, Elise"
+  "model": "Hallo Jan, mein Zug hat heute eine Stunde Verspätung. Deshalb komme ich erst um zehn ins Büro. Das Meeting um neun schaffe ich leider nicht, denn ich sitze dann noch im Zug. Meine Präsentation ist aber fertig, deshalb kannst du schon ohne mich anfangen. Ich bin sehr müde, trotzdem mache ich heute den Bericht fertig. Bis später, Elise",
+  "modelEn": "Hello Jan, my train is an hour late today. That's why I'm only getting to the office at ten. I won't make the meeting at nine, unfortunately, because I'll still be on the train. But my presentation is finished, so you can start without me. I'm very tired, but I'm still finishing the report today. See you later, Elise"
  }
 }

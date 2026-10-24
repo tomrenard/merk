@@ -473,6 +473,7 @@
  ],
  "writing": {
   "task": "A friend writes that she is stressed and has no time for herself. Write an 80–100-word reply with your advice and say what you would do in her place.",
-  "model": "Liebe Nina,\n\nes tut mir leid, dass du so gestresst bist. Ich verstehe dich gut! An deiner Stelle würde ich zuerst mit deinem Chef sprechen. Vielleicht könntest du einen Tag pro Woche im Homeoffice arbeiten? Dann hättest du weniger Stress im Zug. Du solltest auch wieder mehr Sport machen, das hilft mir immer. Wenn ich in deiner Situation wäre, würde ich außerdem am Wochenende das Handy ausschalten. Und wenn du Lust hättest, könnten wir nächsten Samstag zusammen wandern gehen. Das wäre doch schön, oder?\n\nLiebe Grüße\nCamille"
+  "model": "Liebe Nina,\n\nes tut mir leid, dass du so gestresst bist. Ich verstehe dich gut! An deiner Stelle würde ich zuerst mit deinem Chef sprechen. Vielleicht könntest du einen Tag pro Woche im Homeoffice arbeiten? Dann hättest du weniger Stress im Zug. Du solltest auch wieder mehr Sport machen, das hilft mir immer. Wenn ich in deiner Situation wäre, würde ich außerdem am Wochenende das Handy ausschalten. Und wenn du Lust hättest, könnten wir nächsten Samstag zusammen wandern gehen. Das wäre doch schön, oder?\n\nLiebe Grüße\nCamille",
+  "modelEn": "Dear Nina,\n\nI'm sorry that you are so stressed. I understand you well! In your place I would first talk to your boss. Maybe you could work from home one day a week? Then you would have less stress on the train. You should also do more sports again, that always helps me. If I were in your situation, I would also turn off my phone at the weekend. And if you felt like it, we could go hiking together next Saturday. That would be nice, wouldn't it?\n\nKind regards\nCamille"
  }
 }

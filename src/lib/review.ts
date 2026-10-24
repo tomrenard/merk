@@ -532,7 +532,7 @@ export async function learnTopicWords(
 export async function wordChoices(note: typeof notes.$inferSelect, seed: string) {
   const noun = /^(der|die|das|der\/die) /.test(note.de);
   const others = await db()
-    .select({ de: notes.de, tr: notes.tr })
+    .select({ de: notes.de, tr: notes.tr, en: notes.en })
     .from(notes)
     .where(
       and(
@@ -547,8 +547,8 @@ export async function wordChoices(note: typeof notes.$inferSelect, seed: string)
     .orderBy(sql`random()`)
     .limit(6);
   return withOthers(
-    { de: note.de, tr: note.tr ?? undefined },
-    others.map((o) => ({ de: o.de, tr: o.tr ?? undefined })),
+    { de: note.de, tr: note.tr ?? undefined, en: note.en ?? undefined },
+    others.map((o) => ({ de: o.de, tr: o.tr ?? undefined, en: o.en ?? undefined })),
     seed,
   );
 }

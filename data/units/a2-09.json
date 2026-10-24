@@ -467,6 +467,7 @@
  ],
  "writing": {
   "task": "You're choosing between two phone contracts. Write 5–6 sentences to a friend: compare them and say which one you like best.",
-  "model": "Hallo Lisa, ich habe zwei Angebote für einen Handyvertrag. Das Angebot von Telenet kostet 15 Euro im Monat, das von Mobix nur 12 Euro. Mobix ist billiger. Aber bei Telenet bekomme ich mehr Daten, und das Netz ist besser. Am wichtigsten ist mir das Netz, weil ich viel unterwegs bin. Ich nehme also Telenet. Was meinst du?"
+  "model": "Hallo Lisa, ich habe zwei Angebote für einen Handyvertrag. Das Angebot von Telenet kostet 15 Euro im Monat, das von Mobix nur 12 Euro. Mobix ist billiger. Aber bei Telenet bekomme ich mehr Daten, und das Netz ist besser. Am wichtigsten ist mir das Netz, weil ich viel unterwegs bin. Ich nehme also Telenet. Was meinst du?",
+  "modelEn": "Hello Lisa, I have two offers for a mobile phone contract. The offer from Telenet costs 15 euros a month, the one from Mobix only 12 euros. Mobix is cheaper. But with Telenet I get more data, and the network is better. The network is most important to me because I'm on the road a lot. So I'm taking Telenet. What do you think?"
  }
 }

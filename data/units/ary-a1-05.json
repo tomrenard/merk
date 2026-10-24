@@ -73,6 +73,7 @@
  "writing": {
   "task": "Présente trois personnes de ta famille : qui elles sont pour toi, leur nom et leur âge. Écris en lettres latines.",
   "model": "هادي الفاميلة ديالي. هادا بابا، من ليون. هادي ختي، سميتها سارة، عندها عشرين عام. و هادا خويا، عندو طناش العام.",
-  "modelTr": "hadi lfamilya dyali. hada baba, men lyon. hadi khti, smitha sara, 3ndha 3chrin 3am. w hada khoya, 3ndo tnach l3am."
+  "modelTr": "hadi lfamilya dyali. hada baba, men lyon. hadi khti, smitha sara, 3ndha 3chrin 3am. w hada khoya, 3ndo tnach l3am.",
+  "modelEn": "This is my family. This is my dad, from Lyon. This is my sister, her name is Sara, she's twenty. And this is my brother, he's twelve."
  }
 }

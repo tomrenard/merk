@@ -74,6 +74,7 @@
  "writing": {
   "task": "Écris un petit échange avec un serveur le matin : dis bonjour, demande un café poliment, remercie et dis au revoir. Écris en lettres latines.",
   "model": "صباح الخير! عافاك، قهوة. شكرا بزاف. بسلامة، نهارك سعيد!",
-  "modelTr": "sba7 lkhir! 3afak, 9hwa. chokran bzzaf. bslama, nharek sa3id!"
+  "modelTr": "sba7 lkhir! 3afak, 9hwa. chokran bzzaf. bslama, nharek sa3id!",
+  "modelEn": "Good morning! A coffee, please. Thank you very much. Goodbye, have a nice day!"
  }
 }

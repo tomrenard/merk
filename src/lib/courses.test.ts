@@ -108,6 +108,8 @@ describe("Quiet mode word choices", () => {
     expect(options[answer]?.de).toBe("salam");
     // German test words (course de) never show up in a Darija card.
     expect(options.every((o) => o.tr)).toBe(true);
+    // Every option carries its meaning, shown once the learner has answered.
+    expect(options.every((o) => o.en)).toBe(true);
   });
 
   it("keeps German nouns with nouns", async () => {

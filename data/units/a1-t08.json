@@ -497,6 +497,7 @@
  ],
  "writing": {
   "task": "Write a short message (3–4 sentences) to a friend in France about the weather where you live today and about your favourite season.",
-  "model": "Hallo Julie! Hier in Hamburg ist das Wetter heute schlecht: Es regnet und es sind nur zehn Grad. Im Sommer ist es hier oft schön, aber nicht so heiß. Ich mag den Herbst: Es ist kühl und die Bäume sind bunt. Wie ist das Wetter in Toulouse?"
+  "model": "Hallo Julie! Hier in Hamburg ist das Wetter heute schlecht: Es regnet und es sind nur zehn Grad. Im Sommer ist es hier oft schön, aber nicht so heiß. Ich mag den Herbst: Es ist kühl und die Bäume sind bunt. Wie ist das Wetter in Toulouse?",
+  "modelEn": "Hello Julie! Here in Hamburg the weather is bad today: it's raining and it's only ten degrees. In summer it is often nice here, but not so hot. I like autumn: it's cool and the trees are colorful. What's the weather like in Toulouse?"
  }
 }

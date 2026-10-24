@@ -453,6 +453,7 @@
  ],
  "writing": {
   "task": "A new colleague asks about your family. Write 3–4 short sentences: who is in your family, their names and where they live.",
-  "model": "Mein Vater heißt Marc und meine Mutter heißt Sophie. Meine Eltern wohnen in Lyon. Ich habe eine Schwester, Julie. Ihr Sohn heißt Léo."
+  "model": "Mein Vater heißt Marc und meine Mutter heißt Sophie. Meine Eltern wohnen in Lyon. Ich habe eine Schwester, Julie. Ihr Sohn heißt Léo.",
+  "modelEn": "My father is called Marc and my mother is called Sophie. My parents live in Lyon. I have a sister, Julie. Her son is called Léo."
  }
 }

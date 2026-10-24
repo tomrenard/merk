@@ -513,6 +513,7 @@
  "writing": {
   "task": "Tu es au restaurant. Écris 2 à 4 phrases : commande un plat et une boisson, dis ce que tu ne manges pas, et demande l’addition. Écris en lettres latines.",
   "model": "بغيت طاجين ديال الحوت و الما عافاك. ماكناكلش اللحم. الماكلة بنينة! الحساب عافاك.",
-  "modelTr": "bghit tajine dyal l7out w lma 3afak. makanakolch l7em. lmakla bnina! l7sab 3afak."
+  "modelTr": "bghit tajine dyal l7out w lma 3afak. makanakolch l7em. lmakla bnina! l7sab 3afak.",
+  "modelEn": "I'd like a fish tagine and water, please. I don't eat meat. The food is delicious! The bill, please."
  }
 }

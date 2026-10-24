@@ -482,6 +482,7 @@
  ],
  "writing": {
   "task": "Write a message of 80–100 words to a friend about your busy Saturday: what you had done (for example at the hairdresser, the garage, a photo studio) and what you still need to do next week.",
-  "model": "Hallo Jana,\n\nwas für ein Samstag! Am Morgen habe ich mir endlich die Haare schneiden lassen – sie sind jetzt ganz kurz. Danach bin ich mit dem Auto in die Werkstatt gefahren, weil das Licht vorne kaputt war. Ich habe es gleich reparieren lassen, das hat nur eine Stunde gedauert. Am Nachmittag habe ich neue Passfotos machen lassen, denn nächste Woche muss ich einen neuen Pass beantragen. Am Abend war ich total müde. Deshalb habe ich mir eine Pizza bringen lassen.\n\nBis bald!\nClaire"
+  "model": "Hallo Jana,\n\nwas für ein Samstag! Am Morgen habe ich mir endlich die Haare schneiden lassen – sie sind jetzt ganz kurz. Danach bin ich mit dem Auto in die Werkstatt gefahren, weil das Licht vorne kaputt war. Ich habe es gleich reparieren lassen, das hat nur eine Stunde gedauert. Am Nachmittag habe ich neue Passfotos machen lassen, denn nächste Woche muss ich einen neuen Pass beantragen. Am Abend war ich total müde. Deshalb habe ich mir eine Pizza bringen lassen.\n\nBis bald!\nClaire",
+  "modelEn": "Hello Jana,\n\nwhat a Saturday! In the morning I finally had my hair cut – it's very short now. After that I drove to the garage by car, because the front light was broken. I had it repaired right away, it only took an hour. In the afternoon I had new passport photos taken, because next week I have to apply for a new passport. In the evening I was totally tired. So I had a pizza delivered.\n\nSee you soon!\nClaire"
  }
 }

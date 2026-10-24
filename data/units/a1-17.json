@@ -459,6 +459,7 @@
  ],
  "writing": {
   "task": "You have just moved to a new city. Write a short message to a friend (3–4 sentences): say what you like and what you don't like there, and ask for help with something.",
-  "model": "Hallo Nina, ich wohne jetzt in Leipzig. Die Stadt gefällt mir sehr. Das Essen schmeckt mir auch, aber das Wetter gefällt mir nicht. Kannst du mir am Samstag in der Wohnung helfen?"
+  "model": "Hallo Nina, ich wohne jetzt in Leipzig. Die Stadt gefällt mir sehr. Das Essen schmeckt mir auch, aber das Wetter gefällt mir nicht. Kannst du mir am Samstag in der Wohnung helfen?",
+  "modelEn": "Hello Nina, I live in Leipzig now. I like the city a lot. I like the food too, but I don't like the weather. Can you help me in the apartment on Saturday?"
  }
 }

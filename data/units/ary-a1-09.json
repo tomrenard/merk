@@ -519,6 +519,7 @@
  "writing": {
   "task": "Tu rencontres un nouveau collègue. Écris 2 à 4 questions pour faire connaissance, avec au moins trois mots interrogatifs différents. Écris en lettres latines.",
   "model": "سلام! شنو سميتك؟ منين نتا؟ فين كتسكن؟ و علاش كتقرا الفرانساوية؟",
-  "modelTr": "salam! chno smitek? mnin nta? fin katskon? w 3lach kat9ra lfransawiya?"
+  "modelTr": "salam! chno smitek? mnin nta? fin katskon? w 3lach kat9ra lfransawiya?",
+  "modelEn": "Hello! What's your name? Where are you from? Where do you live? And why are you learning French?"
  }
 }

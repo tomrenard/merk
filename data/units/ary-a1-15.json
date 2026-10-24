@@ -506,6 +506,7 @@
  "writing": {
   "task": "Tu prends un petit taxi. Écris 2 à 4 phrases au chauffeur : où tu vas, le chemin (droite, gauche, tout droit) et où il doit s’arrêter. Écris en lettres latines.",
   "model": "بغيت نمشي للمعاريف عافاك. كمل نيشان، من بعد دور على ليسر. حبس هنا. شكرا!",
-  "modelTr": "bghit nmchi l lma3arif 3afak. kemmel nichan, men ba3d dour 3la lisser. 7bes hna. chokran!"
+  "modelTr": "bghit nmchi l lma3arif 3afak. kemmel nichan, men ba3d dour 3la lisser. 7bes hna. chokran!",
+  "modelEn": "I'd like to go to Maarif, please. Keep going straight, then turn left. Stop here. Thank you!"
  }
 }

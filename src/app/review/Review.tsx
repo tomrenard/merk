@@ -313,9 +313,13 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                       setPicked(i);
                       reveal();
                     }}
-                    className={`btn normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
+                    className={`btn flex-col gap-0 normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
                   >
                     <Headword de={option.de} tr={option.tr} />
+                    {/* After answering: what every option means, not only the right one. */}
+                    {revealed && option.en && (
+                      <span className="muted mt-0.5 block text-sm font-medium">{option.en}</span>
+                    )}
                   </button>
                 ))}
               </div>

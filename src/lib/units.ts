@@ -101,6 +101,7 @@ export const Unit = z.object({
     task: z.string().describe("a short everyday writing task in English, 2–4 sentences to write"),
     model: z.string().describe("a model answer in German at the unit's level"),
     modelTr: tr,
+    modelEn: z.string().optional().describe("the model answer in English, sentence by sentence"),
   }),
 });
 export type Unit = z.infer<typeof Unit>;

@@ -508,6 +508,7 @@
  "writing": {
   "task": "Parle de ta vie en 2 à 4 phrases : où tu habites, où tu travailles ou étudies, quelles langues tu parles. Écris en lettres latines.",
   "model": "أنا كنسكن ف كازا، ف المعاريف. كنخدم ف البانكة. كنهضر الفرانساوية و الدارجة شوية.",
-  "modelTr": "ana kanskon f kaza, f lma3arif. kankhdem f lbanka. kanhder lfransawiya w ddarija chwiya."
+  "modelTr": "ana kanskon f kaza, f lma3arif. kankhdem f lbanka. kanhder lfransawiya w ddarija chwiya.",
+  "modelEn": "I live in Casablanca, in Maarif. I work at the bank. I speak French and a little Darija."
  }
 }

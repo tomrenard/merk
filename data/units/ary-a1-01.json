@@ -493,6 +493,7 @@
  "writing": {
   "task": "Présente-toi en 2 à 4 phrases : ton nom, d’où tu viens, et pose une question à l’autre personne. Écris en lettres latines.",
   "model": "سلام! سميتي سارة. أنا فرانساوية، من ليون. و نتا، شنو سميتك؟",
-  "modelTr": "salam! smiti sara. ana fransawiya, men lyon. w nta, chno smitek?"
+  "modelTr": "salam! smiti sara. ana fransawiya, men lyon. w nta, chno smitek?",
+  "modelEn": "Hello! My name is Sara. I'm French, from Lyon. And you, what's your name?"
  }
 }

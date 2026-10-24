@@ -464,6 +464,7 @@
  ],
  "writing": {
   "task": "A friend's birthday is coming up. Write 5–6 sentences to another friend: say what you are giving to whom and ask for help.",
-  "model": "Hallo Nina, am Freitag hat Paul Geburtstag. Ich schenke ihm ein Buch, er liest doch so gern. Seinen Kindern bringe ich Schokolade mit. Kannst du mir helfen? Ich brauche noch eine Karte. Zeigst du mir morgen den Laden am Markt? Liebe Grüße, Tom"
+  "model": "Hallo Nina, am Freitag hat Paul Geburtstag. Ich schenke ihm ein Buch, er liest doch so gern. Seinen Kindern bringe ich Schokolade mit. Kannst du mir helfen? Ich brauche noch eine Karte. Zeigst du mir morgen den Laden am Markt? Liebe Grüße, Tom",
+  "modelEn": "Hello Nina, on Friday it's Paul's birthday. I'm giving him a book, he likes reading so much. I'm bringing chocolate for his children. Can you help me? I still need a card. Will you show me the shop at the market tomorrow? Kind regards, Tom"
  }
 }

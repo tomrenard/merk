@@ -488,6 +488,7 @@
  ],
  "writing": {
   "task": "Your colleague Sarah was out of the office today, and several people called for her. Write her a note of 80–100 words passing on the messages: what they said, what they asked, and what she should do.",
-  "model": "Hallo Sarah,\n\nheute haben ein paar Leute für dich angerufen. Herr Braun von der Firma Keller hat gesagt, dass die Lieferung erst am Freitag kommt. Er möchte wissen, ob das ein Problem für dich ist. Dann hat deine Kollegin aus Hamburg angerufen. Sie fragt, wann du nächste Woche in Hamburg bist und ob ihr zusammen Mittag essen könnt. Außerdem hat der Chef gesagt, du sollst ihm den Bericht bis morgen schicken. Und Paul lässt fragen, warum du nicht auf seine Mail geantwortet hast.\n\nViele Grüße\nClaire"
+  "model": "Hallo Sarah,\n\nheute haben ein paar Leute für dich angerufen. Herr Braun von der Firma Keller hat gesagt, dass die Lieferung erst am Freitag kommt. Er möchte wissen, ob das ein Problem für dich ist. Dann hat deine Kollegin aus Hamburg angerufen. Sie fragt, wann du nächste Woche in Hamburg bist und ob ihr zusammen Mittag essen könnt. Außerdem hat der Chef gesagt, du sollst ihm den Bericht bis morgen schicken. Und Paul lässt fragen, warum du nicht auf seine Mail geantwortet hast.\n\nViele Grüße\nClaire",
+  "modelEn": "Hello Sarah,\n\ntoday a few people called for you. Mr. Braun from the company Keller said that the delivery only comes on Friday. He wants to know whether that is a problem for you. Then your colleague from Hamburg called. She asks when you are in Hamburg next week and whether you can have lunch together. Also, the boss said you should send him the report by tomorrow. And Paul asks why you haven't answered his email.\n\nKind regards\nClaire"
  }
 }

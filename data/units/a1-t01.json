@@ -492,6 +492,7 @@
  ],
  "writing": {
   "task": "You're signing up for a German course. Write 3–4 short sentences with your details: name, where you're from, where and when you were born, marital status and phone number.",
-  "model": "Mein Name ist Martin, mein Vorname ist Lucas. Ich bin aus Frankreich. Ich bin 1995 in Nantes geboren. Ich bin verheiratet. Meine Handynummer ist 0151 23 45 67."
+  "model": "Mein Name ist Martin, mein Vorname ist Lucas. Ich bin aus Frankreich. Ich bin 1995 in Nantes geboren. Ich bin verheiratet. Meine Handynummer ist 0151 23 45 67.",
+  "modelEn": "My last name is Martin, my first name is Lucas. I'm from France. I was born in Nantes in 1995. I'm married. My mobile number is 0151 23 45 67."
  }
 }

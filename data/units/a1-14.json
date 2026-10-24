@@ -463,6 +463,7 @@
  ],
  "writing": {
   "task": "Write a short message (3–4 sentences) to your language partner to arrange a meeting: suggest a day and a time, and say when you can't.",
-  "model": "Hallo Jana, hast du am Mittwoch Zeit? Ich kann um halb sieben. Am Donnerstag kann ich leider nicht, da muss ich lange arbeiten. Bis bald, Tom"
+  "model": "Hallo Jana, hast du am Mittwoch Zeit? Ich kann um halb sieben. Am Donnerstag kann ich leider nicht, da muss ich lange arbeiten. Bis bald, Tom",
+  "modelEn": "Hello Jana, do you have time on Wednesday? I can do half past six. On Thursday I can't, unfortunately, I have to work late. See you soon, Tom"
  }
 }

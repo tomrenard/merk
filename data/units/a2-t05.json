@@ -506,6 +506,7 @@
  ],
  "writing": {
   "task": "A colleague has invited you to her birthday party. Write her a message (5–6 sentences): thank her, say that you are coming and when you can be there, and ask what you can bring.",
-  "model": "Liebe Sabine, vielen Dank für die Einladung! Ich komme sehr gern zu deiner Feier am Freitag. Leider kann ich erst um neun Uhr da sein, weil ich bis acht arbeiten muss. Soll ich etwas mitbringen? Ich backe gern einen Kuchen. Ich freue mich schon sehr! Liebe Grüße, Julien"
+  "model": "Liebe Sabine, vielen Dank für die Einladung! Ich komme sehr gern zu deiner Feier am Freitag. Leider kann ich erst um neun Uhr da sein, weil ich bis acht arbeiten muss. Soll ich etwas mitbringen? Ich backe gern einen Kuchen. Ich freue mich schon sehr! Liebe Grüße, Julien",
+  "modelEn": "Dear Sabine, thank you very much for the invitation! I'm very happy to come to your party on Friday. Unfortunately I can only be there at nine o'clock, because I have to work until eight. Should I bring something? I'd be happy to bake a cake. I'm already really looking forward to it! Kind regards, Julien"
  }
 }

@@ -1,8 +1,8 @@
 import { seededShuffle } from "./shuffle.ts";
 import type { Unit, UnitItem } from "./units.ts";
 
-/** A tappable answer: the target-language text, with its Latin for Darija. */
-export type Choice = { de: string; tr?: string };
+/** A tappable answer: the target-language text, with its Latin for Darija; `en` shows after answering. */
+export type Choice = { de: string; tr?: string; en?: string };
 
 /**
  * Quiet mode: `answer` plus up to `others` different wrong options, taken from `best` first

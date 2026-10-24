@@ -510,6 +510,7 @@
  "writing": {
   "task": "Tu es malade et tu vas à la pharmacie. Écris 2 à 4 phrases : dis où tu as mal, si tu as de la fièvre, et demande un médicament. Écris en lettres latines.",
   "model": "سلام. أنا مريض، كيضر ليا راسي و فيا السخانة. واش عندك شي دوا للراس؟ شكرا!",
-  "modelTr": "salam. ana mrid, kayder liya rassi w fiya sskhana. wach 3ndek chi dwa l rras? chokran!"
+  "modelTr": "salam. ana mrid, kayder liya rassi w fiya sskhana. wach 3ndek chi dwa l rras? chokran!",
+  "modelEn": "Hello. I'm sick, my head hurts and I have a fever. Do you have any medicine for the head? Thank you!"
  }
 }

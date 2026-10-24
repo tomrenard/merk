@@ -513,6 +513,7 @@
  "writing": {
   "task": "Tu es au café avec un ami. Écris 2 à 4 phrases : commande à boire et à manger, demande quelque chose au serveur, puis demande si tu peux payer. Écris en lettres latines.",
   "model": "سلام! بغيت نص نص بلا سكر و مسمن. عافاك، واش تقدر تجيب ليا الما؟ واش نقدر نخلص؟",
-  "modelTr": "salam! bghit nouss nouss bla sokkar w msemmen. 3afak, wach t9der tjib liya lma? wach n9der nkhelles?"
+  "modelTr": "salam! bghit nouss nouss bla sokkar w msemmen. 3afak, wach t9der tjib liya lma? wach n9der nkhelles?",
+  "modelEn": "Hello! I'd like a half-and-half coffee without sugar and a msemmen. Please, can you bring me water? Can I pay?"
  }
 }

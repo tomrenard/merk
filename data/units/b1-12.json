@@ -490,6 +490,7 @@
  ],
  "writing": {
   "task": "You won't be in the office on Friday. Write an email of 80–100 words to a colleague: say why you're away, what they should do for you on Friday, and why. Use um … zu and damit at least once each.",
-  "model": "Hallo Stefan,\n\nam Freitag bin ich nicht im Büro, weil ich einen Kurs in Frankfurt mache. Ich fahre schon am Donnerstagabend los, um pünktlich da zu sein. Kannst du bitte am Freitag meine Mails lesen, damit kein Kunde zu lange auf eine Antwort wartet? Die Rechnung für die Firma Keller ist schon fertig. Bitte schick sie bis zwölf Uhr ab, damit sie noch diesen Monat bezahlt wird. Ich lege dir alle Unterlagen auf den Tisch, um dir Zeit zu sparen. Vielen Dank und bis Montag!\n\nViele Grüße\nClaire"
+  "model": "Hallo Stefan,\n\nam Freitag bin ich nicht im Büro, weil ich einen Kurs in Frankfurt mache. Ich fahre schon am Donnerstagabend los, um pünktlich da zu sein. Kannst du bitte am Freitag meine Mails lesen, damit kein Kunde zu lange auf eine Antwort wartet? Die Rechnung für die Firma Keller ist schon fertig. Bitte schick sie bis zwölf Uhr ab, damit sie noch diesen Monat bezahlt wird. Ich lege dir alle Unterlagen auf den Tisch, um dir Zeit zu sparen. Vielen Dank und bis Montag!\n\nViele Grüße\nClaire",
+  "modelEn": "Hello Stefan,\n\non Friday I'm not in the office because I'm taking a course in Frankfurt. I'm leaving on Thursday evening to be there on time. Can you please read my emails on Friday, so that no customer waits too long for an answer? The invoice for the company Keller is already finished. Please send it off by twelve o'clock, so that it is still paid this month. I'm putting all the documents on your desk to save you time. Thank you very much and see you Monday!\n\nKind regards\nClaire"
  }
 }

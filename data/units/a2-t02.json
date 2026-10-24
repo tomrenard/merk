@@ -497,6 +497,7 @@
  ],
  "writing": {
   "task": "You are ill and can't go to work. Write 5–6 sentences to a colleague: say what is wrong, what the doctor said and when you will be back.",
-  "model": "Hallo Sabine, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Heute Morgen war ich beim Arzt. Er hat mich untersucht, ich habe Grippe. Ich muss bis Freitag im Bett bleiben und Tabletten nehmen. Am Montag bin ich wieder im Büro. Viele Grüße, Marc"
+  "model": "Hallo Sabine, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Heute Morgen war ich beim Arzt. Er hat mich untersucht, ich habe Grippe. Ich muss bis Freitag im Bett bleiben und Tabletten nehmen. Am Montag bin ich wieder im Büro. Viele Grüße, Marc",
+  "modelEn": "Hello Sabine, I'm sick, unfortunately. I have a fever and my throat hurts. This morning I was at the doctor's. He examined me, I have the flu. I have to stay in bed until Friday and take pills. On Monday I'm back in the office. Kind regards, Marc"
  }
 }

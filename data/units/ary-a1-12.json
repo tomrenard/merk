@@ -520,6 +520,7 @@
  "writing": {
   "task": "Écris 2 à 4 phrases sur tes projets pour ce week-end : où tu vas aller, avec qui, et ce que tu vas faire. Écris en lettres latines.",
   "model": "هاد الويكاند غادي نمشي للبحر مع صحابي. غاديين ناكلو الحوت و نشربو أتاي. و من بعد غادي نشوف ختي، إن شاء الله.",
-  "modelTr": "had lwikand ghadi nmchi l lb7er m3a s7abi. ghadyin naklou l7out w nchrbou atay. w men ba3d ghadi nchouf khti, inchallah."
+  "modelTr": "had lwikand ghadi nmchi l lb7er m3a s7abi. ghadyin naklou l7out w nchrbou atay. w men ba3d ghadi nchouf khti, inchallah.",
+  "modelEn": "This weekend I'm going to the sea with my friends. We're going to eat fish and drink tea. And after that I'm going to see my sister, God willing."
  }
 }

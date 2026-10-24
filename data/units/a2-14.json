@@ -469,6 +469,7 @@
  ],
  "writing": {
   "task": "Write to a friend about next year (5–6 sentences): what will change in your life and what you will do.",
-  "model": "Liebe Marie, nächstes Jahr wird alles anders! Im Januar werde ich eine neue Stelle in Köln anfangen. Dann werde ich mit meinem Freund eine Wohnung suchen. Mein Deutsch wird hoffentlich noch besser, denn ich mache einen Kurs. Im Sommer werde ich 40, und wir werden ein großes Fest machen. Kommst du auch? Liebe Grüße, Camille"
+  "model": "Liebe Marie, nächstes Jahr wird alles anders! Im Januar werde ich eine neue Stelle in Köln anfangen. Dann werde ich mit meinem Freund eine Wohnung suchen. Mein Deutsch wird hoffentlich noch besser, denn ich mache einen Kurs. Im Sommer werde ich 40, und wir werden ein großes Fest machen. Kommst du auch? Liebe Grüße, Camille",
+  "modelEn": "Dear Marie, next year everything will be different! In January I will start a new job in Cologne. Then I will look for an apartment with my boyfriend. My German will hopefully get even better, because I'm taking a course. In summer I will turn 40, and we will have a big party. Are you coming too? Kind regards, Camille"
  }
 }

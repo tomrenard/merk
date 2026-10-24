@@ -486,6 +486,7 @@
  ],
  "writing": {
   "task": "You are at the market with €20. Write 3–4 short sentences: what things cost, what is cheap or expensive, and the total.",
-  "model": "Ich bin auf dem Markt. Ein Kilo Äpfel kostet drei Euro und ein Kilo Tomaten kostet zwei Euro fünfzig. Die Kartoffeln sind sehr günstig: nur ein Euro achtzig. Das macht zusammen sieben Euro dreißig."
+  "model": "Ich bin auf dem Markt. Ein Kilo Äpfel kostet drei Euro und ein Kilo Tomaten kostet zwei Euro fünfzig. Die Kartoffeln sind sehr günstig: nur ein Euro achtzig. Das macht zusammen sieben Euro dreißig.",
+  "modelEn": "I'm at the market. A kilo of apples costs three euros and a kilo of tomatoes costs two euros fifty. The potatoes are very cheap: only one euro eighty. That makes seven euros thirty in total."
  }
 }

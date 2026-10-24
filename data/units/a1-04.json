@@ -471,6 +471,7 @@
  ],
  "writing": {
   "task": "A friend invites you to a café on Saturday. Write a short reply (3–4 sentences): ask one or two yes/no questions and say what you don't like, using nicht.",
-  "model": "Hallo Lisa, danke! Ist das Café neu? Ich trinke nicht gern Kaffee. Gibt es dort auch Tee?"
+  "model": "Hallo Lisa, danke! Ist das Café neu? Ich trinke nicht gern Kaffee. Gibt es dort auch Tee?",
+  "modelEn": "Hello Lisa, thanks! Is the café new? I don't like drinking coffee. Do they have tea there too?"
  }
 }

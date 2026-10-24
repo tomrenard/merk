@@ -462,6 +462,7 @@
  ],
  "writing": {
   "task": "You're going away and a friend is looking after your flat. Write 5–6 sentences: where things are and where they should put them.",
-  "model": "Hallo Max, danke für deine Hilfe! Der Schlüssel liegt bei meiner Nachbarin im Erdgeschoss. Die Pflanzen stehen auf dem Balkon. Stell sie bitte am Abend in die Küche. Die Post liegt im Briefkasten, leg sie bitte auf den Tisch im Flur. Mein Fahrrad steht im Keller. Bis bald, Tom"
+  "model": "Hallo Max, danke für deine Hilfe! Der Schlüssel liegt bei meiner Nachbarin im Erdgeschoss. Die Pflanzen stehen auf dem Balkon. Stell sie bitte am Abend in die Küche. Die Post liegt im Briefkasten, leg sie bitte auf den Tisch im Flur. Mein Fahrrad steht im Keller. Bis bald, Tom",
+  "modelEn": "Hello Max, thanks for your help! The key is with my neighbor on the ground floor. The plants are on the balcony. Please put them in the kitchen in the evening. The mail is in the mailbox, please put it on the table in the hallway. My bike is in the basement. See you soon, Tom"
  }
 }

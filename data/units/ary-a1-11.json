@@ -510,6 +510,7 @@
  "writing": {
   "task": "Raconte ta journée d’hier en 2 à 4 phrases : où tu es allé, ce que tu as mangé et bu. Écris en lettres latines.",
   "model": "البارح مشيت للخدمة ف الصباح. كليت مع صحابي و شربت أتاي. ف الليل نعست بكري.",
-  "modelTr": "lbare7 mchit l lkhedma f ssba7. klit m3a s7abi w chrebt atay. f llil n3est bekri."
+  "modelTr": "lbare7 mchit l lkhedma f ssba7. klit m3a s7abi w chrebt atay. f llil n3est bekri.",
+  "modelEn": "Yesterday I went to work in the morning. I ate with my friends and drank tea. At night I went to sleep early."
  }
 }

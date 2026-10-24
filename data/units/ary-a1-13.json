@@ -510,6 +510,7 @@
  "writing": {
   "task": "Tu proposes un rendez-vous à un ami. Écris 2 à 4 phrases : propose un jour et une heure, et un autre jour s’il ne peut pas. Écris en lettres latines.",
   "model": "سلام! واش تقدر نهار السبت؟ نتلاقاو ف الخمسة و نص ف القهوة. ولا نهار الحد ف الصباح؟",
-  "modelTr": "salam! wach t9der nhar ssebt? ntla9aw f lkhamsa w nouss f l9hwa. wla nhar l7ed f ssba7?"
+  "modelTr": "salam! wach t9der nhar ssebt? ntla9aw f lkhamsa w nouss f l9hwa. wla nhar l7ed f ssba7?",
+  "modelEn": "Hello! Can you do Saturday? Let's meet at half past five at the café. Or Sunday morning?"
  }
 }

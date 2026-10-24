@@ -461,6 +461,7 @@
  ],
  "writing": {
   "task": "Your friend Max is visiting you for the first time. Write him a short message (3–4 sentences) with directions from the bus stop to your home, using du.",
-  "model": "Hallo Max, nimm den Bus Nummer 7 und fahr vier Stationen. Steig dann aus und geh geradeaus. Nimm die erste Straße rechts. Mein Haus ist die Nummer 12. Bis später!"
+  "model": "Hallo Max, nimm den Bus Nummer 7 und fahr vier Stationen. Steig dann aus und geh geradeaus. Nimm die erste Straße rechts. Mein Haus ist die Nummer 12. Bis später!",
+  "modelEn": "Hello Max, take bus number 7 and ride four stops. Then get off and go straight ahead. Take the first street on the right. My house is number 12. See you later!"
  }
 }

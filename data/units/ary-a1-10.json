@@ -519,6 +519,7 @@
  "writing": {
   "task": "Tu fais tes courses au marché. Écris 2 à 4 phrases : demande le prix d’un fruit ou d’un légume, dis que c’est cher, négocie, puis achète. Écris en lettres latines.",
   "model": "سلام! بشحال الكيلو د التفاح؟ خمسة و عشرين درهم؟ غالي بزاف! نقص ليا شوية عافاك. صافي، عطيني جوج كيلو.",
-  "modelTr": "salam! b ch7al lkilo d tteffa7? khamsa w 3chrin dirham? ghali bzzaf! n99es liya chwiya 3afak. safi, 3tini jouj kilo."
+  "modelTr": "salam! b ch7al lkilo d tteffa7? khamsa w 3chrin dirham? ghali bzzaf! n99es liya chwiya 3afak. safi, 3tini jouj kilo.",
+  "modelEn": "Hello! How much is a kilo of apples? Twenty-five dirhams? That's very expensive! Lower it a little for me, please. Okay, give me two kilos."
  }
 }

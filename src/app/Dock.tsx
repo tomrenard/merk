@@ -10,13 +10,8 @@ type Tab = { href: string; label: string; icon: string };
  * the tapped tab at once, before the page arrives.
  */
 export function Dock({ tabs, active, label }: { tabs: Tab[]; active: string; label: string }) {
+  // Each page renders its own Dock, so a tap only has to last until the next page mounts.
   const [tapped, setTapped] = useState<string | null>(null);
-  const [shown, setShown] = useState(active);
-  // The page caught up with the tap: follow the server's active tab again.
-  if (shown !== active) {
-    setShown(active);
-    setTapped(null);
-  }
   const current = tapped ?? active;
   const index = tabs.findIndex((tab) => tab.href === current);
   return (
@@ -34,7 +29,10 @@ export function Dock({ tabs, active, label }: { tabs: Tab[]; active: string; lab
               prefetch
               aria-current={tab.href === current ? "page" : undefined}
               className="dock-tab"
-              onClick={() => setTapped(tab.href)}
+              onClick={(e) => {
+                // A new browser tab (cmd/ctrl/shift or middle click) leaves this page as it is.
+                if (!(e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0)) setTapped(tab.href);
+              }}
             >
               <svg
                 aria-hidden="true"

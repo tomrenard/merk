@@ -21,6 +21,7 @@ const FR: Record<string, string> = {
   "Notice how it uses this lesson's grammar; you can write your own later.":
     "Remarque comment elle utilise la grammaire de la leçon ; tu pourras écrire la tienne plus tard.",
   "Quiet mode": "Mode discret",
+  Sections: "Sections",
   On: "Activé",
   Off: "Désactivé",
   "Tap only: no typing, no speaking. Gaps, dictations and word cards become choices; you read the model answer instead of writing.":

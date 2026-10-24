@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 
 export const config = {
   matcher: [
-    "/((?!(?:login|signup|manifest\\.webmanifest|icon\\.svg|apple-icon)$|api/auth/|_next/static/).*)",
+    "/((?!(?:login|signup|manifest\\.webmanifest|icon\\.svg|apple-icon)$|api/auth/|_next/static/|splash/).*)",
   ],
 };
 

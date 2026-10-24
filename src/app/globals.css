@@ -23,6 +23,17 @@
   /* Button fill: dark enough for white text in both modes. */
   --brand-fill: #2f6bff;
   --shadow: 0 1px 2px rgb(16 24 40 / 0.04), 0 2px 8px rgb(16 24 40 / 0.06);
+
+  /* Liquid Glass: translucent surfaces with a bright rim over a soft coloured page. */
+  --glow-1: rgb(124 77 255 / 0.16);
+  --glow-2: rgb(36 89 224 / 0.14);
+  --glass: linear-gradient(180deg, rgb(255 255 255 / 0.74), rgb(255 255 255 / 0.52));
+  --glass-solid: rgb(255 255 255 / 0.95);
+  --glass-card: rgb(255 255 255 / 0.72);
+  --rim: rgb(255 255 255 / 0.85);
+  --rim-out: rgb(16 24 40 / 0.07);
+  --lift: 0 10px 30px rgb(16 24 40 / 0.14), 0 2px 6px rgb(16 24 40 / 0.06);
+  --pill: rgb(36 89 224 / 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +48,16 @@
     --brand-soft: #1b2a4a;
     --brand-fill: #2f6bff;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3);
+
+    --glow-1: rgb(124 77 255 / 0.18);
+    --glow-2: rgb(47 107 255 / 0.14);
+    --glass: linear-gradient(180deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.05));
+    --glass-solid: rgb(24 33 45 / 0.95);
+    --glass-card: rgb(30 40 54 / 0.62);
+    --rim: rgb(255 255 255 / 0.12);
+    --rim-out: rgb(255 255 255 / 0.08);
+    --lift: 0 10px 30px rgb(0 0 0 / 0.45);
+    --pill: rgb(255 255 255 / 0.14);
   }
 }
 
@@ -46,20 +67,36 @@ body {
   color: var(--ink);
   -webkit-tap-highlight-color: transparent;
 }
+/* The soft coloured page the glass sits on; fixed, so it doesn't scroll away (iOS ignores
+   background-attachment: fixed). */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 45% at 10% 0%, var(--glow-1), transparent 70%),
+    radial-gradient(60% 40% at 100% 30%, var(--glow-2), transparent 70%), var(--bg);
+}
 
 @layer components {
   /* A white card on the grey page; a coloured border (e.g. border-[var(--brand)]) marks it. */
+  /* A glass card on the coloured page: translucent, bright top rim. No blur: lists stay smooth. */
   .card {
     @apply rounded-2xl border p-4;
-    background: var(--surface);
-    border-color: transparent;
-    box-shadow: var(--shadow);
+    background: var(--glass-card);
+    border-color: var(--rim-out);
+    box-shadow:
+      inset 0 1px 0 var(--rim),
+      var(--shadow);
   }
 
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-xl border px-5 py-3.5 text-center text-base font-bold transition-[scale,background-color] duration-100 select-none;
-    background: var(--surface);
-    border-color: var(--line);
+    background: var(--glass-card);
+    border-color: var(--rim-out);
+    box-shadow: inset 0 1px 0 var(--rim);
     color: var(--brand);
   }
   .btn:focus-visible,
@@ -73,10 +110,14 @@ body {
     @apply scale-[0.98];
   }
   /* Solid button: set --c (fill), or use .btn-primary. */
+  /* Glossy: a light top edge over the fill. */
   .btn-solid,
   .btn-primary {
-    background: var(--c);
+    background: linear-gradient(180deg, rgb(255 255 255 / 0.2), transparent 60%), var(--c);
     border-color: var(--c);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.3),
+      0 4px 14px color-mix(in srgb, var(--c) 35%, transparent);
     color: white;
   }
   .btn-primary {
@@ -121,12 +162,12 @@ body {
     border-color: var(--line);
   }
 
-  /* An inner screen: phone-width column clear of the notch; .with-tabs ends in the tab bar. */
+  /* An inner screen: phone-width column clear of the notch; .with-tabs leaves room for the dock. */
   .screen {
     @apply mx-auto flex min-h-dvh max-w-md flex-col gap-5 px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-6;
   }
   .with-tabs {
-    @apply pb-0;
+    @apply pb-[calc(6.5rem+env(safe-area-inset-bottom))];
   }
 
   .topbar {
@@ -167,4 +208,81 @@ body {
   font-family: var(--font-arabic);
   font-size: 1.15em;
   line-height: 1.6;
+}
+
+/* Dock: the floating glass tab bar (Dock.tsx). */
+.dock {
+  position: fixed;
+  z-index: 20;
+  left: max(12px, env(safe-area-inset-left, 0px));
+  right: max(12px, env(safe-area-inset-right, 0px));
+  bottom: max(12px, env(safe-area-inset-bottom, 0px));
+  max-width: 26rem;
+  margin: 0 auto;
+}
+.glass {
+  position: relative;
+  border-radius: 999px;
+  background: var(--glass-solid);
+  border: 0.5px solid var(--rim-out);
+  box-shadow:
+    inset 0 1px 0 var(--rim),
+    var(--lift);
+}
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+    backdrop-filter: blur(22px) saturate(180%);
+  }
+}
+.dock-tabs {
+  display: grid;
+  grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+  height: 62px;
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+}
+/* The selected tab's lens: a tinted pill sliding between equal columns. */
+.dock-pill {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: calc((100% - 10px) / var(--n));
+  border-radius: 999px;
+  background: var(--pill);
+  box-shadow: inset 0 1px 0 var(--rim);
+  transform: translateX(calc(var(--i) * 100%));
+  transition: transform 0.42s cubic-bezier(0.32, 1.25, 0.5, 1);
+}
+.dock-tab {
+  position: relative;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 2px;
+  font-size: 0.68rem;
+  font-weight: 650;
+  color: var(--muted);
+}
+.dock-tab svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s cubic-bezier(0.32, 1.25, 0.5, 1);
+}
+.dock-tab[aria-current="page"] {
+  color: var(--brand);
+}
+.dock-tab[aria-current="page"] svg {
+  fill: color-mix(in srgb, var(--brand) 16%, transparent);
+  transform: translateY(-1px) scale(1.06);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dock-pill,
+  .dock-tab svg {
+    transition: none;
+  }
 }

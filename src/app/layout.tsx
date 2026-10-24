@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Naskh_Arabic } from "next/font/google";
+import { IPHONES } from "@/lib/iphones";
 import { getCourse, getLocale, getQuiet, getT } from "@/lib/locale";
 import "./globals.css";
 import { LocaleProvider } from "./Locale";
@@ -13,7 +14,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "merk",
     description: t("Learn a language, one card at a time."),
-    appleWebApp: { capable: true, title: "merk", statusBarStyle: "default" },
+    appleWebApp: {
+      capable: true,
+      title: "merk",
+      statusBarStyle: "default",
+      startupImage: IPHONES.map(([w, h, r]) => ({
+        url: `/splash/${w * r}x${h * r}`,
+        media: `(device-width: ${w}px) and (device-height: ${h}px) and (-webkit-device-pixel-ratio: ${r}) and (orientation: portrait)`,
+      })),
+    },
   };
 }
 

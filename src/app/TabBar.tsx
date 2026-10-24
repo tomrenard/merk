@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { getT } from "@/lib/locale";
+import { Dock } from "./Dock";
 
-/** Line icons (24px, stroke = currentColor), so the active tab simply turns blue. */
+/** Line icons (24px, stroke = currentColor). */
 const ICONS = {
   "/": "M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z",
   "/learn": "M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5",
@@ -17,47 +17,14 @@ const TABS = [
   { href: "/words", label: "Words" },
 ] as const;
 
-/**
- * Bottom navigation of the main screens; `active` is the current tab's href. Sticky at the end
- * of the screen, not fixed: iOS misplaces fixed bars while a page's height changes as you scroll
- * (the course list opening its parts left it floating mid-screen).
- */
+/** Bottom navigation of the main screens; `active` is the current tab's href. */
 export async function TabBar({ active }: { active: (typeof TABS)[number]["href"] }) {
   const t = await getT();
   return (
-    <nav
-      className="line sticky bottom-0 z-10 -mx-4 mt-auto border-t pb-[env(safe-area-inset-bottom)]"
-      style={{ background: "var(--surface)" }}
-    >
-      <ul className="mx-auto grid max-w-md grid-cols-4 px-3 pt-2 pb-1">
-        {TABS.map((tab) => (
-          <li key={tab.href}>
-            <Link
-              href={tab.href}
-              // Loads the whole tab in the background, so tapping it shows it at once.
-              prefetch
-              aria-current={tab.href === active ? "page" : undefined}
-              className={`flex flex-col items-center gap-0.5 py-1 text-xs font-semibold ${
-                tab.href === active ? "text-[var(--brand)]" : "muted"
-              }`}
-            >
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                className="size-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={tab.href === active ? 2.2 : 1.8}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d={ICONS[tab.href]} />
-              </svg>
-              {t(tab.label)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <Dock
+      active={active}
+      label={t("Sections")}
+      tabs={TABS.map((tab) => ({ href: tab.href, label: t(tab.label), icon: ICONS[tab.href] }))}
+    />
   );
 }

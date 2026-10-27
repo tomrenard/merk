@@ -102,7 +102,7 @@ export function governsLabel(governs: string): string {
   return governs.startsWith("+") ? governs : `+ ${governs}`;
 }
 
-const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
+export const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
 
 /** Edit distance (insert, delete, replace one letter). */
 export function distance(a: string, b: string): number {

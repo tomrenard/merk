@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { solved, solvedTr } from "@/lib/audio";
+import { wordsOf } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import { checkDarija, sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
@@ -11,9 +12,6 @@ import { PANEL, SOLID } from "../feedback";
 import { useT } from "../Locale";
 import { speak } from "../review/German";
 import { Say } from "../Say";
-
-/** Words with a letter or digit ("–" and "…" alone don't count). */
-const words = (text: string) => text.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
 
 /**
  * One exercise: gap to type (with the base form), pick one of a few options, or tap words into
@@ -53,7 +51,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
       : item.type === "choice"
         ? picked !== null
         : // Quiet mode's tiles include decoys: ready once it is as long as the sentence.
-          words(built) >= Math.min(...item.answers.map(words));
+          wordsOf(built).length >= Math.min(...item.answers.map((a) => wordsOf(a).length));
 
   function check() {
     const right =

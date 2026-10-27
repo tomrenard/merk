@@ -370,7 +370,8 @@ export async function reviewCard(item: ReviewItem | null, quiet: boolean) {
   const seed = `${card.cardId}:${card.reps}`;
   const choices = await wordChoices(note, seed);
   if (!note.source.endsWith("phrase")) return { ...card, choices };
-  const exercise = tileItem(seed, note.tr ?? note.de, {
+  // The id names the course (courseOfId): Darija is checked and cheered as Darija.
+  const exercise = tileItem(`${note.course === "ary" ? "ary-" : ""}${seed}`, note.tr ?? note.de, {
     en: note.en ?? "",
     de: note.tr ? note.de : undefined,
     pool: choices.options.map((o) => o.tr ?? o.de),

@@ -79,7 +79,8 @@ describe("Quiet mode tiles", () => {
   });
 
   it("doesn't give the start away with a capital, but keeps nouns", () => {
-    const item = tileItem("t", "Die Küche ist klein.", { en: "", pool: ["Ich mag die Küche."] });
+    const pool = ["Ja. Die Küche ist neu.", "Ich mag die Küche."];
+    const item = tileItem("t", "Die Küche ist klein.", { en: "", pool });
     expect(item?.tiles.slice(0, 4)).toEqual(["die", "Küche", "ist", "klein"]);
   });
 });

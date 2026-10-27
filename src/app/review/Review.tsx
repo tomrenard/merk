@@ -11,6 +11,7 @@ import {
   governsLabel,
   spokenForm,
   type TypedResult,
+  withoutArticle,
 } from "@/lib/german";
 import type { SessionLeft } from "@/lib/review";
 import { useCourse, useT } from "../Locale";
@@ -53,7 +54,6 @@ const PICKED: Record<"right" | "wrong" | "article", number[]> = {
 
 /** Quiet mode asks a German noun's article as its own tap (not for plurals: "die" says plural). */
 const ARTICLES = ["der", "die", "das"];
-const withoutArticle = (de: string) => de.replace(/^(der\/die|der|die|das) /, "");
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
   // A phrase can be said many ways: compare yourself, then grade.

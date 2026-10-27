@@ -81,7 +81,7 @@ const DECOYS = 2;
 
 /** A word as a tile: no quotes or end punctuation, which would show where the sentence ends. */
 const tileWord = (word: string) => word.replace(/^[„"«‚(¿¡]+|[.,!?;:…"“”»‘’)؟،]+$/gu, "");
-const wordsOf = (text: string) =>
+export const wordsOf = (text: string) =>
   text
     .split(/\s+/)
     .map(tileWord)
@@ -100,8 +100,12 @@ export function tileItem(
 ): Extract<UnitItem, { type: "order" }> | null {
   const words = wordsOf(sentence);
   if (words.length < 2) return null;
+  // Per sentence: a line of dialogue can hold several ("Ja. Ich bin Claire."), each starting big.
   const capitals = new Set(
-    [sentence, ...pool].flatMap((text) => wordsOf(text).slice(1)).filter((w) => /^\p{Lu}/u.test(w)),
+    [sentence, ...pool]
+      .flatMap((text) => text.split(/(?<=[.!?…])\s+/))
+      .flatMap((text) => wordsOf(text).slice(1))
+      .filter((w) => /^\p{Lu}/u.test(w)),
   );
   const shown = (w: string) => (capitals.has(w) ? w : w.toLowerCase());
   const size = Math.ceil(words.length / MAX_TILES);
@@ -119,8 +123,14 @@ export function tileItem(
   const alike = others.filter((w) =>
     words.some((s) => s.length > 1 && s.slice(0, 2).toLowerCase() === w.slice(0, 2).toLowerCase()),
   );
+  // One of each word, whatever its case: "Mein" and "mein" would be the same decoy twice.
   const decoys = [
-    ...new Set([...seededShuffle(alike, `${id}:alike`), ...seededShuffle(others, `${id}:other`)]),
+    ...new Map(
+      [...seededShuffle(alike, `${id}:alike`), ...seededShuffle(others, `${id}:other`)].map((w) => [
+        w.toLowerCase(),
+        w,
+      ]),
+    ).values(),
   ].slice(0, DECOYS);
   // The sentence as written (shown and heard once solved), and as its tiles make it (checked).
   const answers = [sentence, words.join(" ")];

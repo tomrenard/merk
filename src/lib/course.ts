@@ -1,7 +1,7 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { type Choice, quietItem } from "./choices";
+import { type Choice, quietItem, tileItem } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId } from "./courses";
 import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem, wordChoices } from "./review";
@@ -359,11 +359,23 @@ export function withExercise(item: ReviewItem | null, quiet = false): ReviewCard
   };
 }
 
-/** A card as the review screen shows it; Quiet mode adds options to pick the word from. */
+/**
+ * A card as the review screen shows it. Quiet mode: options to pick the word from; a phrase is
+ * built from its words instead, other phrases giving the decoys.
+ */
 export async function reviewCard(item: ReviewItem | null, quiet: boolean) {
   const card = withExercise(item, quiet);
-  if (!quiet || card?.direction !== "en_de" || card.note.source.endsWith("phrase")) return card;
-  return { ...card, choices: await wordChoices(card.note, `${card.cardId}:${card.reps}`) };
+  if (!quiet || card?.direction !== "en_de") return card;
+  const { note } = card;
+  const seed = `${card.cardId}:${card.reps}`;
+  const choices = await wordChoices(note, seed);
+  if (!note.source.endsWith("phrase")) return { ...card, choices };
+  const exercise = tileItem(seed, note.tr ?? note.de, {
+    en: note.en ?? "",
+    de: note.tr ? note.de : undefined,
+    pool: choices.options.map((o) => o.tr ?? o.de),
+  });
+  return exercise ? { ...card, exercise } : { ...card, choices };
 }
 
 /** The lesson with the most recent activity, to resume it. */

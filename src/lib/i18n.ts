@@ -18,14 +18,20 @@ const FR: Record<string, string> = {
     "Dictée {n}/{total} : quelle phrase entends-tu ?",
   "Listen {n}/{total}: what does it mean?": "Écoute {n}/{total} : qu’est-ce que ça veut dire ?",
   "Read a good answer": "Lis une bonne réponse",
+  "Dictation {n}/{total}: build what you hear":
+    "Dictée {n}/{total} : reconstruis ce que tu entends",
+  "Say it {n}/{total}: think it first, then build it":
+    "Dis-le {n}/{total} : pense-le d’abord, puis reconstruis-le",
+  "Build a good answer {n}/{total}": "Construis une bonne réponse {n}/{total}",
+  "Got it in mind? Show the options": "Tu l’as en tête ? Montre les choix",
   "Notice how it uses this lesson's grammar; you can write your own later.":
     "Remarque comment elle utilise la grammaire de la leçon ; tu pourras écrire la tienne plus tard.",
   "Quiet mode": "Mode discret",
   Sections: "Sections",
   On: "Activé",
   Off: "Désactivé",
-  "Tap only: no typing, no speaking. Gaps, dictations and word cards become choices; you read the model answer instead of writing.":
-    "Seulement toucher : rien à écrire, rien à dire. Les trous, les dictées et les cartes deviennent des choix ; tu lis la réponse modèle au lieu d’écrire.",
+  "Tap only: no typing, no speaking. Gaps and word cards become choices; dictations, speaking and writing become sentences you build from word tiles.":
+    "Seulement toucher : rien à écrire, rien à dire. Les trous et les cartes deviennent des choix ; dictées, oral et écrit deviennent des phrases à reconstruire avec des mots.",
   "Write this in Darija": "Écris ça en darija",
   "Tap, say the sentence, then compare what we heard with it.":
     "Touche, dis la phrase, puis compare-la avec ce qu’on a entendu.",

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { withOthers } from "@/lib/choices";
+import { tileItem, tilePool, withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import { sameDarija } from "@/lib/darija";
 import { sameAnswer } from "@/lib/german";
@@ -11,6 +11,7 @@ import { PANEL, SOLID } from "../../../feedback";
 import { useQuiet, useT } from "../../../Locale";
 import { speak, stopSpeaking, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
+import { Exercise } from "../../Exercise";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 import { Pick } from "../../Pick";
 
@@ -217,7 +218,34 @@ export function Listen({
   // Darija: heard in Arabic, typed and checked in Latin.
   const sentenceTr = unit.dictationTr?.[index];
   const typed = typeof answer === "string" ? answer : "";
-  // Quiet mode: pick the sentence you heard among the lesson's others.
+  const n = { n: index + 1, total: unit.dictation.length };
+  const progressNow = progress + (index / unit.dictation.length) * 0.25;
+  // Quiet mode: build the sentence you hear from its words, with no text to read.
+  const tiles = quiet
+    ? tileItem(`${unit.id}:dictation:${index}`, sentenceTr ?? sentence, {
+        en: "",
+        de: sentenceTr ? sentence : undefined,
+        pool: tilePool(unit),
+      })
+    : null;
+  if (tiles) {
+    return (
+      <PartShell unitId={unit.id} progress={progressNow}>
+        <p className="muted text-sm font-extrabold">
+          {t("Dictation {n}/{total}: build what you hear", n)}
+        </p>
+        <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">
+          🔊 {t("Play")}
+        </button>
+        <Exercise
+          key={tiles.id}
+          item={tiles}
+          onDone={(right) => next(right, unit.dictation.length)}
+        />
+      </PartShell>
+    );
+  }
+  // Quiet mode, a sentence too short for tiles: pick it among the lesson's others.
   const choices = quiet
     ? withOthers(
         { de: sentence, tr: sentenceTr },
@@ -235,16 +263,13 @@ export function Listen({
       ? sameDarija(typed, sentenceTr)
       : sameAnswer(typed, sentence);
   return (
-    <PartShell unitId={unit.id} progress={progress + (index / unit.dictation.length) * 0.25}>
+    <PartShell unitId={unit.id} progress={progressNow}>
       <p className="muted text-sm font-extrabold">
         {t(
           choices
             ? "Dictation {n}/{total}: which sentence do you hear?"
             : "Dictation {n}/{total}: type what you hear",
-          {
-            n: index + 1,
-            total: unit.dictation.length,
-          },
+          n,
         )}
       </p>
       <button type="button" onClick={() => say(sentence)} className="btn self-start text-2xl">

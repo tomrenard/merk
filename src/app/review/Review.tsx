@@ -45,7 +45,15 @@ const RATINGS: Record<TypedResult, number[]> = {
  * keeps a new or missed card in learning (back in 15 minutes, inside the learn-ahead window), so
  * a word picked right every time came back forever.
  */
-const PICKED: Record<"right" | "wrong", number[]> = { right: [3], wrong: [1] };
+const PICKED: Record<"right" | "wrong" | "article", number[]> = {
+  right: [3],
+  wrong: [1],
+  article: [1],
+};
+
+/** Quiet mode asks a German noun's article as its own tap (not for plurals: "die" says plural). */
+const ARTICLES = ["der", "die", "das"];
+const withoutArticle = (de: string) => de.replace(/^(der\/die|der|die|das) /, "");
 
 function typedResult(item: ReviewItem | null, typed: string): TypedResult {
   // A phrase can be said many ways: compare yourself, then grade.
@@ -81,6 +89,9 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const [revealed, setRevealed] = useState(false);
   const [typed, setTyped] = useState("");
   const [picked, setPicked] = useState<number | null>(null);
+  // Quiet mode: options stay hidden until you have the word in mind (recall, then recognise).
+  const [thought, setThought] = useState(false);
+  const [article, setArticle] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
@@ -122,6 +133,8 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
       setRevealed(false);
       setTyped("");
       setPicked(null);
+      setThought(false);
+      setArticle(null);
       shownAt.current = Date.now();
       setItem(next.item);
       setLeft(next.left);
@@ -245,7 +258,13 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   if (item.exercise) {
     return (
       <main className="screen">
-        {header(<span className="chip muted line border">🎓 {note.de}</span>)}
+        {header(
+          <span className="chip muted line border">
+            {item.direction === "unit"
+              ? `🎓 ${note.de}`
+              : `${note.cefr} · ${item.isNew ? t("new") : t("review")}`}
+          </span>,
+        )}
         {/* Right counts as Good, wrong as Again: the exercise is checked, not self-graded. */}
         <Exercise
           key={item.cardId + item.reps}
@@ -257,7 +276,15 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   }
   const { choices } = item;
   const pick = picked === null ? undefined : choices?.options[picked];
-  const pickedResult = pick && (picked === choices?.answer ? "right" : "wrong");
+  const nounArticle = course === "de" && !note.de.includes("(pl.)") ? articleOf(note.de) : null;
+  const asksArticle = Boolean(choices && nounArticle);
+  const pickedResult =
+    pick &&
+    (picked !== choices?.answer
+      ? "wrong"
+      : asksArticle && !nounArticle?.split("/").includes(article ?? "")
+        ? "article"
+        : "right");
   const result = pickedResult ?? typedResult(item, typed);
   const ratings = pickedResult ? PICKED[pickedResult] : RATINGS[result];
 
@@ -303,26 +330,56 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
               )}
             </p>
             {choices ? (
-              <div className="mt-4 grid w-full grid-cols-2 gap-2">
-                {choices.options.map((option, i) => (
-                  <button
-                    key={option.de}
-                    type="button"
-                    disabled={revealed}
-                    onClick={() => {
-                      setPicked(i);
-                      reveal();
-                    }}
-                    className={`btn flex-col gap-0 normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
-                  >
-                    <Headword de={option.de} tr={option.tr} />
-                    {/* After answering: what every option means, not only the right one. */}
-                    {revealed && option.en && (
-                      <span className="muted mt-0.5 block text-sm font-medium">{option.en}</span>
-                    )}
-                  </button>
-                ))}
-              </div>
+              thought && (
+                <>
+                  {asksArticle && (
+                    <div className="mt-4 grid w-full grid-cols-3 gap-2">
+                      {ARTICLES.map((a) => (
+                        <button
+                          key={a}
+                          type="button"
+                          disabled={revealed}
+                          onClick={() => {
+                            setArticle(a);
+                            if (picked !== null) reveal();
+                          }}
+                          aria-pressed={article === a}
+                          className={`btn normal-case ${article === a ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
+                        >
+                          {a}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                  <div className="mt-2 grid w-full grid-cols-2 gap-2">
+                    {choices.options.map((option, i) => (
+                      <button
+                        key={option.de}
+                        type="button"
+                        disabled={revealed}
+                        onClick={() => {
+                          setPicked(i);
+                          if (!asksArticle || article) reveal();
+                        }}
+                        aria-pressed={picked === i}
+                        className={`btn flex-col gap-0 normal-case ${picked === i ? "border-[var(--brand)] bg-[var(--brand-soft)]" : ""}`}
+                      >
+                        {/* The article's colour would give it away until answered. */}
+                        <Headword
+                          de={asksArticle && !revealed ? withoutArticle(option.de) : option.de}
+                          tr={option.tr}
+                        />
+                        {/* After answering: what every option means, not only the right one. */}
+                        {revealed && option.en && (
+                          <span className="muted mt-0.5 block text-sm font-medium">
+                            {option.en}
+                          </span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )
             ) : (
               <form
                 className="mt-4 w-full"
@@ -415,7 +472,17 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
               </button>
             )}
           </div>
-        ) : choices ? null : (
+        ) : choices ? (
+          !thought && (
+            <button
+              type="button"
+              onClick={() => setThought(true)}
+              className="btn btn-primary w-full"
+            >
+              {t("Got it in mind? Show the options")}
+            </button>
+          )
+        ) : (
           <button type="button" onClick={reveal} className="btn btn-primary w-full">
             {t("Show answer")}
           </button>

@@ -12,6 +12,9 @@ import { useT } from "../Locale";
 import { speak } from "../review/German";
 import { Say } from "../Say";
 
+/** Words with a letter or digit ("–" and "…" alone don't count). */
+const words = (text: string) => text.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+
 /**
  * One exercise: gap to type (with the base form), pick one of a few options, or tap words into
  * order. Checked on the spot; `onDone(right)` after Continue.
@@ -49,7 +52,8 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
       ? typed.trim() !== ""
       : item.type === "choice"
         ? picked !== null
-        : placed.length === pool.length;
+        : // Quiet mode's tiles include decoys: ready once it is as long as the sentence.
+          words(built) >= Math.min(...item.answers.map(words));
 
   function check() {
     const right =

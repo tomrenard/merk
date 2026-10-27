@@ -80,7 +80,7 @@ export default async function SettingsPage() {
         <QuietSwitch current={quiet} label={t("Quiet mode")} on={t("On")} off={t("Off")} />
         <span className="muted text-sm">
           {t(
-            "Tap only: no typing, no speaking. Gaps, dictations and word cards become choices; you read the model answer instead of writing.",
+            "Tap only: no typing, no speaking. Gaps and word cards become choices; dictations, speaking and writing become sentences you build from word tiles.",
           )}
         </span>
       </section>

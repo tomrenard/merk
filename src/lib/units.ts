@@ -102,6 +102,8 @@ export const Unit = z.object({
     model: z.string().describe("a model answer in German at the unit's level"),
     modelTr: tr,
     modelEn: z.string().optional().describe("the model answer in English, sentence by sentence"),
+    /** The model one sentence at a time, each with its translation (quiet mode builds them). */
+    sentences: z.array(z.object({ de: z.string(), tr, en: z.string() })).optional(),
   }),
 });
 export type Unit = z.infer<typeof Unit>;
@@ -620,6 +622,14 @@ export function unitProblems(unit: Unit): string[] {
   for (const [i, question] of unit.listening.questions.entries()) {
     if (!question.options[question.answer]) problems.push(`question ${i + 1}: answer out of range`);
   }
+  const { model, modelTr, sentences } = unit.writing;
+  const joined = (texts: (string | undefined)[]) => texts.join(" ").replace(/\s+/g, " ").trim();
+  if (!sentences) problems.push("writing.sentences: missing");
+  else if (
+    joined(sentences.map((s) => s.de)) !== joined([model]) ||
+    (modelTr && joined(sentences.map((s) => s.tr)) !== joined([modelTr]))
+  )
+    problems.push("writing.sentences: don't add up to the model");
   if (unit.id.startsWith("ary-")) problems.push(...latinProblems(unit));
   return problems;
 }

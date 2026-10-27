@@ -27,6 +27,7 @@ import postgres from "postgres";
 import { audioKey, isArabic, normalize, solved } from "../src/lib/audio.ts";
 import type { Exam } from "../src/lib/exams.ts";
 import { spokenForm } from "../src/lib/german.ts";
+import { PAIRS } from "../src/lib/sounds.ts";
 import type { Unit, UnitItem } from "../src/lib/units.ts";
 
 const MODEL = "google/gemini-3.8-flash-lite-tts";
@@ -126,6 +127,8 @@ for (const exam of exams) {
   for (const item of exam.sprachbausteine) add(solved({ ...item, type: "choice" } as UnitItem));
   for (const task of [...exam.schreiben, ...exam.sprechen]) add(task.model);
 }
+// Sound-alike pairs: the drill needs a clear voice for ü/u, long/short vowels.
+for (const pair of PAIRS) for (const word of pair.words) add(word);
 // Darija words too: phones have no Darija voice, so a word card is silent without a recording.
 const darijaWords = "data/darija/words.json";
 if (existsSync(darijaWords))

@@ -74,3 +74,65 @@ export function quietItem(unit: Unit, item: UnitItem, seed?: string): UnitItem {
     en: item.en,
   };
 }
+
+/** At most this many tiles on a phone screen; a longer sentence comes in chunks of words. */
+const MAX_TILES = 8;
+const DECOYS = 2;
+
+/** A word as a tile: no quotes or end punctuation, which would show where the sentence ends. */
+const tileWord = (word: string) => word.replace(/^[„"«‚(¿¡]+|[.,!?;:…"“”»‘’)؟،]+$/gu, "");
+const wordsOf = (text: string) =>
+  text
+    .split(/\s+/)
+    .map(tileWord)
+    .filter((w) => /[\p{L}\p{N}]/u.test(w));
+
+/**
+ * Quiet mode: build `sentence` (German, or Darija in Latin) by tapping its words into order,
+ * among `DECOYS` other words of the lesson (`pool`), first those that look alike (den/dem).
+ * A word keeps its capital only if the lesson also writes it so mid-sentence (a German noun,
+ * Sie), so the first tile doesn't give the start away. `de`: Darija's Arabic, shown once solved.
+ */
+export function tileItem(
+  id: string,
+  sentence: string,
+  { en, de, pool }: { en: string; de?: string; pool: readonly string[] },
+): Extract<UnitItem, { type: "order" }> | null {
+  const words = wordsOf(sentence);
+  if (words.length < 2) return null;
+  const capitals = new Set(
+    [sentence, ...pool].flatMap((text) => wordsOf(text).slice(1)).filter((w) => /^\p{Lu}/u.test(w)),
+  );
+  const shown = (w: string) => (capitals.has(w) ? w : w.toLowerCase());
+  const size = Math.ceil(words.length / MAX_TILES);
+  const tiles = Array.from({ length: Math.ceil(words.length / size) }, (_, i) =>
+    words
+      .slice(i * size, (i + 1) * size)
+      .map(shown)
+      .join(" "),
+  );
+
+  const used = new Set(words.map((w) => w.toLowerCase()));
+  const others = [...new Set(pool.flatMap(wordsOf).map(shown))].filter(
+    (w) => !used.has(w.toLowerCase()),
+  );
+  const alike = others.filter((w) =>
+    words.some((s) => s.length > 1 && s.slice(0, 2).toLowerCase() === w.slice(0, 2).toLowerCase()),
+  );
+  const decoys = [
+    ...new Set([...seededShuffle(alike, `${id}:alike`), ...seededShuffle(others, `${id}:other`)]),
+  ].slice(0, DECOYS);
+  // The sentence as written (shown and heard once solved), and as its tiles make it (checked).
+  const answers = [sentence, words.join(" ")];
+  return { id, type: "order", tiles: [...tiles, ...decoys], answers, de, en };
+}
+
+/** The lesson's sentences as tiles are made of (Darija in Latin): where decoys come from. */
+export const tilePool = (unit: Unit): string[] =>
+  [
+    ...unit.listening.lines,
+    ...unit.speaking,
+    ...unit.dictation.map((de, i) => ({ de, tr: unit.dictationTr?.[i] })),
+  ]
+    .map((s) => s.tr ?? s.de)
+    .filter((text) => !/\p{Script=Arabic}/u.test(text));

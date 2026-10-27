@@ -81,7 +81,7 @@ export default function SoundsPage() {
       </p>
       <button
         type="button"
-        onClick={() => item && speak(item.pair.words[item.said])}
+        onClick={() => item && speak(item.pair.words[item.said], { recorded: true })}
         className="btn btn-primary py-5 text-xl"
       >
         🔊 {t("Play")}
@@ -109,7 +109,7 @@ export default function SoundsPage() {
               <button
                 key={word}
                 type="button"
-                onClick={() => speak(word)}
+                onClick={() => speak(word, { recorded: true })}
                 className="chip line border"
               >
                 🔊 {word}

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Failure } from "@/lib/ai";
-import { withOthers } from "@/lib/choices";
+import { tileItem, tilePool, withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import { spokenWords } from "@/lib/german";
 import type { Unit } from "@/lib/units";
@@ -13,6 +13,7 @@ import { PANEL } from "../../../feedback";
 import { useQuiet, useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
+import { Exercise } from "../../Exercise";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 import { Pick } from "../../Pick";
 
@@ -39,8 +40,10 @@ export function Speak({
   const [failure, setFailure] = useState<Failure | null>(null);
   const [listening, setListening] = useState(false);
   const quiet = useQuiet();
-  // Quiet mode: no recording; you hear the line and pick what it means.
+  // Quiet mode: no recording; you build the line from its meaning (or, too short for tiles,
+  // pick what it means). Right answers count; out loud, every line said counts.
   const [meaning, setMeaning] = useState<number | null>(null);
+  const [score, setScore] = useState(0);
   const line = lines[index];
   // Enough time for the line said slowly, then it stops and checks by itself.
   const seconds = Math.min(20, 3 + Math.ceil((line?.de.split(" ").length ?? 5) * 0.7));
@@ -67,13 +70,15 @@ export function Speak({
     };
   }, [clip, course]);
 
-  function next() {
+  function next(right = true) {
+    const total = score + (right ? 1 : 0);
+    setScore(total);
     reset();
     setHeard(null);
     setFailure(null);
     setMeaning(null);
     if (index + 1 < lines.length) setIndex(index + 1);
-    else save(lines.length, lines.length);
+    else save(total, lines.length);
   }
 
   if (finished || !line) {
@@ -96,6 +101,27 @@ export function Speak({
     missed: spokenWords(word).some((w) => !said.has(w)),
   }));
   const missed = shown.filter((w) => w.missed).map((w) => w.word.replace(/[.,!?;:]/g, ""));
+
+  const tiles = quiet
+    ? tileItem(`${unit.id}:speak:${index}`, line.tr ?? line.de, {
+        en: line.en,
+        de: line.tr ? line.de : undefined,
+        pool: tilePool(unit),
+      })
+    : null;
+  if (tiles) {
+    return (
+      <PartShell unitId={unit.id} progress={index / lines.length}>
+        <p className="muted text-sm font-extrabold">
+          {t("Say it {n}/{total}: think it first, then build it", {
+            n: index + 1,
+            total: lines.length,
+          })}
+        </p>
+        <Exercise key={tiles.id} item={tiles} onDone={next} />
+      </PartShell>
+    );
+  }
 
   if (quiet) {
     const meanings = withOthers(
@@ -130,7 +156,7 @@ export function Speak({
         <button
           type="button"
           disabled={meaning === null}
-          onClick={next}
+          onClick={() => next(right)}
           className="btn btn-primary mt-auto disabled:opacity-50"
         >
           {index + 1 < lines.length ? t("Next line") : t("Finish")}
@@ -212,7 +238,7 @@ export function Speak({
           )}
         </p>
       )}
-      <button type="button" onClick={next} className="btn mt-auto">
+      <button type="button" onClick={() => next()} className="btn mt-auto">
         {index + 1 < lines.length ? t("Next line") : t("Finish")}
       </button>
     </PartShell>

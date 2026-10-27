@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import type { Failure, Feedback } from "@/lib/ai";
+import { tileItem, tilePool } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import type { Unit } from "@/lib/units";
 import { checkWriting } from "../../../ai/actions";
@@ -9,6 +10,7 @@ import { AiFailure, FeedbackCard } from "../../../ai/Feedback";
 import { useQuiet, useT } from "../../../Locale";
 import { speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
+import { Exercise } from "../../Exercise";
 import { PartDone, PartShell, usePartSave } from "../../PartShell";
 
 /**
@@ -32,6 +34,21 @@ export function Write({
   const [marked, setMarked] = useState<Feedback | null>(null);
   const [failure, setFailure] = useState<Failure | null>(null);
   const [checking, startChecking] = useTransition();
+  // Quiet mode: build the model sentence by sentence (greetings and names of two words are
+  // skipped), then read it whole.
+  const [step, setStep] = useState(0);
+  const [built, setBuilt] = useState(0);
+  const sentences = unit.writing.sentences ?? [];
+  const pool = [...tilePool(unit), ...sentences.map((s) => s.tr ?? s.de)];
+  const tiles = sentences.flatMap((s, i) =>
+    s.de.split(/\s+/).length < 3
+      ? []
+      : (tileItem(`${unit.id}:write:${i}`, s.tr ?? s.de, {
+          en: s.en,
+          de: s.tr ? s.de : undefined,
+          pool,
+        }) ?? []),
+  );
 
   function check() {
     startChecking(async () => {
@@ -59,7 +76,27 @@ export function Write({
     );
   }
 
-  // Quiet mode: no writing; you read and hear a good answer to the task.
+  const sentence = quiet ? tiles[step] : undefined;
+  if (sentence) {
+    return (
+      <PartShell unitId={unit.id} progress={(step / tiles.length) * 0.5}>
+        <p className="muted text-sm font-extrabold">
+          {t("Build a good answer {n}/{total}", { n: step + 1, total: tiles.length })}
+        </p>
+        <p className="text-xl font-black leading-snug">{unit.writing.task}</p>
+        <Exercise
+          key={sentence.id}
+          item={sentence}
+          onDone={(right) => {
+            setBuilt(built + (right ? 1 : 0));
+            setStep(step + 1);
+          }}
+        />
+      </PartShell>
+    );
+  }
+
+  // Quiet mode, every sentence built: read and hear the whole answer.
   if (quiet) {
     return (
       <PartShell unitId={unit.id} progress={0.5}>
@@ -80,7 +117,11 @@ export function Write({
         <p className="muted text-sm font-semibold">
           {t("Notice how it uses this lesson's grammar; you can write your own later.")}
         </p>
-        <button type="button" onClick={() => save(1, 1)} className="btn btn-primary mt-auto">
+        <button
+          type="button"
+          onClick={() => (tiles.length ? save(built, tiles.length) : save(1, 1))}
+          className="btn btn-primary mt-auto"
+        >
           {t("Finish")}
         </button>
       </PartShell>

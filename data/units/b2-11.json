@@ -494,6 +494,52 @@
  "writing": {
   "task": "You're organising a barbecue with friends on Saturday. Write a group message of about 100 words explaining the plan and what will happen under which conditions, using falls, sofern, je nachdem, indem and so … dass.",
   "model": "Hallo zusammen,\n\nam Samstag grillen wir im Stadtpark, sofern das Wetter mitspielt. Falls es regnet, treffen wir uns stattdessen bei mir in der Wohnung. Je nachdem, wie viele Leute kommen, kaufe ich zwei oder drei Kilo Fleisch und Gemüse. Bitte sagt mir deshalb bis Donnerstag Bescheid. Wir können die Kosten niedrig halten, indem jeder etwas mitbringt: einen Salat, Getränke oder Brot. Letztes Jahr hatten wir so viel Essen, dass alle am Ende noch etwas mit nach Hause nehmen konnten. Schreibt also bitte in die Gruppe, was ihr mitbringt. Falls ihr Fragen habt, ruft mich einfach an!\n\nViele Grüße\nClaire",
-  "modelEn": "Hello everyone,\n\non Saturday we're having a barbecue in the city park, provided the weather plays along. If it rains, we'll meet at my apartment instead. Depending on how many people come, I'll buy two or three kilos of meat and vegetables. So please let me know by Thursday. We can keep the costs low by everyone bringing something: a salad, drinks or bread. Last year we had so much food that everyone could take something home at the end. So please write in the group what you're bringing. If you have questions, just call me!\n\nKind regards\nClaire"
+  "modelEn": "Hello everyone,\n\non Saturday we're having a barbecue in the city park, provided the weather plays along. If it rains, we'll meet at my apartment instead. Depending on how many people come, I'll buy two or three kilos of meat and vegetables. So please let me know by Thursday. We can keep the costs low by everyone bringing something: a salad, drinks or bread. Last year we had so much food that everyone could take something home at the end. So please write in the group what you're bringing. If you have questions, just call me!\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Hallo zusammen,",
+    "en": "Hello everyone,"
+   },
+   {
+    "de": "am Samstag grillen wir im Stadtpark, sofern das Wetter mitspielt.",
+    "en": "on Saturday we're having a barbecue in the city park, provided the weather plays along."
+   },
+   {
+    "de": "Falls es regnet, treffen wir uns stattdessen bei mir in der Wohnung.",
+    "en": "If it rains, we'll meet at my apartment instead."
+   },
+   {
+    "de": "Je nachdem, wie viele Leute kommen, kaufe ich zwei oder drei Kilo Fleisch und Gemüse.",
+    "en": "Depending on how many people come, I'll buy two or three kilos of meat and vegetables."
+   },
+   {
+    "de": "Bitte sagt mir deshalb bis Donnerstag Bescheid.",
+    "en": "So please let me know by Thursday."
+   },
+   {
+    "de": "Wir können die Kosten niedrig halten, indem jeder etwas mitbringt: einen Salat, Getränke oder Brot.",
+    "en": "We can keep the costs low by everyone bringing something: a salad, drinks or bread."
+   },
+   {
+    "de": "Letztes Jahr hatten wir so viel Essen, dass alle am Ende noch etwas mit nach Hause nehmen konnten.",
+    "en": "Last year we had so much food that everyone could take something home at the end."
+   },
+   {
+    "de": "Schreibt also bitte in die Gruppe, was ihr mitbringt.",
+    "en": "So please write in the group what you're bringing."
+   },
+   {
+    "de": "Falls ihr Fragen habt, ruft mich einfach an!",
+    "en": "If you have questions, just call me!"
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

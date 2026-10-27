@@ -509,6 +509,48 @@
  "writing": {
   "task": "You're sick and the doctor has signed you off until Friday. Write an 80–100-word email to your boss: say that you're sick and for how long, explain where the sick note goes, and say what should happen with your work while you're away.",
   "model": "Liebe Frau Krüger,\n\nleider bin ich seit gestern Abend krank. Heute Morgen war ich beim Arzt, und er hat mich bis Freitag krankgeschrieben. Die Krankmeldung schickt die Praxis direkt an meine Krankenkasse, Sie können sie dort abrufen. Am Montag bin ich hoffentlich wieder im Büro. Das Treffen mit dem neuen Kunden am Mittwoch kann leider nicht ohne mich stattfinden. Könnten Sie es bitte auf nächste Woche verschieben? Die Unterlagen für das Projekt liegen auf meinem Schreibtisch, wenn Herr Yilmaz sie braucht.\n\nViele Grüße\nCamille Durand",
-  "modelEn": "Dear Ms. Krüger,\n\nunfortunately I have been sick since yesterday evening. This morning I was at the doctor's, and he signed me off sick until Friday. The practice sends the sick note directly to my health insurance, you can retrieve it there. On Monday I will hopefully be back in the office. The meeting with the new customer on Wednesday unfortunately can't take place without me. Could you please postpone it to next week? The documents for the project are on my desk, in case Mr. Yilmaz needs them.\n\nKind regards\nCamille Durand"
+  "modelEn": "Dear Ms. Krüger,\n\nunfortunately I have been sick since yesterday evening. This morning I was at the doctor's, and he signed me off sick until Friday. The practice sends the sick note directly to my health insurance, you can retrieve it there. On Monday I will hopefully be back in the office. The meeting with the new customer on Wednesday unfortunately can't take place without me. Could you please postpone it to next week? The documents for the project are on my desk, in case Mr. Yilmaz needs them.\n\nKind regards\nCamille Durand",
+  "sentences": [
+   {
+    "de": "Liebe Frau Krüger,",
+    "en": "Dear Ms. Krüger,"
+   },
+   {
+    "de": "leider bin ich seit gestern Abend krank.",
+    "en": "unfortunately I have been sick since yesterday evening."
+   },
+   {
+    "de": "Heute Morgen war ich beim Arzt, und er hat mich bis Freitag krankgeschrieben.",
+    "en": "This morning I was at the doctor's, and he signed me off sick until Friday."
+   },
+   {
+    "de": "Die Krankmeldung schickt die Praxis direkt an meine Krankenkasse, Sie können sie dort abrufen.",
+    "en": "The practice sends the sick note directly to my health insurance, you can retrieve it there."
+   },
+   {
+    "de": "Am Montag bin ich hoffentlich wieder im Büro.",
+    "en": "On Monday I will hopefully be back in the office."
+   },
+   {
+    "de": "Das Treffen mit dem neuen Kunden am Mittwoch kann leider nicht ohne mich stattfinden.",
+    "en": "The meeting with the new customer on Wednesday unfortunately can't take place without me."
+   },
+   {
+    "de": "Könnten Sie es bitte auf nächste Woche verschieben?",
+    "en": "Could you please postpone it to next week?"
+   },
+   {
+    "de": "Die Unterlagen für das Projekt liegen auf meinem Schreibtisch, wenn Herr Yilmaz sie braucht.",
+    "en": "The documents for the project are on my desk, in case Mr. Yilmaz needs them."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Camille Durand",
+    "en": "Camille Durand"
+   }
+  ]
  }
 }

@@ -491,6 +491,44 @@
  "writing": {
   "task": "Write a message of 80–100 words to a friend about habits you have changed recently. Say what you do now instead of what you did before, and tell about one thing you did without thinking.",
   "model": "Hallo Marie,\n\nich habe in den letzten Wochen einiges geändert! Statt jeden Morgen mit der U-Bahn zu fahren, gehe ich jetzt zu Fuß ins Büro. Das dauert zwanzig Minuten, aber es tut mir gut. Mittags esse ich in der Kantine, statt nur ein Brötchen am Schreibtisch zu essen. Und abends lerne ich Deutsch, statt stundenlang fernzusehen. Gestern ist mir aber etwas Lustiges passiert: Ich bin aus dem Haus gegangen, ohne die Schuhe zu wechseln, und war in Hausschuhen im Supermarkt!\n\nLiebe Grüße\nClaire",
-  "modelEn": "Hello Marie,\n\nI've changed quite a few things in the last weeks! Instead of taking the subway every morning, I now walk to the office. It takes twenty minutes, but it does me good. At lunch I eat in the canteen, instead of just eating a bread roll at my desk. And in the evening I study German, instead of watching TV for hours. Yesterday, though, something funny happened to me: I left the house without changing my shoes, and I was at the supermarket in slippers!\n\nKind regards\nClaire"
+  "modelEn": "Hello Marie,\n\nI've changed quite a few things in the last weeks! Instead of taking the subway every morning, I now walk to the office. It takes twenty minutes, but it does me good. At lunch I eat in the canteen, instead of just eating a bread roll at my desk. And in the evening I study German, instead of watching TV for hours. Yesterday, though, something funny happened to me: I left the house without changing my shoes, and I was at the supermarket in slippers!\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Hallo Marie,",
+    "en": "Hello Marie,"
+   },
+   {
+    "de": "ich habe in den letzten Wochen einiges geändert!",
+    "en": "I've changed quite a few things in the last weeks!"
+   },
+   {
+    "de": "Statt jeden Morgen mit der U-Bahn zu fahren, gehe ich jetzt zu Fuß ins Büro.",
+    "en": "Instead of taking the subway every morning, I now walk to the office."
+   },
+   {
+    "de": "Das dauert zwanzig Minuten, aber es tut mir gut.",
+    "en": "It takes twenty minutes, but it does me good."
+   },
+   {
+    "de": "Mittags esse ich in der Kantine, statt nur ein Brötchen am Schreibtisch zu essen.",
+    "en": "At lunch I eat in the canteen, instead of just eating a bread roll at my desk."
+   },
+   {
+    "de": "Und abends lerne ich Deutsch, statt stundenlang fernzusehen.",
+    "en": "And in the evening I study German, instead of watching TV for hours."
+   },
+   {
+    "de": "Gestern ist mir aber etwas Lustiges passiert: Ich bin aus dem Haus gegangen, ohne die Schuhe zu wechseln, und war in Hausschuhen im Supermarkt!",
+    "en": "Yesterday, though, something funny happened to me: I left the house without changing my shoes, and I was at the supermarket in slippers!"
+   },
+   {
+    "de": "Liebe Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

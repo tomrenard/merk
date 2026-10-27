@@ -486,6 +486,52 @@
  "writing": {
   "task": "A new colleague, Mr Lang, starts tomorrow, but you won't be there. Write a message of 80–100 words to your team: introduce him, ask someone to show him around, and pass on something urgent about a customer.",
   "model": "Liebes Team,\n\nmorgen fängt unser neuer Kollege an, Herr Lang. Er kommt aus Köln und war vorher Praktikant bei einer Bank. Leider bin ich morgen nicht im Büro. Kann jemand bitte den neuen Kollegen um neun Uhr am Empfang abholen und ihm alles zeigen? Lisa, kannst du Herrn Lang bitte auch unser Programm für die Kundendaten erklären? Noch etwas: Ein Kunde aus Hamburg wartet auf ein Angebot. Bitte schickt dem Kunden das Angebot bis Mittwoch, sonst ist er bestimmt nicht zufrieden. Am Donnerstag bin ich wieder da.\n\nViele Grüße\nClaire",
-  "modelEn": "Dear team,\n\ntomorrow our new colleague starts, Mr. Lang. He comes from Cologne and was previously an intern at a bank. Unfortunately I'm not in the office tomorrow. Can someone please pick up the new colleague at reception at nine o'clock and show him everything? Lisa, can you please also explain our customer data program to Mr. Lang? One more thing: a customer from Hamburg is waiting for an offer. Please send the customer the offer by Wednesday, otherwise he surely won't be satisfied. On Thursday I'm back.\n\nKind regards\nClaire"
+  "modelEn": "Dear team,\n\ntomorrow our new colleague starts, Mr. Lang. He comes from Cologne and was previously an intern at a bank. Unfortunately I'm not in the office tomorrow. Can someone please pick up the new colleague at reception at nine o'clock and show him everything? Lisa, can you please also explain our customer data program to Mr. Lang? One more thing: a customer from Hamburg is waiting for an offer. Please send the customer the offer by Wednesday, otherwise he surely won't be satisfied. On Thursday I'm back.\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Liebes Team,",
+    "en": "Dear team,"
+   },
+   {
+    "de": "morgen fängt unser neuer Kollege an, Herr Lang.",
+    "en": "tomorrow our new colleague starts, Mr. Lang."
+   },
+   {
+    "de": "Er kommt aus Köln und war vorher Praktikant bei einer Bank.",
+    "en": "He comes from Cologne and was previously an intern at a bank."
+   },
+   {
+    "de": "Leider bin ich morgen nicht im Büro.",
+    "en": "Unfortunately I'm not in the office tomorrow."
+   },
+   {
+    "de": "Kann jemand bitte den neuen Kollegen um neun Uhr am Empfang abholen und ihm alles zeigen?",
+    "en": "Can someone please pick up the new colleague at reception at nine o'clock and show him everything?"
+   },
+   {
+    "de": "Lisa, kannst du Herrn Lang bitte auch unser Programm für die Kundendaten erklären?",
+    "en": "Lisa, can you please also explain our customer data program to Mr. Lang?"
+   },
+   {
+    "de": "Noch etwas: Ein Kunde aus Hamburg wartet auf ein Angebot.",
+    "en": "One more thing: a customer from Hamburg is waiting for an offer."
+   },
+   {
+    "de": "Bitte schickt dem Kunden das Angebot bis Mittwoch, sonst ist er bestimmt nicht zufrieden.",
+    "en": "Please send the customer the offer by Wednesday, otherwise he surely won't be satisfied."
+   },
+   {
+    "de": "Am Donnerstag bin ich wieder da.",
+    "en": "On Thursday I'm back."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

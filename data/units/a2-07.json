@@ -457,6 +457,32 @@
  "writing": {
   "task": "You can't go to work today. Write 5–6 sentences to your boss: give reasons with weil and say what you think or hope with dass.",
   "model": "Liebe Frau Schmidt, leider kann ich heute nicht ins Büro kommen, weil ich krank bin. Ich habe seit gestern Fieber. Ich glaube, dass ich morgen wieder arbeiten kann. Die Dokumente für Herrn Klein liegen auf meinem Schreibtisch. Ich hoffe, dass das kein Problem ist. Viele Grüße, Anna Martin",
-  "modelEn": "Dear Ms. Schmidt, unfortunately I can't come to the office today because I'm sick. I have had a fever since yesterday. I think that I can work again tomorrow. The documents for Mr. Klein are on my desk. I hope that this isn't a problem. Kind regards, Anna Martin"
+  "modelEn": "Dear Ms. Schmidt, unfortunately I can't come to the office today because I'm sick. I have had a fever since yesterday. I think that I can work again tomorrow. The documents for Mr. Klein are on my desk. I hope that this isn't a problem. Kind regards, Anna Martin",
+  "sentences": [
+   {
+    "de": "Liebe Frau Schmidt, leider kann ich heute nicht ins Büro kommen, weil ich krank bin.",
+    "en": "Dear Ms. Schmidt, unfortunately I can't come to the office today because I'm sick."
+   },
+   {
+    "de": "Ich habe seit gestern Fieber.",
+    "en": "I have had a fever since yesterday."
+   },
+   {
+    "de": "Ich glaube, dass ich morgen wieder arbeiten kann.",
+    "en": "I think that I can work again tomorrow."
+   },
+   {
+    "de": "Die Dokumente für Herrn Klein liegen auf meinem Schreibtisch.",
+    "en": "The documents for Mr. Klein are on my desk."
+   },
+   {
+    "de": "Ich hoffe, dass das kein Problem ist.",
+    "en": "I hope that this isn't a problem."
+   },
+   {
+    "de": "Viele Grüße, Anna Martin",
+    "en": "Kind regards, Anna Martin"
+   }
+  ]
  }
 }

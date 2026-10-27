@@ -468,6 +468,32 @@
  "writing": {
   "task": "Write 5–6 sentences about your childhood: where you lived, what you had, and what you could, had to and wanted to do.",
   "model": "Als Kind habe ich in Lyon gewohnt. Wir hatten eine Wohnung im Zentrum und eine Katze. Ich war oft im Park. Mit fünf konnte ich schon Rad fahren. Jeden Mittwoch musste ich zum Sport gehen. Ich wollte immer einen Hund, aber ich durfte keinen haben.",
-  "modelEn": "As a child I lived in Lyon. We had an apartment in the center and a cat. I was often in the park. At five I could already ride a bike. Every Wednesday I had to go to sports. I always wanted a dog, but I wasn't allowed to have one."
+  "modelEn": "As a child I lived in Lyon. We had an apartment in the center and a cat. I was often in the park. At five I could already ride a bike. Every Wednesday I had to go to sports. I always wanted a dog, but I wasn't allowed to have one.",
+  "sentences": [
+   {
+    "de": "Als Kind habe ich in Lyon gewohnt.",
+    "en": "As a child I lived in Lyon."
+   },
+   {
+    "de": "Wir hatten eine Wohnung im Zentrum und eine Katze.",
+    "en": "We had an apartment in the center and a cat."
+   },
+   {
+    "de": "Ich war oft im Park.",
+    "en": "I was often in the park."
+   },
+   {
+    "de": "Mit fünf konnte ich schon Rad fahren.",
+    "en": "At five I could already ride a bike."
+   },
+   {
+    "de": "Jeden Mittwoch musste ich zum Sport gehen.",
+    "en": "Every Wednesday I had to go to sports."
+   },
+   {
+    "de": "Ich wollte immer einen Hund, aber ich durfte keinen haben.",
+    "en": "I always wanted a dog, but I wasn't allowed to have one."
+   }
+  ]
  }
 }

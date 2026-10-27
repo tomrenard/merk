@@ -468,6 +468,60 @@
  "writing": {
   "task": "A friend from Italy has just moved to your city. Write an 80–100-word message explaining how registering at the Bürgeramt works.",
   "model": "Hallo Marco,\n\nwillkommen in Leipzig! Du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden. So geht es: Zuerst wird online ein Termin gebucht. Das Formular wird vorher ausgefüllt und unterschrieben. Vergiss die Bestätigung von deinem Vermieter nicht! Beim Termin werden deine Daten in den Computer eingegeben, und dein Pass wird geprüft. Die Anmeldung kostet nichts. Am Ende bekommst du eine Meldebescheinigung. Die wird oft gebraucht, zum Beispiel bei der Bank oder bei der Krankenkasse. Wenn du Hilfe brauchst, komme ich gern mit.\n\nLiebe Grüße\nClaire",
-  "modelEn": "Hello Marco,\n\nwelcome to Leipzig! You have to register at the registration office within the first two weeks. This is how it works: first an appointment is booked online. The form is filled out and signed beforehand. Don't forget the confirmation from your landlord! At the appointment your data is entered into the computer, and your passport is checked. The registration costs nothing. In the end you get a registration certificate. It is often needed, for example at the bank or at the health insurance. If you need help, I'm happy to come along.\n\nKind regards\nClaire"
+  "modelEn": "Hello Marco,\n\nwelcome to Leipzig! You have to register at the registration office within the first two weeks. This is how it works: first an appointment is booked online. The form is filled out and signed beforehand. Don't forget the confirmation from your landlord! At the appointment your data is entered into the computer, and your passport is checked. The registration costs nothing. In the end you get a registration certificate. It is often needed, for example at the bank or at the health insurance. If you need help, I'm happy to come along.\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Hallo Marco,",
+    "en": "Hello Marco,"
+   },
+   {
+    "de": "willkommen in Leipzig!",
+    "en": "welcome to Leipzig!"
+   },
+   {
+    "de": "Du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden.",
+    "en": "You have to register at the registration office within the first two weeks."
+   },
+   {
+    "de": "So geht es: Zuerst wird online ein Termin gebucht.",
+    "en": "This is how it works: first an appointment is booked online."
+   },
+   {
+    "de": "Das Formular wird vorher ausgefüllt und unterschrieben.",
+    "en": "The form is filled out and signed beforehand."
+   },
+   {
+    "de": "Vergiss die Bestätigung von deinem Vermieter nicht!",
+    "en": "Don't forget the confirmation from your landlord!"
+   },
+   {
+    "de": "Beim Termin werden deine Daten in den Computer eingegeben, und dein Pass wird geprüft.",
+    "en": "At the appointment your data is entered into the computer, and your passport is checked."
+   },
+   {
+    "de": "Die Anmeldung kostet nichts.",
+    "en": "The registration costs nothing."
+   },
+   {
+    "de": "Am Ende bekommst du eine Meldebescheinigung.",
+    "en": "In the end you get a registration certificate."
+   },
+   {
+    "de": "Die wird oft gebraucht, zum Beispiel bei der Bank oder bei der Krankenkasse.",
+    "en": "It is often needed, for example at the bank or at the health insurance."
+   },
+   {
+    "de": "Wenn du Hilfe brauchst, komme ich gern mit.",
+    "en": "If you need help, I'm happy to come along."
+   },
+   {
+    "de": "Liebe Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

@@ -518,6 +518,52 @@
  "writing": {
   "task": "The window in your bedroom doesn't close properly and it's cold. Write an 80–100-word email to the Hausverwaltung: describe the problem, say since when, and ask for a repair.",
   "model": "Betreff: Defektes Fenster, Lindenstraße 12, 3. Stock\n\nSehr geehrte Damen und Herren,\n\nseit zwei Wochen kann man das Fenster in meinem Schlafzimmer nicht mehr richtig schließen. Wegen des kalten Wetters ist es im Zimmer jetzt sehr kalt, und die Heizkosten steigen. Der Hausmeister hat sich das Fenster schon angesehen, aber er kann es nicht reparieren. Bitte schicken Sie so schnell wie möglich einen Handwerker. Ich bin entweder vormittags oder ab 17 Uhr zu Hause. Fotos vom Fenster finden Sie im Anhang. Ich bitte Sie um eine kurze Antwort.\n\nMit freundlichen Grüßen\nAntoine Petit",
-  "modelEn": "Subject: Defective window, Lindenstraße 12, 3rd floor\n\nDear Sir or Madam,\n\nfor two weeks the window in my bedroom can no longer be closed properly. Because of the cold weather it is now very cold in the room, and the heating costs are rising. The caretaker has already looked at the window, but he can't repair it. Please send a tradesperson as soon as possible. I am at home either in the morning or from 5 p.m. You will find photos of the window in the attachment. I ask you for a short reply.\n\nKind regards\nAntoine Petit"
+  "modelEn": "Subject: Defective window, Lindenstraße 12, 3rd floor\n\nDear Sir or Madam,\n\nfor two weeks the window in my bedroom can no longer be closed properly. Because of the cold weather it is now very cold in the room, and the heating costs are rising. The caretaker has already looked at the window, but he can't repair it. Please send a tradesperson as soon as possible. I am at home either in the morning or from 5 p.m. You will find photos of the window in the attachment. I ask you for a short reply.\n\nKind regards\nAntoine Petit",
+  "sentences": [
+   {
+    "de": "Betreff: Defektes Fenster, Lindenstraße 12, 3. Stock",
+    "en": "Subject: Defective window, Lindenstraße 12, 3rd floor"
+   },
+   {
+    "de": "Sehr geehrte Damen und Herren,",
+    "en": "Dear Sir or Madam,"
+   },
+   {
+    "de": "seit zwei Wochen kann man das Fenster in meinem Schlafzimmer nicht mehr richtig schließen.",
+    "en": "for two weeks the window in my bedroom can no longer be closed properly."
+   },
+   {
+    "de": "Wegen des kalten Wetters ist es im Zimmer jetzt sehr kalt, und die Heizkosten steigen.",
+    "en": "Because of the cold weather it is now very cold in the room, and the heating costs are rising."
+   },
+   {
+    "de": "Der Hausmeister hat sich das Fenster schon angesehen, aber er kann es nicht reparieren.",
+    "en": "The caretaker has already looked at the window, but he can't repair it."
+   },
+   {
+    "de": "Bitte schicken Sie so schnell wie möglich einen Handwerker.",
+    "en": "Please send a tradesperson as soon as possible."
+   },
+   {
+    "de": "Ich bin entweder vormittags oder ab 17 Uhr zu Hause.",
+    "en": "I am at home either in the morning or from 5 p.m."
+   },
+   {
+    "de": "Fotos vom Fenster finden Sie im Anhang.",
+    "en": "You will find photos of the window in the attachment."
+   },
+   {
+    "de": "Ich bitte Sie um eine kurze Antwort.",
+    "en": "I ask you for a short reply."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Antoine Petit",
+    "en": "Antoine Petit"
+   }
+  ]
  }
 }

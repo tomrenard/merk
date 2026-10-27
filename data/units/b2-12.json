@@ -494,6 +494,64 @@
  "writing": {
   "task": "Your heating is broken. Write two short messages, about 100 words in total: a formal email to your landlord asking for a repair, and an informal message to a friend telling them about it and asking a favour.",
   "model": "Sehr geehrter Herr Schulz,\n\nleider ist die Heizung in meiner Wohnung seit Montag erneut defekt. In den Zimmern sind es nur noch 15 Grad. Könnten Sie bitte so bald wie möglich einen Handwerker schicken? Ich bin jeden Tag ab 17 Uhr zu Hause. Ich bitte um eine kurze Rückmeldung.\n\nMit freundlichen Grüßen\nClaire Martin\n\nHey Lena,\n\nmeine Heizung ist schon wieder kaputt – ich hab echt die Nase voll! Kann ich heute Abend bei dir duschen? Ich bring auch Pizza mit. Drück mir die Daumen, dass der Vermieter sich schnell meldet!\n\nLG Claire",
-  "modelEn": "Dear Mr. Schulz,\n\nunfortunately the heating in my apartment has been defective again since Monday. In the rooms it is only 15 degrees. Could you please send a tradesperson as soon as possible? I am at home every day from 5 p.m. I ask for a short reply.\n\nKind regards\nClaire Martin\n\nHey Lena,\n\nmy heating is broken again – I'm really fed up! Can I shower at your place tonight? I'll bring pizza too. Keep your fingers crossed that the landlord gets back to me quickly!\n\nLove Claire"
+  "modelEn": "Dear Mr. Schulz,\n\nunfortunately the heating in my apartment has been defective again since Monday. In the rooms it is only 15 degrees. Could you please send a tradesperson as soon as possible? I am at home every day from 5 p.m. I ask for a short reply.\n\nKind regards\nClaire Martin\n\nHey Lena,\n\nmy heating is broken again – I'm really fed up! Can I shower at your place tonight? I'll bring pizza too. Keep your fingers crossed that the landlord gets back to me quickly!\n\nLove Claire",
+  "sentences": [
+   {
+    "de": "Sehr geehrter Herr Schulz,",
+    "en": "Dear Mr. Schulz,"
+   },
+   {
+    "de": "leider ist die Heizung in meiner Wohnung seit Montag erneut defekt.",
+    "en": "unfortunately the heating in my apartment has been defective again since Monday."
+   },
+   {
+    "de": "In den Zimmern sind es nur noch 15 Grad.",
+    "en": "In the rooms it is only 15 degrees."
+   },
+   {
+    "de": "Könnten Sie bitte so bald wie möglich einen Handwerker schicken?",
+    "en": "Could you please send a tradesperson as soon as possible?"
+   },
+   {
+    "de": "Ich bin jeden Tag ab 17 Uhr zu Hause.",
+    "en": "I am at home every day from 5 p.m."
+   },
+   {
+    "de": "Ich bitte um eine kurze Rückmeldung.",
+    "en": "I ask for a short reply."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire Martin",
+    "en": "Claire Martin"
+   },
+   {
+    "de": "Hey Lena,",
+    "en": "Hey Lena,"
+   },
+   {
+    "de": "meine Heizung ist schon wieder kaputt – ich hab echt die Nase voll!",
+    "en": "my heating is broken again – I'm really fed up!"
+   },
+   {
+    "de": "Kann ich heute Abend bei dir duschen?",
+    "en": "Can I shower at your place tonight?"
+   },
+   {
+    "de": "Ich bring auch Pizza mit.",
+    "en": "I'll bring pizza too."
+   },
+   {
+    "de": "Drück mir die Daumen, dass der Vermieter sich schnell meldet!",
+    "en": "Keep your fingers crossed that the landlord gets back to me quickly!"
+   },
+   {
+    "de": "LG Claire",
+    "en": "Love Claire"
+   }
+  ]
  }
 }

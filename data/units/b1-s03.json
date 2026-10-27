@@ -534,6 +534,52 @@
  "writing": {
   "task": "You are Camille. Write an 80–100-word message to your mother in Lyon: tell her what happened to the suitcase, what you would have done differently and how the story ended.",
   "model": "Liebe Mama,\n\nstell dir vor: Mein Koffer ist erst nach vier Tagen angekommen! In München hatte ich nur zwanzig Minuten zum Umsteigen. Ich habe das Flugzeug noch erreicht, aber der Koffer nicht. Ich hatte solche Angst um das Kochbuch von Oma! Hätte ich es doch nur ins Handgepäck gepackt. Wenn ich einen späteren Flug genommen hätte, wäre das nicht passiert. Am Ende hat Frau Schmitz den Koffer angenommen, und das ganze Haus hat nach Käse gerochen. Aber das Buch ist in Ordnung, und Frau Schmitz findet unseren Käse wunderbar!\n\nKüsschen\nCamille",
-  "modelEn": "Dear Mom,\n\nimagine: my suitcase only arrived after four days! In Munich I had only twenty minutes to change planes. I still made the plane, but the suitcase didn't. I was so afraid for Grandma's cookbook! If only I had put it in my carry-on. If I had taken a later flight, this wouldn't have happened. In the end Ms. Schmitz accepted the suitcase, and the whole building smelled of cheese. But the book is fine, and Ms. Schmitz finds our cheese wonderful!\n\nLove\nCamille"
+  "modelEn": "Dear Mom,\n\nimagine: my suitcase only arrived after four days! In Munich I had only twenty minutes to change planes. I still made the plane, but the suitcase didn't. I was so afraid for Grandma's cookbook! If only I had put it in my carry-on. If I had taken a later flight, this wouldn't have happened. In the end Ms. Schmitz accepted the suitcase, and the whole building smelled of cheese. But the book is fine, and Ms. Schmitz finds our cheese wonderful!\n\nLove\nCamille",
+  "sentences": [
+   {
+    "de": "Liebe Mama,",
+    "en": "Dear Mom,"
+   },
+   {
+    "de": "stell dir vor: Mein Koffer ist erst nach vier Tagen angekommen!",
+    "en": "imagine: my suitcase only arrived after four days!"
+   },
+   {
+    "de": "In München hatte ich nur zwanzig Minuten zum Umsteigen.",
+    "en": "In Munich I had only twenty minutes to change planes."
+   },
+   {
+    "de": "Ich habe das Flugzeug noch erreicht, aber der Koffer nicht.",
+    "en": "I still made the plane, but the suitcase didn't."
+   },
+   {
+    "de": "Ich hatte solche Angst um das Kochbuch von Oma!",
+    "en": "I was so afraid for Grandma's cookbook!"
+   },
+   {
+    "de": "Hätte ich es doch nur ins Handgepäck gepackt.",
+    "en": "If only I had put it in my carry-on."
+   },
+   {
+    "de": "Wenn ich einen späteren Flug genommen hätte, wäre das nicht passiert.",
+    "en": "If I had taken a later flight, this wouldn't have happened."
+   },
+   {
+    "de": "Am Ende hat Frau Schmitz den Koffer angenommen, und das ganze Haus hat nach Käse gerochen.",
+    "en": "In the end Ms. Schmitz accepted the suitcase, and the whole building smelled of cheese."
+   },
+   {
+    "de": "Aber das Buch ist in Ordnung, und Frau Schmitz findet unseren Käse wunderbar!",
+    "en": "But the book is fine, and Ms. Schmitz finds our cheese wonderful!"
+   },
+   {
+    "de": "Küsschen",
+    "en": "Love"
+   },
+   {
+    "de": "Camille",
+    "en": "Camille"
+   }
+  ]
  }
 }

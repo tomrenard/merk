@@ -520,6 +520,33 @@
   "task": "Tu rencontres un nouveau collègue. Écris 2 à 4 questions pour faire connaissance, avec au moins trois mots interrogatifs différents. Écris en lettres latines.",
   "model": "سلام! شنو سميتك؟ منين نتا؟ فين كتسكن؟ و علاش كتقرا الفرانساوية؟",
   "modelTr": "salam! chno smitek? mnin nta? fin katskon? w 3lach kat9ra lfransawiya?",
-  "modelEn": "Hello! What's your name? Where are you from? Where do you live? And why are you learning French?"
+  "modelEn": "Hello! What's your name? Where are you from? Where do you live? And why are you learning French?",
+  "sentences": [
+   {
+    "de": "سلام!",
+    "tr": "salam!",
+    "en": "Hello!"
+   },
+   {
+    "de": "شنو سميتك؟",
+    "tr": "chno smitek?",
+    "en": "What's your name?"
+   },
+   {
+    "de": "منين نتا؟",
+    "tr": "mnin nta?",
+    "en": "Where are you from?"
+   },
+   {
+    "de": "فين كتسكن؟",
+    "tr": "fin katskon?",
+    "en": "Where do you live?"
+   },
+   {
+    "de": "و علاش كتقرا الفرانساوية؟",
+    "tr": "w 3lach kat9ra lfransawiya?",
+    "en": "And why are you learning French?"
+   }
+  ]
  }
 }

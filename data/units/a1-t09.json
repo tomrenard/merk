@@ -498,6 +498,28 @@
  "writing": {
   "task": "You're ill. Write a short message (3–4 sentences) to your boss: say that you're ill, what's wrong and that you're going to the doctor.",
   "model": "Guten Morgen, Frau Weber, ich bin leider krank. Ich habe Fieber und mir tut der Hals weh. Ich kann heute nicht zur Arbeit kommen. Um zehn Uhr bin ich beim Arzt. Viele Grüße, Luca",
-  "modelEn": "Good morning, Ms. Weber, I'm sick, unfortunately. I have a fever and my throat hurts. I can't come to work today. At ten o'clock I'm at the doctor's. Kind regards, Luca"
+  "modelEn": "Good morning, Ms. Weber, I'm sick, unfortunately. I have a fever and my throat hurts. I can't come to work today. At ten o'clock I'm at the doctor's. Kind regards, Luca",
+  "sentences": [
+   {
+    "de": "Guten Morgen, Frau Weber, ich bin leider krank.",
+    "en": "Good morning, Ms. Weber, I'm sick, unfortunately."
+   },
+   {
+    "de": "Ich habe Fieber und mir tut der Hals weh.",
+    "en": "I have a fever and my throat hurts."
+   },
+   {
+    "de": "Ich kann heute nicht zur Arbeit kommen.",
+    "en": "I can't come to work today."
+   },
+   {
+    "de": "Um zehn Uhr bin ich beim Arzt.",
+    "en": "At ten o'clock I'm at the doctor's."
+   },
+   {
+    "de": "Viele Grüße, Luca",
+    "en": "Kind regards, Luca"
+   }
+  ]
  }
 }

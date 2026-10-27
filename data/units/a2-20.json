@@ -467,6 +467,36 @@
  "writing": {
   "task": "Write a chat message to a friend (5–6 sentences): invite them to a small party, say what they could bring, and ask them to reply. Use du and a few particles.",
   "model": "Hey Max, na, wie geht's? Ich mach am Freitag 'ne kleine Party bei mir. Komm doch auch! Bring einfach was zu trinken mit, Essen gibt's genug. Lisa kommt auch, die kennst du ja schon. Schreib mir mal, ob du Zeit hast! LG, Inès",
-  "modelEn": "Hey Max, how's it going? I'm having a little party at my place on Friday. Come too! Just bring something to drink, there's plenty of food. Lisa is coming too, you already know her. Write me whether you have time! Best, Inès"
+  "modelEn": "Hey Max, how's it going? I'm having a little party at my place on Friday. Come too! Just bring something to drink, there's plenty of food. Lisa is coming too, you already know her. Write me whether you have time! Best, Inès",
+  "sentences": [
+   {
+    "de": "Hey Max, na, wie geht's?",
+    "en": "Hey Max, how's it going?"
+   },
+   {
+    "de": "Ich mach am Freitag 'ne kleine Party bei mir.",
+    "en": "I'm having a little party at my place on Friday."
+   },
+   {
+    "de": "Komm doch auch!",
+    "en": "Come too!"
+   },
+   {
+    "de": "Bring einfach was zu trinken mit, Essen gibt's genug.",
+    "en": "Just bring something to drink, there's plenty of food."
+   },
+   {
+    "de": "Lisa kommt auch, die kennst du ja schon.",
+    "en": "Lisa is coming too, you already know her."
+   },
+   {
+    "de": "Schreib mir mal, ob du Zeit hast!",
+    "en": "Write me whether you have time!"
+   },
+   {
+    "de": "LG, Inès",
+    "en": "Best, Inès"
+   }
+  ]
  }
 }

@@ -454,6 +454,28 @@
  "writing": {
   "task": "Write a short message to a friend (3–4 sentences) about a trip you took: where you went, how long you stayed and what you did.",
   "model": "Liebe Mia, am Freitag bin ich nach München gefahren. Ich bin drei Tage bei Lena geblieben. Wir sind viel gelaufen und haben im Biergarten gegessen. Am Sonntag bin ich wieder nach Hause gekommen. Viele Grüße, Alex",
-  "modelEn": "Dear Mia, on Friday I went to Munich. I stayed with Lena for three days. We walked a lot and ate in the beer garden. On Sunday I came back home. Best wishes, Alex"
+  "modelEn": "Dear Mia, on Friday I went to Munich. I stayed with Lena for three days. We walked a lot and ate in the beer garden. On Sunday I came back home. Best wishes, Alex",
+  "sentences": [
+   {
+    "de": "Liebe Mia, am Freitag bin ich nach München gefahren.",
+    "en": "Dear Mia, on Friday I went to Munich."
+   },
+   {
+    "de": "Ich bin drei Tage bei Lena geblieben.",
+    "en": "I stayed with Lena for three days."
+   },
+   {
+    "de": "Wir sind viel gelaufen und haben im Biergarten gegessen.",
+    "en": "We walked a lot and ate in the beer garden."
+   },
+   {
+    "de": "Am Sonntag bin ich wieder nach Hause gekommen.",
+    "en": "On Sunday I came back home."
+   },
+   {
+    "de": "Viele Grüße, Alex",
+    "en": "Best wishes, Alex"
+   }
+  ]
  }
 }

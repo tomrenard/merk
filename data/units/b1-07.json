@@ -475,6 +475,56 @@
  "writing": {
   "task": "Write an 80–100-word message to a friend about a chance you missed (a job, a flat, a trip or a concert). Say what happened and what you would have done differently.",
   "model": "Hallo Jonas,\n\nstell dir vor, ich habe das Konzert im Stadtpark verpasst! Die Tickets gab es am Montag um zehn Uhr online. Ich hätte sie gleich morgens kaufen sollen, aber ich hatte eine Besprechung. Als ich mittags auf die Seite ging, war alles ausverkauft. Wenn ich mir einen Wecker gestellt hätte, hätte ich bestimmt noch Tickets bekommen. Und wenn ich dich gefragt hätte, hättest du sie für mich gekauft, oder? Wir wären bestimmt zusammen hingegangen. Das wäre so schön gewesen! Beim nächsten Mal bin ich schneller.\n\nLiebe Grüße\nHugo",
-  "modelEn": "Hello Jonas,\n\nimagine, I missed the concert in the city park! The tickets were online on Monday at ten o'clock. I should have bought them first thing in the morning, but I had a meeting. When I went to the site at noon, everything was sold out. If I had set an alarm, I would surely still have gotten tickets. And if I had asked you, you would have bought them for me, right? We would surely have gone together. It would have been so nice! Next time I'll be faster.\n\nKind regards\nHugo"
+  "modelEn": "Hello Jonas,\n\nimagine, I missed the concert in the city park! The tickets were online on Monday at ten o'clock. I should have bought them first thing in the morning, but I had a meeting. When I went to the site at noon, everything was sold out. If I had set an alarm, I would surely still have gotten tickets. And if I had asked you, you would have bought them for me, right? We would surely have gone together. It would have been so nice! Next time I'll be faster.\n\nKind regards\nHugo",
+  "sentences": [
+   {
+    "de": "Hallo Jonas,",
+    "en": "Hello Jonas,"
+   },
+   {
+    "de": "stell dir vor, ich habe das Konzert im Stadtpark verpasst!",
+    "en": "imagine, I missed the concert in the city park!"
+   },
+   {
+    "de": "Die Tickets gab es am Montag um zehn Uhr online.",
+    "en": "The tickets were online on Monday at ten o'clock."
+   },
+   {
+    "de": "Ich hätte sie gleich morgens kaufen sollen, aber ich hatte eine Besprechung.",
+    "en": "I should have bought them first thing in the morning, but I had a meeting."
+   },
+   {
+    "de": "Als ich mittags auf die Seite ging, war alles ausverkauft.",
+    "en": "When I went to the site at noon, everything was sold out."
+   },
+   {
+    "de": "Wenn ich mir einen Wecker gestellt hätte, hätte ich bestimmt noch Tickets bekommen.",
+    "en": "If I had set an alarm, I would surely still have gotten tickets."
+   },
+   {
+    "de": "Und wenn ich dich gefragt hätte, hättest du sie für mich gekauft, oder?",
+    "en": "And if I had asked you, you would have bought them for me, right?"
+   },
+   {
+    "de": "Wir wären bestimmt zusammen hingegangen.",
+    "en": "We would surely have gone together."
+   },
+   {
+    "de": "Das wäre so schön gewesen!",
+    "en": "It would have been so nice!"
+   },
+   {
+    "de": "Beim nächsten Mal bin ich schneller.",
+    "en": "Next time I'll be faster."
+   },
+   {
+    "de": "Liebe Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Hugo",
+    "en": "Hugo"
+   }
+  ]
  }
 }

@@ -458,6 +458,24 @@
  "writing": {
   "task": "Write a short message to introduce yourself to your new German course group (3–4 sentences): your name, where you are from and what you do.",
   "model": "Hallo, ich bin Marc. Ich bin aus Frankreich, aus Lyon. Ich bin Ingenieur und ich bin neu in Berlin. Ich bin ein bisschen nervös!",
-  "modelEn": "Hello, I'm Marc. I'm from France, from Lyon. I'm an engineer and I'm new in Berlin. I'm a little nervous!"
+  "modelEn": "Hello, I'm Marc. I'm from France, from Lyon. I'm an engineer and I'm new in Berlin. I'm a little nervous!",
+  "sentences": [
+   {
+    "de": "Hallo, ich bin Marc.",
+    "en": "Hello, I'm Marc."
+   },
+   {
+    "de": "Ich bin aus Frankreich, aus Lyon.",
+    "en": "I'm from France, from Lyon."
+   },
+   {
+    "de": "Ich bin Ingenieur und ich bin neu in Berlin.",
+    "en": "I'm an engineer and I'm new in Berlin."
+   },
+   {
+    "de": "Ich bin ein bisschen nervös!",
+    "en": "I'm a little nervous!"
+   }
+  ]
  }
 }

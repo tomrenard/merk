@@ -483,6 +483,48 @@
  "writing": {
   "task": "In an online forum for your town, someone writes: \"Cars should be banned from the city centre.\" Write a reply of 80–100 words: give your opinion, name one advantage and one disadvantage, and politely disagree with one point.",
   "model": "Hallo zusammen,\n\nich finde die Idee interessant, aber ich sehe das ein bisschen anders. Einerseits wäre die Innenstadt ohne Autos ruhiger, und die Luft wäre besser. Andererseits brauchen viele Menschen das Auto, zum Beispiel ältere Leute oder Familien mit kleinen Kindern. Meiner Meinung nach sollte man die Autos nicht ganz verbieten. Es wäre besser, wenn es mehr Busse und sichere Fahrradwege geben würde. Martin schreibt, dass die Geschäfte ohne Autos mehr Kunden haben. Da bin ich nicht so sicher, denn viele Leute kaufen mit dem Auto ein.\n\nViele Grüße\nClaire",
-  "modelEn": "Hello everyone,\n\nI find the idea interesting, but I see it a little differently. On the one hand, the city center without cars would be quieter, and the air would be better. On the other hand, many people need the car, for example older people or families with small children. In my opinion, cars should not be banned completely. It would be better if there were more buses and safe bike lanes. Martin writes that shops have more customers without cars. I'm not so sure about that, because many people shop by car.\n\nKind regards\nClaire"
+  "modelEn": "Hello everyone,\n\nI find the idea interesting, but I see it a little differently. On the one hand, the city center without cars would be quieter, and the air would be better. On the other hand, many people need the car, for example older people or families with small children. In my opinion, cars should not be banned completely. It would be better if there were more buses and safe bike lanes. Martin writes that shops have more customers without cars. I'm not so sure about that, because many people shop by car.\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Hallo zusammen,",
+    "en": "Hello everyone,"
+   },
+   {
+    "de": "ich finde die Idee interessant, aber ich sehe das ein bisschen anders.",
+    "en": "I find the idea interesting, but I see it a little differently."
+   },
+   {
+    "de": "Einerseits wäre die Innenstadt ohne Autos ruhiger, und die Luft wäre besser.",
+    "en": "On the one hand, the city center without cars would be quieter, and the air would be better."
+   },
+   {
+    "de": "Andererseits brauchen viele Menschen das Auto, zum Beispiel ältere Leute oder Familien mit kleinen Kindern.",
+    "en": "On the other hand, many people need the car, for example older people or families with small children."
+   },
+   {
+    "de": "Meiner Meinung nach sollte man die Autos nicht ganz verbieten.",
+    "en": "In my opinion, cars should not be banned completely."
+   },
+   {
+    "de": "Es wäre besser, wenn es mehr Busse und sichere Fahrradwege geben würde.",
+    "en": "It would be better if there were more buses and safe bike lanes."
+   },
+   {
+    "de": "Martin schreibt, dass die Geschäfte ohne Autos mehr Kunden haben.",
+    "en": "Martin writes that shops have more customers without cars."
+   },
+   {
+    "de": "Da bin ich nicht so sicher, denn viele Leute kaufen mit dem Auto ein.",
+    "en": "I'm not so sure about that, because many people shop by car."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

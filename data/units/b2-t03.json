@@ -519,6 +519,44 @@
  "writing": {
   "task": "In an online forum someone asks: \"Should foreigners who have lived here for years be allowed to vote in national elections?\" Write a reply of 100–130 words with your opinion, one argument for and one against, using zwar … aber, außerdem or hingegen.",
   "model": "Ich lebe selbst seit acht Jahren in Deutschland und finde diese Frage sehr wichtig.\n\nZwar können EU-Bürger wie ich bei Kommunalwahlen wählen, aber bei der Bundestagswahl dürfen wir nicht mitentscheiden. Dabei arbeiten wir hier, zahlen Steuern und unsere Kinder gehen hier zur Schule. Außerdem wäre es für die Integration ein gutes Zeichen, wenn man sich auch politisch beteiligen könnte.\n\nEinige sagen hingegen, das Wahlrecht gehöre zur Staatsangehörigkeit. Wer wählen will, solle sich einbürgern lassen. Seit 2024 ist das tatsächlich einfacher geworden, weil man seinen alten Pass behalten darf.\n\nMeiner Meinung nach sollte man nach etwa zehn Jahren Aufenthalt wählen dürfen. Bis dahin lasse ich mich vielleicht einfach einbürgern.",
-  "modelEn": "I myself have lived in Germany for eight years and find this question very important.\n\nEU citizens like me can indeed vote in local elections, but in the federal election we are not allowed to decide. Yet we work here, pay taxes and our children go to school here. Besides, it would be a good sign for integration if one could also take part politically.\n\nSome say, on the other hand, that the right to vote belongs to citizenship. Whoever wants to vote should get naturalized. Since 2024 that has in fact become easier, because you are allowed to keep your old passport.\n\nIn my opinion, you should be allowed to vote after about ten years of residence. Until then I may simply get naturalized."
+  "modelEn": "I myself have lived in Germany for eight years and find this question very important.\n\nEU citizens like me can indeed vote in local elections, but in the federal election we are not allowed to decide. Yet we work here, pay taxes and our children go to school here. Besides, it would be a good sign for integration if one could also take part politically.\n\nSome say, on the other hand, that the right to vote belongs to citizenship. Whoever wants to vote should get naturalized. Since 2024 that has in fact become easier, because you are allowed to keep your old passport.\n\nIn my opinion, you should be allowed to vote after about ten years of residence. Until then I may simply get naturalized.",
+  "sentences": [
+   {
+    "de": "Ich lebe selbst seit acht Jahren in Deutschland und finde diese Frage sehr wichtig.",
+    "en": "I myself have lived in Germany for eight years and find this question very important."
+   },
+   {
+    "de": "Zwar können EU-Bürger wie ich bei Kommunalwahlen wählen, aber bei der Bundestagswahl dürfen wir nicht mitentscheiden.",
+    "en": "EU citizens like me can indeed vote in local elections, but in the federal election we are not allowed to decide."
+   },
+   {
+    "de": "Dabei arbeiten wir hier, zahlen Steuern und unsere Kinder gehen hier zur Schule.",
+    "en": "Yet we work here, pay taxes and our children go to school here."
+   },
+   {
+    "de": "Außerdem wäre es für die Integration ein gutes Zeichen, wenn man sich auch politisch beteiligen könnte.",
+    "en": "Besides, it would be a good sign for integration if one could also take part politically."
+   },
+   {
+    "de": "Einige sagen hingegen, das Wahlrecht gehöre zur Staatsangehörigkeit.",
+    "en": "Some say, on the other hand, that the right to vote belongs to citizenship."
+   },
+   {
+    "de": "Wer wählen will, solle sich einbürgern lassen.",
+    "en": "Whoever wants to vote should get naturalized."
+   },
+   {
+    "de": "Seit 2024 ist das tatsächlich einfacher geworden, weil man seinen alten Pass behalten darf.",
+    "en": "Since 2024 that has in fact become easier, because you are allowed to keep your old passport."
+   },
+   {
+    "de": "Meiner Meinung nach sollte man nach etwa zehn Jahren Aufenthalt wählen dürfen.",
+    "en": "In my opinion, you should be allowed to vote after about ten years of residence."
+   },
+   {
+    "de": "Bis dahin lasse ich mich vielleicht einfach einbürgern.",
+    "en": "Until then I may simply get naturalized."
+   }
+  ]
  }
 }

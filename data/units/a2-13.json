@@ -471,6 +471,40 @@
  "writing": {
   "task": "Answer a message from your new tandem partner (5–6 sentences): say what you are interested in and what not, what you are looking forward to, and ask two questions about their interests.",
   "model": "Hallo Jana, danke für deine Nachricht! Ich interessiere mich sehr für Kochen und für alte Filme. Für Sport interessiere ich mich leider nicht so. Nächste Woche koche ich für meine Kollegen, darauf freue ich mich schon. Und du? Wofür interessierst du dich? Mit wem sprichst du sonst Französisch? Liebe Grüße, Hugo",
-  "modelEn": "Hello Jana, thanks for your message! I'm very interested in cooking and in old films. Unfortunately I'm not so interested in sports. Next week I'm cooking for my colleagues, I'm already looking forward to that. And you? What are you interested in? Who else do you speak French with? Kind regards, Hugo"
+  "modelEn": "Hello Jana, thanks for your message! I'm very interested in cooking and in old films. Unfortunately I'm not so interested in sports. Next week I'm cooking for my colleagues, I'm already looking forward to that. And you? What are you interested in? Who else do you speak French with? Kind regards, Hugo",
+  "sentences": [
+   {
+    "de": "Hallo Jana, danke für deine Nachricht!",
+    "en": "Hello Jana, thanks for your message!"
+   },
+   {
+    "de": "Ich interessiere mich sehr für Kochen und für alte Filme.",
+    "en": "I'm very interested in cooking and in old films."
+   },
+   {
+    "de": "Für Sport interessiere ich mich leider nicht so.",
+    "en": "Unfortunately I'm not so interested in sports."
+   },
+   {
+    "de": "Nächste Woche koche ich für meine Kollegen, darauf freue ich mich schon.",
+    "en": "Next week I'm cooking for my colleagues, I'm already looking forward to that."
+   },
+   {
+    "de": "Und du?",
+    "en": "And you?"
+   },
+   {
+    "de": "Wofür interessierst du dich?",
+    "en": "What are you interested in?"
+   },
+   {
+    "de": "Mit wem sprichst du sonst Französisch?",
+    "en": "Who else do you speak French with?"
+   },
+   {
+    "de": "Liebe Grüße, Hugo",
+    "en": "Kind regards, Hugo"
+   }
+  ]
  }
 }

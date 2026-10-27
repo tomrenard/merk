@@ -458,6 +458,24 @@
  "writing": {
   "task": "Write a short message to a friend (3–4 sentences) about what you did last weekend.",
   "model": "Hallo Sophie, am Samstag habe ich lange geschlafen. Dann habe ich Obst und Brot gekauft. Am Abend habe ich mit Paul einen Film gesehen. Und was hast du gemacht?",
-  "modelEn": "Hello Sophie, on Saturday I slept in. Then I bought fruit and bread. In the evening I watched a movie with Paul. And what did you do?"
+  "modelEn": "Hello Sophie, on Saturday I slept in. Then I bought fruit and bread. In the evening I watched a movie with Paul. And what did you do?",
+  "sentences": [
+   {
+    "de": "Hallo Sophie, am Samstag habe ich lange geschlafen.",
+    "en": "Hello Sophie, on Saturday I slept in."
+   },
+   {
+    "de": "Dann habe ich Obst und Brot gekauft.",
+    "en": "Then I bought fruit and bread."
+   },
+   {
+    "de": "Am Abend habe ich mit Paul einen Film gesehen.",
+    "en": "In the evening I watched a movie with Paul."
+   },
+   {
+    "de": "Und was hast du gemacht?",
+    "en": "And what did you do?"
+   }
+  ]
  }
 }

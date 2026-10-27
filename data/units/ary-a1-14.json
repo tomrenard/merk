@@ -502,6 +502,23 @@
   "task": "Décris ta maison ou ta chambre en 2 à 4 phrases : est-elle grande ou petite, neuve ou vieille, et de quelle couleur sont les choses dedans. Écris en lettres latines.",
   "model": "الدار ديالي صغيرة ولكن زوينة. البيت ديالي كبير. عندي تابلة بيضا و كرسي زرق.",
   "modelTr": "ddar dyali sghira walakin zwina. lbit dyali kbir. 3ndi tabla bayda w kursi zre9.",
-  "modelEn": "My house is small but pretty. My room is big. I have a white table and a blue chair."
+  "modelEn": "My house is small but pretty. My room is big. I have a white table and a blue chair.",
+  "sentences": [
+   {
+    "de": "الدار ديالي صغيرة ولكن زوينة.",
+    "tr": "ddar dyali sghira walakin zwina.",
+    "en": "My house is small but pretty."
+   },
+   {
+    "de": "البيت ديالي كبير.",
+    "tr": "lbit dyali kbir.",
+    "en": "My room is big."
+   },
+   {
+    "de": "عندي تابلة بيضا و كرسي زرق.",
+    "tr": "3ndi tabla bayda w kursi zre9.",
+    "en": "I have a white table and a blue chair."
+   }
+  ]
  }
 }

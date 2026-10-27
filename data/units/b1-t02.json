@@ -516,6 +516,56 @@
  "writing": {
   "task": "Your friend Paul is moving to Germany and asks you how to open a bank account and which insurance he needs. Write him an 80–100-word message.",
   "model": "Hallo Paul,\n\nein Konto eröffnen ist ganz einfach. Geh zu einer Bank und nimm deinen Pass und deine Meldebescheinigung mit. Frag nach einem Girokonto, das keine Gebühren kostet. Mit der Karte kannst du überall Geld abheben, aber in Deutschland zahlen viele Leute noch bar. Dein Gehalt kommt dann direkt auf das Konto. Wichtig: Du musst eine Krankenversicherung haben. Ich empfehle dir auch eine Haftpflichtversicherung. Sie ist nicht teuer und zahlt, wenn du bei anderen etwas kaputtmachst. Ich schicke dir den Link zu meiner Versicherung, mit der ich sehr zufrieden bin.\n\nViele Grüße\nLéa",
-  "modelEn": "Hello Paul,\n\nopening an account is very easy. Go to a bank and take your passport and your registration certificate with you. Ask for a current account that costs no fees. With the card you can withdraw money everywhere, but in Germany many people still pay in cash. Your salary then goes directly into the account. Important: you have to have health insurance. I also recommend liability insurance. It isn't expensive and pays if you break something of other people's. I'll send you the link to my insurance, which I'm very happy with.\n\nKind regards\nLéa"
+  "modelEn": "Hello Paul,\n\nopening an account is very easy. Go to a bank and take your passport and your registration certificate with you. Ask for a current account that costs no fees. With the card you can withdraw money everywhere, but in Germany many people still pay in cash. Your salary then goes directly into the account. Important: you have to have health insurance. I also recommend liability insurance. It isn't expensive and pays if you break something of other people's. I'll send you the link to my insurance, which I'm very happy with.\n\nKind regards\nLéa",
+  "sentences": [
+   {
+    "de": "Hallo Paul,",
+    "en": "Hello Paul,"
+   },
+   {
+    "de": "ein Konto eröffnen ist ganz einfach.",
+    "en": "opening an account is very easy."
+   },
+   {
+    "de": "Geh zu einer Bank und nimm deinen Pass und deine Meldebescheinigung mit.",
+    "en": "Go to a bank and take your passport and your registration certificate with you."
+   },
+   {
+    "de": "Frag nach einem Girokonto, das keine Gebühren kostet.",
+    "en": "Ask for a current account that costs no fees."
+   },
+   {
+    "de": "Mit der Karte kannst du überall Geld abheben, aber in Deutschland zahlen viele Leute noch bar.",
+    "en": "With the card you can withdraw money everywhere, but in Germany many people still pay in cash."
+   },
+   {
+    "de": "Dein Gehalt kommt dann direkt auf das Konto.",
+    "en": "Your salary then goes directly into the account."
+   },
+   {
+    "de": "Wichtig: Du musst eine Krankenversicherung haben.",
+    "en": "Important: you have to have health insurance."
+   },
+   {
+    "de": "Ich empfehle dir auch eine Haftpflichtversicherung.",
+    "en": "I also recommend liability insurance."
+   },
+   {
+    "de": "Sie ist nicht teuer und zahlt, wenn du bei anderen etwas kaputtmachst.",
+    "en": "It isn't expensive and pays if you break something of other people's."
+   },
+   {
+    "de": "Ich schicke dir den Link zu meiner Versicherung, mit der ich sehr zufrieden bin.",
+    "en": "I'll send you the link to my insurance, which I'm very happy with."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Léa",
+    "en": "Léa"
+   }
+  ]
  }
 }

@@ -460,6 +460,24 @@
  "writing": {
   "task": "Your flatmate is going shopping. Write a short message (3–4 sentences) saying what you need, with several plurals.",
   "model": "Hallo Jana, wir brauchen noch Tomaten und Kartoffeln. Kaufst du bitte auch sechs Eier und zwei Flaschen Milch? Und vier Äpfel, bitte. Danke!",
-  "modelEn": "Hello Jana, we still need tomatoes and potatoes. Could you please also buy six eggs and two bottles of milk? And four apples, please. Thanks!"
+  "modelEn": "Hello Jana, we still need tomatoes and potatoes. Could you please also buy six eggs and two bottles of milk? And four apples, please. Thanks!",
+  "sentences": [
+   {
+    "de": "Hallo Jana, wir brauchen noch Tomaten und Kartoffeln.",
+    "en": "Hello Jana, we still need tomatoes and potatoes."
+   },
+   {
+    "de": "Kaufst du bitte auch sechs Eier und zwei Flaschen Milch?",
+    "en": "Could you please also buy six eggs and two bottles of milk?"
+   },
+   {
+    "de": "Und vier Äpfel, bitte.",
+    "en": "And four apples, please."
+   },
+   {
+    "de": "Danke!",
+    "en": "Thanks!"
+   }
+  ]
  }
 }

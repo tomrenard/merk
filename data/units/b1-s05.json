@@ -549,6 +549,44 @@
  "writing": {
   "task": "You are Rafael. Write the 80–100-word email to Frau Yilmaz: refer to the phone call, say why you are writing, list the documents you attach and confirm the appointment.",
   "model": "Sehr geehrte Frau Yilmaz,\n\nvielen Dank für das Telefonat heute Morgen. Wie besprochen schicke ich Ihnen meine Unterlagen, damit Sie meinen Antrag bearbeiten können. Ich beginne am 1. Dezember eine neue Stelle als Küchenchef, und meine Aufenthaltserlaubnis läuft am 31. Oktober ab. Im Anhang finden Sie sowohl meinen neuen Arbeitsvertrag als auch eine Kopie von meinem Pass. Ich komme gern am 15. Oktober um 8:30 Uhr zu meinem Termin. Bitte sagen Sie mir Bescheid, wenn noch etwas fehlt.\n\nMit freundlichen Grüßen\nRafael Oliveira",
-  "modelEn": "Dear Ms. Yilmaz,\n\nthank you very much for the phone call this morning. As discussed, I'm sending you my documents so that you can process my application. On December 1 I'm starting a new job as head chef, and my residence permit expires on October 31. In the attachment you will find both my new employment contract and a copy of my passport. I'm happy to come to my appointment on October 15 at 8:30. Please let me know if anything else is missing.\n\nKind regards\nRafael Oliveira"
+  "modelEn": "Dear Ms. Yilmaz,\n\nthank you very much for the phone call this morning. As discussed, I'm sending you my documents so that you can process my application. On December 1 I'm starting a new job as head chef, and my residence permit expires on October 31. In the attachment you will find both my new employment contract and a copy of my passport. I'm happy to come to my appointment on October 15 at 8:30. Please let me know if anything else is missing.\n\nKind regards\nRafael Oliveira",
+  "sentences": [
+   {
+    "de": "Sehr geehrte Frau Yilmaz,",
+    "en": "Dear Ms. Yilmaz,"
+   },
+   {
+    "de": "vielen Dank für das Telefonat heute Morgen.",
+    "en": "thank you very much for the phone call this morning."
+   },
+   {
+    "de": "Wie besprochen schicke ich Ihnen meine Unterlagen, damit Sie meinen Antrag bearbeiten können.",
+    "en": "As discussed, I'm sending you my documents so that you can process my application."
+   },
+   {
+    "de": "Ich beginne am 1. Dezember eine neue Stelle als Küchenchef, und meine Aufenthaltserlaubnis läuft am 31. Oktober ab.",
+    "en": "On December 1 I'm starting a new job as head chef, and my residence permit expires on October 31."
+   },
+   {
+    "de": "Im Anhang finden Sie sowohl meinen neuen Arbeitsvertrag als auch eine Kopie von meinem Pass.",
+    "en": "In the attachment you will find both my new employment contract and a copy of my passport."
+   },
+   {
+    "de": "Ich komme gern am 15. Oktober um 8:30 Uhr zu meinem Termin.",
+    "en": "I'm happy to come to my appointment on October 15 at 8:30."
+   },
+   {
+    "de": "Bitte sagen Sie mir Bescheid, wenn noch etwas fehlt.",
+    "en": "Please let me know if anything else is missing."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Rafael Oliveira",
+    "en": "Rafael Oliveira"
+   }
+  ]
  }
 }

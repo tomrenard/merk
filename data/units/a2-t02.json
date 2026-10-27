@@ -498,6 +498,36 @@
  "writing": {
   "task": "You are ill and can't go to work. Write 5–6 sentences to a colleague: say what is wrong, what the doctor said and when you will be back.",
   "model": "Hallo Sabine, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Heute Morgen war ich beim Arzt. Er hat mich untersucht, ich habe Grippe. Ich muss bis Freitag im Bett bleiben und Tabletten nehmen. Am Montag bin ich wieder im Büro. Viele Grüße, Marc",
-  "modelEn": "Hello Sabine, I'm sick, unfortunately. I have a fever and my throat hurts. This morning I was at the doctor's. He examined me, I have the flu. I have to stay in bed until Friday and take pills. On Monday I'm back in the office. Kind regards, Marc"
+  "modelEn": "Hello Sabine, I'm sick, unfortunately. I have a fever and my throat hurts. This morning I was at the doctor's. He examined me, I have the flu. I have to stay in bed until Friday and take pills. On Monday I'm back in the office. Kind regards, Marc",
+  "sentences": [
+   {
+    "de": "Hallo Sabine, leider bin ich krank.",
+    "en": "Hello Sabine, I'm sick, unfortunately."
+   },
+   {
+    "de": "Ich habe Fieber und mir tut der Hals weh.",
+    "en": "I have a fever and my throat hurts."
+   },
+   {
+    "de": "Heute Morgen war ich beim Arzt.",
+    "en": "This morning I was at the doctor's."
+   },
+   {
+    "de": "Er hat mich untersucht, ich habe Grippe.",
+    "en": "He examined me, I have the flu."
+   },
+   {
+    "de": "Ich muss bis Freitag im Bett bleiben und Tabletten nehmen.",
+    "en": "I have to stay in bed until Friday and take pills."
+   },
+   {
+    "de": "Am Montag bin ich wieder im Büro.",
+    "en": "On Monday I'm back in the office."
+   },
+   {
+    "de": "Viele Grüße, Marc",
+    "en": "Kind regards, Marc"
+   }
+  ]
  }
 }

@@ -463,6 +463,28 @@
  "writing": {
   "task": "A friend invites you to the cinema on Friday. Write a short reply (3–4 sentences): say you can't on Friday and why (with denn), suggest another day starting with the time, and ask a question with oder.",
   "model": "Hallo Jonas, danke für die Einladung! Am Freitag kann ich leider nicht, denn ich muss lange arbeiten. Aber am Samstag habe ich Zeit. Gehen wir um sieben oder um acht? Liebe Grüße, Lea",
-  "modelEn": "Hello Jonas, thanks for the invitation! I can't on Friday, unfortunately, because I have to work late. But on Saturday I have time. Shall we go at seven or at eight? Kind regards, Lea"
+  "modelEn": "Hello Jonas, thanks for the invitation! I can't on Friday, unfortunately, because I have to work late. But on Saturday I have time. Shall we go at seven or at eight? Kind regards, Lea",
+  "sentences": [
+   {
+    "de": "Hallo Jonas, danke für die Einladung!",
+    "en": "Hello Jonas, thanks for the invitation!"
+   },
+   {
+    "de": "Am Freitag kann ich leider nicht, denn ich muss lange arbeiten.",
+    "en": "I can't on Friday, unfortunately, because I have to work late."
+   },
+   {
+    "de": "Aber am Samstag habe ich Zeit.",
+    "en": "But on Saturday I have time."
+   },
+   {
+    "de": "Gehen wir um sieben oder um acht?",
+    "en": "Shall we go at seven or at eight?"
+   },
+   {
+    "de": "Liebe Grüße, Lea",
+    "en": "Kind regards, Lea"
+   }
+  ]
  }
 }

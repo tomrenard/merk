@@ -469,6 +469,32 @@
  "writing": {
   "task": "Write 5–6 sentences: what do you usually do when you have free time, and what did you do when you were a child?",
   "model": "Wenn ich Zeit habe, gehe ich gern ins Kino. Wenn es warm ist, fahre ich mit dem Rad an den See. Als ich ein Kind war, habe ich in Lyon gewohnt. Immer wenn wir Ferien hatten, waren wir bei meinen Großeltern am Meer. Als ich 25 war, bin ich nach Deutschland gezogen. Am Anfang konnte ich nur wenig Deutsch.",
-  "modelEn": "When I have time, I like to go to the cinema. When it's warm, I ride my bike to the lake. When I was a child, I lived in Lyon. Whenever we had vacation, we were at my grandparents' by the sea. When I was 25, I moved to Germany. At the beginning I could only speak a little German."
+  "modelEn": "When I have time, I like to go to the cinema. When it's warm, I ride my bike to the lake. When I was a child, I lived in Lyon. Whenever we had vacation, we were at my grandparents' by the sea. When I was 25, I moved to Germany. At the beginning I could only speak a little German.",
+  "sentences": [
+   {
+    "de": "Wenn ich Zeit habe, gehe ich gern ins Kino.",
+    "en": "When I have time, I like to go to the cinema."
+   },
+   {
+    "de": "Wenn es warm ist, fahre ich mit dem Rad an den See.",
+    "en": "When it's warm, I ride my bike to the lake."
+   },
+   {
+    "de": "Als ich ein Kind war, habe ich in Lyon gewohnt.",
+    "en": "When I was a child, I lived in Lyon."
+   },
+   {
+    "de": "Immer wenn wir Ferien hatten, waren wir bei meinen Großeltern am Meer.",
+    "en": "Whenever we had vacation, we were at my grandparents' by the sea."
+   },
+   {
+    "de": "Als ich 25 war, bin ich nach Deutschland gezogen.",
+    "en": "When I was 25, I moved to Germany."
+   },
+   {
+    "de": "Am Anfang konnte ich nur wenig Deutsch.",
+    "en": "At the beginning I could only speak a little German."
+   }
+  ]
  }
 }

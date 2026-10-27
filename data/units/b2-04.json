@@ -476,6 +476,56 @@
  "writing": {
   "task": "A colleague hasn't come to work today and isn't answering her phone. Write a message of about 100 words to another colleague: guess what might have happened, say what you've heard, and suggest what to do.",
   "model": "Hallo Jonas,\n\nweißt du, wo Anna ist? Sie ist heute nicht ins Büro gekommen, und an ihr Handy geht sie auch nicht. Gestern sah sie schon ziemlich blass aus, sie könnte also krank sein. Dass sie verschlafen hat, glaube ich nicht – das passiert ihr nie. Frau Klein hat gehört, Annas Mutter soll im Krankenhaus sein. Dann muss Anna heute früh nach Hamburg gefahren sein. Das kann aber nicht ganz stimmen, denn dann hätte sie dem Chef sicher eine Nachricht geschrieben. Kannst du sie in der Mittagspause noch mal anrufen? Ich habe den ganzen Vormittag Termine.\n\nViele Grüße\nClaire",
-  "modelEn": "Hello Jonas,\n\ndo you know where Anna is? She didn't come to the office today, and she isn't answering her phone either. Yesterday she already looked rather pale, so she could be sick. I don't believe that she overslept – that never happens to her. Ms. Klein heard that Anna's mother is said to be in the hospital. Then Anna must have driven to Hamburg early today. But that can't be entirely true, because then she would surely have written the boss a message. Can you call her again during the lunch break? I have appointments all morning.\n\nKind regards\nClaire"
+  "modelEn": "Hello Jonas,\n\ndo you know where Anna is? She didn't come to the office today, and she isn't answering her phone either. Yesterday she already looked rather pale, so she could be sick. I don't believe that she overslept – that never happens to her. Ms. Klein heard that Anna's mother is said to be in the hospital. Then Anna must have driven to Hamburg early today. But that can't be entirely true, because then she would surely have written the boss a message. Can you call her again during the lunch break? I have appointments all morning.\n\nKind regards\nClaire",
+  "sentences": [
+   {
+    "de": "Hallo Jonas,",
+    "en": "Hello Jonas,"
+   },
+   {
+    "de": "weißt du, wo Anna ist?",
+    "en": "do you know where Anna is?"
+   },
+   {
+    "de": "Sie ist heute nicht ins Büro gekommen, und an ihr Handy geht sie auch nicht.",
+    "en": "She didn't come to the office today, and she isn't answering her phone either."
+   },
+   {
+    "de": "Gestern sah sie schon ziemlich blass aus, sie könnte also krank sein.",
+    "en": "Yesterday she already looked rather pale, so she could be sick."
+   },
+   {
+    "de": "Dass sie verschlafen hat, glaube ich nicht – das passiert ihr nie.",
+    "en": "I don't believe that she overslept – that never happens to her."
+   },
+   {
+    "de": "Frau Klein hat gehört, Annas Mutter soll im Krankenhaus sein.",
+    "en": "Ms. Klein heard that Anna's mother is said to be in the hospital."
+   },
+   {
+    "de": "Dann muss Anna heute früh nach Hamburg gefahren sein.",
+    "en": "Then Anna must have driven to Hamburg early today."
+   },
+   {
+    "de": "Das kann aber nicht ganz stimmen, denn dann hätte sie dem Chef sicher eine Nachricht geschrieben.",
+    "en": "But that can't be entirely true, because then she would surely have written the boss a message."
+   },
+   {
+    "de": "Kannst du sie in der Mittagspause noch mal anrufen?",
+    "en": "Can you call her again during the lunch break?"
+   },
+   {
+    "de": "Ich habe den ganzen Vormittag Termine.",
+    "en": "I have appointments all morning."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire",
+    "en": "Claire"
+   }
+  ]
  }
 }

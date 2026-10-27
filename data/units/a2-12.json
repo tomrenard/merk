@@ -473,6 +473,32 @@
  "writing": {
   "task": "Write a message to a friend (5–6 sentences): what you are looking forward to, what you are waiting for, and something you were happy or annoyed about this week.",
   "model": "Hallo Tim, ich freue mich schon sehr auf unseren Urlaub in Italien! Im Moment warte ich noch auf eine Antwort vom Hotel. Gestern habe ich mich über meinen Nachbarn geärgert, er war wieder so laut. Aber heute habe ich mich über dein Paket gefreut, vielen Dank! Ich denke oft an unsere Zeit in Berlin. Bis bald, Claire",
-  "modelEn": "Hello Tim, I'm already really looking forward to our vacation in Italy! At the moment I'm still waiting for an answer from the hotel. Yesterday I got annoyed with my neighbor, he was so loud again. But today I was happy about your package, thank you very much! I often think of our time in Berlin. See you soon, Claire"
+  "modelEn": "Hello Tim, I'm already really looking forward to our vacation in Italy! At the moment I'm still waiting for an answer from the hotel. Yesterday I got annoyed with my neighbor, he was so loud again. But today I was happy about your package, thank you very much! I often think of our time in Berlin. See you soon, Claire",
+  "sentences": [
+   {
+    "de": "Hallo Tim, ich freue mich schon sehr auf unseren Urlaub in Italien!",
+    "en": "Hello Tim, I'm already really looking forward to our vacation in Italy!"
+   },
+   {
+    "de": "Im Moment warte ich noch auf eine Antwort vom Hotel.",
+    "en": "At the moment I'm still waiting for an answer from the hotel."
+   },
+   {
+    "de": "Gestern habe ich mich über meinen Nachbarn geärgert, er war wieder so laut.",
+    "en": "Yesterday I got annoyed with my neighbor, he was so loud again."
+   },
+   {
+    "de": "Aber heute habe ich mich über dein Paket gefreut, vielen Dank!",
+    "en": "But today I was happy about your package, thank you very much!"
+   },
+   {
+    "de": "Ich denke oft an unsere Zeit in Berlin.",
+    "en": "I often think of our time in Berlin."
+   },
+   {
+    "de": "Bis bald, Claire",
+    "en": "See you soon, Claire"
+   }
+  ]
  }
 }

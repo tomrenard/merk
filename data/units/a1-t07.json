@@ -496,6 +496,32 @@
  "writing": {
   "task": "A friend is coming to visit you. Write 3–4 sentences telling them how to get from the station to your flat.",
   "model": "Hallo Tom! Am Bahnhof nimmst du die Straßenbahn, Linie 4. Am Rathaus steigst du aus. Dann gehst du geradeaus und an der Ampel links. Meine Wohnung ist an der Ecke, Nummer 12. Bis später!",
-  "modelEn": "Hello Tom! At the station you take the tram, line 4. You get off at the town hall. Then you go straight ahead and left at the traffic light. My apartment is on the corner, number 12. See you later!"
+  "modelEn": "Hello Tom! At the station you take the tram, line 4. You get off at the town hall. Then you go straight ahead and left at the traffic light. My apartment is on the corner, number 12. See you later!",
+  "sentences": [
+   {
+    "de": "Hallo Tom!",
+    "en": "Hello Tom!"
+   },
+   {
+    "de": "Am Bahnhof nimmst du die Straßenbahn, Linie 4.",
+    "en": "At the station you take the tram, line 4."
+   },
+   {
+    "de": "Am Rathaus steigst du aus.",
+    "en": "You get off at the town hall."
+   },
+   {
+    "de": "Dann gehst du geradeaus und an der Ampel links.",
+    "en": "Then you go straight ahead and left at the traffic light."
+   },
+   {
+    "de": "Meine Wohnung ist an der Ecke, Nummer 12.",
+    "en": "My apartment is on the corner, number 12."
+   },
+   {
+    "de": "Bis später!",
+    "en": "See you later!"
+   }
+  ]
  }
 }

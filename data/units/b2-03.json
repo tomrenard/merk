@@ -489,6 +489,48 @@
  "writing": {
   "task": "You're moving abroad and want to sell some furniture. Write an online ad of about 100 words describing the items and their condition, with prices and pick-up details. Use participles before nouns (gut erhaltene Möbel, eine kaum benutzte Waschmaschine).",
   "model": "Möbel zu verkaufen – Umzug ins Ausland\n\nWegen meines Umzugs nach Frankreich verkaufe ich mehrere gut erhaltene Möbel. Das graue Sofa ist erst zwei Jahre alt und hat keine Flecken (150 Euro). Den dazu passenden Sessel gibt es für 50 Euro extra. Außerdem biete ich eine kaum benutzte Waschmaschine (200 Euro) und einen ausziehbaren Esstisch für bis zu acht Personen an (80 Euro). Alle genannten Möbel stehen in einer Nichtraucherwohnung. Die Preise sind verhandelbar. Die gekauften Sachen müssen bis zum 30. September abgeholt werden. Bei Interesse schreiben Sie mir bitte eine Nachricht mit Ihrer Telefonnummer.\n\nClaire, Leipzig",
-  "modelEn": "Furniture for sale – moving abroad\n\nBecause of my move to France, I'm selling several well-kept pieces of furniture. The gray sofa is only two years old and has no stains (150 euros). The matching armchair is available for 50 euros extra. I'm also offering a barely used washing machine (200 euros) and an extendable dining table for up to eight people (80 euros). All the mentioned furniture is in a non-smoking apartment. The prices are negotiable. The things bought must be picked up by September 30. If you're interested, please write me a message with your phone number.\n\nClaire, Leipzig"
+  "modelEn": "Furniture for sale – moving abroad\n\nBecause of my move to France, I'm selling several well-kept pieces of furniture. The gray sofa is only two years old and has no stains (150 euros). The matching armchair is available for 50 euros extra. I'm also offering a barely used washing machine (200 euros) and an extendable dining table for up to eight people (80 euros). All the mentioned furniture is in a non-smoking apartment. The prices are negotiable. The things bought must be picked up by September 30. If you're interested, please write me a message with your phone number.\n\nClaire, Leipzig",
+  "sentences": [
+   {
+    "de": "Möbel zu verkaufen – Umzug ins Ausland",
+    "en": "Furniture for sale – moving abroad"
+   },
+   {
+    "de": "Wegen meines Umzugs nach Frankreich verkaufe ich mehrere gut erhaltene Möbel.",
+    "en": "Because of my move to France, I'm selling several well-kept pieces of furniture."
+   },
+   {
+    "de": "Das graue Sofa ist erst zwei Jahre alt und hat keine Flecken (150 Euro).",
+    "en": "The gray sofa is only two years old and has no stains (150 euros)."
+   },
+   {
+    "de": "Den dazu passenden Sessel gibt es für 50 Euro extra.",
+    "en": "The matching armchair is available for 50 euros extra."
+   },
+   {
+    "de": "Außerdem biete ich eine kaum benutzte Waschmaschine (200 Euro) und einen ausziehbaren Esstisch für bis zu acht Personen an (80 Euro).",
+    "en": "I'm also offering a barely used washing machine (200 euros) and an extendable dining table for up to eight people (80 euros)."
+   },
+   {
+    "de": "Alle genannten Möbel stehen in einer Nichtraucherwohnung.",
+    "en": "All the mentioned furniture is in a non-smoking apartment."
+   },
+   {
+    "de": "Die Preise sind verhandelbar.",
+    "en": "The prices are negotiable."
+   },
+   {
+    "de": "Die gekauften Sachen müssen bis zum 30. September abgeholt werden.",
+    "en": "The things bought must be picked up by September 30."
+   },
+   {
+    "de": "Bei Interesse schreiben Sie mir bitte eine Nachricht mit Ihrer Telefonnummer.",
+    "en": "If you're interested, please write me a message with your phone number."
+   },
+   {
+    "de": "Claire, Leipzig",
+    "en": "Claire, Leipzig"
+   }
+  ]
  }
 }

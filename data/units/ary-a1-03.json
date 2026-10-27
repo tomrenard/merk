@@ -74,6 +74,11 @@
   "task": "Dis ton âge et celui de deux personnes (un homme et une femme), puis demande l’âge de l’autre. Écris en lettres latines.",
   "model": "أنا عندي عشرين عام. يوسف عندو تمنطاش العام و سلمى عندها سبعطاش العام. و نتا، شحال ف عمرك؟",
   "modelTr": "ana 3ndi 3chrin 3am. youssef 3ndo tmentach l3am w salma 3ndha sb3tach l3am. w nta, ch7al f 3mrek?",
-  "modelEn": "I'm twenty years old. Youssef is eighteen and Salma is seventeen. And you, how old are you?"
+  "modelEn": "I'm twenty years old. Youssef is eighteen and Salma is seventeen. And you, how old are you?",
+  "sentences": [
+   {"de": "أنا عندي عشرين عام.", "tr": "ana 3ndi 3chrin 3am.", "en": "I'm twenty years old."},
+   {"de": "يوسف عندو تمنطاش العام و سلمى عندها سبعطاش العام.", "tr": "youssef 3ndo tmentach l3am w salma 3ndha sb3tach l3am.", "en": "Youssef is eighteen and Salma is seventeen."},
+   {"de": "و نتا، شحال ف عمرك؟", "tr": "w nta, ch7al f 3mrek?", "en": "And you, how old are you?"}
+  ]
  }
 }

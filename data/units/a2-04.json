@@ -465,6 +465,36 @@
  "writing": {
   "task": "You've just moved. Write 5–6 sentences to a friend: say where things already are and where they still have to go.",
   "model": "Hallo Jana, wir wohnen jetzt in der Gartenstraße! Das Sofa ist schon im Wohnzimmer, aber die Bücher sind noch in den Kisten. Der Tisch kommt morgen in die Küche. Die Pflanzen bringe ich auf den Balkon. Mein Schreibtisch ist im Schlafzimmer, neben dem Fenster. Kommst du am Samstag und hilfst mir? Liebe Grüße, Tom",
-  "modelEn": "Hello Jana, we live on Gartenstraße now! The sofa is already in the living room, but the books are still in the boxes. The table is coming into the kitchen tomorrow. I'll bring the plants onto the balcony. My desk is in the bedroom, next to the window. Will you come on Saturday and help me? Kind regards, Tom"
+  "modelEn": "Hello Jana, we live on Gartenstraße now! The sofa is already in the living room, but the books are still in the boxes. The table is coming into the kitchen tomorrow. I'll bring the plants onto the balcony. My desk is in the bedroom, next to the window. Will you come on Saturday and help me? Kind regards, Tom",
+  "sentences": [
+   {
+    "de": "Hallo Jana, wir wohnen jetzt in der Gartenstraße!",
+    "en": "Hello Jana, we live on Gartenstraße now!"
+   },
+   {
+    "de": "Das Sofa ist schon im Wohnzimmer, aber die Bücher sind noch in den Kisten.",
+    "en": "The sofa is already in the living room, but the books are still in the boxes."
+   },
+   {
+    "de": "Der Tisch kommt morgen in die Küche.",
+    "en": "The table is coming into the kitchen tomorrow."
+   },
+   {
+    "de": "Die Pflanzen bringe ich auf den Balkon.",
+    "en": "I'll bring the plants onto the balcony."
+   },
+   {
+    "de": "Mein Schreibtisch ist im Schlafzimmer, neben dem Fenster.",
+    "en": "My desk is in the bedroom, next to the window."
+   },
+   {
+    "de": "Kommst du am Samstag und hilfst mir?",
+    "en": "Will you come on Saturday and help me?"
+   },
+   {
+    "de": "Liebe Grüße, Tom",
+    "en": "Kind regards, Tom"
+   }
+  ]
  }
 }

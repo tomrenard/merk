@@ -455,6 +455,28 @@
  "writing": {
   "task": "You and a friend want to go out this evening. Write 3–4 short sentences: what do you want to do, eat and drink?",
   "model": "Hallo Lisa! Ich will heute Abend nicht kochen. Wollen wir Pizza essen? Ich möchte auch ein Bier trinken. Was möchtest du machen?",
-  "modelEn": "Hello Lisa! I don't want to cook tonight. Shall we eat pizza? I'd also like to drink a beer. What would you like to do?"
+  "modelEn": "Hello Lisa! I don't want to cook tonight. Shall we eat pizza? I'd also like to drink a beer. What would you like to do?",
+  "sentences": [
+   {
+    "de": "Hallo Lisa!",
+    "en": "Hello Lisa!"
+   },
+   {
+    "de": "Ich will heute Abend nicht kochen.",
+    "en": "I don't want to cook tonight."
+   },
+   {
+    "de": "Wollen wir Pizza essen?",
+    "en": "Shall we eat pizza?"
+   },
+   {
+    "de": "Ich möchte auch ein Bier trinken.",
+    "en": "I'd also like to drink a beer."
+   },
+   {
+    "de": "Was möchtest du machen?",
+    "en": "What would you like to do?"
+   }
+  ]
  }
 }

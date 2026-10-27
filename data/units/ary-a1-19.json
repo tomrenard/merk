@@ -504,6 +504,23 @@
   "task": "Écris 2 à 4 phrases sur ton week-end : ce que tu aimes faire, ce que tu n’aimes pas, et avec qui tu sors. Écris en lettres latines.",
   "model": "ف الويكاند كنبغي نقرا و نسمع الموسيقى. نهار السبت كنخرج مع صحابي. ماكنبغيش نطيب.",
   "modelTr": "f lwikand kanbghi n9ra w nsme3 lmousi9a. nhar ssebt kankhrej m3a s7abi. makanbghich ntiyeb.",
-  "modelEn": "At the weekend I like to read and listen to music. On Saturday I go out with my friends. I don't like to cook."
+  "modelEn": "At the weekend I like to read and listen to music. On Saturday I go out with my friends. I don't like to cook.",
+  "sentences": [
+   {
+    "de": "ف الويكاند كنبغي نقرا و نسمع الموسيقى.",
+    "tr": "f lwikand kanbghi n9ra w nsme3 lmousi9a.",
+    "en": "At the weekend I like to read and listen to music."
+   },
+   {
+    "de": "نهار السبت كنخرج مع صحابي.",
+    "tr": "nhar ssebt kankhrej m3a s7abi.",
+    "en": "On Saturday I go out with my friends."
+   },
+   {
+    "de": "ماكنبغيش نطيب.",
+    "tr": "makanbghich ntiyeb.",
+    "en": "I don't like to cook."
+   }
+  ]
  }
 }

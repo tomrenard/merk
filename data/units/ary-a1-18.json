@@ -501,6 +501,23 @@
   "task": "Un ami te demande quel temps il fait chez toi. Écris 2 à 4 phrases : le temps aujourd’hui, hier et demain. Écris en lettres latines.",
   "model": "اليوم كاين السحاب و الحال بارد. البارح كان الحال مزيان. غدا غادي تشتا.",
   "modelTr": "lyoum kayn ss7ab w l7al bared. lbare7 kan l7al mzyan. ghedda ghadi tchta.",
-  "modelEn": "Today it's cloudy and the weather is cold. Yesterday the weather was nice. Tomorrow it's going to rain."
+  "modelEn": "Today it's cloudy and the weather is cold. Yesterday the weather was nice. Tomorrow it's going to rain.",
+  "sentences": [
+   {
+    "de": "اليوم كاين السحاب و الحال بارد.",
+    "tr": "lyoum kayn ss7ab w l7al bared.",
+    "en": "Today it's cloudy and the weather is cold."
+   },
+   {
+    "de": "البارح كان الحال مزيان.",
+    "tr": "lbare7 kan l7al mzyan.",
+    "en": "Yesterday the weather was nice."
+   },
+   {
+    "de": "غدا غادي تشتا.",
+    "tr": "ghedda ghadi tchta.",
+    "en": "Tomorrow it's going to rain."
+   }
+  ]
  }
 }

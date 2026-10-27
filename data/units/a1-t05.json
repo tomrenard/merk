@@ -494,6 +494,24 @@
  "writing": {
   "task": "A new colleague asks about your free time. Write 3–4 sentences: what you like doing, what you don't like doing and what you do at the weekend.",
   "model": "Ich koche gern und ich lese viel. Ich spiele nicht gern Fußball, aber ich schwimme gern. Am Wochenende fahre ich oft Rad oder ich treffe Freunde. Und du, was machst du gern?",
-  "modelEn": "I like cooking and I read a lot. I don't like playing football, but I like swimming. At the weekend I often ride my bike or I meet friends. And you, what do you like to do?"
+  "modelEn": "I like cooking and I read a lot. I don't like playing football, but I like swimming. At the weekend I often ride my bike or I meet friends. And you, what do you like to do?",
+  "sentences": [
+   {
+    "de": "Ich koche gern und ich lese viel.",
+    "en": "I like cooking and I read a lot."
+   },
+   {
+    "de": "Ich spiele nicht gern Fußball, aber ich schwimme gern.",
+    "en": "I don't like playing football, but I like swimming."
+   },
+   {
+    "de": "Am Wochenende fahre ich oft Rad oder ich treffe Freunde.",
+    "en": "At the weekend I often ride my bike or I meet friends."
+   },
+   {
+    "de": "Und du, was machst du gern?",
+    "en": "And you, what do you like to do?"
+   }
+  ]
  }
 }

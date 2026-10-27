@@ -455,6 +455,32 @@
  "writing": {
   "task": "Write 3–4 short sentences to a friend: how do you get around town, and how does someone you know get around?",
   "model": "Hallo Max! Ich fahre jeden Tag Fahrrad. Anna nimmt die U-Bahn. Sie liest dort die Zeitung. Und du? Fährst du Auto oder nimmst du den Bus?",
-  "modelEn": "Hello Max! I ride my bike every day. Anna takes the subway. She reads the newspaper there. And you? Do you go by car or do you take the bus?"
+  "modelEn": "Hello Max! I ride my bike every day. Anna takes the subway. She reads the newspaper there. And you? Do you go by car or do you take the bus?",
+  "sentences": [
+   {
+    "de": "Hallo Max!",
+    "en": "Hello Max!"
+   },
+   {
+    "de": "Ich fahre jeden Tag Fahrrad.",
+    "en": "I ride my bike every day."
+   },
+   {
+    "de": "Anna nimmt die U-Bahn.",
+    "en": "Anna takes the subway."
+   },
+   {
+    "de": "Sie liest dort die Zeitung.",
+    "en": "She reads the newspaper there."
+   },
+   {
+    "de": "Und du?",
+    "en": "And you?"
+   },
+   {
+    "de": "Fährst du Auto oder nimmst du den Bus?",
+    "en": "Do you go by car or do you take the bus?"
+   }
+  ]
  }
 }

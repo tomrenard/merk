@@ -465,6 +465,32 @@
  "writing": {
   "task": "Write to a friend about your hobby (5–6 sentences): what you have started, what you try to do, what is fun or hard, and invite your friend to join you.",
   "model": "Hallo Nina, seit März spiele ich Volleyball in einem Verein. Es macht mir viel Spaß, mit dem Team zu trainieren. Letzte Woche habe ich auch angefangen, Gitarre zu lernen. Ich versuche, jeden Abend zwanzig Minuten zu üben, aber das ist nicht leicht. Hast du am Freitag Lust, mit mir zum Training zu kommen? Liebe Grüße, Lucas",
-  "modelEn": "Hello Nina, since March I've been playing volleyball in a club. I really enjoy training with the team. Last week I also started learning guitar. I try to practice twenty minutes every evening, but it isn't easy. Do you feel like coming to training with me on Friday? Kind regards, Lucas"
+  "modelEn": "Hello Nina, since March I've been playing volleyball in a club. I really enjoy training with the team. Last week I also started learning guitar. I try to practice twenty minutes every evening, but it isn't easy. Do you feel like coming to training with me on Friday? Kind regards, Lucas",
+  "sentences": [
+   {
+    "de": "Hallo Nina, seit März spiele ich Volleyball in einem Verein.",
+    "en": "Hello Nina, since March I've been playing volleyball in a club."
+   },
+   {
+    "de": "Es macht mir viel Spaß, mit dem Team zu trainieren.",
+    "en": "I really enjoy training with the team."
+   },
+   {
+    "de": "Letzte Woche habe ich auch angefangen, Gitarre zu lernen.",
+    "en": "Last week I also started learning guitar."
+   },
+   {
+    "de": "Ich versuche, jeden Abend zwanzig Minuten zu üben, aber das ist nicht leicht.",
+    "en": "I try to practice twenty minutes every evening, but it isn't easy."
+   },
+   {
+    "de": "Hast du am Freitag Lust, mit mir zum Training zu kommen?",
+    "en": "Do you feel like coming to training with me on Friday?"
+   },
+   {
+    "de": "Liebe Grüße, Lucas",
+    "en": "Kind regards, Lucas"
+   }
+  ]
  }
 }

@@ -477,6 +477,48 @@
  "writing": {
   "task": "In your flat the bedroom window won't close any more and the bathroom radiator can't be turned down. The caretaker's office was closed twice. Write an email of about 100 words to the property management describing the problems and asking for a repair.",
   "model": "Sehr geehrte Damen und Herren,\n\nin meiner Wohnung (Lindenstraße 12, 3. Stock) gibt es seit letzter Woche zwei Probleme. Das Fenster im Schlafzimmer lässt sich nicht mehr richtig schließen, deshalb ist es nachts sehr kalt. Außerdem ist die Heizung im Bad defekt: Sie lässt sich nicht herunterdrehen und ist ständig heiß. Ich wollte den Hausmeister informieren, aber sein Büro war zweimal geschlossen, und telefonisch ist er leider nicht erreichbar. Könnten Sie bitte so bald wie möglich einen Handwerker schicken? Vormittags bin ich meistens zu Hause.\n\nVielen Dank im Voraus.\n\nMit freundlichen Grüßen\nClaire Martin",
-  "modelEn": "Dear Sir or Madam,\n\nin my apartment (Lindenstraße 12, 3rd floor) there have been two problems since last week. The window in the bedroom can no longer be closed properly, so it is very cold at night. In addition, the heater in the bathroom is defective: it can't be turned down and is constantly hot. I wanted to inform the caretaker, but his office was closed twice, and unfortunately he can't be reached by phone. Could you please send a tradesperson as soon as possible? In the mornings I'm mostly at home.\n\nThank you in advance.\n\nKind regards\nClaire Martin"
+  "modelEn": "Dear Sir or Madam,\n\nin my apartment (Lindenstraße 12, 3rd floor) there have been two problems since last week. The window in the bedroom can no longer be closed properly, so it is very cold at night. In addition, the heater in the bathroom is defective: it can't be turned down and is constantly hot. I wanted to inform the caretaker, but his office was closed twice, and unfortunately he can't be reached by phone. Could you please send a tradesperson as soon as possible? In the mornings I'm mostly at home.\n\nThank you in advance.\n\nKind regards\nClaire Martin",
+  "sentences": [
+   {
+    "de": "Sehr geehrte Damen und Herren,",
+    "en": "Dear Sir or Madam,"
+   },
+   {
+    "de": "in meiner Wohnung (Lindenstraße 12, 3. Stock) gibt es seit letzter Woche zwei Probleme.",
+    "en": "in my apartment (Lindenstraße 12, 3rd floor) there have been two problems since last week."
+   },
+   {
+    "de": "Das Fenster im Schlafzimmer lässt sich nicht mehr richtig schließen, deshalb ist es nachts sehr kalt.",
+    "en": "The window in the bedroom can no longer be closed properly, so it is very cold at night."
+   },
+   {
+    "de": "Außerdem ist die Heizung im Bad defekt: Sie lässt sich nicht herunterdrehen und ist ständig heiß.",
+    "en": "In addition, the heater in the bathroom is defective: it can't be turned down and is constantly hot."
+   },
+   {
+    "de": "Ich wollte den Hausmeister informieren, aber sein Büro war zweimal geschlossen, und telefonisch ist er leider nicht erreichbar.",
+    "en": "I wanted to inform the caretaker, but his office was closed twice, and unfortunately he can't be reached by phone."
+   },
+   {
+    "de": "Könnten Sie bitte so bald wie möglich einen Handwerker schicken?",
+    "en": "Could you please send a tradesperson as soon as possible?"
+   },
+   {
+    "de": "Vormittags bin ich meistens zu Hause.",
+    "en": "In the mornings I'm mostly at home."
+   },
+   {
+    "de": "Vielen Dank im Voraus.",
+    "en": "Thank you in advance."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire Martin",
+    "en": "Claire Martin"
+   }
+  ]
  }
 }

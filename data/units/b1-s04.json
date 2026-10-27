@@ -533,6 +533,52 @@
  "writing": {
   "task": "You are Frau Schmitz. Write an 80–100-word note for the front door after the party: thank the neighbours, mention what happened because of the rain and say something about next year.",
   "model": "Liebe Nachbarinnen und Nachbarn,\n\nvielen Dank für das schöne Hoffest am Samstag! Es gab leckeres Essen, kalte Getränke und gute Laune. Während des Essens hat es leider stark geregnet, aber Herr Krause hat uns mit seinem Pavillon geholfen. So konnten wir trotz des Regens draußen weiterfeiern, und niemand ist nass geworden. Vielen Dank auch für die schöne Musik! Wegen des Wetters feiern wir nächstes Jahr erst im Juli. Hoffentlich regnet es dann nicht! Ich freue mich schon darauf.\n\nHerzliche Grüße\nHildegard Schmitz, Erdgeschoss",
-  "modelEn": "Dear neighbors,\n\nthank you very much for the lovely courtyard party on Saturday! There was tasty food, cold drinks and good spirits. During the meal it unfortunately rained heavily, but Mr. Krause helped us with his gazebo. So despite the rain we could keep celebrating outside, and nobody got wet. Thank you also for the lovely music! Because of the weather, next year we'll celebrate only in July. Hopefully it won't rain then! I'm already looking forward to it.\n\nWarm regards\nHildegard Schmitz, ground floor"
+  "modelEn": "Dear neighbors,\n\nthank you very much for the lovely courtyard party on Saturday! There was tasty food, cold drinks and good spirits. During the meal it unfortunately rained heavily, but Mr. Krause helped us with his gazebo. So despite the rain we could keep celebrating outside, and nobody got wet. Thank you also for the lovely music! Because of the weather, next year we'll celebrate only in July. Hopefully it won't rain then! I'm already looking forward to it.\n\nWarm regards\nHildegard Schmitz, ground floor",
+  "sentences": [
+   {
+    "de": "Liebe Nachbarinnen und Nachbarn,",
+    "en": "Dear neighbors,"
+   },
+   {
+    "de": "vielen Dank für das schöne Hoffest am Samstag!",
+    "en": "thank you very much for the lovely courtyard party on Saturday!"
+   },
+   {
+    "de": "Es gab leckeres Essen, kalte Getränke und gute Laune.",
+    "en": "There was tasty food, cold drinks and good spirits."
+   },
+   {
+    "de": "Während des Essens hat es leider stark geregnet, aber Herr Krause hat uns mit seinem Pavillon geholfen.",
+    "en": "During the meal it unfortunately rained heavily, but Mr. Krause helped us with his gazebo."
+   },
+   {
+    "de": "So konnten wir trotz des Regens draußen weiterfeiern, und niemand ist nass geworden.",
+    "en": "So despite the rain we could keep celebrating outside, and nobody got wet."
+   },
+   {
+    "de": "Vielen Dank auch für die schöne Musik!",
+    "en": "Thank you also for the lovely music!"
+   },
+   {
+    "de": "Wegen des Wetters feiern wir nächstes Jahr erst im Juli.",
+    "en": "Because of the weather, next year we'll celebrate only in July."
+   },
+   {
+    "de": "Hoffentlich regnet es dann nicht!",
+    "en": "Hopefully it won't rain then!"
+   },
+   {
+    "de": "Ich freue mich schon darauf.",
+    "en": "I'm already looking forward to it."
+   },
+   {
+    "de": "Herzliche Grüße",
+    "en": "Warm regards"
+   },
+   {
+    "de": "Hildegard Schmitz, Erdgeschoss",
+    "en": "Hildegard Schmitz, ground floor"
+   }
+  ]
  }
 }

@@ -459,6 +459,24 @@
  "writing": {
   "task": "You have just moved. Write a message to a friend (3–4 sentences): what you already have in the flat and what you still need.",
   "model": "Hallo Ben, die Wohnung ist schön! Ich habe schon ein Bett und einen Tisch. Aber ich brauche noch einen Stuhl und eine Lampe. Hast du am Samstag Zeit?",
-  "modelEn": "Hello Ben, the apartment is nice! I already have a bed and a table. But I still need a chair and a lamp. Do you have time on Saturday?"
+  "modelEn": "Hello Ben, the apartment is nice! I already have a bed and a table. But I still need a chair and a lamp. Do you have time on Saturday?",
+  "sentences": [
+   {
+    "de": "Hallo Ben, die Wohnung ist schön!",
+    "en": "Hello Ben, the apartment is nice!"
+   },
+   {
+    "de": "Ich habe schon ein Bett und einen Tisch.",
+    "en": "I already have a bed and a table."
+   },
+   {
+    "de": "Aber ich brauche noch einen Stuhl und eine Lampe.",
+    "en": "But I still need a chair and a lamp."
+   },
+   {
+    "de": "Hast du am Samstag Zeit?",
+    "en": "Do you have time on Saturday?"
+   }
+  ]
  }
 }

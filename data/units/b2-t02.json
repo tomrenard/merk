@@ -520,6 +520,52 @@
  "writing": {
   "task": "Write a letter of 100–130 words to your landlord. Refer to his rent increase, say why you don't agree (it is above the rent index) and report a defect in your flat that still hasn't been repaired.",
   "model": "Sehr geehrter Herr Kahl,\n\nvielen Dank für Ihr Schreiben vom 3. März, in dem Sie die Kaltmiete von 900 auf 1.120 Euro erhöhen möchten.\n\nDieser Erhöhung stimme ich nicht zu. Die geforderte Miete liegt deutlich über dem aktuellen Mietspiegel, und in Köln darf die Miete in drei Jahren um höchstens 15 Prozent steigen. Der Mieterverein hat Ihr Schreiben bereits geprüft.\n\nAußerdem möchte ich Sie noch einmal auf einen Mangel hinweisen: Die Heizung in meiner Wohnung ist seit dem 10. Februar kaputt. Ich habe den Hausmeister zweimal informiert, aber bis heute ist nichts passiert. Bitte kümmern Sie sich bis Ende der Woche darum. Fotos schicke ich Ihnen gern.\n\nMit freundlichen Grüßen\nSofia Martín",
-  "modelEn": "Dear Mr. Kahl,\n\nthank you very much for your letter of March 3, in which you want to raise the base rent from 900 to 1,120 euros.\n\nI do not agree to this increase. The demanded rent is clearly above the current rent index, and in Cologne the rent may rise by at most 15 percent in three years. The tenants' association has already reviewed your letter.\n\nI would also like to point out a defect once more: the heating in my apartment has been broken since February 10. I have informed the caretaker twice, but nothing has happened to this day. Please take care of it by the end of the week. I'm happy to send you photos.\n\nKind regards\nSofia Martín"
+  "modelEn": "Dear Mr. Kahl,\n\nthank you very much for your letter of March 3, in which you want to raise the base rent from 900 to 1,120 euros.\n\nI do not agree to this increase. The demanded rent is clearly above the current rent index, and in Cologne the rent may rise by at most 15 percent in three years. The tenants' association has already reviewed your letter.\n\nI would also like to point out a defect once more: the heating in my apartment has been broken since February 10. I have informed the caretaker twice, but nothing has happened to this day. Please take care of it by the end of the week. I'm happy to send you photos.\n\nKind regards\nSofia Martín",
+  "sentences": [
+   {
+    "de": "Sehr geehrter Herr Kahl,",
+    "en": "Dear Mr. Kahl,"
+   },
+   {
+    "de": "vielen Dank für Ihr Schreiben vom 3. März, in dem Sie die Kaltmiete von 900 auf 1.120 Euro erhöhen möchten.",
+    "en": "thank you very much for your letter of March 3, in which you want to raise the base rent from 900 to 1,120 euros."
+   },
+   {
+    "de": "Dieser Erhöhung stimme ich nicht zu.",
+    "en": "I do not agree to this increase."
+   },
+   {
+    "de": "Die geforderte Miete liegt deutlich über dem aktuellen Mietspiegel, und in Köln darf die Miete in drei Jahren um höchstens 15 Prozent steigen.",
+    "en": "The demanded rent is clearly above the current rent index, and in Cologne the rent may rise by at most 15 percent in three years."
+   },
+   {
+    "de": "Der Mieterverein hat Ihr Schreiben bereits geprüft.",
+    "en": "The tenants' association has already reviewed your letter."
+   },
+   {
+    "de": "Außerdem möchte ich Sie noch einmal auf einen Mangel hinweisen: Die Heizung in meiner Wohnung ist seit dem 10. Februar kaputt.",
+    "en": "I would also like to point out a defect once more: the heating in my apartment has been broken since February 10."
+   },
+   {
+    "de": "Ich habe den Hausmeister zweimal informiert, aber bis heute ist nichts passiert.",
+    "en": "I have informed the caretaker twice, but nothing has happened to this day."
+   },
+   {
+    "de": "Bitte kümmern Sie sich bis Ende der Woche darum.",
+    "en": "Please take care of it by the end of the week."
+   },
+   {
+    "de": "Fotos schicke ich Ihnen gern.",
+    "en": "I'm happy to send you photos."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Sofia Martín",
+    "en": "Sofia Martín"
+   }
+  ]
  }
 }

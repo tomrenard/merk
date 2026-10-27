@@ -453,6 +453,24 @@
  "writing": {
   "task": "Your flatmate asked you to buy bread rolls, eggs and cheese, but the supermarket doesn't have everything. Write a short message (3–4 sentences) using kein and nicht.",
   "model": "Hallo Mia, der Supermarkt hat heute keine Brötchen. Ich kaufe Brot, es ist frisch. Eier haben sie, aber ich finde den Käse nicht. Brauchst du noch etwas?",
-  "modelEn": "Hello Mia, the supermarket has no bread rolls today. I'm buying bread, it's fresh. They have eggs, but I can't find the cheese. Do you need anything else?"
+  "modelEn": "Hello Mia, the supermarket has no bread rolls today. I'm buying bread, it's fresh. They have eggs, but I can't find the cheese. Do you need anything else?",
+  "sentences": [
+   {
+    "de": "Hallo Mia, der Supermarkt hat heute keine Brötchen.",
+    "en": "Hello Mia, the supermarket has no bread rolls today."
+   },
+   {
+    "de": "Ich kaufe Brot, es ist frisch.",
+    "en": "I'm buying bread, it's fresh."
+   },
+   {
+    "de": "Eier haben sie, aber ich finde den Käse nicht.",
+    "en": "They have eggs, but I can't find the cheese."
+   },
+   {
+    "de": "Brauchst du noch etwas?",
+    "en": "Do you need anything else?"
+   }
+  ]
  }
 }

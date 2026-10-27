@@ -505,6 +505,36 @@
  "writing": {
   "task": "Write 5–6 sentences to a friend about someone new in your life (a friend or a partner): how you met, what they are like, and how you feel.",
   "model": "Liebe Sophie, stell dir vor: Ich bin verliebt! Er heißt Lukas, und wir haben uns im Mai in einem Sprachkurs kennengelernt. Nach dem Kurs haben wir uns oft lange unterhalten. Lukas ist sehr nett und lustig, und wir lachen viel zusammen. Wenn er nicht da ist, vermisse ich ihn. Ich bin gerade sehr glücklich! Viele Grüße, Claire",
-  "modelEn": "Dear Sophie, just imagine: I'm in love! His name is Lukas, and we met in May in a language course. After the course we often talked for a long time. Lukas is very nice and funny, and we laugh a lot together. When he isn't there, I miss him. I'm very happy right now! Kind regards, Claire"
+  "modelEn": "Dear Sophie, just imagine: I'm in love! His name is Lukas, and we met in May in a language course. After the course we often talked for a long time. Lukas is very nice and funny, and we laugh a lot together. When he isn't there, I miss him. I'm very happy right now! Kind regards, Claire",
+  "sentences": [
+   {
+    "de": "Liebe Sophie, stell dir vor: Ich bin verliebt!",
+    "en": "Dear Sophie, just imagine: I'm in love!"
+   },
+   {
+    "de": "Er heißt Lukas, und wir haben uns im Mai in einem Sprachkurs kennengelernt.",
+    "en": "His name is Lukas, and we met in May in a language course."
+   },
+   {
+    "de": "Nach dem Kurs haben wir uns oft lange unterhalten.",
+    "en": "After the course we often talked for a long time."
+   },
+   {
+    "de": "Lukas ist sehr nett und lustig, und wir lachen viel zusammen.",
+    "en": "Lukas is very nice and funny, and we laugh a lot together."
+   },
+   {
+    "de": "Wenn er nicht da ist, vermisse ich ihn.",
+    "en": "When he isn't there, I miss him."
+   },
+   {
+    "de": "Ich bin gerade sehr glücklich!",
+    "en": "I'm very happy right now!"
+   },
+   {
+    "de": "Viele Grüße, Claire",
+    "en": "Kind regards, Claire"
+   }
+  ]
  }
 }

@@ -513,6 +513,56 @@
  "writing": {
   "task": "A new neighbour from Spain asks you how the rubbish is sorted in your building. Write an 80–100-word message explaining the bins and the deposit (Pfand).",
   "model": "Hallo Sofía,\n\nhier eine kleine Erklärung zur Mülltrennung bei uns im Haus. Verpackungen aus Plastik und Metall, zum Beispiel Joghurtbecher oder Konservendosen, kommen in die gelbe Tonne. Papier und Kartons ohne Essensreste gehören in die blaue Tonne. Essensreste und Obst kommen in die braune Biotonne, alles andere in den Restmüll. Die Tonnen stehen im Hof und werden jeden Dienstag geleert. Flaschen mit Pfand musst du in den Supermarkt zurückbringen. Dort bekommst du dein Geld zurück. Weinflaschen kommen in den Glascontainer an der Ecke. Wenn du Fragen hast, klingel einfach bei mir!\n\nLiebe Grüße\nInès",
-  "modelEn": "Hello Sofía,\n\nhere is a short explanation of waste sorting in our building. Packaging made of plastic and metal, for example yogurt cups or tin cans, goes into the yellow bin. Paper and cardboard without food scraps belong in the blue bin. Food scraps and fruit go into the brown organic waste bin, everything else into the general waste. The bins are in the yard and are emptied every Tuesday. Bottles with a deposit you have to take back to the supermarket. There you get your money back. Wine bottles go into the glass container on the corner. If you have questions, just ring my bell!\n\nKind regards\nInès"
+  "modelEn": "Hello Sofía,\n\nhere is a short explanation of waste sorting in our building. Packaging made of plastic and metal, for example yogurt cups or tin cans, goes into the yellow bin. Paper and cardboard without food scraps belong in the blue bin. Food scraps and fruit go into the brown organic waste bin, everything else into the general waste. The bins are in the yard and are emptied every Tuesday. Bottles with a deposit you have to take back to the supermarket. There you get your money back. Wine bottles go into the glass container on the corner. If you have questions, just ring my bell!\n\nKind regards\nInès",
+  "sentences": [
+   {
+    "de": "Hallo Sofía,",
+    "en": "Hello Sofía,"
+   },
+   {
+    "de": "hier eine kleine Erklärung zur Mülltrennung bei uns im Haus.",
+    "en": "here is a short explanation of waste sorting in our building."
+   },
+   {
+    "de": "Verpackungen aus Plastik und Metall, zum Beispiel Joghurtbecher oder Konservendosen, kommen in die gelbe Tonne.",
+    "en": "Packaging made of plastic and metal, for example yogurt cups or tin cans, goes into the yellow bin."
+   },
+   {
+    "de": "Papier und Kartons ohne Essensreste gehören in die blaue Tonne.",
+    "en": "Paper and cardboard without food scraps belong in the blue bin."
+   },
+   {
+    "de": "Essensreste und Obst kommen in die braune Biotonne, alles andere in den Restmüll.",
+    "en": "Food scraps and fruit go into the brown organic waste bin, everything else into the general waste."
+   },
+   {
+    "de": "Die Tonnen stehen im Hof und werden jeden Dienstag geleert.",
+    "en": "The bins are in the yard and are emptied every Tuesday."
+   },
+   {
+    "de": "Flaschen mit Pfand musst du in den Supermarkt zurückbringen.",
+    "en": "Bottles with a deposit you have to take back to the supermarket."
+   },
+   {
+    "de": "Dort bekommst du dein Geld zurück.",
+    "en": "There you get your money back."
+   },
+   {
+    "de": "Weinflaschen kommen in den Glascontainer an der Ecke.",
+    "en": "Wine bottles go into the glass container on the corner."
+   },
+   {
+    "de": "Wenn du Fragen hast, klingel einfach bei mir!",
+    "en": "If you have questions, just ring my bell!"
+   },
+   {
+    "de": "Liebe Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Inès",
+    "en": "Inès"
+   }
+  ]
  }
 }

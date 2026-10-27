@@ -503,6 +503,32 @@
  "writing": {
   "task": "It's your first week at a new job. Write a short email (5–6 sentences) to your new team: introduce yourself, say where you sit and what you work on, and suggest lunch together.",
   "model": "Hallo zusammen, ich bin Claire Dubois, die neue Kollegin im Marketing. Ich komme aus Lyon und wohne seit zwei Jahren in Köln. Mein Schreibtisch ist in Raum 3, direkt neben der Küche. Diese Woche arbeite ich mit Frau Krüger an einem neuen Projekt. Wollen wir am Mittwoch zusammen in die Kantine gehen? Viele Grüße, Claire",
-  "modelEn": "Hello everyone, I'm Claire Dubois, the new colleague in marketing. I come from Lyon and have lived in Cologne for two years. My desk is in room 3, right next to the kitchen. This week I'm working with Ms. Krüger on a new project. Shall we go to the canteen together on Wednesday? Kind regards, Claire"
+  "modelEn": "Hello everyone, I'm Claire Dubois, the new colleague in marketing. I come from Lyon and have lived in Cologne for two years. My desk is in room 3, right next to the kitchen. This week I'm working with Ms. Krüger on a new project. Shall we go to the canteen together on Wednesday? Kind regards, Claire",
+  "sentences": [
+   {
+    "de": "Hallo zusammen, ich bin Claire Dubois, die neue Kollegin im Marketing.",
+    "en": "Hello everyone, I'm Claire Dubois, the new colleague in marketing."
+   },
+   {
+    "de": "Ich komme aus Lyon und wohne seit zwei Jahren in Köln.",
+    "en": "I come from Lyon and have lived in Cologne for two years."
+   },
+   {
+    "de": "Mein Schreibtisch ist in Raum 3, direkt neben der Küche.",
+    "en": "My desk is in room 3, right next to the kitchen."
+   },
+   {
+    "de": "Diese Woche arbeite ich mit Frau Krüger an einem neuen Projekt.",
+    "en": "This week I'm working with Ms. Krüger on a new project."
+   },
+   {
+    "de": "Wollen wir am Mittwoch zusammen in die Kantine gehen?",
+    "en": "Shall we go to the canteen together on Wednesday?"
+   },
+   {
+    "de": "Viele Grüße, Claire",
+    "en": "Kind regards, Claire"
+   }
+  ]
  }
 }

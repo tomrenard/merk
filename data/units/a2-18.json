@@ -472,6 +472,32 @@
  "writing": {
   "task": "You are going away for a week. Write a polite note to your neighbour (5–6 sentences) and ask for two or three favours.",
   "model": "Liebe Frau Klein, ich bin nächste Woche in Frankreich. Hätten Sie vielleicht Zeit, meine Blumen zu gießen? Könnten Sie auch die Post aus meinem Briefkasten nehmen? Den Schlüssel würde ich Ihnen am Sonntag bringen. Das wäre wirklich sehr nett! Viele Grüße, Thomas",
-  "modelEn": "Dear Ms. Klein, I'm in France next week. Would you perhaps have time to water my flowers? Could you also take the mail from my mailbox? I would bring you the key on Sunday. That would be really very kind! Kind regards, Thomas"
+  "modelEn": "Dear Ms. Klein, I'm in France next week. Would you perhaps have time to water my flowers? Could you also take the mail from my mailbox? I would bring you the key on Sunday. That would be really very kind! Kind regards, Thomas",
+  "sentences": [
+   {
+    "de": "Liebe Frau Klein, ich bin nächste Woche in Frankreich.",
+    "en": "Dear Ms. Klein, I'm in France next week."
+   },
+   {
+    "de": "Hätten Sie vielleicht Zeit, meine Blumen zu gießen?",
+    "en": "Would you perhaps have time to water my flowers?"
+   },
+   {
+    "de": "Könnten Sie auch die Post aus meinem Briefkasten nehmen?",
+    "en": "Could you also take the mail from my mailbox?"
+   },
+   {
+    "de": "Den Schlüssel würde ich Ihnen am Sonntag bringen.",
+    "en": "I would bring you the key on Sunday."
+   },
+   {
+    "de": "Das wäre wirklich sehr nett!",
+    "en": "That would be really very kind!"
+   },
+   {
+    "de": "Viele Grüße, Thomas",
+    "en": "Kind regards, Thomas"
+   }
+  ]
  }
 }

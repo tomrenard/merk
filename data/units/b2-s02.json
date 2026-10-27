@@ -539,6 +539,52 @@
  "writing": {
   "task": "Write a letter of 100–130 words to the radio station about the report. Say what you think of the idea, whether a shop like this would work where you live, and report one thing Mr Wollny said, using Konjunktiv I.",
   "model": "Liebe Redaktion,\n\nmit großem Interesse habe ich Ihren Bericht über den Dorfladen in Kleinwiesenau gehört.\n\nHerr Wollny sagte, viele hätten die Idee am Anfang für verrückt gehalten und befürchtet, dass alles geklaut werde. Umso schöner finde ich, dass der Laden heute funktioniert und sogar ein Treffpunkt geworden ist. Genau das, was auf dem Land oft fehlt.\n\nIch wohne in einem kleinen Ort bei Kassel, in dem es seit Jahren keinen Bäcker mehr gibt. Bei uns könnte so ein Laden auch funktionieren, denn viele Ältere haben kein Auto. Allerdings wäre die Technik für manche sicher ein Problem. Eine Stunde Hilfe pro Woche, wie in Kleinwiesenau, wäre deshalb eine gute Lösung.\n\nMit freundlichen Grüßen\nJonas Krüger",
-  "modelEn": "Dear editors,\n\nI listened with great interest to your report about the village shop in Kleinwiesenau.\n\nMr. Wollny said that many had thought the idea was crazy at the beginning and had feared that everything would be stolen. All the more I find it nice that the shop works today and has even become a meeting place. Exactly what is often missing in the countryside.\n\nI live in a small village near Kassel where there has been no baker for years. Such a shop could work with us too, because many older people have no car. However, the technology would surely be a problem for some. One hour of help per week, as in Kleinwiesenau, would therefore be a good solution.\n\nKind regards\nJonas Krüger"
+  "modelEn": "Dear editors,\n\nI listened with great interest to your report about the village shop in Kleinwiesenau.\n\nMr. Wollny said that many had thought the idea was crazy at the beginning and had feared that everything would be stolen. All the more I find it nice that the shop works today and has even become a meeting place. Exactly what is often missing in the countryside.\n\nI live in a small village near Kassel where there has been no baker for years. Such a shop could work with us too, because many older people have no car. However, the technology would surely be a problem for some. One hour of help per week, as in Kleinwiesenau, would therefore be a good solution.\n\nKind regards\nJonas Krüger",
+  "sentences": [
+   {
+    "de": "Liebe Redaktion,",
+    "en": "Dear editors,"
+   },
+   {
+    "de": "mit großem Interesse habe ich Ihren Bericht über den Dorfladen in Kleinwiesenau gehört.",
+    "en": "I listened with great interest to your report about the village shop in Kleinwiesenau."
+   },
+   {
+    "de": "Herr Wollny sagte, viele hätten die Idee am Anfang für verrückt gehalten und befürchtet, dass alles geklaut werde.",
+    "en": "Mr. Wollny said that many had thought the idea was crazy at the beginning and had feared that everything would be stolen."
+   },
+   {
+    "de": "Umso schöner finde ich, dass der Laden heute funktioniert und sogar ein Treffpunkt geworden ist.",
+    "en": "All the more I find it nice that the shop works today and has even become a meeting place."
+   },
+   {
+    "de": "Genau das, was auf dem Land oft fehlt.",
+    "en": "Exactly what is often missing in the countryside."
+   },
+   {
+    "de": "Ich wohne in einem kleinen Ort bei Kassel, in dem es seit Jahren keinen Bäcker mehr gibt.",
+    "en": "I live in a small village near Kassel where there has been no baker for years."
+   },
+   {
+    "de": "Bei uns könnte so ein Laden auch funktionieren, denn viele Ältere haben kein Auto.",
+    "en": "Such a shop could work with us too, because many older people have no car."
+   },
+   {
+    "de": "Allerdings wäre die Technik für manche sicher ein Problem.",
+    "en": "However, the technology would surely be a problem for some."
+   },
+   {
+    "de": "Eine Stunde Hilfe pro Woche, wie in Kleinwiesenau, wäre deshalb eine gute Lösung.",
+    "en": "One hour of help per week, as in Kleinwiesenau, would therefore be a good solution."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Jonas Krüger",
+    "en": "Jonas Krüger"
+   }
+  ]
  }
 }

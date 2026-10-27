@@ -491,6 +491,32 @@
  "writing": {
   "task": "Write a short message (3–4 sentences) to a new friend about your family: who is in it, their names and ages, and where they live.",
   "model": "Hallo Sara! Meine Familie ist klein. Ich habe einen Bruder, er heißt Hugo und ist 25. Meine Eltern wohnen in Lyon. Meine Oma ist 82 und noch sehr fit! Liebe Grüße, Claire",
-  "modelEn": "Hello Sara! My family is small. I have a brother, his name is Hugo and he is 25. My parents live in Lyon. My grandma is 82 and still very fit! Kind regards, Claire"
+  "modelEn": "Hello Sara! My family is small. I have a brother, his name is Hugo and he is 25. My parents live in Lyon. My grandma is 82 and still very fit! Kind regards, Claire",
+  "sentences": [
+   {
+    "de": "Hallo Sara!",
+    "en": "Hello Sara!"
+   },
+   {
+    "de": "Meine Familie ist klein.",
+    "en": "My family is small."
+   },
+   {
+    "de": "Ich habe einen Bruder, er heißt Hugo und ist 25.",
+    "en": "I have a brother, his name is Hugo and he is 25."
+   },
+   {
+    "de": "Meine Eltern wohnen in Lyon.",
+    "en": "My parents live in Lyon."
+   },
+   {
+    "de": "Meine Oma ist 82 und noch sehr fit!",
+    "en": "My grandma is 82 and still very fit!"
+   },
+   {
+    "de": "Liebe Grüße, Claire",
+    "en": "Kind regards, Claire"
+   }
+  ]
  }
 }

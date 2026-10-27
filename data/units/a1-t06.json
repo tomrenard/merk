@@ -493,6 +493,28 @@
  "writing": {
   "task": "You're out shopping. Write a short message (3–4 sentences) to a friend: what you've found, the colour and size, and whether it fits.",
   "model": "Hallo Mia! Ich bin im Kaufhaus. Ich habe einen Pullover in Grün, Größe M. Er ist sehr bequem und er passt gut. Jetzt suche ich noch Schuhe!",
-  "modelEn": "Hello Mia! I'm in the department store. I have a green sweater, size M. It is very comfortable and it fits well. Now I'm still looking for shoes!"
+  "modelEn": "Hello Mia! I'm in the department store. I have a green sweater, size M. It is very comfortable and it fits well. Now I'm still looking for shoes!",
+  "sentences": [
+   {
+    "de": "Hallo Mia!",
+    "en": "Hello Mia!"
+   },
+   {
+    "de": "Ich bin im Kaufhaus.",
+    "en": "I'm in the department store."
+   },
+   {
+    "de": "Ich habe einen Pullover in Grün, Größe M.",
+    "en": "I have a green sweater, size M."
+   },
+   {
+    "de": "Er ist sehr bequem und er passt gut.",
+    "en": "It is very comfortable and it fits well."
+   },
+   {
+    "de": "Jetzt suche ich noch Schuhe!",
+    "en": "Now I'm still looking for shoes!"
+   }
+  ]
  }
 }

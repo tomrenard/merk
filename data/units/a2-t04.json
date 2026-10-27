@@ -507,6 +507,32 @@
  "writing": {
   "task": "You ordered shoes online, but they don't fit. Write 5–6 sentences to the shop: what you ordered, what the problem is and what you want.",
   "model": "Guten Tag, ich habe am Montag bei Ihnen Schuhe in Größe 39 bestellt. Das Paket ist gestern angekommen. Leider passen mir die Schuhe nicht, weil sie zu klein sind. Ich möchte sie gern umtauschen, in Größe 40. Ist der Umtausch kostenlos? Viele Grüße, Claire Dubois",
-  "modelEn": "Hello, on Monday I ordered shoes in size 39 from you. The package arrived yesterday. Unfortunately the shoes don't fit me, because they are too small. I would like to exchange them, for size 40. Is the exchange free? Kind regards, Claire Dubois"
+  "modelEn": "Hello, on Monday I ordered shoes in size 39 from you. The package arrived yesterday. Unfortunately the shoes don't fit me, because they are too small. I would like to exchange them, for size 40. Is the exchange free? Kind regards, Claire Dubois",
+  "sentences": [
+   {
+    "de": "Guten Tag, ich habe am Montag bei Ihnen Schuhe in Größe 39 bestellt.",
+    "en": "Hello, on Monday I ordered shoes in size 39 from you."
+   },
+   {
+    "de": "Das Paket ist gestern angekommen.",
+    "en": "The package arrived yesterday."
+   },
+   {
+    "de": "Leider passen mir die Schuhe nicht, weil sie zu klein sind.",
+    "en": "Unfortunately the shoes don't fit me, because they are too small."
+   },
+   {
+    "de": "Ich möchte sie gern umtauschen, in Größe 40.",
+    "en": "I would like to exchange them, for size 40."
+   },
+   {
+    "de": "Ist der Umtausch kostenlos?",
+    "en": "Is the exchange free?"
+   },
+   {
+    "de": "Viele Grüße, Claire Dubois",
+    "en": "Kind regards, Claire Dubois"
+   }
+  ]
  }
 }

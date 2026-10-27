@@ -497,6 +497,52 @@
  "writing": {
   "task": "You run a German course at a community college. Because the building is being renovated, the course has to move to another place for a few weeks. Write a formal letter of about 100 words to the participants, using nominal style (aufgrund, während, hinsichtlich, nach, bei).",
   "model": "Betreff: Neuer Kursort für den Kurs „Deutsch B2“\n\nSehr geehrte Kursteilnehmerinnen und Kursteilnehmer,\n\naufgrund der Renovierung unseres Gebäudes findet der Kurs „Deutsch B2“ ab dem 4. November im Gemeindezentrum in der Bahnhofstraße 8 statt. Während der Bauarbeiten bleiben unsere Räume in der Schillerstraße geschlossen. Hinsichtlich der Uhrzeit und der Kursgebühr ändert sich nichts. Nach Abschluss der Arbeiten im Januar kehren wir in unsere alten Räume zurück. Bei Fragen zur Anfahrt oder zum Parken wenden Sie sich bitte an unser Sekretariat. Für die entstehenden Unannehmlichkeiten bitten wir um Ihr Verständnis.\n\nMit freundlichen Grüßen\nClaire Martin\nKursleitung",
-  "modelEn": "Subject: New location for the course \"German B2\"\n\nDear course participants,\n\ndue to the renovation of our building, the course \"German B2\" will take place from November 4 in the community center at Bahnhofstraße 8. During the construction work our rooms on Schillerstraße remain closed. Regarding the time and the course fee, nothing changes. After the work is finished in January, we will return to our old rooms. If you have questions about getting there or about parking, please contact our office. We ask for your understanding for the inconvenience.\n\nKind regards\nClaire Martin\nCourse director"
+  "modelEn": "Subject: New location for the course \"German B2\"\n\nDear course participants,\n\ndue to the renovation of our building, the course \"German B2\" will take place from November 4 in the community center at Bahnhofstraße 8. During the construction work our rooms on Schillerstraße remain closed. Regarding the time and the course fee, nothing changes. After the work is finished in January, we will return to our old rooms. If you have questions about getting there or about parking, please contact our office. We ask for your understanding for the inconvenience.\n\nKind regards\nClaire Martin\nCourse director",
+  "sentences": [
+   {
+    "de": "Betreff: Neuer Kursort für den Kurs „Deutsch B2“",
+    "en": "Subject: New location for the course \"German B2\""
+   },
+   {
+    "de": "Sehr geehrte Kursteilnehmerinnen und Kursteilnehmer,",
+    "en": "Dear course participants,"
+   },
+   {
+    "de": "aufgrund der Renovierung unseres Gebäudes findet der Kurs „Deutsch B2“ ab dem 4. November im Gemeindezentrum in der Bahnhofstraße 8 statt.",
+    "en": "due to the renovation of our building, the course \"German B2\" will take place from November 4 in the community center at Bahnhofstraße 8."
+   },
+   {
+    "de": "Während der Bauarbeiten bleiben unsere Räume in der Schillerstraße geschlossen.",
+    "en": "During the construction work our rooms on Schillerstraße remain closed."
+   },
+   {
+    "de": "Hinsichtlich der Uhrzeit und der Kursgebühr ändert sich nichts.",
+    "en": "Regarding the time and the course fee, nothing changes."
+   },
+   {
+    "de": "Nach Abschluss der Arbeiten im Januar kehren wir in unsere alten Räume zurück.",
+    "en": "After the work is finished in January, we will return to our old rooms."
+   },
+   {
+    "de": "Bei Fragen zur Anfahrt oder zum Parken wenden Sie sich bitte an unser Sekretariat.",
+    "en": "If you have questions about getting there or about parking, please contact our office."
+   },
+   {
+    "de": "Für die entstehenden Unannehmlichkeiten bitten wir um Ihr Verständnis.",
+    "en": "We ask for your understanding for the inconvenience."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire Martin",
+    "en": "Claire Martin"
+   },
+   {
+    "de": "Kursleitung",
+    "en": "Course director"
+   }
+  ]
  }
 }

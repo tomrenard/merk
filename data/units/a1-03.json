@@ -462,6 +462,28 @@
  "writing": {
   "task": "You are meeting a new language-exchange partner. Write 3–4 questions to ask about their name, where they come from, their job and their free time.",
   "model": "Hallo! Wie heißt du? Woher kommst du und wo wohnst du jetzt? Was bist du von Beruf? Was machst du gern am Wochenende?",
-  "modelEn": "Hello! What's your name? Where do you come from and where do you live now? What do you do for a living? What do you like to do at the weekend?"
+  "modelEn": "Hello! What's your name? Where do you come from and where do you live now? What do you do for a living? What do you like to do at the weekend?",
+  "sentences": [
+   {
+    "de": "Hallo!",
+    "en": "Hello!"
+   },
+   {
+    "de": "Wie heißt du?",
+    "en": "What's your name?"
+   },
+   {
+    "de": "Woher kommst du und wo wohnst du jetzt?",
+    "en": "Where do you come from and where do you live now?"
+   },
+   {
+    "de": "Was bist du von Beruf?",
+    "en": "What do you do for a living?"
+   },
+   {
+    "de": "Was machst du gern am Wochenende?",
+    "en": "What do you like to do at the weekend?"
+   }
+  ]
  }
 }

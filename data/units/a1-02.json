@@ -466,6 +466,28 @@
  "writing": {
   "task": "Write a short message to a new neighbour (3–4 sentences): your name, where you come from, where you work and what you are learning.",
   "model": "Hallo! Ich heiße Paul und ich wohne jetzt hier im Haus. Ich komme aus Frankreich. Ich arbeite in Köln und ich lerne Deutsch. Bis bald!",
-  "modelEn": "Hello! My name is Paul and I now live here in the building. I come from France. I work in Cologne and I'm learning German. See you soon!"
+  "modelEn": "Hello! My name is Paul and I now live here in the building. I come from France. I work in Cologne and I'm learning German. See you soon!",
+  "sentences": [
+   {
+    "de": "Hallo!",
+    "en": "Hello!"
+   },
+   {
+    "de": "Ich heiße Paul und ich wohne jetzt hier im Haus.",
+    "en": "My name is Paul and I now live here in the building."
+   },
+   {
+    "de": "Ich komme aus Frankreich.",
+    "en": "I come from France."
+   },
+   {
+    "de": "Ich arbeite in Köln und ich lerne Deutsch.",
+    "en": "I work in Cologne and I'm learning German."
+   },
+   {
+    "de": "Bis bald!",
+    "en": "See you soon!"
+   }
+  ]
  }
 }

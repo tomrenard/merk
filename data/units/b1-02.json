@@ -483,6 +483,48 @@
  "writing": {
   "task": "You missed a meeting yesterday. Write an 80–100-word email to your manager, Frau Krüger, explaining what had happened before and asking for the notes.",
   "model": "Liebe Frau Krüger,\n\nes tut mir leid, dass ich gestern nicht zur Besprechung gekommen bin. Leider ging am Morgen alles schief. Als ich aufwachte, war es schon acht Uhr, denn ich hatte meinen Wecker nicht gestellt. Nachdem ich schnell geduscht hatte, lief ich zum Bahnhof, aber der Zug war gerade abgefahren. Der nächste Zug hatte Verspätung, und als ich endlich ankam, hatte die Besprechung schon angefangen. Könnten Sie mir bitte die Notizen schicken? Das nächste Mal bin ich pünktlich.\n\nViele Grüße\nJulien Martin",
-  "modelEn": "Dear Ms. Krüger,\n\nI'm sorry that I didn't come to the meeting yesterday. Unfortunately everything went wrong in the morning. When I woke up, it was already eight o'clock, because I hadn't set my alarm. After I had taken a quick shower, I ran to the station, but the train had just left. The next train was late, and when I finally arrived, the meeting had already started. Could you please send me the notes? Next time I will be on time.\n\nBest wishes\nJulien Martin"
+  "modelEn": "Dear Ms. Krüger,\n\nI'm sorry that I didn't come to the meeting yesterday. Unfortunately everything went wrong in the morning. When I woke up, it was already eight o'clock, because I hadn't set my alarm. After I had taken a quick shower, I ran to the station, but the train had just left. The next train was late, and when I finally arrived, the meeting had already started. Could you please send me the notes? Next time I will be on time.\n\nBest wishes\nJulien Martin",
+  "sentences": [
+   {
+    "de": "Liebe Frau Krüger,",
+    "en": "Dear Ms. Krüger,"
+   },
+   {
+    "de": "es tut mir leid, dass ich gestern nicht zur Besprechung gekommen bin.",
+    "en": "I'm sorry that I didn't come to the meeting yesterday."
+   },
+   {
+    "de": "Leider ging am Morgen alles schief.",
+    "en": "Unfortunately everything went wrong in the morning."
+   },
+   {
+    "de": "Als ich aufwachte, war es schon acht Uhr, denn ich hatte meinen Wecker nicht gestellt.",
+    "en": "When I woke up, it was already eight o'clock, because I hadn't set my alarm."
+   },
+   {
+    "de": "Nachdem ich schnell geduscht hatte, lief ich zum Bahnhof, aber der Zug war gerade abgefahren.",
+    "en": "After I had taken a quick shower, I ran to the station, but the train had just left."
+   },
+   {
+    "de": "Der nächste Zug hatte Verspätung, und als ich endlich ankam, hatte die Besprechung schon angefangen.",
+    "en": "The next train was late, and when I finally arrived, the meeting had already started."
+   },
+   {
+    "de": "Könnten Sie mir bitte die Notizen schicken?",
+    "en": "Could you please send me the notes?"
+   },
+   {
+    "de": "Das nächste Mal bin ich pünktlich.",
+    "en": "Next time I will be on time."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Best wishes"
+   },
+   {
+    "de": "Julien Martin",
+    "en": "Julien Martin"
+   }
+  ]
  }
 }

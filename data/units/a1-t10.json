@@ -502,6 +502,24 @@
  "writing": {
   "task": "Write 3–4 sentences about your job for a new colleague: what you do, where you work, your hours and what you did before.",
   "model": "Ich bin Grafikerin und arbeite bei einer Agentur in Berlin. Ich arbeite von neun bis fünf im Büro, am Freitag oft zu Hause. Meine Kollegen sind sehr nett. Vorher habe ich drei Jahre in Paris gearbeitet.",
-  "modelEn": "I'm a graphic designer and I work at an agency in Berlin. I work in the office from nine to five, often at home on Friday. My colleagues are very nice. Before that I worked in Paris for three years."
+  "modelEn": "I'm a graphic designer and I work at an agency in Berlin. I work in the office from nine to five, often at home on Friday. My colleagues are very nice. Before that I worked in Paris for three years.",
+  "sentences": [
+   {
+    "de": "Ich bin Grafikerin und arbeite bei einer Agentur in Berlin.",
+    "en": "I'm a graphic designer and I work at an agency in Berlin."
+   },
+   {
+    "de": "Ich arbeite von neun bis fünf im Büro, am Freitag oft zu Hause.",
+    "en": "I work in the office from nine to five, often at home on Friday."
+   },
+   {
+    "de": "Meine Kollegen sind sehr nett.",
+    "en": "My colleagues are very nice."
+   },
+   {
+    "de": "Vorher habe ich drei Jahre in Paris gearbeitet.",
+    "en": "Before that I worked in Paris for three years."
+   }
+  ]
  }
 }

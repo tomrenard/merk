@@ -74,6 +74,11 @@
   "task": "Décris ta maison et ton quartier en 2 à 4 phrases : ce qu’il y a et ce qu’il n’y a pas. Écris en lettres latines.",
   "model": "ف الدار ديالي كاين الصالون و الكوزينة. ف الكوزينة كاينة التلاجة. ف الحومة كاين واحد الحانوت قريب، و ماكاينش الطوبيس.",
   "modelTr": "f ddar dyali kayn ssalon w lkouzina. f lkouzina kayna ttlaja. f l7ouma kayn wa7ed l7anout 9rib, w makaynch ttobis.",
-  "modelEn": "In my house there is the living room and the kitchen. In the kitchen there is the fridge. In the neighborhood there is a shop nearby, and there is no bus."
+  "modelEn": "In my house there is the living room and the kitchen. In the kitchen there is the fridge. In the neighborhood there is a shop nearby, and there is no bus.",
+  "sentences": [
+   {"de": "ف الدار ديالي كاين الصالون و الكوزينة.", "tr": "f ddar dyali kayn ssalon w lkouzina.", "en": "In my house there is the living room and the kitchen."},
+   {"de": "ف الكوزينة كاينة التلاجة.", "tr": "f lkouzina kayna ttlaja.", "en": "In the kitchen there is the fridge."},
+   {"de": "ف الحومة كاين واحد الحانوت قريب، و ماكاينش الطوبيس.", "tr": "f l7ouma kayn wa7ed l7anout 9rib, w makaynch ttobis.", "en": "In the neighborhood there is a shop nearby, and there is no bus."}
+  ]
  }
 }

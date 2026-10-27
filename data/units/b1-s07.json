@@ -536,6 +536,44 @@
  "writing": {
   "task": "You are Camille. Write an 80–100-word email to Frau Schmitz on Tuesday: report what Herr Öztürk and his secretary said, describe your situation and ask how to handle the rent.",
   "model": "Liebe Frau Schmitz,\n\nich möchte Ihnen kurz Bescheid geben: Herr Öztürk war am Samstag hier. Er hat gesagt, dass die Pumpe kaputt ist und dass er ein Ersatzteil bestellen muss. Heute hat mir seine Sekretärin erklärt, dass das Teil leider noch nicht da ist und erst am Donnerstag kommt. Dank Herrn Krause und seinem Heizlüfter ist es im Wohnzimmer warm genug, aber im Bad und in der Küche friere ich sehr. Wie sollen wir das mit der Miete für Januar machen? Ich hoffe, Sie genießen die Sonne auf Mallorca!\n\nViele Grüße\nCamille",
-  "modelEn": "Dear Ms. Schmitz,\n\nI'd like to let you know briefly: Mr. Öztürk was here on Saturday. He said that the pump is broken and that he has to order a spare part. Today his secretary explained to me that the part is unfortunately not here yet and only comes on Thursday. Thanks to Mr. Krause and his fan heater, it's warm enough in the living room, but in the bathroom and the kitchen I'm very cold. How shall we handle the rent for January? I hope you're enjoying the sun in Mallorca!\n\nKind regards\nCamille"
+  "modelEn": "Dear Ms. Schmitz,\n\nI'd like to let you know briefly: Mr. Öztürk was here on Saturday. He said that the pump is broken and that he has to order a spare part. Today his secretary explained to me that the part is unfortunately not here yet and only comes on Thursday. Thanks to Mr. Krause and his fan heater, it's warm enough in the living room, but in the bathroom and the kitchen I'm very cold. How shall we handle the rent for January? I hope you're enjoying the sun in Mallorca!\n\nKind regards\nCamille",
+  "sentences": [
+   {
+    "de": "Liebe Frau Schmitz,",
+    "en": "Dear Ms. Schmitz,"
+   },
+   {
+    "de": "ich möchte Ihnen kurz Bescheid geben: Herr Öztürk war am Samstag hier.",
+    "en": "I'd like to let you know briefly: Mr. Öztürk was here on Saturday."
+   },
+   {
+    "de": "Er hat gesagt, dass die Pumpe kaputt ist und dass er ein Ersatzteil bestellen muss.",
+    "en": "He said that the pump is broken and that he has to order a spare part."
+   },
+   {
+    "de": "Heute hat mir seine Sekretärin erklärt, dass das Teil leider noch nicht da ist und erst am Donnerstag kommt.",
+    "en": "Today his secretary explained to me that the part is unfortunately not here yet and only comes on Thursday."
+   },
+   {
+    "de": "Dank Herrn Krause und seinem Heizlüfter ist es im Wohnzimmer warm genug, aber im Bad und in der Küche friere ich sehr.",
+    "en": "Thanks to Mr. Krause and his fan heater, it's warm enough in the living room, but in the bathroom and the kitchen I'm very cold."
+   },
+   {
+    "de": "Wie sollen wir das mit der Miete für Januar machen?",
+    "en": "How shall we handle the rent for January?"
+   },
+   {
+    "de": "Ich hoffe, Sie genießen die Sonne auf Mallorca!",
+    "en": "I hope you're enjoying the sun in Mallorca!"
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Camille",
+    "en": "Camille"
+   }
+  ]
  }
 }

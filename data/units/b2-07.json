@@ -486,6 +486,52 @@
  "writing": {
   "task": "Your team has too many meetings. Write an email of about 100 words to your boss: say who has complained about what, what it depends on, suggest a solution and offer to take on a task. Use verbs, nouns and adjectives with fixed prepositions.",
   "model": "Betreff: Unsere Teambesprechungen\n\nLiebe Frau Schneider,\n\nin letzter Zeit haben sich mehrere Kollegen bei mir über die vielen Besprechungen beschwert. Viele haben das Gefühl, dass sie sich kaum noch auf ihre eigentliche Arbeit konzentrieren können. Natürlich hängt es vom Projekt ab, wie oft wir uns treffen müssen. Trotzdem bin ich davon überzeugt, dass ein Treffen pro Woche meistens reicht. Mein Vorschlag: Wir einigen uns auf einen festen Termin am Montag, und kurze Fragen klären wir im Chat. Ich wäre gern dafür verantwortlich, die Themen für die Besprechung zu sammeln. Sind Sie damit einverstanden?\n\nViele Grüße\nClaire Martin",
-  "modelEn": "Subject: Our team meetings\n\nDear Ms. Schneider,\n\nlately several colleagues have complained to me about the many meetings. Many have the feeling that they can hardly concentrate on their actual work any more. Of course, how often we have to meet depends on the project. Still, I am convinced that one meeting per week is mostly enough. My suggestion: we agree on a fixed time on Monday, and short questions we settle in the chat. I would be glad to be responsible for collecting the topics for the meeting. Do you agree?\n\nKind regards\nClaire Martin"
+  "modelEn": "Subject: Our team meetings\n\nDear Ms. Schneider,\n\nlately several colleagues have complained to me about the many meetings. Many have the feeling that they can hardly concentrate on their actual work any more. Of course, how often we have to meet depends on the project. Still, I am convinced that one meeting per week is mostly enough. My suggestion: we agree on a fixed time on Monday, and short questions we settle in the chat. I would be glad to be responsible for collecting the topics for the meeting. Do you agree?\n\nKind regards\nClaire Martin",
+  "sentences": [
+   {
+    "de": "Betreff: Unsere Teambesprechungen",
+    "en": "Subject: Our team meetings"
+   },
+   {
+    "de": "Liebe Frau Schneider,",
+    "en": "Dear Ms. Schneider,"
+   },
+   {
+    "de": "in letzter Zeit haben sich mehrere Kollegen bei mir über die vielen Besprechungen beschwert.",
+    "en": "lately several colleagues have complained to me about the many meetings."
+   },
+   {
+    "de": "Viele haben das Gefühl, dass sie sich kaum noch auf ihre eigentliche Arbeit konzentrieren können.",
+    "en": "Many have the feeling that they can hardly concentrate on their actual work any more."
+   },
+   {
+    "de": "Natürlich hängt es vom Projekt ab, wie oft wir uns treffen müssen.",
+    "en": "Of course, how often we have to meet depends on the project."
+   },
+   {
+    "de": "Trotzdem bin ich davon überzeugt, dass ein Treffen pro Woche meistens reicht.",
+    "en": "Still, I am convinced that one meeting per week is mostly enough."
+   },
+   {
+    "de": "Mein Vorschlag: Wir einigen uns auf einen festen Termin am Montag, und kurze Fragen klären wir im Chat.",
+    "en": "My suggestion: we agree on a fixed time on Monday, and short questions we settle in the chat."
+   },
+   {
+    "de": "Ich wäre gern dafür verantwortlich, die Themen für die Besprechung zu sammeln.",
+    "en": "I would be glad to be responsible for collecting the topics for the meeting."
+   },
+   {
+    "de": "Sind Sie damit einverstanden?",
+    "en": "Do you agree?"
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Claire Martin",
+    "en": "Claire Martin"
+   }
+  ]
  }
 }

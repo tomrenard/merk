@@ -464,6 +464,44 @@
  "writing": {
   "task": "You want to rent out a room in your shared flat. Write an 80–100-word ad for a website: describe the room, the flat and the people living there.",
   "model": "Schönes Zimmer in heller WG zu vermieten!\n\nWir sind zwei nette Leute (28 und 31 Jahre alt) und suchen ab dem 1. März eine freundliche Mitbewohnerin oder einen freundlichen Mitbewohner. Das Zimmer ist 16 Quadratmeter groß und hat einen kleinen Balkon. Die Wohnung liegt in ruhiger Lage, nur zehn Minuten vom Zentrum. Es gibt eine große Küche mit neuem Herd und ein modernes Bad. Das Zimmer kostet 480 Euro warm. Wir kochen gern zusammen und trinken am Wochenende guten Kaffee auf dem Balkon. Interesse? Dann schreib uns eine kurze Nachricht mit ein paar Infos über dich!",
-  "modelEn": "Nice room in a bright shared apartment for rent!\n\nWe are two nice people (28 and 31 years old) and from March 1 we are looking for a friendly flatmate. The room is 16 square meters and has a small balcony. The apartment is in a quiet location, only ten minutes from the center. There is a big kitchen with a new stove and a modern bathroom. The room costs 480 euros including utilities. We like cooking together and at the weekend we drink good coffee on the balcony. Interested? Then write us a short message with some info about yourself!"
+  "modelEn": "Nice room in a bright shared apartment for rent!\n\nWe are two nice people (28 and 31 years old) and from March 1 we are looking for a friendly flatmate. The room is 16 square meters and has a small balcony. The apartment is in a quiet location, only ten minutes from the center. There is a big kitchen with a new stove and a modern bathroom. The room costs 480 euros including utilities. We like cooking together and at the weekend we drink good coffee on the balcony. Interested? Then write us a short message with some info about yourself!",
+  "sentences": [
+   {
+    "de": "Schönes Zimmer in heller WG zu vermieten!",
+    "en": "Nice room in a bright shared apartment for rent!"
+   },
+   {
+    "de": "Wir sind zwei nette Leute (28 und 31 Jahre alt) und suchen ab dem 1. März eine freundliche Mitbewohnerin oder einen freundlichen Mitbewohner.",
+    "en": "We are two nice people (28 and 31 years old) and from March 1 we are looking for a friendly flatmate."
+   },
+   {
+    "de": "Das Zimmer ist 16 Quadratmeter groß und hat einen kleinen Balkon.",
+    "en": "The room is 16 square meters and has a small balcony."
+   },
+   {
+    "de": "Die Wohnung liegt in ruhiger Lage, nur zehn Minuten vom Zentrum.",
+    "en": "The apartment is in a quiet location, only ten minutes from the center."
+   },
+   {
+    "de": "Es gibt eine große Küche mit neuem Herd und ein modernes Bad.",
+    "en": "There is a big kitchen with a new stove and a modern bathroom."
+   },
+   {
+    "de": "Das Zimmer kostet 480 Euro warm.",
+    "en": "The room costs 480 euros including utilities."
+   },
+   {
+    "de": "Wir kochen gern zusammen und trinken am Wochenende guten Kaffee auf dem Balkon.",
+    "en": "We like cooking together and at the weekend we drink good coffee on the balcony."
+   },
+   {
+    "de": "Interesse?",
+    "en": "Interested?"
+   },
+   {
+    "de": "Dann schreib uns eine kurze Nachricht mit ein paar Infos über dich!",
+    "en": "Then write us a short message with some info about yourself!"
+   }
+  ]
  }
 }

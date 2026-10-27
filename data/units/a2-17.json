@@ -475,6 +475,32 @@
  "writing": {
   "task": "Write a short email to a language school (5–6 sentences). Ask politely about a German course: when it starts, how much it costs, whether you need a test, and where it takes place.",
   "model": "Sehr geehrte Damen und Herren, ich möchte im Herbst einen Deutschkurs B1 machen. Können Sie mir sagen, wann der nächste Kurs anfängt? Ich möchte auch wissen, wie viel der Kurs kostet. Ich weiß nicht, ob ich vorher einen Test machen muss. Können Sie mir bitte sagen, wo der Kurs stattfindet? Mit freundlichen Grüßen, Léa Martin",
-  "modelEn": "Dear Sir or Madam, I would like to take a German B1 course in the autumn. Can you tell me when the next course starts? I would also like to know how much the course costs. I don't know whether I have to take a test beforehand. Can you please tell me where the course takes place? Kind regards, Léa Martin"
+  "modelEn": "Dear Sir or Madam, I would like to take a German B1 course in the autumn. Can you tell me when the next course starts? I would also like to know how much the course costs. I don't know whether I have to take a test beforehand. Can you please tell me where the course takes place? Kind regards, Léa Martin",
+  "sentences": [
+   {
+    "de": "Sehr geehrte Damen und Herren, ich möchte im Herbst einen Deutschkurs B1 machen.",
+    "en": "Dear Sir or Madam, I would like to take a German B1 course in the autumn."
+   },
+   {
+    "de": "Können Sie mir sagen, wann der nächste Kurs anfängt?",
+    "en": "Can you tell me when the next course starts?"
+   },
+   {
+    "de": "Ich möchte auch wissen, wie viel der Kurs kostet.",
+    "en": "I would also like to know how much the course costs."
+   },
+   {
+    "de": "Ich weiß nicht, ob ich vorher einen Test machen muss.",
+    "en": "I don't know whether I have to take a test beforehand."
+   },
+   {
+    "de": "Können Sie mir bitte sagen, wo der Kurs stattfindet?",
+    "en": "Can you please tell me where the course takes place?"
+   },
+   {
+    "de": "Mit freundlichen Grüßen, Léa Martin",
+    "en": "Kind regards, Léa Martin"
+   }
+  ]
  }
 }

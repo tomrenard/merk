@@ -508,6 +508,36 @@
  "writing": {
   "task": "Your internet hasn't worked for three days. Write 5–6 sentences to your provider's customer service: describe the problem, ask when a technician will come and give your customer number.",
   "model": "Sehr geehrte Damen und Herren, seit Montag funktioniert unser Internet nicht mehr. Der Router ist an, aber wir haben kein WLAN. Ich habe den Router schon zweimal neu gestartet. Wann wird ein Techniker kommen? Ich arbeite von zu Hause und brauche das Internet dringend. Meine Kundennummer ist 4471 2086. Mit freundlichen Grüßen, Sophie Martin",
-  "modelEn": "Dear Sir or Madam, our internet hasn't worked since Monday. The router is on, but we have no Wi-Fi. I have already restarted the router twice. When will a technician come? I work from home and urgently need the internet. My customer number is 4471 2086. Kind regards, Sophie Martin"
+  "modelEn": "Dear Sir or Madam, our internet hasn't worked since Monday. The router is on, but we have no Wi-Fi. I have already restarted the router twice. When will a technician come? I work from home and urgently need the internet. My customer number is 4471 2086. Kind regards, Sophie Martin",
+  "sentences": [
+   {
+    "de": "Sehr geehrte Damen und Herren, seit Montag funktioniert unser Internet nicht mehr.",
+    "en": "Dear Sir or Madam, our internet hasn't worked since Monday."
+   },
+   {
+    "de": "Der Router ist an, aber wir haben kein WLAN.",
+    "en": "The router is on, but we have no Wi-Fi."
+   },
+   {
+    "de": "Ich habe den Router schon zweimal neu gestartet.",
+    "en": "I have already restarted the router twice."
+   },
+   {
+    "de": "Wann wird ein Techniker kommen?",
+    "en": "When will a technician come?"
+   },
+   {
+    "de": "Ich arbeite von zu Hause und brauche das Internet dringend.",
+    "en": "I work from home and urgently need the internet."
+   },
+   {
+    "de": "Meine Kundennummer ist 4471 2086.",
+    "en": "My customer number is 4471 2086."
+   },
+   {
+    "de": "Mit freundlichen Grüßen, Sophie Martin",
+    "en": "Kind regards, Sophie Martin"
+   }
+  ]
  }
 }

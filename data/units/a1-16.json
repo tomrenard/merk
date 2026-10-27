@@ -461,6 +461,28 @@
  "writing": {
   "task": "A friend wants to meet you on Saturday. Write a short message (3–4 sentences): where you are in the morning, where you go in the afternoon, and when you are at home.",
   "model": "Hallo Tim, am Samstagvormittag bin ich beim Arzt. Dann muss ich noch zum Supermarkt. Am Nachmittag gehe ich mit Lisa zum Sport. Ab sechs bin ich zu Hause. Komm doch vorbei!",
-  "modelEn": "Hello Tim, on Saturday morning I'm at the doctor's. Then I still have to go to the supermarket. In the afternoon I'm going to sports with Lisa. From six I'm at home. Come over!"
+  "modelEn": "Hello Tim, on Saturday morning I'm at the doctor's. Then I still have to go to the supermarket. In the afternoon I'm going to sports with Lisa. From six I'm at home. Come over!",
+  "sentences": [
+   {
+    "de": "Hallo Tim, am Samstagvormittag bin ich beim Arzt.",
+    "en": "Hello Tim, on Saturday morning I'm at the doctor's."
+   },
+   {
+    "de": "Dann muss ich noch zum Supermarkt.",
+    "en": "Then I still have to go to the supermarket."
+   },
+   {
+    "de": "Am Nachmittag gehe ich mit Lisa zum Sport.",
+    "en": "In the afternoon I'm going to sports with Lisa."
+   },
+   {
+    "de": "Ab sechs bin ich zu Hause.",
+    "en": "From six I'm at home."
+   },
+   {
+    "de": "Komm doch vorbei!",
+    "en": "Come over!"
+   }
+  ]
  }
 }

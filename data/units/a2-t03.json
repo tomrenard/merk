@@ -506,6 +506,36 @@
  "writing": {
   "task": "You've organised a weekend trip with a friend. Write 5–6 sentences: say you've bought the tickets, when the train leaves and arrives, where you change, and what hotel room you've booked.",
   "model": "Hallo Jana, ich habe die Fahrkarten für Samstag gekauft! Der Zug fährt um 8:10 Uhr von Gleis 5 ab. In Hannover müssen wir umsteigen. Um 12:30 Uhr kommen wir in Hamburg an. Ich habe auch ein Doppelzimmer mit Frühstück reserviert, für zwei Nächte. Kannst du mir 50 Euro für das Hotel geben? Bis Samstag, Léa",
-  "modelEn": "Hello Jana, I bought the tickets for Saturday! The train leaves at 8:10 from platform 5. We have to change trains in Hanover. At 12:30 we arrive in Hamburg. I also reserved a double room with breakfast, for two nights. Can you give me 50 euros for the hotel? See you Saturday, Léa"
+  "modelEn": "Hello Jana, I bought the tickets for Saturday! The train leaves at 8:10 from platform 5. We have to change trains in Hanover. At 12:30 we arrive in Hamburg. I also reserved a double room with breakfast, for two nights. Can you give me 50 euros for the hotel? See you Saturday, Léa",
+  "sentences": [
+   {
+    "de": "Hallo Jana, ich habe die Fahrkarten für Samstag gekauft!",
+    "en": "Hello Jana, I bought the tickets for Saturday!"
+   },
+   {
+    "de": "Der Zug fährt um 8:10 Uhr von Gleis 5 ab.",
+    "en": "The train leaves at 8:10 from platform 5."
+   },
+   {
+    "de": "In Hannover müssen wir umsteigen.",
+    "en": "We have to change trains in Hanover."
+   },
+   {
+    "de": "Um 12:30 Uhr kommen wir in Hamburg an.",
+    "en": "At 12:30 we arrive in Hamburg."
+   },
+   {
+    "de": "Ich habe auch ein Doppelzimmer mit Frühstück reserviert, für zwei Nächte.",
+    "en": "I also reserved a double room with breakfast, for two nights."
+   },
+   {
+    "de": "Kannst du mir 50 Euro für das Hotel geben?",
+    "en": "Can you give me 50 euros for the hotel?"
+   },
+   {
+    "de": "Bis Samstag, Léa",
+    "en": "See you Saturday, Léa"
+   }
+  ]
  }
 }

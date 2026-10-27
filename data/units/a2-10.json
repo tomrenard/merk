@@ -464,6 +464,36 @@
  "writing": {
   "task": "You went clothes shopping today. Write 5–6 sentences to a friend: what you bought, what you tried on and what you didn't like.",
   "model": "Hallo Mara, heute war ich in der Stadt einkaufen. Ich habe die schwarzen Stiefel aus dem Schaufenster gekauft. Die rote Jacke hat mir auch gefallen, aber sie war zu teuer. Dann habe ich das grüne Kleid anprobiert. Leider war das grüne Kleid zu klein. Am Ende habe ich noch den grauen Schal genommen, er passt gut zu den Stiefeln. Bis bald!",
-  "modelEn": "Hello Mara, today I went shopping in town. I bought the black boots from the shop window. I liked the red jacket too, but it was too expensive. Then I tried on the green dress. Unfortunately the green dress was too small. In the end I also took the gray scarf, it goes well with the boots. See you soon!"
+  "modelEn": "Hello Mara, today I went shopping in town. I bought the black boots from the shop window. I liked the red jacket too, but it was too expensive. Then I tried on the green dress. Unfortunately the green dress was too small. In the end I also took the gray scarf, it goes well with the boots. See you soon!",
+  "sentences": [
+   {
+    "de": "Hallo Mara, heute war ich in der Stadt einkaufen.",
+    "en": "Hello Mara, today I went shopping in town."
+   },
+   {
+    "de": "Ich habe die schwarzen Stiefel aus dem Schaufenster gekauft.",
+    "en": "I bought the black boots from the shop window."
+   },
+   {
+    "de": "Die rote Jacke hat mir auch gefallen, aber sie war zu teuer.",
+    "en": "I liked the red jacket too, but it was too expensive."
+   },
+   {
+    "de": "Dann habe ich das grüne Kleid anprobiert.",
+    "en": "Then I tried on the green dress."
+   },
+   {
+    "de": "Leider war das grüne Kleid zu klein.",
+    "en": "Unfortunately the green dress was too small."
+   },
+   {
+    "de": "Am Ende habe ich noch den grauen Schal genommen, er passt gut zu den Stiefeln.",
+    "en": "In the end I also took the gray scarf, it goes well with the boots."
+   },
+   {
+    "de": "Bis bald!",
+    "en": "See you soon!"
+   }
+  ]
  }
 }

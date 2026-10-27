@@ -459,6 +459,32 @@
  "writing": {
   "task": "A friend will meet your brother or sister for the first time. Write a message (5–6 sentences): what they look like, what they wear, and what kind of person they are.",
   "model": "Hallo Sara, morgen triffst du meine Schwester Julia. Sie ist eine kleine, schlanke Frau und hat ein rundes Gesicht. Sie trägt bestimmt ihre grüne Jacke und eine große Tasche. Julia ist ein sehr offener Mensch und redet gern. Sie hat auch einen kleinen Hund, er kommt bestimmt mit. Viel Spaß zusammen!",
-  "modelEn": "Hello Sara, tomorrow you're meeting my sister Julia. She is a short, slim woman and has a round face. She is sure to be wearing her green jacket and a big bag. Julia is a very open person and likes to talk. She also has a small dog, he is sure to come along. Have fun together!"
+  "modelEn": "Hello Sara, tomorrow you're meeting my sister Julia. She is a short, slim woman and has a round face. She is sure to be wearing her green jacket and a big bag. Julia is a very open person and likes to talk. She also has a small dog, he is sure to come along. Have fun together!",
+  "sentences": [
+   {
+    "de": "Hallo Sara, morgen triffst du meine Schwester Julia.",
+    "en": "Hello Sara, tomorrow you're meeting my sister Julia."
+   },
+   {
+    "de": "Sie ist eine kleine, schlanke Frau und hat ein rundes Gesicht.",
+    "en": "She is a short, slim woman and has a round face."
+   },
+   {
+    "de": "Sie trägt bestimmt ihre grüne Jacke und eine große Tasche.",
+    "en": "She is sure to be wearing her green jacket and a big bag."
+   },
+   {
+    "de": "Julia ist ein sehr offener Mensch und redet gern.",
+    "en": "Julia is a very open person and likes to talk."
+   },
+   {
+    "de": "Sie hat auch einen kleinen Hund, er kommt bestimmt mit.",
+    "en": "She also has a small dog, he is sure to come along."
+   },
+   {
+    "de": "Viel Spaß zusammen!",
+    "en": "Have fun together!"
+   }
+  ]
  }
 }

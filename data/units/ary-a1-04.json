@@ -74,6 +74,10 @@
   "task": "Réponds à ces deux questions : wach nta / nti mghribi ? wach 3ndek 3chrin 3am ? Dis non, puis donne la bonne réponse. Écris en lettres latines.",
   "model": "لا، أنا ماشي مغربية، أنا فرانساوية. ماعنديش عشرين عام، عندي تمنطاش العام.",
   "modelTr": "la, ana machi mghribiya, ana fransawiya. ma3ndich 3chrin 3am, 3ndi tmentach l3am.",
-  "modelEn": "No, I'm not Moroccan, I'm French. I'm not twenty, I'm eighteen."
+  "modelEn": "No, I'm not Moroccan, I'm French. I'm not twenty, I'm eighteen.",
+  "sentences": [
+   {"de": "لا، أنا ماشي مغربية، أنا فرانساوية.", "tr": "la, ana machi mghribiya, ana fransawiya.", "en": "No, I'm not Moroccan, I'm French."},
+   {"de": "ماعنديش عشرين عام، عندي تمنطاش العام.", "tr": "ma3ndich 3chrin 3am, 3ndi tmentach l3am.", "en": "I'm not twenty, I'm eighteen."}
+  ]
  }
 }

@@ -518,6 +518,52 @@
  "writing": {
   "task": "A French colleague is moving to Germany with a ten-year-old child. Write an 80–100-word message explaining briefly how school works in Germany and where adults can take German courses.",
   "model": "Hallo Julien,\n\nschön, dass ihr nach München kommt! Hier eine kurze Erklärung: Kinder gehen mit sechs Jahren in die Grundschule. Nach der vierten Klasse wechseln sie auf eine andere Schule, zum Beispiel aufs Gymnasium oder auf die Realschule. Das Gymnasium endet mit dem Abitur, damit kann man später studieren. Achtung: Die beste Note ist eine Eins, nicht eine Zwanzig! Für euch gibt es an der Volkshochschule gute Deutschkurse, auch abends und am Wochenende. Die Kurse sind nicht teuer, und man lernt in kleinen Gruppen. Wenn du Fragen hast, ruf mich an!\n\nViele Grüße\nNadia",
-  "modelEn": "Hello Julien,\n\nnice that you're coming to Munich! Here is a short explanation: children go to primary school at the age of six. After fourth grade they switch to another school, for example the Gymnasium or the Realschule. The Gymnasium ends with the Abitur, with which you can study later. Careful: the best grade is a one, not a twenty! For you there are good German courses at the adult education center, also in the evenings and at the weekend. The courses are not expensive, and you learn in small groups. If you have questions, call me!\n\nKind regards\nNadia"
+  "modelEn": "Hello Julien,\n\nnice that you're coming to Munich! Here is a short explanation: children go to primary school at the age of six. After fourth grade they switch to another school, for example the Gymnasium or the Realschule. The Gymnasium ends with the Abitur, with which you can study later. Careful: the best grade is a one, not a twenty! For you there are good German courses at the adult education center, also in the evenings and at the weekend. The courses are not expensive, and you learn in small groups. If you have questions, call me!\n\nKind regards\nNadia",
+  "sentences": [
+   {
+    "de": "Hallo Julien,",
+    "en": "Hello Julien,"
+   },
+   {
+    "de": "schön, dass ihr nach München kommt!",
+    "en": "nice that you're coming to Munich!"
+   },
+   {
+    "de": "Hier eine kurze Erklärung: Kinder gehen mit sechs Jahren in die Grundschule.",
+    "en": "Here is a short explanation: children go to primary school at the age of six."
+   },
+   {
+    "de": "Nach der vierten Klasse wechseln sie auf eine andere Schule, zum Beispiel aufs Gymnasium oder auf die Realschule.",
+    "en": "After fourth grade they switch to another school, for example the Gymnasium or the Realschule."
+   },
+   {
+    "de": "Das Gymnasium endet mit dem Abitur, damit kann man später studieren.",
+    "en": "The Gymnasium ends with the Abitur, with which you can study later."
+   },
+   {
+    "de": "Achtung: Die beste Note ist eine Eins, nicht eine Zwanzig!",
+    "en": "Careful: the best grade is a one, not a twenty!"
+   },
+   {
+    "de": "Für euch gibt es an der Volkshochschule gute Deutschkurse, auch abends und am Wochenende.",
+    "en": "For you there are good German courses at the adult education center, also in the evenings and at the weekend."
+   },
+   {
+    "de": "Die Kurse sind nicht teuer, und man lernt in kleinen Gruppen.",
+    "en": "The courses are not expensive, and you learn in small groups."
+   },
+   {
+    "de": "Wenn du Fragen hast, ruf mich an!",
+    "en": "If you have questions, call me!"
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Nadia",
+    "en": "Nadia"
+   }
+  ]
  }
 }

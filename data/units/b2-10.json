@@ -489,6 +489,44 @@
  "writing": {
   "task": "You spent a week in a holiday flat. Write an online review of about 100 words: what was good and what wasn't. Use words with -ung, -heit, -keit, -lich, -bar, un- and miss-.",
   "model": "Ferienwohnung „Seeblick“\n\nDie Wohnung liegt direkt am See und ist mit dem Bus gut erreichbar. Die Einrichtung ist modern, und in der Küche gibt es alles, was man braucht. Besonders gefallen hat mir die Ruhe: Abends hört man nur die Vögel. Die Vermieterin war sehr freundlich und hat uns viele Tipps für Ausflüge gegeben. Leider gab es auch ein Missverständnis: Wir dachten, die Reinigung ist im Preis enthalten, aber sie kostete 40 Euro extra. Das fanden wir etwas unfair. Außerdem war das WLAN ziemlich unzuverlässig. Trotzdem kann ich die Wohnung empfehlen, vor allem wegen der Sauberkeit und der schönen Lage.",
-  "modelEn": "Holiday apartment \"Seeblick\"\n\nThe apartment is right on the lake and is easy to reach by bus. The furnishings are modern, and the kitchen has everything you need. I especially liked the quiet: in the evening you only hear the birds. The landlady was very friendly and gave us many tips for trips. Unfortunately there was also a misunderstanding: we thought the cleaning was included in the price, but it cost 40 euros extra. We found that somewhat unfair. In addition, the Wi-Fi was rather unreliable. Still, I can recommend the apartment, above all because of the cleanliness and the beautiful location."
+  "modelEn": "Holiday apartment \"Seeblick\"\n\nThe apartment is right on the lake and is easy to reach by bus. The furnishings are modern, and the kitchen has everything you need. I especially liked the quiet: in the evening you only hear the birds. The landlady was very friendly and gave us many tips for trips. Unfortunately there was also a misunderstanding: we thought the cleaning was included in the price, but it cost 40 euros extra. We found that somewhat unfair. In addition, the Wi-Fi was rather unreliable. Still, I can recommend the apartment, above all because of the cleanliness and the beautiful location.",
+  "sentences": [
+   {
+    "de": "Ferienwohnung „Seeblick“",
+    "en": "Holiday apartment \"Seeblick\""
+   },
+   {
+    "de": "Die Wohnung liegt direkt am See und ist mit dem Bus gut erreichbar.",
+    "en": "The apartment is right on the lake and is easy to reach by bus."
+   },
+   {
+    "de": "Die Einrichtung ist modern, und in der Küche gibt es alles, was man braucht.",
+    "en": "The furnishings are modern, and the kitchen has everything you need."
+   },
+   {
+    "de": "Besonders gefallen hat mir die Ruhe: Abends hört man nur die Vögel.",
+    "en": "I especially liked the quiet: in the evening you only hear the birds."
+   },
+   {
+    "de": "Die Vermieterin war sehr freundlich und hat uns viele Tipps für Ausflüge gegeben.",
+    "en": "The landlady was very friendly and gave us many tips for trips."
+   },
+   {
+    "de": "Leider gab es auch ein Missverständnis: Wir dachten, die Reinigung ist im Preis enthalten, aber sie kostete 40 Euro extra.",
+    "en": "Unfortunately there was also a misunderstanding: we thought the cleaning was included in the price, but it cost 40 euros extra."
+   },
+   {
+    "de": "Das fanden wir etwas unfair.",
+    "en": "We found that somewhat unfair."
+   },
+   {
+    "de": "Außerdem war das WLAN ziemlich unzuverlässig.",
+    "en": "In addition, the Wi-Fi was rather unreliable."
+   },
+   {
+    "de": "Trotzdem kann ich die Wohnung empfehlen, vor allem wegen der Sauberkeit und der schönen Lage.",
+    "en": "Still, I can recommend the apartment, above all because of the cleanliness and the beautiful location."
+   }
+  ]
  }
 }

@@ -525,6 +525,52 @@
  "writing": {
   "task": "Your GP has sent you to a dermatologist (Hautarzt), and the practice prefers requests by email. Write an 80–100-word email asking for an appointment: describe your problem, say you have a referral, and say when you're free.",
   "model": "Betreff: Bitte um einen Termin\n\nSehr geehrte Damen und Herren,\n\nmein Hausarzt, Dr. Wolf, hat mir eine Überweisung zu Ihnen gegeben. Seit ungefähr zwei Monaten habe ich einen roten Fleck am Arm. Obwohl ich schon eine Creme benutze, wird er nicht kleiner, und manchmal juckt er stark. Deshalb hätte ich gern so bald wie möglich einen Termin bei Ihnen. Ich bin gesetzlich versichert. Montags und freitags habe ich den ganzen Tag Zeit, an den anderen Tagen ab 16 Uhr. Wenn ein Termin frei wird, können Sie mich auch kurzfristig anrufen: 0151 23456789.\n\nMit freundlichen Grüßen\nJulie Moreau",
-  "modelEn": "Subject: Request for an appointment\n\nDear Sir or Madam,\n\nmy family doctor, Dr. Wolf, gave me a referral to you. For about two months I've had a red spot on my arm. Although I'm already using a cream, it isn't getting smaller, and sometimes it itches a lot. That's why I would like an appointment with you as soon as possible. I have public health insurance. On Mondays and Fridays I have the whole day free, on the other days from 4 p.m. If an appointment becomes free, you can also call me at short notice: 0151 23456789.\n\nKind regards\nJulie Moreau"
+  "modelEn": "Subject: Request for an appointment\n\nDear Sir or Madam,\n\nmy family doctor, Dr. Wolf, gave me a referral to you. For about two months I've had a red spot on my arm. Although I'm already using a cream, it isn't getting smaller, and sometimes it itches a lot. That's why I would like an appointment with you as soon as possible. I have public health insurance. On Mondays and Fridays I have the whole day free, on the other days from 4 p.m. If an appointment becomes free, you can also call me at short notice: 0151 23456789.\n\nKind regards\nJulie Moreau",
+  "sentences": [
+   {
+    "de": "Betreff: Bitte um einen Termin",
+    "en": "Subject: Request for an appointment"
+   },
+   {
+    "de": "Sehr geehrte Damen und Herren,",
+    "en": "Dear Sir or Madam,"
+   },
+   {
+    "de": "mein Hausarzt, Dr. Wolf, hat mir eine Überweisung zu Ihnen gegeben.",
+    "en": "my family doctor, Dr. Wolf, gave me a referral to you."
+   },
+   {
+    "de": "Seit ungefähr zwei Monaten habe ich einen roten Fleck am Arm.",
+    "en": "For about two months I've had a red spot on my arm."
+   },
+   {
+    "de": "Obwohl ich schon eine Creme benutze, wird er nicht kleiner, und manchmal juckt er stark.",
+    "en": "Although I'm already using a cream, it isn't getting smaller, and sometimes it itches a lot."
+   },
+   {
+    "de": "Deshalb hätte ich gern so bald wie möglich einen Termin bei Ihnen.",
+    "en": "That's why I would like an appointment with you as soon as possible."
+   },
+   {
+    "de": "Ich bin gesetzlich versichert.",
+    "en": "I have public health insurance."
+   },
+   {
+    "de": "Montags und freitags habe ich den ganzen Tag Zeit, an den anderen Tagen ab 16 Uhr.",
+    "en": "On Mondays and Fridays I have the whole day free, on the other days from 4 p.m."
+   },
+   {
+    "de": "Wenn ein Termin frei wird, können Sie mich auch kurzfristig anrufen: 0151 23456789.",
+    "en": "If an appointment becomes free, you can also call me at short notice: 0151 23456789."
+   },
+   {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Julie Moreau",
+    "en": "Julie Moreau"
+   }
+  ]
  }
 }

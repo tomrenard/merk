@@ -504,6 +504,36 @@
  "writing": {
   "task": "You have joined a gym or sports club. Write 5–6 sentences to a friend: what sport you want to do, why, how often, what it costs, and ask if they want to come along.",
   "model": "Hallo Lea, ich möchte endlich wieder mehr Sport machen. Ich sitze den ganzen Tag im Büro, und mein Rücken tut oft weh. Deshalb habe ich mich gestern im Fitnessstudio angemeldet. Der Vertrag kostet 29 Euro im Monat, und die Kurse sind kostenlos. Ich möchte zweimal pro Woche trainieren, am Montag und am Donnerstag. Hast du Lust, am Montag mitzukommen? Liebe Grüße, Amélie",
-  "modelEn": "Hello Lea, I finally want to do more sports again. I sit in the office all day, and my back often hurts. That's why I signed up at the gym yesterday. The contract costs 29 euros a month, and the classes are free. I want to train twice a week, on Monday and on Thursday. Do you feel like coming along on Monday? Kind regards, Amélie"
+  "modelEn": "Hello Lea, I finally want to do more sports again. I sit in the office all day, and my back often hurts. That's why I signed up at the gym yesterday. The contract costs 29 euros a month, and the classes are free. I want to train twice a week, on Monday and on Thursday. Do you feel like coming along on Monday? Kind regards, Amélie",
+  "sentences": [
+   {
+    "de": "Hallo Lea, ich möchte endlich wieder mehr Sport machen.",
+    "en": "Hello Lea, I finally want to do more sports again."
+   },
+   {
+    "de": "Ich sitze den ganzen Tag im Büro, und mein Rücken tut oft weh.",
+    "en": "I sit in the office all day, and my back often hurts."
+   },
+   {
+    "de": "Deshalb habe ich mich gestern im Fitnessstudio angemeldet.",
+    "en": "That's why I signed up at the gym yesterday."
+   },
+   {
+    "de": "Der Vertrag kostet 29 Euro im Monat, und die Kurse sind kostenlos.",
+    "en": "The contract costs 29 euros a month, and the classes are free."
+   },
+   {
+    "de": "Ich möchte zweimal pro Woche trainieren, am Montag und am Donnerstag.",
+    "en": "I want to train twice a week, on Monday and on Thursday."
+   },
+   {
+    "de": "Hast du Lust, am Montag mitzukommen?",
+    "en": "Do you feel like coming along on Monday?"
+   },
+   {
+    "de": "Liebe Grüße, Amélie",
+    "en": "Kind regards, Amélie"
+   }
+  ]
  }
 }

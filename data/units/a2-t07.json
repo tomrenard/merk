@@ -507,6 +507,36 @@
  "writing": {
   "task": "A friend has just moved to Germany. Write 5–6 sentences to explain how the Anmeldung works and what to bring.",
   "model": "Hallo Paul, du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden. Buch den Termin schnell online, denn in Berlin sind die Termine oft schnell weg. Bring deinen Pass und die Bestätigung von deinem Vermieter mit. Das Formular kannst du schon zu Hause ausfüllen. Am Ende unterschreibst du und bekommst die Meldebescheinigung. Die brauchst du für die Bank! Viele Grüße, Léa",
-  "modelEn": "Hello Paul, you have to register at the registration office within the first two weeks. Book the appointment online quickly, because in Berlin the appointments are often gone fast. Bring your passport and the confirmation from your landlord. You can already fill out the form at home. At the end you sign and get the registration certificate. You need it for the bank! Kind regards, Léa"
+  "modelEn": "Hello Paul, you have to register at the registration office within the first two weeks. Book the appointment online quickly, because in Berlin the appointments are often gone fast. Bring your passport and the confirmation from your landlord. You can already fill out the form at home. At the end you sign and get the registration certificate. You need it for the bank! Kind regards, Léa",
+  "sentences": [
+   {
+    "de": "Hallo Paul, du musst dich in den ersten zwei Wochen beim Bürgeramt anmelden.",
+    "en": "Hello Paul, you have to register at the registration office within the first two weeks."
+   },
+   {
+    "de": "Buch den Termin schnell online, denn in Berlin sind die Termine oft schnell weg.",
+    "en": "Book the appointment online quickly, because in Berlin the appointments are often gone fast."
+   },
+   {
+    "de": "Bring deinen Pass und die Bestätigung von deinem Vermieter mit.",
+    "en": "Bring your passport and the confirmation from your landlord."
+   },
+   {
+    "de": "Das Formular kannst du schon zu Hause ausfüllen.",
+    "en": "You can already fill out the form at home."
+   },
+   {
+    "de": "Am Ende unterschreibst du und bekommst die Meldebescheinigung.",
+    "en": "At the end you sign and get the registration certificate."
+   },
+   {
+    "de": "Die brauchst du für die Bank!",
+    "en": "You need it for the bank!"
+   },
+   {
+    "de": "Viele Grüße, Léa",
+    "en": "Kind regards, Léa"
+   }
+  ]
  }
 }

@@ -475,6 +475,52 @@
  "writing": {
   "task": "Write an 80–100-word email to a friend telling the story of a day when something went wrong, for example a trip or a visit. Use the Präteritum.",
   "model": "Liebe Clara,\n\nich muss dir unbedingt von letztem Samstag erzählen! Ich wollte mit dem Zug zu meinen Eltern nach Köln fahren. Ich stand früh auf, aber der Bus kam nicht. Also lief ich zum Bahnhof. Dort wartete ich eine halbe Stunde, und dann hörte ich: Der Zug fällt aus! Ich rief meine Mutter an und erzählte ihr alles. Am Ende nahm ich einen anderen Zug und kam erst um neun Uhr abends an. Aber meine Mutter kochte noch eine Suppe für mich, und wir saßen lange zusammen in der Küche.\n\nViele Grüße\nJulien",
-  "modelEn": "Dear Clara,\n\nI absolutely have to tell you about last Saturday! I wanted to take the train to my parents in Cologne. I got up early, but the bus didn't come. So I walked to the station. I waited there for half an hour, and then I heard: the train is cancelled! I called my mother and told her everything. In the end I took another train and only arrived at nine in the evening. But my mother still cooked a soup for me, and we sat together in the kitchen for a long time.\n\nBest wishes\nJulien"
+  "modelEn": "Dear Clara,\n\nI absolutely have to tell you about last Saturday! I wanted to take the train to my parents in Cologne. I got up early, but the bus didn't come. So I walked to the station. I waited there for half an hour, and then I heard: the train is cancelled! I called my mother and told her everything. In the end I took another train and only arrived at nine in the evening. But my mother still cooked a soup for me, and we sat together in the kitchen for a long time.\n\nBest wishes\nJulien",
+  "sentences": [
+   {
+    "de": "Liebe Clara,",
+    "en": "Dear Clara,"
+   },
+   {
+    "de": "ich muss dir unbedingt von letztem Samstag erzählen!",
+    "en": "I absolutely have to tell you about last Saturday!"
+   },
+   {
+    "de": "Ich wollte mit dem Zug zu meinen Eltern nach Köln fahren.",
+    "en": "I wanted to take the train to my parents in Cologne."
+   },
+   {
+    "de": "Ich stand früh auf, aber der Bus kam nicht.",
+    "en": "I got up early, but the bus didn't come."
+   },
+   {
+    "de": "Also lief ich zum Bahnhof.",
+    "en": "So I walked to the station."
+   },
+   {
+    "de": "Dort wartete ich eine halbe Stunde, und dann hörte ich: Der Zug fällt aus!",
+    "en": "I waited there for half an hour, and then I heard: the train is cancelled!"
+   },
+   {
+    "de": "Ich rief meine Mutter an und erzählte ihr alles.",
+    "en": "I called my mother and told her everything."
+   },
+   {
+    "de": "Am Ende nahm ich einen anderen Zug und kam erst um neun Uhr abends an.",
+    "en": "In the end I took another train and only arrived at nine in the evening."
+   },
+   {
+    "de": "Aber meine Mutter kochte noch eine Suppe für mich, und wir saßen lange zusammen in der Küche.",
+    "en": "But my mother still cooked a soup for me, and we sat together in the kitchen for a long time."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Best wishes"
+   },
+   {
+    "de": "Julien",
+    "en": "Julien"
+   }
+  ]
  }
 }

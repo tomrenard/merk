@@ -463,6 +463,32 @@
  "writing": {
   "task": "Write 5–6 sentences about your morning routine and how you feel today.",
   "model": "Ich stehe um halb sieben auf. Zuerst dusche ich mich, dann ziehe ich mich an. Ich putze mir die Zähne und frühstücke schnell. Heute fühle ich mich ein bisschen müde. Aber am Abend treffe ich mich mit Freunden. Ich freue mich schon sehr!",
-  "modelEn": "I get up at half past six. First I take a shower, then I get dressed. I brush my teeth and have a quick breakfast. Today I feel a little tired. But in the evening I'm meeting friends. I'm already really looking forward to it!"
+  "modelEn": "I get up at half past six. First I take a shower, then I get dressed. I brush my teeth and have a quick breakfast. Today I feel a little tired. But in the evening I'm meeting friends. I'm already really looking forward to it!",
+  "sentences": [
+   {
+    "de": "Ich stehe um halb sieben auf.",
+    "en": "I get up at half past six."
+   },
+   {
+    "de": "Zuerst dusche ich mich, dann ziehe ich mich an.",
+    "en": "First I take a shower, then I get dressed."
+   },
+   {
+    "de": "Ich putze mir die Zähne und frühstücke schnell.",
+    "en": "I brush my teeth and have a quick breakfast."
+   },
+   {
+    "de": "Heute fühle ich mich ein bisschen müde.",
+    "en": "Today I feel a little tired."
+   },
+   {
+    "de": "Aber am Abend treffe ich mich mit Freunden.",
+    "en": "But in the evening I'm meeting friends."
+   },
+   {
+    "de": "Ich freue mich schon sehr!",
+    "en": "I'm already really looking forward to it!"
+   }
+  ]
  }
 }

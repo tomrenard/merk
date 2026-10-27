@@ -501,6 +501,28 @@
   "task": "Tu laisses un message à un ami au téléphone. Écris 2 à 4 phrases : dis qui tu es, propose un rendez-vous (où et à quelle heure) et demande-lui de te rappeler. Écris en lettres latines.",
   "model": "ألو، أنا عمر. نتلاقاو غدا ف القهوة ف الخمسة؟ عيط ليا عافاك. بسلامة!",
   "modelTr": "alo, ana omar. ntla9aw ghedda f l9hwa f lkhamsa? 3ayet liya 3afak. bslama!",
-  "modelEn": "Hello, I'm Omar. Shall we meet tomorrow at the café at five? Call me, please. Goodbye!"
+  "modelEn": "Hello, I'm Omar. Shall we meet tomorrow at the café at five? Call me, please. Goodbye!",
+  "sentences": [
+   {
+    "de": "ألو، أنا عمر.",
+    "tr": "alo, ana omar.",
+    "en": "Hello, I'm Omar."
+   },
+   {
+    "de": "نتلاقاو غدا ف القهوة ف الخمسة؟",
+    "tr": "ntla9aw ghedda f l9hwa f lkhamsa?",
+    "en": "Shall we meet tomorrow at the café at five?"
+   },
+   {
+    "de": "عيط ليا عافاك.",
+    "tr": "3ayet liya 3afak.",
+    "en": "Call me, please."
+   },
+   {
+    "de": "بسلامة!",
+    "tr": "bslama!",
+    "en": "Goodbye!"
+   }
+  ]
  }
 }

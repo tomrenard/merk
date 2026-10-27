@@ -465,6 +465,36 @@
  "writing": {
   "task": "A friend's birthday is coming up. Write 5–6 sentences to another friend: say what you are giving to whom and ask for help.",
   "model": "Hallo Nina, am Freitag hat Paul Geburtstag. Ich schenke ihm ein Buch, er liest doch so gern. Seinen Kindern bringe ich Schokolade mit. Kannst du mir helfen? Ich brauche noch eine Karte. Zeigst du mir morgen den Laden am Markt? Liebe Grüße, Tom",
-  "modelEn": "Hello Nina, on Friday it's Paul's birthday. I'm giving him a book, he likes reading so much. I'm bringing chocolate for his children. Can you help me? I still need a card. Will you show me the shop at the market tomorrow? Kind regards, Tom"
+  "modelEn": "Hello Nina, on Friday it's Paul's birthday. I'm giving him a book, he likes reading so much. I'm bringing chocolate for his children. Can you help me? I still need a card. Will you show me the shop at the market tomorrow? Kind regards, Tom",
+  "sentences": [
+   {
+    "de": "Hallo Nina, am Freitag hat Paul Geburtstag.",
+    "en": "Hello Nina, on Friday it's Paul's birthday."
+   },
+   {
+    "de": "Ich schenke ihm ein Buch, er liest doch so gern.",
+    "en": "I'm giving him a book, he likes reading so much."
+   },
+   {
+    "de": "Seinen Kindern bringe ich Schokolade mit.",
+    "en": "I'm bringing chocolate for his children."
+   },
+   {
+    "de": "Kannst du mir helfen?",
+    "en": "Can you help me?"
+   },
+   {
+    "de": "Ich brauche noch eine Karte.",
+    "en": "I still need a card."
+   },
+   {
+    "de": "Zeigst du mir morgen den Laden am Markt?",
+    "en": "Will you show me the shop at the market tomorrow?"
+   },
+   {
+    "de": "Liebe Grüße, Tom",
+    "en": "Kind regards, Tom"
+   }
+  ]
  }
 }

@@ -511,6 +511,48 @@
  "writing": {
   "task": "You're having a birthday party on Saturday. Write an 80–100-word note for the other tenants in your building: apologise in advance, say until when it will be loud, and give your phone number.",
   "model": "Liebe Nachbarinnen und Nachbarn,\n\nam Samstag feiere ich meinen 30. Geburtstag. Es kommen ungefähr zwanzig Gäste, und ab 20 Uhr wird bei mir in der Wohnung gefeiert. Es wird sicher etwas lauter als sonst. Dafür entschuldige ich mich schon jetzt. Um 23 Uhr machen wir die Musik leiser, und auf dem Balkon wird nach 22 Uhr nicht mehr geraucht. Wenn es Sie trotzdem stört, klingeln Sie einfach bei mir oder rufen Sie mich an: 0176 2345678. Sie sind natürlich auch herzlich eingeladen!\n\nViele Grüße\nMathieu Leroy, 2. Stock links",
-  "modelEn": "Dear neighbors,\n\non Saturday I'm celebrating my 30th birthday. About twenty guests are coming, and from 8 p.m. there will be a party in my apartment. It will surely be a bit louder than usual. I apologize for that already now. At 11 p.m. we'll turn the music down, and on the balcony there will be no more smoking after 10 p.m. If it still bothers you, just ring my bell or call me: 0176 2345678. Of course you are also warmly invited!\n\nKind regards\nMathieu Leroy, 2nd floor left"
+  "modelEn": "Dear neighbors,\n\non Saturday I'm celebrating my 30th birthday. About twenty guests are coming, and from 8 p.m. there will be a party in my apartment. It will surely be a bit louder than usual. I apologize for that already now. At 11 p.m. we'll turn the music down, and on the balcony there will be no more smoking after 10 p.m. If it still bothers you, just ring my bell or call me: 0176 2345678. Of course you are also warmly invited!\n\nKind regards\nMathieu Leroy, 2nd floor left",
+  "sentences": [
+   {
+    "de": "Liebe Nachbarinnen und Nachbarn,",
+    "en": "Dear neighbors,"
+   },
+   {
+    "de": "am Samstag feiere ich meinen 30. Geburtstag.",
+    "en": "on Saturday I'm celebrating my 30th birthday."
+   },
+   {
+    "de": "Es kommen ungefähr zwanzig Gäste, und ab 20 Uhr wird bei mir in der Wohnung gefeiert.",
+    "en": "About twenty guests are coming, and from 8 p.m. there will be a party in my apartment."
+   },
+   {
+    "de": "Es wird sicher etwas lauter als sonst.",
+    "en": "It will surely be a bit louder than usual."
+   },
+   {
+    "de": "Dafür entschuldige ich mich schon jetzt.",
+    "en": "I apologize for that already now."
+   },
+   {
+    "de": "Um 23 Uhr machen wir die Musik leiser, und auf dem Balkon wird nach 22 Uhr nicht mehr geraucht.",
+    "en": "At 11 p.m. we'll turn the music down, and on the balcony there will be no more smoking after 10 p.m."
+   },
+   {
+    "de": "Wenn es Sie trotzdem stört, klingeln Sie einfach bei mir oder rufen Sie mich an: 0176 2345678.",
+    "en": "If it still bothers you, just ring my bell or call me: 0176 2345678."
+   },
+   {
+    "de": "Sie sind natürlich auch herzlich eingeladen!",
+    "en": "Of course you are also warmly invited!"
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Mathieu Leroy, 2. Stock links",
+    "en": "Mathieu Leroy, 2nd floor left"
+   }
+  ]
  }
 }

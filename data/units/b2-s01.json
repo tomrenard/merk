@@ -545,6 +545,56 @@
  "writing": {
   "task": "The podcast asks its listeners to write in about their own first months in a German city. Write a message of 100–130 words: what was difficult at first, what surprised you and what you like now. Report one thing someone told you, using Konjunktiv I.",
   "model": "Liebe Mira,\n\nich höre euren Podcast jede Woche und habe mich in Camilles Geschichte total wiedererkannt.\n\nIch bin vor drei Jahren aus Marseille nach Köln gezogen. Am Anfang war die Wohnungssuche ein Albtraum: Bei jeder Besichtigung standen dreißig Leute vor der Tür. Meine Kollegin meinte damals, das sei in Köln ganz normal, ich müsse einfach Geduld haben.\n\nÜberrascht hat mich, wie wichtig hier Regeln sind. Mein Nachbar hat mir am ersten Tag erklärt, wie man den Müll trennt – mit sechs verschiedenen Tonnen!\n\nHeute fühle ich mich hier wohl. Ich liebe den Rhein, den Karneval und die Kneipen, in denen man schnell mit Fremden ins Gespräch kommt. Nur das französische Brot vermisse ich noch.\n\nViele Grüße\nInès",
-  "modelEn": "Dear Mira,\n\nI listen to your podcast every week and I totally recognized myself in Camille's story.\n\nThree years ago I moved from Marseille to Cologne. At the beginning the apartment search was a nightmare: at every viewing there were thirty people at the door. My colleague said back then that this was completely normal in Cologne, I just had to be patient.\n\nWhat surprised me was how important rules are here. On the first day my neighbor explained to me how to sort the trash – with six different bins!\n\nToday I feel at home here. I love the Rhine, the carnival and the pubs where you quickly get talking to strangers. I only still miss French bread.\n\nKind regards\nInès"
+  "modelEn": "Dear Mira,\n\nI listen to your podcast every week and I totally recognized myself in Camille's story.\n\nThree years ago I moved from Marseille to Cologne. At the beginning the apartment search was a nightmare: at every viewing there were thirty people at the door. My colleague said back then that this was completely normal in Cologne, I just had to be patient.\n\nWhat surprised me was how important rules are here. On the first day my neighbor explained to me how to sort the trash – with six different bins!\n\nToday I feel at home here. I love the Rhine, the carnival and the pubs where you quickly get talking to strangers. I only still miss French bread.\n\nKind regards\nInès",
+  "sentences": [
+   {
+    "de": "Liebe Mira,",
+    "en": "Dear Mira,"
+   },
+   {
+    "de": "ich höre euren Podcast jede Woche und habe mich in Camilles Geschichte total wiedererkannt.",
+    "en": "I listen to your podcast every week and I totally recognized myself in Camille's story."
+   },
+   {
+    "de": "Ich bin vor drei Jahren aus Marseille nach Köln gezogen.",
+    "en": "Three years ago I moved from Marseille to Cologne."
+   },
+   {
+    "de": "Am Anfang war die Wohnungssuche ein Albtraum: Bei jeder Besichtigung standen dreißig Leute vor der Tür.",
+    "en": "At the beginning the apartment search was a nightmare: at every viewing there were thirty people at the door."
+   },
+   {
+    "de": "Meine Kollegin meinte damals, das sei in Köln ganz normal, ich müsse einfach Geduld haben.",
+    "en": "My colleague said back then that this was completely normal in Cologne, I just had to be patient."
+   },
+   {
+    "de": "Überrascht hat mich, wie wichtig hier Regeln sind.",
+    "en": "What surprised me was how important rules are here."
+   },
+   {
+    "de": "Mein Nachbar hat mir am ersten Tag erklärt, wie man den Müll trennt – mit sechs verschiedenen Tonnen!",
+    "en": "On the first day my neighbor explained to me how to sort the trash – with six different bins!"
+   },
+   {
+    "de": "Heute fühle ich mich hier wohl.",
+    "en": "Today I feel at home here."
+   },
+   {
+    "de": "Ich liebe den Rhein, den Karneval und die Kneipen, in denen man schnell mit Fremden ins Gespräch kommt.",
+    "en": "I love the Rhine, the carnival and the pubs where you quickly get talking to strangers."
+   },
+   {
+    "de": "Nur das französische Brot vermisse ich noch.",
+    "en": "I only still miss French bread."
+   },
+   {
+    "de": "Viele Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Inès",
+    "en": "Inès"
+   }
+  ]
  }
 }

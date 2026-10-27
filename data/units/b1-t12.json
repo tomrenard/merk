@@ -519,6 +519,56 @@
  "writing": {
   "task": "A German friend loved a dish you cooked. Write an 80–100-word message with the recipe: the ingredients and the steps. At the end, invite your friend to cook it with you.",
   "model": "Hallo Jan,\n\ndu wolltest doch mein Rezept für Crêpes haben. Es ist ganz einfach! Für vier Personen brauchst du 250 Gramm Mehl, vier Eier, einen halben Liter Milch, etwas Butter und ein bisschen Salz. Zuerst mischst du das Mehl mit den Eiern in einer großen Schüssel. Dann gibst du langsam die Milch dazu. Der Teig muss danach eine Stunde stehen. Dann machst du etwas Butter in eine heiße Pfanne und backst die Crêpes von beiden Seiten. Am besten schmecken sie mit Zucker und Zitrone. Hast du Lust, sie am Samstag mit mir zu machen?\n\nLiebe Grüße\nÉlodie",
-  "modelEn": "Hello Jan,\n\nyou wanted my recipe for crêpes. It's very easy! For four people you need 250 grams of flour, four eggs, half a liter of milk, some butter and a little salt. First you mix the flour with the eggs in a big bowl. Then you slowly add the milk. After that the batter has to rest for an hour. Then you put some butter in a hot pan and cook the crêpes on both sides. They taste best with sugar and lemon. Do you feel like making them with me on Saturday?\n\nKind regards\nÉlodie"
+  "modelEn": "Hello Jan,\n\nyou wanted my recipe for crêpes. It's very easy! For four people you need 250 grams of flour, four eggs, half a liter of milk, some butter and a little salt. First you mix the flour with the eggs in a big bowl. Then you slowly add the milk. After that the batter has to rest for an hour. Then you put some butter in a hot pan and cook the crêpes on both sides. They taste best with sugar and lemon. Do you feel like making them with me on Saturday?\n\nKind regards\nÉlodie",
+  "sentences": [
+   {
+    "de": "Hallo Jan,",
+    "en": "Hello Jan,"
+   },
+   {
+    "de": "du wolltest doch mein Rezept für Crêpes haben.",
+    "en": "you wanted my recipe for crêpes."
+   },
+   {
+    "de": "Es ist ganz einfach!",
+    "en": "It's very easy!"
+   },
+   {
+    "de": "Für vier Personen brauchst du 250 Gramm Mehl, vier Eier, einen halben Liter Milch, etwas Butter und ein bisschen Salz.",
+    "en": "For four people you need 250 grams of flour, four eggs, half a liter of milk, some butter and a little salt."
+   },
+   {
+    "de": "Zuerst mischst du das Mehl mit den Eiern in einer großen Schüssel.",
+    "en": "First you mix the flour with the eggs in a big bowl."
+   },
+   {
+    "de": "Dann gibst du langsam die Milch dazu.",
+    "en": "Then you slowly add the milk."
+   },
+   {
+    "de": "Der Teig muss danach eine Stunde stehen.",
+    "en": "After that the batter has to rest for an hour."
+   },
+   {
+    "de": "Dann machst du etwas Butter in eine heiße Pfanne und backst die Crêpes von beiden Seiten.",
+    "en": "Then you put some butter in a hot pan and cook the crêpes on both sides."
+   },
+   {
+    "de": "Am besten schmecken sie mit Zucker und Zitrone.",
+    "en": "They taste best with sugar and lemon."
+   },
+   {
+    "de": "Hast du Lust, sie am Samstag mit mir zu machen?",
+    "en": "Do you feel like making them with me on Saturday?"
+   },
+   {
+    "de": "Liebe Grüße",
+    "en": "Kind regards"
+   },
+   {
+    "de": "Élodie",
+    "en": "Élodie"
+   }
+  ]
  }
 }

@@ -11,7 +11,13 @@ import type { SyncBatch, SyncEvent } from "./api/sync/route";
  */
 const KEY = "merk-outbox";
 
-function read(): SyncEvent[] {
+/** The route takes this many at a time; the rest goes in the next request. */
+const MAX = 500;
+
+/** `id`: so a request removes only what it sent, even with another tab sending too. */
+type Queued = SyncEvent & { id: string };
+
+function read(): Queued[] {
   try {
     return JSON.parse(localStorage.getItem(KEY) ?? "[]");
   } catch {
@@ -19,61 +25,96 @@ function read(): SyncEvent[] {
   }
 }
 
-function write(events: SyncEvent[]) {
+function write(events: Queued[]) {
   try {
     localStorage.setItem(KEY, JSON.stringify(events));
   } catch {}
   window.dispatchEvent(new Event(KEY));
 }
 
-/** Events waiting to be sent. */
-export const pending = read;
+/** Review cards answered here but not sent yet. */
+export const unsentCards = () =>
+  new Set(read().flatMap((event) => (event.type === "grade" ? [event.cardId] : [])));
 
 type Unstamped<E> = E extends SyncEvent ? Omit<E, "at"> : never;
 
 /** Keeps `event` (stamped with the time now) and tries to send it. */
 export function queue(event: Unstamped<SyncEvent>) {
-  write([...read(), { ...event, at: Date.now() } as SyncEvent]);
+  write([...read(), { ...event, at: Date.now(), id: crypto.randomUUID() } as Queued]);
   void flush();
 }
 
 /** Fired once lesson results reached the server. */
 export const SYNCED = "merk-synced";
 
-let sending: Promise<SyncBatch | null> | null = null;
+/** `sent`: the server answered (all sent events saved); `batch`: the next review cards. */
+type Result = { sent: boolean; batch: SyncBatch | null };
+
+let sending: Promise<Result> | null = null;
 
 /**
- * Sends what is queued; with `batch`, also asks for the next review cards (null when offline).
- * Only sent events leave the queue, and only once the server answered.
+ * Sends what is queued; with `batch`, also asks for the next review cards. Events leave the
+ * queue only once the server says it saved them.
  */
-export function flush(batch = false): Promise<SyncBatch | null> {
+export function flush(batch = false): Promise<Result> {
   if (sending) {
     // One request at a time, so events reach the server in order.
-    return batch ? sending.then(() => flush(true)) : sending;
+    return sending.then(() => flush(batch));
   }
-  const events = read();
-  if (!events.length && !batch) return Promise.resolve(null);
+  const events = read().slice(0, MAX);
+  if (!events.length && !batch) return Promise.resolve({ sent: true, batch: null });
+  let more = false;
   sending = (async () => {
     try {
       const response = await fetch("/api/sync", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ events, batch }),
+        // A bus connection can hang without failing: give up and try later.
+        signal: AbortSignal.timeout(15_000),
       });
-      if (!response.ok) return null;
-      const body = (await response.json()) as { batch?: SyncBatch };
-      write(read().slice(events.length));
-      // Lessons changed: pages kept in the browser must not show them undone (see Synced).
-      if (events.some((event) => event.type !== "grade")) window.dispatchEvent(new Event(SYNCED));
-      return body.batch ?? null;
+      if (!response.ok) return { sent: false, batch: null };
+      const body = (await response.json()) as { applied: number; batch?: SyncBatch };
+      const saved = new Set(events.slice(0, body.applied).map((event) => event.id));
+      const left = read().filter((event) => !saved.has(event.id));
+      write(left);
+      more = body.applied === events.length && left.length > 0;
+      // Lessons changed: pages kept in the browser must not show them undone (see Offline).
+      if (events.some((event) => saved.has(event.id) && event.type !== "grade")) {
+        window.dispatchEvent(new Event(SYNCED));
+      }
+      return { sent: body.applied === events.length, batch: body.batch ?? null };
     } catch {
-      // Offline, or signed out (redirected to the login page, not JSON): try again later.
-      return null;
+      // Offline, timed out, or signed out (redirected to the login page, not JSON).
+      return { sent: false, batch: null };
     } finally {
       sending = null;
+      // Queued while this request was on its way.
+      if (more) void flush();
     }
   })();
   return sending;
+}
+
+/**
+ * Before logging out: sends what is queued, then forgets everything this account left on the
+ * phone (queue, review batch, saved pages), so the next person neither sees nor inherits it.
+ * False when answers couldn't be sent (offline): nothing is forgotten then.
+ */
+export async function forget() {
+  if (!(await flush()).sent) return false;
+  try {
+    for (const key of Object.keys(localStorage)) {
+      if (key === KEY || key.startsWith("merk-review-")) localStorage.removeItem(key);
+    }
+  } catch {}
+  forgetPages();
+  return true;
+}
+
+/** Signed out: the service worker drops kept pages, and any it is still loading. */
+export function forgetPages() {
+  navigator.serviceWorker?.controller?.postMessage({ forget: true });
 }
 
 /** Whether there is a connection, and how many events wait; sends the queue when back online. */
@@ -87,7 +128,8 @@ export function useOutbox() {
     };
     const retry = () => {
       update();
-      if (navigator.onLine && document.visibilityState === "visible") void flush();
+      // Also when the app goes to the background: the last answers of a session go out.
+      if (navigator.onLine) void flush();
     };
     retry();
     window.addEventListener(KEY, update);

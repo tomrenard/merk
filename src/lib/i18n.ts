@@ -28,6 +28,8 @@ const FR: Record<string, string> = {
     "Remarque comment elle utilise la grammaire de la leçon ; tu pourras écrire la tienne plus tard.",
   "Quiet mode": "Mode discret",
   Offline: "Hors ligne",
+  "Some answers aren't sent yet. Connect to the internet, then log out.":
+    "Des réponses ne sont pas encore envoyées. Connecte-toi à internet, puis déconnecte-toi.",
   "{n} answer to send": "{n} réponse à envoyer",
   "{n} answers to send": "{n} réponses à envoyer",
   Sections: "Sections",

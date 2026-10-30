@@ -18,7 +18,7 @@ import type { SessionLeft } from "@/lib/review";
 import { useCourse, useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
-import { flush, pending, queue } from "../outbox";
+import { flush, queue, unsentCards } from "../outbox";
 import { Say } from "../Say";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "./German";
 
@@ -132,7 +132,8 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
   answered.current = done;
   useEffect(
     () => () => {
-      if (answered.current > 0) flush().then(() => router.refresh());
+      // Offline, a refresh would reload the next page from the cache: only once it is all sent.
+      if (answered.current > 0) flush().then(({ sent }) => sent && router.refresh());
     },
     [router],
   );
@@ -149,8 +150,8 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
       setLeft(restored.left);
       return;
     }
-    const sent = new Set(pending().map((event) => event.type === "grade" && event.cardId));
-    setCards((current) => current.filter((card) => !sent.has(card.cardId)));
+    const unsent = unsentCards();
+    setCards((current) => current.filter((card) => !unsent.has(card.cardId)));
     keepRecordings(batch);
   }, [batch, renderedAt, course]);
 
@@ -165,11 +166,11 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
   useEffect(() => {
     if (cards.length > REFILL || refilling.current || !navigator.onLine) return;
     refilling.current = true;
-    flush(true).then((next) => {
+    flush(true).then(({ batch: next }) => {
       refilling.current = false;
       if (!next) return;
       // Not cards already here, nor answered while the request was on its way.
-      const waiting = new Set(pending().map((event) => event.type === "grade" && event.cardId));
+      const waiting = unsentCards();
       setCards((current) => {
         const have = new Set(current.map((card) => card.note.id));
         const more = next.cards.filter(
@@ -178,7 +179,8 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         keepRecordings(more);
         return [...current, ...more];
       });
-      setLeft(next.left);
+      // The server's count misses answers still on their way: keep counting here then.
+      if (!waiting.size) setLeft(next.left);
     });
   }, [cards.length]);
   useEffect(() => {

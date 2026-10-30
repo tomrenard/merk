@@ -10,21 +10,43 @@ const AUDIO = "https://tomrenard.github.io/merk-audio/";
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (event) => event.waitUntil(self.clients.claim()));
 
-// The page that installed this worker loaded its code before: it sends those URLs to keep.
+// The page that installed this worker loaded its code before: it sends those URLs to keep, and
+// the main pages to keep fresh for an offline start.
+/** When this phone last signed out: a page that started loading before is not kept. */
+let forgotAt = 0;
+function forget() {
+  forgotAt = Date.now();
+  return caches.delete(PAGES);
+}
+
 self.addEventListener("message", (event) => {
-  const urls = Array.isArray(event.data?.keep) ? event.data.keep : [];
+  if (event.data?.forget) return event.waitUntil(forget());
+  const keep = Array.isArray(event.data?.keep) ? event.data.keep : [];
+  const pages = Array.isArray(event.data?.pages) ? event.data.pages : [];
   event.waitUntil(
-    caches.open(FILES).then((cache) =>
-      Promise.all(
-        urls.map(async (url) => {
-          if (await cache.match(url)) return;
-          const response = await fetch(url).catch(() => null);
-          if (response?.ok) await cache.put(url, response);
-        }),
-      ),
-    ),
+    Promise.all([
+      keepFiles(keep),
+      // With the code each page needs: never loaded yet, so not kept by saved().
+      ...pages.map(async (path) => {
+        const response = await fetchPage(new Request(path)).catch(() => null);
+        if (!response?.ok) return;
+        const html = await response.text();
+        await keepFiles([...new Set(html.match(/\/_next\/static\/[^"'\s\\)]+/g) ?? [])]);
+      }),
+    ]),
   );
 });
+
+async function keepFiles(urls) {
+  const cache = await caches.open(FILES);
+  await Promise.all(
+    urls.map(async (url) => {
+      if (await cache.match(url)) return;
+      const response = await fetch(url).catch(() => null);
+      if (response?.ok) await cache.put(url, response);
+    }),
+  );
+}
 
 self.addEventListener("fetch", (event) => {
   const { request } = event;
@@ -33,24 +55,35 @@ self.addEventListener("fetch", (event) => {
   if (url.href.startsWith(AUDIO)) return event.respondWith(audio(request));
   if (url.origin !== self.location.origin) return;
   if (url.pathname.startsWith("/_next/static/")) return event.respondWith(saved(request));
-  if (request.mode === "navigate") return event.respondWith(page(request));
   if (url.pathname.startsWith("/api/")) return;
+  if (request.mode === "navigate") return event.respondWith(page(request));
   // Next's in-app navigations: offline, a failed one makes Next load the page itself (page()).
   event.respondWith(fetch(request).catch(() => new Response(null, { status: 503 })));
 });
 
+/** Loads a page and keeps it, unless it is (or redirects to) the login page. */
+async function fetchPage(request) {
+  const started = Date.now();
+  const response = await fetch(request);
+  // Signed out: forget everyone's pages. Never keep a login page under another page's URL.
+  if (response.type === "opaqueredirect" || response.redirected) {
+    if (new URL(response.url || request.url).pathname === "/login") await forget();
+  } else if (response.ok && started > forgotAt) {
+    const copy = response.clone();
+    caches.open(PAGES).then((cache) => cache.put(request, copy));
+  }
+  return response;
+}
+
+/** The network, or the kept copy when offline or when a weak connection takes over 4 s. */
 async function page(request) {
+  const network = fetchPage(request);
+  network.catch(() => {}); // when the kept copy answered first
+  const copy = await caches.match(request, { cacheName: PAGES, ignoreVary: true });
+  const slow = new Promise((resolve) => setTimeout(() => resolve(copy), copy ? 4000 : 60_000));
   try {
-    const response = await fetch(request);
-    // Signed out: forget everyone's pages. Never keep a login page under another page's URL.
-    if (new URL(response.url).pathname === "/login") await caches.delete(PAGES);
-    else if (response.ok && !response.redirected) {
-      const copy = response.clone();
-      caches.open(PAGES).then((cache) => cache.put(request, copy));
-    }
-    return response;
+    return (await Promise.race([network, slow])) ?? (await network);
   } catch {
-    const copy = await caches.match(request, { cacheName: PAGES, ignoreVary: true });
     return (
       copy ??
       new Response(

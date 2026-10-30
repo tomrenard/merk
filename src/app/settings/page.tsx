@@ -9,6 +9,7 @@ import { getSettings, saveSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { CourseSwitch, LanguageSwitch, QuietSwitch } from "../language";
 import { Go } from "../Nav";
+import { LogOut } from "../Offline";
 import { VoicePicker } from "./VoicePicker";
 
 export const dynamic = "force-dynamic";
@@ -94,11 +95,7 @@ export default async function SettingsPage() {
           🧭 {t("Retake the placement test")}
         </Go>
       )}
-      <form action={logout} className="mt-4 flex flex-col">
-        <button type="submit" className="btn">
-          {t("Log out")}
-        </button>
-      </form>
+      <LogOut action={logout} label={t("Log out")} />
     </main>
   );
 }

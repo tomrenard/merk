@@ -49,18 +49,18 @@ async function logOnce(
         eq(activityLogs.at, values.at),
       ),
     );
-  if (found) return false;
+  if (found) return;
   await db()
     .insert(activityLogs)
     .values({ userId, ...values });
-  return true;
 }
 
 async function apply(userId: string, event: SyncEvent) {
-  // An offline answer can't be from the future, nor older than a week.
-  const at = new Date(
-    Math.min(Math.max(Number(event.at) || 0, Date.now() - 7 * 86_400_000), Date.now()),
-  );
+  // Kept as sent, so a resent event matches itself (logOnce); a week old or a day ahead (a
+  // wrong phone clock) is skipped. grade() keeps its own time between last review and now.
+  const sent = Number(event.at);
+  if (!(sent > Date.now() - 7 * 86_400_000 && sent < Date.now() + 86_400_000)) return;
+  const at = new Date(sent);
   if (event.type === "grade") {
     const { cardId, rating, durationMs, seenReps } = event;
     if (typeof cardId !== "string" || ![1, 2, 3, 4].includes(rating) || !Number.isInteger(seenReps))
@@ -95,7 +95,7 @@ async function apply(userId: string, event: SyncEvent) {
 }
 
 /**
- * Applies the phone's queued events in order (a bad one is skipped, not retried forever) and,
+ * Applies the phone's queued events in order (an invalid one is skipped, not retried forever) and,
  * with `batch`, answers with the next review cards. A route, not a server action: action ids
  * change with each deploy, and a queue can outlive one.
  */
@@ -108,16 +108,28 @@ export async function POST(request: Request) {
     batch?: boolean;
   } | null;
   const events = Array.isArray(body?.events) ? body.events.slice(0, 500) : [];
+  // `applied`: the phone drops this many from its queue. A database error stops here, so the
+  // rest is sent again later; only an event that can never apply (a card of an account signed
+  // out since) is skipped.
+  let applied = 0;
   for (const event of events) {
-    // One that can't apply (a card of an account signed out since) must not block the rest.
-    if (event && typeof event === "object") await apply(userId, event).catch(console.error);
+    try {
+      if (event && typeof event === "object") await apply(userId, event);
+    } catch (error) {
+      if (!String(error).includes("Unknown card")) {
+        console.error(error);
+        break;
+      }
+    }
+    applied++;
   }
-  if (events.some((event) => event?.type !== "grade")) freshPages();
-  if (!body?.batch) return Response.json({});
+  if (events.slice(0, applied).some((event) => event?.type !== "grade")) freshPages();
+  if (!body?.batch || applied < events.length) return Response.json({ applied });
   const [course, quiet] = await Promise.all([getCourse(), getQuiet()]);
   const [items, left] = await Promise.all([reviewBatch(userId, course), counts(userId, course)]);
   const cards = await Promise.all(items.map((item) => reviewCard(item, quiet)));
   return Response.json({
+    applied,
     batch: { cards: cards.filter((card) => card !== null), left: sessionLeft(left) },
   });
 }

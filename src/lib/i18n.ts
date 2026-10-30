@@ -27,6 +27,9 @@ const FR: Record<string, string> = {
   "Notice how it uses this lesson's grammar; you can write your own later.":
     "Remarque comment elle utilise la grammaire de la leçon ; tu pourras écrire la tienne plus tard.",
   "Quiet mode": "Mode discret",
+  Offline: "Hors ligne",
+  "{n} answer to send": "{n} réponse à envoyer",
+  "{n} answers to send": "{n} réponses à envoyer",
   Sections: "Sections",
   On: "Activé",
   Off: "Désactivé",

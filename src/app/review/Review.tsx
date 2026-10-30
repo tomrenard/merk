@@ -1,7 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useRef, useState } from "react";
+import { audioUrl, solved } from "@/lib/audio";
 import type { ReviewCard as ReviewItem } from "@/lib/course";
 import { CHEERS } from "@/lib/courses";
 import { checkWord } from "@/lib/darija";
@@ -17,8 +18,8 @@ import type { SessionLeft } from "@/lib/review";
 import { useCourse, useT } from "../Locale";
 import { Exercise } from "../learn/Exercise";
 import { Go } from "../Nav";
+import { flush, pending, queue } from "../outbox";
 import { Say } from "../Say";
-import { gradeAndNext } from "./actions";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "./German";
 
 const GRADES = [
@@ -72,17 +73,41 @@ const FEEDBACK: Record<TypedResult, string> = {
 /** A card forgotten this often gets a nudge to add a memory hook (in the hint). */
 const TRICKY = 8;
 
+/** Refill the batch from the server when this few cards are left. */
+const REFILL = 3;
+
+/** The batch as it was when last answered, to carry on after a reload offline. */
+const saved = (course: string) => `merk-review-${course}`;
+
+/** Recordings of the cards' words, examples and sentences, kept by the service worker. */
+function keepRecordings(cards: ReviewItem[]) {
+  if (!navigator.serviceWorker?.controller) return;
+  for (const card of cards) {
+    const texts = card.exercise
+      ? [solved(card.exercise)]
+      : [spokenForm(card.note.de), card.note.exampleDe];
+    for (const text of texts) if (text) fetch(audioUrl(text)).catch(() => {});
+  }
+}
+
 type Props = {
-  first: ReviewItem | null;
-  /** What is left of today's session when it starts; the server updates it after each answer. */
+  /**
+   * The session's next cards, answered here even offline. A missed one goes to the end, and
+   * more come from the server when few are left.
+   */
+  batch: ReviewItem[];
+  /** When the server made `batch`: a batch saved on the phone after that is newer. */
+  renderedAt: number;
+  /** What is left of today's session when it starts; the server updates it on each refill. */
   left: SessionLeft;
   limit: number | null;
   /** Today's lesson part, if not done yet: where the end screen leads. */
   lesson: { href: string; label: string } | null;
 };
 
-export function Review({ first, left: initial, limit, lesson }: Props) {
-  const [item, setItem] = useState(first);
+export function Review({ batch, renderedAt, left: initial, limit, lesson }: Props) {
+  const [cards, setCards] = useState(batch);
+  const item = cards[0] ?? null;
   const [done, setDone] = useState(0);
   const [left, setLeft] = useState(initial);
   const [remembered, setRemembered] = useState(0);
@@ -92,7 +117,6 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   // Quiet mode: options stay hidden until you have the word in mind (recall, then recognise).
   const [thought, setThought] = useState(false);
   const [article, setArticle] = useState<string | null>(null);
-  const [pending, startTransition] = useTransition();
   const shownAt = useRef(Date.now());
   useSpeechUnlock();
   const t = useT();
@@ -108,10 +132,55 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   answered.current = done;
   useEffect(
     () => () => {
-      if (answered.current > 0) router.refresh();
+      if (answered.current > 0) flush().then(() => router.refresh());
     },
     [router],
   );
+
+  // Offline, a reload shows the page as cached when it was last opened: carry on with the
+  // batch saved on the phone instead. Otherwise skip cards answered but not sent yet.
+  useEffect(() => {
+    let restored: { at: number; cards: ReviewItem[]; left: SessionLeft } | null = null;
+    try {
+      restored = JSON.parse(localStorage.getItem(saved(course)) ?? "null");
+    } catch {}
+    if (restored && restored.at > renderedAt) {
+      setCards(restored.cards);
+      setLeft(restored.left);
+      return;
+    }
+    const sent = new Set(pending().map((event) => event.type === "grade" && event.cardId));
+    setCards((current) => current.filter((card) => !sent.has(card.cardId)));
+    keepRecordings(batch);
+  }, [batch, renderedAt, course]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(saved(course), JSON.stringify({ at: Date.now(), cards, left }));
+    } catch {}
+  }, [cards, left, course]);
+
+  // Few cards left: send the answers, then get the next ones (none offline: try after the next).
+  const refilling = useRef(false);
+  useEffect(() => {
+    if (cards.length > REFILL || refilling.current || !navigator.onLine) return;
+    refilling.current = true;
+    flush(true).then((next) => {
+      refilling.current = false;
+      if (!next) return;
+      // Not cards already here, nor answered while the request was on its way.
+      const waiting = new Set(pending().map((event) => event.type === "grade" && event.cardId));
+      setCards((current) => {
+        const have = new Set(current.map((card) => card.note.id));
+        const more = next.cards.filter(
+          (card) => !have.has(card.note.id) && !waiting.has(card.cardId),
+        );
+        keepRecordings(more);
+        return [...current, ...more];
+      });
+      setLeft(next.left);
+    });
+  }, [cards.length]);
   useEffect(() => {
     // Not behind the end-of-session screen.
     if (item?.direction === "de_en" && !ended) speak(spokenForm(item.note.de), { recorded: true });
@@ -123,22 +192,33 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   }
 
   function answer(rating: number) {
-    if (!item || pending) return;
-    const duration = Date.now() - shownAt.current;
+    if (!item) return;
+    queue({
+      type: "grade",
+      cardId: item.cardId,
+      rating,
+      durationMs: Date.now() - shownAt.current,
+      seenReps: item.reps,
+    });
     setDone((n) => n + 1);
     if (rating > 1) setRemembered((n) => n + 1);
-    startTransition(async () => {
-      const next = await gradeAndNext(item.cardId, rating, duration, item.reps);
-      // Reset in the same update as the new card, so its answer never flashes for a frame.
-      setRevealed(false);
-      setTyped("");
-      setPicked(null);
-      setThought(false);
-      setArticle(null);
-      shownAt.current = Date.now();
-      setItem(next.item);
-      setLeft(next.left);
+    // A missed card comes back at the end of the batch (the server would show it in 10 minutes).
+    setCards(([, ...rest]) =>
+      rating === 1 ? [...rest, { ...item, reps: item.reps + 1, isNew: false }] : rest,
+    );
+    setLeft((l) => {
+      const next = { ...l, repeats: l.repeats + (rating === 1 ? 1 : 0) };
+      if (item.isNew) next.fresh = Math.max(l.fresh - 1, 0);
+      else if (l.reviews > 0) next.reviews = l.reviews - 1;
+      else next.repeats = Math.max(next.repeats - 1, 0);
+      return next;
     });
+    setRevealed(false);
+    setTyped("");
+    setPicked(null);
+    setThought(false);
+    setArticle(null);
+    shownAt.current = Date.now();
   }
 
   useEffect(() => {
@@ -173,15 +253,17 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
   const toLater = left.reviews + left.repeats + left.fresh;
 
   if (!item || ended) {
+    // Offline, the batch can run out before the session does.
+    const more = item !== null || toLater > 0;
     return (
       <main className="screen justify-center text-center">
         <span aria-hidden="true" className="icon mx-auto size-24 bg-[var(--brand-soft)] text-6xl">
-          {item ? "☕" : "🎉"}
+          {more ? "☕" : "🎉"}
         </span>
-        <p className="text-3xl font-black">{item ? t("Session done!") : cheer.doneToday}</p>
+        <p className="text-3xl font-black">{more ? t("Session done!") : cheer.doneToday}</p>
         <p className="muted font-semibold">
           {done ? `${t("{n} answers · {rate}% remembered.", { n: done, rate: rate ?? 0 })} ` : ""}
-          {item
+          {more
             ? t(
                 toLater === 1
                   ? "{n} card is left for another session."
@@ -197,7 +279,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
             <Go href={lesson.href} className="btn btn-primary">
               {t("Today's lesson:")} {lesson.label}
             </Go>
-          ) : item ? (
+          ) : more ? (
             <a href="/review" className="btn btn-primary">
               {t("Keep going")}
             </a>
@@ -451,9 +533,8 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
                 <button
                   key={g.rating}
                   type="button"
-                  disabled={pending}
                   onClick={() => answer(g.rating)}
-                  className={`btn btn-solid px-1 text-sm ${g.className} disabled:opacity-50`}
+                  className={`btn btn-solid px-1 text-sm ${g.className}`}
                 >
                   {ratings.length === 1 ? t("Continue") : t(g.label)}
                 </button>
@@ -467,7 +548,7 @@ export function Review({ first, left: initial, limit, lesson }: Props) {
               </p>
             )}
             {result === "wrong" && !choices && (
-              <button type="button" disabled={pending} onClick={() => answer(3)} className="btn">
+              <button type="button" onClick={() => answer(3)} className="btn">
                 {t("I was right")}
               </button>
             )}

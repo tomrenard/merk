@@ -61,7 +61,7 @@ export function Write({
       if (result.ok || result.reason !== "error") setShown(true);
     });
   }
-  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "write");
+  const { finished, save } = usePartSave(unit.id, "write");
 
   if (finished) {
     return (
@@ -69,9 +69,6 @@ export function Write({
         next={after}
         title={CHEERS[course].wrote}
         detail={t("Copying good phrases from the model into your own texts is how writing grows.")}
-        saveFailed={failed}
-        onRetry={retry}
-        saving={saving}
       />
     );
   }

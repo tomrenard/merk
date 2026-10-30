@@ -48,7 +48,7 @@ export function Speak({
   // Enough time for the line said slowly, then it stops and checks by itself.
   const seconds = Math.min(20, 3 + Math.ceil((line?.de.split(" ").length ?? 5) * 0.7));
   const { recording, clip, error, start, stop, reset } = useRecorder(seconds);
-  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "speak");
+  const { finished, save } = usePartSave(unit.id, "speak");
 
   // Each new recording is written down once.
   useEffect(() => {
@@ -87,9 +87,6 @@ export function Speak({
         next={after}
         title={CHEERS[course].spoke}
         detail={t("Saying it out loud is what makes it come out in real conversations.")}
-        saveFailed={failed}
-        onRetry={retry}
-        saving={saving}
       />
     );
   }

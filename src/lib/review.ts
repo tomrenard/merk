@@ -200,9 +200,76 @@ export async function nextCard(
 }
 
 /**
+ * Up to `n` cards to review now, in the order nextCard would give them, at most one per word
+ * (the other direction would give it away). The phone answers them offline; cards it misses
+ * come back at the end of its batch instead of after LEARN_AHEAD.
+ */
+export async function reviewBatch(
+  userId: string,
+  course: CourseId = "de",
+  n = 30,
+): Promise<ReviewItem[]> {
+  const { newLeft, followUps } = await counts(userId, course);
+  const [due, fresh, ahead] = await Promise.all([
+    db()
+      .select(ITEM)
+      .from(cards)
+      .innerJoin(notes, eq(notes.id, cards.noteId))
+      .where(
+        and(
+          eq(cards.userId, userId),
+          eq(cards.course, course),
+          lte(cards.due, sql`now()`),
+          SIBLING_FREE,
+        ),
+      )
+      .orderBy(asc(cards.due))
+      .limit(n),
+    newLeft + followUps === 0
+      ? []
+      : db()
+          .select(ITEM)
+          .from(cards)
+          .innerJoin(notes, eq(notes.id, cards.noteId))
+          .leftJoin(sibling, siblingJoin)
+          .where(and(eq(cards.userId, userId), eq(cards.course, course), NEW_OFFERABLE))
+          .orderBy(asc(notes.ord), asc(cards.direction))
+          .limit(newLeft + followUps + n),
+    db()
+      .select(ITEM)
+      .from(cards)
+      .innerJoin(notes, eq(notes.id, cards.noteId))
+      .where(
+        and(
+          eq(cards.userId, userId),
+          eq(cards.course, course),
+          sql`${cards.due} > now() and ${cards.due} <= ${LEARN_AHEAD}`,
+          SIBLING_FREE,
+        ),
+      )
+      .orderBy(asc(cards.due))
+      .limit(n),
+  ]);
+  // New words only while today's budget lasts; follow-ups (English→German) always.
+  let words = newLeft;
+  let ups = followUps;
+  const fits = (row: (typeof fresh)[number]) =>
+    row.direction === "de_en" ? words-- > 0 : ups-- > 0;
+  const seen = new Set<string>();
+  return [
+    ...due.map((row) => ({ ...row, isNew: row.reps === 0 })),
+    ...fresh.filter(fits).map((row) => ({ ...row, isNew: true })),
+    ...ahead.map((row) => ({ ...row, isNew: false })),
+  ]
+    .filter((row) => !seen.has(row.note.id) && seen.add(row.note.id))
+    .slice(0, n);
+}
+
+/**
  * Applies one grade to one of `userId`'s cards. `seenReps` is the review count the client was
- * shown: a repeated submit (double tap, second tab) no longer matches and is dropped instead of
- * scheduling twice.
+ * shown: a repeated submit (double tap, second tab, a resent offline queue) no longer matches and
+ * is dropped instead of scheduling twice. `at`: when it was answered (offline answers sync
+ * later); kept between the card's last review and now.
  */
 export async function grade(
   userId: string,
@@ -210,6 +277,7 @@ export async function grade(
   rating: Grade,
   durationMs: number,
   seenReps: number,
+  at = new Date(),
 ) {
   await db().transaction(async (tx) => {
     const [row] = await tx
@@ -220,7 +288,8 @@ export async function grade(
     if (!row) throw new Error(`Unknown card ${id}`);
     const before = row.fsrs ? TypeConvert.card(row.fsrs) : createEmptyCard();
     if (before.reps !== seenReps) return;
-    const now = new Date();
+    const last = before.last_review?.getTime() ?? 0;
+    const now = new Date(Math.min(Math.max(at.getTime() || 0, last), Date.now()));
     const { card } = scheduler.next(before, now, rating);
     await tx
       .update(cards)

@@ -2,30 +2,12 @@
 
 import { and, eq, gte, sql } from "drizzle-orm";
 import { redirect } from "next/navigation";
-import type { Grade } from "ts-fsrs";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { reviewCard } from "@/lib/course";
 import { freshPages } from "@/lib/fresh";
-import { getCourse, getQuiet } from "@/lib/locale";
-import { counts, DAY_START, grade, nextCard, sessionLeft } from "@/lib/review";
+import { getCourse } from "@/lib/locale";
+import { DAY_START } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-
-export async function gradeAndNext(
-  cardId: string,
-  rating: number,
-  durationMs: number,
-  seenReps: number,
-) {
-  const userId = await requireUser();
-  if (typeof cardId !== "string" || ![1, 2, 3, 4].includes(rating) || !Number.isInteger(seenReps)) {
-    throw new Error("Bad grade");
-  }
-  await grade(userId, cardId, rating as Grade, Number(durationMs) || 0, seenReps);
-  const course = await getCourse();
-  const [next, left] = await Promise.all([nextCard(userId, course), counts(userId, course)]);
-  return { item: await reviewCard(next, await getQuiet()), left: sessionLeft(left) };
-}
 
 /** At most this many extra new words a day, however often "+5" is tapped. */
 const MAX_EXTRA = 20;

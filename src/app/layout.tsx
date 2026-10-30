@@ -4,6 +4,7 @@ import { IPHONES } from "@/lib/iphones";
 import { getCourse, getLocale, getQuiet, getT } from "@/lib/locale";
 import "./globals.css";
 import { LocaleProvider } from "./Locale";
+import { Offline } from "./Offline";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 /** Darija in Arabic script; only loaded where Arabic text shows up. */
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang={locale} className={`${inter.variable} ${naskh.variable}`}>
       <body className="font-sans antialiased">
         <LocaleProvider locale={locale} course={course} quiet={quiet}>
+          <Offline />
           {children}
         </LocaleProvider>
       </body>

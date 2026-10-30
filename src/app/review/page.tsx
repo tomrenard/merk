@@ -1,6 +1,6 @@
 import { courseProgress, lastUnitId, lessonDoneToday, nextStep, reviewCard } from "@/lib/course";
 import { getCourse, getQuiet, getT } from "@/lib/locale";
-import { counts, nextCard, sessionLeft } from "@/lib/review";
+import { counts, reviewBatch, sessionLeft } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Review } from "./Review";
 
@@ -16,8 +16,8 @@ export default async function ReviewPage({
   const [t, course, quiet] = await Promise.all([getT(), getCourse(), getQuiet()]);
   const asked = (await searchParams).limit;
   const limit = [10, 30, 60].find((n) => String(n) === asked) ?? null;
-  const [first, left, progress, last, lessonDone] = await Promise.all([
-    nextCard(userId, course),
+  const [batch, left, progress, last, lessonDone] = await Promise.all([
+    reviewBatch(userId, course),
     counts(userId, course),
     courseProgress(userId, course),
     lastUnitId(userId, course),
@@ -27,7 +27,10 @@ export default async function ReviewPage({
 
   return (
     <Review
-      first={await reviewCard(first, quiet)}
+      batch={(await Promise.all(batch.map((item) => reviewCard(item, quiet)))).filter(
+        (card) => card !== null,
+      )}
+      renderedAt={Date.now()}
       left={sessionLeft(left)}
       limit={limit}
       lesson={step && { href: step.href, label: step.label }}

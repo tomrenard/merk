@@ -41,7 +41,7 @@ export function Listen({
   const [options] = useState(() =>
     questions.map((q) => shuffled(q.options.map((option, i) => ({ option, i })))),
   );
-  const { finished, failed, saving, save, retry } = usePartSave(unit.id, "listen");
+  const { finished, save } = usePartSave(unit.id, "listen");
   const total = questions.length + unit.dictation.length;
   // The other speaker gets the second voice, if the device has one.
   const speakers = [...new Set(lines.map((line) => line.speaker))];
@@ -99,9 +99,6 @@ export function Listen({
         next={after}
         title={cheer.heard}
         detail={t("{right}/{total} right. Try the dialogue again any time.", { right, total })}
-        saveFailed={failed}
-        onRetry={retry}
-        saving={saving}
       />
     );
   }

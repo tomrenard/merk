@@ -1,15 +1,16 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useState } from "react";
 import { quietItem } from "@/lib/choices";
 import { spokenForm } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit, UnitItem } from "@/lib/units";
 import { useQuiet, useT } from "../../../Locale";
 import { Go } from "../../../Nav";
+import { queue } from "../../../outbox";
 import { Headword, SoundToggle, speak, useSpeechUnlock } from "../../../review/German";
 import { Say } from "../../../Say";
-import { learnWords, recordUnit } from "../../actions";
+import { learnWords } from "../../actions";
 import { Exercise } from "../../Exercise";
 import { Prose } from "../../Prose";
 
@@ -46,10 +47,8 @@ export function Lesson({
     () => setOrder(shuffled(quiet ? unit.items.map((item) => quietItem(unit, item)) : unit.items)),
     [unit, quiet],
   );
-  const [saveFailed, setSaveFailed] = useState(false);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
-  const [saving, startSaving] = useTransition();
 
   const items = step === "drill" ? order.slice(0, DRILL) : order.slice(DRILL, DRILL + checkSize);
   const item = items[index];
@@ -63,17 +62,10 @@ export function Lesson({
     save(newScore);
   }
 
-  /** Saves the check; on failure (offline, server down) the score is kept for a retry. */
+  /** Saves the check: kept on the phone and sent when there is a connection (outbox). */
   function save(final: number) {
-    startSaving(async () => {
-      try {
-        await recordUnit(unit.id, final, testOut);
-        setSaveFailed(false);
-      } catch {
-        setSaveFailed(true);
-      }
-      setStep("done");
-    });
+    queue({ type: "unit", unitId: unit.id, score: final, testOut });
+    setStep("done");
   }
 
   if (step === "learn") {
@@ -189,17 +181,7 @@ export function Lesson({
                 { pass },
               )}
         </p>
-        {saveFailed && (
-          <button
-            type="button"
-            disabled={saving}
-            onClick={() => save(score)}
-            className="btn btn-primary"
-          >
-            {t("Couldn't save: retry")}
-          </button>
-        )}
-        {!saveFailed && next && (
+        {next && (
           <Go
             href={testOut ? (passed ? "/learn" : `/learn/${unit.id}/grammar`) : next.href}
             className="btn btn-primary"
@@ -239,7 +221,7 @@ export function Lesson({
           ? t("Practice {n}/{total}", { n: index + 1, total: DRILL })
           : t("Check {n}/{total}", { n: index + 1, total: checkSize })}
       </p>
-      {item && !saving && <Exercise key={`${step}-${item.id}`} item={item} onDone={done} />}
+      {item && <Exercise key={`${step}-${item.id}`} item={item} onDone={done} />}
     </main>
   );
 }

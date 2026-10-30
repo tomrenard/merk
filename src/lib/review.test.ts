@@ -3,7 +3,7 @@ import { createEmptyCard, State } from "ts-fsrs";
 import { beforeEach, describe, expect, it } from "vitest";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { seedWords, testDb } from "@/test/db";
-import { counts, grade, nextCard } from "./review";
+import { counts, grade, nextCard, reviewBatch } from "./review";
 
 const DAY = 86_400_000;
 const U = "u1";
@@ -243,5 +243,31 @@ describe("repeats", () => {
       .set({ due: new Date(Date.now() + 5 * 60_000) })
       .where(eq(cards.id, "eins:en_de"));
     expect((await counts(U)).repeats).toBe(0);
+  });
+});
+
+describe("offline", () => {
+  it("sends a batch in nextCard's order, one card per word, new words within today's budget", async () => {
+    await db.insert(settings).values({ userId: U, newPerDay: 2 });
+    await started("drei:en_de", State.Review);
+    await started("drei:de_en", State.Review);
+    const batch = await reviewBatch(U);
+    expect(batch.map((card) => card.note.id)).toEqual(["drei", "eins", "zwei"]);
+    expect(batch.slice(1).every((card) => card.isNew && card.direction === "de_en")).toBe(true);
+  });
+
+  it("schedules an answer from when it was given, never later than now", async () => {
+    const hourAgo = new Date(Date.now() - 3_600_000);
+    await grade(U, "eins:de_en", 3, 1000, 0, hourAgo);
+    await grade(U, "zwei:de_en", 3, 1000, 0, new Date(Date.now() + 86_400_000));
+    const logs = await db.select().from(reviewLogs).orderBy(reviewLogs.cardId);
+    expect(logs[0]?.reviewedAt.getTime()).toBe(hourAgo.getTime());
+    expect(logs[1]?.reviewedAt.getTime()).toBeLessThanOrEqual(Date.now());
+  });
+
+  it("drops an answer sent twice", async () => {
+    await grade(U, "eins:de_en", 1, 1000, 0);
+    await grade(U, "eins:de_en", 1, 1000, 0);
+    expect(await db.$count(reviewLogs)).toBe(1);
   });
 });

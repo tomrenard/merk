@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { clozeChoices, tileItem, tilePool, withOthers } from "./choices";
+import { clozeChoices, formsOf, tileItem, tilePool, withOthers, wordsOf } from "./choices";
 import { sameDarija } from "./darija";
 import { sameAnswer } from "./german";
 import { Unit } from "./units";
@@ -82,5 +82,65 @@ describe("Quiet mode tiles", () => {
     const pool = ["Ja. Die Küche ist neu.", "Ich mag die Küche."];
     const item = tileItem("t", "Die Küche ist klein.", { en: "", pool });
     expect(item?.tiles.slice(0, 4)).toEqual(["die", "Küche", "ist", "klein"]);
+  });
+});
+
+describe("Quiet mode wrong options test the grammar", () => {
+  it.each([
+    ["den", "der/die/das", "dem"],
+    ["meinen", "mein", "meinem"],
+    ["arbeitet", "arbeiten", "arbeitest"],
+    ["heißt", "heißen", "heiße"],
+    ["guten", "gut", "gutem"],
+    ["Äpfel", "Apfel", "Apfel"],
+    ["gegessen", "essen", "geesst"],
+  ])("%s (%s) offers %s", (answer, base, form) => {
+    expect(formsOf(answer, base)).toContain(form);
+    expect(formsOf(answer, base)).not.toContain(answer);
+  });
+
+  it("writes du heißt, not heißst", () => {
+    expect(formsOf("heiße", "heißen")).not.toContain("heißst");
+  });
+
+  it("never shows the answer twice in other capitals, and a mid-sentence gap stays small", () => {
+    const u = unit("a1-05");
+    for (const item of u.items) {
+      if (item.type !== "cloze") continue;
+      const { options } = clozeChoices(u, item);
+      const lower = options.map((o) => o.de.toLowerCase());
+      expect(new Set(lower).size, item.id).toBe(lower.length);
+    }
+    const kitchen = u.items.find((i) => i.id === "a1-05-04");
+    if (kitchen?.type !== "cloze") throw new Error("a1-05-04 moved");
+    expect(clozeChoices(u, kitchen).options.map((o) => o.de)).not.toContain("Die");
+  });
+});
+
+describe("Quiet mode tiles, long sentences and capitals", () => {
+  it("gives a long sentence decoys as long as its tiles", () => {
+    const sentence = "Ich bin krank, deshalb bleibe ich heute zu Hause und schlafe.";
+    const item = tileItem("x", sentence, {
+      en: "",
+      pool: ["Wir haben am Wochenende einen langen Ausflug in die Berge gemacht."],
+    });
+    const own = Math.ceil(wordsOf(sentence).length / 2);
+    for (const decoy of item?.tiles.slice(own) ?? []) expect(decoy.split(" ")).toHaveLength(2);
+  });
+
+  it("never uses a word that fits anywhere as a decoy", () => {
+    const item = tileItem("x", "Ich trinke Kaffee.", { en: "", pool: ["Das ist auch nicht gut."] });
+    expect(item?.tiles).not.toContain("auch");
+    expect(item?.tiles).not.toContain("nicht");
+  });
+
+  it("keeps a noun's capital at the start", () => {
+    const item = tileItem("x", "Entschuldigung, wo ist die Post?", {
+      en: "",
+      pool: [],
+      nouns: ["Entschuldigung"],
+    });
+    expect(item?.tiles).toContain("Entschuldigung");
+    expect(item?.modelOnly).toBe(true);
   });
 });

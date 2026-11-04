@@ -104,6 +104,27 @@ export function governsLabel(governs: string): string {
 
 export const withoutArticle = (key: string) => key.replace(/^(der|die|das|der\/die) /, "");
 
+/** Noun endings that tell the gender most of the time. */
+const GENDER_ENDINGS: [string, string[]][] = [
+  ["die", ["ung", "heit", "keit", "schaft", "ion", "tät", "ik", "ei", "enz", "anz"]],
+  ["das", ["chen", "lein", "ment", "um"]],
+  ["der", ["ling", "ismus", "ist", "ant"]],
+];
+
+/**
+ * The ending rule behind a noun's gender, when there is one and the noun follows it:
+ * "die Zeitung" → { end: "-ung", article: "die" }. Shown when the article was missed.
+ */
+export function genderRule(headword: string): { end: string; article: string } | null {
+  const article = articleOf(headword);
+  const noun = withoutArticle(headword.split(",")[0] ?? "").trim();
+  for (const [gender, endings] of GENDER_ENDINGS) {
+    const end = endings.find((e) => noun.length > e.length + 1 && noun.endsWith(e));
+    if (end) return gender === article ? { end: `-${end}`, article: gender } : null;
+  }
+  return null;
+}
+
 /** Edit distance (insert, delete, replace one letter). */
 export function distance(a: string, b: string): number {
   let row = Array.from({ length: b.length + 1 }, (_, i) => i);

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   articleOf,
   checkTyped,
+  genderRule,
   governedPrepositions,
   isCorrect,
   lemmaKeys,
@@ -151,5 +152,18 @@ describe("spokenWords", () => {
       "oder",
     ]);
     expect(spokenWords("Größe")).toEqual(spokenWords("groesse"));
+  });
+});
+
+describe("genderRule", () => {
+  it.each([
+    ["die Zeitung, -en", "-ung"],
+    ["das Mädchen, -", "-chen"],
+    ["der Frühling, -e", "-ling"],
+  ])("%s → %s", (word, end) => expect(genderRule(word)?.end).toBe(end));
+  it("says nothing when the noun breaks the rule or has no rule", () => {
+    expect(genderRule("der Reichtum, -¨er")).toBeNull();
+    expect(genderRule("der Tisch, -e")).toBeNull();
+    expect(genderRule("die Ei")).toBeNull();
   });
 });

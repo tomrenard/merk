@@ -1,8 +1,8 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { type Choice, quietItem, tileItem } from "./choices";
-import { COURSE_IDS, COURSES, type CourseId } from "./courses";
+import { type Choice, quietItem, tileItem, wordsOf } from "./choices";
+import { COURSE_IDS, COURSES, type CourseId, courseOfId } from "./courses";
 import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem, wordChoices } from "./review";
 import type { Unit, UnitItem } from "./units";
@@ -159,6 +159,42 @@ export function examById(id: string): CourseExam | undefined {
 
 export function unitById(id: string): Unit | undefined {
   return UNITS.find((unit) => unit.id === id);
+}
+
+let germanNouns: Set<string> | undefined;
+/**
+ * Nouns and names of the German course: written with a capital in the middle of a sentence
+ * somewhere, and never small. Quiet mode's tiles keep their capital at the start of a sentence
+ * too (Entschuldigung, Anna), so they aren't learnt small.
+ */
+export function nounsOf(unit: Unit): string[] {
+  if (courseOfId(unit.id) !== "de") return [];
+  if (!germanNouns) {
+    const big = new Set<string>();
+    const small = new Set<string>();
+    for (const u of unitsOf("de")) {
+      const texts = [
+        ...u.examples.map((e) => e.de),
+        ...u.listening.lines.map((l) => l.de),
+        ...u.speaking.map((s) => s.de),
+        ...u.dictation,
+        u.writing.model,
+      ];
+      for (const sentence of texts.flatMap((text) => text.split(/(?<=[.!?…])\s+/)))
+        wordsOf(sentence).forEach((w, i) => {
+          if (/^\p{Ll}/u.test(w)) small.add(w);
+          else if (i > 0) big.add(w);
+        });
+    }
+    germanNouns = new Set([...big].filter((w) => !small.has(w.toLowerCase())));
+  }
+  const nouns = germanNouns;
+  const starts = [
+    ...unit.dictation,
+    ...unit.speaking.map((s) => s.de),
+    ...(unit.writing.sentences ?? []).map((s) => s.de),
+  ].map((text) => wordsOf(text)[0] ?? "");
+  return [...new Set(starts.filter((w) => nouns.has(w)))];
 }
 
 export function examScore(progress: Progress, exam: CourseExam): number | undefined {

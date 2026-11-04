@@ -20,9 +20,12 @@ type Step = "hear" | "questions" | "read" | "dictation";
 /** Hear the dialogue (text hidden), answer questions, read it, then type sentences you hear. */
 export function Listen({
   unit,
+  nouns,
   after,
 }: {
   unit: Unit;
+  /** Nouns and names that keep their capital as the first tile. */
+  nouns: string[];
   after: { href: string; label: string } | null;
 }) {
   const t = useT();
@@ -223,6 +226,7 @@ export function Listen({
         en: "",
         de: sentenceTr ? sentence : undefined,
         pool: tilePool(unit),
+        nouns,
       })
     : null;
   if (tiles) {

@@ -66,6 +66,18 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
     speak(solved(item), { recorded: true });
   }
 
+  // The model's words in another order: maybe right too (Heute gehe ich / Ich gehe heute).
+  const bag = (text: string) =>
+    wordsOf(text)
+      .map((w) => w.toLowerCase())
+      .sort()
+      .join(" ");
+  const reordered =
+    result === "wrong" &&
+    item.type === "order" &&
+    item.modelOnly &&
+    item.answers.some((answer) => bag(answer) === bag(built));
+
   const [before, after] = item.type === "order" ? ["", ""] : item.de.split("___");
   const [beforeTr, afterTr] = (item.type !== "order" && item.tr?.split("___")) || [];
   const gap = (text: string | null | undefined) => (
@@ -200,7 +212,17 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           </button>
 
           {item.type === "choice" && item.why && <p className="font-semibold">{item.why}</p>}
+          {reordered && (
+            <p className="text-sm font-semibold">
+              {t("Same words, another order: often right too in German. Is yours?")}
+            </p>
+          )}
         </div>
+      )}
+      {reordered && (
+        <button type="button" onClick={() => onDone(true)} className="btn w-full">
+          {t("Mine is right too")}
+        </button>
       )}
       <button
         type="submit"

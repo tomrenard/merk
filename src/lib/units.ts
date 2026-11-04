@@ -43,6 +43,11 @@ const Item = z.discriminatedUnion("type", [
     /** Darija only: the sentence in Arabic script, shown and heard once solved. */
     de: z.string().optional(),
     en: z.string(),
+    /**
+     * Quiet mode's tiles list only the model's order: another order of the same words (Heute
+     * gehe ich / Ich gehe heute) may be right too, so you can say yours is.
+     */
+    modelOnly: z.boolean().optional(),
   }),
 ]);
 export type UnitItem = z.infer<typeof Item>;

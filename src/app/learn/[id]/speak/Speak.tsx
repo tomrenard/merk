@@ -24,9 +24,12 @@ import { Pick } from "../../Pick";
  */
 export function Speak({
   unit,
+  nouns,
   after,
 }: {
   unit: Unit;
+  /** Nouns and names that keep their capital as the first tile. */
+  nouns: string[];
   after: { href: string; label: string } | null;
 }) {
   useSpeechUnlock();
@@ -104,6 +107,7 @@ export function Speak({
         en: line.en,
         de: line.tr ? line.de : undefined,
         pool: tilePool(unit),
+        nouns,
       })
     : null;
   if (tiles) {

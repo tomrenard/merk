@@ -3,7 +3,7 @@ import { createEmptyCard, State } from "ts-fsrs";
 import { beforeEach, describe, expect, it } from "vitest";
 import { cards, notes, reviewLogs, settings } from "@/db/schema";
 import { seedWords, testDb } from "@/test/db";
-import { counts, grade, nextCard, reviewBatch } from "./review";
+import { counts, grade, nextCard, reviewBatch, wordChoices } from "./review";
 
 const DAY = 86_400_000;
 const U = "u1";
@@ -269,5 +269,23 @@ describe("offline", () => {
     await grade(U, "eins:de_en", 1, 1000, 0);
     await grade(U, "eins:de_en", 1, 1000, 0);
     expect(await db.$count(reviewLogs)).toBe(1);
+  });
+});
+
+describe("Quiet mode word options", () => {
+  it("prefer look-alike words, never one with the same meaning, and know a card in review", async () => {
+    await seedWords(db, ["Bahn", "Bank", "Banane", "Tisch", "Hund", "Zug", "Lampe", "Stuhl"]);
+    await db.update(notes).set({ en: "train" }).where(sql`${notes.id} in ('Bahn', 'Zug')`);
+    const [bahn] = await db.select().from(notes).where(eq(notes.id, "Bahn"));
+    if (!bahn) throw new Error("no Bahn");
+    for (const seed of ["a", "b", "c"]) {
+      const words = (await wordChoices(bahn, seed)).options.map((o) => o.de);
+      expect(words).toContain("Bank");
+      expect(words).toContain("Banane");
+      expect(words).not.toContain("Zug");
+    }
+    await started("eins:en_de", State.Review);
+    const batch = await reviewBatch(U, "de");
+    expect(batch.find((c) => c.cardId === "eins:en_de")?.inReview).toBe(true);
   });
 });

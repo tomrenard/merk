@@ -19,9 +19,12 @@ import { PartDone, PartShell, usePartSave } from "../../PartShell";
  */
 export function Write({
   unit,
+  nouns,
   after,
 }: {
   unit: Unit;
+  /** Nouns and names that keep their capital as the first tile. */
+  nouns: string[];
   after: { href: string; label: string } | null;
 }) {
   useSpeechUnlock();
@@ -47,6 +50,7 @@ export function Write({
           en: s.en,
           de: s.tr ? s.de : undefined,
           pool,
+          nouns,
         }) ?? []),
   );
 

@@ -66,6 +66,7 @@ export type ReviewItem = {
   reps: number;
   lapses: number;
   isNew: boolean;
+  inReview: boolean;
   note: typeof notes.$inferSelect;
 };
 
@@ -145,6 +146,8 @@ const ITEM = {
   direction: cards.direction,
   reps: sql<number>`coalesce((${cards.fsrs}->>'reps')::int, 0)`,
   lapses: sql<number>`coalesce((${cards.fsrs}->>'lapses')::int, 0)`,
+  // ts-fsrs State.Review: past learning, so Hard spaces it out (on a learning card it repeats).
+  inReview: sql<boolean>`coalesce((${cards.fsrs}->>'state')::int = 2, false)`,
   note: notes,
 };
 
@@ -594,9 +597,23 @@ export async function learnTopicWords(
       and cards.direction = 'de_en' and cards.introduced_at is null`);
 }
 
+/** How alike two headwords look: letters shared at the start plus at the end (Bahn/Bank). */
+function likeness(a: string, b: string): number {
+  const bare = (w: string) =>
+    (w.split(",")[0] ?? w).replace(/^(der|die|das|der\/die) /, "").toLowerCase();
+  const [x, y] = [bare(a), bare(b)];
+  let start = 0;
+  while (start < Math.min(x.length, y.length) && x[start] === y[start]) start++;
+  let end = 0;
+  while (end < Math.min(x.length, y.length) - start && x.at(-1 - end) === y.at(-1 - end)) end++;
+  return start + end;
+}
+
 /**
  * Quiet mode: the word plus 3 others to pick from, of the same course, level and kind (German
- * nouns with nouns, so the article doesn't give it away), in a fixed order per card.
+ * nouns with nouns, so the article doesn't give it away), in a fixed order per card. The others
+ * look like it where possible (Bahn: Bank, Bad), so a vague "I've seen this" isn't enough; never
+ * one with the same meaning, which would be right too.
  */
 export async function wordChoices(note: typeof notes.$inferSelect, seed: string) {
   const noun = /^(der|die|das|der\/die) /.test(note.de);
@@ -610,14 +627,23 @@ export async function wordChoices(note: typeof notes.$inferSelect, seed: string)
         sql`${notes.id} <> ${note.id} and ${notes.userId} is null`,
         sql`${notes.source} not in ('unit', 'mine')`,
         sql`(${notes.source} like '%phrase') = ${note.source.endsWith("phrase")}`,
+        note.en ? sql`${notes.en} is distinct from ${note.en}` : undefined,
         note.course === "de" ? sql`(${notes.de} ~ '^(der|die|das|der/die) ') = ${noun}` : undefined,
       ),
     )
     .orderBy(sql`random()`)
-    .limit(6);
+    .limit(80);
+  const choices = others.map((o) => ({ de: o.de, tr: o.tr ?? undefined, en: o.en ?? undefined }));
+  const target = note.tr ?? note.de;
+  const ranked = [...choices].sort(
+    (a, b) => likeness(target, b.tr ?? b.de) - likeness(target, a.tr ?? a.de),
+  );
   return withOthers(
     { de: note.de, tr: note.tr ?? undefined, en: note.en ?? undefined },
-    others.map((o) => ({ de: o.de, tr: o.tr ?? undefined, en: o.en ?? undefined })),
+    choices,
     seed,
+    {
+      best: ranked.slice(0, 4).filter((c) => likeness(target, c.tr ?? c.de) >= 2),
+    },
   );
 }

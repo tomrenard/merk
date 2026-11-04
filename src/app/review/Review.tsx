@@ -8,6 +8,7 @@ import { CHEERS } from "@/lib/courses";
 import { checkWord } from "@/lib/darija";
 import {
   articleOf,
+  genderRule,
   governedPrepositions,
   governsLabel,
   spokenForm,
@@ -43,15 +44,17 @@ const RATINGS: Record<TypedResult, number[]> = {
 };
 
 /**
- * Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. Not Hard: Hard
- * keeps a new or missed card in learning (back in 15 minutes, inside the learn-ahead window), so
- * a word picked right every time came back forever.
+ * Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. A pick can be a
+ * lucky guess, so a card past learning also offers "Not sure" (Hard). Not on new or learning
+ * cards: Hard keeps them in learning (back in 15 minutes, inside the learn-ahead window), so a
+ * word picked right every time came back forever.
  */
 const PICKED: Record<"right" | "wrong" | "article", number[]> = {
   right: [3],
   wrong: [1],
   article: [1],
 };
+const PICKED_IN_REVIEW = [2, 3];
 
 /** Quiet mode asks a German noun's article as its own tap (not for plurals: "die" says plural). */
 const ARTICLES = ["der", "die", "das"];
@@ -206,7 +209,9 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
     if (rating > 1) setRemembered((n) => n + 1);
     // A missed card comes back at the end of the batch (the server would show it in 10 minutes).
     setCards(([, ...rest]) =>
-      rating === 1 ? [...rest, { ...item, reps: item.reps + 1, isNew: false }] : rest,
+      rating === 1
+        ? [...rest, { ...item, reps: item.reps + 1, isNew: false, inReview: false }]
+        : rest,
     );
     setLeft((l) => {
       const next = { ...l, repeats: l.repeats + (rating === 1 ? 1 : 0) };
@@ -370,7 +375,12 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         ? "article"
         : "right");
   const result = pickedResult ?? typedResult(item, typed);
-  const ratings = pickedResult ? PICKED[pickedResult] : RATINGS[result];
+  const ratings = pickedResult
+    ? pickedResult === "right" && item.inReview
+      ? PICKED_IN_REVIEW
+      : PICKED[pickedResult]
+    : RATINGS[result];
+  const rule = result === "article" ? genderRule(note.de) : null;
 
   const message = {
     right: `✓ ${cheer.right}`,
@@ -511,6 +521,11 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
               </button>
             )}
             {note.exampleEn && <p className="muted text-sm">{note.exampleEn}</p>}
+            {rule && (
+              <p className="text-sm font-semibold">
+                💡 {t("Nouns in {end} are usually {article}.", rule)}
+              </p>
+            )}
             {note.hint && <p className="muted text-sm">{note.hint}</p>}
             {item.lapses >= TRICKY && (
               <Go
@@ -538,7 +553,11 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
                   onClick={() => answer(g.rating)}
                   className={`btn btn-solid px-1 text-sm ${g.className}`}
                 >
-                  {ratings.length === 1 ? t("Continue") : t(g.label)}
+                  {ratings.length === 1
+                    ? t("Continue")
+                    : pickedResult && g.rating === 2
+                      ? t("Not sure")
+                      : t(g.label)}
                 </button>
               ))}
             </div>

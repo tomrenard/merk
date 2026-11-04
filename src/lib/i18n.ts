@@ -204,12 +204,17 @@ const FR: Record<string, string> = {
   "Mark {n} words as known. They come back for a quick check over the next 2 months.":
     "Marquer {n} mots comme connus. Ils reviennent pour une petite vérification dans les 2 prochains mois.",
   Mine: "Les miens",
+  "Mine is right too": "La mienne est juste aussi",
   "Missing word": "Mot manquant",
   Mute: "Couper le son",
   New: "Nouveaux",
   "New words": "Nouveaux mots",
   "New words per day": "Nouveaux mots par jour",
   "Next line": "Phrase suivante",
+  "Not sure": "Pas sûr",
+  "Nouns in {end} are usually {article}.": "Les noms en {end} sont en général {article}.",
+  "Same words, another order: often right too in German. Is yours?":
+    "Mêmes mots, autre ordre : souvent juste aussi en allemand. La tienne l’est ?",
   "Next: {what}": "Ensuite : {what}",
   No: "Non",
   "No lessons yet.": "Pas encore de leçons.",

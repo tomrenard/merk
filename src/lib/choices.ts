@@ -20,7 +20,10 @@ export function withOthers(
   const wrong = [
     ...seededShuffle(best, `${seed}:best`),
     ...seededShuffle(pool, `${seed}:pool`),
-  ].filter((c) => c.de && !seen.has(c.de.toLowerCase()) && seen.add(c.de.toLowerCase()));
+  ].filter((c) => {
+    const key = c.de.toLowerCase();
+    return c.de && !seen.has(key) && seen.add(key);
+  });
   const options = seededShuffle([answer, ...wrong.slice(0, others)], seed);
   return { options, answer: options.indexOf(answer) };
 }
@@ -30,7 +33,11 @@ const clozeAnswer = (item: Extract<UnitItem, { type: "cloze" }>): Choice => ({
   tr: item.answersTr?.[0],
 });
 
-/** German words that are easy to mix up with each other: a wrong one of these tests the grammar. */
+/**
+ * German words that are easy to mix up with each other: a wrong one of these tests the grammar.
+ * One tense, one person or one preposition per family: "hatte" for "habe" or "dir" for "mir"
+ * can be right too, so they never meet.
+ */
 const FAMILIES = [
   "der die das den dem des dessen deren denen",
   "ein eine einen einem einer eines",
@@ -38,20 +45,42 @@ const FAMILIES = [
   "dieser diese dieses diesen diesem",
   "jeder jede jedes jeden jedem",
   "welcher welche welches welchen welchem",
-  "bin bist ist sind seid sei seien war warst waren wäre wären gewesen",
-  "habe hast hat haben habt hatte hattest hatten hätte hätten gehabt",
-  "werde wirst wird werden werdet wurde wurden würde würdest würden geworden",
-  "kann kannst können könnt konnte konnten könnte könnten",
-  "muss musst müssen müsst musste mussten müsste müssten",
-  "will willst wollen wollt wollte wollten",
-  "soll sollst sollen sollt sollte sollten",
-  "darf darfst dürfen dürft durfte durften dürfte",
-  "mag magst mögen möchte möchtest möchten möchtet",
-  "ich mich mir du dich dir er ihn ihm sie ihr ihnen wir uns euch",
-  "im in ins am an ans um zum zur zu beim bei vom von",
+  "bin bist ist sind seid",
+  "sei seiest seien",
+  "war warst waren wart",
+  "wäre wärst wären wärt",
+  "habe hast hat haben habt",
+  "hatte hattest hatten hattet",
+  "hätte hättest hätten hättet",
+  "werde wirst wird werden werdet",
+  "wurde wurdest wurden wurdet",
+  "würde würdest würden würdet",
+  "kann kannst können könnt",
+  "konnte konntest konnten konntet",
+  "könnte könntest könnten könntet",
+  "muss musst müssen müsst",
+  "musste musstest mussten musstet",
+  "will willst wollen wollt",
+  "wollte wolltest wollten wolltet",
+  "soll sollst sollen sollt",
+  "sollte solltest sollten solltet",
+  "darf darfst dürfen dürft",
+  "durfte durftest durften durftet",
+  "mag magst mögen mögt",
+  "möchte möchtest möchten möchtet",
+  "ich mich mir",
+  "du dich dir",
+  "er ihn ihm",
+  "wir uns",
+  "sie ihr ihnen",
+  "im in ins",
+  "am an ans",
+  "zum zur zu",
+  "beim bei",
+  "vom von",
   "wer wen wem wessen",
   "weil dass ob wenn als denn obwohl damit",
-  "deshalb trotzdem deswegen dann",
+  "deshalb trotzdem",
 ].map((family) => family.split(" "));
 const POSSESSIVES = ["mein", "dein", "sein", "ihr", "unser", "euer", "eur"];
 const VERB_ENDINGS = ["e", "st", "t", "en"];
@@ -84,14 +113,9 @@ export function formsOf(answer: string, base: string): string[] {
     const stem = base.slice(0, -2);
     return [`ge${stem}t`, `ge${base}`, base, `${stem}t`].filter((w) => w !== word);
   }
-  const stemOf = (endings: string[]) =>
-    word.replace(
-      new RegExp(`(${[...endings].sort((a, b) => b.length - a.length).join("|")})$`),
-      "",
-    );
   // A verb (base in -en/-n): person endings, with -e- after t/d (arbeitest).
   if (/e[lr]?n$/.test(base)) {
-    const stem = stemOf(["est", "et", ...VERB_ENDINGS]);
+    const stem = word.replace(/(est|et|st|en|e|t)$/, "");
     if (stem.length < 2) return [];
     const extra = /[td]$/.test(stem) ? "e" : "";
     // heißen: du heißt, not heißst.
@@ -100,7 +124,8 @@ export function formsOf(answer: string, base: string): string[] {
       e === "e" || e === "en" ? stem + e : stem + extra + (e === "st" ? st : e),
     ).filter((w) => w !== word);
   }
-  if (!word.startsWith(base)) return [];
+  // An adjective (gut → guten); not a noun whose hint is in English (butter → Butter).
+  if (!word.startsWith(base) || /^\p{Lu}/u.test(answer)) return [];
   return ["", ...ADJECTIVE_ENDINGS].map((e) => base + e).filter((w) => w !== word);
 }
 
@@ -130,10 +155,13 @@ export function clozeChoices(
   );
   const german = !item.tr;
   const answer = item.answers[0] ?? "";
-  // Formal Ihr/Sie keeps its capital in every form.
   const big = (w: string) => w.charAt(0).toUpperCase() + w.slice(1);
+  // An order with no one named ("___ mal!"): the ihr form (Hört) is right too.
+  const command = startsSentence(item.de) && item.de.trim().endsWith("!");
   const generated = german
-    ? formsOf(answer, item.base).map((de) => ({ de: /^\p{Lu}/u.test(answer) ? big(de) : de }))
+    ? formsOf(answer, item.base)
+        .filter((de) => !command || !/[^s]t$/.test(de))
+        .map((de) => ({ de }))
     : [];
   // A word the lesson also writes in small letters isn't a noun.
   const text = [...unit.items.map((i) => ("de" in i ? i.de : "")), ...pool.map((c) => c.de)].join(
@@ -158,9 +186,10 @@ export function clozeChoices(
   const others = pool.map(cased).filter(wrong);
   const alike = others.filter((c) => !german || shape(c) === shape(clozeAnswer(item)));
   return withOthers(clozeAnswer(item), alike.length >= 3 ? alike : others, seed, {
-    // Forms of the same word take the answer's capital (mache, not Mach from "Mach das!").
+    // Forms of the same word take the answer's capital: mache, not Mach from "Mach das!";
+    // Ihnen, Ihrem for formal Sie.
     best: [...sameBase, ...generated]
-      .map((c) => (/^\p{Lu}/u.test(answer) || capital ? cased(c) : { ...c, de: small1(c.de) }))
+      .map((c) => ({ ...c, de: /^\p{Lu}/u.test(answer) ? big(c.de) : small1(c.de) }))
       .filter(wrong),
   });
 }
@@ -183,7 +212,10 @@ export function quietItem(unit: Unit, item: UnitItem, seed?: string): UnitItem {
     optionsTr: item.tr ? options.map((o) => o.tr ?? o.de) : undefined,
     answer,
     // What the typed gap gives as its hint: the form you had to find.
-    why: item.base && item.base !== item.answers[0] ? `${item.base} → ${item.answers[0]}` : "",
+    why:
+      item.base && item.base.toLowerCase() !== item.answers[0]?.toLowerCase()
+        ? `${item.base} → ${item.answers[0]}`
+        : "",
     en: item.en,
   };
 }
@@ -194,6 +226,8 @@ const DECOYS = 2;
 
 /** A word as a tile: no quotes or end punctuation, which would show where the sentence ends. */
 const tileWord = (word: string) => word.replace(/^[„"«‚(¿¡]+|[.,!?;:…"“”»‘’)؟،]+$/gu, "");
+/** A line of dialogue as its sentences ("Ja. Ich bin Claire."). */
+export const sentencesOf = (text: string) => text.split(/(?<=[.!?…])\s+/);
 export const wordsOf = (text: string) =>
   text
     .split(/\s+/)
@@ -234,7 +268,7 @@ export function tileItem(
   const capitals = new Set([
     ...nouns,
     ...[sentence, ...pool]
-      .flatMap((text) => text.split(/(?<=[.!?…])\s+/))
+      .flatMap(sentencesOf)
       .flatMap((text) => wordsOf(text).slice(1))
       .filter((w) => /^\p{Lu}/u.test(w)),
   ]);

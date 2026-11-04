@@ -213,8 +213,8 @@ const FR: Record<string, string> = {
   "Next line": "Phrase suivante",
   "Not sure": "Pas sûr",
   "Nouns in {end} are usually {article}.": "Les noms en {end} sont en général {article}.",
-  "Same words, another order: often right too in German. Is yours?":
-    "Mêmes mots, autre ordre : souvent juste aussi en allemand. La tienne l’est ?",
+  "Same words, another order: that can be right too. Is yours?":
+    "Mêmes mots, autre ordre : ça peut être juste aussi. La tienne l’est ?",
   "Next: {what}": "Ensuite : {what}",
   No: "Non",
   "No lessons yet.": "Pas encore de leçons.",

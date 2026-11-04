@@ -214,7 +214,7 @@ export function Exercise({ item, onDone }: { item: UnitItem; onDone: (right: boo
           {item.type === "choice" && item.why && <p className="font-semibold">{item.why}</p>}
           {reordered && (
             <p className="text-sm font-semibold">
-              {t("Same words, another order: often right too in German. Is yours?")}
+              {t("Same words, another order: that can be right too. Is yours?")}
             </p>
           )}
         </div>

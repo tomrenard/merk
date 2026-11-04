@@ -285,7 +285,14 @@ describe("Quiet mode word options", () => {
       expect(words).not.toContain("Zug");
     }
     await started("eins:en_de", State.Review);
+    await started("zwei:en_de", State.Learning);
+    await started("drei:en_de", State.Relearning);
     const batch = await reviewBatch(U, "de");
-    expect(batch.find((c) => c.cardId === "eins:en_de")?.inReview).toBe(true);
+    const inReview = (id: string) => batch.find((c) => c.cardId === id)?.inReview;
+    expect(inReview("eins:en_de")).toBe(true);
+    // Hard on these keeps them in learning: offered, it brought a card back forever.
+    expect(inReview("zwei:en_de")).toBe(false);
+    expect(inReview("drei:en_de")).toBe(false);
+    expect(batch.filter((c) => c.isNew).every((c) => !c.inReview)).toBe(true);
   });
 });

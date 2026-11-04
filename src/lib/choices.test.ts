@@ -99,6 +99,27 @@ describe("Quiet mode wrong options test the grammar", () => {
     expect(formsOf(answer, base)).not.toContain(answer);
   });
 
+  it.each([
+    ["a2-16-02", ["deswegen", "dann"]],
+    ["a1-07-01", ["hatte", "hätte"]],
+    ["a1-15-01", ["Hört"]],
+    ["a1-16-15", ["vom"]],
+  ])("%s never offers a form that fits too", (id, fits) => {
+    const u = unit(id.slice(0, id.lastIndexOf("-")));
+    const item = u.items.find((i) => i.id === id);
+    if (item?.type !== "cloze") throw new Error(`${id} moved`);
+    const options = clozeChoices(u, item).options.map((o) => o.de);
+    for (const form of fits) expect(options).not.toContain(form);
+  });
+
+  it("doesn't make formal Ihnen the only option with a capital", () => {
+    const u = unit("a1-17");
+    const item = u.items.find((i) => i.id === "a1-17-15");
+    if (item?.type !== "cloze") throw new Error("a1-17-15 moved");
+    const big = clozeChoices(u, item).options.filter((o) => /^\p{Lu}/u.test(o.de));
+    expect(big.length).toBeGreaterThan(1);
+  });
+
   it("writes du heißt, not heißst", () => {
     expect(formsOf("heiße", "heißen")).not.toContain("heißst");
   });
@@ -125,6 +146,7 @@ describe("Quiet mode tiles, long sentences and capitals", () => {
       pool: ["Wir haben am Wochenende einen langen Ausflug in die Berge gemacht."],
     });
     const own = Math.ceil(wordsOf(sentence).length / 2);
+    expect(item?.tiles.length).toBeGreaterThan(own);
     for (const decoy of item?.tiles.slice(own) ?? []) expect(decoy.split(" ")).toHaveLength(2);
   });
 

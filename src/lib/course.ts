@@ -1,7 +1,7 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { type Choice, quietItem, tileItem, wordsOf } from "./choices";
+import { type Choice, quietItem, sentencesOf, tileItem, wordsOf } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId, courseOfId } from "./courses";
 import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem, wordChoices } from "./review";
@@ -180,7 +180,7 @@ export function nounsOf(unit: Unit): string[] {
         ...u.dictation,
         u.writing.model,
       ];
-      for (const sentence of texts.flatMap((text) => text.split(/(?<=[.!?…])\s+/)))
+      for (const sentence of texts.flatMap(sentencesOf))
         wordsOf(sentence).forEach((w, i) => {
           if (/^\p{Ll}/u.test(w)) small.add(w);
           else if (i > 0) big.add(w);
@@ -188,13 +188,13 @@ export function nounsOf(unit: Unit): string[] {
     }
     germanNouns = new Set([...big].filter((w) => !small.has(w.toLowerCase())));
   }
-  const nouns = germanNouns;
-  const starts = [
+  // Every word, not only the first: a sentence can start after "3." (vom 3. November).
+  const words = [
     ...unit.dictation,
     ...unit.speaking.map((s) => s.de),
     ...(unit.writing.sentences ?? []).map((s) => s.de),
-  ].map((text) => wordsOf(text)[0] ?? "");
-  return [...new Set(starts.filter((w) => nouns.has(w)))];
+  ].flatMap(wordsOf);
+  return [...new Set(words.filter((w) => germanNouns?.has(w)))];
 }
 
 export function examScore(progress: Progress, exam: CourseExam): number | undefined {

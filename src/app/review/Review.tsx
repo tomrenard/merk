@@ -49,12 +49,12 @@ const RATINGS: Record<TypedResult, number[]> = {
  * cards: Hard keeps them in learning (back in 15 minutes, inside the learn-ahead window), so a
  * word picked right every time came back forever.
  */
-const PICKED: Record<"right" | "wrong" | "article", number[]> = {
+const PICKED: Record<"right" | "wrong" | "article" | "review", number[]> = {
   right: [3],
   wrong: [1],
   article: [1],
+  review: [2, 3],
 };
-const PICKED_IN_REVIEW = [2, 3];
 
 /** Quiet mode asks a German noun's article as its own tap (not for plurals: "die" says plural). */
 const ARTICLES = ["der", "die", "das"];
@@ -376,9 +376,7 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         : "right");
   const result = pickedResult ?? typedResult(item, typed);
   const ratings = pickedResult
-    ? pickedResult === "right" && item.inReview
-      ? PICKED_IN_REVIEW
-      : PICKED[pickedResult]
+    ? PICKED[pickedResult === "right" && item.inReview ? "review" : pickedResult]
     : RATINGS[result];
   const rule = result === "article" ? genderRule(note.de) : null;
 

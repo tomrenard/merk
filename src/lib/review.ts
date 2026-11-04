@@ -6,6 +6,7 @@ import { db } from "../db/client.ts";
 import { cards, notes, reviewLogs, settings } from "../db/schema.ts";
 import { withOthers } from "./choices.ts";
 import type { CourseId } from "./courses.ts";
+import { withoutArticle } from "./german.ts";
 import { streakLength } from "./streak.ts";
 
 // Fuzz spreads due dates a little, so words learned together don't stay bunched together.
@@ -146,8 +147,7 @@ const ITEM = {
   direction: cards.direction,
   reps: sql<number>`coalesce((${cards.fsrs}->>'reps')::int, 0)`,
   lapses: sql<number>`coalesce((${cards.fsrs}->>'lapses')::int, 0)`,
-  // ts-fsrs State.Review: past learning, so Hard spaces it out (on a learning card it repeats).
-  inReview: sql<boolean>`coalesce((${cards.fsrs}->>'state')::int = 2, false)`,
+  inReview: sql<boolean>`coalesce((${cards.fsrs}->>'state')::int = ${State.Review}, false)`,
   note: notes,
 };
 
@@ -599,8 +599,7 @@ export async function learnTopicWords(
 
 /** How alike two headwords look: letters shared at the start plus at the end (Bahn/Bank). */
 function likeness(a: string, b: string): number {
-  const bare = (w: string) =>
-    (w.split(",")[0] ?? w).replace(/^(der|die|das|der\/die) /, "").toLowerCase();
+  const bare = (w: string) => withoutArticle(headOf(w)).toLowerCase();
   const [x, y] = [bare(a), bare(b)];
   let start = 0;
   while (start < Math.min(x.length, y.length) && x[start] === y[start]) start++;
@@ -635,15 +634,15 @@ export async function wordChoices(note: typeof notes.$inferSelect, seed: string)
     .limit(80);
   const choices = others.map((o) => ({ de: o.de, tr: o.tr ?? undefined, en: o.en ?? undefined }));
   const target = note.tr ?? note.de;
-  const ranked = [...choices].sort(
-    (a, b) => likeness(target, b.tr ?? b.de) - likeness(target, a.tr ?? a.de),
-  );
   return withOthers(
     { de: note.de, tr: note.tr ?? undefined, en: note.en ?? undefined },
     choices,
     seed,
     {
-      best: ranked.slice(0, 4).filter((c) => likeness(target, c.tr ?? c.de) >= 2),
+      best: choices
+        .filter((c) => likeness(target, c.tr ?? c.de) >= 2)
+        .sort((a, b) => likeness(target, b.tr ?? b.de) - likeness(target, a.tr ?? a.de))
+        .slice(0, 4),
     },
   );
 }

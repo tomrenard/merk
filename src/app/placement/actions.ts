@@ -58,8 +58,7 @@ export async function applyPlacement(input: {
     for (const { band, words } of bands) {
       if (knownBands.includes(band.id)) for (const word of words) ids.add(word.id);
     }
-    // Words the test says you know come back in 3 days to 6 months, not all within 2 months:
-    // hundreds of A1 words due at once buried the reviews that matter.
+    // Spread over 6 months: hundreds of A1 words due at once bury the reviews that matter.
     await markKnown(userId, [...ids], { onlyUnstarted: true, stabilityDays: 90, spreadDays: 180 });
   }
   // Kept to tune the cut-offs later.

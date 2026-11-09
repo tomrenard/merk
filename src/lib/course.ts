@@ -1,9 +1,10 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
-import { audioUrl, solved } from "./audio";
+import { audioUrl, lessonTexts } from "./audio";
 import { type Choice, quietItem, sentencesOf, tileItem, wordsOf } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId, courseOfId } from "./courses";
+import { spokenForm } from "./german";
 import { examTitle, type T, translator } from "./i18n";
 import { DAY_START, type ReviewItem, wordChoices } from "./review";
 import type { Unit, UnitItem } from "./units";
@@ -42,11 +43,9 @@ export const offlineLesson = (unit: Unit) => ({
   pages: [`/learn/${unit.id}`, ...PARTS.map((part) => `/learn/${unit.id}/${part.path}`)],
   audio: [
     ...unit.listening.lines.map((line) => line.de),
-    ...unit.examples.map((example) => example.de),
-    ...unit.dictation,
-    ...unit.speaking.map((s) => s.de),
-    unit.writing.model,
-    ...unit.items.map(solved),
+    ...lessonTexts(unit),
+    // A topic lesson's words, played from its word list.
+    ...(unit.words ?? []).map(spokenForm),
   ].map(audioUrl),
 });
 export type PartKind = Part["kind"];

@@ -159,6 +159,7 @@ export function Listen({
           type="button"
           onClick={() => {
             stop();
+            setAt(0);
             setStep("questions");
           }}
           className="btn mt-auto"
@@ -293,6 +294,8 @@ export function Listen({
     : sentenceTr
       ? sameDarija(typed, sentenceTr)
       : sameAnswer(typed, sentence);
+  // German typed answers: only the missed words stand out (none if you only added a word).
+  const marked = correct || choices || sentenceTr ? null : markWords(typed, sentence);
   return (
     <PartShell unitId={unit.id} progress={progressNow}>
       <p className="muted text-sm font-extrabold">
@@ -342,12 +345,9 @@ export function Listen({
             <p className="text-xl font-black">
               {correct ? `✓ ${cheer.right}` : `✗ ${t("It was:")}`}
             </p>
-            {correct || choices || sentenceTr ? (
-              <Say de={sentence} tr={sentenceTr} className="font-bold" />
-            ) : (
-              // Only the words you missed stand out, not the whole sentence.
+            {marked?.some((w) => !w.ok) ? (
               <p className="font-bold text-[var(--ink)]">
-                {markWords(typed, sentence).map(({ word, ok }, i) => (
+                {marked.map(({ word, ok }, i) => (
                   // biome-ignore lint/suspicious/noArrayIndexKey: words repeat; fixed order
                   <span key={i}>
                     {i > 0 && " "}
@@ -361,6 +361,8 @@ export function Listen({
                   </span>
                 ))}
               </p>
+            ) : (
+              <Say de={sentence} tr={sentenceTr} className="font-bold" />
             )}
           </div>
         )}

@@ -24,7 +24,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import postgres from "postgres";
-import { audioKey, isArabic, normalize, solved } from "../src/lib/audio.ts";
+import { audioKey, isArabic, lessonTexts, normalize, solved } from "../src/lib/audio.ts";
 import type { Exam } from "../src/lib/exams.ts";
 import { spokenForm } from "../src/lib/german.ts";
 import { PAIRS } from "../src/lib/sounds.ts";
@@ -113,16 +113,7 @@ function dialogue(lines: { speaker: string; de: string }[]) {
 }
 for (const unit of units) dialogue(unit.listening.lines);
 for (const exam of exams) for (const task of exam.hoeren) dialogue(task.lines);
-for (const unit of units) {
-  for (const text of [
-    ...unit.examples.map((e) => e.de),
-    ...unit.dictation,
-    ...unit.speaking.map((s) => s.de),
-    unit.writing.model,
-    ...unit.items.map(solved),
-  ])
-    add(text);
-}
+for (const unit of units) for (const text of lessonTexts(unit)) add(text);
 for (const exam of exams) {
   for (const item of exam.sprachbausteine) add(solved({ ...item, type: "choice" } as UnitItem));
   for (const task of [...exam.schreiben, ...exam.sprechen]) add(task.model);

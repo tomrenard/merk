@@ -1,4 +1,4 @@
-import type { UnitItem } from "./units";
+import type { Unit, UnitItem } from "./units";
 
 /**
  * Lesson and exam sentences, and the shared word list (words, examples, phrases), have a
@@ -26,6 +26,15 @@ export function audioKey(text: string): string {
 }
 
 export const audioUrl = (text: string) => `${AUDIO_BASE}/a/${audioKey(text)}.m4a`;
+
+/** A lesson's recorded sentences, dialogue aside (gen-audio gives it its own voices). */
+export const lessonTexts = (unit: Unit) => [
+  ...unit.examples.map((example) => example.de),
+  ...unit.dictation,
+  ...unit.speaking.map((s) => s.de),
+  unit.writing.model,
+  ...unit.items.map(solved),
+];
 
 /** An exercise's sentence with the gap filled in, for feedback and speech (Darija: Arabic). */
 export function solved(item: UnitItem): string {

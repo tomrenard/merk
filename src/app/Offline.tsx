@@ -56,6 +56,11 @@ export function KeepOffline({ pages, audio }: { pages: string[]; audio: string[]
   const list = JSON.stringify({ pages, audio });
   useEffect(() => {
     if (process.env.NODE_ENV !== "production") return;
+    // Once per lesson per app session: each page is rendered on the server again.
+    try {
+      if (sessionStorage.getItem(`kept:${list}`)) return;
+      sessionStorage.setItem(`kept:${list}`, "1");
+    } catch {}
     navigator.serviceWorker?.ready.then((r) => r.active?.postMessage(JSON.parse(list)));
   }, [list]);
   return null;

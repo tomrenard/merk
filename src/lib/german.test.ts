@@ -183,6 +183,9 @@ describe("markWords", () => {
   it("marks a missing word, ignores case, umlauts and punctuation", () => {
     expect(wrong("Schoen, dass du da bist", "Schön, dass du heute da bist!")).toEqual(["heute"]);
   });
+  it("keeps a contraction whole", () => {
+    expect(wrong("wie geht's dir", "Wie geht's dir, Anna?")).toEqual(["Anna?"]);
+  });
   it("marks nothing when right, everything when empty", () => {
     expect(wrong("ich bin müde", "Ich bin müde.")).toEqual([]);
     expect(wrong("", "Ich bin müde.")).toEqual(["Ich", "bin", "müde."]);

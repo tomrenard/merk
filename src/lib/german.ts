@@ -184,8 +184,10 @@ export function sameAnswer(input: string, answer: string): boolean {
  */
 export function markWords(input: string, answer: string): { word: string; ok: boolean }[] {
   const words = answer.split(/\s+/).filter(Boolean);
-  const want = words.map(answerKey);
-  const got = answerKey(input).split(" ");
+  // One key per word on both sides: answerKey turns "geht's" into "geht s".
+  const key = (word: string) => answerKey(word).replaceAll(" ", "");
+  const want = words.map(key);
+  const got = input.split(/\s+/).map(key).filter(Boolean);
   // Longest common subsequence of the two word lists (flat table), then walk it back.
   const width = got.length + 1;
   const lcs = new Array<number>((want.length + 1) * width).fill(0);

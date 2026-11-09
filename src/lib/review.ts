@@ -268,19 +268,26 @@ export async function reviewBatch(
     .slice(0, n);
 }
 
+/** Recall slower than this many times your usual time counts as Hard, never under FLOOR. */
+const SLOW = { factor: 2.5, floorMs: 6000, minAnswers: 20, pool: 100 };
+/** Longer than this, the phone was put away (locked, app in the background): time unknown. */
+const AWAY_MS = 60_000;
+
 /**
  * A right answer that took much longer to recall than you usually need is likely forgotten soon:
- * on our own reviews, right in under 3 s was right 91% of the next time, right after 6 s only 54%.
- * So it counts as Hard. Compared with your own usual time (the median of your last right answers
- * in that direction), never under 6 s, and only once there are enough of them.
+ * on our own reviews (timed until the grade tap, before recall time was kept), right in under 3 s
+ * was right 91% of the next time, right after 6 s only 54%. So it counts as Hard. Compared with
+ * your own usual time (the median of your last right word answers in that course and direction),
+ * never under 6 s, and only once there are enough of them. Older logs timed until the grade tap
+ * make the median a bit high at first: fewer answers count as slow until new ones replace them.
  */
 async function slowRecall(
   tx: Parameters<Parameters<ReturnType<typeof db>["transaction"]>[0]>[0],
   userId: string,
-  { noteId, direction }: Pick<typeof cards.$inferSelect, "noteId" | "direction">,
+  { noteId, direction, course }: Pick<typeof cards.$inferSelect, "noteId" | "direction" | "course">,
   durationMs: number,
 ) {
-  if (durationMs < 6000) return false;
+  if (durationMs < SLOW.floorMs || durationMs > AWAY_MS) return false;
   // Not phrases: they take longer to recall than words, and Quiet mode builds them from tiles.
   const [note] = await tx.select({ source: notes.source }).from(notes).where(eq(notes.id, noteId));
   if (note?.source.endsWith("phrase")) return false;
@@ -288,20 +295,23 @@ async function slowRecall(
     .select({ ms: reviewLogs.durationMs })
     .from(reviewLogs)
     .innerJoin(cards, eq(cards.id, reviewLogs.cardId))
+    .innerJoin(notes, eq(notes.id, cards.noteId))
     .where(
       and(
         eq(reviewLogs.userId, userId),
+        eq(cards.course, course),
         eq(cards.direction, direction),
+        sql`${notes.source} not like '%phrase'`,
         gt(reviewLogs.rating, 1),
         gt(reviewLogs.durationMs, 0),
       ),
     )
     .orderBy(desc(reviewLogs.reviewedAt))
-    .limit(100);
-  if (recent.length < 20) return false;
+    .limit(SLOW.pool);
+  if (recent.length < SLOW.minAnswers) return false;
   const times = recent.map((r) => r.ms ?? 0).sort((a, b) => a - b);
   const median = times[Math.floor(times.length / 2)] ?? 0;
-  return durationMs > 2.5 * median;
+  return durationMs > SLOW.factor * median;
 }
 
 /**

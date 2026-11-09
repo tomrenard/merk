@@ -267,27 +267,76 @@ describe("offline", () => {
 
   it("counts a right answer recalled much slower than usual as Hard, on review cards only", async () => {
     await started("eins:de_en", State.Review);
-    const logs = Array.from({ length: 20 }, (_, i) => ({
-      cardId: "zwei:de_en",
-      userId: U,
+    await started("drei:de_en", State.Review);
+    const usual = (n: number) =>
+      Array.from({ length: n }, (_, i) => ({
+        cardId: "zwei:de_en",
+        userId: U,
+        rating: 3,
+        state: State.Review,
+        durationMs: 3000,
+        reviewedAt: new Date(Date.now() - (i + 1) * DAY),
+      }));
+    await db.insert(reviewLogs).values(usual(19));
+    // Too few answers to know your usual time yet.
+    await grade(U, "eins:de_en", 3, 9000, 3);
+    const [early] = await db
+      .delete(reviewLogs)
+      .where(eq(reviewLogs.cardId, "eins:de_en"))
+      .returning();
+    expect(early?.rating).toBe(3);
+    await started("eins:de_en", State.Review);
+    await db
+      .insert(reviewLogs)
+      .values(usual(1).map((log) => ({ ...log, reviewedAt: new Date(0) })));
+    await grade(U, "eins:de_en", 3, 9000, 3); // 3× usual: Hard
+    await grade(U, "drei:de_en", 3, 6500, 3); // a bit slow: still Good
+    await grade(U, "zwei:de_en", 3, 9000, 0); // a new card stays Good: Hard would bring it back today
+    const graded = await db
+      .select({ cardId: reviewLogs.cardId, rating: reviewLogs.rating })
+      .from(reviewLogs)
+      .where(sql`${reviewLogs.durationMs} > 3000`)
+      .orderBy(reviewLogs.cardId);
+    expect(graded).toEqual([
+      { cardId: "drei:de_en", rating: 3 },
+      { cardId: "eins:de_en", rating: 2 },
+      { cardId: "zwei:de_en", rating: 3 },
+    ]);
+  });
+
+  it("doesn't count a phone put away as slow", async () => {
+    await started("eins:de_en", State.Review);
+    await db.insert(reviewLogs).values(
+      Array.from({ length: 20 }, (_, i) => ({
+        cardId: "zwei:de_en",
+        userId: U,
+        rating: 3,
+        state: State.Review,
+        durationMs: 2000,
+        reviewedAt: new Date(Date.now() - (i + 1) * DAY),
+      })),
+    );
+    await grade(U, "eins:de_en", 3, 5 * 60_000, 3);
+    const [log] = await db.select().from(reviewLogs).where(eq(reviewLogs.cardId, "eins:de_en"));
+    expect(log?.rating).toBe(3);
+  });
+
+  it("compares only with the same person's right answers", async () => {
+    await started("eins:de_en", State.Review);
+    const { ensureCards } = await import("./review");
+    await ensureCards("u2");
+    const fast = Array.from({ length: 20 }, (_, i) => ({
+      cardId: "u2/zwei:de_en",
+      userId: "u2",
       rating: 3,
       state: State.Review,
       durationMs: 2000,
       reviewedAt: new Date(Date.now() - (i + 1) * DAY),
     }));
-    await db.insert(reviewLogs).values(logs);
+    await db.insert(reviewLogs).values(fast);
     await grade(U, "eins:de_en", 3, 9000, 3);
-    // A new card stays Good: Hard would bring it back again today.
-    await grade(U, "drei:de_en", 3, 9000, 0);
-    const graded = await db
-      .select({ cardId: reviewLogs.cardId, rating: reviewLogs.rating })
-      .from(reviewLogs)
-      .where(sql`${reviewLogs.durationMs} = 9000`)
-      .orderBy(reviewLogs.cardId);
-    expect(graded).toEqual([
-      { cardId: "drei:de_en", rating: 3 },
-      { cardId: "eins:de_en", rating: 2 },
-    ]);
+    const [log] = await db.select().from(reviewLogs).where(eq(reviewLogs.cardId, "eins:de_en"));
+    expect(log?.rating).toBe(3);
   });
 
   it("drops an answer sent twice", async () => {

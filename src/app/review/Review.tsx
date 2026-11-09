@@ -24,8 +24,8 @@ import { Say } from "../Say";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "./German";
 
 /**
- * Knew it or not: Hard and Easy were never picked, so only two grades are left. "Almost"
- * (a spelling slip) counts as Hard, not Good. Swipe left = the first, right = the last.
+ * Knew it or not. "Almost" (a spelling slip) counts as Hard, not Good. Swipe left = the first
+ * grade on offer, right = the last.
  */
 const GRADES = [
   { rating: 1, label: "Didn't know", className: "[--c:#d63c3c]" },
@@ -44,13 +44,6 @@ const RATINGS: Record<TypedResult, number[]> = {
   article: [1],
   wrong: [1],
   blank: [1, 3],
-};
-
-/** Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. */
-const PICKED: Record<"right" | "wrong" | "article", number[]> = {
-  right: [3],
-  wrong: [1],
-  article: [1],
 };
 
 /** How far (px) the card must be dragged to count as a swipe. */
@@ -393,7 +386,8 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         ? "article"
         : "right");
   const result = pickedResult ?? typedResult(item, typed);
-  const ratings = pickedResult ? PICKED[pickedResult] : RATINGS[result];
+  // Quiet mode picks are checked like typed answers: right = Good, wrong = Again.
+  const ratings = RATINGS[result];
   // One grade on offer (checked answers): a swipe either way goes on.
   swipe.current = (right) => answer((right ? ratings.at(-1) : ratings[0]) ?? 1);
   const rule = result === "article" ? genderRule(note.de) : null;
@@ -425,9 +419,11 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
       <section
         onPointerDown={(event) => {
           if (revealed) dragFrom.current = event.clientX;
+          setDragX(0);
         }}
         onPointerMove={(event) => {
-          if (dragFrom.current === null) return;
+          // No button held: a mouse let go outside the card, so this is hovering, not a drag.
+          if (dragFrom.current === null || event.buttons === 0) return;
           const x = event.clientX - dragFrom.current;
           // Captured only once it is a drag, so a tap still reaches the buttons on the card.
           if (Math.abs(x) > 10 && !event.currentTarget.hasPointerCapture(event.pointerId)) {
@@ -435,8 +431,8 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
           }
           setDragX(x);
         }}
-        onPointerUp={() => {
-          const x = dragX;
+        onPointerUp={(event) => {
+          const x = dragFrom.current === null ? 0 : event.clientX - dragFrom.current;
           dragFrom.current = null;
           setDragX(0);
           if (Math.abs(x) >= SWIPE) swipe.current?.(x > 0);
@@ -534,7 +530,11 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
               >
                 <input
                   value={typed}
-                  onChange={(event) => setTyped(event.target.value)}
+                  onChange={(event) => {
+                    // Recalled once you start typing: typing a long word takes longer.
+                    recalledAt.current ??= Date.now();
+                    setTyped(event.target.value);
+                  }}
                   disabled={revealed}
                   lang={course === "ary" ? "fr" : "de"}
                   autoCapitalize="off"

@@ -265,6 +265,31 @@ describe("offline", () => {
     expect(logs[1]?.reviewedAt.getTime()).toBeLessThanOrEqual(Date.now());
   });
 
+  it("counts a right answer recalled much slower than usual as Hard, on review cards only", async () => {
+    await started("eins:de_en", State.Review);
+    const logs = Array.from({ length: 20 }, (_, i) => ({
+      cardId: "zwei:de_en",
+      userId: U,
+      rating: 3,
+      state: State.Review,
+      durationMs: 2000,
+      reviewedAt: new Date(Date.now() - (i + 1) * DAY),
+    }));
+    await db.insert(reviewLogs).values(logs);
+    await grade(U, "eins:de_en", 3, 9000, 3);
+    // A new card stays Good: Hard would bring it back again today.
+    await grade(U, "drei:de_en", 3, 9000, 0);
+    const graded = await db
+      .select({ cardId: reviewLogs.cardId, rating: reviewLogs.rating })
+      .from(reviewLogs)
+      .where(sql`${reviewLogs.durationMs} = 9000`)
+      .orderBy(reviewLogs.cardId);
+    expect(graded).toEqual([
+      { cardId: "drei:de_en", rating: 3 },
+      { cardId: "eins:de_en", rating: 2 },
+    ]);
+  });
+
   it("drops an answer sent twice", async () => {
     await grade(U, "eins:de_en", 1, 1000, 0);
     await grade(U, "eins:de_en", 1, 1000, 0);

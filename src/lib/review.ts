@@ -1,4 +1,4 @@
-import { and, asc, eq, gte, lte, type SQL, sql } from "drizzle-orm";
+import { and, asc, desc, eq, gt, gte, lte, type SQL, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import { createEmptyCard, fsrs, type Grade, Rating, State, TypeConvert } from "ts-fsrs";
 // Relative imports: the import script (plain node) uses ensureCards too.
@@ -269,6 +269,42 @@ export async function reviewBatch(
 }
 
 /**
+ * A right answer that took much longer to recall than you usually need is likely forgotten soon:
+ * on our own reviews, right in under 3 s was right 91% of the next time, right after 6 s only 54%.
+ * So it counts as Hard. Compared with your own usual time (the median of your last right answers
+ * in that direction), never under 6 s, and only once there are enough of them.
+ */
+async function slowRecall(
+  tx: Parameters<Parameters<ReturnType<typeof db>["transaction"]>[0]>[0],
+  userId: string,
+  { noteId, direction }: Pick<typeof cards.$inferSelect, "noteId" | "direction">,
+  durationMs: number,
+) {
+  if (durationMs < 6000) return false;
+  // Not phrases: they take longer to recall than words, and Quiet mode builds them from tiles.
+  const [note] = await tx.select({ source: notes.source }).from(notes).where(eq(notes.id, noteId));
+  if (note?.source.endsWith("phrase")) return false;
+  const recent = await tx
+    .select({ ms: reviewLogs.durationMs })
+    .from(reviewLogs)
+    .innerJoin(cards, eq(cards.id, reviewLogs.cardId))
+    .where(
+      and(
+        eq(reviewLogs.userId, userId),
+        eq(cards.direction, direction),
+        gt(reviewLogs.rating, 1),
+        gt(reviewLogs.durationMs, 0),
+      ),
+    )
+    .orderBy(desc(reviewLogs.reviewedAt))
+    .limit(100);
+  if (recent.length < 20) return false;
+  const times = recent.map((r) => r.ms ?? 0).sort((a, b) => a - b);
+  const median = times[Math.floor(times.length / 2)] ?? 0;
+  return durationMs > 2.5 * median;
+}
+
+/**
  * Applies one grade to one of `userId`'s cards. `seenReps` is the review count the client was
  * shown: a repeated submit (double tap, second tab, a resent offline queue) no longer matches and
  * is dropped instead of scheduling twice. `at`: when it was answered (offline answers sync
@@ -293,7 +329,14 @@ export async function grade(
     if (before.reps !== seenReps) return;
     const last = before.last_review?.getTime() ?? 0;
     const now = new Date(Math.min(Math.max(at.getTime() || 0, last), Date.now()));
-    const { card } = scheduler.next(before, now, rating);
+    // Only on cards past learning: Hard would keep a new or learning card coming back today.
+    const slow =
+      rating === Rating.Good &&
+      before.state === State.Review &&
+      row.direction !== "unit" &&
+      (await slowRecall(tx, userId, row, durationMs));
+    const given = slow ? Rating.Hard : rating;
+    const { card } = scheduler.next(before, now, given);
     await tx
       .update(cards)
       .set({ fsrs: card, due: card.due, introducedAt: row.introducedAt ?? now })
@@ -301,7 +344,7 @@ export async function grade(
     await tx.insert(reviewLogs).values({
       cardId: id,
       userId,
-      rating,
+      rating: given,
       state: before.state,
       durationMs: Math.min(Math.max(Math.round(durationMs), 0), 10 * 60_000),
       reviewedAt: now,

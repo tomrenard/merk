@@ -23,11 +23,14 @@ import { flush, queue, unsentCards } from "../outbox";
 import { Say } from "../Say";
 import { German, Headword, SoundToggle, speak, useSpeechUnlock } from "./German";
 
+/**
+ * Knew it or not: Hard and Easy were never picked, so only two grades are left. "Almost"
+ * (a spelling slip) counts as Hard, not Good. Swipe left = the first, right = the last.
+ */
 const GRADES = [
-  { rating: 1, label: "Again", className: "[--c:#d63c3c]" },
-  { rating: 2, label: "Hard", className: "[--c:#b45f00]" },
-  { rating: 3, label: "Good", className: "[--c:#1a7a43]" },
-  { rating: 4, label: "Easy", className: "[--c:#0077b6]" },
+  { rating: 1, label: "Didn't know", className: "[--c:#d63c3c]" },
+  { rating: 2, label: "Knew it", className: "[--c:#1a7a43]" },
+  { rating: 3, label: "Knew it", className: "[--c:#1a7a43]" },
 ];
 
 /**
@@ -36,25 +39,22 @@ const GRADES = [
  * like a synonym. German→English and blank answers are graded by you.
  */
 const RATINGS: Record<TypedResult, number[]> = {
-  right: [2, 3, 4],
+  right: [3],
   almost: [1, 2],
   article: [1],
   wrong: [1],
-  blank: [1, 2, 3, 4],
+  blank: [1, 3],
 };
 
-/**
- * Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. A pick can be a
- * lucky guess, so a card past learning also offers "Not sure" (Hard). Not on new or learning
- * cards: Hard keeps them in learning (back in 15 minutes, inside the learn-ahead window), so a
- * word picked right every time came back forever.
- */
-const PICKED: Record<"right" | "wrong" | "article" | "review", number[]> = {
+/** Quiet mode cards are picked, not typed: right counts as Good, wrong as Again. */
+const PICKED: Record<"right" | "wrong" | "article", number[]> = {
   right: [3],
   wrong: [1],
   article: [1],
-  review: [2, 3],
 };
+
+/** How far (px) the card must be dragged to count as a swipe. */
+const SWIPE = 80;
 
 /** Quiet mode asks a German noun's article as its own tap (not for plurals: "die" says plural). */
 const ARTICLES = ["der", "die", "das"];
@@ -120,7 +120,14 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
   // Quiet mode: options stay hidden until you have the word in mind (recall, then recognise).
   const [thought, setThought] = useState(false);
   const [article, setArticle] = useState<string | null>(null);
+  // Swipe: where the drag started, how far it went, and what a swipe does on this card.
+  const dragFrom = useRef<number | null>(null);
+  const [dragX, setDragX] = useState(0);
+  const swipe = useRef<((right: boolean) => void) | null>(null);
   const shownAt = useRef(Date.now());
+  // When you had the answer in mind (revealed, typed, "Got it in mind?"): recall time, not time
+  // spent reading the answer. A slow right answer counts as Hard on the server.
+  const recalledAt = useRef<number | null>(null);
   useSpeechUnlock();
   const t = useT();
   const course = useCourse();
@@ -192,6 +199,7 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
   }, [item, ended]);
 
   function reveal() {
+    recalledAt.current ??= Date.now();
     setRevealed(true);
     if (item?.direction === "en_de") speak(spokenForm(item.note.de), { recorded: true });
   }
@@ -202,9 +210,10 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
       type: "grade",
       cardId: item.cardId,
       rating,
-      durationMs: Date.now() - shownAt.current,
+      durationMs: (recalledAt.current ?? Date.now()) - shownAt.current,
       seenReps: item.reps,
     });
+    recalledAt.current = null;
     setDone((n) => n + 1);
     if (rating > 1) setRemembered((n) => n + 1);
     // A missed card comes back at the end of the batch (the server would show it in 10 minutes).
@@ -225,14 +234,23 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
     setPicked(null);
     setThought(false);
     setArticle(null);
+    dragFrom.current = null;
+    setDragX(0);
     shownAt.current = Date.now();
   }
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
-      // Inputs, unit exercises and Quiet mode options handle their own keys.
-      if (event.target instanceof HTMLInputElement || item?.exercise || item?.choices) return;
+      if (event.target instanceof HTMLInputElement || item?.exercise) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
+      // ← didn't know, → knew it: the keyboard's swipe.
+      if (revealed && (event.key === "ArrowLeft" || event.key === "ArrowRight")) {
+        event.preventDefault();
+        swipe.current?.(event.key === "ArrowRight");
+        return;
+      }
+      // Quiet mode options handle their own keys.
+      if (item?.choices) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         reveal();
@@ -375,9 +393,9 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         ? "article"
         : "right");
   const result = pickedResult ?? typedResult(item, typed);
-  const ratings = pickedResult
-    ? PICKED[pickedResult === "right" && item.inReview ? "review" : pickedResult]
-    : RATINGS[result];
+  const ratings = pickedResult ? PICKED[pickedResult] : RATINGS[result];
+  // One grade on offer (checked answers): a swipe either way goes on.
+  swipe.current = (right) => answer((right ? ratings.at(-1) : ratings[0]) ?? 1);
   const rule = result === "article" ? genderRule(note.de) : null;
 
   const message = {
@@ -403,7 +421,41 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
         </span>,
       )}
 
-      <section className="card flex flex-1 flex-col items-center justify-center gap-3 text-center">
+      {/* Once revealed, swipe the card: left = didn't know, right = knew it. */}
+      <section
+        onPointerDown={(event) => {
+          if (revealed) dragFrom.current = event.clientX;
+        }}
+        onPointerMove={(event) => {
+          if (dragFrom.current === null) return;
+          const x = event.clientX - dragFrom.current;
+          // Captured only once it is a drag, so a tap still reaches the buttons on the card.
+          if (Math.abs(x) > 10 && !event.currentTarget.hasPointerCapture(event.pointerId)) {
+            event.currentTarget.setPointerCapture(event.pointerId);
+          }
+          setDragX(x);
+        }}
+        onPointerUp={() => {
+          const x = dragX;
+          dragFrom.current = null;
+          setDragX(0);
+          if (Math.abs(x) >= SWIPE) swipe.current?.(x > 0);
+        }}
+        onPointerCancel={() => {
+          dragFrom.current = null;
+          setDragX(0);
+        }}
+        style={
+          dragX
+            ? {
+                transform: `translateX(${dragX}px) rotate(${dragX / 25}deg)`,
+                borderColor:
+                  Math.abs(dragX) >= SWIPE ? (dragX > 0 ? "#1a7a43" : "#d63c3c") : undefined,
+              }
+            : undefined
+        }
+        className={`card flex flex-1 touch-pan-y flex-col items-center justify-center gap-3 text-center ${dragX ? "" : "transition-transform"}`}
+      >
         {item.direction === "de_en" ? (
           <>
             <German word={note.de} tr={note.tr} />
@@ -551,11 +603,7 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
                   onClick={() => answer(g.rating)}
                   className={`btn btn-solid px-1 text-sm ${g.className}`}
                 >
-                  {ratings.length === 1
-                    ? t("Continue")
-                    : pickedResult && g.rating === 2
-                      ? t("Not sure")
-                      : t(g.label)}
+                  {ratings.length === 1 ? t("Continue") : t(g.label)}
                 </button>
               ))}
             </div>
@@ -563,7 +611,7 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
               <p className="muted text-center text-xs font-semibold">
                 {ratings.length === 1
                   ? t("It comes back in about 10 minutes.")
-                  : t("Again: comes back in about 10 minutes.")}
+                  : t("Or swipe the card. Didn't know: back in about 10 minutes.")}
               </p>
             )}
             {result === "wrong" && !choices && (
@@ -576,7 +624,10 @@ export function Review({ batch, renderedAt, left: initial, limit, lesson }: Prop
           !thought && (
             <button
               type="button"
-              onClick={() => setThought(true)}
+              onClick={() => {
+                recalledAt.current = Date.now();
+                setThought(true);
+              }}
               className="btn btn-primary w-full"
             >
               {t("Got it in mind? Show the options")}

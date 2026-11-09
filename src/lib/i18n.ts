@@ -69,7 +69,6 @@ const FR: Record<string, string> = {
   Add: "Ajouter",
   "Add a word": "Ajouter un mot",
   Again: "Encore",
-  "Again: comes back in about 10 minutes.": "Encore : revient dans 10 minutes environ.",
   All: "Tous",
   "All done": "Tout est fait",
   "All done for today": "Tout est fait pour aujourd’hui",
@@ -116,6 +115,7 @@ const FR: Record<string, string> = {
   Dictation: "Dictée",
   "Dictation {n}/{total}: type what you hear": "Dictée {n}/{total} : écris ce que tu entends",
   "Didn't come through: {words}": "Pas reconnu : {words}",
+  "Didn't know": "Je ne savais pas",
   "Do you know what it means?": "Tu sais ce que ça veut dire ?",
   Done: "Terminé",
   "Done for now": "Terminé pour l’instant",
@@ -123,7 +123,6 @@ const FR: Record<string, string> = {
   "Each section counts the same; listening, reading and grammar must each reach the mark too.":
     "Chaque partie compte autant ; l’écoute, la lecture et la grammaire doivent aussi chacune atteindre la note.",
   "Each try has new questions.": "Chaque essai a de nouvelles questions.",
-  Easy: "Facile",
   Edit: "Modifier",
   "Edit word": "Modifier le mot",
   Elementary: "Élémentaire",
@@ -145,10 +144,8 @@ const FR: Record<string, string> = {
   German: "Allemand",
   "German (with der/die/das for nouns)": "Allemand (avec der/die/das pour les noms)",
   "German voice": "Voix allemande",
-  Good: "Bien",
   Grammar: "Grammaire",
   "Grammar & words": "Grammaire et vocabulaire",
-  Hard: "Difficile",
   "Hear it again": "Réécouter",
   "Hear yourself": "Écoute-toi",
   "Heard:": "Entendu :",
@@ -169,6 +166,7 @@ const FR: Record<string, string> = {
   Intermediate: "Intermédiaire",
   "Invited? Create your account": "Invité ? Crée ton compte",
   "It comes back in about 10 minutes.": "Il revient dans 10 minutes environ.",
+  "Knew it": "Je savais",
   "It was": "C’était",
   "It was:": "C’était :",
   "It will come back in your reviews, so it sticks.":
@@ -211,7 +209,6 @@ const FR: Record<string, string> = {
   "New words": "Nouveaux mots",
   "New words per day": "Nouveaux mots par jour",
   "Next line": "Phrase suivante",
-  "Not sure": "Pas sûr",
   "Nouns in {end} are usually {article}.": "Les noms en {end} sont en général {article}.",
   "Same words, another order: that can be right too. Is yours?":
     "Mêmes mots, autre ordre : ça peut être juste aussi. La tienne l’est ?",
@@ -241,6 +238,8 @@ const FR: Record<string, string> = {
   "Numbers & time by ear": "Nombres et heures à l’oreille",
   "One part a day is plenty. Redo any part any time.":
     "Une partie par jour, c’est bien assez. Refais n’importe quelle partie quand tu veux.",
+  "Or swipe the card. Didn't know: back in about 10 minutes.":
+    "Ou glisse la carte. Je ne savais pas : revient dans 10 minutes environ.",
   "Passed · best {score}%": "Réussi · meilleur : {score} %",
   Password: "Mot de passe",
   "Password (10+ characters)": "Mot de passe (10 caractères ou plus)",

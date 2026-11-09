@@ -128,6 +128,7 @@ export const reviewLogs = pgTable(
     userId: text("user_id").references(() => user.id, { onDelete: "cascade" }),
     rating: smallint("rating").notNull(),
     state: smallint("state").notNull(),
+    /** Time to recall: card shown → answer in mind (revealed, typed, "Got it in mind?"). */
     durationMs: integer("duration_ms"),
     reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull().defaultNow(),
   },

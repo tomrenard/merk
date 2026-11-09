@@ -11,7 +11,7 @@ self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (event) => event.waitUntil(self.clients.claim()));
 
 // The page that installed this worker loaded its code before: it sends those URLs to keep, and
-// the main pages to keep fresh for an offline start.
+// the main pages (and the next lesson's, with its recordings) to keep fresh for an offline start.
 /** When this phone last signed out: a page that started loading before is not kept. */
 let forgotAt = 0;
 function forget() {
@@ -23,9 +23,12 @@ self.addEventListener("message", (event) => {
   if (event.data?.forget) return event.waitUntil(forget());
   const keep = Array.isArray(event.data?.keep) ? event.data.keep : [];
   const pages = Array.isArray(event.data?.pages) ? event.data.pages : [];
+  const audio = Array.isArray(event.data?.audio) ? event.data.audio : [];
   event.waitUntil(
     Promise.all([
       keepFiles(keep),
+      // A lesson's recordings (the next one's, sent by the page): its dialogue plays offline.
+      keepFiles(audio.filter((url) => typeof url === "string" && url.startsWith(AUDIO))),
       // With the code each page needs: never loaded yet, so not kept by saved().
       ...pages.map(async (path) => {
         const response = await fetchPage(new Request(path)).catch(() => null);

@@ -177,6 +177,35 @@ export function sameAnswer(input: string, answer: string): boolean {
   return answerKey(input) === answerKey(answer);
 }
 
+/**
+ * The right sentence's words, each with whether the typed answer has it (in order, compared
+ * like answers: case, umlauts, punctuation). Missed or misspelled words come back `false`, so
+ * a wrong "-e" marks one word, not the sentence.
+ */
+export function markWords(input: string, answer: string): { word: string; ok: boolean }[] {
+  const words = answer.split(/\s+/).filter(Boolean);
+  const want = words.map(answerKey);
+  const got = answerKey(input).split(" ");
+  // Longest common subsequence of the two word lists (flat table), then walk it back.
+  const width = got.length + 1;
+  const lcs = new Array<number>((want.length + 1) * width).fill(0);
+  const at = (i: number, j: number) => lcs[i * width + j] ?? 0;
+  for (let i = want.length - 1; i >= 0; i--)
+    for (let j = got.length - 1; j >= 0; j--)
+      lcs[i * width + j] =
+        want[i] === got[j] ? at(i + 1, j + 1) + 1 : Math.max(at(i + 1, j), at(i, j + 1));
+  const ok = words.map(() => false);
+  for (let i = 0, j = 0; i < want.length && j < got.length; ) {
+    if (want[i] === got[j]) {
+      ok[i] = true;
+      i++;
+      j++;
+    } else if (at(i + 1, j) >= at(i, j + 1)) i++;
+    else j++;
+  }
+  return words.map((word, i) => ({ word, ok: ok[i] || !want[i] }));
+}
+
 /** The words of a sentence, spelled like answers are compared (case, umlauts, ß, punctuation). */
 export function spokenWords(text: string): string[] {
   return normalize(text)

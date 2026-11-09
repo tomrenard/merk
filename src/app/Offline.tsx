@@ -51,6 +51,16 @@ export function Offline() {
   );
 }
 
+/** Hands the service worker a lesson's pages and recordings to keep, for an offline cold start. */
+export function KeepOffline({ pages, audio }: { pages: string[]; audio: string[] }) {
+  const list = JSON.stringify({ pages, audio });
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "production") return;
+    navigator.serviceWorker?.ready.then((r) => r.active?.postMessage(JSON.parse(list)));
+  }, [list]);
+  return null;
+}
+
 /** Log out, after sending and forgetting what this account left on the phone (outbox). */
 export function LogOut({ action, label }: { action: () => Promise<void>; label: string }) {
   const t = useT();

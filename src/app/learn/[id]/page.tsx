@@ -3,6 +3,7 @@ import {
   CHECK_SIZE,
   COURSE,
   courseProgress,
+  offlineLesson,
   PARTS,
   PASS,
   partIcon,
@@ -13,6 +14,7 @@ import { courseOfId, shownId } from "@/lib/courses";
 import { getT } from "@/lib/locale";
 import { requireUser } from "@/lib/session";
 import { Go } from "../../Nav";
+import { KeepOffline } from "../../Offline";
 import { TabBar } from "../../TabBar";
 import { learnWords } from "../actions";
 
@@ -88,6 +90,7 @@ export default async function UnitPage({ params }: { params: Promise<{ id: strin
           </button>
         </form>
       ) : null}
+      <KeepOffline {...offlineLesson(unit)} />
       <TabBar active="/learn" />
     </main>
   );

@@ -7,6 +7,7 @@ import {
   levelName,
   levelProgress,
   nextStep,
+  offlineLesson,
 } from "@/lib/course";
 import { COURSES, shownId } from "@/lib/courses";
 import type { T } from "@/lib/i18n";
@@ -14,6 +15,7 @@ import { getCourse, getQuiet, getT } from "@/lib/locale";
 import { activity, counts, progress, wordLevels } from "@/lib/review";
 import { requireUser } from "@/lib/session";
 import { Go } from "./Nav";
+import { KeepOffline } from "./Offline";
 import { moreNewWords } from "./review/actions";
 import { TabBar } from "./TabBar";
 
@@ -326,6 +328,7 @@ export default async function Home() {
         </div>
       </section>
 
+      {step?.type === "lesson" && <KeepOffline {...offlineLesson(step.unit)} />}
       <TabBar active="/" />
     </main>
   );

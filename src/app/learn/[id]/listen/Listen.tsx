@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { tileItem, tilePool, withOthers } from "@/lib/choices";
 import { CHEERS, courseOfId } from "@/lib/courses";
 import { sameDarija } from "@/lib/darija";
-import { sameAnswer } from "@/lib/german";
+import { markWords, sameAnswer } from "@/lib/german";
 import { shuffled } from "@/lib/shuffle";
 import type { Unit } from "@/lib/units";
 import { PANEL, SOLID } from "../../../feedback";
@@ -36,6 +36,8 @@ export function Listen({
   const { lines, questions } = unit.listening;
   const [step, setStep] = useState<Step>("hear");
   const [playing, setPlaying] = useState<number | null>(null);
+  /** Where Play starts: the slider, or the line you stopped at, so you don't hear it all again. */
+  const [at, setAt] = useState(0);
   const [index, setIndex] = useState(0);
   const [right, setRight] = useState(0);
   const [answer, setAnswer] = useState<number | string | null>(null);
@@ -59,10 +61,15 @@ export function Listen({
     [],
   );
 
-  function play(from = 0, id = ++run.current) {
+  function play(from = at, id = ++run.current) {
     const line = lines[from];
-    if (!line || id !== run.current) return setPlaying(null);
+    if (id !== run.current) return;
+    if (!line) {
+      setAt(0);
+      return setPlaying(null);
+    }
     setPlaying(from);
+    setAt(from);
     speak(line.de, {
       recorded: true,
       second: speakers.indexOf(line.speaker) % 2 === 1,
@@ -108,6 +115,27 @@ export function Listen({
 
   const progress = { hear: 0, questions: 0.25, read: 0.5, dictation: 0.75 }[step];
 
+  const seek = (
+    <label className="flex items-center gap-3">
+      <span className="muted w-20 shrink-0 text-sm font-extrabold tabular-nums">
+        {t("Line {n}/{total}", { n: (playing ?? at) + 1, total: lines.length })}
+      </span>
+      <input
+        type="range"
+        min={0}
+        max={lines.length - 1}
+        value={playing ?? at}
+        onChange={(event) => {
+          const line = Number(event.target.value);
+          if (playing === null) setAt(line);
+          else play(line);
+        }}
+        aria-label={t("Start from line")}
+        className="flex-1 accent-[var(--brand)]"
+      />
+    </label>
+  );
+
   if (step === "hear") {
     return (
       <PartShell unitId={unit.id} progress={progress}>
@@ -120,9 +148,10 @@ export function Listen({
           className="btn btn-primary py-5 text-xl"
         >
           {playing === null
-            ? `▶ ${t("Play the dialogue")}`
-            : `⏹ ${t("Line {n}/{total}", { n: playing + 1, total: lines.length })}`}
+            ? `▶ ${t(at ? "Play from line {n}" : "Play the dialogue", { n: at + 1 })}`
+            : `⏹ ${t("Stop")}`}
         </button>
+        {seek}
         <p className="muted text-sm">
           {t("Listen twice if you like. Then answer a few questions.")}
         </p>
@@ -166,6 +195,7 @@ export function Listen({
         <button type="button" onClick={() => (playing === null ? play() : stop())} className="btn">
           {playing === null ? `🔊 ${t("Hear it again")}` : `⏹ ${t("Stop")}`}
         </button>
+        {seek}
         {checked && (
           <p className={`rounded-2xl p-4 text-xl font-black ${PANEL[correct ? "right" : "wrong"]}`}>
             {correct ? `✓ ${cheer.right}` : `✗ ${question.options[question.answer]}`}
@@ -312,7 +342,26 @@ export function Listen({
             <p className="text-xl font-black">
               {correct ? `✓ ${cheer.right}` : `✗ ${t("It was:")}`}
             </p>
-            <Say de={sentence} tr={sentenceTr} className="font-bold" />
+            {correct || choices || sentenceTr ? (
+              <Say de={sentence} tr={sentenceTr} className="font-bold" />
+            ) : (
+              // Only the words you missed stand out, not the whole sentence.
+              <p className="font-bold text-[var(--ink)]">
+                {markWords(typed, sentence).map(({ word, ok }, i) => (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: words repeat; fixed order
+                  <span key={i}>
+                    {i > 0 && " "}
+                    {ok ? (
+                      word
+                    ) : (
+                      <mark className="rounded bg-red-200 px-0.5 text-red-800 underline decoration-2 dark:bg-red-900 dark:text-red-200">
+                        {word}
+                      </mark>
+                    )}
+                  </span>
+                ))}
+              </p>
+            )}
           </div>
         )}
         <button

@@ -1,6 +1,7 @@
 import { and, eq, gte, inArray, max, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { activityLogs } from "@/db/schema";
+import { audioUrl, solved } from "./audio";
 import { type Choice, quietItem, sentencesOf, tileItem, wordsOf } from "./choices";
 import { COURSE_IDS, COURSES, type CourseId, courseOfId } from "./courses";
 import { examTitle, type T, translator } from "./i18n";
@@ -35,6 +36,19 @@ export const PARTS = [
   { kind: "write", path: "write", label: "Write", icon: "✍️" },
 ] as const;
 export type Part = (typeof PARTS)[number];
+
+/** A lesson's pages and recordings, for the phone to keep before you go offline. */
+export const offlineLesson = (unit: Unit) => ({
+  pages: [`/learn/${unit.id}`, ...PARTS.map((part) => `/learn/${unit.id}/${part.path}`)],
+  audio: [
+    ...unit.listening.lines.map((line) => line.de),
+    ...unit.examples.map((example) => example.de),
+    ...unit.dictation,
+    ...unit.speaking.map((s) => s.de),
+    unit.writing.model,
+    ...unit.items.map(solved),
+  ].map(audioUrl),
+});
 export type PartKind = Part["kind"];
 
 /** The first part's name and icon depend on the lesson: a rule, a theme's words, or a story. */

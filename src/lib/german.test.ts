@@ -6,6 +6,7 @@ import {
   governedPrepositions,
   isCorrect,
   lemmaKeys,
+  markWords,
   splitPlural,
   spokenForm,
   spokenWords,
@@ -165,5 +166,25 @@ describe("genderRule", () => {
     expect(genderRule("der Reichtum, -¨er")).toBeNull();
     expect(genderRule("der Tisch, -e")).toBeNull();
     expect(genderRule("die Ei")).toBeNull();
+  });
+});
+
+describe("markWords", () => {
+  const wrong = (input: string, answer: string) =>
+    markWords(input, answer)
+      .filter((w) => !w.ok)
+      .map((w) => w.word);
+  it("marks only the misspelled word", () => {
+    expect(wrong("ich habe eine kleine Hund", "Ich habe einen kleinen Hund.")).toEqual([
+      "einen",
+      "kleinen",
+    ]);
+  });
+  it("marks a missing word, ignores case, umlauts and punctuation", () => {
+    expect(wrong("Schoen, dass du da bist", "Schön, dass du heute da bist!")).toEqual(["heute"]);
+  });
+  it("marks nothing when right, everything when empty", () => {
+    expect(wrong("ich bin müde", "Ich bin müde.")).toEqual([]);
+    expect(wrong("", "Ich bin müde.")).toEqual(["Ich", "bin", "müde."]);
   });
 });
